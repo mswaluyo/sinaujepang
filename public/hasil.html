@@ -66,19 +66,19 @@ if(!slug)slug="aoi-quiz";
 var nama="SinauJepang";
 try{var u=await window.IndexedDB.getItem("jft_user");if(u&&(u.name||u.email))nama=u.name||u.email;}catch(e){}
 var R=null;
-// 0. FIRESTORE (sumber utama — data saat login; tunggu fujiScore siap)
+// 0. FIRESTORE (sumber utama — tunggu fujiScore + auth siap)
 try{
-  if(!window.fujiScore){
-    // tunggu sampai module firebase-init.js selesai (maks 3 detik)
-    await new Promise(function(res){
-      var tries=0;
-      var iv=setInterval(function(){
-        tries++;
-        if(window.fujiScore||tries>=30){clearInterval(iv);res();}
-      },100);
-    });
-  }
-  if(window.fujiScore&&window.fujiScore.latest){
+  // Tunggu fujiScore & fujiUser siap (maks 5 detik)
+  await new Promise(function(res){
+    var tries=0;
+    var iv=setInterval(function(){
+      tries++;
+      var scoreReady=!!(window.fujiScore&&window.fujiScore.latest);
+      var authReady=!!(window.fujiUser&&window.fujiUser.email);
+      if((scoreReady&&authReady)||tries>=50){clearInterval(iv);res();}
+    },100);
+  });
+  if(window.fujiScore&&window.fujiScore.latest&&(window.fujiUser&&window.fujiUser.email)){
     var fr=await window.fujiScore.latest(slug);
     if(fr&&fr.benar!=null){
       var raw=fr._v||{};
