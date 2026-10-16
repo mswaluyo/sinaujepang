@@ -112,12 +112,31 @@ document.getElementById("h-pin-n").textContent=J;
 var SECN={sec1:["文字と語彙","Script and Vocabulary"],sec2:["会話と表現","Conversation and Expression"],sec3:["聴解","Listening Comprehension"],sec4:["読解","Reading Comprehension"]};
 var box=document.getElementById("h-secs");box.innerHTML="";
 var saran=[];
+var secData=[];
 ["sec1","sec2","sec3","sec4"].forEach(function(k){
  var s=R.secs&&R.secs[k];
  if(!s)return;
  var pct=s.total?Math.round(s.benar/s.total*100):0;
+ var secJ=Math.round(10+(pct/100)*240);
+ var secLv=pct>=85?"A2":pct>=75?"A1+":pct>=60?"A1":"-";
+ var color=pct>=75?"emerald":pct>=60?"amber":"rose";
+ secData.push({k:k,pct:pct,benar:s.benar,total:s.total,j:secJ,lv:secLv,color:color});
  var row=document.createElement("div");
- row.innerHTML='<div class="flex justify-between text-[13px]"><span><b>'+SECN[k][0]+'</b><br><span class="text-xs text-slate-500">'+SECN[k][1]+' - '+s.benar+'/'+s.total+'</span></span><b>'+pct+'%</b></div><div class="sec-track"><div class="sec-dot" style="left:'+pct+'%"></div></div>';
+ row.className="mb-3 pb-3 border-b border-slate-100 last:border-0 last:mb-0 last:pb-0";
+ row.innerHTML=
+  '<div class="flex items-center justify-between mb-1">'
+  +'<div class="flex items-center gap-2">'
+  +'<span class="w-6 h-6 rounded-md bg-'+color+'-100 text-'+color+'-700 text-[10px] font-bold flex items-center justify-center">'+(k==="sec1"?"S1":k==="sec2"?"S2":k==="sec3"?"S3":"S4")+'</span>'
+  +'<div><span class="font-bold text-[13px]">'+SECN[k][0]+'</span><br><span class="text-[11px] text-slate-400">'+SECN[k][1]+'</span></div>'
+  +'</div>'
+  +'<div class="text-right"><span class="font-extrabold text-'+color+'-600 text-sm">'+pct+'%</span><br><span class="text-[10px] text-slate-400">'+s.benar+'/'+s.total+' benar</span></div>'
+  +'</div>'
+  +'<div class="flex items-center gap-2">'
+  +'<div class="flex-1 h-2 rounded-full bg-slate-100 overflow-hidden">'
+  +'<div class="h-full rounded-full bg-'+color+'-500 transition-all duration-500" style="width:'+pct+'%"></div>'
+  +'</div>'
+  +'<span class="text-[10px] font-bold text-'+color+'-600 w-12 text-right">~'+secJ+'/250</span>'
+  +'</div>';
  box.appendChild(row);
  if(pct<75){
   if(k==="sec1")saran.push("Mojigoi ("+pct+"%): ulang baca kanji mirip (vokal panjang) + kosakata benda.");
