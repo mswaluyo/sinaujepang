@@ -55,19 +55,18 @@
 </div>
 <footer class="bg-white border-t border-slate-200 py-8 mt-auto"><div class="max-w-5xl mx-auto px-4 text-center"><p class="text-slate-700 font-bold text-sm mb-1">SinauJepang (sinaujepang.web.app)</p><p class="text-slate-600 text-xs mb-3">Didedikasikan untuk seluruh pejuang Tokutei Ginou Indonesia. Semoga sukses melangkah ke Jepang!</p><div class="flex items-center justify-center gap-3 mt-2"><a href="https://wa.me/6285649049086" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1eb856] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-whatsapp text-sm"></i><span>Sugeng Waluyo</span></a><a href="https://www.facebook.com/maswaluyo/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#1464cc] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-facebook text-sm"></i><span>Sugeng Waluyo</span></a></div></div></footer>
 <script>
-(function(){
+(async function(){
 function q(n){try{var m=(location.search||"").match(new RegExp("[?&]"+n+"=([^&]+)"));return m?decodeURIComponent(m[1]):""}catch(e){return""}}
 var slug=q("paket")||"aoi-quiz";
 if(!slug){slug=q("p")||"";}
 if(!slug){try{var m=(location.pathname||"").match(/([a-z0-9]+-quiz)/i);slug=m?m[1].toLowerCase():"";}catch(e){}}
-if(!slug)slug="aoi-quix";
+if(!slug)slug="aoi-quiz";
 var nama="SinauJepang";
-try{var u=JSON.parse(window.IndexedDB.getItem("jft_user")||"null");if(u&&(u.name||u.email))nama=u.name||u.email;}catch(e){}
+try{var u=await window.IndexedDB.getItem("jft_user");if(u&&(u.name||u.email))nama=u.name||u.email;}catch(e){}
 var R=null;
-try{var all=JSON.parse(window.IndexedDB.getItem("jft_hasil")||"{}");R=all[slug]||null;}catch(e){}
-if(!R){try{var at=JSON.parse(window.IndexedDB.getItem("jft_attempts")||"{}");var arr=at[slug]||[];if(arr.length){var l=arr[arr.length-1];R={benar:l.benar,total:l.total,skor:l.skor,secs:null,at:l.at};}}catch(e){}}
-if(!R){try{var all2=JSON.parse(window.IndexedDB.getItem("jft_hasil")||"{}");Object.keys(all2).forEach(function(k){if(!R&&(k===slug||k.indexOf(slug)>=0||slug.indexOf(k)>=0)){R=all2[k];slug=k;}});}}catch(e){}}
-if(!R){try{var at2=JSON.parse(window.IndexedDB.getItem("jft_attempts")||"{}");Object.keys(at2).forEach(function(k){if(!R&&at2[k].length&&(k===slug||k.indexOf(slug)>=0||slug.indexOf(k)>=0)){var l2=at2[k][at2[k].length-1];R={benar:l2.benar,total:l2.total,skor:l2.skor,secs:null,at:l2.at};slug=k;}});}}catch(e){}}
+try{var all=await window.IndexedDB.getItem("jft_hasil");if(all)R=all[slug]||null;}catch(e){}
+if(!R){try{var at=await window.IndexedDB.getItem("jft_attempts");if(at){var arr=at[slug]||[];if(arr.length){var l=arr[arr.length-1];R={benar:l.benar,total:l.total,skor:l.skor,secs:l.secs||null,at:l.at};}}}catch(e){}}
+if(!R){try{var all2=await window.IndexedDB.getItem("jft_hasil");if(all2){Object.keys(all2).forEach(function(k){if(!R&&(k===slug||k.indexOf(slug)>=0||slug.indexOf(k)>=0)){R=all2[k];slug=k;}});}}catch(e){}}
 document.getElementById("h-paket").textContent=slug.replace("-quiz","").toUpperCase();
 document.getElementById("h-name").textContent=nama;
 var dt=R&&R.at?new Date(R.at):new Date();
