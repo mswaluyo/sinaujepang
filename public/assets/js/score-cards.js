@@ -15,27 +15,68 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
   }
   function jftPos(j) { return Math.max(0, Math.min(100, ((j - 10) / 240) * 100)); }
   function badgeHTML(r, slug) {
-    // SATU MODEL untuk semua: pin+bar+threshold+label SELALU sama.
-    // Beda hanya WARNA: dikerjakan = bar warna + pil level; belum = bar abu + pil target.
     var has = !!r;
     var j = has ? jftEst(r.skor) : 0, lv = has ? jftLevel(j) : "-";
     var lvCls = has ? (j >= 200 ? "bg-emerald-100 text-emerald-700" : j >= 145 ? "bg-amber-100 text-amber-700" : "bg-rose-100 text-rose-700") : "bg-sky-100 text-sky-700";
+    var benar = has ? (r.benar || 0) : 0;
+    var total = has ? (r.total || 0) : 0;
+    var jawab = has ? (r.jawab != null ? r.jawab : benar) : 0;
+    var pct = has && r.skor != null ? r.skor : 0;
     var headL = has
       ? 'Total Skor: <strong class="text-slate-800 text-sm">' + j + '</strong> / 250'
       : 'Total Skor: <strong class="text-slate-800 text-sm">0</strong> / 250';
     var headR = has ? 'Hasil: Level ' + lv : 'Target: A2 (200+)';
     var pos = has ? jftPos(j) : 0;
     var posStr = pos.toFixed(2);
+    // ── Bar utama (gradient + threshold markers) ──
     var bar = has
       ? '<div class="w-full h-2.5 rounded-full bg-gradient-to-r from-rose-400 via-amber-300 via-amber-400 to-emerald-500 relative shadow-inner"><div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:56.25%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:68.75%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:79.17%"></div></div>'
       : '<div class="w-full h-2.5 rounded-full bg-slate-200 relative"><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:56.25%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:68.75%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:79.17%"></div></div>';
+    // ── Pin skor ──
     var pin = has
       ? '<div class="absolute flex flex-col items-center" style="left:' + posStr + '%;transform:translateX(-50%);top:-26px"><span class="bg-slate-800 text-white font-bold text-[10px] px-1.5 py-0.5 rounded-md shadow">' + j + '</span><div class="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[4px] border-t-slate-800"></div></div>'
       : '';
-    return '<div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 mb-1 text-xs"><div class="flex items-center justify-between" style="margin-bottom:10px"><span class="font-medium text-slate-500">' + headL + '</span><span class="font-bold px-2 py-0.5 rounded ' + lvCls + ' text-[11px]">' + headR + '</span></div>'
-      + '<div class="relative" style="margin-top:28px;margin-bottom:8px">' + pin
-      + bar
-      + '<div class="relative text-[11px] text-slate-600 font-bold mt-1 h-5" style="padding-left:4px;padding-right:4px"><span style="position:absolute;left:4px;top:0;background:#fff;padding:0 4px">10</span><span class="absolute text-center top-0" style="left:56.25%;transform:translateX(-50%)">145<br/><span class="text-[9px] text-slate-400 font-semibold">A1</span></span><span class="absolute text-center top-0" style="left:68.75%;transform:translateX(-50%)">175<br/><span class="text-[9px] text-slate-400 font-semibold">A2.1</span></span><span class="absolute text-center text-emerald-600 top-0" style="left:79.17%;transform:translateX(-50%)">200<br/><span class="text-[9px]">A2</span></span><span style="position:absolute;right:4px;top:0;background:#fff;padding:0 4px">250</span></div></div></div>';
+    // ── Tanggal ──
+    var tgl = '';
+    if (has && r.at) {
+      try {
+        var d = new Date(r.at);
+        tgl = '<span class="text-[10px] text-slate-400">' + d.toLocaleDateString('id-ID', { day:'numeric', month:'short', year:'numeric' }) + '</span>';
+      } catch(e){}
+    }
+    // ── Progress benar/total ──
+    var benarLine = has
+      ? '<div class="flex items-center justify-between text-[11px] mb-1"><span class="text-slate-500">Benar: <strong class="text-slate-700">' + benar + '/' + total + '</strong></span>' + tgl + '</div>'
+      : '<div class="flex items-center justify-between text-[11px] mb-1"><span class="text-slate-400">Belum mengerjakan</span></div>';
+    // ── Progress bar kecil (benar/total %) ──
+    var pctBar = has
+      ? '<div class="w-full h-1.5 rounded-full bg-slate-200 mb-2 overflow-hidden"><div class="h-full rounded-full ' + (pct >= 75 ? 'bg-emerald-500' : pct >= 50 ? 'bg-amber-400' : 'bg-rose-400') + '" style="width:' + Math.min(100, pct) + '%;transition:width .5s"></div></div>'
+      : '<div class="w-full h-1.5 rounded-full bg-slate-200 mb-2 overflow-hidden"><div class="h-full rounded-full bg-slate-300" style="width:0%"></div></div>';
+    // ── Breakdown per sesi (jika ada data secs) ──
+    var secsLine = '';
+    if (has && r.secs) {
+      var secLabels = [
+        { key: 'sec1', label: 'S1', color: 'text-fuji-600' },
+        { key: 'sec2', label: 'S2', color: 'text-emerald-600' },
+        { key: 'sec3', label: 'S3', color: 'text-amber-600' },
+        { key: 'sec4', label: 'S4', color: 'text-rose-600' }
+      ];
+      var secParts = secLabels.filter(function(s){ return r.secs[s.key] && r.secs[s.key].total > 0; }).map(function(s) {
+        var d2 = r.secs[s.key];
+        return '<span class="' + s.color + ' font-semibold">' + s.label + ' ' + d2.benar + '/' + d2.total + '</span>';
+      });
+      if (secParts.length) secsLine = '<div class="flex flex-wrap gap-x-2 gap-y-0.5 text-[10px] mb-1">' + secParts.join('') + '</div>';
+    }
+    // ── Skala 10–250 ──
+    var skala = '<div class="relative text-[11px] text-slate-600 font-bold mt-1 h-5" style="padding-left:4px;padding-right:4px"><span style="position:absolute;left:4px;top:0;background:#fff;padding:0 4px">10</span><span class="absolute text-center top-0" style="left:56.25%;transform:translateX(-50%)">145<br/><span class="text-[9px] text-slate-400 font-semibold">A1</span></span><span class="absolute text-center top-0" style="left:68.75%;transform:translateX(-50%)">175<br/><span class="text-[9px] text-slate-400 font-semibold">A2.1</span></span><span class="absolute text-center text-emerald-600 top-0" style="left:79.17%;transform:translateX(-50%)">200<br/><span class="text-[9px]">A2</span></span><span style="position:absolute;right:4px;top:0;background:#fff;padding:0 4px">250</span></div>';
+    // ── Gabung semua ──
+    return '<div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 mb-1 text-xs">'
+      + '<div class="flex items-center justify-between" style="margin-bottom:8px"><span class="font-medium text-slate-500">' + headL + '</span><span class="font-bold px-2 py-0.5 rounded ' + lvCls + ' text-[11px]">' + headR + '</span></div>'
+      + benarLine
+      + pctBar
+      + secsLine
+      + '<div class="relative" style="margin-top:28px;margin-bottom:8px">' + pin + bar + skala + '</div>'
+      + '</div>';
   }
   function footHTML(a, r) {
     try {
