@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<title>SinauJepang - Latihan Soal Bahasa Jepang & Tokutei Ginou</title>
+  <!-- Tailwind CSS lokal (hasil build, siap produksi) -->
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  
+  <style>
+    .bg-fuji-overlay {
+      background: linear-gradient(135deg, rgba(240, 249, 255, 0.92) 0%, rgba(224, 242, 254, 0.88) 100%),
+                  url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+<script>
+try {
+  var u = JSON.parse(localStorage.getItem("jft_user") || "null");
+  if (!u && location.pathname !== "/login.html") location.replace("/login.html");
+} catch (e) {}
+</script>
+</head>
+<body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between selection:bg-fuji-200">
+
+  <!-- Header / Navigation -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-fuji-100 shadow-sm">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <!-- Logo SinauJepang -->
+      <a href="#" class="flex items-center gap-2.5">
+        <div class="w-9 h-9 rounded-full bg-gradient-to-tr from-fuji-600 to-fuji-400 flex items-center justify-center text-white font-bold shadow-md shadow-fuji-500/20">
+          <span class="text-xs font-extrabold tracking-tighter">学び</span>
+        </div>
+        <div class="flex flex-col">
+          <span class="font-bold text-slate-800 text-lg leading-tight">SinauJepang</span>
+          <span class="text-[10px] text-fuji-600 font-semibold tracking-wider">BELAJAR &amp; LATIHAN GRATIS</span>
+        </div>
+      </a>
+
+      <!-- Right Action Group -->
+      <div class="flex items-center gap-3">
+        <button onclick="openDonationModal()" class="hidden sm:flex items-center gap-2 bg-amber-50 hover:bg-amber-100 text-amber-700 font-semibold px-3.5 py-1.5 rounded-full border border-amber-200 transition-all text-xs">
+          <i class="fa-solid fa-mug-hot text-amber-600"></i>
+          <span>Traktir Kopi</span>
+        </button>
+
+        <span id="uInfo" class="hidden text-xs text-slate-500"></span><button id="loginBtn" onclick="openLoginModal()" class="flex items-center gap-2.5 bg-white hover:bg-slate-50 text-slate-700 font-medium px-4 py-2 rounded-full border border-slate-200 shadow-sm transition-all hover:shadow text-sm">
+          <svg class="w-4 h-4" viewBox="0 0 24 24">
+            <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+            <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+            <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+            <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+          </svg>
+          <span>Masuk Google</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="relative bg-fuji-overlay py-16 md:py-24 border-b border-fuji-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <!-- Badge -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-fuji-100/90 text-fuji-700 text-xs sm:text-sm font-semibold border border-fuji-200 mb-6 backdrop-blur-sm">
+          <i class="fa-solid fa-heart text-rose-500"></i>
+          <span>100% Gratis Tanpa Biaya • Untuk Pejuang Tokutei Ginou</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight mb-6">
+          Tidak Ada Kata Terlambat.<br/>
+          <span class="text-fuji-600">Raih Impian Tokutei Ginou ke Jepang!</span>
+        </h1>
+
+        <!-- Cerita Personal -->
+        <div class="bg-white/85 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-fuji-200/80 shadow-md text-left max-w-2xl mx-auto mb-8 relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-2 h-full bg-fuji-500"></div>
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-fuji-100 rounded-xl text-fuji-600 shrink-0 hidden sm:block">
+              <i class="fa-solid fa-user-ninja text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-800 text-lg mb-1 flex items-center gap-2">
+                <span>Catatan Pejuang TG</span>
+                <span class="text-xs font-normal text-fuji-700 bg-fuji-100 px-2 py-0.5 rounded-full">Kisah Nyata</span>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                "Saya paham rasanya belajar di usia yang tidak muda lagi. Ingatan tak lagi secepat dulu, menghafal kosakata terasa berat, dan Kanji sering kali lupa. Namun, impian untuk berangkat ke Jepang demi keluarga tidak boleh padam."
+              </p>
+              <p class="text-slate-700 text-sm font-medium">
+                Website ini saya buat <span class="text-fuji-600 font-bold">sederhana dan gratis</span> agar kita bisa latihan pelan-pelan, mengulang tanpa batas, sampai benar-benar paham.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button onclick="scrollToSoal()" class="w-full sm:w-auto bg-fuji-600 hover:bg-fuji-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-base">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Mulai Latihan Sekarang</span>
+          </button>
+          <button onclick="openDonationModal()" class="w-full sm:w-auto bg-amber-50 hover:bg-amber-100 text-amber-800 font-semibold px-6 py-3.5 rounded-xl border border-amber-200 shadow-sm transition-all flex items-center justify-center gap-2 text-base">
+            <i class="fa-solid fa-mug-hot text-amber-600"></i>
+            <span>Traktir Kopi Pembuat Soal</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="latihan-soal" class="py-14 bg-fuji-50"><div class="max-w-5xl mx-auto px-4 sm:px-6"><div class="text-center max-w-2xl mx-auto mb-10"><h2 class="text-2xl sm:text-3xl font-bold text-slate-800 mb-2">Pilih Paket Soal</h2><p class="text-slate-600 text-sm">14 paket • 629 soal • timer, audio, skor &amp; pembahasan instan.</p></div><div class="mb-8"><div class="flex items-center gap-2 mb-4"><span class="text-white text-sm font-black px-4 py-2 rounded-full bg-gradient-to-r shadow-md border border-white/40 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)] from-sky-500 to-blue-600 shadow">&#10024; LOLOSYUK</span><span class="text-xs text-slate-500 font-semibold">6 paket</span></div><div class="grid grid-cols-1 md:grid-cols-2 gap-5"><a href="/quiz.html?p=orimasu-quiz" data-paket="orimasu-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">O</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">ORIMASU</h3><p class="text-xs text-slate-500 font-medium">S1: 19 • S2: 14 • S3: 10 • S4: 14</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>57 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=tomemasu-quiz" data-paket="tomemasu-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">T</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">TOMEMASU</h3><p class="text-xs text-slate-500 font-medium">S1: 18 • S2: 11 • S3: 14 • S4: 12</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>55 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=hare-quiz" data-paket="hare-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">H</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">HARE</h3><p class="text-xs text-slate-500 font-medium">S1: 19 • S2: 16 • S3: 12 • S4: 13</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>60 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=magarimasu-quiz" data-paket="magarimasu-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">M</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">MAGARIMASU</h3><p class="text-xs text-slate-500 font-medium">S1: 18 • S2: 10 • S3: 12 • S4: 12</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>52 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=gakusei-quiz" data-paket="gakusei-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">G</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">GAKUSEI</h3><p class="text-xs text-slate-500 font-medium">S1: 17 • S2: 13 • S3: 12 • S4: 14</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>56 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=konpyuutaa-quiz" data-paket="konpyuutaa-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">K</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">KONPYUUTAA</h3><p class="text-xs text-slate-500 font-medium">S1: 17 • S2: 15 • S3: 17 • S4: 14</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>63 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a></div></div><div class="mb-8"><div class="flex items-center gap-2 mb-4"><span class="text-white text-sm font-black px-4 py-2 rounded-full bg-gradient-to-r shadow-md border border-white/40 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)] from-amber-500 to-orange-500 shadow">&#127890; TOKYO OMIYAGE</span><span class="text-xs text-slate-500 font-semibold">5 paket</span></div><div class="grid grid-cols-1 md:grid-cols-2 gap-5"><a href="/quiz.html?p=aoi-quiz" data-paket="aoi-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">A</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">AOI</h3><p class="text-xs text-slate-500 font-medium">S1: 15 • S2: 10 • S3: 4</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>29 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=basu-quiz" data-paket="basu-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">B</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">BASU</h3><p class="text-xs text-slate-500 font-medium">S1: 15 • S2: 5 • S3: 6</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>26 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=kagi-quiz" data-paket="kagi-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">K</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">KAGI</h3><p class="text-xs text-slate-500 font-medium">S1: 15 • S2: 6 • S3: 15</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>36 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=jinja-quiz" data-paket="jinja-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">J</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">JINJA</h3><p class="text-xs text-slate-500 font-medium">S1: 15 • S2: 5 • S3: 8</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>28 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=tamago-quiz" data-paket="tamago-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">T</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">TAMAGO</h3><p class="text-xs text-slate-500 font-medium">S1: 15 • S2: 5 • S3: 6</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>26 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a></div></div><div class="mb-8"><div class="flex items-center gap-2 mb-4"><span class="text-white text-sm font-black px-4 py-2 rounded-full bg-gradient-to-r shadow-md border border-white/40 [text-shadow:0_1px_3px_rgba(0,0,0,0.7)] from-pink-500 to-rose-500 shadow">&#128081; PRINCESS</span><span class="text-xs text-slate-500 font-semibold">3 paket</span></div><div class="grid grid-cols-1 md:grid-cols-2 gap-5"><a href="/quiz.html?p=kuroi-quiz" data-paket="kuroi-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">K</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">KUROI</h3><p class="text-xs text-slate-500 font-medium">S1: 13 • S2: 12 • S3: 12 • S4: 10</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>47 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=kutsushita-quiz" data-paket="kutsushita-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">K</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">KUTSUSHITA</h3><p class="text-xs text-slate-500 font-medium">S1: 12 • S2: 11 • S3: 13 • S4: 10</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>46 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a><a href="/quiz.html?p=shatsu-quiz" data-paket="shatsu-quiz" class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between"><div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div><div><div class="flex items-start justify-between gap-3 mb-3"><div class="flex items-center gap-3"><div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">S</div><div><h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">SHATSU</h3><p class="text-xs text-slate-500 font-medium">S1: 12 • S2: 12 • S3: 12 • S4: 12</p></div></div><span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0"><i class="fa-solid fa-list-check text-sky-500"></i><span>48 Soal</span></span></div><div class="score-host"></div><div class="card-foot"></div></div></a></div></div></div></section><!-- Section Apresiasi / Traktir Kopi -->
+    <section class="py-14 bg-white border-t border-slate-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6">
+        <div class="bg-gradient-to-br from-amber-50/60 to-fuji-50/60 p-8 rounded-3xl border border-amber-200/60 text-center relative overflow-hidden shadow-sm">
+          <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
+            <i class="fa-solid fa-mug-hot"></i>
+          </div>
+          <h2 class="text-2xl font-bold text-slate-800 mb-2">Merasakan Manfaat dari Website Ini?</h2>
+          <p class="text-slate-600 text-sm max-w-2xl mx-auto mb-6 leading-relaxed">
+            Website ini memanfaat fasilitas gratis agar bisa diakses siapapun tanpa biaya. Jika latihan di sini membantu persiapan Anda, dukungan sukarela sekadar <strong>"Traktir Kopi"</strong> sangat berharga untuk mengapresiasi waktu &amp; tenaga dalam menyusun serta merapikan soal-soal di website ini.
+          </p>
+          <button onclick="openDonationModal()" class="inline-flex items-center gap-2 bg-amber-600 hover:bg-amber-700 text-white font-bold px-6 py-3 rounded-xl shadow-md hover:shadow-lg transition-all text-sm">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Traktir Kopi Pembuat Soal</span>
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white border-t border-slate-200 py-8">
+    <div class="max-w-5xl mx-auto px-4 text-center">
+      <p class="text-slate-700 font-bold text-sm mb-1">SinauJepang (sinaujepang.web.app)</p>
+      <p class="text-slate-600 text-xs mb-3">Didedikasikan untuk seluruh pejuang Tokutei Ginou Indonesia. Semoga sukses melangkah ke Jepang!</p>
+      <button onclick="openDonationModal()" class="text-xs text-amber-700 font-medium hover:underline">
+        <i class="fa-solid fa-mug-hot mr-1"></i>Traktir Kopi Pembuat Soal
+      </button>
+      <div class="flex items-center justify-center gap-3 mt-4">
+        <a href="https://wa.me/6285649049086" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1eb856] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-whatsapp text-sm"></i><span>Sugeng Waluyo</span></a>
+        <a href="https://www.facebook.com/maswaluyo/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#1464cc] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-facebook text-sm"></i><span>Sugeng Waluyo</span></a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Modal Login Google -->
+  <div id="loginModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-xl relative border border-slate-100 text-center">
+      <button onclick="closeLoginModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+      <div class="w-12 h-12 rounded-full bg-fuji-100 text-fuji-600 flex items-center justify-center mx-auto mb-4 text-xl">
+        <i class="fa-solid fa-user-check"></i>
+      </div>
+      <h3 class="text-lg font-bold text-slate-800 mb-1">Login Cepat &amp; Gratis</h3>
+      <p class="text-slate-600 text-xs mb-6">Masuk dengan akun Google untuk menyimpan statistik dan riwayat nilai latihan Anda.</p>
+      
+      <button onclick="simulateLogin()" class="w-full flex items-center justify-center gap-3 bg-white hover:bg-slate-50 text-slate-700 font-semibold py-3 px-4 rounded-xl border border-slate-300 shadow-sm transition-all mb-3 text-sm">
+        <svg class="w-5 h-5" viewBox="0 0 24 24">
+          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+          <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
+          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
+        </svg>
+        <span>Lanjutkan dengan Google</span>
+      </button>
+      <p class="text-[11px] text-slate-400">100% Aman • Tidak ada biaya tersembunyi</p>
+    </div>
+  </div>
+
+  <script>
+    function renderUser() {
+      try {
+        var u = JSON.parse(localStorage.getItem("jft_user") || "null");
+        var b = document.getElementById("loginBtn"), info = document.getElementById("uInfo");
+        if (!u) { if (b) { b.innerHTML = '<span>Masuk Google</span>'; b.onclick = function(){ openLoginModal(); }; } if (info) { info.classList.add("hidden"); } return; }
+        if (b) { b.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i><span>Keluar</span>'; b.onclick = function(){ window.fujiLogout(); }; }
+        if (info) { info.textContent = "Hi, " + (u.name || u.email); info.classList.remove("hidden"); }
+      } catch (e) {}
+    }
+    renderUser();
+    function openLoginModal() { document.getElementById('loginModal').classList.remove('hidden'); }
+    function closeLoginModal() { document.getElementById('loginModal').classList.add('hidden'); }
+    async function simulateLogin() {
+      try {
+        var authMod = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js");
+        var r = await authMod.signInWithPopup(window.fujiAuth, new authMod.GoogleAuthProvider());
+        var u = r.user;
+        try { localStorage.setItem("jft_user", JSON.stringify({ name: u.displayName, email: u.email, photo: u.photoURL })); } catch (e) {}
+        closeLoginModal();
+        renderUser();
+      } catch (e) { alert("Gagal masuk: " + (e.message || e.code)); }
+    }
+    function scrollToSoal() { document.getElementById('latihan-soal').scrollIntoView({ behavior: 'smooth' }); }
+  </script>
+<script type="module" src="/assets/js/firebase-init.js"></script>
+<script>
+window.fujiLogout = function () { try { var a = window.fujiAuth; if (!a) return location.replace("/login.html"); a.signOut().then(function(){ try{localStorage.removeItem("jft_user");}catch(e){} location.replace("/login.html"); }); } catch (e) {} };
+window.addEventListener("fuji:auth", function () { try { renderUser(); } catch (e) {} });
+</script>
+<script src="/assets/js/score-cards.js"></script>
+</body>
+</html>

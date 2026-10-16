@@ -1,0 +1,1626 @@
+[
+ {
+  "no": 1,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/tamago_01.jpg",
+  "options": [
+   {
+    "text": "パン",
+    "img": ""
+   },
+   {
+    "text": "たまご",
+    "img": ""
+   },
+   {
+    "text": "パソコン",
+    "img": ""
+   },
+   {
+    "text": "おゆ",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Gambar menunjukkan telur mata sapi.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 1-2 - Kosakata benda: tamago (telur)] Gambar menunjukkan telur yang digoreng ceplok. Dalam bahasa Jepang, telur disebut tamago.",
+  "opt_detail": [
+   {
+    "kana": "パン",
+    "rom": "pan",
+    "arti": "roti",
+    "alasan": "Pan berarti roti. Gambar menunjukkan telur, bukan roti. Dipakai untuk roti tawar atau roti manis."
+   },
+   {
+    "kana": "たまご",
+    "rom": "tamago",
+    "arti": "telur",
+    "alasan": "Tamago berarti telur. Gambar telur mata sapi langsung menunjuk kata ini. Cocok secara makna dan objek."
+   },
+   {
+    "kana": "パソコン",
+    "rom": "pasokon",
+    "arti": "komputer",
+    "alasan": "Pasokon berarti komputer. Gambar tidak menunjukkan perangkat elektronik. Dipakai untuk laptop atau PC."
+   },
+   {
+    "kana": "おゆ",
+    "rom": "oyu",
+    "arti": "air panas",
+    "alasan": "Oyu berarti air panas. Gambar tidak menunjukkan air. Dipakai untuk air panas mandi atau minum."
+   }
+  ],
+  "opt_note": [
+   "(pan) roti",
+   "(tamago) telur",
+   "(pasokon) komputer",
+   "(oyu) air panas"
+  ],
+  "kunci_id": "たまご",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 2,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/tamago_02.jpg",
+  "options": [
+   {
+    "text": "まるい",
+    "img": ""
+   },
+   {
+    "text": "さんかく",
+    "img": ""
+   },
+   {
+    "text": "しかく",
+    "img": ""
+   },
+   {
+    "text": "だいがく",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Gambar menunjukkan ban kendaraan.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 8 - Kata sifat-i bentuk: marui (bulat)] Ban kendaraan memiliki bentuk melingkar. Dalam bahasa Jepang, kata sifat untuk bentuk bulat adalah marui.",
+  "opt_detail": [
+   {
+    "kana": "まるい",
+    "rom": "marui",
+    "arti": "bulat",
+    "alasan": "Marui berarti bulat. Ban berbentuk lingkaran sesuai makna bulat."
+   },
+   {
+    "kana": "さんかく",
+    "rom": "sankaku",
+    "arti": "segitiga",
+    "alasan": "Sankaku berarti segitiga. Ban tidak bersudut tiga. Dipakai untuk bentuk segitiga seperti penggaris."
+   },
+   {
+    "kana": "しかく",
+    "rom": "shikaku",
+    "arti": "segiempat",
+    "alasan": "Shikaku berarti segiempat. Ban tidak bersudut empat. Dipakai untuk kertas atau kotak."
+   },
+   {
+    "kana": "だいがく",
+    "rom": "daigaku",
+    "arti": "universitas",
+    "alasan": "Daigaku berarti universitas. Bukan kata sifat bentuk. Dipakai untuk kampus tempat kuliah."
+   }
+  ],
+  "opt_note": [
+   "(marui) bulat",
+   "(sankaku) segitiga",
+   "(shikaku) segiempat",
+   "(daigaku) universitas"
+  ],
+  "kunci_id": "まるい",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 3,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/tamago_03.jpg",
+  "options": [
+   {
+    "text": "ちち",
+    "img": ""
+   },
+   {
+    "text": "おっと",
+    "img": ""
+   },
+   {
+    "text": "おじ",
+    "img": ""
+   },
+   {
+    "text": "はは",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "Gambar menunjukkan seorang ibu menggendong bayi.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 20 - Keluarga sendiri: haha (ibu)] Gambar menunjukkan perempuan dewasa yang menggendong bayi. Dalam bahasa Jepang, sosok ibu disebut haha.",
+  "opt_detail": [
+   {
+    "kana": "ちち",
+    "rom": "chichi",
+    "arti": "ayah",
+    "alasan": "Chichi berarti ayah (cara menyebut ayah sendiri). Gambar menunjukkan perempuan menggendong bayi, bukan ayah."
+   },
+   {
+    "kana": "おっと",
+    "rom": "otto",
+    "arti": "suami",
+    "alasan": "Otto berarti suami. Gambar tidak menunjukkan hubungan suami-istri melainkan ibu-anak."
+   },
+   {
+    "kana": "おじ",
+    "rom": "oji",
+    "arti": "paman",
+    "alasan": "Oji berarti paman. Gambar menunjukkan perempuan, sedangkan oji untuk laki-laki saudara orang tua."
+   },
+   {
+    "kana": "はは",
+    "rom": "haha",
+    "arti": "ibu",
+    "alasan": "Haha berarti ibu (cara menyebut ibu sendiri). Perempuan menggendong bayi adalah sosok ibu. Cocok dengan gambar."
+   }
+  ],
+  "opt_note": [
+   "(chichi) ayah",
+   "(otto) suami",
+   "(oji) paman",
+   "(haha) ibu"
+  ],
+  "kunci_id": "はは",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 4,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/tamago_04.jpg",
+  "options": [
+   {
+    "text": "すいえい",
+    "img": ""
+   },
+   {
+    "text": "ヨガ",
+    "img": ""
+   },
+   {
+    "text": "ジョギング",
+    "img": ""
+   },
+   {
+    "text": "さんぽ",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Gambar menunjukkan orang sedang yoga.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 18 - Kata kerja aktivitas: yoga] Gambar menunjukkan pose duduk bersila khas meditasi. Dalam bahasa Jepang, kegiatan ini disebut yoga.",
+  "opt_detail": [
+   {
+    "kana": "すいえい",
+    "rom": "suiei",
+    "arti": "renang",
+    "alasan": "Suiei berarti renang. Gambar menunjukkan pose duduk meditasi, bukan berenang. Dipakai untuk olahraga air."
+   },
+   {
+    "kana": "ヨガ",
+    "rom": "yoga",
+    "arti": "yoga",
+    "alasan": "Yoga berarti yoga. Pose meditasi duduk bersila adalah ciri khas yoga."
+   },
+   {
+    "kana": "ジョギング",
+    "rom": "jogingu",
+    "arti": "joging",
+    "alasan": "Jogingu berarti joging atau lari santai. Gambar tidak menunjukkan gerakan lari. Dipakai untuk lari pagi."
+   },
+   {
+    "kana": "さんぽ",
+    "rom": "sanpo",
+    "arti": "jalan-jalan",
+    "alasan": "Sanpo berarti jalan-jalan santai. Gambar menunjukkan duduk diam, bukan berjalan."
+   }
+  ],
+  "opt_note": [
+   "(suiei) renang",
+   "(yoga) yoga",
+   "(jogingu) joging",
+   "(sanpo) jalan-jalan"
+  ],
+  "kunci_id": "ヨガ",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 5,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/tamago_05.jpg",
+  "options": [
+   {
+    "text": "パソコン",
+    "img": ""
+   },
+   {
+    "text": "スマホ",
+    "img": ""
+   },
+   {
+    "text": "イヤホン",
+    "img": ""
+   },
+   {
+    "text": "コンピューター",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Gambar menunjukkan earphone.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 18 - Kosakata alat: iyahon (earphone)] Gambar menunjukkan perangkat audio kecil di telinga. Dalam bahasa Jepang, benda ini disebut iyahon.",
+  "opt_detail": [
+   {
+    "kana": "パソコン",
+    "rom": "pasokon",
+    "arti": "komputer",
+    "alasan": "Pasokon berarti komputer. Gambar menunjukkan perangkat kecil di telinga, bukan komputer besar."
+   },
+   {
+    "kana": "スマホ",
+    "rom": "sumaho",
+    "arti": "HP",
+    "alasan": "Sumaho berarti HP atau smartphone. Gambar menunjukkan earphone, bukan layar ponsel."
+   },
+   {
+    "kana": "イヤホン",
+    "rom": "iyahon",
+    "arti": "earphone",
+    "alasan": "Iyahon berarti earphone. Benda kecil dipasang di telinga untuk mendengar suara, sesuai gambar."
+   },
+   {
+    "kana": "コンピューター",
+    "rom": "konpyuutaa",
+    "arti": "komputer",
+    "alasan": "Konpyuutaa juga berarti komputer (kata serapan lain). Sama seperti pasokon, tidak sesuai gambar earphone."
+   }
+  ],
+  "opt_note": [
+   "(pasokon) komputer",
+   "(sumaho) HP",
+   "(iyahon) earphone",
+   "(konpyuutaa) komputer"
+  ],
+  "kunci_id": "イヤホン",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 6,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "私はかれしとハイキングをして____。",
+  "img": "",
+  "options": [
+   {
+    "text": "みたいです",
+    "img": ""
+   },
+   {
+    "text": "ほうがいいです",
+    "img": ""
+   },
+   {
+    "text": "ことができます",
+    "img": ""
+   },
+   {
+    "text": "ばいいです",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Saya ____ melakukan hiking bersama pacar.",
+  "trans_rom": "Watashi wa kareshi to haikingu wo shite ____.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 13 - Bentuk-Te + mitai desu (ingin mencoba)] Pola Bentuk-Te (〜て) + みたいです (mitai desu) berfungsi untuk menyatakan keinginan mencoba melakukan suatu kegiatan. Kata dasar ハイキングをする (haikingu wo suru) berubah menjadi bentuk-Te ハイキングをして (haikingu wo shite), lalu disambung dengan みたいです.",
+  "opt_detail": [
+   {
+    "kana": "みたいです",
+    "rom": "mitai desu",
+    "arti": "ingin mencoba",
+    "alasan": "Pola Bentuk-Te + mitai desu mensyaratkan kata kerja bentuk-Te. Soal sudah menyediakan bentuk 〜をして (shite), sehingga kombinasi ini tepat untuk menyatakan keinginan mencoba."
+   },
+   {
+    "kana": "ほうがいいです",
+    "rom": "hou ga ii desu",
+    "arti": "sebaiknya",
+    "alasan": "Pola ini digunakan untuk memberikan saran/rekomendasi. Mensyaratkan kata kerja bentuk-Ta (〜たほうがいいです) atau bentuk-Nai (〜ないほうがいいです), bukan bentuk-Te."
+   },
+   {
+    "kana": "ことができます",
+    "rom": "koto ga dekimasu",
+    "arti": "bisa / dapat",
+    "alasan": "Pola ini digunakan untuk menyatakan kemampuan. Mensyaratkan kata kerja bentuk kamus + こと (〜することができる), bukan bentuk-Te."
+   },
+   {
+    "kana": "ばいいです",
+    "rom": "ba ii desu",
+    "arti": "sebaiknya jika",
+    "alasan": "Pola ini digunakan untuk saran berbentuk pengandaian. Mensyaratkan kata kerja bentuk-Ba (〜すればいいです), bukan bentuk-Te."
+   }
+  ],
+  "opt_note": [
+   "(mitai desu) ingin melihat",
+   "(hou ga ii desu) sebaiknya",
+   "(koto ga dekimasu) bisa/dapat",
+   "(ba ii desu) sebaiknya -ba ii"
+  ],
+  "kunci_id": "みたいです",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 7,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "とても暗い____、私は本をよめない。",
+  "img": "",
+  "options": [
+   {
+    "text": "のに",
+    "img": ""
+   },
+   {
+    "text": "ので",
+    "img": ""
+   },
+   {
+    "text": "ように",
+    "img": ""
+   },
+   {
+    "text": "ために",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Sangat gelap _____, saya tidak bisa membaca buku.",
+  "trans_rom": "Totemo kurai _____, watashi wa hon wo yomenai.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 9/39 - Alasan objektif: node (karena)] Pola node berfungsi menyatakan alasan atau penyebab yang objektif dan sopan (karena). Klausa pertama (sangat gelap) menjadi penyebab klausa kedua (tidak bisa membaca). Berbeda dengan noni yang berarti padahal dan menyatakan pertentangan.",
+  "opt_detail": [
+   {
+    "kana": "のに",
+    "rom": "noni",
+    "arti": "padahal (konsesi)",
+    "alasan": "Noni berarti padahal dan menyatakan pertentangan dua fakta. Syaratnya dua klausa yang berlawanan (gelap tetapi bisa baca). Konteks soal adalah sebab-akibat (gelap sehingga tidak bisa), jadi tidak cocok."
+   },
+   {
+    "kana": "ので",
+    "rom": "node",
+    "arti": "karena (alasan)",
+    "alasan": "Node berfungsi menyatakan alasan atau penyebab yang objektif dan sopan (karena). Klausa sangat gelap menjadi penyebab tidak bisa membaca. Cocok dengan hubungan sebab-akibat di soal."
+   },
+   {
+    "kana": "ように",
+    "rom": "you ni",
+    "arti": "agar/sehingga",
+    "alasan": "You ni menyatakan tujuan (agar) dan syaratnya diikuti kata kerja kehendak atau potensi. Konteks soal adalah alasan (karena gelap), bukan tujuan, jadi tidak cocok. Dipakai seperti goukaku suru you ni (agar lulus)."
+   },
+   {
+    "kana": "ために",
+    "rom": "tame ni",
+    "arti": "untuk (tujuan)",
+    "alasan": "Tame ni menyatakan tujuan atau manfaat (untuk) dan syaratnya kata benda atau bentuk kamus. Konteks soal adalah alasan yang sudah terjadi, bukan tujuan, jadi tidak cocok."
+   }
+  ],
+  "opt_note": [
+   "(noni) padahal (konsesi)",
+   "(node) karena (alasan)",
+   "(you ni) agar/sehingga",
+   "(tame ni) untuk (tujuan)"
+  ],
+  "kunci_id": "ので",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 8,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "私は試験に合格する____、がんばります。",
+  "img": "",
+  "options": [
+   {
+    "text": "のに",
+    "img": ""
+   },
+   {
+    "text": "ので",
+    "img": ""
+   },
+   {
+    "text": "ように",
+    "img": ""
+   },
+   {
+    "text": "ために",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "_____ lulus ujian, saya akan berusaha keras.",
+  "trans_rom": "Watashi wa shiken ni goukaku suru _____, ganbarimasu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 36 - Tujuan harapan: kamus + you ni (agar)] Pola you ni + kata kerja kehendak (ganbarimasu) berfungsi menyatakan tujuan (agar). Bentuk kamus goukaku suru disambung you ni untuk menunjukkan target yang diharapkan.",
+  "opt_detail": [
+   {
+    "kana": "のに",
+    "rom": "noni",
+    "arti": "padahal (konsesi)",
+    "alasan": "Noni berarti padahal dan syaratnya dua hal yang bertentangan. Konteks soal adalah tujuan (agar lulus), bukan pertentangan, jadi tidak cocok."
+   },
+   {
+    "kana": "ので",
+    "rom": "node",
+    "arti": "karena (alasan)",
+    "alasan": "Node berarti karena dan syaratnya penyebab yang sudah terjadi. Konteks soal adalah target masa depan (lulus ujian), bukan alasan, jadi tidak cocok."
+   },
+   {
+    "kana": "ように",
+    "rom": "you ni",
+    "arti": "agar (tujuan)",
+    "alasan": "You ni + kata kerja kehendak (ganbarimasu) berfungsi menyatakan tujuan (agar). Bentuk kamus goukaku suru disambung you ni tepat untuk menunjukkan target yang diharapkan."
+   },
+   {
+    "kana": "ために",
+    "rom": "tame ni",
+    "arti": "untuk (tujuan)",
+    "alasan": "Tame ni menyatakan tujuan pasti/manfaat dan nuansanya lebih formal. Untuk target harapan seperti lulus ujian, pola you ni lebih tepat."
+   }
+  ],
+  "opt_note": [
+   "(noni) padahal (konsesi)",
+   "(node) karena (alasan)",
+   "(you ni) agar lulus (tujuan)",
+   "(tame ni) untuk (tujuan)"
+  ],
+  "kunci_id": "ように",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 9,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "ミラー: _____は山田さんの車ですか。\n田中: うん、そうです。",
+  "img": "",
+  "options": [
+   {
+    "text": "この",
+    "img": ""
+   },
+   {
+    "text": "ここ",
+    "img": ""
+   },
+   {
+    "text": "その",
+    "img": ""
+   },
+   {
+    "text": "これ",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "Miller: Apakah _____ mobil milik Tuan Yamada?\nTanaka: Ya, benar.",
+  "trans_rom": "Miraa: _____ wa Yamada-san no kuruma desu ka.\nTanaka: Un, sou desu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 2 - Kata tunjuk kore + wa (ini)] Kata tunjuk kore berfungsi menunjuk benda dekat pembicara yang berdiri sendiri sebagai subjek (ini). Karena rumpang berada sebelum partikel wa tanpa diikuti kata benda langsung, bentuk ini memerlukan kore, bukan kono yang wajib ditempeli kata benda.",
+  "opt_detail": [
+   {
+    "kana": "この",
+    "rom": "kono",
+    "arti": "ini (+benda)",
+    "alasan": "Kono wajib langsung diikuti kata benda (contoh: kono kuruma). Di soal, rumpang langsung diikuti partikel wa, sehingga kono tidak tepat secara tata bahasa."
+   },
+   {
+    "kana": "ここ",
+    "rom": "koko",
+    "arti": "sini (tempat)",
+    "alasan": "Koko digunakan untuk menunjuk lokasi atau tempat (sini). Soal menanyakan objek barang (mobil), bukan lokasi, jadi tidak cocok."
+   },
+   {
+    "kana": "その",
+    "rom": "sono",
+    "arti": "itu (+benda)",
+    "alasan": "Sama seperti kono, sono wajib diikuti kata benda secara langsung (contoh: sono kuruma). Tidak bisa berdiri sendiri sebelum partikel wa."
+   },
+   {
+    "kana": "これ",
+    "rom": "kore",
+    "arti": "ini (benda)",
+    "alasan": "Kore adalah kata tunjuk benda yang berdiri sendiri sebagai subjek sebelum partikel wa (kore wa). Tepat untuk menanyakan barang ini milik siapa."
+   }
+  ],
+  "opt_note": [
+   "(kono) ini (+benda)",
+   "(koko) sini (tempat)",
+   "(sono) itu (+benda)",
+   "(kore) ini (benda)"
+  ],
+  "kunci_id": "これ",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 10,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "今週、仕事が多いですから、来週の日曜日に____たいです。",
+  "img": "",
+  "options": [
+   {
+    "text": "休んでいる",
+    "img": ""
+   },
+   {
+    "text": "休んで",
+    "img": ""
+   },
+   {
+    "text": "休む",
+    "img": ""
+   },
+   {
+    "text": "休み",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "Karena minggu ini banyak pekerjaan, saya ingin _____ pada hari Minggu minggu depan.",
+  "trans_rom": "Konshuu, shigoto ga ooi desu kara, raishuu no nichiyoubi ni _____tai desu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 13 - Keinginan: masu-stem + tai desu] Pola masu-stem + tai desu berfungsi menyatakan keinginan pembicara (ingin). Kata dasar yasumu diambil stem-nya yasumi lalu disambung tai menjadi yasumitai (ingin libur). Bukan bentuk yasunde iru (sedang libur) atau yasumu (kamus).",
+  "opt_detail": [
+   {
+    "kana": "休んでいる",
+    "rom": "yasunde iru",
+    "arti": "sedang libur",
+    "alasan": "Yasunde iru adalah bentuk-Te + iru yang berarti sedang berlangsung (sedang libur). Syaratnya kegiatan yang lagi terjadi. Konteks soal memakai tai (keinginan minggu depan), bukan kegiatan berlangsung, jadi tidak cocok."
+   },
+   {
+    "kana": "休んで",
+    "rom": "yasunde",
+    "arti": "libur (bentuk-te)",
+    "alasan": "Yasunde adalah bentuk-Te saja yang berfungsi menyambung kalimat atau perintah. Syaratnya ada klausa lanjutan atau pola Te. Di soal rumpangnya diikuti tai desu, sehingga bentuk-Te polos tidak bisa langsung disambung tai."
+   },
+   {
+    "kana": "休む",
+    "rom": "yasumu",
+    "arti": "libur (kamus)",
+    "alasan": "Yasumu adalah bentuk kamus yang berfungsi sebagai predikat dasar atau diikuti pola kamus. Pola keinginan tai syaratnya masu-stem (yasumi + tai), bukan bentuk kamus, jadi tidak cocok."
+   },
+   {
+    "kana": "休み",
+    "rom": "yasumi",
+    "arti": "libur (masu-stem + たい)",
+    "alasan": "Yasumi adalah masu-stem dari yasumu. Pola stem + tai desu berfungsi menyatakan keinginan (ingin libur). Bentuk yasumi + tai menjadi yasumitai yang tepat untuk keinginan libur minggu depan."
+   }
+  ],
+  "opt_note": [
+   "(yasunde iru) sedang libur",
+   "(yasunde) libur (bentuk-te)",
+   "(yasumu) libur (kamus)",
+   "(yasumi) libur (masu-stem + たい)"
+  ],
+  "kunci_id": "休み",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 11,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "トム: あきさん、「水」をとっていただけませんか。\nあき: はい。",
+  "img": "",
+  "options": [
+   {
+    "text": "ひ",
+    "img": ""
+   },
+   {
+    "text": "あき",
+    "img": ""
+   },
+   {
+    "text": "すい",
+    "img": ""
+   },
+   {
+    "text": "みず",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "Tom: Aki, tolong ambilkan [air].\nAki: Baik.",
+  "trans_rom": "Tomu: Aki-san, 【____】 wo totte itadakemasen ka.\nAki: Hai.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 7/26 - Kanji mizu + permohonan te-itadakemasen ka] Kanji 水 berarti air. Untuk kata benda air yang berdiri sendiri dalam percakapan sehari-hari, cara baca yang digunakan adalah Kun-yomi yaitu みず (mizu). Bacaan On-yomi すい (sui) hanya digunakan untuk kata majemuk seperti 水曜日 (suiyoubi).",
+  "opt_detail": [
+   {
+    "kana": "ひ",
+    "rom": "hi",
+    "arti": "api / matahari",
+    "alasan": "Hi berarti api atau matahari. Tidak sesuai dengan kanji 水 (air) yang dimaksud pada soal."
+   },
+   {
+    "kana": "あき",
+    "rom": "aki",
+    "arti": "musim gugur / nama orang",
+    "alasan": "Aki adalah nama lawan bicara di dalam dialog, bukan cara baca untuk kanji 水 (air)."
+   },
+   {
+    "kana": "すい",
+    "rom": "sui",
+    "arti": "air (bacaan On-yomi)",
+    "alasan": "Sui adalah bacaan On-yomi untuk kanji 水 yang hanya dipakai pada kata gabungan atau majemuk (misal: suiyoubi = hari Rabu). Untuk kata benda tunggal air, bacaan ini tidak tepat."
+   },
+   {
+    "kana": "みず",
+    "rom": "mizu",
+    "arti": "air (bacaan Kun-yomi)",
+    "alasan": "Mizu adalah bacaan Kun-yomi yang tepat untuk kanji 水 saat berdiri sendiri sebagai kata benda air."
+   }
+  ],
+  "opt_note": [
+   "(hi) api/matahari",
+   "(aki) musim gugur",
+   "(sui) air (on-yomi)",
+   "(mizu) air (kun-yomi)"
+  ],
+  "kunci_id": "みず",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 12,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "てんきよほうによると、明日は「雪」がふるそうです。",
+  "img": "",
+  "options": [
+   {
+    "text": "ゆき",
+    "img": ""
+   },
+   {
+    "text": "あめ",
+    "img": ""
+   },
+   {
+    "text": "かみなり",
+    "img": ""
+   },
+   {
+    "text": "かぜ",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Menurut ramalan cuaca, katanya besok akan turun [salju].",
+  "trans_rom": "Tenki yohou ni yoru to, ashita wa 【____】 ga furu sou desu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 47 - Kabar dari sumber: ni yoru to + sou desu (yuki)] Kanji yuki berarti salju. Pola sou desu setelah stem kata kerja berfungsi menyampaikan info dari dengar (katanya). Kata furu (turun, untuk salju/hujan) berpasangan dengan salju.",
+  "opt_detail": [
+   {
+    "kana": "ゆき",
+    "rom": "yuki",
+    "arti": "salju",
+    "alasan": "Yuki berarti salju. Ramalan cuaca memprediksi salju turun (yuki ga furu). Kata furu berpasangan dengan salju atau hujan, sehingga konteks turun dari langit cocok dengan salju."
+   },
+   {
+    "kana": "あめ",
+    "rom": "ame",
+    "arti": "hujan",
+    "alasan": "Ame berarti hujan. Memang memakai kata furu juga, tetapi ramalan pada soal ini tentang salju (kanji-nya salju). Dipakai saat presipitasi berupa air, bukan salju."
+   },
+   {
+    "kana": "かみなり",
+    "rom": "kaminari",
+    "arti": "petir/guntur",
+    "alasan": "Kaminari berarti petir atau guntur. Kata yang berpasangan adalah naru (berbunyi) atau ochiru (menyambar), bukan furu (turun). Konteks turun dari langit tidak cocok untuk petir."
+   },
+   {
+    "kana": "かぜ",
+    "rom": "kaze",
+    "arti": "angin",
+    "alasan": "Kaze berarti angin. Kata yang berpasangan adalah fuku (bertiup), bukan furu (turun). Angin bertiup, bukan turun, jadi tidak cocok dengan furu sou desu."
+   }
+  ],
+  "opt_note": [
+   "(yuki) salju",
+   "(ame) hujan",
+   "(kaminari) petir/guntur",
+   "(kaze) angin"
+  ],
+  "kunci_id": "ゆき",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 13,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "今日は「暑い」ので、友達といっしょにプールで泳ぐよていです。",
+  "img": "",
+  "options": [
+   {
+    "text": "あつい",
+    "img": ""
+   },
+   {
+    "text": "あかい",
+    "img": ""
+   },
+   {
+    "text": "さむい",
+    "img": ""
+   },
+   {
+    "text": "おもい",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Karena hari ini [panas], saya berencana berenang di kolam renang bersama teman.",
+  "trans_rom": "Kyou wa 【____】 node, tomodachi to issho ni puuru de oyogu yotei desu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 8 - Kata sifat cuaca: atsui (panas)] Kanji atsui berarti panas untuk cuaca atau udara. Pola node berfungsi menyatakan alasan, dan yotei desu menyatakan rencana. Kata atsui menjelaskan cuaca panas sebagai alasan rencana berenang.",
+  "opt_detail": [
+   {
+    "kana": "あつい",
+    "rom": "atsui",
+    "arti": "panas",
+    "alasan": "Atsui berarti panas untuk cuaca atau udara. Hari ini panas menjadi alasan berencana berenang. Cocok dengan konteks musim panas dan kolam renang."
+   },
+   {
+    "kana": "あかい",
+    "rom": "akai",
+    "arti": "merah",
+    "alasan": "Akai berarti merah (warna). Tidak ada hubungannya dengan suhu cuaca. Dipakai untuk warna benda, bukan suhu udara."
+   },
+   {
+    "kana": "さむい",
+    "rom": "samui",
+    "arti": "dingin (udara)",
+    "alasan": "Samui berarti dingin untuk udara. Lawan dari konteks soal (hari panas sehingga berenang). Dipakai untuk musim dingin atau AC dingin, bukan hari panas."
+   },
+   {
+    "kana": "おもい",
+    "rom": "omoi",
+    "arti": "berat",
+    "alasan": "Omoi berarti berat (beban). Tidak berkaitan dengan suhu. Dipakai untuk berat barang, bukan suhu udara."
+   }
+  ],
+  "opt_note": [
+   "(atsui) panas",
+   "(akai) merah",
+   "(samui) dingin (udara)",
+   "(omoi) berat"
+  ],
+  "kunci_id": "あつい",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 14,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "家に駅は「近い」ので、とても便利です。",
+  "img": "",
+  "options": [
+   {
+    "text": "たかい",
+    "img": ""
+   },
+   {
+    "text": "くらい",
+    "img": ""
+   },
+   {
+    "text": "ちかい",
+    "img": ""
+   },
+   {
+    "text": "とおい",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Karena stasiun [dekat] dari rumah, sangat praktis.",
+  "trans_rom": "Ie ni eki wa 【____】 node, totemo benri desu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 12 - Kata sifat jarak: chikai (dekat)] Kanji chikai berarti dekat. Pola node berfungsi menyatakan alasan objektif: kedekatan stasiun menjadi alasan kepraktisan. Lawan katanya adalah tooi (jauh).",
+  "opt_detail": [
+   {
+    "kana": "たかい",
+    "rom": "takai",
+    "arti": "mahal/tinggi",
+    "alasan": "Takai berarti mahal atau tinggi. Tidak berkaitan dengan jarak stasiun. Dipakai untuk harga atau ketinggian gedung."
+   },
+   {
+    "kana": "くらい",
+    "rom": "kurai",
+    "arti": "gelap",
+    "alasan": "Kurai berarti gelap. Tidak berkaitan dengan jarak. Dipakai untuk ruangan gelap, bukan jarak."
+   },
+   {
+    "kana": "ちかい",
+    "rom": "chikai",
+    "arti": "dekat",
+    "alasan": "Chikai berarti dekat. Stasiun yang dekat dari rumah menjadi alasan kepraktisan (benri). Hubungan dekat-mudah cocok dengan pola node (karena)."
+   },
+   {
+    "kana": "とおい",
+    "rom": "tooi",
+    "arti": "jauh",
+    "alasan": "Tooi berarti jauh. Lawan dari makna yang dibutuhkan (dekat sehingga praktis). Jika jauh, kalimatnya tidak logis."
+   }
+  ],
+  "opt_note": [
+   "(takai) mahal/tinggi",
+   "(kurai) gelap",
+   "(chikai) dekat",
+   "(tooi) jauh"
+  ],
+  "kunci_id": "ちかい",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 15,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "私は車の「運転」ができます。",
+  "img": "",
+  "options": [
+   {
+    "text": "かいてん",
+    "img": ""
+   },
+   {
+    "text": "うんてん",
+    "img": ""
+   },
+   {
+    "text": "うんどう",
+    "img": ""
+   },
+   {
+    "text": "れんしゅう",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Saya bisa [menyetir] mobil.",
+  "trans_rom": "Watashi wa kuruma no 【____】 ga dekimasu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 18 - Kemahiran: benda + ga dekimasu (unten)] Kanji unten berarti mengemudi atau menyetir. Pola ga dekimasu berfungsi menyatakan kemampuan (bisa). Kata benda unten + ga dekimasu berarti bisa menyetir.",
+  "opt_detail": [
+   {
+    "kana": "かいてん",
+    "rom": "kaiten",
+    "arti": "putaran/rotasi",
+    "alasan": "Kaiten berarti putaran atau rotasi. Tidak berkaitan dengan menyetir mobil. Dipakai untuk benda berputar."
+   },
+   {
+    "kana": "うんてん",
+    "rom": "unten",
+    "arti": "mengemudi",
+    "alasan": "Unten berarti mengemudi atau menyetir. Pola unten ga dekimasu berarti bisa menyetir. Konteks mobil + kemampuan cocok dengan menyetir."
+   },
+   {
+    "kana": "うんどう",
+    "rom": "undou",
+    "arti": "olahraga/gerakan",
+    "alasan": "Undou berarti olahraga atau gerakan tubuh. Bunyinya mirip unten tetapi maknanya beda jauh. Dipakai untuk aktivitas fisik, bukan menyetir."
+   },
+   {
+    "kana": "れんしゅう",
+    "rom": "renshuu",
+    "arti": "latihan",
+    "alasan": "Renshuu berarti latihan. Tidak ada pola renshuu ga dekimasu untuk menyetir di konteks ini. Dipakai untuk berlatih keterampilan."
+   }
+  ],
+  "opt_note": [
+   "(kaiten) putaran/rotasi",
+   "(unten) mengemudi",
+   "(undou) olahraga/gerakan",
+   "(renshuu) latihan"
+  ],
+  "kunci_id": "うんてん",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 16,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "明日のイベントは友達に____。",
+  "img": "",
+  "options": [
+   {
+    "text": "しらべます",
+    "img": ""
+   },
+   {
+    "text": "ならべます",
+    "img": ""
+   },
+   {
+    "text": "しらせます",
+    "img": ""
+   },
+   {
+    "text": "およぎます",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Acara besok akan saya _____ kepada teman.",
+  "trans_rom": "Ashita no ibento wa tomodachi ni _____.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 14/30 - Memberitahu: shirasemasu] Kata kerja shiraseru (memberitahu) bentuk-masu shirasemasu berfungsi menyatakan tindakan memberi tahu orang lain. Pola ni + shiraseru berarti memberitahukan sesuatu kepada seseorang. Berbeda dengan shirabemasu (memeriksa) dan narabemasu (menyusun).",
+  "opt_detail": [
+   {
+    "kana": "しらべます",
+    "rom": "shirabemasu",
+    "arti": "menyelidiki/memeriksa",
+    "alasan": "Shirabemasu berarti memeriksa atau menyelidiki. Syaratnya objek informasi yang diteliti. Konteks soal memberi tahu teman, bukan meneliti, jadi tidak cocok."
+   },
+   {
+    "kana": "ならべます",
+    "rom": "narabemasu",
+    "arti": "menyusun/menjejerkan",
+    "alasan": "Narabemasu berarti menyusun atau menjejerkan barang. Syaratnya benda yang disusun. Konteks memberi tahu acara tidak ada hubungannya dengan menyusun."
+   },
+   {
+    "kana": "しらせます",
+    "rom": "shirasemasu",
+    "arti": "memberitahu",
+    "alasan": "Shirasemasu berarti memberitahu. Pola ni + shiraseru berarti memberitahukan sesuatu kepada seseorang. Acara besok diberitahukan kepada teman, cocok dengan konteks."
+   },
+   {
+    "kana": "およぎます",
+    "rom": "oyogimasu",
+    "arti": "berenang",
+    "alasan": "Oyogimasu berarti berenang. Syaratnya konteks air atau kolam. Tidak ada hubungannya dengan acara dan teman."
+   }
+  ],
+  "opt_note": [
+   "(shirabemasu) menyelidiki/memeriksa",
+   "(narabemasu) menyusun/menjejerkan",
+   "(shirasemasu) memberitahu",
+   "(oyogimasu) berenang"
+  ],
+  "kunci_id": "しらせます",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 17,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "チャイ: もしもし、キムさん。\nキム: チャイさん、_____。お元気ですか。\nチャイ: はい。1年ぶりですね。",
+  "img": "",
+  "options": [
+   {
+    "text": "ひさしぶりです",
+    "img": ""
+   },
+   {
+    "text": "おつかれさまです",
+    "img": ""
+   },
+   {
+    "text": "しつれいします",
+    "img": ""
+   },
+   {
+    "text": "かえりましょうか",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Chai: Halo, Kim.\nKim: Chai, _____. Apa kabar?\nChai: Baik. Sudah setahun ya.",
+  "trans_rom": "Chai: Moshimoshi, Kimu-san.\nKimu: Chai-san, _____. Ogenki desu ka.\nChai: Hai. Ichinen-buri desu ne.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 8/Ungkapan - Sapaan lama tak jumpa: hisashiburi desu] Ungkapan hisashiburi desu berfungsi sebagai sapaan saat bertemu kembali setelah lama (lama tidak berjumpa). Konteks 1 tahun menandakan pertemuan kembali, sehingga sapaan inilah yang tepat, bukan otsukaresama (apresiasi kerja) atau shitsurei shimasu (permisi).",
+  "opt_detail": [
+   {
+    "kana": "ひさしぶりです",
+    "rom": "hisashiburi desu",
+    "arti": "lama tak jumpa",
+    "alasan": "Hisashiburi desu adalah sapaan saat bertemu kembali setelah lama. Konteks 1 tahun tidak bertemu tepat dijawab dengan sapaan ini."
+   },
+   {
+    "kana": "おつかれさまです",
+    "rom": "otsukaresama desu",
+    "arti": "terima kasih atas kerja kerasnya",
+    "alasan": "Otsukaresama desu adalah apresiasi atas kerja keras. Syaratnya lawan bicara baru selesai bekerja. Konteks telepon setelah setahun bukan soal pekerjaan."
+   },
+   {
+    "kana": "しつれいします",
+    "rom": "shitsurei shimasu",
+    "arti": "permisi",
+    "alasan": "Shitsurei shimasu berarti permisi (saat masuk atau menelepon pertama kali). Posisinya di awal panggilan atau saat pamit, bukan sebagai respons kabar setelah setahun."
+   },
+   {
+    "kana": "かえりましょうか",
+    "rom": "kaerimashou ka",
+    "arti": "pulang-yuk?",
+    "alasan": "Kaerimashou ka adalah ajakan pulang (ayo pulang). Syaratnya konteks bersama dan akan pulang. Percakapan telepon kabar ini tidak ada hubungannya dengan pulang."
+   }
+  ],
+  "opt_note": [
+   "(hisashiburi desu) lama tak jumpa",
+   "(otsukaresama desu) terima kasih atas kerja kerasnya",
+   "(shitsurei shimasu) permisi",
+   "(kaerimashou ka) pulang-yuk?"
+  ],
+  "kunci_id": "ひさしぶりです",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 18,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "さとう: 先週、私はインターネットででんしレンジを買いましたよ。\nホセ: そうですか。とどくまで、どのぐらい_____。\nさとう: 1週間です。",
+  "img": "",
+  "options": [
+   {
+    "text": "かえりましたか",
+    "img": ""
+   },
+   {
+    "text": "かかりましたか",
+    "img": ""
+   },
+   {
+    "text": "のりましたか",
+    "img": ""
+   },
+   {
+    "text": "行きましたか",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Sato: Minggu lalu saya membeli microwave lewat internet.\nJose: Oh ya. _____ sampai tiba?\nSato: Satu minggu.",
+  "trans_rom": "Satou: Senshuu, watashi wa intaanetto de denshi renji wo kaimashita yo.\nHose: Sou desu ka. Todoku made, dono gurai _____ ka.\nSatou: Isshuukan desu.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 19 - Durasi waktu: kakarimashita] Kata kerja kakaru berfungsi menyatakan waktu atau biaya yang dibutuhkan. Pola dono gurai kakarimashita ka menanyakan lamanya waktu (butuh berapa lama sampai). Jawaban 1 minggu adalah durasi, sehingga kakarimashita ka yang cocok, bukan kaerimashita (pulang) atau norimashita (naik).",
+  "opt_detail": [
+   {
+    "kana": "かえりましたか",
+    "rom": "kaerimashita ka",
+    "arti": "sudah pulang?",
+    "alasan": "Kaerimashita ka berarti sudah pulang. Syaratnya konteks kepulangan orang. Yang ditanyakan adalah lamanya barang sampai, bukan orang pulang."
+   },
+   {
+    "kana": "かかりましたか",
+    "rom": "kakarimashita ka",
+    "arti": "butuh waktu berapa lama?",
+    "alasan": "Kakarimashita ka menanyakan waktu atau biaya yang dibutuhkan. Pola dono gurai kakarimashita ka berarti butuh berapa lama. Jawaban 1 minggu adalah durasi, cocok dengan pertanyaan waktu sampai."
+   },
+   {
+    "kana": "のりましたか",
+    "rom": "norimashita ka",
+    "arti": "sudah naik?",
+    "alasan": "Norimashita ka berarti sudah naik kendaraan. Syaratnya konteks naik kereta atau mobil. Tidak ada hubungannya dengan paket microwave yang dikirim."
+   },
+   {
+    "kana": "いきましたか",
+    "rom": "ikimashita ka",
+    "arti": "sudah pergi?",
+    "alasan": "Ikimashita ka berarti sudah pergi. Syaratnya konteks kepergian orang. Paket barang tidak pergi melainkan tiba (todoku)."
+   }
+  ],
+  "opt_note": [
+   "(kaerimashita ka) sudah pulang?",
+   "(kakarimashita ka) butuh waktu berapa lama?",
+   "(norimashita ka) sudah naik?",
+   "(ikimashita ka) sudah pergi?"
+  ],
+  "kunci_id": "かかりましたか",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 19,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "すずき: お茶でも飲みませんか。\nやまもと: _____。",
+  "img": "",
+  "options": [
+   {
+    "text": "いいえ、まだです",
+    "img": ""
+   },
+   {
+    "text": "はい、どうぞ",
+    "img": ""
+   },
+   {
+    "text": "はい、いただきます",
+    "img": ""
+   },
+   {
+    "text": "いいえ、わかりません",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Suzuki: Mau minum teh?\nYamamoto: _____.",
+  "trans_rom": "Suzuki: Ocha demo nomimasen ka.\nYamamoto: _____.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 17/Ungkapan - Menerima tawaran: itadakimasu] Ungkapan hai, itadakimasu berfungsi menerima tawaran makanan atau minuman secara sopan (ya, saya terima). Pola ajakan masen ka (nomimasen ka = mau kah) dijawab dengan penerimaan itadakimasu, bukan penolakan iie, mada desu (belum) atau kebingungan wakarimasen.",
+  "opt_detail": [
+   {
+    "kana": "いいえ、まだです",
+    "rom": "iie, mada desu",
+    "arti": "belum",
+    "alasan": "Iie, mada desu berarti belum (penolakan halus). Syaratnya tawaran yang ditolak. Konteks di sini menerima ajakan minum teh, bukan menolak."
+   },
+   {
+    "kana": "はい、どうぞ",
+    "rom": "hai, douzo",
+    "arti": "ya, silakan",
+    "alasan": "Hai, douzo berarti ya, silakan (mempersilakan lawan bicara). Syaratnya pembicara yang memberi. Di sini Yamamoto yang ditawari, sehingga yang tepat menerima (itadakimasu)."
+   },
+   {
+    "kana": "はい、いただきます",
+    "rom": "hai, itadakimasu",
+    "arti": "ya, saya terima (dengan senang hati)",
+    "alasan": "Hai, itadakimasu berfungsi menerima tawaran makanan atau minuman secara sopan. Ajakan nomimasen ka tepat dijawab dengan penerimaan ini."
+   },
+   {
+    "kana": "いいえ、わかりません",
+    "rom": "iie, wakarimasen",
+    "arti": "tidak, saya tidak tahu",
+    "alasan": "Iie, wakarimasen berarti tidak tahu. Syaratnya pertanyaan pengetahuan. Ajakan minum teh bukan pertanyaan pengetahuan, jadi tidak nyambung."
+   }
+  ],
+  "opt_note": [
+   "(iie, mada desu) belum",
+   "(hai, douzo) ya, silakan",
+   "(hai, itadakimasu) ya, saya terima (dengan senang hati)",
+   "(iie, wakarimasen) tidak, saya tidak tahu"
+  ],
+  "kunci_id": "はい、いただきます",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 20,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "先週、旅行に行きました。でも雨がすごくふりました。旅館に____。",
+  "img": "",
+  "options": [
+   {
+    "text": "取りました",
+    "img": ""
+   },
+   {
+    "text": "通いました",
+    "img": ""
+   },
+   {
+    "text": "泊まりました",
+    "img": ""
+   },
+   {
+    "text": "寝まし",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Minggu lalu saya pergi berlibur. Tetapi hujan turun dengan deras. Di penginapan, saya _____.",
+  "trans_rom": "Senshuu, ryokou ni ikimashita. Demo ame ga sugoku furimashita. Ryokan ni _____.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 19 - Bermalam: tomarimashita (ryokan)] Kata kerja tomaru (menginap) bentuk lampau tomarimashita berfungsi menyatakan bermalam di suatu tempat. Konteks hujan deras + ryokan (penginapan) menunjukkan pembicara bermalam di sana, bukan mengambil (toru) atau bolak-balik (kayou).",
+  "opt_detail": [
+   {
+    "kana": "とりました",
+    "rom": "torimashita",
+    "arti": "mengambil/mendapat",
+    "alasan": "Torimashita berarti mengambil atau mendapatkan. Syaratnya objek yang diambil. Konteks ryokan + hujan deras menunjukkan butuh tempat bermalam, bukan mengambil sesuatu."
+   },
+   {
+    "kana": "かよいました",
+    "rom": "kayoimashita",
+    "arti": "bolak-balik/pergi rutin",
+    "alasan": "Kayoimashita berarti bolak-balik atau pergi rutin. Syaratnya kunjungan berulang. Konteks perjalanan sekali + hujan deras bukan rutinitas."
+   },
+   {
+    "kana": "とまりました",
+    "rom": "tomarimashita",
+    "arti": "menginap",
+    "alasan": "Tomarimashita berarti menginap atau bermalam. Konteks perjalanan + hujan deras + ryokan menunjukkan pembicara bermalam di penginapan. Cocok secara logika dan tata bahasa."
+   },
+   {
+    "kana": "ねました",
+    "rom": "nemashita",
+    "arti": "tidur",
+    "alasan": "Nemashita berarti tidur. Pola yang dibutuhkan adalah menginap di suatu tempat (ni tomaru), bukan sekadar tidur. Tidur bisa di mana saja, sedangkan konteksnya penginapan perjalanan."
+   }
+  ],
+  "opt_note": [
+   "(torimashita) mengambil/mendapat",
+   "(kayoimashita) bolak-balik/pergi rutin",
+   "(tomarimashita) menginap",
+   "(nemashita) tidur"
+  ],
+  "kunci_id": "泊まりました",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": ""
+ },
+ {
+  "no": 21,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "Untuk No 1-2. What is the announcement about?",
+  "img": "assets/tamago_lis01_0.jpg",
+  "options": [
+   {
+    "text": "A",
+    "img": ""
+   },
+   {
+    "text": "B",
+    "img": ""
+   },
+   {
+    "text": "C",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Pengumuman di stasiun tentang area merokok dan kebersihan.",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 1-25 - Choukai: pengumuman stasiun (komprehensif)] Isi pengumuman berkaitan dengan rokok atau tembakau, sesuai dengan gambar C. Dengarkan kata kunci tentang merokok.",
+  "opt_detail": [
+   {
+    "kana": "A",
+    "rom": "A",
+    "arti": "gambar A (pengecoh)",
+    "alasan": "Gambar A bukan isi pengumuman yang didengar. Kata kunci audio mengarah ke topik rokok atau tembakau, bukan gambar A."
+   },
+   {
+    "kana": "B",
+    "rom": "B",
+    "arti": "gambar B (pengecoh)",
+    "alasan": "Gambar B bukan isi pengumuman yang didengar. Kata kunci audio tidak berkaitan dengan gambar B."
+   },
+   {
+    "kana": "C",
+    "rom": "C",
+    "arti": "gambar C: pengumuman rokok/tembakau",
+    "alasan": "Gambar C sesuai isi pengumuman tentang rokok atau tembakau. Kata kunci yang didengar cocok dengan gambar ini."
+   }
+  ],
+  "opt_note": [
+   "(A) gambar A (pengecoh)",
+   "(B) gambar B (pengecoh)",
+   "(C) gambar C: pengumuman rokok/tembakau"
+  ],
+  "kunci_id": "C",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": "assets/audio/lis01.m4a"
+ },
+ {
+  "no": 22,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "What type of event is it announcing?",
+  "img": "assets/tamago_lis02_0.jpg",
+  "options": [
+   {
+    "text": "A",
+    "img": ""
+   },
+   {
+    "text": "B",
+    "img": ""
+   },
+   {
+    "text": "C",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Pengumuman tentang jenis acara yang akan digelar.",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 1-25 - Choukai: jenis acara (komprehensif)] Acara yang diumumkan adalah konser piano, sesuai gambar A. Dengarkan kata kunci konser dan piano.",
+  "opt_detail": [
+   {
+    "kana": "A",
+    "rom": "A",
+    "arti": "gambar A: konser piano",
+    "alasan": "Gambar A (konser piano) sesuai jenis acara yang diumumkan. Kata kunci konser dan piano terdengar di audio."
+   },
+   {
+    "kana": "B",
+    "rom": "B",
+    "arti": "gambar B: festival kembang api",
+    "alasan": "Gambar B (festival kembang api) bukan acara yang diumumkan. Kata kunci audio tidak menyebut kembang api."
+   },
+   {
+    "kana": "C",
+    "rom": "C",
+    "arti": "gambar C: bazar sayur",
+    "alasan": "Gambar C (bazar sayur) bukan acara yang diumumkan. Kata kunci audio tidak berkaitan dengan bazar."
+   }
+  ],
+  "opt_note": [
+   "(A) gambar A: konser piano",
+   "(B) gambar B: festival kembang api",
+   "(C) gambar C: bazar sayur"
+  ],
+  "kunci_id": "A",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": "assets/audio/lis02.m4a"
+ },
+ {
+  "no": 23,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "What should this person do on Monday of next week?",
+  "img": "assets/tamago_lis03_0.jpg",
+  "options": [
+   {
+    "text": "ア",
+    "img": ""
+   },
+   {
+    "text": "イ",
+    "img": ""
+   },
+   {
+    "text": "ウ",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Instruksi tentang apa yang harus dilakukan pada hari Senin minggu depan.",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 1-25 - Choukai: instruksi jadwal (komprehensif)] Orang tersebut diminta tetap di rumah pada jam 2 sampai 3 siang, sesuai opsi A.",
+  "opt_detail": [
+   {
+    "kana": "ア",
+    "rom": "a",
+    "arti": "tetap di rumah jam 14-15",
+    "alasan": "Opsi A sesuai instruksi: tetap di rumah pada jam 2 sampai 3 siang hari Senin depan."
+   },
+   {
+    "kana": "イ",
+    "rom": "i",
+    "arti": "opsi イ (pengecoh)",
+    "alasan": "Opsi I tidak sesuai instruksi waktu dan tindakan yang didengar di audio."
+   },
+   {
+    "kana": "ウ",
+    "rom": "u",
+    "arti": "opsi ウ (pengecoh)",
+    "alasan": "Opsi U tidak sesuai instruksi waktu dan tindakan yang didengar di audio."
+   }
+  ],
+  "opt_note": [
+   "(a) tetap di rumah jam 14-15",
+   "(i) opsi イ (pengecoh)",
+   "(u) opsi ウ (pengecoh)"
+  ],
+  "kunci_id": "ア",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": "assets/audio/lis03.m4a"
+ },
+ {
+  "no": 24,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "What is the cause?",
+  "img": "assets/tamago_lis03_1.jpg",
+  "options": [
+   {
+    "text": "ア",
+    "img": ""
+   },
+   {
+    "text": "イ",
+    "img": ""
+   },
+   {
+    "text": "ウ",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Penjelasan tentang penyebab suatu gangguan.",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 1-25 - Choukai: penyebab gangguan (komprehensif)] Penyebabnya adalah kerusakan sinyal, sesuai opsi U.",
+  "opt_detail": [
+   {
+    "kana": "ア",
+    "rom": "a",
+    "arti": "opsi ア (pengecoh)",
+    "alasan": "Opsi A bukan penyebab yang dijelaskan di audio."
+   },
+   {
+    "kana": "イ",
+    "rom": "i",
+    "arti": "opsi イ (pengecoh)",
+    "alasan": "Opsi I bukan penyebab yang dijelaskan di audio."
+   },
+   {
+    "kana": "ウ",
+    "rom": "u",
+    "arti": "sinyal rusak (penyebab)",
+    "alasan": "Opsi U (kerusakan sinyal) adalah penyebab yang dijelaskan di audio."
+   }
+  ],
+  "opt_note": [
+   "(a) opsi ア (pengecoh)",
+   "(i) opsi イ (pengecoh)",
+   "(u) sinyal rusak (penyebab)"
+  ],
+  "kunci_id": "ウ",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": "assets/audio/lis04.m4a"
+ },
+ {
+  "no": 25,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "How do person drink the drink?",
+  "img": "assets/tamago_lis05_0.jpg",
+  "options": [
+   {
+    "text": "A",
+    "img": ""
+   },
+   {
+    "text": "B",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Penjelasan tentang cara meminum minuman.",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 1-25 - Choukai: cara melakukan sesuatu (komprehensif)] Cara yang dimaksud adalah memasukkan gula dadu langsung, sesuai gambar B.",
+  "opt_detail": [
+   {
+    "kana": "A",
+    "rom": "A",
+    "arti": "cara minum A (pengecoh)",
+    "alasan": "Cara minum gambar A bukan yang dijelaskan di audio."
+   },
+   {
+    "kana": "B",
+    "rom": "B",
+    "arti": "gula dadu langsung (cara B)",
+    "alasan": "Gambar B (gula dadu langsung) adalah cara minum yang dijelaskan di audio."
+   }
+  ],
+  "opt_note": [
+   "(A) cara minum A (pengecoh)",
+   "(B) gula dadu langsung (cara B)"
+  ],
+  "kunci_id": "B",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": "assets/audio/lis05.m4a"
+ },
+ {
+  "no": 26,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "Which person is talking about?",
+  "img": "assets/tamago_lis06_0.jpg",
+  "options": [
+   {
+    "text": "A",
+    "img": ""
+   },
+   {
+    "text": "B",
+    "img": ""
+   },
+   {
+    "text": "C",
+    "img": ""
+   },
+   {
+    "text": "D",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Percakapan yang menjelaskan ciri-ciri seseorang.",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 1-25 - Choukai: ciri seseorang (komprehensif)] Orang yang dibicarakan memiliki ciri sesuai gambar B.",
+  "opt_detail": [
+   {
+    "kana": "A",
+    "rom": "A",
+    "arti": "orang A (pengecoh)",
+    "alasan": "Orang A tidak memiliki ciri yang disebutkan di audio."
+   },
+   {
+    "kana": "B",
+    "rom": "B",
+    "arti": "orang B yang dibicarakan",
+    "alasan": "Orang B memiliki ciri yang disebutkan di audio."
+   },
+   {
+    "kana": "C",
+    "rom": "C",
+    "arti": "orang C (pengecoh)",
+    "alasan": "Orang C tidak memiliki ciri yang disebutkan di audio."
+   },
+   {
+    "kana": "D",
+    "rom": "D",
+    "arti": "orang D (pengecoh)",
+    "alasan": "Orang D tidak memiliki ciri yang disebutkan di audio."
+   }
+  ],
+  "opt_note": [
+   "(A) orang A (pengecoh)",
+   "(B) orang B yang dibicarakan",
+   "(C) orang C (pengecoh)",
+   "(D) orang D (pengecoh)"
+  ],
+  "kunci_id": "B",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF DASAR 5 hal.11.",
+  "audio": "assets/audio/lis06.m4a"
+ }
+]

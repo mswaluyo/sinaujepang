@@ -1,0 +1,19 @@
+# ─── Node.js ───────────────────────────────────────────────
+node_modules/
+
+# ─── Firebase tools ────────────────────────────────────────
+.firebase/
+.firebaserc
+
+# ─── Local config (jangan commit secret) ───────────────────
+.env
+.env.local
+*.local
+
+# ─── Build cache / sourcemap ───────────────────────────────
+public/assets/css/*.map
+
+# ─── Archives (video / audio / doc / JSON, > 100 mb) ───────
+_arsip/**
+bahan-soal/**
+referensi MNN/**

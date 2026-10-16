@@ -1,0 +1,3089 @@
+[
+ {
+  "no": 1,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/hare_39.jpg",
+  "options": [
+   {
+    "text": "雪",
+    "img": ""
+   },
+   {
+    "text": "晴れ",
+    "img": ""
+   },
+   {
+    "text": "快晴",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "4/4",
+  "trans": "Gambar menunjukkan kondisi cuaca langit cerah dan berawan terang.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 8 - Kata Sifat Cuaca] Gambar memperlihatkan cuaca cerah disinari matahari. Dalam bahasa Jepang, cuaca cerah disebut 晴れ (hare). Kata 雪 (yuki) berarti salju, sedangkan 快晴 (kaisei) berarti cerah sangat terang/tanpa awan.",
+  "opt_detail": [
+   {
+    "kana": "ゆき",
+    "rom": "yuki",
+    "arti": "salju",
+    "alasan": "雪 (yuki) berarti salju. Tidak sesuai dengan gambar cuaca cerah."
+   },
+   {
+    "kana": "はれ",
+    "rom": "hare",
+    "arti": "cerah",
+    "alasan": "晴れ (hare) berarti cuaca cerah. Sangat tepat sesuai dengan visual gambar."
+   },
+   {
+    "kana": "かいせい",
+    "rom": "kaisei",
+    "arti": "cerah tanpa awan",
+    "alasan": "快晴 (kaisei) berarti cuaca cerah total tanpa awan, kurang tepat untuk gambar yang masih berawan."
+   }
+  ],
+  "opt_note": [
+   "(yuki) salju",
+   "(hare) cerah",
+   "(kaisei) cerah tanpa awan"
+  ],
+  "kunci_id": "晴れ"
+ },
+ {
+  "no": 2,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/hare_38.jpg",
+  "options": [
+   {
+    "text": "トイレ",
+    "img": ""
+   },
+   {
+    "text": "トイル",
+    "img": ""
+   },
+   {
+    "text": "ダイレ",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/3",
+  "trans": "Gambar menunjukkan pintu atau papan tanda fasilitas toilet.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 3 - Kosakata Tempat] トイレ (toire) adalah kata serapan Katakana yang benar untuk toilet. トイル (toiru) dan ダイレ (daire) adalah penulisan yang salah.",
+  "opt_detail": [
+   {
+    "kana": "トイレ",
+    "rom": "toire",
+    "arti": "toilet",
+    "alasan": "トイレ (toire) berarti toilet. Tepat sesuai dengan konteks soal."
+   },
+   {
+    "kana": "トイル",
+    "rom": "toiru",
+    "arti": "salah ketik",
+    "alasan": "トイル (toiru) merupakan penulisan Katakana yang salah."
+   },
+   {
+    "kana": "ダイレ",
+    "rom": "daire",
+    "arti": "salah ketik",
+    "alasan": "ダイレ (daire) merupakan penulisan Katakana yang salah."
+   }
+  ],
+  "opt_note": [
+   "(toire) toilet",
+   "(toiru) salah ketik",
+   "(daire) salah ketik"
+  ],
+  "kunci_id": "トイレ"
+ },
+ {
+  "no": 3,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/hare_37.jpg",
+  "options": [
+   {
+    "text": "がみ",
+    "img": ""
+   },
+   {
+    "text": "かむ",
+    "img": ""
+   },
+   {
+    "text": "かみ",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "3/3",
+  "trans": "Gambar menunjukkan tumpukan kertas.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 7 - Kun-yomi Kanji 紙] Cara baca kun-yomi dari kanji 紙 (kertas) adalah かみ (kami). がみ (gami) hanya digunakan pada kata majemuk, sedangkan かむ (kamu) adalah kata kerja menggigit.",
+  "opt_detail": [
+   {
+    "kana": "がみ",
+    "rom": "gami",
+    "arti": "salah",
+    "alasan": "がみ (gami) bukan bentuk berdiri sendiri untuk kertas."
+   },
+   {
+    "kana": "かむ",
+    "rom": "kamu",
+    "arti": "menggigit",
+    "alasan": "かむ (kamu) berarti menggigit (kata kerja)."
+   },
+   {
+    "kana": "かみ",
+    "rom": "kami",
+    "arti": "kertas",
+    "alasan": "かみ (kami) berarti kertas. Tepat sesuai dengan gambar/konteks."
+   }
+  ],
+  "opt_note": [
+   "(gami) salah",
+   "(kamu) menggigit",
+   "(kami) kertas"
+  ],
+  "kunci_id": "かみ"
+ },
+ {
+  "no": 4,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/hare_36.jpg",
+  "options": [
+   {
+    "text": "がみばこ",
+    "img": ""
+   },
+   {
+    "text": "ごみばこ",
+    "img": ""
+   },
+   {
+    "text": "たばこ",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "3/3",
+  "trans": "Gambar menunjukkan wadah penampung kotoran/sampah.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 10 - Kosakata Benda] Wadah tempat membuang sampah dalam bahasa Jepang ditulis gomibako. Pilihan tabako berarti rokok, sedangkan gamibako merupakan kesalahan ejaan.",
+  "opt_detail": [
+   {
+    "kana": "がみばこ",
+    "rom": "gamibako",
+    "arti": "salah eja",
+    "alasan": "Gamibako merupakan penulisan yang salah."
+   },
+   {
+    "kana": "ごみばこ",
+    "rom": "gomibako",
+    "arti": "tempat sampah",
+    "alasan": "Gomibako berarti tempat sampah. Sangat tepat sesuai dengan gambar."
+   },
+   {
+    "kana": "たばこ",
+    "rom": "tabako",
+    "arti": "rokok",
+    "alasan": "Tabako berarti rokok, tidak sesuai dengan gambar."
+   }
+  ],
+  "opt_note": [
+   "(gamibako) salah eja",
+   "(gomibako) tempat sampah",
+   "(tabako) rokok"
+  ],
+  "kunci_id": "ごみばこ"
+ },
+ {
+  "no": 5,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/hare_35.jpg",
+  "options": [
+   {
+    "text": "しかいします",
+    "img": ""
+   },
+   {
+    "text": "たかいします",
+    "img": ""
+   },
+   {
+    "text": "しょかいします",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "3/3",
+  "trans": "Gambar memperlihatkan adegan seseorang sedang memperkenalkan teman atau orang lain.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 14 - Kata Kerja Memperkenalkan] Kata kerja untuk memperkenalkan seseorang adalah shoukai shimasu. Shikai berarti pembawa acara atau MC, sedangkan takai berarti mahal atau tinggi.",
+  "opt_detail": [
+   {
+    "kana": "しかいします",
+    "rom": "shikai shimasu",
+    "arti": "memandu acara (MC)",
+    "alasan": "Shikai shimasu berarti memandu acara sebagai MC."
+   },
+   {
+    "kana": "たかいします",
+    "rom": "takai shimasu",
+    "arti": "salah eja",
+    "alasan": "Takai shimasu bukan bentuk kata kerja yang baku."
+   },
+   {
+    "kana": "しょかいします",
+    "rom": "shoukai shimasu",
+    "arti": "memperkenalkan",
+    "alasan": "Shoukai shimasu berarti memperkenalkan. Sangat tepat sesuai dengan gambar."
+   }
+  ],
+  "opt_note": [
+   "(shikai shimasu) memandu acara",
+   "(takai shimasu) salah eja",
+   "(shoukai shimasu) memperkenalkan"
+  ],
+  "kunci_id": "しょかいします"
+ },
+ {
+  "no": 6,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "A : 何をよんでいますか？\nB : ざっしを。。。",
+  "img": "",
+  "options": [
+   {
+    "text": "食べます",
+    "img": ""
+   },
+   {
+    "text": "飲みます",
+    "img": ""
+   },
+   {
+    "text": "読みます",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "4/4",
+  "trans": "A: Sedang membaca apa?\nB: Majalah...",
+  "trans_rom": "A: Nani wo yonde imasu ka?\nB: Zasshi wo...",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 6 - Kata Kerja Aktivitas] Kata よんでいます berasal dari kata kerja 読みます (yomimasu = membaca). Pasangan kata kerja yang tepat untuk objek ざっし (majalah) adalah 読みます. 食べます (makan) dan 飲みます (minum) tidak cocok untuk majalah.",
+  "opt_detail": [
+   {
+    "kana": "たべます",
+    "rom": "tabemasu",
+    "arti": "makan",
+    "alasan": "食べます (tabemasu) berarti makan. Tidak cocok dipasangkan dengan objek majalah (ざっし)."
+   },
+   {
+    "kana": "のみます",
+    "rom": "nomimasu",
+    "arti": "minum",
+    "alasan": "飲みます (nomimasu) berarti minum. Tidak cocok dipasangkan dengan objek majalah (ざっし)."
+   },
+   {
+    "kana": "よみます",
+    "rom": "yomimasu",
+    "arti": "membaca",
+    "alasan": "読みます (yomimasu) berarti membaca. Sangat tepat dipasangkan dengan objek majalah (ざっし)."
+   }
+  ],
+  "opt_note": [
+   "(tabemasu) makan",
+   "(nomimasu) minum",
+   "(yomimasu) membaca"
+  ],
+  "kunci_id": "読みます"
+ },
+ {
+  "no": 7,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "うちにたくさん______がいます*",
+  "img": "",
+  "options": [
+   {
+    "text": "ペット",
+    "img": ""
+   },
+   {
+    "text": "トイレ",
+    "img": ""
+   },
+   {
+    "text": "やさい",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/4",
+  "trans": "Di rumah ada banyak _____.",
+  "trans_rom": "Uchi ni takusan _____ ga imasu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 10 - Keberadaan Benda Hidup] Partikel がいます (imasu) digunakan untuk makhluk hidup (hewan/manusia). Oleh karena itu, ペット (petto = hewan peliharaan) adalah jawaban yang tepat. トイレ (toilet) dan やさい (sayuran) menggunakan あります (arimasu).",
+  "opt_detail": [
+   {
+    "kana": "ペット",
+    "rom": "petto",
+    "arti": "hewan peliharaan",
+    "alasan": "ペット (petto) adalah makhluk hidup, tepat menggunakan kata kerja います (imasu)."
+   },
+   {
+    "kana": "トイレ",
+    "rom": "toire",
+    "arti": "toilet",
+    "alasan": "トイレ (toire) adalah benda mati, seharusnya menggunakan あります (arimasu)."
+   },
+   {
+    "kana": "やさい",
+    "rom": "yasai",
+    "arti": "sayuran",
+    "alasan": "やさい (yasai) adalah benda mati, seharusnya menggunakan あります (arimasu)."
+   }
+  ],
+  "opt_note": [
+   "(petto) hewan peliharaan",
+   "(toire) toilet",
+   "(yasai) sayuran"
+  ],
+  "kunci_id": "ペット"
+ },
+ {
+  "no": 8,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "A: 昨日コピー機のスイッチは入ったままでした。\nB: すみません、消していました。\nA: 今後は、＿＿＿＿＿消してください。",
+  "img": "",
+  "options": [
+   {
+    "text": "ときどき",
+    "img": ""
+   },
+   {
+    "text": "かならず",
+    "img": ""
+   },
+   {
+    "text": "あとで",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/2",
+  "trans": "A: Kemarin tombol mesin fotokopi dibiarkan menyala.\nB: Maaf, tadi saya matikan.\nA: Ke depannya, mohon _____ matikan.",
+  "trans_rom": "A: Kinou kopiiki no suitchi wa haitta mama deshita.\nB: Sumimasen, keshite imashita.\nA: Kongowa, _____ keshite kudasai.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 19 - Kata Keterangan] かならず (kanarazu) berarti pasti atau selalu yang sesuai untuk instruksi penegasan. ときどき (kadang-kadang) dan あとで (nanti) tidak sesuai untuk instruksi keselamatan atau kepatuhan.",
+  "opt_detail": [
+   {
+    "kana": "ときどき",
+    "rom": "tokidoki",
+    "arti": "kadang-kadang",
+    "alasan": "ときどき (tokidoki) berarti kadang-kadang, kurang tepat untuk instruksi wajib."
+   },
+   {
+    "kana": "かならず",
+    "rom": "kanarazu",
+    "arti": "pasti / selalu",
+    "alasan": "かならず (kanarazu) berarti pasti/selalu. Tepat untuk menegaskan perintah di masa depan."
+   },
+   {
+    "kana": "あとで",
+    "rom": "ato de",
+    "arti": "nanti",
+    "alasan": "あとで (ato de) berarti nanti."
+   }
+  ],
+  "opt_note": [
+   "(tokidoki) kadang-kadang",
+   "(kanarazu) pasti / selalu",
+   "(ato de) nanti"
+  ],
+  "kunci_id": "かならず"
+ },
+ {
+  "no": 9,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "ここでは、けいたいでんわを＿＿＿＿＿でください。",
+  "img": "",
+  "options": [
+   {
+    "text": "つかいました (使いました)",
+    "img": ""
+   },
+   {
+    "text": "つかわない (使わない)",
+    "img": ""
+   },
+   {
+    "text": "つかう (使う)",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/2",
+  "trans": "Di sini, tolong _____ ponsel.",
+  "trans_rom": "Koko de wa, keitai denwa wo _____ de kudasai.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 17 - Pola Larangan Halus] Pola larangan 'tolong jangan...' menggunakan bentuk [Nai-form + de kudasai]. Bentuk nai dari つかいます (tsukaimasu) adalah つかわない (tsukawanai).",
+  "opt_detail": [
+   {
+    "kana": "つかいました",
+    "rom": "tsukaimashita",
+    "arti": "sudah memakai",
+    "alasan": "つかいました adalah bentuk lampau, tidak bisa disambung dengan ~de kudasai."
+   },
+   {
+    "kana": "つかわない",
+    "rom": "tsukawanai",
+    "arti": "tidak memakai",
+    "alasan": "つかわない adalah bentuk Nai. Bersama ~de kudasai menjadi pola larangan halus yang tepat."
+   },
+   {
+    "kana": "つかう",
+    "rom": "tsukau",
+    "arti": "memakai",
+    "alasan": "つかう adalah bentuk kamus, tidak sesuai untuk pola larangan ~nai de kudasai."
+   }
+  ],
+  "opt_note": [
+   "(tsukaimashita) sudah memakai",
+   "(tsukawanai) tidak memakai",
+   "(tsukau) memakai"
+  ],
+  "kunci_id": "つかわない (使わない)"
+ },
+ {
+  "no": 10,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "かいぎはもうはじまったんですね。入ることはもう＿＿＿＿＿。",
+  "img": "",
+  "options": [
+   {
+    "text": "どこですか",
+    "img": ""
+   },
+   {
+    "text": "むりですか？",
+    "img": ""
+   },
+   {
+    "text": "ちょっとですか？",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/2",
+  "trans": "Rapatnya sudah dimulai ya. Apakah untuk masuk sudah _____?",
+  "trans_rom": "Kaigi wa mou hajimattan desu ne. Hairu koto wa mou _____.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 19 - Expression] むり (muri) berarti tidak memungkinkan atau mustahil. Konteks kalimat menanyakan apakah masih bisa masuk ruangan rapat yang sudah dimulai.",
+  "opt_detail": [
+   {
+    "kana": "どこですか",
+    "rom": "doko desu ka",
+    "arti": "di mana?",
+    "alasan": "どこですか (doko desu ka) menanyakan lokasi, tidak cocok menyambung kata masuk."
+   },
+   {
+    "kana": "むりですか？",
+    "rom": "muri desu ka",
+    "arti": "apakah mustahil / tidak bisa?",
+    "alasan": "むりですか (muri desu ka) menanyakan apakah sudah tidak memungkinkan. Tepat sesuai situasi."
+   },
+   {
+    "kana": "ちょっとですか？",
+    "rom": "chotto desu ka",
+    "arti": "apakah sedikit?",
+    "alasan": "ちょっとですか (chotto desu ka) bermakna apakah sedikit, tidak cocok secara konteks."
+   }
+  ],
+  "opt_note": [
+   "(doko desu ka) di mana?",
+   "(muri desu ka) apakah mustahil?",
+   "(chotto desu ka) apakah sedikit?"
+  ],
+  "kunci_id": "むりですか？"
+ },
+ {
+  "no": 11,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "このきょうしつで、「男」のほうがおおいです。",
+  "img": "",
+  "options": [
+   {
+    "text": "きども",
+    "img": ""
+   },
+   {
+    "text": "おとこう",
+    "img": ""
+   },
+   {
+    "text": "おとこ",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "0/2",
+  "trans": "Di kelas ini, laki-laki lebih banyak.",
+  "trans_rom": "Kono kyoushitsu de, 【____】 no hou ga ooi desu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 10 - Kosakata Gender] Kanji 男 (laki-laki) dibaca おとこ (otoko). きども dan おとこう adalah cara baca yang salah.",
+  "opt_detail": [
+   {
+    "kana": "きども",
+    "rom": "kidomo",
+    "arti": "salah eja",
+    "alasan": "きども (kidomo) bukan cara baca untuk kanji 男."
+   },
+   {
+    "kana": "おとこう",
+    "rom": "otokou",
+    "arti": "salah eja",
+    "alasan": "おとこう (otokou) merupakan penambahan vokal panjang yang salah."
+   },
+   {
+    "kana": "おとこ",
+    "rom": "otoko",
+    "arti": "laki-laki",
+    "alasan": "おとこ (otoko) adalah cara baca yang benar untuk kanji 男."
+   }
+  ],
+  "opt_note": [
+   "(kidomo) salah eja",
+   "(otokou) salah eja",
+   "(otoko) laki-laki"
+  ],
+  "kunci_id": "おとこ"
+ },
+ {
+  "no": 12,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "明日の私の。。。。はやまにのぼることです。",
+  "img": "",
+  "options": [
+   {
+    "text": "映画",
+    "img": ""
+   },
+   {
+    "text": "計画",
+    "img": ""
+   },
+   {
+    "text": "漫画",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/5",
+  "trans": "Rencana saya besok adalah _____.",
+  "trans_rom": "Ashita no watashi no ... wa yama ni noboru koto desu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 18 - Kosakata Rencana] 計画 (けいかく / keikaku) berarti 'rencana'. 映画 (eiga = film) dan 漫画 (manga = komik) tidak sesuai predikat 'mendaki gunung'.",
+  "opt_detail": [
+   {
+    "kana": "えいが",
+    "rom": "eiga",
+    "arti": "film",
+    "alasan": "映画 (eiga) berarti film."
+   },
+   {
+    "kana": "けいかく",
+    "rom": "keikaku",
+    "arti": "rencana",
+    "alasan": "計画 (keikaku) berarti rencana. Sangat tepat dipasangkan dengan mendaki gunung."
+   },
+   {
+    "kana": "まんが",
+    "rom": "manga",
+    "arti": "komik",
+    "alasan": "漫画 (manga) berarti komik."
+   }
+  ],
+  "opt_note": [
+   "(eiga) film",
+   "(keikaku) rencana",
+   "(manga) komik"
+  ],
+  "kunci_id": "計画"
+ },
+ {
+  "no": 13,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "「午前」 7時に起きる",
+  "img": "",
+  "options": [
+   {
+    "text": "ごぜん",
+    "img": ""
+   },
+   {
+    "text": "ごご",
+    "img": ""
+   },
+   {
+    "text": "ごせん",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/5",
+  "trans": "Bangun pada jam 7 pagi (a.m.).",
+  "trans_rom": "【____】 shichiji ni okiru.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 4 - Kosakata Waktu] Kanji 午前 (pagi/a.m.) dibaca ごぜん (gozen). ごご (gogo) berarti p.m./sore, sedangkan ごせん salah pengucapan.",
+  "opt_detail": [
+   {
+    "kana": "ごぜん",
+    "rom": "gozen",
+    "arti": "pagi (a.m.)",
+    "alasan": "ごぜん (gozen) adalah cara baca kanji 午前 yang benar."
+   },
+   {
+    "kana": "ごご",
+    "rom": "gogo",
+    "arti": "sore (p.m.)",
+    "alasan": "ごご (gogo) adalah cara baca kanji 午後 (p.m./sore)."
+   },
+   {
+    "kana": "ごせん",
+    "rom": "gosen",
+    "arti": "salah",
+    "alasan": "ごせん (gosen) adalah pengucapan yang keliru."
+   }
+  ],
+  "opt_note": [
+   "(gozen) pagi (a.m.)",
+   "(gogo) sore (p.m.)",
+   "(gosen) salah"
+  ],
+  "kunci_id": "ごぜん"
+ },
+ {
+  "no": 14,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "学ぶことわあなたを 「幸せ」にします",
+  "img": "",
+  "options": [
+   {
+    "text": "しあわぜ",
+    "img": ""
+   },
+   {
+    "text": "しおわせ",
+    "img": ""
+   },
+   {
+    "text": "しあわせ",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "5/5",
+  "trans": "Belajar akan membuatmu bahagia.",
+  "trans_rom": "Manabu koto wa anata wo 【____】 ni shimasu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 22 - Kata Sifat Na] Kanji 幸せ (bahagia) dibaca しあわせ (shiawase). しあわぜ dan しおわせ adalah ejaan Hiragana yang salah.",
+  "opt_detail": [
+   {
+    "kana": "しあわぜ",
+    "rom": "shiawaze",
+    "arti": "salah",
+    "alasan": "しあわぜ (shiawaze) salah pada penggunaan dakuten (ぜ)."
+   },
+   {
+    "kana": "しおわせ",
+    "rom": "shiowase",
+    "arti": "salah",
+    "alasan": "しおわせ (shiowase) salah pada vokal お."
+   },
+   {
+    "kana": "しあわせ",
+    "rom": "shiawase",
+    "arti": "bahagia",
+    "alasan": "しあわせ (shiawase) adalah cara baca yang benar untuk 幸せ."
+   }
+  ],
+  "opt_note": [
+   "(shiawaze) salah",
+   "(shiowase) salah",
+   "(shiawase) bahagia"
+  ],
+  "kunci_id": "しあわせ"
+ },
+ {
+  "no": 15,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "「家族」と一緒に旅行します。",
+  "img": "",
+  "options": [
+   {
+    "text": "かぞく",
+    "img": ""
+   },
+   {
+    "text": "かそご",
+    "img": ""
+   },
+   {
+    "text": "がっこ",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "2/2",
+  "trans": "Bepergian/wisata bersama keluarga.",
+  "trans_rom": "【____】 to issho ni ryokou shimasu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 5 - Kosakata Keluarga] Kanji 家族 (keluarga) dibaca かぞく (kazoku). かそご dan がっこ (sekolah) tidak sesuai.",
+  "opt_detail": [
+   {
+    "kana": "かぞく",
+    "rom": "kazoku",
+    "arti": "keluarga",
+    "alasan": "かぞく (kazoku) adalah cara baca yang benar untuk 家族."
+   },
+   {
+    "kana": "かそご",
+    "rom": "kasogo",
+    "arti": "salah",
+    "alasan": "かそご (kasogo) merupakan ejaan yang salah."
+   },
+   {
+    "kana": "がっこ",
+    "rom": "gakko",
+    "arti": "sekolah",
+    "alasan": "がっこ (gakko) tidak sesuai dengan arti keluarga."
+   }
+  ],
+  "opt_note": [
+   "(kazoku) keluarga",
+   "(kasogo) salah",
+   "(gakko) sekolah"
+  ],
+  "kunci_id": "かぞく"
+ },
+ {
+  "no": 16,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "これ大きく見えますでも、「軽い」 です。",
+  "img": "",
+  "options": [
+   {
+    "text": "ちいさい",
+    "img": ""
+   },
+   {
+    "text": "おもい",
+    "img": ""
+   },
+   {
+    "text": "かるい",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "0/2",
+  "trans": "Ini terlihat besar, tetapi ringan.",
+  "trans_rom": "Kore ookiku miemasu demo, 【____】 desu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 12 - Kata Sifat Sifat Benda] Kanji 軽い (ringan) dibaca かるい (karui). ちいさい berarti kecil dan おもい berarti berat.",
+  "opt_detail": [
+   {
+    "kana": "ちいさい",
+    "rom": "chiisai",
+    "arti": "kecil",
+    "alasan": "ちいさい (chiisai) berarti kecil (kanji: 小さい)."
+   },
+   {
+    "kana": "おもい",
+    "rom": "omoi",
+    "arti": "berat",
+    "alasan": "おもい (omoi) berarti berat (kanji: 重い)."
+   },
+   {
+    "kana": "かるい",
+    "rom": "karui",
+    "arti": "ringan",
+    "alasan": "かるい (karui) adalah cara baca kanji 軽い yang berarti ringan."
+   }
+  ],
+  "opt_note": [
+   "(chiisai) kecil",
+   "(omoi) berat",
+   "(karui) ringan"
+  ],
+  "kunci_id": "かるい"
+ },
+ {
+  "no": 17,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "A : 今、インドネシアは何の「季節」ですか？\nB : 夏です、とっても暑いですよ。",
+  "img": "",
+  "options": [
+   {
+    "text": "きせつ",
+    "img": ""
+   },
+   {
+    "text": "ざせつ",
+    "img": ""
+   },
+   {
+    "text": "さぜし",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "2/2",
+  "trans": "A: Sekarang di Indonesia musim apa?\nB: Musim panas, sangat panas lho.",
+  "trans_rom": "A: Ima, Indonesia wa nan no 【____】 desu ka?\nB: Natsu desu, tottemo atsui desu yo.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 12 - Kosakata Musim] Kanji 季節 (musim) dibaca きせつ (kisetsu). ざせつ (zasetsu = frustrasi) dan さぜし salah.",
+  "opt_detail": [
+   {
+    "kana": "きせつ",
+    "rom": "kisetsu",
+    "arti": "musim",
+    "alasan": "きせつ (kisetsu) adalah cara baca baku untuk 季節."
+   },
+   {
+    "kana": "ざせつ",
+    "rom": "zasetsu",
+    "arti": "frustrasi / gagal",
+    "alasan": "ざせつ (zasetsu) memiliki arti berbeda (挫折)."
+   },
+   {
+    "kana": "さぜし",
+    "rom": "sazeshi",
+    "arti": "salah",
+    "alasan": "さぜし (sazeshi) ejaan salah."
+   }
+  ],
+  "opt_note": [
+   "(kisetsu) musim",
+   "(zasetsu) frustrasi",
+   "(sazeshi) salah"
+  ],
+  "kunci_id": "きせつ"
+ },
+ {
+  "no": 18,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "誰がは 「教室」 ですか？",
+  "img": "",
+  "options": [
+   {
+    "text": "きょうしつ",
+    "img": ""
+   },
+   {
+    "text": "きよしつ",
+    "img": ""
+   },
+   {
+    "text": "きゅうしつ",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/2",
+  "trans": "Siapa yang ada di ruang kelas?",
+  "trans_rom": "Dare ga wa 【____】 desu ka?",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 3 - Kosakata Ruangan] Kanji 教室 (ruang kelas) dibaca きょうしつ (kyoushitsu). きよしつ dan きゅうしつ salah pembacaan youon (ょ).",
+  "opt_detail": [
+   {
+    "kana": "きょうしつ",
+    "rom": "kyoushitsu",
+    "arti": "ruang kelas",
+    "alasan": "きょうしつ (kyoushitsu) adalah pembacaan yang benar untuk 教室."
+   },
+   {
+    "kana": "きよしつ",
+    "rom": "kiyoshitsu",
+    "arti": "salah",
+    "alasan": "きよしつ (kiyoshitsu) salah pada penulisan huruf よ besar."
+   },
+   {
+    "kana": "きゅうしつ",
+    "rom": "kyuushitsu",
+    "arti": "salah",
+    "alasan": "きゅうしつ (kyuushitsu) salah pada penggunaan ゆ."
+   }
+  ],
+  "opt_note": [
+   "(kyoushitsu) ruang kelas",
+   "(kiyoshitsu) salah",
+   "(kyuushitsu) salah"
+  ],
+  "kunci_id": "きょうしつ"
+ },
+ {
+  "no": 19,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "明日、日本語の 「試験」 がありますよ。",
+  "img": "",
+  "options": [
+   {
+    "text": "しょくじ",
+    "img": ""
+   },
+   {
+    "text": "しけん",
+    "img": ""
+   },
+   {
+    "text": "しごと",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/2",
+  "trans": "Besok ada ujian Bahasa Jepang lho.",
+  "trans_rom": "Ashita, nihongo no 【____】 ga arimasu yo.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN Bab 13 - Kosakata Ujian] Kanji 試験 (ujian/tes) dibaca しけん (shiken). しょくじ (shokuji = makan) dan しごと (shigoto = pekerjaan).",
+  "opt_detail": [
+   {
+    "kana": "しょくじ",
+    "rom": "shokuji",
+    "arti": "makan bersama",
+    "alasan": "しょくじ (shokuji) berarti makan bersama (食事)."
+   },
+   {
+    "kana": "しけん",
+    "rom": "shiken",
+    "arti": "ujian / tes",
+    "alasan": "しけん (shiken) adalah cara baca kanji 試験 yang benar."
+   },
+   {
+    "kana": "しごと",
+    "rom": "shigoto",
+    "arti": "pekerjaan",
+    "alasan": "しごと (shigoto) berarti pekerjaan (仕事)."
+   }
+  ],
+  "opt_note": [
+   "(shokuji) makan bersama",
+   "(shiken) ujian / tes",
+   "(shigoto) pekerjaan"
+  ],
+  "kunci_id": "しけん"
+ },
+ {
+  "no": 20,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: わたしの家はこじまこうこうのちかくです。\nB: もうすこしでこじまこうこうだけど、、、\nA: つぎのしんごうをみぎにまがってください、、、あ、_____。\nB: ここ？じゃあ、お疲れ様でした。おやすみなさい。",
+  "img": "",
+  "options": [
+   {
+    "text": "ここでいいです。",
+    "img": ""
+   },
+   {
+    "text": "こちらこそ",
+    "img": ""
+   },
+   {
+    "text": "ありがとうございます",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "3/3",
+  "trans": "A: Rumah saya di dekat SMA Kojima.\nB: Sedikit lagi sampai SMA Kojima, tapi...\nA: Tolong belok kanan di lampu merah berikutnya... Ah, _____.\nB: Di sini? Kalau begitu, terima kasih atas kerja kerasnya. Selamat tidur.",
+  "trans_rom": "A: Watashi no ie wa Kojima Koukou no chikaku desu.\nB: Mou sukoshi de Kojima Koukou dakedo...\nA: Tsugi no shingou wo migi ni magatte kudasai... Ah, _____.\nB: Koko? Jaa, otsukaresama deshita. Oyasuminasai.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Ungkapan - Memberhentikan Kendaraan] Ungkapan koko de ii desu digunakan untuk memberi tahu pengemudi bahwa lokasi pemberhentian sudah sesuai.",
+  "opt_detail": [
+   {
+    "kana": "ここでいいです。",
+    "rom": "koko de ii desu.",
+    "arti": "di sini saja cukup",
+    "alasan": "Ungkapan baku saat memberi instruksi bahwa titik berhenti sudah sesuai."
+   },
+   {
+    "kana": "こちらこそ",
+    "rom": "kochirakoso",
+    "arti": "sama-sama / saya juga",
+    "alasan": "Digunakan untuk membalas ucapan perkenalan, salam, atau terima kasih."
+   },
+   {
+    "kana": "ありがとうございます",
+    "rom": "arigatou gozaimasu",
+    "arti": "terima kasih",
+    "alasan": "Tidak cocok dengan percakapan: diucapkan tepat saat menunjuk lokasi turun sebelum B bertanya penegasan."
+   }
+  ],
+  "opt_note": [
+   "(koko de ii desu) di sini saja cukup",
+   "(kochirakoso) sama-sama",
+   "(arigatou gozaimasu) terima kasih"
+  ],
+  "kunci_id": "ここでいいです。"
+ },
+ {
+  "no": 21,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "ともだちがびょうきのとき, 何をしますか？ ______________",
+  "img": "",
+  "options": [
+   {
+    "text": "びょういん に かえる",
+    "img": ""
+   },
+   {
+    "text": "びょういん に やすみ",
+    "img": ""
+   },
+   {
+    "text": "ごはん を たべて",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/5",
+  "trans": "Saat teman sakit, apa yang dilakukan? _____",
+  "trans_rom": "Tomodachi ga byouki no toki, nani wo shimasu ka? _____",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Ungkapan - Kondisi Sakit] Ketika ada yang sakit, tindakan yang relevan adalah istirahat/merawat (やすみ).",
+  "opt_detail": [
+   {
+    "kana": "びょういん に かえる",
+    "rom": "byouin ni kaeru",
+    "arti": "pulang ke rumah sakit",
+    "alasan": "Penggunaan kata 'pulang' ke rumah sakit kurang tepat secara tata bahasa."
+   },
+   {
+    "kana": "びょういん に やすみ",
+    "rom": "byouin ni yasumi",
+    "arti": "istirahat di rumah sakit",
+    "alasan": "Tepat kaitannya dengan tindakan medis/istirahat saat sakit."
+   },
+   {
+    "kana": "ごはん を たべて",
+    "rom": "gohan wo tabete",
+    "arti": "makan nasi",
+    "alasan": "Tidak langsung menjawab situasi merawat teman sakit."
+   }
+  ],
+  "opt_note": [
+   "(byouin ni kaeru) pulang",
+   "(byouin ni yasumi) istirahat",
+   "(gohan wo tabete) makan nasi"
+  ],
+  "kunci_id": "びょういん に やすみ"
+ },
+ {
+  "no": 22,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "リオ: どうしておくれましたか。\nニア: _____、みちがこみました。",
+  "img": "",
+  "options": [
+   {
+    "text": "ごめんおまたせしました",
+    "img": ""
+   },
+   {
+    "text": "どうぞおまたせしました",
+    "img": ""
+   },
+   {
+    "text": "すみませんおまたせしました",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "0/5",
+  "trans": "Rio: Kenapa Anda terlambat?\nNia: _____ jalannya macet.",
+  "trans_rom": "Rio: Doushite okuremashita ka?\nNia: _____ michi ga komimashita.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Ungkapan - Permintaan Maaf] Ungkapan sumimasen, omatase shimasu merupakan ucapan maaf sopan dan baku saat datang terlambat.",
+  "opt_detail": [
+   {
+    "kana": "ごめんおまたせしました",
+    "rom": "gomen omatase shimasu",
+    "arti": "maaf buat nunggu",
+    "alasan": "Kata gomen terlalu santai untuk situasi umum atau formal."
+   },
+   {
+    "kana": "どうぞおまたせしました",
+    "rom": "douzo omatase shimasu",
+    "arti": "silakan membuat menunggu",
+    "alasan": "Penggunaan kata douzo tidak cocok untuk kalimat permintaan maaf."
+   },
+   {
+    "kana": "すみませんおまたせしました",
+    "rom": "sumimasen omatase shimasu",
+    "arti": "maaf telah membuat Anda menunggu",
+    "alasan": "Ungkapan paling sopan dan tepat saat meminta maaf atas keterlambatan."
+   }
+  ],
+  "opt_note": [
+   "(gomen omatase shimasu) maaf buat nunggu",
+   "(douzo omatase shimasu) salah kata",
+   "(sumimasen omatase shimasu) maaf telah menunggu"
+  ],
+  "kunci_id": "すみませんおまたせしました"
+ },
+ {
+  "no": 23,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A : 夏休みはどこに行く予定ですか\nB : どこもいきません\nA : そうですか\nB : ＿＿＿",
+  "img": "",
+  "options": [
+   {
+    "text": "おたのしみにしてね",
+    "img": ""
+   },
+   {
+    "text": "おさしぶりね",
+    "img": ""
+   },
+   {
+    "text": "ゆっくりできてよかった",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "0/5",
+  "trans": "A: Liburan mau ke mana?\nB: Tidak ke mana-mana.\nA: Begitu ya.\nB: _____.",
+  "trans_rom": "A: Natsuyasumi wa doko ni iku yotei desu ka.\nB: Doko mo ikimasen.\nA: Sou desu ka.\nB: _____.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Ungkapan - Respon Santai] ゆっくりできてよかった tepat sebagai tanggapan positif saat liburan di rumah.",
+  "opt_detail": [
+   {
+    "kana": "おたのしみにしてね",
+    "rom": "otanoshimi ni shite ne",
+    "arti": "nantikan ya",
+    "alasan": "Tidak sesuai karena B tidak bepergian."
+   },
+   {
+    "kana": "おさしぶりね",
+    "rom": "hisashiburi ne",
+    "arti": "sudah lama tak jumpa",
+    "alasan": "Sapaan lama tak berjumpa, tidak relevan."
+   },
+   {
+    "kana": "ゆっくりできてよかった",
+    "rom": "yukkuri dekite yokatta",
+    "arti": "baguslah bisa bersantai",
+    "alasan": "Sangat sesuai sebagai penutup percakapan libur di rumah."
+   }
+  ],
+  "opt_note": [
+   "(otanoshimi) nantikan",
+   "(hisashiburi) lama tak jumpa",
+   "(yukkuri) bersantai"
+  ],
+  "kunci_id": "ゆっくりできてよかった"
+ },
+ {
+  "no": 24,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: 日本語が上手ですね。どこで勉強しましたか？\nB: よくアニメをみました。\nA: すばらしいですね。\nB: いえいえ、_____。",
+  "img": "",
+  "options": [
+   {
+    "text": "そんなことないです",
+    "img": ""
+   },
+   {
+    "text": "ありがとうございます",
+    "img": ""
+   },
+   {
+    "text": "かしこまりました",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/5",
+  "trans": "A: Bahasa Jepang Anda pandai ya. Belajar di mana?\nB: Saya sering menonton anime.\nA: Luar biasa ya.\nB: Tidak, _____.",
+  "trans_rom": "A: Nihongo ga jouzu desu ne. Doko de benkyou shimashita ka?\nB: Yoku anime wo mimashita.\nA: Subarashii desu ne.\nB: Ieie, _____.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Ungkapan - Kerendahan Hati] Ungkapan ieie, sonna koto nai desu merupakan cara baku untuk merendah halus saat menerima pujian.",
+  "opt_detail": [
+   {
+    "kana": "そんなことないです",
+    "rom": "sonna koto nai desu",
+    "arti": "tidak seperti itu kok",
+    "alasan": "Ungkapan kerendahan hati paling alami dipasangkan dengan ieie saat dipuji."
+   },
+   {
+    "kana": "ありがとうございます",
+    "rom": "arigatou gozaimasu",
+    "arti": "terima kasih",
+    "alasan": "Kurang pas diawali kata ieie dalam percakapan umum."
+   },
+   {
+    "kana": "かしこまりました",
+    "rom": "kashikomarimashita",
+    "arti": "baik, dimengerti",
+    "alasan": "Ungkapan formal pelayan saat menerima perintah."
+   }
+  ],
+  "opt_note": [
+   "(sonna koto nai desu) tidak seperti itu kok",
+   "(arigatou gozaimasu) terima kasih",
+   "(kashikomarimashita) dimengerti"
+  ],
+  "kunci_id": "そんなことないです"
+ },
+ {
+  "no": 25,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: もしもし、利田さん。\nB: ああ、利田さん、いま_____？\nA: 駅にいます。すみません、時間を間違えて、１５分ぐらい遅れます。",
+  "img": "",
+  "options": [
+   {
+    "text": "だれですか",
+    "img": ""
+   },
+   {
+    "text": "どこですか",
+    "img": ""
+   },
+   {
+    "text": "どうですか",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "5/5",
+  "trans": "A: Halo, Rida.\nB: Ah, Rida, sekarang _____?\nA: Ada di stasiun. Maaf, saya salah jam dan akan terlambat sekitar 15 menit.",
+  "trans_rom": "A: Moshimoshi, Rida-san.\nB: Aa, Rida-san, ima _____?\nA: Eki ni imasu. Sumimasen, jikan wo machigaete, juugofun gurai okuremasu.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 3 - Kata Tanya Lokasi] Pertanyaan doko desu ka untuk lokasi, tepat karena dijawab eki ni imasu.",
+  "opt_detail": [
+   {
+    "kana": "だれですか",
+    "rom": "dare desu ka",
+    "arti": "siapa?",
+    "alasan": "Dare desu ka untuk identitas orang."
+   },
+   {
+    "kana": "どこですか",
+    "rom": "doko desu ka",
+    "arti": "di mana?",
+    "alasan": "Doko desu ka menanyakan lokasi. Pas dengan balasan stasiun."
+   },
+   {
+    "kana": "どうですか",
+    "rom": "dou desu ka",
+    "arti": "bagaimana?",
+    "alasan": "Dou desu ka untuk pendapat atau keadaan."
+   }
+  ],
+  "opt_note": [
+   "(dare desu ka) siapa?",
+   "(doko desu ka) di mana?",
+   "(dou desu ka) bagaimana?"
+  ],
+  "kunci_id": "どこですか"
+ },
+ {
+  "no": 26,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: _____。\nB: お疲れ様でした。",
+  "img": "",
+  "options": [
+   {
+    "text": "さきにしつれいします。",
+    "img": ""
+   },
+   {
+    "text": "これからもしよろしく",
+    "img": ""
+   },
+   {
+    "text": "おめでとうございます",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/5",
+  "trans": "A: _____.\nB: Terima kasih atas kerja kerasnya.",
+  "trans_rom": "A: _____.\nB: Otsukaresama deshita.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Ungkapan - Salam Pulang Kerja] Ungkapan さきにしつれいします (saki ni shitsurei shimasu) diucapkan saat pamit pulang kerja lebih awal, yang dibalas oleh rekan kerja dengan お疲れ様でした (otsukaresama deshita).",
+  "opt_detail": [
+   {
+    "kana": "さきにしつれいします。",
+    "rom": "saki ni shitsurei shimasu.",
+    "arti": "saya permisi pulang dulu",
+    "alasan": "Ungkapan baku saat pamit mendahului pulang kerja."
+   },
+   {
+    "kana": "これからもしよろしく",
+    "rom": "kore kara mo yoroshiku",
+    "arti": "mohon bimbingannya ke depan",
+    "alasan": "Digunakan untuk hubungan kerja sama jangka panjang."
+   },
+   {
+    "kana": "おめでとうございます",
+    "rom": "omedetou gozaimasu",
+    "arti": "selamat",
+    "alasan": "Digunakan untuk memberikan ucapan selamat atas pencapaian/perayaan."
+   }
+  ],
+  "opt_note": [
+   "(saki ni shitsurei shimasu) permisi pulang dulu",
+   "(kore kara mo yoroshiku) mohon bimbingannya",
+   "(omedetou gozaimasu) selamat"
+  ],
+  "kunci_id": "さきにしつれいします。"
+ },
+ {
+  "no": 27,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: すみません、コピー機の使い方をおしえていただけませんか?\nB: いいですよ。コピー機を__________ことがありますか?\nA: いいえ、ありません\nB: そうですか。じゃあ、せつめいしますね。",
+  "img": "assets/hare_34.jpg",
+  "options": [
+   {
+    "text": "使った",
+    "img": ""
+   },
+   {
+    "text": "教えた",
+    "img": ""
+   },
+   {
+    "text": "持った",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/3",
+  "trans": "A: Tolong ajari pakai fotokopi?\nB: Pernah _____ mesin fotokopi?\nA: Belum.\nB: Saya jelaskan.",
+  "trans_rom": "A: Sumimasen, kopii-ki no tsukaikata wo oshiete itadakemasen ka?\nB: Ii desu yo. Kopii-ki wo _____ koto ga arimasu ka?\nA: Iie, arimasen.\nB: Sou desu ka. Jaa, setsumei shimasu ne.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 19 - Pengalaman] Pola Ta + koto ga arimasu menyatakan pengalaman. 使った tepat.",
+  "opt_detail": [
+   {
+    "kana": "つかった",
+    "rom": "tsukatta",
+    "arti": "pernah memakai",
+    "alasan": "使った tepat menanyakan pengalaman memakai mesin."
+   },
+   {
+    "kana": "おしえた",
+    "rom": "oshieta",
+    "arti": "pernah mengajari",
+    "alasan": "教えた terbalik dengan posisi yang minta diajari."
+   },
+   {
+    "kana": "もった",
+    "rom": "motta",
+    "arti": "pernah membawa",
+    "alasan": "持った kurang pas untuk operasional mesin."
+   }
+  ],
+  "opt_note": [
+   "(tsukatta) memakai",
+   "(oshieta) mengajari",
+   "(motta) membawa"
+  ],
+  "kunci_id": "使った"
+ },
+ {
+  "no": 28,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: おさきにしつれいします\nB:はい___________ ",
+  "img": "",
+  "options": [
+   {
+    "text": "おだいじに",
+    "img": ""
+   },
+   {
+    "text": "いってらっしゃい",
+    "img": ""
+   },
+   {
+    "text": "いらっしゃいませ",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "4/4",
+  "trans": "A: Permisi pergi dulu.\nB: Ya, _____.",
+  "trans_rom": "A: Osaki ni shitsurei shimasu.\nB: Hai, _____.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Ungkapan - Salam Bepergian] Jawaban pamit berangkat adalah いってらっしゃい.",
+  "opt_detail": [
+   {
+    "kana": "おだいじに",
+    "rom": "odaiji ni",
+    "arti": "lekas sembuh",
+    "alasan": "Diucapkan kepada orang sakit."
+   },
+   {
+    "kana": "いってらっしゃい",
+    "rom": "itterasshai",
+    "arti": "selamat jalan",
+    "alasan": "Balasan bagi orang yang hendak pergi."
+   },
+   {
+    "kana": "いらっしゃいませ",
+    "rom": "irasshaimase",
+    "arti": "selamat datang",
+    "alasan": "Salam penyambutan tamu toko."
+   }
+  ],
+  "opt_note": [
+   "(odaiji) sembuh",
+   "(itterasshai) jalan",
+   "(irasshaimase) datang"
+  ],
+  "kunci_id": "いってらっしゃい"
+ },
+ {
+  "no": 29,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "かいぎはもうはじまったんですね、入ることはもう_______",
+  "img": "",
+  "options": [
+   {
+    "text": "ちょっとですか?",
+    "img": ""
+   },
+   {
+    "text": "いちどですか?",
+    "img": ""
+   },
+   {
+    "text": "むりですか",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "3/3",
+  "trans": "Rapat sudah dimulai. Apakah masuk sudah _____?",
+  "trans_rom": "Kaigi wa mou hajimattan desu ne. Hairu koto wa mou _____.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Ungkapan - Kemungkinan] むりですか menyatakan keraguan masih boleh masuk.",
+  "opt_detail": [
+   {
+    "kana": "ちょっとですか?",
+    "rom": "chotto desu ka",
+    "arti": "sebentar?",
+    "alasan": "Tidak cocok dengan percakapan: untuk kelayakan masuk rapat."
+   },
+   {
+    "kana": "いちどですか?",
+    "rom": "ichido desu ka",
+    "arti": "satu kali?",
+    "alasan": "Menanyakan frekuensi, tidak relevan."
+   },
+   {
+    "kana": "むりですか",
+    "rom": "muri desu ka",
+    "arti": "mustahil?",
+    "alasan": "Sesuai situasi terlambat masuk."
+   }
+  ],
+  "opt_note": [
+   "(chotto) sebentar",
+   "(ichido) sekali",
+   "(muri) mustahil"
+  ],
+  "kunci_id": "むりですか"
+ },
+ {
+  "no": 30,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: 家にペットがいますか？\nB: はい、家に色々_____。",
+  "img": "",
+  "options": [
+   {
+    "text": "います",
+    "img": ""
+   },
+   {
+    "text": "あります",
+    "img": ""
+   },
+   {
+    "text": "します",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/5",
+  "trans": "A: Apakah ada hewan peliharaan di rumah?\nB: Ya, di rumah ada bermacam-macam _____.",
+  "trans_rom": "A: Ie ni petto ga imasu ka?\nB: Hai, ie ni iroiro _____.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 10 - Keberadaan Makhluk Hidup] Hewan peliharaan (petto) merupakan benda bernyawa atau makhluk hidup, sehingga kata kerja keberadaan yang tepat digunakan adalah imasu. Kata arimasu hanya digunakan untuk benda mati.",
+  "opt_detail": [
+   {
+    "kana": "います",
+    "rom": "imasu",
+    "arti": "ada (makhluk hidup)",
+    "alasan": "Tepat digunakan untuk hewan peliharaan (petto) yang merupakan makhluk hidup."
+   },
+   {
+    "kana": "あります",
+    "rom": "arimasu",
+    "arti": "ada (benda mati)",
+    "alasan": "Hanya digunakan untuk benda mati atau tanaman, tidak cocok untuk hewan."
+   },
+   {
+    "kana": "します",
+    "rom": "shimasu",
+    "arti": "melakukan",
+    "alasan": "Berarti melakukan suatu tindakan, tidak pas secara konteks keberadaan."
+   }
+  ],
+  "opt_note": [
+   "(imasu) ada makhluk hidup",
+   "(arimasu) ada benda mati",
+   "(shimasu) melakukan"
+  ],
+  "kunci_id": "います"
+ },
+ {
+  "no": 31,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A :こっち、もう閉まっている。\nB :入るのはもう、。。。？\nA : はい、むりです",
+  "img": "",
+  "options": [
+   {
+    "text": "無理ですか",
+    "img": ""
+   },
+   {
+    "text": "ありえないか",
+    "img": ""
+   },
+   {
+    "text": "できないか",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/5",
+  "trans": "A: Sini sudah tutup.\nB: Masuk sudah _____?\nA: Ya, tidak bisa.",
+  "trans_rom": "A: Kocchi, mou shimatte iru.\nB: Hairu no wa mou _____?\nA: Hai, muri desu.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Ungkapan - Respon Keadaan] Jawaban はい、むりです simetris dengan pertanyaan 無理ですか.",
+  "opt_detail": [
+   {
+    "kana": "むりでつか",
+    "rom": "muri desu ka",
+    "arti": "mustahil?",
+    "alasan": "Sesuai penegasan balasan はい、むりです."
+   },
+   {
+    "kana": "ありえないか",
+    "rom": "arienai ka",
+    "arti": "masa sih?",
+    "alasan": "Bahasa kasual kurang tepat standar."
+   },
+   {
+    "kana": "できないか",
+    "rom": "dekinai ka",
+    "arti": "tidak bisa?",
+    "alasan": "Kurang simetris dengan kata 無理."
+   }
+  ],
+  "opt_note": [
+   "(muri) mustahil",
+   "(arienai) masa sih",
+   "(dekinai) tidak bisa"
+  ],
+  "kunci_id": "無理ですか"
+ },
+ {
+  "no": 32,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "君は朝食に何を______*",
+  "img": "",
+  "options": [
+   {
+    "text": "のみませんか",
+    "img": ""
+   },
+   {
+    "text": "たべますか",
+    "img": ""
+   },
+   {
+    "text": "ねますか",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "5/5",
+  "trans": "Kamu _____ apa untuk sarapan?",
+  "trans_rom": "Kimi wa choushoku ni nani wo _____?",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 6 - Kata Kerja Objek Makanan] 朝食 dipasangkan dengan たべますか. のみませんか untuk minum, ねますか tidur.",
+  "opt_detail": [
+   {
+    "kana": "のみませんか",
+    "rom": "nomimasen ka",
+    "arti": "maukah minum?",
+    "alasan": "Sarapan umum ditanya 'makan apa'."
+   },
+   {
+    "kana": "たべますか",
+    "rom": "tabemasu ka",
+    "arti": "makan?",
+    "alasan": "Sangat pas menanyakan menu sarapan."
+   },
+   {
+    "kana": "ねますか",
+    "rom": "nemasu ka",
+    "arti": "tidur?",
+    "alasan": "Tidak ada kaitan dengan sarapan."
+   }
+  ],
+  "opt_note": [
+   "(nomimasen) minum?",
+   "(tabemasu) makan?",
+   "(nemasu) tidur?"
+  ],
+  "kunci_id": "たべますか"
+ },
+ {
+  "no": 33,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: 日本語はどうですか？\nB: 前よりはなせる_____。",
+  "img": "",
+  "options": [
+   {
+    "text": "ようにありますか",
+    "img": ""
+   },
+   {
+    "text": "ようになりました",
+    "img": ""
+   },
+   {
+    "text": "のになりました",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/5",
+  "trans": "A: Bagaimana bahasa Jepangmu?\nB: Dibandingkan sebelumnya, sekarang _____.",
+  "trans_rom": "A: Nihongo wa dou desu ka?\nB: Mae yori hanaseru _____.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 36 - Perubahan Kemampuan] Pola Kata Kerja Potensial + you ni narimashita untuk perubahan tidak bisa menjadi bisa.",
+  "opt_detail": [
+   {
+    "kana": "ようにありますか",
+    "rom": "you ni arimasu ka",
+    "arti": "salah tata bahasa",
+    "alasan": "Bentuk tata bahasa ini tidak tepat."
+   },
+   {
+    "kana": "ようになりました",
+    "rom": "you ni narimashita",
+    "arti": "menjadi bisa...",
+    "alasan": "Pola baku kemajuan kemampuan dari sebelumnya."
+   },
+   {
+    "kana": "のになりました",
+    "rom": "no ni narimashita",
+    "arti": "salah tata bahasa",
+    "alasan": "Partikel no di sini keliru."
+   }
+  ],
+  "opt_note": [
+   "(you ni arimasu ka) salah",
+   "(you ni narimashita) menjadi bisa",
+   "(no ni narimashita) salah"
+  ],
+  "kunci_id": "ようになりました"
+ },
+ {
+  "no": 34,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: イベントはどこまでにいけますか。\nB: 広場でやりますよ。\nA: 雨の_____はどうしますか。\nB: 中止になります。",
+  "img": "",
+  "options": [
+   {
+    "text": "ところ",
+    "img": ""
+   },
+   {
+    "text": "はず",
+    "img": ""
+   },
+   {
+    "text": "ばあい",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "0/2",
+  "trans": "A: Acara diadakan di mana?\nB: Di lapangan lho.\nA: Dalam _____ hujan bagaimana?\nB: Akan dibatalkan.",
+  "trans_rom": "A: Ibento wa doko made ni ikemasu ka?\nB: Hiroba de yarimasu yo.\nA: Ame no _____ wa dou shimasu ka?\nB: Chuushi ni narimasu.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 45 - Pengandaian Kasus] Baai untuk situasi atau pengandaian kondisi tertentu.",
+  "opt_detail": [
+   {
+    "kana": "ところ",
+    "rom": "tokoro",
+    "arti": "tempat",
+    "alasan": "Tokoro berarti tempat, kurang pas dengan hujan."
+   },
+   {
+    "kana": "はず",
+    "rom": "hazu",
+    "arti": "seharusnya",
+    "alasan": "Hazu menyatakan perkiraan."
+   },
+   {
+    "kana": "ばあい",
+    "rom": "baai",
+    "arti": "apabila / kasus",
+    "alasan": "Baai tepat untuk skenario hujan."
+   }
+  ],
+  "opt_note": [
+   "(tokoro) tempat",
+   "(hazu) seharusnya",
+   "(baai) apabila"
+  ],
+  "kunci_id": "ばあい"
+ },
+ {
+  "no": 35,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: おやまにおすすめのところはどこですか。\nB: わかりました。ければ、えん ゆうめいなところです。_____行ってみてください。",
+  "img": "",
+  "options": [
+   {
+    "text": "ぜんぜん",
+    "img": ""
+   },
+   {
+    "text": "わかた",
+    "img": ""
+   },
+   {
+    "text": "ぜひ",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "0/2",
+  "trans": "A: Tempat rekomendasi di gunung di mana?\nB: Tempat yang terkenal sangat indah. Silakan _____ cobalah pergi ke sana.",
+  "trans_rom": "A: Oyama ni osusume no tokoro wa doko desu ka?\nB: Wakarimashita. Kereba, en yuumei na tokoro desu. _____ itte mite kudasai.",
+  "mnn": "Hyougen",
+  "analisis": "[MNN Bab 19 - Kata Keterangan Anjuran] Zehi berpasangan pola saran ~te mite kudasai.",
+  "opt_detail": [
+   {
+    "kana": "ぜんぜん",
+    "rom": "zenzen",
+    "arti": "sama sekali tidak",
+    "alasan": "Zenzen harus berpasangan kalimat negatif."
+   },
+   {
+    "kana": "わかた",
+    "rom": "wakata",
+    "arti": "salah eja",
+    "alasan": "Wakata ejaan tidak baku."
+   },
+   {
+    "kana": "ぜひ",
+    "rom": "zehi",
+    "arti": "sangat disarankan",
+    "alasan": "Zehi tepat dikombinasikan kalimat anjuran."
+   }
+  ],
+  "opt_note": [
+   "(zenzen) tidak",
+   "(wakata) salah eja",
+   "(zehi) disarankan"
+  ],
+  "kunci_id": "ぜひ"
+ },
+ {
+  "no": 36,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "女の人: すみません。メニューを見せてください。\n店員: はい、どうぞ。\n女の人: じゃあ、お茶をお願いします。\n店員: かしこまりました。\n\n● 女は何を注文しましたか。",
+  "img": "",
+  "options": [
+   {
+    "text": "牛乳",
+    "img": "assets/hare_33.jpg"
+   },
+   {
+    "text": "コーヒー",
+    "img": "assets/hare_32.jpg"
+   },
+   {
+    "text": "お茶",
+    "img": "assets/hare_31.jpg"
+   }
+  ],
+  "answer": 2,
+  "score": "0/3",
+  "trans": "Pertanyaan: Apa yang dipesan oleh wanita tersebut?",
+  "trans_rom": "Onna no hito wa nani wo chuumon shimashita ka?",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 3 - Listening Pemesanan] Dalam transkrip percakapan, wanita tersebut meminta ocha wo onegai shimasu (tolong tehnya). Pilihan yang benar adalah ocha.",
+  "opt_detail": [
+   {
+    "kana": "ぎゅうにゅう",
+    "rom": "gyuunyuu",
+    "arti": "susu sapi",
+    "alasan": "Gyuunyuu berarti susu, bukan pesanannya."
+   },
+   {
+    "kana": "コーヒー",
+    "rom": "koohii",
+    "arti": "kopi",
+    "alasan": "Koohii berarti kopi, bukan pesanannya."
+   },
+   {
+    "kana": "おちゃ",
+    "rom": "ocha",
+    "arti": "teh hijau",
+    "alasan": "Ocha berarti teh hijau, tepat sesuai dengan pesanan."
+   }
+  ],
+  "opt_note": [
+   "(gyuunyuu) susu sapi",
+   "(koohii) kopi",
+   "(ocha) teh hijau"
+  ],
+  "kunci_id": "お茶"
+ },
+ {
+  "no": 37,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "男の人: すみません、東京行きの飛行機は何時に出ますか。\n女の人: はい、午前 10時50分 出発です。\n男の人: 搭乗口はどこですか。\n女の人: 18番 です。\n\n● 飛行機は何時に出ますか。",
+  "img": "assets/hare_30.jpg",
+  "options": [
+   {
+    "text": "10.30",
+    "img": ""
+   },
+   {
+    "text": "11.50",
+    "img": ""
+   },
+   {
+    "text": "10.50",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "0/6",
+  "trans": "Pertanyaan: Pesawat berangkat jam berapa?",
+  "trans_rom": "Hikouki wa nanji ni demasu ka?",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 4 - Listening Waktu Jam] Wanita menyatakan gozen 10ji 50pun. Pilihan yang benar adalah 10.50.",
+  "opt_detail": [
+   {
+    "kana": "じゅうじさんじゅっぷん",
+    "rom": "juuji sanjuuppun",
+    "arti": "10.30",
+    "alasan": "Jam 10.30 tidak sesuai dengan percakapan."
+   },
+   {
+    "kana": "じゅういちじごじゅっぷん",
+    "rom": "juuichiji gojuuppun",
+    "arti": "11.50",
+    "alasan": "Jam 11.50 tidak sesuai dengan percakapan."
+   },
+   {
+    "kana": "じゅうじごじゅっぷん",
+    "rom": "juuji gojuuppun",
+    "arti": "10.50",
+    "alasan": "Cocok dengan audio: sesuai dengan dialog 10ji 50pun."
+   }
+  ],
+  "opt_note": [
+   "(juuji sanjuuppun) 10.30",
+   "(juuichiji gojuuppun) 11.50",
+   "(juuji gojuuppun) 10.50"
+  ],
+  "kunci_id": "10.50"
+ },
+ {
+  "no": 38,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "MASIH SOAL DIATAS TENTANG PESAWAT\n\n#pintu masuk nomor berapa?",
+  "img": "",
+  "options": [
+   {
+    "text": "No. 16",
+    "img": ""
+   },
+   {
+    "text": "No. 15",
+    "img": ""
+   },
+   {
+    "text": "No. 18",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "5/5",
+  "trans": "Nomor pintu keberangkatan pesawat.",
+  "trans_rom": "Mada sou ijou ni tsuite no hikouki. Joujouguchi wa nanban desu ka.",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 4 - Choukai Angka Nomor] Wanita menyebut 18番. Jawaban No. 18.",
+  "opt_detail": [
+   {
+    "kana": "じゅうろくばん",
+    "rom": "juurokuban",
+    "arti": "Nomor 16",
+    "alasan": "Angka 16 tidak disebut."
+   },
+   {
+    "kana": "じゅうごばん",
+    "rom": "juugoban",
+    "arti": "Nomor 15",
+    "alasan": "Angka 15 tidak disebut."
+   },
+   {
+    "kana": "じゅうはちばん",
+    "rom": "juuhachiban",
+    "arti": "Nomor 18",
+    "alasan": "Sesuai '18番です'."
+   }
+  ],
+  "opt_note": [
+   "(16) salah",
+   "(15) salah",
+   "(18) tepat"
+  ],
+  "kunci_id": "No. 18"
+ },
+ {
+  "no": 39,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "女の人: すみません、えんぴつとハサミはどこですか。\n男の人: 机のひきだしにあります。上から二つ目ですよ。\n女の人: あ、わかりました。ありがとうございます。\n\n● えんぴつとハサミはどこにありますか。",
+  "img": "",
+  "options": [
+   {
+    "text": "上から 3 つ目です。",
+    "img": "assets/hare_29.png"
+   },
+   {
+    "text": "上から 5 つ目です。",
+    "img": "assets/hare_27.png"
+   },
+   {
+    "text": "上から 2 つ目です。",
+    "img": "assets/hare_28.png"
+   }
+  ],
+  "answer": 2,
+  "score": "0/5",
+  "trans": "Pertanyaan: Di mana pensil dan gunting berada?",
+  "trans_rom": "Enpitsu to hasami wa doko ni arimasu ka?",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 11 - Listening Urutan Posisi] Pria menyebutkan ue kara futatsume. Pilihan benar laci ke-2.",
+  "opt_detail": [
+   {
+    "kana": "うえからみっつめ",
+    "rom": "ue kara mittsu me",
+    "arti": "ke-3 dari atas",
+    "alasan": "Laci ke-3 tidak sesuai percakapan."
+   },
+   {
+    "kana": "うえからいつつめ",
+    "rom": "ue kara itsutsu me",
+    "arti": "ke-5 dari atas",
+    "alasan": "Laci ke-5 tidak sesuai percakapan."
+   },
+   {
+    "kana": "うえからふたつめ",
+    "rom": "ue kara futatsu me",
+    "arti": "ke-2 dari atas",
+    "alasan": "Sesuai percakapan ue kara futatsume."
+   }
+  ],
+  "opt_note": [
+   "(mittsu me) ke-3",
+   "(itsutsu me) ke-5",
+   "(futatsu me) ke-2"
+  ],
+  "kunci_id": "上から 2 つ目です。"
+ },
+ {
+  "no": 40,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "男の人: すみません、レストランの仕事について質問があります。\n女の人: はい、どうぞ。\n男の人: もしスプーンやフォークがなくなったら、どうしますか。\n女の人: そのときは上司に報告してください。あとで注文しますから。\n男の人: わかりました。ありがとうございます。\n\n● スプーンやフォークがなくなったとき、どうしますか。",
+  "img": "",
+  "options": [
+   {
+    "text": "Pergi belanja",
+    "img": "assets/hare_26.jpg"
+   },
+   {
+    "text": "Mencatat",
+    "img": "assets/hare_24.jpg"
+   },
+   {
+    "text": "Lapor ke atasannya",
+    "img": "assets/hare_25.jpg"
+   }
+  ],
+  "answer": 2,
+  "score": "0/5",
+  "trans": "Pertanyaan: Apa yang dilakukan saat sendok atau garpu habis?",
+  "trans_rom": "Supuun ya fooku ga nakunatta toki, dou shimasu ka?",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 14 - Listening Instruksi Kerja] Wanita: joushi ni houkoku shite kudasai. Pilihan benar lapor atasan.",
+  "opt_detail": [
+   {
+    "kana": "かいものにいく",
+    "rom": "kaimono ni iku",
+    "arti": "Pergi belanja",
+    "alasan": "Tidak diminta belanja sendiri."
+   },
+   {
+    "kana": "メモする",
+    "rom": "memo suru",
+    "arti": "Mencatat",
+    "alasan": "Mencatat saja tidak cukup."
+   },
+   {
+    "kana": "じょうしにほうこく",
+    "rom": "joushi ni houkoku",
+    "arti": "Lapor ke atasannya",
+    "alasan": "Tepat sesuai joushi ni houkoku."
+   }
+  ],
+  "opt_note": [
+   "(kaimono ni iku) belanja",
+   "(memo suru) mencatat",
+   "(joushi ni houkoku) atasan"
+  ],
+  "kunci_id": "Lapor ke atasannya"
+ },
+ {
+  "no": 41,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "おんなのひと: すみません、ちゅうもん おねがいします。\nてんいん: はい、どうぞ。\nおんなのひと: おにぎりを よっつ と サンドイッチを みっつ おねがいします。\nてんいん: かしこまりました。\n\n● おんなのひとは なにを ちゅうもんしましたか。",
+  "img": "",
+  "options": [
+   {
+    "text": "おにぎり 3 サンドイッチ 4",
+    "img": "assets/hare_23.png"
+   },
+   {
+    "text": "おにぎり 3 サンドイッチ 3",
+    "img": "assets/hare_21.png"
+   },
+   {
+    "text": "おにぎり 4 サンドイッチ 3",
+    "img": "assets/hare_22.png"
+   }
+  ],
+  "answer": 2,
+  "score": "0/5",
+  "trans": "Pertanyaan: Apa yang dipesan oleh wanita tersebut?",
+  "trans_rom": "Onna no hito wa nani wo chuumon shimashita ka?",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 11 - Listening Jumlah Benda] Wanita: onigiri yottsu dan sandwich mittsu.",
+  "opt_detail": [
+   {
+    "kana": "おにぎりさん サンドイッチよん",
+    "rom": "onigiri 3 sandwich 4",
+    "arti": "Onigiri 3, Sandwich 4",
+    "alasan": "Jumlah terbalik."
+   },
+   {
+    "kana": "おにぎりさん サンドイッチさん",
+    "rom": "onigiri 3 sandwich 3",
+    "arti": "Onigiri 3, Sandwich 3",
+    "alasan": "Jumlah onigiri kurang."
+   },
+   {
+    "kana": "おにぎりよん サンドイッチさん",
+    "rom": "onigiri 4 sandwich 3",
+    "arti": "Onigiri 4, Sandwich 3",
+    "alasan": "Sesuai 4 onigiri dan 3 sandwich."
+   }
+  ],
+  "opt_note": [
+   "(3-4) terbalik",
+   "(3-3) kurang",
+   "(4-3) tepat"
+  ],
+  "kunci_id": "おにぎり 4 サンドイッチ 3"
+ },
+ {
+  "no": 42,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "おとこのひと: すみません、コンビニは どこですか。\nおんなのひと: コンビニですか。ホテルさくらの となりですよ。\nおとこのひと: あ、わかりました。ありがとうございます。\n\n● コンビニは どこに ありますか。",
+  "img": "",
+  "options": [
+   {
+    "text": "Disamping hotel sakura",
+    "img": "assets/hare_20.png"
+   },
+   {
+    "text": "Didepan hotel sakura",
+    "img": "assets/hare_19.png"
+   }
+  ],
+  "answer": 0,
+  "score": "5/5",
+  "trans": "Pertanyaan: Di mana minimarket berada?",
+  "trans_rom": "Konbini wa doko ni arimasu ka?",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 10 - Listening Lokasi] Wanita: hoteru sakura no tonari. Pilihan samping hotel.",
+  "opt_detail": [
+   {
+    "kana": "ホテルさくらのとなり",
+    "rom": "hotel sakura no tonari",
+    "arti": "Di samping hotel sakura",
+    "alasan": "Sesuai tonari (samping)."
+   },
+   {
+    "kana": "ホテルさくらのまえ",
+    "rom": "hotel sakura no mae",
+    "arti": "Di depan hotel sakura",
+    "alasan": "Mae (depan) tidak disebut."
+   }
+  ],
+  "opt_note": [
+   "(tonari) samping",
+   "(mae) depan"
+  ],
+  "kunci_id": "Disamping hotel sakura"
+ },
+ {
+  "no": 43,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "おんなのひと: きのうは あめが たくさん ふりましたね。\nおとこのひと: そうですね。\nおんなのひと: きょうの てんきは どうですか。\nおとこのひと: はれです。\n\n● きょうの てんきは どうですか。",
+  "img": "",
+  "options": [
+   {
+    "text": "あめ",
+    "img": "assets/hare_18.jpg"
+   },
+   {
+    "text": "くもり",
+    "img": "assets/hare_16.jpg"
+   },
+   {
+    "text": "はれ",
+    "img": "assets/hare_17.jpg"
+   }
+  ],
+  "answer": 2,
+  "score": "0/5",
+  "trans": "Pertanyaan: Bagaimana cuaca hari ini?",
+  "trans_rom": "Kyou no tenki wa dou desu ka?",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 8 - Listening Cuaca] Pria: hare desu untuk hari ini.",
+  "opt_detail": [
+   {
+    "kana": "あめ",
+    "rom": "ame",
+    "arti": "hujan",
+    "alasan": "Hujan cuaca kemarin."
+   },
+   {
+    "kana": "くもり",
+    "rom": "kumori",
+    "arti": "berawan",
+    "alasan": "Berawan tidak disebut."
+   },
+   {
+    "kana": "はれ",
+    "rom": "hare",
+    "arti": "cerah",
+    "alasan": "Sesuai ucapan hare desu."
+   }
+  ],
+  "opt_note": [
+   "(ame) hujan",
+   "(kumori) awan",
+   "(hare) cerah"
+  ],
+  "kunci_id": "はれ"
+ },
+ {
+  "no": 44,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "おとこのひと: きのうは ねつが ありました。おんなのひと: そうですか。いまは どうですか。おとこのひと: あたまが いたいです。\n\n● おとこのひとは いま どうですか。",
+  "img": "",
+  "options": [
+   {
+    "text": "Sakit kepala (Gambar 1)",
+    "img": "assets/hare_15.jpg"
+   },
+   {
+    "text": "Demam (Gambar 2)",
+    "img": "assets/hare_14.jpg"
+   },
+   {
+    "text": "Batuk (Gambar 3)",
+    "img": "assets/hare_13.jpg"
+   }
+  ],
+  "answer": 0,
+  "score": "0/6",
+  "trans": "Kemarin demam. Sekarang?\nPria: Kepala sakit.",
+  "trans_rom": "atama ga itai",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 12 - Choukai Gejala Sakit] SEKARANG: あたまがいたい. Kemarin demam.",
+  "opt_detail": [
+   {
+    "kana": "あたまがいたい",
+    "rom": "atama ga itai",
+    "arti": "sakit kepala",
+    "alasan": "Sesuai 'あたまがいたいです' sekarang."
+   },
+   {
+    "kana": "ねつがある",
+    "rom": "netsu ga aru",
+    "arti": "demam",
+    "alasan": "Demam itu kemarin."
+   },
+   {
+    "kana": "せきがでる",
+    "rom": "seki ga deru",
+    "arti": "batuk",
+    "alasan": "Tidak disebut."
+   }
+  ],
+  "opt_note": [
+   "(itai) kepala",
+   "(netsu) demam",
+   "(seki) batuk"
+  ],
+  "kunci_id": "Sakit kepala (Gambar 1)"
+ },
+ {
+  "no": 45,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "おとこのひと: すみません、きょうとの ツアーについて しつもんがあります。かんこうあんない: はい、どうぞ。おとこのひと: どの ツアーは りょうりが ふくまれていますか。かんこうあんない: じてんしゃツアーは チケットに しょくじが ふくまれています。\n\n● どのツアーは しょくじが ふくまれていますか。",
+  "img": "",
+  "options": [
+   {
+    "text": "Gambar tiket tur sepeda",
+    "img": "assets/hare_12.jpg"
+   }
+  ],
+  "answer": 0,
+  "score": "6/6",
+  "trans": "Tur mana termasuk makan?\nPemandu: Tur sepeda.",
+  "trans_rom": "Otoko no hito: Sumimasen, Kyoto no tsuaa ni tsuite shitsumon ga arimasu. Kankou annai: Hai, douzo. Otoko no hito: Dono tsuaa wa ryouri ga fukumarete imasu ka. Kankou annai: Jitensha tsuaa wa chiketto ni shokuji ga fukumarete imasu.",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 13 - Choukai Fasilitas Tur] Pemandu: じてんしゃツアー termasuk makan.",
+  "opt_detail": [
+   {
+    "kana": "じてんしゃツアー",
+    "rom": "jitensha tsuaa",
+    "arti": "Tur sepeda",
+    "alasan": "Tepat sesuai info tur sepeda termasuk makan."
+   }
+  ],
+  "opt_note": [
+   "(jitensha) sepeda"
+  ],
+  "kunci_id": "Gambar tiket tur sepeda"
+ },
+ {
+  "no": 46,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "おんなのひと: すみません、たなかさんの へやは どこですか。かんごし: たなかさんの へやですか。３２５ごうしつです。おんなのひと: ありがとうございます。\n\n● たなかさんの へやは なんばんですか。",
+  "img": "",
+  "options": [
+   {
+    "text": "NO 345",
+    "img": ""
+   },
+   {
+    "text": "NO 325",
+    "img": ""
+   },
+   {
+    "text": "NO 235",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/5",
+  "trans": "Kamar Tanaka nomor?\nPerawat: 325.",
+  "trans_rom": "sanbyaku nijuugogou shitsu",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 3 - Choukai Nomor Kamar] Perawat: 325号室. Jawaban NO 325.",
+  "opt_detail": [
+   {
+    "kana": "さんびゃくよんじゅうご",
+    "rom": "sanbyaku yonjuugo",
+    "arti": "Nomor 345",
+    "alasan": "345 tidak tepat."
+   },
+   {
+    "kana": "さんびゃくにじゅうご",
+    "rom": "sanbyaku nijuugo",
+    "arti": "Nomor 325",
+    "alasan": "Sesuai '３２５ごうしつです'."
+   },
+   {
+    "kana": "にびゃくさんじゅうご",
+    "rom": "nibyaku sanjuugo",
+    "arti": "Nomor 235",
+    "alasan": "235 terbalik."
+   }
+  ],
+  "opt_note": [
+   "(345) salah",
+   "(325) tepat",
+   "(235) salah"
+  ],
+  "kunci_id": "NO 325"
+ },
+ {
+  "no": 47,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "おんなのひと: すみません、からての もうしこみは まだ できますか。せんせい: はい、できますよ。１かいは ５００えんです。おんなのひと: せいふくが なくても いいですか。せんせい: はい、だいじょうぶです。タオル と ５０0えんを もってきてください。\n\n● 何を持って行きますか。",
+  "img": "",
+  "options": [
+   {
+    "text": "シャツと 500 円",
+    "img": ""
+   },
+   {
+    "text": "タオル と 500 円",
+    "img": ""
+   },
+   {
+    "text": "ベルトと 500 円",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/5",
+  "trans": "Bawa apa?\nGuru: Handuk dan 500 yen.",
+  "trans_rom": "taoru to gohyaku en",
+  "mnn": "Choukai",
+  "analisis": "[MNN Bab 11 - Choukai Barang Bawaan] Guru: タオルと500えんをもってきてください.",
+  "opt_detail": [
+   {
+    "kana": "シャツとごひゃくえん",
+    "rom": "shatsu to gohyaku en",
+    "arti": "Kemeja dan 500 yen",
+    "alasan": "Kemeja tidak disebut."
+   },
+   {
+    "kana": "タオルとごひゃくえん",
+    "rom": "taoru to gohyaku en",
+    "arti": "Handuk dan 500 yen",
+    "alasan": "Tepat sesuai instruksi guru."
+   },
+   {
+    "kana": "ベルトとごひゃくえん",
+    "rom": "beruto to gohyaku en",
+    "arti": "Sabuk dan 500 yen",
+    "alasan": "Sabuk tidak disebut."
+   }
+  ],
+  "opt_note": [
+   "(shatsu) kemeja",
+   "(taoru) handuk",
+   "(beruto) sabuk"
+  ],
+  "kunci_id": "タオル と 500 円"
+ },
+ {
+  "no": 48,
+  "section": "SESI 4 : DOKKAI",
+  "title": "あけましておめでとうございます。",
+  "img": "",
+  "options": [
+   {
+    "text": "ケーキ",
+    "img": "assets/hare_11.jpg"
+   },
+   {
+    "text": "クリスマスツリー",
+    "img": "assets/hare_09.jpg"
+   },
+   {
+    "text": "かがみもち",
+    "img": "assets/hare_10.jpg"
+   }
+  ],
+  "answer": 2,
+  "score": "0/6",
+  "trans": "Selamat Tahun Baru! Hiasan khas apa?",
+  "trans_rom": "Akemashite omedetou gozaimasu.",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 12 - Budaya Tahun Baru] あけましておめでとう berkaitan kagami mochi. Kue dan pohon untuk Natal.",
+  "opt_detail": [
+   {
+    "kana": "ケーキ",
+    "rom": "keeki",
+    "arti": "kue natal",
+    "alasan": "ケーキ identik Natal/Ultah."
+   },
+   {
+    "kana": "クリスマスツリー",
+    "rom": "kurisumasu tsurii",
+    "arti": "pohon natal",
+    "alasan": "Pohon natal tanggal 25 Desember."
+   },
+   {
+    "kana": "かがみもち",
+    "rom": "kagami mochi",
+    "arti": "mochi tahun baru",
+    "alasan": "Simbol khas Tahun Baru Jepang."
+   }
+  ],
+  "opt_note": [
+   "(keeki) kue",
+   "(tsurii) pohon",
+   "(mochi) tahun baru"
+  ],
+  "kunci_id": "かがみもち"
+ },
+ {
+  "no": 49,
+  "section": "SESI 4 : DOKKAI",
+  "title": "テレビのばんぐみひょうを見ます。６チャンネルでは サッカーのしあいがあります。７じ３０ぷんからは りょうりのばんぐみがあります。● スポーツのしあいは どこで見られますか。",
+  "img": "",
+  "options": [
+   {
+    "text": "5jtv サッカー",
+    "img": ""
+   },
+   {
+    "text": "7jtv サッカー",
+    "img": ""
+   },
+   {
+    "text": "６チャンネル サッカー",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "0/5",
+  "trans": "Jadwal TV: channel 6 bola, 07:30 masak. Bola di mana?",
+  "trans_rom": "roku channeru sakkaa",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 4 - Dokudai Jadwal TV] Teks: ６チャンネルではサッカー. Jawaban channel 6.",
+  "opt_detail": [
+   {
+    "kana": "ごチャンネル",
+    "rom": "go channeru",
+    "arti": "Saluran 5",
+    "alasan": "Saluran 5 tidak disebut."
+   },
+   {
+    "kana": "ななチャンネル",
+    "rom": "nana channeru",
+    "arti": "Saluran 7",
+    "alasan": "Jam 7:30 acara masak."
+   },
+   {
+    "kana": "ろくチャンネル",
+    "rom": "roku channeru",
+    "arti": "Saluran 6",
+    "alasan": "Sesuai '６チャンネルではサッカー'."
+   }
+  ],
+  "opt_note": [
+   "(go) 5",
+   "(nana) 7",
+   "(roku) 6"
+  ],
+  "kunci_id": "６チャンネル サッカー"
+ },
+ {
+  "no": 50,
+  "section": "SESI 4 : DOKKAI",
+  "title": "りょうりのばんぐみは なんじからですか。",
+  "img": "",
+  "options": [
+   {
+    "text": "Jam 06.30",
+    "img": ""
+   },
+   {
+    "text": "Jam 07.30",
+    "img": ""
+   },
+   {
+    "text": "Jam 07.25",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "5/5",
+  "trans": "Acara masak mulai jam?",
+  "trans_rom": "Ryouri no bangumi wa nanji kara desu ka.",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 4 - Dokudai Jam Acara] Teks No.49: ７じ３０ぷんから. Jawaban 07.30.",
+  "opt_detail": [
+   {
+    "kana": "ろくじさんじゅっぷん",
+    "rom": "rokuji sanjuuppun",
+    "arti": "Jam 06.30",
+    "alasan": "06.30 tidak ada."
+   },
+   {
+    "kana": "しちじさんじゅっぷん",
+    "rom": "shichiji sanjuuppun",
+    "arti": "Jam 07.30",
+    "alasan": "Tepat '７じ３０ぷんから'."
+   },
+   {
+    "kana": "しちじにじゅうごふん",
+    "rom": "shichiji nijuugofun",
+    "arti": "Jam 07.25",
+    "alasan": "07.25 tidak ada."
+   }
+  ],
+  "opt_note": [
+   "(06.30) salah",
+   "(07.30) tepat",
+   "(07.25) salah"
+  ],
+  "kunci_id": "Jam 07.30"
+ },
+ {
+  "no": 51,
+  "section": "SESI 4 : DOKKAI",
+  "title": "TENTANG CERITA TAHUN BARU #situasi tahun baru bagaimana?",
+  "img": "",
+  "options": [
+   {
+    "text": "Makan bersama keluarga (Gambar 1)",
+    "img": "assets/hare_08.jpg"
+   },
+   {
+    "text": "Pergi ke kuil (Gambar 2)",
+    "img": "assets/hare_07.jpg"
+   },
+   {
+    "text": "Bekerja (Gambar 3)",
+    "img": "assets/hare_06.jpg"
+   }
+  ],
+  "answer": 1,
+  "score": "0/6",
+  "trans": "Kegiatan tahun baru di Jepang.",
+  "trans_rom": "Shinnen no hanashi ni tsuite. Shinnen no joukyou wa dou desu ka.",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 13 - Dokudai Tahun Baru] Kegiatan utama: berkunjung ke kuil (Hatsumoude).",
+  "opt_detail": [
+   {
+    "kana": "かぞくとごはん",
+    "rom": "kazoku to gohan",
+    "arti": "Makan keluarga",
+    "alasan": "Gambar 1 bukan topik utama."
+   },
+   {
+    "kana": "じんじゃにいく",
+    "rom": "jinja ni iku",
+    "arti": "Pergi ke kuil",
+    "alasan": "Sesuai tradisi Hatsumoude."
+   },
+   {
+    "kana": "はたらく",
+    "rom": "hataraku",
+    "arti": "Bekerja",
+    "alasan": "Tahun baru umumnya libur."
+   }
+  ],
+  "opt_note": [
+   "(kazoku) keluarga",
+   "(jinja) kuil",
+   "(hataraku) kerja"
+  ],
+  "kunci_id": "Pergi ke kuil (Gambar 2)"
+ },
+ {
+  "no": 52,
+  "section": "SESI 4 : DOKKAI",
+  "title": "Masih soal tentang tahun baru #apa yang ingin dilakukan saat tahun baru?",
+  "img": "",
+  "options": [
+   {
+    "text": "クラブに行きたい",
+    "img": "assets/hare_05.jpg"
+   },
+   {
+    "text": "りょこうしたいです",
+    "img": "assets/hare_04.jpg"
+   },
+   {
+    "text": "ねたい",
+    "img": "assets/hare_03.jpg"
+   }
+  ],
+  "answer": 1,
+  "score": "0/6",
+  "trans": "Ingin apa saat tahun baru?",
+  "trans_rom": "ryokou shitai desu",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 13 - Keinginan] Penulis: りょこうしたいです (ingin wisata).",
+  "opt_detail": [
+   {
+    "kana": "クラブにいきたい",
+    "rom": "kurabu ni ikitai",
+    "arti": "Ingin ke klab",
+    "alasan": "Tidak cocok dengan teks. ."
+   },
+   {
+    "kana": "りょこうしたいです",
+    "rom": "ryokou shitai desu",
+    "arti": "Ingin wisata",
+    "alasan": "Tepat sesuai teks."
+   },
+   {
+    "kana": "ねたい",
+    "rom": "netai",
+    "arti": "Ingin tidur",
+    "alasan": "Tidak cocok dengan teks. ."
+   }
+  ],
+  "opt_note": [
+   "(kurabu) klab",
+   "(ryokou) wisata",
+   "(netai) tidur"
+  ],
+  "kunci_id": "りょこうしたいです"
+ },
+ {
+  "no": 53,
+  "section": "SESI 4 : DOKKAI",
+  "title": "このまちの らんどりーには あたらしい せんたくき があります。この せんたくきは きのう が おおくて、いちどに たくさん あらえます。でも、ふくの でざいん が むずかしいものは、よくないです● この せんたくきについて、どれが ただしいですか。",
+  "img": "",
+  "options": [
+   {
+    "text": "きのうが おおいです",
+    "img": ""
+   },
+   {
+    "text": "でざいんが よくないです",
+    "img": ""
+   },
+   {
+    "text": "すこししか あらえません",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "4/4",
+  "trans": "Mesin cuci baru: fitur banyak, cuci banyak.",
+  "trans_rom": "kinou ga ooi desu",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 18 - Dokudai Alat] Teks: きのうが多い. Jawaban きのうがおおい.",
+  "opt_detail": [
+   {
+    "kana": "きのうがおおいです",
+    "rom": "kinou ga ooi desu",
+    "arti": "Fitur banyak",
+    "alasan": "Sesuai 'きのうがおおくて'."
+   },
+   {
+    "kana": "でざいんがよくないです",
+    "rom": "dezain ga yokunai desu",
+    "arti": "Desain jelek",
+    "alasan": "Maksud teks pakaian berdesain rumit."
+   },
+   {
+    "kana": "すこししかあらえません",
+    "rom": "sukoshi shika araemasen",
+    "arti": "Cuci sedikit",
+    "alasan": "Berlawanan 'たくさんあらえます'."
+   }
+  ],
+  "opt_note": [
+   "(kinou) fitur",
+   "(dezain) desain",
+   "(sedikit) sedikit"
+  ],
+  "kunci_id": "きのうが おおいです"
+ },
+ {
+  "no": 54,
+  "section": "SESI 4 : DOKKAI",
+  "title": "● どんな ふくは この せんたくきに よくないですか。",
+  "img": "",
+  "options": [
+   {
+    "text": "むずかしい でざいんの ふく",
+    "img": ""
+   },
+   {
+    "text": "しろい ふく",
+    "img": ""
+   },
+   {
+    "text": "あたらしい ふく",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "4/4",
+  "trans": "Pakaian apa yang tidak cocok?",
+  "trans_rom": "muzukashii dezain no fuku",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 18 - Dokudai Pengecualian] Teks: デザインがむずかしいものはよくない.",
+  "opt_detail": [
+   {
+    "kana": "むずかしいでざいんのふく",
+    "rom": "muzukashii dezain no fuku",
+    "arti": "Desain rumit",
+    "alasan": "Tepat sesuai petunjuk teks."
+   },
+   {
+    "kana": "しろいふく",
+    "rom": "shiroi fuku",
+    "arti": "Putih",
+    "alasan": "Putih tidak dilarang."
+   },
+   {
+    "kana": "あたらしいふく",
+    "rom": "atarashii fuku",
+    "arti": "Baru",
+    "alasan": "Baru tidak dilarang."
+   }
+  ],
+  "opt_note": [
+   "(rumit) desain",
+   "(putih) putih",
+   "(baru) baru"
+  ],
+  "kunci_id": "むずかしい でざいんの ふく"
+ },
+ {
+  "no": 55,
+  "section": "SESI 4 : DOKKAI",
+  "title": "（Jadwal Klinik Gigi） Hari apa saja klinik tutup/praktek?",
+  "img": "assets/hare_02.jpg",
+  "options": [
+   {
+    "text": "げつようび と きんようび",
+    "img": ""
+   },
+   {
+    "text": "すいようび と にちようび",
+    "img": ""
+   },
+   {
+    "text": "どようび と げつようび",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "5/5",
+  "trans": "Jadwal klinik: libur Rabu dan Minggu.",
+  "trans_rom": "suiyoubi to nichiyoubi",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 4 - Dokudai Hari Kerja] Jadwal: libur 水曜 dan 日曜.",
+  "opt_detail": [
+   {
+    "kana": "げつようびときんようび",
+    "rom": "getsuyoubi to kinyoubi",
+    "arti": "Senin dan Jumat",
+    "alasan": "Senin-Jumat buka."
+   },
+   {
+    "kana": "すいようびとにちようび",
+    "rom": "suiyoubi to nichiyoubi",
+    "arti": "Rabu dan Minggu",
+    "alasan": "Sesuai tanda libur papan."
+   },
+   {
+    "kana": "どようびとげつようび",
+    "rom": "doyoubi to getsuyoubi",
+    "arti": "Sabtu dan Senin",
+    "alasan": "Sabtu-Senin buka."
+   }
+  ],
+  "opt_note": [
+   "(senin) buka",
+   "(rabu) libur",
+   "(sabtu) buka"
+  ],
+  "kunci_id": "すいようび と にちようび"
+ },
+ {
+  "no": 56,
+  "section": "SESI 4 : DOKKAI",
+  "title": "● 土よう日は なんじまで あいていますか。",
+  "img": "",
+  "options": [
+   {
+    "text": "12.00",
+    "img": ""
+   },
+   {
+    "text": "17.00",
+    "img": ""
+   },
+   {
+    "text": "16.00",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/5",
+  "trans": "Sabtu buka sampai jam?",
+  "trans_rom": "Doyoubi wa nanji made aite imasu ka.",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 4 - Dokudai Jam Operasional] Kolom Sabtu tutup 17.00.",
+  "opt_detail": [
+   {
+    "kana": "じゅうにじ",
+    "rom": "juuniji",
+    "arti": "Jam 12.00",
+    "alasan": "12.00 istirahat siang."
+   },
+   {
+    "kana": "じゅうななじ",
+    "rom": "juunanaji",
+    "arti": "Jam 17.00",
+    "alasan": "Sesuai batas Sabtu."
+   },
+   {
+    "kana": "じゅうろくじ",
+    "rom": "juurokuji",
+    "arti": "Jam 16.00",
+    "alasan": "16.00 tidak sesuai papan."
+   }
+  ],
+  "opt_note": [
+   "(12) siang",
+   "(17) tutup",
+   "(16) salah"
+  ],
+  "kunci_id": "17.00"
+ },
+ {
+  "no": 57,
+  "section": "SESI 4 : DOKKAI",
+  "title": "Pesan layanan pembersihan ke perusahaan mana dan menggunakan media apa?",
+  "img": "assets/hare_01.jpg",
+  "options": [
+   {
+    "text": "グリーンクリーン会社・でんわで ちゅうもん",
+    "img": ""
+   },
+   {
+    "text": "あおい会社・メールで ちゅうもん",
+    "img": ""
+   },
+   {
+    "text": "しろい会社・インターネットで ちゅうもん",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/4",
+  "trans": "Pesan Green Clean via telepon.",
+  "trans_rom": "guriin kuriin kaisha denwa de chuumon",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 8 - Dokudai Brosur] Brosur: グリーンクリーン会社 + 電話で注文.",
+  "opt_detail": [
+   {
+    "kana": "グリーンクリーンかいしゃ・でんわでちゅうもん",
+    "rom": "guriin kuriin kaisha denwa de chuumon",
+    "arti": "Green Clean telepon",
+    "alasan": "Sesuai nama + ikon telepon."
+   },
+   {
+    "kana": "あおいかいしゃ・メールでちゅうもん",
+    "rom": "aoi kaisha meeru de chuumon",
+    "arti": "Aoi email",
+    "alasan": "Aoi tidak tertera."
+   },
+   {
+    "kana": "しろいかいしゃ・インターネットでちゅうもん",
+    "rom": "shiroi kaisha inet visual",
+    "arti": "Shiroi internet",
+    "alasan": "Shiroi tidak tertera."
+   }
+  ],
+  "opt_note": [
+   "(green) telepon",
+   "(aoi) email",
+   "(shiroi) inet"
+  ],
+  "kunci_id": "グリーンクリーン会社・でんわで ちゅうもん"
+ },
+ {
+  "no": 58,
+  "section": "SESI 4 : DOKKAI",
+  "title": "● びんや かんを すてるとき、どう しますか。",
+  "img": "",
+  "options": [
+   {
+    "text": "そのまま すてます",
+    "img": ""
+   },
+   {
+    "text": "とりだすまえに あたらしいのを いれます",
+    "img": ""
+   },
+   {
+    "text": "とりだすまえに あらいます",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "5/5",
+  "trans": "Buang botol/kaleng bagaimana?",
+  "trans_rom": "toridasu mae ni araimasu",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 18 - Dokudai Sampah] Wajib cuci sebelum buang.",
+  "opt_detail": [
+   {
+    "kana": "そのまますてます",
+    "rom": "sonomama sutemasu",
+    "arti": "Langsung buang",
+    "alasan": "Melanggar aturan pilah sampah."
+   },
+   {
+    "kana": "あたらしいのをいれます",
+    "rom": "atarashii no wo iremasu",
+    "arti": "Isi yang baru",
+    "alasan": "Instruksi salah tak logis."
+   },
+   {
+    "kana": "とりだすまえにあらいます",
+    "rom": "toridasu mae ni araimasu",
+    "arti": "Cuci dulu",
+    "alasan": "Prosedur daur ulang tepat."
+   }
+  ],
+  "opt_note": [
+   "(buang) langsung",
+   "(isi) baru",
+   "(cuci) dulu"
+  ],
+  "kunci_id": "とりだすまえに あらいます"
+ },
+ {
+  "no": 59,
+  "section": "SESI 4 : DOKKAI",
+  "title": "Mengapa tokoh terlambat sampai di tujuan?",
+  "img": "assets/hare_00.jpg",
+  "options": [
+   {
+    "text": "でんしゃを まちがえました",
+    "img": ""
+   },
+   {
+    "text": "でんしゃが はやかったです",
+    "img": ""
+   },
+   {
+    "text": "でんしゃに のりませんでした",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "0/5",
+  "trans": "Alasan terlambat: Salah naik kereta.",
+  "trans_rom": "densha wo machigaemashita",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 19 - Dokudai Perjalanan] Tokoh salah kereta.",
+  "opt_detail": [
+   {
+    "kana": "でんしゃをまちがえました",
+    "rom": "densha wo machigaemashita",
+    "arti": "Salah kereta",
+    "alasan": "Tepat salah jurusan."
+   },
+   {
+    "kana": "でんしゃがはやかったです",
+    "rom": "densha ga hayakatta desu",
+    "arti": "Kereta cepat",
+    "alasan": "Cepat tak buat salah jurusan."
+   },
+   {
+    "kana": "でんしゃにのりませんでした",
+    "rom": "densha ni norimasen deshita",
+    "arti": "Tak naik kereta",
+    "alasan": "Tokoh tetap naik tapi salah."
+   }
+  ],
+  "opt_note": [
+   "(salah) jurusan",
+   "(cepat) cepat",
+   "(tak naik) salah"
+  ],
+  "kunci_id": "でんしゃを まちがえました"
+ },
+ {
+  "no": 60,
+  "section": "SESI 4 : DOKKAI",
+  "title": "● いま おとこのひとは どこに いますか。",
+  "img": "",
+  "options": [
+   {
+    "text": "ひがしのえき",
+    "img": ""
+   },
+   {
+    "text": "にしのえき",
+    "img": ""
+   },
+   {
+    "text": "みなみのえき",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "0/5",
+  "trans": "Pria sekarang di stasiun mana?",
+  "trans_rom": "nishi no eki",
+  "mnn": "Dokkai",
+  "analisis": "[MNN Bab 10 - Dokudai Posisi Stasiun] Alur No.59: にしのえき (Barat).",
+  "opt_detail": [
+   {
+    "kana": "ひがしのえき",
+    "rom": "higashi no eki",
+    "arti": "Stasiun Timur",
+    "alasan": "Higashi = timur."
+   },
+   {
+    "kana": "にしのえき",
+    "rom": "nishi no eki",
+    "arti": "Stasiun Barat",
+    "alasan": "Nishi = barat. Tepat lokasi tokoh."
+   },
+   {
+    "kana": "みなみのえき",
+    "rom": "minami no eki",
+    "arti": "Stasiun Selatan",
+    "alasan": "Minami = selatan."
+   }
+  ],
+  "opt_note": [
+   "(higashi) Timur",
+   "(nishi) Barat",
+   "(minami) Selatan"
+  ],
+  "kunci_id": "にしのえき"
+ }
+]

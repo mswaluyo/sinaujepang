@@ -1,0 +1,1692 @@
+[
+ {
+  "no": 1,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/basu_01.jpg",
+  "options": [
+   {
+    "text": "くるま",
+    "img": ""
+   },
+   {
+    "text": "バス",
+    "img": ""
+   },
+   {
+    "text": "でんしゃ",
+    "img": ""
+   },
+   {
+    "text": "タクシー",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "-",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] Gambar bus kuning. basu=bus.",
+  "opt_detail": [
+   {
+    "kana": "くるま",
+    "rom": "kuruma",
+    "arti": "mobil",
+    "alasan": "くるま berarti mobil. Tidak cocok."
+   },
+   {
+    "kana": "バス",
+    "rom": "basu",
+    "arti": "bus",
+    "alasan": "バス berarti bus. Gambar bus kuning. basu=bus."
+   },
+   {
+    "kana": "でんしゃ",
+    "rom": "densha",
+    "arti": "kereta",
+    "alasan": "でんしゃ berarti kereta. Tidak cocok."
+   },
+   {
+    "kana": "タクシー",
+    "rom": "takushii",
+    "arti": "taksi",
+    "alasan": "タクシー berarti taksi. Tidak cocok."
+   }
+  ],
+  "opt_note": [
+   "(kuruma) mobil",
+   "(basu) bus",
+   "(densha) kereta",
+   "(takushii) taksi"
+  ],
+  "kunci_id": "バス",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 2,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/basu_02.jpg",
+  "options": [
+   {
+    "text": "たすけます",
+    "img": ""
+   },
+   {
+    "text": "ならいます",
+    "img": ""
+   },
+   {
+    "text": "わらいます",
+    "img": ""
+   },
+   {
+    "text": "おります",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "-",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] Orang tenggelam melambai minta tolong. tasukemasu=menolong.",
+  "opt_detail": [
+   {
+    "kana": "たすけます",
+    "rom": "tasukemasu",
+    "arti": "menolong",
+    "alasan": "たすけます berarti menolong. Orang tenggelam melambai minta tolong. tasukemasu=menolong."
+   },
+   {
+    "kana": "ならいます",
+    "rom": "naraimasu",
+    "arti": "belajar",
+    "alasan": "ならいます berarti belajar. Tidak cocok."
+   },
+   {
+    "kana": "わらいます",
+    "rom": "waraimasu",
+    "arti": "tertawa",
+    "alasan": "わらいます berarti tertawa. Tidak cocok."
+   },
+   {
+    "kana": "おります",
+    "rom": "orimasu",
+    "arti": "berada (sopan)",
+    "alasan": "おります berarti berada (sopan). Tidak cocok."
+   }
+  ],
+  "opt_note": [
+   "(tasukemasu) menolong",
+   "(naraimasu) belajar",
+   "(waraimasu) tertawa",
+   "(orimasu) berada (sopan)"
+  ],
+  "kunci_id": "たすけます",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 3,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/basu_03.jpg",
+  "options": [
+   {
+    "text": "てつだいます",
+    "img": ""
+   },
+   {
+    "text": "わかれます",
+    "img": ""
+   },
+   {
+    "text": "うんてんします",
+    "img": ""
+   },
+   {
+    "text": "しょうかいします",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "-",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] Berjabat tangan=perkenalan. shoukaishimasu.",
+  "opt_detail": [
+   {
+    "kana": "てつだいます",
+    "rom": "tetsudaimasu",
+    "arti": "membantu",
+    "alasan": "てつだいます berarti membantu. Tidak cocok."
+   },
+   {
+    "kana": "わかれます",
+    "rom": "wakaremasu",
+    "arti": "berpisah",
+    "alasan": "わかれます berarti berpisah. Tidak cocok."
+   },
+   {
+    "kana": "うんてんします",
+    "rom": "untenshimasu",
+    "arti": "menyetir",
+    "alasan": "うんてんします berarti menyetir. Tidak cocok."
+   },
+   {
+    "kana": "しょうかいします",
+    "rom": "shoukaishimasu",
+    "arti": "memperkenalkan",
+    "alasan": "しょうかいします berarti memperkenalkan. Berjabat tangan=perkenalan. shoukaishimasu."
+   }
+  ],
+  "opt_note": [
+   "(tetsudaimasu) membantu",
+   "(wakaremasu) berpisah",
+   "(untenshimasu) menyetir",
+   "(shoukaishimasu) memperkenalkan"
+  ],
+  "kunci_id": "しょうかいします",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 4,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/basu_04.jpg",
+  "options": [
+   {
+    "text": "はし",
+    "img": ""
+   },
+   {
+    "text": "めがね",
+    "img": ""
+   },
+   {
+    "text": "かみ",
+    "img": ""
+   },
+   {
+    "text": "はさみ",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "-",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] Gambar kertas. kami=kertas.",
+  "opt_detail": [
+   {
+    "kana": "はし",
+    "rom": "hashi",
+    "arti": "sumpit",
+    "alasan": "はし berarti sumpit. Tidak cocok."
+   },
+   {
+    "kana": "めがね",
+    "rom": "megane",
+    "arti": "kacamata",
+    "alasan": "めがね berarti kacamata. Tidak cocok."
+   },
+   {
+    "kana": "かみ",
+    "rom": "kami",
+    "arti": "kertas",
+    "alasan": "かみ berarti kertas. Gambar kertas. kami=kertas."
+   },
+   {
+    "kana": "はさみ",
+    "rom": "hasami",
+    "arti": "gunting",
+    "alasan": "はさみ berarti gunting. Tidak cocok."
+   }
+  ],
+  "opt_note": [
+   "(hashi) sumpit",
+   "(megane) kacamata",
+   "(kami) kertas",
+   "(hasami) gunting"
+  ],
+  "kunci_id": "かみ",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 5,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "",
+  "img": "assets/basu_05.jpg",
+  "options": [
+   {
+    "text": "だいどころ",
+    "img": ""
+   },
+   {
+    "text": "トイレ",
+    "img": ""
+   },
+   {
+    "text": "じむしょ",
+    "img": ""
+   },
+   {
+    "text": "タクシー",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "-",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] Gambar toilet. toire.",
+  "opt_detail": [
+   {
+    "kana": "だいどころ",
+    "rom": "daidokoro",
+    "arti": "dapur",
+    "alasan": "だいどころ berarti dapur. Tidak cocok."
+   },
+   {
+    "kana": "トイレ",
+    "rom": "toire",
+    "arti": "toilet",
+    "alasan": "トイレ berarti toilet. Gambar toilet. toire."
+   },
+   {
+    "kana": "じむしょ",
+    "rom": "jimusho",
+    "arti": "kantor",
+    "alasan": "じむしょ berarti kantor. Tidak cocok."
+   },
+   {
+    "kana": "タクシー",
+    "rom": "takushii",
+    "arti": "taksi",
+    "alasan": "タクシー berarti taksi. Tidak cocok."
+   }
+  ],
+  "opt_note": [
+   "(daidokoro) dapur",
+   "(toire) toilet",
+   "(jimusho) kantor",
+   "(takushii) taksi"
+  ],
+  "kunci_id": "トイレ",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 6,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "わたしのしゅみは映画を __、歌をうたったりすることです。",
+  "img": "",
+  "options": [
+   {
+    "text": "みたい",
+    "img": ""
+   },
+   {
+    "text": "みたり",
+    "img": ""
+   },
+   {
+    "text": "みて",
+    "img": ""
+   },
+   {
+    "text": "みる",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Hobi: menonton film & bernyanyi.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] Pola tari-tari.",
+  "opt_detail": [
+   {
+    "kana": "みたい",
+    "rom": "mitai",
+    "arti": "ingin melihat",
+    "alasan": "みたい berarti ingin melihat. Tidak cocok dengan Hobi: menonton film & bernyanyi."
+   },
+   {
+    "kana": "みたり",
+    "rom": "mitari",
+    "arti": "melihat dsb",
+    "alasan": "みたり berarti melihat dsb. Pola tari-tari."
+   },
+   {
+    "kana": "みて",
+    "rom": "mite",
+    "arti": "bentuk te",
+    "alasan": "みて berarti bentuk te. Tidak cocok dengan Hobi: menonton film & bernyanyi."
+   },
+   {
+    "kana": "みる",
+    "rom": "miru",
+    "arti": "melihat",
+    "alasan": "みる berarti melihat. Tidak cocok dengan Hobi: menonton film & bernyanyi."
+   }
+  ],
+  "opt_note": [
+   "(mitai) ingin melihat",
+   "(mitari) melihat dsb",
+   "(mite) bentuk te",
+   "(miru) melihat"
+  ],
+  "kunci_id": "みたり",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 7,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "山田さんは__前にはをみがきます。",
+  "img": "",
+  "options": [
+   {
+    "text": "寝る",
+    "img": ""
+   },
+   {
+    "text": "寝て",
+    "img": ""
+   },
+   {
+    "text": "寝た",
+    "img": ""
+   },
+   {
+    "text": "寝ます",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Gosok gigi sebelum tidur.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] Kamus+mae ni.",
+  "opt_detail": [
+   {
+    "kana": "寝る",
+    "rom": "neru",
+    "arti": "tidur kamus",
+    "alasan": "寝る berarti tidur kamus. Kamus+mae ni."
+   },
+   {
+    "kana": "寝て",
+    "rom": "nete",
+    "arti": "bentuk te",
+    "alasan": "寝て berarti bentuk te. Tidak cocok dengan Gosok gigi sebelum tidur."
+   },
+   {
+    "kana": "寝た",
+    "rom": "neta",
+    "arti": "lampau",
+    "alasan": "寝た berarti lampau. Tidak cocok dengan Gosok gigi sebelum tidur."
+   },
+   {
+    "kana": "寝ます",
+    "rom": "nemasu",
+    "arti": "sopan",
+    "alasan": "寝ます berarti sopan. Tidak cocok dengan Gosok gigi sebelum tidur."
+   }
+  ],
+  "opt_note": [
+   "(neru) tidur kamus",
+   "(nete) te",
+   "(neta) lampau",
+   "(nemasu) sopan"
+  ],
+  "kunci_id": "寝る",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 8,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "田中さんは日本語が __ ようになりました。",
+  "img": "",
+  "options": [
+   {
+    "text": "はなして",
+    "img": ""
+   },
+   {
+    "text": "はなした",
+    "img": ""
+   },
+   {
+    "text": "はなせる",
+    "img": ""
+   },
+   {
+    "text": "はなします",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Sudah bisa berbahasa Jepang.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] Potensial+you ni naru.",
+  "opt_detail": [
+   {
+    "kana": "はなして",
+    "rom": "hanashite",
+    "arti": "bentuk te",
+    "alasan": "はなして berarti bentuk te. Tidak cocok dengan Sudah bisa berbahasa Jepang."
+   },
+   {
+    "kana": "はなした",
+    "rom": "hanashita",
+    "arti": "lampau",
+    "alasan": "はなした berarti lampau. Tidak cocok dengan Sudah bisa berbahasa Jepang."
+   },
+   {
+    "kana": "はなせる",
+    "rom": "hanaseru",
+    "arti": "bisa bicara",
+    "alasan": "はなせる berarti bisa bicara. Potensial+you ni naru."
+   },
+   {
+    "kana": "はなします",
+    "rom": "hanashimasu",
+    "arti": "sopan",
+    "alasan": "はなします berarti sopan. Tidak cocok dengan Sudah bisa berbahasa Jepang."
+   }
+  ],
+  "opt_note": [
+   "(hanashite) te",
+   "(hanashita) lampau",
+   "(hanaseru) potensial bisa",
+   "(hanashimasu) sopan"
+  ],
+  "kunci_id": "はなせる",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 9,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "富士山に __ たいです。",
+  "img": "",
+  "options": [
+   {
+    "text": "のぼります",
+    "img": ""
+   },
+   {
+    "text": "のぼって",
+    "img": ""
+   },
+   {
+    "text": "のぼる",
+    "img": ""
+   },
+   {
+    "text": "のぼり",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "Ingin mendaki Fuji.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] Stem+tai.",
+  "opt_detail": [
+   {
+    "kana": "のぼります",
+    "rom": "noborimasu",
+    "arti": "mendaki sopan",
+    "alasan": "のぼります berarti mendaki sopan. Tidak cocok dengan Ingin mendaki Fuji."
+   },
+   {
+    "kana": "のぼって",
+    "rom": "nobotte",
+    "arti": "bentuk te",
+    "alasan": "のぼって berarti bentuk te. Tidak cocok dengan Ingin mendaki Fuji."
+   },
+   {
+    "kana": "のぼる",
+    "rom": "noboru",
+    "arti": "kamus",
+    "alasan": "のぼる berarti kamus. Tidak cocok dengan Ingin mendaki Fuji."
+   },
+   {
+    "kana": "のぼり",
+    "rom": "nobori",
+    "arti": "stem+tai",
+    "alasan": "のぼり berarti stem+tai. Stem+tai."
+   }
+  ],
+  "opt_note": [
+   "(noborimasu) mendaki sopan",
+   "(nobotte) te",
+   "(noboru) kamus",
+   "(nobori) stem+tai"
+  ],
+  "kunci_id": "のぼり",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 10,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "いしゃに __ ためにねっしんに勉強しないと。",
+  "img": "",
+  "options": [
+   {
+    "text": "なり",
+    "img": ""
+   },
+   {
+    "text": "なった",
+    "img": ""
+   },
+   {
+    "text": "なります",
+    "img": ""
+   },
+   {
+    "text": "なる",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "Agar jadi dokter, giat belajar.",
+  "trans_rom": "-",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] Kamus+tame ni.",
+  "opt_detail": [
+   {
+    "kana": "なり",
+    "rom": "nari",
+    "arti": "stem",
+    "alasan": "なり berarti stem. Tidak cocok dengan Agar jadi dokter, giat belajar."
+   },
+   {
+    "kana": "なった",
+    "rom": "natta",
+    "arti": "lampau",
+    "alasan": "なった berarti lampau. Tidak cocok dengan Agar jadi dokter, giat belajar."
+   },
+   {
+    "kana": "なります",
+    "rom": "narimasu",
+    "arti": "sopan",
+    "alasan": "なります berarti sopan. Tidak cocok dengan Agar jadi dokter, giat belajar."
+   },
+   {
+    "kana": "なる",
+    "rom": "naru",
+    "arti": "kamus",
+    "alasan": "なる berarti kamus. Kamus+tame ni."
+   }
+  ],
+  "opt_note": [
+   "(nari) stem",
+   "(natta) lampau",
+   "(narimasu) sopan",
+   "(naru) kamus"
+  ],
+  "kunci_id": "なる",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 11,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "このかみは「必要」ですよ。",
+  "img": "",
+  "options": [
+   {
+    "text": "ひつよう",
+    "img": ""
+   },
+   {
+    "text": "まつり",
+    "img": ""
+   },
+   {
+    "text": "じゅうよう",
+    "img": ""
+   },
+   {
+    "text": "てんいん",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Kertas ini 【____】.",
+  "trans_rom": "Kono kami wa 【____】 desu yo.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] hitsuyou=perlu.",
+  "opt_detail": [
+   {
+    "kana": "ひつよう",
+    "rom": "hitsuyou",
+    "arti": "perlu",
+    "alasan": "ひつよう berarti perlu. hitsuyou=perlu."
+   },
+   {
+    "kana": "まつり",
+    "rom": "matsuri",
+    "arti": "festival",
+    "alasan": "まつり berarti festival. Tidak cocok dengan Kertas ini diperlukan."
+   },
+   {
+    "kana": "じゅうよう",
+    "rom": "juuyou",
+    "arti": "penting",
+    "alasan": "じゅうよう berarti penting. Tidak cocok dengan Kertas ini diperlukan."
+   },
+   {
+    "kana": "てんいん",
+    "rom": "tenin",
+    "arti": "pegawai",
+    "alasan": "てんいん berarti pegawai. Tidak cocok dengan Kertas ini diperlukan."
+   }
+  ],
+  "opt_note": [
+   "(hitsuyou) perlu",
+   "(matsuri) festival",
+   "(juuyou) penting",
+   "(tenin) pegawai"
+  ],
+  "kunci_id": "ひつよう",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 12,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "昨日の「午前」はともだちとレストランで食べました。",
+  "img": "",
+  "options": [
+   {
+    "text": "ごご",
+    "img": ""
+   },
+   {
+    "text": "ごぜん",
+    "img": ""
+   },
+   {
+    "text": "ぎゅうにく",
+    "img": ""
+   },
+   {
+    "text": "まえ",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Kemarin 【____】 makan bersama teman di restoran.",
+  "trans_rom": "Kinou no 【____】 wa tomodachi to resutoran de tabemashita.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] gozen=pagi.",
+  "opt_detail": [
+   {
+    "kana": "ごご",
+    "rom": "gogo",
+    "arti": "siang",
+    "alasan": "ごご berarti siang. Tidak cocok dengan Kemarin pagi makan di restoran."
+   },
+   {
+    "kana": "ごぜん",
+    "rom": "gozen",
+    "arti": "pagi",
+    "alasan": "ごぜん berarti pagi. gozen=pagi."
+   },
+   {
+    "kana": "ぎゅうにく",
+    "rom": "gyuuniku",
+    "arti": "daging sapi",
+    "alasan": "ぎゅうにく berarti daging sapi. Tidak cocok dengan Kemarin pagi makan di restoran."
+   },
+   {
+    "kana": "まえ",
+    "rom": "mae",
+    "arti": "depan",
+    "alasan": "まえ berarti depan. Tidak cocok dengan Kemarin pagi makan di restoran."
+   }
+  ],
+  "opt_note": [
+   "(gogo) siang",
+   "(gozen) pagi",
+   "(gyuuniku) daging",
+   "(mae) depan"
+  ],
+  "kunci_id": "ごぜん",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 13,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "あのかみが「短い」人はだれですか。",
+  "img": "",
+  "options": [
+   {
+    "text": "ひくい",
+    "img": ""
+   },
+   {
+    "text": "ながい",
+    "img": ""
+   },
+   {
+    "text": "みじかい",
+    "img": ""
+   },
+   {
+    "text": "かるい",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Orang yang rambutnya 【____】 itu siapa?",
+  "trans_rom": "Ano kami ga 【____】 hito wa dare desu ka.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] mijikai=pendek.",
+  "opt_detail": [
+   {
+    "kana": "ひくい",
+    "rom": "hikui",
+    "arti": "rendah",
+    "alasan": "ひくい berarti rendah. Tidak cocok dengan Siapa yg berambut pendek?."
+   },
+   {
+    "kana": "ながい",
+    "rom": "nagai",
+    "arti": "panjang",
+    "alasan": "ながい berarti panjang. Tidak cocok dengan Siapa yg berambut pendek?."
+   },
+   {
+    "kana": "みじかい",
+    "rom": "mijikai",
+    "arti": "pendek",
+    "alasan": "みじかい berarti pendek. mijikai=pendek."
+   },
+   {
+    "kana": "かるい",
+    "rom": "karui",
+    "arti": "ringan",
+    "alasan": "かるい berarti ringan. Tidak cocok dengan Siapa yg berambut pendek?."
+   }
+  ],
+  "opt_note": [
+   "(hikui) rendah",
+   "(nagai) panjang",
+   "(mijikai) pendek",
+   "(karui) ringan"
+  ],
+  "kunci_id": "みじかい",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 14,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "毎朝むすこは「公園」であそんでいます。",
+  "img": "",
+  "options": [
+   {
+    "text": "がっこう",
+    "img": ""
+   },
+   {
+    "text": "どうぶつえん",
+    "img": ""
+   },
+   {
+    "text": "ひろば",
+    "img": ""
+   },
+   {
+    "text": "こうえん",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "Setiap pagi anak laki-laki bermain di 【____】.",
+  "trans_rom": "Maiasa musuko wa 【____】 de asonde imasu.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] kouen=taman.",
+  "opt_detail": [
+   {
+    "kana": "がっこう",
+    "rom": "gakkou",
+    "arti": "sekolah",
+    "alasan": "がっこう berarti sekolah. Tidak cocok dengan Bermain di taman tiap pagi."
+   },
+   {
+    "kana": "どうぶつえん",
+    "rom": "doubutsuen",
+    "arti": "kebun binatang",
+    "alasan": "どうぶつえん berarti kebun binatang. Tidak cocok dengan Bermain di taman tiap pagi."
+   },
+   {
+    "kana": "ひろば",
+    "rom": "hiroba",
+    "arti": "lapangan",
+    "alasan": "ひろば berarti lapangan. Tidak cocok dengan Bermain di taman tiap pagi."
+   },
+   {
+    "kana": "こうえん",
+    "rom": "kouen",
+    "arti": "taman",
+    "alasan": "こうえん berarti taman. kouen=taman."
+   }
+  ],
+  "opt_note": [
+   "(gakkou) sekolah",
+   "(doubutsuen) kebun binatang",
+   "(hiroba) lapangan",
+   "(kouen) taman"
+  ],
+  "kunci_id": "こうえん",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 15,
+  "section": "SESI 1 : MOJIGOI",
+  "title": "タイラーさんは「幸せ」ですね。",
+  "img": "",
+  "options": [
+   {
+    "text": "しらせ",
+    "img": ""
+   },
+   {
+    "text": "しあわせ",
+    "img": ""
+   },
+   {
+    "text": "はなせ",
+    "img": ""
+   },
+   {
+    "text": "かえせ",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Tairaa-san 【____】 ya.",
+  "trans_rom": "Tairaa-san wa 【____】 desu ne.",
+  "mnn": "Mojigoi",
+  "analisis": "[MNN - Mojigoi] shiawase=bahagia.",
+  "opt_detail": [
+   {
+    "kana": "しらせ",
+    "rom": "shirase",
+    "arti": "pemberitahuan",
+    "alasan": "しらせ berarti pemberitahuan. Tidak cocok dengan Bahagia ya."
+   },
+   {
+    "kana": "しあわせ",
+    "rom": "shiawase",
+    "arti": "bahagia",
+    "alasan": "しあわせ berarti bahagia. shiawase=bahagia."
+   },
+   {
+    "kana": "はなせ",
+    "rom": "hanase",
+    "arti": "perintah bicara",
+    "alasan": "はなせ berarti perintah bicara. Tidak cocok dengan Bahagia ya."
+   },
+   {
+    "kana": "かえせ",
+    "rom": "kaese",
+    "arti": "kembalikan",
+    "alasan": "かえせ berarti kembalikan. Tidak cocok dengan Bahagia ya."
+   }
+  ],
+  "opt_note": [
+   "(shirase) info",
+   "(shiawase) bahagia",
+   "(hanase) perintah bicara",
+   "(kaese) kembalikan"
+  ],
+  "kunci_id": "しあわせ",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 16,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: カリナさん、明日いっしょに映画を見に行きませんか。\nB: ええ、行きましょう。どこで会いますか。\nA: __、駅の前で会いましょうか。",
+  "img": "",
+  "options": [
+   {
+    "text": "いったら",
+    "img": ""
+   },
+   {
+    "text": "あったら",
+    "img": ""
+   },
+   {
+    "text": "よかったら",
+    "img": ""
+   },
+   {
+    "text": "かえったら",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Bertemu di depan stasiun?",
+  "trans_rom": "-",
+  "mnn": "Hyougen",
+  "analisis": "[MNN - Hyougen] yokattara=ajakan sopan.",
+  "opt_detail": [
+   {
+    "kana": "いったら",
+    "rom": "ittara",
+    "arti": "kalau pergi",
+    "alasan": "いったら berarti kalau pergi. Tidak cocok dengan Bertemu di depan stasiun?."
+   },
+   {
+    "kana": "あったら",
+    "rom": "attara",
+    "arti": "kalau ada",
+    "alasan": "あったら berarti kalau ada. Tidak cocok dengan Bertemu di depan stasiun?."
+   },
+   {
+    "kana": "よかったら",
+    "rom": "yokattara",
+    "arti": "kalau boleh",
+    "alasan": "よかったら berarti kalau boleh. yokattara=ajakan sopan."
+   },
+   {
+    "kana": "かえったら",
+    "rom": "kaettara",
+    "arti": "kalau pulang",
+    "alasan": "かえったら berarti kalau pulang. Tidak cocok dengan Bertemu di depan stasiun?."
+   }
+  ],
+  "opt_note": [
+   "(ittara) kalau pergi",
+   "(attara) kalau ada",
+   "(yokattara) kalau boleh",
+   "(kaettara) kalau pulang"
+  ],
+  "kunci_id": "よかったら",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 17,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: 朝なにを__食べますか。\nB: そうですね。パンとたまごです。",
+  "img": "",
+  "options": [
+   {
+    "text": "よく",
+    "img": ""
+   },
+   {
+    "text": "もうすぐ",
+    "img": ""
+   },
+   {
+    "text": "じつは",
+    "img": ""
+   },
+   {
+    "text": "だんだん",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Biasa makan apa pagi hari?",
+  "trans_rom": "-",
+  "mnn": "Hyougen",
+  "analisis": "[MNN - Hyougen] yoku=biasa.",
+  "opt_detail": [
+   {
+    "kana": "よく",
+    "rom": "yoku",
+    "arti": "biasa",
+    "alasan": "よく berarti biasa. yoku=biasa."
+   },
+   {
+    "kana": "もうすぐ",
+    "rom": "mousugu",
+    "arti": "sebentar lagi",
+    "alasan": "もうすぐ berarti sebentar lagi. Tidak cocok dengan Biasa makan apa pagi hari?."
+   },
+   {
+    "kana": "じつは",
+    "rom": "jitsu wa",
+    "arti": "sebenarnya",
+    "alasan": "じつは berarti sebenarnya. Tidak cocok dengan Biasa makan apa pagi hari?."
+   },
+   {
+    "kana": "だんだん",
+    "rom": "dandan",
+    "arti": "perlahan",
+    "alasan": "だんだん berarti perlahan. Tidak cocok dengan Biasa makan apa pagi hari?."
+   }
+  ],
+  "opt_note": [
+   "(yoku) biasa",
+   "(mousugu) sebentar lagi",
+   "(jitsu wa) sebenarnya",
+   "(dandan) perlahan"
+  ],
+  "kunci_id": "よく",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 18,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: ミクさん、きのう電気はついたままですよ。\nB: あ、すみません__。",
+  "img": "",
+  "options": [
+   {
+    "text": "ついたままですね",
+    "img": ""
+   },
+   {
+    "text": "あしたけします",
+    "img": ""
+   },
+   {
+    "text": "これからがんばります",
+    "img": ""
+   },
+   {
+    "text": "こんどからきをつけます",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "Maaf, lain kali hati-hati.",
+  "trans_rom": "-",
+  "mnn": "Hyougen",
+  "analisis": "[MNN - Hyougen] Respons maaf tepat.",
+  "opt_detail": [
+   {
+    "kana": "ついたままですね",
+    "rom": "m1",
+    "arti": "tetap menyala",
+    "alasan": "ついたままですね berarti tetap menyala. Tidak cocok dengan Maaf, lain kali hati-hati."
+   },
+   {
+    "kana": "あしたけします",
+    "rom": "m2",
+    "arti": "besok matikan",
+    "alasan": "あしたけします berarti besok matikan. Tidak cocok dengan Maaf, lain kali hati-hati."
+   },
+   {
+    "kana": "これからがんばります",
+    "rom": "m3",
+    "arti": "semangat",
+    "alasan": "これからがんばります berarti semangat. Tidak cocok dengan Maaf, lain kali hati-hati."
+   },
+   {
+    "kana": "こんどからきをつけます",
+    "rom": "kondo kara ki wo tsukemasu",
+    "arti": "lain kali hati-hati",
+    "alasan": "こんどからきをつけます berarti lain kali hati-hati. Respons maaf tepat."
+   }
+  ],
+  "opt_note": [
+   "(m1) tetap menyala",
+   "(m2) besok matikan",
+   "(m3) semangat",
+   "(kondo kara ki wo tsukemasu) lain kali hati-hati"
+  ],
+  "kunci_id": "こんどからきをつけます",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 19,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "A: 重いですね。てつだいましょうか。\nB: __。",
+  "img": "",
+  "options": [
+   {
+    "text": "ありがとうございます",
+    "img": ""
+   },
+   {
+    "text": "もうしわけありません",
+    "img": ""
+   },
+   {
+    "text": "がんばってください",
+    "img": ""
+   },
+   {
+    "text": "おもいでしょ",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Berat ya, saya bantu. - Terima kasih.",
+  "trans_rom": "-",
+  "mnn": "Hyougen",
+  "analisis": "[MNN - Hyougen] Jawab tawaran: terima kasih.",
+  "opt_detail": [
+   {
+    "kana": "ありがとうございます",
+    "rom": "arigatou gozaimasu",
+    "arti": "terima kasih",
+    "alasan": "ありがとうございます berarti terima kasih. Jawab tawaran: terima kasih."
+   },
+   {
+    "kana": "もうしわけありません",
+    "rom": "moushiwake arimasen",
+    "arti": "mohon maaf",
+    "alasan": "もうしわけありません berarti mohon maaf. Tidak cocok dengan Berat ya, saya bantu. - Terima kasih."
+   },
+   {
+    "kana": "がんばってください",
+    "rom": "ganbatte kudasai",
+    "arti": "semangat",
+    "alasan": "がんばってください berarti semangat. Tidak cocok dengan Berat ya, saya bantu. - Terima kasih."
+   },
+   {
+    "kana": "おもいでしょ",
+    "rom": "omoi desho",
+    "arti": "berat ya",
+    "alasan": "おもいでしょ berarti berat ya. Tidak cocok dengan Berat ya, saya bantu. - Terima kasih."
+   }
+  ],
+  "opt_note": [
+   "(arigatou gozaimasu) terima kasih",
+   "(moushiwake arimasen) mohon maaf",
+   "(ganbatte kudasai) semangat",
+   "(omoi desho) berat ya"
+  ],
+  "kunci_id": "ありがとうございます",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 20,
+  "section": "SESI 2 : HYOUGEN",
+  "title": "昨日、びじゅつかんにいって、__。",
+  "img": "",
+  "options": [
+   {
+    "text": "おもかった",
+    "img": ""
+   },
+   {
+    "text": "ながかった",
+    "img": ""
+   },
+   {
+    "text": "からかった",
+    "img": ""
+   },
+   {
+    "text": "たのしかった",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "Ke museum, menyenangkan.",
+  "trans_rom": "-",
+  "mnn": "Hyougen",
+  "analisis": "[MNN - Hyougen] tanoshikatta.",
+  "opt_detail": [
+   {
+    "kana": "おもかった",
+    "rom": "omokatta",
+    "arti": "berat lampau",
+    "alasan": "おもかった berarti berat lampau. Tidak cocok dengan Ke museum, menyenangkan."
+   },
+   {
+    "kana": "ながかった",
+    "rom": "nagakatta",
+    "arti": "panjang lampau",
+    "alasan": "ながかった berarti panjang lampau. Tidak cocok dengan Ke museum, menyenangkan."
+   },
+   {
+    "kana": "からかった",
+    "rom": "karakatta",
+    "arti": "pedas lampau",
+    "alasan": "からかった berarti pedas lampau. Tidak cocok dengan Ke museum, menyenangkan."
+   },
+   {
+    "kana": "たのしかった",
+    "rom": "tanoshikatta",
+    "arti": "menyenangkan lampau",
+    "alasan": "たのしかった berarti menyenangkan lampau. tanoshikatta."
+   }
+  ],
+  "opt_note": [
+   "(omokatta) berat lampau",
+   "(nagakatta) panjang lampau",
+   "(karakatta) pedas lampau",
+   "(tanoshikatta) menyenangkan lampau"
+  ],
+  "kunci_id": "たのしかった",
+  "salah": "Pilihan lain tidak cocok dengan kunci PDF hal.13.",
+  "audio": ""
+ },
+ {
+  "no": 21,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "Listening 21 - dengarkan audio",
+  "img": "assets/basu_lis01.jpg",
+  "options": [
+   {
+    "text": "１かい",
+    "img": ""
+   },
+   {
+    "text": "２かい",
+    "img": ""
+   },
+   {
+    "text": "３かい",
+    "img": ""
+   },
+   {
+    "text": "４かい",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Kaus kaki anggur panjang = no.2 (b).",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN - Choukai] Kaus kaki anggur panjang = no.2 (b).",
+  "opt_detail": [
+   {
+    "kana": "１かい",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Kaus kaki anggur panjang = no.2 (b. )."
+   },
+   {
+    "kana": "２かい",
+    "rom": "",
+    "arti": "",
+    "alasan": "２かい berarti . Kaus kaki anggur panjang = no.2 (b)."
+   },
+   {
+    "kana": "３かい",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Kaus kaki anggur panjang = no.2 (b. )."
+   },
+   {
+    "kana": "４かい",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Kaus kaki anggur panjang = no.2 (b. )."
+   }
+  ],
+  "opt_note": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "kunci_id": "２かい",
+  "salah": "Pilihan lain tidak sesuai audio & kunci PDF.",
+  "audio": "assets/audio/lis01.m4a"
+ },
+ {
+  "no": 22,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "Listening 22 - dengarkan audio",
+  "img": "",
+  "options": [
+   {
+    "text": "１かい",
+    "img": ""
+   },
+   {
+    "text": "２かい",
+    "img": ""
+   },
+   {
+    "text": "３かい",
+    "img": ""
+   },
+   {
+    "text": "４かい",
+    "img": ""
+   }
+  ],
+  "answer": 1,
+  "score": "",
+  "trans": "Hitung: 2 kali (b).",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN - Choukai] Hitung: 2 kali (b).",
+  "opt_detail": [
+   {
+    "kana": "１かい",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Hitung: 2 kali (b. )."
+   },
+   {
+    "kana": "２かい",
+    "rom": "",
+    "arti": "",
+    "alasan": "２かい berarti . Hitung: 2 kali (b)."
+   },
+   {
+    "kana": "３かい",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Hitung: 2 kali (b. )."
+   },
+   {
+    "kana": "４かい",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Hitung: 2 kali (b. )."
+   }
+  ],
+  "opt_note": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "kunci_id": "２かい",
+  "salah": "Pilihan lain tidak sesuai audio & kunci PDF.",
+  "audio": "assets/audio/lis02.m4a"
+ },
+ {
+  "no": 23,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "Listening 23 - dengarkan audio",
+  "img": "assets/basu_lis03.jpg",
+  "options": [
+   {
+    "text": "1",
+    "img": ""
+   },
+   {
+    "text": "2",
+    "img": ""
+   },
+   {
+    "text": "3",
+    "img": ""
+   },
+   {
+    "text": "4",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Tas hitam besar = no.3 (c).",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN - Choukai] Tas hitam besar = no.3 (c).",
+  "opt_detail": [
+   {
+    "kana": "1",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Tas hitam besar = no.3 (c. )."
+   },
+   {
+    "kana": "2",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Tas hitam besar = no.3 (c. )."
+   },
+   {
+    "kana": "3",
+    "rom": "",
+    "arti": "",
+    "alasan": "3 berarti . Tas hitam besar = no.3 (c)."
+   },
+   {
+    "kana": "4",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Tas hitam besar = no.3 (c. )."
+   }
+  ],
+  "opt_note": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "kunci_id": "3",
+  "salah": "Pilihan lain tidak sesuai audio & kunci PDF.",
+  "audio": "assets/audio/lis03.m4a"
+ },
+ {
+  "no": 24,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "Listening 24 - dengarkan audio",
+  "img": "assets/basu_lis04.jpg",
+  "options": [
+   {
+    "text": "1",
+    "img": ""
+   },
+   {
+    "text": "2",
+    "img": ""
+   },
+   {
+    "text": "3",
+    "img": ""
+   },
+   {
+    "text": "4",
+    "img": ""
+   }
+  ],
+  "answer": 2,
+  "score": "",
+  "trans": "Alat tulis buku+pensil = no.3 (c).",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN - Choukai] Alat tulis buku+pensil = no.3 (c).",
+  "opt_detail": [
+   {
+    "kana": "1",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Alat tulis buku+pensil = no.3 (c. )."
+   },
+   {
+    "kana": "2",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Alat tulis buku+pensil = no.3 (c. )."
+   },
+   {
+    "kana": "3",
+    "rom": "",
+    "arti": "",
+    "alasan": "3 berarti . Alat tulis buku+pensil = no.3 (c)."
+   },
+   {
+    "kana": "4",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Alat tulis buku+pensil = no.3 (c. )."
+   }
+  ],
+  "opt_note": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "kunci_id": "3",
+  "salah": "Pilihan lain tidak sesuai audio & kunci PDF.",
+  "audio": "assets/audio/lis04.m4a"
+ },
+ {
+  "no": 25,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "Listening 25 - dengarkan audio",
+  "img": "assets/basu_lis05.jpg",
+  "options": [
+   {
+    "text": "1",
+    "img": ""
+   },
+   {
+    "text": "2",
+    "img": ""
+   },
+   {
+    "text": "3",
+    "img": ""
+   },
+   {
+    "text": "4",
+    "img": ""
+   }
+  ],
+  "answer": 0,
+  "score": "",
+  "trans": "Kegiatan makan bersama = no.1 (a).",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN - Choukai] Kegiatan makan bersama = no.1 (a).",
+  "opt_detail": [
+   {
+    "kana": "1",
+    "rom": "",
+    "arti": "",
+    "alasan": "1 berarti . Kegiatan makan bersama = no.1 (a)."
+   },
+   {
+    "kana": "2",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Kegiatan makan bersama = no.1 (a. )."
+   },
+   {
+    "kana": "3",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Kegiatan makan bersama = no.1 (a. )."
+   },
+   {
+    "kana": "4",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Kegiatan makan bersama = no.1 (a. )."
+   }
+  ],
+  "opt_note": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "kunci_id": "1",
+  "salah": "Pilihan lain tidak sesuai audio & kunci PDF.",
+  "audio": "assets/audio/lis05.m4a"
+ },
+ {
+  "no": 26,
+  "section": "SESI 3 : CHOUKAI",
+  "title": "Listening 26 - dengarkan audio",
+  "img": "assets/basu_lis06.jpg",
+  "options": [
+   {
+    "text": "1",
+    "img": ""
+   },
+   {
+    "text": "2",
+    "img": ""
+   },
+   {
+    "text": "3",
+    "img": ""
+   },
+   {
+    "text": "4",
+    "img": ""
+   }
+  ],
+  "answer": 3,
+  "score": "",
+  "trans": "Bekal camilan saja = no.4 (d).",
+  "trans_rom": "-",
+  "mnn": "Choukai",
+  "analisis": "[MNN - Choukai] Bekal camilan saja = no.4 (d).",
+  "opt_detail": [
+   {
+    "kana": "1",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Bekal camilan saja = no.4 (d. )."
+   },
+   {
+    "kana": "2",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Bekal camilan saja = no.4 (d. )."
+   },
+   {
+    "kana": "3",
+    "rom": "",
+    "arti": "",
+    "alasan": "Tidak cocok dengan Bekal camilan saja = no.4 (d. )."
+   },
+   {
+    "kana": "4",
+    "rom": "",
+    "arti": "",
+    "alasan": "4 berarti . Bekal camilan saja = no.4 (d)."
+   }
+  ],
+  "opt_note": [
+   "",
+   "",
+   "",
+   ""
+  ],
+  "kunci_id": "4",
+  "salah": "Pilihan lain tidak sesuai audio & kunci PDF.",
+  "audio": "assets/audio/lis05.m4a"
+ }
+]
