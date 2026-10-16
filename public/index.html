@@ -198,20 +198,25 @@
       } catch (e) { alert("Gagal masuk: " + (e.message || e.code)); }
     }
     window.fujiLogout = async function () {
-      try {
-        var a = window.fujiAuth;
-        if (a) {
-          await a.signOut();
-        }
-      } catch (e) {
-        if (window.console) console.warn("[logout] signOut gagal:", e);
-      }
+      // Redirect HANYA sekali, langsung, tanpa tunggu signOut
       try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
       window.fujiUser = null;
-      try { renderUser(); } catch (e) {}
+      try {
+        var a = window.fujiAuth;
+        if (a) { a.signOut().catch(function(){}); }
+      } catch (e) {}
       location.replace("/login.html");
     };
-    window.addEventListener("fuji:auth", function () { try { renderUser(); } catch (e) {} });
+    // Redirect ke login juga saat auth state berubah jadi null (misal token expired)
+    window.addEventListener("fuji:auth", function () {
+      try {
+        if (!window.fujiUser && location.pathname !== "/login.html") {
+          location.replace("/login.html");
+          return;
+        }
+        renderUser();
+      } catch (e) {}
+    });
     renderUser();
   </script>
 </body>
