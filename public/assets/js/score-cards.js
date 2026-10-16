@@ -32,11 +32,11 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
     var barInner = has
       ? '<div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:56.25%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:68.75%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:79.17%"></div>'
       : '<div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:56.25%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:68.75%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:79.17%"></div>';
-    // ── Pin skor (di DALAM bar, center vertically) ──
+    // ── Pin skor (di ATAS bar, ujung segitiga menempel bar) ──
     var pin = has
-      ? '<div class="absolute z-10 pointer-events-none" style="left:' + posStr + '%;top:50%;transform:translate(-50%,-50%)">'
-        + '<div class="absolute bottom-[calc(100%+4px)] left-1/2 -translate-x-1/2 whitespace-nowrap"><span class="bg-slate-800 text-white font-bold text-[10px] px-1.5 py-0.5 rounded-md shadow inline-block">' + j + '</span><div class="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[4px] border-t-slate-800 mx-auto"></div></div>'
-        + '<div class="w-4 h-4 rounded-full bg-white border-[3px] border-orange-500 shadow"></div>'
+      ? '<div class="absolute z-10 pointer-events-none" style="left:' + posStr + '%;bottom:100%;transform:translateX(-50%);margin-bottom:-1px">'
+        + '<span class="bg-slate-800 text-white font-bold text-[10px] px-1.5 py-0.5 rounded-md shadow inline-block whitespace-nowrap">' + j + '</span>'
+        + '<div class="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[4px] border-t-slate-800 mx-auto"></div>'
         + '</div>'
       : '';
     var bar = has
@@ -77,7 +77,7 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
       + '<div class="flex items-center justify-between" style="margin-bottom:8px"><span class="font-medium text-slate-500">' + headL + '</span><span class="font-bold px-2 py-0.5 rounded ' + lvCls + ' text-[11px]">' + headR + '</span></div>'
       + benarLine
       + secsLine
-      + '<div class="relative" style="margin-top:20px;margin-bottom:8px">' + bar + skala + '</div>'
+      + '<div class="relative" style="margin-top:28px;margin-bottom:8px">' + bar + skala + '</div>'
       + '</div>';
   }
   function footHTML(a, r) {
