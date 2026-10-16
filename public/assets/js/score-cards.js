@@ -54,10 +54,7 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
     var benarLine = has
       ? '<div class="flex items-center justify-between text-[11px] mb-1"><span class="text-slate-500">Benar: <strong class="text-slate-700">' + benar + '/' + total + '</strong></span>' + tgl + '</div>'
       : '<div class="flex items-center justify-between text-[11px] mb-1"><span class="text-slate-400">Belum mengerjakan</span></div>';
-    // ── Progress bar kecil (benar/total %) ──
-    var pctBar = has
-      ? '<div class="w-full h-1.5 rounded-full bg-slate-200 mb-2 overflow-hidden"><div class="h-full rounded-full ' + (pct >= 75 ? 'bg-emerald-500' : pct >= 50 ? 'bg-amber-400' : 'bg-rose-400') + '" style="width:' + Math.min(100, pct) + '%;transition:width .5s"></div></div>'
-      : '<div class="w-full h-1.5 rounded-full bg-slate-200 mb-2 overflow-hidden"><div class="h-full rounded-full bg-slate-300" style="width:0%"></div></div>';
+    // ── Progress bar kecil (benar/total %) — DIHAPUS, sudah ada JFT bar di bawah ──
     // ── Breakdown per sesi (jika ada data secs) ──
     var secsLine = '';
     if (has && r.secs) {
@@ -79,7 +76,6 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
     return '<div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 mb-1 text-xs">'
       + '<div class="flex items-center justify-between" style="margin-bottom:8px"><span class="font-medium text-slate-500">' + headL + '</span><span class="font-bold px-2 py-0.5 rounded ' + lvCls + ' text-[11px]">' + headR + '</span></div>'
       + benarLine
-      + pctBar
       + secsLine
       + '<div class="relative" style="margin-top:20px;margin-bottom:8px">' + bar + skala + '</div>'
       + '</div>';
