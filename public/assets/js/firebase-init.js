@@ -90,7 +90,7 @@ window.fujiScore = {
           if (!key) return;
           var cur = out[key];
           if (!cur || window.fujiScore._recTime(v) >= window.fujiScore._recTime(cur._v)) {
-            out[key] = { benar: v.benar, total: v.total, skor: v.skor, src: v.slug ? "firestore" : "firestore-legacy", _v: v };
+            out[key] = { benar: v.benar, total: v.total, skor: v.skor, secs: v.secs || null, at: v.at || null, src: v.slug ? "firestore" : "firestore-legacy", _v: v };
           }
         });
         Object.keys(out).forEach(function (k) { try { delete out[k]._v; } catch (e) {} });

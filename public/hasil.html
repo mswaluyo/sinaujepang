@@ -80,8 +80,7 @@ try{
   if(window.fujiScore&&window.fujiScore.latest&&(window.fujiUser&&window.fujiUser.email)){
     var fr=await window.fujiScore.latest(slug);
     if(fr&&fr.benar!=null){
-      var raw=fr._v||{};
-      R={benar:fr.benar,total:fr.total,skor:fr.skor,secs:raw.secs||null,at:raw.at||(raw.createdAt&&raw.createdAt.toMillis?raw.createdAt.toMillis():raw.createdAt)||Date.now()};
+      R={benar:fr.benar,total:fr.total,skor:fr.skor,secs:fr.secs||null,at:fr.at||Date.now()};
     }
   }
 }catch(e){}
