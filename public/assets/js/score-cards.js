@@ -29,13 +29,19 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
     var pos = has ? jftPos(j) : 0;
     var posStr = pos.toFixed(2);
     // ── Bar utama (gradient + threshold markers) ──
-    var bar = has
-      ? '<div class="w-full h-2.5 rounded-full bg-gradient-to-r from-rose-400 via-amber-300 via-amber-400 to-emerald-500 relative shadow-inner"><div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:56.25%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:68.75%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:79.17%"></div></div>'
-      : '<div class="w-full h-2.5 rounded-full bg-slate-200 relative"><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:56.25%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:68.75%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:79.17%"></div></div>';
-    // ── Pin skor ──
+    var barInner = has
+      ? '<div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:56.25%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:68.75%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:79.17%"></div>'
+      : '<div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:56.25%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:68.75%"></div><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:79.17%"></div>';
+    // ── Pin skor (di DALAM bar, center vertically) ──
     var pin = has
-      ? '<div class="absolute flex flex-col items-center" style="left:' + posStr + '%;transform:translateX(-50%);top:-26px"><span class="bg-slate-800 text-white font-bold text-[10px] px-1.5 py-0.5 rounded-md shadow">' + j + '</span><div class="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[4px] border-t-slate-800"></div></div>'
+      ? '<div class="absolute z-10 pointer-events-none" style="left:' + posStr + '%;top:50%;transform:translate(-50%,-50%)">'
+        + '<div class="absolute bottom-[calc(100%+4px)] left-1/2 -translate-x-1/2 whitespace-nowrap"><span class="bg-slate-800 text-white font-bold text-[10px] px-1.5 py-0.5 rounded-md shadow inline-block">' + j + '</span><div class="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[4px] border-t-slate-800 mx-auto"></div></div>'
+        + '<div class="w-4 h-4 rounded-full bg-white border-[3px] border-orange-500 shadow"></div>'
+        + '</div>'
       : '';
+    var bar = has
+      ? '<div class="w-full h-2.5 rounded-full bg-gradient-to-r from-rose-400 via-amber-300 via-amber-400 to-emerald-500 relative shadow-inner overflow-visible">' + pin + barInner + '</div>'
+      : '<div class="w-full h-2.5 rounded-full bg-slate-200 relative">' + barInner + '</div>';
     // ── Tanggal ──
     var tgl = '';
     if (has && r.at) {
@@ -75,7 +81,7 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
       + benarLine
       + pctBar
       + secsLine
-      + '<div class="relative" style="margin-top:28px;margin-bottom:8px">' + pin + bar + skala + '</div>'
+      + '<div class="relative" style="margin-top:20px;margin-bottom:8px">' + bar + skala + '</div>'
       + '</div>';
   }
   function footHTML(a, r) {
