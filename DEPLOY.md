@@ -125,6 +125,29 @@ d:\soal-jft\public\
 
 ---
 
+## ⚠️ Catatan Penting: Tailwind CSS Build
+
+**Setiap kali menambah class Tailwind baru di file JS/HTML**, jalankan build CSS sebelum commit:
+
+```powershell
+npm run build:css
+```
+
+**Kenapa?** Tailwind mem-purge class yang tidak terdeteksi saat build. Jika menambah class baru di JS (contoh: `grid-cols-3`) tanpa rebuild, class tersebut **tidak ada di CSS** → layout rusak.
+
+**Alur kerja yang benar:**
+```
+1. Edit file JS/HTML (tambah class Tailwind baru)
+2. npm run build:css          ← WAJIB sebelum commit
+3. git add .
+4. git commit -m "pesan"
+5. git push origin main       ← CI/CD auto-deploy
+```
+
+**Catatan:** CI/CD **tidak** menjalankan `build:css` (karena `tailwind.config.js` tidak di-commit). CSS yang di-commit adalah hasil build lokal.
+
+---
+
 ## 5. Troubleshooting
 
 | Masalah | Solusi |
