@@ -112,31 +112,26 @@ document.getElementById("h-pin-n").textContent=J;
 var SECN={sec1:["文字と語彙","Script and Vocabulary"],sec2:["会話と表現","Conversation and Expression"],sec3:["聴解","Listening Comprehension"],sec4:["読解","Reading Comprehension"]};
 var box=document.getElementById("h-secs");box.innerHTML="";
 var saran=[];
-var secData=[];
 ["sec1","sec2","sec3","sec4"].forEach(function(k){
  var s=R.secs&&R.secs[k];
  if(!s)return;
  var pct=s.total?Math.round(s.benar/s.total*100):0;
  var secJ=Math.round(10+(pct/100)*240);
- var secLv=pct>=85?"A2":pct>=75?"A1+":pct>=60?"A1":"-";
- var color=pct>=75?"emerald":pct>=60?"amber":"rose";
- secData.push({k:k,pct:pct,benar:s.benar,total:s.total,j:secJ,lv:secLv,color:color});
+ // Pakai class STATIS agar Tailwind ter-compile
+ var badge="S1",jName="",eName="";
+ if(k==="sec1"){badge="S1";jName=SECN.sec1[0];eName=SECN.sec1[1];}
+ if(k==="sec2"){badge="S2";jName=SECN.sec2[0];eName=SECN.sec2[1];}
+ if(k==="sec3"){badge="S3";jName=SECN.sec3[0];eName=SECN.sec3[1];}
+ if(k==="sec4"){badge="S4";jName=SECN.sec4[0];eName=SECN.sec4[1];}
  var row=document.createElement("div");
  row.className="mb-3 pb-3 border-b border-slate-100 last:border-0 last:mb-0 last:pb-0";
- row.innerHTML=
-  '<div class="flex items-center justify-between mb-1">'
-  +'<div class="flex items-center gap-2">'
-  +'<span class="w-6 h-6 rounded-md bg-'+color+'-100 text-'+color+'-700 text-[10px] font-bold flex items-center justify-center">'+(k==="sec1"?"S1":k==="sec2"?"S2":k==="sec3"?"S3":"S4")+'</span>'
-  +'<div><span class="font-bold text-[13px]">'+SECN[k][0]+'</span><br><span class="text-[11px] text-slate-400">'+SECN[k][1]+'</span></div>'
-  +'</div>'
-  +'<div class="text-right"><span class="font-extrabold text-'+color+'-600 text-sm">'+pct+'%</span><br><span class="text-[10px] text-slate-400">'+s.benar+'/'+s.total+' benar</span></div>'
-  +'</div>'
-  +'<div class="flex items-center gap-2">'
-  +'<div class="flex-1 h-2 rounded-full bg-slate-100 overflow-hidden">'
-  +'<div class="h-full rounded-full bg-'+color+'-500 transition-all duration-500" style="width:'+pct+'%"></div>'
-  +'</div>'
-  +'<span class="text-[10px] font-bold text-'+color+'-600 w-12 text-right">~'+secJ+'/250</span>'
-  +'</div>';
+ if(pct>=75){
+  row.innerHTML='<div class="flex items-center justify-between mb-1"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-emerald-100 text-emerald-700 text-[10px] font-bold flex items-center justify-center">'+badge+'</span><div><span class="font-bold text-[13px]">'+jName+'</span><br><span class="text-[11px] text-slate-400">'+eName+'</span></div></div><div class="text-right"><span class="font-extrabold text-emerald-600 text-sm">'+pct+'%</span><br><span class="text-[10px] text-slate-400">'+s.benar+'/'+s.total+' benar</span></div></div><div class="flex items-center gap-2"><div class="flex-1 h-2 rounded-full bg-slate-100 overflow-hidden"><div class="h-full rounded-full bg-emerald-500 transition-all duration-500" style="width:'+pct+'%"></div></div><span class="text-[10px] font-bold text-emerald-600 w-12 text-right">~'+secJ+'/250</span></div>';
+ }else if(pct>=60){
+  row.innerHTML='<div class="flex items-center justify-between mb-1"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-amber-100 text-amber-700 text-[10px] font-bold flex items-center justify-center">'+badge+'</span><div><span class="font-bold text-[13px]">'+jName+'</span><br><span class="text-[11px] text-slate-400">'+eName+'</span></div></div><div class="text-right"><span class="font-extrabold text-amber-600 text-sm">'+pct+'%</span><br><span class="text-[10px] text-slate-400">'+s.benar+'/'+s.total+' benar</span></div></div><div class="flex items-center gap-2"><div class="flex-1 h-2 rounded-full bg-slate-100 overflow-hidden"><div class="h-full rounded-full bg-amber-500 transition-all duration-500" style="width:'+pct+'%"></div></div><span class="text-[10px] font-bold text-amber-600 w-12 text-right">~'+secJ+'/250</span></div>';
+ }else{
+  row.innerHTML='<div class="flex items-center justify-between mb-1"><div class="flex items-center gap-2"><span class="w-6 h-6 rounded-md bg-rose-100 text-rose-700 text-[10px] font-bold flex items-center justify-center">'+badge+'</span><div><span class="font-bold text-[13px]">'+jName+'</span><br><span class="text-[11px] text-slate-400">'+eName+'</span></div></div><div class="text-right"><span class="font-extrabold text-rose-600 text-sm">'+pct+'%</span><br><span class="text-[10px] text-slate-400">'+s.benar+'/'+s.total+' benar</span></div></div><div class="flex items-center gap-2"><div class="flex-1 h-2 rounded-full bg-slate-100 overflow-hidden"><div class="h-full rounded-full bg-rose-500 transition-all duration-500" style="width:'+pct+'%"></div></div><span class="text-[10px] font-bold text-rose-600 w-12 text-right">~'+secJ+'/250</span></div>';
+ }
  box.appendChild(row);
  if(pct<75){
   if(k==="sec1")saran.push("Mojigoi ("+pct+"%): ulang baca kanji mirip (vokal panjang) + kosakata benda.");
