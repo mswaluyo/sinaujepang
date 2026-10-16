@@ -175,10 +175,10 @@
   <script src="/assets/js/score-cards.js"></script>
   <script>
     // Fungsi utama untuk kontrol login & logout (IndexedDB-based)
-    function renderUser() {
+    async function renderUser() {
       try {
         var u = null;
-        try { u = JSON.parse(window.IndexedDB.getItem("jft_user") || "null"); } catch (e) {}
+        try { u = await window.IndexedDB.getItem("jft_user"); } catch (e) {}
         var b = document.getElementById("loginBtn"), info = document.getElementById("uInfo");
         if (!u) { if (b) { b.innerHTML = '<span>Masuk Google</span>'; b.onclick = function(){ openLoginModal(); }; } if (info) { info.classList.add("hidden"); } return; }
         if (b) { b.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i><span>Keluar</span>'; b.onclick = function(){ window.fujiLogout(); }; }
@@ -214,10 +214,10 @@
           location.replace("/login.html");
           return;
         }
-        renderUser();
+        renderUser().catch(function(){});
       } catch (e) {}
     });
-    renderUser();
+    renderUser().catch(function(){});
   </script>
 </body>
 </html>
