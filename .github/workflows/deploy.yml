@@ -8,7 +8,6 @@ on:
 
 env:
   FIREBASE_PROJECT: sinau-jepang
-  FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
 
 jobs:
   build-and-deploy:
@@ -33,7 +32,6 @@ jobs:
         uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_TOKEN }}
           projectId: ${{ env.FIREBASE_PROJECT }}
           channelId: live
           entryPoint: public/
