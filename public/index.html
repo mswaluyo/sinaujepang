@@ -197,7 +197,20 @@
         renderUser();
       } catch (e) { alert("Gagal masuk: " + (e.message || e.code)); }
     }
-    window.fujiLogout = function () { try { var a = window.fujiAuth; if (!a) return location.replace("/login.html"); a.signOut().then(function(){ try{window.IndexedDB.removeItem("jft_user");}catch(e){} location.replace("/login.html"); }); } catch (e) {} };
+    window.fujiLogout = async function () {
+      try {
+        var a = window.fujiAuth;
+        if (a) {
+          await a.signOut();
+        }
+      } catch (e) {
+        if (window.console) console.warn("[logout] signOut gagal:", e);
+      }
+      try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
+      window.fujiUser = null;
+      try { renderUser(); } catch (e) {}
+      location.replace("/login.html");
+    };
     window.addEventListener("fuji:auth", function () { try { renderUser(); } catch (e) {} });
     renderUser();
   </script>
