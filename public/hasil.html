@@ -5,11 +5,11 @@
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 <style>
-.jft-bar{height:10px;border-radius:9999px;background:linear-gradient(to right,#fda4af 0%,#f472b6 46%,#fb923c 62%,#facc15 75%,#a3e635 100%);position:relative;box-shadow:inset 0 1px 3px rgba(0,0,0,.15);z-index:1}
+.jft-bar{height:10px;border-radius:9999px;background:linear-gradient(to right,#fda4af 0%,#f472b6 46%,#fb923c 62%,#facc15 75%,#a3e635 100%);position:relative;box-shadow:inset 0 1px 3px rgba(0,0,0,.15);z-index:1;overflow:visible}
 .jft-tick{position:absolute;top:-2px;bottom:-2px;width:2px;background:#1e293b;border-radius:2px;z-index:2}
-.jft-pin{position:absolute;top:-18px;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;z-index:10}
-.jft-num{font-size:10px;font-weight:700;color:#fff;background:#1e293b;padding:2px 6px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.3);white-space:nowrap;line-height:1}
-.jft-dot{width:18px;height:18px;border-radius:9999px;background:#fff;border:4px solid #f97316;box-shadow:0 1px 4px rgba(0,0,0,.3)}
+.jft-pin{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;pointer-events:none}
+.jft-pin .jft-num{position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);font-size:12px;font-weight:700;color:#fff;background:#1e293b;padding:2px 8px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.3);white-space:nowrap;line-height:1.3}
+.jft-pin .jft-dot{width:18px;height:18px;border-radius:9999px;background:#fff;border:4px solid #f97316;box-shadow:0 1px 4px rgba(0,0,0,.3)}
 .sec-track{height:14px;border-radius:6px;background:#e5e7eb;position:relative}
 .sec-dot{position:absolute;top:50%;width:16px;height:16px;border-radius:9999px;background:#fff;border:3px solid #f97316;transform:translate(-50%,-50%);box-shadow:0 1px 3px rgba(0,0,0,.25)}
 @media print{.no-print{display:none}}
@@ -37,8 +37,7 @@
 <div class="text-sm"><span class="font-bold">Status: </span><span id="h-status" class="font-bold">-</span></div>
 </div>
 <div class="relative mt-10 mb-1">
-<div class="jft-pin" id="h-pin" style="left:50%"><span class="text-sm font-bold" id="h-pin-n">-</span><div class="jft-dot"></div></div>
-<div class="jft-bar"><div class="jft-tick" style="left:56.25%"></div><div class="jft-tick" style="left:68.75%"></div><div class="jft-tick" style="left:79.17%"></div></div>
+<div class="jft-bar"><div class="jft-pin" id="h-pin" style="left:50%"><span class="jft-num" id="h-pin-n">-</span><div class="jft-dot"></div></div><div class="jft-tick" style="left:56.25%"></div><div class="jft-tick" style="left:68.75%"></div><div class="jft-tick" style="left:79.17%"></div></div>
 <div class="relative text-xs font-bold mt-1 h-5" style="padding-left:4px;padding-right:4px"><span style="position:absolute;left:4px;top:0;background:#fff;padding:0 4px">10</span><span class="absolute text-center top-0" style="left:56.25%;transform:translateX(-50%)">145<br><span class="text-[10px] font-semibold">A1</span></span><span class="absolute text-center top-0" style="left:68.75%;transform:translateX(-50%)">175<br><span class="text-[10px] font-semibold">A2.1</span></span><span class="absolute text-center text-emerald-600 top-0" style="left:79.17%;transform:translateX(-50%)">200<br><span class="text-[10px] font-semibold">A2</span></span><span style="position:absolute;right:4px;top:0;background:#fff;padding:0 4px">250</span></div>
 </div>
 <div class="mt-6 text-sm font-bold">SEKSI:</div>
