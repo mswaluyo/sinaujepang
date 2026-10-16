@@ -65,9 +65,9 @@ QuizController.autosave = function () {
     if (!slug) return;
     var r = QuizController.calcScore();
     try {
-      var all = JSON.parse(localStorage.getItem("jft_hasil") || "{}");
+      var all = JSON.parse(window.IndexedDB.getItem("jft_hasil") || "{}");
       all[slug] = r;
-      localStorage.setItem("jft_hasil", JSON.stringify(all));
+      window.IndexedDB.setItem("jft_hasil", JSON.stringify(all));
     } catch (e) {}
     QuizRepository.saveAttempt(slug, r);
   } catch (e) {}

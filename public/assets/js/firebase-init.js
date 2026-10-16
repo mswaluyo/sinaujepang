@@ -1,10 +1,9 @@
-// Firebase init 1 pintu (project sinau-jepang + Analytics + Auth + Firestore).
-// Dipakai: index.html, login.html, quiz.html
-// Skor online: model.js memanggil window.fujiScore.save(slug, {benar,total,skor}).
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import { getFirestore, collection, addDoc, serverTimestamp, query, where, limit, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+// IndexedDB utility (ganti localStorage)
+import "./indexeddb.js";
 const firebaseConfig = {
   apiKey: "AIzaSyDjbVGm1rjPJADixh8k5Zbc7-xX4cm5uos",
   authDomain: "sinau-jepang.firebaseapp.com",
@@ -24,12 +23,12 @@ try {
   onAuthStateChanged(window.fujiAuth, function (u) {
     window.fujiUser = u || null;
     try {
-      if (u) localStorage.setItem("jft_user", JSON.stringify({ name: u.displayName, email: u.email, photo: u.photoURL }));
+      if (u) window.IndexedDB.setItem("jft_user", { name: u.displayName, email: u.email, photo: u.photoURL });
     } catch (e) {}
     try { window.dispatchEvent(new Event("fuji:auth")); } catch (e) {}
   });
 } catch (e) {}
-// API skor online 1 pintu: Firestore (wajib login) + fallback localStorage selalu jalan.
+// API skor online 1 pintu: Firestore (wajib login) + fallback IndexedDB (local).
 window.fujiScore = {
   save: async function (slug, attempt) {
     if (!slug) {
@@ -46,7 +45,7 @@ window.fujiScore = {
     if (secs) rec.secs = secs;
     try {
       var u = null;
-      try { u = JSON.parse(localStorage.getItem("jft_user") || "null"); } catch (e) {}
+      try { u = JSON.parse(window.IndexedDB.getItem("jft_user") || "null"); } catch (e) {}
       if (u) { rec.name = u.name || ""; rec.email = u.email || ""; }
     } catch (e) {}
     if (window.fujiDb && window.fujiUser && window.fujiUser.email) {
@@ -100,17 +99,21 @@ window.fujiScore = {
       if (window.console) console.warn("[fujiScore] latestAll gagal:", e);
     }
     try {
-      var all = JSON.parse(localStorage.getItem("jft_attempts") || "{}");
-      Object.keys(all).forEach(function (k) {
-        if (!out[k] && all[k].length) {
-          var last = all[k][all[k].length - 1];
-          out[k] = { benar: last.benar, total: last.total, skor: last.skor, src: "local" };
+      var all = await window.IndexedDB.getAllBySlug("jft_attempts");
+      all.forEach(function (item) {
+        var slug = item && item.slug;
+        if (slug && !out[slug]) {
+          var last = item;
+          if (Array.isArray(item)) {
+            last = item[item.length - 1] || item;
+          }
+          out[slug] = { benar: last.benar || 0, total: last.total || 0, skor: last.skor || 0, src: "local" };
         }
       });
     } catch (e) {}
     return out;
   },
-  // API baca skor TERAKHIR per slug: Firestore (login) -> localStorage.
+  // API baca skor TERAKHIR per slug: Firestore (login) -> IndexedDB.
   // Dipakai homepage untuk badge skor di kartu Simulasi JFT per Paket.
   // Fallback warisan: dokumen lama slug=null dipetakan via total (AOI=29).
   // TANPA orderBy agar bebas composite-index (saring+urut di klien).
@@ -119,4 +122,3 @@ window.fujiScore = {
     return all[slug] || null;
   }
 };
-

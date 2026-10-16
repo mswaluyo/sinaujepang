@@ -22,12 +22,6 @@
       background-attachment: fixed;
     }
   </style>
-<script>
-try {
-  var u = JSON.parse(localStorage.getItem("jft_user") || "null");
-  if (!u && location.pathname !== "/login.html") location.replace("/login.html");
-} catch (e) {}
-</script>
 </head>
 <body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between selection:bg-fuji-200">
 
@@ -177,17 +171,20 @@ try {
     </div>
   </div>
 
+  <script type="module" src="/assets/js/firebase-init.js"></script>
+  <script src="/assets/js/score-cards.js"></script>
   <script>
+    // Fungsi utama untuk kontrol login & logout (IndexedDB-based)
     function renderUser() {
       try {
-        var u = JSON.parse(localStorage.getItem("jft_user") || "null");
+        var u = null;
+        try { u = JSON.parse(window.IndexedDB.getItem("jft_user") || "null"); } catch (e) {}
         var b = document.getElementById("loginBtn"), info = document.getElementById("uInfo");
         if (!u) { if (b) { b.innerHTML = '<span>Masuk Google</span>'; b.onclick = function(){ openLoginModal(); }; } if (info) { info.classList.add("hidden"); } return; }
         if (b) { b.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i><span>Keluar</span>'; b.onclick = function(){ window.fujiLogout(); }; }
         if (info) { info.textContent = "Hi, " + (u.name || u.email); info.classList.remove("hidden"); }
       } catch (e) {}
     }
-    renderUser();
     function openLoginModal() { document.getElementById('loginModal').classList.remove('hidden'); }
     function closeLoginModal() { document.getElementById('loginModal').classList.add('hidden'); }
     async function simulateLogin() {
@@ -195,18 +192,14 @@ try {
         var authMod = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js");
         var r = await authMod.signInWithPopup(window.fujiAuth, new authMod.GoogleAuthProvider());
         var u = r.user;
-        try { localStorage.setItem("jft_user", JSON.stringify({ name: u.displayName, email: u.email, photo: u.photoURL })); } catch (e) {}
+        try { window.IndexedDB.setItem("jft_user", { name: u.displayName, email: u.email, photo: u.photoURL }); } catch (e) {}
         closeLoginModal();
         renderUser();
       } catch (e) { alert("Gagal masuk: " + (e.message || e.code)); }
     }
-    function scrollToSoal() { document.getElementById('latihan-soal').scrollIntoView({ behavior: 'smooth' }); }
+    window.fujiLogout = function () { try { var a = window.fujiAuth; if (!a) return location.replace("/login.html"); a.signOut().then(function(){ try{window.IndexedDB.removeItem("jft_user");}catch(e){} location.replace("/login.html"); }); } catch (e) {} };
+    window.addEventListener("fuji:auth", function () { try { renderUser(); } catch (e) {} });
+    renderUser();
   </script>
-<script type="module" src="/assets/js/firebase-init.js"></script>
-<script>
-window.fujiLogout = function () { try { var a = window.fujiAuth; if (!a) return location.replace("/login.html"); a.signOut().then(function(){ try{localStorage.removeItem("jft_user");}catch(e){} location.replace("/login.html"); }); } catch (e) {} };
-window.addEventListener("fuji:auth", function () { try { renderUser(); } catch (e) {} });
-</script>
-<script src="/assets/js/score-cards.js"></script>
 </body>
 </html>

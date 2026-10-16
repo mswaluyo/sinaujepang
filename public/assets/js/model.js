@@ -63,9 +63,9 @@ var QuizRepository = (function () {
   }
   function saveAttempt(slug, attempt) {
     try {
-      var all = JSON.parse(localStorage.getItem(ATTEMPT_KEY) || "{}");
+      var all = JSON.parse(window.IndexedDB.getItem(ATTEMPT_KEY) || "{}");
       (all[slug] = all[slug] || []).push(Object.assign({ at: Date.now() }, attempt));
-      localStorage.setItem(ATTEMPT_KEY, JSON.stringify(all));
+      window.IndexedDB.setItem(ATTEMPT_KEY, JSON.stringify(all));
     } catch (e) { /* mode privat: abaikan */ }
     // Skor online: Firestore bila login (async, tanpa blokir UI).
     try {
@@ -76,7 +76,7 @@ var QuizRepository = (function () {
   }
   function loadAttempts(slug) {
     try {
-      var all = JSON.parse(localStorage.getItem(ATTEMPT_KEY) || "{}");
+      var all = JSON.parse(window.IndexedDB.getItem(ATTEMPT_KEY) || "{}");
       return all[slug] || [];
     } catch (e) { return []; }
   }

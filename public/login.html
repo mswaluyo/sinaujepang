@@ -69,10 +69,10 @@ $("gBtn").onclick = async function () {
 $("outBtn").onclick = function () { signOut(auth); };
 onAuthStateChanged(auth, function (u) {
   if (u) {
-    try { localStorage.setItem("jft_user", JSON.stringify({ name: u.displayName, email: u.email, photo: u.photoURL })); } catch (e) {}
+    try { window.IndexedDB.setItem("jft_user", { name: u.displayName, email: u.email, photo: u.photoURL }); } catch (e) {}
     location.replace("/");
   } else {
-    try { localStorage.removeItem("jft_user"); } catch (e) {}
+    try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
     $("loginBox").classList.remove("hide");
     $("userBox").classList.add("hide");
   }

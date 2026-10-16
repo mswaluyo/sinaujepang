@@ -3,7 +3,7 @@
 function jftEst(p) { return Math.round(10 + (p / 100) * 240); }
 function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "A1" : "-"; }
 // Kartu jenis soal di homepage: selipkan badge skor terakhir.
-// Kartu punya href /quiz.html?p={slug}-quiz ; badge baca localStorage dulu (instan),
+// Kartu punya href /quiz.html?p={slug}-quiz ; badge baca IndexedDB dulu (instan),
 // lalu Firestore bila login (async, tanpa blokir). Render ulang saat auth siap.
 (function () {
   function slugOf(a) {
@@ -64,10 +64,10 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
       // repaint bila: belum ada badge, dipaksa (auth/pageshow), atau badge masih placeholder
       var isPlaceholder = old && /Target: A2/i.test(old.textContent || "");
       if (old && !force && !isPlaceholder) return;
-      // 1) instan dari localStorage
+      // 1) instan dari IndexedDB
       var instant = null;
       try {
-        var all = JSON.parse(localStorage.getItem("jft_attempts") || "{}");
+        var all = await window.IndexedDB.getAllBySlug("jft_attempts");
         var arr = all[slug] || [];
         if (arr.length) instant = arr[arr.length - 1];
       } catch (e) {}

@@ -62,12 +62,12 @@ if(!slug){slug=q("p")||"";}
 if(!slug){try{var m=(location.pathname||"").match(/([a-z0-9]+-quiz)/i);slug=m?m[1].toLowerCase():"";}catch(e){}}
 if(!slug)slug="aoi-quix";
 var nama="SinauJepang";
-try{var u=JSON.parse(localStorage.getItem("jft_user")||"null");if(u&&(u.name||u.email))nama=u.name||u.email;}catch(e){}
+try{var u=JSON.parse(window.IndexedDB.getItem("jft_user")||"null");if(u&&(u.name||u.email))nama=u.name||u.email;}catch(e){}
 var R=null;
-try{var all=JSON.parse(localStorage.getItem("jft_hasil")||"{}");R=all[slug]||null;}catch(e){}
-if(!R){try{var at=JSON.parse(localStorage.getItem("jft_attempts")||"{}");var arr=at[slug]||[];if(arr.length){var l=arr[arr.length-1];R={benar:l.benar,total:l.total,skor:l.skor,secs:null,at:l.at};}}catch(e){}}
-if(!R){try{var all2=JSON.parse(localStorage.getItem("jft_hasil")||"{}");Object.keys(all2).forEach(function(k){if(!R&&(k===slug||k.indexOf(slug)>=0||slug.indexOf(k)>=0)){R=all2[k];slug=k;}});}}catch(e){}}
-if(!R){try{var at2=JSON.parse(localStorage.getItem("jft_attempts")||"{}");Object.keys(at2).forEach(function(k){if(!R&&at2[k].length&&(k===slug||k.indexOf(slug)>=0||slug.indexOf(k)>=0)){var l2=at2[k][at2[k].length-1];R={benar:l2.benar,total:l2.total,skor:l2.skor,secs:null,at:l2.at};slug=k;}});}}catch(e){}}
+try{var all=JSON.parse(window.IndexedDB.getItem("jft_hasil")||"{}");R=all[slug]||null;}catch(e){}
+if(!R){try{var at=JSON.parse(window.IndexedDB.getItem("jft_attempts")||"{}");var arr=at[slug]||[];if(arr.length){var l=arr[arr.length-1];R={benar:l.benar,total:l.total,skor:l.skor,secs:null,at:l.at};}}catch(e){}}
+if(!R){try{var all2=JSON.parse(window.IndexedDB.getItem("jft_hasil")||"{}");Object.keys(all2).forEach(function(k){if(!R&&(k===slug||k.indexOf(slug)>=0||slug.indexOf(k)>=0)){R=all2[k];slug=k;}});}}catch(e){}}
+if(!R){try{var at2=JSON.parse(window.IndexedDB.getItem("jft_attempts")||"{}");Object.keys(at2).forEach(function(k){if(!R&&at2[k].length&&(k===slug||k.indexOf(slug)>=0||slug.indexOf(k)>=0)){var l2=at2[k][at2[k].length-1];R={benar:l2.benar,total:l2.total,skor:l2.skor,secs:null,at:l2.at};slug=k;}});}}catch(e){}}
 document.getElementById("h-paket").textContent=slug.replace("-quiz","").toUpperCase();
 document.getElementById("h-name").textContent=nama;
 var dt=R&&R.at?new Date(R.at):new Date();
