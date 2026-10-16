@@ -30,28 +30,37 @@
     });
   }
 
-  // Add or update item
+  // Add or update item — hapus lama dulu, lalu insert baru (1 key = 1 record)
   function setItem(key, value) {
     return openDB().then(function (db) {
       return new Promise(function (resolve, reject) {
         var tx = db.transaction(STORE_NAME, 'readwrite');
         var store = tx.objectStore(STORE_NAME);
-        var req = store.put({ key: key, value: value, updatedAt: Date.now() });
+        // Hapus record lama dengan key sama
+        var getAllReq = store.getAll();
+        getAllReq.onsuccess = function () {
+          var items = getAllReq.result || [];
+          items.forEach(function (it) {
+            if (it.key === key) store.delete(it.id);
+          });
+          // Insert baru
+          store.put({ key: key, value: value, updatedAt: Date.now() });
+        };
         tx.oncomplete = function () { resolve(true); };
-        tx.onerror = function () { reject(req.error); };
+        tx.onerror = function () { reject(tx.error); };
       });
     });
   }
-
-  // Get item by key
   function getItem(key) {
     return openDB().then(function (db) {
       return new Promise(function (resolve, reject) {
         var tx = db.transaction(STORE_NAME, 'readonly');
         var store = tx.objectStore(STORE_NAME);
-        var req = store.get(key);
+        var req = store.getAll();
         tx.oncomplete = function () {
-          resolve(req.result ? req.result.value : null);
+          var items = req.result || [];
+          var found = items.filter(function (it) { return it.key === key; });
+          resolve(found.length ? found[found.length - 1].value : null);
         };
         tx.onerror = function () { reject(req.error); };
       });
@@ -64,9 +73,15 @@
       return new Promise(function (resolve, reject) {
         var tx = db.transaction(STORE_NAME, 'readwrite');
         var store = tx.objectStore(STORE_NAME);
-        var req = store.delete(key);
+        var req = store.getAll();
+        req.onsuccess = function () {
+          var items = req.result || [];
+          items.forEach(function (it) {
+            if (it.key === key) store.delete(it.id);
+          });
+        };
         tx.oncomplete = function () { resolve(true); };
-        tx.onerror = function () { reject(req.error); };
+        tx.onerror = function () { reject(tx.error); };
       });
     });
   }
@@ -84,40 +99,39 @@
     });
   }
 
-  // Get all by slug (for attempts)
-  function getAllBySlug(slug) {
+  // Get all items where item.key starts with prefix (simple filter, tanpa index)
+  function getAllBySlug(key) {
     return openDB().then(function (db) {
       return new Promise(function (resolve, reject) {
         var tx = db.transaction(STORE_NAME, 'readonly');
         var store = tx.objectStore(STORE_NAME);
-        var index = store.index('slug_index');
-        var req = index.getAll(slug);
-        tx.oncomplete = function () { resolve(req.result || []); };
+        var req = store.getAll();
+        tx.oncomplete = function () {
+          var items = req.result || [];
+          var matched = items.filter(function (item) { return String(item.key || "").indexOf(key) === 0; });
+          resolve(matched);
+        };
         tx.onerror = function () { reject(req.error); };
       });
     });
   }
 
-  // Delete all items for a slug
-  function removeBySlug(slug) {
+  // Delete all items for a key
+  function removeBySlug(key) {
     return openDB().then(function (db) {
       return new Promise(function (resolve, reject) {
         var tx = db.transaction(STORE_NAME, 'readwrite');
         var store = tx.objectStore(STORE_NAME);
-        var index = store.index('slug_index');
-        var req = index.openCursor(slug);
+        var req = store.getAll();
         var count = 0;
         req.onsuccess = function (e) {
-          var cursor = e.target.result;
-          if (cursor) {
-            cursor.delete();
-            cursor.continue();
-            count++;
-          } else {
-            resolve(count);
-          }
+          var items = req.result || [];
+          items.forEach(function (item) {
+            if (item.key === key) { store.delete(item.id); count++; }
+          });
         };
-        req.onerror = function () { reject(req.error); };
+        tx.oncomplete = function () { resolve(count); };
+        tx.onerror = function () { reject(req.error); };
       });
     });
   }

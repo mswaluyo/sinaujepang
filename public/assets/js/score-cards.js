@@ -55,22 +55,33 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
       }
     } catch (e) {}
   }
-  function paint(force) {
+  async function paint(force) {
     var cards = document.querySelectorAll('a[href*="quiz.html?p="]');
+    // 1) instan dari IndexedDB — load SEMUA attempt sekali, lalu loop kartu
+    var instants = {};
+    try {
+      var all = await window.IndexedDB.getAllBySlug("jft_attempts_");
+      // all = array of {key: "jft_attempts_slug", value: attempt, ...}
+      // kelompokkan per slug
+      all.forEach(function (item) {
+        var slug = String(item.key || "").replace(/^jft_attempts_/, "");
+        if (!slug) return;
+        if (!instants[slug]) instants[slug] = [];
+        instants[slug].push(item.value);
+      });
+      // ambil terakhir per slug
+      Object.keys(instants).forEach(function (k) {
+        var arr = instants[k];
+        instants[k] = arr[arr.length - 1];
+      });
+    } catch (e) {}
     cards.forEach(function (a) {
       var slug = slugOf(a);
       if (!slug) return;
       var old = a.querySelector(".score-body");
-      // repaint bila: belum ada badge, dipaksa (auth/pageshow), atau badge masih placeholder
       var isPlaceholder = old && /Target: A2/i.test(old.textContent || "");
       if (old && !force && !isPlaceholder) return;
-      // 1) instan dari IndexedDB
-      var instant = null;
-      try {
-        var all = await window.IndexedDB.getAllBySlug("jft_attempts");
-        var arr = all[slug] || [];
-        if (arr.length) instant = arr[arr.length - 1];
-      } catch (e) {}
+      var instant = instants[slug] || null;
       // KUNCI URUTAN: grafik (.score-host) selalu di atas, footer (.card-foot) di bawah.
       // Bangun ulang footer kartu: [grafik][footer] agar cache HTML lama tak bisa membalik.
       var foot = a.querySelector(":scope > .card-foot");

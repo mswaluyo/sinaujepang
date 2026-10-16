@@ -99,16 +99,13 @@ window.fujiScore = {
       if (window.console) console.warn("[fujiScore] latestAll gagal:", e);
     }
     try {
-      var all = await window.IndexedDB.getAllBySlug("jft_attempts");
+      // Key format: "jft_attempts_<slug>" → value = attempt terakhir
+      var all = await window.IndexedDB.getAllBySlug("jft_attempts_");
       all.forEach(function (item) {
-        var slug = item && item.slug;
-        if (slug && !out[slug]) {
-          var last = item;
-          if (Array.isArray(item)) {
-            last = item[item.length - 1] || item;
-          }
-          out[slug] = { benar: last.benar || 0, total: last.total || 0, skor: last.skor || 0, src: "local" };
-        }
+        var slug = String(item.key || "").replace(/^jft_attempts_/, "");
+        if (!slug || out[slug]) return;
+        var last = item.value || {};
+        out[slug] = { benar: last.benar || 0, total: last.total || 0, skor: last.skor || 0, src: "local" };
       });
     } catch (e) {}
     return out;
