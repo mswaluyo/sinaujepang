@@ -1,21 +1,14 @@
-// firestore.rules — SinauJepang
-// Skema yang diizinkan:
-//   collection: attempts
-//   fields: slug (string), at (number), benar (int), total (int), skor (int),
-//           name (string), email (string), createdAt (timestamp)
-
+// firestore.rules — SinauJepang v2
+// ✅ Login wajib (read, write)
+// ✅ Cegah overwrite dokumen lama (hanya create yang mengizinkan createdAt)
 rules_version = '2';
 service cloud.firestore {
   match /databases/{databaseId}/documents {
-
-    // ─── Kolom attempt (HANYA yang login) ──────────────────────────────
     match /attempts/{docId} {
       allow read, write: if request.auth != null;
-
-      // Cegah overwrite dokumen lama oleh user lain (silahkan baca customer id)
       allow update: if request.auth != null
-                    && req.resource.data.exists()
-                    && req.resource.data.createdAt == null;
+                    && request.resource.data['createdAt'] == null;
     }
   }
 }
+
