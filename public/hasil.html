@@ -65,9 +65,15 @@ if(!slug)slug="aoi-quiz";
 var nama="SinauJepang";
 try{var u=await window.IndexedDB.getItem("jft_user");if(u&&(u.name||u.email))nama=u.name||u.email;}catch(e){}
 var R=null;
-try{var all=await window.IndexedDB.getItem("jft_hasil");if(all)R=all[slug]||null;}catch(e){}
-if(!R){try{var at=await window.IndexedDB.getItem("jft_attempts");if(at){var arr=at[slug]||[];if(arr.length){var l=arr[arr.length-1];R={benar:l.benar,total:l.total,skor:l.skor,secs:l.secs||null,at:l.at};}}}catch(e){}}
-if(!R){try{var all2=await window.IndexedDB.getItem("jft_hasil");if(all2){Object.keys(all2).forEach(function(k){if(!R&&(k===slug||k.indexOf(slug)>=0||slug.indexOf(k)>=0)){R=all2[k];slug=k;}});}}catch(e){}}
+// 1. jft_hasil dari IndexedDB (object atau string)
+try{var all=await window.IndexedDB.getItem("jft_hasil");if(all){if(typeof all==="string")all=JSON.parse(all);R=all[slug]||null;}}catch(e){}
+// 2. jft_attempts_<slug> dari IndexedDB (fujiScore.save format)
+if(!R){try{var at=await window.IndexedDB.getItem("jft_attempts_"+slug);if(at&&at.benar!=null){R={benar:at.benar,total:at.total,skor:at.skor,secs:at.secs||null,at:at.at};}}catch(e){}}
+// 3. jft_attempts dari IndexedDB (model.js format, object atau string)
+if(!R){try{var at2=await window.IndexedDB.getItem("jft_attempts");if(at2){if(typeof at2==="string")at2=JSON.parse(at2);var arr=at2[slug]||[];if(arr.length){var l=arr[arr.length-1];R={benar:l.benar,total:l.total,skor:l.skor,secs:l.secs||null,at:l.at};}}}catch(e){}}
+// 4. localStorage fallback (data lama sebelum migrasi IndexedDB)
+if(!R){try{var all2=JSON.parse(localStorage.getItem("jft_hasil")||"{}");R=all2[slug]||null;}catch(e){}}
+if(!R){try{var at3=JSON.parse(localStorage.getItem("jft_attempts")||"{}");var arr3=at3[slug]||[];if(arr3.length){var l3=arr3[arr3.length-1];R={benar:l3.benar,total:l3.total,skor:l3.skor,secs:l3.secs||null,at:l3.at};}}catch(e){}}
 document.getElementById("h-paket").textContent=slug.replace("-quiz","").toUpperCase();
 document.getElementById("h-name").textContent=nama;
 var dt=R&&R.at?new Date(R.at):new Date();

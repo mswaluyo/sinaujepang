@@ -64,11 +64,15 @@ QuizController.autosave = function () {
     var slug = QuizController.quizSlug();
     if (!slug) return;
     var r = QuizController.calcScore();
-    try {
-      var all = JSON.parse(window.IndexedDB.getItem("jft_hasil") || "{}");
-      all[slug] = r;
-      window.IndexedDB.setItem("jft_hasil", JSON.stringify(all));
-    } catch (e) {}
-    QuizRepository.saveAttempt(slug, r);
+    (async function(){
+      try {
+        var raw = await window.IndexedDB.getItem("jft_hasil");
+        var all = {};
+        if (raw) { all = typeof raw === "string" ? JSON.parse(raw) : raw; }
+        all[slug] = r;
+        await window.IndexedDB.setItem("jft_hasil", all);
+      } catch (e) {}
+      QuizRepository.saveAttempt(slug, r);
+    })();
   } catch (e) {}
 };

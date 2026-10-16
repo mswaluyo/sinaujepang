@@ -98,22 +98,40 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
   }
   async function paint(force) {
     var cards = document.querySelectorAll('a[href*="quiz.html?p="]');
-    // 1) instan dari IndexedDB — load SEMUA attempt sekali, lalu loop kartu
+    // 1) instan dari IndexedDB + localStorage fallback
     var instants = {};
     try {
       var all = await window.IndexedDB.getAllBySlug("jft_attempts_");
-      // all = array of {key: "jft_attempts_slug", value: attempt, ...}
-      // kelompokkan per slug
       all.forEach(function (item) {
         var slug = String(item.key || "").replace(/^jft_attempts_/, "");
         if (!slug) return;
         if (!instants[slug]) instants[slug] = [];
         instants[slug].push(item.value);
       });
-      // ambil terakhir per slug
       Object.keys(instants).forEach(function (k) {
         var arr = instants[k];
         instants[k] = arr[arr.length - 1];
+      });
+      // Fallback: jft_hasil dari IndexedDB
+      var hasilRaw = await window.IndexedDB.getItem("jft_hasil");
+      if (hasilRaw) {
+        if (typeof hasilRaw === "string") hasilRaw = JSON.parse(hasilRaw);
+        Object.keys(hasilRaw || {}).forEach(function (k) {
+          if (!instants[k]) instants[k] = hasilRaw[k];
+        });
+      }
+    } catch (e) {}
+    // Fallback: localStorage lama (sebelum migrasi)
+    try {
+      var lsAttempts = JSON.parse(localStorage.getItem("jft_attempts") || "{}");
+      Object.keys(lsAttempts).forEach(function (k) {
+        if (!instants[k] && lsAttempts[k] && lsAttempts[k].length) {
+          instants[k] = lsAttempts[k][lsAttempts[k].length - 1];
+        }
+      });
+      var lsHasil = JSON.parse(localStorage.getItem("jft_hasil") || "{}");
+      Object.keys(lsHasil).forEach(function (k) {
+        if (!instants[k]) instants[k] = lsHasil[k];
       });
     } catch (e) {}
     cards.forEach(function (a) {

@@ -62,11 +62,16 @@ var QuizRepository = (function () {
     return normalizeQuiz(items);
   }
   function saveAttempt(slug, attempt) {
-    try {
-      var all = JSON.parse(window.IndexedDB.getItem(ATTEMPT_KEY) || "{}");
-      (all[slug] = all[slug] || []).push(Object.assign({ at: Date.now() }, attempt));
-      window.IndexedDB.setItem(ATTEMPT_KEY, JSON.stringify(all));
-    } catch (e) { /* mode privat: abaikan */ }
+    // Async simpan ke IndexedDB
+    (async function(){
+      try {
+        var raw = await window.IndexedDB.getItem(ATTEMPT_KEY);
+        var all = {};
+        if (raw) { all = typeof raw === "string" ? JSON.parse(raw) : raw; }
+        (all[slug] = all[slug] || []).push(Object.assign({ at: Date.now() }, attempt));
+        await window.IndexedDB.setItem(ATTEMPT_KEY, all);
+      } catch (e) { /* mode privat: abaikan */ }
+    })();
     // Skor online: Firestore bila login (async, tanpa blokir UI).
     try {
       if (window.fujiScore && window.fujiScore.save) {
@@ -75,10 +80,13 @@ var QuizRepository = (function () {
     } catch (e) {}
   }
   function loadAttempts(slug) {
-    try {
-      var all = JSON.parse(window.IndexedDB.getItem(ATTEMPT_KEY) || "{}");
-      return all[slug] || [];
-    } catch (e) { return []; }
+    // Async: return Promise<array>
+    return window.IndexedDB.getItem(ATTEMPT_KEY).then(function(raw){
+      try {
+        var all = raw ? (typeof raw === "string" ? JSON.parse(raw) : raw) : {};
+        return all[slug] || [];
+      } catch (e) { return []; }
+    }).catch(function(){ return []; });
   }
   return { fetchQuiz: fetchQuiz, validate: validate, saveAttempt: saveAttempt, loadAttempts: loadAttempts };
 })();
