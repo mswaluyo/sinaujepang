@@ -22,10 +22,16 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
     var total = has ? (r.total || 0) : 0;
     var jawab = has ? (r.jawab != null ? r.jawab : benar) : 0;
     var pct = has && r.skor != null ? r.skor : 0;
-    // ── Satu baris: Benar; Total Skor; Hasil ──
-    var headOneLine = has
-      ? 'Benar: <strong class="text-slate-800">' + benar + '/' + total + '</strong>;&nbsp; Total Skor: <strong class="text-slate-800">' + j + '</strong>/250;&nbsp; Hasil: <strong class="text-slate-800">Level ' + lv + '</strong>'
-      : 'Belum mengerjakan';
+    // ── 3 segmen: Benar | Skor | Level ──
+    var segBenar = has
+      ? '<div class="text-center"><div class="text-[10px] text-slate-400 font-medium">Benar</div><div class="text-sm font-extrabold text-slate-800">' + benar + '/' + total + '</div></div>'
+      : '<div class="text-center"><div class="text-[10px] text-slate-400 font-medium">Benar</div><div class="text-sm font-extrabold text-slate-400">-</div></div>';
+    var segSkor = has
+      ? '<div class="text-center"><div class="text-[10px] text-slate-400 font-medium">Skor</div><div class="text-sm font-extrabold text-slate-800">' + j + '/250</div></div>'
+      : '<div class="text-center"><div class="text-[10px] text-slate-400 font-medium">Skor</div><div class="text-sm font-extrabold text-slate-400">- /250</div></div>';
+    var segLevel = has
+      ? '<div class="text-center"><div class="text-[10px] text-slate-400 font-medium">Level</div><div class="text-sm font-extrabold ' + (j>=200?'text-emerald-600':j>=145?'text-amber-600':'text-rose-600') + '">' + lv + '</div></div>'
+      : '<div class="text-center"><div class="text-[10px] text-slate-400 font-medium">Level</div><div class="text-sm font-extrabold text-sky-500">Target A2</div></div>';
     var pos = has ? jftPos(j) : 0;
     var posStr = pos.toFixed(2);
     // ── Bar utama (gradient + threshold markers) ──
@@ -70,7 +76,10 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
     var skala = '<div class="relative text-[11px] text-slate-600 font-bold mt-1 h-5" style="padding-left:4px;padding-right:4px"><span style="position:absolute;left:4px;top:0;background:#fff;padding:0 4px">10</span><span class="absolute text-center top-0" style="left:56.25%;transform:translateX(-50%)">145<br/><span class="text-[9px] text-slate-400 font-semibold">A1</span></span><span class="absolute text-center top-0" style="left:68.75%;transform:translateX(-50%)">175<br/><span class="text-[9px] text-slate-400 font-semibold">A2.1</span></span><span class="absolute text-center text-emerald-600 top-0" style="left:79.17%;transform:translateX(-50%)">200<br/><span class="text-[9px]">A2</span></span><span style="position:absolute;right:4px;top:0;background:#fff;padding:0 4px">250</span></div>';
     // ── Gabung semua ──
     return '<div class="p-3 bg-slate-50 rounded-xl border border-slate-200/80 mb-1 text-xs">'
-      + '<div class="text-[11px] text-slate-500 mb-2" style="line-height:1.6">' + headOneLine + ' ' + tgl + '</div>'
+      + '<div class="grid grid-cols-3 gap-1 mb-2 pb-2 border-b border-slate-200/60">'
+      + segBenar + segSkor + segLevel
+      + '</div>'
+      + (tgl ? '<div class="text-[10px] text-slate-400 mb-1">' + tgl + '</div>' : '')
       + secsLine
       + '<div class="relative" style="margin-top:28px;margin-bottom:8px">' + bar + skala + '</div>'
       + '</div>';
