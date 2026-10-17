@@ -219,6 +219,26 @@
       } catch (e) {}
     });
     renderUser().catch(function(){});
+    function scrollToSoal() {
+      var t = document.getElementById('latihan-soal');
+      if (t) t.scrollIntoView({ behavior: 'smooth' });
+    }
+    function openDonationModal() { document.getElementById('donationModal').classList.remove('hidden'); }
+    function closeDonationModal() { document.getElementById('donationModal').classList.add('hidden'); }
   </script>
+  <!-- Modal Traktir Kopi -->
+  <div id="donationModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-xl relative border border-slate-100 text-center">
+      <button onclick="closeDonationModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+      <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mx-auto mb-4 text-xl">
+        <i class="fa-solid fa-mug-hot"></i>
+      </div>
+      <h3 class="text-lg font-bold text-slate-800 mb-1">Traktir Kopi Pembuat Soal</h3>
+      <p class="text-slate-600 text-xs mb-4">Scan QRIS berikut dari e-wallet / m-banking Anda. Terima kasih! 🙏</p>
+      <img src="/assets/qris-sinaujepang.jpeg" alt="QRIS SinauJepang" class="w-56 mx-auto rounded-xl border border-slate-200 shadow-sm">
+    </div>
+  </div>
 </body>
 </html>
