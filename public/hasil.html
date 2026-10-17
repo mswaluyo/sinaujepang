@@ -81,9 +81,15 @@ try{
     var fr=await window.fujiScore.latest(slug);
     if(fr&&fr.benar!=null){
       R={benar:fr.benar,total:fr.total,skor:fr.skor,secs:fr.secs||null,at:fr.at||Date.now()};
+      if(window.console)console.warn("[hasil] Firestore data:",JSON.stringify(fr));
     }
   }
-}catch(e){}
+}catch(e){if(window.console)console.warn("[hasil] Firestore error:",e);}
+// 0b. Fallback: ambil secs dari IndexedDB jika Firestore tidak punya
+if(R&&!R.secs){
+  try{var atS=await window.IndexedDB.getItem("jft_attempts_"+slug);if(atS&&atS.secs)R.secs=atS.secs;}catch(e){}
+  if(!R.secs){try{var atS2=await window.IndexedDB.getItem("jft_attempts");if(atS2){if(typeof atS2==="string")atS2=JSON.parse(atS2);var arrS=atS2[slug]||[];if(arrS.length){var lS=arrS[arrS.length-1];if(lS.secs)R.secs=lS.secs;}}}catch(e){}}
+}
 // 1. jft_hasil dari IndexedDB (object atau string)
 if(!R){try{var all=await window.IndexedDB.getItem("jft_hasil");if(all){if(typeof all==="string")all=JSON.parse(all);R=all[slug]||null;}}catch(e){}}
 // 2. jft_attempts_<slug> dari IndexedDB (fujiScore.save format)
