@@ -3,7 +3,7 @@
 (function () {
   var PAKET = ["aoi-quiz","basu-quiz","gakusei-quiz","hare-quiz","jinja-quiz","kagi-quiz",
     "konpyuutaa-quiz","kuroi-quiz","kutsushita-quiz","magarimasu-quiz","orimasu-quiz",
-    "shatsu-quiz","tamago-quiz","tomemasu-quiz","yuuchuubu-quiz"];
+    "shatsu-quiz","tamago-quiz","tomemasu-quiz","yuuchuubu-quiz","hashi-quiz"];
   function slug() {
     var m = (location.search || "").match(/[?&]p=([a-z]+-quiz)/);
     if (m && PAKET.indexOf(m[1]) > -1) return m[1];
