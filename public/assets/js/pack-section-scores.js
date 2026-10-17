@@ -2,7 +2,7 @@
 (function () {
   'use strict';
   function load() {
-    return fetch('/paket-sesi.json').then(function (r) {
+    return fetch('/paket-sesi.json?v=' + Date.now(), { cache: 'no-store' }).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status);
       return r.json();
     });

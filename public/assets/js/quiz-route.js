@@ -19,7 +19,7 @@
 (function () {
   var slug = window.QUIZ_SLUG || "kuroi-quiz";
   var nama = slug.replace("-quiz", "").toUpperCase();
-  fetch("/" + slug + "/quiz-data.json").then(function (r) { return r.json(); }).then(function (items) {
+  fetch("/" + slug + "/quiz-data.json?v=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (items) {
     window.QUIZ_META = { judul: nama + " (" + items.length + " Soal)", total: items.length, slug: slug };
     try { document.title = nama + " - SinauJepang"; } catch (e) {}
   }).catch(function () {

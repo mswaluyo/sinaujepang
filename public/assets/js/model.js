@@ -55,7 +55,8 @@ var QuizRepository = (function () {
     return items;
   }
   async function fetchQuiz() {
-    var r = await fetch(DATA_URL);
+    var url = DATA_URL + (DATA_URL.indexOf("?") > -1 ? "&" : "?") + "v=" + Date.now();
+    var r = await fetch(url, { cache: "no-store" });
     if (!r.ok) throw new Error("Gagal memuat " + DATA_URL + " (" + r.status + ")");
     var items = await r.json();
     validate(items);
