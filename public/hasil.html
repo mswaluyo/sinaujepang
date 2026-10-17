@@ -1,4 +1,4 @@
-<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/x-icon" href="/favicon.ico">
+﻿<!DOCTYPE html><html lang="id"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="icon" type="image/x-icon" href="/favicon.ico">
 <link rel="icon" type="image/svg+xml" href="/favicon.svg">
 <title>Hasil - SinauJepang</title>
 <link rel="stylesheet" href="/assets/css/tailwind.css">
@@ -10,8 +10,6 @@
 .jft-pin{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;pointer-events:none}
 .jft-pin .jft-num{position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);font-size:12px;font-weight:700;color:#fff;background:#1e293b;padding:2px 8px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.3);white-space:nowrap;line-height:1.3}
 .jft-pin .jft-dot{width:18px;height:18px;border-radius:9999px;background:#fff;border:4px solid #f97316;box-shadow:0 1px 4px rgba(0,0,0,.3)}
-.sec-track{height:14px;border-radius:6px;background:#e5e7eb;position:relative}
-.sec-dot{position:absolute;top:50%;width:16px;height:16px;border-radius:9999px;background:#fff;border:3px solid #f97316;transform:translate(-50%,-50%);box-shadow:0 1px 3px rgba(0,0,0,.25)}
 @media print{.no-print{display:none}}
 </style>
 </head><body class="bg-slate-100 text-slate-800 font-sans min-h-screen">
@@ -34,20 +32,21 @@
 <div><span class="font-bold">総合得点 : </span><span class="text-2xl font-black" id="h-skor">-</span><div class="text-xs text-slate-500">Total Score</div></div>
 <div class="text-sm text-slate-600">得点範囲 : 10-250<br><span class="text-xs">Range of Scores</span><br>判定基準点 A1:145, A2.1:175, A2:200<br><span class="text-xs">Passing Score</span></div>
 <div><span class="font-bold">判定結果 : </span><span class="text-2xl font-black" id="h-level">-</span><div class="text-xs text-slate-500">Assessment Results</div></div>
-<div class="text-sm"><span class="font-bold">Status: </span><span id="h-status" class="font-bold">-</span></div>
+<div><span class="font-bold">Status: </span><span id="h-status" class="font-bold">-</span></div>
 </div>
 <div class="relative mt-10 mb-1">
-<div class="jft-bar"><div class="jft-pin" id="h-pin" style="left:50%"><span class="jft-num" id="h-pin-n">-</span><div class="jft-dot"></div></div><div class="jft-tick" style="left:56.25%"></div><div class="jft-tick" style="left:68.75%"></div><div class="jft-tick" style="left:79.17%"></div></div>
-<div class="relative text-xs font-bold mt-1 h-5" style="padding-left:4px;padding-right:4px"><span style="position:absolute;left:4px;top:0;background:#fff;padding:0 4px">10</span><span class="absolute text-center top-0" style="left:56.25%;transform:translateX(-50%)">145<br><span class="text-[10px] font-semibold">A1</span></span><span class="absolute text-center top-0" style="left:68.75%;transform:translateX(-50%)">175<br><span class="text-[10px] font-semibold">A2.1</span></span><span class="absolute text-center text-emerald-600 top-0" style="left:79.17%;transform:translateX(-50%)">200<br><span class="text-[10px] font-semibold">A2</span></span><span style="position:absolute;right:4px;top:0;background:#fff;padding:0 4px">250</span></div>
+<div class="jft-bar"><div class="jft-pin" id="h-pin" style="left:50%"><span class="jft-num" id="h-pin-n">-</span><div class="jft-dot"></div></div><div class="jft-tick" style="left:56.25%"></div><div class="jft-tick" style="left:68.75%"></div><div class="jft-tick" style="left:79.17%"></div></div></div>
+<div class="relative text-xs font-bold mt-1 h-5" style="padding-left:4px;padding-right:4px"><span style="position:absolute;left:4px;top:0;background:#fff;padding:0 4px">10</span><span class="absolute text-center top-0" style="left:56.25%;transform:translateX(-50%)">145<br/><span class="text-[9px] text-slate-400 font-semibold">A1</span></span><span class="absolute text-center top-0" style="left:68.75%;transform:translateX(-50%)">175<br/><span class="text-[9px] text-slate-400 font-semibold">A2.1</span></span><span class="absolute text-center text-emerald-600 top-0" style="left:79.17%;transform:translateX(-50%)">200<br/><span class="text-[9px]">A2</span></span><span style="position:absolute;right:4px;top:0;background:#fff;padding:0 4px">250</span></div>
+<div class="mt-6" id="h-secs">Memuat rincian seksi...</div>
 </div>
-<div class="mt-6 text-sm font-bold">SEKSI:</div>
-<div class="space-y-4 mt-3" id="h-secs"><p class="text-xs text-slate-400">Memuat rincian seksi...</p></div>
+<div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mt-4">
+<div class="font-bold text-sm mb-2"><i class="fa-solid fa-lightbulb text-blue-500 mr-1"></i> Saran Belajar</div>
+<ul class="text-xs space-y-1 text-slate-600" id="h-saran"><li>Memuat saran...</li></ul>
 </div>
-<div class="mt-4 border border-sky-200 bg-sky-50 p-4 text-sm" id="h-saran-box"><div class="font-bold mb-2">Saran Belajar</div><ul class="list-disc pl-5 space-y-1 text-[13px]" id="h-saran"><li class="text-slate-400">Memuat saran...</li></ul></div>
-<div class="flex flex-wrap gap-2 mt-4 no-print">
-<a href="/" class="px-4 py-2 rounded-xl bg-white border border-slate-300 text-sm font-bold"><i class="fa-solid fa-house mr-1"></i>Beranda</a>
-<a href="#" id="h-ulangi" class="px-4 py-2 rounded-xl bg-sky-600 text-white text-sm font-bold"><i class="fa-solid fa-rotate-right mr-1"></i>Ulangi Paket</a>
-<button onclick="window.print()" class="px-4 py-2 rounded-xl bg-slate-800 text-white text-sm font-bold"><i class="fa-solid fa-print mr-1"></i>Cetak</button>
+<div class="mt-5 flex gap-3 no-print">
+<a href="./" class="px-4 py-2.5 bg-slate-700 text-white rounded-xl text-sm font-bold shadow hover:bg-slate-800"><i class="fa-solid fa-house mr-1"></i> Beranda</a>
+<a href="#" id="h-ulangi" class="px-4 py-2.5 bg-blue-600 text-white rounded-xl text-sm font-bold shadow hover:bg-blue-700"><i class="fa-solid fa-rotate-right mr-1"></i> Ulangi Paket</a>
+<button onclick="window.print()" class="px-4 py-2.5 bg-emerald-600 text-white rounded-xl text-sm font-bold shadow hover:bg-emerald-700"><i class="fa-solid fa-print mr-1"></i> Cetak</button>
 </div>
 <p class="text-[11px] text-slate-400 mt-3">Skor resmi JFT memakai equating statistik; angka di sini estimasi latihan.</p>
 </div>
@@ -58,92 +57,58 @@
 <script>
 (async function(){
 function q(n){try{var m=(location.search||"").match(new RegExp("[?&]"+n+"=([^&]+)"));return m?decodeURIComponent(m[1]):""}catch(e){return""}}
-var slug=q("paket")||"aoi-quiz";
-if(!slug){slug=q("p")||"";}
+var slug=q("paket")||"orimasu-quiz";
 if(!slug){try{var m=(location.pathname||"").match(/([a-z0-9]+-quiz)/i);slug=m?m[1].toLowerCase():"";}catch(e){}}
-if(!slug)slug="aoi-quiz";
+if(!slug)slug="orimasu-quiz";
 var nama="SinauJepang";
 try{var u=await window.IndexedDB.getItem("jft_user");if(u&&(u.name||u.email))nama=u.name||u.email;}catch(e){}
 var R=null;
-// 0. FIRESTORE (sumber utama — tunggu fujiScore + auth siap)
 try{
-  // Tunggu fujiScore & fujiUser siap (maks 5 detik)
-  await new Promise(function(res){
-    var tries=0;
-    var iv=setInterval(function(){
-      tries++;
-      var scoreReady=!!(window.fujiScore&&window.fujiScore.latest);
-      var authReady=!!(window.fujiUser&&window.fujiUser.email);
-      if((scoreReady&&authReady)||tries>=50){clearInterval(iv);res();}
-    },100);
-  });
-  if(window.fujiScore&&window.fujiScore.latest&&(window.fujiUser&&window.fujiUser.email)){
+  await new Promise(function(res){var tries=0;var iv=setInterval(function(){tries++;if((window.fujiScore&&window.fujiScore.latest&&window.fujiUser&&window.fujiUser.email)||tries>=50){clearInterval(iv);res();}},100);});
+  if(window.fujiScore&&window.fujiScore.latest&&window.fujiUser&&window.fujiUser.email){
     var fr=await window.fujiScore.latest(slug);
-    if(fr&&fr.benar!=null){
-      R={benar:fr.benar,total:fr.total,skor:fr.skor,secs:fr.secs||null,at:fr.at||Date.now()};
-      if(window.console)console.warn("[hasil] Firestore data:",JSON.stringify(fr));
-    }
+    if(fr&&fr.benar!=null){R={benar:fr.benar,total:fr.total,skor:fr.skor,secs:fr.secs||null,at:fr.at||Date.now()};}
   }
-}catch(e){if(window.console)console.warn("[hasil] Firestore error:",e);}
-// 0b. Fallback: ambil secs dari IndexedDB jika Firestore tidak punya
-if(R&&!R.secs){
-  try{var atS=await window.IndexedDB.getItem("jft_attempts_"+slug);if(atS&&atS.secs)R.secs=atS.secs;}catch(e){}
-  if(!R.secs){try{var atS2=await window.IndexedDB.getItem("jft_attempts");if(atS2){if(typeof atS2==="string")atS2=JSON.parse(atS2);var arrS=atS2[slug]||[];if(arrS.length){var lS=arrS[arrS.length-1];if(lS.secs)R.secs=lS.secs;}}}catch(e){}}
-}
-// 1. jft_hasil dari IndexedDB (object atau string)
-if(!R){try{var all=await window.IndexedDB.getItem("jft_hasil");if(all){if(typeof all==="string")all=JSON.parse(all);R=all[slug]||null;}}catch(e){}}
-// 2. jft_attempts_<slug> dari IndexedDB (fujiScore.save format)
-if(!R){try{var at=await window.IndexedDB.getItem("jft_attempts_"+slug);if(at&&at.benar!=null){R={benar:at.benar,total:at.total,skor:at.skor,secs:at.secs||null,at:at.at};}}catch(e){}}
-// 3. jft_attempts dari IndexedDB (model.js format, object atau string)
-if(!R){try{var at2=await window.IndexedDB.getItem("jft_attempts");if(at2){if(typeof at2==="string")at2=JSON.parse(at2);var arr=at2[slug]||[];if(arr.length){var l=arr[arr.length-1];R={benar:l.benar,total:l.total,skor:l.skor,secs:l.secs||null,at:l.at};}}}catch(e){}}
-// 4. localStorage fallback (data lama sebelum migrasi IndexedDB)
-if(!R){try{var all2=JSON.parse(localStorage.getItem("jft_hasil")||"{}");R=all2[slug]||null;}catch(e){}}
-if(!R){try{var at3=JSON.parse(localStorage.getItem("jft_attempts")||"{}");var arr3=at3[slug]||[];if(arr3.length){var l3=arr3[arr3.length-1];R={benar:l3.benar,total:l3.total,skor:l3.skor,secs:l3.secs||null,at:l3.at};}}catch(e){}}
+}catch(e){}
+if(R&&!R.secs){try{var a=await window.IndexedDB.getItem("jft_attempts_"+slug);if(a&&a.secs)R.secs=a.secs;}catch(e){}}
+if(!R){try{var a=await window.IndexedDB.getItem("jft_hasil");if(a){if(typeof a==="string")a=JSON.parse(a);R=a[slug]||null;}}catch(e){}}
+if(!R){try{var a=await window.IndexedDB.getItem("jft_attempts_"+slug);if(a&&a.benar!=null)R={benar:a.benar,total:a.total,skor:a.skor,secs:a.secs||null,at:a.at};}catch(e){}}
+if(!R){try{var a=JSON.parse(localStorage.getItem("jft_hasil")||"{}");R=a[slug]||null;}catch(e){}}
+if(!R){try{var a=JSON.parse(localStorage.getItem("jft_attempts")||"{}");var arr=a[slug]||[];if(arr.length){var l=arr[arr.length-1];R={benar:l.benar,total:l.total,skor:l.skor,secs:l.secs||null,at:l.at};}}catch(e){}}
+
 document.getElementById("h-paket").textContent=slug.replace("-quiz","").toUpperCase();
 document.getElementById("h-name").textContent=nama;
 var dt=R&&R.at?new Date(R.at):new Date();
 try{document.getElementById("h-tgl").textContent=dt.toLocaleDateString("id-ID",{day:"numeric",month:"long",year:"numeric"});}catch(e){}
 try{document.getElementById("h-date").textContent=dt.toLocaleDateString("id-ID");}catch(e){}
 if(!R){document.getElementById("h-skor").textContent="-";document.getElementById("h-pin").style.left="0%";document.getElementById("h-pin-n").textContent="-";return;}
-var J=Math.round(10+((R.skor||0)/100)*240);if(isNaN(J))J=0;
+var benar=R.benar||0,total=R.total||0;
+var pc=total?Math.round(benar/total*100):0;
+var J=Math.round(10+(benar/total)*240);if(isNaN(J))J=0;
 var lv=J>=200?"A2":J>=175?"A2.1":J>=145?"A1":"-";
-document.getElementById("h-benar").textContent=R.benar+" / "+R.total+" ("+R.skor+"%)";
+document.getElementById("h-benar").textContent=benar+" / "+total+" ("+pc+"%)";
 document.getElementById("h-skor").textContent=J;
 document.getElementById("h-level").textContent=lv;
 var st=document.getElementById("h-status");
 if(J>=200){st.textContent="LULUS";st.className="font-bold text-emerald-600";}else{st.textContent="BELUM LULUS - target 200 (kurang "+(200-J)+")";st.className="font-bold text-rose-600";}
 document.getElementById("h-pin").style.left=Math.max(0,Math.min(100,((J-10)/240)*100))+"%";
 document.getElementById("h-pin-n").textContent=J;
+
 var SECN={sec1:["文字と語彙","Script and Vocabulary"],sec2:["会話と表現","Conversation and Expression"],sec3:["聴解","Listening Comprehension"],sec4:["読解","Reading Comprehension"]};
 var box=document.getElementById("h-secs");
 box.innerHTML='<div class="mb-3"><div class="font-bold text-[13px] mb-0.5">セクション毎の正答率:</div><div class="text-[11px] text-slate-500">The percentage of correct answers for each section</div></div>';
 var saran=[];
 ["sec1","sec2","sec3","sec4"].forEach(function(k){
- var s=R.secs&&R.secs[k];
- if(!s)return;
- var pct=s.total?Math.round(s.benar/s.total*100):0;
- var jp=SECN[k][0],en=SECN[k][1];
- var row=document.createElement("div");
- row.className="mb-2";
- row.innerHTML=
-  '<div class="flex items-end justify-between mb-0.5">'
-  +'<div><span class="font-bold text-[13px]">'+jp+'</span><br><span class="text-[11px] text-slate-500">'+en+'</span></div>'
-  +'<div class="text-right"><span class="text-[11px] text-slate-500">'+s.benar+'/'+s.total+'</span> <span class="font-bold text-[13px]">'+pct+'%</span></div>'
-  +'</div>'
-  +'<div class="relative h-4 bg-gray-200 rounded">'
-  +'<div class="absolute top-1/2 -translate-y-1/2 w-3.5 h-3.5 rounded-full bg-white border-2 border-orange-400 shadow" style="left:calc('+pct+'% - 7px)"></div>'
-  +'</div>';
+ var s=R.secs&&R.secs[k];if(!s)return;
+ var p2=s.total?Math.round(s.benar/s.total*100):0;
+ var row=document.createElement("div");row.style.marginBottom="10px";
+ row.innerHTML='<div style="display:flex;align-items:flex-end;justify-content:space-between;margin-bottom:3px"><div><span style="font-weight:700;font-size:13px">'+SECN[k][0]+'</span><br><span style="font-size:11px;color:#6b7280">'+SECN[k][1]+'</span></div><div style="text-align:right"><span style="font-size:11px;color:#6b7280">'+s.benar+'/'+s.total+'</span> <span style="font-weight:700;font-size:13px">'+p2+'%</span></div></div><div style="position:relative;height:16px;background:#e5e7eb;border-radius:4px"><div style="position:absolute;top:50%;transform:translateY(-50%);width:14px;height:14px;border-radius:50%;background:#fff;border:2px solid #f97316;box-shadow:0 1px 3px rgba(0,0,0,.2);left:calc('+p2+'% - 7px)"></div></div>';
  box.appendChild(row);
- if(pct<75){
-  if(k==="sec1")saran.push("Mojigoi ("+pct+"%): ulang baca kanji mirip (vokal panjang) + kosakata benda.");
-  if(k==="sec2")saran.push("Hyougen ("+pct+"%): hafal pola basa-basi (sapaan, tawaran, merendah).");
-  if(k==="sec3")saran.push("Choukai ("+pct+"%): putar audio 2x, catat kata kerja kegiatan.");
-  if(k==="sec4")saran.push("Dokkai ("+pct+"%): baca pertanyaan dulu, baru cari di teks.");
- }
+ if(p2<75){if(k==="sec1")saran.push("Mojigoi ("+p2+"%): ulang baca kanji mirip.");if(k==="sec2")saran.push("Hyougen ("+p2+"%): hafal pola basa-basi.");if(k==="sec3")saran.push("Choukai ("+p2+"%): putar audio 2x.");if(k==="sec4")saran.push("Dokkai ("+p2+"%): baca pertanyaan dulu.");}
 });
 if(!saran.length)saran.push("Semua seksi di atas 75%. Pertahankan dengan paket lain.");
 var ul=document.getElementById("h-saran");ul.innerHTML="";
-if(J<200){var li0=document.createElement("li");li0.innerHTML="<b>Butuh +"+(200-J)+" poin estimasi.</b> Fokus ke seksi terendah, lalu ulangi paket ini.";ul.appendChild(li0);}
+if(J<200){var li=document.createElement("li");li.innerHTML="<b>Butuh +"+(200-J)+" poin estimasi.</b> Fokus ke seksi terendah.";ul.appendChild(li);}
 saran.forEach(function(x){var li=document.createElement("li");li.textContent=x;ul.appendChild(li);});
 document.getElementById("h-ulangi").href="/quiz.html?p="+slug;
 })();
