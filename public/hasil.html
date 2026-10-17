@@ -40,9 +40,8 @@
 <div class="relative text-xs font-bold mt-1 h-5" style="padding-left:4px;padding-right:4px"><span style="position:absolute;left:4px;top:0;background:#fff;padding:0 4px">10</span><span class="absolute text-center top-0" style="left:56.25%;transform:translateX(-50%)">145<br/><span class="text-[9px] text-slate-400 font-semibold">A1</span></span><span class="absolute text-center top-0" style="left:68.75%;transform:translateX(-50%)">175<br/><span class="text-[9px] text-slate-400 font-semibold">A2.1</span></span><span class="absolute text-center text-emerald-600 top-0" style="left:79.17%;transform:translateX(-50%)">200<br/><span class="text-[9px]">A2</span></span><span style="position:absolute;right:4px;top:0;background:#fff;padding:0 4px">250</span></div>
 <div class="mt-6" id="h-secs">Memuat rincian seksi...</div>
 </div>
-<div class="text-[13px] font-bold mt-4 mb-1" id="h-status">-</div>
-<div class="bg-blue-50 border border-blue-200 rounded-xl p-4">
-<div class="font-bold text-sm mb-2"><i class="fa-solid fa-lightbulb text-blue-500 mr-1"></i> Saran Belajar</div>
+<div class="bg-blue-50 border border-blue-200 rounded-xl p-4 mt-4">
+<div class="flex items-center gap-2 mb-2"><i class="fa-solid fa-lightbulb text-blue-500"></i><span class="font-bold text-sm">Saran Belajar</span><span id="h-status" class="text-[10px] font-bold px-2 py-0.5 rounded-full">-</span></div>
 <ul class="text-xs space-y-1 text-slate-600" id="h-saran"><li>Memuat saran...</li></ul>
 </div>
 <div class="mt-5 flex gap-3 no-print">
@@ -92,7 +91,8 @@ document.getElementById("h-benar").textContent=benar+" / "+total+" ("+pc+"%)";
 document.getElementById("h-skor").textContent=J;
 document.getElementById("h-level").textContent=lv;
 var st=document.getElementById("h-status");
-if(J>=200){st.textContent="LULUS";st.className="font-bold text-emerald-600";}else{st.textContent="BELUM LULUS - target 200 (kurang "+(200-J)+")";st.className="font-bold text-rose-600";}
+if(J>=200){st.textContent="LULUS";st.style.background="#d1fae5";st.style.color="#065f46";}
+else{st.textContent="BELUM LULUS";st.style.background="#fee2e2";st.style.color="#991b1b";}
 document.getElementById("h-pin").style.left=Math.max(0,Math.min(100,((J-10)/240)*100))+"%";
 document.getElementById("h-pin-n").textContent=J;
 
@@ -110,7 +110,7 @@ var saran=[];
 });
 if(!saran.length)saran.push("Semua seksi di atas 75%. Pertahankan dengan paket lain.");
 var ul=document.getElementById("h-saran");ul.innerHTML="";
-if(J<200){var li=document.createElement("li");li.innerHTML="<b>Butuh +"+(200-J)+" poin estimasi.</b> Fokus ke seksi terendah.";ul.appendChild(li);}
+if(J<200){var li=document.createElement("li");li.innerHTML="<b>Target Minimal 200 — Butuh +"+(200-J)+" poin estimasi.</b> Fokus ke seksi terendah.";ul.appendChild(li);}
 saran.forEach(function(x){var li=document.createElement("li");li.textContent=x;ul.appendChild(li);});
 document.getElementById("h-ulangi").href="/quiz.html?p="+slug;
 })();
