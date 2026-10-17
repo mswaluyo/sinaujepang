@@ -30,7 +30,9 @@ QuizController.openResultModal = function () {
   // Simpan attempts via Repository (localStorage; ganti Firestore cukup di model.js).
   try {
     var slug = QuizController.quizSlug();
-    if (slug) QuizRepository.saveAttempt(slug, { benar: tot, total: M.QS.length, skor: p });
+    var secsObj = {};
+    ["sec1","sec2","sec3","sec4"].forEach(function(k){ secsObj[k] = { benar: c[k], total: t[k] }; });
+    if (slug) QuizRepository.saveAttempt(slug, { benar: tot, total: M.QS.length, skor: p, secs: secsObj });
   } catch (e) { /* abaikan */ }
   document.getElementById("score-percentage").textContent = p + "%";
   document.getElementById("score-count").textContent = tot + " / " + M.QS.length + " Benar";
