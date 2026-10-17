@@ -26,9 +26,9 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
     var headLine = has
       ? '<div class="flex items-center justify-between text-[11px] mb-2 pb-2 border-b border-slate-200/60">'
         + '<span class="text-slate-500">BENAR <b class="text-slate-800">' + benar + '/' + total + '</b></span>'
-        + '<span aria-hidden="true" class="text-slate-300 opacity-0 select-none">|</span>'
+        + '<span aria-hidden="true" class="w-2"></span>'
         + '<span class="text-slate-500">SKOR <b class="text-slate-800">' + j + '/250</b></span>'
-        + '<span aria-hidden="true" class="text-slate-300 opacity-0 select-none">|</span>'
+        + '<span aria-hidden="true" class="w-2"></span>'
         + '<span class="text-slate-500">LEVEL <b class="' + (j>=200?'text-emerald-600':j>=145?'text-amber-600':'text-rose-600') + '">' + lv + '</b></span>'
         + (tgl ? ' <span class="text-slate-400">' + tgl + '</span>' : '')
         + '</div>'
