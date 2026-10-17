@@ -22,6 +22,14 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
     var total = has ? (r.total || 0) : 0;
     var jawab = has ? (r.jawab != null ? r.jawab : benar) : 0;
     var pct = has && r.skor != null ? r.skor : 0;
+    // ── Tanggal (didefinisikan SEBELUM dipakai headLine) ──
+    var tgl = '';
+    if (has && r.at) {
+      try {
+        var d = new Date(r.at);
+        tgl = '<span class="text-[10px] text-slate-400">' + d.toLocaleDateString('id-ID', { day:'numeric', month:'short', year:'numeric' }) + '</span>';
+      } catch(e){}
+    }
     // ── 3 segmen tabel: BENAR | SKOR | LEVEL (satu baris, border pemisah) ──
     var headLine = has
       ? '<div class="flex items-center justify-between text-[11px] mb-2 pb-2 border-b border-slate-200/60">'
@@ -49,14 +57,6 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
     var bar = has
       ? '<div class="w-full h-2.5 rounded-full bg-gradient-to-r from-rose-400 via-amber-300 via-amber-400 to-emerald-500 relative shadow-inner overflow-visible">' + pin + barInner + '</div>'
       : '<div class="w-full h-2.5 rounded-full bg-slate-200 relative">' + barInner + '</div>';
-    // ── Tanggal ──
-    var tgl = '';
-    if (has && r.at) {
-      try {
-        var d = new Date(r.at);
-        tgl = '<span class="text-[10px] text-slate-400">' + d.toLocaleDateString('id-ID', { day:'numeric', month:'short', year:'numeric' }) + '</span>';
-      } catch(e){}
-    }
     // ── Progress bar kecil (benar/total %) — DIHAPUS, sudah ada JFT bar di bawah ──
     // ── Breakdown per sesi (S1..S4) — DISEMBUNYIKAN sesuai permintaan ──
     var secsLine = '';
