@@ -58,21 +58,8 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
       } catch(e){}
     }
     // ── Progress bar kecil (benar/total %) — DIHAPUS, sudah ada JFT bar di bawah ──
-    // ── Breakdown per sesi (jika ada data secs) ──
+    // ── Breakdown per sesi (S1..S4) — DISEMBUNYIKAN sesuai permintaan ──
     var secsLine = '';
-    if (has && r.secs) {
-      var secLabels = [
-        { key: 'sec1', label: 'S1', color: 'text-fuji-600' },
-        { key: 'sec2', label: 'S2', color: 'text-emerald-600' },
-        { key: 'sec3', label: 'S3', color: 'text-amber-600' },
-        { key: 'sec4', label: 'S4', color: 'text-rose-600' }
-      ];
-      var secParts = secLabels.filter(function(s){ return r.secs[s.key] && r.secs[s.key].total > 0; }).map(function(s) {
-        var d2 = r.secs[s.key];
-        return '<span class="' + s.color + ' font-semibold">' + s.label + ' ' + d2.benar + '/' + d2.total + '</span>';
-      });
-      if (secParts.length) secsLine = '<div class="flex flex-wrap gap-x-2 gap-y-0.5 text-[10px] mb-1">' + secParts.join('') + '</div>';
-    }
     // ── Skala 10–250 ──
     var skala = '<div class="relative text-[11px] text-slate-600 font-bold mt-1 h-5" style="padding-left:4px;padding-right:4px"><span style="position:absolute;left:4px;top:0;background:#fff;padding:0 4px">10</span><span class="absolute text-center top-0" style="left:56.25%;transform:translateX(-50%)">145<br/><span class="text-[9px] text-slate-400 font-semibold">A1</span></span><span class="absolute text-center top-0" style="left:68.75%;transform:translateX(-50%)">175<br/><span class="text-[9px] text-slate-400 font-semibold">A2.1</span></span><span class="absolute text-center text-emerald-600 top-0" style="left:79.17%;transform:translateX(-50%)">200<br/><span class="text-[9px]">A2</span></span><span style="position:absolute;right:4px;top:0;background:#fff;padding:0 4px">250</span></div>';
     // ── Gabung semua ──
