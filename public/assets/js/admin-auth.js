@@ -25,6 +25,7 @@ onAuthStateChanged(window._aAuth, async (u) => {
     if (!ok) { try { ok = (await getDoc(doc(window._aDb, "admins", u.uid))).exists(); } catch(e){} }
     if (!ok) { $("aMsg").textContent = "⛔ " + u.email + " bukan admin."; await signOut(window._aAuth); return; }
     $("gate").classList.add("hidden"); $("panel").classList.remove("hidden");
-    window._aLoadNilai(); window._aInitSoal(); window._aLoadAdmins();
+    if (window._aInitNilaiBar) window._aInitNilaiBar();
+    window._aLoadNilai(true); window._aInitSoal(); window._aLoadAdmins();
   } catch(e) { $("aMsg").textContent = "Gagal verifikasi: " + (e.message||e.code); }
 });
