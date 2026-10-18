@@ -27,12 +27,18 @@ QuizController.openResultModal = function () {
   });
   var tot = c.sec1 + c.sec2 + c.sec3 + c.sec4;
   var p = M.QS.length ? Math.round(tot / M.QS.length * 100) : 0;
-  // Simpan attempts via Repository (localStorage; ganti Firestore cukup di model.js).
+  var done = (M.QS.length && Object.keys(M.locked).length >= M.QS.length);
+  // Simpan SEKALI per penyelesaian kuis: hanya saat selesai penuh & belum disimpan sesi ini.
+  // Mencegah duplikat dari klik Selesai / buka-tutup modal berulang.
   try {
     var slug = QuizController.quizSlug();
-    var secsObj = {};
-    ["sec1","sec2","sec3","sec4"].forEach(function(k){ secsObj[k] = { benar: c[k], total: t[k] }; });
-    if (slug) QuizRepository.saveAttempt(slug, { benar: tot, total: M.QS.length, skor: p, secs: secsObj });
+    var sig = slug + "|" + tot + "|" + M.QS.length;
+    if (slug && done && QuizController._savedSig !== sig) {
+      QuizController._savedSig = sig;
+      var secsObj = {};
+      ["sec1","sec2","sec3","sec4"].forEach(function(k){ secsObj[k] = { benar: c[k], total: t[k] }; });
+      QuizRepository.saveAttempt(slug, { benar: tot, total: M.QS.length, skor: p, secs: secsObj, done: true });
+    }
   } catch (e) { /* abaikan */ }
   document.getElementById("score-percentage").textContent = p + "%";
   document.getElementById("score-count").textContent = tot + " / " + M.QS.length + " Benar";
@@ -79,6 +85,7 @@ QuizController.closeResultModal = function () { var m = document.getElementById(
 QuizController.resetAllQuiz = function () {
   var M = QuizModel, C = QuizController;
   M.picked = {}; M.locked = {}; M.cur = 0; M.timerSec = 0; C.renderOne(); C.closeResultModal(); window.scrollTo({ top: 0, behavior: "smooth" });
+  try { QuizController._savedSig = null; } catch (e) {}
 };
 // BOOT — satu-satunya kode yang jalan saat file dimuat.
 setInterval(function () {

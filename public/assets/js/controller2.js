@@ -64,6 +64,9 @@ QuizController.autosave = function () {
     var slug = QuizController.quizSlug();
     if (!slug) return;
     var r = QuizController.calcScore();
+    // Hanya update progres lokal (badge homepage). JANGAN tulis ke Firestore di sini:
+    // saveAttempt tiap jawaban = 1 dokumen autosave per soal (inilah yg bikin 124x).
+    // Firestore hanya ditulis SEKALI saat kuis selesai via openResultModal (controller3.js).
     (async function(){
       try {
         var raw = await window.IndexedDB.getItem("jft_hasil");
@@ -72,7 +75,6 @@ QuizController.autosave = function () {
         all[slug] = r;
         await window.IndexedDB.setItem("jft_hasil", all);
       } catch (e) {}
-      QuizRepository.saveAttempt(slug, r);
     })();
   } catch (e) {}
 };
