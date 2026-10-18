@@ -34,6 +34,7 @@ window._aLoadNilai = async function (isReset) {
   } catch (e) { $("qRows").innerHTML = "<tr><td class='text-rose-600'>Gagal: " + (e.message || e.code) + "</td></tr>"; }
   _q.loading = false;
 };
+function lulusPill(p){return p>=75?"<span class='bg-emerald-100 text-emerald-700 font-bold px-2 py-0.5 rounded-full'>Lulus</span>":"<span class='bg-rose-100 text-rose-700 font-bold px-2 py-0.5 rounded-full'>Belum</span>";}
 function _qPrint() {
   const slug = ($("qSlug") || {}).value || "semua";
   const rows = $("qRows").innerHTML, head = $("qHead").innerHTML;
@@ -54,7 +55,7 @@ function renderNilai() {
   let html = "";
   const head = $("qHead");
   if (_q.mode === "ringkas") {
-    if (head) head.innerHTML = "<tr><th>Waktu</th><th>Siswa</th><th>Paket (soal)</th><th>Benar</th><th>Skor %</th><th>Skala JFT</th><th>Ujian</th><th>Status</th></tr>";
+    if (head) head.innerHTML = "<tr class='text-left text-slate-500 border-b'><th class='py-2 pr-2'>Waktu</th><th class='pr-2'>Siswa</th><th class='pr-2'>Paket (soal)</th><th class='pr-2'>Benar</th><th class='pr-2'>Skor %</th><th class='pr-2'>Skala JFT</th><th class='pr-2'>Ujian</th><th>Status</th></tr>";
     const g = {};
     listFin.forEach(v => {
       const k = (v.email || "?") + "|" + (v.slug || "?");
@@ -64,14 +65,14 @@ function renderNilai() {
       if (v._t > (o.last || 0)) { o.last = v._t; o.name = v.name || o.name; }
     });
     Object.values(g).sort((a, b) => b.best - a.best).slice(0, _q.shown).forEach(o => {
-      const lulus = o.best >= 75 ? "Lulus" : "Belum";
-      html += "<tr><td>" + _qFmt(o.bestT || o.last) + "</td><td>" + String(o.name || "").replace(/</g, "&lt;") + " (" + o.email + ")</td><td>" + o.slug + " (" + o.total + " soal)</td><td>" + o.bestBenar + "</td><td>" + o.best + "%</td><td>" + _qJft(o.best) + "</td><td>" + o.n + "x</td><td>" + lulus + "</td></tr>";
+      const lulus = lulusPill(o.best);
+      html += "<tr class='border-b hover:bg-fuji-50/50'><td class='py-2 pr-2 whitespace-nowrap'>" + _qFmt(o.bestT || o.last) + "</td><td class='pr-2'>" + String(o.name || "").replace(/</g, "&lt;") + "<div class='text-slate-400'>" + o.email + "</div></td><td>" + o.slug + " <span class='text-slate-400'>(" + o.total + " soal)</span></td><td class='pr-2 font-bold'>" + o.bestBenar + "</td><td class='pr-2 font-black text-fuji-700'>" + o.best + "%</td><td class='pr-2 whitespace-nowrap'>" + _qJft(o.best) + "</td><td class='pr-2'>" + o.n + "x</td><td>" + lulusPill(o.best) + "</td></tr>";
     });
     $("qCount").textContent = Object.keys(g).length + " siswa-paket | " + listFin.length + " ujian selesai" + (spam ? " | " + spam + " progres disembunyikan" : "");
   } else {
-    if (head) head.innerHTML = "<tr><th>Waktu</th><th>Siswa</th><th>Paket (soal)</th><th>Benar</th><th>Skor %</th><th>Skala JFT</th><th>Hapus</th></tr>";
+    if (head) head.innerHTML = "<tr class='text-left text-slate-500 border-b'><th class='py-2 pr-2'>Waktu</th><th class='pr-2'>Siswa</th><th class='pr-2'>Paket (soal)</th><th class='pr-2'>Benar</th><th class='pr-2'>Skor %</th><th class='pr-2'>Skala JFT</th><th>Hapus</th></tr>";
     listFin.sort((a, b) => b._t - a._t).slice(0, _q.shown).forEach(v => {
-      html += "<tr><td>" + _qFmt(v._t) + "</td><td>" + String(v.name || "").replace(/</g, "&lt;") + " (" + (v.email || "") + ")</td><td>" + (v.slug || "") + " (" + (v.total || 0) + " soal)</td><td>" + (v.benar || 0) + "</td><td>" + (v.skor || 0) + "%</td><td>" + _qJft(v.skor) + "</td><td><button data-del='" + v._id + "'>hapus</button></td></tr>";
+      html += "<tr class='border-b hover:bg-fuji-50/50'><td class='py-2 pr-2 whitespace-nowrap'>" + _qFmt(v._t) + "</td><td class='pr-2'>" + String(v.name || "").replace(/</g, "&lt;") + "<div class='text-slate-400'>" + (v.email || "") + "</div></td><td>" + (v.slug || "") + " <span class='text-slate-400'>(" + (v.total || 0) + " soal)</span></td><td class='pr-2 font-bold'>" + (v.benar || 0) + "</td><td class='pr-2 font-black text-fuji-700'>" + (v.skor || 0) + "%</td><td class='pr-2 whitespace-nowrap'>" + _qJft(v.skor) + "</td><td><button class='text-rose-600 hover:underline' data-del='" + v._id + "'>hapus</button></td></tr>";
     });
     $("qCount").textContent = listFin.length + " ujian selesai" + (spam ? " | " + spam + " progres disembunyikan" : "") + " | " + _q.rows.length + " dimuat";
   }
