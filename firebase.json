@@ -1,6 +1,8 @@
 {
-  "hosting": {
-    "site": "sinaujepang",
+  "hosting": [
+    {
+      "target": "utama",
+      "site": "sinaujepang",
     "public": "public",
     "ignore": [
       "firebase.json",
@@ -30,7 +32,15 @@
         ]
       }
     ]
-  },
+    },
+    {
+      "site": "sinau-jepang",
+      "public": "public",
+      "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "**/assets/audio/**"],
+      "cleanUrls": true,
+      "trailingSlash": false
+    }
+  ],
   "firestore": {
     "rules": "firestore.rules",
     "indexes": "firestore.indexes.json"
