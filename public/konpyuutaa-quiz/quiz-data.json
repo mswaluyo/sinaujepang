@@ -19,7 +19,7 @@
    }
   ],
   "answer": 0,
-  "score": "4/4",
+  "score": "0/4",
   "analisis": "[MNN Bab 2 - Katakana Benda] Kata serapan untuk komputer adalah konpyuutaa.",
   "mnn": "Mojigoi",
   "trans": "Gambar menunjukkan perangkat komputer di ruang kelas.",
@@ -71,7 +71,7 @@
    }
   ],
   "answer": 2,
-  "score": "4/4",
+  "score": "0/4",
   "analisis": "[MNN Bab 8 - Kata Sifat Kotor] Kondisi kotor adalah kitanai, lawan dari kirei.",
   "mnn": "Mojigoi",
   "trans": "Gambar menunjukkan ruangan yang berantakan dan kotor.",
@@ -123,7 +123,7 @@
    }
   ],
   "answer": 1,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN Bab 10 - Kendaraan] Kendaraan di gambar adalah bus sekolah.",
   "mnn": "Mojigoi",
   "trans": "Gambar menunjukkan kendaraan umum berwarna kuning.",
@@ -227,7 +227,7 @@
    }
   ],
   "answer": 2,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN Bab 19 - Kata Kerja Memarahi] Memarahi adalah shikarimasu.",
   "mnn": "Mojigoi",
   "trans": "Gambar menunjukkan orang dewasa memarahi anak di depan kaca pecah.",
@@ -279,7 +279,7 @@
    }
   ],
   "answer": 1,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN Bab 6 - Bagian Tubuh] Organ penglihatan adalah me.",
   "mnn": "Mojigoi",
   "trans": "Bagian wajah 【penglihatan】 ditunjuk panah.",
@@ -383,7 +383,7 @@
    }
   ],
   "answer": 2,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN Bab 10 - Tempat Ryokan] Bangunan bersejarah adalah ryokan.",
   "mnn": "Mojigoi",
   "trans": "Sejarah ____ ini terkenal.",
@@ -435,7 +435,7 @@
    }
   ],
   "answer": 0,
-  "score": "4/4",
+  "score": "0/4",
   "analisis": "[MNN Bab 13 - Kata Kerja Hairimasu] Masuk bak mandi adalah hairimasu.",
   "mnn": "Mojigoi",
   "trans": "Berendam di bak mandi ____。",
@@ -487,7 +487,7 @@
    }
   ],
   "answer": 2,
-  "score": "0/5",
+  "score": "0/4",
   "analisis": "[MNN Bab 27 - Kolokasi Kaze ga Fuku] Angin bertiup adalah kaze ga fukimasu.",
   "mnn": "Mojigoi",
   "trans": "Angin kencang ____。",
@@ -539,7 +539,7 @@
    }
   ],
   "answer": 1,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN Bab 11 - Satuan Uang En] Satuan uang yen ditulis 円 dibaca en.",
   "mnn": "Mojigoi",
   "trans": "Tomat ini 80 ____。",
@@ -591,7 +591,7 @@
    }
   ],
   "answer": 0,
-  "score": "0/5",
+  "score": "0/4",
   "analisis": "[MNN Bab 19 - Kosakata Topan] Peringatan tidak keluar karena taifuu.",
   "mnn": "Mojigoi",
   "trans": "Besok ____ datang. Jangan keluar rumah.",
@@ -643,7 +643,7 @@
    }
   ],
   "answer": 1,
-  "score": "2/2",
+  "score": "0/4",
   "analisis": "[MNN Bab 8 - Kata Sifat Yasui] Murah adalah yasui, bedakan bunyi mirip.",
   "mnn": "Mojigoi",
   "trans": "Sayur supermarket ini ____。",
@@ -695,7 +695,7 @@
    }
   ],
   "answer": 1,
-  "score": "2/2",
+  "score": "0/4",
   "analisis": "[MNN Bab 15 - Bacaan Kanji Tsukurimasu] Kanji 作 dibaca tsukuru.",
   "mnn": "Mojigoi",
   "trans": "Memasak ____。",
@@ -747,7 +747,7 @@
    }
   ],
   "answer": 1,
-  "score": "4/4",
+  "score": "0/4",
   "analisis": "[MNN Bab 8 - Kata Sifat Bentuk Te] Jauh bentuk te adalah tookute.",
   "mnn": "Mojigoi",
   "trans": "Bank ____, jadi merepotkan.",
@@ -799,7 +799,7 @@
    }
   ],
   "answer": 2,
-  "score": "4/4",
+  "score": "0/4",
   "analisis": "[MNN Bab 27 - Potensial Tsukurimasu] Bisa membuat adalah tsukuru + dekimasu.",
   "mnn": "Mojigoi",
   "trans": "Saya bisa ____ masakan.",
@@ -903,11 +903,11 @@
    }
   ],
   "answer": 0,
-  "score": "0/2",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Taman itu ada (benda mati):<b>あります</b>.",
   "mnn": "Hyougen",
   "trans": "Taman indah ... di dekat rumah saya",
-  "kunci_id": "ADA (arimasu)",
+  "kunci_id": "あります",
   "opt_note": [
    "(arimasu) ada, untuk benda mati",
    "(aimasu) bertemu",
@@ -955,11 +955,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/2",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Teriakan tenggelam:<b>たすけて!</b>=tolong! (bentuk -te たすける).",
   "mnn": "Hyougen",
   "trans": "Bahaya! Tenggelam! ...!",
-  "kunci_id": "TOLONG! (tasukete)",
+  "kunci_id": "たすけて",
   "opt_note": [
    "(tasuddade) bentuk rusak",
    "(tasukete) tolong, bentuk te tasukeru",
@@ -1007,11 +1007,11 @@
    }
   ],
   "answer": 2,
-  "score": "2/2",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Dip silakan masuk:<b>おじゃまします</b>=permisi masuk.",
   "mnn": "Hyougen",
   "trans": "Permisi (di depan pintu) - Silakan masuk",
-  "kunci_id": "PERMISI MASUK (ojama shimasu)",
+  "kunci_id": "おじゃまします",
   "opt_note": [
    "(yorushiku) typo, bukan salam masuk",
    "(arigatou) terima kasih",
@@ -1059,11 +1059,11 @@
    }
   ],
   "answer": 1,
-  "score": "2/2",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Jam baru ditanggapi pujian:<b>かっこいい・うれしい</b>=keren, senang.",
   "mnn": "Hyougen",
   "trans": "Saya beli jam baru - Wah ...!",
-  "kunci_id": "KEREN, SENANG (kakkoii, ureshii)",
+  "kunci_id": "かっこよかった、うれしいです",
   "opt_note": [
    "(warui) jelek",
    "(kakko yokatta, ureshii) keren, senang",
@@ -1111,11 +1111,11 @@
    }
   ],
   "answer": 1,
-  "score": "3/3",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Minta izin sopan:<b>すみません</b>. Dijawab いいえ.",
   "mnn": "Hyougen",
   "trans": "... - Tidak apa-apa",
-  "kunci_id": "MAAF/ PERMISI (sumimasen)",
+  "kunci_id": "すみません",
   "opt_note": [
    "(kamawanai) tidak apa apa, itu jawaban bukan pembuka",
    "(sumimasen) maaf/permisi, dijawab iie",
@@ -1163,11 +1163,11 @@
    }
   ],
   "answer": 1,
-  "score": "2/2",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Tidak ke mana-mana: pola 何も〜ません. Kunci file <b>なにもいません</b>.",
   "mnn": "Hyougen",
   "trans": "Hari libur mau apa? - Tidak, ...",
-  "kunci_id": "TIDAK KE MANA-MANA (nani-mo)",
+  "kunci_id": "なにもいません",
   "opt_note": [
    "(doko mo ikimasen) tidak ke mana mana (V, varian)",
    "(nani mo imasen) pola nani mo ...masen (V, kunci file)",
@@ -1215,11 +1215,11 @@
    }
   ],
   "answer": 2,
-  "score": "3/3",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Rasa enak lampau:<b>おいしかった</b>.",
   "mnn": "Hyougen",
   "trans": "Rasanya bagaimana? - ... (enak)",
-  "kunci_id": "ENAK (oishikatta)",
+  "kunci_id": "おいしかった",
   "opt_note": [
    "(suzushikatta) sejuk",
    "(tanoshikatta) menyenangkan",
@@ -1267,11 +1267,11 @@
    }
   ],
   "answer": 0,
-  "score": "2/2",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Alergi udang, gatal kalau makan:<b>たべると〜かゆい</b>. Pola 〜と=akibat otomatis.",
   "mnn": "Hyougen",
   "trans": "Alergi udang, gatal kalau ...",
-  "kunci_id": "MAKAN (taberu-to)",
+  "kunci_id": "たべると",
   "opt_note": [
    "(taberu to) kalau makan, pola to akibat otomatis",
    "(nomu to) kalau minum, udang dimakan bukan diminum",
@@ -1319,11 +1319,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/2",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Lama tak jumpa:<b>お久しぶりです</b>.",
   "mnn": "Hyougen",
   "trans": "Lama tak jumpa ... - ...",
-  "kunci_id": "SUDAH LAMA YA (ohisashiburi desu)",
+  "kunci_id": "お久しぶりです",
   "opt_note": [
    "(yokatta desu) syukurlah",
    "(ohisashiburi desu) sudah lama tak jumpa",
@@ -1371,11 +1371,11 @@
    }
   ],
   "answer": 0,
-  "score": "3/3",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Tawaran bawa barang:<b>もちましょうか?</b>=saya bawakan ya?",
   "mnn": "Hyougen",
   "trans": "Bawaannya berat ya, ... - Terima kasih",
-  "kunci_id": "SAYA BAWAKAN YA? (mochimashou ka)",
+  "kunci_id": "もちましょうか?",
   "opt_note": [
    "(mochimashou ka) saya bawakan ya, tawaran",
    "(tetsudaimasu) bentuk kamus, kurang sopan",
@@ -1423,11 +1423,11 @@
    }
   ],
   "answer": 0,
-  "score": "3/3",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Mau ke konbini:<b>いきたいんですが</b>=ingin pergi (ajakan halus).",
   "mnn": "Hyougen",
   "trans": "Eh, sebentar - ke konbini itu ... - Ayo",
-  "kunci_id": "INGIN PERGI (ikitai-n-desu-ga)",
+  "kunci_id": "いきたいんですが",
   "opt_note": [
    "(ikitai n desu ga) ingin pergi, ajakan halus",
    "(kaeru) pulang",
@@ -1475,11 +1475,11 @@
    }
   ],
   "answer": 1,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Menolak salad karena kenyang:<b>おなかがいっぱいです</b>.",
   "mnn": "Hyougen",
   "trans": "Tambah salad? - ...",
-  "kunci_id": "SUDAH KENYANG (onaka ga ippai)",
+  "kunci_id": "でももうおなかがいっぱいです",
   "opt_note": [
    "(demo nemui) tapi mengantuk",
    "(demo mou onaka ga ippai) tapi sudah kenyang",
@@ -1527,11 +1527,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/3",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Ungkapan khawatir:<b>ちょっとしんぱいです</b>.",
   "mnn": "Hyougen",
   "trans": "Misato tidak sehat, wajah memerah - ... (khawatir)",
-  "kunci_id": "AGAK KHAWATIR (chotto shinpai desu)",
+  "kunci_id": "ちょっとしんぱいです",
   "opt_note": [
    "(memai ga suru) pusing, itu gejala bukan ungkapan khawatir",
    "(chotto shinpai desu) agak khawatir",
@@ -1579,11 +1579,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/3",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Gempa sembunyi bawah meja:<b>かくれる</b>=bersembunyi.",
   "mnn": "Hyougen",
   "trans": "Saat gempa bagaimana? - Di bawah meja ...",
-  "kunci_id": "BERSEMBUNYI (kakureru)",
+  "kunci_id": "かくれる",
   "opt_note": [
    "(chikazuku) mendekati, bahaya saat gempa",
    "(kakureru) bersembunyi",
@@ -1631,11 +1631,11 @@
    }
   ],
   "answer": 1,
-  "score": "3/3",
+  "score": "0/4",
   "analisis": "[MNN - Hyougen] Beli 2 kantong pisang:<b>ください</b>=minta tolong.",
   "mnn": "Hyougen",
   "trans": "Selamat datang, mau apa? - Pisang 2 kantong ...",
-  "kunci_id": "MINTA (kudasai)",
+  "kunci_id": "ください",
   "opt_note": [
    "(yoroshiku) salam umum",
    "(kudasai) tolong, untuk memesan",
@@ -1675,11 +1675,11 @@
    }
   ],
   "answer": 0,
-  "score": "4/4",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Kuil tua: <b>たてられたそうです</b>=kabarnya didirikan (pasif+そう).",
   "mnn": "Choukai",
   "trans": "Percakapan tentang kuil tua",
-  "kunci_id": "KABARNYA DIDIRIKAN (taterareta sou desu)",
+  "kunci_id": "たてられたそうです)",
   "opt_note": [
    "(taterareta sou desu) kabarnya didirikan, pasif + sou"
   ],
@@ -1704,11 +1704,11 @@
    }
   ],
   "answer": 0,
-  "score": "4/4",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Bisa tulis 5000 kanji:<b>かけるようになりました</b>=menjadi bisa.",
   "mnn": "Choukai",
   "trans": "Bisa menulis 5000 kanji",
-  "kunci_id": "MENJADI BISA MENULIS (kakeru you ni narimashita)",
+  "kunci_id": "かけるようになりました",
   "opt_note": [
    "(kakeru you ni narimashita) menjadi bisa menulis"
   ],
@@ -1733,11 +1733,11 @@
    }
   ],
   "answer": 0,
-  "score": "4/4",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Tidak paham kata:<b>わからないんですが</b>=penjelasan halus.",
   "mnn": "Choukai",
   "trans": "Tidak paham kata-katanya",
-  "kunci_id": "SAYA TIDAK MENGERTI ... (wakaranai-n-desu-ga)",
+  "kunci_id": "わからないんですが",
   "opt_note": [
    "(wakaranai n desu ga) penjelasan halus pembuka"
   ],
@@ -1762,11 +1762,11 @@
    }
   ],
   "answer": 0,
-  "score": "4/4",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Vacuum banyak fungsi tapi berat:<b>そうかもしれませんね</b>=mungkin begitu ya.",
   "mnn": "Choukai",
   "trans": "Vacuum banyak fungsi tapi berat",
-  "kunci_id": "MUNGKIN BEGITU YA (sou kamo shiremasen ne)",
+  "kunci_id": "そうかもしれませんね",
   "opt_note": [
    "(sou kamo shiremasen ne) setuju sebagian, ada plus minus"
   ],
@@ -1803,7 +1803,7 @@
   "analisis": "[MNN - Choukai] Janji nonton: kunci <b>12.30 di 入口</b>. Fokus angka waktu+tempat.",
   "mnn": "Choukai",
   "trans": "Janji nonton film jam & tempat berapa?",
-  "kunci_id": "12.30 DI PINTU MASUK (iriguchi)",
+  "kunci_id": "12.30 入口",
   "opt_note": [
    "(12.45 higashi guchi) salah jam & tempat",
    "(12.30 iriguchi) sesuai kunci",
@@ -1855,11 +1855,11 @@
    }
   ],
   "answer": 2,
-  "score": "0/3",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Size L hitam kosong. Kunci: beli <b>M hitam</b>.",
   "mnn": "Choukai",
   "trans": "Size L hitam kosong, beli apa?",
-  "kunci_id": "UKURAN M HITAM",
+  "kunci_id": "Ukuran M warna hitam",
   "opt_note": [
    "(XL hitam) tidak disetujui",
    "(S hitam) tidak disetujui",
@@ -1913,11 +1913,11 @@
    }
   ],
   "answer": 1,
-  "score": "3/3",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Dipinjam saat ski. Kunci: <b>gambar ke-2</b>. Kata kunci かります.",
   "mnn": "Choukai",
   "trans": "Apa yang dipinjam saat pergi ski?",
-  "kunci_id": "GAMBAR KE-2 (lihat gambar)",
+  "kunci_id": "",
   "opt_note": [
    "(gambar 1) tidak dipinjam",
    "(gambar 2) dipinjam, kata kunci karimasu",
@@ -1969,11 +1969,11 @@
    }
   ],
   "answer": 2,
-  "score": "0/3",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Dibeli dulu sebelum berangkat. Kunci: <b>gambar pertama</b>. Kata kunci かいます.",
   "mnn": "Choukai",
   "trans": "Apa yang dibeli dulu sebelum berangkat?",
-  "kunci_id": "GAMBAR PERTAMA (lihat gambar)",
+  "kunci_id": "",
   "opt_note": [
    "(gambar 1) dibeli dulu, kata kunci kaimasu",
    "(gambar 2) dibeli nanti",
@@ -2027,11 +2027,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/5",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Obat sehari:<b>2回</b>. Dengarkan angka+回.",
   "mnn": "Choukai",
   "trans": "Minum obat berapa kali sehari?",
-  "kunci_id": "2 KALI (ni-kai)",
+  "kunci_id": "２回sehari",
   "opt_note": [
    "(1 kai) pengecoh angka",
    "(2 kai) sesuai kunci",
@@ -2079,11 +2079,11 @@
    }
   ],
   "answer": 1,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Saran dokter. Kunci: <b>gambar ke-2</b> (istirahat/obat/larangan).",
   "mnn": "Choukai",
   "trans": "Saran dokter setelah periksa?",
-  "kunci_id": "GAMBAR KE-2 (lihat gambar)",
+  "kunci_id": "",
   "opt_note": [
    "(gambar 1) tidak disarankan",
    "(gambar 2) disarankan dokter",
@@ -2123,11 +2123,11 @@
    }
   ],
   "answer": 0,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Saat gempa: <b>gambar pertama</b>=berlindung bawah meja.",
   "mnn": "Choukai",
   "trans": "Saat gempa apa yang dilakukan?",
-  "kunci_id": "GAMBAR PERTAMA = berlindung bawah meja",
+  "kunci_id": "",
   "opt_note": [
    "(gambar 1) berlindung, aman"
   ],
@@ -2161,11 +2161,11 @@
    }
   ],
   "answer": 0,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Evakuasi ke: <b>gambar pertama</b>=tempat aman.",
   "mnn": "Choukai",
   "trans": "Saat gempa pergi ke mana?",
-  "kunci_id": "GAMBAR PERTAMA = titik kumpul aman",
+  "kunci_id": "",
   "opt_note": [
    "(gambar 1) tempat aman",
    "(gambar 2) bukan titik kumpul",
@@ -2213,11 +2213,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/5",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Biaya 1 jam=<b>400円</b>.",
   "mnn": "Choukai",
   "trans": "Biaya pinjam 1 jam berapa?",
-  "kunci_id": "400 YEN",
+  "kunci_id": "400 円",
   "opt_note": [
    "(450 yen) pengecoh",
    "(400 yen) sesuai kunci",
@@ -2257,11 +2257,11 @@
    }
   ],
   "answer": 0,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Dituang ke kopi. Kunci: <b>gambar pertama</b> (gula/susu, いれます).",
   "mnn": "Choukai",
   "trans": "Apa yang dituang ke kopi?",
-  "kunci_id": "GAMBAR PERTAMA (gula/susu)",
+  "kunci_id": "",
   "opt_note": [
    "(gambar 1) dituang, iremasu"
   ],
@@ -2295,11 +2295,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/5",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Festival coklat lantai <b>9階</b>. Dengarkan 〜階.",
   "mnn": "Choukai",
   "trans": "Festival coklat di lantai berapa?",
-  "kunci_id": "LANTAI 9 (kyuu-kai)",
+  "kunci_id": "9階",
   "opt_note": [
    "(8 kai) salah lantai",
    "(9 kai) sesuai kunci",
@@ -2351,11 +2351,11 @@
    }
   ],
   "answer": 2,
-  "score": "0/5",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Festival selesai: <b>gambar waktu ke-2</b>. Dengarkan 〜まで.",
   "mnn": "Choukai",
   "trans": "Festival selesai kapan?",
-  "kunci_id": "GAMBAR WAKTU KE-2 (lihat gambar)",
+  "kunci_id": "",
   "opt_note": [
    "(waktu 1) jam mulai",
    "(waktu 2) jam selesai",
@@ -2413,11 +2413,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/5",
+  "score": "0/4",
   "analisis": "[MNN - Choukai] Arah peta: <b>Apato</b>. Ikuti kanan/kiri/lurus.",
   "mnn": "Choukai",
   "trans": "Peta menunjukkan arah ke mana?",
-  "kunci_id": "APATO",
+  "kunci_id": "Apato",
   "opt_note": [
    "(stasiun) arah beda",
    "(apato) ikuti kanan/kiri/lurus",
@@ -2471,11 +2471,11 @@
    }
   ],
   "answer": 1,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] SMS ajakan ke: <b>Kota</b>.",
   "mnn": "Dokkai",
   "trans": "SMS ajakan pergi ke mana?",
-  "kunci_id": "KOTA (machi)",
+  "kunci_id": "Kota",
   "opt_note": [
    "(gunung) tidak diajak",
    "(kota) sesuai SMS",
@@ -2523,11 +2523,11 @@
    }
   ],
   "answer": 0,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Di kota: <b>Belanja</b>.",
   "mnn": "Dokkai",
   "trans": "Di kota itu mau apa?",
-  "kunci_id": "BELANJA (kaimono)",
+  "kunci_id": "Belanja",
   "opt_note": [
    "(kaimono) belanja",
    "(liburan umum) tidak disebut",
@@ -2575,11 +2575,11 @@
    }
   ],
   "answer": 2,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Pengirim kado: <b>さとうさん</b>.",
   "mnn": "Dokkai",
   "trans": "Dapat kado dari siapa?",
-  "kunci_id": "SATOU-SAN",
+  "kunci_id": "さとうさん",
   "opt_note": [
    "(nana san) bukan pengirim",
    "(yamada san) bukan pengirim",
@@ -2631,11 +2631,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/5",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Hadiah warna <b>Pink</b>.",
   "mnn": "Dokkai",
   "trans": "Hadiahnya apa?",
-  "kunci_id": "PINK",
+  "kunci_id": "Pink",
   "opt_note": [
    "(orange) warna lain",
    "(pink) barang pink di gambar",
@@ -2681,11 +2681,11 @@
    }
   ],
   "answer": 0,
-  "score": "5/5",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Dilarang: <b>membawa hewan ke taman</b>.",
   "mnn": "Dokkai",
   "trans": "Apa yang dilarang di taman?",
-  "kunci_id": "MEMBAWA HEWAN (petto)",
+  "kunci_id": "ペットを公園に連れて⾏きます）",
   "opt_note": [
    "(membawa hewan) dilarang, ada rambu"
   ],
@@ -2711,11 +2711,11 @@
    }
   ],
   "answer": 0,
-  "score": "6/6",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Lakukan: <b>buang sampah pada tempatnya, matikan arang</b>.",
   "mnn": "Dokkai",
   "trans": "Apa yang dilakukan di taman?",
-  "kunci_id": "BUANG SAMPAH & MATIKAN ARANG",
+  "kunci_id": "コたは所定の場所に捨て、炭は消してくださ",
   "opt_note": [
    "buang sampah pada tempatnya + matikan arang"
   ],
@@ -2749,11 +2749,11 @@
    }
   ],
   "answer": 0,
-  "score": "0/5",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Musik di <b>ホール</b>=aula.",
   "mnn": "Dokkai",
   "trans": "Bisa dengar musik di mana?",
-  "kunci_id": "AULA (houru)",
+  "kunci_id": "ホール",
   "opt_note": [
    "(houru) aula, ada konser",
    "(uchi) rumah",
@@ -2801,11 +2801,11 @@
    }
   ],
   "answer": 2,
-  "score": "0/5",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Makanan banyak jam <b>15.00</b>.",
   "mnn": "Dokkai",
   "trans": "Kapan makanannya banyak?",
-  "kunci_id": "JAM 15.00",
+  "kunci_id": "15.00",
   "opt_note": [
    "(15.30) acara lain",
    "(14.00) acara lain",
@@ -2853,11 +2853,11 @@
    }
   ],
   "answer": 0,
-  "score": "6/6",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Sabtu buka <b>11.00</b>.",
   "mnn": "Dokkai",
   "trans": "Sabtu toko buka jam berapa?",
-  "kunci_id": "JAM 11.00",
+  "kunci_id": "11.00",
   "opt_note": [
    "(11.00) jadwal Sabtu",
    "(15.00) hari lain",
@@ -2905,11 +2905,11 @@
    }
   ],
   "answer": 2,
-  "score": "0/6",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Libur <b>木曜日/Kamis</b>.",
   "mnn": "Dokkai",
   "trans": "Toko libur hari apa?",
-  "kunci_id": "KAMIS (mokuyoubi)",
+  "kunci_id": "⽊曜⽇",
   "opt_note": [
    "(nichiyoubi) hari buka",
    "(getsuyoubi) hari buka",
@@ -2957,11 +2957,11 @@
    }
   ],
   "answer": 2,
-  "score": "3/3",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Es krim setelah <b>makan</b>.",
   "mnn": "Dokkai",
   "trans": "Es krim diberi setelah apa?",
-  "kunci_id": "SETELAH MAKAN (gohan wo tabeta ato)",
+  "kunci_id": "ご飯を⻝べる",
   "opt_note": [
    "(asonda ato) setelah main",
    "(nonda ato) setelah minum",
@@ -3009,11 +3009,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/3",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Tunjuk tiket saat <b>注文=memesan</b>.",
   "mnn": "Dokkai",
   "trans": "Tiket ditunjukkan kapan?",
-  "kunci_id": "SAAT MEMESAN (chuumon)",
+  "kunci_id": "注⽂",
   "opt_note": [
    "(taberu) saat makan",
    "(chuumon) saat memesan",
@@ -3065,11 +3065,11 @@
    }
   ],
   "answer": 1,
-  "score": "0/3",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Kerja di <b>としょしつ=perpustakaan</b>.",
   "mnn": "Dokkai",
   "trans": "Staf bekerja di mana?",
-  "kunci_id": "PERPUSTAKAAN (toshoshitsu)",
+  "kunci_id": "としょしつで働いています。",
   "opt_note": [
    "(pelatih olahraga) orang lain",
    "(toshoshitsu) perpustakaan",
@@ -3119,11 +3119,11 @@
    }
   ],
   "answer": 0,
-  "score": "3/3",
+  "score": "0/4",
   "analisis": "[MNN - Dokkai] Bisa menjelaskan dengan <b>英語=Inggris</b>.",
   "mnn": "Dokkai",
   "trans": "Bisa menjelaskan dengan bahasa apa?",
-  "kunci_id": "BAHASA INGGRIS (eigo)",
+  "kunci_id": "英語で説明することができます。えいごでせつめいすることができます。",
   "opt_note": [
    "(eigo) Inggris, kelebihannya",
    "(nihongo) tidak disebut"
