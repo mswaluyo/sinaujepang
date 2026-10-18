@@ -219,9 +219,9 @@
       var el = document.getElementById("adminBtn");
       if (!el) return;
       function show(why) { try { console.log("[adminBtn] tampil via " + why); } catch (e) {}
-        el.classList.remove("hidden"); el.classList.add("flex"); }
+        el.classList.remove("hidden"); el.style.display = "flex"; }
       function hide(why) { try { console.log("[adminBtn] sembunyi: " + (why || "")); } catch (e) {}
-        el.classList.add("hidden"); el.classList.remove("flex"); }
+        el.style.display = "none"; }
       try {
         var u = window.fujiUser;
         if (!window.fujiAuth || !window.fujiAuth.currentUser) {
