@@ -41,7 +41,7 @@
 
       <!-- Right Action Group -->
       <div class="flex items-center gap-3">
-        <a id="adminBtn" href="/admin.html" class="hidden items-center gap-2 bg-slate-900 hover:bg-slate-700 text-white font-semibold px-3.5 py-1.5 rounded-full transition-all text-xs">
+        <a id="adminBtn" href="/admin.html" style="display:none" class="items-center gap-2 bg-slate-900 hover:bg-slate-700 text-white font-semibold px-3.5 py-1.5 rounded-full transition-all text-xs"><!-- v3 -->
           <i class="fa-solid fa-shield-halved"></i>
           <span>Admin</span>
         </a>
@@ -218,10 +218,10 @@
     async function renderAdminBtn() {
       var el = document.getElementById("adminBtn");
       if (!el) return;
-      function show(why) { try { console.log("[adminBtn] tampil via " + why); } catch (e) {}
-        el.classList.remove("hidden"); el.style.display = "flex"; }
-      function hide(why) { try { console.log("[adminBtn] sembunyi: " + (why || "")); } catch (e) {}
-        el.style.display = "none"; }
+      function show(why) { try { console.log("[adminBtn v3] tampil via " + why); } catch (e) {}
+        el.style.setProperty("display", "flex", "important"); }
+      function hide(why) { try { console.log("[adminBtn v3] sembunyi: " + (why || "")); } catch (e) {}
+        el.style.setProperty("display", "none", "important"); }
       try {
         var u = window.fujiUser;
         if (!window.fujiAuth || !window.fujiAuth.currentUser) {
