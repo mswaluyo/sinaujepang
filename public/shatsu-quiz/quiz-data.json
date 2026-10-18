@@ -3,7 +3,7 @@
   "no": 1,
   "section": "SESI 1 : MOJIGOI",
   "title": "",
-  "img": "https://drive.google.com/thumbnail?id=1BkegKq2hmkMfEV3hxTskX2XU_kHu7mDyFX3CxgXitTHwOLo&sz=w800",
+  "img": "assets/shatsu_01.jpg",
   "options": [
    {
     "text": "スーツ",
@@ -57,7 +57,7 @@
   "no": 2,
   "section": "SESI 1 : MOJIGOI",
   "title": "",
-  "img": "https://drive.google.com/thumbnail?id=1zvFGxCcP6d8yxjVUxRHQGS_JNvy9pZpyN_Su_9hm3yY1D1M&sz=w800",
+  "img": "assets/shatsu_02.jpg",
   "options": [
    {
     "text": "まど",
@@ -111,7 +111,7 @@
   "no": 3,
   "section": "SESI 1 : MOJIGOI",
   "title": "",
-  "img": "https://drive.google.com/thumbnail?id=1MpeS3_HLlkNhj7bqIX6yWEAos24DmMKiTFpdyOyIf9y7O98&sz=w800",
+  "img": "assets/shatsu_03.jpg",
   "options": [
    {
     "text": "あやまる",
@@ -975,7 +975,7 @@
   "no": 19,
   "section": "SESI 2 : HYOUGEN",
   "title": "7.\nA: Konnichiwa.\nB: Kim-san, ____.",
-  "img": "https://drive.google.com/thumbnail?id=1SHxNDqJyodxW_b-I2acciSOFuSSh6ltzgMt4zb8anHTyBpA&sz=w800",
+  "img": "assets/shatsu_19.jpg",
   "options": [
    {
     "text": "いらっしゃい",
@@ -1947,7 +1947,7 @@
   "no": 37,
   "section": "SESI 4 : DOKKAI",
   "title": "1. Sampai jam berapa tidak ada di perusahaan?\n(Gambar jadwal, VERIFIKASI)",
-  "img": "https://drive.google.com/thumbnail?id=1Dq-GzLu0hy9DHvjAlsU9Esv0rMfZvp9jQY-dWq4YCutRK_c&sz=w800",
+  "img": "assets/shatsu_37.png",
   "options": [
    {
     "text": "11時30分です",
@@ -1962,7 +1962,7 @@
     "img": ""
    }
   ],
-  "answer": 1,
+  "answer": 0,
   "score": "0/4",
   "trans": "Tidak di perusahaan sampai jam berapa? Kunci sementara 12:30. VERIFIKASI gambar.",
   "trans_rom": "Nanji made kaisha ni imasen ka.",
@@ -1993,7 +1993,7 @@
    "(12時30分です) 12時30分です",
    "(13時30分です) 13時30分です"
   ],
-  "kunci_id": "12時30分です",
+  "kunci_id": "11時30分です",
   "salah": "Pilihan lain tidak sesuai bacaan dan kunci best-effort SHATSU.",
   "audio": ""
  },
@@ -2055,7 +2055,7 @@
   "no": 39,
   "section": "SESI 4 : DOKKAI",
   "title": "3. Orang itu jogging kapan?\n(Gambar jadwal, VERIFIKASI)",
-  "img": "https://drive.google.com/thumbnail?id=1gzSP0cbAPq8uzQuN2n8A8LxBahK81mU_HJf1VVuGvDnmHtI&sz=w800",
+  "img": "assets/shatsu_39.png",
   "options": [
    {
     "text": "毎週",
