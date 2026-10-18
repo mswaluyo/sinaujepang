@@ -6,13 +6,21 @@
 <link rel="stylesheet" href="/assets/css/tailwind.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="bg-slate-100 text-slate-800 font-sans min-h-screen">
-<header class="bg-slate-900 text-white"><div class="max-w-6xl mx-auto px-4 h-14 flex items-center gap-3">
-<a href="/" class="font-bold">SinauJepang <span class="text-xs font-normal text-slate-400">/ admin</span></a>
-<span id="aUser" class="ml-auto text-xs text-slate-300"></span>
-<button id="aOut" class="text-xs bg-slate-700 px-3 py-1.5 rounded-lg hidden">Keluar</button>
-</div></header>
-<main class="max-w-6xl mx-auto px-4 py-6">
+<body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col selection:bg-fuji-200">
+<header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-fuji-100 shadow-sm">
+<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+<a href="/" class="flex items-center gap-2.5">
+<div class="w-9 h-9 rounded-full bg-gradient-to-tr from-fuji-600 to-fuji-400 flex items-center justify-center text-white font-bold shadow-md shadow-fuji-500/20"><span class="text-xs font-extrabold tracking-tighter">学び</span></div>
+<div class="flex flex-col"><span class="font-bold text-slate-800 text-lg leading-tight">SinauJepang</span><span class="text-[10px] text-fuji-600 font-semibold tracking-wider">BELAJAR &amp; LATIHAN GRATIS</span></div>
+</a>
+<div class="flex items-center gap-3">
+<span class="hidden sm:inline-flex items-center gap-2 bg-amber-100 text-amber-800 font-bold px-3.5 py-1.5 rounded-full border border-amber-300 text-xs"><i class="fa-solid fa-shield-halved"></i><span>Admin</span></span>
+<span id="aUser" class="hidden text-xs text-slate-500"></span>
+<button id="aOut" class="hidden items-center gap-2 bg-white hover:bg-slate-50 text-slate-700 font-medium px-4 py-2 rounded-full border border-slate-200 shadow-sm text-sm"><i class="fa-solid fa-right-from-bracket"></i><span>Keluar</span></button>
+</div>
+</div>
+</header>
+<main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
 <div id="gate" class="bg-white rounded-2xl border p-8 text-center max-w-md mx-auto">
 <div class="text-4xl mb-3">🔐</div>
 <h1 class="font-extrabold text-lg mb-1">Area Admin</h1>
@@ -21,10 +29,10 @@
 <p id="aMsg" class="text-rose-600 text-xs mt-3"></p>
 </div>
 <div id="panel" class="hidden">
-<div class="flex gap-2 mb-4 text-sm font-bold">
-<button data-tab="nilai" class="tabBtn bg-slate-900 text-white px-4 py-2 rounded-lg">Nilai Siswa</button>
-<button data-tab="soal" class="tabBtn bg-white border px-4 py-2 rounded-lg">Soal</button>
-<button data-tab="admins" class="tabBtn bg-white border px-4 py-2 rounded-lg">Admins</button>
+<div class="flex flex-wrap gap-2 mb-4">
+<button data-tab="nilai" class="tabBtn bg-fuji-600 hover:bg-fuji-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md transition-all"><i class="fa-solid fa-chart-line mr-1"></i>Nilai Siswa</button>
+<button data-tab="soal" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-pen-to-square mr-1"></i>Soal</button>
+<button data-tab="admins" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-shield-halved mr-1"></i>Admins</button>
 </div>
 <section id="tab-nilai" class="bg-white rounded-2xl border p-4">
 <div class="flex flex-wrap gap-2 mb-3">
@@ -54,6 +62,7 @@
 </section>
 </div>
 </main>
+<footer class="bg-white border-t border-slate-200 py-8 mt-auto"><div class="max-w-5xl mx-auto px-4 text-center"><p class="text-slate-700 font-bold text-sm mb-1">SinauJepang (sinaujepang.web.app)</p><p class="text-slate-600 text-xs mb-3">Didedikasikan untuk seluruh pejuang Tokutei Ginou Indonesia. Semoga sukses melangkah ke Jepang!</p><div class="flex items-center justify-center gap-3 mt-2"><a href="https://wa.me/6285649049086" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1eb856] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-whatsapp text-sm"></i><span>Sugeng Waluyo</span></a><a href="https://www.facebook.com/maswaluyo/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#1464cc] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-facebook text-sm"></i><span>Sugeng Waluyo</span></a></div></div></footer>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
