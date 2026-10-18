@@ -76,5 +76,9 @@ QuizController.autosave = function () {
         await window.IndexedDB.setItem("jft_hasil", all);
       } catch (e) {}
     })();
+    // Resume lintas device: tulis sesi ke cloud (throttled 2 dtk, 1 dokumen, TTL 24 jam).
+    try {
+      if (window.fujiProgress) window.fujiProgress.save(slug, { picked: JSON.parse(JSON.stringify(M.picked)), locked: JSON.parse(JSON.stringify(M.locked)), cur: M.cur, timerSec: M.timerSec });
+    } catch (e) {}
   } catch (e) {}
 };

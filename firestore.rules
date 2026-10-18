@@ -40,6 +40,19 @@ service cloud.firestore {
       allow update, delete: if isAdmin();
     }
 
+    // --- Progres sesi kuis lintas device (resume per akun, kedaluwarsa 24 jam) ---
+    // Dokumen: /progress/{uid}_{slug} = { uid, email, slug, picked, locked, cur, timerSec, updatedAt }
+    // 1 dokumen per siswa per paket (update, bukan tambah) + dihapus saat kuis selesai.
+    match /progress/{docId} {
+      allow create: if isSignedIn()
+                    && request.resource.data.uid == request.auth.uid
+                    && request.resource.data.slug is string;
+      allow get, list: if isSignedIn()
+                    && (resource.data.uid == request.auth.uid || isAdmin());
+      allow update, delete: if isSignedIn()
+                    && (resource.data.uid == request.auth.uid || isAdmin());
+    }
+
     // --- Daftar admin ---
     // Dokumen: /admins/{uid} = { email: string, role: "admin", createdAt: timestamp }
     match /admins/{uid} {

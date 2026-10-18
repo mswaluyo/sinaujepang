@@ -9,7 +9,10 @@ QuizController.paintMainBtn = function () {
 QuizController.mainAction = function () {
   var M = QuizModel, C = QuizController;
   var q = M.getQ(); if (!M.locked[q.no]) return;
-  if (M.cur < M.order.length - 1) { M.cur = M.cur + 1; C.renderOne(); window.scrollTo({ top: 0, behavior: "smooth" }); }
+  if (M.cur < M.order.length - 1) {
+    M.cur = M.cur + 1; C.renderOne(); window.scrollTo({ top: 0, behavior: "smooth" });
+    try { var slug = QuizController.quizSlug(); if (window.fujiProgress && slug) window.fujiProgress.save(slug, { picked: M.picked, locked: M.locked, cur: M.cur, timerSec: M.timerSec }); } catch (e) {}
+  }
   else { C.openResultModal(); }
 };
 QuizController.updateProgress = function () {
@@ -38,6 +41,8 @@ QuizController.openResultModal = function () {
       var secsObj = {};
       ["sec1","sec2","sec3","sec4"].forEach(function(k){ secsObj[k] = { benar: c[k], total: t[k] }; });
       QuizRepository.saveAttempt(slug, { benar: tot, total: M.QS.length, skor: p, secs: secsObj, done: true });
+      // Sesi selesai penuh -> sesi cloud tidak diperlukan lagi.
+      try { if (window.fujiProgress) window.fujiProgress.clear(slug); } catch (e) {}
     }
   } catch (e) { /* abaikan */ }
   document.getElementById("score-percentage").textContent = p + "%";
@@ -86,8 +91,44 @@ QuizController.resetAllQuiz = function () {
   var M = QuizModel, C = QuizController;
   M.picked = {}; M.locked = {}; M.cur = 0; M.timerSec = 0; C.renderOne(); C.closeResultModal(); window.scrollTo({ top: 0, behavior: "smooth" });
   try { QuizController._savedSig = null; } catch (e) {}
+  try { var slug = QuizController.quizSlug(); if (window.fujiProgress && slug) window.fujiProgress.clear(slug); } catch (e) {}
 };
 // BOOT — satu-satunya kode yang jalan saat file dimuat.
+QuizController.maybeResume = function () {
+  // Dipanggil setelah soal termuat. Jika ada sesi cloud (<24 jam), tawarkan lanjutkan.
+  try {
+    var slug = QuizController.quizSlug();
+    if (!window.fujiProgress || !slug) return;
+    // Hanya untuk user login (tamu tidak punya sesi cloud).
+    var u = null;
+    try { u = window.fujiUser || (window.fujiAuth && window.fujiAuth.currentUser); } catch (e) {}
+    if (!u) {
+      try {
+        window.addEventListener("fuji:auth", function h() {
+          try { window.removeEventListener("fuji:auth", h); } catch (e) {}
+          QuizController.maybeResume();
+        });
+      } catch (e) {}
+      return;
+    }
+    window.fujiProgress.load(slug, QuizModel.QS.length).then(function (s) {
+      if (!s) return;
+      var n = 0; try { n = Object.keys(s.locked || {}).length; } catch (e) {}
+      if (!n) return;
+      var jam = ""; try { jam = new Date(s.at).toLocaleString("id-ID", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }); } catch (e) {}
+      var ok = false;
+      try { ok = confirm("Lanjutkan sesi terakhir?\n" + n + " soal sudah dijawab (" + jam + ").\n\nOK = lanjutkan • Batal = mulai dari awal"); } catch (e) { ok = false; }
+      if (ok) {
+        QuizModel.picked = s.picked || {}; QuizModel.locked = s.locked || {};
+        QuizModel.cur = Math.min(s.cur || 0, Math.max(QuizModel.order.length - 1, 0));
+        QuizModel.timerSec = s.timerSec || 0;
+        QuizController.renderOne();
+      } else {
+        try { window.fujiProgress.clear(slug); } catch (e) {}
+      }
+    }).catch(function () {});
+  } catch (e) {}
+};
 setInterval(function () {
   QuizModel.timerSec = QuizModel.timerSec + 1;
   var m = String(Math.floor(QuizModel.timerSec / 60)).padStart(2, "0"), s = String(QuizModel.timerSec % 60).padStart(2, "0");
@@ -98,7 +139,7 @@ function openResultModal() { QuizController.openResultModal(); }
 function reviewWrong() { QuizController.reviewWrong(); }
 function closeResultModal() { QuizController.closeResultModal(); }
 function resetAllQuiz() { QuizController.resetAllQuiz(); }
-QuizModel.load().then(function () { QuizController.buildTabs(); QuizController.renderOne(); })
+QuizModel.load().then(function () { QuizController.buildTabs(); QuizController.renderOne(); QuizController.maybeResume(); })
 .catch(function (e) {
   var box = document.getElementById('one');
   if (box) box.innerHTML = '<p class="text-rose-600 text-sm">Gagal memuat soal: ' + String((e && e.message) || e) + '</p>';

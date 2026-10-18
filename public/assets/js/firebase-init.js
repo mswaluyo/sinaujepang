@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-import { getFirestore, collection, addDoc, serverTimestamp, query, where, limit, getDocs, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, serverTimestamp, query, where, limit, getDocs, doc, getDoc, setDoc, deleteDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 // IndexedDB utility (ganti localStorage)
 import "./indexeddb.js";
 const firebaseConfig = {
@@ -126,5 +126,73 @@ window.fujiScore = {
   latest: async function (slug) {
     var all = await window.fujiScore.latestAll();
     return all[slug] || null;
+  }
+};
+// Progres sesi lintas device: 1 dokumen /progress/{uid}_{slug}, kedaluwarsa 24 jam.
+// Ditulis throttled (debounce) agar tidak spam; dihapus saat kuis selesai / reset.
+// Hanya untuk user login (wajib UID agar aman di rules).
+window.fujiProgress = {
+  TTL_MS: 24 * 60 * 60 * 1000,
+  _t: null,
+  _key: function (slug) {
+    try {
+      var u = window.fujiUser || (window.fujiAuth && window.fujiAuth.currentUser);
+      if (!u || !u.uid || !slug) return null;
+      return "progress/" + u.uid + "_" + slug;
+    } catch (e) { return null; }
+  },
+  // Tulis progres (debounce 2 detik). picked/locked = objek {no: idx/true}.
+  save: function (slug, state) {
+    var self = this;
+    try { clearTimeout(self._t); } catch (e) {}
+    self._t = setTimeout(function () { self._write(slug, state); }, 2000);
+  },
+  _write: async function (slug, state) {
+    try {
+      var key = window.fujiProgress._key(slug);
+      if (!key || !window.fujiDb) return;
+      var u = window.fujiUser || window.fujiAuth.currentUser;
+      var n = 0; try { n = Object.keys((state && state.locked) || {}).length; } catch (e) {}
+      if (!n) return; // belum ada jawaban: jangan buat dokumen kosong
+      var id = key.split("/")[1];
+      await setDoc(doc(window.fujiDb, "progress", id), {
+        uid: u.uid, email: u.email || "", slug: slug,
+        picked: (state && state.picked) || {}, locked: (state && state.locked) || {},
+        cur: (state && state.cur) || 0, timerSec: (state && state.timerSec) || 0,
+        updatedAt: serverTimestamp()
+      }, { merge: true });
+    } catch (e) {
+      if (window.console) console.warn("[fujiProgress] save gagal:", e);
+    }
+  },
+  // Baca progres; return null bila tidak ada / basi (>24 jam) / sudah selesai penuh.
+  load: async function (slug, totalSoal) {
+    try {
+      var key = window.fujiProgress._key(slug);
+      if (!key || !window.fujiDb) return null;
+      var d = await getDoc(doc(window.fujiDb, "progress", key.split("/")[1]));
+      if (!d.exists()) return null;
+      var v = d.data() || {};
+      var t = 0;
+      try {
+        if (v.updatedAt && v.updatedAt.toMillis) t = v.updatedAt.toMillis();
+        else if (v.updatedAt && v.updatedAt.seconds) t = v.updatedAt.seconds * 1000;
+      } catch (e) {}
+      if (!t || (Date.now() - t) > window.fujiProgress.TTL_MS) {
+        try { await window.fujiProgress.clear(slug); } catch (e) {}
+        return null;
+      }
+      var n = 0; try { n = Object.keys(v.locked || {}).length; } catch (e) {}
+      if (!n) return null;
+      if (totalSoal && n >= totalSoal) { try { await window.fujiProgress.clear(slug); } catch (e) {} return null; }
+      return { picked: v.picked || {}, locked: v.locked || {}, cur: v.cur || 0, timerSec: v.timerSec || 0, at: t };
+    } catch (e) { return null; }
+  },
+  clear: async function (slug) {
+    try {
+      var key = window.fujiProgress._key(slug);
+      if (!key || !window.fujiDb) return;
+      await deleteDoc(doc(window.fujiDb, "progress", key.split("/")[1]));
+    } catch (e) {}
   }
 };
