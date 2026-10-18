@@ -213,26 +213,39 @@
       location.replace("/login.html");
     };
     // Redirect ke login juga saat auth state berubah jadi null (misal token expired)
-    // Tampilkan tombol Admin hanya utk admin (custom claim ATAU dokumen /admins/{uid})
+    // Tampilkan tombol Admin hanya utk admin (email allowlist, custom claim, ATAU dokumen /admins/{uid})
+    var ADMIN_EMAILS = ["mswaluyo@gmail.com"];
     async function renderAdminBtn() {
       var el = document.getElementById("adminBtn");
       if (!el) return;
-      function show() { el.classList.remove("hidden"); el.classList.add("flex"); }
-      function hide() { el.classList.add("hidden"); el.classList.remove("flex"); }
+      function show(why) { try { console.log("[adminBtn] tampil via " + why); } catch (e) {}
+        el.classList.remove("hidden"); el.classList.add("flex"); }
+      function hide(why) { try { console.log("[adminBtn] sembunyi: " + (why || "")); } catch (e) {}
+        el.classList.add("hidden"); el.classList.remove("flex"); }
       try {
         var u = window.fujiUser;
-        if (!u) { hide(); return; }
+        if (!window.fujiAuth || !window.fujiAuth.currentUser) {
+          try { await new Promise(function (res) { var t0 = Date.now();
+            (function poll() { if ((window.fujiAuth && window.fujiAuth.currentUser) || Date.now() - t0 > 8000) res(); else setTimeout(poll, 200); })(); }); } catch (e) {}
+        }
+        u = (window.fujiAuth && window.fujiAuth.currentUser) || window.fujiUser;
+        if (!u) { hide("belum login"); return; }
         try {
-          var tok = await u.getIdTokenResult(true);
-          if (tok.claims && tok.claims.admin === true) { show(); return; }
+          var em = (u.email || "").toLowerCase();
+          if (ADMIN_EMAILS.indexOf(em) > -1) { show("email-allowlist"); return; }
         } catch (e) {}
+        try {
+          var tok = await u.getIdTokenResult(false);
+          if (tok.claims && tok.claims.admin === true) { show("custom-claim"); return; }
+        } catch (e) { try { console.log("[adminBtn] claim err " + (e.code || e.message)); } catch (x) {} }
         try {
           var fs = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js");
           var d = await fs.getDoc(fs.doc(window.fujiDb, "admins", u.uid));
-          if (d.exists()) { show(); return; }
-        } catch (e) {}
-        hide();
-      } catch (e) { hide(); }
+          if (d.exists()) { show("dok-admins"); return; }
+          else { try { console.log("[adminBtn] dok /admins/" + u.uid + " TIDAK ADA"); } catch (x) {} }
+        } catch (e) { try { console.log("[adminBtn] dok err " + (e.code || e.message)); } catch (x) {} }
+        hide("bukan admin");
+      } catch (e) { hide("exception"); }
     }
     window.addEventListener("fuji:auth", function () {
       try {
