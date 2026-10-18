@@ -4,6 +4,7 @@
   "description": "Portal latihan JFT-Basic statis. Password gerbang: `Lolosyuk`.",
   "main": "index.js",
   "scripts": {
+    "make-admin": "node tools/make-admin.mjs",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build:css": "tailwindcss -i src/input.css -o public/assets/css/tailwind.css --minify",
     "watch:css": "tailwindcss -i src/input.css -o public/assets/css/tailwind.css --watch"

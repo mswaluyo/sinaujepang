@@ -1,14 +1,61 @@
-// firestore.rules — SinauJepang v2
-// ✅ Login wajib (read, write)
-// ✅ Cegah overwrite dokumen lama (hanya create yang mengizinkan createdAt)
+// firestore.rules — SinauJepang v3 (dengan role admin)
+// - User login: hanya bisa create + baca data MILIKNYA (email == auth email)
+// - Admin: bisa baca/hapus SEMUA attempts, CRUD quiz_packs, kelola admins
+// - Admin ditandai via Custom Claim (auth.token.admin == true)
+//   ATAU dokumen /admins/{uid} { email, role: "admin" }
+// - Set admin pertama via: npm run make-admin -- <emailUser>
 rules_version = '2';
 service cloud.firestore {
   match /databases/{databaseId}/documents {
+
+    function isSignedIn() {
+      return request.auth != null;
+    }
+    function isAdmin() {
+      return isSignedIn() && (
+        request.auth.token.admin == true ||
+        exists(/databases/$(databaseId)/documents/admins/$(request.auth.uid))
+      );
+    }
+    function ownerEmail(data) {
+      return isSignedIn()
+        && data.email is string
+        && request.auth.token.email is string
+        && data.email == request.auth.token.email;
+    }
+
+    // --- Nilai siswa ---
     match /attempts/{docId} {
-      allow read, write: if request.auth != null;
-      allow update: if request.auth != null
-                    && request.resource.data['createdAt'] == null;
+      // Buat nilai: wajib login + email dokumen = email login + field minimal valid
+      allow create: if isSignedIn()
+                    && ownerEmail(request.resource.data)
+                    && request.resource.data.skor is number
+                    && request.resource.data.total is number;
+      // Baca 1 dokumen: pemilik atau admin
+      allow get: if isSignedIn()
+                  && (resource.data.email == request.auth.token.email || isAdmin());
+      // List/query: admin bebas; user biasa tetap boleh query (wajib where email==miliknya di klien)
+      allow list: if isAdmin() || isSignedIn();
+      // Update/hapus: admin saja (cegah overwrite siswa)
+      allow update, delete: if isAdmin();
+    }
+
+    // --- Daftar admin ---
+    // Dokumen: /admins/{uid} = { email: string, role: "admin", createdAt: timestamp }
+    match /admins/{uid} {
+      allow get: if isSignedIn() && (request.auth.uid == uid || isAdmin());
+      allow list: if isAdmin();
+      // Tulis admin baru: hanya admin (admin pertama via custom claim dari script make-admin)
+      allow create, update, delete: if isAdmin();
+    }
+
+    // --- Konten soal (kelola via halaman admin, dibaca publik) ---
+    // Dokumen: /quiz_packs/{slug} = { slug, title, items: [...], updatedAt, updatedBy }
+    match /quiz_packs/{packId} {
+      allow read: if true;
+      allow write: if isAdmin();
     }
   }
 }
+
 

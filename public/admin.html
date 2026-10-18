@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin - SinauJepang</title>
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen">
+<header class="bg-slate-900 text-white"><div class="max-w-6xl mx-auto px-4 h-14 flex items-center gap-3">
+<a href="/" class="font-bold">SinauJepang <span class="text-xs font-normal text-slate-400">/ admin</span></a>
+<span id="aUser" class="ml-auto text-xs text-slate-300"></span>
+<button id="aOut" class="text-xs bg-slate-700 px-3 py-1.5 rounded-lg hidden">Keluar</button>
+</div></header>
+<main class="max-w-6xl mx-auto px-4 py-6">
+<div id="gate" class="bg-white rounded-2xl border p-8 text-center max-w-md mx-auto">
+<div class="text-4xl mb-3">🔐</div>
+<h1 class="font-extrabold text-lg mb-1">Area Admin</h1>
+<p class="text-xs text-slate-500 mb-5">Login dengan akun admin.</p>
+<button id="aLogin" class="bg-slate-900 text-white font-bold px-6 py-3 rounded-xl text-sm w-full">Masuk dengan Google</button>
+<p id="aMsg" class="text-rose-600 text-xs mt-3"></p>
+</div>
+<div id="panel" class="hidden">
+<div class="flex gap-2 mb-4 text-sm font-bold">
+<button data-tab="nilai" class="tabBtn bg-slate-900 text-white px-4 py-2 rounded-lg">Nilai Siswa</button>
+<button data-tab="soal" class="tabBtn bg-white border px-4 py-2 rounded-lg">Soal</button>
+<button data-tab="admins" class="tabBtn bg-white border px-4 py-2 rounded-lg">Admins</button>
+</div>
+<section id="tab-nilai" class="bg-white rounded-2xl border p-4">
+<div class="flex flex-wrap gap-2 mb-3">
+<input id="qEmail" placeholder="filter email..." class="border rounded-lg px-3 py-2 text-sm flex-1 min-w-[180px]">
+<button id="qGo" class="bg-slate-900 text-white text-sm font-bold px-4 py-2 rounded-lg">Tampilkan</button>
+<span id="qCount" class="text-xs text-slate-500 ml-auto self-center"></span>
+</div>
+<div class="overflow-auto"><table class="w-full text-xs">
+<thead><tr class="text-left text-slate-500 border-b"><th class="py-2 pr-2">Waktu</th><th class="pr-2">Nama</th><th class="pr-2">Email</th><th class="pr-2">Paket</th><th class="pr-2">Benar</th><th class="pr-2">Skor</th><th></th></tr></thead>
+<tbody id="qRows"></tbody>
+</table></div>
+</section>
+<section id="tab-soal" class="bg-white rounded-2xl border p-4 hidden">
+<p class="text-xs text-slate-500 mb-3">Soal dibaca publik dari <code>/quiz_packs/{slug}</code>. Tempel JSON array soal lalu Simpan.</p>
+<div class="flex flex-wrap gap-2 mb-3">
+<select id="sPack" class="border rounded-lg px-3 py-2 text-sm"></select>
+<button id="sLoad" class="bg-white border text-sm font-bold px-4 py-2 rounded-lg">Muat</button>
+<button id="sSave" class="bg-slate-900 text-white text-sm font-bold px-4 py-2 rounded-lg">Simpan</button>
+<span id="sInfo" class="text-xs text-slate-500 self-center"></span>
+</div>
+<input id="sTitle" placeholder="Judul paket..." class="border rounded-lg px-3 py-2 text-sm w-full mb-2">
+<textarea id="sJson" rows="14" class="w-full border rounded-xl p-3 text-xs font-mono"></textarea>
+</section>
+<section id="tab-admins" class="bg-white rounded-2xl border p-4 hidden">
+<p class="text-xs text-slate-500 mb-3">Tambah admin via terminal: <code>node tools/make-admin.mjs email@gmail.com</code></p>
+<div id="aList" class="text-sm divide-y"></div>
+</section>
+</div>
+</main>
+<script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
+import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+import { getFirestore } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+window._aAuth = getAuth(initializeApp({ apiKey: "AIzaSyDjbVGm1rjPJADixh8k5Zbc7-xX4cm5uos", authDomain: "sinau-jepang.firebaseapp.com", projectId: "sinau-jepang" }));
+try { window._aDb = getFirestore(window._aAuth.app); } catch(e) {}
+</script>
+<script type="module" src="/assets/js/admin-data.js"></script>
+<script type="module" src="/assets/js/admin-auth.js"></script>
+</body>
+</html>

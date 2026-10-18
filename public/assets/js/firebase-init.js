@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
 import { getAuth, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
-import { getFirestore, collection, addDoc, serverTimestamp, query, where, limit, getDocs } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { getFirestore, collection, addDoc, serverTimestamp, query, where, limit, getDocs, doc, getDoc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 // IndexedDB utility (ganti localStorage)
 import "./indexeddb.js";
 const firebaseConfig = {
@@ -19,6 +19,15 @@ window.fujiAuth = getAuth(window.firebaseApp);
 window.fujiDb = null;
 try { window.fujiDb = getFirestore(window.firebaseApp); } catch (e) {}
 window.fujiUser = null;
+// Override soal oleh admin: baca /quiz_packs/{slug} (publik). Return array items atau null.
+window.fujiQuizPack = async function (slug) {
+  try {
+    if (!window.fujiDb || !slug) return null;
+    var d = await getDoc(doc(window.fujiDb, "quiz_packs", slug));
+    if (d.exists() && d.data() && Array.isArray(d.data().items) && d.data().items.length) return d.data().items;
+  } catch (e) {}
+  return null;
+};
 try {
   onAuthStateChanged(window.fujiAuth, function (u) {
     window.fujiUser = u || null;

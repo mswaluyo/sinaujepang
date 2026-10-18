@@ -55,6 +55,13 @@ var QuizRepository = (function () {
     return items;
   }
   async function fetchQuiz() {
+    // Override admin: jika paket sudah dimigrasi ke /quiz_packs/{slug}, pakai itu
+    try {
+      if (window.fujiQuizPack) {
+        var s0 = quizSlug();
+        if (s0) { var ov = await window.fujiQuizPack(s0); if (ov && ov.length) { validate(ov); return normalizeQuiz(ov); } }
+      }
+    } catch (e) {}
     var url = DATA_URL + (DATA_URL.indexOf("?") > -1 ? "&" : "?") + "v=" + Date.now();
     var r = await fetch(url, { cache: "no-store" });
     if (!r.ok) throw new Error("Gagal memuat " + DATA_URL + " (" + r.status + ")");

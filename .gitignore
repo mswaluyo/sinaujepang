@@ -9,6 +9,7 @@ node_modules/
 .env
 .env.local
 *.local
+serviceAccountKey.json
 
 # ─── Build cache / sourcemap ───────────────────────────────
 public/assets/css/*.map
