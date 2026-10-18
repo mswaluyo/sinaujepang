@@ -2,7 +2,6 @@
   "hosting": [
     {
       "target": "utama",
-      "site": "sinaujepang",
     "public": "public",
     "ignore": [
       "firebase.json",
