@@ -55,7 +55,7 @@ function renderNilai() {
   let html = "";
   const head = $("qHead");
   if (_q.mode === "ringkas") {
-    if (head) head.innerHTML = "<tr class='text-left text-slate-500 border-b'><th class='py-2 pr-2'>Waktu</th><th class='pr-2'>Siswa</th><th class='pr-2'>Paket (soal)</th><th class='pr-2'>Benar</th><th class='pr-2'>Skor %</th><th class='pr-2'>Skala JFT</th><th class='pr-2'>Ujian</th><th>Status</th></tr>";
+    if (head) head.innerHTML = "<tr class='text-left text-slate-500 border-b'><th class='py-2 pr-2'>Waktu</th><th class='pr-2'>Siswa</th><th class='pr-2'>Paket</th><th class='pr-2 text-center'>Soal</th><th class='pr-2'>Benar</th><th class='pr-2'>Skor %</th><th class='pr-2'>Skala JFT</th><th class='pr-2'>Ujian</th><th>Status</th></tr>";
     const g = {};
     listFin.forEach(v => {
       const k = (v.email || "?") + "|" + (v.slug || "?");
@@ -70,7 +70,7 @@ function renderNilai() {
     });
     $("qCount").textContent = Object.keys(g).length + " siswa-paket | " + listFin.length + " ujian selesai" + (spam ? " | " + spam + " progres disembunyikan" : "");
   } else {
-    if (head) head.innerHTML = "<tr class='text-left text-slate-500 border-b'><th class='py-2 pr-2'>Waktu</th><th class='pr-2'>Siswa</th><th class='pr-2'>Paket (soal)</th><th class='pr-2'>Benar</th><th class='pr-2'>Skor %</th><th class='pr-2'>Skala JFT</th><th>Hapus</th></tr>";
+    if (head) head.innerHTML = "<tr class='text-left text-slate-500 border-b'><th class='py-2 pr-2'>Waktu</th><th class='pr-2'>Siswa</th><th class='pr-2'>Paket</th><th class='pr-2 text-center'>Soal</th><th class='pr-2'>Benar</th><th class='pr-2'>Skor %</th><th class='pr-2'>Skala JFT</th><th>Hapus</th></tr>";
     listFin.sort((a, b) => b._t - a._t).slice(0, _q.shown).forEach(v => {
       html += "<tr class='border-b hover:bg-fuji-50/50'><td class='py-2 pr-2 whitespace-nowrap'>" + _qFmt(v._t) + "</td><td class='pr-2'>" + String(v.name || "").replace(/</g, "&lt;") + "<div class='text-slate-400'>" + (v.email || "") + "</div></td><td>" + (v.slug || "") + " <span class='text-slate-400'>(" + (v.total || 0) + " soal)</span></td><td class='pr-2 font-bold'>" + (v.benar || 0) + "</td><td class='pr-2 font-black text-fuji-700'>" + (v.skor || 0) + "%</td><td class='pr-2 whitespace-nowrap'>" + _qJft(v.skor) + "</td><td><button class='text-rose-600 hover:underline' data-del='" + v._id + "'>hapus</button></td></tr>";
     });
