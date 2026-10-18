@@ -34,7 +34,6 @@ window._aLoadNilai = async function (isReset) {
   } catch (e) { $("qRows").innerHTML = "<tr><td class='text-rose-600'>Gagal: " + (e.message || e.code) + "</td></tr>"; }
   _q.loading = false;
 };
-function _qJft(p) { var j = Math.round(10 + ((p || 0) / 100) * 240); var lv = j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "A1" : "-"; return j + "/250 (" + lv + ")"; }
 function _qPrint() {
   const slug = ($("qSlug") || {}).value || "semua";
   const rows = $("qRows").innerHTML, head = $("qHead").innerHTML;
