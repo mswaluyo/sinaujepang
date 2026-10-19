@@ -158,36 +158,68 @@ window._aLoadAdmins = async function () {
     if (!snap.size) $("aList").innerHTML = "<p>Kosong.</p>";
   } catch (e) { $("aList").innerHTML = "Gagal: " + (e.message || e.code); }
 };
-// --- Daftar Pengguna: agregat per email dari data attempts ---
-let _uRows = [];
-function _uAgg() {
+// --- Daftar Pengguna: dari koleksi /users + statistik attempts ---
+let _uRows = [], _uAll = [], _uLoading = false, _uLoaded = false;
+function _uTime(v) {
+  try {
+    if (v && v.toDate) return v.toDate().getTime();
+    if (v && v.seconds) return v.seconds * 1000;
+  } catch (e) {}
+  return 0;
+}
+function _uStats() {
   const g = {};
   (_q.rows || []).filter(v => v.done !== false).forEach(v => {
     const em = (v.email || "").trim().toLowerCase();
     if (!em) return;
-    if (!g[em]) g[em] = { name: v.name || "", email: v.email || "", n: 0, best: -1, packs: {}, last: 0 };
+    if (!g[em]) g[em] = { n: 0, best: -1, packs: {} };
     const o = g[em]; o.n++;
-    if (v.name && (!o.name || v._t >= o.last)) o.name = v.name;
     if ((v.skor || 0) > o.best) o.best = v.skor || 0;
     if (v.slug) o.packs[v.slug] = true;
-    if (v._t > o.last) o.last = v._t;
   });
-  return Object.values(g).sort((a, b) => b.last - a.last);
+  return g;
+}
+async function _uLoad() {
+  const box = $("uRows");
+  if (_uLoaded) { renderUsers(); return; }
+  if (_uLoading) return;
+  _uLoading = true;
+  if (box) box.innerHTML = "<tr><td colspan='6' class='py-10 text-center text-slate-400 text-[13px]'><i class='fa-solid fa-circle-notch fa-spin mr-2'></i>Memuat pengguna…</td></tr>";
+  try {
+    const db = window._aDb;
+    let snap;
+    try { snap = await getDocs(query(collection(db, "users"), orderBy("lastLoginAt", "desc"), limit(500))); }
+    catch (e) { snap = await getDocs(collection(db, "users")); }
+    _uAll = [];
+    snap.forEach(d => { const v = d.data() || {}; v._uid = d.id; v._last = _uTime(v.lastLoginAt) || _uTime(v.createdAt); _uAll.push(v); });
+    _uAll.sort((a, b) => b._last - a._last);
+    _uLoaded = true;
+    renderUsers();
+  } catch (e) {
+    if (box) box.innerHTML = "<tr><td colspan='6' class='py-10 text-center text-rose-500 text-[13px]'>Gagal memuat: " + _qEsc(e.message || e.code || e) + "</td></tr>";
+  }
+  _uLoading = false;
 }
 function renderUsers() {
   const box = $("uRows"); if (!box) return;
+  if (!_uLoaded) { _uLoad(); return; }
   const kw = (($("uSearch") || {}).value || "").trim().toLowerCase();
-  _uRows = _uAgg().filter(o => !kw || (o.email || "").toLowerCase().includes(kw) || (o.name || "").toLowerCase().includes(kw));
+  const stats = _uStats();
+  _uRows = _uAll.filter(o => !kw || (o.email || "").toLowerCase().includes(kw) || (o.name || "").toLowerCase().includes(kw));
   const cnt = $("uCount"); if (cnt) cnt.textContent = _uRows.length + " pengguna";
-  if (!_uRows.length) { box.innerHTML = "<tr><td colspan='6' class='py-10 text-center text-slate-400 text-[13px]'><i class='fa-regular fa-folder-open text-2xl block mb-2'></i>Belum ada pengguna.</td></tr>"; return; }
-  box.innerHTML = _uRows.map((o, i) => {
-    const packs = Object.keys(o.packs).map(p => _qSlugBadge(p)).join(" ");
+  if (!_uRows.length) { box.innerHTML = "<tr><td colspan='6' class='py-10 text-center text-slate-400 text-[13px]'><i class='fa-regular fa-folder-open text-2xl block mb-2'></i>Belum ada pengguna yang login.</td></tr>"; return; }
+  box.innerHTML = _uRows.map((o) => {
+    const st = stats[(o.email || "").toLowerCase()] || { n: 0, best: null, packs: {} };
+    const packs = Object.keys(st.packs).map(p => _qSlugBadge(p)).join(" ");
+    const bestTxt = (st.best == null || st.best < 0) ? "<span class='text-slate-400'>-</span>" : "<span class='" + (st.best >= 75 ? "text-emerald-600" : "text-slate-700") + "'>" + st.best + "%</span>";
+    const foto = o.photo ? "<img src='" + _qEsc(o.photo) + "' class='w-8 h-8 rounded-full object-cover' alt='' loading='lazy'>" : "<span class='w-8 h-8 rounded-full bg-fuji-100 text-fuji-700 flex items-center justify-center text-[13px] font-extrabold'>" + _qEsc((o.name || o.email || "?").charAt(0).toUpperCase()) + "</span>";
+    const loginInfo = (o.loginCount ? o.loginCount + "x login" : "") + (o._last ? " • " + _qFmt(o._last) : "");
     return "<tr class='hover:bg-fuji-50/60 transition-colors'>"
-      + "<td class='px-4 py-2.5'><div class='font-bold text-slate-800 leading-tight'>" + _qEsc(o.name || "-") + "</div><div class='text-[11px] text-slate-400'>" + _qEsc(o.email) + "</div></td>"
-      + "<td class='px-3 py-2.5 text-center'><span class='text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full'>" + o.n + "x</span></td>"
+      + "<td class='px-4 py-2.5'><div class='flex items-center gap-2.5'>" + foto + "<div><div class='font-bold text-slate-800 leading-tight'>" + _qEsc(o.name || "-") + "</div><div class='text-[11px] text-slate-400'>" + _qEsc(o.email || "") + "</div></div></div></td>"
+      + "<td class='px-3 py-2.5 text-center'><span class='text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full'>" + st.n + "x</span></td>"
       + "<td class='px-3 py-2.5'>" + (packs || "<span class='text-slate-400'>-</span>") + "</td>"
-      + "<td class='px-3 py-2.5 text-center font-extrabold " + (o.best >= 75 ? "text-emerald-600" : "text-slate-700") + "'>" + o.best + "%</td>"
-      + "<td class='px-3 py-2.5 text-slate-500 whitespace-nowrap'>" + _qFmt(o.last) + "</td>"
+      + "<td class='px-3 py-2.5 text-center font-extrabold'>" + bestTxt + "</td>"
+      + "<td class='px-3 py-2.5 text-slate-500 whitespace-nowrap text-[12px]'>" + _qEsc(loginInfo || "-") + "</td>"
       + "<td class='px-4 py-2.5 text-right'><button data-uemail='" + _qEsc(o.email) + "' class='inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-700 text-white text-[12px] font-bold px-3 py-1.5 rounded-lg transition-colors'><i class='fa-solid fa-chart-line'></i>Lihat Nilai</button></td></tr>";
   }).join("");
   box.querySelectorAll("[data-uemail]").forEach(b => b.onclick = () => {
@@ -199,8 +231,12 @@ function renderUsers() {
   });
 }
 window._aCsvUsers = function () {
-  const rows = [["nama", "email", "jml_ujian", "paket", "nilai_terbaik", "terakhir_aktif"]];
-  (_uRows || []).forEach(o => { rows.push([o.name || "", o.email || "", o.n, Object.keys(o.packs).join(";"), o.best, new Date(o.last).toLocaleString("id-ID")]); });
+  const stats = _uStats();
+  const rows = [["nama", "email", "jml_login", "jml_ujian", "paket", "nilai_terbaik", "terakhir_login"]];
+  (_uRows || []).forEach(o => {
+    const st = stats[(o.email || "").toLowerCase()] || { n: 0, best: null, packs: {} };
+    rows.push([o.name || "", o.email || "", o.loginCount || 0, st.n, Object.keys(st.packs).join(";"), (st.best == null || st.best < 0) ? "" : st.best, o._last ? new Date(o._last).toLocaleString("id-ID") : ""]);
+  });
   const csv = "﻿" + rows.map(r => r.map(_qCsvCell).join(",")).join("\n");
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([csv], { type: "text/csv;charset=utf-8" }));

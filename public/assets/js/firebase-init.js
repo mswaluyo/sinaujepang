@@ -34,9 +34,31 @@ try {
     try {
       if (u) window.IndexedDB.setItem("jft_user", { name: u.displayName, email: u.email, photo: u.photoURL });
     } catch (e) {}
+    // Catat profil user ke /users/{uid} (merge, aman dipanggil tiap login)
+    try { if (u && window.fujiDb) window.fujiTouchUser(u); } catch (e) {}
     try { window.dispatchEvent(new Event("fuji:auth")); } catch (e) {}
   });
 } catch (e) {}
+// Upsert profil user saat login: /users/{uid} = { name, email, photo, lastLoginAt, loginCount, createdAt }
+// Dipakai tab Pengguna di halaman admin. Gagal tulis tidak mengganggu alur login.
+window.fujiTouchUser = async function (u) {
+  try {
+    if (!u || !u.uid || !window.fujiDb) return;
+    var ref = doc(window.fujiDb, "users", u.uid);
+    var prev = null;
+    try { prev = await getDoc(ref); } catch (e) {}
+    var n = 1;
+    try { if (prev && prev.exists() && prev.data().loginCount) n = prev.data().loginCount + 1; } catch (e) {}
+    var payload = {
+      name: u.displayName || "", email: u.email || "", photo: u.photoURL || "",
+      lastLoginAt: serverTimestamp(), loginCount: n
+    };
+    try { if (!prev || !prev.exists()) payload.createdAt = serverTimestamp(); } catch (e) {}
+    await setDoc(ref, payload, { merge: true });
+  } catch (e) {
+    if (window.console) console.warn("[fujiTouchUser] gagal:", e);
+  }
+};
 // API skor online 1 pintu: Firestore (wajib login) + fallback IndexedDB (local).
 window.fujiScore = {
   save: async function (slug, attempt) {

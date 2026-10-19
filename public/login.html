@@ -48,6 +48,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-analytics.js";
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
+import { getFirestore, doc, getDoc, setDoc, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 const firebaseConfig = {
   apiKey: "AIzaSyDjbVGm1rjPJADixh8k5Zbc7-xX4cm5uos",
   authDomain: "sinau-jepang.firebaseapp.com",
@@ -59,6 +60,18 @@ const firebaseConfig = {
 };
 const app = initializeApp(firebaseConfig);
 const auth = getAuth(app);
+const db = getFirestore(app);
+async function touchUser(u) {
+  try {
+    if (!u || !u.uid) return;
+    const ref = doc(db, "users", u.uid);
+    let n = 1, isNew = true;
+    try { const prev = await getDoc(ref); if (prev.exists()) { isNew = false; if (prev.data().loginCount) n = prev.data().loginCount + 1; } } catch (e) {}
+    const payload = { name: u.displayName || "", email: u.email || "", photo: u.photoURL || "", lastLoginAt: serverTimestamp(), loginCount: n };
+    if (isNew) payload.createdAt = serverTimestamp();
+    await setDoc(ref, payload, { merge: true });
+  } catch (e) { if (window.console) console.warn("[touchUser] gagal:", e); }
+}
 const provider = new GoogleAuthProvider();
 provider.setCustomParameters({ prompt: "select_account" });
 const $ = function (id) { return document.getElementById(id); };
@@ -71,6 +84,7 @@ $("outBtn").onclick = function () { signOut(auth); };
 onAuthStateChanged(auth, function (u) {
   if (u) {
     try { window.IndexedDB.setItem("jft_user", { name: u.displayName, email: u.email, photo: u.photoURL }); } catch (e) {}
+    try { touchUser(u); } catch (e) {}
     location.replace("/");
   } else {
     try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}

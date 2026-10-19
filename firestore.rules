@@ -62,6 +62,20 @@ service cloud.firestore {
       allow create, update, delete: if isAdmin();
     }
 
+    // --- Profil pengguna (ditulis otomatis saat login) ---
+    // Dokumen: /users/{uid} = { name, email, photo, createdAt, lastLoginAt, loginCount }
+    // User boleh create/update MILIKNYA (uid == auth.uid, email cocok); baca miliknya; admin bisa list semua.
+    match /users/{uid} {
+      allow get: if isSignedIn() && (request.auth.uid == uid || isAdmin());
+      allow list: if isAdmin();
+      allow create: if isSignedIn()
+                    && request.auth.uid == uid
+                    && request.resource.data.email == request.auth.token.email;
+      allow update: if isSignedIn()
+                    && (request.auth.uid == uid || isAdmin())
+                    && request.resource.data.email == resource.data.email;
+    }
+
     // --- Konten soal (kelola via halaman admin, dibaca publik) ---
     // Dokumen: /quiz_packs/{slug} = { slug, title, items: [...], updatedAt, updatedBy }
     match /quiz_packs/{packId} {
