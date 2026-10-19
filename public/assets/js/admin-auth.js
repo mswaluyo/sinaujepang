@@ -13,7 +13,7 @@ function styleTab(active, idle) {
 document.querySelectorAll(".tabBtn").forEach(b => b.onclick = () => {
   const all = Array.from(document.querySelectorAll(".tabBtn"));
   styleTab(b, all.filter(x => x !== b));
-  ["nilai","soal","admins"].forEach(t => $("tab-" + t).classList.toggle("hidden", t !== b.dataset.tab));
+  ["nilai","soal","users","admins"].forEach(t => $("tab-" + t).classList.toggle("hidden", t !== b.dataset.tab));
 });
 onAuthStateChanged(window._aAuth, async (u) => {
   if (!u) return;
@@ -26,6 +26,6 @@ onAuthStateChanged(window._aAuth, async (u) => {
     if (!ok) { $("aMsg").textContent = "⛔ " + u.email + " bukan admin."; await signOut(window._aAuth); return; }
     $("gate").classList.add("hidden"); $("panel").classList.remove("hidden");
     if (window._aInitNilaiBar) window._aInitNilaiBar();
-    window._aLoadNilai(true); window._aInitSoal(); window._aLoadAdmins();
+    window._aLoadNilai(true); window._aInitSoal(); window._aLoadAdmins(); if (window._aInitUsers) window._aInitUsers();
   } catch(e) { $("aMsg").textContent = "Gagal verifikasi: " + (e.message||e.code); }
 });

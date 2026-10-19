@@ -32,15 +32,23 @@
 <div class="flex flex-wrap gap-2 mb-4">
 <button data-tab="nilai" class="tabBtn bg-fuji-600 hover:bg-fuji-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md transition-all"><i class="fa-solid fa-chart-line mr-1"></i>Nilai Siswa</button>
 <button data-tab="soal" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-pen-to-square mr-1"></i>Soal</button>
+<button data-tab="users" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-users mr-1"></i>Pengguna</button>
 <button data-tab="admins" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-shield-halved mr-1"></i>Admins</button>
 </div>
-<section id="tab-nilai" class="bg-white rounded-2xl border p-4">
-<div class="flex flex-wrap gap-2 mb-3">
-<select id="qMode" class="border rounded-lg px-3 py-2 text-sm font-bold">
+<section id="tab-nilai" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+<div class="px-4 pt-4 pb-3 border-b border-slate-100 flex flex-wrap items-center gap-2">
+<div class="mr-auto">
+<h2 class="font-extrabold text-slate-800 text-[15px] leading-tight"><i class="fa-solid fa-chart-line text-fuji-500 mr-1.5"></i>Nilai Siswa</h2>
+<p class="text-[11px] text-slate-500 mt-0.5">Rekap nilai terbaik per siswa-paket (Ringkas) atau semua percobaan.</p>
+</div>
+<span id="qCount" class="text-[11px] font-bold text-slate-500 bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full"></span>
+</div>
+<div class="px-4 py-3 bg-slate-50/70 border-b border-slate-100 flex flex-wrap gap-2 items-center">
+<select id="qMode" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] font-bold text-slate-700 focus:outline-none focus:ring-2 focus:ring-fuji-300">
 <option value="ringkas">Ringkas (1 baris/siswa)</option>
 <option value="semua">Semua percobaan</option>
 </select>
-<select id="qSlug" class="border rounded-lg px-3 py-2 text-sm">
+<select id="qSlug" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] text-slate-700 focus:outline-none focus:ring-2 focus:ring-fuji-300">
 <option value="">Semua paket</option>
 <option value="gakusei-quiz">gakusei-quiz</option>
 <option value="magarimasu-quiz">magarimasu-quiz</option>
@@ -50,16 +58,18 @@
 <option value="kagi-quiz">kagi-quiz</option>
 <option value="tamago-quiz">tamago-quiz</option>
 </select>
-<input id="qEmail" placeholder="filter email/nama..." class="border rounded-lg px-3 py-2 text-sm flex-1 min-w-[160px]">
-<button id="qGo" class="bg-slate-900 text-white text-sm font-bold px-4 py-2 rounded-lg">Tampilkan</button>
-<button id="qCsv" class="bg-white border text-sm font-bold px-4 py-2 rounded-lg">⬇ CSV</button><button id="qPrint" class="bg-white border text-sm font-bold px-4 py-2 rounded-lg">Cetak</button>
-<span id="qCount" class="text-xs text-slate-500 ml-auto self-center"></span>
+<input id="qEmail" placeholder="Cari email / nama…" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] flex-1 min-w-[160px] focus:outline-none focus:ring-2 focus:ring-fuji-300">
+<button id="qGo" class="bg-slate-900 hover:bg-slate-800 text-white text-[13px] font-bold px-4 py-2 rounded-lg transition-colors"><i class="fa-solid fa-magnifying-glass mr-1.5"></i>Tampilkan</button>
+<button id="qCsv" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-[13px] font-bold px-3.5 py-2 rounded-lg transition-colors" title="Unduh CSV"><i class="fa-solid fa-download mr-1.5"></i>CSV</button>
+<button id="qPrint" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-[13px] font-bold px-3.5 py-2 rounded-lg transition-colors" title="Cetak tabel"><i class="fa-solid fa-print mr-1.5"></i>Cetak</button>
 </div>
-<div class="overflow-auto"><table class="w-full text-xs">
-<thead id="qHead"></thead>
-<tbody id="qRows"></tbody>
+<div class="overflow-auto max-h-[60vh]"><table class="w-full text-[13px] min-w-[860px]">
+<thead id="qHead" class="sticky top-0 bg-slate-50 text-slate-500 uppercase text-[11px] tracking-wide"></thead>
+<tbody id="qRows" class="divide-y divide-slate-100"></tbody>
 </table></div>
-<button id="qMore" class="mt-3 w-full bg-fuji-50 hover:bg-fuji-100 text-fuji-700 font-bold text-sm py-2.5 rounded-xl border border-fuji-200">Muat 100 lagi ⬇</button>
+<div class="p-3 border-t border-slate-100 bg-white">
+<button id="qMore" class="w-full bg-fuji-50 hover:bg-fuji-100 text-fuji-700 font-bold text-[13px] py-2.5 rounded-xl border border-fuji-200 transition-colors">Muat 100 lagi <i class="fa-solid fa-chevron-down ml-1"></i></button>
+</div>
 </section>
 <section id="tab-soal" class="bg-white rounded-2xl border p-4 hidden">
 <p class="text-xs text-slate-500 mb-3">Soal dibaca publik dari <code>/quiz_packs/{slug}</code>. Tempel JSON array soal lalu Simpan.</p>
@@ -72,6 +82,23 @@
 <input id="sTitle" placeholder="Judul paket..." class="border rounded-lg px-3 py-2 text-sm w-full mb-2">
 <textarea id="sJson" rows="14" class="w-full border rounded-xl p-3 text-xs font-mono"></textarea>
 </section>
+<section id="tab-users" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hidden">
+<div class="px-4 pt-4 pb-3 border-b border-slate-100 flex flex-wrap items-center gap-2">
+<div class="mr-auto">
+<h2 class="font-extrabold text-slate-800 text-[15px] leading-tight"><i class="fa-solid fa-users text-fuji-500 mr-1.5"></i>Daftar Pengguna</h2>
+<p class="text-[11px] text-slate-500 mt-0.5">Disusun otomatis dari data attempts (email yang pernah mengerjakan).</p>
+</div>
+<span id="uCount" class="text-[11px] font-bold text-slate-500 bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full"></span>
+</div>
+<div class="px-4 py-3 bg-slate-50/70 border-b border-slate-100 flex flex-wrap gap-2 items-center">
+<input id="uSearch" placeholder="Cari nama / email…" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] flex-1 min-w-[160px] focus:outline-none focus:ring-2 focus:ring-fuji-300">
+<button id="uCsv" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-[13px] font-bold px-3.5 py-2 rounded-lg transition-colors" title="Unduh CSV"><i class="fa-solid fa-download mr-1.5"></i>CSV</button>
+</div>
+<div class="overflow-auto max-h-[60vh]"><table class="w-full text-[13px] min-w-[720px]">
+<thead id="uHead" class="sticky top-0 bg-slate-50 text-slate-500 uppercase text-[11px] tracking-wide"><tr><th class='text-left font-extrabold px-4 py-3'>Pengguna</th><th class='font-extrabold px-3 py-3 text-center'>Ujian</th><th class='text-left font-extrabold px-3 py-3'>Paket</th><th class='font-extrabold px-3 py-3 text-center'>Nilai Terbaik</th><th class='text-left font-extrabold px-3 py-3 whitespace-nowrap'>Terakhir Aktif</th><th class='font-extrabold px-4 py-3 text-right'>Aksi</th></tr></thead>
+<tbody id="uRows" class="divide-y divide-slate-100"></tbody>
+</table></div>
+</section>
 <section id="tab-admins" class="bg-white rounded-2xl border p-4 hidden">
 <p class="text-xs text-slate-500 mb-3">Tambah admin via terminal: <code>node tools/make-admin.mjs email@gmail.com</code></p>
 <div id="aList" class="text-sm divide-y"></div>
@@ -79,6 +106,21 @@
 </div>
 </main>
 <footer class="bg-white border-t border-slate-200 py-8 mt-auto"><div class="max-w-5xl mx-auto px-4 text-center"><p class="text-slate-700 font-bold text-sm mb-1">SinauJepang (sinaujepang.web.app)</p><p class="text-slate-600 text-xs mb-3">Didedikasikan untuk seluruh pejuang Tokutei Ginou Indonesia. Semoga sukses melangkah ke Jepang!</p><div class="flex items-center justify-center gap-3 mt-2"><a href="https://wa.me/6285649049086" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1eb856] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-whatsapp text-sm"></i><span>Sugeng Waluyo</span></a><a href="https://www.facebook.com/maswaluyo/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#1464cc] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-facebook text-sm"></i><span>Sugeng Waluyo</span></a></div></div></footer>
+<div id="dModal" class="hidden fixed inset-0 z-50 items-center justify-center bg-slate-900/60 p-4">
+<div class="bg-white rounded-2xl max-w-2xl w-full max-h-[90vh] overflow-auto p-6">
+<div id="dSheet"></div>
+<div class="flex gap-2 mt-4 no-print">
+<button onclick="window._aPrintDetail()" class="flex-1 bg-slate-900 text-white font-bold px-4 py-2.5 rounded-xl text-sm">Cetak / Simpan PDF</button>
+<button onclick="window._aCloseDetail()" class="bg-white border font-bold px-4 py-2.5 rounded-xl text-sm">Tutup</button>
+</div>
+</div>
+</div>
+<style>@media print{body>*{display:none}body>#dModal{display:block!important;position:static;background:none;padding:0}#dModal .no-print{display:none}#dModal>div{max-height:none;box-shadow:none;border-radius:0}}
+.jft-bar{height:10px;border-radius:9999px;background:linear-gradient(to right,#fda4af 0%,#f472b6 46%,#fb923c 62%,#facc15 75%,#a3e635 100%);position:relative;box-shadow:inset 0 1px 3px rgba(0,0,0,.15);z-index:1;overflow:visible}
+.jft-tick{position:absolute;top:-2px;bottom:-2px;width:2px;background:#1e293b;border-radius:2px;z-index:2}
+.jft-pin{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);z-index:10;pointer-events:none}
+.jft-pin .jft-num{position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);font-size:12px;font-weight:700;color:#fff;background:#1e293b;padding:2px 8px;border-radius:6px;box-shadow:0 1px 3px rgba(0,0,0,.3);white-space:nowrap;line-height:1.3}
+.jft-pin .jft-dot{width:18px;height:18px;border-radius:9999px;background:#fff;border:4px solid #f97316;box-shadow:0 1px 4px rgba(0,0,0,.3)}</style>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
 import { getAuth } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
