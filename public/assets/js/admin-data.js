@@ -1,7 +1,55 @@
 import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 const $ = id => document.getElementById(id);
 const PACKS = ["aoi-quiz", "basu-quiz", "jinja-quiz", "kagi-quiz", "tamago-quiz", "gakusei-quiz", "magarimasu-quiz"];
-const _q = { mode: "ringkas", rows: [], shown: 50, lastDoc: null, done: false, loading: false };
+const _q = { mode: "ringkas", rows: [], shown: 50, lastDoc: null, done: false, loading: false, sort: "waktu", dir: -1 };
+function _qJftNum(p) { return Math.round(10 + ((p || 0) / 100) * 240); }
+// Definisi kolom sortable: key -> label, align, dan fungsi nilai
+function _qCols() {
+  const ujian = _q.mode === "ringkas";
+  return [
+    { k: "waktu", label: "Waktu", align: "left", cls: "px-4 whitespace-nowrap", val: o => o._t || 0 },
+    { k: "siswa", label: "Siswa", align: "left", cls: "px-3", val: o => ((o.name || "") + " " + (o.email || "")).toLowerCase() },
+    { k: "paket", label: "Paket", align: "left", cls: "px-3", val: o => (o.slug || "").toLowerCase() },
+    { k: "soal", label: "Soal", align: "center", cls: "px-3", val: o => (o.total || 0) },
+    { k: "benar", label: "Benar", align: "center", cls: "px-3", val: o => (o.benar ?? o.bestBenar ?? 0) },
+    { k: "skor", label: "Skor", align: "center", cls: "px-3", val: o => (o.skor ?? o.best ?? 0) },
+    { k: "jft", label: "Skala JFT", align: "left", cls: "px-3", val: o => _qJftNum(o.skor ?? o.best ?? 0) },
+    ujian
+      ? { k: "ujian", label: "Ujian", align: "center", cls: "px-3", val: o => (o.n || 0) }
+      : { k: "hapus", label: "Hapus", align: "center", cls: "px-3", val: null },
+  ];
+}
+function _qHeadHtml(extraRight, withStatus) {
+  const arrow = k => {
+    if (_q.sort !== k) return " <span class='text-slate-300'>⇅</span>";
+    return _q.dir === 1 ? " <span class='text-fuji-600'>▲</span>" : " <span class='text-fuji-600'>▼</span>";
+  };
+  const th = c => {
+    const a = c.align === "center" ? "text-center" : c.align === "right" ? "text-right" : "text-left";
+    if (!c.val) return "<th class='" + a + " font-extrabold " + c.cls + " py-3'>" + c.label + "</th>";
+    return "<th class='" + a + " font-extrabold " + c.cls + " py-3'><button data-sort='" + c.k + "' title='Urutkan " + c.label + "' class='hover:text-fuji-600 uppercase tracking-wide'>" + c.label + arrow(c.k) + "</button></th>";
+  };
+  return "<tr>" + _qCols().map(th).join("") + (withStatus === false ? "" : "<th class='text-left font-extrabold px-3 py-3'>Status</th>") + "<th class='font-extrabold px-4 py-3 text-right'>" + (extraRight || "Aksi") + "</th></tr>";
+}
+function _qBindSort(head) {
+  if (!head) return;
+  head.querySelectorAll("[data-sort]").forEach(b => b.onclick = () => {
+    const k = b.getAttribute("data-sort");
+    if (_q.sort === k) _q.dir = -_q.dir;
+    else { _q.sort = k; _q.dir = (k === "siswa" || k === "paket") ? 1 : -1; }
+    renderNilai();
+  });
+}
+function _qSortRows(rows) {
+  const col = _qCols().find(c => c.k === _q.sort);
+  if (!col || !col.val) return rows;
+  const d = _q.dir || 1;
+  return rows.slice().sort((a, b) => {
+    const va = col.val(a), vb = col.val(b);
+    if (typeof va === "string") return va.localeCompare(vb) * d || ((b._t || 0) - (a._t || 0));
+    return ((va || 0) - (vb || 0)) * d || ((b._t || 0) - (a._t || 0));
+  });
+}
 let _qDetailRows = [];
 function _qTime(v) {
   try {
@@ -49,7 +97,7 @@ function renderNilai() {
   let html = "";
   _qDetailRows = [];
   if (_q.mode === "ringkas") {
-    if (head) head.innerHTML = "<tr><th class='text-left font-extrabold px-4 py-3 whitespace-nowrap'>Waktu</th><th class='text-left font-extrabold px-3 py-3'>Siswa</th><th class='text-left font-extrabold px-3 py-3'>Paket</th><th class='font-extrabold px-3 py-3 text-center'>Soal</th><th class='font-extrabold px-3 py-3 text-center'>Benar</th><th class='font-extrabold px-3 py-3 text-center'>Skor</th><th class='text-left font-extrabold px-3 py-3'>Skala JFT</th><th class='font-extrabold px-3 py-3 text-center'>Ujian</th><th class='font-extrabold px-3 py-3 text-center'>Status</th><th class='font-extrabold px-4 py-3 text-right'>Aksi</th></tr>";
+    if (head) { head.innerHTML = _qHeadHtml("Aksi"); _qBindSort(head); }
     const g = {};
     listFin.forEach(v => {
       const k = (v.email || "?") + "|" + (v.slug || "?");
@@ -58,7 +106,9 @@ function renderNilai() {
       if ((v.skor || 0) > o.best) { o.best = v.skor || 0; o.bestBenar = v.benar || 0; o.total = v.total || o.total; o.bestT = v._t; o.bestSecs = v.secs || null; }
       if (v._t > o.last) { o.last = v._t; o.name = v.name || o.name; }
     });
-    window._qLastD = Object.values(g).sort((a, b) => b.best - a.best).slice(0, _q.shown); window._qLastD.forEach((o, _ix) => {
+    // Samakan field agregat dengan accessor sorter (_t = waktu terbaik, skor = nilai terbaik)
+    Object.values(g).forEach(o => { o._t = o.bestT || o.last; o.skor = o.best; o.benar = o.bestBenar; });
+    window._qLastD = _qSortRows(Object.values(g)).slice(0, _q.shown); window._qLastD.forEach((o, _ix) => {
       _qDetailRows.push({ name: o.name, email: o.email, slug: o.slug, benar: o.bestBenar, total: o.total, t: o.bestT || o.last, secs: o.bestSecs });
       const di = _qDetailRows.length - 1;
       const ok = o.best >= 75;
@@ -76,8 +126,8 @@ function renderNilai() {
     });
     $("qCount").textContent = Object.keys(g).length + " siswa-paket";
   } else {
-    if (head) head.innerHTML = "<tr><th class='text-left font-extrabold px-4 py-3 whitespace-nowrap'>Waktu</th><th class='text-left font-extrabold px-3 py-3'>Siswa</th><th class='text-left font-extrabold px-3 py-3'>Paket</th><th class='font-extrabold px-3 py-3 text-center'>Soal</th><th class='font-extrabold px-3 py-3 text-center'>Benar</th><th class='font-extrabold px-3 py-3 text-center'>Skor</th><th class='text-left font-extrabold px-3 py-3'>Skala JFT</th><th class='font-extrabold px-3 py-3 text-center'>Hapus</th><th class='font-extrabold px-4 py-3 text-right'>Aksi</th></tr>";
-    listFin.sort((a, b) => b._t - a._t).slice(0, _q.shown).forEach(v => {
+    if (head) { head.innerHTML = _qHeadHtml("Aksi", false); _qBindSort(head); }
+    _qSortRows(listFin).slice(0, _q.shown).forEach(v => {
       _qDetailRows.push({ name: v.name, email: v.email, slug: v.slug, benar: v.benar, total: v.total, t: v._t, secs: v.secs || null });
       const di = _qDetailRows.length - 1;
       const ok = (v.skor || 0) >= 75;
