@@ -69,11 +69,11 @@ service cloud.firestore {
       allow get: if isSignedIn() && (request.auth.uid == uid || isAdmin());
       allow list: if isAdmin();
       allow create: if isSignedIn()
-                    && request.auth.uid == uid
-                    && request.resource.data.email == request.auth.token.email;
-      allow update: if isSignedIn()
                     && (request.auth.uid == uid || isAdmin())
-                    && request.resource.data.email == resource.data.email;
+                    && (request.resource.data.email == request.auth.token.email || isAdmin());
+      allow update: if isAdmin()
+                    || (isSignedIn() && request.auth.uid == uid
+                        && request.resource.data.email == resource.data.email);
     }
 
     // --- Konten soal (kelola via halaman admin, dibaca publik) ---

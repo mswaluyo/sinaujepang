@@ -245,7 +245,66 @@ window._aCsvUsers = function () {
 window._aInitUsers = function () {
   const s = $("uSearch"); if (s) s.oninput = () => { clearTimeout(window._uT); window._uT = setTimeout(renderUsers, 350); };
   const c = $("uCsv"); if (c) c.onclick = window._aCsvUsers;
+  const im = $("uImport"); if (im && !im.dataset.bound) { im.dataset.bound = "1"; im.onchange = window._aImportUsers; }
   renderUsers();
+};
+// Import daftar user Auth dari CSV (hasil tools/sync-users.mjs) ke /users/{uid}.
+// Format header: uid,nama,email,foto,dibuat,login_terakhir
+window._aImportUsers = async function (ev) {
+  const msg = $("uImportMsg");
+  const say = t => { if (msg) msg.textContent = t; };
+  try {
+    const f = (ev.target.files || [])[0];
+    if (!f) return;
+    say("Membaca file…");
+    let txt = await f.text();
+    if (txt.charCodeAt(0) === 0xFEFF) txt = txt.slice(1);
+    const lines = txt.split(/\r?\n/).filter(l => l.trim());
+    if (lines.length < 2) { say("File kosong."); return; }
+    const split = l => { const out = []; let cur = "", q = false; for (let i = 0; i < l.length; i++) { const c = l[i]; if (q) { if (c === '"') { if (l[i + 1] === '"') { cur += '"'; i++; } else q = false; } else cur += c; } else if (c === '"') q = true; else if (c === ",") { out.push(cur); cur = ""; } else cur += c; } out.push(cur); return out; };
+    const head = split(lines[0]).map(h => h.trim().toLowerCase());
+    const ix = n => head.indexOf(n);
+    const iUid = ix("uid"), iNama = ix("nama"), iEmail = ix("email"), iFoto = ix("foto");
+    const iBuat = ix("dibuat"), iLogin = ix("login_terakhir");
+    if (iUid < 0 || iEmail < 0) { say("Header CSV tidak cocok (perlu uid,nama,email,…)."); return; }
+    const db = window._aDb;
+    let ok = 0, fail = 0;
+    for (let k = 1; k < lines.length; k++) {
+      const c = split(lines[k]);
+      const uid = (c[iUid] || "").trim(), email = (c[iEmail] || "").trim();
+      if (!uid || !email) { fail++; continue; }
+      try {
+        const payload = { name: c[iNama] || "", email, photo: c[iFoto] || "", syncedAt: serverTimestamp() };
+        const toTs = s => { const t = Date.parse(s || ""); return isNaN(t) ? null : new Date(t); };
+        // Jangan timpa data login live: hanya isi bila dokumen belum ada / field kosong
+        const ref = doc(db, "users", uid);
+        let prev = null; try { prev = await getDoc(ref); } catch (e) {}
+        if (prev && prev.exists()) {
+          const p = prev.data() || {};
+          if (!p.name && payload.name) payload.name = payload.name;
+          else delete payload.name;
+          if (!p.photo && payload.photo) { /* keep */ } else delete payload.photo;
+          delete payload.email;
+          const pv = {};
+          if (!p.createdAt && iBuat >= 0) { const t = toTs(c[iBuat]); if (t) pv.createdAt = t; }
+          if (!p.lastLoginAt && iLogin >= 0) { const t = toTs(c[iLogin]); if (t) pv.lastLoginAt = t; }
+          Object.assign(payload, pv);
+          if (!Object.keys(payload).filter(k => k !== "syncedAt").length) { ok++; continue; }
+        } else {
+          const t1 = iBuat >= 0 ? toTs(c[iBuat]) : null, t2 = iLogin >= 0 ? toTs(c[iLogin]) : null;
+          if (t1) payload.createdAt = t1;
+          if (t2) payload.lastLoginAt = t2;
+          payload.loginCount = 0;
+        }
+        await setDoc(ref, payload, { merge: true });
+        ok++;
+      } catch (e) { fail++; }
+      if (k % 10 === 0) say(`Mengimpor… ${k}/${lines.length - 1}`);
+    }
+    say(`Selesai: ${ok} ok${fail ? ", " + fail + " gagal" : ""}.`);
+    _uLoaded = false; _uLoad();
+  } catch (e) { say("Gagal: " + (e.message || e.code)); }
+  try { ev.target.value = ""; } catch (e) {}
 };
 // --- Detail per baris: lembar hasil ala hasil.html ---
 window._aDetail = function (di) {
