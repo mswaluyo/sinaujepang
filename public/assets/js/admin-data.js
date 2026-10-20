@@ -312,7 +312,7 @@ function renderUsers() {
   }).join("");
   box.querySelectorAll("[data-uemail]").forEach(b => b.onclick = () => {
     const em = b.getAttribute("data-uemail") || "";
-    const tabBtn = document.querySelector('.tabBtn[data-tab="nilai"]'); if (tabBtn) tabBtn.click();
+    if (window._aShowTab) window._aShowTab("nilai"); else { const tabBtn = document.querySelector('.tabBtn[data-tab="nilai"]'); if (tabBtn) tabBtn.click(); }
     const f = $("qEmail"); if (f) { f.value = em; }
     const m = $("qMode"); if (m) { m.value = "semua"; }
     window._aLoadNilai(true);
