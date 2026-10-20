@@ -61,7 +61,7 @@ function _qTime(v) {
 function _qFmt(t) { try { return t ? new Date(t).toLocaleString("id-ID", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) : "-"; } catch (e) { return "-"; } }
 function _qJft(p) {
   const J = Math.round(10 + (p / 100) * 240);
-  const lv = J >= 200 ? "A2" : J >= 175 ? "A2.1" : J >= 145 ? "A1" : "-";
+  const lv = J >= 200 ? "A2" : J >= 175 ? "A2.1" : J >= 145 ? "A1" : "0";
   const c = J >= 200 ? "text-emerald-600" : J >= 175 ? "text-lime-600" : J >= 145 ? "text-amber-600" : "text-slate-400";
   return J + "-<span class='font-extrabold " + c + "'>" + lv + "</span>";
 }
