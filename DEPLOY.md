@@ -34,7 +34,7 @@ firebase deploy --only hosting --token <FIREBASE_TOKEN>
 
 ## 1b. Menambah Soal Baru — Deteksi Ulang Kotoba
 
-Kosakata tampil di halaman hafal & Kanji Explorer **bukan** dibaca langsung dari soal, tapi dari **file master kotoba** hasil build. Jadi setelah menambah soal, jalankan langkah ini agar kata baru terdeteksi.
+Kosakata tampil di halaman kotoba (`/kotoba`, dulu `/hafal`) & Kanji Explorer **bukan** dibaca langsung dari soal, tapi dari **file master kotoba** hasil build. Jadi setelah menambah soal, jalankan langkah ini agar kata baru terdeteksi.
 
 ### Alur lengkap
 

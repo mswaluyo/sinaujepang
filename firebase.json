@@ -11,6 +11,18 @@
     ],
     "cleanUrls": true,
     "trailingSlash": false,
+    "redirects": [
+      {
+        "source": "/hafal",
+        "destination": "/kotoba",
+        "type": 301
+      },
+      {
+        "source": "/hafal.html",
+        "destination": "/kotoba",
+        "type": 301
+      }
+    ],
     "headers": [
       {
         "source": "**/*.json",
@@ -37,7 +49,19 @@
       "public": "public",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "**/assets/audio/**"],
       "cleanUrls": true,
-      "trailingSlash": false
+      "trailingSlash": false,
+      "redirects": [
+        {
+          "source": "/hafal",
+          "destination": "/kotoba",
+          "type": 301
+        },
+        {
+          "source": "/hafal.html",
+          "destination": "/kotoba",
+          "type": 301
+        }
+      ]
     }
   ],
   "firestore": {
