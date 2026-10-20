@@ -54,13 +54,16 @@ for (const e of (src.data || [])) {
   out.push({ k: kata, kana, r: e.rom || "", a: arti, p: (e.paket || []).map(p => p.replace("-quiz", "")), j: isWord ? jenis : "N" });
 }
 out.sort((a, b) => a.k.localeCompare(b.k, "ja"));
-// --- Normalisasi verba ke bentuk -masu kini ---
-// Aturan: -mashita -> -masu (ganti ました/ませんでした), bentuk kamus -ru -> -masu
-// (mapping suku kata akhir). Gagal konversi = entri dibuang (bukan verba murni).
+// --- Normalisasi verba ke bentuk -masu POSITIF saja ---
+// Aturan: -masen -> -masu, -mashita -> -masu, bentuk kamus -ru -> -masu.
+// Bila hasil konversi ganda (mis. あいません -> あいます yg sudah ada),
+// gabung paketnya, simpan 1 entri. Gagal konversi = dibuang.
 function toMasu(kana) {
   let k = kana;
-  if (/ませんでした$/.test(k)) return k.replace(/ませんでした$/, "ません");
+  if (/ませんでした$/.test(k)) return k.replace(/ませんでした$/, "ます");
   if (/ました$/.test(k)) return k.replace(/ました$/, "ます");
+  if (/ません$/.test(k)) return k.replace(/ません$/, "ます");
+  if (/ましょう$/.test(k)) return k.replace(/ましょう$/, "ます");
   const map = {
     // godan: a-row -> i-row + ます (urutan: pola panjang dulu!)
     "う": "います", "く": "きます", "ぐ": "ぎます", "す": "します", "つ": "ちます",
@@ -82,20 +85,24 @@ function toMasu(kana) {
   return null;
 }
 const verbsRaw = out.filter(e => e.j === "V");
-const verbs = [];
+const vSeen = new Map();
 let buangVerba = 0;
 for (const e of verbsRaw) {
   const kana = e.kana || e.k;
-  if (/(ます|ません|ましょう)$/.test(kana)) { verbs.push(e); continue; }
-  const m = toMasu(kana);
-  if (!m) { buangVerba++; continue; }
-  // Samakan kanji bila seluruhnya kana; romaji sesuaikan akhiran
-  const kk = (e.k === kana) ? m : e.k;
-  let rr = e.r || "";
-  rr = rr.replace(/(mashita|masen ?deshita|ta|ru)$/i, "masu").replace(/masumasu$/i, "masu");
-  verbs.push({ ...e, k: kk, kana: m, r: rr });
+  let m = null, rr = e.r || "", kk = e.k;
+  if (/(ます)$/.test(kana)) { m = kana; }
+  else { m = toMasu(kana); if (!m) { buangVerba++; continue; }
+    if (e.k === kana) kk = m;
+    rr = rr.replace(/(mashita|mashou|masen ?deshita|masen|ta|ru)$/i, "masu").replace(/masumasu$/i, "masu");
+  }
+  const key = (kk + "|" + m).toLowerCase();
+  if (vSeen.has(key)) {
+    const p = vSeen.get(key);
+    e.p.forEach(x => { if (!p.p.includes(x)) p.p.push(x); });
+  } else vSeen.set(key, { ...e, k: kk, kana: m, r: rr });
 }
-console.log(`  verba normalisasi: ${verbsRaw.length} -> ${verbs.length} bentuk-masu (buang: ${buangVerba})`);
+const verbs = [...vSeen.values()];
+console.log(`  verba normalisasi: ${verbsRaw.length} -> ${verbs.length} bentuk-masu positif (buang: ${buangVerba}, ganda digabung)`);
 const adjs = out.filter(e => e.j === "A");
 const nouns = out.filter(e => e.j === "N");
 console.log(`  verba-masu: ${verbs.length}, adjektiva: ${adjs.length}, nomina: ${nouns.length}`);
