@@ -3,6 +3,12 @@ const $ = id => document.getElementById(id);
 const PACKS = ["aoi-quiz", "basu-quiz", "jinja-quiz", "kagi-quiz", "tamago-quiz", "gakusei-quiz", "magarimasu-quiz"];
 const _q = { mode: "ringkas", rows: [], shown: 50, lastDoc: null, done: false, loading: false, sort: "waktu", dir: -1 };
 function _qJftNum(p) { return Math.round(10 + ((p || 0) / 100) * 240); }
+// J eksak dari benar/total (tanpa lewat persen bulat) — SAMA dengan hasil.html & Detail.
+function _qJftExact(benar, total) {
+  benar = benar || 0; total = total || 0;
+  if (!total) return 10;
+  return Math.round(10 + (benar / total) * 240);
+}
 // Definisi kolom sortable: key -> label, align, dan fungsi nilai
 function _qCols() {
   const ujian = _q.mode === "ringkas";
@@ -13,7 +19,7 @@ function _qCols() {
     { k: "soal", label: "Soal", align: "center", cls: "px-3", val: o => (o.total || 0) },
     { k: "benar", label: "Benar", align: "center", cls: "px-3", val: o => (o.benar ?? o.bestBenar ?? 0) },
     { k: "skor", label: "Skor", align: "center", cls: "px-3", val: o => (o.skor ?? o.best ?? 0) },
-    { k: "jft", label: "Skala JFT", align: "left", cls: "px-3", val: o => _qJftNum(o.skor ?? o.best ?? 0) },
+    { k: "jft", label: "Skala JFT", align: "left", cls: "px-3", val: o => _qJftExact(o.benar ?? o.bestBenar ?? 0, o.total ?? 0) },
     ujian
       ? { k: "ujian", label: "Ujian", align: "center", cls: "px-3", val: o => (o.nShow ?? o.n ?? 0) }
       : { k: "hapus", label: "Hapus", align: "center", cls: "px-3", val: null },
@@ -59,8 +65,8 @@ function _qTime(v) {
   return v.at || 0;
 }
 function _qFmt(t) { try { return t ? new Date(t).toLocaleString("id-ID", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) : "-"; } catch (e) { return "-"; } }
-function _qJft(p) {
-  const J = Math.round(10 + (p / 100) * 240);
+function _qJft(p, benar, total) {
+  const J = (benar != null && total != null) ? _qJftExact(benar, total) : Math.round(10 + (p / 100) * 240);
   const lv = J >= 200 ? "A2" : J >= 175 ? "A2.1" : J >= 145 ? "A1" : "0";
   const c = J >= 200 ? "text-emerald-600" : J >= 175 ? "text-lime-600" : J >= 145 ? "text-amber-600" : "text-slate-400";
   return J + "-<span class='font-extrabold " + c + "'>" + lv + "</span>";
@@ -133,7 +139,7 @@ function renderNilai() {
         + "<td class='px-3 py-2.5 text-center text-slate-500'>" + (o.total || 0) + "</td>"
         + "<td class='px-3 py-2.5 text-center font-bold text-slate-700'>" + o.bestBenar + "</td>"
         + "<td class='px-3 py-2.5 text-center font-extrabold " + (ok ? "text-emerald-600" : "text-slate-700") + "'>" + o.best + "%</td>"
-        + "<td class='px-3 py-2.5 text-slate-600 whitespace-nowrap'>" + _qJft(o.best) + "</td>"
+        + "<td class='px-3 py-2.5 text-slate-600 whitespace-nowrap'>" + _qJft(o.best, o.bestBenar, o.total) + "</td>"
         + "<td class='px-3 py-2.5 text-center'><span class='text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full'>" + o.nShow + "x</span></td>"
         + "<td class='px-3 py-2.5 text-center'>" + _qBadge(ok ? "Lulus" : "Belum", ok) + "</td>"
         + "<td class='px-4 py-2.5 text-right'><button onclick='window._aDetail(" + di + ")' class='inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-700 text-white text-[12px] font-bold px-3 py-1.5 rounded-lg transition-colors'><i class='fa-solid fa-file-lines'></i>Detail</button></td></tr>";
@@ -153,7 +159,7 @@ function renderNilai() {
         + "<td class='px-3 py-2.5 text-center text-slate-500'>" + (v.total || 0) + "</td>"
         + "<td class='px-3 py-2.5 text-center font-bold text-slate-700'>" + (v.benar || 0) + "</td>"
         + "<td class='px-3 py-2.5 text-center font-extrabold " + (ok ? "text-emerald-600" : "text-slate-700") + "'>" + (v.skor || 0) + "%</td>"
-        + "<td class='px-3 py-2.5 text-slate-600 whitespace-nowrap'>" + _qJft(v.skor || 0) + "</td>"
+        + "<td class='px-3 py-2.5 text-slate-600 whitespace-nowrap'>" + _qJft(v.skor || 0, v.benar, v.total) + "</td>"
         + "<td class='px-3 py-2.5 text-center'><button data-del='" + v._id + "' title='Hapus percobaan ini' class='inline-flex items-center gap-1 text-[12px] font-bold text-rose-500 hover:text-white hover:bg-rose-500 border border-rose-200 hover:border-rose-500 px-2.5 py-1.5 rounded-lg transition-colors'><i class='fa-solid fa-trash-can'></i></button></td>"
         + "<td class='px-4 py-2.5 text-right'><button onclick='window._aDetail(" + di + ")' class='inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-700 text-white text-[12px] font-bold px-3 py-1.5 rounded-lg transition-colors'><i class='fa-solid fa-file-lines'></i>Detail</button></td></tr>";
     });
