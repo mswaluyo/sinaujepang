@@ -93,6 +93,15 @@
   ]
  },
  {
+  "kanji": "謝ります",
+  "kana": "あやまります",
+  "rom": "ayamarimasu",
+  "arti": "minta maaf",
+  "paket": [
+   "shatsu"
+  ]
+ },
+ {
   "kanji": "あらいます",
   "kana": "あらいます",
   "rom": "araimasu",
@@ -125,6 +134,15 @@
    "hare",
    "orimasu",
    "konpyuutaa"
+  ]
+ },
+ {
+  "kanji": "歩きます",
+  "kana": "あるきます",
+  "rom": "arukimasu",
+  "arti": "berjalan kaki",
+  "paket": [
+   "hashi"
   ]
  },
  {
@@ -517,6 +535,15 @@
   "paket": [
    "jinja",
    "magarimasu"
+  ]
+ },
+ {
+  "kanji": "確認します",
+  "kana": "かくにんします",
+  "rom": "kakunin shimasu",
+  "arti": "memeriksa",
+  "paket": [
+   "kuroi"
   ]
  },
  {
@@ -946,12 +973,48 @@
   ]
  },
  {
+  "kanji": "生産します",
+  "kana": "せいさんします",
+  "rom": "seisan shimasu",
+  "arti": "memproduksi",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
+  "kanji": "説明します",
+  "kana": "せつめいします",
+  "rom": "setsumei shimasu",
+  "arti": "menjelaskan",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
+  "kanji": "操作します",
+  "kana": "そうさします",
+  "rom": "sousa shimasu",
+  "arti": "mengoperasikan",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
   "kanji": "そうします",
   "kana": "そうします",
   "rom": "sou shimasu",
   "arti": "mari begitu",
   "paket": [
    "aoi"
+  ]
+ },
+ {
+  "kanji": "相談します",
+  "kana": "そうだんします",
+  "rom": "soudan shimasu",
+  "arti": "berkonsultasi",
+  "paket": [
+   "kuroi"
   ]
  },
  {
@@ -1016,6 +1079,24 @@
   "arti": "makan",
   "paket": [
    "hare"
+  ]
+ },
+ {
+  "kanji": "試します",
+  "kana": "ためします",
+  "rom": "tameshimasu",
+  "arti": "mencoba",
+  "paket": [
+   "konpyuutaa"
+  ]
+ },
+ {
+  "kanji": "近づきます",
+  "kana": "ちかづきます",
+  "rom": "chikazukimasu",
+  "arti": "mendekati",
+  "paket": [
+   "konpyuutaa"
   ]
  },
  {
@@ -1188,15 +1269,6 @@
   ]
  },
  {
-  "kanji": "のになります",
-  "kana": "のになります",
-  "rom": "no ni narimasu",
-  "arti": "salah tata bahasa",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "のぼります",
   "kana": "のぼります",
   "rom": "noborimasu",
@@ -1268,6 +1340,15 @@
   "kana": "はなします",
   "rom": "hanashimasu",
   "arti": "sopan",
+  "paket": [
+   "basu"
+  ]
+ },
+ {
+  "kanji": "話せます",
+  "kana": "はなせます",
+  "rom": "hanasemasu",
+  "arti": "bisa bicara",
   "paket": [
    "basu"
   ]
@@ -1365,15 +1446,6 @@
   "paket": [
    "orimasu",
    "haburashi"
-  ]
- },
- {
-  "kanji": "まちがえます",
-  "kana": "まちがえます",
-  "rom": "machigaemasu",
-  "arti": "salah",
-  "paket": [
-   "kuroi"
   ]
  },
  {

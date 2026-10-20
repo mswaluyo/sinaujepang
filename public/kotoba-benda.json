@@ -9,24 +9,6 @@
   ]
  },
  {
-  "kanji": "あいますか",
-  "kana": "あいますか",
-  "rom": "aimasu ka",
-  "arti": "mau bertemu",
-  "paket": [
-   "orimasu"
-  ]
- },
- {
-  "kanji": "あおい会社",
-  "kana": "あおいかいしゃ",
-  "rom": "aoi kaisha meeru de chuumon",
-  "arti": "Aoi email ◁ あおい会社・メールで ちゅうもん",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "あきまつり",
   "kana": "あきまつり",
   "rom": "aki matsuri",
@@ -45,15 +27,6 @@
   ]
  },
  {
-  "kanji": "あたたかく",
-  "kana": "あたたかく",
-  "rom": "atatakaku",
-  "arti": "menjadi hangat",
-  "paket": [
-   "kuroi"
-  ]
- },
- {
   "kanji": "あたま",
   "kana": "あたま",
   "rom": "atama",
@@ -61,33 +34,6 @@
   "paket": [
    "jinja",
    "orimasu"
-  ]
- },
- {
-  "kanji": "あたらしい",
-  "kana": "あたらしいふく",
-  "rom": "atarashii fuku",
-  "arti": "Baru ◁ あたらしい ふく",
-  "paket": [
-   "hare"
-  ]
- },
- {
-  "kanji": "あったら",
-  "kana": "あったら",
-  "rom": "attara",
-  "arti": "kalau ada",
-  "paket": [
-   "basu"
-  ]
- },
- {
-  "kanji": "あと",
-  "kana": "あと",
-  "rom": "shokuji no ato",
-  "arti": "sesudah makan ◁ しょくじの あと",
-  "paket": [
-   "gakusei"
   ]
  },
  {
@@ -118,15 +64,6 @@
   ]
  },
  {
-  "kanji": "あやまる",
-  "kana": "あやまる",
-  "rom": "ayamaru",
-  "arti": "minta maaf",
-  "paket": [
-   "shatsu"
-  ]
- },
- {
   "kanji": "ありえないか",
   "kana": "ありえないか",
   "rom": "arienai ka",
@@ -136,77 +73,12 @@
   ]
  },
  {
-  "kanji": "ありがつね",
-  "kana": "ありがつね",
-  "rom": "arigatsune",
-  "arti": "typo",
-  "paket": [
-   "orimasu"
-  ]
- },
- {
-  "kanji": "ありがとう",
-  "kana": "ありがとう",
-  "rom": "arigatou",
-  "arti": "terima kasih",
-  "paket": [
-   "hashi",
-   "konpyuutaa",
-   "tomemasu"
-  ]
- },
- {
   "kanji": "ありますか",
   "kana": "ありますか",
   "rom": "arimasu ka",
   "arti": "ada? (benda)",
   "paket": [
    "kagi"
-  ]
- },
- {
-  "kanji": "あるいたり",
-  "kana": "あるいたり",
-  "rom": "aruitari",
-  "arti": "sesekali berjalan (bentuk tari) ◁ あるいたり (歩いたり)",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
-  "kanji": "あるきます",
-  "kana": "あるきます",
-  "rom": "arukimasu",
-  "arti": "berjalan (bentuk masu) ◁ あるきます(歩きます)",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
-  "kanji": "あるく",
-  "kana": "あるく",
-  "rom": "aruku",
-  "arti": "berjalan kaki",
-  "paket": [
-   "hashi"
-  ]
- },
- {
-  "kanji": "あるくて",
-  "kana": "あるくて",
-  "rom": "arukute",
-  "arti": "berjalan (bentuk te, salah di sini) ◁ あるくて (歩くて)",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
-  "kanji": "あるので",
-  "kana": "あるので",
-  "rom": "aru node",
-  "arti": "karena ada",
-  "paket": [
-   "gakusei"
   ]
  },
  {
@@ -228,31 +100,12 @@
   ]
  },
  {
-  "kanji": "いいえ",
-  "kana": "いいえ",
-  "rom": "iie, imasen",
-  "arti": "tidak, tidak ada ◁ いいえ、いません",
-  "paket": [
-   "jinja",
-   "tamago"
-  ]
- },
- {
   "kanji": "いいわよ",
   "kana": "いいわよ",
   "rom": "ii wa yo",
   "arti": "boleh saja",
   "paket": [
    "kutsushita"
-  ]
- },
- {
-  "kanji": "いえ",
-  "kana": "いえ",
-  "rom": "sensei no ie",
-  "arti": "rumah guru ◁ せんせいの いえ",
-  "paket": [
-   "gakusei"
   ]
  },
  {
@@ -289,44 +142,6 @@
   "arti": "bergegas",
   "paket": [
    "haburashi"
-  ]
- },
- {
-  "kanji": "いそがしかった",
-  "kana": "いそがしかった",
-  "rom": "isogashikatta",
-  "arti": "dulu sibuk",
-  "paket": [
-   "kagi"
-  ]
- },
- {
-  "kanji": "いそがしくて",
-  "kana": "いそがしくて",
-  "rom": "isogashikute",
-  "arti": "sibuk",
-  "paket": [
-   "aoi",
-   "kagi"
-  ]
- },
- {
-  "kanji": "いそがしさ",
-  "kana": "いそがしさ",
-  "rom": "isogashisa",
-  "arti": "kesibukan",
-  "paket": [
-   "kagi"
-  ]
- },
- {
-  "kanji": "いただきます",
-  "kana": "いただきます",
-  "rom": "hai itadakimasu",
-  "arti": "ya selamat makan ◁ はい、いただきます",
-  "paket": [
-   "aoi",
-   "tamago"
   ]
  },
  {
@@ -376,15 +191,6 @@
   ]
  },
  {
-  "kanji": "いません",
-  "kana": "いません",
-  "rom": "iie, imasen",
-  "arti": "tidak, tidak ada ◁ いいえ、いません",
-  "paket": [
-   "jinja"
-  ]
- },
- {
   "kanji": "いやになりますね",
   "kana": "いやになりますね",
   "rom": "iya ni narimasu ne",
@@ -430,15 +236,6 @@
   ]
  },
  {
-  "kanji": "インターネットで",
-  "kana": "インターネットでちゅうもん",
-  "rom": "shiroi kaisha inet visual",
-  "arti": "Shiroi internet ◁ しろい会社・インターネットで ちゅうもん",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "インド",
   "kana": "インド",
   "rom": "indo",
@@ -463,15 +260,6 @@
   "arti": "pergi ke informasi",
   "paket": [
    "jinja"
-  ]
- },
- {
-  "kanji": "うえ",
-  "kana": "うえ",
-  "rom": "tsukue no ue",
-  "arti": "di atas meja ◁ つくえの うえ",
-  "paket": [
-   "gakusei"
   ]
  },
  {
@@ -502,24 +290,6 @@
   ]
  },
  {
-  "kanji": "うんどう",
-  "kana": "うんどう",
-  "rom": "undou",
-  "arti": "olahraga ◁ 運動 ・うんどう",
-  "paket": [
-   "orimasu"
-  ]
- },
- {
-  "kanji": "えいがを",
-  "kana": "えいがを",
-  "rom": "eiga o mimashita",
-  "arti": "menonton film ◁ えいがを みました",
-  "paket": [
-   "magarimasu"
-  ]
- },
- {
   "kanji": "エスカレーター",
   "kana": "エスカレーター",
   "rom": "esukareetaa",
@@ -544,15 +314,6 @@
   "arti": "pensil",
   "paket": [
    "kuroi"
-  ]
- },
- {
-  "kanji": "おいくつ",
-  "kana": "おいくつ",
-  "rom": "oikutsu",
-  "arti": "berapa usianya (sopan)",
-  "paket": [
-   "hashi"
   ]
  },
  {
@@ -630,24 +391,6 @@
   "arti": "cemilan / kue / jajanan",
   "paket": [
    "hashi"
-  ]
- },
- {
-  "kanji": "沖縄に",
-  "kana": "おきなわに",
-  "rom": "ja, Okinawa ni shimashou",
-  "arti": "kalau begitu mari putuskan ke Okinawa ◁ じゃ、沖縄に しましょう",
-  "paket": [
-   "haburashi"
-  ]
- },
- {
-  "kanji": "置きましたか",
-  "kana": "おきましたか",
-  "rom": "doko ka ni okimashita ka",
-  "arti": "apakah menaruh di suatu tempat ◁ どこかに 置きましたか",
-  "paket": [
-   "haburashi"
   ]
  },
  {
@@ -792,30 +535,12 @@
   ]
  },
  {
-  "kanji": "おなかがすいた",
-  "kana": "おなかがすいた",
-  "rom": "onaka ga suita",
-  "arti": "lapar",
-  "paket": [
-   "aoi"
-  ]
- },
- {
   "kanji": "おひさしぶり",
   "kana": "おひさしぶり",
   "rom": "ohisashiburi",
   "arti": "sudah lama tak jumpa",
   "paket": [
    "magarimasu"
-  ]
- },
- {
-  "kanji": "おめでとう",
-  "kana": "おめでとう",
-  "rom": "omedetou",
-  "arti": "selamat",
-  "paket": [
-   "hashi"
   ]
  },
  {
@@ -834,15 +559,6 @@
   "arti": "berat lampau",
   "paket": [
    "basu"
-  ]
- },
- {
-  "kanji": "おもく",
-  "kana": "おもく",
-  "rom": "omoku",
-  "arti": "dengan berat",
-  "paket": [
-   "kutsushita"
   ]
  },
  {
@@ -919,24 +635,6 @@
   ]
  },
  {
-  "kanji": "かいものがたかくなる",
-  "kana": "かいものがたかくなる",
-  "rom": "kaimono ga takaku naru",
-  "arti": "belanja menjadi mahal",
-  "paket": [
-   "kuroi"
-  ]
- },
- {
-  "kanji": "かいものがやすくなる",
-  "kana": "かいものがやすくなる",
-  "rom": "kaimono ga yasuku naru",
-  "arti": "belanja menjadi murah",
-  "paket": [
-   "kuroi"
-  ]
- },
- {
   "kanji": "かえせ",
   "kana": "かえせ",
   "rom": "kaese",
@@ -1000,15 +698,6 @@
   ]
  },
  {
-  "kanji": "かくにんする",
-  "kana": "かくにんする",
-  "rom": "kakunin suru",
-  "arti": "memeriksa",
-  "paket": [
-   "kuroi"
-  ]
- },
- {
   "kanji": "かしゅ",
   "kana": "かしゅ",
   "rom": "kashu",
@@ -1046,15 +735,6 @@
   ]
  },
  {
-  "kanji": "かそご",
-  "kana": "かそご",
-  "rom": "kasogo",
-  "arti": "salah",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "買って",
   "kana": "かって",
   "rom": "katte",
@@ -1070,15 +750,6 @@
   "arti": "pasti / selalu",
   "paket": [
    "hare"
-  ]
- },
- {
-  "kanji": "かばんの",
-  "kana": "かばんの",
-  "rom": "kaban no naka",
-  "arti": "di dalam tas ◁ かばんの なか",
-  "paket": [
-   "gakusei"
   ]
  },
  {
@@ -1157,33 +828,6 @@
   ]
  },
  {
-  "kanji": "きました",
-  "kana": "きました",
-  "rom": "hai, kimashita",
-  "arti": "ya, sudah datang ◁ はい、きました",
-  "paket": [
-   "jinja"
-  ]
- },
- {
-  "kanji": "きゅうぎゅうしゃをよぶ",
-  "kana": "きゅうぎゅうしゃをよぶ",
-  "rom": "kyuukyuusha o yobu",
-  "arti": "memanggil ambulans",
-  "paket": [
-   "jinja"
-  ]
- },
- {
-  "kanji": "きゅうしつ",
-  "kana": "きゅうしつ",
-  "rom": "kyuushitsu",
-  "arti": "salah",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "ぎゅうにく",
   "kana": "ぎゅうにく",
   "rom": "gyuuniku",
@@ -1249,15 +893,6 @@
   ]
  },
  {
-  "kanji": "きをつけて",
-  "kana": "きをつけて",
-  "rom": "ki o tsukete",
-  "arti": "hati-hati",
-  "paket": [
-   "kutsushita"
-  ]
- },
- {
   "kanji": "くだもの",
   "kana": "くだもの",
   "rom": "kudamono",
@@ -1276,15 +911,6 @@
    "jinja",
    "hare",
    "magarimasu"
-  ]
- },
- {
-  "kanji": "ちゅうもん",
-  "kana": "グリーンクリーンかいしゃ",
-  "rom": "guriin kuriin kaisha denwa de chuumon",
-  "arti": "Green Clean telepon ◁ グリーンクリーン会社・でんわで ちゅうもん",
-  "paket": [
-   "hare"
   ]
  },
  {
@@ -1374,15 +1000,6 @@
   ]
  },
  {
-  "kanji": "こうずい",
-  "kana": "こうずい",
-  "rom": "kouzui",
-  "arti": "banjir ◁ 洪水. こうずい",
-  "paket": [
-   "orimasu"
-  ]
- },
- {
   "kanji": "こちらこそ",
   "kana": "こちらこそ",
   "rom": "kochira koso",
@@ -1397,15 +1014,6 @@
   "kana": "ごみばこ",
   "rom": "gomibako",
   "arti": "tempat sampah",
-  "paket": [
-   "hare"
-  ]
- },
- {
-  "kanji": "これからもしよろしく",
-  "kana": "これからもしよろしく",
-  "rom": "kore kara mo yoroshiku",
-  "arti": "mohon bimbingannya ke depan",
   "paket": [
    "hare"
   ]
@@ -1430,15 +1038,6 @@
   ]
  },
  {
-  "kanji": "ご飯を⻝べる",
-  "kana": "ご飯を⻝べる",
-  "rom": "gohan wo taberu",
-  "arti": "makan nasi",
-  "paket": [
-   "konpyuutaa"
-  ]
- },
- {
   "kanji": "サイズ",
   "kana": "サイズ",
   "rom": "saizu",
@@ -1448,30 +1047,12 @@
   ]
  },
  {
-  "kanji": "さぜし",
-  "kana": "さぜし",
-  "rom": "sazeshi",
-  "arti": "salah",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "サッカー",
   "kana": "サッカー",
   "rom": "sakkaa",
   "arti": "sepak bola",
   "paket": [
    "kuroi"
-  ]
- },
- {
-  "kanji": "サッカーを",
-  "kana": "サッカーを",
-  "rom": "sakkaa o shimashita",
-  "arti": "bermain bola ◁ サッカーを しました",
-  "paket": [
-   "magarimasu"
   ]
  },
  {
@@ -1522,24 +1103,6 @@
   ]
  },
  {
-  "kanji": "しあわぜ",
-  "kana": "しあわぜ",
-  "rom": "shiawaze",
-  "arti": "salah",
-  "paket": [
-   "hare"
-  ]
- },
- {
-  "kanji": "しおわせ",
-  "kana": "しおわせ",
-  "rom": "shiowase",
-  "arti": "salah",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "しかく",
   "kana": "しかく",
   "rom": "shikaku",
@@ -1586,24 +1149,6 @@
   ]
  },
  {
-  "kanji": "しました",
-  "kana": "しました",
-  "rom": "sakkaa o shimashita",
-  "arti": "bermain bola ◁ サッカーを しました",
-  "paket": [
-   "magarimasu"
-  ]
- },
- {
-  "kanji": "しましょう",
-  "kana": "しましょう",
-  "rom": "ja, Okinawa ni shimashou",
-  "arti": "kalau begitu mari putuskan ke Okinawa ◁ じゃ、沖縄に しましょう",
-  "paket": [
-   "haburashi"
-  ]
- },
- {
   "kanji": "じむしょ",
   "kana": "じむしょ",
   "rom": "jimusho",
@@ -1620,15 +1165,6 @@
   "arti": "tutup (bentuk te dari shimeru, untuk 〜てください)",
   "paket": [
    "tomemasu"
-  ]
- },
- {
-  "kanji": "じゃ",
-  "kana": "じゃ",
-  "rom": "ja, Okinawa ni shimashou",
-  "arti": "kalau begitu mari putuskan ke Okinawa ◁ じゃ、沖縄に しましょう",
-  "paket": [
-   "haburashi"
   ]
  },
  {
@@ -1679,30 +1215,12 @@
   ]
  },
  {
-  "kanji": "じゅしょう",
-  "kana": "じゅしょう",
-  "rom": "jushou",
-  "arti": "salah baca (shou panjang)",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
   "kanji": "しゅっしゃん",
   "kana": "しゅっしゃん",
   "rom": "shusshan",
   "arti": "kelahiran",
   "paket": [
    "kagi"
-  ]
- },
- {
-  "kanji": "じゅっしょ",
-  "kana": "じゅっしょ",
-  "rom": "jussho",
-  "arti": "salah baca (sokuon)",
-  "paket": [
-   "gakusei"
   ]
  },
  {
@@ -1715,30 +1233,12 @@
   ]
  },
  {
-  "kanji": "出発しましょう",
-  "kana": "しゅっぱつしましょう",
-  "rom": "ja, shuppatsu shimashou",
-  "arti": "kalau begitu mari berangkat ◁ じゃ、出発しましょう",
-  "paket": [
-   "haburashi"
-  ]
- },
- {
   "kanji": "ジョギング",
   "kana": "ジョギング",
   "rom": "jogingu",
   "arti": "joging",
   "paket": [
    "tamago"
-  ]
- },
- {
-  "kanji": "しょくじの",
-  "kana": "しょくじの",
-  "rom": "shokuji no ato",
-  "arti": "sesudah makan ◁ しょくじの あと",
-  "paket": [
-   "gakusei"
   ]
  },
  {
@@ -1757,24 +1257,6 @@
   "arti": "pemberitahuan",
   "paket": [
    "basu"
-  ]
- },
- {
-  "kanji": "しろい会社",
-  "kana": "しろいかいしゃ",
-  "rom": "shiroi kaisha inet visual",
-  "arti": "Shiroi internet ◁ しろい会社・インターネットで ちゅうもん",
-  "paket": [
-   "hare"
-  ]
- },
- {
-  "kanji": "しろい",
-  "kana": "しろいふく",
-  "rom": "shiroi fuku",
-  "arti": "Putih ◁ しろい ふく",
-  "paket": [
-   "hare"
   ]
  },
  {
@@ -1805,30 +1287,12 @@
   ]
  },
  {
-  "kanji": "あらえません",
-  "kana": "すこししかあらえません",
-  "rom": "sukoshi shika araemasen",
-  "arti": "Cuci sedikit ◁ すこししか あらえません",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "すずしかった",
   "kana": "すずしかった",
   "rom": "suzushikatta",
   "arti": "sejuk",
   "paket": [
    "konpyuutaa"
-  ]
- },
- {
-  "kanji": "すずしく",
-  "kana": "すずしく",
-  "rom": "suzushiku",
-  "arti": "menjadi sejuk",
-  "paket": [
-   "kuroi"
   ]
  },
  {
@@ -1850,30 +1314,12 @@
   ]
  },
  {
-  "kanji": "すてきなふく",
-  "kana": "すてきなふく",
-  "rom": "suteki na fuku",
-  "arti": "pakaian bagus",
-  "paket": [
-   "konpyuutaa"
-  ]
- },
- {
   "kanji": "すてきなふくろ",
   "kana": "すてきなふくろ",
   "rom": "suteki na fukuro",
   "arti": "kantong bagus",
   "paket": [
    "konpyuutaa"
-  ]
- },
- {
-  "kanji": "スナックを作る",
-  "kana": "スナックを作る",
-  "rom": "sunakku o tsukuru",
-  "arti": "bukan",
-  "paket": [
-   "magarimasu"
   ]
  },
  {
@@ -1895,15 +1341,6 @@
   ]
  },
  {
-  "kanji": "せいさんする",
-  "kana": "せいさんする",
-  "rom": "seisan suru",
-  "arti": "memproduksi",
-  "paket": [
-   "kuroi"
-  ]
- },
- {
   "kanji": "せっけん",
   "kana": "せっけん",
   "rom": "sekken",
@@ -1913,37 +1350,10 @@
   ]
  },
  {
-  "kanji": "せつめいする",
-  "kana": "せつめいする",
-  "rom": "setsumei suru",
-  "arti": "menjelaskan",
-  "paket": [
-   "kuroi"
-  ]
- },
- {
-  "kanji": "せなかがすいた",
-  "kana": "せなかがすいた",
-  "rom": "senaka ga suita",
-  "arti": "punggung lapar",
-  "paket": [
-   "aoi"
-  ]
- },
- {
   "kanji": "先生",
   "kana": "せんせい",
   "rom": "sensei",
   "arti": "guru / pengajar",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
-  "kanji": "せんせいの",
-  "kana": "せんせいの",
-  "rom": "sensei no ie",
-  "arti": "rumah guru ◁ せんせいの いえ",
   "paket": [
    "gakusei"
   ]
@@ -1967,24 +1377,6 @@
   ]
  },
  {
-  "kanji": "そうさする",
-  "kana": "そうさする",
-  "rom": "sousa suru",
-  "arti": "mengoperasikan",
-  "paket": [
-   "kuroi"
-  ]
- },
- {
-  "kanji": "そうだんする",
-  "kana": "そうだんする",
-  "rom": "soudan suru",
-  "arti": "berkonsultasi",
-  "paket": [
-   "kuroi"
-  ]
- },
- {
   "kanji": "そして",
   "kana": "そして",
   "rom": "soshite",
@@ -2000,15 +1392,6 @@
   "arti": "kelulusan",
   "paket": [
    "kagi"
-  ]
- },
- {
-  "kanji": "すてます",
-  "kana": "そのまますてます",
-  "rom": "sonomama sutemasu",
-  "arti": "Langsung buang ◁ そのまま すてます",
-  "paket": [
-   "hare"
   ]
  },
  {
@@ -2064,24 +1447,6 @@
   "paket": [
    "aoi",
    "basu"
-  ]
- },
- {
-  "kanji": "たいふう",
-  "kana": "たいふう",
-  "rom": "taifuu",
-  "arti": "topan ◁ 台風. たいふう",
-  "paket": [
-   "orimasu"
-  ]
- },
- {
-  "kanji": "ダイレ",
-  "kana": "ダイレ",
-  "rom": "daire",
-  "arti": "salah ketik",
-  "paket": [
-   "hare"
   ]
  },
  {
@@ -2247,15 +1612,6 @@
   ]
  },
  {
-  "kanji": "ためす",
-  "kana": "ためす",
-  "rom": "tamesu",
-  "arti": "mencoba",
-  "paket": [
-   "konpyuutaa"
-  ]
- },
- {
   "kanji": "だれか",
   "kana": "だれか",
   "rom": "dare ka",
@@ -2276,30 +1632,12 @@
   ]
  },
  {
-  "kanji": "ちかづく",
-  "kana": "ちかづく",
-  "rom": "chikazuku",
-  "arti": "mendekati, bahaya saat gempa",
-  "paket": [
-   "konpyuutaa"
-  ]
- },
- {
   "kanji": "ちゅうしゃ",
   "kana": "ちゅうしゃ",
   "rom": "chuusha",
   "arti": "parkir / suntikan",
   "paket": [
    "kutsushita"
-  ]
- },
- {
-  "kanji": "ちゅうりんじょうにいってさがす",
-  "kana": "ちゅうりんじょうにいってさがす",
-  "rom": "chuurinjou ni itte sagasu",
-  "arti": "pergi mencari ke parkir sepeda",
-  "paket": [
-   "jinja"
   ]
  },
  {
@@ -2312,48 +1650,12 @@
   ]
  },
  {
-  "kanji": "ちょっとめまいがする",
-  "kana": "ちょっとめまいがする",
-  "rom": "chotto memai ga suru",
-  "arti": "pusing, itu gejala bukan ungkapan khawatir",
-  "paket": [
-   "konpyuutaa"
-  ]
- },
- {
-  "kanji": "使いました",
-  "kana": "つかいました",
-  "rom": "tsukaimashita",
-  "arti": "sudah memakai ◁ つかいました (使いました)",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "使った",
   "kana": "つかった",
   "rom": "tsukatta",
   "arti": "pernah memakai",
   "paket": [
    "hare"
-  ]
- },
- {
-  "kanji": "使わない",
-  "kana": "つかわない",
-  "rom": "tsukawanai",
-  "arti": "tidak memakai ◁ つかわない (使わない)",
-  "paket": [
-   "hare"
-  ]
- },
- {
-  "kanji": "つくえの",
-  "kana": "つくえの",
-  "rom": "tsukue no ue",
-  "arti": "di atas meja ◁ つくえの うえ",
-  "paket": [
-   "gakusei"
   ]
  },
  {
@@ -2431,57 +1733,12 @@
   ]
  },
  {
-  "kanji": "でんしゃに",
-  "kana": "でんしゃにのりませんでした",
-  "rom": "densha ni norimasen deshita",
-  "arti": "Tak naik kereta ◁ でんしゃに のりませんでした",
-  "paket": [
-   "hare"
-  ]
- },
- {
-  "kanji": "でんしゃを",
-  "kana": "でんしゃをまちがえました",
-  "rom": "densha wo machigaemashita",
-  "arti": "Salah kereta ◁ でんしゃを まちがえました",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "でんしレンジ",
   "kana": "でんしレンジ",
   "rom": "denshi renji",
   "arti": "microwave / pemanas",
   "paket": [
    "hashi"
-  ]
- },
- {
-  "kanji": "でんわで",
-  "kana": "でんわでちゅうもん",
-  "rom": "guriin kuriin kaisha denwa de chuumon",
-  "arti": "Green Clean telepon ◁ グリーンクリーン会社・でんわで ちゅうもん",
-  "paket": [
-   "hare"
-  ]
- },
- {
-  "kanji": "でんわをする",
-  "kana": "でんわをする",
-  "rom": "denwa o suru",
-  "arti": "menelepon",
-  "paket": [
-   "kutsushita"
-  ]
- },
- {
-  "kanji": "トイル",
-  "kana": "トイル",
-  "rom": "toiru",
-  "arti": "salah ketik",
-  "paket": [
-   "hare"
   ]
  },
  {
@@ -2512,15 +1769,6 @@
   "arti": "Tokyo",
   "paket": [
    "kuroi"
-  ]
- },
- {
-  "kanji": "どうぞよろしく",
-  "kana": "どうぞよろしく",
-  "rom": "douzo yoroshiku",
-  "arti": "mohon bantuannya",
-  "paket": [
-   "hashi"
   ]
  },
  {
@@ -2566,15 +1814,6 @@
   "arti": "suatu tempat",
   "paket": [
    "kuroi"
-  ]
- },
- {
-  "kanji": "どこかに",
-  "kana": "どこかに",
-  "rom": "doko ka ni okimashita ka",
-  "arti": "apakah menaruh di suatu tempat ◁ どこかに 置きましたか",
-  "paket": [
-   "haburashi"
   ]
  },
  {
@@ -2651,48 +1890,12 @@
   ]
  },
  {
-  "kanji": "あらいます",
-  "kana": "とりだすまえにあらいます",
-  "rom": "toridasu mae ni araimasu",
-  "arti": "Cuci dulu ◁ とりだすまえに あらいます",
-  "paket": [
-   "hare"
-  ]
- },
- {
-  "kanji": "なか",
-  "kana": "なか",
-  "rom": "kaban no naka",
-  "arti": "di dalam tas ◁ かばんの なか",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
-  "kanji": "ながかった",
-  "kana": "ながかった",
-  "rom": "nagakatta",
-  "arti": "panjang lampau",
-  "paket": [
-   "basu"
-  ]
- },
- {
   "kanji": "なかなか",
   "kana": "なかなか",
   "rom": "nakanaka",
   "arti": "cukup",
   "paket": [
    "magarimasu"
-  ]
- },
- {
-  "kanji": "なくしたスマホに",
-  "kana": "なくしたスマホに",
-  "rom": "nakushita sumaho ni, jibun de denwa shimasu",
-  "arti": "menelepon HP yang hilang sendiri ◁ なくしたスマホに、じぶんででんわします",
-  "paket": [
-   "jinja"
   ]
  },
  {
@@ -2741,39 +1944,12 @@
   ]
  },
  {
-  "kanji": "何をしていますか",
-  "kana": "なにをしていますか",
-  "rom": "nani wo shite imasu ka",
-  "arti": "sedang melakukan apa",
-  "paket": [
-   "haburashi"
-  ]
- },
- {
-  "kanji": "何をしますか",
-  "kana": "なにをしますか",
-  "rom": "nani wo shimasu ka",
-  "arti": "melakukan apa",
-  "paket": [
-   "hashi"
-  ]
- },
- {
   "kanji": "なまえ",
   "kana": "なまえ",
   "rom": "namae",
   "arti": "nama",
   "paket": [
    "jinja"
-  ]
- },
- {
-  "kanji": "にぎやか",
-  "kana": "にぎやか",
-  "rom": "nigiyaka de",
-  "arti": "ramai ◁ にぎやか で",
-  "paket": [
-   "orimasu"
   ]
  },
  {
@@ -2822,15 +1998,6 @@
   ]
  },
  {
-  "kanji": "ねる",
-  "kana": "ねる",
-  "rom": "neru mae",
-  "arti": "sebelum tidur ◁ ねる まえ",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
   "kanji": "乗って",
   "kana": "のって",
   "rom": "notte",
@@ -2858,15 +2025,6 @@
   ]
  },
  {
-  "kanji": "のぼる",
-  "kana": "のぼる",
-  "rom": "noboru",
-  "arti": "kamus",
-  "paket": [
-   "basu"
-  ]
- },
- {
   "kanji": "のむと",
   "kana": "のむと",
   "rom": "nomu to",
@@ -2882,17 +2040,6 @@
   "arti": "sudah naik?",
   "paket": [
    "tamago"
-  ]
- },
- {
-  "kanji": "はい",
-  "kana": "はい",
-  "rom": "hai itadakimasu",
-  "arti": "ya selamat makan ◁ はい、いただきます",
-  "paket": [
-   "aoi",
-   "tamago",
-   "jinja"
   ]
  },
  {
@@ -2979,15 +2126,6 @@
   ]
  },
  {
-  "kanji": "はなせる",
-  "kana": "はなせる",
-  "rom": "hanaseru",
-  "arti": "bisa bicara",
-  "paket": [
-   "basu"
-  ]
- },
- {
   "kanji": "歯ブラシ",
   "kana": "はぶらし",
   "rom": "haburashi",
@@ -3037,15 +2175,6 @@
   "kana": "パンとたまご",
   "rom": "pan to tamago",
   "arti": "roti dan telur",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
-  "kanji": "パンとにく",
-  "kana": "パンとにく",
-  "rom": "pan to niku",
-  "arti": "roti dan daging",
   "paket": [
    "gakusei"
   ]
@@ -3187,15 +2316,6 @@
   ]
  },
  {
-  "kanji": "ペットを公園に連れて⾏きます）",
-  "kana": "ペットを公園に連れて⾏きます）",
-  "rom": "petto wo kouen ni tsurete ikimasu",
-  "arti": "membawa hewan ke taman",
-  "paket": [
-   "konpyuutaa"
-  ]
- },
- {
   "kanji": "ボールペン",
   "kana": "ボールペン",
   "rom": "boorupen",
@@ -3220,24 +2340,6 @@
   "arti": "hotel",
   "paket": [
    "tomemasu"
-  ]
- },
- {
-  "kanji": "ほんを",
-  "kana": "ほんを",
-  "rom": "hon o yomu koto",
-  "arti": "membaca buku ◁ ほんを よむこと",
-  "paket": [
-   "magarimasu"
-  ]
- },
- {
-  "kanji": "まえ",
-  "kana": "まえ",
-  "rom": "shokuji no mae",
-  "arti": "sebelum makan ◁ しょくじの まえ",
-  "paket": [
-   "gakusei"
   ]
  },
  {
@@ -3305,33 +2407,6 @@
   ]
  },
  {
-  "kanji": "みました",
-  "kana": "みました",
-  "rom": "eiga o mimashita",
-  "arti": "menonton film ◁ えいがを みました",
-  "paket": [
-   "magarimasu"
-  ]
- },
- {
-  "kanji": "メールで",
-  "kana": "メールでちゅうもん",
-  "rom": "aoi kaisha meeru de chuumon",
-  "arti": "Aoi email ◁ あおい会社・メールで ちゅうもん",
-  "paket": [
-   "hare"
-  ]
- },
- {
-  "kanji": "メールをする",
-  "kana": "メールをする",
-  "rom": "meeru o suru",
-  "arti": "mengirim email",
-  "paket": [
-   "kutsushita"
-  ]
- },
- {
   "kanji": "もうすぐ",
   "kana": "もうすぐ",
   "rom": "mousugu",
@@ -3373,15 +2448,6 @@
   "kana": "もっていき",
   "rom": "motte iki",
   "arti": "bentuk batang mas",
-  "paket": [
-   "haburashi"
-  ]
- },
- {
-  "kanji": "持って行きて",
-  "kana": "もっていきて",
-  "rom": "motte ikite",
-  "arti": "salah bentukan verba",
   "paket": [
    "haburashi"
   ]
@@ -3433,15 +2499,6 @@
   ]
  },
  {
-  "kanji": "やすく",
-  "kana": "やすく",
-  "rom": "yasuku",
-  "arti": "dengan murah",
-  "paket": [
-   "kutsushita"
-  ]
- },
- {
   "kanji": "やっと",
   "kana": "やっと",
   "rom": "yatto",
@@ -3470,15 +2527,6 @@
   ]
  },
  {
-  "kanji": "ようにありますか",
-  "kana": "ようにありますか",
-  "rom": "you ni arimasu ka",
-  "arti": "salah tata bahasa",
-  "paket": [
-   "hare"
-  ]
- },
- {
   "kanji": "よかった",
   "kana": "よかった",
   "rom": "yokatta",
@@ -3495,34 +2543,6 @@
   "paket": [
    "basu",
    "kutsushita"
-  ]
- },
- {
-  "kanji": "よむこと",
-  "kana": "よむこと",
-  "rom": "hon o yomu koto",
-  "arti": "membaca buku ◁ ほんを よむこと",
-  "paket": [
-   "magarimasu"
-  ]
- },
- {
-  "kanji": "よるしく",
-  "kana": "よるしく",
-  "rom": "yorushiku",
-  "arti": "typo, bukan salam masuk",
-  "paket": [
-   "konpyuutaa"
-  ]
- },
- {
-  "kanji": "よろしく",
-  "kana": "よろしく",
-  "rom": "yoroshiku",
-  "arti": "tolong perlakukan dengan baik",
-  "paket": [
-   "gakusei",
-   "konpyuutaa"
   ]
  },
  {
@@ -3601,24 +2621,6 @@
   ]
  },
  {
-  "kanji": "わかりました",
-  "kana": "わかりました",
-  "rom": "hai, wakarimashita",
-  "arti": "ya, paham ◁ はい、わかりました",
-  "paket": [
-   "jinja"
-  ]
- },
- {
-  "kanji": "わかりません",
-  "kana": "わかりません",
-  "rom": "iie, wakarimasen",
-  "arti": "tidak, saya tidak tahu ◁ いいえ、わかりません",
-  "paket": [
-   "tamago"
-  ]
- },
- {
   "kanji": "わたして",
   "kana": "わたして",
   "rom": "watashite",
@@ -3634,15 +2636,6 @@
   "arti": "menyeberang",
   "paket": [
    "hashi"
-  ]
- },
- {
-  "kanji": "わるく",
-  "kana": "わるく",
-  "rom": "waruku",
-  "arti": "dengan buruk",
-  "paket": [
-   "kutsushita"
   ]
  },
  {
@@ -3682,24 +2675,6 @@
   ]
  },
  {
-  "kanji": "雨がふるまえに",
-  "kana": "雨がふるまえに",
-  "rom": "ame ga furu mae ni",
-  "arti": "sebelum hujan",
-  "paket": [
-   "kuroi"
-  ]
- },
- {
-  "kanji": "運動",
-  "kana": "運動",
-  "rom": "undou",
-  "arti": "olahraga ◁ 運動 ・うんどう",
-  "paket": [
-   "orimasu"
-  ]
- },
- {
   "kanji": "遠くて",
   "kana": "遠くて",
   "rom": "tookute",
@@ -3709,39 +2684,12 @@
   ]
  },
  {
-  "kanji": "休んでいる",
-  "kana": "休んでいる",
-  "rom": "yasunde iru",
-  "arti": "sedang libur",
-  "paket": [
-   "tamago"
-  ]
- },
- {
-  "kanji": "洪水.",
-  "kana": "洪水.",
-  "rom": "kouzui",
-  "arti": "banjir ◁ 洪水. こうずい",
-  "paket": [
-   "orimasu"
-  ]
- },
- {
   "kanji": "三年間",
   "kana": "三年間",
   "rom": "sannenkan",
   "arti": "3 tahun",
   "paket": [
    "kutsushita"
-  ]
- },
- {
-  "kanji": "私を見て",
-  "kana": "私を見て",
-  "rom": "mite",
-  "arti": "lihat",
-  "paket": [
-   "tomemasu"
   ]
  },
  {
@@ -3846,15 +2794,6 @@
   ]
  },
  {
-  "kanji": "台風.",
-  "kana": "台風.",
-  "rom": "taifuu",
-  "arti": "topan ◁ 台風. たいふう",
-  "paket": [
-   "orimasu"
-  ]
- },
- {
   "kanji": "大丈夫",
   "kana": "大丈夫",
   "rom": "daijoubu",
@@ -3892,33 +2831,6 @@
   ]
  },
  {
-  "kanji": "歩いたり",
-  "kana": "歩いたり",
-  "rom": "aruitari",
-  "arti": "sesekali berjalan (bentuk tari) ◁ あるいたり (歩いたり)",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
-  "kanji": "歩きます",
-  "kana": "歩きます",
-  "rom": "arukimasu",
-  "arti": "berjalan (bentuk masu) ◁ あるきます(歩きます)",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
-  "kanji": "歩くて",
-  "kana": "歩くて",
-  "rom": "arukute",
-  "arti": "berjalan (bentuk te, salah di sini) ◁ あるくて (歩くて)",
-  "paket": [
-   "gakusei"
-  ]
- },
- {
   "kanji": "忙しくて",
   "kana": "忙しくて",
   "rom": "isogashikute",
@@ -3934,15 +2846,6 @@
   "arti": "setelah bermain",
   "paket": [
    "konpyuutaa"
-  ]
- },
- {
-  "kanji": "話しする",
-  "kana": "話しする",
-  "rom": "hanashi suru",
-  "arti": "bicara",
-  "paket": [
-   "magarimasu"
   ]
  },
  {

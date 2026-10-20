@@ -1,6 +1,26 @@
 {
- "jumlah": 256,
+ "jumlah": 347,
  "data": [
+  {
+   "kana": "あいますか",
+   "kanaAsli": "あいますか",
+   "rom": "aimasu ka",
+   "arti": "mau bertemu",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "orimasu"
+   ]
+  },
+  {
+   "kana": "あおいかいしゃ・メールでちゅうもん",
+   "kanaAsli": "あおいかいしゃ・メールでちゅうもん",
+   "rom": "aoi kaisha meeru de chuumon",
+   "arti": "Aoi email",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
   {
    "kana": "あおきい",
    "kanaAsli": "あおきい",
@@ -42,11 +62,31 @@
    ]
   },
   {
+   "kana": "あたたかきます",
+   "kanaAsli": "あたたかく",
+   "rom": "atatakaku",
+   "arti": "menjadi hangat",
+   "alasan": "kata kerja (あたたかく -> あたたかきます) belum ada di master",
+   "paket": [
+    "kuroi"
+   ]
+  },
+  {
    "kana": "あたらしいのをいれまします",
    "kanaAsli": "あたらしいのをいれます",
    "rom": "atarashii no wo iremasu",
    "arti": "Isi yang baru",
    "alasan": "kata kerja (あたらしいのをいれます -> あたらしいのをいれまします) belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
+   "kana": "あたらしいふきます",
+   "kanaAsli": "あたらしいふく",
+   "rom": "atarashii fuku",
+   "arti": "Baru",
+   "alasan": "kata kerja (あたらしいふく -> あたらしいふきます) belum ada di master",
    "paket": [
     "hare"
    ]
@@ -59,6 +99,16 @@
    "alasan": "kata baru belum ada di master",
    "paket": [
     "tomemasu"
+   ]
+  },
+  {
+   "kana": "あったら",
+   "kanaAsli": "あったら",
+   "rom": "attara",
+   "arti": "kalau ada",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "basu"
    ]
   },
   {
@@ -79,6 +129,66 @@
    "alasan": "kata kerja (あまりです -> あまりでします) belum ada di master",
    "paket": [
     "magarimasu"
+   ]
+  },
+  {
+   "kana": "あやまります",
+   "kanaAsli": "あやまる",
+   "rom": "ayamaru",
+   "arti": "minta maaf",
+   "alasan": "kata kerja (あやまる -> あやまります) belum ada di master",
+   "paket": [
+    "shatsu"
+   ]
+  },
+  {
+   "kana": "あるいたり (歩いたり)",
+   "kanaAsli": "あるいたり (歩いたり)",
+   "rom": "aruitari",
+   "arti": "sesekali berjalan (bentuk tari)",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "gakusei"
+   ]
+  },
+  {
+   "kana": "あるきます",
+   "kanaAsli": "あるく",
+   "rom": "aruku",
+   "arti": "berjalan kaki",
+   "alasan": "kata kerja (あるく -> あるきます) belum ada di master",
+   "paket": [
+    "hashi"
+   ]
+  },
+  {
+   "kana": "あるくて (歩くて)",
+   "kanaAsli": "あるくて (歩くて)",
+   "rom": "arukute",
+   "arti": "berjalan (bentuk te, salah di sini)",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "gakusei"
+   ]
+  },
+  {
+   "kana": "あるので",
+   "kanaAsli": "あるので",
+   "rom": "aru node",
+   "arti": "karena ada",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "gakusei"
+   ]
+  },
+  {
+   "kana": "いいえ、います",
+   "kanaAsli": "いいえ、いません",
+   "rom": "iie, imasen",
+   "arti": "tidak, tidak ada",
+   "alasan": "kata kerja (いいえ、いません -> いいえ、います) belum ada di master",
+   "paket": [
+    "jinja"
    ]
   },
   {
@@ -109,6 +219,16 @@
    "alasan": "kata kerja (いいえ、まだまだです -> いいえ、まだまだでします) belum ada di master",
    "paket": [
     "aoi"
+   ]
+  },
+  {
+   "kana": "いいえ、わかります",
+   "kanaAsli": "いいえ、わかりません",
+   "rom": "iie, wakarimasen",
+   "arti": "tidak, saya tidak tahu",
+   "alasan": "kata kerja (いいえ、わかりません -> いいえ、わかります) belum ada di master",
+   "paket": [
+    "tamago"
    ]
   },
   {
@@ -193,6 +313,16 @@
    ]
   },
   {
+   "kana": "いそがしかった",
+   "kanaAsli": "いそがしかった",
+   "rom": "isogashikatta",
+   "arti": "dulu sibuk",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "kagi"
+   ]
+  },
+  {
    "kana": "いそがしかったでします",
    "kanaAsli": "いそがしかったです",
    "rom": "isogashikatta desu",
@@ -200,6 +330,16 @@
    "alasan": "kata kerja (いそがしかったです -> いそがしかったでします) belum ada di master",
    "paket": [
     "gakusei"
+   ]
+  },
+  {
+   "kana": "いそがしさ",
+   "kanaAsli": "いそがしさ",
+   "rom": "isogashisa",
+   "arti": "kesibukan",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "kagi"
    ]
   },
   {
@@ -310,6 +450,16 @@
    "alasan": "kata kerja (うれしかったです -> うれしかったでします) belum ada di master",
    "paket": [
     "gakusei"
+   ]
+  },
+  {
+   "kana": "えいがを みます",
+   "kanaAsli": "えいがを みました",
+   "rom": "eiga o mimashita",
+   "arti": "menonton film",
+   "alasan": "kata kerja (えいがを みました -> えいがを みます) belum ada di master",
+   "paket": [
+    "magarimasu"
    ]
   },
   {
@@ -463,6 +613,16 @@
    ]
   },
   {
+   "kana": "おなかがすいた",
+   "kanaAsli": "おなかがすいた",
+   "rom": "onaka ga suita",
+   "arti": "lapar",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "aoi"
+   ]
+  },
+  {
    "kana": "おにぎりさん サンドイッチさん",
    "kanaAsli": "おにぎりさん サンドイッチさん",
    "rom": "onigiri 3 sandwich 3",
@@ -490,6 +650,16 @@
    "alasan": "kata baru belum ada di master",
    "paket": [
     "hare"
+   ]
+  },
+  {
+   "kana": "おもきます",
+   "kanaAsli": "おもく",
+   "rom": "omoku",
+   "arti": "dengan berat",
+   "alasan": "kata kerja (おもく -> おもきます) belum ada di master",
+   "paket": [
+    "kutsushita"
    ]
   },
   {
@@ -603,6 +773,26 @@
    ]
   },
   {
+   "kana": "かいものがたかくなります",
+   "kanaAsli": "かいものがたかくなる",
+   "rom": "kaimono ga takaku naru",
+   "arti": "belanja menjadi mahal",
+   "alasan": "kata kerja (かいものがたかくなる -> かいものがたかくなります) belum ada di master",
+   "paket": [
+    "kuroi"
+   ]
+  },
+  {
+   "kana": "かいものがやすくなります",
+   "kanaAsli": "かいものがやすくなる",
+   "rom": "kaimono ga yasuku naru",
+   "arti": "belanja menjadi murah",
+   "alasan": "kata kerja (かいものがやすくなる -> かいものがやすくなります) belum ada di master",
+   "paket": [
+    "kuroi"
+   ]
+  },
+  {
    "kana": "かいものにいきます",
    "kanaAsli": "かいものにいく",
    "rom": "kaimono ni iku",
@@ -623,6 +813,16 @@
    ]
   },
   {
+   "kana": "かくにんします",
+   "kanaAsli": "かくにんする",
+   "rom": "kakunin suru",
+   "arti": "memeriksa",
+   "alasan": "kata kerja (かくにんする -> かくにんします) belum ada di master",
+   "paket": [
+    "kuroi"
+   ]
+  },
+  {
    "kana": "かくれます",
    "kanaAsli": "かくれる",
    "rom": "kakureru",
@@ -630,6 +830,16 @@
    "alasan": "kata kerja (かくれる -> かくれます) belum ada di master",
    "paket": [
     "konpyuutaa"
+   ]
+  },
+  {
+   "kana": "かそご",
+   "kanaAsli": "かそご",
+   "rom": "kasogo",
+   "arti": "salah",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hare"
    ]
   },
   {
@@ -660,6 +870,16 @@
    "alasan": "kata kerja (かってもらいました -> かってもらいます) belum ada di master",
    "paket": [
     "hashi"
+   ]
+  },
+  {
+   "kana": "かばんの なか",
+   "kanaAsli": "かばんの なか",
+   "rom": "kaban no naka",
+   "arti": "di dalam tas",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "gakusei"
    ]
   },
   {
@@ -723,6 +943,26 @@
    ]
   },
   {
+   "kana": "きゅうぎゅうしゃをよびます",
+   "kanaAsli": "きゅうぎゅうしゃをよぶ",
+   "rom": "kyuukyuusha o yobu",
+   "arti": "memanggil ambulans",
+   "alasan": "kata kerja (きゅうぎゅうしゃをよぶ -> きゅうぎゅうしゃをよびます) belum ada di master",
+   "paket": [
+    "jinja"
+   ]
+  },
+  {
+   "kana": "きゅうしちます",
+   "kanaAsli": "きゅうしつ",
+   "rom": "kyuushitsu",
+   "arti": "salah",
+   "alasan": "kata kerja (きゅうしつ -> きゅうしちます) belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
    "kana": "きゅげちます",
    "kanaAsli": "きゅげつ",
    "rom": "kyugetsu",
@@ -730,6 +970,16 @@
    "alasan": "kata kerja (きゅげつ -> きゅげちます) belum ada di master",
    "paket": [
     "orimasu"
+   ]
+  },
+  {
+   "kana": "きをつけて",
+   "kanaAsli": "きをつけて",
+   "rom": "ki o tsukete",
+   "arti": "hati-hati",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "kutsushita"
    ]
   },
   {
@@ -741,6 +991,16 @@
    "paket": [
     "hashi",
     "konpyuutaa"
+   ]
+  },
+  {
+   "kana": "グリーンクリーンかいしゃ・でんわでちゅうもん",
+   "kanaAsli": "グリーンクリーンかいしゃ・でんわでちゅうもん",
+   "rom": "guriin kuriin kaisha denwa de chuumon",
+   "arti": "Green Clean telepon",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hare"
    ]
   },
   {
@@ -854,6 +1114,16 @@
    ]
   },
   {
+   "kana": "これからもしよろしきます",
+   "kanaAsli": "これからもしよろしく",
+   "rom": "kore kara mo yoroshiku",
+   "arti": "mohon bimbingannya ke depan",
+   "alasan": "kata kerja (これからもしよろしく -> これからもしよろしきます) belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
    "kana": "こんどからはじめまします",
    "kanaAsli": "こんどからはじめます",
    "rom": "kondo kara hajimemasu",
@@ -861,6 +1131,16 @@
    "alasan": "kata kerja (こんどからはじめます -> こんどからはじめまします) belum ada di master",
    "paket": [
     "gakusei"
+   ]
+  },
+  {
+   "kana": "ご飯を⻝べります",
+   "kanaAsli": "ご飯を⻝べる",
+   "rom": "gohan wo taberu",
+   "arti": "makan nasi",
+   "alasan": "kata kerja (ご飯を⻝べる -> ご飯を⻝べります) belum ada di master",
+   "paket": [
+    "konpyuutaa"
    ]
   },
   {
@@ -884,6 +1164,16 @@
    ]
   },
   {
+   "kana": "さぜし",
+   "kanaAsli": "さぜし",
+   "rom": "sazeshi",
+   "arti": "salah",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
    "kana": "さだめます",
    "kanaAsli": "さだめる",
    "rom": "sadameru",
@@ -891,6 +1181,16 @@
    "alasan": "kata kerja (さだめる -> さだめます) belum ada di master",
    "paket": [
     "orimasu"
+   ]
+  },
+  {
+   "kana": "サッカーを します",
+   "kanaAsli": "サッカーを しました",
+   "rom": "sakkaa o shimashita",
+   "arti": "bermain bola",
+   "alasan": "kata kerja (サッカーを しました -> サッカーを します) belum ada di master",
+   "paket": [
+    "magarimasu"
    ]
   },
   {
@@ -908,6 +1208,26 @@
    "kanaAsli": "さんびゃくよんじゅうご",
    "rom": "sanbyaku yonjuugo",
    "arti": "Nomor 345",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
+   "kana": "しあわぜ",
+   "kanaAsli": "しあわぜ",
+   "rom": "shiawaze",
+   "arti": "salah",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
+   "kana": "しおわせ",
+   "kanaAsli": "しおわせ",
+   "rom": "shiowase",
+   "arti": "salah",
    "alasan": "kata baru belum ada di master",
    "paket": [
     "hare"
@@ -954,11 +1274,31 @@
    ]
   },
   {
+   "kana": "じゃ、おきなわに します",
+   "kanaAsli": "じゃ、おきなわに しましょう",
+   "rom": "ja, Okinawa ni shimashou",
+   "arti": "kalau begitu mari putuskan ke Okinawa",
+   "alasan": "kata kerja (じゃ、おきなわに しましょう -> じゃ、おきなわに します) belum ada di master",
+   "paket": [
+    "haburashi"
+   ]
+  },
+  {
    "kana": "じゃ、おきなわは だめですね",
    "kanaAsli": "じゃ、おきなわは だめですね",
    "rom": "ja, Okinawa wa dame desu ne",
    "arti": "kalau begitu Okinawa tidak bisa ya",
    "alasan": "kata baru belum ada di master",
+   "paket": [
+    "haburashi"
+   ]
+  },
+  {
+   "kana": "じゃ、しゅっぱつします",
+   "kanaAsli": "じゃ、しゅっぱつしましょう",
+   "rom": "ja, shuppatsu shimashou",
+   "arti": "kalau begitu mari berangkat",
+   "alasan": "kata kerja (じゃ、しゅっぱつしましょう -> じゃ、しゅっぱつします) belum ada di master",
    "paket": [
     "haburashi"
    ]
@@ -1064,6 +1404,16 @@
    ]
   },
   {
+   "kana": "じゅしょいます",
+   "kanaAsli": "じゅしょう",
+   "rom": "jushou",
+   "arti": "salah baca (shou panjang)",
+   "alasan": "kata kerja (じゅしょう -> じゅしょいます) belum ada di master",
+   "paket": [
+    "gakusei"
+   ]
+  },
+  {
    "kana": "しゅしん",
    "kanaAsli": "しゅしん",
    "rom": "shushin",
@@ -1071,6 +1421,16 @@
    "alasan": "kata baru belum ada di master",
    "paket": [
     "tomemasu"
+   ]
+  },
+  {
+   "kana": "じゅっしょ",
+   "kanaAsli": "じゅっしょ",
+   "rom": "jussho",
+   "arti": "salah baca (sokuon)",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "gakusei"
    ]
   },
   {
@@ -1121,6 +1481,46 @@
    "alasan": "kata baru belum ada di master",
    "paket": [
     "jinja"
+   ]
+  },
+  {
+   "kana": "しょくじの あと",
+   "kanaAsli": "しょくじの あと",
+   "rom": "shokuji no ato",
+   "arti": "sesudah makan",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "gakusei"
+   ]
+  },
+  {
+   "kana": "しょくじの まえ",
+   "kanaAsli": "しょくじの まえ",
+   "rom": "shokuji no mae",
+   "arti": "sebelum makan",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "gakusei"
+   ]
+  },
+  {
+   "kana": "しろいかいしゃ・インターネットでちゅうもん",
+   "kanaAsli": "しろいかいしゃ・インターネットでちゅうもん",
+   "rom": "shiroi kaisha inet visual",
+   "arti": "Shiroi internet",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
+   "kana": "しろいふきます",
+   "kanaAsli": "しろいふく",
+   "rom": "shiroi fuku",
+   "arti": "Putih",
+   "alasan": "kata kerja (しろいふく -> しろいふきます) belum ada di master",
+   "paket": [
+    "hare"
    ]
   },
   {
@@ -1185,6 +1585,26 @@
    ]
   },
   {
+   "kana": "すこししかあらえます",
+   "kanaAsli": "すこししかあらえません",
+   "rom": "sukoshi shika araemasen",
+   "arti": "Cuci sedikit",
+   "alasan": "kata kerja (すこししかあらえません -> すこししかあらえます) belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
+   "kana": "すずしきます",
+   "kanaAsli": "すずしく",
+   "rom": "suzushiku",
+   "arti": "menjadi sejuk",
+   "alasan": "kata kerja (すずしく -> すずしきます) belum ada di master",
+   "paket": [
+    "kuroi"
+   ]
+  },
+  {
    "kana": "すってることでします",
    "kanaAsli": "すってることです",
    "rom": "koto",
@@ -1192,6 +1612,26 @@
    "alasan": "kata kerja (すってることです -> すってることでします) belum ada di master",
    "paket": [
     "orimasu"
+   ]
+  },
+  {
+   "kana": "すてきなふきます",
+   "kanaAsli": "すてきなふく",
+   "rom": "suteki na fuku",
+   "arti": "pakaian bagus",
+   "alasan": "kata kerja (すてきなふく -> すてきなふきます) belum ada di master",
+   "paket": [
+    "konpyuutaa"
+   ]
+  },
+  {
+   "kana": "スナックを作ります",
+   "kanaAsli": "スナックを作る",
+   "rom": "sunakku o tsukuru",
+   "arti": "bukan",
+   "alasan": "kata kerja (スナックを作る -> スナックを作ります) belum ada di master",
+   "paket": [
+    "magarimasu"
    ]
   },
   {
@@ -1215,6 +1655,16 @@
    ]
   },
   {
+   "kana": "せいさんします",
+   "kanaAsli": "せいさんする",
+   "rom": "seisan suru",
+   "arti": "memproduksi",
+   "alasan": "kata kerja (せいさんする -> せいさんします) belum ada di master",
+   "paket": [
+    "kuroi"
+   ]
+  },
+  {
    "kana": "せきが でる とき",
    "kanaAsli": "せきが でる とき",
    "rom": "seki ga deru toki",
@@ -1222,6 +1672,26 @@
    "alasan": "kata baru belum ada di master",
    "paket": [
     "gakusei"
+   ]
+  },
+  {
+   "kana": "せつめいします",
+   "kanaAsli": "せつめいする",
+   "rom": "setsumei suru",
+   "arti": "menjelaskan",
+   "alasan": "kata kerja (せつめいする -> せつめいします) belum ada di master",
+   "paket": [
+    "kuroi"
+   ]
+  },
+  {
+   "kana": "せなかがすいた",
+   "kanaAsli": "せなかがすいた",
+   "rom": "senaka ga suita",
+   "arti": "punggung lapar",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "aoi"
    ]
   },
   {
@@ -1235,6 +1705,36 @@
    ]
   },
   {
+   "kana": "せんせいの いえ",
+   "kanaAsli": "せんせいの いえ",
+   "rom": "sensei no ie",
+   "arti": "rumah guru",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "gakusei"
+   ]
+  },
+  {
+   "kana": "そうさします",
+   "kanaAsli": "そうさする",
+   "rom": "sousa suru",
+   "arti": "mengoperasikan",
+   "alasan": "kata kerja (そうさする -> そうさします) belum ada di master",
+   "paket": [
+    "kuroi"
+   ]
+  },
+  {
+   "kana": "そうだんします",
+   "kanaAsli": "そうだんする",
+   "rom": "soudan suru",
+   "arti": "berkonsultasi",
+   "alasan": "kata kerja (そうだんする -> そうだんします) belum ada di master",
+   "paket": [
+    "kuroi"
+   ]
+  },
+  {
    "kana": "そうですね",
    "kanaAsli": "そうですね",
    "rom": "sou desu ne",
@@ -1243,6 +1743,16 @@
    "paket": [
     "aoi",
     "kuroi"
+   ]
+  },
+  {
+   "kana": "そのまますてまします",
+   "kanaAsli": "そのまますてます",
+   "rom": "sonomama sutemasu",
+   "arti": "Langsung buang",
+   "alasan": "kata kerja (そのまますてます -> そのまますてまします) belum ada di master",
+   "paket": [
+    "hare"
    ]
   },
   {
@@ -1303,6 +1813,16 @@
    "alasan": "kata baru belum ada di master",
    "paket": [
     "kagi"
+   ]
+  },
+  {
+   "kana": "ダイレ",
+   "kanaAsli": "ダイレ",
+   "rom": "daire",
+   "arti": "salah ketik",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hare"
    ]
   },
   {
@@ -1386,6 +1906,16 @@
    ]
   },
   {
+   "kana": "ためします",
+   "kanaAsli": "ためす",
+   "rom": "tamesu",
+   "arti": "mencoba",
+   "alasan": "kata kerja (ためす -> ためします) belum ada di master",
+   "paket": [
+    "konpyuutaa"
+   ]
+  },
+  {
    "kana": "だめでします",
    "kanaAsli": "だめです",
    "rom": "dame desu",
@@ -1404,6 +1934,26 @@
    "paket": [
     "hare",
     "kagi"
+   ]
+  },
+  {
+   "kana": "ちかづきます",
+   "kanaAsli": "ちかづく",
+   "rom": "chikazuku",
+   "arti": "mendekati, bahaya saat gempa",
+   "alasan": "kata kerja (ちかづく -> ちかづきます) belum ada di master",
+   "paket": [
+    "konpyuutaa"
+   ]
+  },
+  {
+   "kana": "ちゅうりんじょうにいってさがします",
+   "kanaAsli": "ちゅうりんじょうにいってさがす",
+   "rom": "chuurinjou ni itte sagasu",
+   "arti": "pergi mencari ke parkir sepeda",
+   "alasan": "kata kerja (ちゅうりんじょうにいってさがす -> ちゅうりんじょうにいってさがします) belum ada di master",
+   "paket": [
+    "jinja"
    ]
   },
   {
@@ -1437,6 +1987,16 @@
    ]
   },
   {
+   "kana": "ちょっとめまいがします",
+   "kanaAsli": "ちょっとめまいがする",
+   "rom": "chotto memai ga suru",
+   "arti": "pusing, itu gejala bukan ungkapan khawatir",
+   "alasan": "kata kerja (ちょっとめまいがする -> ちょっとめまいがします) belum ada di master",
+   "paket": [
+    "konpyuutaa"
+   ]
+  },
+  {
    "kana": "ついたままですね",
    "kanaAsli": "ついたままですね",
    "rom": "m1",
@@ -1444,6 +2004,16 @@
    "alasan": "kata baru belum ada di master",
    "paket": [
     "basu"
+   ]
+  },
+  {
+   "kana": "つかいます",
+   "kanaAsli": "つかいました",
+   "rom": "tsukaimashita",
+   "arti": "sudah memakai",
+   "alasan": "kata kerja (つかいました -> つかいます) belum ada di master",
+   "paket": [
+    "hare"
    ]
   },
   {
@@ -1467,6 +2037,16 @@
    ]
   },
   {
+   "kana": "つかわない",
+   "kanaAsli": "つかわない",
+   "rom": "tsukawanai",
+   "arti": "tidak memakai",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
    "kana": "つぎ、くるときに、レシートをもってきます",
    "kanaAsli": "つぎ、くるときに、レシートをもってくる",
    "rom": "tsugi, kuru toki ni, reshiito o motte kuru",
@@ -1474,6 +2054,16 @@
    "alasan": "kata kerja (つぎ、くるときに、レシートをもってくる -> つぎ、くるときに、レシートをもってきます) belum ada di master",
    "paket": [
     "jinja"
+   ]
+  },
+  {
+   "kana": "つくえの うえ",
+   "kanaAsli": "つくえの うえ",
+   "rom": "tsukue no ue",
+   "arti": "di atas meja",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "gakusei"
    ]
   },
   {
@@ -1512,6 +2102,46 @@
    "rom": "densha ga hayakatta desu",
    "arti": "Kereta cepat",
    "alasan": "kata kerja (でんしゃがはやかったです -> でんしゃがはやかったでします) belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
+   "kana": "でんしゃにのります",
+   "kanaAsli": "でんしゃにのりませんでした",
+   "rom": "densha ni norimasen deshita",
+   "arti": "Tak naik kereta",
+   "alasan": "kata kerja (でんしゃにのりませんでした -> でんしゃにのります) belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
+   "kana": "でんしゃをまちがえます",
+   "kanaAsli": "でんしゃをまちがえました",
+   "rom": "densha wo machigaemashita",
+   "arti": "Salah kereta",
+   "alasan": "kata kerja (でんしゃをまちがえました -> でんしゃをまちがえます) belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
+   "kana": "でんわをします",
+   "kanaAsli": "でんわをする",
+   "rom": "denwa o suru",
+   "arti": "menelepon",
+   "alasan": "kata kerja (でんわをする -> でんわをします) belum ada di master",
+   "paket": [
+    "kutsushita"
+   ]
+  },
+  {
+   "kana": "トイル",
+   "kanaAsli": "トイル",
+   "rom": "toiru",
+   "arti": "salah ketik",
+   "alasan": "kata baru belum ada di master",
    "paket": [
     "hare"
    ]
@@ -1574,6 +2204,16 @@
    "alasan": "kata kerja (ときどき にほんごの ほんを よみます -> ときどき にほんごの ほんを よみまします) belum ada di master",
    "paket": [
     "magarimasu"
+   ]
+  },
+  {
+   "kana": "どこかに おきましたか",
+   "kanaAsli": "どこかに おきましたか",
+   "rom": "doko ka ni okimashita ka",
+   "arti": "apakah menaruh di suatu tempat",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "haburashi"
    ]
   },
   {
@@ -1698,6 +2338,36 @@
    ]
   },
   {
+   "kana": "とりだすまえにあらいまします",
+   "kanaAsli": "とりだすまえにあらいます",
+   "rom": "toridasu mae ni araimasu",
+   "arti": "Cuci dulu",
+   "alasan": "kata kerja (とりだすまえにあらいます -> とりだすまえにあらいまします) belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
+   "kana": "ながかった",
+   "kanaAsli": "ながかった",
+   "rom": "nagakatta",
+   "arti": "panjang lampau",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "basu"
+   ]
+  },
+  {
+   "kana": "なくしたスマホに、じぶんででんわしまします",
+   "kanaAsli": "なくしたスマホに、じぶんででんわします",
+   "rom": "nakushita sumaho ni, jibun de denwa shimasu",
+   "arti": "menelepon HP yang hilang sendiri",
+   "alasan": "kata kerja (なくしたスマホに、じぶんででんわします -> なくしたスマホに、じぶんででんわしまします) belum ada di master",
+   "paket": [
+    "jinja"
+   ]
+  },
+  {
    "kana": "なにいきまします",
    "kanaAsli": "なにいきます",
    "rom": "nani ikimasu",
@@ -1735,6 +2405,26 @@
    "alasan": "kata kerja (なにもいません -> なにもいます) belum ada di master",
    "paket": [
     "konpyuutaa"
+   ]
+  },
+  {
+   "kana": "なにをしていますか",
+   "kanaAsli": "なにをしていますか",
+   "rom": "nani wo shite imasu ka",
+   "arti": "sedang melakukan apa",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "haburashi"
+   ]
+  },
+  {
+   "kana": "なにをしますか",
+   "kanaAsli": "なにをしますか",
+   "rom": "nani wo shimasu ka",
+   "arti": "melakukan apa",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hashi"
    ]
   },
   {
@@ -1811,6 +2501,36 @@
    ]
   },
   {
+   "kana": "ねる まえ",
+   "kanaAsli": "ねる まえ",
+   "rom": "neru mae",
+   "arti": "sebelum tidur",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "gakusei"
+   ]
+  },
+  {
+   "kana": "のになります",
+   "kanaAsli": "のになりました",
+   "rom": "no ni narimashita",
+   "arti": "salah tata bahasa",
+   "alasan": "kata kerja (のになりました -> のになります) belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
+   "kana": "のぼります",
+   "kanaAsli": "のぼる",
+   "rom": "noboru",
+   "arti": "kamus",
+   "alasan": "kata kerja (のぼる -> のぼります) belum ada di master",
+   "paket": [
+    "basu"
+   ]
+  },
+  {
    "kana": "のみますか?",
    "kanaAsli": "のみますか?",
    "rom": "nomimasu ka",
@@ -1833,10 +2553,11 @@
   {
    "kana": "はい、いただきまします",
    "kanaAsli": "はい、いただきます",
-   "rom": "hai, itadakimasu",
-   "arti": "ya, saya terima (dengan senang hati)",
+   "rom": "hai itadakimasu",
+   "arti": "ya selamat makan",
    "alasan": "kata kerja (はい、いただきます -> はい、いただきまします) belum ada di master",
    "paket": [
+    "aoi",
     "tamago"
    ]
   },
@@ -1846,6 +2567,16 @@
    "rom": "hai, okagesama de",
    "arti": "ya, berkat Anda",
    "alasan": "kata baru belum ada di master",
+   "paket": [
+    "jinja"
+   ]
+  },
+  {
+   "kana": "はい、きます",
+   "kanaAsli": "はい、きました",
+   "rom": "hai, kimashita",
+   "arti": "ya, sudah datang",
+   "alasan": "kata kerja (はい、きました -> はい、きます) belum ada di master",
    "paket": [
     "jinja"
    ]
@@ -1878,6 +2609,16 @@
    "alasan": "kata baru belum ada di master",
    "paket": [
     "tamago"
+   ]
+  },
+  {
+   "kana": "はい、わかります",
+   "kanaAsli": "はい、わかりました",
+   "rom": "hai, wakarimashita",
+   "arti": "ya, paham",
+   "alasan": "kata kerja (はい、わかりました -> はい、わかります) belum ada di master",
+   "paket": [
+    "jinja"
    ]
   },
   {
@@ -1941,6 +2682,16 @@
    ]
   },
   {
+   "kana": "パンとにきます",
+   "kanaAsli": "パンとにく",
+   "rom": "pan to niku",
+   "arti": "roti dan daging",
+   "alasan": "kata kerja (パンとにく -> パンとにきます) belum ada di master",
+   "paket": [
+    "gakusei"
+   ]
+  },
+  {
    "kana": "ひごうき",
    "kanaAsli": "ひごうき",
    "rom": "higouki",
@@ -1978,6 +2729,16 @@
    "alasan": "kata baru belum ada di master",
    "paket": [
     "hare"
+   ]
+  },
+  {
+   "kana": "ペットを公園に連れて⾏きます）",
+   "kanaAsli": "ペットを公園に連れて⾏きます）",
+   "rom": "petto wo kouen ni tsurete ikimasu",
+   "arti": "membawa hewan ke taman",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "konpyuutaa"
    ]
   },
   {
@@ -2041,6 +2802,16 @@
    ]
   },
   {
+   "kana": "ほんを よむこと",
+   "kanaAsli": "ほんを よむこと",
+   "rom": "hon o yomu koto",
+   "arti": "membaca buku",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "magarimasu"
+   ]
+  },
+  {
    "kana": "まいしゅう がっこうで にほんごを べんきょうしまします",
    "kanaAsli": "まいしゅう がっこうで にほんごを べんきょうします",
    "rom": "maishuu gakkou de nihongo o benkyou shimasu",
@@ -2068,6 +2839,16 @@
    "alasan": "kata kerja (まだです -> まだでします) belum ada di master",
    "paket": [
     "aoi"
+   ]
+  },
+  {
+   "kana": "まちがえまします",
+   "kanaAsli": "まちがえます",
+   "rom": "machigaemasu",
+   "arti": "salah",
+   "alasan": "kata kerja (まちがえます -> まちがえまします) belum ada di master",
+   "paket": [
+    "kuroi"
    ]
   },
   {
@@ -2141,6 +2922,16 @@
    ]
   },
   {
+   "kana": "メールをします",
+   "kanaAsli": "メールをする",
+   "rom": "meeru o suru",
+   "arti": "mengirim email",
+   "alasan": "kata kerja (メールをする -> メールをします) belum ada di master",
+   "paket": [
+    "kutsushita"
+   ]
+  },
+  {
    "kana": "メモします",
    "kanaAsli": "メモする",
    "rom": "memo suru",
@@ -2161,6 +2952,16 @@
    ]
   },
   {
+   "kana": "もっていきて",
+   "kanaAsli": "もっていきて",
+   "rom": "motte ikite",
+   "arti": "salah bentukan verba",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "haburashi"
+   ]
+  },
+  {
    "kana": "やずい",
    "kanaAsli": "やずい",
    "rom": "yazui",
@@ -2178,6 +2979,16 @@
    "alasan": "kata kerja (やすかったです -> やすかったでします) belum ada di master",
    "paket": [
     "gakusei"
+   ]
+  },
+  {
+   "kana": "やすきます",
+   "kanaAsli": "やすく",
+   "rom": "yasuku",
+   "arti": "dengan murah",
+   "alasan": "kata kerja (やすく -> やすきます) belum ada di master",
+   "paket": [
+    "kutsushita"
    ]
   },
   {
@@ -2241,6 +3052,16 @@
    ]
   },
   {
+   "kana": "ようにありますか",
+   "kanaAsli": "ようにありますか",
+   "rom": "you ni arimasu ka",
+   "arti": "salah tata bahasa",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "hare"
+   ]
+  },
+  {
    "kana": "よかったでします",
    "kanaAsli": "よかったです",
    "rom": "yokatta desu",
@@ -2282,6 +3103,27 @@
    ]
   },
   {
+   "kana": "よるしきます",
+   "kanaAsli": "よるしく",
+   "rom": "yorushiku",
+   "arti": "typo, bukan salam masuk",
+   "alasan": "kata kerja (よるしく -> よるしきます) belum ada di master",
+   "paket": [
+    "konpyuutaa"
+   ]
+  },
+  {
+   "kana": "よろしきます",
+   "kanaAsli": "よろしく",
+   "rom": "yoroshiku",
+   "arti": "tolong perlakukan dengan baik",
+   "alasan": "kata kerja (よろしく -> よろしきます) belum ada di master",
+   "paket": [
+    "gakusei",
+    "konpyuutaa"
+   ]
+  },
+  {
    "kana": "りょこうしたいでします",
    "kanaAsli": "りょこうしたいです",
    "rom": "ryokou shitai desu",
@@ -2319,6 +3161,36 @@
    "alasan": "kata kerja (わるいです -> わるいでします) belum ada di master",
    "paket": [
     "konpyuutaa"
+   ]
+  },
+  {
+   "kana": "わるきます",
+   "kanaAsli": "わるく",
+   "rom": "waruku",
+   "arti": "dengan buruk",
+   "alasan": "kata kerja (わるく -> わるきます) belum ada di master",
+   "paket": [
+    "kutsushita"
+   ]
+  },
+  {
+   "kana": "雨がふるまえに",
+   "kanaAsli": "雨がふるまえに",
+   "rom": "ame ga furu mae ni",
+   "arti": "sebelum hujan",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "kuroi"
+   ]
+  },
+  {
+   "kana": "運動 ・うんどいます",
+   "kanaAsli": "運動 ・うんどう",
+   "rom": "undou",
+   "arti": "olahraga",
+   "alasan": "kata kerja (運動 ・うんどう -> 運動 ・うんどいます) belum ada di master",
+   "paket": [
+    "orimasu"
    ]
   },
   {
@@ -2412,6 +3284,16 @@
    ]
   },
   {
+   "kana": "休んでいます",
+   "kanaAsli": "休んでいる",
+   "rom": "yasunde iru",
+   "arti": "sedang libur",
+   "alasan": "kata kerja (休んでいる -> 休んでいます) belum ada di master",
+   "paket": [
+    "tamago"
+   ]
+  },
+  {
    "kana": "教えてもらえませんか",
    "kanaAsli": "教えてもらえませんか",
    "rom": "oshiete moraemasen ka",
@@ -2482,6 +3364,16 @@
    ]
   },
   {
+   "kana": "私を見て",
+   "kanaAsli": "私を見て",
+   "rom": "mite",
+   "arti": "lihat",
+   "alasan": "kata baru belum ada di master",
+   "paket": [
+    "tomemasu"
+   ]
+  },
+  {
    "kana": "食べてもらえませんか",
    "kanaAsli": "食べてもらえませんか",
    "rom": "tabete moraemasen ka",
@@ -2509,6 +3401,16 @@
    "alasan": "kata kerja (図書館 に 電話 を かけます -> 図書館 に 電話 を かけまします) belum ada di master",
    "paket": [
     "magarimasu"
+   ]
+  },
+  {
+   "kana": "台風. たいふいます",
+   "kanaAsli": "台風. たいふう",
+   "rom": "taifuu",
+   "arti": "topan",
+   "alasan": "kata kerja (台風. たいふう -> 台風. たいふいます) belum ada di master",
+   "paket": [
+    "orimasu"
    ]
   },
   {
@@ -2569,6 +3471,16 @@
    "alasan": "kata kerja (明日けします -> 明日けしまします) belum ada di master",
    "paket": [
     "gakusei"
+   ]
+  },
+  {
+   "kana": "話しします",
+   "kanaAsli": "話しする",
+   "rom": "hanashi suru",
+   "arti": "bicara",
+   "alasan": "kata kerja (話しする -> 話しします) belum ada di master",
+   "paket": [
+    "magarimasu"
    ]
   }
  ]

@@ -1,11 +1,49 @@
 [
  {
+  "kanji": "ありがとう",
+  "kana": "ありがとう",
+  "rom": "arigatou",
+  "arti": "terima kasih",
+  "paket": [
+   "hashi",
+   "konpyuutaa",
+   "tomemasu"
+  ]
+ },
+ {
+  "kanji": "おいくつ",
+  "kana": "おいくつ",
+  "rom": "oikutsu",
+  "arti": "berapa usianya (sopan)",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
+  "kanji": "おめでとう",
+  "kana": "おめでとう",
+  "rom": "omedetou",
+  "arti": "selamat",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
   "kanji": "それは問題ではありません",
   "kana": "それはもんだいではありません",
   "rom": "sore wa mondai de wa arimasen",
   "arti": "itu bukan masalah",
   "paket": [
    "kutsushita"
+  ]
+ },
+ {
+  "kanji": "どうぞよろしく",
+  "kana": "どうぞよろしく",
+  "rom": "douzo yoroshiku",
+  "arti": "mohon bantuannya",
+  "paket": [
+   "hashi"
   ]
  },
  {
