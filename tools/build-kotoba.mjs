@@ -5,6 +5,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { HAPUS, BETUL, KANJI_BAKU, KANA_BAKU } from "./kotoba-fix.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(HERE, "..");
@@ -20,10 +21,24 @@ const isMashitaKana = k => /(ました|ませんでした)$/.test(k);
 const isAdjIKana = k => /い$/.test(k) && k.length >= 3 && !/(ます|です|さい|かいもの|でんき|びょうき|くすり|はし|かみ|つき|やま|かわ|うみ|さかな|たまご|こども|おとこ|おんな|ともだち|せんせい|がくせい|かいしゃ|でんしゃ|くるま|じてんしゃ|ひこうき|とけい|かぎ|かさ|くつ|ぼうし|しゃしん|てがみ|しんぶん|ざっし|ほん|かばん|つくえ|いす|ドア|まど|へや|トイレ|シャワー|エレベーター|エスカレーター|テレビ|ラジオ|パソコン|カメラ|ビデオ|プール|コート|グラウンド|レストラン|ホテル|デパート|コンビニ|スーパー|ぎんこう|びょういん|ゆうびんきょく|としょかん|こうえん|どうぶつえん|がっこう|だいがく|きょうかい|じんじゃ|おてら|いえ|えき|きかい)$/.test(k);
 const isAdjNaKana = k => /(てき|ゆうめい|べんり|しずか|にぎやか|ひま|じょうぶ|あんぜん|かんたん|しんせつ|げんき|ゆうき|きれい|すてき|べんきょう|そうじ|せんたく|りょうり|しょくじ|さんぽ|うんどう|しごと|やすみ|びょうき|けが|じこ|じしん|たいふう|こうずい)$/.test(k) || /な$/.test(k);
 for (const e of (src.data || [])) {
-  const kata = (e.kanji || e.kana || "").trim();
-  const kana = (e.kana || "").trim();
-  const arti = (e.arti || "").trim();
+  let kata = (e.kanji || e.kana || "").trim();
+  let kana = (e.kana || "").trim();
+  let arti = (e.arti || "").trim();
+  const rom0 = (e.rom || "").trim();
   if (!kata || !arti) continue;
+  // 0) KOREKSI AUDIT: hapus typo/bukan-baku/kalimat rusak
+  if (HAPUS.includes(kata) || HAPUS.includes(kana)) { buangKalimat++; continue; }
+  // 0b) KOREKSI AUDIT: betulkan kana/romaji/arti
+  const bk = BETUL[kata] || BETUL[kana];
+  if (bk) {
+    if (bk.kana) { kata = kata === kana ? bk.kana : kata; kana = bk.kana; }
+    if (bk.rom) e.rom = bk.rom;
+    if (bk.arti) arti = bk.arti;
+  }
+  // 0c) KOREKSI AUDIT: satukan ke tulisan kanji baku + kana baku
+  if (KANA_BAKU[kana]) kana = KANA_BAKU[kana];
+  if (KANJI_BAKU[kana]) kata = KANJI_BAKU[kana];
+  if (KANJI_BAKU[kata]) kata = KANJI_BAKU[kata];
   if (!/^[぀-ヿ一-鿿々〆]/.test(kata)) { buangKalimat++; continue; }
   if (/salah eja|bukan kata baku|pengecoh|keliru|bentuk salah|bunyi keliru/i.test(arti)) { buangKalimat++; continue; }
   // Wajib murni Jepang: kata & kana tanpa huruf latin/angka (buang "pictures", "gambar 2", dsb)
@@ -123,17 +138,35 @@ for (const e of verbsRaw) {
     if (e.k === kana) kk = m;
     rr = rr.replace(/(mashita|mashou|masen ?deshita|masen|ta|ru)$/i, "masu").replace(/masumasu$/i, "masu");
   }
-  const key = (kk + "|" + m).toLowerCase();
+  // Dedup kunci KANA (bukan tulisan): のみます hare + のみます kutsushita -> 1 entri
+  const key = m.toLowerCase();
   if (vSeen.has(key)) {
     const p = vSeen.get(key);
     e.p.forEach(x => { if (!p.p.includes(x)) p.p.push(x); });
+    // tulisan kanji menang atas hiragana murni
+    if (/[一-鿿]/.test(kk) && !/[一-鿿]/.test(p.k)) { p.k = kk; }
   } else vSeen.set(key, { ...e, k: kk, kana: m, r: rr });
 }
 const verbs = [...vSeen.values()];
 console.log(`  verba normalisasi: ${verbsRaw.length} -> ${verbs.length} bentuk-masu positif (buang: ${buangVerba}, ganda digabung)`);
-const adjs = out.filter(e => e.j === "A");
-const nouns = out.filter(e => e.j === "N");
-console.log(`  verba-masu: ${verbs.length}, adjektiva: ${adjs.length}, nomina: ${nouns.length}`);
+// Dedup umum adjektiva+nomina kunci kana (hiragana vs kanji gabung)
+function dedupKana(list) {
+  const seen = new Map(); let g = 0;
+  for (const e of list) {
+    const key = (e.kana || e.k).toLowerCase();
+    if (seen.has(key)) {
+      const p = seen.get(key);
+      e.p.forEach(x => { if (!p.p.includes(x)) p.p.push(x); });
+      if (/[一-鿿]/.test(e.k) && !/[一-鿿]/.test(p.k)) p.k = e.k;
+      g++;
+    } else seen.set(key, { ...e });
+  }
+  return { list: [...seen.values()], gabung: g };
+}
+const _ad = dedupKana(out.filter(e => e.j === "A"));
+const _no = dedupKana(out.filter(e => e.j === "N"));
+const adjs = _ad.list, nouns = _no.list;
+console.log(`  verba-masu: ${verbs.length}, adjektiva: ${adjs.length} (gabung ${_ad.gabung}), nomina: ${nouns.length} (gabung ${_no.gabung})`);
 const pack = o => [o.k, o.kana, o.r, o.a, o.p.join(","), o.pecah || ""];
 const head = (n, j) => "// " + n + " — hasil saring otomatis (jangan edit manual).\n// Dibuat: " + new Date().toISOString() + " | jumlah: " + j.length + "\n// Regenerasi: node tools/build-kotoba.mjs\n";
 fs.writeFileSync(path.join(ROOT, "public", "assets", "js", "kotoba-verb.js"),
