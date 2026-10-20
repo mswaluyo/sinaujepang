@@ -133,6 +133,7 @@ function renderNilai() {
         + "<td class='px-4 py-2.5 text-right'><button onclick='window._aDetail(" + di + ")' class='inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-700 text-white text-[12px] font-bold px-3 py-1.5 rounded-lg transition-colors'><i class='fa-solid fa-file-lines'></i>Detail</button></td></tr>";
     });
     $("qCount").textContent = Object.keys(g).length + " siswa-paket";
+    if ($("qSoal")) { let tb = 0, tt = 0; window._qLastD.forEach(o => { tb += o.bestBenar || 0; tt += o.total || 0; }); $("qSoal").textContent = "Soal: " + tb + "/" + tt + " benar"; }
   } else {
     if (head) { head.innerHTML = _qHeadHtml("Aksi", false); _qBindSort(head); }
     _qSortRows(listFin).slice(0, _q.shown).forEach(v => {
@@ -151,6 +152,7 @@ function renderNilai() {
         + "<td class='px-4 py-2.5 text-right'><button onclick='window._aDetail(" + di + ")' class='inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-700 text-white text-[12px] font-bold px-3 py-1.5 rounded-lg transition-colors'><i class='fa-solid fa-file-lines'></i>Detail</button></td></tr>";
     });
     $("qCount").textContent = listFin.length + " ujian";
+    if ($("qSoal")) { let tb = 0, tt = 0; _qDetailRows.forEach(o => { tb += o.benar || 0; tt += o.total || 0; }); $("qSoal").textContent = "Soal: " + tb + "/" + tt + " benar"; }
   }
   $("qRows").innerHTML = html || "<tr><td colspan='10' class='py-10 text-center text-slate-400 text-[13px]'><i class='fa-regular fa-folder-open text-2xl block mb-2'></i>Belum ada data yang cocok dengan filter.</td></tr>";
   const more = $("qMore"); if (more) { const habis = _q.done && _qDetailRows.length >= listFin.length; more.disabled = habis; more.classList.toggle("opacity-50", habis); more.innerHTML = habis ? "Semua data sudah ditampilkan ✓" : "Muat 100 lagi <i class='fa-solid fa-chevron-down ml-1'></i>"; }
