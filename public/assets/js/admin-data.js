@@ -251,14 +251,19 @@ function _uTime(v) {
   return 0;
 }
 function _uStats() {
-  const g = {};
+  // Agregat per email dari _q.rows yang SUDAH didedup by _id.
+  // Abaikan: tanpa email, tanpa slug (data onboarding lama), skor 0 + secs kosong (latihan kosong/test).
+  const seen = new Set(), g = {};
   (_q.rows || []).filter(v => v.done !== false).forEach(v => {
+    if (!v._id || seen.has(v._id)) return;
+    seen.add(v._id);
     const em = (v.email || "").trim().toLowerCase();
-    if (!em) return;
+    if (!em || !v.slug) return;
+    if (!(v.skor > 0) && !v.secs) return;
     if (!g[em]) g[em] = { n: 0, best: -1, packs: {} };
     const o = g[em]; o.n++;
     if ((v.skor || 0) > o.best) o.best = v.skor || 0;
-    if (v.slug) o.packs[v.slug] = true;
+    o.packs[v.slug] = true;
   });
   return g;
 }
