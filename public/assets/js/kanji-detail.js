@@ -35,8 +35,17 @@
       + "<div class='text-[12px] text-slate-500'>" + esc(info.bacaan || "") + "</div></div>"
       + "<div class='text-[13px] font-extrabold text-slate-700 mb-1.5'>📚 Kosakata hafalan (" + vocab.length + " kata tunggal dari soal):</div>"
       + (vocab.map(function (w) {
+        // Warnai per karakter: target biru, kanji lain yg ada di data oranye, luar data merah
+        var kh = "";
+        String(w.k || "").split("").forEach(function (c) {
+          if (c === ch) kh += "<span class='text-fuji-600 font-black'>" + esc(c) + "</span>";
+          else if (/[一-鿿々〆]/.test(c)) {
+            var ada = KJ.KANJI_ALL && KJ.KANJI_ALL[c];
+            kh += "<span class='font-bold " + (ada ? "text-amber-600" : "text-rose-500") + "'>" + esc(c) + "</span>";
+          } else kh += esc(c);
+        });
         return "<div class='bg-white border border-slate-200 rounded-lg px-3 py-2 mb-1.5 flex flex-wrap items-baseline gap-x-2'>"
-          + "<span class='font-bold text-slate-800 text-[15px]'>" + esc(w.k) + "</span>"
+          + "<span class='font-bold text-slate-800 text-[15px]'>" + kh + "</span>"
           + "<span class='text-[12px] text-fuji-600'>" + esc(w.kana || "") + "</span>"
           + "<span class='text-[12px] text-slate-500 italic'>" + esc(w.rom || "") + "</span>"
           + "<span class='text-[13px] text-slate-700'>= " + esc(w.a || "") + "</span>"
