@@ -84,7 +84,19 @@ window.fujiScore = {
         rec.email = window.fujiUser.email;
         rec.name = window.fujiUser.displayName || rec.name || "";
         rec.createdAt = serverTimestamp();
-        await addDoc(collection(window.fujiDb, "attempts"), rec);
+        // Upsert 1 dokumen per siswa-paket: {uid}_{slug} (gabung bila proses baru,
+        // bukan tambah dokumen). Riwayat percobaan disimpan di array history (maks 20).
+        var uid = window.fujiUser.uid || String(window.fujiUser.email).replace(/[^a-z0-9]/gi, "_");
+        var ref = doc(window.fujiDb, "attempts", uid + "_" + slug);
+        var prev = null;
+        try { prev = await getDoc(ref); } catch (e) {}
+        var hist = [];
+        try { if (prev && prev.exists() && Array.isArray(prev.data().history)) hist = prev.data().history; } catch (e) {}
+        hist.unshift({ benar: rec.benar, total: rec.total, skor: rec.skor, secs: rec.secs || null, at: rec.at });
+        if (hist.length > 20) hist = hist.slice(0, 20);
+        rec.history = hist;
+        rec.n = hist.length;
+        await setDoc(ref, rec, { merge: true });
         return "firestore";
       } catch (e) {
         if (window.console) console.warn("[fujiScore] firestore gagal, fallback lokal:", e);

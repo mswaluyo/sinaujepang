@@ -24,7 +24,7 @@ service cloud.firestore {
         && data.email == request.auth.token.email;
     }
 
-    // --- Nilai siswa ---
+    // --- Nilai siswa (1 dokumen per siswa-paket: {uid}_{slug}, upsert via setDoc merge) ---
     match /attempts/{docId} {
       // Buat nilai: wajib login + email dokumen = email login + field minimal valid
       allow create: if isSignedIn()
@@ -36,8 +36,13 @@ service cloud.firestore {
                   && (resource.data.email == request.auth.token.email || isAdmin());
       // List/query: admin bebas; user biasa tetap boleh query (wajib where email==miliknya di klien)
       allow list: if isAdmin() || isSignedIn();
-      // Update/hapus: admin saja (cegah overwrite siswa)
-      allow update, delete: if isAdmin();
+      // Update: pemilik boleh menimpa dokumennya sendiri (upsert skor terbaru),
+      // dengan syarat email tidak diganti. Hapus: admin saja.
+      allow update: if isAdmin()
+                    || (isSignedIn()
+                        && resource.data.email == request.auth.token.email
+                        && request.resource.data.email == resource.data.email);
+      allow delete: if isAdmin();
     }
 
     // --- Progres sesi kuis lintas device (resume per akun, kedaluwarsa 24 jam) ---
