@@ -15,8 +15,9 @@ const out = [];
 const KAL = /(です|ください|ましょう|ませんか|たいです|ほしい|なくて|なくちゃ|なさい|しなさい|[。、？！?.!])/;
 const isMasuKana = k => /(ます|ません|ましょう)$/.test(k);
 const isMashitaKana = k => /(ました|ませんでした)$/.test(k);
-const isTeKana = k => /(て|で|なくて|ないで)$/.test(k) && !/(ます|です)$/.test(k);
-const isAdjIKana = k => /い$/.test(k) && !/(ます|です|さい|かい|いち|しち|じ|ち|き|み|ひ|に|り|いえ|えき|きかい|でんき|びょうき|くすり|はし|かみ|つき|やま|かわ|うみ|さかな|たまご|こども|おとこ|おんな|ともだち|せんせい|がくせい|かいしゃ|でんしゃ|くるま|じてんしゃ|ひこうき|とけい|かぎ|かさ|くつ|ぼうし|しゃしん|てがみ|しんぶん|ざっし|ほん|かばん|つくえ|いす|ドア|まど|へや|トイレ|シャワー|エレベーター|エスカレーター|テレビ|ラジオ|パソコン|カメラ|ビデオ|プール|コート|グラウンド|レストラン|ホテル|デパート|コンビニ|スーパー|ぎんこう|びょういん|ゆうびんきょく|としょかん|こうえん|どうぶつえん|がっこう|だいがく|きょうかい|じんじゃ|おてら)$/.test(k);
+// CATATAN: bentuk -te/-de tidak lagi dihitung verba (aturan akhiran で terlalu longgar,
+// menangkap sapaan & frasa). Hanya -masu kini + -mashita lampau.
+const isAdjIKana = k => /い$/.test(k) && k.length >= 3 && !/(ます|です|さい|かいもの|でんき|びょうき|くすり|はし|かみ|つき|やま|かわ|うみ|さかな|たまご|こども|おとこ|おんな|ともだち|せんせい|がくせい|かいしゃ|でんしゃ|くるま|じてんしゃ|ひこうき|とけい|かぎ|かさ|くつ|ぼうし|しゃしん|てがみ|しんぶん|ざっし|ほん|かばん|つくえ|いす|ドア|まど|へや|トイレ|シャワー|エレベーター|エスカレーター|テレビ|ラジオ|パソコン|カメラ|ビデオ|プール|コート|グラウンド|レストラン|ホテル|デパート|コンビニ|スーパー|ぎんこう|びょういん|ゆうびんきょく|としょかん|こうえん|どうぶつえん|がっこう|だいがく|きょうかい|じんじゃ|おてら|いえ|えき|きかい)$/.test(k);
 const isAdjNaKana = k => /(てき|ゆうめい|べんり|しずか|にぎやか|ひま|じょうぶ|あんぜん|かんたん|しんせつ|げんき|ゆうき|きれい|すてき|べんきょう|そうじ|せんたく|りょうり|しょくじ|さんぽ|うんどう|しごと|やすみ|びょうき|けが|じこ|じしん|たいふう|こうずい)$/.test(k) || /な$/.test(k);
 for (const e of (src.data || [])) {
   const kata = (e.kanji || e.kana || "").trim();
@@ -24,16 +25,19 @@ for (const e of (src.data || [])) {
   const arti = (e.arti || "").trim();
   if (!kata || !arti) continue;
   if (!/^[぀-ヿ一-鿿々〆]/.test(kata)) { buangKalimat++; continue; }
-  if (/salah eja|bukan kata baku|pengecoh/i.test(arti)) { buangKalimat++; continue; }
+  if (/salah eja|bukan kata baku|pengecoh|keliru|bentuk salah|bunyi keliru/i.test(arti)) { buangKalimat++; continue; }
   const nKata = kata.split(/\s+/).filter(Boolean).length;
-  // Verba -masu/-masen/-mashou (kini), -mashita (lampau), -te (sambung): IZINKAN
+  // Verba -masu/-masen/-mashou (kini) + -mashita (lampau): IZINKAN
   const vMasu = isMasuKana(kana) || isMasuKana(kata);
   const vPast = !vMasu && (isMashitaKana(kana) || isMashitaKana(kata));
-  const vTe = !vMasu && !vPast && (isTeKana(kana) || isTeKana(kata));
+  // Verba bentuk kamus: akhiran -ru khas verba DAN arti berupa kerja (me-/ber-/men-)
+  // — agar あかい/あたたかい (sifat) dan あたま (benda) tidak ikut
+  const vDict = !vMasu && !vPast && /(える|いる|うる|おる|きる|ぎる|しる|じる|ちる|にる|ひる|びる|みる|ける|げる|せる|ぜる|てる|でる|ねる|へる|べる|める|れる)$/.test(kana)
+    && /^(me|ber|men|di|ter)[a-z]/i.test(arti);
   // Adjektiva-i: IZINKAN walau 1 kata berakhiran い (kecuali kata benda umum)
-  const aI = !vMasu && !vPast && !vTe && (isAdjIKana(kana) || isAdjIKana(kata));
-  const aNa = !vMasu && !vPast && !vTe && !aI && (isAdjNaKana(kana) || isAdjNaKana(kata));
-  const isWord = vMasu || vPast || vTe || aI || aNa;
+  const aI = !vMasu && !vPast && !vDict && (isAdjIKana(kana) || isAdjIKana(kata));
+  const aNa = !vMasu && !vPast && !vDict && !aI && (isAdjNaKana(kana) || isAdjNaKana(kata));
+  const isWord = vMasu || vPast || vDict || aI || aNa;
   // Selain kata kerja/sifat: buang kalimat, angka/waktu, frasa panjang
   if (!isWord) {
     if (KAL.test(kata) || KAL.test(kana)) { buangKalimat++; continue; }
@@ -45,7 +49,7 @@ for (const e of (src.data || [])) {
     if (nKata > 2) { buangKalimat++; continue; }
     if (/(です|ください)/.test(kana)) { buangKalimat++; continue; }
   }
-  const jenis = (vMasu || vPast || vTe) ? "V" : "A";
+  const jenis = (vMasu || vPast || vDict) ? "V" : "A";
   // Nomina ditentukan di bawah (bukan kata kerja/sifat)
   out.push({ k: kata, kana, r: e.rom || "", a: arti, p: (e.paket || []).map(p => p.replace("-quiz", "")), j: isWord ? jenis : "N" });
 }
