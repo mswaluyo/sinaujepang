@@ -74,14 +74,22 @@ window._aLoadNilai = async function (reset) {
   _q.loading = true;
   $("qRows").innerHTML = "<tr><td colspan='10' class='py-10 text-center text-slate-400 text-[13px]'><i class='fa-solid fa-circle-notch fa-spin mr-2'></i>Memuat nilai…</td></tr>";
   try {
+    // Tanpa orderBy server: ambil per halaman lalu sortir di klien pakai _t (createdAt||at).
+    // Alasan: orderBy("createdAt") tak stabil untuk dokumen lama tanpa field itu -> startAfter
+    // bisa mengembalikan dokumen yang sama -> hitungan Ujian (o.n) membengkak ratusan.
     let qq;
     try {
-      qq = _q.lastDoc ? query(collection(db, "attempts"), orderBy("createdAt", "desc"), startAfter(_q.lastDoc), limit(500)) : query(collection(db, "attempts"), orderBy("createdAt", "desc"), limit(500));
+      qq = _q.lastDoc ? query(collection(db, "attempts"), startAfter(_q.lastDoc), limit(500)) : query(collection(db, "attempts"), limit(500));
     } catch (e) { qq = query(collection(db, "attempts"), limit(500)); }
     const snap = await getDocs(qq);
     if (snap.size) _q.lastDoc = snap.docs[snap.docs.length - 1];
     if (snap.size < 500) _q.done = true;
-    snap.forEach(d => { const v = d.data() || {}; v._id = d.id; v._t = _qTime(v); _q.rows.push(v); });
+    const seen = new Set(_q.rows.map(r => r._id));
+    snap.forEach(d => {
+      if (seen.has(d.id)) return; // cegah duplikat antar-halaman (query orderBy createdAt tak stabil utk dok lama tanpa field itu)
+      seen.add(d.id);
+      const v = d.data() || {}; v._id = d.id; v._t = _qTime(v); _q.rows.push(v);
+    });
     renderNilai();
   } catch (e) { $("qRows").innerHTML = "<tr><td colspan='10' class='py-10 text-center text-rose-500 text-[13px]'>Gagal memuat: " + _qEsc(e.message || e.code || e) + "</td></tr>"; }
   _q.loading = false;
