@@ -165,6 +165,28 @@ window._aCsvNilai = function () {
   a.download = "nilai-siswa.csv"; document.body.appendChild(a); a.click(); a.remove();
 };
 window._qPrint = function () { window.print(); };
+window._aJsonNilai = function () {
+  const data = (_qDetailRows || []).map(o => {
+    const total = o.total || 0, benar = o.benar || 0;
+    return {
+      nama: o.name || "", email: o.email || "", paket: o.slug || "",
+      soal: total, benar,
+      skor_persen: total ? Math.round(benar / total * 100) : 0,
+      skala_jft: total ? Math.round(10 + (benar / total) * 240) : 10,
+      waktu: o.t ? new Date(o.t).toISOString() : null,
+      secs: o.secs || null
+    };
+  });
+  const out = {
+    diekspor_pada: new Date().toISOString(),
+    mode: _q.mode, jumlah: data.length,
+    filter: { paket: ($("qSlug") || {}).value || "", kata_kunci: ($("qEmail") || {}).value || "" },
+    data
+  };
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(new Blob([JSON.stringify(out, null, 2)], { type: "application/json;charset=utf-8" }));
+  a.download = "nilai-siswa.json"; document.body.appendChild(a); a.click(); a.remove();
+};
 window._aInitSoal = function () {
   $("sPack").innerHTML = PACKS.map(p => "<option>" + p + "</option>").join("");
   const _qRe = () => { _q.shown = 50; renderNilai(); };
@@ -174,6 +196,7 @@ window._aInitSoal = function () {
   if ($("qEmail")) $("qEmail").oninput = () => { clearTimeout(window._qT); window._qT = setTimeout(_qRe, 350); };
   const qMore = $("qMore"); if (qMore) qMore.onclick = window._aMoreNilai;
   const qCsv = $("qCsv"); if (qCsv) qCsv.onclick = window._aCsvNilai;
+  const qJson = $("qJson"); if (qJson) qJson.onclick = window._aJsonNilai;
   const qPrint = $("qPrint"); if (qPrint) qPrint.onclick = window._qPrint;
   $("sLoad").onclick = async () => {
     const slug = $("sPack").value, db = window._aDb;
