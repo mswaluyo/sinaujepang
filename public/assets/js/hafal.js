@@ -8,8 +8,8 @@
     { k: "rom", label: "Romaji" }, { k: "arti", label: "Arti" },
     { k: "jenis", label: "Jenis" }, { k: "paket", label: "Paket" }
   ];
-  var JN = { V: "kerja", A: "sifat", N: "benda" };
-  var JC = { V: "bg-blue-50 text-blue-700 border-blue-200", A: "bg-emerald-50 text-emerald-700 border-emerald-200", N: "bg-amber-50 text-amber-700 border-amber-200" };
+  var JN = { V: "kerja", A: "sifat", N: "benda", U: "ungkapan" };
+  var JC = { V: "bg-blue-50 text-blue-700 border-blue-200", A: "bg-emerald-50 text-emerald-700 border-emerald-200", N: "bg-amber-50 text-amber-700 border-amber-200", U: "bg-violet-50 text-violet-700 border-violet-200" };
   function arrow(k) { if (sortK !== k) return " <span class='text-slate-300'>⇅</span>"; return sortD === 1 ? " <span class='text-fuji-600'>▲</span>" : " <span class='text-fuji-600'>▼</span>"; }
   function headHtml() {
     return "<tr>" + COLS.map(function (c) {
@@ -54,6 +54,7 @@
   if (window.KOTOBA_VERB) window.KOTOBA_VERB.forEach(function (e) { all.push(toObj(e, "V")); });
   if (window.KOTOBA_ADJ) window.KOTOBA_ADJ.forEach(function (e) { all.push(toObj(e, "A")); });
   if (window.KOTOBA_NOUN) window.KOTOBA_NOUN.forEach(function (e) { all.push(toObj(e, "N")); });
+  if (window.KOTOBA_UNGK) window.KOTOBA_UNGK.forEach(function (e) { all.push(toObj(e, "U")); });
   if (all.length) { afterLoad(); }
   else fetch("/kosakata.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (j) {
     all = (j.data || []).map(function (o) { o.jenis = o.jenis || "N"; return o; });
