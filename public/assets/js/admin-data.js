@@ -15,7 +15,7 @@ function _qCols() {
     { k: "skor", label: "Skor", align: "center", cls: "px-3", val: o => (o.skor ?? o.best ?? 0) },
     { k: "jft", label: "Skala JFT", align: "left", cls: "px-3", val: o => _qJftNum(o.skor ?? o.best ?? 0) },
     ujian
-      ? { k: "ujian", label: "Ujian", align: "center", cls: "px-3", val: o => (o.n || 0) }
+      ? { k: "ujian", label: "Ujian", align: "center", cls: "px-3", val: o => (o.nShow ?? o.n ?? 0) }
       : { k: "hapus", label: "Hapus", align: "center", cls: "px-3", val: null },
   ];
 }
@@ -110,14 +110,19 @@ function renderNilai() {
     listFin.forEach(v => {
       const k = (v.email || "?") + "|" + (v.slug || "?");
       if (!g[k]) g[k] = { name: v.name || "", email: v.email || "", slug: v.slug || "", best: -1, bestBenar: 0, total: v.total || 0, n: 0, last: 0, bestT: 0, bestSecs: null };
-      const o = g[k]; o.n++;
+      const o = g[k];
+      // n = total percobaan beneran dari field n dokumen gabungan; fallback hitung baris.
+      // Ambil nilai terbesar (bukan akumulasi) agar dokumen ganda tak menggandakan angka.
+      if (v.n > 0) o.n = Math.max(o.n, v.n);
+      else o.rows = (o.rows || 0) + 1;
+      o.nShow = Math.max(o.n, o.rows || 0);
       if ((v.skor || 0) > o.best) { o.best = v.skor || 0; o.bestBenar = v.benar || 0; o.total = v.total || o.total; o.bestT = v._t; o.bestSecs = v.secs || null; }
       if (v._t > o.last) { o.last = v._t; o.name = v.name || o.name; }
     });
     // Samakan field agregat dengan accessor sorter (_t = waktu terbaik, skor = nilai terbaik)
     Object.values(g).forEach(o => { o._t = o.bestT || o.last; o.skor = o.best; o.benar = o.bestBenar; });
     window._qLastD = _qSortRows(Object.values(g)).slice(0, _q.shown); window._qLastD.forEach((o, _ix) => {
-      _qDetailRows.push({ name: o.name, email: o.email, slug: o.slug, benar: o.bestBenar, total: o.total, t: o.bestT || o.last, secs: o.bestSecs, n: o.n });
+      _qDetailRows.push({ name: o.name, email: o.email, slug: o.slug, benar: o.bestBenar, total: o.total, t: o.bestT || o.last, secs: o.bestSecs, n: o.nShow });
       const di = _qDetailRows.length - 1;
       const ok = o.best >= 75;
       html += "<tr class='hover:bg-fuji-50/60 transition-colors'>"
@@ -128,7 +133,7 @@ function renderNilai() {
         + "<td class='px-3 py-2.5 text-center font-bold text-slate-700'>" + o.bestBenar + "</td>"
         + "<td class='px-3 py-2.5 text-center font-extrabold " + (ok ? "text-emerald-600" : "text-slate-700") + "'>" + o.best + "%</td>"
         + "<td class='px-3 py-2.5 text-slate-600 whitespace-nowrap'>" + _qJft(o.best) + "</td>"
-        + "<td class='px-3 py-2.5 text-center'><span class='text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full'>" + o.n + "x</span></td>"
+        + "<td class='px-3 py-2.5 text-center'><span class='text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full'>" + o.nShow + "x</span></td>"
         + "<td class='px-3 py-2.5 text-center'>" + _qBadge(ok ? "Lulus" : "Belum", ok) + "</td>"
         + "<td class='px-4 py-2.5 text-right'><button onclick='window._aDetail(" + di + ")' class='inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-700 text-white text-[12px] font-bold px-3 py-1.5 rounded-lg transition-colors'><i class='fa-solid fa-file-lines'></i>Detail</button></td></tr>";
     });
