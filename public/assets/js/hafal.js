@@ -43,12 +43,21 @@
     });
   }
   fetch("/kosakata.json", { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (j) {
-    all = j.data || [];
+    if (window.KOTOBA_DASAR && window.KOTOBA_DASAR.length) {
+      // Format kotoba-data.js: [kata, kana, romaji, arti, "paket1,paket2"]
+      all = window.KOTOBA_DASAR.map(function (e) { return { kanji: e[0], kana: e[1], rom: e[2], arti: e[3], paket: String(e[4] || "").split(",").filter(Boolean).map(function (p) { return p + "-quiz"; }) }; });
+      afterLoad();
+    } else {
+      all = j.data || [];
+      afterLoad();
+    }
+  }).catch(function () { $("kRows").innerHTML = "<tr><td colspan='5' class='py-10 text-center text-rose-500'>Gagal memuat kosakata</td></tr>"; });
+  function afterLoad() {
     var ps = {};
     all.forEach(function (o) { (o.paket || []).forEach(function (p) { ps[p] = 1; }); });
     Object.keys(ps).sort().forEach(function (p) { var op = document.createElement("option"); op.value = p; op.textContent = p; $("kPaket").appendChild(op); });
     $("kHead").innerHTML = headHtml(); bindHead(); render();
-  }).catch(function () { $("kRows").innerHTML = "<tr><td colspan='5' class='py-10 text-center text-rose-500'>Gagal memuat kosakata.json</td></tr>"; });
+  }
   $("kPaket").onchange = function () { shown = 200; render(); };
   $("kCari").oninput = function () { clearTimeout(window._kT); window._kT = setTimeout(function () { shown = 200; render(); }, 300); };
   $("kMore").onclick = function () { shown += 200; render(); };
