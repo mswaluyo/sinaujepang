@@ -1,0 +1,48 @@
+// tools/kanji-fix.mjs — KOREKSI MANUAL arti/bacaan kanji + kana radikal.
+// Dipakai build-kanji.mjs & build-rad.mjs (prioritas tertinggi).
+// Format: KANJI: [bacaan, arti]
+export const FIX = {
+  "人": ["ひと", "orang"],
+  "大": ["おおきい", "besar"],
+  "女": ["おんな", "perempuan"],
+  "子": ["こ", "anak"],
+  "老": ["おいる", "tua"],
+  "会": ["あう", "bertemu/pertemuan"],
+  "使": ["つかう", "memakai"],
+  "何": ["なに", "apa"],
+  "来": ["くる", "datang"],
+  "低": ["ひくい", "rendah"],
+  "住": ["すむ", "tinggal"],
+  "作": ["つくる", "membuat"],
+  "借": ["かりる", "meminjam"],
+  "働": ["はたらく", "bekerja"],
+};
+// Kana + romaji radikal murni komponen: [kana, romaji]
+export const RADKANA = {
+  "一": ["いち", "ichi"], "人": ["ひと", "hito"], "大": ["おおきい", "ookii"],
+  "女": ["おんな", "onna"], "子": ["こ", "ko"], "老": ["おいる", "oiru"],
+  "入": ["はいる", "hairu"], "八": ["はち", "hachi"], "二": ["に", "ni"],
+  "刀": ["かたな", "katana"], "力": ["ちから", "chikara"], "水": ["みず", "mizu"],
+  "日": ["ひ", "hi"], "目": ["め", "me"], "耳": ["みみ", "mimi"], "口": ["くち", "kuchi"],
+  "手": ["て", "te"], "車": ["くるま", "kuruma"], "言": ["いう", "iu"],
+  "食": ["たべる", "taberu"], "雨": ["あめ", "ame"], "心": ["こころ", "kokoro"],
+  "門": ["もん", "mon"], "立": ["たつ", "tatsu"], "辶": ["しんにょう", "shinnyou"],
+  "阝": ["こざとへん", "kozatohen"], "糸": ["いと", "ito"], "木": ["き", "ki"],
+  "火": ["ひ", "hi"], "土": ["つち", "tsuchi"], "田": ["た", "ta"], "白": ["しろ", "shiro"],
+  "走": ["はしる", "hashiru"], "鳥": ["とり", "tori"], "馬": ["うま", "uma"],
+  "魚": ["さかな", "sakana"], "尸": ["しかばね", "shikabane"], "广": ["まだれ", "madare"],
+  "示": ["しめす", "shimesu"], "禾": ["いね", "ine"], "米": ["こめ", "kome"],
+  "竹": ["たけ", "take"], "金": ["かね", "kane"], "宀": ["うかんむり", "ukanmuri"],
+  "犬": ["いぬ", "inu"], "牛": ["うし", "ushi"], "虫": ["むし", "mushi"],
+  "山": ["やま", "yama"], "川": ["かわ", "kawa"], "月": ["つき", "tsuki"],
+  "風": ["かぜ", "kaze"], "石": ["いし", "ishi"], "足": ["あし", "ashi"],
+  "戸": ["と", "to"], "方": ["ほう", "hou"], "文": ["ぶん", "bun"],
+  "母": ["はは", "haha"], "氏": ["うじ", "uji"], "歯": ["は", "ha"],
+  "貝": ["かい", "kai"], "頁": ["おおがい", "oogai"], "鬼": ["おに", "oni"],
+  "戈": ["ほこ", "hoko"], "弓": ["ゆみ", "yumi"], "彳": ["ぎょうにんべん", "gyouninben"],
+  "攴": ["ぼくづくり", "bokuzukuri"], "歹": ["がつ", "gatsu"], "网": ["あみがまえ", "amigamae"],
+  "羊": ["ひつじ", "hitsuji"], "癶": ["はつがしら", "hatsugashira"], "儿": ["ひとあし", "hitoashi"],
+  "乚": ["つりばり", "tsuribari"], "干": ["かん", "kan"], "亦": ["えき", "eki"],
+  "生": ["うまれる", "umareru"], "青": ["あおい", "aoi"], "麦": ["むぎ", "mugi"],
+  "黄": ["き", "ki"], "黒": ["くろ", "kuro"], "齒": ["は", "ha"], "龍": ["りゅう", "ryuu"],
+};

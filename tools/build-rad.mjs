@@ -5,6 +5,7 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { M, nama } from "./rad-data.mjs";
+import { RADKANA } from "./kanji-fix.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(HERE, "..");
@@ -24,7 +25,20 @@ for (const f of ["kotoba-verb.js", "kotoba-adj.js", "kotoba-noun.js"]) {
 }
 const kanaOf = r => {
   const w = kotoba.find(w => w.k === r);
-  return w ? { kana: w.kana, romaji: w.r } : { kana: "", romaji: "" };
+  if (w) return { kana: w.kana, romaji: w.r };
+  // Koreksi manual (kanji-fix.mjs) prioritas di atas tebakan
+  if (typeof RADKANA !== "undefined" && RADKANA[r]) return { kana: RADKANA[r][0], romaji: RADKANA[r][1] };
+  const STD = {
+    "辶": ["しんにょう", "shinnyou"], "宀": ["うかんむり", "ukanmuri"],
+    "广": ["まだれ", "madare"], "厂": ["がんだれ", "gandare"], "网": ["あみがまえ", "amigamae"],
+    "癶": ["はつがしら", "hatsugashira"], "儿": ["ひとあし", "hitoashi"],
+    "乚": ["つりばり", "tsuribari"], "干": ["かん", "kan"], "癶2": ["はつがしら", "hatsugashira"],
+    "亦": ["えき", "eki"], "鬼": ["おに", "oni"], "頁": ["おおがい", "oogai"],
+    "老": ["おいる", "oiru"], "亅": ["はねぼう", "hane bou"], "氏": ["うじ", "uji"],
+    "自": ["みずから", "mizukara"], "頁2": ["おおがい", "oogai"],
+  };
+  if (STD[r]) return { kana: STD[r][0], romaji: STD[r][1] };
+  return { kana: "", romaji: "" };
 };
 const RAD = {};
 for (const [r, ks] of Object.entries(byRad)) {

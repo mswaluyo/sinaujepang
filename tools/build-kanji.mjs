@@ -7,6 +7,8 @@ import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 
+import { FIX } from "./kanji-fix.mjs";
+
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 
 // Peta kanji -> radikal (radikal utama penyusun, gaya explorer radikal).
@@ -65,26 +67,34 @@ for (const f of ["kotoba-verb.js", "kotoba-adj.js", "kotoba-noun.js"]) {
     a.forEach(e => kotoba.push({ k: e[0], kana: e[1], a: e[3], p: String(e[4] || "").split(",").filter(Boolean) }));
   } catch (e) { console.log("LEWAT:", f); }
 }
-// Peta kanji -> {baca:Set, artiCount:Map, contoh:[], paket:Set}
+// Peta kanji -> {baca:Set, artiCount:Map, murni:{kana,arti}[], contoh:[], paket:Set}
+// murni = kosakata yg seluruhnya = kanji itu (arti paling tepat untuk kanji tsb)
 const M = new Map();
 for (const w of kotoba) {
   const chars = [...new Set((w.k.match(new RegExp(KK.source, "g")) || []))];
   for (const c of chars) {
-    if (!M.has(c)) M.set(c, { baca: new Set(), arti: new Map(), contoh: [], paket: new Set() });
+    if (!M.has(c)) M.set(c, { baca: new Set(), arti: new Map(), murni: [], contoh: [], paket: new Set() });
     const o = M.get(c);
     if (w.kana) o.baca.add(w.kana);
     if (w.a) o.arti.set(w.a, (o.arti.get(w.a) || 0) + 1);
+    if (w.k === c && w.a && !o.murni.find(x => x.a === w.a)) o.murni.push({ kana: w.kana || "", a: w.a });
     if (o.contoh.length < 3) o.contoh.push(w.k);
     (w.p || []).forEach(p => o.paket.add(p));
   }
 }
-const arr = [...M.entries()].map(([c, o]) => [
-  c,
-  [...o.baca].slice(0, 3).join("・"),
-  [...o.arti.entries()].sort((a, b) => b[1] - a[1]).slice(0, 2).map(x => x[0]).join(" / "),
-  o.contoh.join("、"),
-  [...o.paket].join(","),
-]).sort((a, b) => a[0].localeCompare(b[0], "ja"));
+const arr = [...M.entries()].map(([c, o]) => {
+  // Arti: utamakan kosakata 1-kanji murni; fallback arti tersering (bersihkan penanda ◁)
+  let arti = "";
+  if (o.murni.length) arti = o.murni.slice(0, 2).map(x => String(x.a).split(" ◁ ")[0]).join(" / ");
+  else arti = [...o.arti.entries()].sort((a, b) => b[1] - a[1]).slice(0, 2).map(x => String(x[0]).split(" ◁ ")[0]).join(" / ");
+  let baca = "";
+  if (o.murni.length) baca = o.murni.slice(0, 2).map(x => x.kana).filter(Boolean).join("・");
+  else baca = [...o.baca].slice(0, 3).join("・");
+  // Koreksi manual prioritas tertinggi (kanji-fix.mjs); buang sisa penanda ◁
+  if (FIX && FIX[c]) { baca = FIX[c][0]; arti = FIX[c][1]; }
+  arti = String(arti).split(" ◁ ")[0];
+  return [c, baca, arti, o.contoh.join("、"), [...o.paket].join(",")];
+}).sort((a, b) => a[0].localeCompare(b[0], "ja"));
 const js = "// kanji-data.js — DAFTAR KANJI hasil ekstrak otomatis dari kotoba (jangan edit manual).\n"
   + "// Dibuat: " + new Date().toISOString() + " | jumlah: " + arr.length + "\n"
   + "// Regenerasi: node tools/build-kanji.mjs\n"
