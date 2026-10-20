@@ -21,10 +21,23 @@ for (const dir of dirs) {
       const teks = typeof o === "string" ? o : (o.text || "");
       const d = det[i] || {};
       if (!teks && !d.kana) return;
-      // Lewati opsi non-kosakata (soal listening berbasis gambar/audio)
       const kan = (teks || "") + " " + (d.kana || "") + " " + (d.rom || "") + " " + (d.arti || "");
-      if (/gambar|audio|tidak disebut|bukan jawaban|kunci jawaban/i.test(kan)) return;
+      // Lewati opsi non-kosakata (listening gambar/audio, pengecoh, label teknis)
+      if (/gambar|audio|tidak disebut|bukan jawaban|kunci jawaban|pengecoh|^opsi_?\d?$|^opsi \d$|^pilihan [abc\d]$|^opsi [abc\d]$/i.test(kan)) return;
       if (!d.kana && !d.arti) return;
+      // Wajib mengandung huruf Jepang (hiragana/katakana/kanji) di kana ATAU teks
+      const jp = (teks || "") + (d.kana || "");
+      if (!/[぀-ヿ一-鿿々〆]/.test(jp)) return;
+      // Lewati entri waktu/angka murni (jam, tanggal, yen, lembar, menit, lantai, umur)
+      // — ini pola kalimat, bukan kosakata hafalan. Syarat lolos: kana mengandung
+      // minimal 2 huruf Jepang non-angka/waktu ATAU arti mengandung kata kerja/sifat/benda.
+      const STOP = /^(jam|pukul|tanggal|hari|bulan|tahun|menit|detik|yen|lembar|batang|lantai|halaman|pintu|saluran|bus|jadwal|acara|opsi|pilihan|posisi|kunci|cara|orang|gula|saluran)/i;
+      if (STOP.test((d.arti || "").trim())) return;
+      // Arti harus mengandung minimal 2 huruf latin (bukan angka/titik saja)
+      if (((d.arti || "").match(/[a-zA-Z]{2,}/g) || []).join("").length < 2) return;
+      // Kana: buang pola waktu/angka; sisa huruf Jepang minimal 3 (kata beneran)
+      const kanaN = (d.kana || "").replace(/[0-9０-９:：／\/\.\s時分月日曜火水木金土円枚回番線歳才週分ぷんじふんがつにちようび〜～ー・]/g, "");
+      if ((kanaN.match(/[぀-ヿ一-鿿]/g) || []).length < 3) return;
       out.push({
         kanji: teks || "",
         kana: d.kana || "",

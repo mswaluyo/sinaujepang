@@ -1,457 +1,7 @@
 {
- "dibuat": "2026-10-20T04:45:06.425Z",
- "jumlah": 1794,
+ "dibuat": "2026-10-20T04:49:36.246Z",
+ "jumlah": 1062,
  "data": [
-  {
-   "kanji": "07:30",
-   "kana": "07:30",
-   "rom": "shichiji sanjuppun",
-   "arti": "jam 07.30",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "08:15",
-   "kana": "08:15",
-   "rom": "hachiji juugofun",
-   "arti": "jam 08.15",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "08.15",
-   "kana": "08.15",
-   "rom": "hachiji juugofun",
-   "arti": "jam 08.15",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "09:15",
-   "kana": "09:15",
-   "rom": "kuji juugofun",
-   "arti": "jam 09.15",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "1",
-   "kana": "1",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "1 回sehari",
-   "kana": "1 回sehari",
-   "rom": "ikkai",
-   "arti": "1 kali sehari",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "10.30",
-   "kana": "じゅうじさんじゅっぷん",
-   "rom": "juuji sanjuuppun",
-   "arti": "10.30",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "10.50",
-   "kana": "じゅうじごじゅっぷん",
-   "rom": "juuji gojuuppun",
-   "arti": "10.50",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "10ぽん",
-   "kana": "10ぽん",
-   "rom": "juppon",
-   "arti": "10 batang",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "１０月５日",
-   "kana": "１０月５日",
-   "rom": "１０月５日",
-   "arti": "１０月５日",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "11:17",
-   "kana": "11:17",
-   "rom": "11:17",
-   "arti": "11:17",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "11.00",
-   "kana": "11.00",
-   "rom": "",
-   "arti": "jadwal Sabtu",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "11.30 みなみ口",
-   "kana": "11.30 みなみ口",
-   "rom": "juuichi ji sanjuppun, minami guchi",
-   "arti": "jam 11.30 pintu selatan",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "11.50",
-   "kana": "じゅういちじごじゅっぷん",
-   "rom": "juuichiji gojuuppun",
-   "arti": "11.50",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "110",
-   "kana": "110",
-   "rom": "hyaku juu peeji",
-   "arti": "halaman 110",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "11時30分です",
-   "kana": "11時30分です",
-   "rom": "11時30分です",
-   "arti": "11時30分です",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "12:10",
-   "kana": "12:10",
-   "rom": "12:10",
-   "arti": "12:10",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "12.00",
-   "kana": "じゅうにじ",
-   "rom": "juuniji",
-   "arti": "Jam 12.00",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "12.30 入口",
-   "kana": "12.30 入口",
-   "rom": "juuni ji sanjuppun, iriguchi",
-   "arti": "jam 12.30 pintu masuk",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "12.45 東口",
-   "kana": "12.45 東口",
-   "rom": "juuni ji yonjuugo fun, higashi guchi",
-   "arti": "jam 12.45 pintu timur",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "12.50",
-   "kana": "12.50",
-   "rom": "12.50",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "120",
-   "kana": "120",
-   "rom": "hyaku ni-juu peeji",
-   "arti": "halaman 120",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "125",
-   "kana": "125",
-   "rom": "hyaku ni-juu go peeji",
-   "arti": "halaman 125",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１２がつ１０にち",
-   "kana": "１２がつ１０にち",
-   "rom": "tamago",
-   "arti": "telur",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１２がつ１４にち",
-   "kana": "１２がつ１４にち",
-   "rom": "tabemono",
-   "arti": "makanan",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "１２がつ２０にち",
-   "kana": "１２がつ２０にち",
-   "rom": "nomimono",
-   "arti": "minuman",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１２じ",
-   "kana": "12じ",
-   "rom": "juuniji",
-   "arti": "jam 12",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１２時",
-   "kana": "１２時",
-   "rom": "juuniji",
-   "arti": "jam 12",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "12時30分です",
-   "kana": "12時30分です",
-   "rom": "12時30分です",
-   "arti": "12時30分です",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "13.00",
-   "kana": "13.00",
-   "rom": "13.00",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１３時",
-   "kana": "１３時",
-   "rom": "juusanji",
-   "arti": "jam 13",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "13時30分です",
-   "kana": "13時30分です",
-   "rom": "13時30分です",
-   "arti": "13時30分です",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "14.00",
-   "kana": "14.00",
-   "rom": "",
-   "arti": "acara lain",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "14.30",
-   "kana": "14.30",
-   "rom": "14.30",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "14.50",
-   "kana": "14.50",
-   "rom": "14.50",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "15.00",
-   "kana": "15.00",
-   "rom": "",
-   "arti": "sesuai jadwal",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "15.00",
-   "kana": "15.00",
-   "rom": "",
-   "arti": "hari lain",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "15.30",
-   "kana": "15.30",
-   "rom": "",
-   "arti": "acara lain",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "150円",
-   "kana": "150円",
-   "rom": "hyaku gojuu en",
-   "arti": "150 yen",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１５月３日",
-   "kana": "１５月３日",
-   "rom": "１５月３日",
-   "arti": "１５月３日",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１５時",
-   "kana": "１５時",
-   "rom": "juugoji",
-   "arti": "jam 15",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "15分",
-   "kana": "15分",
-   "rom": "juugo fun",
-   "arti": "15 menit",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１６:００",
-   "kana": "１６:００",
-   "rom": "juurokuji",
-   "arti": "16:00",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "16.00",
-   "kana": "じゅうろくじ",
-   "rom": "juurokuji",
-   "arti": "Jam 16.00",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "16.00",
-   "kana": "16.00",
-   "rom": "",
-   "arti": "jam tutup",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
   {
    "kanji": "16歳と8歳です",
    "kana": "16歳と8歳です",
@@ -461,46 +11,6 @@
     "kagi-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "17:17",
-   "kana": "17:17",
-   "rom": "17:17",
-   "arti": "17:17",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "17.00",
-   "kana": "じゅうななじ",
-   "rom": "juunanaji",
-   "arti": "Jam 17.00",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "17さいです",
-   "kana": "17 sai desu",
-   "rom": "17 sai desu",
-   "arti": "17 tahun",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１８:００",
-   "kana": "１８:００",
-   "rom": "juuhachiji",
-   "arti": "18:00",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "18さいです",
@@ -513,220 +23,10 @@
    "benar": true
   },
   {
-   "kanji": "１９:００",
-   "kana": "１９:００",
-   "rom": "juukuji",
-   "arti": "19:00",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "19さいです",
-   "kana": "19 sai desu",
-   "rom": "19 sai desu",
-   "arti": "19 tahun",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１かい",
-   "kana": "１かい",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "1さい",
-   "kana": "1さい",
-   "rom": "issai",
-   "arti": "1 tahun",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１じ /13.00",
-   "kana": "１じ /13.00",
-   "rom": "ichiji",
-   "arti": "jam 1 (13.00)",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "１しゅうかん",
    "kana": "1しゅうかん",
    "rom": "isshuukan",
    "arti": "1 minggu",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "１回火曜日",
-   "kana": "１回火曜日",
-   "rom": "ikkai kayoubi",
-   "arti": "1 kali Selasa",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "2",
-   "kana": "2",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "２００円",
-   "kana": "２００円",
-   "rom": "nihyakuen",
-   "arti": "200 yen",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "２０まい",
-   "kana": "２０まい",
-   "rom": "nijuumai",
-   "arti": "20 lembar",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "２０まい",
-   "kana": "２０まい",
-   "rom": "２０まい",
-   "arti": "２０まい",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "20分",
-   "kana": "20分",
-   "rom": "nijuppun",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "21まい",
-   "kana": "21まい",
-   "rom": "nijuunimai",
-   "arti": "21 lembar",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "22まい",
-   "kana": "22まい",
-   "rom": "nijuunimai",
-   "arti": "22 lembar",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "２３まい",
-   "kana": "２３まい",
-   "rom": "２３まい",
-   "arti": "２３まい",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "250円",
-   "kana": "250円",
-   "rom": "nihyaku gojuu en",
-   "arti": "250 yen",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "250円",
-   "kana": "250円",
-   "rom": "250円",
-   "arti": "250円",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "２５まい",
-   "kana": "２５まい",
-   "rom": "２５まい",
-   "arti": "２５まい",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "25分",
-   "kana": "25分",
-   "rom": "nijuu gofun",
-   "arti": "25 menit",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "25分",
-   "kana": "25分",
-   "rom": "25",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "２かい",
-   "kana": "２かい",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "２じ",
-   "kana": "２じ",
-   "rom": "niji",
-   "arti": "jam 2",
    "paket": [
     "gakusei-quiz"
    ],
@@ -743,86 +43,6 @@
    "benar": false
   },
   {
-   "kanji": "2ぽん",
-   "kana": "2ぽん",
-   "rom": "nihon",
-   "arti": "2 batang",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "２回１日",
-   "kana": "２回１日",
-   "rom": "nikai ichinichi",
-   "arti": "2 kali sehari",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "２回sehari",
-   "kana": "２回sehari",
-   "rom": "nikai",
-   "arti": "2 kali sehari",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "２回水曜日と土曜日",
-   "kana": "２回水曜日と土曜日",
-   "rom": "nikai suiyoubi to doyoubi",
-   "arti": "2 kali Rabu dan Sabtu",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "2日１回",
-   "kana": "2日１回",
-   "rom": "futsuka ikkai",
-   "arti": "sekali dalam 2 hari",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "3",
-   "kana": "3",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "3 回 sehari",
-   "kana": "3 回 sehari",
-   "rom": "sankai",
-   "arti": "3 kali sehari",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "300 円",
-   "kana": "300 円",
-   "rom": "sanbyaku en",
-   "arti": "300 yen",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "3000円以上買いものをすると安いです",
    "kana": "3000円以上買いものをすると安いです",
    "rom": "sanzenen ijou",
@@ -831,106 +51,6 @@
     "kuroi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "３００円",
-   "kana": "３００円",
-   "rom": "sanbyakuen",
-   "arti": "300 yen",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "30歳以上",
-   "kana": "30歳以上",
-   "rom": "sanjuu sai ijou",
-   "arti": "30 tahun ke atas",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "30分",
-   "kana": "30分",
-   "rom": "30",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "350円",
-   "kana": "350円",
-   "rom": "sanbyaku gojuu en",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "350円",
-   "kana": "350円",
-   "rom": "350円",
-   "arti": "350円",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "35歳以上",
-   "kana": "35歳以上",
-   "rom": "sanjugo sai ijou",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "３８０円",
-   "kana": "３８０円",
-   "rom": "sanbyaku hachijuu en",
-   "arti": "380 yen",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "３かい",
-   "kana": "３かい",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "３かい",
-   "kana": "３かい",
-   "rom": "sankai",
-   "arti": "lantai 3",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "3かい",
-   "kana": "3かい",
-   "rom": "3",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "３じの あと",
@@ -943,16 +63,6 @@
    "benar": false
   },
   {
-   "kanji": "３じの まえ",
-   "kana": "３じの まえ",
-   "rom": "sanji no mae",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "３しゅうかん",
    "kana": "３しゅうかん",
    "rom": "sanshuukan",
@@ -963,463 +73,12 @@
    "benar": true
   },
   {
-   "kanji": "３回１日",
-   "kana": "３回１日",
-   "rom": "sankai ichinichi",
-   "arti": "3 kali sehari",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "３回月曜日と金曜日と日曜日",
-   "kana": "３回月曜日と金曜日と日曜日",
-   "rom": "sankai",
-   "arti": "3 kali Senin Jumat Minggu",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "4",
-   "kana": "4",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "400 円",
-   "kana": "400 円",
-   "rom": "yonhyaku en",
-   "arti": "400 yen",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "40歳以上",
-   "kana": "40歳以上",
-   "rom": "yonjuu sai ijou",
-   "arti": "40 tahun ke atas",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "４１ばん、えきさくら",
-   "kana": "４１ばん、えきさくら",
-   "rom": "yonjuu ichiban, eki sakura",
-   "arti": "bus 41 stasiun Sakura",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "450 円",
-   "kana": "450 円",
-   "rom": "yonhyaku gojuu en",
-   "arti": "450 yen",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "450 円",
-   "kana": "450 円",
-   "rom": "450",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "450円",
-   "kana": "450円",
-   "rom": "450円",
-   "arti": "450円",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "４５ばん、がっこうさくら",
-   "kana": "４５ばん、がっこうさくら",
-   "rom": "yonjuu goban, gakkou sakura",
-   "arti": "bus 45 sekolah Sakura",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "４９ばん、びょういんさくら",
-   "kana": "４９ばん、びょういんさくら",
-   "rom": "yonjuu kyuuban, byouin sakura",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "４かい",
-   "kana": "４かい",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "4かい",
-   "kana": "4かい",
-   "rom": "4",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "4さい",
-   "kana": "4さい",
-   "rom": "yon sai",
-   "arti": "4 tahun",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "500 円",
-   "kana": "500 円",
-   "rom": "gohyaku en",
-   "arti": "500 yen",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "５００円",
-   "kana": "５００円",
-   "rom": "gohyakuen",
-   "arti": "500 yen",
-   "paket": [
-    "kuroi-quiz",
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "550 円",
-   "kana": "550 円",
-   "rom": "gohyaku gojuu en",
-   "arti": "550 yen",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "550 円",
-   "kana": "550 円",
-   "rom": "550",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "5jtv サッカー",
-   "kana": "ごチャンネル",
-   "rom": "go channeru",
-   "arti": "Saluran 5",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "5ぷん",
-   "kana": "5ぷん",
-   "rom": "gofun",
-   "arti": "-",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "５月１０日",
-   "kana": "５月１０日",
-   "rom": "５月１０日",
-   "arti": "５月１０日",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "5月8日",
-   "kana": "5月8日",
-   "rom": "gogatsu youka",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "5番線",
-   "kana": "5番線",
-   "rom": "5番線",
-   "arti": "5番線",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "6 番線",
-   "kana": "6 番線",
-   "rom": "6_番線",
-   "arti": "6 番線",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "650 円",
-   "kana": "650 円",
-   "rom": "roppyaku gojuu en",
-   "arti": "650 yen",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "６チャンネル サッカー",
-   "kana": "ろくチャンネル",
-   "rom": "roku channeru",
-   "arti": "Saluran 6",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "7 月 20 日",
-   "kana": "7 月 20 日",
-   "rom": "shichigatsu hatsuka",
-   "arti": "20 Juli",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "7 月 23 日",
-   "kana": "7 月 23 日",
-   "rom": "shichigatsu nijuusannichi",
-   "arti": "23 Juli",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "7 月 24 日",
-   "kana": "7 月 24 日",
-   "rom": "shichigatsu nijuuyokka",
-   "arti": "24 Juli",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "7 番線",
-   "kana": "7 番線",
-   "rom": "7_番線",
-   "arti": "7 番線",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "7jtv サッカー",
-   "kana": "ななチャンネル",
-   "rom": "nana channeru",
-   "arti": "Saluran 7",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "７かい",
-   "kana": "７かい",
-   "rom": "nanakai",
-   "arti": "lantai 7",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "7階",
-   "kana": "7階",
-   "rom": "nanakai",
-   "arti": "lantai 7",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "7月 1日",
-   "kana": "7月 1日",
-   "rom": "shichigatsu tsuitachi",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "7月 2日",
-   "kana": "7月 2日",
-   "rom": "shichigatsu futsuka",
-   "arti": "2 Juli",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "7月 3日",
-   "kana": "7月 3日",
-   "rom": "shichigatsu mikka",
-   "arti": "3 Juli",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "7月15日",
-   "kana": "7月15日",
-   "rom": "7/15",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "7月8日",
-   "kana": "7月8日",
-   "rom": "shichigatsu youka",
-   "arti": "8 Juli",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "7歳と15歳です",
    "kana": "7歳と15歳です",
    "rom": "nanasa to juugosai desu",
    "arti": "7 dan 15 tahun",
    "paket": [
     "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "7時",
-   "kana": "7時",
-   "rom": "7時",
-   "arti": "7時",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "８００円",
-   "kana": "８００円",
-   "rom": "happyaku en",
-   "arti": "800 yen",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "８かい",
-   "kana": "８かい",
-   "rom": "hakkai",
-   "arti": "lantai 8",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "8さい",
-   "kana": "8さい",
-   "rom": "hassai",
-   "arti": "8 tahun",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "8階",
-   "kana": "8階",
-   "rom": "hakkai",
-   "arti": "lantai 8",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "8月14日",
-   "kana": "8月14日",
-   "rom": "8/14",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "8月5日",
-   "kana": "8月5日",
-   "rom": "hachigatsu itsuka",
-   "arti": "5 Agustus",
-   "paket": [
-    "magarimasu-quiz"
    ],
    "benar": false
   },
@@ -1434,696 +93,12 @@
    "benar": true
   },
   {
-   "kanji": "8時",
-   "kana": "8時",
-   "rom": "8時",
-   "arti": "8時",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "8時41分",
-   "kana": "8時41分",
-   "rom": "8時41分",
-   "arti": "8時41分",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "8時55分",
-   "kana": "8時55分",
-   "rom": "8時55分",
-   "arti": "8時55分",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "9階",
-   "kana": "9階",
-   "rom": "kyuukai",
-   "arti": "lantai 9",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "9歳と6歳です",
    "kana": "9歳と6歳です",
    "rom": "kyuusai to rokusai desu",
    "arti": "9 dan 6 tahun",
    "paket": [
     "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "9時",
-   "kana": "9時",
-   "rom": "9時",
-   "arti": "9時",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "9時15分",
-   "kana": "9時15分",
-   "rom": "9時15分",
-   "arti": "9時15分",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "jadwal A",
-   "paket": [
-    "aoi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "pilihan A",
-   "paket": [
-    "jinja-quiz",
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "Posisi A",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "Gerbang stasiun",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "Kebun binatang",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "Nonton anime",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "Mengajari kanji",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "Listrik padam / mati",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "Merapikan meja rapat",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "opsi_1",
-   "arti": "Opsi 1",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "cara minum A (pengecoh)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "A",
-   "kana": "A",
-   "rom": "A",
-   "arti": "orang A (pengecoh)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ABC5101",
-   "kana": "ABC5101",
-   "rom": "ABC5101",
-   "arti": "pilihan 2",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ABC5201",
-   "kana": "ABC5201",
-   "rom": "ABC5201",
-   "arti": "pilihan 3",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ABC5301",
-   "kana": "ABC5301",
-   "rom": "ABC5301",
-   "arti": "pilihan 1",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Apato",
-   "kana": "Apato",
-   "rom": "",
-   "arti": "ikuti kanan/kiri/lurus",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Apato",
-   "kana": "Apato",
-   "rom": "",
-   "arti": "-",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "jadwal B",
-   "paket": [
-    "aoi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "pilihan B",
-   "paket": [
-    "jinja-quiz",
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "Posisi B",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "Meja resepsionis",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "Kastil",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "Sekolah bahasa",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "Meminjamkan kamus",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "Muncul suara aneh",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "Melakukan fotokopi dokumen",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "opsi_2",
-   "arti": "Opsi 2",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "gula dadu langsung (cara B)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "B",
-   "kana": "B",
-   "rom": "B",
-   "arti": "orang B yang dibicarakan",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Bakmi nyemek",
-   "kana": "Bakmi nyemek",
-   "rom": "bakmi",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Belanja",
-   "kana": "Belanja",
-   "rom": "",
-   "arti": "belanja",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "BELOK KANAN",
-   "kana": "BELOK KANAN",
-   "rom": "belok_kanan",
-   "arti": "BELOK KANAN",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "BELOK KIRI",
-   "kana": "BELOK KIRI",
-   "rom": "belok_kiri",
-   "arti": "BELOK KIRI",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "BISKUIT BERBENTUK GUNUNG FUJI",
-   "kana": "BISKUIT BERBENTUK GUNUNG FUJI",
-   "rom": "biskuit_berbentuk_gu",
-   "arti": "BISKUIT BERBENTUK GUNUNG FUJI",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "BISKUIT COKLAT",
-   "kana": "BISKUIT COKLAT",
-   "rom": "biskuit_coklat",
-   "arti": "BISKUIT COKLAT",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "C",
-   "arti": "jadwal C",
-   "paket": [
-    "aoi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "C",
-   "arti": "pilihan C",
-   "paket": [
-    "jinja-quiz",
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "C",
-   "arti": "Posisi C",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "C",
-   "arti": "Aula",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "C",
-   "arti": "Restoran",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "C",
-   "arti": "Pelajaran SMA",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "C",
-   "arti": "Melihat-lihat buku",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "C",
-   "arti": "Mesin tidak berjalan",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "C",
-   "arti": "Menyiapkan minuman",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "opsi_3",
-   "arti": "Opsi 3",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "C",
-   "kana": "C",
-   "rom": "C",
-   "arti": "orang C (pengecoh)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "CD をつかって まいにち にほんごを はなすのが より じっせんてきです",
-   "kana": "CD をつかって まいにち にほんごを はなすのが より じっせんてきです",
-   "rom": "CD o tsukatte mainichi nihongo o hanasu no ga yori jissenteki desu",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Cola 3 dan burger 2",
-   "kana": "Cola 3 dan burger 2",
-   "rom": "cola 3",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Cola-cola 2 dan burger 1",
-   "kana": "Cola-cola 2 dan burger 1",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Cola-cola 2 dan burger 2",
-   "kana": "Cola-cola 2 dan burger 2",
-   "rom": "cola 2b",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "D",
-   "kana": "D",
-   "rom": "D",
-   "arti": "jadwal D",
-   "paket": [
-    "aoi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "D",
-   "kana": "D",
-   "rom": "D",
-   "arti": "pilihan D",
-   "paket": [
-    "jinja-quiz",
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "D",
-   "kana": "D",
-   "rom": "D",
-   "arti": "Posisi D",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "D",
-   "kana": "D",
-   "rom": "D",
-   "arti": "Gerbang perusahaan",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "D",
-   "kana": "D",
-   "rom": "D",
-   "arti": "Menara / Tower",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "D",
-   "kana": "D",
-   "rom": "D",
-   "arti": "Buku pelajaran",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "D",
-   "kana": "D",
-   "rom": "D",
-   "arti": "Memeriksa bahasa Jepang",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "D",
-   "kana": "D",
-   "rom": "D",
-   "arti": "Kehabisan tisu",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "D",
-   "kana": "D",
-   "rom": "D",
-   "arti": "Merapikan berkas/dokumen",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "D",
-   "kana": "D",
-   "rom": "D",
-   "arti": "orang D (pengecoh)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "DI UJIAN KUE BOLU YANG DI POTONG\"",
-   "kana": "DI UJIAN KUE BOLU YANG DI POTONG\"",
-   "rom": "di_ujian_kue_bolu_ya",
-   "arti": "DI UJIAN KUE BOLU YANG DI POTONG\"",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Didalam A",
-   "kana": "Didalam A",
-   "rom": "dalam",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
    ],
    "benar": false
   },
@@ -2138,16 +113,6 @@
    "benar": false
   },
   {
-   "kanji": "Disamping A",
-   "kana": "Disamping A",
-   "rom": "samping",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "Disamping hotel sakura",
    "kana": "ホテルさくらのとなり",
    "rom": "hotel sakura no tonari",
@@ -2156,236 +121,6 @@
     "hare-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "Disebelah kebun binatang",
-   "kana": "Disebelah kebun binatang",
-   "rom": "doubutsuen",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Disebelah konbini",
-   "kana": "Disebelah konbini",
-   "rom": "konbini",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "E",
-   "kana": "E",
-   "rom": "E",
-   "arti": "pilihan E",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "E",
-   "kana": "E",
-   "rom": "E",
-   "arti": "Melakukan presentasi",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "F",
-   "kana": "F",
-   "rom": "F",
-   "arti": "pilihan F",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "G",
-   "kana": "G",
-   "rom": "G",
-   "arti": "pilihan G",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "GEDUNG LANTAI 2",
-   "kana": "GEDUNG LANTAI 2",
-   "rom": "gedung_lantai_2",
-   "arti": "gedung lantai 2",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "GEDUNG LANTAI 3",
-   "kana": "GEDUNG LANTAI 3",
-   "rom": "gedung_lantai_3",
-   "arti": "gedung lantai 3",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "GEDUNG LANTAI 4",
-   "kana": "GEDUNG LANTAI 4",
-   "rom": "gedung_lantai_4",
-   "arti": "gedung lantai 4",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Gunung",
-   "kana": "Gunung",
-   "rom": "",
-   "arti": "tidak diajak",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "H",
-   "kana": "H",
-   "rom": "H",
-   "arti": "pilihan H",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Jam 06.30",
-   "kana": "ろくじさんじゅっぷん",
-   "rom": "rokuji sanjuuppun",
-   "arti": "Jam 06.30",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Jam 07.25",
-   "kana": "しちじにじゅうごふん",
-   "rom": "shichiji nijuugofun",
-   "arti": "Jam 07.25",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Jam 07.30",
-   "kana": "しちじさんじゅっぷん",
-   "rom": "shichiji sanjuuppun",
-   "arti": "Jam 07.30",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Jam 11.00",
-   "kana": "Jam 11.00",
-   "rom": "11.00",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "JAM 2.45",
-   "kana": "JAM 2.45",
-   "rom": "jam_2.45",
-   "arti": "JAM 2.45",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "JAM 3.45",
-   "kana": "JAM 3.45",
-   "rom": "jam_3.45",
-   "arti": "JAM 3.45",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "JAM 4.45",
-   "kana": "JAM 4.45",
-   "rom": "jam_4.45",
-   "arti": "JAM 4.45",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Jam 9.00",
-   "kana": "Jam 9.00",
-   "rom": "09.00",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "kaos di masukan kedalam celana, jangan meletakan handuk di leher",
-   "kana": "kaos di masukan kedalam celana, jangan meletakan handuk di leher",
-   "rom": "kaos_di_masukan_kedalam_",
-   "arti": "kaos di masukan kedalam celana, jangan meletakan handuk di leher",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "kemeja dimasukan kedalam celana, jangan meletakan handuk di leher",
-   "kana": "kemeja dimasukan kedalam celana, jangan meletakan handuk di leher",
-   "rom": "kemeja_dimasukan_kedalam",
-   "arti": "kemeja dimasukan kedalam celana, jangan meletakan handuk di leher",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Kota",
-   "kana": "Kota",
-   "rom": "",
-   "arti": "sesuai SMS",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Kuning",
-   "kana": "Kuning",
-   "rom": "",
-   "arti": "warna lain",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "Lapor ke atasannya",
@@ -2398,62 +133,12 @@
    "benar": true
   },
   {
-   "kanji": "Lemari kanan C",
-   "kana": "Lemari kanan C",
-   "rom": "kanan C",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Lemari kiri B",
-   "kana": "Lemari kiri B",
-   "rom": "kiri B",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Lemari kiri D",
-   "kana": "Lemari kiri D",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "LURUS TERUS",
-   "kana": "LURUS TERUS",
-   "rom": "lurus_terus",
-   "arti": "LURUS TERUS",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "Mencatat",
    "kana": "メモする",
    "rom": "memo suru",
    "arti": "Mencatat",
    "paket": [
     "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Ngbrol dimeja meeting",
-   "kana": "Ngbrol dimeja meeting",
-   "rom": "meeting",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "orimasu-quiz"
    ],
    "benar": false
   },
@@ -2518,382 +203,12 @@
    "benar": true
   },
   {
-   "kanji": "Opsi 1",
-   "kana": "Opsi 1",
-   "rom": "-",
-   "arti": "pilihan 1",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Opsi 1",
-   "kana": "Opsi 1",
-   "rom": "-",
-   "arti": "kastil",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Opsi 1",
-   "kana": "opsi1",
-   "rom": "opsi1",
-   "arti": "opsi 1",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Opsi 2",
-   "kana": "Opsi 2",
-   "rom": "-",
-   "arti": "pilihan 2",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Opsi 2",
-   "kana": "Opsi 2",
-   "rom": "-",
-   "arti": "pantai",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Opsi 2",
-   "kana": "opsi2",
-   "rom": "opsi2",
-   "arti": "opsi 2",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Opsi 3",
-   "kana": "Opsi 3",
-   "rom": "-",
-   "arti": "pilihan 3",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Opsi 3",
-   "kana": "Opsi 3",
-   "rom": "-",
-   "arti": "toko ikan",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Opsi 3",
-   "kana": "opsi3",
-   "rom": "opsi3",
-   "arti": "opsi 3",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Opsi 3",
-   "kana": "Opsi 3",
-   "rom": "opsi_3",
-   "arti": "Opsi 3",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Opsi 3",
-   "kana": "Opsi 3",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Orange",
-   "kana": "Orange",
-   "rom": "",
-   "arti": "warna lain",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Pantai",
-   "kana": "Pantai",
-   "rom": "",
-   "arti": "tidak diajak",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "peralatan dimasukan ke tas, jangan memakai handuk di kepala",
-   "kana": "peralatan dimasukan ke tas, jangan memakai handuk di kepala",
-   "rom": "peralatan_dimasukan_ke_t",
-   "arti": "peralatan dimasukan ke tas, jangan memakai handuk di kepala",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "Pergi belanja",
    "kana": "かいものにいく",
    "rom": "kaimono ni iku",
    "arti": "Pergi belanja",
    "paket": [
     "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Peron 5",
-   "kana": "Peron 5",
-   "rom": "5",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Peron 7",
-   "kana": "Peron 7",
-   "rom": "7",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Pink",
-   "kana": "Pink",
-   "rom": "",
-   "arti": "-",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Sebelah toko buku.. 本屋の隣に. ほんや の となり に",
-   "kana": "Sebelah toko buku.. 本屋の隣に. ほんや の となり に",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Sebelum jam 02.30",
-   "kana": "Sebelum jam 02.30",
-   "rom": "-",
-   "arti": "sebelum jam 02.30",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Sebelum jam 04.30",
-   "kana": "Sebelum jam 04.30",
-   "rom": "-",
-   "arti": "sebelum jam 04.30",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Sekolah",
-   "kana": "Sekolah",
-   "rom": "",
-   "arti": "arah beda",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Sesudah jam 04.30",
-   "kana": "Sesudah jam 04.30",
-   "rom": "-",
-   "arti": "sesudah jam 04.30",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Setiap pagi bantuin anak-anak menyebrang",
-   "kana": "Setiap pagi bantuin anak-anak menyebrang",
-   "rom": "dibantu",
-   "arti": "sesuai isi",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Stasiun",
-   "kana": "Stasiun",
-   "rom": "",
-   "arti": "arah beda",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Sushi",
-   "kana": "Sushi",
-   "rom": "sushi",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Tempur+ nasi",
-   "kana": "Tempur+ nasi",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Toko elektronik asahi",
-   "kana": "Toko elektronik asahi",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Ukuran M warna hitam",
-   "kana": "Ukuran M warna hitam",
-   "rom": "",
-   "arti": "disetujui pengganti",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "Ukuran M warna hitam",
-   "kana": "Ukuran M warna hitam",
-   "rom": "",
-   "arti": "-",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Ukuran S warna hitam",
-   "kana": "Ukuran S warna hitam",
-   "rom": "",
-   "arti": "tidak disetujui",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "Ukuran XL warna hitam",
-   "kana": "Ukuran XL warna hitam",
-   "rom": "",
-   "arti": "tidak disetujui",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "YANG ADA BABI DAN AYAM",
-   "kana": "YANG ADA BABI DAN AYAM",
-   "rom": "yang_ada_babi_dan_ay",
-   "arti": "YANG ADA BABI DAN AYAM",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "YANG ADA IKAN DAN UDANG",
-   "kana": "YANG ADA IKAN DAN UDANG",
-   "rom": "yang_ada_ikan_dan_ud",
-   "arti": "YANG ADA IKAN DAN UDANG",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "YANG ADA SUSHI DAN RAMEN",
-   "kana": "YANG ADA SUSHI DAN RAMEN",
-   "rom": "yang_ada_sushi_dan_r",
-   "arti": "YANG ADA SUSHI DAN RAMEN",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ア",
-   "kana": "ア",
-   "rom": "a",
-   "arti": "Menelepon pihak vendor",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ア",
-   "kana": "ア",
-   "rom": "a",
-   "arti": "tetap di rumah jam 14-15",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ア",
-   "kana": "ア",
-   "rom": "a",
-   "arti": "opsi ア (pengecoh)",
-   "paket": [
-    "tamago-quiz"
    ],
    "benar": false
   },
@@ -3012,26 +327,6 @@
    "benar": false
   },
   {
-   "kanji": "あき",
-   "kana": "あき",
-   "rom": "aki",
-   "arti": "musim gugur",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "あき",
-   "kana": "あき",
-   "rom": "aki",
-   "arti": "musim gugur / nama orang",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "あきまつり",
    "kana": "あきまつり",
    "rom": "aki matsuri",
@@ -3078,36 +373,6 @@
    "arti": "membuka",
    "paket": [
     "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "あさ８じ",
-   "kana": "あさ８じ",
-   "rom": "asa hachiji",
-   "arti": "pagi jam 8",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "あさひ銀行の人にあいます",
-   "kana": "あさひ銀行の人にあいます",
-   "rom": "あさひ銀行の人にあいます",
-   "arti": "あさひ銀行の人にあいます",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "あし",
-   "kana": "あし",
-   "rom": "ashi",
-   "arti": "kaki",
-   "paket": [
-    "orimasu-quiz"
    ],
    "benar": false
   },
@@ -3171,17 +436,6 @@
     "hare-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "あつい",
-   "kana": "あつい",
-   "rom": "atsui",
-   "arti": "panas",
-   "paket": [
-    "tamago-quiz",
-    "tomemasu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "あついい",
@@ -3264,18 +518,6 @@
    "benar": false
   },
   {
-   "kanji": "あめ",
-   "kana": "あめ",
-   "rom": "ame",
-   "arti": "hujan",
-   "paket": [
-    "hare-quiz",
-    "jinja-quiz",
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "アメリカ",
    "kana": "アメリカ",
    "rom": "amerika",
@@ -3338,16 +580,6 @@
    "benar": false
   },
   {
-   "kanji": "ありがとうございました",
-   "kana": "arigatou gozaimashita",
-   "rom": "arigatou gozaimashita",
-   "arti": "terima kasih",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ありがとうございます",
    "kana": "ありがとうございます",
    "rom": "arigatou gozaimasu",
@@ -3359,16 +591,6 @@
     "tomemasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "ありがとうございます",
-   "kana": "arigatou gozaimasu",
-   "rom": "arigatou gozaimasu",
-   "arti": "terima kasih",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "あります",
@@ -3421,16 +643,6 @@
     "kagi-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "ありますか",
-   "kana": "arimasu",
-   "rom": "arimasu",
-   "arti": "ada (benda)",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "ありません",
@@ -3523,26 +735,6 @@
    "benar": false
   },
   {
-   "kanji": "あわない",
-   "kana": "あわない",
-   "rom": "awanai",
-   "arti": "-",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "あんしん",
-   "kana": "あんしん",
-   "rom": "anshin",
-   "arti": "lega / tenang",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "あんない",
    "kana": "あんない",
    "rom": "annai",
@@ -3561,26 +753,6 @@
     "gakusei-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "イ",
-   "kana": "イ",
-   "rom": "i",
-   "arti": "Melakukan restart mesin",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "イ",
-   "kana": "イ",
-   "rom": "i",
-   "arti": "opsi イ (pengecoh)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "いいえ、いません",
@@ -3744,40 +916,10 @@
    "benar": false
   },
   {
-   "kanji": "いく",
-   "kana": "いく",
-   "rom": "iku",
-   "arti": "pergi",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "いくらですか",
    "kana": "いくらですか",
    "rom": "ikura desu ka",
    "arti": "berapa harga",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "いけん",
-   "kana": "いけん",
-   "rom": "iken",
-   "arti": "pendapat",
-   "paket": [
-    "aoi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "いしゃにそうだんする",
-   "kana": "いしゃにそうだんする",
-   "rom": "いしゃにそうだんする",
-   "arti": "いしゃにそうだんする",
    "paket": [
     "kutsushita-quiz"
    ],
@@ -3793,16 +935,6 @@
     "orimasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "いそがしい人",
-   "kana": "いそがしい人",
-   "rom": "isogashii hito",
-   "arti": "orang sibuk",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "いそがしかった",
@@ -3887,16 +1019,6 @@
   },
   {
    "kanji": "いただきます",
-   "kana": "itadakimasu",
-   "rom": "itadakimasu",
-   "arti": "selamat makan",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "いただきます",
    "kana": "いただきます",
    "rom": "itadakimasu",
    "arti": "saya terima",
@@ -3912,26 +1034,6 @@
    "arti": "satu kali?",
    "paket": [
     "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "いちば",
-   "kana": "いちば",
-   "rom": "ichiba",
-   "arti": "pasar",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "いつ",
-   "kana": "いつ",
-   "rom": "itsu",
-   "arti": "kapan",
-   "paket": [
-    "jinja-quiz"
    ],
    "benar": false
   },
@@ -3965,16 +1067,6 @@
     "orimasu-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "いってきます",
-   "kana": "ittekimasu",
-   "rom": "ittekimasu",
-   "arti": "saya pergi dulu",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "いつですか",
@@ -4078,16 +1170,6 @@
    "benar": true
   },
   {
-   "kanji": "いますか",
-   "kana": "imasu",
-   "rom": "imasu",
-   "arti": "ada (makhluk)",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "いません",
    "kana": "いません",
    "rom": "imasen",
@@ -4104,26 +1186,6 @@
    "arti": "tidak ada (makhluk)",
    "paket": [
     "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "いません",
-   "kana": "いません",
-   "rom": "imasen",
-   "arti": "-",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "いみ",
-   "kana": "いみ",
-   "rom": "imi",
-   "arti": "arti",
-   "paket": [
-    "aoi-quiz"
    ],
    "benar": false
   },
@@ -4146,16 +1208,6 @@
     "tamago-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "いらっしゃい",
-   "kana": "irasshai",
-   "rom": "irasshai",
-   "arti": "selamat datang",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "いらっしゃいませ",
@@ -4218,82 +1270,12 @@
    "benar": false
   },
   {
-   "kanji": "ウ",
-   "kana": "ウ",
-   "rom": "u",
-   "arti": "Lapor ke pengelola",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ウ",
-   "kana": "ウ",
-   "rom": "u",
-   "arti": "opsi ウ (pengecoh)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ウ",
-   "kana": "ウ",
-   "rom": "u",
-   "arti": "sinyal rusak (penyebab)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "うけつけ",
-   "kana": "うけつけ",
-   "rom": "uketsuke",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "うけつけに行く",
    "kana": "うけつけに行く",
    "rom": "uketsuke ni iku",
    "arti": "pergi ke resepsionis",
    "paket": [
     "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "うた",
-   "kana": "うた",
-   "rom": "uta",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "うた",
-   "kana": "うた",
-   "rom": "uta",
-   "arti": "lagu",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "うだ",
-   "kana": "うだ",
-   "rom": "uda",
-   "arti": "keliru",
-   "paket": [
-    "tomemasu-quiz"
    ],
    "benar": false
   },
@@ -4318,33 +1300,12 @@
    "benar": false
   },
   {
-   "kanji": "うたう",
-   "kana": "うたう",
-   "rom": "utau",
-   "arti": "bernyanyi",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "うたっています",
    "kana": "うたっています",
    "rom": "utatteimasu",
    "arti": "bernyanyi",
    "paket": [
     "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "うち",
-   "kana": "うち",
-   "rom": "uchi",
-   "arti": "rumah",
-   "paket": [
-    "konpyuutaa-quiz",
-    "kuroi-quiz"
    ],
    "benar": false
   },
@@ -4357,29 +1318,6 @@
     "kagi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "うで",
-   "kana": "うで",
-   "rom": "ude",
-   "arti": "lengan",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "うみ",
-   "kana": "うみ",
-   "rom": "umi",
-   "arti": "laut",
-   "paket": [
-    "hashi-quiz",
-    "kagi-quiz",
-    "konpyuutaa-quiz",
-    "orimasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "うみやモールであそびます",
@@ -4452,17 +1390,6 @@
    "benar": true
   },
   {
-   "kanji": "うんてん",
-   "kana": "うんてん",
-   "rom": "unten",
-   "arti": "mengemudi",
-   "paket": [
-    "hashi-quiz",
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "うんてんします",
    "kana": "うんてんします",
    "rom": "untenshimasu",
@@ -4483,46 +1410,6 @@
    "benar": false
   },
   {
-   "kanji": "うんどう",
-   "kana": "うんどう",
-   "rom": "undou",
-   "arti": "olahraga/gerakan",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "エ",
-   "kana": "エ",
-   "rom": "e",
-   "arti": "Cek ke gudang",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "えいが を まっています",
-   "kana": "えいが を まっています",
-   "rom": "eiga o matte imasu",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "えいがかん",
-   "kana": "えいがかん",
-   "rom": "eigakan",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "えいがを みました",
    "kana": "えいがを みました",
    "rom": "eiga o mimashita",
@@ -4533,33 +1420,12 @@
    "benar": false
   },
   {
-   "kanji": "えき",
-   "kana": "えき",
-   "rom": "eki",
-   "arti": "stasiun",
-   "paket": [
-    "konpyuutaa-quiz",
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "えきで でんしゃに のります",
    "kana": "えきで でんしゃに のります",
    "rom": "eki de densha ni norimasu",
    "arti": "naik kereta di stasiun",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "えこ",
-   "kana": "えこ",
-   "rom": "eko",
-   "arti": "keliru",
-   "paket": [
-    "magarimasu-quiz"
    ],
    "benar": false
   },
@@ -4584,32 +1450,12 @@
    "benar": true
   },
   {
-   "kanji": "えは",
-   "kana": "えは",
-   "rom": "eha",
-   "arti": "bukan bacaan uang",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "エレベーター",
    "kana": "エレベーター",
    "rom": "erebeetaa",
    "arti": "lift",
    "paket": [
     "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "えん",
-   "kana": "えん",
-   "rom": "en",
-   "arti": "yen",
-   "paket": [
-    "konpyuutaa-quiz"
    ],
    "benar": true
   },
@@ -4632,26 +1478,6 @@
     "tomemasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "えんりょうしますか?",
-   "kana": "えんりょうしますか?",
-   "rom": "tanya",
-   "arti": "-",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "えんりょうしまでした。",
-   "kana": "えんりょうしまでした。",
-   "rom": "lampau",
-   "arti": "-",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "おいくつ",
@@ -4683,16 +1509,6 @@
     "kutsushita-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "おいしいそうな",
-   "kana": "oishii sou na",
-   "rom": "oishii sou na",
-   "arti": "bentuk salah",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "おいしかった",
@@ -4745,26 +1561,6 @@
    "benar": false
   },
   {
-   "kanji": "おいしそうです",
-   "kana": "oishisou desu",
-   "rom": "oishisou desu",
-   "arti": "tampak enak",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "おいしそうな",
-   "kana": "oishisou na",
-   "rom": "oishisou na",
-   "arti": "tampak enak",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "おいじゃ",
    "kana": "おいじゃ",
    "rom": "oija",
@@ -4811,16 +1607,6 @@
    "arti": "besar",
    "paket": [
     "tomemasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "オートバイク",
-   "kana": "オートバイク",
-   "rom": "ootobaiku",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
    ],
    "benar": true
   },
@@ -4892,16 +1678,6 @@
    "arti": "cemilan / kue / jajanan",
    "paket": [
     "hashi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "おかし",
-   "kana": "おかし",
-   "rom": "okashi",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
    ],
    "benar": true
   },
@@ -5026,16 +1802,6 @@
    "benar": false
   },
   {
-   "kanji": "おじ",
-   "kana": "おじ",
-   "rom": "oji",
-   "arti": "paman",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "おしえています",
    "kana": "おしえています",
    "rom": "oshiete imasu",
@@ -5077,16 +1843,6 @@
    "benar": true
   },
   {
-   "kanji": "おせます",
-   "kana": "おせます",
-   "rom": "osemasu",
-   "arti": "-",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "おせわにしつれいしせん",
    "kana": "おせわにしつれいしせん",
    "rom": "shitsureishisen",
@@ -5105,16 +1861,6 @@
     "tomemasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "おせわにです",
-   "kana": "おせわにです",
-   "rom": "osewa ni desu",
-   "arti": "-",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "おせわになっています",
@@ -5199,16 +1945,6 @@
    "benar": false
   },
   {
-   "kanji": "おちゃ",
-   "kana": "おちゃ",
-   "rom": "ocha",
-   "arti": "teh",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "おつかれさま",
    "kana": "おつかれさま",
    "rom": "otsukaresama",
@@ -5225,16 +1961,6 @@
    "arti": "terima kasih atas kerja kerasnya",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "おつかれさまでした",
-   "kana": "otsukaresama deshita",
-   "rom": "otsukaresama deshita",
-   "arti": "terima kasih lelah",
-   "paket": [
-    "shatsu-quiz"
    ],
    "benar": false
   },
@@ -5313,27 +2039,6 @@
    "benar": false
   },
   {
-   "kanji": "おとな",
-   "kana": "おとな",
-   "rom": "otona",
-   "arti": "orang dewasa",
-   "paket": [
-    "haburashi-quiz",
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "オトバイ",
-   "kana": "オトバイ",
-   "rom": "オトバイ",
-   "arti": "オトバイ",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "おなかが いたい とき",
    "kana": "おなかが いたい とき",
    "rom": "onaka ga itai toki",
@@ -5362,16 +2067,6 @@
     "aoi-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "おなじ",
-   "kana": "おなじ",
-   "rom": "onaji",
-   "arti": "sama",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "おにぎり 3 サンドイッチ 3",
@@ -5404,30 +2099,10 @@
    "benar": true
   },
   {
-   "kanji": "おにん",
-   "kana": "おにん",
-   "rom": "onin",
-   "arti": "salah eja",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "おねがいします",
    "kana": "おねがいします",
    "rom": "onegaishimasu",
    "arti": "tolong / mohon",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "おば",
-   "kana": "おば",
-   "rom": "oba",
-   "arti": "bibi",
    "paket": [
     "kagi-quiz"
    ],
@@ -5440,16 +2115,6 @@
    "arti": "sudah lama tak jumpa",
    "paket": [
     "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "おふろ",
-   "kana": "おふろ",
-   "rom": "ofuro",
-   "arti": "bak mandi",
-   "paket": [
-    "hashi-quiz"
    ],
    "benar": false
   },
@@ -5470,16 +2135,6 @@
    "arti": "kami menunggu",
    "paket": [
     "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "おみやげ",
-   "kana": "おみやげ",
-   "rom": "o1",
-   "arti": "おみやげ",
-   "paket": [
-    "shatsu-quiz"
    ],
    "benar": false
   },
@@ -5568,26 +2223,6 @@
    "benar": false
   },
   {
-   "kanji": "おゆ",
-   "kana": "おゆ",
-   "rom": "oyu",
-   "arti": "air panas",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "およぎました",
-   "kana": "およぎました",
-   "rom": "oyogimashita",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "およぎます",
    "kana": "およぎます",
    "rom": "oyogimasu",
@@ -5629,16 +2264,6 @@
     "orimasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "おりますか",
-   "kana": "orimasu",
-   "rom": "orimasu",
-   "arti": "ada (sopan)",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "おろしま",
@@ -5698,16 +2323,6 @@
    "arti": "kabar akan selesai",
    "paket": [
     "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "おんがく",
-   "kana": "おんがく",
-   "rom": "ongaku",
-   "arti": "musik",
-   "paket": [
-    "jinja-quiz"
    ],
    "benar": false
   },
@@ -5782,26 +2397,6 @@
    "benar": true
   },
   {
-   "kanji": "お茶",
-   "kana": "おちゃ",
-   "rom": "ocha",
-   "arti": "teh hijau",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "お茶",
-   "kana": "お茶",
-   "rom": "ocha",
-   "arti": "teh",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "お腹が痛いんです",
    "kana": "お腹が痛いんです",
    "rom": "onaka",
@@ -5810,16 +2405,6 @@
     "magarimasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "かいがん",
-   "kana": "かいがん",
-   "rom": "kaigan",
-   "arti": "pantai laut",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "かいぎ",
@@ -5840,16 +2425,6 @@
     "hashi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "かいしゃのげんかん",
-   "kana": "かいしゃのげんかん",
-   "rom": "かいしゃのげんかん",
-   "arti": "かいしゃのげんかん",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "かいた",
@@ -6013,16 +2588,6 @@
    "benar": false
   },
   {
-   "kanji": "かお",
-   "kana": "かお",
-   "rom": "kao",
-   "arti": "wajah",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "かがみもち",
    "kana": "かがみもち",
    "rom": "kagami mochi",
@@ -6059,37 +2624,6 @@
    "arti": "memakan waktu/biaya",
    "paket": [
     "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "かき",
-   "kana": "かき",
-   "rom": "kaki",
-   "arti": "buah kesemek",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "かぎ",
-   "kana": "かぎ",
-   "rom": "kagi",
-   "arti": "kunci",
-   "paket": [
-    "gakusei-quiz",
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "がぎ",
-   "kana": "がぎ",
-   "rom": "gagi",
-   "arti": "salah eja (bukan kata baku)",
-   "paket": [
-    "gakusei-quiz"
    ],
    "benar": false
   },
@@ -6134,16 +2668,6 @@
     "jinja-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "かげます",
-   "kana": "かげます",
-   "rom": "kagemasu",
-   "arti": "-",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "かけるようになりました",
@@ -6196,16 +2720,6 @@
    "benar": false
   },
   {
-   "kanji": "かぜ",
-   "kana": "かぜ",
-   "rom": "kaze",
-   "arti": "angin",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "かぞく",
    "kana": "かぞく",
    "rom": "kazoku",
@@ -6227,27 +2741,6 @@
    "benar": false
   },
   {
-   "kanji": "がっこ",
-   "kana": "がっこ",
-   "rom": "gakko",
-   "arti": "sekolah",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "がっこう",
-   "kana": "がっこう",
-   "rom": "gakkou",
-   "arti": "sekolah",
-   "paket": [
-    "basu-quiz",
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "かっこよかった、うれしいです",
    "kana": "かっこよかった、うれしいです",
    "rom": "kakko yokatta, ureshii desu",
@@ -6264,26 +2757,6 @@
    "arti": "membeli",
    "paket": [
     "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "かど",
-   "kana": "かど",
-   "rom": "kado",
-   "arti": "sudut",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "かなしい人",
-   "kana": "かなしい人",
-   "rom": "kanashii hito",
-   "arti": "orang sedih",
-   "paket": [
-    "kuroi-quiz"
    ],
    "benar": false
   },
@@ -6340,37 +2813,6 @@
    "benar": false
   },
   {
-   "kanji": "かみ",
-   "kana": "かみ",
-   "rom": "kami",
-   "arti": "kertas",
-   "paket": [
-    "basu-quiz",
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "かみ",
-   "kana": "かみ",
-   "rom": "kami",
-   "arti": "rambut/dewa",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "がみ",
-   "kana": "がみ",
-   "rom": "gami",
-   "arti": "salah",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "かみなり",
    "kana": "かみなり",
    "rom": "kaminari",
@@ -6385,16 +2827,6 @@
    "kana": "がみばこ",
    "rom": "gamibako",
    "arti": "salah eja",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "かむ",
-   "kana": "かむ",
-   "rom": "kamu",
-   "arti": "menggigit",
    "paket": [
     "hare-quiz"
    ],
@@ -6484,26 +2916,6 @@
    "benar": true
   },
   {
-   "kanji": "カレー",
-   "kana": "カレー",
-   "rom": "karee",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "かわいね",
-   "kana": "かわいね",
-   "rom": "kawai",
-   "arti": "-",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "かんがえます",
    "kana": "かんがえます",
    "rom": "kangaemasu",
@@ -6512,26 +2924,6 @@
     "kuroi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "かんたん",
-   "kana": "かんたん",
-   "rom": "kantan",
-   "arti": "mudah",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "かんないします",
-   "kana": "かんないします",
-   "rom": "kannai shimasu",
-   "arti": "-",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "がんばってください",
@@ -6574,36 +2966,6 @@
    "benar": false
   },
   {
-   "kanji": "きじょう",
-   "kana": "きじょう",
-   "rom": "kijou",
-   "arti": "bentuk salah",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "きせつ",
-   "kana": "きせつ",
-   "rom": "kisetsu",
-   "arti": "musim",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "きた",
-   "kana": "きた",
-   "rom": "kita",
-   "arti": "utara",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "きたない",
    "kana": "きたない",
    "rom": "kitanai",
@@ -6623,16 +2985,6 @@
     "gakusei-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "きっぷ",
-   "kana": "きっぷ",
-   "rom": "kippu",
-   "arti": "tiket",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "きども",
@@ -6685,16 +3037,6 @@
    "benar": false
   },
   {
-   "kanji": "キャンピング",
-   "kana": "キャンピング",
-   "rom": "キャンピング",
-   "arti": "キャンピング",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "きゅうぎゅうしゃをよぶ",
    "kana": "きゅうぎゅうしゃをよぶ",
    "rom": "kyuukyuusha o yobu",
@@ -6722,16 +3064,6 @@
    "paket": [
     "basu-quiz",
     "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "きゅがつ",
-   "kana": "きゅがつ",
-   "rom": "kyugatsu",
-   "arti": "bentuk salah",
-   "paket": [
-    "orimasu-quiz"
    ],
    "benar": false
   },
@@ -6776,16 +3108,6 @@
    "benar": false
   },
   {
-   "kanji": "きよしつ",
-   "kana": "きよしつ",
-   "rom": "kiyoshitsu",
-   "arti": "salah",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "きります",
    "kana": "きります",
    "rom": "kirimasu",
@@ -6794,16 +3116,6 @@
     "tomemasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "きる",
-   "kana": "きる",
-   "rom": "kiru",
-   "arti": "memotong / memakai",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "きれい",
@@ -6887,46 +3199,6 @@
    "benar": false
   },
   {
-   "kanji": "きんじょ",
-   "kana": "きんじょ",
-   "rom": "kinjo",
-   "arti": "tetangga",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "きんじょう",
-   "kana": "きんじょう",
-   "rom": "kinjou",
-   "arti": "bentuk salah",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "くがつ",
-   "kana": "くがつ",
-   "rom": "kugatsu",
-   "arti": "September",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "くすりをのむ",
-   "kana": "くすりをのむ",
-   "rom": "くすりをのむ",
-   "arti": "くすりをのむ",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "ください",
    "kana": "ください",
    "rom": "kudasai",
@@ -6953,36 +3225,6 @@
    "arti": "Buah",
    "paket": [
     "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "くち",
-   "kana": "くち",
-   "rom": "kuchi",
-   "arti": "mulut",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "くつ",
-   "kana": "くつ",
-   "rom": "kutsu",
-   "arti": "sepatu",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "くびにタオルをかけます",
-   "kana": "くびにタオルをかけます",
-   "rom": "くびにタオルをかけます",
-   "arti": "くびにタオルをかけます",
-   "paket": [
-    "kutsushita-quiz"
    ],
    "benar": false
   },
@@ -7113,26 +3355,6 @@
    "benar": false
   },
   {
-   "kanji": "ケーキ",
-   "kana": "ケーキ",
-   "rom": "keeki",
-   "arti": "kue natal",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "けこうん",
-   "kana": "けこうん",
-   "rom": "kekoun",
-   "arti": "salah eja (bukan kata baku)",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "けしき",
    "kana": "けしき",
    "rom": "keshiki",
@@ -7203,16 +3425,6 @@
    "benar": false
   },
   {
-   "kanji": "げんき",
-   "kana": "げんき",
-   "rom": "genki",
-   "arti": "sehat",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "げんきな",
    "kana": "げんきな",
    "rom": "genki na",
@@ -7221,37 +3433,6 @@
     "kutsushita-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "げんきに",
-   "kana": "げんきに",
-   "rom": "genki ni",
-   "arti": "dengan sehat",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "けんせつ",
-   "kana": "けんせつ",
-   "rom": "kensetsu",
-   "arti": "konstruksi",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "こうえん",
-   "kana": "こうえん",
-   "rom": "kouen",
-   "arti": "taman",
-   "paket": [
-    "basu-quiz",
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "こうえん / 公園",
@@ -7270,77 +3451,6 @@
    "arti": "banjir",
    "paket": [
     "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "こうばんのまえ",
-   "kana": "こうばんのまえ",
-   "rom": "こうばんのまえ",
-   "arti": "こうばんのまえ",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "こえ",
-   "kana": "こえ",
-   "rom": "koe",
-   "arti": "suara",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "コーヒー",
-   "kana": "コーヒー",
-   "rom": "koohii",
-   "arti": "kopi",
-   "paket": [
-    "hare-quiz",
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ここ",
-   "kana": "ここ",
-   "rom": "koko",
-   "arti": "sini (tempat)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ごご",
-   "kana": "ごご",
-   "rom": "gogo",
-   "arti": "siang",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ごご",
-   "kana": "ごご",
-   "rom": "gogo",
-   "arti": "sore (p.m.)",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ごご",
-   "kana": "ごご",
-   "rom": "gogo",
-   "arti": "siang/PM",
-   "paket": [
-    "jinja-quiz"
    ],
    "benar": false
   },
@@ -7365,26 +3475,6 @@
    "benar": false
   },
   {
-   "kanji": "ごご１２じ",
-   "kana": "ごご１２じ",
-   "rom": "gogo juuniji",
-   "arti": "jam 12 siang",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ごご１じ",
-   "kana": "ごご１じ",
-   "rom": "gogo ichiji",
-   "arti": "jam 1 siang",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ごご9じまで",
    "kana": "午後 9 時まで. ごご 9 じまで",
    "rom": "gogo kuji made",
@@ -7401,76 +3491,6 @@
    "arti": "di sini saja cukup",
    "paket": [
     "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ごせん",
-   "kana": "ごせん",
-   "rom": "gosen",
-   "arti": "salah",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ごぜん",
-   "kana": "ごぜん",
-   "rom": "gozen",
-   "arti": "pagi",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ごぜん",
-   "kana": "ごぜん",
-   "rom": "gozen",
-   "arti": "pagi (a.m.)",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ごぜん",
-   "kana": "ごぜん",
-   "rom": "gozen",
-   "arti": "pagi/AM",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ごぜん１０じ３０ぷん",
-   "kana": "ごぜん１０じ３０ぷん",
-   "rom": "gozen juuji sanjuppun",
-   "arti": "10.30 pagi",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ごぜん１１じ",
-   "kana": "ごぜん１１じ",
-   "rom": "gozen juuichiji",
-   "arti": "jam 11 pagi",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ごぜん１１じ３０ぷん",
-   "kana": "ごぜん１１じ３０ぷん",
-   "rom": "gozen juuichiji sanjuppun",
-   "arti": "11.30 pagi",
-   "paket": [
-    "gakusei-quiz"
    ],
    "benar": true
   },
@@ -7509,16 +3529,6 @@
    "kana": "ことができます",
    "rom": "koto ga dekimasu",
    "arti": "bisa / dapat",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "この",
-   "kana": "この",
-   "rom": "kono",
-   "arti": "ini (+benda)",
    "paket": [
     "tamago-quiz"
    ],
@@ -7573,16 +3583,6 @@
     "kagi-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "これ",
-   "kana": "これ",
-   "rom": "kore",
-   "arti": "ini (benda)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "これからがんばります",
@@ -7676,36 +3676,6 @@
    "benar": true
   },
   {
-   "kanji": "さいごからイルカのショーを見たほうがいいです",
-   "kana": "さいごからイルカのショーを見たほうがいいです",
-   "rom": "さいごからイルカのショーを見たほうがいい",
-   "arti": "さいごからイルカのショーを見たほうがいいです",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "さいしょからイルカのショーを見たばかりいいです",
-   "kana": "さいしょからイルカのショーを見たばかりいいです",
-   "rom": "さいしょからイルカのショーを見たばかりい",
-   "arti": "さいしょからイルカのショーを見たばかりいいです",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "さいしょからイルカのショーを見たほうがいいです",
-   "kana": "さいしょからイルカのショーを見たほうがいいです",
-   "rom": "さいしょからイルカのショーを見たほうがい",
-   "arti": "さいしょからイルカのショーを見たほうがいいです",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "サイズ",
    "kana": "サイズ",
    "rom": "saizu",
@@ -7750,16 +3720,6 @@
    "kana": "さぜし",
    "rom": "sazeshi",
    "arti": "salah",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ざせつ",
-   "kana": "ざせつ",
-   "rom": "zasetsu",
-   "arti": "frustrasi / gagal",
    "paket": [
     "hare-quiz"
    ],
@@ -7867,26 +3827,6 @@
    "benar": false
   },
   {
-   "kanji": "さんぽ",
-   "kana": "さんぽ",
-   "rom": "sampo",
-   "arti": "jalan-jalan santai",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "さんぽ",
-   "kana": "さんぽ",
-   "rom": "sanpo",
-   "arti": "jalan-jalan",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "しあい",
    "kana": "しあい",
    "rom": "shiai",
@@ -7959,46 +3899,6 @@
    "benar": true
   },
   {
-   "kanji": "じかん",
-   "kana": "じかん",
-   "rom": "jikan",
-   "arti": "waktu",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "しけん",
-   "kana": "しけん",
-   "rom": "shiken",
-   "arti": "ujian / tes",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "しけん",
-   "kana": "しけん",
-   "rom": "shiken",
-   "arti": "ujian",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "しげん",
-   "kana": "しげん",
-   "rom": "shigen",
-   "arti": "sumber daya",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "しごと",
    "kana": "しごと",
    "rom": "shigoto",
@@ -8020,42 +3920,12 @@
    "benar": false
   },
   {
-   "kanji": "じしょ",
-   "kana": "じしょ",
-   "rom": "jisho",
-   "arti": "kamus",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "じしん",
-   "kana": "じしん",
-   "rom": "jishin",
-   "arti": "gempa",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "しずかな",
    "kana": "しずかな",
    "rom": "shizuka",
    "arti": "sepi",
    "paket": [
     "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "じつは",
-   "kana": "じつは",
-   "rom": "jitsu wa",
-   "arti": "sebenarnya",
-   "paket": [
-    "basu-quiz"
    ],
    "benar": false
   },
@@ -8068,16 +3938,6 @@
     "kagi-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "しつもん",
-   "kana": "しつもん",
-   "rom": "shitsumon",
-   "arti": "pertanyaan",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "しつれいします",
@@ -8178,16 +4038,6 @@
    "arti": "melakukan",
    "paket": [
     "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "しますか",
-   "kana": "しますか",
-   "rom": "shimasu ka",
-   "arti": "-",
-   "paket": [
-    "tomemasu-quiz"
    ],
    "benar": false
   },
@@ -8313,16 +4163,6 @@
    "benar": false
   },
   {
-   "kanji": "ジャケットを借りられます",
-   "kana": "ジャケットを借りられます",
-   "rom": "jaket",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "しゃしん",
    "kana": "しゃしん",
    "rom": "shashin",
@@ -8350,16 +4190,6 @@
    "arti": "Kemeja dan 500 yen",
    "paket": [
     "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "シャツはズボンの中に入れて",
-   "kana": "シャツはズボンの中に入れて",
-   "rom": "シャツはズボンの中に入れて",
-   "arti": "シャツはズボンの中に入れて",
-   "paket": [
-    "kutsushita-quiz"
    ],
    "benar": false
   },
@@ -8415,32 +4245,12 @@
    "benar": true
   },
   {
-   "kanji": "じゅうよう",
-   "kana": "じゅうよう",
-   "rom": "juuyou",
-   "arti": "penting",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "しゅうりします",
    "kana": "しゅうりします",
    "rom": "shuuri shimasu",
    "arti": "reparasi",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "しゅくない",
-   "kana": "しゅくない",
-   "rom": "shukunai",
-   "arti": "-",
-   "paket": [
-    "kuroi-quiz"
    ],
    "benar": false
   },
@@ -8505,17 +4315,6 @@
    "benar": true
   },
   {
-   "kanji": "しょうがつ",
-   "kana": "しょうがつ",
-   "rom": "shougatsu",
-   "arti": "tahun baru",
-   "paket": [
-    "haburashi-quiz",
-    "jinja-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "しょうしょうおまちください",
    "kana": "しょうしょうおまちください",
    "rom": "shoushou omachi kudasai",
@@ -8556,16 +4355,6 @@
    "benar": true
   },
   {
-   "kanji": "しょがつ",
-   "kana": "しょがつ",
-   "rom": "shogatsu",
-   "arti": "salah eja",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "ジョギング",
    "kana": "ジョギング",
    "rom": "jogingu",
@@ -8574,36 +4363,6 @@
     "tamago-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "ジョギングのてぶくろ",
-   "kana": "ジョギングのてぶくろ",
-   "rom": "ジョギングのてぶくろ",
-   "arti": "ジョギングのてぶくろ",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ジョギングのぼうし",
-   "kana": "ジョギングのぼうし",
-   "rom": "ジョギングのぼうし",
-   "arti": "ジョギングのぼうし",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ジョギングの服",
-   "kana": "ジョギングの服",
-   "rom": "ジョギングの服",
-   "arti": "ジョギングの服",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "しょくじ",
@@ -8696,16 +4455,6 @@
    "benar": false
   },
   {
-   "kanji": "しろ",
-   "kana": "しろ",
-   "rom": "shiro",
-   "arti": "kastil",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "しろい",
    "kana": "しろい",
    "rom": "shiroi",
@@ -8747,26 +4496,6 @@
    "benar": false
   },
   {
-   "kanji": "しんごう",
-   "kana": "しんごう",
-   "rom": "shingou",
-   "arti": "sinyal; lampu lalu lintas",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "じんじゃ",
-   "kana": "じんじゃ",
-   "rom": "jinja",
-   "arti": "kuil Shinto",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "しんせんな きせつ りょうりが たべられます。",
    "kana": "しんせんな きせつ りょうりが たべられます。",
    "rom": "shinsen na kisetsu ryouri ga taberaremasu",
@@ -8785,16 +4514,6 @@
     "kagi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "すい",
-   "kana": "すい",
-   "rom": "sui",
-   "arti": "air (bacaan On-yomi)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "すいえい",
@@ -8825,47 +4544,6 @@
     "hare-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "スーツ",
-   "kana": "スーツ",
-   "rom": "suutsu",
-   "arti": "setelan jas",
-   "paket": [
-    "aoi-quiz",
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "スーパーでさかなをかいます。",
-   "kana": "スーパーでさかなをかいます。",
-   "rom": "suupaa",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "すかう",
-   "kana": "すかう",
-   "rom": "sukau",
-   "arti": "keliru",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "すき",
-   "kana": "すき",
-   "rom": "suki",
-   "arti": "suka",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "すきじゃないです",
@@ -8964,16 +4642,6 @@
    "arti": "Cuci sedikit",
    "paket": [
     "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "すし",
-   "kana": "すし",
-   "rom": "sushi",
-   "arti": "sushi",
-   "paket": [
-    "magarimasu-quiz"
    ],
    "benar": false
   },
@@ -9118,26 +4786,6 @@
    "benar": false
   },
   {
-   "kanji": "ずぼん",
-   "kana": "ずぼん",
-   "rom": "zubon",
-   "arti": "celana",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "すまつ",
-   "kana": "すまつ",
-   "rom": "sumatsu",
-   "arti": "salah eja",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "スマホ",
    "kana": "スマホ",
    "rom": "sumaho",
@@ -9196,16 +4844,6 @@
     "hare-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "する",
-   "kana": "する",
-   "rom": "suru",
-   "arti": "melakukan / bermain olahraga",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "すると",
@@ -9298,16 +4936,6 @@
    "benar": false
   },
   {
-   "kanji": "ぜひ",
-   "kana": "ぜひ",
-   "rom": "zehi",
-   "arti": "sangat disarankan",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ぜひいってみてください",
    "kana": "ぜひいってみてください",
    "rom": "zehi",
@@ -9328,32 +4956,12 @@
    "benar": false
   },
   {
-   "kanji": "せまつ",
-   "kana": "せまつ",
-   "rom": "sematsu",
-   "arti": "salah eja",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "せんせいの いえ",
    "kana": "せんせいの いえ",
    "rom": "sensei no ie",
    "arti": "rumah guru",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ぜんぜん",
-   "kana": "ぜんぜん",
-   "rom": "zenzen",
-   "arti": "sama sekali tidak",
-   "paket": [
-    "hare-quiz"
    ],
    "benar": false
   },
@@ -9438,16 +5046,6 @@
    "benar": false
   },
   {
-   "kanji": "そがつ",
-   "kana": "そがつ",
-   "rom": "sogatsu",
-   "arti": "salah eja",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "そして",
    "kana": "そして",
    "rom": "soshite",
@@ -9468,16 +5066,6 @@
    "benar": false
   },
   {
-   "kanji": "その",
-   "kana": "その",
-   "rom": "sono",
-   "arti": "itu (+benda)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "そのまま すてます",
    "kana": "そのまますてます",
    "rom": "sonomama sutemasu",
@@ -9486,16 +5074,6 @@
     "hare-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "そら",
-   "kana": "そら",
-   "rom": "sora",
-   "arti": "langit",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "それから",
@@ -9548,26 +5126,6 @@
    "benar": false
   },
   {
-   "kanji": "それはいいですね",
-   "kana": "sore wa ii desu ne",
-   "rom": "sore wa ii desu ne",
-   "arti": "wah itu bagus ya",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "それはいけませんね",
-   "kana": "sore wa ikemasen ne",
-   "rom": "sore wa ikemasen ne",
-   "arti": "wah itu gawat ya",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "それはこまりましたね",
    "kana": "それはこまりましたね",
    "rom": "sore wa komarimashita ne",
@@ -9576,16 +5134,6 @@
     "kutsushita-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "それはよかったね",
-   "kana": "sore wa yokatta ne",
-   "rom": "sore wa yokatta ne",
-   "arti": "wah syukurlah",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "それは問題ではありません",
@@ -9648,16 +5196,6 @@
    "benar": false
   },
   {
-   "kanji": "だいじん",
-   "kana": "だいじん",
-   "rom": "daijin",
-   "arti": "menteri",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "たいせつにします",
    "kana": "たいせつにします",
    "rom": "taisetsu ni shimasu",
@@ -9677,46 +5215,6 @@
     "basu-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "たいふ",
-   "kana": "たいふ",
-   "rom": "taifu",
-   "arti": "salah eja",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "たいふ",
-   "kana": "たいふ",
-   "rom": "taifu",
-   "arti": "topan",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "たいふう",
-   "kana": "たいふう",
-   "rom": "taifuu",
-   "arti": "angin topan",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "たいふう",
-   "kana": "たいふう",
-   "rom": "taifuu",
-   "arti": "topan",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "たいへんですね",
@@ -9749,16 +5247,6 @@
     "orimasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "タオル",
-   "kana": "タオル",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "タオル と 500 円",
@@ -9852,16 +5340,6 @@
    "benar": false
   },
   {
-   "kanji": "たすかります",
-   "kana": "tasukarimasu",
-   "rom": "tasukarimasu",
-   "arti": "tertolong",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "たすけて",
    "kana": "たすけて",
    "rom": "tasukete",
@@ -9902,32 +5380,12 @@
    "benar": true
   },
   {
-   "kanji": "たすけます",
-   "kana": "tasukemasu",
-   "rom": "tasukemasu",
-   "arti": "menolong",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "たすっだて",
    "kana": "たすっだて",
    "rom": "tasuddade",
    "arti": "bentuk rusak",
    "paket": [
     "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "たすみます",
-   "kana": "tasumimasu",
-   "rom": "tasumimasu",
-   "arti": "bukan kata",
-   "paket": [
-    "shatsu-quiz"
    ],
    "benar": false
   },
@@ -10053,26 +5511,6 @@
    "benar": false
   },
   {
-   "kanji": "たふ",
-   "kana": "たふ",
-   "rom": "tafu",
-   "arti": "salah eja",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "たべ",
-   "kana": "たべ",
-   "rom": "tabe",
-   "arti": "akar kata",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "たべた",
    "kana": "たべた",
    "rom": "tabeta",
@@ -10081,16 +5519,6 @@
     "kagi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "たべています",
-   "kana": "tabete imasu",
-   "rom": "tabete imasu",
-   "arti": "sedang makan",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "たべますか",
@@ -10108,16 +5536,6 @@
    "kana": "たべもの",
    "rom": "tabemono",
    "arti": "makanan",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "たべもの",
-   "kana": "たべもの",
-   "rom": "o3",
-   "arti": "たべもの",
    "paket": [
     "shatsu-quiz"
    ],
@@ -10206,26 +5624,6 @@
    "benar": false
   },
   {
-   "kanji": "ために",
-   "kana": "ために",
-   "rom": "tame ni",
-   "arti": "untuk (tujuan)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "だれ",
-   "kana": "だれ",
-   "rom": "dare",
-   "arti": "siapa",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "だれか",
    "kana": "だれか",
    "rom": "dare ka",
@@ -10247,26 +5645,6 @@
    "benar": false
   },
   {
-   "kanji": "たんじょうび",
-   "kana": "たんじょうび",
-   "rom": "tanjoubi",
-   "arti": "ulang tahun",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "だんだん",
-   "kana": "だんだん",
-   "rom": "dandan",
-   "arti": "perlahan",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "ちいさい",
    "kana": "ちいさい",
    "rom": "chiisai",
@@ -10279,16 +5657,6 @@
    "benar": false
   },
   {
-   "kanji": "ちかい",
-   "kana": "ちかい",
-   "rom": "chikai",
-   "arti": "dekat",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ちかづく",
    "kana": "ちかづく",
    "rom": "chikazuku",
@@ -10297,57 +5665,6 @@
     "konpyuutaa-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "ちかてつ",
-   "kana": "ちかてつ",
-   "rom": "chikatetsu",
-   "arti": "kereta bawah tanah",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ちさい",
-   "kana": "ちさい",
-   "rom": "chisai",
-   "arti": "kecil",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ちち",
-   "kana": "ちち",
-   "rom": "chichi",
-   "arti": "ayah",
-   "paket": [
-    "kagi-quiz",
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ちゃうもん",
-   "kana": "ちゃうもん",
-   "rom": "chaumon",
-   "arti": "keliru",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ちゅうし",
-   "kana": "ちゅうし",
-   "rom": "chuushi",
-   "arti": "pembatalan",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "ちゅうしゃ",
@@ -10360,26 +5677,6 @@
    "benar": false
   },
   {
-   "kanji": "ちゅうもん",
-   "kana": "ちゅうもん",
-   "rom": "chuumon",
-   "arti": "pesanan",
-   "paket": [
-    "aoi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ちゅうもん",
-   "kana": "ちゅうもん",
-   "rom": "chuumon",
-   "arti": "memesan",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ちゅうりんじょうにいってさがす",
    "kana": "ちゅうりんじょうにいってさがす",
    "rom": "chuurinjou ni itte sagasu",
@@ -10388,16 +5685,6 @@
     "jinja-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "ちょうし",
-   "kana": "ちょうし",
-   "rom": "choushi",
-   "arti": "kondisi",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "チョコレート",
@@ -10470,26 +5757,6 @@
    "benar": false
   },
   {
-   "kanji": "つかう",
-   "kana": "つかう",
-   "rom": "tsukau",
-   "arti": "memakai",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "つかう (使う)",
-   "kana": "つかう",
-   "rom": "tsukau",
-   "arti": "memakai",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "つかってもいいです",
    "kana": "つかってもいいです",
    "rom": "pernyataan",
@@ -10508,26 +5775,6 @@
     "tomemasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "つかってもいいません",
-   "kana": "つかってもいいません",
-   "rom": "masen",
-   "arti": "-",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "つかる",
-   "kana": "つかる",
-   "rom": "tsukaru",
-   "arti": "-",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "つかわない (使わない)",
@@ -10571,27 +5818,6 @@
    "benar": true
   },
   {
-   "kanji": "つくる",
-   "kana": "つくる",
-   "rom": "tsukuru",
-   "arti": "membuat",
-   "paket": [
-    "kagi-quiz",
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "つける",
-   "kana": "つける",
-   "rom": "tsukeru",
-   "arti": "mencocol / menempelkan",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "つたえます",
    "kana": "つたえます",
    "rom": "tsutaemasu",
@@ -10602,26 +5828,6 @@
    "benar": false
   },
   {
-   "kanji": "つづけた ほうが いいです",
-   "kana": "つづけた ほうが いいです",
-   "rom": "tsuzuketa hou ga ii desu",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "つま",
-   "kana": "つま",
-   "rom": "tsuma",
-   "arti": "istri",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "つめたい",
    "kana": "つめたい",
    "rom": "tsumetai",
@@ -10630,16 +5836,6 @@
     "kuroi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "つよくて",
-   "kana": "つよくて",
-   "rom": "tsuyokute",
-   "arti": "kuat (bentuk te)",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "テーブル",
@@ -10710,36 +5906,6 @@
    "arti": "kalau bisa",
    "paket": [
     "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "てくち",
-   "kana": "てくち",
-   "rom": "tekuchi",
-   "arti": "keliru",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "でくち",
-   "kana": "でくち",
-   "rom": "dekuchi",
-   "arti": "keliru",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "でぐち",
-   "kana": "でぐち",
-   "rom": "deguchi",
-   "arti": "pintu keluar",
-   "paket": [
-    "tomemasu-quiz"
    ],
    "benar": true
   },
@@ -10834,32 +6000,12 @@
    "benar": false
   },
   {
-   "kanji": "てら",
-   "kana": "てら",
-   "rom": "tera",
-   "arti": "kuil Buddha",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "テレビ",
    "kana": "テレビ",
    "rom": "terebi",
    "arti": "televisi",
    "paket": [
     "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "てんいん",
-   "kana": "てんいん",
-   "rom": "tenin",
-   "arti": "pegawai",
-   "paket": [
-    "basu-quiz"
    ],
    "benar": false
   },
@@ -10926,36 +6072,6 @@
    "benar": false
   },
   {
-   "kanji": "ドア",
-   "kana": "ドア",
-   "rom": "doa",
-   "arti": "pintu",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "どいたしまして",
-   "kana": "douitashimashite",
-   "rom": "douitashimashite",
-   "arti": "sama-sama",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "といますか",
-   "kana": "といますか",
-   "rom": "toimasu ka",
-   "arti": "-",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "トイル",
    "kana": "トイル",
    "rom": "toiru",
@@ -11009,26 +6125,6 @@
    "benar": true
   },
   {
-   "kanji": "どうぐ",
-   "kana": "どうぐ",
-   "rom": "dougu",
-   "arti": "alat / perkakas",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "どうぐをつかったら、もとのところにかえします",
-   "kana": "どうぐをつかったら、もとのところにかえします",
-   "rom": "どうぐをつかったら、もとのところにかえします",
-   "arti": "どうぐをつかったら、もとのところにかえします",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "どうしたです",
    "kana": "どうしたです",
    "rom": "doushita",
@@ -11057,27 +6153,6 @@
     "tomemasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "どうぞ",
-   "kana": "どうぞ",
-   "rom": "douzo",
-   "arti": "silakan",
-   "paket": [
-    "gakusei-quiz",
-    "kagi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "どうぞ",
-   "kana": "どうぞ",
-   "rom": "douzo",
-   "arti": "untuk memberi",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "どうぞおまたせしました",
@@ -11160,26 +6235,6 @@
    "benar": false
   },
   {
-   "kanji": "とかい、おおい",
-   "kana": "とかい、おおい",
-   "rom": "とかい、おおい",
-   "arti": "とかい、おおい",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "とかい、みどりがすくない",
-   "kana": "とかい、みどりがすくない",
-   "rom": "とかい、みどりがすくない",
-   "arti": "とかい、みどりがすくない",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ときどき",
    "kana": "ときどき",
    "rom": "tokidoki",
@@ -11208,16 +6263,6 @@
     "orimasu-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "どこ",
-   "kana": "どこ",
-   "rom": "doko",
-   "arti": "di mana",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "どこか",
@@ -11392,16 +6437,6 @@
    "benar": false
   },
   {
-   "kanji": "どの",
-   "kana": "どの",
-   "rom": "dono",
-   "arti": "yang mana",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "どのぐらいですか",
    "kana": "どのぐらいですか",
    "rom": "dono gurai desu ka",
@@ -11492,19 +6527,6 @@
    "benar": false
   },
   {
-   "kanji": "ながい",
-   "kana": "ながい",
-   "rom": "nagai",
-   "arti": "panjang",
-   "paket": [
-    "aoi-quiz",
-    "basu-quiz",
-    "kagi-quiz",
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "ながかった",
    "kana": "ながかった",
    "rom": "nagakatta",
@@ -11565,16 +6587,6 @@
    "benar": false
   },
   {
-   "kanji": "なつ",
-   "kana": "なつ",
-   "rom": "natsu",
-   "arti": "musim panas",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "なった",
    "kana": "なった",
    "rom": "natta",
@@ -11611,16 +6623,6 @@
    "arti": "kalimat rusak",
    "paket": [
     "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "なにか",
-   "kana": "なにか",
-   "rom": "nani ka",
-   "arti": "sesuatu",
-   "paket": [
-    "kuroi-quiz"
    ],
    "benar": false
   },
@@ -11686,52 +6688,12 @@
    "benar": false
   },
   {
-   "kanji": "なり",
-   "kana": "なり",
-   "rom": "nari",
-   "arti": "stem",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "なります",
    "kana": "なります",
    "rom": "narimasu",
    "arti": "sopan",
    "paket": [
     "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "なる",
-   "kana": "なる",
-   "rom": "naru",
-   "arti": "kamus",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "なんじ",
-   "kana": "なんじ",
-   "rom": "nanji",
-   "arti": "jam berapa",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "なんじですか",
-   "kana": "なんじですか",
-   "rom": "nanji desu ka",
-   "arti": "jam berapa",
-   "paket": [
-    "kutsushita-quiz"
    ],
    "benar": false
   },
@@ -11767,16 +6729,6 @@
    "benar": true
   },
   {
-   "kanji": "なんですか",
-   "kana": "nan desu ka",
-   "rom": "nan desu ka",
-   "arti": "apa itu",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "にがいですから",
    "kana": "にがいですから",
    "rom": "nigai desu kara",
@@ -11785,16 +6737,6 @@
     "magarimasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "にがて",
-   "kana": "にがて",
-   "rom": "nigate",
-   "arti": "tidak pandai / tidak disukai",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "にぎやか で",
@@ -11823,26 +6765,6 @@
    "arti": "sebelum benda",
    "paket": [
     "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "にぎやかに",
-   "kana": "にぎやかに",
-   "rom": "nigiyaka ni",
-   "arti": "-",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "にし",
-   "kana": "にし",
-   "rom": "nishi",
-   "arti": "barat",
-   "paket": [
-    "hashi-quiz"
    ],
    "benar": false
   },
@@ -11887,26 +6809,6 @@
    "benar": true
   },
   {
-   "kanji": "にゅういんする",
-   "kana": "にゅういんする",
-   "rom": "にゅういんする",
-   "arti": "にゅういんする",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "にわ",
-   "kana": "にわ",
-   "rom": "niwa",
-   "arti": "halaman / pekarangan",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "にわで さんぽや あそびが できます",
    "kana": "にわで さんぽや あそびが できます",
    "rom": "niwa de sanpo ya asobi ga dekimasu",
@@ -11933,16 +6835,6 @@
    "arti": "Ingin tidur",
    "paket": [
     "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ねつ",
-   "kana": "ねつ",
-   "rom": "netsu",
-   "arti": "demam",
-   "paket": [
-    "tomemasu-quiz"
    ],
    "benar": false
   },
@@ -11994,56 +6886,6 @@
    "arti": "naik kendaraan",
    "paket": [
     "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ので",
-   "kana": "ので",
-   "rom": "node",
-   "arti": "karena",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ので",
-   "kana": "ので",
-   "rom": "node",
-   "arti": "karena (alasan)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "のど",
-   "kana": "のど",
-   "rom": "nodo",
-   "arti": "tenggorokan",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "のに",
-   "kana": "のに",
-   "rom": "noni",
-   "arti": "padahal",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "のに",
-   "kana": "のに",
-   "rom": "noni",
-   "arti": "padahal (konsesi)",
-   "paket": [
-    "tamago-quiz"
    ],
    "benar": false
   },
@@ -12164,16 +7006,6 @@
    "arti": "naik (kendaraan)",
    "paket": [
     "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "のる",
-   "kana": "のる",
-   "rom": "noru",
-   "arti": "naik kendaraan",
-   "paket": [
-    "kagi-quiz"
    ],
    "benar": false
   },
@@ -12338,16 +7170,6 @@
    "benar": true
   },
   {
-   "kanji": "はこ",
-   "kana": "はこ",
-   "rom": "hako",
-   "arti": "kotak",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "はさみ",
    "kana": "はさみ",
    "rom": "hasami",
@@ -12356,26 +7178,6 @@
     "basu-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "はし",
-   "kana": "はし",
-   "rom": "hashi",
-   "arti": "sumpit",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "はし",
-   "kana": "はし",
-   "rom": "hashi",
-   "arti": "jembatan",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "はしって",
@@ -12414,39 +7216,6 @@
    "arti": "memulai",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "はず",
-   "kana": "はず",
-   "rom": "hazu",
-   "arti": "seharusnya",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "バス",
-   "kana": "バス",
-   "rom": "basu",
-   "arti": "bus",
-   "paket": [
-    "aoi-quiz",
-    "basu-quiz",
-    "gakusei-quiz",
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "バス",
-   "kana": "バス",
-   "rom": "バス",
-   "arti": "バス",
-   "paket": [
-    "kutsushita-quiz"
    ],
    "benar": true
   },
@@ -12492,16 +7261,6 @@
    "benar": false
   },
   {
-   "kanji": "はつおん",
-   "kana": "はつおん",
-   "rom": "hatsuon",
-   "arti": "pelafalan",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "バドミントン",
    "kana": "バドミントン",
    "rom": "badominton",
@@ -12510,26 +7269,6 @@
     "kuroi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "はな",
-   "kana": "はな",
-   "rom": "hana",
-   "arti": "hidung/bunga",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "はな",
-   "kana": "はな",
-   "rom": "hana",
-   "arti": "bunga",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "はなが でる とき",
@@ -12592,16 +7331,6 @@
    "benar": true
   },
   {
-   "kanji": "はなセンター",
-   "kana": "はなセンター",
-   "rom": "hana",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "はなれる",
    "kana": "はなれる",
    "rom": "hanareru",
@@ -12610,17 +7339,6 @@
     "konpyuutaa-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "はは",
-   "kana": "はは",
-   "rom": "haha",
-   "arti": "ibu",
-   "paket": [
-    "kagi-quiz",
-    "tamago-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "はらって",
@@ -12643,16 +7361,6 @@
    "benar": true
   },
   {
-   "kanji": "はる",
-   "kana": "はる",
-   "rom": "haru",
-   "arti": "musim semi",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "はるまつり",
    "kana": "はるまつり",
    "rom": "haru matsuri",
@@ -12661,18 +7369,6 @@
     "jinja-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "はれ",
-   "kana": "はれ",
-   "rom": "hare",
-   "arti": "cerah",
-   "paket": [
-    "gakusei-quiz",
-    "hare-quiz",
-    "jinja-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "はれます",
@@ -12691,26 +7387,6 @@
    "arti": "Valentine",
    "paket": [
     "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "はん",
-   "kana": "はん",
-   "rom": "han",
-   "arti": "setengah",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "パン",
-   "kana": "パン",
-   "rom": "pan",
-   "arti": "roti",
-   "paket": [
-    "tamago-quiz"
    ],
    "benar": false
   },
@@ -12755,26 +7431,6 @@
    "benar": false
   },
   {
-   "kanji": "ひ",
-   "kana": "ひ",
-   "rom": "hi",
-   "arti": "hari / matahari",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ひ",
-   "kana": "ひ",
-   "rom": "hi",
-   "arti": "api / matahari",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "ひいて",
    "kana": "ひいて",
    "rom": "hiite",
@@ -12815,16 +7471,6 @@
    "benar": true
   },
   {
-   "kanji": "ひき",
-   "kana": "ひき",
-   "rom": "hiki",
-   "arti": "bentuk masu-stem",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "ひきます",
    "kana": "ひきます",
    "rom": "hikimasu",
@@ -12832,16 +7478,6 @@
    "paket": [
     "aoi-quiz",
     "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ひく",
-   "kana": "ひく",
-   "rom": "hiku",
-   "arti": "masuk angin",
-   "paket": [
-    "kagi-quiz"
    ],
    "benar": false
   },
@@ -12869,16 +7505,6 @@
    "kanji": "ひごうき",
    "kana": "ひごうき",
    "rom": "higouki",
-   "arti": "keliru",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "びこうき",
-   "kana": "びこうき",
-   "rom": "bikouki",
    "arti": "keliru",
    "paket": [
     "tomemasu-quiz"
@@ -12946,18 +7572,6 @@
    "benar": false
   },
   {
-   "kanji": "ひつよう",
-   "kana": "ひつよう",
-   "rom": "hitsuyou",
-   "arti": "perlu",
-   "paket": [
-    "basu-quiz",
-    "konpyuutaa-quiz",
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ビデオ",
    "kana": "ビデオ",
    "rom": "bideo",
@@ -12966,16 +7580,6 @@
     "aoi-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "ひまな人",
-   "kana": "ひまな人",
-   "rom": "hima na hito",
-   "arti": "orang senggang",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "びょういん に かえる",
@@ -12996,26 +7600,6 @@
     "hare-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "びょういんのげんかん",
-   "kana": "びょういんのげんかん",
-   "rom": "びょういんのげんかん",
-   "arti": "びょういんのげんかん",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "びょういんのとなり",
-   "kana": "びょういんのとなり",
-   "rom": "びょういんのとなり",
-   "arti": "びょういんのとなり",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "ひろい",
@@ -13080,26 +7664,6 @@
    "benar": true
   },
   {
-   "kanji": "ふく",
-   "kana": "ふく",
-   "rom": "fuku",
-   "arti": "pakaian",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ふくざつ",
-   "kana": "ふくざつ",
-   "rom": "fukuzatsu",
-   "arti": "rumit",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ふったら",
    "kana": "ふったら",
    "rom": "futtara",
@@ -13138,46 +7702,6 @@
     "aoi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "ふるい",
-   "kana": "ふるい",
-   "rom": "furui",
-   "arti": "tua / usang",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "プレゼント",
-   "kana": "プレゼント",
-   "rom": "o4",
-   "arti": "プレゼント",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ぶん",
-   "kana": "ぶん",
-   "rom": "bun",
-   "arti": "menit",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ぶんか",
-   "kana": "ぶんか",
-   "rom": "bunka",
-   "arti": "budaya",
-   "paket": [
-    "aoi-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "ペット",
@@ -13250,27 +7774,6 @@
    "benar": false
   },
   {
-   "kanji": "ぼうし",
-   "kana": "ぼうし",
-   "rom": "boushi",
-   "arti": "topi",
-   "paket": [
-    "aoi-quiz",
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ホール",
-   "kana": "ホール",
-   "rom": "hooru",
-   "arti": "aula",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ボールペン",
    "kana": "ボールペン",
    "rom": "boorupen",
@@ -13291,16 +7794,6 @@
    "benar": false
   },
   {
-   "kanji": "ほし",
-   "kana": "ほし",
-   "rom": "hoshi",
-   "arti": "bintang",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "ホテル",
    "kana": "ホテル",
    "rom": "hoteru",
@@ -13311,32 +7804,12 @@
    "benar": false
   },
   {
-   "kanji": "ほん",
-   "kana": "ほん",
-   "rom": "hon",
-   "arti": "buku",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "ほんが よめます。",
    "kana": "ほんが よめます。",
    "rom": "hon ga yomemasu",
    "arti": "bisa baca buku",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ほんや",
-   "kana": "ほんや",
-   "rom": "hon-ya",
-   "arti": "toko buku",
-   "paket": [
-    "aoi-quiz"
    ],
    "benar": false
   },
@@ -13357,16 +7830,6 @@
    "arti": "belajar di sekolah tiap minggu",
    "paket": [
     "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "まえ",
-   "kana": "まえ",
-   "rom": "mae",
-   "arti": "depan",
-   "paket": [
-    "basu-quiz"
    ],
    "benar": false
   },
@@ -13411,16 +7874,6 @@
    "benar": false
   },
   {
-   "kanji": "まだまだです",
-   "kana": "mada mada desu",
-   "rom": "mada mada desu",
-   "arti": "masih jauh",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "まちがえます",
    "kana": "まちがえます",
    "rom": "machigaemasu",
@@ -13437,28 +7890,6 @@
    "arti": "menunggu",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "まつり",
-   "kana": "まつり",
-   "rom": "matsuri",
-   "arti": "festival",
-   "paket": [
-    "basu-quiz",
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "まど",
-   "kana": "まど",
-   "rom": "mado",
-   "arti": "jendela",
-   "paket": [
-    "kagi-quiz",
-    "shatsu-quiz"
    ],
    "benar": false
   },
@@ -13513,16 +7944,6 @@
    "benar": false
   },
   {
-   "kanji": "みぎ",
-   "kana": "みぎ",
-   "rom": "migi",
-   "arti": "kanan",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "みじかい",
    "kana": "みじかい",
    "rom": "mijikai",
@@ -13573,26 +7994,6 @@
    "benar": true
   },
   {
-   "kanji": "みず",
-   "kana": "みず",
-   "rom": "mizu",
-   "arti": "air (bacaan Kun-yomi)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "みせ",
-   "kana": "みせ",
-   "rom": "mise",
-   "arti": "toko",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "みたい",
    "kana": "みたい",
    "rom": "mitai",
@@ -13623,27 +8024,6 @@
    "benar": true
   },
   {
-   "kanji": "みち",
-   "kana": "みち",
-   "rom": "michi",
-   "arti": "jalan",
-   "paket": [
-    "hashi-quiz",
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "みて",
-   "kana": "みて",
-   "rom": "mite",
-   "arti": "bentuk te",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "みなみ",
    "kana": "みなみ",
    "rom": "minami",
@@ -13662,16 +8042,6 @@
     "kutsushita-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "みなみセンター",
-   "kana": "みなみセンター",
-   "rom": "minami",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "みなみのえき",
@@ -13704,27 +8074,6 @@
    "benar": false
   },
   {
-   "kanji": "みみ",
-   "kana": "みみ",
-   "rom": "mimi",
-   "arti": "telinga",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "みる",
-   "kana": "みる",
-   "rom": "miru",
-   "arti": "melihat",
-   "paket": [
-    "basu-quiz",
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "むきます",
    "kana": "むきます",
    "rom": "mukimasu",
@@ -13733,16 +8082,6 @@
     "orimasu-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "むく",
-   "kana": "むく",
-   "rom": "muku",
-   "arti": "mengupas",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "むずかしい",
@@ -13765,16 +8104,6 @@
    "benar": true
   },
   {
-   "kanji": "むら、みどりがすくない",
-   "kana": "むら、みどりがすくない",
-   "rom": "むら、みどりがすくない",
-   "arti": "むら、みどりがすくない",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "むりですか",
    "kana": "むりですか",
    "rom": "muri desu ka",
@@ -13795,16 +8124,6 @@
    "benar": true
   },
   {
-   "kanji": "め",
-   "kana": "め",
-   "rom": "me",
-   "arti": "mata",
-   "paket": [
-    "jinja-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "メールをする",
    "kana": "メールをする",
    "rom": "meeru o suru",
@@ -13813,47 +8132,6 @@
     "kutsushita-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "めがね",
-   "kana": "めがね",
-   "rom": "megane",
-   "arti": "kacamata",
-   "paket": [
-    "aoi-quiz",
-    "basu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "めずらしい魚がふえています",
-   "kana": "めずらしい魚がふえています",
-   "rom": "めずらしい魚がふえています",
-   "arti": "めずらしい魚がふえています",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "めずらしい肉がふえています",
-   "kana": "めずらしい肉がふえています",
-   "rom": "めずらしい肉がふえています",
-   "arti": "めずらしい肉がふえています",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "めずらしい卵がふえています",
-   "kana": "めずらしい卵がふえています",
-   "rom": "めずらしい卵がふえています",
-   "arti": "めずらしい卵がふえています",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "もうしわけありません",
@@ -13907,16 +8185,6 @@
    "benar": true
   },
   {
-   "kanji": "もちろんですよ",
-   "kana": "mochiron desu yo",
-   "rom": "mochiron desu yo",
-   "arti": "tentu saja",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "もどります",
    "kana": "もどります",
    "rom": "modorimasu",
@@ -13935,16 +8203,6 @@
     "tomemasu-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "もみじ",
-   "kana": "もみじ",
-   "rom": "momiji",
-   "arti": "Daun maple merah",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "やきます",
@@ -13977,16 +8235,6 @@
     "jinja-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "やさいいちばで",
-   "kana": "やさいいちばで",
-   "rom": "yasai",
-   "arti": "-",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "やすい",
@@ -14029,16 +8277,6 @@
    "benar": false
   },
   {
-   "kanji": "やっていますか",
-   "kana": "yatte imasu ka",
-   "rom": "yatte imasu ka",
-   "arti": "masih berlangsung?",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "やっと",
    "kana": "やっと",
    "rom": "yatto",
@@ -14055,16 +8293,6 @@
    "arti": "robek",
    "paket": [
     "aoi-quiz",
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "やま",
-   "kana": "やま",
-   "rom": "yama",
-   "arti": "Gunung",
-   "paket": [
     "kagi-quiz"
    ],
    "benar": false
@@ -14131,33 +8359,12 @@
    "benar": false
   },
   {
-   "kanji": "ゆうびんきょくのよこ",
-   "kana": "ゆうびんきょくのよこ",
-   "rom": "ゆうびんきょくのよこ",
-   "arti": "ゆうびんきょくのよこ",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ゆうめいな",
    "kana": "ゆうめいな",
    "rom": "yuumei na",
    "arti": "terkenal",
    "paket": [
     "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ゆき",
-   "kana": "ゆき",
-   "rom": "yuki",
-   "arti": "salju",
-   "paket": [
-    "jinja-quiz",
-    "tamago-quiz"
    ],
    "benar": true
   },
@@ -14212,46 +8419,6 @@
    "benar": false
   },
   {
-   "kanji": "よい",
-   "kana": "よい",
-   "rom": "yoi",
-   "arti": "baik",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "よいなら",
-   "kana": "yoi nara",
-   "rom": "yoi nara",
-   "arti": "jika baik (kaku)",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ように",
-   "kana": "ように",
-   "rom": "you ni",
-   "arti": "agar/sehingga",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "ように",
-   "kana": "ように",
-   "rom": "you ni",
-   "arti": "agar (tujuan)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "ようにありますか",
    "kana": "ようにありますか",
    "rom": "you ni arimasu ka",
@@ -14268,17 +8435,6 @@
    "arti": "menjadi bisa...",
    "paket": [
     "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "ヨガ",
-   "kana": "ヨガ",
-   "rom": "yoga",
-   "arti": "yoga",
-   "paket": [
-    "gakusei-quiz",
-    "tamago-quiz"
    ],
    "benar": true
   },
@@ -14301,16 +8457,6 @@
     "konpyuutaa-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "よかったです",
-   "kana": "yokatta desu",
-   "rom": "yokatta desu",
-   "arti": "menyenangkan",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "よかったですね",
@@ -14353,42 +8499,12 @@
    "benar": true
   },
   {
-   "kanji": "よかったら",
-   "kana": "yokattara",
-   "rom": "yokattara",
-   "arti": "kalau berkenan",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "よかって",
    "kana": "よかって",
    "rom": "yokatte",
    "arti": "bentuk keliru",
    "paket": [
     "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "よく",
-   "kana": "よく",
-   "rom": "yoku",
-   "arti": "biasa",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "よこなら",
-   "kana": "yoko nara",
-   "rom": "yoko nara",
-   "arti": "jika samping",
-   "paket": [
-    "shatsu-quiz"
    ],
    "benar": false
   },
@@ -14433,32 +8549,12 @@
    "benar": true
   },
   {
-   "kanji": "よに",
-   "kana": "よに",
-   "rom": "yoni",
-   "arti": "agar",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "よみます",
    "kana": "よみます",
    "rom": "yomimasu",
    "arti": "membaca",
    "paket": [
     "hashi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "よむこ",
-   "kana": "よむこ",
-   "rom": "yomu",
-   "arti": "membaca",
-   "paket": [
-    "tomemasu-quiz"
    ],
    "benar": true
   },
@@ -14503,16 +8599,6 @@
    "benar": false
   },
   {
-   "kanji": "よわい",
-   "kana": "よわい",
-   "rom": "yowai",
-   "arti": "lemah",
-   "paket": [
-    "aoi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "よわかった",
    "kana": "よわかった",
    "rom": "yowakatta",
@@ -14539,26 +8625,6 @@
    "arti": "lari",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "りおりしますた",
-   "kana": "りおりしますた",
-   "rom": "riori",
-   "arti": "-",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "りこん",
-   "kana": "りこん",
-   "rom": "rikon",
-   "arti": "perceraian",
-   "paket": [
-    "kagi-quiz"
    ],
    "benar": false
   },
@@ -14635,16 +8701,6 @@
    "benar": true
   },
   {
-   "kanji": "ルーラー",
-   "kana": "ルーラー",
-   "rom": "ruuraa",
-   "arti": "penggaris",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "レストラン",
    "kana": "レストラン",
    "rom": "resutoran",
@@ -14703,16 +8759,6 @@
     "konpyuutaa-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "わかりません",
-   "kana": "wakarimasen",
-   "rom": "wakarimasen",
-   "arti": "tidak tahu",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "わかれます",
@@ -14818,16 +8864,6 @@
    "benar": true
   },
   {
-   "kanji": "一つ",
-   "kana": "一つ",
-   "rom": "一つ",
-   "arti": "一つ",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "一年間",
    "kana": "一年間",
    "rom": "ichinenkan",
@@ -14888,47 +8924,6 @@
    "benar": false
   },
   {
-   "kanji": "飲食",
-   "kana": "飲食",
-   "rom": "飲食",
-   "arti": "飲食",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "院病",
-   "kana": "院病",
-   "rom": "inbyou",
-   "arti": "bukan kata baku",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "雨",
-   "kana": "雨",
-   "rom": "ame",
-   "arti": "hujan",
-   "paket": [
-    "gakusei-quiz",
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "雨",
-   "kana": "あめ",
-   "rom": "ame",
-   "arti": "hujan",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "雨がふるまえに",
    "kana": "雨がふるまえに",
    "rom": "ame ga furu mae ni",
@@ -14937,16 +8932,6 @@
     "kuroi-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "運転",
-   "kana": "運転",
-   "rom": "unten",
-   "arti": "menyetir",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "運動 ・うんどう",
@@ -14969,43 +8954,12 @@
    "benar": false
   },
   {
-   "kanji": "雲泥",
-   "kana": "雲泥",
-   "rom": "undei",
-   "arti": "perbedaan jauh",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "映画",
-   "kana": "えいが",
-   "rom": "eiga",
-   "arti": "film",
-   "paket": [
-    "hare-quiz",
-    "hashi-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "泳がない",
    "kana": "泳がない",
    "rom": "oyoganai",
    "arti": "tidak berenang",
    "paket": [
     "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "泳ぎます",
-   "kana": "泳ぎます",
-   "rom": "泳ぎます",
-   "arti": "泳ぎます",
-   "paket": [
-    "shatsu-quiz"
    ],
    "benar": false
   },
@@ -15028,16 +8982,6 @@
     "magarimasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "演じる",
-   "kana": "演じる",
-   "rom": "enjiru",
-   "arti": "memerankan",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "遠くて",
@@ -15066,26 +9010,6 @@
    "arti": "kotor",
    "paket": [
     "haburashi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "温泉",
-   "kana": "おんせん",
-   "rom": "onsen",
-   "arti": "pemandian air panas",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "温泉",
-   "kana": "温泉",
-   "rom": "o2",
-   "arti": "温泉",
-   "paket": [
-    "shatsu-quiz"
    ],
    "benar": true
   },
@@ -15150,62 +9074,12 @@
    "benar": false
   },
   {
-   "kanji": "何時",
-   "kana": "なんじ",
-   "rom": "nanji",
-   "arti": "jam berapa",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "夏",
-   "kana": "なつ",
-   "rom": "natsu",
-   "arti": "musim panas",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "家族",
-   "kana": "家族",
-   "rom": "kazoku",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "家族 に  電話 を かけます",
    "kana": "家族 に  電話 を かけます",
    "rom": "kazoku ni denwa o kakemasu",
    "arti": "menelepon keluarga",
    "paket": [
     "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "暇な",
-   "kana": "暇な",
-   "rom": "hima na",
-   "arti": "yang senggang",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "火曜日",
-   "kana": "火曜日",
-   "rom": "kayoubi",
-   "arti": "Selasa",
-   "paket": [
-    "kutsushita-quiz"
    ],
    "benar": false
   },
@@ -15218,26 +9092,6 @@
     "hashi-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "会社にいきます",
-   "kana": "会社にいきます",
-   "rom": "会社にいきます",
-   "arti": "会社にいきます",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "会社の玄関に会います",
-   "kana": "会社の玄関に会います",
-   "rom": "会社の玄関に会います",
-   "arti": "会社の玄関に会います",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "快晴",
@@ -15260,26 +9114,6 @@
    "benar": false
   },
   {
-   "kanji": "海",
-   "kana": "海",
-   "rom": "umi",
-   "arti": "laut",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "外",
-   "kana": "外",
-   "rom": "soto",
-   "arti": "luar",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "覚えています",
    "kana": "おぼえています",
    "rom": "oboete imasu",
@@ -15288,16 +9122,6 @@
     "haburashi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "学校",
-   "kana": "がっこう",
-   "rom": "gakkou",
-   "arti": "sekolah",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "学校の先生をしています。",
@@ -15328,26 +9152,6 @@
     "haburashi-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "甘い",
-   "kana": "甘い",
-   "rom": "amai",
-   "arti": "manis",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "丸い",
-   "kana": "丸い",
-   "rom": "marui",
-   "arti": "bulat",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "気持ちがいいです",
@@ -15386,46 +9190,6 @@
    "arti": "lama tidak berjumpa",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "休み",
-   "kana": "休み",
-   "rom": "yasumi",
-   "arti": "libur",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "休み",
-   "kana": "休み",
-   "rom": "yasumi",
-   "arti": "libur (masu-stem + たい)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "休む",
-   "kana": "休む",
-   "rom": "yasumu",
-   "arti": "libur (kamus)",
-   "paket": [
-    "tamago-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "休んで",
-   "kana": "休んで",
-   "rom": "yasunde",
-   "arti": "libur (bentuk-te)",
-   "paket": [
-    "tamago-quiz"
    ],
    "benar": false
   },
@@ -15470,16 +9234,6 @@
    "benar": false
   },
   {
-   "kanji": "牛肉",
-   "kana": "牛肉",
-   "rom": "gyuuniku",
-   "arti": "sapi",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "牛乳",
    "kana": "ぎゅうにゅう",
    "rom": "gyuunyuu",
@@ -15488,17 +9242,6 @@
     "hare-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "牛乳",
-   "kana": "牛乳",
-   "rom": "gyuunyuu",
-   "arti": "susu",
-   "paket": [
-    "kuroi-quiz",
-    "magarimasu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "教えた",
@@ -15531,76 +9274,6 @@
    "benar": false
   },
   {
-   "kanji": "金曜日",
-   "kana": "金曜日",
-   "rom": "kinyoubi",
-   "arti": "Jumat",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "銀行",
-   "kana": "銀行",
-   "rom": "ginkou",
-   "arti": "bank",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "九日。もくようび",
-   "kana": "九日。もくようび",
-   "rom": "9",
-   "arti": "tanggal 9",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "靴",
-   "kana": "靴",
-   "rom": "kutsu",
-   "arti": "sepatu",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "靴下",
-   "kana": "靴下",
-   "rom": "kutsushita",
-   "arti": "kaus kaki",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "軍手",
-   "kana": "ぐんて",
-   "rom": "gunte",
-   "arti": "sarung tangan kerja",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "兄",
-   "kana": "兄",
-   "rom": "ani",
-   "arti": "kakak laki-laki",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "計画",
    "kana": "けいかく",
    "rom": "keikaku",
@@ -15609,38 +9282,6 @@
     "hare-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "軽い",
-   "kana": "軽い",
-   "rom": "karui",
-   "arti": "ringan",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "結婚",
-   "kana": "結婚",
-   "rom": "kekkon",
-   "arti": "menikah",
-   "paket": [
-    "orimasu-quiz",
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "月曜日",
-   "kana": "月曜日",
-   "rom": "getsuyoubi",
-   "arti": "Senin",
-   "paket": [
-    "konpyuutaa-quiz",
-    "tomemasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "見たほうがいいです",
@@ -15663,26 +9304,6 @@
    "benar": true
   },
   {
-   "kanji": "言って",
-   "kana": "itte2",
-   "rom": "itte",
-   "arti": "berkata",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "言ってから",
-   "kana": "itte kara",
-   "rom": "itte kara",
-   "arti": "setelah mengucapkan",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "湖の近くに立っている人の pictures",
    "kana": "みずうみ",
    "rom": "mizuumii",
@@ -15691,27 +9312,6 @@
     "orimasu-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "公園の玄関に会います",
-   "kana": "公園の玄関に会います",
-   "rom": "公園の玄関に会います",
-   "arti": "公園の玄関に会います",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "口",
-   "kana": "口",
-   "rom": "kuchi",
-   "arti": "mulut",
-   "paket": [
-    "kagi-quiz",
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "好きな",
@@ -15794,36 +9394,6 @@
    "benar": false
   },
   {
-   "kanji": "行って",
-   "kana": "itte",
-   "rom": "itte",
-   "arti": "pergi/berkata",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "高い",
-   "kana": "高い",
-   "rom": "takai",
-   "arti": "tinggi",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "黒い",
-   "kana": "黒い",
-   "rom": "kuroi",
-   "arti": "hitam",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "今、よろしいですか",
    "kana": "いま、よろしいですか",
    "rom": "ima, yoroshii desu ka",
@@ -15844,16 +9414,6 @@
    "benar": false
   },
   {
-   "kanji": "佐倉駅",
-   "kana": "佐倉駅",
-   "rom": "佐倉駅",
-   "arti": "佐倉駅",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "作ります",
    "kana": "作ります",
    "rom": "tsukurimasu",
@@ -15864,16 +9424,6 @@
    "benar": true
   },
   {
-   "kanji": "三つ",
-   "kana": "三つ",
-   "rom": "三つ",
-   "arti": "三つ",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "三年間",
    "kana": "三年間",
    "rom": "sannenkan",
@@ -15882,36 +9432,6 @@
     "kutsushita-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "山",
-   "kana": "山",
-   "rom": "yama",
-   "arti": "gunung",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "散歩",
-   "kana": "さんぽ",
-   "rom": "sampo",
-   "arti": "jalan-jalan santai",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "仕事",
-   "kana": "仕事",
-   "rom": "shigoto",
-   "arti": "pekerjaan",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "仕事します",
@@ -15964,16 +9484,6 @@
    "benar": false
   },
   {
-   "kanji": "思ってから",
-   "kana": "omotte kara",
-   "rom": "omotte kara",
-   "arti": "setelah berpikir",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "止まります",
    "kana": "止まります",
    "rom": "tomarimasu",
@@ -16022,16 +9532,6 @@
     "haburashi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "事務所の玄関に会います",
-   "kana": "事務所の玄関に会います",
-   "rom": "事務所の玄関に会います",
-   "arti": "事務所の玄関に会います",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "持ち帰りできますか",
@@ -16104,37 +9604,6 @@
    "benar": true
   },
   {
-   "kanji": "時間",
-   "kana": "じかん",
-   "rom": "jikan",
-   "arti": "jam / waktu",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "時間",
-   "kana": "じかん",
-   "rom": "jikan",
-   "arti": "waktu",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "耳",
-   "kana": "耳",
-   "rom": "mimi",
-   "arti": "telinga",
-   "paket": [
-    "kagi-quiz",
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "自転車",
    "kana": "自転車",
    "rom": "jitensha",
@@ -16143,46 +9612,6 @@
     "gakusei-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "自転車",
-   "kana": "自転車",
-   "rom": "自転車",
-   "arti": "自転車",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "辞書",
-   "kana": "辞書",
-   "rom": "jisho",
-   "arti": "kamus",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "七日 。もくようび",
-   "kana": "七日 。もくようび",
-   "rom": "7",
-   "arti": "tanggal 7",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "写真とビデオ",
-   "kana": "写真とビデオ",
-   "rom": "写真とビデオ",
-   "arti": "写真とビデオ",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "写真美術館",
@@ -16276,16 +9705,6 @@
    "benar": false
   },
   {
-   "kanji": "手紙",
-   "kana": "てがみ",
-   "rom": "tegami",
-   "arti": "surat",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "趣味は何ですか",
    "kana": "しゅみはなんですか",
    "rom": "shumi wa nan desu ka",
@@ -16294,16 +9713,6 @@
     "hashi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "秋",
-   "kana": "あき",
-   "rom": "aki",
-   "arti": "musim gugur",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "集まります",
@@ -16327,42 +9736,12 @@
    "benar": true
   },
   {
-   "kanji": "十日。もくようび",
-   "kana": "十日。もくようび",
-   "rom": "10",
-   "arti": "tanggal 10",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "重い",
-   "kana": "重い",
-   "rom": "omoi",
-   "arti": "berat",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "出来ますか",
    "kana": "出来ますか",
    "rom": "dekimasu ka",
    "arti": "bisa?",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "暑い",
-   "kana": "暑い",
-   "rom": "atsui",
-   "arti": "panas",
-   "paket": [
-    "orimasu-quiz"
    ],
    "benar": false
   },
@@ -16383,16 +9762,6 @@
    "arti": "apakah sekolah SD",
    "paket": [
     "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "上",
-   "kana": "上",
-   "rom": "ue",
-   "arti": "atas",
-   "paket": [
-    "kutsushita-quiz"
    ],
    "benar": false
   },
@@ -16435,16 +9804,6 @@
     "hashi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "場所",
-   "kana": "場所",
-   "rom": "basho",
-   "arti": "tempat",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "食べても",
@@ -16558,16 +9917,6 @@
    "benar": false
   },
   {
-   "kanji": "食事",
-   "kana": "食事",
-   "rom": "shokuji",
-   "arti": "makan",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "食事しています",
    "kana": "食事しています",
    "rom": "shokuji shite imasu",
@@ -16578,52 +9927,12 @@
    "benar": false
   },
   {
-   "kanji": "食堂",
-   "kana": "食堂",
-   "rom": "shokudou",
-   "arti": "kantin",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "寝た",
-   "kana": "寝た",
-   "rom": "neta",
-   "arti": "lampau",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "寝た",
-   "kana": "寝た",
-   "rom": "neta",
-   "arti": "telah tidur",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "寝たあとで",
    "kana": "寝たあとで",
    "rom": "neta ato de",
    "arti": "setelah tidur",
    "paket": [
     "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "寝て",
-   "kana": "寝て",
-   "rom": "nete",
-   "arti": "bentuk te",
-   "paket": [
-    "basu-quiz"
    ],
    "benar": false
   },
@@ -16658,26 +9967,6 @@
    "benar": false
   },
   {
-   "kanji": "寝る",
-   "kana": "寝る",
-   "rom": "neru",
-   "arti": "tidur kamus",
-   "paket": [
-    "basu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "寝る",
-   "kana": "寝る",
-   "rom": "neru",
-   "arti": "tidur",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "図書館",
    "kana": "図書館",
    "rom": "toshokan",
@@ -16699,42 +9988,12 @@
    "benar": false
   },
   {
-   "kanji": "成田駅",
-   "kana": "成田駅",
-   "rom": "成田駅",
-   "arti": "成田駅",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "晴れ",
-   "kana": "はれ",
-   "rom": "hare",
-   "arti": "cerah",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "生活に慣れました",
    "kana": "せいかつになれました",
    "rom": "seikatsu ni naremashita",
    "arti": "apakah sudah terbiasa dengan kehidupan",
    "paket": [
     "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "青い",
-   "kana": "青い",
-   "rom": "aoi",
-   "arti": "biru",
-   "paket": [
-    "kuroi-quiz"
    ],
    "benar": false
   },
@@ -16759,42 +10018,12 @@
    "benar": false
   },
   {
-   "kanji": "赤い",
-   "kana": "赤い",
-   "rom": "akai",
-   "arti": "merah",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "切ります",
    "kana": "切ります",
    "rom": "kiru",
    "arti": "memotong",
    "paket": [
     "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "雪",
-   "kana": "ゆき",
-   "rom": "yuki",
-   "arti": "salju",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "雪",
-   "kana": "雪",
-   "rom": "yuki",
-   "arti": "salju",
-   "paket": [
-    "shatsu-quiz"
    ],
    "benar": false
   },
@@ -16829,16 +10058,6 @@
    "benar": false
   },
   {
-   "kanji": "掃除",
-   "kana": "そうじ",
-   "rom": "souji",
-   "arti": "bersih-bersih",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "早退",
    "kana": "そうたい",
    "rom": "soutai",
@@ -16869,16 +10088,6 @@
    "benar": false
   },
   {
-   "kanji": "多い",
-   "kana": "多い",
-   "rom": "ooi",
-   "arti": "banyak",
-   "paket": [
-    "kagi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "体が痛いんです",
    "kana": "体が痛いんです",
    "rom": "karada",
@@ -16887,36 +10096,6 @@
     "magarimasu-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "体み",
-   "kana": "体み",
-   "rom": "karadami",
-   "arti": "-",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "待っていまっす",
-   "kana": "matte imassu",
-   "rom": "matte imassu",
-   "arti": "bentuk salah",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "台風",
-   "kana": "台風",
-   "rom": "taifuu",
-   "arti": "topan",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "台風. たいふう",
@@ -16939,30 +10118,10 @@
    "benar": true
   },
   {
-   "kanji": "大山駅",
-   "kana": "大山駅",
-   "rom": "大山駅",
-   "arti": "大山駅",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "大丈夫",
    "kana": "大丈夫",
    "rom": "daijoubu",
    "arti": "tidak apa apa",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "大丈夫です",
-   "kana": "大丈夫です",
-   "rom": "daijoubu",
-   "arti": "-",
    "paket": [
     "orimasu-quiz"
    ],
@@ -16977,16 +10136,6 @@
     "kuroi-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "弾く",
-   "kana": "ひく",
-   "rom": "hiku",
-   "arti": "memainkan (alat musik petik/piano)",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "地滑り. じすべり",
@@ -17015,16 +10164,6 @@
    "arti": "sebaiknya mengenakan lalu pergi",
    "paket": [
     "hashi-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "中",
-   "kana": "中",
-   "rom": "naka",
-   "arti": "dalam",
-   "paket": [
-    "kutsushita-quiz"
    ],
    "benar": true
   },
@@ -17059,16 +10198,6 @@
    "benar": false
   },
   {
-   "kanji": "注⽂",
-   "kana": "注⽂",
-   "rom": "chuumon",
-   "arti": "memesan",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "通いました",
    "kana": "かよいました",
    "rom": "kayoimashita",
@@ -17085,76 +10214,6 @@
    "arti": "rendah",
    "paket": [
     "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "庭",
-   "kana": "庭",
-   "rom": "niwa",
-   "arti": "halaman",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "天ぷら",
-   "kana": "天ぷら",
-   "rom": "tenpura",
-   "arti": "tempura",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "伝えてから",
-   "kana": "tsutaete kara",
-   "rom": "tsutaete kara",
-   "arti": "setelah menyampaikan",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "電車",
-   "kana": "電車",
-   "rom": "densha",
-   "arti": "kereta",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "土曜日はちょっと",
-   "kana": "どようびはちょっと",
-   "rom": "doyoubi wa chotto",
-   "arti": "hari Sabtu agak sulit",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "冬",
-   "kana": "ふゆ",
-   "rom": "fuyu",
-   "arti": "musim dingin",
-   "paket": [
-    "hashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "頭",
-   "kana": "頭",
-   "rom": "atama",
-   "arti": "kepala",
-   "paket": [
-    "kagi-quiz"
    ],
    "benar": false
   },
@@ -17230,16 +10289,6 @@
    "benar": true
   },
   {
-   "kanji": "動物園",
-   "kana": "動物園",
-   "rom": "",
-   "arti": "",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "読みます",
    "kana": "よみます",
    "rom": "yomimasu",
@@ -17248,16 +10297,6 @@
     "hare-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "豚肉",
-   "kana": "豚肉",
-   "rom": "butaniku",
-   "arti": "babi",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "曇",
@@ -17270,42 +10309,12 @@
    "benar": false
   },
   {
-   "kanji": "二つ",
-   "kana": "二つ",
-   "rom": "二つ",
-   "arti": "二つ",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "二年間",
    "kana": "二年間",
    "rom": "ninenkan",
    "arti": "2 tahun",
    "paket": [
     "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "日曜日",
-   "kana": "日曜日",
-   "rom": "nichiyoubi",
-   "arti": "Minggu",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "日曜日",
-   "kana": "日曜日",
-   "rom": "ahad",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
    ],
    "benar": false
   },
@@ -17328,26 +10337,6 @@
     "haburashi-quiz"
    ],
    "benar": true
-  },
-  {
-   "kanji": "年",
-   "kana": "ねん",
-   "rom": "nen",
-   "arti": "tahun",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "買う",
-   "kana": "買う",
-   "rom": "kau",
-   "arti": "membeli",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
   },
   {
    "kanji": "買って",
@@ -17420,42 +10409,12 @@
    "benar": true
   },
   {
-   "kanji": "白い",
-   "kana": "白い",
-   "rom": "shiroi",
-   "arti": "putih",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "半",
-   "kana": "はん",
-   "rom": "han",
-   "arti": "setengah",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "彼氏",
    "kana": "かれし",
    "rom": "kareshi",
    "arti": "pacar (laki-laki)",
    "paket": [
     "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "彼氏",
-   "kana": "彼氏",
-   "rom": "kareshi",
-   "arti": "pacar",
-   "paket": [
-    "magarimasu-quiz"
    ],
    "benar": false
   },
@@ -17468,107 +10427,6 @@
     "tomemasu-quiz"
    ],
    "benar": false
-  },
-  {
-   "kanji": "病院",
-   "kana": "病院",
-   "rom": "byouin",
-   "arti": "rumah sakit",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "病院 に 電話 を かけます",
-   "kana": "病院 に 電話 を かけます",
-   "rom": "byouin ni denwa o kakemasu",
-   "arti": "kunci",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "病気",
-   "kana": "病気",
-   "rom": "byouki",
-   "arti": "penyakit / sakit",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "秒",
-   "kana": "びょう",
-   "rom": "byou",
-   "arti": "detik",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "父",
-   "kana": "父",
-   "rom": "chichi",
-   "arti": "ayah",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "封筒",
-   "kana": "ふうとう",
-   "rom": "fuutou",
-   "arti": "amplop",
-   "paket": [
-    "haburashi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "風",
-   "kana": "風",
-   "rom": "kaze",
-   "arti": "angin",
-   "paket": [
-    "konpyuutaa-quiz",
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "風邪",
-   "kana": "風邪",
-   "rom": "kaze",
-   "arti": "pilek/flu",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "分",
-   "kana": "ふん",
-   "rom": "fun",
-   "arti": "menit",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "分",
-   "kana": "ふん / ぷん",
-   "rom": "fun / pun",
-   "arti": "menit",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": true
   },
   {
    "kanji": "分からな",
@@ -17601,16 +10459,6 @@
    "benar": true
   },
   {
-   "kanji": "分かる",
-   "kana": "分かる",
-   "rom": "wakaru",
-   "arti": "mengerti",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "聞いて",
    "kana": "きいて",
    "rom": "kiite",
@@ -17641,16 +10489,6 @@
    "benar": true
   },
   {
-   "kanji": "別の機会に。べつ の きかい に",
-   "kana": "別の機会に。べつ の きかい に",
-   "rom": "betsu",
-   "arti": "-",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "勉強",
    "kana": "べんきょう",
    "rom": "benkyou",
@@ -17661,52 +10499,12 @@
    "benar": true
   },
   {
-   "kanji": "勉強",
-   "kana": "勉強",
-   "rom": "benkyou",
-   "arti": "belajar",
-   "paket": [
-    "orimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "勉強しています",
    "kana": "勉強しています",
    "rom": "benkyou shite imasu",
    "arti": "sedang belajar",
    "paket": [
     "aoi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "母",
-   "kana": "母",
-   "rom": "haha",
-   "arti": "ibu",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "帽子を借りられます",
-   "kana": "帽子を借りられます",
-   "rom": "topi",
-   "arti": "pengecoh jawaban",
-   "paket": [
-    "tomemasu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "忘れたしました",
-   "kana": "忘れたしました",
-   "rom": "wasure",
-   "arti": "-",
-   "paket": [
-    "tomemasu-quiz"
    ],
    "benar": false
   },
@@ -17741,66 +10539,6 @@
    "benar": false
   },
   {
-   "kanji": "本み",
-   "kana": "本み",
-   "rom": "honmi",
-   "arti": "-",
-   "paket": [
-    "kuroi-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "毎週",
-   "kana": "毎週",
-   "rom": "毎週",
-   "arti": "毎週",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "毎日",
-   "kana": "毎日",
-   "rom": "毎日",
-   "arti": "毎日",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "毎夜",
-   "kana": "毎夜",
-   "rom": "毎夜",
-   "arti": "毎夜",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "万",
-   "kana": "万",
-   "rom": "man",
-   "arti": "sepuluh ribu",
-   "paket": [
-    "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "漫画",
-   "kana": "まんが",
-   "rom": "manga",
-   "arti": "komik",
-   "paket": [
-    "hare-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "無理ですか",
    "kana": "むりでつか",
    "rom": "muri desu ka",
@@ -17827,67 +10565,6 @@
    "arti": "menarik",
    "paket": [
     "konpyuutaa-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "木曜日",
-   "kana": "木曜日",
-   "rom": "mokuyoubi",
-   "arti": "Kamis",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "目",
-   "kana": "目",
-   "rom": "me",
-   "arti": "mata",
-   "paket": [
-    "kagi-quiz",
-    "konpyuutaa-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "目があかいくすり",
-   "kana": "目があかいくすり",
-   "rom": "目があかいくすり",
-   "arti": "目があかいくすり",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "目がかゆいくすり",
-   "kana": "目がかゆいくすり",
-   "rom": "目がかゆいくすり",
-   "arti": "目がかゆいくすり",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "目がしろいくすり",
-   "kana": "目がしろいくすり",
-   "rom": "目がしろいくすり",
-   "arti": "目がしろいくすり",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "友達",
-   "kana": "友達",
-   "rom": "tomodachi",
-   "arti": "teman",
-   "paket": [
-    "magarimasu-quiz"
    ],
    "benar": false
   },
@@ -17952,16 +10629,6 @@
    "benar": false
   },
   {
-   "kanji": "来て",
-   "kana": "kite",
-   "rom": "kite",
-   "arti": "datang",
-   "paket": [
-    "shatsu-quiz"
-   ],
-   "benar": true
-  },
-  {
    "kanji": "来なくては行けない",
    "kana": "こなくてはいけない",
    "rom": "konakutewa ikenai",
@@ -18012,26 +10679,6 @@
    "benar": false
   },
   {
-   "kanji": "卵",
-   "kana": "卵",
-   "rom": "hon ga yomemasu",
-   "arti": "bisa baca buku",
-   "paket": [
-    "gakusei-quiz"
-   ],
-   "benar": false
-  },
-  {
-   "kanji": "旅行",
-   "kana": "旅行",
-   "rom": "ryokou",
-   "arti": "wisata",
-   "paket": [
-    "kutsushita-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "旅行します",
    "kana": "旅行します",
    "rom": "ryokou shimasu",
@@ -18062,16 +10709,6 @@
    "benar": false
   },
   {
-   "kanji": "話す",
-   "kana": "話す",
-   "rom": "hanasu",
-   "arti": "bicara",
-   "paket": [
-    "magarimasu-quiz"
-   ],
-   "benar": false
-  },
-  {
    "kanji": "話せますか",
    "kana": "話せますか",
    "rom": "hanasemasu ka",
@@ -18088,16 +10725,6 @@
    "arti": "bisa bicara",
    "paket": [
     "magarimasu-quiz"
-   ],
-   "benar": true
-  },
-  {
-   "kanji": "⽊曜⽇",
-   "kana": "⽊曜⽇",
-   "rom": "mokuyoubi",
-   "arti": "Kamis",
-   "paket": [
-    "konpyuutaa-quiz"
    ],
    "benar": true
   }
