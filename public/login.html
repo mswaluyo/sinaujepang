@@ -15,14 +15,8 @@
 </style>
 </head>
 <body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col selection:bg-fuji-200">
-<header class="bg-white/90 backdrop-blur-md border-b border-fuji-100 shadow-sm">
-<div class="max-w-6xl mx-auto px-4 h-16 flex items-center gap-2.5">
-<a href="./" class="flex items-center gap-2.5">
-<div class="w-9 h-9 rounded-full bg-gradient-to-tr from-fuji-600 to-fuji-400 flex items-center justify-center text-white font-bold shadow-md shadow-fuji-500/20"><span class="text-xs font-extrabold tracking-tighter">学び</span></div>
-<div class="flex flex-col"><span class="font-bold text-slate-800 text-lg leading-tight">SinauJepang</span><span class="text-[10px] text-fuji-600 font-semibold tracking-wider">BELAJAR &amp; LATIHAN GRATIS</span></div>
-</a>
-</div>
-</header>
+<!-- Header bersama: site-layout.js -->
+<script src="/assets/js/site-layout.js"></script>
 <main class="flex-grow flex items-center justify-center bg-fuji-overlay px-4 py-16">
 <div class="bg-white rounded-2xl max-w-sm w-full p-8 shadow-xl border border-fuji-100 text-center">
 <div class="w-14 h-14 rounded-full bg-gradient-to-tr from-fuji-600 to-fuji-400 text-white flex items-center justify-center mx-auto mb-4 text-lg font-extrabold shadow-md shadow-fuji-500/20"><span class="tracking-tighter">学び</span></div>
@@ -42,7 +36,6 @@
 </div>
 </div>
 </main>
-<footer class="bg-white border-t border-slate-200 py-8 mt-auto"><div class="max-w-5xl mx-auto px-4 text-center"><p class="text-slate-700 font-bold text-sm mb-1">SinauJepang (sinaujepang.web.app)</p><p class="text-slate-600 text-xs mb-3">Didedikasikan untuk seluruh pejuang Tokutei Ginou Indonesia. Semoga sukses melangkah ke Jepang!</p><div class="flex items-center justify-center gap-3 mt-2"><a href="https://wa.me/6285649049086" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1eb856] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-whatsapp text-sm"></i><span>Sugeng Waluyo</span></a><a href="https://www.facebook.com/maswaluyo/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#1464cc] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-facebook text-sm"></i><span>Sugeng Waluyo</span></a></div></div></footer>
 <script src="/assets/js/indexeddb.js"></script>
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js";
@@ -81,6 +74,11 @@ $("gBtn").onclick = async function () {
   catch (e) { $("msg").textContent = "Gagal masuk: " + (e.message || e.code); }
 };
 $("outBtn").onclick = function () { signOut(auth); };
+// Keluar dari header bersama (site-layout.js): logout via parameter ?out=1
+if (/(^|[?&])out=1/.test(location.search)) {
+  try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
+  signOut(auth).catch(function () {});
+}
 onAuthStateChanged(auth, function (u) {
   if (u) {
     try { window.IndexedDB.setItem("jft_user", { name: u.displayName, email: u.email, photo: u.photoURL }); } catch (e) {}

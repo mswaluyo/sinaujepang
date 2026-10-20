@@ -1,4 +1,4 @@
-// hafal.js — tabel daftar kosakata (filter paket + cari + sortir header + muat bertahap)
+// kotoba.js — tabel daftar kosakata (filter paket + cari + sortir header + muat bertahap)
 (function () {
   var $ = function (id) { return document.getElementById(id); };
   var all = [], shown = 200, sortK = "kanji", sortD = 1;

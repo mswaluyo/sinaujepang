@@ -8,24 +8,9 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col selection:bg-fuji-200">
-<header class="sticky top-0 z-40 bg-white/90 backdrop-blur-md border-b border-fuji-100 shadow-sm">
-<div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
-<a href="/" class="flex items-center gap-2.5">
-<div class="w-9 h-9 rounded-full bg-gradient-to-tr from-fuji-600 to-fuji-400 flex items-center justify-center text-white font-bold shadow-md shadow-fuji-500/20"><span class="text-xs font-extrabold tracking-tighter">学び</span></div>
-<div class="flex flex-col"><span class="font-bold text-slate-800 text-lg leading-tight">SinauJepang</span><span class="text-[10px] text-fuji-600 font-semibold tracking-wider">HAFALAN KOSAKATA</span></div>
-</a>
-<a href="/kotoba.html" class="text-xs font-bold text-slate-500 hover:text-fuji-600"><i class="fa-solid fa-book-open mr-1"></i>Kotoba</a>
-<a href="/kanji.html" class="text-xs font-bold text-slate-500 hover:text-fuji-600"><i class="fa-solid fa-language mr-1"></i>Kanji</a>
-<div class="flex items-center gap-2">
-<nav class="hidden md:flex items-center gap-1 text-[13px] font-bold">
-<a href="/#latihan-soal" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-fuji-600 hover:bg-fuji-50 transition-all">Latihan</a>
-<a href="/kotoba.html" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all"><i class="fa-solid fa-book-open mr-1"></i>Kotoba</a>
-<a href="/kanji.html" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-rose-600 hover:bg-rose-50 transition-all"><i class="fa-solid fa-language mr-1"></i>Kanji</a>
-</nav>
-<a href="/" class="text-xs font-bold text-slate-500 hover:text-fuji-600"><i class="fa-solid fa-house mr-1"></i>Beranda</a>
-</div>
-</div>
-</header>
+<!-- Header bersama: site-layout.js -->
+<script src="/assets/js/indexeddb.js"></script>
+<script src="/assets/js/site-layout.js"></script>
 <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
 <section class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
 <div class="px-4 pt-4 pb-3 border-b border-slate-100 flex flex-wrap items-center gap-2">
@@ -57,7 +42,6 @@
 </div>
 </section>
 </main>
-<footer class="bg-white border-t border-slate-200 py-8 mt-auto"><div class="max-w-5xl mx-auto px-4 text-center"><p class="text-slate-700 font-bold text-sm mb-1">SinauJepang (sinaujepang.web.app)</p><p class="text-slate-600 text-xs mb-3">Didedikasikan untuk seluruh pejuang Tokutei Ginou Indonesia.</p></div></footer>
 <script src="/assets/js/kotoba-data.js"></script>
 <script src="/assets/js/kotoba-verb.js"></script>
 <script src="/assets/js/kotoba-adj.js"></script>

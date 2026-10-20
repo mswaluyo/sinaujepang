@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* Header & footer bersama (site-layout.js) tidak ikut dicetak */
+@media print {
+  .no-print { display: none !important; }
+}
+
