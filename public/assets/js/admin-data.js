@@ -62,7 +62,7 @@ function _qFmt(t) { try { return t ? new Date(t).toLocaleString("id-ID", { day: 
 function _qJft(p) {
   const J = Math.round(10 + (p / 100) * 240);
   const lv = J >= 200 ? "A2" : J >= 175 ? "A2.1" : J >= 145 ? "A1" : "-";
-  return J + "/250 (" + lv + ")";
+  return J + "(" + lv + ")";
 }
 function _qEsc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
 function _qBadge(txt, ok) { return "<span class='inline-flex items-center gap-1 text-[11px] font-extrabold px-2.5 py-1 rounded-full border " + (ok ? "bg-emerald-50 text-emerald-700 border-emerald-200" : "bg-rose-50 text-rose-600 border-rose-200") + "'><span class='w-1.5 h-1.5 rounded-full " + (ok ? "bg-emerald-500" : "bg-rose-400") + "'></span>" + _qEsc(txt) + "</span>"; }
