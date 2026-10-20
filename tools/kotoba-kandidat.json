@@ -1,5 +1,5 @@
 {
- "jumlah": 347,
+ "jumlah": 348,
  "data": [
   {
    "kana": "あいますか",
@@ -59,6 +59,16 @@
    "alasan": "kata kerja (あける -> あけます) belum ada di master",
    "paket": [
     "haburashi"
+   ]
+  },
+  {
+   "kana": "あしたけしまします",
+   "kanaAsli": "あしたけします",
+   "rom": "m2",
+   "arti": "besok matikan",
+   "alasan": "kata kerja (あしたけします -> あしたけしまします) belum ada di master",
+   "paket": [
+    "basu"
    ]
   },
   {

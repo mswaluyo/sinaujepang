@@ -56,16 +56,6 @@
   ]
  },
  {
-  "kanji": "明日けします",
-  "kana": "あしたけします",
-  "rom": "m2",
-  "arti": "besok matikan",
-  "paket": [
-   "basu",
-   "gakusei"
-  ]
- },
- {
   "kanji": "あそびます",
   "kana": "あそびます",
   "rom": "asobimasu",
@@ -743,6 +733,16 @@
   "arti": "sedang terluka",
   "paket": [
    "tomemasu"
+  ]
+ },
+ {
+  "kanji": "消します",
+  "kana": "けします",
+  "rom": "keshimasu",
+  "arti": "mematikan / menghapus",
+  "paket": [
+   "basu",
+   "gakusei"
   ]
  },
  {
