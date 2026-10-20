@@ -92,6 +92,21 @@ if(!slug)slug="orimasu-quiz";
 var nama="SinauJepang";
 try{var u=await window.IndexedDB.getItem("jft_user");if(u&&(u.name||u.email))nama=u.name||u.email;}catch(e){}
 var R=null;
+var isPreview=(q("preview")==="admin");
+if(isPreview){
+  try{
+    var raw=q("d")||"";
+    var pv=null;
+    if(raw){try{pv=JSON.parse(decodeURIComponent(escape(atob(raw))));}catch(e0){pv=null;}}
+    if(!pv){try{pv=JSON.parse(sessionStorage.getItem("jft_admin_preview")||"null");}catch(e1){pv=null;}}
+    if(pv&&pv.total!=null){
+      R={benar:pv.benar||0,total:pv.total||0,skor:pv.skor||0,secs:pv.secs||null,at:pv.at||Date.now()};
+      if(pv.nama)nama=pv.nama;
+    }
+  }catch(e){}
+  try{var nb=document.querySelector("div.mt-5");if(nb)nb.style.display="none";}catch(e2){}
+}
+if(!R){
 try{
   await new Promise(function(res){var tries=0;var iv=setInterval(function(){tries++;if((window.fujiScore&&window.fujiScore.latest&&window.fujiUser&&window.fujiUser.email)||tries>=50){clearInterval(iv);res();}},100);});
   if(window.fujiScore&&window.fujiScore.latest&&window.fujiUser&&window.fujiUser.email){
@@ -99,6 +114,7 @@ try{
     if(fr&&fr.benar!=null){R={benar:fr.benar,total:fr.total,skor:fr.skor,secs:fr.secs||null,at:fr.at||Date.now()};}
   }
 }catch(e){}
+}
 if(R&&!R.secs){try{var a=await window.IndexedDB.getItem("jft_attempts_"+slug);if(a&&a.secs)R.secs=a.secs;}catch(e){}}
 if(!R){try{var a=await window.IndexedDB.getItem("jft_hasil");if(a){if(typeof a==="string")a=JSON.parse(a);R=a[slug]||null;}}catch(e){}}
 if(!R){try{var a=await window.IndexedDB.getItem("jft_attempts_"+slug);if(a&&a.benar!=null)R={benar:a.benar,total:a.total,skor:a.skor,secs:a.secs||null,at:a.at};}catch(e){}}

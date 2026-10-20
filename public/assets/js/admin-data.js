@@ -356,32 +356,29 @@ window._aImportUsers = async function (ev) {
   } catch (e) { say("Gagal: " + (e.message || e.code)); }
   try { ev.target.value = ""; } catch (e) {}
 };
-// --- Detail per baris: lembar hasil ala hasil.html ---
+// --- Detail per baris: tampilkan cetakan peserta (hasil.html) persis via iframe ---
+// Data siswa dikirim via param URL (base64 JSON) agar andal di dalam iframe.
 window._aDetail = function (di) {
   const d = (_qDetailRows || [])[di];
   if (!d) return;
-  const J = Math.round(10 + (d.benar / Math.max(1, d.total)) * 240);
-  const lv = J >= 200 ? "A2" : J >= 175 ? "A2.1" : J >= 145 ? "A1" : "-";
-  const st = J >= 200 ? "LULUS" : "BELUM LULUS";
-  const stBg = J >= 200 ? "background:#d1fae5;color:#065f46" : "background:#fee2e2;color:#991b1b";
-  const pct = Math.max(0, Math.min(100, ((J - 10) / 240) * 100));
-  const slugUp = (d.slug || "").replace("-quiz", "").toUpperCase();
-  const tgl = _qFmt(d.t);
-  const pc = d.total ? Math.round(d.benar / d.total * 100) : 0;
-  const SECN = { sec1: ["文字と語彙", "Script and Vocabulary"], sec2: ["会話と表現", "Conversation and Expression"], sec3: ["聴解", "Listening Comprehension"], sec4: ["読解", "Reading Comprehension"] };
-  let secs = "";
-  ["sec1", "sec2", "sec3", "sec4"].forEach(k => {
-    const s = d.secs && d.secs[k]; if (!s) return;
-    const p = s.total ? Math.round(s.benar / s.total * 100) : 0;
-    secs += "<div style='margin-bottom:10px'><div style='display:flex;justify-content:space-between;margin-bottom:3px'><span style='font-weight:700;font-size:13px'>" + SECN[k][0] + "</span><span style='font-size:11px;color:#6b7280'>" + s.benar + "/" + s.total + " <b>" + p + "%</b></span></div><div style='display:flex;align-items:center;gap:8px'><span style='font-size:11px;color:#6b7280;width:170px'>" + SECN[k][1] + "</span><div style='flex:1;position:relative;height:14px;background:#e5e7eb;border-radius:4px'><div style='position:absolute;top:50%;transform:translateY(-50%);width:12px;height:12px;border-radius:50%;background:#fff;border:2px solid #f97316;left:calc(" + p + "% - 6px)'></div></div></div></div>";
-  });
-  if (!secs) secs = "<p style='font-size:12px;color:#6b7280'>Rincian seksi tidak tersedia.</p>";
-  $("dSheet").innerHTML = "<div style='display:flex;justify-content:space-between;border-bottom:2px solid #e2e8f0;padding-bottom:12px;margin-bottom:14px'><div><div style='font-size:20px;font-weight:900'>SinauJepang <span style='font-size:12px;color:#94a3b8'>模擬試験</span></div><div style='font-size:11px;color:#64748b'>Lembar Hasil Simulasi JFT-Basic (estimasi)</div></div><div style='text-align:right'><div style='font-size:11px;font-weight:700;color:#dc2626;border:2px solid #dc2626;border-radius:6px;padding:2px 12px;display:inline-block;letter-spacing:2px'>SIMULASI</div><div style='font-size:10px;color:#94a3b8;margin-top:4px'>" + tgl + "</div></div></div>";
-  $("dSheet").innerHTML += "<h1 style='text-align:center;font-weight:700;font-size:16px'>判定結果通知書 <span style='font-weight:400;font-size:13px'>/ Notification of assessment results</span></h1><p style='text-align:center;font-size:11px;color:#64748b;margin-bottom:14px'>Estimasi 10 + benar/total x 240 — bukan skor resmi.</p>";
-  $("dSheet").innerHTML += "<div style='background:#f8fafc;border:1px solid #e2e8f0;padding:14px;margin-bottom:14px;font-size:14px;display:grid;grid-template-columns:1fr 1fr;gap:8px'><div><span style='color:#64748b;font-size:12px'>Nama</span><div style='font-weight:700'>" + String(d.name || "-").replace(/</g, "&lt;") + "</div><div style='font-size:11px;color:#64748b'>" + String(d.email || "") + "</div></div><div><span style='color:#64748b;font-size:12px'>Paket</span><div style='font-weight:700'>" + slugUp + "</div></div><div><span style='color:#64748b;font-size:12px'>Tanggal</span><div style='font-weight:700'>" + tgl + "</div></div><div><span style='color:#64748b;font-size:12px'>Benar</span><div style='font-weight:700'>" + d.benar + " / " + d.total + " (" + pc + "%)</div></div></div>";
-  $("dSheet").innerHTML += "<div style='border:2px solid #94a3b8;padding:14px 18px;margin-bottom:14px'><div style='display:flex;align-items:center;gap:12px;margin-bottom:8px'><div><div style='font-weight:700;font-size:14px'>総合得点</div><div style='font-size:10px;color:#94a3b8'>Total Score</div></div><div style='font-size:34px;font-weight:900'>" + J + "</div><span style='font-weight:800;font-size:13px;padding:4px 14px;border-radius:9999px;" + stBg + "'>" + st + "</span><span style='margin-left:auto;font-size:12px'>Level: <b style='font-size:16px'>" + lv + "</b></span></div><div style='font-weight:700;font-size:13px;margin-bottom:4px'>得点範圍 : 10-250</div><div style='height:10px;border-radius:9999px;background:linear-gradient(to right,#fda4af,#f472b6 46%,#fb923c 62%,#facc15 75%,#a3e635);position:relative'><div style='position:absolute;top:-2px;bottom:-2px;width:2px;background:#1e293b;left:79.16%'></div><div style='position:absolute;top:50%;transform:translate(-50%,-50%);left:" + pct + "%'><span style='position:absolute;bottom:calc(100% + 6px);left:50%;transform:translateX(-50%);font-size:12px;font-weight:700;color:#fff;background:#1e293b;padding:2px 8px;border-radius:6px;white-space:nowrap'>" + J + "</span><span style='display:block;width:18px;height:18px;border-radius:50%;background:#fff;border:4px solid #f97316'></span></div></div><div style='display:flex;justify-content:space-between;font-size:10px;color:#64748b;margin-top:2px'><span>10</span><span>200 Lulus</span><span>250</span></div></div>";
-  $("dSheet").innerHTML += "<div style='margin-bottom:8px'><div style='font-weight:700;font-size:13px'>セクション毎の正答率:</div><div style='font-size:11px;color:#64748b;margin-bottom:8px'>The percentage of correct answers for each section</div>" + secs + "</div>";
+  let payload = "";
+  try {
+    payload = btoa(unescape(encodeURIComponent(JSON.stringify({
+      nama: d.name || "-", email: d.email || "", benar: d.benar || 0,
+      total: d.total || 0, secs: d.secs || null, at: d.t || Date.now()
+    }))));
+  } catch (e) {}
+  const slug = d.slug || "orimasu-quiz";
+  window._aDetailUrl = "/hasil.html?paket=" + encodeURIComponent(slug) + "&preview=admin&d=" + encodeURIComponent(payload);
+  $("dSheet").innerHTML = "<iframe src=\"" + window._aDetailUrl + "\" class=\"w-full\" style=\"height:65vh;border:0;background:#fff\" title=\"Lembar hasil\"></iframe>";
   const m = $("dModal"); m.classList.remove("hidden"); m.classList.add("flex");
 };
 window._aCloseDetail = function () { const m = $("dModal"); m.classList.add("hidden"); m.classList.remove("flex"); };
-window._aPrintDetail = function () { window.print(); };
+window._aOpenDetail = function () { try { window.open(window._aDetailUrl || "/hasil.html", "_blank"); } catch (e) {} };
+window._aPrintDetail = function () {
+  try {
+    const f = $("dSheet").querySelector("iframe");
+    if (f && f.contentWindow) { f.contentWindow.focus(); f.contentWindow.print(); return; }
+  } catch (e) {}
+  window._aOpenDetail();
+};
