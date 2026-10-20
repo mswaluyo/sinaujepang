@@ -73,13 +73,16 @@
     });
     KJ.show(2);
   };
-  // Boot data
-  (window.KANJI_DATA || []).forEach(function (e) {
-    KJ.KANJI[e[0]] = { bacaan: e[1], arti: e[2], contoh: e[3], paket: e[4] };
-  });
-  [["KOTOBA_VERB", "V"], ["KOTOBA_ADJ", "A"], ["KOTOBA_NOUN", "N"]].forEach(function (pj) {
-    (window[pj[0]] || []).forEach(function (e) {
-      KJ.KOTOBA.push({ k: e[0], kana: e[1], rom: e[2], a: e[3], p: e[4], asal: e[5] || "", j: pj[1] });
+  // Boot: BACA data final yg sudah jadi (explorer-data.js). Tidak render mentah
+  // file sumber (kanji-data/rad-data/kotoba-*) — semua sudah digabung saat build.
+  KJ.RAD = {};
+  Object.entries(window.EXPLORER_DATA || {}).forEach(function (kv) {
+    var r = kv[0], d = kv[1];
+    KJ.RAD[r] = { kana: d.kana, romaji: d.romaji, arti: d.arti, kanji: d.kanji.map(function (k) { return k.ch; }) };
+    KJ.KANJI_ALL = KJ.KANJI_ALL || {};
+    d.kanji.forEach(function (k) {
+      KJ.KANJI_ALL[k.ch] = { bacaan: k.bacaan, arti: k.arti, vocab: k.vocab };
+      KJ.KANJI[k.ch] = { bacaan: k.bacaan, arti: k.arti };
     });
   });
   KJ.renderCats();

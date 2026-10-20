@@ -20,8 +20,9 @@
     KJ.show(3);
   };
   KJ.kosakataKanji = function (ch) {
-    return KJ.KOTOBA.filter(function (w) { return (w.k || "").indexOf(ch) >= 0; })
-      .sort(function (a, b) { return (a.k || "").length - (b.k || "").length; }).slice(0, 12);
+    // Baca dari data final (sudah ditautkan saat build) — bukan filter mentah.
+    var info = (KJ.KANJI_ALL || {})[ch];
+    return (info && info.vocab) || [];
   };
   KJ.openKanji = function (ch) {
     KJ.curKanji = ch;
@@ -47,8 +48,8 @@
   KJ.renderSearch = function (kw) {
     var box = $("jSearchGrid");
     if (!kw) { box.classList.add("hidden"); box.innerHTML = ""; return; }
-    var list = Object.keys(KJ.KANJI).filter(function (ch) {
-      var o = KJ.KANJI[ch] || {};
+    var list = Object.keys(KJ.KANJI_ALL || {}).filter(function (ch) {
+      var o = KJ.KANJI_ALL[ch] || {};
       return (ch + " " + (o.bacaan || "") + " " + (o.arti || "")).toLowerCase().indexOf(kw) >= 0;
     }).slice(0, 40);
     box.classList.remove("hidden");
@@ -58,7 +59,11 @@
     box.querySelectorAll("[data-k]").forEach(function (b) {
       b.onclick = function () {
         var ch = b.getAttribute("data-k");
-        var r = (window.RAD_OF || {})[ch];
+        // Cari radikal pemilik dari data final
+        var r = null;
+        Object.entries(window.EXPLORER_DATA || {}).forEach(function (kv) {
+          if ((kv[1].kanji || []).some(function (k) { return k.ch === ch; })) r = kv[0];
+        });
         if (r && KJ.RAD[r]) KJ.openRad(r);
         KJ.openKanji(ch);
       };
