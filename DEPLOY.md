@@ -32,7 +32,59 @@ firebase deploy --only hosting --token <FIREBASE_TOKEN>
 
 ---
 
-## 2. Deploy Otomatis (CI/CD GitHub Actions)
+## 1b. Menambah Soal Baru — Deteksi Ulang Kotoba
+
+Kosakata tampil di halaman hafal & Kanji Explorer **bukan** dibaca langsung dari soal, tapi dari **file master kotoba** hasil build. Jadi setelah menambah soal, jalankan langkah ini agar kata baru terdeteksi.
+
+### Alur lengkap
+
+```powershell
+# 1. Tambah/edit soal (admin.html atau langsung file <paket>-quiz/quiz-data.json)
+
+# 2. Ekstrak ulang kosakata dari semua soal -> public/kosakata.json
+node tools/build-kosakata.mjs
+
+# 3. Cocokkan ke master -> regenerate file situs + laporan kandidat
+node tools/build-kotoba.mjs
+
+# 4. (Opsional) propagate ke Kanji Explorer
+node tools/build-kanji.mjs
+node tools/build-rad.mjs
+node tools/build-explorer.mjs
+
+# 5. Verifikasi tidak ada yang rusak
+node tools/cek-audit.mjs
+
+# 6. Deploy
+npm run build:css          # hanya jika mengedit class Tailwind di HTML/JS
+firebase deploy --only hosting
+```
+
+### Review kandidat (penting!)
+
+Hasil build menulis laporan ke **`tools/kotoba-kandidat.json`** — berisi semua kata dari soal yang **belum ada di master**:
+
+- `alasan: "kata kerja (X -> Y) belum ada di master"` → verba dengan wujud baru (mis. 〜ません, bentuk kamus)
+- `alasan: "kata baru belum ada di master"` → nomina/sifat/frasa baru
+
+**Kalau kata itu layak dihafal**, tambahkan ke file master yang sesuai lalu build ulang (langkah 3):
+
+| Jenis | File master | Skema entri |
+|---|---|---|
+| Kata kerja | `public/kotoba-kerja.json` | `{"kanji":"消します","kana":"けします","rom":"keshimasu","arti":"mematikan"}` |
+| Kata sifat | `public/kotoba-sifat.json` | `{"kanji":"静か","kana":"しずか","rom":"shizuka","arti":"tenang"}` |
+| Kata benda | `public/kotoba-benda.json` | `{"kanji":"机","kana":"つくえ","rom":"tsukue","arti":"meja"}` |
+| Ungkapan/frasa | `public/kotoba-ungkapan.json` | `{"kanji":"よろしくお願いします","kana":"よろしくおねがいします","rom":"yoroshiku onegai shimasu","arti":"mohon bantuannya"}` |
+
+### Aturan penting
+
+- **Verba cukup satu bentuk `-masu`** — wujud lain di soal (〜ました, 〜ません, 〜ましょう, bentuk kamus) otomatis dikenali lewat konversi, tidak perlu ditulis manual.
+- **File master menang mutlak** — kalau ada kata salah tampil, betulkan langsung di file master (sekali benar, selamanya benar), jangan di soal.
+- **Kandidat yang tidak Anda pindahkan ke master** tidak akan tampil di situs — aman dibiarkan; laporan hanya alat bantu review.
+- `node tools/seed-master.mjs` hanya untuk membuat master awal — **jangan dijalankan lagi** (menimpa editan Anda).
+
+---
+
 
 ### Prasyarat
 - Repository GitHub: `https://github.com/mswaluyo/sinaujepang`
