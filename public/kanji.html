@@ -28,23 +28,32 @@
 <section class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
 <div class="px-4 pt-4 pb-3 border-b border-slate-100 flex flex-wrap items-center gap-2">
 <div class="mr-auto">
-<h1 class="font-extrabold text-slate-800 text-[15px] leading-tight"><i class="fa-solid fa-language text-fuji-500 mr-1.5"></i>Daftar Kanji</h1>
-<p class="text-[11px] text-slate-500 mt-0.5">Kanji yang muncul di kosakata soal. Klik header untuk mengurutkan.</p>
+<h1 class="font-extrabold text-slate-800 text-[15px] leading-tight"><i class="fa-solid fa-language text-fuji-500 mr-1.5"></i>Kanji Explorer</h1>
+<p class="text-[11px] text-slate-500 mt-0.5">Jelajahi kanji dari soal — filter, cari, klik kartu untuk detail.</p>
 </div>
 <span id="jCount" class="text-[11px] font-bold text-slate-500 bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full"></span>
 </div>
-<div class="px-4 py-3 bg-slate-50/70 border-b border-slate-100 flex flex-wrap gap-2 items-center">
+<div class="px-4 py-3 bg-slate-50/70 border-b border-slate-100">
+<div class="text-[11px] font-extrabold text-slate-500 uppercase tracking-wide mb-1.5">🎯 Filter jumlah contoh kata (klik badge):</div>
+<div id="jLevel" class="flex flex-wrap gap-2"></div>
+</div>
+<div class="px-4 py-3 border-b border-slate-100 flex flex-wrap gap-2 items-center">
 <input id="jCari" placeholder="Cari kanji / bacaan / arti…" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] flex-1 min-w-[160px] focus:outline-none focus:ring-2 focus:ring-fuji-300">
 </div>
-<div class="overflow-auto max-h-[70vh]"><table class="w-full text-[13px] min-w-[720px]">
-<thead id="jHead" class="sticky top-0 bg-slate-50 text-slate-500 uppercase text-[11px] tracking-wide"></thead>
-<tbody id="jRows" class="divide-y divide-slate-100"></tbody>
-</table></div>
+<div class="p-4 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-2" id="jGrid"></div>
 <div class="p-3 border-t border-slate-100 bg-white">
-<button id="jMore" class="w-full bg-fuji-50 hover:bg-fuji-100 text-fuji-700 font-bold text-[13px] py-2.5 rounded-xl border border-fuji-200 transition-colors">Muat 200 lagi <i class="fa-solid fa-chevron-down ml-1"></i></button>
+<button id="jMore" class="w-full bg-fuji-50 hover:bg-fuji-100 text-fuji-700 font-bold text-[13px] py-2.5 rounded-xl border border-fuji-200 transition-colors">Muat 100 lagi <i class="fa-solid fa-chevron-down ml-1"></i></button>
 </div>
 </section>
 </main>
+<div id="jModal" class="hidden fixed inset-0 z-50 items-center justify-center bg-slate-900/60 p-4">
+<div class="bg-white rounded-2xl max-w-md w-full max-h-[90vh] overflow-auto p-6">
+<div id="jDetail"></div>
+<div class="flex gap-2 mt-4">
+<button onclick="window._jClose()" class="flex-1 bg-slate-900 text-white font-bold px-4 py-2.5 rounded-xl text-sm">Tutup</button>
+</div>
+</div>
+</div>
 <footer class="bg-white border-t border-slate-200 py-8 mt-auto"><div class="max-w-5xl mx-auto px-4 text-center"><p class="text-slate-700 font-bold text-sm mb-1">SinauJepang (sinaujepang.web.app)</p><p class="text-slate-600 text-xs mb-3">Didedikasikan untuk seluruh pejuang Tokutei Ginou Indonesia.</p></div></footer>
 <script src="/assets/js/kanji-data.js"></script>
 <script src="/assets/js/kanji.js"></script>
