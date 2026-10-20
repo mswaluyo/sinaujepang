@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cetak Soal — SinauJepang</title>
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+<style>
+@media print{
+.no-print{display:none}
+body{background:#fff}
+*{ -webkit-print-color-adjust:exact !important; print-color-adjust:exact !important; }
+.soal{break-inside:avoid}
+}
+</style>
+</head>
+<body class="bg-slate-100 text-slate-800 font-sans min-h-screen">
+<div class="max-w-3xl mx-auto px-4 py-6">
+<div class="no-print bg-white border border-slate-200 rounded-2xl p-4 mb-4 flex flex-wrap items-center gap-2">
+<div class="mr-auto">
+<div class="font-extrabold text-[15px]" id="cTitle">Cetak Soal</div>
+<div class="text-[11px] text-slate-500" id="cSub">Memuat…</div>
+</div>
+<button onclick="window.print()" class="bg-slate-900 hover:bg-slate-700 text-white text-[13px] font-bold px-4 py-2 rounded-lg"><i class="fa-solid fa-print mr-1.5"></i>Cetak / Simpan PDF</button>
+<a id="cBack" href="/" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-[13px] font-bold px-4 py-2 rounded-lg">← Kembali</a>
+</div>
+<div id="cSheet" class="bg-white border border-slate-200 rounded-2xl p-6"></div>
+</div>
+<script>
+(function(){
+  function q(n){ try{ return new URLSearchParams(location.search).get(n) || ""; }catch(e){ return ""; } }
+  function esc(s){ return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
+  var slug = (q("paket") || "gakusei-quiz").toLowerCase();
+  document.getElementById("cTitle").textContent = "Cetak Soal — " + slug.replace("-quiz","").toUpperCase();
+  document.getElementById("cBack").href = "/#latihan-soal";
+  function optText(o){ if (o == null) return ""; if (typeof o === "string") return o; return o.text || o.label || ""; }
+  fetch("/" + slug + "/quiz-data.json", { cache: "no-store" }).then(function(r){ return r.json(); }).then(function(d){
+    var items = Array.isArray(d) ? d : (d.items || d.questions || []);
+    document.getElementById("cSub").textContent = items.length + " soal • kunci jawaban di halaman terakhir";
+    document.title = "Soal " + slug.replace("-quiz","").toUpperCase() + " — SinauJepang";
+    var h = "<div style='text-align:center;margin-bottom:18px'><div style='font-size:20px;font-weight:900'>SinauJepang 模擬試験</div><div style='font-size:12px;color:#64748b'>Paket " + esc(slug.replace("-quiz","").toUpperCase()) + " • " + items.length + " soal</div></div>";
+    var kunci = [];
+    items.forEach(function(s, i){
+      var no = s.no || (i + 1);
+      h += "<div class='soal' style='border:1px solid #e2e8f0;border-radius:12px;padding:12px 14px;margin-bottom:12px'>";
+      h += "<div style='font-weight:800;font-size:13px;margin-bottom:6px'>Soal " + no + " <span style='font-weight:400;color:#94a3b8;font-size:11px'>" + esc(s.section || "") + "</span></div>";
+      if (s.title) h += "<div style='font-size:13px;margin-bottom:6px'>" + esc(s.title) + "</div>";
+      if (s.img) h += "<div style='margin-bottom:6px'><img src='/" + slug + "/" + esc(s.img) + "' style='max-width:280px;border-radius:8px;border:1px solid #e2e8f0' loading='lazy'></div>";
+      if (s.trans && s.trans !== "-") h += "<div style='font-size:12px;color:#475569;margin-bottom:6px'>" + esc(s.trans) + "</div>";
+      var opts = s.options || [];
+      var ABJ = ["A","B","C","D","E","F"];
+      h += "<div style='display:grid;gap:4px'>";
+      opts.forEach(function(o, j){
+        h += "<div style='font-size:13px'><b>" + (ABJ[j] || (j+1)) + ".</b> " + esc(optText(o)) + "</div>";
+      });
+      h += "</div></div>";
+      var ans = s.answer;
+      kunci.push("<tr><td style='border:1px solid #e2e8f0;padding:4px 10px;text-align:center'>" + no + "</td><td style='border:1px solid #e2e8f0;padding:4px 10px;text-align:center;font-weight:800'>" + (ABJ[ans] || "-") + "</td></tr>");
+    });
+    h += "<div class='soal' style='margin-top:18px'><div style='font-weight:900;font-size:14px;margin-bottom:8px'>Kunci Jawaban</div><table style='border-collapse:collapse;font-size:13px'><tr><th style='border:1px solid #e2e8f0;padding:4px 10px;background:#f8fafc'>No</th><th style='border:1px solid #e2e8f0;padding:4px 10px;background:#f8fafc'>Kunci</th></tr>" + kunci.join("") + "</table></div>";
+    document.getElementById("cSheet").innerHTML = h;
+  }).catch(function(){ document.getElementById("cSheet").innerHTML = "<p style='color:#e11d48'>Gagal memuat soal.</p>"; });
+})();
+</script>
+</body>
+</html>

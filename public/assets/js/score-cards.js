@@ -141,7 +141,7 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
         a.appendChild(foot);
       }
       foot.className = "card-foot flex items-center justify-between pt-3 mt-1 border-t border-slate-100";
-      foot.innerHTML = '<span class="score-foot text-[11px] text-slate-400 font-medium flex items-center gap-1"><i class="fa-solid fa-play text-sky-400"></i><span>Siap Mengerjakan</span></span><span class="bg-sky-600 group-hover:bg-sky-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm"><span class="act-txt">Mulai Simulasi</span><i class="fa-solid fa-arrow-right text-[10px]"></i></span>';
+      foot.innerHTML = '<span class="score-foot text-[11px] text-slate-400 font-medium flex items-center gap-1"><i class="fa-solid fa-play text-sky-400"></i><span>Siap Mengerjakan</span></span><span class="flex items-center gap-2"><a href="/cetak.html?paket=' + slug + '" target="_blank" rel="noopener" title="Unduh soal PDF" class="pdf-btn inline-flex items-center gap-1 bg-white hover:bg-rose-50 text-rose-600 font-semibold text-xs px-3 py-2 rounded-xl border border-rose-200 transition-all"><i class="fa-solid fa-file-pdf"></i><span>PDF</span></a><span class="bg-sky-600 group-hover:bg-sky-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm"><span class="act-txt">Mulai Simulasi</span><i class="fa-solid fa-arrow-right text-[10px]"></i></span></span>';
       var host = a.querySelector(":scope > .score-host");
       if (!host) {
         host = document.createElement("div");
@@ -179,6 +179,9 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
   }
   document.addEventListener("click", function (e) {
     try {
+      // Tombol PDF di footer kartu: biarkan link bekerja normal (tab baru)
+      var pdf = e.target && e.target.closest ? e.target.closest(".pdf-btn") : null;
+      if (pdf) { e.stopPropagation(); return; }
       var h = e.target && e.target.closest ? e.target.closest(".score-host[data-hasil]") : null;
       if (h && h.getAttribute("data-hasil")) { e.preventDefault(); e.stopPropagation(); location.href = h.getAttribute("data-hasil"); }
     } catch (err) {}
