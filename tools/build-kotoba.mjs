@@ -38,7 +38,9 @@ for (const e of (src.data || [])) {
   const aI = !vMasu && !vPast && !vDict && (isAdjIKana(kana) || isAdjIKana(kata));
   const aNa = !vMasu && !vPast && !vDict && !aI && (isAdjNaKana(kana) || isAdjNaKana(kata));
   const isWord = vMasu || vPast || vDict || aI || aNa;
-  // Selain kata kerja/sifat: buang kalimat, angka/waktu, frasa panjang
+  // Selain kata kerja/sifat: buang kalimat, angka/waktu, frasa panjang.
+  // Nomina 2 kata (mis. "3 年", "ホテル さくら") DIIZINKAN masuk agar bisa dipecah
+  // jadi kata tunggal di bawah; frasa 3-4 kata tetap dibuang.
   if (!isWord) {
     if (KAL.test(kata) || KAL.test(kana)) { buangKalimat++; continue; }
     if (nKata > 2) { buangKalimat++; continue; }
@@ -52,6 +54,28 @@ for (const e of (src.data || [])) {
   const jenis = (vMasu || vPast || vDict) ? "V" : "A";
   // Nomina ditentukan di bawah (bukan kata kerja/sifat)
   out.push({ k: kata, kana, r: e.rom || "", a: arti, p: (e.paket || []).map(p => p.replace("-quiz", "")), j: isWord ? jenis : "N" });
+  // --- Pecah gabungan jadi kata tunggal untuk hafalan ---
+  // Mis. "えいがを みました" -> [えいが, みました]; "3 年" -> [年] (angka dibuang).
+  // Tiap token valid jadi entri sendiri; kana+arti diwarisi dari induk + penanda asal.
+  // Induk gabungan TIDAK disimpan (diganti hasil pecahannya).
+  // Pemisah: spasi, ・, 、, ・, (), （）, koma JP — token kurung dibersihkan dulu.
+  if (nKata > 1 || /[・、\(\)（）、，]/.test(kata)) {
+    const bersih = kata.replace(/[\(\)（）]/g, " ").replace(/[・、，]/g, " ");
+    const toks = bersih.split(/\s+/).filter(Boolean);
+    const kanaToks = kana.replace(/[\(\)（）]/g, " ").replace(/[・、，]/g, " ").split(/\s+/).filter(Boolean);
+    let pecahOk = false;
+    toks.forEach((tk, ti) => {
+      if (!/[一-鿿々〆぀-ヿ]/.test(tk)) return; // buang angka/partikel latin murni
+      if (/^[をのにはがでとへやかねよぞもだけしかきり]+$/.test(tk)) return; // partikel lepas
+      if (/^[0-9０-９:：／\/\.時分月日円枚回番線歳才週]+$/.test(tk)) return; // angka/waktu murni
+      if (tk.length < 1 || tk.length > 8) return; // kata tunggal wajar maks 8 karakter
+      if ((tk.match(/[一-鿿々〆]/g) || []).length > 3) return; // maks 3 kanji per kata
+      const kanaTk = kanaToks[ti] || kanaToks[0] || "";
+      out.push({ k: tk, kana: kanaTk, r: e.rom || "", a: arti + " ◁ " + kata, p: (e.paket || []).map(p => p.replace("-quiz", "")), j: "N", pecah: kata });
+      pecahOk = true;
+    });
+    if (pecahOk) { out.splice(out.findIndex(o => o.k === kata && !o.pecah), 1); }
+  }
 }
 out.sort((a, b) => a.k.localeCompare(b.k, "ja"));
 // --- Normalisasi verba ke bentuk -masu POSITIF saja ---
@@ -106,10 +130,10 @@ console.log(`  verba normalisasi: ${verbsRaw.length} -> ${verbs.length} bentuk-m
 const adjs = out.filter(e => e.j === "A");
 const nouns = out.filter(e => e.j === "N");
 console.log(`  verba-masu: ${verbs.length}, adjektiva: ${adjs.length}, nomina: ${nouns.length}`);
-const pack = o => [o.k, o.kana, o.r, o.a, o.p.join(",")];
+const pack = o => [o.k, o.kana, o.r, o.a, o.p.join(","), o.pecah || ""];
 const head = (n, j) => "// " + n + " — hasil saring otomatis (jangan edit manual).\n// Dibuat: " + new Date().toISOString() + " | jumlah: " + j.length + "\n// Regenerasi: node tools/build-kotoba.mjs\n";
 fs.writeFileSync(path.join(ROOT, "public", "assets", "js", "kotoba-verb.js"),
-  head("kotoba-verb.js", verbs) + "window.KOTOBA_VERB = " + JSON.stringify(verbs.map(pack)) + ";\n// [kata, kana, romaji, arti, \"paket1,paket2\"]\n");
+  head("kotoba-verb.js", verbs) + "window.KOTOBA_VERB = " + JSON.stringify(verbs.map(pack)) + ";\n// [kata, kana, romaji, arti, \"paket1,paket2\", asalGabungan?]");
 fs.writeFileSync(path.join(ROOT, "public", "assets", "js", "kotoba-adj.js"),
   head("kotoba-adj.js", adjs) + "window.KOTOBA_ADJ = " + JSON.stringify(adjs.map(pack)) + ";\n");
 fs.writeFileSync(path.join(ROOT, "public", "assets", "js", "kotoba-noun.js"),
