@@ -6,6 +6,7 @@
 import fs from "node:fs";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
+import { TAMBAHAN } from "./vocab-tambahan.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.join(HERE, "..");
@@ -30,6 +31,11 @@ for (const w of KOTOBA) {
   // Taut langsung: karakter kanji di kata ATAU di asal gabungannya
   const chars = new Set([...w.k, ...(w.asal || "")].filter(c => KMAP[c] && /[一-鿿々〆]/.test(c)));
   for (const ch of chars) (byKanji[ch] = byKanji[ch] || []).push(w);
+// Pelengkap: kosakata dasar JLPT bila kanji belum punya vocab valid dari soal
+for (const [ch, arr] of Object.entries(TAMBAHAN)) {
+  if ((byKanji[ch] || []).length) continue;
+  byKanji[ch] = arr.map(e => ({ k: e[0], kana: e[1], rom: e[2], a: e[3], asal: "dasar N5" }));
+}
 }
 for (const ch of Object.keys(byKanji))
   byKanji[ch] = byKanji[ch].sort((a, b) => a.k.length - b.k.length).slice(0, 8)

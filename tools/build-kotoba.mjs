@@ -26,6 +26,10 @@ for (const e of (src.data || [])) {
   if (!kata || !arti) continue;
   if (!/^[぀-ヿ一-鿿々〆]/.test(kata)) { buangKalimat++; continue; }
   if (/salah eja|bukan kata baku|pengecoh|keliru|bentuk salah|bunyi keliru/i.test(arti)) { buangKalimat++; continue; }
+  // Wajib murni Jepang: kata & kana tanpa huruf latin/angka (buang "pictures", "gambar 2", dsb)
+  if (/[a-zA-Z0-9]/.test(kata)) { buangKalimat++; continue; }
+  if (/[a-zA-Z0-9]/.test(kana)) { buangKalimat++; continue; }
+  if (/pictures|gambar|photo|image/i.test(arti + " " + kana)) { buangKalimat++; continue; }
   const nKata = kata.split(/\s+/).filter(Boolean).length;
   // Verba -masu/-masen/-mashou (kini) + -mashita (lampau): IZINKAN
   const vMasu = isMasuKana(kana) || isMasuKana(kata);
