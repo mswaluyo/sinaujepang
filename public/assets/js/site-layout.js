@@ -88,6 +88,17 @@
     location.href = "/login.html";
   }
 
+  // Keluar: pakai fujiLogout bila ada (beranda); selain itu lewat ?out=1 di login.html
+  function logoutFallback() {
+    try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
+    location.replace("/login.html?out=1");
+  }
+
+  // Traktir Kopi: modal di beranda; selain itu bawa ke beranda + buka otomatis (?donasi=1)
+  function donate() {
+    if (typeof window.openDonationModal === "function") { window.openDonationModal(); return; }
+    location.replace("/?donasi=1");
+  }
 
   // Sinkronkan tampilan login di header dengan sesi tersimpan (jft_user)
   function renderUser() {
@@ -168,15 +179,3 @@
     else init();
   }
 })();
-
-  // Keluar: pakai fujiLogout bila ada (beranda); selain itu lewat ?out=1 di login.html
-  function logoutFallback() {
-    try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
-    location.replace("/login.html?out=1");
-  }
-
-  // Traktir Kopi: modal di beranda; selain itu bawa ke beranda + buka otomatis (?donasi=1)
-  function donate() {
-    if (typeof window.openDonationModal === "function") { window.openDonationModal(); return; }
-    location.replace("/?donasi=1");
-  }
