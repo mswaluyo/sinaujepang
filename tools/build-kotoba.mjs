@@ -54,8 +54,48 @@ for (const e of (src.data || [])) {
   out.push({ k: kata, kana, r: e.rom || "", a: arti, p: (e.paket || []).map(p => p.replace("-quiz", "")), j: isWord ? jenis : "N" });
 }
 out.sort((a, b) => a.k.localeCompare(b.k, "ja"));
-// --- Pisahkan per jenis (sudah ditentukan saat saring: j = V/A/N) ---
-const verbs = out.filter(e => e.j === "V");
+// --- Normalisasi verba ke bentuk -masu kini ---
+// Aturan: -mashita -> -masu (ganti ました/ませんでした), bentuk kamus -ru -> -masu
+// (mapping suku kata akhir). Gagal konversi = entri dibuang (bukan verba murni).
+function toMasu(kana) {
+  let k = kana;
+  if (/ませんでした$/.test(k)) return k.replace(/ませんでした$/, "ません");
+  if (/ました$/.test(k)) return k.replace(/ました$/, "ます");
+  const map = {
+    // godan: a-row -> i-row + ます (urutan: pola panjang dulu!)
+    "う": "います", "く": "きます", "ぐ": "ぎます", "す": "します", "つ": "ちます",
+    "ぬ": "にます", "ぶ": "びます", "む": "みます", "る": "ります",
+    // ichidan & khusus: potong る -> ます
+    "える": "えます", "ける": "けます", "げる": "げます", "せる": "せます",
+    "てる": "てます", "ねる": "ねます", "へる": "へます", "める": "めます",
+    "れる": "れます", "いる": "います", "きる": "きます", "ぎる": "ぎます",
+    "しる": "します", "じる": "じます", "ちる": "ちます", "にる": "にます",
+    "ひる": "ひます", "びる": "びます", "みる": "みます",
+    "する": "します", "くる": "きます", "いく": "いきます", "ゆく": "ゆきます",
+    "ある": "あります", "わかる": "わかります",
+  };
+  const keys = Object.keys(map).sort((a, b) => b.length - a.length); // pola panjang dulu
+  for (const akhir of keys) {
+    const ganti = map[akhir];
+    if (k.endsWith(akhir) && k.length > akhir.length) return k.slice(0, -akhir.length) + ganti;
+  }
+  return null;
+}
+const verbsRaw = out.filter(e => e.j === "V");
+const verbs = [];
+let buangVerba = 0;
+for (const e of verbsRaw) {
+  const kana = e.kana || e.k;
+  if (/(ます|ません|ましょう)$/.test(kana)) { verbs.push(e); continue; }
+  const m = toMasu(kana);
+  if (!m) { buangVerba++; continue; }
+  // Samakan kanji bila seluruhnya kana; romaji sesuaikan akhiran
+  const kk = (e.k === kana) ? m : e.k;
+  let rr = e.r || "";
+  rr = rr.replace(/(mashita|masen ?deshita|ta|ru)$/i, "masu").replace(/masumasu$/i, "masu");
+  verbs.push({ ...e, k: kk, kana: m, r: rr });
+}
+console.log(`  verba normalisasi: ${verbsRaw.length} -> ${verbs.length} bentuk-masu (buang: ${buangVerba})`);
 const adjs = out.filter(e => e.j === "A");
 const nouns = out.filter(e => e.j === "N");
 console.log(`  verba-masu: ${verbs.length}, adjektiva: ${adjs.length}, nomina: ${nouns.length}`);
