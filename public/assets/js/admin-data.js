@@ -1,4 +1,4 @@
-import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp, documentId } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 const $ = id => document.getElementById(id);
 const PACKS = ["aoi-quiz", "basu-quiz", "jinja-quiz", "kagi-quiz", "tamago-quiz", "gakusei-quiz", "magarimasu-quiz"];
 const _q = { mode: "ringkas", rows: [], shown: 50, lastDoc: null, done: false, loading: false, sort: "waktu", dir: -1 };
@@ -74,12 +74,12 @@ window._aLoadNilai = async function (reset) {
   _q.loading = true;
   $("qRows").innerHTML = "<tr><td colspan='10' class='py-10 text-center text-slate-400 text-[13px]'><i class='fa-solid fa-circle-notch fa-spin mr-2'></i>Memuat nilai…</td></tr>";
   try {
-    // Tanpa orderBy server: ambil per halaman lalu sortir di klien pakai _t (createdAt||at).
-    // Alasan: orderBy("createdAt") tak stabil untuk dokumen lama tanpa field itu -> startAfter
-    // bisa mengembalikan dokumen yang sama -> hitungan Ujian (o.n) membengkak ratusan.
+    // Pagination stabil: orderBy(documentId()) selalu ada & unik -> startAfter tak akan
+    // mengulang/melewatkan dokumen (sebelumnya orderBy createdAt tak stabil utk dok lama
+    // tanpa field itu -> dokumen ganda -> hitungan Ujian membengkak). Sortir waktu di klien.
     let qq;
     try {
-      qq = _q.lastDoc ? query(collection(db, "attempts"), startAfter(_q.lastDoc), limit(500)) : query(collection(db, "attempts"), limit(500));
+      qq = _q.lastDoc ? query(collection(db, "attempts"), orderBy(documentId()), startAfter(_q.lastDoc), limit(500)) : query(collection(db, "attempts"), orderBy(documentId()), limit(500));
     } catch (e) { qq = query(collection(db, "attempts"), limit(500)); }
     const snap = await getDocs(qq);
     if (snap.size) _q.lastDoc = snap.docs[snap.docs.length - 1];
@@ -117,7 +117,7 @@ function renderNilai() {
     // Samakan field agregat dengan accessor sorter (_t = waktu terbaik, skor = nilai terbaik)
     Object.values(g).forEach(o => { o._t = o.bestT || o.last; o.skor = o.best; o.benar = o.bestBenar; });
     window._qLastD = _qSortRows(Object.values(g)).slice(0, _q.shown); window._qLastD.forEach((o, _ix) => {
-      _qDetailRows.push({ name: o.name, email: o.email, slug: o.slug, benar: o.bestBenar, total: o.total, t: o.bestT || o.last, secs: o.bestSecs });
+      _qDetailRows.push({ name: o.name, email: o.email, slug: o.slug, benar: o.bestBenar, total: o.total, t: o.bestT || o.last, secs: o.bestSecs, n: o.n });
       const di = _qDetailRows.length - 1;
       const ok = o.best >= 75;
       html += "<tr class='hover:bg-fuji-50/60 transition-colors'>"
@@ -181,6 +181,7 @@ window._aJsonNilai = function () {
       soal: total, benar,
       skor_persen: total ? Math.round(benar / total * 100) : 0,
       skala_jft: total ? Math.round(10 + (benar / total) * 240) : 10,
+      ujian_n: o.n || null, // hitungan percobaan (hanya mode ringkas)
       waktu: o.t ? new Date(o.t).toISOString() : null,
       secs: o.secs || null
     };
@@ -188,6 +189,7 @@ window._aJsonNilai = function () {
   const out = {
     diekspor_pada: new Date().toISOString(),
     mode: _q.mode, jumlah: data.length,
+    total_dokumen_dimuat: (_q.rows || []).length,
     filter: { paket: ($("qSlug") || {}).value || "", kata_kunci: ($("qEmail") || {}).value || "" },
     data
   };
