@@ -1,6 +1,6 @@
-# 🚀 Panduan Deploy — SinauJepang
+﻿# ≡ƒÜÇ Panduan Deploy ΓÇö SinauJepang
 
-## 📊 Arsitektur
+## ≡ƒôè Arsitektur
 
 ```
 d:\soal-jft\public\   →  Firebase Hosting  →  https://sinaujepang.web.app
@@ -32,7 +32,7 @@ firebase deploy --only hosting:sinaujepang --token <FIREBASE_TOKEN>
 
 ---
 
-## 1b. Menambah Soal Baru — Deteksi Ulang Kotoba
+## 1b. Menambah Soal Baru ΓÇö Deteksi Ulang Kotoba
 
 Kosakata tampil di halaman kotoba (`/kotoba`, dulu `/hafal`) & Kanji Explorer **bukan** dibaca langsung dari soal, tapi dari **file master kotoba** hasil build. Jadi setelah menambah soal, jalankan langkah ini agar kata baru terdeteksi.
 
@@ -62,26 +62,26 @@ firebase deploy --only hosting
 
 ### Review kandidat (penting!)
 
-Hasil build menulis laporan ke **`tools/kotoba-kandidat.json`** — berisi semua kata dari soal yang **belum ada di master**:
+Hasil build menulis laporan ke **`tools/kotoba-kandidat.json`** ΓÇö berisi semua kata dari soal yang **belum ada di master**:
 
-- `alasan: "kata kerja (X -> Y) belum ada di master"` → verba dengan wujud baru (mis. 〜ません, bentuk kamus)
+- `alasan: "kata kerja (X -> Y) belum ada di master"` → verba dengan wujud baru (mis. πÇ£πü╛πü¢πéô, bentuk kamus)
 - `alasan: "kata baru belum ada di master"` → nomina/sifat/frasa baru
 
 **Kalau kata itu layak dihafal**, tambahkan ke file master yang sesuai lalu build ulang (langkah 3):
 
 | Jenis | File master | Skema entri |
 |---|---|---|
-| Kata kerja | `public/kotoba-kerja.json` | `{"kanji":"消します","kana":"けします","rom":"keshimasu","arti":"mematikan"}` |
-| Kata sifat | `public/kotoba-sifat.json` | `{"kanji":"静か","kana":"しずか","rom":"shizuka","arti":"tenang"}` |
-| Kata benda | `public/kotoba-benda.json` | `{"kanji":"机","kana":"つくえ","rom":"tsukue","arti":"meja"}` |
-| Ungkapan/frasa | `public/kotoba-ungkapan.json` | `{"kanji":"よろしくお願いします","kana":"よろしくおねがいします","rom":"yoroshiku onegai shimasu","arti":"mohon bantuannya"}` |
+| Kata kerja | `public/kotoba-kerja.json` | `{"kanji":"µ╢êπüùπü╛πüÖ","kana":"πüæπüùπü╛πüÖ","rom":"keshimasu","arti":"mematikan"}` |
+| Kata sifat | `public/kotoba-sifat.json` | `{"kanji":"Θ¥Öπüï","kana":"πüùπüÜπüï","rom":"shizuka","arti":"tenang"}` |
+| Kata benda | `public/kotoba-benda.json` | `{"kanji":"µ£║","kana":"πüñπüÅπüê","rom":"tsukue","arti":"meja"}` |
+| Ungkapan/frasa | `public/kotoba-ungkapan.json` | `{"kanji":"πéêπéìπüùπüÅπüèΘíÿπüäπüùπü╛πüÖ","kana":"πéêπéìπüùπüÅπüèπü¡πüîπüäπüùπü╛πüÖ","rom":"yoroshiku onegai shimasu","arti":"mohon bantuannya"}` |
 
 ### Aturan penting
 
-- **Verba cukup satu bentuk `-masu`** — wujud lain di soal (〜ました, 〜ません, 〜ましょう, bentuk kamus) otomatis dikenali lewat konversi, tidak perlu ditulis manual.
-- **File master menang mutlak** — kalau ada kata salah tampil, betulkan langsung di file master (sekali benar, selamanya benar), jangan di soal.
-- **Kandidat yang tidak Anda pindahkan ke master** tidak akan tampil di situs — aman dibiarkan; laporan hanya alat bantu review.
-- `node tools/seed-master.mjs` hanya untuk membuat master awal — **jangan dijalankan lagi** (menimpa editan Anda).
+- **Verba cukup satu bentuk `-masu`** ΓÇö wujud lain di soal (πÇ£πü╛πüùπüƒ, πÇ£πü╛πü¢πéô, πÇ£πü╛πüùπéçπüå, bentuk kamus) otomatis dikenali lewat konversi, tidak perlu ditulis manual.
+- **File master menang mutlak** ΓÇö kalau ada kata salah tampil, betulkan langsung di file master (sekali benar, selamanya benar), jangan di soal.
+- **Kandidat yang tidak Anda pindahkan ke master** tidak akan tampil di situs ΓÇö aman dibiarkan; laporan hanya alat bantu review.
+- `node tools/seed-master.mjs` hanya untuk membuat master awal ΓÇö **jangan dijalankan lagi** (menimpa editan Anda).
 
 ---
 
@@ -92,6 +92,12 @@ Hasil build menulis laporan ke **`tools/kotoba-kandidat.json`** — berisi semua
   - GitHub → Settings → Secrets and variables → Actions
   - Name: `FIREBASE_TOKEN`
   - Value: token dari `firebase login:ci`
+
+### CI/CD Command Requirements
+- **GitHub Actions workflow** (`.github/workflows/deploy.yml`): perintah deploy ke Firebase CLI harus menyertakan nama project secara eksplisit:
+  ```bash
+  firebase deploy --only hosting:sinaujepang --project sinau-jepang --token "${{ secrets.FIREBASE_TOKEN }}"
+  ```
 
 ### Langkah
 ```powershell
@@ -121,6 +127,10 @@ git push origin main
 | Site | `sinaujepang` |
 | URL | `https://sinaujepang.web.app` |
 | Public folder | `d:\soal-jft\public\` |
+
+### File Konfigurasi Firebase
+- **File `.firebaserc` WAJIB di-commit ke Git** (gunakan `git add -f .firebaserc` jika terabaikan oleh `.gitignore`). File ini berisi pemetaan target `hosting:sinaujepang` yang dibutuhkan GitHub Actions.
+- `firebase.json` tetap di-commit seperti biasa.
 
 ### Cache Policy (`firebase.json`)
 | File | Cache-Control |
@@ -177,7 +187,7 @@ d:\soal-jft\public\
 
 ---
 
-## ⚠️ Catatan Penting: Tailwind CSS Build
+## ▲▲▲ Catatan Penting: Tailwind CSS Build
 
 **Setiap kali menambah class Tailwind baru di file JS/HTML**, jalankan build CSS sebelum commit:
 
@@ -190,13 +200,13 @@ npm run build:css
 **Alur kerja yang benar:**
 ```
 1. Edit file JS/HTML (tambah class Tailwind baru)
-2. npm run build:css          ← WAJIB sebelum commit
+2. npm run build:css          ΓåÉ WAJIB sebelum commit
 3. git add .
 4. git commit -m "pesan"
-5. git push origin main       ← CI/CD auto-deploy
+5. git push origin main       ΓåÉ CI/CD auto-deploy
 ```
 
-**Catatan:** CI/CD **jakin** menjalankan `npm run build:css` sebelum deploy. Tailwind purging class secara otomatis; jangan khawatir soal file CSS yang sudah di-commit — CI meng-generate ulang CSSnya dari `src/input.css` di setiap push.
+**Catatan:** CI/CD **jakin** menjalankan `npm run build:css` sebelum deploy. Tailwind purging class secara otomatis; jangan khawatir soal file CSS yang sudah di-commit ΓÇö CI meng-generate ulang CSSnya dari `src/input.css` di setiap push.
 
 ---
 
@@ -220,7 +230,7 @@ npm run build:css
 | Firestore | 1 GB storage, 50k read/day, 20k write/day |
 | Authentication | Unlimited |
 | Analytics | 500 events/hari |
-| Storage | ❌ Tidak dipakai (butuh billing) |
+| Storage | Γ¥î Tidak dipakai (butuh billing) |
 
 ---
 

@@ -1,0 +1,5 @@
+# CRITICAL DEPLOYMENT RULES
+- WAJIB membaca dan mematuhi file `deploy.md` secara mutlak sebelum membuat script, mengedit file, atau menjalankan perintah deploy.
+- Dilarang membuat jalur deploy/script baru tanpa persetujuan manual.
+- Untuk alur deploy Firebase Hosting dan pembaruan kotoba, ikuti alur standar di `deploy.md`.
+

@@ -41,7 +41,12 @@ document.querySelectorAll(".tabBtn").forEach(b => b.onclick = () => window._aSho
 window.addEventListener("hashchange", () => { try { window._aShowTab((location.hash || "").replace("#", ""), false); } catch (e) {} });
 onAuthStateChanged(window._aAuth, async (u) => {
   if (!u) { showGate(); return; }
-  $("#aUser").textContent = "Hi, " + (u.displayName || u.email); $("#aUser").classList.remove("hidden");
+  const $aUser = $("#aUser");
+  if ($aUser) {
+    $aUser.textContent = "Hi, " + (u.displayName || u.email);
+    $aUser.classList.remove("hidden");
+  }
+
   const o = $("#aOut"); o.classList.remove("hidden"); o.classList.add("flex");
   runCheck(u).catch(() => {});
 });
