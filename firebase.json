@@ -1,53 +1,14 @@
-{
+﻿{
   "hosting": [
     {
-      "target": "utama",
-    "public": "public",
-    "ignore": [
-      "firebase.json",
-      "**/.*",
-      "**/node_modules/**",
-      "**/assets/audio/**"
-    ],
-    "cleanUrls": true,
-    "trailingSlash": false,
-    "redirects": [
-      {
-        "source": "/hafal",
-        "destination": "/kotoba",
-        "type": 301
-      },
-      {
-        "source": "/hafal.html",
-        "destination": "/kotoba",
-        "type": 301
-      }
-    ],
-    "headers": [
-      {
-        "source": "**/*.json",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=300"
-          }
-        ]
-      },
-      {
-        "source": "assets/**",
-        "headers": [
-          {
-            "key": "Cache-Control",
-            "value": "public, max-age=3600, stale-while-revalidate=86400"
-          }
-        ]
-      }
-    ]
-    },
-    {
-      "site": "sinau-jepang",
+      "target": "sinaujepang",
       "public": "public",
-      "ignore": ["firebase.json", "**/.*", "**/node_modules/**", "**/assets/audio/**"],
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**",
+        "**/assets/audio/**"
+      ],
       "cleanUrls": true,
       "trailingSlash": false,
       "redirects": [

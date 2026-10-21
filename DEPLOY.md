@@ -24,8 +24,8 @@ git add public/index.html
 git commit -m "pesan perubahan"
 git push origin main
 
-# 3. Deploy ke Firebase Hosting
-firebase deploy --only hosting --token <FIREBASE_TOKEN>
+# 3. Deploy ke Firebase Hosting (target: sinaujepang)
+firebase deploy --only hosting:sinaujepang --token <FIREBASE_TOKEN>
 
 # 4. Buka https://sinaujepang.web.app (hard refresh: Ctrl+Shift+R)
 ```
@@ -106,7 +106,7 @@ git push origin main
 #    - npm ci
 #    - npm run build:css
 #    - npm install -g firebase-tools
-#    - firebase deploy --only hosting
+#    - firebase deploy --only hosting:sinaujepang
 # 3. Cek status: https://github.com/mswaluyo/sinaujepang/actions
 ```
 
@@ -196,7 +196,7 @@ npm run build:css
 5. git push origin main       ← CI/CD auto-deploy
 ```
 
-**Catatan:** CI/CD **tidak** menjalankan `build:css` (karena `tailwind.config.js` tidak di-commit). CSS yang di-commit adalah hasil build lokal.
+**Catatan:** CI/CD **jakin** menjalankan `npm run build:css` sebelum deploy. Tailwind purging class secara otomatis; jangan khawatir soal file CSS yang sudah di-commit — CI meng-generate ulang CSSnya dari `src/input.css` di setiap push.
 
 ---
 
