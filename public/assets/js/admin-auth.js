@@ -8,9 +8,8 @@ window.$a = $;
   const $aLogin = $("#aLogin");
   if ($aLogin) {
     $aLogin.onclick = async () => {
-      $("#aMsg").textContent = "";
       try { await signInWithPopup(window._aAuth, new GoogleAuthProvider()); }
-      catch (e) { $("#aMsg").textContent = "Gagal: " + (e.message || e.code); }
+      catch (e) { /* error handled by redirect */ }
     };
   }
 
