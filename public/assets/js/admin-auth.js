@@ -48,7 +48,11 @@ onAuthStateChanged(window._aAuth, async (u) => {
     $aUser.classList.remove("hidden");
   }
 
-  const o = $("#aOut"); o.classList.remove("hidden"); o.classList.add("flex");
+  const o = $("#aOut");
+  if (o) {
+    o.classList.remove("hidden"); 
+    o.classList.add("flex");
+  }
   console.log("runCheck started");
   const result = await runCheck(u);
   console.log("runCheck finished:", result);
