@@ -1,5 +1,8 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
+const $ = id => document.getElementById(id);
+window.$a = $;
+
 // 🔧 FIX: Cek elemen ada dulu sebelum set onclick
 (function initAuthButtons() {
   const $aLogin = $("#aLogin");
@@ -21,6 +24,7 @@ import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10
     $aHomeLink.onclick = () => location.replace("/");
   }
 })();
+
 function styleTab(active, idle) { active.className = "tabBtn bg-fuji-600 hover:bg-fuji-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md transition-all"; idle.forEach(x => { x.className = "tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"; }); }
 // Navigasi tab via hash URL (#nilai #soal #users #admins) agar tahan reload & bisa dibagikan.
 const TABS = ["nilai", "soal", "users", "admins"];
