@@ -11,17 +11,8 @@
 <script src="/assets/js/indexeddb.js"></script>
 <script src="/assets/js/site-layout.js"></script>
 <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-<div id="gate" class="hidden">
-<div class="text-4xl mb-3">🔐</div>
-<h1 class="font-extrabold text-lg mb-1">Area Admin</h1>
-<p class="text-xs text-slate-500 mb-5">Login dengan akun admin.</p>
-<button id="aLogin" class="bg-slate-900 text-white font-bold px-6 py-3 rounded-xl text-sm w-full">Masuk dengan Google</button>
-<p id="aMsg" class="text-rose-600 text-xs mt-3"></p>
-<div id="aOut" class="hidden">
-    <p class="text-xs text-slate-500 mt-2">Tidak ada akses admin. <a href="/" id="aHomeLink" class="text-fuji-600 underline">← Kembali ke Beranda</a></p>
-  </div>
-</div>
-<div id="panel" class="hidden">
+<div id="gate" class="hidden"></div>
+<div id="panel">
 <div class="flex flex-wrap gap-2 mb-4">
 <button data-tab="nilai" class="tabBtn bg-fuji-600 hover:bg-fuji-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md transition-all"><i class="fa-solid fa-chart-line mr-1"></i>Nilai Siswa</button>
 <button data-tab="soal" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-pen-to-square mr-1"></i>Soal</button>
