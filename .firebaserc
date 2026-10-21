@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "default": "sinau-jepang"
+  },
+  "targets": {
+    "sinau-jepang": {
+      "hosting": {
+        "sinaujepang": [
+          "sinaujepang"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
