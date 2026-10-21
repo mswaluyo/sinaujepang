@@ -41,7 +41,10 @@ document.querySelectorAll(".tabBtn").forEach(b => b.onclick = () => window._aSho
 window.addEventListener("hashchange", () => { try { window._aShowTab((location.hash || "").replace("#", ""), false); } catch (e) {} });
 onAuthStateChanged(window._aAuth, async (u) => {
   console.log("onAuthStateChanged:", u ? "user found" : "no user", new Date().toISOString());
-  if (!u) { showGate(); return; }
+  if (!u) { 
+    window.location.href = "/login.html?redirect=admin";
+    return;
+  }
   const $aUser = $("#aUser");
   if ($aUser) {
     $aUser.textContent = "Hi, " + (u.displayName || u.email);
@@ -85,8 +88,6 @@ async function verifyAdmin(user) {
   }
 }
 
-// Tampilkan gate, panel, atau pesan sesuai status sesi.
-function showGate() { $("#gate").classList.remove("hidden"); $("#panel").classList.add("hidden"); $("#aMsg").textContent = ""; }
 function hideGateAndPanel() { $("#gate").classList.add("hidden"); $("#panel").classList.add("hidden"); }
 function showPanel() {
   hideGateAndPanel();
@@ -97,26 +98,12 @@ function showPanel() {
 }
 function setMsg(html) { $("#aMsg").innerHTML = html; }
 
-// Sesi login tapi belum lolos pengechekan admin.
-function showNonAdmin(user) {
-  hideGateAndPanel();
-  const $aUser = $("#aUser");
-  if ($aUser) {
-    $aUser.textContent = "Hi, " + (user.displayName || user.email);
-    $aUser.classList.remove("hidden");
-  }
-  $("#aOut").classList.remove("hidden"); $("#aOut").classList.add("flex");
-  setMsg("&#x26D4; " + (user.email || "akun ini") + " bukan admin. <a href='/' id='aHomeLink'>&#x2190; Kembali ke Beranda</a>");
-  const link = $("#aHomeLink");
-  if (link) link.onclick = () => location.replace("/");
-}
-
 // Jalankan pengechekan per role; kesalahan tetap memberi tombol coba lagi.
 async function runCheck(user) {
   try {
     setMsg("Memeriksa izin akses...");
     if (await verifyAdmin(user)) { showPanel(); return true; }
-    showNonAdmin(user);
+    window.location.href = "/login.html?redirect=admin";
     return false;
   } catch (e) {
     setMsg("Gagal verifikasi: " + (e.message || e.code) + ' <button id="aRetry">Coba lagi</button>');
