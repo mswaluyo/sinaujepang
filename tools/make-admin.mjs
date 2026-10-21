@@ -9,7 +9,7 @@
 // Script ini: set custom claim {admin:true} + buat dokumen /admins/{uid}
 import admin from "firebase-admin";
 import { getAuth } from "firebase-admin/auth";
-import { getFirestore } from "firebase-admin/firestore";
+import { getFirestore, FieldValue } from "firebase-admin/firestore";
 import fs from "node:fs";
 const email = (process.argv[2] || "").trim().toLowerCase();
 if (!email) {
@@ -28,7 +28,7 @@ await auth.setCustomUserClaims(user.uid, { admin: true });
 await db.collection("admins").doc(user.uid).set({
   email: user.email,
   role: "admin",
-  createdAt: admin.firestore.FieldValue.serverTimestamp()
+  createdAt: FieldValue.serverTimestamp()
 }, { merge: true });
 console.log(`OK: ${user.email} (${user.uid}) sekarang ADMIN. Minta user logout + login ulang.`);
 process.exit(0);

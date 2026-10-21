@@ -32,12 +32,50 @@ window._aShowTab = function (name, push) {
   const all = Array.from(document.querySelectorAll(".tabBtn"));
   const btn = document.querySelector('.tabBtn[data-tab="' + name + '"]');
   if (btn) styleTab(btn, all.filter(x => x !== btn));
-  TABS.forEach(t => { const s = $("#tab-" + t); if (s) s.classList.toggle("hidden", t !== name); });
+  
+  TABS.forEach(t => { 
+    const s = document.getElementById("tab-" + t); 
+    if (s) {
+      if (t === name) {
+        s.classList.remove("hidden");
+        s.style.display = "block";
+      } else {
+        s.classList.add("hidden");
+        s.style.display = "none";
+      }
+    }
+  });
+
+  // Panggil loader data sesuai tab yang dipilih
+  try {
+    if (name === "nilai" && window._aLoadNilai) window._aLoadNilai();
+    else if (name === "soal" && window._aInitSoal) window._aInitSoal();
+    else if (name === "users" && window._aInitUsers) window._aInitUsers();
+    else if (name === "admins" && window._aLoadAdmins) window._aLoadAdmins();
+  } catch (e) {
+    console.error("Tab load error:", e);
+  }
+
   try { if (push === false) history.replaceState(null, "", "#" + name); else location.hash = name; } catch (e) {}
   return name;
 };
-document.querySelectorAll(".tabBtn").forEach(b => b.onclick = () => window._aShowTab(b.dataset.tab));
-window.addEventListener("hashchange", () => { try { window._aShowTab((location.hash || "").replace("#", ""), false); } catch (e) {} });
+
+// Event delegation agar klik tombol tab PASTI terdeteksi
+document.addEventListener("click", (e) => {
+  const btn = e.target.closest(".tabBtn");
+  if (btn && btn.dataset && btn.dataset.tab) {
+    e.preventDefault();
+    console.log("[Tab Clicked]:", btn.dataset.tab);
+    window._aShowTab(btn.dataset.tab);
+  }
+});
+
+window.addEventListener("hashchange", () => { 
+  try { 
+    const h = (location.hash || "").replace("#", "");
+    if (h) window._aShowTab(h, false); 
+  } catch (e) {} 
+});
 onAuthStateChanged(window._aAuth, async (u) => {
   console.log("onAuthStateChanged:", u ? "user found" : "no user", new Date().toISOString());
   if (!u) { 
@@ -78,32 +116,47 @@ async function verifyAdmin(user) {
 
   // Cek Firestore admins/{uid}
   try {
-    const doc = await getDoc(doc(window._aDb, "admins", user.uid));
-    console.log("Firestore admin doc:", doc.exists() ? "found" : "not found");
-    return doc.exists();
+    const adminSnap = await getDoc(doc(window._aDb, "admins", user.uid));
+    console.log("Firestore admin doc:", adminSnap.exists() ? "found" : "not found");
+    return adminSnap.exists();
   } catch (e) {
     console.error("Firestore admin check failed:", e.message);
     return false;
   }
 }
 
-function hideGateAndPanel() { $("#gate").classList.add("hidden"); $("#panel").classList.add("hidden"); }
+function hideGateAndPanel() { 
+  const g = $("#gate"); if (g) g.classList.add("hidden"); 
+}
 function showPanel() {
   hideGateAndPanel();
-  $("#panel").classList.remove("hidden");
-  try { window._aShowTab((location.hash || "").replace("#", "") || "nilai", false); } catch (e) {}
-  if (window._aInitNilaiBar) window._aInitNilaiBar();
-  window._aLoadNilai(true); window._aInitSoal(); window._aLoadAdmins(); if (window._aInitUsers) window._aInitUsers();
+  const p = $("#panel"); 
+  if (p) p.classList.remove("hidden");
+  
+  const initialTab = (location.hash || "").replace("#", "") || "nilai";
+  try { window._aShowTab(initialTab, false); } catch (e) { console.error("Tab error:", e); }
 }
 
 // Jalankan pengechekan per role; kesalahan tetap memberi tombol coba lagi.
 async function runCheck(user) {
+  let isAdmin = false;
   try {
-    if (await verifyAdmin(user)) { showPanel(); return true; }
-    window.location.href = "/login.html?redirect=admin";
-    return false;
+    isAdmin = await verifyAdmin(user);
   } catch (e) {
-    window.location.href = "/login.html?redirect=admin";
-    return false;
+    console.error("verifyAdmin threw error:", e);
   }
+
+  if (isAdmin) { 
+    try {
+      showPanel(); 
+    } catch (e) {
+      console.error("showPanel threw error:", e);
+    }
+    return true; 
+  }
+
+  console.warn("User bukan admin, mengarahkan ke login...");
+  alert("Akun Anda (" + (user.email || user.uid) + ") belum terverifikasi sebagai Admin.");
+  window.location.href = "/login.html?redirect=admin";
+  return false;
 }
