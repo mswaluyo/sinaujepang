@@ -44,7 +44,7 @@
     h += '<a href="/kotoba" data-nav="kotoba" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all"><i class="fa-solid fa-book-open mr-1"></i>Kotoba</a>';
     h += '<a href="/kanji" data-nav="kanji" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-rose-600 hover:bg-rose-50 transition-all"><i class="fa-solid fa-language mr-1"></i>Kanji</a>';
     h += "</nav>";
-    h += '<a id="adminBtn" href="/admin" style="display:none" class="items-center gap-2 bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold px-3.5 py-1.5 rounded-full transition-all text-xs border border-amber-500"><i class="fa-solid fa-shield-halved"></i><span>Admin</span></a>';
+    h += '<a id="adminBtn" href="/admin" class="items-center gap-2 bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold px-3.5 py-1.5 rounded-full transition-all text-xs border border-amber-500"><i class="fa-solid fa-shield-halved"></i><span>Admin</span></a>';
     h += '<button onclick="SiteLayout.donate()" class="hidden sm:flex items-center gap-2 bg-amber-50 hover:bg-amber-100 text-amber-700 font-semibold px-3.5 py-1.5 rounded-full border border-amber-200 transition-all text-xs"><i class="fa-solid fa-mug-hot text-amber-600"></i><span>Traktir Kopi</span></button>';
     h += '<span id="uInfo" class="hidden text-xs text-slate-500"></span>';
     h += '<button id="loginBtn" onclick="SiteLayout.login()" class="flex items-center gap-2.5 bg-white hover:bg-slate-50 text-slate-700 font-medium px-4 py-2 rounded-full border border-slate-200 shadow-sm transition-all hover:shadow text-sm">' + LOGIN_DEFAULT + "</button>";
@@ -151,11 +151,9 @@
         for (var j = 0; j < cls.length; j++) links[i].classList.add(cls[j]);
       }
     }
-    // Tombol Admin otomatis tampil di halaman /admin
-    if ((location.pathname || "").indexOf("/admin") === 0) {
-      var ab = document.getElementById("adminBtn");
-      if (ab) ab.style.setProperty("display", "flex", "important");
-    }
+    // Tombol Admin selalu tampil di header (umum untuk semua halaman)
+    var ab = document.getElementById("adminBtn");
+    if (ab) ab.style.setProperty("display", "flex", "important");
   }
 
   function mountFooter() {
