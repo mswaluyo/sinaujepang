@@ -26,9 +26,14 @@ jobs:
         run: npm ci
 
       - name: Install Firebase CLI
-        run: npm install -g firebase-tools
+        run: npm install -g firebase-tools@15.28.1
 
-      - name: Deploy to Firebase
-        run: firebase deploy --only hosting --token ${{ secrets.FIREBASE_TOKEN }} --project ${{ env.FIREBASE_PROJECT }}
+      - name: Deploy to Firebase Hosting
+        run: |
+          # Deploy cuma site yang dimiliki project CI (sinau-jepang).
+          # Entry hosting 'utama' di firebase.json merujuk project 'sinaujepang',
+          # jadi kalau CI credential nggak punya akses project itu, deploy gagal.
+          # Skrip ini risk-nya jadi cuma ke site milik project sinau-jepang.
+          firebase deploy --only hosting:sinau-jepang --project ${{ env.FIREBASE_PROJECT }} --token ${{ secrets.FIREBASE_TOKEN }}
         env:
           CI: true
