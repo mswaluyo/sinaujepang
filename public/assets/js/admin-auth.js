@@ -53,17 +53,25 @@ onAuthStateChanged(window._aAuth, async (u) => {
 
 // Cek keanggotaan admin: custom claim Firebase admin: true ATAU dokumen Firestore admins/{uid}.
 async function verifyAdmin(user) {
-  // Coba cek custom claim (refresh token dulu)
+  // Coba cek custom claim (force refresh token dulu)
   try {
     const tok = await user.getIdTokenResult(true);
     if (tok.claims && tok.claims.admin === true) return true;
-  } catch (e) { /* lanjut pengechekan dokumen */ }
+    else console.warn("Custom claim admin: false. Refresh token...");
+
+    // Coba refresh token sekali lagi
+    const tok2 = await user.getIdTokenResult(true);
+    if (tok2.claims && tok2.claims.admin === true) return true;
+  } catch (e) {
+    console.warn("Custom claim check failed:", e.message);
+  }
 
   // Cek Firestore admins/{uid}
   try {
     const doc = await getDoc(doc(window._aDb, "admins", user.uid));
     return doc.exists();
   } catch (e) {
+    console.error("Firestore admin check failed:", e.message);
     return false;
   }
 }
