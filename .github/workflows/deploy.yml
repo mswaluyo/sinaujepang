@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 env:
-  FIREBASE_PROJECT: sinau-jepang
+  FIREBASE_PROJECT: sinaujepang
 
 jobs:
   build-and-deploy:
@@ -30,10 +30,9 @@ jobs:
 
       - name: Deploy to Firebase Hosting
         run: |
-          # Deploy cuma site yang dimiliki project CI (sinau-jepang).
-          # Entry hosting 'utama' di firebase.json merujuk project 'sinaujepang',
-          # jadi kalau CI credential nggak punya akses project itu, deploy gagal.
-          # Skrip ini risk-nya jadi cuma ke site milik project sinau-jepang.
-          firebase deploy --only hosting:sinau-jepang --project ${{ env.FIREBASE_PROJECT }} --token ${{ secrets.FIREBASE_TOKEN }}
+          # Deploy cuma site 'sinaujepang' (target utama, project sinaujepang).
+          # firebase.json punya 2 entry: 'utama' (sinaujepang) + 'sinau-jepang'.
+          # Script ini cetak ke site milik project sinaujepang saja.
+          firebase deploy --only hosting:sinaujepang --project ${{ env.FIREBASE_PROJECT }} --token ${{ secrets.FIREBASE_TOKEN }}
         env:
           CI: true
