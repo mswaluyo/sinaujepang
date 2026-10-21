@@ -7,7 +7,7 @@ on:
     branches: [main]
 
 env:
-  FIREBASE_PROJECT: sinaujepang
+  FIREBASE_PROJECT: sinau-jepang
 
 jobs:
   build-and-deploy:
@@ -30,9 +30,9 @@ jobs:
 
       - name: Deploy to Firebase Hosting
         run: |
-          # Deploy cuma site 'sinaujepang' (target utama, project sinaujepang).
+          # Deploy cuma site 'sinaujepang' (target utama, project sinau-jepang).
           # firebase.json punya 2 entry: 'utama' (sinaujepang) + 'sinau-jepang'.
-          # Script ini cetak ke site milik project sinaujepang saja.
+          # Script ini cetak ke site milik project sinau-jepang saja.
           firebase deploy --only hosting:sinaujepang --project ${{ env.FIREBASE_PROJECT }} --token ${{ secrets.FIREBASE_TOKEN }}
         env:
           CI: true
