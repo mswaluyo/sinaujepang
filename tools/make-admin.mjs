@@ -8,6 +8,8 @@
 //      contoh: node tools/make-admin.mjs guru@gmail.com
 // Script ini: set custom claim {admin:true} + buat dokumen /admins/{uid}
 import admin from "firebase-admin";
+import { getAuth } from "firebase-admin/auth";
+import { getFirestore } from "firebase-admin/firestore";
 import fs from "node:fs";
 const email = (process.argv[2] || "").trim().toLowerCase();
 if (!email) {
@@ -19,9 +21,11 @@ if (!fs.existsSync("./serviceAccountKey.json")) {
   process.exit(1);
 }
 const app = admin.initializeApp({ credential: admin.cert(JSON.parse(fs.readFileSync("./serviceAccountKey.json", "utf8"))), projectId: "sinau-jepang" });
-const user = await app.auth().getUserByEmail(email);
-await app.auth().setCustomUserClaims(user.uid, { admin: true });
-await app.firestore().collection("admins").doc(user.uid).set({
+const auth = getAuth(app);
+const db = getFirestore(app);
+const user = await auth.getUserByEmail(email);
+await auth.setCustomUserClaims(user.uid, { admin: true });
+await db.collection("admins").doc(user.uid).set({
   email: user.email,
   role: "admin",
   createdAt: admin.firestore.FieldValue.serverTimestamp()
