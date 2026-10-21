@@ -83,8 +83,11 @@ function setMsg(html) { $("#aMsg").innerHTML = html; }
 // Sesi login tapi belum lolos pengechekan admin.
 function showNonAdmin(user) {
   hideGateAndPanel();
-  $("#aUser").textContent = "Hi, " + (user.displayName || user.email);
-  $("#aUser").classList.remove("hidden");
+  const $aUser = $("#aUser");
+  if ($aUser) {
+    $aUser.textContent = "Hi, " + (user.displayName || user.email);
+    $aUser.classList.remove("hidden");
+  }
   $("#aOut").classList.remove("hidden"); $("#aOut").classList.add("flex");
   setMsg("&#x26D4; " + (user.email || "akun ini") + " bukan admin. <a href='/' id='aHomeLink'>&#x2190; Kembali ke Beranda</a>");
   const link = $("#aHomeLink");
