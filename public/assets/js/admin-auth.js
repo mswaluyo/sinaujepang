@@ -1,9 +1,26 @@
 import { getAuth, GoogleAuthProvider, signInWithPopup, signOut, onAuthStateChanged } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 import { getFirestore, getDoc, doc } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
-const $ = id => document.getElementById(id);
-window.$a = $;
-$("#aLogin").onclick = async () => { $("#aMsg").textContent = ""; try { await signInWithPopup(window._aAuth, new GoogleAuthProvider()); } catch (e) { $("#aMsg").textContent = "Gagal: " + (e.message || e.code); } };
-$("#aOut").onclick = () => signOut(window._aAuth).then(() => location.reload());
+// 🔧 FIX: Cek elemen ada dulu sebelum set onclick
+(function initAuthButtons() {
+  const $aLogin = $("#aLogin");
+  if ($aLogin) {
+    $aLogin.onclick = async () => {
+      $("#aMsg").textContent = "";
+      try { await signInWithPopup(window._aAuth, new GoogleAuthProvider()); }
+      catch (e) { $("#aMsg").textContent = "Gagal: " + (e.message || e.code); }
+    };
+  }
+
+  const $aOut = $("#aOut");
+  if ($aOut) {
+    $aOut.onclick = () => signOut(window._aAuth).then(() => location.reload());
+  }
+
+  const $aHomeLink = $("#aHomeLink");
+  if ($aHomeLink) {
+    $aHomeLink.onclick = () => location.replace("/");
+  }
+})();
 function styleTab(active, idle) { active.className = "tabBtn bg-fuji-600 hover:bg-fuji-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md transition-all"; idle.forEach(x => { x.className = "tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"; }); }
 // Navigasi tab via hash URL (#nilai #soal #users #admins) agar tahan reload & bisa dibagikan.
 const TABS = ["nilai", "soal", "users", "admins"];
@@ -27,12 +44,16 @@ onAuthStateChanged(window._aAuth, async (u) => {
 
 // Cek keanggotaan admin: custom claim Firebase admin: true ATAU dokumen Firestore admins/{uid}.
 async function verifyAdmin(user) {
+  // Coba cek custom claim (refresh token dulu)
   try {
     const tok = await user.getIdTokenResult(true);
     if (tok.claims && tok.claims.admin === true) return true;
   } catch (e) { /* lanjut pengechekan dokumen */ }
+
+  // Cek Firestore admins/{uid}
   try {
-    return (await getDoc(doc(window._aDb, "admins", user.uid))).exists();
+    const doc = await getDoc(doc(window._aDb, "admins", user.uid));
+    return doc.exists();
   } catch (e) {
     return false;
   }
