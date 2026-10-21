@@ -96,19 +96,15 @@ function showPanel() {
   if (window._aInitNilaiBar) window._aInitNilaiBar();
   window._aLoadNilai(true); window._aInitSoal(); window._aLoadAdmins(); if (window._aInitUsers) window._aInitUsers();
 }
-function setMsg(html) { $("#aMsg").innerHTML = html; }
 
 // Jalankan pengechekan per role; kesalahan tetap memberi tombol coba lagi.
 async function runCheck(user) {
   try {
-    setMsg("Memeriksa izin akses...");
     if (await verifyAdmin(user)) { showPanel(); return true; }
     window.location.href = "/login.html?redirect=admin";
     return false;
   } catch (e) {
-    setMsg("Gagal verifikasi: " + (e.message || e.code) + ' <button id="aRetry">Coba lagi</button>');
-    const btn = $("#aRetry");
-    if (btn) btn.onclick = () => runCheck(user);
+    window.location.href = "/login.html?redirect=admin";
     return false;
   }
 }
