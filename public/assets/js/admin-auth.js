@@ -40,6 +40,7 @@ window._aShowTab = function (name, push) {
 document.querySelectorAll(".tabBtn").forEach(b => b.onclick = () => window._aShowTab(b.dataset.tab));
 window.addEventListener("hashchange", () => { try { window._aShowTab((location.hash || "").replace("#", ""), false); } catch (e) {} });
 onAuthStateChanged(window._aAuth, async (u) => {
+  console.log("onAuthStateChanged:", u ? "user found" : "no user", new Date().toISOString());
   if (!u) { showGate(); return; }
   const $aUser = $("#aUser");
   if ($aUser) {
@@ -48,7 +49,9 @@ onAuthStateChanged(window._aAuth, async (u) => {
   }
 
   const o = $("#aOut"); o.classList.remove("hidden"); o.classList.add("flex");
-  runCheck(u).catch(() => {});
+  console.log("runCheck started");
+  const result = await runCheck(u);
+  console.log("runCheck finished:", result);
 });
 
 // Cek keanggotaan admin: custom claim Firebase admin: true ATAU dokumen Firestore admins/{uid}.
@@ -56,6 +59,7 @@ async function verifyAdmin(user) {
   // Coba cek custom claim (force refresh token dulu)
   try {
     const tok = await user.getIdTokenResult(true);
+    console.log("Custom claim check:", tok.claims);
     if (tok.claims && tok.claims.admin === true) return true;
     else console.warn("Custom claim admin: false. Refresh token...");
 
@@ -69,6 +73,7 @@ async function verifyAdmin(user) {
   // Cek Firestore admins/{uid}
   try {
     const doc = await getDoc(doc(window._aDb, "admins", user.uid));
+    console.log("Firestore admin doc:", doc.exists() ? "found" : "not found");
     return doc.exists();
   } catch (e) {
     console.error("Firestore admin check failed:", e.message);
