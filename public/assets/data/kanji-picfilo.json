@@ -1,0 +1,4006 @@
+[
+  {
+    "kanji": "買",
+    "radical": "貝",
+    "meaning": "Membeli",
+    "pic": "Gambar jaring/wadah (罒) di atas kerang (貝) yang berfungsi sebagai mata uang kuno.",
+    "filo": "Mengumpulkan uang kerang ke dalam jaring untuk bertransaksi atau membeli barang."
+  },
+  {
+    "kanji": "行",
+    "radical": "行",
+    "meaning": "Pergi / Jalan",
+    "pic": "Piktograf persimpangan jalan empat arah.",
+    "filo": "Menggambarkan jalur perempatan tempat orang berjalan dan bepergian."
+  },
+  {
+    "kanji": "来",
+    "radical": "人",
+    "meaning": "Datang",
+    "pic": "Gambar tanaman gandum yang lebat dengan bulir yang merunduk.",
+    "filo": "Gandum dianggap berkah yang datang dari langit, maknanya diadopsi menjadi kata kerja datang."
+  },
+  {
+    "kanji": "出",
+    "radical": "凵",
+    "meaning": "Keluar",
+    "pic": "Gambar tunas tanaman yang tumbuh keluar memancar dari dalam lubang tanah.",
+    "filo": "Sesuatu yang muncul atau keluar dari tempat asalnya menuju ke luar."
+  },
+  {
+    "kanji": "入",
+    "radical": "入",
+    "meaning": "Masuk",
+    "pic": "Gambar mata panah atau arus yang masuk menancap ke dalam sebuah celah.",
+    "filo": "Pergerakan menembus atau masuk ke dalam suatu area."
+  },
+  {
+    "kanji": "日",
+    "radical": "日",
+    "meaning": "Matahari / Hari",
+    "pic": "Piktograf lingkaran matahari dengan titik/garis di tengahnya.",
+    "filo": "Melambangkan benda langit matahari sebagai penanda waktu/hari."
+  },
+  {
+    "kanji": "月",
+    "radical": "月",
+    "meaning": "Bulan",
+    "pic": "Piktograf bulan sabit dengan pendaran cahaya di tengahnya.",
+    "filo": "Bentuk bulan sabit yang melambangkan siklus bulanan dan malam hari."
+  },
+  {
+    "kanji": "火",
+    "radical": "火",
+    "meaning": "Api",
+    "pic": "Gambar kobaran api dengan percikan lidah api di sisinya.",
+    "filo": "Nyala api yang membumbung tinggi dari tumpukan kayu bakar."
+  },
+  {
+    "kanji": "水",
+    "radical": "水",
+    "meaning": "Air",
+    "pic": "Gambar aliran sungai utama di tengah dengan tetesan air di sampingnya.",
+    "filo": "Aliran air alami yang mengalir terus menerus."
+  },
+  {
+    "kanji": "木",
+    "radical": "木",
+    "meaning": "Pohon / Kayu",
+    "pic": "Gambar batang pohon dengan batang di tengah, batang atas, dan akar merayap di bawah.",
+    "filo": "Struktur utuh pohon kayu dari ranting hingga ke akar."
+  },
+  {
+    "kanji": "金",
+    "radical": "金",
+    "meaning": "Emas / Logam / Uang",
+    "pic": "Gambar atap tempat penyimpan/peleburan (今) di atas bijih logam (土 dan titik-titik) di dalam tanah.",
+    "filo": "Logam mulia terpendam di dalam tanah yang digali dan dimurnikan."
+  },
+  {
+    "kanji": "土",
+    "radical": "土",
+    "meaning": "Tanah",
+    "pic": "Gambar gumpalan tanah yang diletakkan di atas permukaan bumi.",
+    "filo": "Gundukan tanah tempat tumbuhnya tanaman."
+  },
+  {
+    "kanji": "今",
+    "radical": "人",
+    "meaning": "Sekarang",
+    "pic": "Gambar penutup wadah yang menutupi rapat sesuatu di bawahnya.",
+    "filo": "Sesuatu yang hadir saat ini atau melingkupi momen sekarang."
+  },
+  {
+    "kanji": "明",
+    "radical": "日",
+    "meaning": "Terang / Cerah",
+    "pic": "Gabungan piktograf matahari (日) dan bulan (月).",
+    "filo": "Dua sumber cahaya alami terbesar di langit yang menghasilkan penerangan."
+  },
+  {
+    "kanji": "大",
+    "radical": "大",
+    "meaning": "Besar",
+    "pic": "Gambar seorang manusia dewasa yang merentangkan kedua tangan dan kakinya.",
+    "filo": "Postur tubuh manusia yang merentangkan diri untuk menunjukkan ukuran besar."
+  },
+  {
+    "kanji": "小",
+    "radical": "小",
+    "meaning": "Kecil",
+    "pic": "Gambar benda atau pecahan yang dibagi/terbelah menjadi bagian-bagian halus.",
+    "filo": "Sesuatu yang berukuran kecil atau sedikit."
+  },
+  {
+    "kanji": "高",
+    "radical": "高",
+    "meaning": "Tinggi",
+    "pic": "Piktograf menara atau bangunan bertingkat dengan atap tinggi dan gerbang bawah.",
+    "filo": "Struktur bangunan menjulang tinggi ke atas."
+  },
+  {
+    "kanji": "安",
+    "radical": "宀",
+    "meaning": "Murah / Aman",
+    "pic": "Gambar seorang wanita (女) duduk di dalam rumah beratap (宀).",
+    "filo": "Keadaan wanita yang merasa tenang dan aman di dalam rumah."
+  },
+  {
+    "kanji": "新",
+    "radical": "斤",
+    "meaning": "Baru",
+    "pic": "Gambar kapak (斤) yang sedang memotong kayu/pohon (木/辛).",
+    "filo": "Kayu segar yang baru saja ditebang menggunakan kapak."
+  },
+  {
+    "kanji": "古",
+    "radical": "口",
+    "meaning": "Kuno / Tua",
+    "pic": "Gambar tengkorak leluhur di atas wadah persembahan (口).",
+    "filo": "Peninggalan atau tradisi leluhur dari masa lalu yang sudah tua."
+  },
+  {
+    "kanji": "上",
+    "radical": "一",
+    "meaning": "Atas",
+    "pic": "Indikatif: Garis horizontal alas dengan simbol penanda di atasnya.",
+    "filo": "Posisi yang berada di bagian lebih tinggi dari garis dasar."
+  },
+  {
+    "kanji": "下",
+    "radical": "一",
+    "meaning": "Bawah",
+    "pic": "Indikatif: Garis horizontal alas dengan simbol penanda menunjuk ke bawah.",
+    "filo": "Posisi yang berada di bagian lebih rendah dari garis dasar."
+  },
+  {
+    "kanji": "中",
+    "radical": "丨",
+    "meaning": "Tengah",
+    "pic": "Gambar tiang bendera/panah yang menembus tepat di tengah-tengah sasaran bundar (口).",
+    "filo": "Posisi tepat berada di pusat atau pertengahan."
+  },
+  {
+    "kanji": "外",
+    "radical": "夕",
+    "meaning": "Luar",
+    "pic": "Gabungan piktograf malam (夕) dan retakan tulang ramalan (卜).",
+    "filo": "Ritual meramal yang dilakukan di luar kebiasaan atau di luar area batas biasa pada malam hari."
+  },
+  {
+    "kanji": "人",
+    "radical": "人",
+    "meaning": "Orang / Manusia",
+    "pic": "Piktograf tampak samping seorang manusia yang berdiri membungkuk.",
+    "filo": "Sosok manusia tegak yang melambangkan individu."
+  },
+  {
+    "kanji": "手",
+    "radical": "手",
+    "meaning": "Tangan",
+    "pic": "Gambar pergelangan tangan beserta lima jari tangan yang terbuka.",
+    "filo": "Anggota tubuh tangan yang digunakan untuk memegang dan bekerja."
+  },
+  {
+    "kanji": "山",
+    "radical": "山",
+    "meaning": "Gunung",
+    "pic": "Piktograf tiga puncak gunung yang berdampingan.",
+    "filo": "Deretan pegunungan tinggi yang menjulang."
+  },
+  {
+    "kanji": "川",
+    "radical": "川",
+    "meaning": "Sungai",
+    "pic": "Gambar tepian dan aliran air sungai yang mengalir sejajar.",
+    "filo": "Aliran air sungai yang meliuk-liuk."
+  },
+  {
+    "kanji": "国",
+    "radical": "囗",
+    "meaning": "Negara",
+    "pic": "Gambar permata/wilayah berharga (玉) yang dikelilingi oleh benteng pembatas (囗).",
+    "filo": "Wilayah berharga yang dilindungi oleh batas wilayah kekuasaan/negara."
+  },
+  {
+    "kanji": "車",
+    "radical": "車",
+    "meaning": "Mobil / Kereta",
+    "pic": "Gambar tampak atas kereta perang kuno lengkap dengan roda di kedua sisi dan poros tengah.",
+    "filo": "Kendaraan roda dua atau empat pemutar roda untuk transportasi."
+  },
+  {
+    "kanji": "学",
+    "radical": "子",
+    "meaning": "Belajar / Ilmu",
+    "pic": "Gambar anak kecil (子) di dalam bangunan beratap yang dipandu tangan (爻) menimba ilmu.",
+    "filo": "Anak yang berada di bawah naungan tempat belajar untuk menyerap pengetahuan."
+  },
+  {
+    "kanji": "一",
+    "radical": "一",
+    "meaning": "Satu",
+    "pic": "Satu garis horizontal datar.",
+    "filo": "Satu buah jari atau satu batang penanda hitungan dasar."
+  },
+  {
+    "kanji": "二",
+    "radical": "二",
+    "meaning": "Dua",
+    "pic": "Dua garis horizontal sejajar.",
+    "filo": "Dua buah jari atau dua batang penanda hitungan."
+  },
+  {
+    "kanji": "三",
+    "radical": "一",
+    "meaning": "Tiga",
+    "pic": "Tiga garis horizontal sejajar.",
+    "filo": "Tiga buah jari atau tiga batang penanda hitungan."
+  },
+  {
+    "kanji": "四",
+    "radical": "囗",
+    "meaning": "Empat",
+    "pic": "Gambar mulut/wadah yang memisahkan atau membagi udara (八) ke dalam 4 arah.",
+    "filo": "Angka empat melambangkan pembagian wilayah/arah secara seimbang."
+  },
+  {
+    "kanji": "五",
+    "radical": "二",
+    "meaning": "Lima",
+    "pic": "Gambar dua garis horizontal dengan persilangan garis (X) di tengahnya.",
+    "filo": "Melambangkan persilangan lima jari tangan atau hitungan lima."
+  },
+  {
+    "kanji": "百",
+    "radical": "白",
+    "meaning": "Ratus / Seratus",
+    "pic": "Bentuk ibu jari/kepala putih (白) dengan garis penanda di atasnya.",
+    "filo": "Angka ratusan sebagai kelipatan sempurna."
+  },
+  {
+    "kanji": "円",
+    "radical": "囗",
+    "meaning": "Yen / Lingkaran",
+    "pic": "Gambar wadah atau koin berbentuk bundar tertutup.",
+    "filo": "Bentuk bundar yang digunakan mewakili koin mata uang Yen."
+  },
+  {
+    "kanji": "立",
+    "radical": "立",
+    "meaning": "Berdiri",
+    "pic": "Gambar manusia yang berdiri tegak di atas garis tanah permukaan.",
+    "filo": "Sikap berdiri kokoh di atas tanah."
+  },
+  {
+    "kanji": "休",
+    "radical": "人",
+    "meaning": "Istirahat",
+    "pic": "Gambar seorang manusia (人) bersandar pada batang pohon (木).",
+    "filo": "Seseorang yang berteduh dan beristirahat di bawah pohon."
+  },
+  {
+    "kanji": "読",
+    "radical": "言",
+    "meaning": "Membaca",
+    "pic": "Gabungan kata/bicara (言) dan bagian penjualan/transaksi (売).",
+    "filo": "Melafalkan atau menguraikan kalimat demi kalimat secara berurutan."
+  },
+  {
+    "kanji": "書",
+    "radical": "曰",
+    "meaning": "Menulis",
+    "pic": "Gambar tangan memegang kuas (聿) di atas wadah tinta/kertas (曰).",
+    "filo": "Tindakan menggoreskan kuas untuk mencatat teks."
+  },
+  {
+    "kanji": "聞",
+    "radical": "耳",
+    "meaning": "Mendengar",
+    "pic": "Gambar organ telinga (耳) di celah pintu gerbang (門).",
+    "filo": "Menempelkan telinga di celah pintu untuk mendengarkan suara."
+  },
+  {
+    "kanji": "話",
+    "radical": "言",
+    "meaning": "Bicara",
+    "pic": "Gabungan kata/bicara (言) dan lidah (舌).",
+    "filo": "Menggerakkan lidah untuk menuturkan perkataan."
+  },
+  {
+    "kanji": "食",
+    "radical": "食",
+    "meaning": "Makan / Makanan",
+    "pic": "Gambar penutup wadah (亼) di atas mangkuk berisi makanan (良).",
+    "filo": "Wadah makanan yang siap disantap."
+  },
+  {
+    "kanji": "飲",
+    "radical": "食",
+    "meaning": "Minum",
+    "pic": "Gambar wadah makanan/minuman (食) disamping orang yang membuka mulut lebar (欠).",
+    "filo": "Membuka mulut untuk meneguk cairan."
+  },
+  {
+    "kanji": "見",
+    "radical": "見",
+    "meaning": "Melihat",
+    "pic": "Gambar mata manusia berukuran besar (目) di atas dua kaki yang berdiri (儿).",
+    "filo": "Seseorang yang memfokuskan penglihatannya ke suatu arah."
+  },
+  {
+    "kanji": "会",
+    "radical": "人",
+    "meaning": "Bertemu / Perkumpulan",
+    "pic": "Gambar atap penutup (亼) di atas kumpulan benda/orang.",
+    "filo": "Orang-orang yang berkumpul bersama di bawah satu naungan."
+  },
+  {
+    "kanji": "言",
+    "radical": "言",
+    "meaning": "Mengatakan",
+    "pic": "Gambar mulut (口) dengan garis suara/suling (辛) di atasnya.",
+    "filo": "Getaran suara yang diproyeksikan keluar dari mulut."
+  },
+  {
+    "kanji": "多",
+    "radical": "夕",
+    "meaning": "Banyak",
+    "pic": "Dua piktograf potongan daging persembahan (夕夕) yang ditumpuk.",
+    "filo": "Jumlah tumpukan bahan makanan yang melimpah/banyak."
+  },
+  {
+    "kanji": "少",
+    "radical": "小",
+    "meaning": "Sedikit",
+    "pic": "Gambar kanji kecil (小) dengan satu garis potongan tambahan.",
+    "filo": "Memotong benda kecil menjadi kuantitas yang lebih sedikit lagi."
+  },
+  {
+    "kanji": "長",
+    "radical": "長",
+    "meaning": "Panjang / Pemimpin",
+    "pic": "Gambar tetua berambut panjang yang berjalan menggunakan tongkat.",
+    "filo": "Rambut panjang melambangkan usia lanjut, kepemimpinan, dan ukuran panjang."
+  },
+  {
+    "kanji": "早",
+    "radical": "日",
+    "meaning": "Cepat / Pagi-pagi",
+    "pic": "Gambar matahari (日) yang baru saja terbit di atas tunas/pohon (十).",
+    "filo": "Matahari di awal pagi hari saat hari masih baru dimulainya."
+  },
+  {
+    "kanji": "白",
+    "radical": "白",
+    "meaning": "Putih",
+    "pic": "Gambar biji beras atau sinar terang dari ibu jari.",
+    "filo": "Warna murni putih seperti beras bersih."
+  },
+  {
+    "kanji": "黒",
+    "radical": "黒",
+    "meaning": "Hitam",
+    "pic": "Gambar perapian berasap (𡆧) di atas titik-titik nyala api (灬).",
+    "filo": "Jelaga hitam yang menempel akibat jelaga pembakaran api."
+  },
+  {
+    "kanji": "赤",
+    "radical": "赤",
+    "meaning": "Merah",
+    "pic": "Gambar manusia (大) di atas kobaran api (火).",
+    "filo": "Warna merah merona dari pendaran panas api."
+  },
+  {
+    "kanji": "青",
+    "radical": "青",
+    "meaning": "Biru / Hijau Muda",
+    "pic": "Gambar tanaman tumbuh (生) di atas sumur pembilasan air murni (井).",
+    "filo": "Warna kesegaran alami tanaman dan air jernih."
+  },
+  {
+    "kanji": "年",
+    "radical": "干",
+    "meaning": "Tahun",
+    "pic": "Gambar orang membungkuk memikul ikatan padi hasil panen (禾).",
+    "filo": "Siklus satu kali panen padi tahunan."
+  },
+  {
+    "kanji": "週",
+    "radical": "辶",
+    "meaning": "Minggu (Pekan)",
+    "pic": "Komponen jalan (辶) menggabungkan siklus penuh (周).",
+    "filo": "Perputaran siklus pekan yang berulang."
+  },
+  {
+    "kanji": "時",
+    "radical": "日",
+    "meaning": "Waktu / Jam",
+    "pic": "Gabungan pergerakan matahari (日) dan irama kuil/pengukuran (寺).",
+    "filo": "Pergerakan teratur matahari sebagai pengukur waktu."
+  },
+  {
+    "kanji": "分",
+    "radical": "刀",
+    "meaning": "Menit / Membagi / Paham",
+    "pic": "Gambar pisau (刀) yang membelah sesuatu menjadi dua bagian (八).",
+    "filo": "Tindakan memotong atau membagi sesuatu menjadi unit-unit kecil."
+  },
+  {
+    "kanji": "先",
+    "radical": "儿",
+    "meaning": "Dahulu / Lebih Dulu",
+    "pic": "Gambar kaki manusia (儿) yang melangkah di depan kaki lainnya (之).",
+    "filo": "Melangkah atau berjalan lebih awal di depan."
+  },
+  {
+    "kanji": "毎",
+    "radical": "毋",
+    "meaning": "Setiap",
+    "pic": "Gambar seorang ibu (母) dengan hiasan rambut melahirkan anak secara berkala.",
+    "filo": "Kejadian berulang secara rutin seperti kelahiran generasi."
+  },
+  {
+    "kanji": "間",
+    "radical": "門",
+    "meaning": "Antara / Jarak / Ruang",
+    "pic": "Gambar pendar sinar matahari (日) yang mengintip dari celah pintu (門).",
+    "filo": "Ruang celah di antara dua sisi pintu."
+  },
+  {
+    "kanji": "午",
+    "radical": "十",
+    "meaning": "Tengah Hari",
+    "pic": "Gambar alu/penumbuk kayu yang berdiri tegak lurus.",
+    "filo": "Posisi matahari tepat tegak lurus melintasi garis tengah langit."
+  },
+  {
+    "kanji": "半",
+    "radical": "十",
+    "meaning": "Setengah",
+    "pic": "Gambar seekor sapi (牛) yang dibelah menjadi dua bagian simetris (八).",
+    "filo": "Membelah benda utuh tepat menjadi separuh."
+  },
+  {
+    "kanji": "左",
+    "radical": "工",
+    "meaning": "Kiri",
+    "pic": "Gambar tangan kiri (𠂇) memegang perkakas kerja (工).",
+    "filo": "Tangan kiri yang memegang alat pemandu kerja."
+  },
+  {
+    "kanji": "右",
+    "radical": "口",
+    "meaning": "Kanan",
+    "pic": "Gambar tangan kanan (又) mengarahkan makanan ke mulut (口).",
+    "filo": "Tangan kanan yang dominan membantu memasukkan makanan ke mulut."
+  },
+  {
+    "kanji": "前",
+    "radical": "刀",
+    "meaning": "Depan / Sebelum",
+    "pic": "Gambar perahu (舟) di atas air dipotong pisau/maju lurus.",
+    "filo": "Arah maju perahu di air bergerak ke depan."
+  },
+  {
+    "kanji": "後",
+    "radical": "彳",
+    "meaning": "Belakang / Setelah",
+    "pic": "Gambar kaki terikat benang (幺) yang berjalan lambat di jalan (彳).",
+    "filo": "Berjalan perlahan sehingga tertinggal di posisi belakang."
+  },
+  {
+    "kanji": "東",
+    "radical": "木",
+    "meaning": "Timur",
+    "pic": "Gambar matahari (日) terbit menyelinap di antara pepohonan (木).",
+    "filo": "Arah munculnya matahari pagi dari balik pepohonan timur."
+  },
+  {
+    "kanji": "西",
+    "radical": "襾",
+    "meaning": "Barat",
+    "pic": "Gambar sarang burung di mana burung hinggap kembali di senja hari.",
+    "filo": "Arah terbenamnya matahari saat burung kembali ke sarang."
+  },
+  {
+    "kanji": "南",
+    "radical": "十",
+    "meaning": "Selatan",
+    "pic": "Gambar instrumen musik perunggu tradisional suku selatan di dalam rumah.",
+    "filo": "Melambangkan wilayah selatan yang hangat dan bernuansa musik."
+  },
+  {
+    "kanji": "北",
+    "radical": "匕",
+    "meaning": "Utara",
+    "pic": "Gambar dua orang yang berdiri saling membelakangi.",
+    "filo": "Membelakangi arah angin dingin dari utara."
+  },
+  {
+    "kanji": "子",
+    "radical": "子",
+    "meaning": "Anak",
+    "pic": "Gambar bayi berdada besar dengan tangan terentang dan kaki terbedong.",
+    "filo": "Sosok anak kecil atau bayi."
+  },
+  {
+    "kanji": "女",
+    "radical": "女",
+    "meaning": "Wanita / Perempuan",
+    "pic": "Gambar sosok wanita bersimpuh bersilang tangan dengan anggun.",
+    "filo": "Gestur bersimpuh wanita tradisional."
+  },
+  {
+    "kanji": "男",
+    "radical": "田",
+    "meaning": "Laki-laki / Pria",
+    "pic": "Gabungan area sawah (田) dan tenaga otot (力).",
+    "filo": "Pria yang mengandalkan tenaga otot untuk mencangkul di sawah."
+  },
+  {
+    "kanji": "父",
+    "radical": "父",
+    "meaning": "Ayah",
+    "pic": "Gambar tangan memegang kapak kayu/pemukul (丨/𠂇).",
+    "filo": "Kepala keluarga yang memegang kendali dan alat kerja rumah tangga."
+  },
+  {
+    "kanji": "母",
+    "radical": "毋",
+    "meaning": "Ibu",
+    "pic": "Gambar sosok wanita bersimpuh dengan dua titik melambangkan payudara menyusui.",
+    "filo": "Sosok ibu yang memelihara dan menyusui anaknya."
+  },
+  {
+    "kanji": "友",
+    "radical": "又",
+    "meaning": "Teman / Sahabat",
+    "pic": "Gambar dua tangan kanan (又又) yang saling bergandengan erat.",
+    "filo": "Dua orang teman yang saling mengulurkan tangan membantu."
+  },
+  {
+    "kanji": "名",
+    "radical": "口",
+    "meaning": "Nama",
+    "pic": "Gabungan suasana malam (夕) dan mulut (口).",
+    "filo": "Menyebutkan nama dengan mulut saat kegelapan malam agar dikenali."
+  },
+  {
+    "kanji": "目",
+    "radical": "目",
+    "meaning": "Mata",
+    "pic": "Piktograf bola mata dengan pupil di tengahnya.",
+    "filo": "Organ penglihatan mata manusia."
+  },
+  {
+    "kanji": "耳",
+    "radical": "耳",
+    "meaning": "Telinga",
+    "pic": "Piktograf daun telinga manusia.",
+    "filo": "Organ pendengaran telinga."
+  },
+  {
+    "kanji": "口",
+    "radical": "口",
+    "meaning": "Mulut",
+    "pic": "Piktograf mulut manusia yang terbuka.",
+    "filo": "Rongga mulut untuk berbicara dan makan."
+  },
+  {
+    "kanji": "足",
+    "radical": "足",
+    "meaning": "Kaki / Cukup",
+    "pic": "Gambar tempurung lutut (口) bersambung dengan telapak kaki di bawahnya (止).",
+    "filo": "Anggota tubuh kaki yang digunakan melangkah."
+  },
+  {
+    "kanji": "力",
+    "radical": "力",
+    "meaning": "Tenaga / Kekuatan",
+    "pic": "Gambar alat bajak sawah kuno dari kayu atau otot lengan membengkok.",
+    "filo": "Tenaga fisik yang digunakan saat bekerja keras."
+  },
+  {
+    "kanji": "田",
+    "radical": "田",
+    "meaning": "Sawah",
+    "pic": "Gambar bidang tanah persegi yang dibagi empat oleh pematang sawah.",
+    "filo": "Lahan bercocok tanam yang teratur."
+  },
+  {
+    "kanji": "天",
+    "radical": "大",
+    "meaning": "Langit / Surga",
+    "pic": "Gambar manusia (大) dengan garis kepala yang diperbesar melebar.",
+    "filo": "Cakrawala luas yang membentang tepat di atas kepala manusia."
+  },
+  {
+    "kanji": "空",
+    "radical": "穴",
+    "meaning": "Langit / Kosong",
+    "pic": "Gambar lubang gua (穴) disamping alat pemotong (工).",
+    "filo": "Ruang kosong terbuka yang membentang di langit."
+  },
+  {
+    "kanji": "雨",
+    "radical": "雨",
+    "meaning": "Hujan",
+    "pic": "Gambar awan langit di atas dengan tetesan air hujan jatuh meretas.",
+    "filo": "Tetesan air yang curah jatuh dari awan langit."
+  },
+  {
+    "kanji": "気",
+    "radical": "气",
+    "meaning": "Udara / Perasaan / Energi",
+    "pic": "Gambar hembusan uap awan (气) melingkupi bulir beras (米).",
+    "filo": "Energi atau uap tidak tampak yang bergerak bebas."
+  },
+  {
+    "kanji": "花",
+    "radical": "艸",
+    "meaning": "Bunga",
+    "pic": "Komponen rumput (艹) menggabungkan transformasi perubahan (化).",
+    "filo": "Bagian tanaman berbunga yang mekar berubah bentuk."
+  },
+  {
+    "kanji": "草",
+    "radical": "艸",
+    "meaning": "Rumput",
+    "pic": "Komponen rumput/tanaman (艹) di atas tunas terbit awal (早).",
+    "filo": "Tumbuhan rumput yang cepat tumbuh liar di tanah."
+  },
+  {
+    "kanji": "林",
+    "radical": "木",
+    "meaning": "Hutan Kecil / Semak",
+    "pic": "Dua piktograf pohon (木木) yang berdiri sejajar.",
+    "filo": "Kumpulan pepohonan yang membentuk kawasan hutan kecil."
+  },
+  {
+    "kanji": "森",
+    "radical": "木",
+    "meaning": "Hutan Lebat",
+    "pic": "Tiga piktograf pohon (木木木) yang dikelompokkan.",
+    "filo": "Hutan rimbun yang dipenuhi sangat banyak pepohonan."
+  },
+  {
+    "kanji": "町",
+    "radical": "田",
+    "meaning": "Kota Kecil / Blok",
+    "pic": "Gabungan petak sawah (田) dan patok garis paku pembatas (丁).",
+    "filo": "Wilayah pemukiman terpeta teratur di dekat kawasan lahan."
+  },
+  {
+    "kanji": "村",
+    "radical": "木",
+    "meaning": "Desa",
+    "pic": "Gabungan pepohonan (木) dan batas daerah aturan (寸).",
+    "filo": "Pemukiman warga di kawasan pedesaan."
+  },
+  {
+    "kanji": "道",
+    "radical": "辶",
+    "meaning": "Jalan / Jalur / Ajaran",
+    "pic": "Gambar kepala pemandu (首) bergerak berjalan di lorong jalan (辶).",
+    "filo": "Jalur lintas tempat melangkah menuju tujuan."
+  },
+  {
+    "kanji": "駅",
+    "radical": "馬",
+    "meaning": "Stasiun",
+    "pic": "Gabungan kuda pos (馬) dan pemukiman penukaran pergantian (尺/駅).",
+    "filo": "Tempat perhentian penukaran kuda pengangkut atau moda transportasi."
+  },
+  {
+    "kanji": "店",
+    "radical": "广",
+    "meaning": "Toko",
+    "pic": "Gambar gudang beratap (广) tempat menaruh barang perabotan (占).",
+    "filo": "Bangunan tempat menyimpan dan menjual barang dagangan."
+  },
+  {
+    "kanji": "家",
+    "radical": "宀",
+    "meaning": "Rumah / Keluarga",
+    "pic": "Gambar atap bangunan (宀) yang menaungi hewan ternak babi (豕).",
+    "filo": "Tempat tinggal beratap yang memelihara kehidupan di dalamnya."
+  },
+  {
+    "kanji": "電",
+    "radical": "雨",
+    "meaning": "Listrik",
+    "pic": "Gambar hujan awan (雨) disertai kilatan petir meliuk (申).",
+    "filo": "Kilatan energi listrik alami saat cuaca badai."
+  },
+  {
+    "kanji": "社",
+    "radical": "示",
+    "meaning": "Perusahaan / Kuil",
+    "pic": "Gambar mezbah doa persembahan (示) berdiri di atas gundukan tanah (土).",
+    "filo": "Tempat berkumpulnya kelompok masyarakat untuk beribadah atau berorganisasi."
+  },
+  {
+    "kanji": "生",
+    "radical": "生",
+    "meaning": "Hidup / Lahir / Mentah",
+    "pic": "Gambar tunas tanaman muda yang memancar tumbuh dari tanah.",
+    "filo": "Pertumbuhan awal kehidupan yang segar."
+  },
+  {
+    "kanji": "校",
+    "radical": "木",
+    "meaning": "Sekolah",
+    "pic": "Gabungan bahan kayu/bangunan (木) dan persilangan percampuran (交).",
+    "filo": "Bangunan kayu tempat berinteraksinya murid dan guru."
+  },
+  {
+    "kanji": "本",
+    "radical": "木",
+    "meaning": "Buku / Asal / Batang",
+    "pic": "Gambar pohon (木) dengan garis paku penanda terletak di bagian pangkal akar.",
+    "filo": "Pangkal utama sumber atau akar fondasi."
+  },
+  {
+    "kanji": "語",
+    "radical": "言",
+    "meaning": "Bahasa",
+    "pic": "Gabungan kata-kata bicara (言) dan diri saya (吾).",
+    "filo": "Perkataan yang diungkapkan seseorang untuk berkomunikasi."
+  },
+  {
+    "kanji": "何",
+    "radical": "人",
+    "meaning": "Apa",
+    "pic": "Gambar seseorang (人) memikul beban cangkul perkakas (可) di pundak.",
+    "filo": "Pertanyaan mengenai hal yang sedang dipikul atau dibawa."
+  },
+  {
+    "kanji": "牛",
+    "radical": "牛",
+    "meaning": "Sapi",
+    "pic": "Piktograf tampak depan kepala sapi lengkap dengan dua tanduknya.",
+    "filo": "Hewan ternak sapi berkaki empat."
+  },
+  {
+    "kanji": "魚",
+    "radical": "魚",
+    "meaning": "Ikan",
+    "pic": "Gambar ikan lengkap dengan kepala, sisik di tubuh, dan sirip ekor di bawah.",
+    "filo": "Hewan air bersisik dan bernapas dengan insang."
+  },
+  {
+    "kanji": "六",
+    "radical": "八",
+    "meaning": "Enam",
+    "pic": "Gambar pondok gubuk beratap kecil.",
+    "filo": "Simbol hitungan angka enam."
+  },
+  {
+    "kanji": "七",
+    "radical": "一",
+    "meaning": "Tujuh",
+    "pic": "Garis mendatar yang dipotong oleh garis vertikal miring.",
+    "filo": "Simbol pemotongan hitungan angka tujuh."
+  },
+  {
+    "kanji": "八",
+    "radical": "八",
+    "meaning": "Delapan",
+    "pic": "Dua garis terpisah membengkok melengkung keluar.",
+    "filo": "Pemisahan menjadi dua bagian melambangkan angka delapan."
+  },
+  {
+    "kanji": "九",
+    "radical": "乙",
+    "meaning": "Sembilan",
+    "pic": "Gambar siku lengan tertekuk yang mencapai batas akhir.",
+    "filo": "Angka tunggal tertinggi sebelum angka sepuluh."
+  },
+  {
+    "kanji": "十",
+    "radical": "十",
+    "meaning": "Sepuluh",
+    "pic": "Persilangan garis lurus horizontal dan vertikal.",
+    "filo": "Pertemuan batas sempurna angka sepuluh."
+  },
+  {
+    "kanji": "千",
+    "radical": "十",
+    "meaning": "Ribu",
+    "pic": "Gambar manusia (人) dengan garis penanda paku di kaki.",
+    "filo": "Kelipatan besar angka seribu."
+  },
+  {
+    "kanji": "万",
+    "radical": "艸",
+    "meaning": "Puluh Ribu / Sangat Banyak",
+    "pic": "Piktograf kalajengking berartikulasi melengkung sangat banyak.",
+    "filo": "Jumlah sangat melimpah hingga kuantitas sepuluh ribu."
+  },
+  {
+    "kanji": "事",
+    "radical": "亅",
+    "meaning": "Hal / Kejadian / Urusan",
+    "pic": "Gambar tangan memegang pena/alat pencatat peristiwa penting.",
+    "filo": "Pekerjaan atau urusan yang ditangani."
+  },
+  {
+    "kanji": "合",
+    "radical": "口",
+    "meaning": "Cocok / Menggabungkan",
+    "pic": "Gambar tutup penutup (亼) yang pas menutup wadahnya (口).",
+    "filo": "Dua bagian terpisah yang menyatu secara pas."
+  },
+  {
+    "kanji": "場",
+    "radical": "土",
+    "meaning": "Tempat / Area",
+    "pic": "Gabungan area tanah datar (土) yang disinari terik sinar matahari (昜).",
+    "filo": "Lahan tanah terbuka luas untuk kegiatan."
+  },
+  {
+    "kanji": "動",
+    "radical": "力",
+    "meaning": "Bergerak",
+    "pic": "Gabungan benda berat (重) dan tenaga otot (力).",
+    "filo": "Menggunakan tenaga untuk memindahkan benda."
+  },
+  {
+    "kanji": "宇",
+    "radical": "宀",
+    "meaning": "Ruang / Alam Semesta",
+    "pic": "Gambar atap naungan rumah (宀) yang menutupi ruang batas luas (于).",
+    "filo": "Batas ruang tak terbatas alam semesta."
+  },
+  {
+    "kanji": "宙",
+    "radical": "宀",
+    "meaning": "Waktu / Angkasa",
+    "pic": "Gambar atap naungan (宀) menaungi pergerakan alur lorong waktu (由).",
+    "filo": "Dimensi lorong waktu dalam ruang angkasa."
+  },
+  {
+    "kanji": "運",
+    "radical": "辶",
+    "meaning": "Mengangkut / Nasib",
+    "pic": "Gambar pergerakan gerobak perang (軍) yang melaju di jalan (辶).",
+    "filo": "Mendorong pergerakan barang atau jalannya nasib."
+  },
+  {
+    "kanji": "所",
+    "radical": "戸",
+    "meaning": "Tempat / Lokasi",
+    "pic": "Gabungan pintu rumah (戸) dan kapak pemotong kayu (斤).",
+    "filo": "Tempat pemotongan kayu di pemukiman."
+  },
+  {
+    "kanji": "缶",
+    "radical": "缶",
+    "meaning": "Kaleng / Wadah",
+    "pic": "Piktograf tembikar atau wadah tanah liat penampung cairan.",
+    "filo": "Wadah penampung tertutup."
+  },
+  {
+    "kanji": "連",
+    "radical": "辶",
+    "meaning": "Menghubungkan / Beruntun",
+    "pic": "Gambar deretan kereta perang (車) bergerak menyambung di jalan (辶).",
+    "filo": "Iring-iringan roda yang terhubung beruntun."
+  },
+  {
+    "kanji": "違",
+    "radical": "辶",
+    "meaning": "Berbeda / Salah",
+    "pic": "Gambar dua kaki yang berjalan berlawanan arah (韋) di jalur (辶).",
+    "filo": "Jalur yang berselisih atau menyimpang."
+  },
+  {
+    "kanji": "士",
+    "radical": "士",
+    "meaning": "Prajurit / Cendekiawan",
+    "pic": "Gambar senjata kapak perunggu kehormatan prajurit.",
+    "filo": "Sosok bangsawan atau prajurit terpelajar."
+  },
+  {
+    "kanji": "平",
+    "radical": "干",
+    "meaning": "Datar / Damai",
+    "pic": "Gambar tanaman air mengapung tenang seimbang di permukaan.",
+    "filo": "Kondisi seimbang datar tanpa riak perselisihan."
+  },
+  {
+    "kanji": "度",
+    "radical": "广",
+    "meaning": "Derajat / Tingkat / Kali",
+    "pic": "Gambar tangan mengukur jarak di bawah atap tempat penyimpanan (广).",
+    "filo": "Skala pengukuran kadar atau frekuensi."
+  },
+  {
+    "kanji": "悪",
+    "radical": "心",
+    "meaning": "Buruk / Jahat",
+    "pic": "Gambar perasaan hati (心) yang tertekan pondasi cacat (亜).",
+    "filo": "Perasaan tidak menyenangkan atau niat buruk."
+  },
+  {
+    "kanji": "燃",
+    "radical": "火",
+    "meaning": "Bakar / Menyala",
+    "pic": "Gabungan kobaran api (火) membakar daging olahan segar (然).",
+    "filo": "Proses pembakaran dengan nyala api."
+  },
+  {
+    "kanji": "片",
+    "radical": "片",
+    "meaning": "Potongan / Sebelah",
+    "pic": "Satu belahan kayu (木) yang terbelah dua di sebelah kiri.",
+    "filo": "Satu sisi belahan dari benda utuh."
+  },
+  {
+    "kanji": "瓶",
+    "radical": "瓦",
+    "meaning": "Botol / Pasu",
+    "pic": "Gabungan tembikar tanah liat (瓦) dan dua wadah sejajar (併).",
+    "filo": "Botol penampung air dari tembikar atau kaca."
+  },
+  {
+    "kanji": "船",
+    "radical": "舟",
+    "meaning": "Kapal / Perahu",
+    "pic": "Gabungan perahu sampan (舟) dan wadah muatan melaju (㕣).",
+    "filo": "Kapal air pemuat muatan barang atau penumpang."
+  },
+  {
+    "kanji": "議",
+    "radical": "言",
+    "meaning": "Musyawarah / Diskusi",
+    "pic": "Gabungan kata perkataan (言) dan prinsip kebenaran etika (義).",
+    "filo": "Berdiskusi mencari kebenaran lewat perundingan."
+  },
+  {
+    "kanji": "踊",
+    "radical": "足",
+    "meaning": "Menari",
+    "pic": "Gabungan gerakan kaki melompat (足) dan gerakan mengayun (勇/踊).",
+    "filo": "Menggerakkan kaki berirama menari."
+  },
+  {
+    "kanji": "遅",
+    "radical": "辶",
+    "meaning": "Lambat / Terlambat",
+    "pic": "Gambar domba berjalan lambat di jalanan meliuk (犀/辶).",
+    "filo": "Pergerakan lamban sehingga tertinggal."
+  },
+  {
+    "kanji": "飛",
+    "radical": "飛",
+    "meaning": "Terbang",
+    "pic": "Gambar burung mengepakkan sayap melayang di udara.",
+    "filo": "Melayang melintasi angkasa dengan sayap."
+  },
+  {
+    "kanji": "心",
+    "radical": "心",
+    "meaning": "Hati / Jantung",
+    "pic": "Piktograf organ jantung manusia beserta pembuluh darahnya.",
+    "filo": "Pusat perasaan emosi dan kehidupan."
+  },
+  {
+    "kanji": "方",
+    "radical": "方",
+    "meaning": "Arah / Cara / Orang",
+    "pic": "Gambar dua perahu yang ditautkan sejajar dengan tiang penyeimbang.",
+    "filo": "Orientasi arah kemudi melaju."
+  },
+  {
+    "kanji": "具",
+    "radical": "八",
+    "meaning": "Alat / Perangkat",
+    "pic": "Gambar dua tangan memegang wadah bahan persembahan.",
+    "filo": "Peralatan perlengkapan untuk menunjang tugas."
+  },
+  {
+    "kanji": "自",
+    "radical": "自",
+    "meaning": "Diri Sendiri / Hidung",
+    "pic": "Piktograf hidung manusia tampak depan.",
+    "filo": "Orang menunjuk hidung sendiri untuk menyatakan dirinya."
+  },
+  {
+    "kanji": "付",
+    "radical": "人",
+    "meaning": "Menempelkan / Memberi",
+    "pic": "Gambar tangan seseorang (人) menyerahkan/menempelkan benda ke tangan lain (寸).",
+    "filo": "Tindakan menyematkan atau menyerahkan sesuatu."
+  },
+  {
+    "kanji": "形",
+    "radical": "彡",
+    "meaning": "Bentuk / Rupa",
+    "pic": "Gabungan bingkai ukur (井) dan goresan keindahan pola (彡).",
+    "filo": "Wujud tampak dari rupa fisik benda."
+  },
+  {
+    "kanji": "昔",
+    "radical": "日",
+    "meaning": "Masa Lalu / Dahulu",
+    "pic": "Gambar tumpukan daging kering di bawah pendar sinar matahari (日).",
+    "filo": "Peristiwa yang telah berlalu lama tersimpan masa."
+  },
+  {
+    "kanji": "棚",
+    "radical": "木",
+    "meaning": "Rak",
+    "pic": "Gabungan papan kayu (木) dan jejaring tiang penyangga (朋).",
+    "filo": "Papan kayu bertingkat penyusun barang."
+  },
+  {
+    "kanji": "波",
+    "radical": "水",
+    "meaning": "Gelombang / Ombak",
+    "pic": "Gabungan aliran air (水) dan lipatan kulit terkelupas (皮).",
+    "filo": "Gelombang air laut yang bergulung-gulung."
+  },
+  {
+    "kanji": "由",
+    "radical": "田",
+    "meaning": "Alasan / Asal",
+    "pic": "Gambar buah atau benih yang berkecambah memancar melintasi wadah.",
+    "filo": "Sumber asal-usul keluarnya sesuatu."
+  },
+  {
+    "kanji": "配",
+    "radical": "酉",
+    "meaning": "Membagikan / Mengatur",
+    "pic": "Gambar orang bersimpuh membagi wadah air anggur perjamuan (酉).",
+    "filo": "Proses mendistribusikan barang secara merata."
+  },
+  {
+    "kanji": "開",
+    "radical": "門",
+    "meaning": "Membuka",
+    "pic": "Gambar dua tangan menggeser selak pengunci di pintu gerbang (門).",
+    "filo": "Melepas selak kayu untuk membuka daun pintu."
+  },
+  {
+    "kanji": "物",
+    "radical": "牛",
+    "meaning": "Barang / Benda",
+    "pic": "Gabungan sapi beraneka warna (牛) dan bendera penanda (勿).",
+    "filo": "Berbagai macam wujud materi benda."
+  },
+  {
+    "kanji": "料",
+    "radical": "斗",
+    "meaning": "Bahan / Biaya",
+    "pic": "Gabungan bulir beras (米) dan gayung ukur kuantitas (斗).",
+    "filo": "Takaran bahan mentah atau pembayaran biaya."
+  },
+  {
+    "kanji": "番",
+    "radical": "田",
+    "meaning": "Nomor / Giliran",
+    "pic": "Gambar telapak kaki hewani menapak pada petak lahan (田).",
+    "filo": "Urutan jejak langkah giliran."
+  },
+  {
+    "kanji": "色",
+    "radical": "色",
+    "meaning": "Warna",
+    "pic": "Gambar dua orang yang bersandar berinteraksi raut wajah.",
+    "filo": "Tampilan roman rupa atau wujud warna."
+  },
+  {
+    "kanji": "院",
+    "radical": "阜",
+    "meaning": "Institusi / Gedung",
+    "pic": "Gambar dinding pembatas bukit (阝) menaungi gedung halaman (完).",
+    "filo": "Bangunan resmi tempat pelayanan publik."
+  },
+  {
+    "kanji": "館",
+    "radical": "食",
+    "meaning": "Gedung / Aula",
+    "pic": "Gabungan penyedia makanan perjamuan (食) dan tempat tinggal pejabat (官).",
+    "filo": "Gedung penginapan atau fasilitas publik."
+  },
+  {
+    "kanji": "台",
+    "radical": "口",
+    "meaning": "Landasan / Panggung",
+    "pic": "Gambar perkakas alas (厶) diletakkan di atas wadah penyangga (口).",
+    "filo": "Struktur alas penyangga kokoh."
+  },
+  {
+    "kanji": "味",
+    "radical": "口",
+    "meaning": "Rasa",
+    "pic": "Gabungan organ mulut (口) dan buah tanaman muda yang dipetik (未).",
+    "filo": "Mengecap rasa buah manis/pahit dengan mulut."
+  },
+  {
+    "kanji": "無",
+    "radical": "火",
+    "meaning": "Tidak Ada / Nihil",
+    "pic": "Gambar penari memegang bulu hiasan yang terbakar musnah oleh api (灬).",
+    "filo": "Sesuatu yang telah habis terbakar tanpa sisa."
+  },
+  {
+    "kanji": "知",
+    "radical": "矢",
+    "meaning": "Tahu / Mengetahui",
+    "pic": "Gabungan anak panah cepat (矢) dan ungkapan mulut (口).",
+    "filo": "Pengetahuan tajam dan cepat diutarakan."
+  },
+  {
+    "kanji": "組",
+    "radical": "糸",
+    "meaning": "Kelompok / Merangkai",
+    "pic": "Gabungan pilinan benang (糸) dan perkakas alas penyusun (且).",
+    "filo": "Menenun jalinan benang menjadi struktur ikatan."
+  },
+  {
+    "kanji": "育",
+    "radical": "肉",
+    "meaning": "Mendidik / Tumbuh",
+    "pic": "Gambar bayi lahir terbalik disusui dan dirawat fisiknya (月/肉).",
+    "filo": "Membesarkan dan mendidik anak hingga dewasa."
+  },
+  {
+    "kanji": "説",
+    "radical": "言",
+    "meaning": "Menjelaskan / Teori",
+    "pic": "Gabungan ujaran kata (言) dan ekspresi wajah lega gembira (兄/兌).",
+    "filo": "Menerangkan sesuatu hingga pendengar paham lega."
+  },
+  {
+    "kanji": "通",
+    "radical": "辶",
+    "meaning": "Melintas / Melalui",
+    "pic": "Gambar terobosan lintasan (甬) melaju melintasi jalanan (辶).",
+    "filo": "Perjalanan menerobos melintasi lorong."
+  },
+  {
+    "kanji": "験",
+    "radical": "馬",
+    "meaning": "Ujian / Menguji",
+    "pic": "Gabungan kuda pacu (馬) dan pemeriksaan ketelitian (僉).",
+    "filo": "Proses menguji kualitas performa."
+  },
+  {
+    "kanji": "体",
+    "radical": "人",
+    "meaning": "Tubuh / Badan",
+    "pic": "Gabungan sosok manusia (人) dan fondasi akar pangkal utamanya (本).",
+    "filo": "Wujud fisik badan manusia."
+  },
+  {
+    "kanji": "参",
+    "radical": "厶",
+    "meaning": "Kunjung / Ikut Serta",
+    "pic": "Gambar tiga bintang berkilau melambangkan himpunan pengikut berkumpul.",
+    "filo": "Hadir bergabung bersama kelompok."
+  },
+  {
+    "kanji": "娘",
+    "radical": "女",
+    "meaning": "Anak Perempuan",
+    "pic": "Gabungan wanita (女) dan masa pertumbuhan muda murni (良).",
+    "filo": "Gadis muda anak perempuan."
+  },
+  {
+    "kanji": "実",
+    "radical": "宀",
+    "meaning": "Buah / Kenyataan",
+    "pic": "Gambar rumah (宀) berisi harta kekayaan penuh buah melimpah (貫).",
+    "filo": "Hasil nyata berbuah manis dari usaha."
+  },
+  {
+    "kanji": "息",
+    "radical": "心",
+    "meaning": "Napas / Anak Laki-Laki",
+    "pic": "Gabungan organ hidung bernapas (自) dan detak hati (心).",
+    "filo": "Aliran napas kehidupan yang keluar dari dalam dada."
+  },
+  {
+    "kanji": "経",
+    "radical": "糸",
+    "meaning": "Melalui / Mengelola",
+    "pic": "Gambar benang vertikal alat tenun (糸) yang membentang teratur (巠).",
+    "filo": "Alur garis membentang teratur mengelola arah."
+  },
+  {
+    "kanji": "美",
+    "radical": "羊",
+    "meaning": "Indah / Cantik",
+    "pic": "Gambar domba gemuk (羊) berukuran besar sempurna (大).",
+    "filo": "Keindahan wujud domba besar yang elok."
+  },
+  {
+    "kanji": "止",
+    "radical": "止",
+    "meaning": "Berhenti",
+    "pic": "Piktograf satu telapak kaki menapak berhenti di tanah.",
+    "filo": "Menghentikan langkah kaki di satu titik."
+  },
+  {
+    "kanji": "袋",
+    "radical": "衣",
+    "meaning": "Kantong / Tas",
+    "pic": "Gabungan benda pengganti wadah (代) dan susunan kain pakaian (衣).",
+    "filo": "Kain pembungkus penyimpan barang."
+  },
+  {
+    "kanji": "割",
+    "radical": "刀",
+    "meaning": "Membagi / Pecah",
+    "pic": "Gabungan pembagian lahan teratur (害) dan irisan pisau (刀).",
+    "filo": "Memotong membagi benda menjadi fraksi."
+  },
+  {
+    "kanji": "取",
+    "radical": "又",
+    "meaning": "Mengambil",
+    "pic": "Gambar tangan (又) memegang telinga musuh tangkapan (耳).",
+    "filo": "Tindakan menggenggam mengambil sesuatu."
+  },
+  {
+    "kanji": "指",
+    "radical": "手",
+    "meaning": "Jari / Menunjuk",
+    "pic": "Gabungan gerakan tangan (扌) dan penunjuk arah terfokus (旨).",
+    "filo": "Jari tangan yang diacungkan menunjuk."
+  },
+  {
+    "kanji": "汚",
+    "radical": "水",
+    "meaning": "Kotor",
+    "pic": "Gabungan aliran air (水) dan genangan Lumpur mengendap (于).",
+    "filo": "Air keruh tercemar kotoran."
+  },
+  {
+    "kanji": "交",
+    "radical": "亠",
+    "meaning": "Berinteraksi / Persilangan",
+    "pic": "Gambar manusia silang kaki melangkah bersilangan.",
+    "filo": "Pertemuan persilangan dua jalur."
+  },
+  {
+    "kanji": "員",
+    "radical": "口",
+    "meaning": "Anggota / Pegawai",
+    "pic": "Gambar lubang koin kerang kuno (貝) dengan mulut lingkaran atas (口).",
+    "filo": "Individu terdaftar dalam unit kelompok."
+  },
+  {
+    "kanji": "壊",
+    "radical": "土",
+    "meaning": "Rusak / Hancur",
+    "pic": "Gabungan gundukan tanah runtuh (土) dan kehilangan pelindung (懐/褱).",
+    "filo": "Runtuhnya struktur tanah/bangunan hingga hancur."
+  },
+  {
+    "kanji": "忘",
+    "radical": "心",
+    "meaning": "Lupa",
+    "pic": "Gabungan perasaan hati (心) dan peristiwa lenyap musnah (亡).",
+    "filo": "Hilangnya ingatan dari dalam hati."
+  },
+  {
+    "kanji": "折",
+    "radical": "手",
+    "meaning": "Mata / Patah / Melipat",
+    "pic": "Gambar tangan (扌) mengayun kapak (斤) mematahkan ranting.",
+    "filo": "Tindakan mematahkan atau melipat benda."
+  },
+  {
+    "kanji": "掛",
+    "radical": "手",
+    "meaning": "Menggantung",
+    "pic": "Gabungan gerakan tangan (扌) dan patok penggantung (圭).",
+    "filo": "Menyangkutkan benda pada tiang."
+  },
+  {
+    "kanji": "源",
+    "radical": "水",
+    "meaning": "Sumber / Asal Air",
+    "pic": "Gabungan aliran air (水) dan mata air tebing (原).",
+    "filo": "Mata air awal mula sungai mengalir."
+  },
+  {
+    "kanji": "落",
+    "radical": "艸",
+    "meaning": "Jatuh / Gugur",
+    "pic": "Gabungan dedaunan tanaman (艹) dan tetesan air jatuh (洛).",
+    "filo": "Dedaunan yang gugur jatuh melayang ke tanah."
+  },
+  {
+    "kanji": "閉",
+    "radical": "門",
+    "meaning": "Menutup",
+    "pic": "Gambar selak palang penyangga (才) terpasang rapat di pintu gerbang (門).",
+    "filo": "Merapatkan daun pintu terpasang selak."
+  },
+  {
+    "kanji": "表",
+    "radical": "衣",
+    "meaning": "Permukaan / Bagian Luar",
+    "pic": "Gambar bulu binatang hiasan melapis bagian luar pakaian (衣).",
+    "filo": "Tampilan luar yang nampak di permukaan."
+  },
+  {
+    "kanji": "予",
+    "radical": "亅",
+    "meaning": "Terlebih Dahulu / Persiapan",
+    "pic": "Gambar jarum alat tenun menganyam jalinan mendahului.",
+    "filo": "Mencetuskan atau menyiapkan sebelum kejadian."
+  },
+  {
+    "kanji": "習",
+    "radical": "羽",
+    "meaning": "Belajar / Belajar Mandiri",
+    "pic": "Gambar bulu sayap burung muda (羽) kepak berkali-kali di atas sarang (白).",
+    "filo": "Anak burung yang berlatih kepak sayap terbang berulang kali."
+  },
+  {
+    "kanji": "常",
+    "radical": "巾",
+    "meaning": "Biasa / Selalu / Rutin",
+    "pic": "Gambar tiang bendera kain (巾) berkibar stabil tinggi (尚).",
+    "filo": "Keadaan konsisten yang berlangsung rutin."
+  },
+  {
+    "kanji": "業",
+    "radical": "木",
+    "meaning": "Pekerjaan / Industri",
+    "pic": "Gambar papan kayu berukir penggantung lonceng perunggu ritual.",
+    "filo": "Tugas atau pekerjaan konstruksi terencana."
+  },
+  {
+    "kanji": "非",
+    "radical": "非",
+    "meaning": "Bukan / Tidak Benar",
+    "pic": "Gambar sepasang sayap burung mengepak berlawanan arah.",
+    "filo": "Dua silih arah yang saling bertentangan/salah."
+  },
+  {
+    "kanji": "並",
+    "radical": "一",
+    "meaning": "Berdampingan / Sejajar",
+    "pic": "Gambar dua orang berdiri sejajar berdampingan di tanah.",
+    "filo": "Menyusun benda berderet sejajar."
+  },
+  {
+    "kanji": "丸",
+    "radical": "丶",
+    "meaning": "Bulat / Lingkaran",
+    "pic": "Gambar sosok orang meringkuk membulat.",
+    "filo": "Bentuk bundar membulat sempurna."
+  },
+  {
+    "kanji": "仕",
+    "radical": "人",
+    "meaning": "Melayani / Bekerja",
+    "pic": "Gabungan sosok manusia (人) dan sarjana prajurit bertugas (士).",
+    "filo": "Seseorang yang mendedikasikan diri melayani tugas."
+  },
+  {
+    "kanji": "定",
+    "radical": "宀",
+    "meaning": "Pasti / Menentukan",
+    "pic": "Gambar atap rumah (宀) di atas fondasi jejak telapak kaki mantap (正).",
+    "filo": "Menetapkan sesuatu secara stabil di tempatnya."
+  },
+  {
+    "kanji": "引",
+    "radical": "弓",
+    "meaning": "Menarik",
+    "pic": "Gambar busur panah (弓) yang ditarik talinya oleh garis lurus (丨).",
+    "filo": "Menarik tali busur panah ke belakang."
+  },
+  {
+    "kanji": "戻",
+    "radical": "戸",
+    "meaning": "Kembali / Pulang",
+    "pic": "Gambar pintu rumah (戸) tempat anjing (犬) bergerak balik memutar.",
+    "filo": "Melangkah balik ke posisi asal semula."
+  },
+  {
+    "kanji": "箱",
+    "radical": "竹",
+    "meaning": "Kotak / Peti",
+    "pic": "Gabungan anyaman bambu (竹) dan wadah penyimpan berdinding (相).",
+    "filo": "Wadah peti penyimpan barang berbahan bambu."
+  },
+  {
+    "kanji": "講",
+    "radical": "言",
+    "meaning": "Kuliah / Ceramah",
+    "pic": "Gabungan ujaran kata bicara (言) dan struktur interaksi rapat (structure/夠).",
+    "filo": "Penyampaian penjelasan di depan audiens."
+  },
+  {
+    "kanji": "関",
+    "radical": "門",
+    "meaning": "Hubungan / Pos Hubungan",
+    "pic": "Gambar daun pintu gerbang (門) yang terpasang selak kayu pengikat (𡔲).",
+    "filo": "Pos pemeriksaan pelindung atau kaitan hubungan."
+  },
+  {
+    "kanji": "発",
+    "radical": "癶",
+    "meaning": "Memancar / Berangkat",
+    "pic": "Gambar dua kaki bersiap melangkah (癶) melepas anak panah dari busur.",
+    "filo": "Memancarkan atau meluncurkan pergerakan."
+  },
+  {
+    "kanji": "文",
+    "radical": "文",
+    "meaning": "Teks / Kalimat / Budaya",
+    "pic": "Gambar pola ukiran rajah tato dada pada tubuh manusia.",
+    "filo": "Pola lambang tertulis atau kebudayaan."
+  },
+  {
+    "kanji": "婚",
+    "radical": "女",
+    "meaning": "Pernikahan",
+    "pic": "Gabungan sosok pengantin wanita (女) dan waktu senja perayaan (昏).",
+    "filo": "Upacara pernikahan tradisional yang digelar senja hari."
+  },
+  {
+    "kanji": "式",
+    "radical": "弋",
+    "meaning": "Upacara / Gaya / Formula",
+    "pic": "Gabungan pancang pasak kayu (弋) dan perkakas alat ukur (工).",
+    "filo": "Standar aturan tata cara dalam upacara."
+  },
+  {
+    "kanji": "戸",
+    "radical": "戸",
+    "meaning": "Pintu Tunggal",
+    "pic": "Piktograf satu panel daun pintu kayu.",
+    "filo": "Pintu masuk akses rumah."
+  },
+  {
+    "kanji": "温",
+    "radical": "水",
+    "meaning": "Hangat",
+    "pic": "Gabungan aliran air (水) dan wadah mangkuk hangat perjamuan (皿/𥁕).",
+    "filo": "Suhu air yang hangat dan nyaman."
+  },
+  {
+    "kanji": "申",
+    "radical": "田",
+    "meaning": "Melaporkan / Petir",
+    "pic": "Piktograf pancaran kilatan petir meliuk menembus awan.",
+    "filo": "Menyampaikan atau mengutarakan pesan secara tegas."
+  },
+  {
+    "kanji": "作",
+    "radical": "人",
+    "meaning": "Membuat",
+    "pic": "Gabungan sosok manusia bekerja (人) dan kerajinan menjahit (乍).",
+    "filo": "Tindakan manusia merangkai atau menciptakan karya."
+  },
+  {
+    "kanji": "受",
+    "radical": "又",
+    "meaning": "Menerima",
+    "pic": "Gambar tangan di atas (爪) menyerahkan barang ke tangan di bawah (又).",
+    "filo": "Proses menerima barang yang diserahterimakan."
+  },
+  {
+    "kanji": "号",
+    "radical": "口",
+    "meaning": "Nomor / Sinyal",
+    "pic": "Gambar hembusan suara teriakan (丂) yang diutarakan lewat mulut (口).",
+    "filo": "Sinyal suara atau nomor identifikasi panggilan."
+  },
+  {
+    "kanji": "園",
+    "radical": "囗",
+    "meaning": "Taman / Kebun",
+    "pic": "Gambar kawasan tanah dikelilingi pagar (囗) berisi tanaman kebun (袁).",
+    "filo": "Area kebun hijau yang berpagar tertutup."
+  },
+  {
+    "kanji": "教",
+    "radical": "攴",
+    "meaning": "Mengajar",
+    "pic": "Gambar anak kecil (子) menirukan simbol tulisan (爻) dipandu cambuk instruksi instruktur (攵).",
+    "filo": "Proses mentransfer ilmu kepada anak didik."
+  },
+  {
+    "kanji": "続",
+    "radical": "糸",
+    "meaning": "Berlanjut / Menyambung",
+    "pic": "Gabungan pilinan benang (糸) dan penambahan berturut-turut (売/𧶠).",
+    "filo": "Menyambung pilinan ikatan agar berlanjut terus."
+  },
+  {
+    "kanji": "覧",
+    "radical": "見",
+    "meaning": "Melihat / Memantau",
+    "pic": "Gambar orang menunduk melihat cermin air (監) menggunakan penglihatan mata (見).",
+    "filo": "Memeriksa dan memantau dengan cermat."
+  },
+  {
+    "kanji": "込",
+    "radical": "辶",
+    "meaning": "Memasuk/Disertakan",
+    "pic": "Gabungan pergerakan lintasan (辶) dan pergerakan menembus masuk (入).",
+    "filo": "Melangkah masuk ke dalam area tertutup."
+  },
+  {
+    "kanji": "太",
+    "radical": "大",
+    "meaning": "Gemuk / Tebal / Agung",
+    "pic": "Gambar kanji besar (大) dengan satu titik penanda tumpuan di tengah.",
+    "filo": "Ukuran yang sangat tebal atau besar."
+  },
+  {
+    "kanji": "成",
+    "radical": "戈",
+    "meaning": "Jadi / Berhasil / Tumbuh",
+    "pic": "Gambar kapak perang senjata (戈) yang selesai ditempa sempurna.",
+    "filo": "Proses yang telah rampung dan terwujud sukses."
+  },
+  {
+    "kanji": "冷",
+    "radical": "冫",
+    "meaning": "Dingin",
+    "pic": "Gabungan kristal es/titik beku (冫) dan instruksi perintah (令).",
+    "filo": "Suhu udara dingin membekukan."
+  },
+  {
+    "kanji": "夕",
+    "radical": "夕",
+    "meaning": "Sore / Senja",
+    "pic": "Piktograf bulan sabit awal muncul di langit senja.",
+    "filo": "Waktu peralihan sore menuju malam hari."
+  },
+  {
+    "kanji": "夜",
+    "radical": "夕",
+    "meaning": "Malam",
+    "pic": "Gambar orang berjalan membawah naungan malam (夕) tertutup kegelapan.",
+    "filo": "Rentang waktu kegelapan malam hari."
+  },
+  {
+    "kanji": "失",
+    "radical": "大",
+    "meaning": "Gagal / Kehilangan",
+    "pic": "Gambar benda yang terlepas meluncur dari genggaman tangan manusia (大).",
+    "filo": "Terlepasnya barang dari pengawasan."
+  },
+  {
+    "kanji": "恋",
+    "radical": "心",
+    "meaning": "Cinta / Rindu",
+    "pic": "Gabungan ikatan benang terjalin (亦) dan perasaan hati (心).",
+    "filo": "Perasaan terikat rindu dalam hati."
+  },
+  {
+    "kanji": "星",
+    "radical": "日",
+    "meaning": "Bintang",
+    "pic": "Gabungan pendar kristal langit (日) dan tunas yang baru lahir (生).",
+    "filo": "Titik-titik cahaya berkilau di langit malam."
+  },
+  {
+    "kanji": "格",
+    "radical": "木",
+    "meaning": "Status / Standar",
+    "pic": "Gabungan dahan kayu (木) dan sasaran batas yang dicapai (各).",
+    "filo": "Batas ukuran standar yang baku."
+  },
+  {
+    "kanji": "石",
+    "radical": "石",
+    "meaning": "Batu",
+    "pic": "Piktograf gumpalan batu yang jatuh bergeletak di bawah tebing bukit (厂).",
+    "filo": "Benda padat keras dari alam."
+  },
+  {
+    "kanji": "風",
+    "radical": "風",
+    "meaning": "Angin",
+    "pic": "Gambar layar pembentang hembusan udara menaungi serangga (虫).",
+    "filo": "Hembusan aliran udara yang bergerak."
+  },
+  {
+    "kanji": "切",
+    "radical": "刀",
+    "meaning": "Memotong / Penting",
+    "pic": "Gabungan garis potong (七) dan tajam pisau pemotong (刀).",
+    "filo": "Membelah benda menggunakan pisau tajam."
+  },
+  {
+    "kanji": "用",
+    "radical": "用",
+    "meaning": "Guna / Gunakan",
+    "pic": "Gambar ember/wadah tembikar yang dimanfaatkan fungsi penggunanya.",
+    "filo": "Memanfaatkan peralatan sesuai fungsinya."
+  },
+  {
+    "kanji": "持",
+    "radical": "手",
+    "meaning": "Memegang / Membawa",
+    "pic": "Gabungan gerakan tangan (扌) dan kuil perlindungan stabil (寺).",
+    "filo": "Genggaman tangan yang menahan benda tetap stabil."
+  },
+  {
+    "kanji": "相",
+    "radical": "目",
+    "meaning": "Saling / Saling Menatap",
+    "pic": "Gambar organ mata (目) menatap tajam ke arah ranting pohon (木).",
+    "filo": "Dua pihak yang saling memperhatikan."
+  },
+  {
+    "kanji": "伝",
+    "radical": "人",
+    "meaning": "Mengekspresikan / Menyampaikan",
+    "pic": "Gabungan sosok manusia (人) dan alat pintal benang berputar (云/専).",
+    "filo": "Meneruskan pesan secara beruntun dari orang ke orang."
+  },
+  {
+    "kanji": "使",
+    "radical": "人",
+    "meaning": "Menggunakan / Utusan",
+    "pic": "Gabungan sosok manusia (人) yang memegang alat tugas kepemimpinan (吏).",
+    "filo": "Seseorang yang ditugaskan menjalankan peran."
+  },
+  {
+    "kanji": "反",
+    "radical": "又",
+    "meaning": "Menolak / Kebalikan",
+    "pic": "Gambar tangan (又) menahan atau membalikkan tebing tebal (厂).",
+    "filo": "Pergerakan berlawanan dari arah semula."
+  },
+  {
+    "kanji": "守",
+    "radical": "宀",
+    "meaning": "Melindungi / Menjaga",
+    "pic": "Gambar atap rumah pelindung (宀) yang dijaga oleh aturan tangan (寸).",
+    "filo": "Merawat dan melindungi area tempat tinggal."
+  },
+  {
+    "kanji": "席",
+    "radical": "巾",
+    "meaning": "Kursi / Tempat Duduk",
+    "pic": "Gambar kain tikar (巾) terhampar di dalam rumah bertiang (广).",
+    "filo": "Tikar atau alas yang disediakan untuk duduk."
+  },
+  {
+    "kanji": "意",
+    "radical": "心",
+    "meaning": "Maksud / Perasaan hati",
+    "pic": "Gabungan pancaran suara kata (音) dan gelombang perasaan hati (心).",
+    "filo": "Niat atau pemikiran yang tersimpan dalam dada."
+  },
+  {
+    "kanji": "注",
+    "radical": "水",
+    "meaning": "Menuang / Fokus",
+    "pic": "Gabungan aliran air (水) dan nyala lilin terfokus (主).",
+    "filo": "Menuangkan cairan ke satu titik fokus."
+  },
+  {
+    "kanji": "禁",
+    "radical": "示",
+    "meaning": "Dilarang",
+    "pic": "Gambar mezbah ritual suci (示) berlatar belakang hutan lebat sakral (林).",
+    "filo": "Area suci sakral yang tidak boleh dilanggar."
+  },
+  {
+    "kanji": "警",
+    "radical": "言",
+    "meaning": "Waspada / Polisi",
+    "pic": "Gabungan kata ucapan (言) dan tindakan penghormatan tegas (敬).",
+    "filo": "Memberikan peringatan tegas untuk menjaga keamanan."
+  },
+  {
+    "kanji": "集",
+    "radical": "隹",
+    "meaning": "Berkumpul",
+    "pic": "Gambar tiga ekor burung kecil (隹) yang hinggap berkumpul di atas pohon (木).",
+    "filo": "Kawanan burung yang hinggap bersama di dahan."
+  },
+  {
+    "kanji": "調",
+    "radical": "言",
+    "meaning": "Meneliti / Harmoni",
+    "pic": "Gabungan ujaran kata (言) dan keselarasan sirkulasi (周).",
+    "filo": "Memeriksa dan menyelaraskan keadaan."
+  },
+  {
+    "kanji": "煮",
+    "radical": "火",
+    "meaning": "Merekus / Memasak",
+    "pic": "Gabungan bahan olahan (者) di atas nyala api pembakaran (灬).",
+    "filo": "Proses merebus makanan dalam wadah air mendidih."
+  },
+  {
+    "kanji": "茶",
+    "radical": "艸",
+    "meaning": "Teh",
+    "pic": "Gambar tanaman pucuk teh (艹) dipetik dan diolah dalam rumah bertingkat (余).",
+    "filo": "Daun dari tanaman teh yang diseduh."
+  },
+  {
+    "kanji": "親",
+    "radical": "見",
+    "meaning": "Orang Tua / Akrab",
+    "pic": "Gambar orang berdiri di atas dahan pohon (立木) memantau melihat anaknya (見).",
+    "filo": "Kasih sayang orang tua yang selalu memantau tumbuh kembang anaknya."
+  },
+  {
+    "kanji": "原",
+    "radical": "厂",
+    "meaning": "Padang / Asal",
+    "pic": "Gambar sumber air jernih (泉) yang mengalir dari celah tebing bukit (厂).",
+    "filo": "Dataran luas tempat asal mula sumber air."
+  },
+  {
+    "kanji": "係",
+    "radical": "人",
+    "meaning": "Hubungan / Penanggung Jawab",
+    "pic": "Gabungan sosok manusia (人) dan ikatan pilinan benang (系).",
+    "filo": "Seseorang yang terikat dalam tanggung jawab."
+  },
+  {
+    "kanji": "向",
+    "radical": "口",
+    "meaning": "Menghadap / Arah",
+    "pic": "Gambar jendela/pintu udara rumah (口) yang terbuka.",
+    "filo": "Jendela rumah yang dibuat menghadap arah datangnya angin."
+  },
+  {
+    "kanji": "島",
+    "radical": "山",
+    "meaning": "Pulau",
+    "pic": "Gambar burung laut (鳥) yang hinggap di atas piktograf puncak gunung (山).",
+    "filo": "Daratan bergunduk di tengah lautan tempat burung beristirahat."
+  },
+  {
+    "kanji": "旅",
+    "radical": "方",
+    "meaning": "Perjalanan / Wisata",
+    "pic": "Gambar rombongan prajurit berbaris di bawah panji pataka bendera (方/㫃).",
+    "filo": "Perjalanan rombongan melintasi daerah."
+  },
+  {
+    "kanji": "歴",
+    "radical": "止",
+    "meaning": "Sejarah / Silsilah",
+    "pic": "Gambar jejak melangkah kaki (止) melintasi pepohonan kawasan bukit (禾禾/厂).",
+    "filo": "Rekam jejak pengalaman yang telah dilalui."
+  },
+  {
+    "kanji": "津",
+    "radical": "水",
+    "meaning": "Pelabuhan / Penyeberangan",
+    "pic": "Gabungan aliran air (水) dan tangan memegang dayung perahu (聿).",
+    "filo": "Tempat perahu berlabuh di muara air."
+  },
+  {
+    "kanji": "海",
+    "radical": "水",
+    "meaning": "Laut",
+    "pic": "Gabungan aliran air (水) dan sumber ibu kehidupan laut (母/毎).",
+    "filo": "Hamparan air yang sangat luas."
+  },
+  {
+    "kanji": "科",
+    "radical": "禾",
+    "meaning": "Departemen / Cabang Ilmu",
+    "pic": "Gabungan tanaman padi (禾) dan gayung ukur penakar (斗).",
+    "filo": "Pengelompokan jenis-jenis cabang ilmu/tanaman."
+  },
+  {
+    "kanji": "藤",
+    "radical": "艸",
+    "meaning": "Bunga Wisteria",
+    "pic": "Gambar tanaman merambat (艹) yang merayap menggulung indah (朕/水).",
+    "filo": "Tanaman berbunga menjuntai indah."
+  },
+  {
+    "kanji": "様",
+    "radical": "木",
+    "meaning": "Gaya / Tuan / Nyonya",
+    "pic": "Gabungan dahan kayu (木) dan sosok domba meliuk elok di air (羊/水).",
+    "filo": "Penghormatan terhadap penampilan atau wujud agung."
+  },
+  {
+    "kanji": "世",
+    "radical": "一",
+    "meaning": "Dunia / Generasi",
+    "pic": "Tiga garis vertikal bertaut melambangkan rentang 30 tahun (generasi).",
+    "filo": "Perantian siklus generasi manusia di dunia."
+  },
+  {
+    "kanji": "対",
+    "radical": "寸",
+    "meaning": "Berhadapan / Pasangan",
+    "pic": "Gambar penopang lilin/lampu (𡭴) yang diukur seimbang oleh tangan (寸).",
+    "filo": "Dua belah pihak yang berdiri seimbang berhadapan."
+  },
+  {
+    "kanji": "慣",
+    "radical": "心",
+    "meaning": "Terbiasa",
+    "pic": "Gabungan perasaan hati (忄) dan untaian koin kerang yang sering dihitung (貫).",
+    "filo": "Hati yang sudah terbiasa melakukan latihan."
+  },
+  {
+    "kanji": "汽",
+    "radical": "水",
+    "meaning": "Uap Air",
+    "pic": "Gabungan tetesan air (水) dan buih uap awan menghembus (气).",
+    "filo": "Uap panas yang membumbung dari air mendidih."
+  },
+  {
+    "kanji": "過",
+    "radical": "辶",
+    "meaning": "Melewati / Berlebihan",
+    "pic": "Gambar gerakan melangkah (辶) melampaui batas daerah (咼).",
+    "filo": "Berjalan melintas hingga melewati batas."
+  },
+  {
+    "kanji": "界",
+    "radical": "田",
+    "meaning": "Batas / Dunia",
+    "pic": "Gabungan petak sawah (田) dan batas garis pemisah manusia (介).",
+    "filo": "Garis batas pemisah antar wilayah."
+  },
+  {
+    "kanji": "彫",
+    "radical": "彡",
+    "meaning": "Mengukir",
+    "pic": "Gabungan pemotongan pisau (周) dan goresan keindahan piktorial (彡).",
+    "filo": "Menggores bahan keras untuk membentuk ukiran hias."
+  },
+  {
+    "kanji": "待",
+    "radical": "彳",
+    "meaning": "Menunggu",
+    "pic": "Gabungan langkah di jalanan (彳) dan berdiam di kuil/pos (寺).",
+    "filo": "Menghentikan langkah sementara untuk menunggu."
+  },
+  {
+    "kanji": "江",
+    "radical": "水",
+    "meaning": "Sungai Besar / Teluk",
+    "pic": "Gabungan aliran air (水) dan perkakas penyeimbang buatan manusia (工).",
+    "filo": "Sungai besar tempat perahu berlayar."
+  },
+  {
+    "kanji": "焼",
+    "radical": "火",
+    "meaning": "Panggang / Bakar",
+    "pic": "Gabungan nyala api (火) dan sosok tanah tinggi terbakar terik (堯).",
+    "filo": "Memanaskan bahan makanan di atas kobaran api."
+  },
+  {
+    "kanji": "眠",
+    "radical": "目",
+    "meaning": "Tidur",
+    "pic": "Gabungan mata tertutup (目) dan bayangan kegelapan (民).",
+    "filo": "Memejamkan mata masuk ke alam tidur."
+  },
+  {
+    "kanji": "訳",
+    "radical": "言",
+    "meaning": "Menerjemahkan / Alasan",
+    "pic": "Gabungan kata ucapan (言) dan penyeleksian arah pemisahan (尺).",
+    "filo": "Menguraikan arti kalimat ke bahasa lain."
+  },
+  {
+    "kanji": "輸",
+    "radical": "車",
+    "meaning": "Mengangkut / Ekspor-Impor",
+    "pic": "Gabungan roda kendaraan pengangkut (車) dan pengaliran muatan beruntun (俞).",
+    "filo": "Memindahkan muatan barang dengan kendaraan."
+  },
+  {
+    "kanji": "理",
+    "radical": "玉",
+    "meaning": "Alasan / Logika / Kebenaran",
+    "pic": "Gambar pemotongan batu permata giok (玉) mengikuti urat alurnya (里).",
+    "filo": "Memahami pola tatanan alami secara logis."
+  },
+  {
+    "kanji": "性",
+    "radical": "心",
+    "meaning": "Sifat / Gender",
+    "pic": "Gabungan perasaan hati (忄) dan potensi yang baru lahir (生).",
+    "filo": "Karakter bawaan sejak lahir."
+  },
+  {
+    "kanji": "法",
+    "radical": "水",
+    "meaning": "Hukum / Metode",
+    "pic": "Gabungan aliran air murni datar (水) dan pembuangan kejahatan (去).",
+    "filo": "Prinsip keadilan yang adil seperti air tenang."
+  },
+  {
+    "kanji": "優",
+    "radical": "人",
+    "meaning": "Ramah / Unggul / Aktor",
+    "pic": "Gabungan sosok manusia (人) dan penari bertopeng lembut anggun (憂).",
+    "filo": "Sifat manusia yang penuh kelembutan dan keunggulan."
+  },
+  {
+    "kanji": "回",
+    "radical": "囗",
+    "meaning": "Berputar / Kali",
+    "pic": "Piktograf pusaran air yang memutar melingkar.",
+    "filo": "Pergerakan memutar kembali ke titik awal."
+  },
+  {
+    "kanji": "室",
+    "radical": "宀",
+    "meaning": "Ruangan",
+    "pic": "Gambar atap bangunan (宀) yang menaungi batas tujuan tiba (至).",
+    "filo": "Ruang tertutup di dalam bangunan."
+  },
+  {
+    "kanji": "点",
+    "radical": "黒",
+    "meaning": "Titik / Nilai",
+    "pic": "Gabungan perapian jelaga (占/黒) dan titik percikan nyala api (灬).",
+    "filo": "Tanda titik kecil penanda nilai."
+  },
+  {
+    "kanji": "爆",
+    "radical": "火",
+    "meaning": "Meledak",
+    "pic": "Gabungan nyala api dahsyat (火) dan lembaran yang terkelupas pecah (暴).",
+    "filo": "Ledakan api yang memecahkan benda di sekitarnya."
+  },
+  {
+    "kanji": "化",
+    "radical": "匕",
+    "meaning": "Berubah / Transformasi",
+    "pic": "Gambar dua orang: satu berdiri tegak dan satu lagi terbalik.",
+    "filo": "Perubahan wujud wajar dari kondisi awal."
+  },
+  {
+    "kanji": "洋",
+    "radical": "水",
+    "meaning": "Samudra / Barat",
+    "pic": "Gabungan aliran air melimpah (水) dan domba indah (羊).",
+    "filo": "Hamparan samudra laut yang sangat luas."
+  },
+  {
+    "kanji": "伺",
+    "radical": "人",
+    "meaning": "Bertanya / Mengunjungi (Sopan)",
+    "pic": "Gabungan sosok manusia (人) dan perhatian mengamati keadaan (司).",
+    "filo": "Seseorang yang datang mendengarkan instruksi."
+  },
+  {
+    "kanji": "答",
+    "radical": "竹",
+    "meaning": "Menjawab",
+    "pic": "Gabungan seruling bambu (竹) dan kecocokan yang pas (合).",
+    "filo": "Memberikan tanggapan yang cocok tepat sasaran."
+  },
+  {
+    "kanji": "離",
+    "radical": "隹",
+    "meaning": "Berpisah / Lepas",
+    "pic": "Gambar burung (隹) terbang terlepas keluar dari jaring perangkap (离).",
+    "filo": "Terlepas dari keterikatan."
+  },
+  {
+    "kanji": "報",
+    "radical": "土",
+    "meaning": "Laporan / Warta",
+    "pic": "Gambar tangan borgol (幸) dan penyerahan hukuman/informasi (𠬝).",
+    "filo": "Menyampaikan warta balasan resmi."
+  },
+  {
+    "kanji": "急",
+    "radical": "心",
+    "meaning": "Mendesak / Cepat",
+    "pic": "Gambar tangan menarik pakaian bergegas di atas detak hati (心).",
+    "filo": "Perasaan hati yang terburu-buru bergegas."
+  },
+  {
+    "kanji": "次",
+    "radical": "欠",
+    "meaning": "Berikutnya / Selanjutnya",
+    "pic": "Gambar orang menguap membuka mulut (欠) menunggu giliran di samping es (冫).",
+    "filo": "Urutan kedua yang siap melanjutkan."
+  },
+  {
+    "kanji": "転",
+    "radical": "車",
+    "meaning": "Berputar / Berguling / Pindah",
+    "pic": "Gabungan roda kendaraan (車) dan pemutaran gulungan benang (云/専).",
+    "filo": "Pergerakan roda yang berputar menggelinding."
+  },
+  {
+    "kanji": "音",
+    "radical": "音",
+    "meaning": "Suara / Bunyi",
+    "pic": "Gambar mulut (言) yang mengeluarkan getaran nada teratur dari dalam tatanan (立).",
+    "filo": "Gelombang bunyi bernada yang terdengar oleh telinga."
+  },
+  {
+    "kanji": "孫",
+    "radical": "子",
+    "meaning": "Cucu",
+    "pic": "Gabungan anak keturunan (子) dan benang pengikat silsilah generasi (系).",
+    "filo": "Keturunan lanjutan generasi anak."
+  },
+  {
+    "kanji": "宅",
+    "radical": "宀",
+    "meaning": "Kediaman / Rumah",
+    "pic": "Gambar atap rumah pelindung (宀) menaungi tunas tempat mengakar (乇).",
+    "filo": "Tempat tinggal utama keluarga."
+  },
+  {
+    "kanji": "房",
+    "radical": "戸",
+    "meaning": "Kamar / Ruang / Rumbai",
+    "pic": "Gabungan daun pintu rumah (戸) dan sisi samping bangunan (方).",
+    "filo": "Bilik kamar di dalam rumah."
+  },
+  {
+    "kanji": "祖",
+    "radical": "示",
+    "meaning": "Leluhur",
+    "pic": "Gabungan mezbah ritual persembahan (示) dan batu prasasti leluhur (且).",
+    "filo": "Garis keturunan para leluhur."
+  },
+  {
+    "kanji": "絵",
+    "radical": "糸",
+    "meaning": "Gambar / Lukisan",
+    "pic": "Gabungan pilinan benang beraneka warna (糸) dan penggabungan piktorial (会).",
+    "filo": "Karya seni lukis berhias ragam warna."
+  },
+  {
+    "kanji": "楽",
+    "radical": "木",
+    "meaning": "Musik / Menyenangkan",
+    "pic": "Gambar instrumen musik lonceng perunggu di atas tiang kayu perayaan (木).",
+    "filo": "Melodi musik perayaan yang menggembirakan."
+  },
+  {
+    "kanji": "初",
+    "radical": "刀",
+    "meaning": "Awal / Pertama",
+    "pic": "Gambar pisau pemotong (刀) yang mulai memotong lembaran kain baju baru (衣).",
+    "filo": "Langkah pertama memulai pembuatan busana."
+  },
+  {
+    "kanji": "和",
+    "radical": "口",
+    "meaning": "Harmoni / Jepang",
+    "pic": "Gabungan tanaman padi (禾) dan kecukupan mulut makan (口).",
+    "filo": "Keselarasan hidup saat kebutuhan pangan tercukupi."
+  },
+  {
+    "kanji": "計",
+    "radical": "言",
+    "meaning": "Rencana / Mengukur",
+    "pic": "Gabungan perkataan kata (言) dan garis ukur penanda (十).",
+    "filo": "Memperhitungkan angka secara matang lewat kata."
+  },
+  {
+    "kanji": "謝",
+    "radical": "言",
+    "meaning": "Minta Maaf / Terima Kasih",
+    "pic": "Gabungan ujaran kata (言) dan pelepasan ketegangan panah (射).",
+    "filo": "Mengutarakan ungkapan tulus melepas beban ganjalan."
+  },
+  {
+    "kanji": "順",
+    "radical": "頁",
+    "meaning": "Urutan / Patuh",
+    "pic": "Gabungan aliran air sungai lurus (川) dan pandangan kepala memimpin (頁).",
+    "filo": "Mengikuti alur jalan yang benar dan teratur."
+  },
+  {
+    "kanji": "領",
+    "radical": "頁",
+    "meaning": "Wilayah / Memimpin",
+    "pic": "Gabungan kerah baju pemandu (令) dan pandangan kepala (頁).",
+    "filo": "Kepemimpinan yang mengendalikan daerah kekuasaan."
+  },
+  {
+    "kanji": "届",
+    "radical": "尸",
+    "meaning": "Menyampaikan / Tiba",
+    "pic": "Gabungan tubuh manusia (尸) dan langkah tiba di tujuan (由).",
+    "filo": "Mengantarkan paket/pesan sampai di alamat."
+  },
+  {
+    "kanji": "医",
+    "radical": "匚",
+    "meaning": "Dokter / Medis",
+    "pic": "Gambar wadah penyimpan (匚) anak panah obat pembedahan (矢).",
+    "filo": "Peralatan medis pengobatan luka perang."
+  },
+  {
+    "kanji": "降",
+    "radical": "阜",
+    "meaning": "Turun / Hujan Turun",
+    "pic": "Gabungan lereng tebing bukit (阝) dan dua kaki melangkah turun ke bawah (夌).",
+    "filo": "Melangkah turun dari tempat tinggi."
+  },
+  {
+    "kanji": "録",
+    "radical": "金",
+    "meaning": "Mencatat / Rekaman",
+    "pic": "Gabungan ukiran pelat logam perunggu (金) dan ukiran pola jernih (录).",
+    "filo": "Merekam catatan abadi di atas pelat logam."
+  },
+  {
+    "kanji": "塾",
+    "radical": "土",
+    "meaning": "Bimbingan Belajar",
+    "pic": "Gabungan bangunan matang (孰) di atas gundukan tanah tempat belajar (土).",
+    "filo": "Lembaga khusus penempaan ilmu pengetahuan."
+  },
+  {
+    "kanji": "徒",
+    "radical": "彳",
+    "meaning": "Murid / Jalan Kaki",
+    "pic": "Gabungan langkah kaki di jalanan (彳) dan jejak berlari telanjang kaki (走/土).",
+    "filo": "Pengikut yang berjalan kaki mendampingi guru."
+  },
+  {
+    "kanji": "営",
+    "radical": "口",
+    "meaning": "Mengelola / Bisnis",
+    "pic": "Gambar obor api berkobar (𦔧) mengawasi barak pemukiman (口口).",
+    "filo": "Mengawasi dan mengelola tata usaha perkemahan."
+  },
+  {
+    "kanji": "字",
+    "radical": "子",
+    "meaning": "Karakter / Huruf",
+    "pic": "Gambar anak kecil (子) yang bertumbuh di bawah naungan atap rumah (宀).",
+    "filo": "Huruf-huruf yang dilahirkan dan berkembang dari induk tulisan."
+  },
+  {
+    "kanji": "普",
+    "radical": "日",
+    "meaning": "Umum / Luas",
+    "pic": "Gambar dua barisan melangkah sejajar (並) di bawah terik penerangan matahari (日).",
+    "filo": "Sesuatu yang tersebar merata dan dapat diakses umum."
+  },
+  {
+    "kanji": "忙",
+    "radical": "心",
+    "meaning": "Sibuk",
+    "pic": "Gabungan perasaan hati (忄) dan kondisi lenyapnya waktu (亡).",
+    "filo": "Keadaan di mana hati kehilangan ketenangan karena banyaknya pekerjaan."
+  },
+  {
+    "kanji": "賞",
+    "radical": "貝",
+    "meaning": "Hadiah / Penghargaan",
+    "pic": "Gabungan puji-pujian tinggi (尚) dan pemberian uang kerang bernilai (貝).",
+    "filo": "Pemberian imbalan atas prestasi tinggi."
+  },
+  {
+    "kanji": "礼",
+    "radical": "示",
+    "meaning": "Sopan / Ucapan Terima Kasih",
+    "pic": "Gambar meja persembahan doa (示) dan posisi bersimpuh hormat (乚).",
+    "filo": "Tata krama penghormatan ritual."
+  },
+  {
+    "kanji": "拝",
+    "radical": "手",
+    "meaning": "Menyembah / Berdoa",
+    "pic": "Gambar kedua belah tangan (手) mencakupkan jari melakukan persembahan (𠬞/拝).",
+    "filo": "Mengatupkan tangan untuk berdoa atau bersujud."
+  },
+  {
+    "kanji": "存",
+    "radical": "子",
+    "meaning": "Ada / Memelihara",
+    "pic": "Gambar perlindungan tangan (才) yang merawat sosok anak kecil (子).",
+    "filo": "Merawat dan menjaga keberadaan seseorang."
+  },
+  {
+    "kanji": "緊",
+    "radical": "糸",
+    "meaning": "Ketat / Darurat",
+    "pic": "Gabungan pilinan benang kencang (糸) dan sosok yang berpegang teguh (臣/又).",
+    "filo": "Pilinan benang yang ditarik sangat kencang dan tegang."
+  },
+  {
+    "kanji": "張",
+    "radical": "弓",
+    "meaning": "Membentang / Menarik",
+    "pic": "Gabungan busur panah (弓) dan ukuran panjang yang ditarik (長).",
+    "filo": "Membentangkan tali busur hingga tegang."
+  },
+  {
+    "kanji": "応",
+    "radical": "心",
+    "meaning": "Merespons / Menjawab",
+    "pic": "Gambar burung elang (䧹) di bawah atap yang menanggapi getaran hati (心).",
+    "filo": "Merespons panggilan dengan ketulusan hati."
+  },
+  {
+    "kanji": "援",
+    "radical": "手",
+    "meaning": "Membantu / Mendorong",
+    "pic": "Gabungan uluran tangan (手) dan tindakan menarik ke atas (爰).",
+    "filo": "Mengulurkan tangan untuk menolong orang lain."
+  },
+  {
+    "kanji": "感",
+    "radical": "心",
+    "meaning": "Merasakan / Terharu",
+    "pic": "Gabungan senjata pemukul tajam (咸) dan respon perasaan dalam hati (心).",
+    "filo": "Getaran emosi mendalam yang menyentuh hati."
+  },
+  {
+    "kanji": "迷",
+    "radical": "辶",
+    "meaning": "Tersesat / Bingung",
+    "pic": "Gabungan lintasan jalanan (辶) dan tebaran bulir beras bermacam arah (米).",
+    "filo": "Kehilangan penunjuk arah di persimpangan."
+  },
+  {
+    "kanji": "惑",
+    "radical": "心",
+    "meaning": "Keraguan / Mengganggu",
+    "pic": "Gabungan wilayah pembatas bingung (或) dan gejolak keraguan hati (心).",
+    "filo": "Pikiran hati yang goyah dan terganggu."
+  },
+  {
+    "kanji": "私",
+    "radical": "禾",
+    "meaning": "Saya / Pribadi",
+    "pic": "Gambar tanaman padi panen (禾) yang disisihkan untuk diri sendiri (厶).",
+    "filo": "Milik pribadi yang terpisah dari kepemilikan umum."
+  },
+  {
+    "kanji": "京",
+    "radical": "亠",
+    "meaning": "Ibu Kota / Menara",
+    "pic": "Piktograf gerbang menara bertingkat tinggi di ibu kota kerajaan.",
+    "filo": "Bangunan menara megah di pusat pemerintahan."
+  },
+  {
+    "kanji": "博",
+    "radical": "十",
+    "meaning": "Luas / Luas Pengetahuannya",
+    "pic": "Gambar tangan yang mengumpulkan beraneka ragam persembahan luas (専/十).",
+    "filo": "Memiliki wawasan atau koleksi yang sangat luas."
+  },
+  {
+    "kanji": "師",
+    "radical": "巾",
+    "meaning": "Guru / Ahli / Pasukan",
+    "pic": "Gambar bukit kelompok pasukan tentara (𠂤) di bawah panji kepemimpinan (匝/巾).",
+    "filo": "Sosok panutan yang memimpin dan mengajari kelompok."
+  },
+  {
+    "kanji": "銀",
+    "radical": "金",
+    "meaning": "Perak",
+    "pic": "Gabungan logam mulia (金) dan sifat berkilau keras (艮).",
+    "filo": "Logam murni berkarakter putih berkilau."
+  },
+  {
+    "kanji": "者",
+    "radical": "老",
+    "meaning": "Orang / Orang Yang",
+    "pic": "Gambar tumpukan kayu bakar di atas tungku yang dikelola seseorang.",
+    "filo": "Individu yang melakukan suatu tindakan tertentu."
+  },
+  {
+    "kanji": "研",
+    "radical": "石",
+    "meaning": "Mengasah / Mengaji",
+    "pic": "Gabungan batu asah (石) dan alat pemotong datar rata (幵).",
+    "filo": "Menggosok benda pada batu agar tajam dan halus."
+  },
+  {
+    "kanji": "究",
+    "radical": "穴",
+    "meaning": "Mendalami / Meneliti",
+    "pic": "Gambar menelusuri sudut-sudut dasar kedalaman gua (穴/九).",
+    "filo": "Menggali informasi hingga ke akar paling dalam."
+  },
+  {
+    "kanji": "病",
+    "radical": "疒",
+    "meaning": "Sakit / Penyakit",
+    "pic": "Gambar orang berbaring di tempat tidur (疒) akibat terkena demam panas (丙).",
+    "filo": "Kondisi tubuh yang terserang gangguan kesehatan."
+  },
+  {
+    "kanji": "歳",
+    "radical": "止",
+    "meaning": "Usia / Tahun Umur",
+    "pic": "Gambar senjata kapak pemotong siklus panen (戉) dipadukan jejak langkah waktu (止).",
+    "filo": "Perjalanan umur manusia yang bertambah setiap tahun."
+  },
+  {
+    "kanji": "願",
+    "radical": "頁",
+    "meaning": "Memohon / Berharap",
+    "pic": "Gabungan sumber pemikiran jernih (原) dan penundukan kepala memohon (頁).",
+    "filo": "Menundukkan kepala untuk menyampaikan harapan tulus."
+  },
+  {
+    "kanji": "辞",
+    "radical": "辛",
+    "meaning": "Mundur / Kata / Kamus",
+    "pic": "Gambar mengurai benang kusut (𤔔) menggunakan perkakas jarum (辛).",
+    "filo": "Menguraikan kata demi kata atau melepaskan jabatan."
+  },
+  {
+    "kanji": "雑",
+    "radical": "隹",
+    "meaning": "Campuran / Acak",
+    "pic": "Gambar sekelompok burung beraneka warna (隹) hinggap bersama di pakaian (衣).",
+    "filo": "Berbagai unsur berbeda yang bercampur menjadi satu."
+  },
+  {
+    "kanji": "誌",
+    "radical": "言",
+    "meaning": "Majalah / Catatan",
+    "pic": "Gabungan ujaran kata (言) dan memori niat dalam hati (志).",
+    "filo": "Catatan tertulis yang merekam informasi dan pemikiran."
+  },
+  {
+    "kanji": "帳",
+    "radical": "巾",
+    "meaning": "Buku Catatan / Tirai",
+    "pic": "Gabungan lembaran kain/kertas (巾) yang terbentang panjang (長).",
+    "filo": "Lembaran terkumpul tempat mencatat transaksi."
+  },
+  {
+    "kanji": "刺",
+    "radical": "刀",
+    "meaning": "Menusuk / Kartu Nama",
+    "pic": "Gabungan duri tanaman tajam (朿) dan pisau pemotong (刀).",
+    "filo": "Menancapkan atau menggoreskan benda tajam."
+  },
+  {
+    "kanji": "鉛",
+    "radical": "金",
+    "meaning": "Timbal / Timah",
+    "pic": "Gabungan logam murni (金) dan aliran cair yang mudah meluncur (㕣).",
+    "filo": "Jenis logam lunak yang mudah dilelehkan dan dibentuk."
+  },
+  {
+    "kanji": "筆",
+    "radical": "竹",
+    "meaning": "Kuas Tulis",
+    "pic": "Gambar batang bambu (竹) yang dipasangi bulu hewan untuk alat menulis (聿).",
+    "filo": "Alat tulis tradisional berbahan bambu dan bulu."
+  },
+  {
+    "kanji": "傘",
+    "radical": "人",
+    "meaning": "Payung",
+    "pic": "Piktograf struktur rangka payung yang menaungi beberapa sosok manusia (人人人).",
+    "filo": "Alat pelindung dari hujan dan terik matahari."
+  },
+  {
+    "kanji": "机",
+    "radical": "木",
+    "meaning": "Meja Tulis",
+    "pic": "Gambar perkakas kayu (木) dengan sandaran alas datar (几).",
+    "filo": "Perabot kayu tempat meletakkan barang atau menulis."
+  },
+  {
+    "kanji": "産",
+    "radical": "生",
+    "meaning": "Melahirkan / Produksi",
+    "pic": "Gambar tempat kelahiran bertumpu di tebing (彦) melahirkan kehidupan baru (生).",
+    "filo": "Proses menghasilkan keturunan atau produk barang."
+  },
+  {
+    "kanji": "英",
+    "radical": "艸",
+    "meaning": "Inggris / Bunga Mekar / Unggul",
+    "pic": "Gambar mahkota bunga indah (艹) di atas sosok manusia unggul (央).",
+    "filo": "Sesuatu yang menonjol dan cemerlang seperti bunga mekar."
+  },
+  {
+    "kanji": "堂",
+    "radical": "土",
+    "meaning": "Aula / Gedung Megah",
+    "pic": "Gambar bangunan terpandang tinggi (尚) berdiri di atas pondasi tanah (土).",
+    "filo": "Gedung besar tempat pertemuan resmi."
+  },
+  {
+    "kanji": "務",
+    "radical": "力",
+    "meaning": "Tugas / Kewajiban",
+    "pic": "Gabungan tombak pelempar tugas (矛/攵) dan pengeluaran tenaga otot (力).",
+    "filo": "Bekerja keras melaksanakan amanah tugas."
+  },
+  {
+    "kanji": "部",
+    "radical": "阜",
+    "meaning": "Bagian / Divisi",
+    "pic": "Gabungan pengelompokan wilayah (剖) dan bukit batas pemukiman (阝).",
+    "filo": "Pembagian sektor ke dalam kelompok-kelompok."
+  },
+  {
+    "kanji": "屋",
+    "radical": "尸",
+    "meaning": "Atap / Toko / Rumah",
+    "pic": "Gambar tempat berlindung tubuh (尸) saat tiba di tujuan (至).",
+    "filo": "Bangunan tempat berlindung atau berdagang."
+  },
+  {
+    "kanji": "洗",
+    "radical": "水",
+    "meaning": "Mencuci",
+    "pic": "Gabungan aliran air pembilas (水) dan pembersihan kaki melangkah (先).",
+    "filo": "Membersihkan kotoran menggunakan air."
+  },
+  {
+    "kanji": "階",
+    "radical": "阜",
+    "meaning": "Lantai / Tangga",
+    "pic": "Gabungan tebing bertingkat (阝) dan jenjang yang sejajar teratur (皆).",
+    "filo": "Anak tangga penyambung tingkat lantai."
+  },
+  {
+    "kanji": "段",
+    "radical": "殳",
+    "meaning": "Tingkat / Langkah",
+    "pic": "Gambar mengukir anak tangga pada tebing batu menggunakan pahat kapak (殳).",
+    "filo": "Tingkatan demi tingkatan berurutan."
+  },
+  {
+    "kanji": "販",
+    "radical": "貝",
+    "meaning": "Pemasaran / Jual",
+    "pic": "Gabungan mata uang kerang transaksi (貝) dan perputaran kembalian modal (反).",
+    "filo": "Aktivitas memperjualbelikan barang komoditas."
+  },
+  {
+    "kanji": "売",
+    "radical": "士",
+    "meaning": "Menjual",
+    "pic": "Gambar melangkahkan kaki (儿) membawakan barang persembahan untuk ditukar (出/貝).",
+    "filo": "Menyerahkan barang dagangan untuk mendapatkan uang."
+  },
+  {
+    "kanji": "機",
+    "radical": "木",
+    "meaning": "Mesin / Kesempatan",
+    "pic": "Gabungan struktur bingkai kayu tenun (木) dan komponen pemicu halus (幾).",
+    "filo": "Peralatan mekanis rumit penggerak kerja."
+  },
+  {
+    "kanji": "靴",
+    "radical": "革",
+    "meaning": "Sepatu",
+    "pic": "Gabungan olahan kulit binatang (革) dan kelentukan bentuk kaki (化).",
+    "filo": "Alas kaki pelindung berbahan kulit."
+  },
+  {
+    "kanji": "地",
+    "radical": "土",
+    "meaning": "Tanah / Bumi / Wilayah",
+    "pic": "Gabungan hamparan daratan tanah (土) dan liukan saluran air alami (也).",
+    "filo": "Permukaan bumi tempat segala hal berdiri."
+  },
+  {
+    "kanji": "起",
+    "radical": "走",
+    "meaning": "Bangun / Bangkit",
+    "pic": "Gabungan pergerakan kaki melangkah cepat (走) dan permulaan diri (己).",
+    "filo": "Bangkit berdiri dari posisi berbaring."
+  },
+  {
+    "kanji": "寝",
+    "radical": "宀",
+    "meaning": "Tidur",
+    "pic": "Gambar tempat tidur beratap (宀) disamping sosok berbaring di atas ranjang kayu (爿/帚/夨).",
+    "filo": "Beristirahat memejamkan mata di atas ranjang."
+  },
+  {
+    "kanji": "働",
+    "radical": "人",
+    "meaning": "Bekerja",
+    "pic": "Gabungan sosok manusia (人) dan pergerakan usaha (動).",
+    "filo": "Aktivitas fisik atau mental manusia untuk menghasilkan sesuatu."
+  },
+  {
+    "kanji": "勉",
+    "radical": "力",
+    "meaning": "Kerja Keras / Berusaha",
+    "pic": "Gabungan melahirkan/meloloskan diri dari kesulitan (免) dan pengerahan tenaga (力).",
+    "filo": "Mengerahkan segenap daya kekuatan untuk mencapai sasaran."
+  },
+  {
+    "kanji": "強",
+    "radical": "弓",
+    "meaning": "Kuat",
+    "pic": "Gambar serangga cangkang keras (虫) dan kelentukan daya tegang busur (弓).",
+    "filo": "Daya tahan dan kekuatan yang tidak mudah patah."
+  },
+  {
+    "kanji": "終",
+    "radical": "糸",
+    "meaning": "Selesai / Akhir",
+    "pic": "Gambar simpul ikatan benang pada ujung terikat (糸/冬).",
+    "filo": "Titik batas pungkasan dari suatu alur."
+  },
+  {
+    "kanji": "郵",
+    "radical": "阜",
+    "meaning": "Pos / Pengiriman",
+    "pic": "Gabungan border perbatasan daerah (垂) dan pos pemukiman perhentian utusan (阝).",
+    "filo": "Sistem antar kirim surat dan barang."
+  },
+  {
+    "kanji": "便",
+    "radical": "人",
+    "meaning": "Praktis / Surat / Kotoran",
+    "pic": "Gabungan sosok manusia (人) dan pembaharuan kemudahan (更).",
+    "filo": "Keadaan yang menguntungkan dan memudahkan urusan."
+  },
+  {
+    "kanji": "局",
+    "radical": "尸",
+    "meaning": "Kantor / Sektor",
+    "pic": "Gambar tubuh membungkuk (尸) di dalam ruang terbatas perbatasan (口).",
+    "filo": "Divisi atau unit organisasi yang menangani urusan spesifik."
+  },
+  {
+    "kanji": "図",
+    "radical": "囗",
+    "meaning": "Peta / Gambar / Rencana",
+    "pic": "Gambar batas bidang terkurung (囗) berisi denah lukisan teratur (図/啚).",
+    "filo": "Rancangan gambar atau visual denah."
+  },
+  {
+    "kanji": "術",
+    "radical": "行",
+    "meaning": "Seni / Teknik / Keahlian",
+    "pic": "Gambar persimpangan jalan (行) di mana bulir gandum olahan diproses ahli (朮).",
+    "filo": "Metode atau keahlian khusus dalam menciptakan sesuatu."
+  },
+  {
+    "kanji": "朝",
+    "radical": "月",
+    "meaning": "Pagi Hari",
+    "pic": "Gambar bulan (月) yang mulai memudar saat matahari terbit di balik rumput (十日十).",
+    "filo": "Waktu fajar peralihan saat matahari terbit."
+  },
+  {
+    "kanji": "昼",
+    "radical": "日",
+    "meaning": "Siang Hari",
+    "pic": "Gambar batas lintasan matahari (日) puncak tertinggi di atas cakrawala (尺).",
+    "filo": "Rentang waktu saat matahari bersinar paling terik."
+  },
+  {
+    "kanji": "晩",
+    "radical": "日",
+    "meaning": "Malam Hari",
+    "pic": "Gabungan pergerakan matahari terbenam (日) dan sosok bersimpuh malam (免).",
+    "filo": "Waktu petang ketika matahari telah terbenam sepenuhnya."
+  },
+  {
+    "kanji": "試",
+    "radical": "言",
+    "meaning": "Mencoba / Ujian",
+    "pic": "Gabungan kata ucapan (言) dan aturan hukum standar yang baku (式).",
+    "filo": "Menguji kemampuan untuk mengetahui standar kualitas."
+  },
+  {
+    "kanji": "映",
+    "radical": "日",
+    "meaning": "Proyeksi / Memantul",
+    "pic": "Gabungan pendar cahaya matahari (日) dan pantulan sosok di air (央).",
+    "filo": "Memancarkan bayangan atau cahaya ke permukaan."
+  },
+  {
+    "kanji": "画",
+    "radical": "田",
+    "meaning": "Lukisan / Bintang / Garis",
+    "pic": "Gambar kuas tulis (聿) yang menggaris batas-batas petak lahan (田/囗).",
+    "filo": "Membatasi dan menggambarkan visual garis."
+  },
+  {
+    "kanji": "曜",
+    "radical": "日",
+    "meaning": "Hari Dalam Seminggu",
+    "pic": "Gabungan pancaran sinar matahari (日) dan sekelompok burung terbang berkilau (翟).",
+    "filo": "Pancaran sinar benda langit penanda hari."
+  },
+  {
+    "kanji": "変",
+    "radical": "夂",
+    "meaning": "Berubah / Aneh",
+    "pic": "Gambar memotong jalinan benang (亦) diikuti pergerakan melangkah kaki (夂).",
+    "filo": "Beralih dari kondisi lama menuju wujud baru."
+  },
+  {
+    "kanji": "帰",
+    "radical": "巾",
+    "meaning": "Pulang / Kembali",
+    "pic": "Gambar wanita membawa sapu ritual (帚) dan melangkah pulang ke batas keluarga (阜/追).",
+    "filo": "Kembali ke tempat asal permukiman."
+  },
+  {
+    "kanji": "鉄",
+    "radical": "金",
+    "meaning": "Besi",
+    "pic": "Gabungan logam murni (金) dan komponen pemurnian kokoh (失/𢧄).",
+    "filo": "Jenis logam keras yang digunakan untuk struktur."
+  },
+  {
+    "kanji": "幹",
+    "radical": "干",
+    "meaning": "Batang Utama / Inti",
+    "pic": "Gambar penjemuran tanaman gandum (朝日) dipotong pancang kayu (干).",
+    "filo": "Bagian fondasi batang utama penopang."
+  },
+  {
+    "kanji": "線",
+    "radical": "糸",
+    "meaning": "Garis / Jalur",
+    "pic": "Gabungan pilinan benang (糸) dan pancaran mata air lurus (泉).",
+    "filo": "Goresan memanjang seperti utas benang."
+  },
+  {
+    "kanji": "歩",
+    "radical": "止",
+    "meaning": "Berjalan Kaki",
+    "pic": "Gambar dua telapak kaki (止 dan 少/𡥦 terbalik) melangkah bergantian.",
+    "filo": "Melangkahkan kaki secara berurutan maju."
+  },
+  {
+    "kanji": "達",
+    "radical": "辶",
+    "meaning": "Tiba / Jamak (Mereka)",
+    "pic": "Gabungan lintasan pergerakan (辶) dan pergerakan anak domba berjalan bebas (土/羊).",
+    "filo": "Tiba di lokasi atau kelompok orang yang terhubung."
+  },
+  {
+    "kanji": "彼",
+    "radical": "彳",
+    "meaning": "Dia (Laki-laki)",
+    "pic": "Gabungan pergerakan melangkah di jalan (彳) dan menunjuk posisi di sana (皮).",
+    "filo": "Menunjuk sosok orang ketiga di seberang."
+  },
+  {
+    "kanji": "族",
+    "radical": "方",
+    "meaning": "Keluarga / Suku",
+    "pic": "Gambar ikatan anak panah (矢) yang dikumpulkan di bawah bendera pataka suku (㫃).",
+    "filo": "Kelompok bertumpu pada satu garis keturunan."
+  },
+  {
+    "kanji": "昨",
+    "radical": "日",
+    "meaning": "Kemarin",
+    "pic": "Gabungan pergerakan matahari (日) dan perbuatan yang telah berlalu (作/乍).",
+    "filo": "Hari yang telah terlewati sebelum hari ini."
+  },
+  {
+    "kanji": "誕",
+    "radical": "言",
+    "meaning": "Kelahiran",
+    "pic": "Gabungan ujaran pujian (言) dan pengembangan kehidupan luas (延).",
+    "filo": "Momen munculnya kehidupan baru."
+  },
+  {
+    "kanji": "特",
+    "radical": "牛",
+    "meaning": "Khusus / Istimewa",
+    "pic": "Gambar sapi jantan pilihan (牛) persembahan kuil suci (寺).",
+    "filo": "Sesuatu yang dipilih khusus dari yang lain."
+  },
+  {
+    "kanji": "吸",
+    "radical": "口",
+    "meaning": "Menghirup / Merokok",
+    "pic": "Gabungan rongga mulut (口) dan pergerakan meraih/menarik ke dalam (及).",
+    "filo": "Menarik udara atau cairan masuk ke dalam mulut/paru-paru."
+  },
+  {
+    "kanji": "撮",
+    "radical": "手",
+    "meaning": "Merekam / Mengambil Foto",
+    "pic": "Gabungan gerakan tangan (扌) dan tindakan menjepit/mengumpulkan cepat (最).",
+    "filo": "Memotret atau memetik momen secara presisi."
+  },
+  {
+    "kanji": "飯",
+    "radical": "食",
+    "meaning": "Nasi / Makanan",
+    "pic": "Gabungan hidangan makanan (食) dan proses pengolahan menumbuk (反).",
+    "filo": "Beras masak olahan yang siap dikonsumsi."
+  },
+  {
+    "kanji": "卵",
+    "radical": "卩",
+    "meaning": "Telur",
+    "pic": "Piktograf sepasang indung telur atau telur hewan di dalam sarang.",
+    "filo": "Cangkang penampung calon kehidupan hewan."
+  },
+  {
+    "kanji": "肉",
+    "radical": "肉",
+    "meaning": "Daging",
+    "pic": "Piktograf irisan serat daging segar yang dipotong.",
+    "filo": "Jaringan otot atau daging konsumsi."
+  },
+  {
+    "kanji": "野",
+    "radical": "里",
+    "meaning": "Padang / Liar",
+    "pic": "Gabungan pemukiman lahan (里) dan wilayah terbuka belum tergarap (予).",
+    "filo": "Dataran luas liar di luar kawasan pemukiman."
+  },
+  {
+    "kanji": "菜",
+    "radical": "艸",
+    "meaning": "Sayuran",
+    "pic": "Gambar tanaman pangan (艹) yang dipetik menggunakan tangan dari dahan (採).",
+    "filo": "Tumbuhan yang dipetik untuk dimakan."
+  },
+  {
+    "kanji": "果",
+    "radical": "木",
+    "meaning": "Buah / Hasil",
+    "pic": "Gambar buah-buahan bulat (田/日) yang bergantungan di atas pohon (木).",
+    "filo": "Hasil kematangan puncak dari pertumbuhan pohon."
+  },
+  {
+    "kanji": "紅",
+    "radical": "糸",
+    "meaning": "Merah Tua / Crimson",
+    "pic": "Gabungan benang tenun (糸) dan pewarnaan kerajinan murni (工).",
+    "filo": "Warna merah merona hasil celupan benang."
+  },
+  {
+    "kanji": "乳",
+    "radical": "乙",
+    "meaning": "Susu / Payudara",
+    "pic": "Gambar tangan ibu (爪) memeluk dan membelai bayinya saat menyusui (子/乚).",
+    "filo": "Cairan nutrisi alami dari ibu."
+  },
+  {
+    "kanji": "酒",
+    "radical": "酉",
+    "meaning": "Minuman Keras / Sake",
+    "pic": "Gambar bejana permentasi anggur (酉) dengan tetesan cairan di sisinya (水).",
+    "filo": "Cairan minuman hasil fermentasi."
+  },
+  {
+    "kanji": "紙",
+    "radical": "糸",
+    "meaning": "Kertas",
+    "pic": "Gabungan serat benang tenun halus (糸) dan permukaan datar meluas (氏).",
+    "filo": "Lembaran halus dari serat bahan tertulis."
+  },
+  {
+    "kanji": "写",
+    "radical": "冖",
+    "meaning": "Salin / Memotret",
+    "pic": "Gambar menutupi wadah (冖) untuk meniru/menyalin wujud asli (与).",
+    "filo": "Merekam atau menyalin bentuk persis seperti aslinya."
+  },
+  {
+    "kanji": "真",
+    "radical": "目",
+    "meaning": "Kebenaran / Sungguh",
+    "pic": "Gambar wadah persembahan yang terisi penuh murni tanpa kebohongan.",
+    "filo": "Kondisi murni nyata tanpa rekayasa."
+  },
+  {
+    "kanji": "庭",
+    "radical": "广",
+    "meaning": "Halaman / Kebun Rumah",
+    "pic": "Gambar area terbuka di bawah atap samping rumah (广) tempat berkumpul (廷).",
+    "filo": "Lahan terbuka pelataran rumah."
+  },
+  {
+    "kanji": "宿",
+    "radical": "宀",
+    "meaning": "Penginapan / Menginap",
+    "pic": "Gambar atap rumah (宀) yang menyediakan tikar tempat beristirahat orang (人/百).",
+    "filo": "Tempat bermalam bagi pejalan jauh."
+  },
+  {
+    "kanji": "題",
+    "radical": "頁",
+    "meaning": "Judul / Topik / Soal",
+    "pic": "Gabungan penanda terbit awal (是) dan bagian kepala atas lembaran (頁).",
+    "filo": "Kepala tulisan yang menjadi fokus bahasan."
+  },
+  {
+    "kanji": "々",
+    "radical": "丿",
+    "meaning": "Tanda Pengulangan Kanji",
+    "pic": "Penyederhanaan dari karakter 仝 (sama/serupa).",
+    "filo": "Simbol kompresi penanda pengulangan kanji sebelumnya."
+  },
+  {
+    "kanji": "送",
+    "radical": "辶",
+    "meaning": "Mengirim / Mengantar",
+    "pic": "Gambar dua tangan mengulurkan hadiah (关) berjalan di jalur pergerakan (辶).",
+    "filo": "Mendorong atau mengantarkan sesuatu menuju penerima."
+  },
+  {
+    "kanji": "貸",
+    "radical": "貝",
+    "meaning": "Meminjamkan",
+    "pic": "Gabungan pertukaran barang pengganti (代) dan mata uang kerang transaksi (貝).",
+    "filo": "Menyerahkan aset barang/uang sementara waktu."
+  },
+  {
+    "kanji": "借",
+    "radical": "人",
+    "meaning": "Meminjam",
+    "pic": "Gabungan sosok manusia (人) dan transaksi masa lalu (昔).",
+    "filo": "Menerima pemanfaatan aset pihak lain."
+  },
+  {
+    "kanji": "賀",
+    "radical": "貝",
+    "meaning": "Ucapan Selamat",
+    "pic": "Gabungan ungkapan kegembiraan (加) dan penyerahan hadiah barang berharga (貝).",
+    "filo": "Menyampaikan pujian disertai pemberian hadiah."
+  },
+  {
+    "kanji": "状",
+    "radical": "犬",
+    "meaning": "Kondisi / Surat Dokumen",
+    "pic": "Gabungan bentuk ranjang kayu (爿) disamping anjing penjaga (犬).",
+    "filo": "Gambaran wujud atau lembaran dokumen formal."
+  },
+  {
+    "kanji": "消",
+    "radical": "水",
+    "meaning": "Padam / Hapus / Hilang",
+    "pic": "Gabungan air pembilas (水) dan lilin daging yang menyusut habis (肖).",
+    "filo": "Tetesan air yang memadamkan api hingga lenyap."
+  },
+  {
+    "kanji": "荷",
+    "radical": "艸",
+    "meaning": "Beban / Barang Bawaan",
+    "pic": "Gambar tanaman dipikul (艹) di atas pundak manusia penanggung beban (何).",
+    "filo": "Muatan barang yang dipikul membawa perjalanan."
+  },
+  {
+    "kanji": "符",
+    "radical": "竹",
+    "meaning": "Tanda / Stiker / Tiket",
+    "pic": "Gabungan kepingan bambu stempel (竹) dan penyesuaian kecocokan (付).",
+    "filo": "Kepingan bambu tanda bukti sah."
+  },
+  {
+    "kanji": "静",
+    "radical": "青",
+    "meaning": "Tenang / Hening",
+    "pic": "Gabungan warna murni jernih (青) dan penghentian perselisihan (争).",
+    "filo": "Suasana damai tanpa kebisingan."
+  },
+  {
+    "kanji": "有",
+    "radical": "月",
+    "meaning": "Ada / Memiliki",
+    "pic": "Gambar tangan (𠂇) menggenggam potongan daging persembahan (月/肉).",
+    "filo": "Memegang atau memiliki sesuatu dalam genggaman."
+  },
+  {
+    "kanji": "元",
+    "radical": "儿",
+    "meaning": "Asal / Sehat / Awal",
+    "pic": "Gambar manusia (儿) dengan kepala diperbesar menonjolkan fondasi utama.",
+    "filo": "Sumber akar energi dan keaslian awal."
+  },
+  {
+    "kanji": "暇",
+    "radical": "日",
+    "meaning": "Waktu Luang",
+    "pic": "Gabungan rentang waktu hari (日) dan kesempatan bersantai (假).",
+    "filo": "Waktu senggang di luar jam kerja."
+  },
+  {
+    "kanji": "利",
+    "radical": "刀",
+    "meaning": "Keuntungan / Tajam",
+    "pic": "Gambar pisau pemotong (刀) yang memanen rumpun tanaman padi matang (禾).",
+    "filo": "Hasil tajam yang memberikan manfaat panen."
+  },
+  {
+    "kanji": "暑",
+    "radical": "日",
+    "meaning": "Panas Udara (Cuaca)",
+    "pic": "Gabungan terik matahari (日) di atas pemukiman orang-orang (者).",
+    "filo": "Suhu udara panas terik di musim panas."
+  },
+  {
+    "kanji": "熱",
+    "radical": "火",
+    "meaning": "Panas Benda / Demam",
+    "pic": "Gabungan penanaman tanaman (勢/執) di atas nyala bara api membara (灬).",
+    "filo": "Suhu tinggi yang memancar panas dari benda."
+  },
+  {
+    "kanji": "寒",
+    "radical": "宀",
+    "meaning": "Dingin (Cuaca)",
+    "pic": "Gambar orang di dalam rumah (宀) berlapis jerami (𡔲) dengan kaki membeku di atas es (冫).",
+    "filo": "Suhu dingin menggigil pembeku."
+  },
+  {
+    "kanji": "難",
+    "radical": "隹",
+    "meaning": "Sulit / Sukar",
+    "pic": "Gambar burung ekor pendek (隹) yang terperangkap dalam kepulan asap/kebakaran (𡏳).",
+    "filo": "Kondisi rumit yang sukar diatasi."
+  },
+  {
+    "kanji": "易",
+    "radical": "日",
+    "meaning": "Mudah / Mengubah",
+    "pic": "Gambar bunglon yang berganti warna atau cairan yang dituangkan dari wadah.",
+    "filo": "Perubahan lancar tanpa hambatan."
+  },
+  {
+    "kanji": "低",
+    "radical": "人",
+    "meaning": "Rendah",
+    "pic": "Gabungan sosok manusia (人) dan posisi menunduk ke dasar tanah (氐).",
+    "filo": "Ketinggian yang berada di bawah standar rata-rata."
+  },
+  {
+    "kanji": "桜",
+    "radical": "木",
+    "meaning": "Bunga Sakura",
+    "pic": "Gambar pohon kayu (木) berhiaskan untaian kalung kelopak mekar (嬰/女).",
+    "filo": "Pohon berkuncup bunga merah muda indah."
+  },
+  {
+    "kanji": "寮",
+    "radical": "宀",
+    "meaning": "Asrama",
+    "pic": "Gambar atap rumah naungan (宀) tempat berkumpul rekan-rekan sebaya ( run/𠪮).",
+    "filo": "Hunian bersama bagi komunitas pekerja/pelajar."
+  },
+  {
+    "kanji": "活",
+    "radical": "水",
+    "meaning": "Aktivitas / Hidup",
+    "pic": "Gabungan aliran air murni (水) dan gerakan lidah dalam mulut (舌).",
+    "filo": "Aliran dinamis kehidupan yang terus bergerak."
+  },
+  {
+    "kanji": "好",
+    "radical": "女",
+    "meaning": "Suka / Gemar",
+    "pic": "Gambar seorang ibu wanita (女) yang memeluk anak kesayangannya (子).",
+    "filo": "Ungkapan rasa kasih sayang dan kesenangan."
+  },
+  {
+    "kanji": "嫌",
+    "radical": "女",
+    "meaning": "Benci / Tidak Suka",
+    "pic": "Gabungan sosok wanita (女) dan sikap pilih-pilih ketat (兼).",
+    "filo": "Perasaan enggan atau menolak sesuatu."
+  },
+  {
+    "kanji": "球",
+    "radical": "玉",
+    "meaning": "Bola / Globe",
+    "pic": "Gabungan batu permata giok bundar (玉) dan pola pembentukan bundar (求).",
+    "filo": "Benda berbentuk bulat sempurna."
+  },
+  {
+    "kanji": "歌",
+    "radical": "欠",
+    "meaning": "Lagu / Menyanyi",
+    "pic": "Gabungan lantunan nada berulang (哥) dan mulut menganga menghembus napas (欠).",
+    "filo": "Mengeluarkan irama lagu dari mulut."
+  },
+  {
+    "kanji": "舞",
+    "radical": "舛",
+    "meaning": "Menari / Panggung",
+    "pic": "Gambar penari berbusana hiasan bulu menggerakkan sepasang kaki bersilangan (舛).",
+    "filo": "Gerakan indah melangkah menari."
+  },
+  {
+    "kanji": "伎",
+    "radical": "人",
+    "meaning": "Keahlian / Seni Pertunjukan",
+    "pic": "Gabungan sosok penampil (人) dan penguasaan keahlian cabang (支).",
+    "filo": "Keterampilan khusus dalam seni pentas."
+  },
+  {
+    "kanji": "漢",
+    "radical": "水",
+    "meaning": "Cina / Dinasti Han",
+    "pic": "Gambar aliran sungai Han (水) tempat bermukimnya ksatria berani (難/𡏳).",
+    "filo": "Melambangkan kebudayaan dan karakter Cina."
+  },
+  {
+    "kanji": "細",
+    "radical": "糸",
+    "meaning": "Halus / Tipis / Kecil",
+    "pic": "Gabungan benang halus (糸) dan petak lahan kecil (田).",
+    "filo": "Ukuran serat yang sangat tipis dan halus."
+  },
+  {
+    "kanji": "約",
+    "radical": "糸",
+    "meaning": "Janji / Mengikat / Kira-kira",
+    "pic": "Gabungan pilinan benang (糸) dan tindakan mengikat wadah simpul (勺).",
+    "filo": "Mengikat kesepakatan bersama."
+  },
+  {
+    "kanji": "束",
+    "radical": "木",
+    "meaning": "Ikatan / Berkas",
+    "pic": "Gambar tali pengikat yang mengikat seikat kayu bakar (木) di tengahnya.",
+    "filo": "Mengumpulkan dan mengikat batang kayu menjadi satu."
+  },
+  {
+    "kanji": "主",
+    "radical": "丶",
+    "meaning": "Tuan / Utama",
+    "pic": "Piktograf nyala api terfokus yang menyala menduduki cawan tempat lilin.",
+    "filo": "Pusat fokus penentu utama."
+  },
+  {
+    "kanji": "夫",
+    "radical": "大",
+    "meaning": "Suami / Pria Dewasa",
+    "pic": "Gambar manusia dewasa (大) yang mengenakan konde peniti di kepalanya.",
+    "filo": "Pria yang telah dewasa dan menikah."
+  },
+  {
+    "kanji": "奥",
+    "radical": "大",
+    "meaning": "Bagian Dalam / Istri (Sopan)",
+    "pic": "Gambar sudut terdalam rumah beratap yang terlindungi dari luar.",
+    "filo": "Posisi sudut terlindung di dalam rumah."
+  },
+  {
+    "kanji": "妻",
+    "radical": "女",
+    "meaning": "Istri",
+    "pic": "Gambar tangan memegang sapu (彐) mengurus rumah disamping sosok wanita (女).",
+    "filo": "Wanita yang mengelola rumah tangga."
+  },
+  {
+    "kanji": "内",
+    "radical": "冂",
+    "meaning": "Dalam / Internal",
+    "pic": "Gambar sosok yang melangkah masuk (入) ke dalam bingkai batas ruangan (冂).",
+    "filo": "Sisi bagian dalam suatu ruangan."
+  },
+  {
+    "kanji": "全",
+    "radical": "入",
+    "meaning": "Semua / Utuh",
+    "pic": "Gambar permata giok (王/玉) murni yang terlindungi di bawah atap (人/入).",
+    "filo": "Kondisi utuh tanpa kekurangan."
+  },
+  {
+    "kanji": "然",
+    "radical": "火",
+    "meaning": "Tentu / Alami",
+    "pic": "Gambar daging anjing olahan (肰) yang dipanggang di atas api (灬).",
+    "filo": "Keadaan alami apa adanya sebagaimana mestinya."
+  },
+  {
+    "kanji": "速",
+    "radical": "辶",
+    "meaning": "Cepat",
+    "pic": "Gambar mengikat beban bundar (束) lalu melangkah cepat di jalanan (辶).",
+    "filo": "Pergerakan laju dalam waktu singkat."
+  },
+  {
+    "kanji": "残",
+    "radical": "歹",
+    "meaning": "Sisa / Bencana",
+    "pic": "Gabungan sisa tulang kerangka (歹) dan pemotongan tombak perang (戔).",
+    "filo": "Bagian tersisa yang belum musnah."
+  },
+  {
+    "kanji": "念",
+    "radical": "心",
+    "meaning": "Perasaan / Doa / Keinginan",
+    "pic": "Gabungan momen saat ini (今) dan getaran di dalam hati (心).",
+    "filo": "Pemikiran yang terus tersimpan di dada."
+  },
+  {
+    "kanji": "犬",
+    "radical": "犬",
+    "meaning": "Anjing",
+    "pic": "Piktograf seekor anjing berdiri menjulurkan lidah dengan telinga terangkat.",
+    "filo": "Hewan peliharaan berkaki empat penjaga."
+  },
+  {
+    "kanji": "猫",
+    "radical": "豸",
+    "meaning": "Kucing",
+    "pic": "Gabungan hewan pemangsa lincah (豸) dan pelindung petak tanaman (苗).",
+    "filo": "Hewan kecil lincah penangkap tikus di kebun."
+  },
+  {
+    "kanji": "象",
+    "radical": "豕",
+    "meaning": "Gajah / Fenomena",
+    "pic": "Piktograf gajah lengkap dengan belalai panjang, telinga lebar, dan kaki besar.",
+    "filo": "Hewan gajah berbadan besar."
+  },
+  {
+    "kanji": "池",
+    "radical": "水",
+    "meaning": "Kolam",
+    "pic": "Gabungan genangan air tenang (水) dan lekukan tempat penampungan (也).",
+    "filo": "Genangan air buatan atau alami yang tenang."
+  },
+  {
+    "kanji": "蔵",
+    "radical": "艸",
+    "meaning": "Gudang / Menyimpan",
+    "pic": "Gambar tersembunyi di bawah alang-alang (艹) dilindungi prajurit tombak (臧).",
+    "filo": "Tempat tersembunyi menyimpan barang berharga."
+  },
+  {
+    "kanji": "庫",
+    "radical": "广",
+    "meaning": "Gudang / Penyimpanan",
+    "pic": "Gambar bangunan beratap (广) tempat memarkir kereta perang (車).",
+    "filo": "Gudang tertutup pelindung perlengkapan."
+  },
+  {
+    "kanji": "窓",
+    "radical": "穴",
+    "meaning": "Jendela",
+    "pic": "Gambar celah lubang angin beratap (穴) untuk ventilasi udara (心/囱).",
+    "filo": "Celah dinding tempat sirkulasi cahaya dan udara."
+  },
+  {
+    "kanji": "公",
+    "radical": "八",
+    "meaning": "Publik / Umum",
+    "pic": "Gambar membagikan secara terbuka (八) kepemilikan pribadi (厶).",
+    "filo": "Keterbukaan untuk kepentingan bersama."
+  },
+  {
+    "kanji": "喫",
+    "radical": "口",
+    "meaning": "Mengecap / Menikmati",
+    "pic": "Gabungan rongga mulut (口) dan tindakan memegang menahan benda (契).",
+    "filo": "Mengecap hidangan atau merokok lewat mulut."
+  },
+  {
+    "kanji": "乗",
+    "radical": "丿",
+    "meaning": "Naik Kendaraan",
+    "pic": "Gambar orang memanjat duduk di atas dahan pepohonan (木).",
+    "filo": "Menumpang duduk di atas sarana transportasi."
+  },
+  {
+    "kanji": "県",
+    "radical": "目",
+    "meaning": "Prefektur / Provinsi",
+    "pic": "Gambar menggantungkan pengawasan mata (目) di wilayah perbatasan.",
+    "filo": "Pembagian wilayah administratif pemerintahan."
+  },
+  {
+    "kanji": "隣",
+    "radical": "阜",
+    "meaning": "Tetangga / Sebelah",
+    "pic": "Gabungan tebing pemukiman (阝) dan barisan rumah berdampingan (粦).",
+    "filo": "Hunian pemukiman tepat di sebelah rumah."
+  },
+  {
+    "kanji": "近",
+    "radical": "辶",
+    "meaning": "Dekat",
+    "pic": "Gabungan perkakas kapak pengukur (斤) dan pergerakan langkah (辶).",
+    "filo": "Jarak tempuh yang singkat dari posisi."
+  },
+  {
+    "kanji": "枚",
+    "radical": "木",
+    "meaning": "Lembar (Satuan Benda Tipis)",
+    "pic": "Gambar tangan memegang pukulan ringan (攵) membelah papan kayu tipis (木).",
+    "filo": "Satuan untuk menghitung kertas atau papan tipis."
+  },
+  {
+    "kanji": "封",
+    "radical": "寸",
+    "meaning": "Menutup / Menyegel",
+    "pic": "Gambar menanamkan patok tanah batas (圭) dan merekatkannya dengan tangan (寸).",
+    "filo": "Menyegel rapat dokumen atau wadah."
+  },
+  {
+    "kanji": "筒",
+    "radical": "竹",
+    "meaning": "Tabung / Pipa",
+    "pic": "Gabungan rongga batang bambu (竹) dan lorong penerobos lurus (同).",
+    "filo": "Pipa silinder dari bambu/logam."
+  },
+  {
+    "kanji": "両",
+    "radical": "一",
+    "meaning": "Keduanya / Dua Sisi",
+    "pic": "Gambar sepasang bobot timbangan simetris gantung di timbangan.",
+    "filo": "Dua belah pihak yang berdampingan seimbang."
+  },
+  {
+    "kanji": "兄",
+    "radical": "儿",
+    "meaning": "Kakak Laki-laki",
+    "pic": "Gambar organ mulut besar (口) di atas sosok kaki manusia (儿).",
+    "filo": "Anggota keluarga yang berbicara memandu adik-adiknya."
+  },
+  {
+    "kanji": "弟",
+    "radical": "弓",
+    "meaning": "Adik Laki-laki",
+    "pic": "Gambar tali yang dililitkan secara berurutan pada tongkat penyeimbang.",
+    "filo": "Urutan usia saudara laki-laki yang lebih muda."
+  },
+  {
+    "kanji": "姉",
+    "radical": "女",
+    "meaning": "Kakak Perempuan",
+    "pic": "Gabungan sosok wanita (女) dan kedudukan dituakan dalam keluarga (市/𠂔).",
+    "filo": "Saudara perempuan yang berusia lebih tua."
+  },
+  {
+    "kanji": "妹",
+    "radical": "女",
+    "meaning": "Adik Perempuan",
+    "pic": "Gabungan sosok wanita (女) dan usia tanaman muda yang belum matang (未).",
+    "filo": "Saudara perempuan berusia lebih muda."
+  },
+  {
+    "kanji": "留",
+    "radical": "田",
+    "meaning": "Tinggal / Menahan",
+    "pic": "Gambar perkakas penahan (卯) yang dipasang melindungi petak lahan (田).",
+    "filo": "Berdiam menetap di satu tempat."
+  },
+  {
+    "kanji": "航",
+    "radical": "舟",
+    "meaning": "Pelayaran / Penerbangan",
+    "pic": "Gabungan kapal air (舟) dan jalur melintas lurus (亢).",
+    "filo": "Melakukan Perjalanan melintasi laut atau udara."
+  },
+  {
+    "kanji": "簡",
+    "radical": "竹",
+    "meaning": "Sederhana / Ringkas",
+    "pic": "Gambar kepingan bambu tulisan (竹) yang disaring celah pintunya (間).",
+    "filo": "Pencatatan ringkas yang mudah dipahami."
+  },
+  {
+    "kanji": "単",
+    "radical": "十",
+    "meaning": "Tunggal / Sederhana",
+    "pic": "Gambar alat pelontar batu atau perisai pelindung tunggal.",
+    "filo": "Satu elemen berdiri sendiri tanpa komplikasi."
+  },
+  {
+    "kanji": "遠",
+    "radical": "辶",
+    "meaning": "Jauh",
+    "pic": "Gabungan pergerakan melangkah (辶) dan pakaian meliuk di kejauhan (袁).",
+    "filo": "Jarak tempuh bentangan luas yang jauh."
+  },
+  {
+    "kanji": "暖",
+    "radical": "日",
+    "meaning": "Hangat Udara (Cuaca)",
+    "pic": "Gabungan pendar matahari (日) dan pemindahan kehangatan (爰).",
+    "filo": "Keadaan udara musim semi yang hangat."
+  },
+  {
+    "kanji": "涼",
+    "radical": "水",
+    "meaning": "Sejuk Udara",
+    "pic": "Gabungan aliran air pembilas (水) dan hembusan menara tinggi (京).",
+    "filo": "Suhu udara sejuk yang menyegarkan."
+  },
+  {
+    "kanji": "甘",
+    "radical": "甘",
+    "meaning": "Manis",
+    "pic": "Gambar benda lezat yang ditahan di dalam rongga mulut (口).",
+    "filo": "Mengecap rasa manis makanan di lidah."
+  },
+  {
+    "kanji": "辛",
+    "radical": "辛",
+    "meaning": "Pedas / Pahit / Pedih",
+    "pic": "Piktograf pisau atau jarum tato hukuman kuno.",
+    "filo": "Rasa tajam menyengat di lidah atau rasa pedih."
+  },
+  {
+    "kanji": "重",
+    "radical": "里",
+    "meaning": "Berat / Menumpuk",
+    "pic": "Gambar tas muatan padat tumpuk yang dipikul di atas lahan (里).",
+    "filo": "Bobot berkapasitas besar."
+  },
+  {
+    "kanji": "軽",
+    "radical": "車",
+    "meaning": "Ringan",
+    "pic": "Gabungan roda gerobak meluncur (車) dan benang halus terurai cepat (径/圣).",
+    "filo": "Bobot kecil yang mudah dipindahkan."
+  },
+  {
+    "kanji": "季",
+    "radical": "子",
+    "meaning": "Musim",
+    "pic": "Gambar tanaman padi panen (禾) yang menaungi siklus anak tumbuh (子).",
+    "filo": "Pembagian kurun waktu iklim dalam setahun."
+  },
+  {
+    "kanji": "節",
+    "radical": "竹",
+    "meaning": "Persendian / Musim Perayaan",
+    "pic": "Gabungan ruas-ruas bambu (竹) dan batasan jatah porsi (即).",
+    "filo": "Ruas-ruas batas pembagi waktu atau tubuh."
+  },
+  {
+    "kanji": "春",
+    "radical": "日",
+    "meaning": "Musim Semi",
+    "pic": "Gambar sinar matahari (日) membangkitkan tunas tanaman bertumbuh (艸/屯).",
+    "filo": "Musim mekarnya tumbuhan saat udara mulai hangat."
+  },
+  {
+    "kanji": "夏",
+    "radical": "夂",
+    "meaning": "Musim Panas",
+    "pic": "Gambar penari berhias kepala indah yang melangkah gemulai (頁/夂).",
+    "filo": "Musim perayaan hangat penuh semangat."
+  },
+  {
+    "kanji": "秋",
+    "radical": "禾",
+    "meaning": "Musim Gugur",
+    "pic": "Gabungan tanaman padi matang kuning (禾) dan pengeringan pembakaran (火).",
+    "filo": "Musim panen padi saat dedaunan mengering."
+  },
+  {
+    "kanji": "冬",
+    "radical": "冫",
+    "meaning": "Musim Dingin",
+    "pic": "Gambar simpul tali pengikat akhir (夂) dipadukan kristal titik es membeku (冫).",
+    "filo": "Musim penutup tahun yang dipenuhi es."
+  },
+  {
+    "kanji": "雪",
+    "radical": "雨",
+    "meaning": "Salju",
+    "pic": "Gambar curahan air langit (雨) yang disapu bersih oleh tangan (彗/ヨ).",
+    "filo": "Kristal es putih yang jatuh dari langit."
+  },
+  {
+    "kanji": "曇",
+    "radical": "日",
+    "meaning": "Berawan",
+    "pic": "Gabungan matahari (日) yang tertutup oleh gumpalan awan tebal (雲).",
+    "filo": "Kondisi langit terhalang oleh lapisan awan."
+  },
+  {
+    "kanji": "港",
+    "radical": "水",
+    "meaning": "Pelabuhan",
+    "pic": "Gabungan aliran air sungai/laut (水) dan persimpangan jalur kapal (巷).",
+    "filo": "Fasilitas dermaga perhentian kapal."
+  },
+  {
+    "kanji": "祭",
+    "radical": "示",
+    "meaning": "Festival / Perayaan",
+    "pic": "Gambar tangan (又) meletakkan potongan daging (肉) di atas mezbah doa (示).",
+    "filo": "Ritual persembahan suci dan perayaan."
+  },
+  {
+    "kanji": "身",
+    "radical": "身",
+    "meaning": "Badan / Diri",
+    "pic": "Piktograf sosok wanita hamil memperlihatkan perutnya.",
+    "filo": "Wujud fisik raga diri manusia."
+  },
+  {
+    "kanji": "豚",
+    "radical": "豕",
+    "meaning": "Babi",
+    "pic": "Gabungan potongan daging ternak (月/肉) dan hewan ternak babi (豕).",
+    "filo": "Hewan ternak babi konsumsi."
+  },
+  {
+    "kanji": "葉",
+    "radical": "艸",
+    "meaning": "Daun",
+    "pic": "Gambar mahkota tanaman (艹) dengan lembaran berpucuk di atas dahan pohon (世/木).",
+    "filo": "Bagian pipih hijau dari tanaman."
+  },
+  {
+    "kanji": "疲",
+    "radical": "疒",
+    "meaning": "Lelah / Letih",
+    "pic": "Gabungan kondisi tubuh terkulai (疒) dan kulit terkelupas lemas (皮).",
+    "filo": "Kondisi fisik yang kehabisan tenaga."
+  },
+  {
+    "kanji": "遊",
+    "radical": "辶",
+    "meaning": "Bermain / Bersenang-senang",
+    "pic": "Gambar anak kecil (子) membawa panji melangkah santai di jalanan (辶/斿).",
+    "filo": "Melakukan aktivitas menyenangkan tanpa beban."
+  },
+  {
+    "kanji": "泳",
+    "radical": "水",
+    "meaning": "Berenang",
+    "pic": "Gabungan aliran air (水) dan pergerakan manusia menyelam lama (永).",
+    "filo": "Menggerakkan tubuh meluncur di air."
+  },
+  {
+    "kanji": "迎",
+    "radical": "辶",
+    "meaning": "Menyambut",
+    "pic": "Gabungan jalur langkah (辶) dan posisi orang bersimpuh hormat menghadap (卬).",
+    "filo": "Berjalan keluar untuk menyapa kedatangan tamu."
+  },
+  {
+    "kanji": "結",
+    "radical": "糸",
+    "meaning": "Mengikat / Hasil",
+    "pic": "Gabungan pilinan benang (糸) dan penguatan ikatan rapat (吉).",
+    "filo": "Menautkan dua benang menjadi ikatan kokoh."
+  },
+  {
+    "kanji": "散",
+    "radical": "攴",
+    "meaning": "Menebar / Berserakan / Jalan-jalan",
+    "pic": "Gambar pukulan kayu (攵) meremukkan tumpukan benang rami hingga menyebar (散/𪛏).",
+    "filo": "Menyebarkan potongan ke berbagai arah."
+  },
+  {
+    "kanji": "欲",
+    "radical": "欠",
+    "meaning": "Ingin / Hasrat",
+    "pic": "Gabungan lembah penampung (谷) dan mulut menganga menginginkan sesuatu (欠).",
+    "filo": "Hasrat kuat untuk memiliki sesuatu."
+  },
+  {
+    "kanji": "広",
+    "radical": "广",
+    "meaning": "Luas",
+    "pic": "Gambar hall ruangan beratap besar (广) yang terbuka lebar (厶).",
+    "filo": "Area membentang lapang tanpa sekat."
+  },
+  {
+    "kanji": "狭",
+    "radical": "犬",
+    "meaning": "Sempit",
+    "pic": "Gabungan hewan pemangsa (犭) dan celah terjepit di antara dua tempat (夾).",
+    "filo": "Ruang berdinding rapat yang terbatas."
+  },
+  {
+    "kanji": "釣",
+    "radical": "金",
+    "meaning": "Memancing",
+    "pic": "Gabungan mata kail logam (金) dan sendok pancing pelengkung (勺).",
+    "filo": "Menangkap ikan menggunakan kail logam."
+  },
+  {
+    "kanji": "末",
+    "radical": "木",
+    "meaning": "Ujung / Akhir",
+    "pic": "Gambar pohon (木) dengan garis paku penanda tebal diletakkan di bagian ujung dahan atas.",
+    "filo": "Titik batas paling ujung dari dahan."
+  },
+  {
+    "kanji": "正",
+    "radical": "止",
+    "meaning": "Benar / Tepat / Lurus",
+    "pic": "Gambar langkah kaki (止) bergerak lurus menuju batas benteng sasaran (一).",
+    "filo": "Tindakan lurus yang sesuai kebenaran."
+  },
+  {
+    "kanji": "別",
+    "radical": "刀",
+    "meaning": "Berpisah / Lain",
+    "pic": "Gambar pisau pemotong (刀) yang memisahkan ikatan tulang kerangka (冎).",
+    "filo": "Mematahkan sambungan menjadi terpisah."
+  },
+  {
+    "kanji": "呼",
+    "radical": "口",
+    "meaning": "Memanggil / Bernapas",
+    "pic": "Gabungan hembusan mulut (口) dan hembusan napas melengkung keluar (乎).",
+    "filo": "Mengeluarkan suara memanggil dari mulut."
+  },
+  {
+    "kanji": "座",
+    "radical": "广",
+    "meaning": "Tempat Duduk",
+    "pic": "Gambar dua orang (人人) duduk berdampingan di atas alas tanah (土) di dalam rumah (广).",
+    "filo": "Lokasi khusus yang disediakan untuk duduk."
+  },
+  {
+    "kanji": "住",
+    "radical": "人",
+    "meaning": "Tinggal / Menghuni",
+    "pic": "Gabungan sosok manusia (人) dan penempatan posisi tetap seperti nyala lilin (主).",
+    "filo": "Menetap bertempat tinggal di suatu daerah."
+  },
+  {
+    "kanji": "塩",
+    "radical": "土",
+    "meaning": "Garam",
+    "pic": "Gambar uap penguapan air laut dalam wadah tembikar di atas tungku tanah (監/土).",
+    "filo": "Kristal asin hasil penguapan air laut."
+  },
+  {
+    "kanji": "砂",
+    "radical": "石",
+    "meaning": "Pasir",
+    "pic": "Gabungan pecahan batu alam (石) yang tergerus menjadi butiran kecil (少).",
+    "filo": "Butiran halus hasil hancuran batu."
+  },
+  {
+    "kanji": "糖",
+    "radical": "米",
+    "meaning": "Gula",
+    "pic": "Gabungan sari bulir bahan beras/tanaman (米) dan proses pemrosesan manis (唐).",
+    "filo": "Kristal pemanis makanan olahan."
+  },
+  {
+    "kanji": "問",
+    "radical": "口",
+    "meaning": "Bertanya / Soal",
+    "pic": "Gambar organ mulut (口) yang diutarakan di celah pintu gerbang (門).",
+    "filo": "Mengajukan pertanyaan untuk mendapat penjelasan."
+  },
+  {
+    "kanji": "信",
+    "radical": "人",
+    "meaning": "Percaya / Surat / Kepercayaan",
+    "pic": "Gabungan sosok manusia (人) dan keteguhan ujaran kata perkataan (言).",
+    "filo": "Memegang teguh kebenaran perkataan seseorang."
+  },
+  {
+    "kanji": "曲",
+    "radical": "曰",
+    "meaning": "Bengkok / Lagu",
+    "pic": "Gambar keranjang anyaman bambu yang melengkung tertekuk.",
+    "filo": "Bentuk melengkung atau alur nada lagu."
+  },
+  {
+    "kanji": "置",
+    "radical": "网",
+    "meaning": "Meletakkan",
+    "pic": "Gambar jaring perangkap (罒) yang ditaruh secara tepat lurus di tanah (直).",
+    "filo": "Menempatkan barang pada posisi tertentu."
+  },
+  {
+    "kanji": "資",
+    "radical": "貝",
+    "meaning": "Aset / Modal / Sumber Daya",
+    "pic": "Gabungan penyediaan fondasi utama (次) dan nilai uang kerang bernilai (貝).",
+    "filo": "Kekayaan yang digunakan sebagai modal."
+  },
+  {
+    "kanji": "刻",
+    "radical": "刀",
+    "meaning": "Mengukir / Memotong",
+    "pic": "Gabungan babi terikat (亥) dan pahat pisau tajam pemotong (刀).",
+    "filo": "Menggoreskan garis pada bahan keras."
+  },
+  {
+    "kanji": "服",
+    "radical": "月",
+    "meaning": "Pakaian / Mematuhi",
+    "pic": "Gambar tangan memegang dan menundukkan sosok manusia mengenakan busana (卩/又/月).",
+    "filo": "Busana yang dikenakan melekat di tubuh."
+  },
+  {
+    "kanji": "製",
+    "radical": "衣",
+    "meaning": "Manufaktur / Memproduksi",
+    "pic": "Gabungan pemotongan pisau kain (制) dan penjahitan busana pakaian (衣).",
+    "filo": "Proses pembuatan barang olahan."
+  },
+  {
+    "kanji": "品",
+    "radical": "口",
+    "meaning": "Barang / Kualitas",
+    "pic": "Tiga wadah tempat penyimpanan barang (口口口) yang disusun rapi.",
+    "filo": "Produk atau barang dagangan yang dinilai keunggulannya."
+  },
+  {
+    "kanji": "済",
+    "radical": "水",
+    "meaning": "Selesai / Melunasi",
+    "pic": "Gabungan aliran air meluncur lancar (水) dan keungkitan pertolongan (斉).",
+    "filo": "Menyelesaikan kewajiban dengan tuntas."
+  },
+  {
+    "kanji": "市",
+    "radical": "巾",
+    "meaning": "Pasar / Kota",
+    "pic": "Gambar tiang beralaskan pataka bendera transaksi pasar (巾/亠).",
+    "filo": "Pusat keramaian tempat jual beli barang."
+  },
+  {
+    "kanji": "役",
+    "radical": "彳",
+    "meaning": "Peran / Tugas Служба",
+    "pic": "Gabungan langkah bertugas di jalan (彳) dan pengayunan senjata tombak tugas (殳).",
+    "filo": "Menjalankan tugas atau fungsi spesifik."
+  },
+  {
+    "kanji": "歯",
+    "radical": "歯",
+    "meaning": "Gigi",
+    "pic": "Gambar barisan gigi di dalam rongga mulut tempat mengunyah beras (止/米/凵).",
+    "filo": "Organ keras pengetes makanan di mulut."
+  },
+  {
+    "kanji": "独",
+    "radical": "犬",
+    "meaning": "Sendirian / Mandiri",
+    "pic": "Gabungan hewan pemburu tunggal (犭) dan belalang mengasing (蜀).",
+    "filo": "Kondisi berdiri sendiri tanpa pendamping."
+  },
+  {
+    "kanji": "皆",
+    "radical": "白",
+    "meaning": "Semua Orang / Seluruhnya",
+    "pic": "Gambar sekelompok orang bersimpuh berbaris bersama (比) mengutarakan suara (白).",
+    "filo": "Keseluruhan individu tanpa terkecuali."
+  },
+  {
+    "kanji": "思",
+    "radical": "心",
+    "meaning": "Berpikir / Merasa",
+    "pic": "Gambar ubun-ubun kepala pemikiran (田/囟) yang terhubung ke perasaan hati (心).",
+    "filo": "Proses mengolah pikiran di dalam dada."
+  },
+  {
+    "kanji": "換",
+    "radical": "手",
+    "meaning": "Menukar",
+    "pic": "Gabungan tangan bertransaksi (手) dan seruan pertukaran barang (奐).",
+    "filo": "Mengganti barang dengan aset sepadan."
+  },
+  {
+    "kanji": "浴",
+    "radical": "水",
+    "meaning": "Mandi / Menyiram",
+    "pic": "Gabungan guyuran air murni (水) dan aliran lorong lembah (谷).",
+    "filo": "Membersihkan tubuh dengan guyuran air."
+  },
+  {
+    "kanji": "押",
+    "radical": "手",
+    "meaning": "Menekan / Mendorong",
+    "pic": "Gabungan telapak tangan (扌) dan penahanan batas pintu (甲).",
+    "filo": "Mendorong atau menekan benda memakai tangan."
+  },
+  {
+    "kanji": "始",
+    "radical": "女",
+    "meaning": "Mulai",
+    "pic": "Gabungan sosok wanita melahirkan (女) dan tuturan awal dari mulut (台/口).",
+    "filo": "Titik awal dari suatu proses."
+  },
+  {
+    "kanji": "若",
+    "radical": "艸",
+    "meaning": "Muda",
+    "pic": "Gambar tanaman pucuk segar (艹) yang dipetik wanita dengan lembut (女/右).",
+    "filo": "Kondisi segar berusia muda."
+  },
+  {
+    "kanji": "短",
+    "radical": "矢",
+    "meaning": "Pendek",
+    "pic": "Gabungan anak panah pengukur (矢) dan wadah penakar berkaki pendek (豆).",
+    "filo": "Ukuran dimensi yang singkat atau pendek."
+  },
+  {
+    "kanji": "暗",
+    "radical": "日",
+    "meaning": "Gelap / Remang",
+    "pic": "Gabungan terbenamnya matahari (日) dan suara terngiang di kegelapan (音).",
+    "filo": "Kondisi minim pendar cahaya."
+  },
+  {
+    "kanji": "頭",
+    "radical": "頁",
+    "meaning": "Kepala",
+    "pic": "Gabungan penakar berkaki tinggi (豆) dan bagian kepala manusia (頁).",
+    "filo": "Bagian tubuh paling atas."
+  },
+  {
+    "kanji": "髪",
+    "radical": "髟",
+    "meaning": "Rambut Kepala",
+    "pic": "Gabungan helai rambut panjang menjuntai (髟) dan penarik penyisir (友/犬).",
+    "filo": "Helai mahkota yang tumbuh di kepala."
+  },
+  {
+    "kanji": "顔",
+    "radical": "頁",
+    "meaning": "Wajah / Muka",
+    "pic": "Gabungan pendaran warna rupa (彦) dan bagian kepala penglihatan (頁).",
+    "filo": "Tampak muka bagian depan kepala."
+  },
+  {
+    "kanji": "鼻",
+    "radical": "鼻",
+    "meaning": "Hidung",
+    "pic": "Gambar organ hidung (自) disangga wadah pernapasan (畀).",
+    "filo": "Organ penciuman dan saluran napas."
+  },
+  {
+    "kanji": "緑",
+    "radical": "糸",
+    "meaning": "Hijau",
+    "pic": "Gabungan benang tenun (糸) dan hasil celupan warna alami dedaunan (录).",
+    "filo": "Warna kesegaran dedaunan alam."
+  },
+  {
+    "kanji": "寺",
+    "radical": "寸",
+    "meaning": "Kuil Buddha",
+    "pic": "Gambar telapak tangan (寸) memegang aturan tegak lurus di tempat suci (止).",
+    "filo": "Bangunan kuil tempat ibadah dan bertapa."
+  },
+  {
+    "kanji": "神",
+    "radical": "示",
+    "meaning": "Dewa / Tuhan / Semesta",
+    "pic": "Gabungan mezbah doa persembahan (示) dan kilatan petir penguasa alam (申).",
+    "filo": "Entitas pencipta atau dewa dalam kepercayaan."
+  },
+  {
+    "kanji": "証",
+    "radical": "言",
+    "meaning": "Bukti / Kesaksian",
+    "pic": "Gabungan ucapan kata perkataan (言) dan tindakan jujur lurus (正).",
+    "filo": "Pernyataan jujur sebagai bukti sah."
+  },
+  {
+    "kanji": "額",
+    "radical": "頁",
+    "meaning": "Dahi / Jumlah Uang",
+    "pic": "Gabungan ukuran tempat berlindung (客) dan batas dahi di kepala (頁).",
+    "filo": "Area kening dahi atau nominal nominal nilai."
+  },
+  {
+    "kanji": "確",
+    "radical": "石",
+    "meaning": "Pasti / Nyata",
+    "pic": "Gabungan keteguhan batu keras (石) dan cengkeraman kokoh burung (鶴/隺).",
+    "filo": "Kondisi kokoh yang tak terbantahkan."
+  },
+  {
+    "kanji": "認",
+    "radical": "言",
+    "meaning": "Mengenali / Mengakui",
+    "pic": "Gabungan kata perkataan (言) dan daya tahan kesabaran (忍).",
+    "filo": "Menerima dan mengakui kebenaran."
+  },
+  {
+    "kanji": "覚",
+    "radical": "見",
+    "meaning": "Mengingat / Sadar / Bangun",
+    "pic": "Gambar jaringan pemikiran di atas kepala (爻/冖) dipadukan penglihatan mata (見).",
+    "filo": "Kesadaran pikiran yang memahami keadaan."
+  },
+  {
+    "kanji": "払",
+    "radical": "手",
+    "meaning": "Membayar / Membersihkan",
+    "pic": "Gabungan telapak tangan (扌) dan gerakan mengibaskan debu (厶).",
+    "filo": "Mengibaskan tangan melunasi atau membersihkan."
+  },
+  {
+    "kanji": "返",
+    "radical": "辶",
+    "meaning": "Mengembalikan",
+    "pic": "Gabungan lintasan alur (辶) dan pergerakan membalikkan posisi (反).",
+    "filo": "Mengirimkan kembali ke pemilih awal."
+  },
+  {
+    "kanji": "危",
+    "radical": "卩",
+    "meaning": "Bahaya",
+    "pic": "Gambar seseorang berdiri di tepi tebing curam bersiap tergelincir.",
+    "filo": "Keadaan rawan kecelakaan di tempat tinggi."
+  },
+  {
+    "kanji": "煙",
+    "radical": "火",
+    "meaning": "Asap",
+    "pic": "Gabungan nyala kobaran api (火) dan jelaga dalam perapian rumah ( smoke/ run).",
+    "filo": "Uap gas hasil pembakaran api."
+  },
+  {
+    "kanji": "薬",
+    "radical": "艸",
+    "meaning": "Obat",
+    "pic": "Gambar tanaman herbal (艹) yang memberikan rasa nyaman gembira pada tubuh (楽).",
+    "filo": "Ramuan Tumbuhan pemulih kesehatan."
+  },
+  {
+    "kanji": "着",
+    "radical": "目",
+    "meaning": "Memakai / Tiba",
+    "pic": "Gambar penempelan bulu pakaian (羊) tepat menutupi penglihatan/tubuh (目).",
+    "filo": "Melekatkan busana di badan atau sampai di lokasi."
+  },
+  {
+    "kanji": "弾",
+    "radical": "弓",
+    "meaning": "Peluru / Memainkan Alat Musik Petik",
+    "pic": "Gabungan busur pelontar (弓) dan pelepasan beban getar padat (単).",
+    "filo": "Melontarkan atau memetik dawai kencang."
+  },
+  {
+    "kanji": "捨",
+    "radical": "手",
+    "meaning": "Membuang",
+    "pic": "Gabungan gerakan tangan (手) dan melepaskan rumah hunian (吉/舎).",
+    "filo": "Melepaskan benda dari genggaman."
+  },
+  {
+    "kanji": "現",
+    "radical": "玉",
+    "meaning": "Muncul / Nyata",
+    "pic": "Gabungan kilau permata giok (王) dan penglihatan mata langsung (見).",
+    "filo": "Wujud nyata yang tampak di depan mata."
+  },
+  {
+    "kanji": "趣",
+    "radical": "走",
+    "meaning": "Hobi / Ketertarikan / Nuansa",
+    "pic": "Gabungan langkah kaki cepat (走) untuk meraih mengambil hal yang disukai (取).",
+    "filo": "Kecenderungan minat yang dikejar."
+  },
+  {
+    "kanji": "記",
+    "radical": "言",
+    "meaning": "Mencatat / Mengingat",
+    "pic": "Gabungan ucapan kata (言) dan perayapan jalur teratur (己).",
+    "filo": "Menuliskan informasi agar tidak terlupakan."
+  },
+  {
+    "kanji": "祈",
+    "radical": "示",
+    "meaning": "Berdoa / Memohon",
+    "pic": "Gabungan mezbah doa persembahan (示) dan perkakas kapak penghormatan (斤).",
+    "filo": "Memanjatkan doa permohonan ke hadapan dewa."
+  },
+  {
+    "kanji": "課",
+    "radical": "言",
+    "meaning": "Pelajaran / Sektor",
+    "pic": "Gabungan penataan ucapan kata (言) dan pembagian hasil matang buah (果).",
+    "filo": "Tugas terbagi yang diamanahkan."
+  },
+  {
+    "kanji": "馬",
+    "radical": "馬",
+    "meaning": "Kuda",
+    "pic": "Piktograf kuda lengkap dengan surai di leher dan empat kaki berlari.",
+    "filo": "Hewan berlari cepat pengangkut muatan."
+  },
+  {
+    "kanji": "登",
+    "radical": "癶",
+    "meaning": "Mendaki / Memanjat",
+    "pic": "Gambar dua kaki melangkah naik (癶) membawakan wadah persembahan ke tempat tinggi (豆).",
+    "filo": "Melangkah naik menuju lokasi puncak."
+  },
+  {
+    "kanji": "泊",
+    "radical": "水",
+    "meaning": "Menginap / Berlabuh",
+    "pic": "Gabungan tepi perairan (水) dan kejelasan titik murni (白).",
+    "filo": "Menghentikan perjalanan untuk bermalam."
+  },
+  {
+    "kanji": "掃",
+    "radical": "手",
+    "meaning": "Menyapu",
+    "pic": "Gabungan gerakan tangan (扌) dan pengoperasian alat sapu kain (帚).",
+    "filo": "Membersihkan lantai dengan mengayunkan sapu."
+  },
+  {
+    "kanji": "除",
+    "radical": "阜",
+    "meaning": "Menghapus / Membuang",
+    "pic": "Gabungan tebing tangga pembatas (阝) dan pengeluaran barang dari lorong (余).",
+    "filo": "Menyingkirkan kotoran atau hambatan."
+  },
+  {
+    "kanji": "濯",
+    "radical": "水",
+    "meaning": "Mencuci Pakaian",
+    "pic": "Gabungan air pembilas (水) dan kepakan burung pembilas di air (曜/羽).",
+    "filo": "Mencuci kain dalam air mengalir."
+  },
+  {
+    "kanji": "練",
+    "radical": "糸",
+    "meaning": "Melatih / Memoles",
+    "pic": "Gabungan pemrosesan serat benang (糸) dan perebusan pemurnian kuali (東/揀).",
+    "filo": "Menggembleng kemampuan agar sempurna."
+  },
+  {
+    "kanji": "弱",
+    "radical": "弓",
+    "meaning": "Lemah",
+    "pic": "Gambar dua busur panah kecil yang dipasangi bulu-bulu tipis melengkung.",
+    "filo": "Kondisi fisik yang tidak memilik daya tahan."
+  },
+  {
+    "kanji": "撲",
+    "radical": "手",
+    "meaning": "Memukul / Tinju",
+    "pic": "Gabungan telapak tangan (扌) dan pukulan ranting semak (仆/菐).",
+    "filo": "Mengayunkan pukulan tangan kencang."
+  },
+  {
+    "kanji": "乾",
+    "radical": "乙",
+    "meaning": "Kering",
+    "pic": "Gambar terik sinar matahari terbit memancarkan panas pengering air di tanah (朝/乞).",
+    "filo": "Kondisi tanpa kandungan air."
+  },
+  {
+    "kanji": "杯",
+    "radical": "木",
+    "meaning": "Cangkir / Gelas",
+    "pic": "Gabungan wadah cangkir kayu (木) dan penyangkalan isi (不).",
+    "filo": "Wadah cangkir penampung minuman."
+  },
+  {
+    "kanji": "要",
+    "radical": "襾",
+    "meaning": "Penting / Membutuhkan",
+    "pic": "Gambar seorang wanita meletakkan kedua tangan di pinggangnya.",
+    "filo": "Pusat fondasi utama yang mutlak dibutuhkan."
+  },
+  {
+    "kanji": "修",
+    "radical": "人",
+    "meaning": "Memperbaiki / Memoles",
+    "pic": "Gabungan sosok manusia (人) yang membilas dan menggosok rambut hingga indah (彡/攸).",
+    "filo": "Merapikan kembali bagian yang rusak."
+  }
+]
