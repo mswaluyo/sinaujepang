@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
@@ -206,10 +206,6 @@
     }
     window.addEventListener("fuji:auth", function () {
       try {
-        if (!window.fujiUser && location.pathname !== "/login.html") {
-          location.replace("/login.html");
-          return;
-        }
         renderUser().catch(function(){});
         renderAdminBtn().catch(function(){});
       } catch (e) {}

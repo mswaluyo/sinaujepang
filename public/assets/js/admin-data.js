@@ -1,6 +1,6 @@
 import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp, documentId } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 const $ = id => document.getElementById(id);
-const PACKS = ["aoi-quiz", "basu-quiz", "jinja-quiz", "kagi-quiz", "tamago-quiz", "gakusei-quiz", "magarimasu-quiz"];
+const PACKS = ["aoi-quiz", "basu-quiz", "gakusei-quiz", "haburashi-quiz", "hare-quiz", "hashi-quiz", "jinja-quiz", "kagi-quiz", "kuroi-quiz", "kutsushita-quiz", "lolosyuk-quiz", "magarimasu-quiz", "orimasu-quiz", "shatsu-quiz", "tamago-quiz", "tomemasu-quiz"];
 const _q = { mode: "ringkas", rows: [], shown: 50, lastDoc: null, done: false, loading: false, sort: "waktu", dir: -1 };
 function _qJftNum(p) { return Math.round(10 + ((p || 0) / 100) * 240); }
 // J eksak dari benar/total (tanpa lewat persen bulat) — SAMA dengan hasil.html & Detail.
@@ -212,7 +212,9 @@ window._aJsonNilai = function () {
   a.download = "nilai-siswa.json"; document.body.appendChild(a); a.click(); a.remove();
 };
 window._aInitSoal = function () {
-  $("sPack").innerHTML = PACKS.map(p => "<option>" + p + "</option>").join("");
+  $("sPack").innerHTML = PACKS.map(p => "<option value='" + p + "'>" + p + "</option>").join("");
+  
+  // Nilai Tab Events (dipertahankan)
   const _qRe = () => { _q.shown = 50; renderNilai(); };
   $("qGo").onclick = function () { window._aLoadNilai(true); };
   if ($("qMode")) $("qMode").onchange = _qRe;
@@ -222,24 +224,499 @@ window._aInitSoal = function () {
   const qCsv = $("qCsv"); if (qCsv) qCsv.onclick = window._aCsvNilai;
   const qJson = $("qJson"); if (qJson) qJson.onclick = window._aJsonNilai;
   const qPrint = $("qPrint"); if (qPrint) qPrint.onclick = window._qPrint;
+
+  // State Soal Editor
+  let _sItems = [];
+  let _sIdx = -1;
+  let _sModeJson = false;
+
+  function _validateItem(q) {
+    if (!q) return { ok: false, level: "err", reason: "Data soal kosong" };
+    if (!Array.isArray(q.options) || q.options.length < 2) {
+      return { ok: false, level: "err", reason: "Pilihan jawaban minimal 2 opsi" };
+    }
+    if (typeof q.answer !== "number" || q.answer < 0 || q.answer >= q.options.length) {
+      return { ok: false, level: "err", reason: "Kunci jawaban di luar pilihan" };
+    }
+    if (!q.title && !q.img && !q.audio) {
+      return { ok: false, level: "err", reason: "Materi soal (teks/gambar/audio) belum ada" };
+    }
+    if (!q.analisis || !q.analisis.trim()) {
+      return { ok: false, level: "warn", reason: "Pembahasan / Analisis belum diisi" };
+    }
+    if (!q.trans || !q.trans.trim()) {
+      return { ok: false, level: "warn", reason: "Terjemahan soal belum diisi" };
+    }
+    return { ok: true, level: "ok", reason: "Lengkap & Valid" };
+  }
+
+  function _syncJson() {
+    if ($("sJson")) $("sJson").value = JSON.stringify(_sItems, null, 1);
+  }
+
+  function _renderQList() {
+    const listEl = $("sQList");
+    if (!listEl) return;
+    $("sCountBadge").textContent = _sItems.length;
+
+    // Kumpulkan daftar seksi unik untuk filter
+    const secSelect = $("sFilterSec");
+    const currentFilterSec = secSelect.value;
+    const secSet = new Set();
+    _sItems.forEach(q => { if (q.section) secSet.add(q.section.trim()); });
+    secSelect.innerHTML = "<option value=''>Semua Sesi (" + secSet.size + " sesi)</option>" +
+      Array.from(secSet).map(s => "<option value='" + s + "'" + (s === currentFilterSec ? " selected" : "") + ">" + s + "</option>").join("");
+
+    const filterText = ($("sFilterText").value || "").toLowerCase().trim();
+    const filterSec = secSelect.value;
+
+    listEl.innerHTML = "";
+    if (!_sItems.length) {
+      listEl.innerHTML = "<div class='text-center py-8 text-slate-400 text-xs'>Belum ada soal. Klik 'Tambah Soal' atau 'Muat Soal'.</div>";
+      return;
+    }
+
+    _sItems.forEach((q, idx) => {
+      const secMatch = !filterSec || (q.section || "").trim() === filterSec;
+      const textMatch = !filterText ||
+        String(q.no || (idx + 1)).includes(filterText) ||
+        (q.title || "").toLowerCase().includes(filterText) ||
+        (q.analisis || "").toLowerCase().includes(filterText) ||
+        (q.trans || "").toLowerCase().includes(filterText);
+
+      if (!secMatch || !textMatch) return;
+
+      const v = _validateItem(q);
+      const isActive = idx === _sIdx;
+
+      const itemCard = document.createElement("div");
+      itemCard.className = "p-2.5 rounded-xl border cursor-pointer transition-all flex items-start gap-2.5 " +
+        (isActive
+          ? "bg-fuji-50 border-fuji-400 shadow-sm ring-1 ring-fuji-400"
+          : "bg-white hover:bg-slate-50 border-slate-200");
+
+      let iconHtml = '<i class="fa-solid fa-circle-check text-emerald-500 text-sm shrink-0 mt-0.5" title="Valid & Lengkap"></i>';
+      if (v.level === "warn") {
+        iconHtml = '<i class="fa-solid fa-triangle-exclamation text-amber-500 text-sm shrink-0 mt-0.5" title="' + v.reason + '"></i>';
+      } else if (v.level === "err") {
+        iconHtml = '<i class="fa-solid fa-circle-xmark text-rose-500 text-sm shrink-0 mt-0.5" title="' + v.reason + '"></i>';
+      }
+
+      const qTitleText = q.title ? q.title.replace(/\n/g, " ") : (q.img ? "[Gambar: " + q.img + "]" : (q.audio ? "[Audio Choukai]" : "(Soal belum ada teks)"));
+
+      itemCard.innerHTML = iconHtml +
+        "<div class='flex-1 min-w-0'>" +
+          "<div class='flex items-center justify-between gap-1 mb-0.5'>" +
+            "<span class='text-xs font-bold " + (isActive ? "text-fuji-700" : "text-slate-800") + "'>No. " + (q.no || (idx + 1)) + "</span>" +
+            "<span class='text-[10px] text-slate-400 truncate max-w-[120px]'>" + (q.section || "") + "</span>" +
+          "</div>" +
+          "<p class='text-[11px] text-slate-600 line-clamp-1 truncate'>" + qTitleText + "</p>" +
+        "</div>";
+
+      itemCard.onclick = () => {
+        _sIdx = idx;
+        _renderQList();
+        _renderActiveForm();
+      };
+
+      listEl.appendChild(itemCard);
+    });
+  }
+
+  function _renderActiveForm() {
+    const emptyBox = $("sFormEmpty");
+    const formBody = $("sFormBody");
+    if (!emptyBox || !formBody) return;
+
+    if (_sIdx < 0 || _sIdx >= _sItems.length) {
+      emptyBox.classList.remove("hidden");
+      formBody.classList.add("hidden");
+      return;
+    }
+
+    emptyBox.classList.add("hidden");
+    formBody.classList.remove("hidden");
+
+    const q = _sItems[_sIdx];
+    const packSlug = $("sPack").value;
+
+    $("fNo").value = q.no != null ? q.no : (_sIdx + 1);
+    $("fSection").value = q.section || "";
+    $("fTitle").value = q.title || "";
+    $("fTrans").value = q.trans || "";
+    $("fImg").value = q.img || "";
+    $("fAudio").value = q.audio || "";
+    $("fMnn").value = q.mnn || "";
+    $("fAnalisis").value = q.analisis || "";
+
+    // Image preview
+    const imgBox = $("fImgPreviewBox");
+    const imgEl = $("fImgPreview");
+    if (q.img && q.img.trim()) {
+      const src = (q.img.startsWith("/") || q.img.startsWith("http")) ? q.img : ("/" + packSlug + "/" + q.img);
+      imgEl.src = src;
+      imgEl.onerror = () => { imgEl.alt = "Gambar tidak ditemukan di: " + src; };
+      imgBox.classList.remove("hidden");
+    } else {
+      imgBox.classList.add("hidden");
+    }
+
+    // Audio preview
+    const audioEl = $("fAudioPlayer");
+    if (q.audio && q.audio.trim()) {
+      const src = (q.audio.startsWith("/") || q.audio.startsWith("http")) ? q.audio : ("/" + packSlug + "/" + q.audio);
+      audioEl.src = src;
+      audioEl.classList.remove("hidden");
+    } else {
+      audioEl.classList.add("hidden");
+    }
+
+    // Options rendering
+    const optContainer = $("fOptionsContainer");
+    optContainer.innerHTML = "";
+    if (!Array.isArray(q.options)) q.options = [{ text: "" }, { text: "" }, { text: "" }, { text: "" }];
+    if (!Array.isArray(q.opt_detail)) q.opt_detail = [];
+
+    const LETTERS = ["A", "B", "C", "D", "E", "F"];
+    q.options.forEach((opt, oi) => {
+      const isCorrect = q.answer === oi;
+      const detail = q.opt_detail[oi] || {};
+      const optRow = document.createElement("div");
+      optRow.className = "p-3 rounded-xl border transition-all " +
+        (isCorrect
+          ? "bg-emerald-50/70 border-emerald-300 ring-1 ring-emerald-300"
+          : "bg-slate-50 border-slate-200");
+
+      optRow.innerHTML =
+        "<div class='flex items-center gap-2 mb-2'>" +
+          "<label class='cursor-pointer flex items-center gap-2'>" +
+            "<input type='radio' name='fAnsKey' value='" + oi + "' " + (isCorrect ? "checked" : "") + " class='w-4 h-4 text-emerald-600 focus:ring-emerald-500'>" +
+            "<span class='w-6 h-6 rounded-lg text-xs font-black flex items-center justify-center " +
+              (isCorrect ? "bg-emerald-600 text-white" : "bg-slate-200 text-slate-700") + "'>" +
+              (LETTERS[oi] || (oi + 1)) +
+            "</span>" +
+            "<span class='text-xs font-bold " + (isCorrect ? "text-emerald-800" : "text-slate-700") + "'>" +
+              (isCorrect ? "Kunci Jawaban Benar" : "Pilihan " + (LETTERS[oi] || (oi + 1))) +
+            "</span>" +
+          "</label>" +
+        "</div>" +
+        "<div class='grid grid-cols-1 md:grid-cols-2 gap-2'>" +
+          "<div>" +
+            "<input placeholder='Teks Pilihan (contoh: あかい / akai)' class='optText border border-slate-300 bg-white rounded-lg px-2.5 py-1.5 text-xs w-full text-slate-800' value='" + (opt.text ? String(opt.text).replace(/'/g, "&#39;") : "") + "'>" +
+          "</div>" +
+          "<div>" +
+            "<input placeholder='Penjelasan Opsi / Arti (contoh: merah, lawan dari biru)' class='optReason border border-slate-200 bg-white rounded-lg px-2.5 py-1.5 text-xs w-full text-slate-600' value='" + ((detail.alasan || detail.arti || "") ? String(detail.alasan || detail.arti).replace(/'/g, "&#39;") : "") + "'>" +
+          "</div>" +
+        "</div>";
+
+      // Radio button change
+      const radio = optRow.querySelector("input[type=radio]");
+      radio.onchange = () => {
+        q.answer = oi;
+        _syncJson();
+        _renderQList();
+        _renderActiveForm();
+      };
+
+      // Option text change
+      const textInput = optRow.querySelector(".optText");
+      textInput.oninput = () => {
+        opt.text = textInput.value;
+        _syncJson();
+        _renderQList();
+        _updateStatusBadge();
+      };
+
+      // Option reason change
+      const reasonInput = optRow.querySelector(".optReason");
+      reasonInput.oninput = () => {
+        if (!q.opt_detail[oi]) q.opt_detail[oi] = {};
+        q.opt_detail[oi].alasan = reasonInput.value;
+        q.opt_detail[oi].arti = reasonInput.value;
+        _syncJson();
+      };
+
+      optContainer.appendChild(optRow);
+    });
+
+    _updateStatusBadge();
+  }
+
+  function _updateStatusBadge() {
+    const badge = $("fStatusBadge");
+    if (!badge || _sIdx < 0 || !_sItems[_sIdx]) return;
+    const v = _validateItem(_sItems[_sIdx]);
+    if (v.level === "ok") {
+      badge.className = "text-xs font-bold px-2.5 py-1 rounded-full bg-emerald-100 text-emerald-700 flex items-center gap-1";
+      badge.innerHTML = '<i class="fa-solid fa-circle-check"></i> ' + v.reason;
+    } else if (v.level === "warn") {
+      badge.className = "text-xs font-bold px-2.5 py-1 rounded-full bg-amber-100 text-amber-800 flex items-center gap-1";
+      badge.innerHTML = '<i class="fa-solid fa-triangle-exclamation"></i> ' + v.reason;
+    } else {
+      badge.className = "text-xs font-bold px-2.5 py-1 rounded-full bg-rose-100 text-rose-700 flex items-center gap-1";
+      badge.innerHTML = '<i class="fa-solid fa-circle-xmark"></i> ' + v.reason;
+    }
+  }
+
+  // Bind Form Input Changes
+  $("fNo").oninput = () => {
+    if (_sIdx >= 0 && _sItems[_sIdx]) {
+      _sItems[_sIdx].no = parseInt($("fNo").value) || (_sIdx + 1);
+      _syncJson();
+      _renderQList();
+    }
+  };
+  $("fSection").oninput = () => {
+    if (_sIdx >= 0 && _sItems[_sIdx]) {
+      _sItems[_sIdx].section = $("fSection").value;
+      _syncJson();
+      _renderQList();
+    }
+  };
+  $("fTitle").oninput = () => {
+    if (_sIdx >= 0 && _sItems[_sIdx]) {
+      _sItems[_sIdx].title = $("fTitle").value;
+      _syncJson();
+      _renderQList();
+      _updateStatusBadge();
+    }
+  };
+  $("fTrans").oninput = () => {
+    if (_sIdx >= 0 && _sItems[_sIdx]) {
+      _sItems[_sIdx].trans = $("fTrans").value;
+      _syncJson();
+      _updateStatusBadge();
+    }
+  };
+  $("fImg").oninput = () => {
+    if (_sIdx >= 0 && _sItems[_sIdx]) {
+      _sItems[_sIdx].img = $("fImg").value;
+      _syncJson();
+      _renderActiveForm();
+    }
+  };
+  $("fAudio").oninput = () => {
+    if (_sIdx >= 0 && _sItems[_sIdx]) {
+      _sItems[_sIdx].audio = $("fAudio").value;
+      _syncJson();
+      _renderActiveForm();
+    }
+  };
+  $("fMnn").oninput = () => {
+    if (_sIdx >= 0 && _sItems[_sIdx]) {
+      _sItems[_sIdx].mnn = $("fMnn").value;
+      _syncJson();
+    }
+  };
+  $("fAnalisis").oninput = () => {
+    if (_sIdx >= 0 && _sItems[_sIdx]) {
+      _sItems[_sIdx].analisis = $("fAnalisis").value;
+      _syncJson();
+      _renderQList();
+      _updateStatusBadge();
+    }
+  };
+
+  // Tambah Soal
+  $("sAddQ").onclick = () => {
+    const lastSec = _sItems.length ? _sItems[_sItems.length - 1].section : "SESI 1 : MOJIGOI";
+    const newQ = {
+      no: _sItems.length + 1,
+      section: lastSec,
+      title: "",
+      img: "",
+      audio: "",
+      options: [
+        { text: "" },
+        { text: "" },
+        { text: "" },
+        { text: "" }
+      ],
+      answer: 0,
+      trans: "",
+      analisis: "",
+      opt_detail: [{}, {}, {}, {}]
+    };
+    _sItems.push(newQ);
+    _sIdx = _sItems.length - 1;
+    _syncJson();
+    _renderQList();
+    _renderActiveForm();
+  };
+
+  // Duplikat Soal
+  $("fDuplicate").onclick = () => {
+    if (_sIdx < 0 || !_sItems[_sIdx]) return;
+    const clone = JSON.parse(JSON.stringify(_sItems[_sIdx]));
+    clone.no = _sItems.length + 1;
+    _sItems.splice(_sIdx + 1, 0, clone);
+    _sIdx = _sIdx + 1;
+    _syncJson();
+    _renderQList();
+    _renderActiveForm();
+  };
+
+  // Hapus Soal
+  $("fDelete").onclick = () => {
+    if (_sIdx < 0 || !_sItems[_sIdx]) return;
+    if (!confirm("Hapus soal No. " + (_sItems[_sIdx].no || (_sIdx + 1)) + "?")) return;
+    _sItems.splice(_sIdx, 1);
+    if (_sIdx >= _sItems.length) _sIdx = _sItems.length - 1;
+    _syncJson();
+    _renderQList();
+    _renderActiveForm();
+  };
+
+  // Search & Filter
+  $("sFilterText").oninput = () => _renderQList();
+  $("sFilterSec").onchange = () => _renderQList();
+
+  // Audit Seluruh Paket
+  $("sAudit").onclick = () => {
+    const box = $("sAuditBox");
+    if (!box) return;
+    if (!_sItems.length) {
+      box.className = "mb-4 p-3 rounded-xl border bg-slate-50 border-slate-200 text-slate-600 block";
+      box.textContent = "Belum ada soal untuk diaudit. Muat soal terlebih dahulu.";
+      return;
+    }
+
+    let okCount = 0, warnCount = 0, errCount = 0;
+    const issues = [];
+
+    _sItems.forEach((q, idx) => {
+      const v = _validateItem(q);
+      const qNum = "Soal #" + (q.no || (idx + 1));
+      if (v.level === "ok") {
+        okCount++;
+      } else if (v.level === "warn") {
+        warnCount++;
+        issues.push({ idx, qNum, level: "warn", reason: v.reason });
+      } else {
+        errCount++;
+        issues.push({ idx, qNum, level: "err", reason: v.reason });
+      }
+    });
+
+    box.classList.remove("hidden");
+    if (errCount === 0 && warnCount === 0) {
+      box.className = "mb-4 p-3.5 rounded-xl border bg-emerald-50 border-emerald-200 text-emerald-800 block";
+      box.innerHTML = "<div class='flex items-center gap-2 font-bold mb-1'><i class='fa-solid fa-circle-check text-emerald-600 text-base'></i> Seluruh Soal Valid (" + okCount + "/" + _sItems.length + " Soal Lengkap)!</div><p class='text-[11px] text-emerald-700'>Semua soal memiliki teks/media materi, pilihan jawaban, kunci jawaban sah, terjemahan, dan pembahasan.</p>";
+    } else {
+      box.className = "mb-4 p-3.5 rounded-xl border bg-amber-50 border-amber-200 text-amber-900 block";
+      let html = "<div class='flex items-center justify-between mb-2'>" +
+        "<span class='font-bold flex items-center gap-1.5'><i class='fa-solid fa-clipboard-check text-amber-600'></i> Hasil Audit: " + okCount + " Valid, " + warnCount + " Peringatan, " + errCount + " Bermasalah</span>" +
+        "<button id='sCloseAudit' class='text-[11px] font-bold text-amber-700 hover:text-amber-900 underline'>Tutup</button>" +
+      "</div>" +
+      "<div class='max-h-36 overflow-y-auto space-y-1 pr-1'>";
+
+      issues.forEach(it => {
+        const color = it.level === "err" ? "text-rose-700 bg-rose-100/60" : "text-amber-800 bg-amber-100/50";
+        html += "<div class='flex items-center justify-between px-2 py-1 rounded " + color + "'>" +
+          "<span><strong>" + it.qNum + ":</strong> " + it.reason + "</span>" +
+          "<button class='auditJump font-bold underline text-[11px] ml-2 shrink-0' data-idx='" + it.idx + "'>Buka Soal</button>" +
+        "</div>";
+      });
+      html += "</div>";
+      box.innerHTML = html;
+
+      box.querySelector("#sCloseAudit").onclick = () => box.classList.add("hidden");
+      box.querySelectorAll(".auditJump").forEach(btn => {
+        btn.onclick = () => {
+          _sIdx = parseInt(btn.dataset.idx);
+          _renderQList();
+          _renderActiveForm();
+        };
+      });
+    }
+  };
+
+  // Toggle Mode JSON / Visual
+  $("sToggleMode").onclick = () => {
+    _sModeJson = !_sModeJson;
+    const vCont = $("sVisualContainer");
+    const jCont = $("sJsonContainer");
+    const label = $("sModeLabel");
+    if (_sModeJson) {
+      vCont.classList.add("hidden");
+      jCont.classList.remove("hidden");
+      label.textContent = "Mode Form Visual";
+      _syncJson();
+    } else {
+      try {
+        const parsed = JSON.parse($("sJson").value);
+        if (Array.isArray(parsed)) {
+          _sItems = parsed;
+          if (_sIdx >= _sItems.length) _sIdx = _sItems.length ? 0 : -1;
+        }
+      } catch (e) {
+        alert("JSON tidak valid, perbaiki sebelum kembali ke mode visual: " + e.message);
+        return;
+      }
+      vCont.classList.remove("hidden");
+      jCont.classList.add("hidden");
+      label.textContent = "Mode JSON";
+      _renderQList();
+      _renderActiveForm();
+    }
+  };
+
+  // Muat Soal
   $("sLoad").onclick = async () => {
     const slug = $("sPack").value, db = window._aDb;
+    $("sInfo").textContent = "Memuat...";
     try {
+      let loadedItems = [];
+      let sourceName = "";
       const d = await getDoc(doc(db, "quiz_packs", slug));
-      if (d.exists()) { $("sTitle").value = d.data().title || ""; $("sJson").value = JSON.stringify(d.data().items || [], null, 1); $("sInfo").textContent = "Dari Firestore."; }
-      else {
-        const r = await fetch("/" + slug + "/quiz-data.json"); const j = await r.json();
-        $("sTitle").value = slug; $("sJson").value = JSON.stringify(j, null, 1); $("sInfo").textContent = "Dari file (" + j.length + " soal).";
+      if (d.exists() && d.data() && Array.isArray(d.data().items)) {
+        $("sTitle").value = d.data().title || slug;
+        loadedItems = d.data().items;
+        sourceName = "Firestore";
+      } else {
+        const r = await fetch("/" + slug + "/quiz-data.json");
+        const j = await r.json();
+        $("sTitle").value = slug;
+        loadedItems = Array.isArray(j) ? j : [];
+        sourceName = "File Lokal (" + loadedItems.length + " soal)";
       }
-    } catch (e) { $("sInfo").textContent = "Gagal: " + (e.message || e.code); }
+      _sItems = loadedItems;
+      _sIdx = _sItems.length ? 0 : -1;
+      _syncJson();
+      _renderQList();
+      _renderActiveForm();
+      $("sInfo").textContent = "Dimuat dari " + sourceName + ".";
+      if ($("sAuditBox")) $("sAuditBox").classList.add("hidden");
+    } catch (e) {
+      $("sInfo").textContent = "Gagal muat: " + (e.message || e.code);
+    }
   };
+
+  // Simpan ke Firestore
   $("sSave").onclick = async () => {
     try {
-      const items = JSON.parse($("sJson").value);
-      await setDoc(doc(window._aDb, "quiz_packs", $("sPack").value), { slug: $("sPack").value, title: $("sTitle").value || $("sPack").value, items, updatedAt: serverTimestamp(), updatedBy: window._aAuth.currentUser.email });
-      $("sInfo").textContent = "OK tersimpan (" + items.length + " soal).";
-    } catch (e) { $("sInfo").textContent = "ERR " + (e.message || e.code); }
+      if (_sModeJson) {
+        _sItems = JSON.parse($("sJson").value);
+      }
+      if (!Array.isArray(_sItems)) throw new Error("Data harus berupa array soal.");
+      $("sInfo").textContent = "Menyimpan ke Firestore...";
+      await setDoc(doc(window._aDb, "quiz_packs", $("sPack").value), {
+        slug: $("sPack").value,
+        title: $("sTitle").value || $("sPack").value,
+        items: _sItems,
+        updatedAt: serverTimestamp(),
+        updatedBy: window._aAuth.currentUser.email
+      });
+      $("sInfo").textContent = "✅ Tersimpan di Firestore (" + _sItems.length + " soal).";
+    } catch (e) {
+      $("sInfo").textContent = "ERR: " + (e.message || e.code);
+    }
   };
+
+  // Auto load paket saat inisialisasi jika ada
+  setTimeout(() => {
+    if ($("sLoad") && !_sItems.length) $("sLoad").click();
+  }, 200);
 };
 window._aLoadAdmins = async function () {
   const db = window._aDb;

@@ -8,10 +8,10 @@ echo ========================================================
 echo.
 echo Direktori: %CD%
 echo URL: http://localhost:5000
-echo Mode: Live Debug Logging Enabled (firebase-debug.log)
+echo Mode: Fast Local Hosting Server (Target: sinaujepang)
 echo Tekan Ctrl + C untuk mematikan server.
 echo.
 
-call npx firebase-tools serve --only hosting --debug
+call firebase serve --only hosting:sinaujepang
 
 pause

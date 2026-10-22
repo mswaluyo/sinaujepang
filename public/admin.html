@@ -57,16 +57,168 @@
 <button id="qMore" class="w-full bg-fuji-50 hover:bg-fuji-100 text-fuji-700 font-bold text-[13px] py-2.5 rounded-xl border border-fuji-200 transition-colors">Muat 100 lagi <i class="fa-solid fa-chevron-down ml-1"></i></button>
 </div>
 </section>
-<section id="tab-soal" class="bg-white rounded-2xl border p-4 hidden">
-<p class="text-xs text-slate-500 mb-3">Soal dibaca publik dari <code>/quiz_packs/{slug}</code>. Tempel JSON array soal lalu Simpan.</p>
-<div class="flex flex-wrap gap-2 mb-3">
-<select id="sPack" class="border rounded-lg px-3 py-2 text-sm"></select>
-<button id="sLoad" class="bg-white border text-sm font-bold px-4 py-2 rounded-lg">Muat</button>
-<button id="sSave" class="bg-slate-900 text-white text-sm font-bold px-4 py-2 rounded-lg">Simpan</button>
-<span id="sInfo" class="text-xs text-slate-500 self-center"></span>
-</div>
-<input id="sTitle" placeholder="Judul paket..." class="border rounded-lg px-3 py-2 text-sm w-full mb-2">
-<textarea id="sJson" rows="14" class="w-full border rounded-xl p-3 text-xs font-mono"></textarea>
+<section id="tab-soal" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hidden">
+  <!-- Bar Atas / Toolbar Paket -->
+  <div class="px-4 py-3 bg-slate-50 border-b border-slate-200 flex flex-wrap items-center justify-between gap-3">
+    <div class="flex items-center gap-2 flex-wrap">
+      <div class="flex items-center gap-1.5">
+        <i class="fa-solid fa-layer-group text-fuji-600"></i>
+        <label for="sPack" class="text-xs font-bold text-slate-700">Paket:</label>
+        <select id="sPack" class="border border-slate-300 rounded-lg px-2.5 py-1.5 text-xs font-semibold bg-white focus:outline-none focus:ring-2 focus:ring-fuji-400"></select>
+      </div>
+      <button id="sLoad" class="bg-white hover:bg-slate-100 border border-slate-300 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm transition-all flex items-center gap-1.5">
+        <i class="fa-solid fa-rotate text-fuji-500"></i><span>Muat Soal</span>
+      </button>
+      <button id="sSave" class="bg-fuji-600 hover:bg-fuji-700 text-white text-xs font-bold px-3.5 py-1.5 rounded-lg shadow-sm transition-all flex items-center gap-1.5">
+        <i class="fa-solid fa-floppy-disk"></i><span>Simpan ke Firestore</span>
+      </button>
+      <button id="sAudit" class="bg-emerald-600 hover:bg-emerald-700 text-white text-xs font-bold px-3 py-1.5 rounded-lg shadow-sm transition-all flex items-center gap-1.5">
+        <i class="fa-solid fa-clipboard-check"></i><span>Audit Kevalidan</span>
+      </button>
+      <button id="sToggleMode" class="bg-slate-200 hover:bg-slate-300 text-slate-700 text-xs font-semibold px-2.5 py-1.5 rounded-lg transition-all" title="Beralih ke tampilan Raw JSON">
+        <i class="fa-solid fa-code mr-1"></i><span id="sModeLabel">Mode JSON</span>
+      </button>
+    </div>
+    <div class="flex items-center gap-2">
+      <span id="sInfo" class="text-xs text-slate-600 font-medium"></span>
+    </div>
+  </div>
+
+  <!-- Judul Paket -->
+  <div class="px-4 py-2.5 bg-white border-b border-slate-100 flex items-center gap-3">
+    <label class="text-xs font-bold text-slate-600 shrink-0">Judul Paket:</label>
+    <input id="sTitle" placeholder="Judul paket..." class="border border-slate-200 rounded-lg px-3 py-1.5 text-xs w-full focus:outline-none focus:ring-2 focus:ring-fuji-300">
+  </div>
+
+  <!-- Container Form Penyusun Visual (Default) -->
+  <div id="sVisualContainer" class="p-4">
+    <!-- Audit Result Box -->
+    <div id="sAuditBox" class="mb-4 hidden p-3 rounded-xl border text-xs"></div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-5">
+      <!-- Kolom Kiri: Navigator Nomor Soal (lg:col-span-4) -->
+      <div class="lg:col-span-4 border border-slate-200 rounded-xl bg-slate-50/50 p-3.5 flex flex-col h-[750px]">
+        <div class="flex items-center justify-between mb-2">
+          <div class="flex items-center gap-1.5">
+            <span class="text-xs font-bold text-slate-800">Daftar Soal</span>
+            <span id="sCountBadge" class="text-[11px] font-bold bg-fuji-100 text-fuji-700 px-2 py-0.5 rounded-full">0</span>
+          </div>
+          <button id="sAddQ" class="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 border border-emerald-200 text-xs font-bold px-2.5 py-1 rounded-lg transition-all flex items-center gap-1">
+            <i class="fa-solid fa-plus text-[10px]"></i><span>Tambah Soal</span>
+          </button>
+        </div>
+
+        <!-- Filter & Search Soal -->
+        <div class="flex gap-1.5 mb-2.5">
+          <input id="sFilterText" type="text" placeholder="Cari isi / no soal..." class="border border-slate-200 rounded-lg px-2 py-1 text-xs w-full bg-white">
+          <select id="sFilterSec" class="border border-slate-200 rounded-lg px-2 py-1 text-xs bg-white">
+            <option value="">Semua Sesi</option>
+          </select>
+        </div>
+
+        <!-- List Butir Soal -->
+        <div id="sQList" class="flex-1 overflow-y-auto space-y-1.5 pr-1"></div>
+      </div>
+
+      <!-- Kolom Kanan: Form Editor Butir Soal Terpilih (lg:col-span-8) -->
+      <div class="lg:col-span-8 border border-slate-200 rounded-xl bg-white p-4 flex flex-col h-[750px] overflow-y-auto">
+        <div id="sFormEmpty" class="flex-1 flex flex-col items-center justify-center text-slate-400 py-16">
+          <i class="fa-solid fa-file-pen text-4xl mb-3 text-slate-300"></i>
+          <p class="text-sm font-semibold">Pilih salah satu nomor soal dari panel kiri atau klik "Tambah Soal".</p>
+        </div>
+
+        <div id="sFormBody" class="hidden space-y-4">
+          <!-- Header Soal: No, Sesi, Status Validasi -->
+          <div class="flex flex-wrap items-center justify-between gap-2 pb-3 border-b border-slate-100">
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-bold text-slate-500">Nomor:</span>
+              <input id="fNo" type="number" min="1" class="w-16 border border-slate-300 rounded-lg px-2 py-1 text-xs font-bold text-slate-800 text-center">
+              <span class="text-xs font-bold text-slate-500 ml-2">Sesi:</span>
+              <input id="fSection" list="sectionList" placeholder="SESI 1 : MOJIGOI..." class="border border-slate-300 rounded-lg px-2.5 py-1 text-xs w-48 text-slate-800">
+              <datalist id="sectionList">
+                <option value="SESI 1 : MOJIGOI">
+                <option value="SESI 2 : KAIWA / HYOUGEN">
+                <option value="SESI 3 : CHOUKAI">
+                <option value="SESI 4 : DOKKAI">
+              </datalist>
+            </div>
+            <div class="flex items-center gap-2">
+              <span id="fStatusBadge" class="text-xs font-bold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">Valid</span>
+              <button id="fDuplicate" class="text-xs text-slate-600 hover:text-slate-900 border rounded-lg px-2.5 py-1" title="Duplikat Soal Ini"><i class="fa-regular fa-copy mr-1"></i>Duplikat</button>
+              <button id="fDelete" class="text-xs text-rose-600 hover:text-rose-800 border border-rose-200 rounded-lg px-2.5 py-1" title="Hapus Soal Ini"><i class="fa-solid fa-trash-can mr-1"></i>Hapus</button>
+            </div>
+          </div>
+
+          <!-- Bagian Teks & Materi Soal -->
+          <div class="space-y-3">
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1 flex items-center justify-between">
+                <span>Teks Pertanyaan / Soal:</span>
+                <span class="text-[11px] font-normal text-slate-400">Gunakan tanda kurung （ ） untuk isian</span>
+              </label>
+              <textarea id="fTitle" rows="2" placeholder="Tuliskan teks pertanyaan soal bahasa Jepang di sini..." class="w-full border border-slate-300 rounded-xl p-2.5 text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-fuji-400"></textarea>
+            </div>
+
+            <!-- Media: Gambar & Audio -->
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 bg-slate-50/70 p-3 rounded-xl border border-slate-100">
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1"><i class="fa-regular fa-image text-fuji-500 mr-1"></i>Gambar Soal (Path Assets):</label>
+                <input id="fImg" placeholder="assets/aoi_01.jpg" class="w-full border border-slate-300 rounded-lg px-2.5 py-1.5 text-xs bg-white">
+                <div id="fImgPreviewBox" class="mt-2 hidden">
+                  <img id="fImgPreview" class="max-h-28 rounded-lg border border-slate-200 shadow-sm object-contain bg-white">
+                </div>
+              </div>
+              <div>
+                <label class="block text-xs font-bold text-slate-700 mb-1"><i class="fa-solid fa-headphones text-fuji-500 mr-1"></i>Audio Soal (Path Assets / Choukai):</label>
+                <input id="fAudio" placeholder="assets/audio/lis01.m4a" class="w-full border border-slate-300 rounded-lg px-2.5 py-1.5 text-xs bg-white mb-2">
+                <audio id="fAudioPlayer" controls class="w-full h-8 hidden"></audio>
+              </div>
+            </div>
+
+            <!-- Terjemahan Soal -->
+            <div>
+              <label class="block text-xs font-bold text-slate-700 mb-1"><i class="fa-solid fa-language text-emerald-600 mr-1"></i>Arti / Terjemahan Soal (Bahasa Indonesia):</label>
+              <input id="fTrans" placeholder="Terjemahan bahasa Indonesia dari teks soal..." class="w-full border border-slate-300 rounded-lg px-2.5 py-1.5 text-xs text-slate-800">
+            </div>
+          </div>
+
+          <!-- Bagian Pilihan Jawaban (A, B, C, D) -->
+          <div class="border-t border-slate-100 pt-3">
+            <div class="flex items-center justify-between mb-2">
+              <label class="text-xs font-extrabold text-slate-800 flex items-center gap-1.5">
+                <i class="fa-solid fa-list-ol text-fuji-600"></i>
+                <span>Pilihan Jawaban &amp; Kunci:</span>
+                <span class="text-[11px] font-normal text-slate-500">(Pilih radio button bulat untuk menetapkan kunci jawaban yang benar)</span>
+              </label>
+            </div>
+
+            <div id="fOptionsContainer" class="space-y-2.5"></div>
+          </div>
+
+          <!-- Bagian Pembahasan & Analisis Materi -->
+          <div class="border-t border-slate-100 pt-3">
+            <div class="flex items-center justify-between mb-1.5">
+              <label class="text-xs font-extrabold text-slate-800 flex items-center gap-1.5">
+                <i class="fa-solid fa-book-bookmark text-amber-500"></i>
+                <span>Pembahasan &amp; Analisis Materi:</span>
+              </label>
+              <div class="flex items-center gap-2">
+                <span class="text-xs text-slate-500 font-semibold">MNN Ref:</span>
+                <input id="fMnn" placeholder="MNN Bab 8..." class="border border-slate-200 rounded-lg px-2 py-0.5 text-xs w-36">
+              </div>
+            </div>
+            <textarea id="fAnalisis" rows="4" placeholder="Tuliskan analisis tata bahasa, aturan kaidah, arti kata, atau rujukan materi mengapa jawaban ini benar..." class="w-full border border-slate-300 rounded-xl p-2.5 text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-fuji-400"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Container Mode JSON (Cadangan / Raw) -->
+  <div id="sJsonContainer" class="p-4 hidden">
+    <p class="text-xs text-slate-500 mb-2">Mode Raw JSON untuk backup atau impor massal data soal paket ini:</p>
+    <textarea id="sJson" rows="18" class="w-full border rounded-xl p-3 text-xs font-mono"></textarea>
+  </div>
 </section>
 <section id="tab-users" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden hidden">
 <div class="px-4 pt-4 pb-3 border-b border-slate-100 flex flex-wrap items-center gap-2">

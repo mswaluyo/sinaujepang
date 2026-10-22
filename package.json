@@ -8,7 +8,8 @@
     "test": "node tools/validate-data.mjs && echo \"✅ Data soal valid\"",
     "build:css": "tailwindcss -i src/input.css -o public/assets/css/tailwind.css --minify",
     "watch:css": "tailwindcss -i src/input.css -o public/assets/css/tailwind.css --watch",
-    "dev": "firebase serve --only hosting"
+    "dev": "firebase serve --only hosting",
+    "sync:users": "node tools/sync-auth-to-firestore.mjs"
   },
   "keywords": [],
   "author": "",
