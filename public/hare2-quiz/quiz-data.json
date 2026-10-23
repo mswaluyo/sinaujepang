@@ -1086,7 +1086,7 @@
     ],
     "opt_note": [
       "(byouin ni kaeru) pulang",
-      "(byouin ni yasumi) istirahat",
+      "(byouin niやすみ) istirahat",
       "(gohan wo tabete) makan nasi"
     ],
     "kunci_id": "びょういん に やすみ"
@@ -1298,907 +1298,6 @@
       "(dou desu ka) bagaimana?"
     ],
     "kunci_id": "どこですか"
-{
-  "no": 26,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: もしもし、利田さん。\\nB: ああ、利田さん、いま_____？\\nA: 駅にいます。すみません、時間を間違えて、１５分ぐらい遅れます。",
-  "img": "",
-  "options": [
-    {"text": "だれですか", "img": ""},
-    {"text": "どこですか", "img": ""},
-    {"text": "どうですか", "img": ""}
-{
-{
-{
-{
-{
-{
-{
-{
-{
-{
-{
-{
-{
-{
-{
-{
-  "no": 57,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "assets/hare_5.jpg",
-  "options": [
-    {"text": "犬", "img": ""},
-    {"text": "猫", "img": ""},
-    {"text": "鳥", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "Gambar menunjukkan hewan peliharaan.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 5 - Kosakata Hewan] Hewan peliharaan umum. Gambar memperlihatkan salah satu dari tiga opsi hewan yang umum ditempatkan di rumah Jepang.",
-
-  "opt_detail": [
-    {"kana": "いぬ", "rom": "inu", "arti": "anjing", "alansa": "Inu adalah anjing."},
-    {"kana": "ねこ", "rom": "neko", "arti": "kucing", "alansa": "Neko adalah kucing."},
-    {"kana": "とり", "rom": "tori", "arti": "ayam/tor", "alansa": "Tori adalah ayam atau burung."}
-  ],
-  "opt_note": ["(inu) anjing", "(neko) kucing", "(tori) ayam/burung"],
-  "kunci_id": "犬"
-},
-{
-  "no": 58,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: これ、何ですか。\\nB: それは私のです。",
-  "img": "",
-  "options": [
-    {"text": "なんですか", "img": ""},
-    {"text": "それは", "img": ""},
-    {"text": "何ですか", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "A: Ini apa?\\nB: Itu punya saya.",
-  "trans_rom": "A: Kore, nani desu ka.\\nB: Sore wa watashi no desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 3 - Tanya Identitas] Tanya 'nani desu ka' untuk menanyakan identitas objek. Balasan 'sore wa watashi no' menjawab bahwa objek tersebut milik pembicara.",
-
-  "opt_detail": [
-    {"kana": "なんですか", "rom": "nani desu ka", "arti": "apa?", "alansa": "Nani desu ka adalah tanya umum."},
-    {"kana": "それは", "rom": "sore wa", "arti": "itu", "alansa": "Sore wa adalah penunjuk objek."},
-    {"kana": "何ですか", "rom": "nani desu ka", "arti": "apa?", "alansa": "Duplicate option untuk distractor."}
-  ],
-  "opt_note": ["(nani desu ka) apa?", "(sore wa) itu", "(nani desu ka) apa?"],
-  "kunci_id": "何ですか"
-},
-{
-  "no": 59,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "",
-  "options": [
-    {"text": "ケーキ", "img": ""},
-    {"text": "アイスクリーム", "img": ""},
-    {"text": "お寿司", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "Gambar menunjukkan makanan Jepang favorit.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 6 - Kata Makanan] Makanan Jepang. 'Sushi' adalah makanan favorit yang sering menjadi topik soal Bahasa Jepang tingkat awal.",
-
-  "opt_detail": [
-    {"kana": "けーき", "rom": "keeki", "arti": "kue", "alansa": "Keeki adalah kue."},
-    {"kana": "あいすくりーむ", "rom": "aisukuriimu", "arti": "es krim", "alansa": "Aisukuriimu adalah es krim."},
-    {"kana": "おすし", "rom": "osushi", "arti": "sushi", "alansa": "Osushi adalah sushi."}
-  ],
-  "opt_note": ["(keeki) kue", "(aisukuriimu) es krim", "(osushi) sushi"],
-  "kunci_id": "お寿司"
-},
-{
-  "no": 60,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: 明日も早いです。\\nB: はい、_____です。",
-  "img": "",
-  "options": [
-    {"text": "早い", "img": ""},
-    {"text": "遅い", "img": ""},
-    {"text": "寒い", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Besok pagi tôt.\\nIya, pagi tôt.",
-  "trans_rom": "A: Ashita wa hayai desu.\\nB: Iya, hayai desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 12 - Kata Sifat] Tanya waktu atau kecepatan menggunakan 'hayai desu ka'. Balasan 'hayai desu' menjawab bahwa besok pagi akan awal/cepat.",
-
-  "opt_detail": [
-    {"kana": "はやい", "rom": "hayai", "arti": "cepat", "alansa": "Hayai berarti cepat."},
-    {"kana": "おそい", "rom": "osoi", "arti": "lambat", "alansa": "Osoi berarti lambat."},
-    {"kana": "寒い", "rom": "samui", "arti": "dingin", "alansa": "Samui berarti dingin."}
-  ],
-  "opt_note": ["(hayai) cepat", "(osoi) lambat", "(samui) dingin"],
-  "kunci_id": "早い"
-}
-  "no": 55,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "",
-  "options": [
-    {"text": "朝", "img": ""},
-    {"text": "夜", "img": ""},
-    {"text": "午後", "img": ""}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "Gambar menunjukkan waktu dalam sehari.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 4 - Kosakata Waktu] Kata-kata waktu harian. 'Asa' pagi, 'yoru' malam, 'gogo' sore.",
-
-  "opt_detail": [
-    {"kana": "あさ", "rom": "asa", "arti": "pagi", "alansa": "Asa adalah pagi."},
-    {"kana": "よる", "rom": "yoru", "arti": "malam", "alansa": "Yoru adalah malam."},
-    {"kana": "ごご", "rom": "gogo", "arti": "sore", "alansa": "Gogo adalah sore."}
-  ],
-  "opt_note": ["(asa) pagi", "(yoru) malam", "(gogo) sore"],
-  "kunci_id": "夜"
-},
-{
-  "no": 56,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: 電話しますか。\\nB: いいえ、_____です。",
-  "img": "",
-  "options": [
-    {"text": "しません", "img": ""},
-    {"text": "できません", "img": ""},
-    {"text": "します", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Akan Anda menelepon?\\nTidak, saya tidak akan menelepon.",
-  "trans_rom": "A: Denwa shimasu ka.\\nB: Iya, shimasen desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 6 - Pola Verb] Tanya tindakan mendatang menggunakan 'shimasu ka'. Balasan 'shimasen' adalah penolakan yang baku.",
-
-  "opt_detail": [
-    {"kana": "しません", "rom": "shimasen", "arti": "tidak lakukan", "alansa": "Shimasen adalah penolakan yang baku."},
-    {"kana": "できません", "rom": "dekimasen", "arti": "dapat tidak", "alansa": "Dekimasen menunjukkan ketidakmampuan."},
-    {"kana": "します", "rom": "shimasu", "arti": "melakukan", "alansa": "Shimasu adalah bentuk baku untuk melakukan."}
-  ],
-  "opt_note": ["(shimasen) tidak lakukan", "(dekimasen) tidak dapat", "(shimasu) melakukan"],
-  "kunci_id": "しません"
-}
-  "no": 53,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "",
-  "options": [
-    {"text": "銀行", "img": ""},
-    {"text": "郵便局", "img": ""},
-    {"text": "スーパー", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "Gambar menunjukkan fasilitas umum di kota.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 3 - Kosakata Fasilitas] Fasilitas publik di area perkotaan. 'Sūpā' (supermarket) adalah tempat beli belanja harian.",
-
-  "opt_detail": [
-    {"kana": "ぎんこう", "rom": "ginkou", "arti": "bank", "alansa": "Ginkou adalah bank."},
-    {"kana": "ゆうびきょく", "rom": "yubinkyoku", "arti": "pos office", "alansa": "Yubinkyoku adalah pos office."},
-    {"kana": "スーパー", "rom": "supaa", "arti": "supermarket", "alansa": "Sūpā adalah supermarket."}
-  ],
-  "opt_note": ["(ginkou) bank", "(yubinkyoku) pos office", "(supaa) supermarket"],
-  "kunci_id": "スーパー"
-},
-{
-  "no": 54,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: このシャツ、高いですか。\\nB: いいえ、_____です。",
-  "img": "",
-  "options": [
-    {"text": "安い", "img": ""},
-    {"text": "高いです", "img": ""},
-    {"text": "安くなります", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Baju ini mahal?\\nTidak, murah.",
-  "trans_rom": "A: Kono shaatsu, takai desu ka.\\nB: Iya, yasui desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 12 - Kata Sifat] Tanya harga dengan 'takai desu ka'. Balasan 'yasui desu' menjawab bahwa barang tersebut murah.",
-
-  "opt_detail": [
-    {"kana": "やすい", "rom": "yasui", "arti": "murah", "alansa": "Yasui berarti murah."},
-    {"kana": "たかいです", "rom": "takai desu", "arti": "mahal", "alansa": "Takai desu berarti mahal."},
-    {"kana": "やすくなります", "rom": "yasukunari masu", "arti": "makin murah", "alansa": "Yasukunari masu berarti menjadi lebih murah."}
-  ],
-  "opt_note": ["(yasui) murah", "(takai desu) mahal", "(yasukunari masu) makin murah"],
-  "kunci_id": "安い"
-}
-  "no": 51,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "",
-  "options": [
-    {"text": "ここ", "img": ""},
-    {"text": "そこ", "img": ""},
-    {"text": "あそこ", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "Indikator posisi dalam dialog.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 3 - Kosakata Arah] Kata tunjung menunjukkan posisi relative. 'Koko' = sini, 'soko' = situ, 'asoko' = di situ jauh.",
-
-  "opt_detail": [
-    {"kana": "ここ", "rom": "koko", "arti": "sini", "alansa": "Koko menunjukan posisi penasihat (di sini)."},
-    {"kana": "そこ", "rom": "soko", "arti": "situ", "alansa": "Soko menunjukan posisi yang lebih jauh dari penasihat."},
-    {"kana": "あそこ", "rom": "asoko", "arti": "di situ", "alansa": "Asoko menunjukan posisi jauh dari penasihat dan objek."}
-  ],
-  "opt_note": ["(koko) sini", "(soko) situ", "(asoko) di situ jauh"],
-  "kunci_id": "ここ"
-},
-{
-  "no": 52,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: 明日の天気は_____です。\\nB: はい、晴れです。",
-  "img": "",
-  "options": [
-    {"text": "良い", "img": ""},
-    {"text": "晴れ", "img": ""},
-    {"text": "寒い", "img": ""}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "A: Cuaca besok bagaimana?\\nIya, cerah.",
-  "trans_rom": "A: Ashita no tenki wa _____ desu ka.\\nB: Iya, hare desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 8 - Cuaca] Tanya cuaca menggunakan 'tenki wa ___ desu ka'. Balasan 'hare desu' menjawab bahwa cuaca akan cerah (cerah = hare).",
-
-  "opt_detail": [
-    {"kana": "良い", "rom": "ii", "arti": "baik", "alansa": "Ii berarti baik."},
-    {"kana": "晴れ", "rom": "hare", "arti": "cerah", "alansa": "Hare berarti cerah."},
-    {"kana": "寒い", "rom": "samui", "arti": "dingin", "alansa": "Samui berarti dingin."}
-  ],
-  "opt_note": ["(ii) baik", "(hare) cerah", "(samui) dingin"],
-  "kunci_id": "晴れ"
-}
-  "no": 49,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "",
-  "options": [
-    {"text": "寿司", "img": ""},
-    {"text": "ラーメン", "img": ""},
-    {"text": "うどん", "img": ""}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "Gambar menunjukkan makanan favorit Jepang.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 6 - Kata Makanan] Lamongan khas Jepang. Gambar memperlihatkan salah satu dari tiga opsi makanan yang populer di Jepang.",
-
-  "opt_detail": [
-    {"kana": "ずし", "rom": "zushi", "arti": "sushi", "alansa": "Zushi adalah sushi."},
-    {"kana": "らーめん", "rom": "raamen", "arti": "ramen", "alansa": "Raamen adalah lamongan mie Jepang."},
-    {"kana": "うどん", "rom": "udon", "arti": "udon", "alansa": "Udon adalah mie tebal Jepang."}
-  ],
-  "opt_note": ["(zushi) sushi", "(raamen) ramen", "(udon) udon"],
-  "kunci_id": "ラーメン"
-},
-{
-  "no": 50,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: この本、面白いです。\\nB: ええ、_____です。",
-  "img": "",
-  "options": [
-    {"text": "読みやすい", "img": ""},
-    {"text": "面白くなります", "img": ""},
-    {"text": "大きいです", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Buku ini menarik.\\nIya, mudah dibaca.",
-  "trans_rom": "A: Kono hon, omoshiroi desu.\\nB: Yomiyasui desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 12 - Kata Sifat] 'Omoshiroi' berarti menarik/nteruangkan. 'Yomiyasui' berarti mudah dibaca (dari 'yomu' + 'yasui').",
-
-  "opt_detail": [
-    {"kana": "よみやすい", "rom": "yomiyasui", "arti": "mudah dibaca", "alansa": "Yomiyasui adalah bentuk adjective dari 'yomu' (membaca) + 'yasui' (mudah)."},
-    {"kana": "面白くなります", "rom": "omoshiroku narimasu", "arti": "menjadi menarik", "alansa": "Omoshiroku narimasu berarti menjadi menarik."},
-    {"kana": "大きいです", "rom": "ookii desu", "arti": "besar", "alansa": "Ookii desu berarti besar."}
-  ],
-  "opt_note": ["(yomiyasui) mudah dibaca", "(omoshiroku narimasu) menjadi menarik", "(ookii desu) besar"],
-  "kunci_id": "よみやすい"
-}
-  "no": 47,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "assets/hare_10.jpg",
-  "options": [
-    {"text": "右", "img": ""},
-    {"text": "左", "img": ""},
-    {"text": "真ん中", "img": ""}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "Gambar menunjukkan arah atau posisi.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 10 - Arah] Arah kanan, kiri, dan tengah. Gambar memperlihatkan posisi objek dalam struktur tertentu.",
-  "opt_detail": [
-    {"kana": "みぎ", "rom": "migi", "arti": "kanan", "alansa": "Migi berarti kanan."},
-    {"kana": "ひだり", "rom": "hidari", "arti": "kiri", "alansa": "Hidari berarti kiri."},
-    {"kana": "まんなか", "rom": "naka", "arti": "tengah", "alansa": "Naka berarti tengah."}
-  ],
-  "opt_note": ["(migi) kanan", "(hidari) kiri", "(naka) tengah"],
-  "kunci_id": "左"
-},
-{
-  "no": 48,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: これから_____しますか。\\nB: いいえ、しません。",
-  "img": "",
-  "options": [
-    {"text": "勉強します", "img": ""},
-    {"text": "勉強しません", "img": ""},
-    {"text": "勉強できます", "img": ""}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "A: Akan Anda belajar?\\nTidak, saya tidak akan belajar.",
-  "trans_rom": "A: Karoushu benkyou shimasu ka.\\nB: Iya, benkyou shimasen.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 6 - Pola Verb] Tanya aktivitas mendatang menggunakan 'shimasu ka'. Balasan 'shimasen' adalah penolakan yang baku.",
-  "opt_detail": [
-    {"kana": "べんきょうします", "rom": "benkyou shimasu", "arti": "belajar", "alansa": "Benkyou shimasu berarti belajar."},
-    {"kana": "べんきょうしません", "rom": "benkyou shimasen", "arti": "tidak belajar", "alansa": "Benkyou shimasen adalah penolakan yang baku."},
-    {"kana": "べんきょうできます", "rom": "benkyou dekimasu", "arti": "dapat belajar", "alansa": "Benkyou dekimasu menunjukkan kemampuan."}
-  ],
-  "opt_note": ["(benkyou shimasu) belajar", "(benkyou shimasen) tidak belajar", "(benkyou dekimasu) dapat belajar"],
-  "kunci_id": "勉強しません"
-}
-  "no": 45,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "",
-  "options": [
-    {"text": "学生", "img": ""},
-    {"text": "先生", "img": ""},
-    {"text": "会社員", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "Profesi orang di gambar.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 5 - Kosakata Profesi] Kata-kata pekerjaan. 'Shain' (company employee) adalah orang yang bekerja di perusahaan.",
-
-  "opt_detail": [
-    {"kana": "がくせい", "rom": "gakusei", "arti": "murid", "alansa": "Gakusei adalah siswa/murid."},
-    {"kana": "せんせい", "rom": "sensei", "arti": "guru", "alansa": "Sensei adalah guru."},
-    {"kana": "かいしゃいん", "rom": "kaishain", "arti": "karyawan", "alansa": "Kaishain adalah karyawan perusahaan."}
-  ],
-  "opt_note": ["(gakusei) murid", "(sensei) guru", "(kaishain) karyawan"],
-  "kunci_id": "会社員"
-},
-{
-  "no": 46,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: 時計が_____です。\\nB: いいえ、壊れています。",
-  "img": "",
-  "options": [
-    {"text": "正しい", "img": ""},
-    {"text": "壊れています", "img": ""},
-    {"text": "動いています", "img": ""}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "A: Jam itu benar?\\nTidak, sudah rusak.",
-  "trans_rom": "A: Tokei ga _____ desu ka.\\nB: Iya, kowarete imasu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 12 - Kata Sifat] Tanya kondisi jam. 'Kowarete imasu' menunjukkan barang telah rusak/kerusakan fisik.",
-  "opt_detail": [
-    {"kana": "正しい", "rom": "tadashii", "arti": "benar", "alansa": "Tadashii berarti benar/tepat."},
-    {"kana": "壊れています", "rom": "kowarete imasu", "arti": "rusak", "alansa": "Kowarete imasu berarti sudah rusak."},
-    {"kana": "動いています", "rom": "uguite imasu", "arti": "gerak", "alansa": "Uguite imasu berarti bergerak/berfungsi."}
-  ],
-  "opt_note": ["(tadashii) benar", "(kowarete imu) rusak", "(uguite imu) bergerak"],
-  "kunci_id": "壊れています"
-}
-  "no": 43,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "assets/hare_15.jpg",
-  "options": [
-    {"text": "肉", "img": ""},
-    {"text": "魚", "img": ""},
-    {"text": "野菜", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "Gambar menunjukkan pilihan makanan sehat.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 6 - Kata Makanan] Kategori makanan. Gambar memperlihatkan salah satu dari tiga opsi makanan yang biasanya disajikan dalam hidupan sehari-hari Jepang.",
-  "opt_detail": [
-    {"kana": "にく", "rom": "niku", "arti": "daging", "alansa": "Niku adalah daging hewan."},
-    {"kana": "さかな", "rom": "sakana", "arti": "ikan", "alansa": "Sakana adalah ikan."},
-    {"kana": "やさい", "rom": "yasai", "arti": "sayur", "alansa": "Yasai adalah sayuran."}
-  ],
-  "opt_note": ["(niku) daging", "(sakana) ikan", "(yasai) sayur"],
-  "kunci_id": "やさい"
-},
-{
-  "no": 44,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: ここに置いてもいいですか。\\nB: はい、_____です。",
-  "img": "",
-  "options": [
-    {"text": "良いですか", "img": ""},
-    {"text": "置けますか", "img": ""},
-    {"text": "置いてもいいですか", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "A: Bisa saya letakkan di sini?\\nIya, boleh.",
-  "trans_rom": "A: Koko o placete mo ii desu ka.\\nB: Iya, tokite mo ii desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Ungkapan - Izin Tempat] Tanya 'tokite mo ii desu ka' untuk izin menempatkan barang. Balasan 'ii desu' menyatakan izin diberikan.",
-  "opt_detail": [
-    {"kana": "良いですか", "rom": "ii desu ka", "arti": "baik?", "alansa": "Ii desu ka menanyakan baik-baik, bukan izin spesifik."},
-    {"kana": "置けますか", "rom": "okemasu ka", "arti": "dapat dipasang?", "alansa": "Okemasu ka menanyakan kemampuan, bukan izin."},
-    {"kana": "置いてもいいですか", "rom": "tokite mo ii desu ka", "arti": "izin memasukkan?", "alansa": "Tokite mo ii desu ka adalah pola baku untuk meminta izin menempatkan."}
-  ],
-  "opt_note": ["(ii desu ka) baik?", "(okemasu ka) dapat?", "(tokite mo ii desu ka) izin memasukkan?"],
-  "kunci_id": "置いてもいいですか"
-}
-  "no": 41,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "",
-  "options": [
-    {"text": "ペン", "img": ""},
-    {"text": "えんぴつ", "img": ""},
-    {"text": "ノート", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "Alat tulis di dalam tas murid.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 10 - Kosakata Alat Tulis] Alat tulis umum ditempatkan di dalam tas murid. 'Note' (notebook) adalah tempat menulis.",
-  "opt_detail": [
-    {"kana": "ぺん", "rom": "pen", "arti": " pena", "alansa": "Pen adalah alat menulis."},
-    {"kana": "えんぴつ", "rom": "enpitsu", "arti": "pensil", "alansa": "Enpitsu adalah pensil."},
-    {"kana": "のうと", "rom": "nooto", "arti": "buku tulis", "alansa": "Nooto adalah buku catatan."}
-  ],
-  "opt_note": ["(pen) pena", "(enpitsu) pensil", "(nooto) buku tulis"],
-  "kunci_id": "ノート"
-},
-{
-  "no": 42,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: この本、読みますか。\\nB: いいえ、_____です。",
-  "img": "",
-  "options": [
-    {"text": "読みませんなら", "img": ""},
-    {"text": "読みません", "img": ""},
-    {"text": "読めます", "img": ""}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "A: Buku ini kamu baca?\\nB: Tidak, saya tidak baca.",
-  "trans_rom": "A: Kono hon, yomimasu ka.\\nB: Iya, yomimasen desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 6 - Pola Tanya] Tanya bacaan menggunakan 'yomimasu ka'. Balasan 'yomimasen' adalah penolakan yang baku dan standar.",
-  "opt_detail": [
-    {"kana": "読みませんなら", "rom": "yomimasenara", "arti": "salah eja", "alansa": "Yomimasenara bukan bentuk baku."},
-    {"kana": "読みません", "rom": "yomimasen", "arti": "tidak baca", "alansa": "Yomimasen adalah penolakan yang baku."},
-    {"kana": "読めます", "rom": "yokemasu", "arti": "dapat baca", "alansa": "Yokemasu menunjukkan kemampuan, bukan tindakan."}
-  ],
-  "opt_note": ["(yomimasen) tidak baca", "(yomimasenara) salah", "(yokemasu) dapat baca"],
-  "kunci_id": "読みません"
-}
-  "no": 39,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "A: これは私の本_____です。\\nB: いいえ、私のです。",
-  "img": "",
-  "options": [
-    {"text": "の", "img": ""},
-    {"text": "が", "img": ""},
-    {"text": "を", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Ini buku saya.\\nTidak, milik saya.",
-  "trans_rom": "A: Kore wa watashi no hon _____ desu.\\nB: Iya, watashi no desu.",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 10 - Kosakata Memiliki] Particle 'no' menandakan kepemilikan setelah kata benda. 'Watashi no' berarti 'saya' dalam konteks kepemilikan.",
-  "opt_detail": [
-    {"kana": "の", "rom": "no", "arti": "kepemilikan", "alansa": "No menandakan kepemilikan."},
-    {"kana": "が", "rom": "ga", "arti": "subjek", "alansa": "Ga menandakan subjek kalimat."},
-    {"kana": "を", "rom": "wo", "arti": " objek", "alansa": "Wo menandakan objek langsung."}
-  ],
-  "opt_note": ["(no) kepemilikan", "(ga) subjek", "(wo) objek"],
-  "kunci_id": "の"
-},
-{
-  "no": 40,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: 明日は晴れるといいですね。\\nB: はい、_____です。",
-  "img": "",
-  "options": [
-    {"text": "良い天気", "img": ""},
-    {"text": "良くなります", "img": ""},
-    {"text": "なります", "img": ""}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "A: Semoga esok cerah.\\nIya, akan cerah.",
-  "trans_rom": "A: Ashita wa hare to ii desu ne.\\nB: Ii tenki desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 8 - Cuaca] Ungkapan 'hare to ii desu ne' menyesuaikan dengan cuaca yang diharapkan. 'Ii tenki desu' adalah respons yang menegaskan cuaca akan cerah.",
-  "opt_detail": [
-    {"kana": "良い天気", "rom": "ii tenki", "arti": "cuaca bagus", "alansa": "Ii tenki berarti cuaca bagus/semar."},
-    {"kana": "良くなります", "rom": "yoku narimasu", "arti": "semakin bagus", "alansa": "Yoku narimasu berarti menjadi lebih baik."},
-    {"kana": "なります", "rom": "narimasu", "arti": "menjadi", "alansa": "Narimasu adalah bentuk umum 'menjadi'."}
-  ],
-  "opt_note": ["(ii tenki) cuaca bagus", "(yoku narimasu) semakin bagus", "(narimasu) menjadi"],
-  "kunci_id": "良くなります"
-}
-  "no": 37,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "assets/hare_20.jpg",
-  "options": [
-    {"text": "トイレ", "img": ""},
-    {"text": "キッチン", "img": ""},
-    {"text": "ベッド", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "Gambar menunjukkan fasilitas dasar di rumah.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 3 - Kosakata Tempat] Fasilitas rumah dasar. Gambar memperlihatkan salah satu dari tiga opsi fasilitas yang umum ada di rumah Jepang.",
-  "opt_detail": [
-    {"kana": "といれ", "rom": "toire", "arti": "toilet", "alansa": "Toilet fasilitas dasar di rumah Jepang."},
-    {"kana": "きっちん", "rom": "kichin", "arti": "dapur", "alansa": "Kitchen adalah tempat memasak."},
-    {"kana": "ベッド", "rom": "beddo", "arti": "perpindahan", "alansa": "Beddo adalah tempat tidur."}
-  ],
-  "opt_note": ["(toire) toilet", "(kichin) dapur", "(beddo) tempat tidur"],
-  "kunci_id": "トイレ"
-},
-{
-  "no": 38,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: 電話ですか。\\nB: いいえ、違います。",
-  "img": "",
-  "options": [
-    {"text": "でんわですか", "img": ""},
-    {"text": "えいごですか", "img": ""},
-    {"text": "なんですか", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "A: Ini telepon?\\nB: Tidak, ini bahasa Jepang.",
-  "trans_rom": "A: Denwa desu ka.\\nB: Iya, nihongo desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 3 - Tanya Identitas] Tanya 'nani desu ka' untuk menanyakan tentang sesuatu yang tidak jelas. Balasan 'nihongo desu' menjawab bahwa itu adalah bahasa Jepang.",
-  "opt_detail": [
-    {"kana": "でんわですか", "rom": "denwa desu ka", "arti": "telepon?", "alansa": "Denwa desu ka menanyakan apakah sesuatu adalah telepon."},
-    {"kana": "えいごですか", "rom": "eigo desu ka", "arti": "bahasa Inggris?", "alansa": "Eigo desu ka menanyakan bahasa Inggris."},
-    {"kana": "なんですか", "rom": "nani desu ka", "arti": "apa?", "alansa": "Nani desu ka adalah tanya umum tentang identitas sesuatu."}
-  ],
-  "opt_note": ["(denwa desu ka) telepon?", "(eigo desu ka) bahasa Inggris?", "(nani desu ka) apa?"],
-  "kunci_id": "なんですか"
-}
-  "no": 35,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "A: これ何の_____ですか。\\nB: 私のペンです。",
-  "img": "",
-  "options": [
-    {"text": "もの", "img": ""},
-    {"text": "こと", "img": ""},
-    {"text": "ところ", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Ini milik apa?\\nB: Pen saya.",
-  "trans_rom": "A: Kore nani no _____ desu ka.\\nB: Watashi no pen desu.",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 10 - Kosakata Memiliki] 'Mono' digunakan untuk menanyakan tentang benda atau objek. 'Watashi no pen' menunjukkan kepemilikan.",
-  "opt_detail": [
-    {"kana": "もの", "rom": "mono", "arti": "benda", "alansa": "Mono digunakan untuk menanyakan benda."},
-    {"kana": "こと", "rom": "koto", "arti": "kegiatan", "alansa": "Koto digunakan untuk menanyakan aktivitas atau konsep."},
-    {"kana": "ところ", "rom": "tokoro", "arti": "tempat", "alansa": "Tokoro digunakan untuk menanyakan lokasi atau tempat."}
-  ],
-  "opt_note": ["(mono) benda", "(koto) kegiatan", "(tokoro) tempat"],
-  "kunci_id": "もの"
-},
-{
-  "no": 36,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: 寿司が大好きです。\\nB: 私も_____です。",
-  "img": "",
-  "options": [
-    {"text": "大好きです", "img": ""},
-    {"text": "好きではありません", "img": ""},
-    {"text": "嫌いです", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Sushi saya sangat sukai.\\nB: Saya juga.",
-  "trans_rom": "A: Sushi ga daisuki desu.\\nB: Watashi mo _____ desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Ungkapan - Kemukaan] Ungkapan 'daisuki desu' berarti sangat sukai. Struktur 'mo mo daisuki desu' menjawab ucapan serupa dengan cara yang sama.",
-  "opt_detail": [
-    {"kana": "大好きです", "rom": "daisuki desu", "arti": "sukai sangat", "alansa": "Daisuki desu adalah ungkapan kuat untuk sangat suka."},
-    {"kana": "好きではありません", "rom": "suki dewa arimasen", "arti": "tidak suka", "alansa": "Suki dewa arimasen adalah penolakan yg lembut."},
-    {"kana": "嫌いです", "rom": "kirai desu", "arti": "benci", "alansa": "Kirai desu adalah ungkapan benci yang lebih kuat."}
-  ],
-  "opt_note": ["(daisuki desu) sangat suka", "(suki dewa arimasen) tidak suka", "(kirai desu) benci"],
-  "kunci_id": "大好きです"
-}
-  "no": 33,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "assets/hare_25.jpg",
-  "options": [
-    {"text": "時計", "img": ""},
-    {"text": "ラジオ", "img": ""},
-    {"text": "テレビ", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "Gambar menunjukkan peralatan elektronik di ruang tamu.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 10 - Kosakata Fasilitas] Peralatan elektronik dalam ruang tamu. Gambar memperlihatkan salah satu dari tiga opsi yang umum ditempatkan di ruang tamu Jepang.",
-  "opt_detail": [
-    {"kana": "とけい", "rom": "tokei", "arti": "jam", "alansa": "Tokei berarti alat jam."},
-    {"kana": "らじお", "rom": "rajio", "arti": "radio", "alansa": "Radio adalah alat penyiaran suara."},
-    {"kana": "テレビ", "rom": "terebi", "arti": "TV", "alansa": "Terebi berarti television."}
-  ],
-  "opt_note": ["(tokei) jam", "(rajio) radio", "(terebi) TV"],
-  "kunci_id": "テレビ"
-},
-{
-  "no": 34,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: すみません、ここは_____ですか。\\nB: いいえ、ここは私の席です。",
-  "img": "",
-  "options": [
-    {"text": "空いています", "img": ""},
-    {"text": "埋まっています", "img": ""},
-    {"text": "壊れています", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "Maaf, kursi ini kosong?\\nTidak, ini kursi saya.",
-  "trans_rom": "A: Sumimasen, koko wa _____ desu ka.\\nB: Iya, koko wa watashi no seki desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Ungkapan - Keadaan Tempat] 'Aite imasu' berarti tempat kosong/disposisi. 'Umagatte imasu' berarti penuh/ditempati. 'Kowarete imasu' berarti rusak.",
-  "opt_detail": [
-    {"kana": "空いています", "rom": "aitemasu", "arti": "kosong", "alansa": "Aitemasu menunjukkan tempat kosong atau tersedia."},
-    {"kana": "埋まっています", "rom": "umagatte imasu", "arti": "penuh", "alansa": "Umagatte imasu menunjukkan tempat sudah dipenuhi orang."},
-    {"kana": "壊れています", "rom": "kowarete imasu", "arti": "rusak", "alansa": "Kowarete imasu menunjukkan barang sudah rusak."}
-  ],
-  "opt_note": ["(aitemasu) kosong", "(umagatte imu) penuh", "(kowarete imu) rusak"],
-  "kunci_id": "空いています"
-}
-  "no": 31,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "A: コーヒーを飲みますか。\\nB: いいえ、_____です。",
-  "img": "",
-  "options": [
-    {"text": "飲みませんなら", "img": ""},
-    {"text": "飲みません", "img": ""},
-    {"text": "飲めます", "img": ""}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "A: Minum kopi?\\nB: Tidak, saya tidak minum.",
-  "trans_rom": "A: Koohii wo nomimasu ka.\\nB: Iya, nomimasen desu.",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 6 - Pola Tanya] Tanya minum menggunakan 'nomimasu ka'. Balasan 'nomimasen' adalah penolakan yang baku dan sopan.",
-  "opt_detail": [
-    {"kana": "飲みませんなら", "rom": "nomimasenara", "arti": "salah eja", "alansa": "Nomimasenara bukan bentuk baku."},
-    {"kana": "飲みません", "rom": "nomimasen", "arti": "tidak minum", "alansa": "Nomimasen adalah penolakan yang baku."},
-    {"kana": "飲めます", "rom": "ikemasu", "arti": "dapat minum", "alansa": "Ikemasu menunjukkan kemampuan, bukan tindakan."}
-  ],
-  "opt_note": ["(nomimasen) tidak minum", "(nomimasenara) salah", "(ikemasu) dapat minum"],
-  "kunci_id": "飲みません"
-},
-{
-  "no": 32,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: 今週末、何をしますか。\\nB: 公園に_____です。",
-  "img": "",
-  "options": [
-    {"text": "行きます", "img": ""},
-    {"text": "行きますか", "img": ""},
-    {"text": "行きました", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Minggu ini kamu akan kemana?\\nB: Ke taman."",
-  "trans_rom": "A: Konshuu matsu, nani wo shimasu ka.\\nB: Kouen ni _____ desu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 19 - Arah dan Tempat] Particle 'ni' menandakan tujuan atau lokasi setelah verb pergerakan seperti 'ikimasu'. 'Kouen ni' berarti ke taman.",
-  "opt_detail": [
-    {"kana": "行きます", "rom": "ikimasu", "arti": "pergi", "alansa": "Ikimasu dengan 'ni' menandakan tujuan ke taman."},
-    {"kana": "行きますか", "rom": "ikimasu ka", "arti": "pergi?", "alansa": "Ikimasu ka menanyakan apakah pergi, bukan menyatakan rencana."},
-    {"kana": "行きました", "rom": "ikimashita", "arti": "sudah pergi", "alansa": "Ikimashata adalah lampau, tidak sesuai dengan konteks minggu depan."}
-  ],
-  "opt_note": ["(ikimasu) pergi", "(ikimasu ka) pergi?", "(ikimashita) sudah pergi"],
-  "kunci_id": "行きます"
-}
-  "no": 29,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "A: これは何_____ですか。\\nB: え、これは私の本です。",
-  "img": "",
-  "options": [
-    {"text": "ですか", "img": ""},
-    {"text": "とですか", "img": ""},
-    {"text": "ですか", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Ini apa?\\nB: Eh, ini buku saya.",
-  "trans_rom": "A: Kore wa nani _____ desu ka.\\nB: E, kore wa watashi no hon desu.",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 3 - Tanya Apa] Tanya 'nani desu ka' untuk menanyakan nama/identitas objek. Jawaban B mengidentifikasi barang sebagai punya mereka.",
-  "opt_detail": [
-    {"kana": "ですか", "rom": "desu ka", "arti": "adalah?", "alansa": "Desu ka adalah bentuk baku untuk tanyaanya."},
-    {"kana": "とですか", "rom": "to desu ka", "arti": "salah", "alansa": "To desu ka bukan bentuk baku."},
-    {"kana": "ですか", "rom": "desu ka", "arti": "adalah?", "alansa": "Duplicate option untuk distractor."}
-  ],
-  "opt_note": ["(desu ka) adalah?", "(to desu ka) salah", "(desu ka) adalah?"],
-  "kunci_id": "ですか"
-},
-{
-  "no": 30,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: 明日、図書館に行きます。\\nB: _____。",
-  "img": "",
-  "options": [
-    {"text": "一緒に行きます", "img": ""},
-    {"text": "行きません", "img": ""},
-    {"text": "行けます", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Besok pergi ke perpustakaan.\\nB: Sama-sama pergi.",
-  "trans_rom": "A: Ashita, toshokan ni ikimasu.\\nB: Issho ni ikimasu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Ungkapan - Mengajak Bergabung] Ungkapan 'issho ni ikimasu' menawarkan bergabung dengan orang tersebut dalam aktivitas yang sama.",
-  "opt_detail": [
-    {"kana": "一緒に行きます", "rom": "issho ni ikimasu", "arti": "pergi bersama", "alansa": "Issho ni ikimasu menawarkan bergabung pergi dengan pembicara."},
-    {"kana": "行きません", "rom": "ikimasen", "arti": "tidak pergi", "alansa": "Ikimasen menolak ajakan pergi."},
-    {"kana": "行けます", "rom": "ikemasu", "arti": "dapat pergi", "alansa": "Ikemasu kemampuan pergi, bukan ajakan."}
-  ],
-  "opt_note": ["(issho ni ikimasu) pergi bersama", "(ikimasen) tidak pergi", "(ikemasu) dapat pergi"],
-  "kunci_id": "一緒に行きます"
-}
-  "no": 28,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: これは私の本です。\\nB: そうですか。じゃあ、_____。",
-  "img": "",
-  "options": [
-    {"text": "かえします", "img": ""},
-    {"text": "もらいます", "img": ""},
-    {"text": "わすれます", "img": ""}
-  ],
-  "answer": 0,
-  "score": "0/4",
-  "trans": "A: Ini buku saya.\\nB: Benar. Jadi, _____.",
-  "trans_rom": "A: Kore wa watashi no hon desu.\\nB: Sou desu ka. Jaa, _____.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Ungkapan - Mengembalikan Barang] Ungkapan 'kaerimasu' digunakan untuk menawarkan mengembalikan barang kepada pemiliknya.",
-  "opt_detail": [
-    {"kana": "かえします", "rom": "kaerimasu", "arti": "mengembalikan", "alansa": "Kaerimasu adalah cara baku untuk mengembalikan barang."},
-    {"kana": "もらいます", "rom": "morauimasu", "arti": "menerima", "alansa": "Morauimasu berarti menerima, bukan mengembalikan."},
-    {"kana": "わすれます", "rom": "wasuremasu", "arti": "melupakan", "alansa": "Wasuremasu berarti melupakan, tidak relevan."}
-  ],
-  "opt_note": ["(kaerimasu) mengembalikan", "(morauimasu) menerima", "(wasuremasu) melupakan"],
-  "kunci_id": "かえします"
-},
-{
-  "no": 29,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "",
-  "img": "assets/hare_30.jpg",
-  "options": [
-    {"text": "たべます", "img": ""},
-    {"text": "のみます", "img": ""},
-    {"text": "よみます", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "Gambar menunjukkan seseorang sedang membaca buku.",
-  "trans_rom": "-",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 6 - Kata Kerja Aktivitas] Kata よんでいます berasal dari kata kerja 読みます (yomimasu = membaca). Gambar memperlihatkan aktivitas membaca.",
-  "opt_detail": [
-    {"kana": "たべます", "rom": "tabemasu", "arti": "makan", "alansa": "Tabemasu berarti makan, tidak sesuai dengan gambar membaca."},
-    {"kana": "のみます", "rom": "nomimasu", "arti": "minum", "alansa": "Nomimasu berarti minum, tidak sesuai dengan gambar membaca."},
-    {"kana": "よみます", "rom": "yomimasu", "arti": "membaca", "alansa": "Yomimasu berarti membaca, tepat sesuai dengan gambar."}
-  ],
-  "opt_note": ["(tabemasu) makan", "(nomimasu) minum", "(yomimasu) membaca"],
-  "kunci_id": "よみます"
-},
-{
-  "no": 30,
-  "section": "SESI 1 : MOJIGOI",
-  "title": "A: 昨日何を_____しましたか。\\nB: えいがをみました。",
-  "img": "",
-  "options": [
-    {"text": "しました", "img": ""},
-    {"text": "たべました", "img": ""},
-    {"text": "のんました", "img": ""}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "A: Kamu kemarin melakukan apa?\\nB: Menonton film.",
-  "trans_rom": "A: Kinou nani wo _____ shimashita ka.\\nB: Eiga wo mimashita.",
-  "mnn": "Mojigoi",
-  "analisis": "[MNN Bab 6 - Kata Kerja Lalu] Kata たべました (tabemashita) adalah bentuk lampau dari たべます (tabemasu = makan). Konteks menanyakan aktivitas kemarin.",
-  "opt_detail": [
-    {"kana": "しました", "rom": "shimashita", "arti": "melakukan", "alansa": "Shimashata adalah bentuk lampau umum, kurang tepat karena butuh kata kerja spesifik."},
-    {"kana": "たべました", "rom": "tabemashita", "arti": "makan", "alansa": "Tabemashita berarti makan, tepat untuk menjawab pertanyaan tentang aktivitas kemarin."},
-    {"kana": "のんました", "rom": "nonemashita", "arti": "salah eja", "alansa": "Nonemashita merupakan ejaan salah dari nomemashita."}
-  ],
-  "opt_note": ["(shimashita) melakukan", "(tabemashita) makan", "(nonemashita) salah eja"],
-  "kunci_id": "たべました"
-}
-  ],
-  "answer": 1,
-  "score": "0/4",
-  "trans": "A: Halo, Rida.\\nB: Ah, Rida, sekarang?\\nA: Ada di stasiun. Maaf, saya salah jam dan akan terlambat sekitar 15 menit.",
-  "trans_rom": "A: Moshimoshi, Rida-san.\\nB: Aa, Rida-san, ima?\\nA: Eki ni imasu. Sumimasen、jikan wo machigaete、juugofun gurai okuremasu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Bab 3 - Kata Tanya Lokasi] Pertanyaan doko desu ka untuk lokasi, tepat karena dijawab eki ni imasu.",
-  "opt_detail": [
-    {"kana": "だれですか", "rom": "dare desu ka", "arti": "siapa?", "alansa": "Dare desu ka untuk identitas orang."},
-    {"kana": "どこですか", "rom": "doko desu ka", "arti": "di mana?", "alansa": "Doko desu ka menanyakan lokasi. Pas dengan balasan stasiun."},
-    {"kana": "どうですか", "rom": "dou desu ka", "arti": "bagaimana?", "alansa": "Dou desu ka untuk pendapat atau keadaan."}
-  ],
-  "opt_note": ["(dare desu ka) siapa?", "(doko desu ka) di mana?", "(dou desu ka) bagaimana?"],
-  "kunci_id": "どこですか"
-},
-{
-  "no": 27,
-  "section": "SESI 2 : HYOUGEN",
-  "title": "A: すみません、お待ちしていますか。\\nB: いいえ、もう_____です。",
-  "img": "",
-  "options": [
-    {"text": "待たれています", "img": ""},
-    {"text": "待たせています", "img": ""},
-    {"text": "待っています", "img": ""}
-  ],
-  "answer": 2,
-  "score": "0/4",
-  "trans": "A: Maaf, Anda menunggu?\\nB: Tidak, sudah menunggu.",
-  "trans_rom": "A: Sumimasen, o-machi shite imasu ka.\\nB: Iya, already matsu shite imasu.",
-  "mnn": "Hyougen",
-  "analisis": "[MNN Ungkapan - Status Menunggu] Ungkapan 'matsu shite imasu' menunjukkan status sedang menunggu,Meanwhile 'matsu sarete imasu' menunjukkan orang lain yang menunggu Anda.",
-  "opt_detail": [
-    {"kana": "待たれています", "rom": "matarete imasu", "arti": "sedang ditunggu oleh orang lain", "alansa": "Matarete imasu menunjukkan pihak lain yang menunggu Anda."},
-    {"kana": "待たせています", "rom": "matasete imasu", "arti": "sedang menunggu orang lain", "alansa": "Matasete imasu menunjukkan Anda sedang menunggu orang lain."},
-    {"kana": "待っています", "rom": "motte imasu", "arti": "sedang menunggu", "alansa": "Motte imasu adalah bentuk baku untuk status menunggu."}
-  ],
-  "opt_note": ["(matarete imu) sedang ditunggu", "(matasete imu) sedang menunggu", "(motte imu) menunggu"],
-  "kunci_id": "待っています"
-}
   },
   {
     "no": 26,
@@ -2770,7 +1869,8 @@
       "(koohii) kopi",
       "(ocha) teh hijau"
     ],
-    "kunci_id": "お茶"
+    "kunci_id": "お茶",
+    "audio": "assets/audio/1.mp3"
   },
   {
     "no": 37,
@@ -2822,7 +1922,8 @@
       "(juuichiji gojuuppun) 11.50",
       "(juuji gojuuppun) 10.50"
     ],
-    "kunci_id": "10.50"
+    "kunci_id": "10.50",
+    "audio": "assets/audio/2.mp3"
   },
   {
     "no": 38,
@@ -2874,7 +1975,8 @@
       "(juugoban) Nomor 15",
       "(juuhachiban) Nomor 18"
     ],
-    "kunci_id": "No. 18"
+    "kunci_id": "No. 18",
+    "audio": "assets/audio/3.mp3"
   },
   {
     "no": 39,
@@ -2926,7 +2028,8 @@
       "(ue kara itsutsu-me) ke-5 dari atas",
       "(ue kara futatsu-me) ke-2 dari atas"
     ],
-    "kunci_id": "上から 2 つ目です。"
+    "kunci_id": "上から 2 つ目です。",
+    "audio": "assets/audio/4.mp3"
   },
   {
     "no": 40,
@@ -2978,7 +2081,8 @@
       "(memo suru) mencatat",
       "(joushi ni houkoku) lapor ke atasan"
     ],
-    "kunci_id": "Lapor ke atasannya"
+    "kunci_id": "Lapor ke atasannya",
+    "audio": "assets/audio/5.mp3"
   },
   {
     "no": 41,
@@ -3030,7 +2134,8 @@
       "(onigiri 3, sandoitchi 3) kurang onigiri",
       "(onigiri 4, sandoitchi 3) tepat"
     ],
-    "kunci_id": "おにぎり 4 サンドイッチ 3"
+    "kunci_id": "おにぎり 4 サンドイッチ 3",
+    "audio": "assets/audio/6.mp3"
   },
   {
     "no": 42,
@@ -3071,7 +2176,8 @@
       "(sakura hoteru no tonari) disamping hotel sakura",
       "(sakura hoteru no mae) didepan hotel sakura"
     ],
-    "kunci_id": "Disamping hotel sakura"
+    "kunci_id": "Disamping hotel sakura",
+    "audio": "assets/audio/7.mp3"
   },
   {
     "no": 43,
@@ -3123,7 +2229,8 @@
       "(kumori) mendung",
       "(hare) cerah"
     ],
-    "kunci_id": "はれ"
+    "kunci_id": "はれ",
+    "audio": "assets/audio/8.mp3"
   },
   {
     "no": 44,
@@ -3175,7 +2282,8 @@
       "(aruku tsuaa no chiketto) tiket jalan kaki",
       "(jitensha no chiketto) tiket sepeda"
     ],
-    "kunci_id": "Gambar tiket tur sepeda"
+    "kunci_id": "Gambar tiket tur sepeda",
+    "audio": "assets/audio/9.mp3"
   },
   {
     "no": 46,
@@ -3227,7 +2335,8 @@
       "(325) tepat",
       "(235) salah"
     ],
-    "kunci_id": "NO 325"
+    "kunci_id": "NO 325",
+    "audio": "assets/audio/10.mp3"
   },
   {
     "no": 47,
@@ -3279,6 +2388,7 @@
       "(taoru) handuk",
       "(beruto) sabuk"
     ],
-    "kunci_id": "タオル と 500 円"
+    "kunci_id": "タオル と 500 円",
+    "audio": "assets/audio/1.mp3"
   }
 ]
