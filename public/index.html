@@ -4,171 +4,173 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
-<link rel="icon" type="image/svg+xml" href="/favicon.svg">
-<title>SinauJepang - Latihan Soal Bahasa Jepang & Tokutei Ginou</title>
-  <!-- Tailwind CSS lokal (hasil build, siap produksi) -->
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>SinauJepang - Latihan Soal Bahasa Jepang & Tokutei Ginou</title>
+  
+  <!-- Tailwind CSS lokal (hasil build) -->
   <link rel="stylesheet" href="/assets/css/tailwind.css">
   <!-- Google Fonts & Font Awesome Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   
-  
   <style>
     .bg-fuji-overlay {
-      background: linear-gradient(135deg, rgba(240, 249, 255, 0.92) 0%, rgba(224, 242, 254, 0.88) 100%),
+      background: linear-gradient(135deg, rgba(240, 249, 255, 0.94) 0%, rgba(224, 242, 254, 0.90) 100%),
                   url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1920&auto=format&fit=crop');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
+    }
+    .transition-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     }
   </style>
 </head>
 <body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between selection:bg-fuji-200">
 
   <!-- Header bersama: site-layout.js -->
-<script src="/assets/js/indexeddb.js"></script>
-<script src="/assets/js/site-layout.js"></script>
-<main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-    <!-- Hero Section -->
-    <section class="relative bg-fuji-overlay py-16 md:py-24 border-b border-fuji-100">
+  <script src="/assets/js/indexeddb.js"></script>
+  <script src="/assets/js/site-layout.js"></script>
+
+  <main class="flex-grow w-full">
+    <!-- Hero Section Utama -->
+    <section class="relative bg-fuji-overlay py-16 md:py-20 border-b border-fuji-100">
       <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <!-- Badge -->
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-fuji-100/90 text-fuji-700 text-xs sm:text-sm font-semibold border border-fuji-200 mb-6 backdrop-blur-sm">
-          <i class="fa-solid fa-clock text-amber-500"></i>
-          <span>Timer • Audio • Skor Real-time • Pembahasan Lengkap</span>
+        <!-- Badge Pill -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-fuji-100/90 text-fuji-700 text-xs sm:text-sm font-semibold border border-fuji-200 mb-6 backdrop-blur-sm shadow-sm">
+          <i class="fa-solid fa-heart text-rose-500"></i>
+          <span>100% Gratis Tanpa Biaya • Untuk Pejuang Tokutei Ginou</span>
         </div>
 
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight mb-6">
-          Simulasi CBT JFT-Basic<br/>
-          <span class="text-fuji-600">— Batas Kelulusan 200 Poin</span>
-        </div></div></section>
+          Tidak Ada Kata Terlambat.<br/>
+          <span class="text-fuji-600">Raih Impian Tokutei Ginou ke Jepang!</span>
+        </h1>
 
-  <!-- Section Paket Soal dengan render dinamis dari package-render.js -->
-  <section id="latihan-soal" class="py-14 bg-fuji-50">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6">
-      <!-- Kontainer render kartu paket seri LOLOSYUK & PRINCESS -->
-      <div id="paket-container" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
-    </div>
-  </section>
-</main>
+        <!-- Cerita Personal (Glassmorphism) -->
+        <div class="bg-white/85 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-fuji-200/80 shadow-md text-left max-w-2xl mx-auto mb-8 relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-2 h-full bg-fuji-500"></div>
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-fuji-100 rounded-xl text-fuji-600 shrink-0 hidden sm:block">
+              <i class="fa-solid fa-user-ninja text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-800 text-lg mb-1 flex items-center gap-2">
+                <span>Catatan Pejuang TG</span>
+                <span class="text-xs font-normal text-fuji-700 bg-fuji-100 px-2 py-0.5 rounded-full">Kisah Nyata</span>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                "Saya paham rasanya belajar di usia yang tidak muda lagi. Ingatan tak lagi secepat dulu, menghafal kosakata terasa berat, dan Kanji sering kali lupa. Namun, impian untuk berangkat ke Jepang demi keluarga tidak boleh padam."
+              </p>
+              <p class="text-slate-700 text-sm font-medium">
+                Website ini saya buat <span class="text-fuji-600 font-bold">sederhana dan gratis</span> agar kita bisa latihan pelan-pelan, mengulang tanpa batas, sampai benar-benar paham.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Quick Access Navigation (Kosakata & Kanji) -->
+        <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-6">
+          <a href="/kotoba.html" class="inline-flex items-center gap-2 bg-white hover:bg-fuji-50 text-fuji-700 font-bold px-5 py-2.5 rounded-xl border border-fuji-200 shadow-sm transition-all text-sm">
+            <i class="fa-solid fa-book-open text-fuji-600"></i>
             <span>Hafalan Kosakata</span>
           </a>
-          <a href="/kanji.html" class="flex-1 sm:w-auto bg-rose-50 hover:bg-rose-100 text-rose-800 font-semibold px-5 py-3 rounded-xl border border-rose-200 shadow-sm transition-all flex items-center justify-center gap-2 text-base">
-            <i class="fa-solid fa-language text-rose-600"></i>
+          <a href="/kanji.html" class="inline-flex items-center gap-2 bg-white hover:bg-fuji-50 text-fuji-700 font-bold px-5 py-2.5 rounded-xl border border-fuji-200 shadow-sm transition-all text-sm">
+            <i class="fa-solid fa-language text-fuji-600"></i>
             <span>Daftar Kanji</span>
           </a>
         </div>
-        <div class="mt-4 sm:mt-0 flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button onclick="openDonationModal()" class="flex-1 sm:w-auto bg-amber-50 hover:bg-amber-100 text-amber-800 font-semibold px-5 py-3 rounded-xl border border-amber-200 shadow-sm transition-all flex items-center justify-center gap-2 text-base">
+        <!-- Call to Action Buttons (Ukuran Pas & Proporsional) -->
+        <div class="flex flex-wrap items-center justify-center gap-3">
+          <button onclick="scrollToSoal()" class="inline-flex items-center gap-2 bg-fuji-600 hover:bg-fuji-700 text-white font-bold px-6 py-3 rounded-xl shadow-md transition-all text-sm">
+            <i class="fa-solid fa-pen-to-square"></i>
+            <span>Mulai Latihan Sekarang</span>
+          </button>
+          <button onclick="openDonationModal()" class="inline-flex items-center gap-2 bg-amber-50 hover:bg-amber-100 text-amber-800 font-semibold px-6 py-3 rounded-xl border border-amber-200 shadow-sm transition-all text-sm">
             <i class="fa-solid fa-mug-hot text-amber-600"></i>
-            <span>Traktir Kopi</span>
+            <span>Traktir Kopi Pembuat Soal</span>
           </button>
         </div>
-<section id="latihan-soal" class="py-14 bg-fuji-50"><div class="max-w-5xl mx-auto px-4 sm:px-6"><div class="text-center max-w-2xl mx-auto mb-10"><h2 class="text-2xl sm:text-3xl font-bold text-slate-800 mb-2">Pilih Paket Soal</h2><p class="text-slate-600 text-sm">17 paket &bull; 742 soal &bull; timer, audio, skor &amp; pembahasan instan.</p></div><div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Card 1: Moji & Goi -->
-          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all cursor-pointer group-hover:border-fuji-300">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-10 h-10 rounded-xl bg-fuji-100 text-fuji-600 flex items-center justify-center text-lg font-bold group-hover:bg-fuji-600 group-hover:text-white transition-colors">
-                文字
-              </div>
-              <span class="text-xs font-semibold px-2.5 py-1 bg-fuji-50 text-fuji-600 rounded-full border border-fuji-200">12 Paket Soal</span>
-            </div>
-            <h3 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-fuji-600 transition-colors">Moji & Goi (Huruf & Kosakata)</h3>
-            <p class="text-slate-600 text-sm mb-4">Melatih hafalan kata dasar, cara baca Kanji, dan kosa kata sehari-hari di Jepang.</p>
-            <div class="flex items-center text-fuji-600 font-semibold text-sm gap-1 group-hover:translate-x-1 transition-transform">
-              <span>Belum mengerjakan</span>
-            </div>
-          </div>
+      </div>
+    </section>
 
-          <!-- Card 2: Kaiwa & Hyogen -->
-          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all cursor-pointer group-hover:border-fuji-300">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-10 h-10 rounded-xl bg-fuji-100 text-fuji-600 flex items-center justify-center text-lg font-bold group-hover:bg-fuji-600 group-hover:text-white transition-colors">
-                会話
-              </div>
-              <span class="text-xs font-semibold px-2.5 py-1 bg-fuji-50 text-fuji-600 rounded-full border border-fuji-200">10 Paket Soal</span>
-            </div>
-            <h3 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-fuji-600 transition-colors">Kaiwa & Hyogen (Percakapan)</h3>
-            <p class="text-slate-600 text-sm mb-4">Pahami pola ungkapan situasi di tempat kerja, toko, serta kehidupan praktis.</p>
-            <div class="flex items-center text-fuji-600 font-semibold text-sm gap-1 group-hover:translate-x-1 transition-transform">
-              <span>Belum mengerjakan</span>
-            </div>
+    <!-- SECTION PAKET SOAL LATIHAN -->
+    <section id="latihan-soal" class="relative bg-fuji-overlay py-16 md:py-24 border-b border-fuji-100">
+      <div class="max-w-5xl mx-auto px-4 sm:px-6 space-y-12">
+        
+        <!-- Header Umum Simulasi Terpusat -->
+        <div class="text-center max-w-3xl mx-auto">
+          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-fuji-100/90 text-fuji-700 text-xs sm:text-sm font-semibold border border-fuji-200 mb-4 backdrop-blur-sm shadow-sm">
+            <i class="fa-solid fa-bolt text-amber-500"></i>
+            <span>Timer • Audio • Skor Real-time • Pembahasan Lengkap</span>
           </div>
-
-          <!-- Card 3: Chokai -->
-          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all cursor-pointer group-hover:border-fuji-300">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-10 h-10 rounded-xl bg-fuji-100 text-fuji-600 flex items-center justify-center text-lg font-bold group-hover:bg-fuji-600 group-hover:text-white transition-colors">
-                聴解
-              </div>
-              <span class="text-xs font-semibold px-2.5 py-1 bg-fuji-50 text-fuji-600 rounded-full border border-fuji-200">8 Paket Soal</span>
-            </div>
-            <h3 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-fuji-600 transition-colors">Chokai (Pendengaran / Listening)</h3>
-            <p class="text-slate-600 text-sm mb-4">Latihan mendengarkan instruksi dan percakapan langsung berformat audio resmi.</p>
-            <div class="flex items-center text-fuji-600 font-semibold text-sm gap-1 group-hover:translate-x-1 transition-transform">
-              <span>Belum mengerjakan</span>
-            </div>
-          </div>
-
-          <!-- Card 4: Dokkai -->
-          <div class="bg-white p-6 rounded-2xl border border-slate-200/80 shadow-sm hover:shadow-md transition-all cursor-pointer group-hover:border-fuji-300">
-            <div class="flex items-center justify-between mb-4">
-              <div class="w-10 h-10 rounded-xl bg-fuji-100 text-fuji-600 flex items-center justify-center text-lg font-bold group-hover:bg-fuji-600 group-hover:text-white transition-colors">
-                読解
-              </div>
-              <span class="text-xs font-semibold px-2.5 py-1 bg-fuji-50 text-fuji-600 rounded-full border border-fuji-200">? Paket Soal</span>
-            </div>
-            <h3 class="text-lg font-bold text-slate-800 mb-1 group-hover:text-fuji-600 transition-colors">Dokkai (Pemahaman Bacaan)</h3>
-            <p class="text-slate-600 text-sm mb-4">Latihan membaca dan memahami teks berbahasa Jepang.</p>
-            <div class="flex items-center text-fuji-600 font-semibold text-sm gap-1 group-hover:translate-x-1 transition-transform">
-              <span>Belum mengerjakan</span>
-            </div>
-          </div>
-        </div></div></section>
-
-    <section class="py-14 bg-white border-t border-slate-100">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6">
-        <div class="bg-gradient-to-br from-amber-50/60 to-fuji-50/60 p-8 rounded-3xl border border-amber-200/60 text-center relative overflow-hidden shadow-sm">
-          <div class="w-12 h-12 bg-amber-100 text-amber-700 rounded-full flex items-center justify-center mx-auto mb-4 text-xl">
-            <i class="fa-solid fa-mug-hot"></i>
-          </div>
-          <h2 class="text-2xl font-bold text-slate-800 mb-2">Merasakan Manfaat dari Website Ini?</h2>
-          <p class="text-slate-600 text-sm max-w-2xl mx-auto mb-4 leading-relaxed">
-            Website ini memanfaat fasilitas gratis agar bisa diakses siapapun tanpa biaya. Dukungan sukarela sekadar <strong>"Traktir Kopi"</strong> sangat berharga untuk mengapresiasi waktu &amp; tenaga dalam menyusun serta merapikan soal-soal di website ini.
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 leading-tight mb-3">
+            Simulasi CBT JFT-Basic
+          </h2>
+          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
+            Pilih paket latihan di bawah ini. Nilai standar kelulusan minimal <span class="font-bold text-fuji-600">200 poin</span> (Level A2).
           </p>
-          <p class="text-slate-500 text-sm">Dukung dengan <span class="text-amber-600 font-semibold cursor-pointer hover:underline" onclick="openDonationModal()">Traktir Kopi</span> jika bermanfaat.</p>
+
+          <!-- Keterangan Skala Nilai Terpusat -->
+          <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-4 bg-white/80 backdrop-blur-md px-5 py-2.5 rounded-2xl border border-slate-200 text-xs font-bold text-slate-600 shadow-sm">
+            <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span> 10 - 144 (-)</span>
+            <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> 145 (A1)</span>
+            <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-sky-400"></span> 175 (A2.1)</span>
+            <span class="flex items-center gap-1 text-fuji-600"><span class="w-2.5 h-2.5 rounded-full bg-fuji-600"></span> 200 - 250 (A2 Lulus)</span>
+          </div>
         </div>
-      </div>
-    </div></div></section>
 
-  <!-- Apresiasi Pembuat Soal -->
-  <section class="relative bg-fuji-overlay py-16 md:py-24 border-t border-b border-fuji-100">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <!-- Badge pill amber -->
-      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/80 text-amber-800 text-xs sm:text-sm font-semibold border border-amber-200 mb-6 backdrop-blur-sm">
-        <i class="fa-solid fa-heart text-amber-500"></i>
-        <span>Apresiasi Pembuat Soal • Dukungan Sukarela</span>
-      </div>
+        <!-- Target Render Kartu Soal Otomatis (Sesuai ID package-render.js) -->
+        <div id="paket-render-container"></div>
 
-      <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 mb-2 text-center">Merasakan Manfaat dari Website Ini?</h2>
-
-      <div class="bg-white/85 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-amber-200/60 text-center max-w-2xl mx-auto mb-8 relative overflow-hidden">
-        <div class="absolute top-0 left-0 w-2 h-full bg-amber-500"></div>
-        <p class="text-slate-600 text-sm max-w-2xl mx-auto leading-relaxed">
-          Website ini menyediakan fasilitas gratis agar bisa diakses siapapun tanpa biaya. Dukungan sekadar "Traktir Kopi" sangat berharga untuk mengapresiasi waktu & tenaga dalam menyusun serta merapikan soal-soal di website ini.
-        </p>
-        <p class="text-slate-500 text-sm">Dukung dengan <span class="text-amber-600 font-semibold cursor-pointer hover:underline" onclick="openDonationModal()">Traktir Kopi</span> jika bermanfaat.</p>
       </div>
+    </section>
 
-      <!-- CTA Tombol kapsul amber -->
-      <div class="mt-6">
-        <button onclick="openDonationModal()" class="inline-flex items-center gap-2 bg-amber-600 text-slate-900 font-semibold px-6 py-3 rounded-full border border-amber-500 text-base transition-all hover:bg-amber-500 shadow-md">
-          <i class="fa-solid fa-mug-hot text-lg"></i>
-          Traktir Kopi Saya
-        </button>
+    <!-- SECTION APRESIASI / TRAKTIR KOPI (HERO STYLE) -->
+    <section class="relative bg-fuji-overlay py-16 md:py-24 border-t border-b border-fuji-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/90 text-amber-800 text-xs sm:text-sm font-semibold border border-amber-200 mb-6 backdrop-blur-sm shadow-sm">
+          <i class="fa-solid fa-mug-hot text-amber-600"></i>
+          <span>Apresiasi Pembuat Soal • Dukungan Sukarela</span>
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight mb-6">
+          Merasakan Manfaat dari<br/>
+          <span class="text-amber-600">Website Ini?</span>
+        </h2>
+
+        <div class="bg-white/85 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-amber-200/80 shadow-md text-left max-w-2xl mx-auto mb-8 relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-2 h-full bg-amber-500"></div>
+          <div class="flex items-start gap-4">
+            <div class="p-3 bg-amber-100/80 rounded-xl text-amber-700 shrink-0 hidden sm:block">
+              <i class="fa-solid fa-heart-circle-check text-2xl"></i>
+            </div>
+            <div>
+              <h3 class="font-bold text-slate-800 text-lg mb-1 flex items-center gap-2">
+                <span>Dukungan Anda Sangat Berharga</span>
+                <span class="text-xs font-normal text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full">Kopi Penambah Semangat</span>
+              </h3>
+              <p class="text-slate-600 text-sm leading-relaxed mb-3">
+                Website ini memanfaatkan fasilitas gratis agar bisa diakses siapapun tanpa biaya.
+              </p>
+              <p class="text-slate-700 text-sm font-medium">
+                Dukungan sukarela sekadar <span class="text-amber-700 font-bold">"Traktir Kopi"</span> sangat berharga untuk mengapresiasi waktu &amp; tenaga dalam menyusun serta merapikan soal-soal di website ini.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+          <button onclick="openDonationModal()" class="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-base">
+            <i class="fa-solid fa-mug-hot"></i>
+            <span>Traktir Kopi Pembuat Soal</span>
+          </button>
+        </div>
+
       </div>
-    </div>
-  </section>
+    </section>
+  </main>
 
   <!-- Modal Login Google -->
   <div id="loginModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
@@ -195,9 +197,24 @@
     </div>
   </div>
 
+  <!-- Modal Traktir Kopi -->
+  <div id="donationModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-xl relative border border-slate-100 text-center">
+      <button onclick="closeDonationModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
+        <i class="fa-solid fa-xmark text-lg"></i>
+      </button>
+      <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mx-auto mb-4 text-xl">
+        <i class="fa-solid fa-mug-hot"></i>
+      </div>
+      <h3 class="text-lg font-bold text-slate-800 mb-1">Traktir Kopi Pembuat Soal</h3>
+      <p class="text-slate-600 text-xs mb-4">Scan QRIS berikut dari e-wallet / m-banking Anda. Terima kasih! 🙏</p>
+      <img src="/assets/qris-sinaujepang.jpeg" alt="QRIS SinauJepang" class="w-56 mx-auto rounded-xl border border-slate-200 shadow-sm">
+    </div>
+  </div>
+
+  <!-- Scripts Bawaan Proyek -->
   <script type="module" src="/assets/js/firebase-init.js"></script>
   <script>
-    // Inisialisasi SiteLayout agar header & footer tampil seketika
     if (typeof window.SiteLayout !== 'undefined') {
       window.SiteLayout.mountHeader();
       window.SiteLayout.mountFooter();
@@ -209,7 +226,6 @@
   <script src="/assets/js/package-config.js"></script>
   <script src="/assets/js/package-render.js"></script>
   <script>
-    // Fungsi utama untuk kontrol login & logout (IndexedDB-based)
     async function renderUser() {
       try {
         var u = null;
@@ -233,7 +249,6 @@
       } catch (e) { alert("Gagal masuk: " + (e.message || e.code)); }
     }
     window.fujiLogout = async function () {
-      // Redirect HANYA sekali, langsung, tanpa tunggu signOut
       try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
       window.fujiUser = null;
       try {
@@ -242,8 +257,7 @@
       } catch (e) {}
       location.replace("/login.html");
     };
-    // Redirect ke login juga saat auth state berubah jadi null (misal token expired)
-    // Tampilkan tombol Admin hanya utk admin (email allowlist, custom claim, ATAU dokumen /admins/{uid})
+
     var ADMIN_EMAILS = ["mswaluyo@gmail.com"];
     async function renderAdminBtn() {
       var el = document.getElementById("adminBtn");
@@ -291,24 +305,9 @@
     }
     function openDonationModal() { document.getElementById('donationModal').classList.remove('hidden'); }
     function closeDonationModal() { document.getElementById('donationModal').classList.add('hidden'); }
-    // Buka otomatis bila diarahkan dari halaman lain (SiteLayout.donate -> /?donasi=1)
     if (/(^|[?&])donasi=1/.test(location.search)) {
       setTimeout(function () { try { openDonationModal(); } catch (e) {} }, 400);
     }
   </script>
-  <!-- Modal Traktir Kopi -->
-  <div id="donationModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-xl relative border border-slate-100 text-center">
-      <button onclick="closeDonationModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
-        <i class="fa-solid fa-xmark text-lg"></i>
-      </button>
-      <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mx-auto mb-4 text-xl">
-        <i class="fa-solid fa-mug-hot"></i>
-      </div>
-      <h3 class="text-lg font-bold text-slate-800 mb-1">Traktir Kopi Pembuat Soal</h3>
-      <p class="text-slate-600 text-xs mb-4">Scan QRIS berikut dari e-wallet / m-banking Anda. Terima kasih! 🙏</p>
-      <img src="/assets/qris-sinaujepang.jpeg" alt="QRIS SinauJepang" class="w-56 mx-auto rounded-xl border border-slate-200 shadow-sm">
-    </div>
-  </div>
 </body>
 </html>
