@@ -18,3 +18,5 @@ public/assets/css/*.map
 _arsip/**
 bahan-soal/**
 referensi MNN/**
+# Tailwind CSS output (di-generate ulang via npm run build:css)
+public/assets/css/tailwind.css
