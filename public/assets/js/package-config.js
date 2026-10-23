@@ -1,8 +1,8 @@
 // package-config.js — Data paket soal untuk halaman beranda.
 // Sumber tunggal data paket; ubah di sini jika menambah/mengubah paket.
 window.PAKET_CONFIG = {
-  totalPaket: 17,
-  totalSoal: 742,
+  totalPaket: 18,
+  totalSoal: 805,
   kategori: [
     {
       nama: "LOLOSYUK",
@@ -15,6 +15,14 @@ window.PAKET_CONFIG = {
         { nama: "ORIMASU", slug: "orimasu-quiz", total: 57, ikon: "O" },
         { nama: "TOMEMASU", slug: "tomemasu-quiz", total: 55, ikon: "T" },
         { nama: "KONPYUUTAA", slug: "konpyuutaa-quiz", total: 63, ikon: "K" },
+      ],
+    },
+    {
+      nama: "AC",
+      warna: "purple",
+      badgeGradien: "from-purple-500 to-purple-600",
+      paket: [
+        { nama: "HARE2", slug: "hare2-quiz", total: 63, ikon: "H" },
       ],
     },
     {

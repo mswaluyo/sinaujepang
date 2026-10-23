@@ -1,7 +1,6 @@
 {
   "name": "soal-jft",
   "version": "1.0.0",
-  "description": "Portal latihan JFT-Basic statis. Password gerbang: `Lolosyuk`.",
   "main": "index.js",
   "scripts": {
     "make-admin": "node tools/make-admin.mjs",
