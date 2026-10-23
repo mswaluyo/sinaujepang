@@ -131,6 +131,14 @@
   </div>
 
   <script type="module" src="/assets/js/firebase-init.js"></script>
+  <script>
+    // Inisialisasi SiteLayout agar header & footer tampil seketika
+    if (typeof window.SiteLayout !== 'undefined') {
+      window.SiteLayout.mountHeader();
+      window.SiteLayout.mountFooter();
+      window.SiteLayout.renderUser();
+    }
+  </script>
   <script src="/assets/js/score-cards.js"></script>
   <script src="/assets/js/pack-section-scores.js"></script>
   <script src="/assets/js/package-config.js"></script>
