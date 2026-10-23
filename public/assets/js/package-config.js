@@ -1,0 +1,52 @@
+// package-config.js — Data paket soal untuk halaman beranda.
+// Sumber tunggal data paket; ubah di sini jika menambah/mengubah paket.
+window.PAKET_CONFIG = {
+  totalPaket: 17,
+  totalSoal: 742,
+  kategori: [
+    {
+      nama: "LOLOSYUK",
+      warna: "sky",
+      badgeGradien: "from-sky-500 to-blue-600",
+      paket: [
+        { nama: "GAKUSEI", slug: "gakusei-quiz", total: 56, ikon: "G" },
+        { nama: "HARE", slug: "hare-quiz", total: 60, ikon: "H" },
+        { nama: "MAGARIMASU", slug: "magarimasu-quiz", total: 52, ikon: "M" },
+        { nama: "ORIMASU", slug: "orimasu-quiz", total: 57, ikon: "O" },
+        { nama: "TOMEMASU", slug: "tomemasu-quiz", total: 55, ikon: "T" },
+        { nama: "KONPYUUTAA", slug: "konpyuutaa-quiz", total: 63, ikon: "K" },
+      ],
+    },
+    {
+      nama: "PRINCESS",
+      warna: "rose",
+      badgeGradien: "from-rose-500 to-rose-600",
+      paket: [
+        { nama: "KUROI", slug: "kuroi-quiz", total: 47, ikon: "K" },
+        { nama: "KUTSUSHITA", slug: "kutsushita-quiz", total: 46, ikon: "K" },
+        { nama: "SHATSU", slug: "shatsu-quiz", total: 48, ikon: "S" },
+        { nama: "TAMAGO", slug: "tamago-quiz", total: 26, ikon: "T" },
+      ],
+    },
+    {
+      nama: "TOKYO OMIYAGE",
+      warna: "emerald",
+      badgeGradien: "from-emerald-500 to-emerald-600",
+      paket: [
+        { nama: "AOI", slug: "aoi-quiz", total: 29, ikon: "A" },
+        { nama: "BASU", slug: "basu-quiz", total: 26, ikon: "B" },
+        { nama: "JINJA", slug: "jinja-quiz", total: 28, ikon: "J" },
+        { nama: "KAGI", slug: "kagi-quiz", total: 36, ikon: "K" },
+      ],
+    },
+    {
+      nama: "YUCHU",
+      warna: "amber",
+      badgeGradien: "from-red-500 to-orange-500",
+      paket: [
+        { nama: "HASHI", slug: "hashi-quiz", total: 25, ikon: "H" },
+        { nama: "HABURASHI", slug: "haburashi-quiz", total: 25, ikon: "H" },
+      ],
+    },
+  ],
+};
