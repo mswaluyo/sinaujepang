@@ -34,45 +34,23 @@
       <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
         <!-- Badge -->
         <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-fuji-100/90 text-fuji-700 text-xs sm:text-sm font-semibold border border-fuji-200 mb-6 backdrop-blur-sm">
-          <i class="fa-solid fa-heart text-rose-500"></i>
-          <span>100% Gratis Tanpa Biaya • Untuk Pejuang Tokutei Ginou</span>
+          <i class="fa-solid fa-clock text-amber-500"></i>
+          <span>Timer • Audio • Skor Real-time • Pembahasan Lengkap</span>
         </div>
 
         <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight mb-6">
-          Tidak Ada Kata Terlambat.<br/>
-          <span class="text-fuji-600">Raih Impian Tokutei Ginou ke Jepang!</span>
-        </h1>
+          Simulasi CBT JFT-Basic<br/>
+          <span class="text-fuji-600">— Batas Kelulusan 200 Poin</span>
+        </div></div></section>
 
-        <!-- Cerita Personal -->
-        <div class="bg-white/85 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-fuji-200/80 shadow-md text-left max-w-2xl mx-auto mb-8 relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-2 h-full bg-fuji-500"></div>
-          <div class="flex items-start gap-4">
-            <div class="p-3 bg-fuji-100 rounded-xl text-fuji-600 shrink-0 hidden sm:block">
-              <i class="fa-solid fa-user-ninja text-2xl"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-800 text-lg mb-1 flex items-center gap-2">
-                <span>Catatan Pejuang TG</span>
-                <span class="text-xs font-normal text-fuji-700 bg-fuji-100 px-2 py-0.5 rounded-full">Kisah Nyata</span>
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed mb-3">
-                "Saya paham rasanya belajar di usia yang tidak muda lagi. Ingatan tak lagi secepat dulu, menghafal kosakata terasa berat, dan Kanji sering kali lupa. Namun, impian untuk berangkat ke Jepang demi keluarga tidak boleh padam."
-              </p>
-              <p class="text-slate-700 text-sm font-medium">
-                Website ini saya buat <span class="text-fuji-600 font-bold">sederhana dan gratis</span> agar kita bisa latihan pelan-pelan, mengulang tanpa batas, sampai benar-benar paham.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Call to Action -->
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
-          <button onclick="scrollToSoal()" class="flex-1 sm:w-auto bg-fuji-600 hover:bg-fuji-700 text-white font-bold px-5 py-3 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-base">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <span>Mulai Latihan Sekarang</span>
-          </button>
-          <a href="/kotoba.html" class="flex-1 sm:w-auto bg-emerald-50 hover:bg-emerald-100 text-emerald-800 font-semibold px-5 py-3 rounded-xl border border-emerald-200 shadow-sm transition-all flex items-center justify-center gap-2 text-base">
-            <i class="fa-solid fa-book-open text-emerald-600"></i>
+  <!-- Section Paket Soal dengan render dinamis dari package-render.js -->
+  <section id="latihan-soal" class="py-14 bg-fuji-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <!-- Kontainer render kartu paket seri LOLOSYUK & PRINCESS -->
+      <div id="paket-container" class="grid grid-cols-1 md:grid-cols-2 gap-6"></div>
+    </div>
+  </section>
+</main>
             <span>Hafalan Kosakata</span>
           </a>
           <a href="/kanji.html" class="flex-1 sm:w-auto bg-rose-50 hover:bg-rose-100 text-rose-800 font-semibold px-5 py-3 rounded-xl border border-rose-200 shadow-sm transition-all flex items-center justify-center gap-2 text-base">
@@ -161,9 +139,36 @@
           <p class="text-slate-500 text-sm">Dukung dengan <span class="text-amber-600 font-semibold cursor-pointer hover:underline" onclick="openDonationModal()">Traktir Kopi</span> jika bermanfaat.</p>
         </div>
       </div>
-    </section>
+    </div></div></section>
 
-  </main>
+  <!-- Apresiasi Pembuat Soal -->
+  <section class="relative bg-fuji-overlay py-16 md:py-24 border-t border-b border-fuji-100">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <!-- Badge pill amber -->
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/80 text-amber-800 text-xs sm:text-sm font-semibold border border-amber-200 mb-6 backdrop-blur-sm">
+        <i class="fa-solid fa-heart text-amber-500"></i>
+        <span>Apresiasi Pembuat Soal • Dukungan Sukarela</span>
+      </div>
+
+      <h2 class="text-2xl sm:text-3xl font-bold text-slate-800 mb-2 text-center">Merasakan Manfaat dari Website Ini?</h2>
+
+      <div class="bg-white/85 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-amber-200/60 text-center max-w-2xl mx-auto mb-8 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-2 h-full bg-amber-500"></div>
+        <p class="text-slate-600 text-sm max-w-2xl mx-auto leading-relaxed">
+          Website ini menyediakan fasilitas gratis agar bisa diakses siapapun tanpa biaya. Dukungan sekadar "Traktir Kopi" sangat berharga untuk mengapresiasi waktu & tenaga dalam menyusun serta merapikan soal-soal di website ini.
+        </p>
+        <p class="text-slate-500 text-sm">Dukung dengan <span class="text-amber-600 font-semibold cursor-pointer hover:underline" onclick="openDonationModal()">Traktir Kopi</span> jika bermanfaat.</p>
+      </div>
+
+      <!-- CTA Tombol kapsul amber -->
+      <div class="mt-6">
+        <button onclick="openDonationModal()" class="inline-flex items-center gap-2 bg-amber-600 text-slate-900 font-semibold px-6 py-3 rounded-full border border-amber-500 text-base transition-all hover:bg-amber-500 shadow-md">
+          <i class="fa-solid fa-mug-hot text-lg"></i>
+          Traktir Kopi Saya
+        </button>
+      </div>
+    </div>
+  </section>
 
   <!-- Modal Login Google -->
   <div id="loginModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
