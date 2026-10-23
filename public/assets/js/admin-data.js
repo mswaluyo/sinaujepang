@@ -1,6 +1,6 @@
 import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp, documentId } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 const $ = id => document.getElementById(id);
-const PACKS = ["ac-quiz","aoi-quiz","basu-quiz","gakusei-quiz","haburashi-quiz","hare-quiz","hashi-quiz","jinja-quiz","kagi-quiz","kuroi-quiz","lolosyuk-quiz","magarimasu-quiz","orimasu-quiz","shatsu-quiz","tamago-quiz","tomemasu-quiz"];
+const PACKS = ["hare-quiz","aoi-quiz","basu-quiz","gakusei-quiz","haburashi-quiz","hare-quiz","hashi-quiz","jinja-quiz","kagi-quiz","kuroi-quiz","lolosyuk-quiz","magarimasu-quiz","orimasu-quiz","shatsu-quiz","tamago-quiz","tomemasu-quiz"];
 const _q = { mode: "ringkas", rows: [], shown: 50, lastDoc: null, done: false, loading: false, sort: "waktu", dir: -1 };
 function _qJftNum(p) { return Math.round(10 + ((p || 0) / 100) * 240); }
 // J eksak dari benar/total (tanpa lewat persen bulat) — SAMA dengan hasil.html & Detail.
