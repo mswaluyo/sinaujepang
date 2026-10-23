@@ -1,0 +1,2126 @@
+[
+  {
+    "kanji": "あいさつします",
+    "kana": "あいさつします",
+    "rom": "aisatsu shimasu",
+    "arti": "memberi salam",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "あいます",
+    "kana": "あいます",
+    "rom": "aimasu",
+    "arti": "bertemu",
+    "paket": [
+      "konpyuutaa",
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "あがります",
+    "kana": "あがります",
+    "rom": "agarimasu",
+    "arti": "naik",
+    "paket": [
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "あきらめます",
+    "kana": "あきらめます",
+    "rom": "akiramemasu",
+    "arti": "menyerah",
+    "paket": [
+      "shatsu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "あけます",
+    "kana": "あけます",
+    "rom": "akemasu",
+    "arti": "membuka",
+    "paket": [
+      "haburashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "あげます",
+    "kana": "あげます",
+    "rom": "agemasu",
+    "arti": "memberikan kepada orang lain",
+    "paket": [
+      "hashi",
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "あそびます",
+    "kana": "あそびます",
+    "rom": "asobimasu",
+    "arti": "bermain",
+    "paket": [
+      "kutsushita"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "あつめます",
+    "kana": "あつめます",
+    "rom": "atsumemasu",
+    "arti": "mengumpulkan",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "アニメを見ます",
+    "kana": "アニメを見ます",
+    "rom": "anime o mimasu",
+    "arti": "menonton anime",
+    "paket": [
+      "kutsushita"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "謝ります",
+    "kana": "あやまります",
+    "rom": "ayamarimasu",
+    "arti": "minta maaf",
+    "paket": [
+      "shatsu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "あらいます",
+    "kana": "あらいます",
+    "rom": "araimasu",
+    "arti": "mencuci",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ありがとうございます",
+    "kana": "ありがとうございます",
+    "rom": "arigatou gozaimasu",
+    "arti": "terima kasih",
+    "paket": [
+      "basu",
+      "hare",
+      "orimasu",
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "あります",
+    "kana": "あります",
+    "rom": "arimasu",
+    "arti": "ada benda",
+    "paket": [
+      "aoi",
+      "gakusei",
+      "kutsushita",
+      "hare",
+      "orimasu",
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "歩きます",
+    "kana": "あるきます",
+    "rom": "arukimasu",
+    "arti": "berjalan kaki",
+    "paket": [
+      "hashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "あんないします",
+    "kana": "あんないします",
+    "rom": "annai shimasu",
+    "arti": "memandu",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "いきます",
+    "kana": "いきます",
+    "rom": "ikimasu",
+    "arti": "pergi",
+    "paket": [
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "いただきます",
+    "kana": "いただきます",
+    "rom": "itadakimasu",
+    "arti": "selamat makan",
+    "paket": [
+      "aoi",
+      "hashi",
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "いってきます",
+    "kana": "いってきます",
+    "rom": "ittekimasu",
+    "arti": "pergi dulu",
+    "paket": [
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "いつでも行きましょう",
+    "kana": "いつでもいきます",
+    "rom": "itsu demo ikimasu",
+    "arti": "mari pergi kapan saja",
+    "paket": [
+      "haburashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "います",
+    "kana": "います",
+    "rom": "imasu",
+    "arti": "ada makhluk",
+    "paket": [
+      "aoi",
+      "gakusei",
+      "hare",
+      "kutsushita"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "入れます",
+    "kana": "いれます",
+    "rom": "iremasu",
+    "arti": "memasukkan",
+    "paket": [
+      "haburashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "動きました",
+    "kana": "うごきます",
+    "rom": "ugokimasu",
+    "arti": "bergerak",
+    "paket": [
+      "haburashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "うたいます",
+    "kana": "うたいます",
+    "rom": "utaimasu",
+    "arti": "bernyanyi",
+    "paket": [
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "うたっています",
+    "kana": "うたっています",
+    "rom": "utatteimasu",
+    "arti": "bernyanyi",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "うっています",
+    "kana": "うっています",
+    "rom": "utteimasu",
+    "arti": "menjual",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "うみやモールであそびます",
+    "kana": "うみやモールであそびます",
+    "rom": "umi ya mooru de asobimasu",
+    "arti": "Laut dan mal",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "うみややまであそびます",
+    "kana": "うみややまであそびます",
+    "rom": "umi ya yama de asobimasu",
+    "arti": "Laut dan gunung",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "うみややまにすんでいます",
+    "kana": "うみややまにすんでいます",
+    "rom": "umi ya yama ni sunde imasu",
+    "arti": "Tinggal di laut-gunung",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "うんてんします",
+    "kana": "うんてんします",
+    "rom": "untenshimasu",
+    "arti": "menyetir",
+    "paket": [
+      "basu",
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おきます",
+    "kana": "おきます",
+    "rom": "okimasu",
+    "arti": "meletakkan / bangun",
+    "paket": [
+      "gakusei",
+      "shatsu",
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "送ります",
+    "kana": "おくります",
+    "rom": "okurimasu",
+    "arti": "mengirim",
+    "paket": [
+      "haburashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おくれます",
+    "kana": "おくれます",
+    "rom": "okuremasu",
+    "arti": "terlambat",
+    "paket": [
+      "kutsushita"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おこります",
+    "kana": "おこります",
+    "rom": "okorimasu",
+    "arti": "marah/terjadi",
+    "paket": [
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おしえています",
+    "kana": "おしえています",
+    "rom": "oshiete imasu",
+    "arti": "mengajar",
+    "paket": [
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おしえます",
+    "kana": "おしえます",
+    "rom": "oshiemasu",
+    "arti": "mengajar / memberi tahu",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "お邪魔します",
+    "kana": "おじゃまします",
+    "rom": "ojama shimasu",
+    "arti": "permisi masuk",
+    "paket": [
+      "konpyuutaa",
+      "magarimasu",
+      "hashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おせわにしつれいします",
+    "kana": "おせわにしつれいします",
+    "rom": "shitsurei shimasu",
+    "arti": "sopan",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おせわになっています",
+    "kana": "おせわになっています",
+    "rom": "osewa",
+    "arti": "selalu dibantu",
+    "paket": [
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "お世話になります",
+    "kana": "おせわになります",
+    "rom": "osewa ni narimasu",
+    "arti": "pernah dibantu",
+    "paket": [
+      "magarimasu",
+      "kuroi",
+      "orimasu",
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おとします",
+    "kana": "おとします",
+    "rom": "otoshimasu",
+    "arti": "menjatuhkan",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おどします",
+    "kana": "おどします",
+    "rom": "odoshimasu",
+    "arti": "mengancam",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おねがいします",
+    "kana": "おねがいします",
+    "rom": "onegaishimasu",
+    "arti": "tolong / mohon",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "覚えています",
+    "kana": "おぼえています",
+    "rom": "oboete imasu",
+    "arti": "mengingat",
+    "paket": [
+      "haburashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "お待たせしました",
+    "kana": "おまたせします",
+    "rom": "omatase shimasu",
+    "arti": "membuat menunggu",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おまちしております",
+    "kana": "おまちしております",
+    "rom": "omachi shite orimasu",
+    "arti": "kami menunggu",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おめでとうございます",
+    "kana": "おめでとうございます",
+    "rom": "omedetou gozaimasu",
+    "arti": "selamat",
+    "paket": [
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おもいます",
+    "kana": "おもいます",
+    "rom": "omoimasu",
+    "arti": "berpikir",
+    "paket": [
+      "aoi",
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "およぎます",
+    "kana": "およぎます",
+    "rom": "oyogimasu",
+    "arti": "berenang",
+    "paket": [
+      "kutsushita",
+      "magarimasu",
+      "orimasu",
+      "tamago"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おります",
+    "kana": "おります",
+    "rom": "orimasu",
+    "arti": "berada (sopan)",
+    "paket": [
+      "basu",
+      "jinja",
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "おわります",
+    "kana": "おわります",
+    "rom": "owarimasu",
+    "arti": "selesai",
+    "paket": [
+      "kuroi",
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かいてあります",
+    "kana": "かいてあります",
+    "rom": "kaite arimasu",
+    "arti": "tertulis",
+    "paket": [
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かいています",
+    "kana": "かいています",
+    "rom": "kaite imasu",
+    "arti": "sedang menulis",
+    "paket": [
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かえります",
+    "kana": "かえります",
+    "rom": "kaerimasu",
+    "arti": "pulang",
+    "paket": [
+      "gakusei",
+      "kutsushita"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かかります",
+    "kana": "かかります",
+    "rom": "kakarimasu",
+    "arti": "memakan waktu",
+    "paket": [
+      "kutsushita",
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かきます",
+    "kana": "かきます",
+    "rom": "kakimasu",
+    "arti": "menulis",
+    "paket": [
+      "jinja",
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "確認します",
+    "kana": "かくにんします",
+    "rom": "kakunin shimasu",
+    "arti": "memeriksa",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かくれます",
+    "kana": "かくれます",
+    "rom": "kakuremasu",
+    "arti": "bersembunyi",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かけます",
+    "kana": "かけます",
+    "rom": "kakemasu",
+    "arti": "memakai kacamata",
+    "paket": [
+      "aoi",
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かけるようになります",
+    "kana": "かけるようになります",
+    "rom": "kakeru you ni narimasu",
+    "arti": "menjadi bisa menulis",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かしこまります",
+    "kana": "かしこまります",
+    "rom": "kashikomarimasu",
+    "arti": "baik, dimengerti",
+    "paket": [
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かっています",
+    "kana": "かっています",
+    "rom": "katteimasu",
+    "arti": "membeli",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "買ってくれました",
+    "kana": "かってくれます",
+    "rom": "katte kuremasu",
+    "arti": "membelikan (untuk saya)",
+    "paket": [
+      "hashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かぶります",
+    "kana": "かぶります",
+    "rom": "kaburimasu",
+    "arti": "memakai topi",
+    "paket": [
+      "aoi",
+      "gakusei",
+      "jinja",
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かまいます",
+    "kana": "かまいます",
+    "rom": "kamawanai",
+    "arti": "tidak apa apa, itu jawaban bukan pembuka",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "通いました",
+    "kana": "かよいます",
+    "rom": "kayoimasu",
+    "arti": "bolak-balik/pergi rutin",
+    "paket": [
+      "tamago"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "借りたことがあります",
+    "kana": "かりたことがあります",
+    "rom": "karita koto ga arimasu",
+    "arti": "pernah meminjam",
+    "paket": [
+      "hashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "借りてはいけません",
+    "kana": "かりてはいけます",
+    "rom": "karite wa ikemasu",
+    "arti": "tidak boleh meminjam",
+    "paket": [
+      "hashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "かります",
+    "kana": "かります",
+    "rom": "karimasu",
+    "arti": "meminjam",
+    "paket": [
+      "aoi",
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "考えました",
+    "kana": "かんがえます",
+    "rom": "kangaemasu",
+    "arti": "memikirkan",
+    "paket": [
+      "kuroi",
+      "haburashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ききます",
+    "kana": "ききます",
+    "rom": "kikimasu",
+    "arti": "bertanya / mendengar",
+    "paket": [
+      "gakusei",
+      "hashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "きざみます",
+    "kana": "きざみます",
+    "rom": "kizamimasu",
+    "arti": "mencincang",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "来ました",
+    "kana": "きます",
+    "rom": "kimasu",
+    "arti": "memakai baju",
+    "paket": [
+      "aoi",
+      "jinja",
+      "kagi",
+      "haburashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "きります",
+    "kana": "きります",
+    "rom": "kirimasu",
+    "arti": "memotong",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "きれいにします",
+    "kana": "きれいにします",
+    "rom": "kirei ni shimasu",
+    "arti": "membersihkan",
+    "paket": [
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "きをつけます",
+    "kana": "きをつけます",
+    "rom": "ki wo tsukemasu",
+    "arti": "berhati-hati",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "けいさつにれんらくします",
+    "kana": "けいさつにれんらくします",
+    "rom": "keisatsu ni renraku shimasu",
+    "arti": "menghubungi polisi",
+    "paket": [
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "けがをしています",
+    "kana": "けがをしています",
+    "rom": "kega o shite imasu",
+    "arti": "sedang terluka",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "消します",
+    "kana": "けします",
+    "rom": "keshimasu",
+    "arti": "mematikan / menghapus",
+    "paket": [
+      "basu",
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ことができます",
+    "kana": "ことができます",
+    "rom": "koto ga dekimasu",
+    "arti": "bisa / dapat",
+    "paket": [
+      "tamago"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ごめんお待たせしました",
+    "kana": "ごめんおまたせします",
+    "rom": "gomen omatase shimasu",
+    "arti": "maaf buat nunggu",
+    "paket": [
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "これからがんばります",
+    "kana": "これからがんばります",
+    "rom": "m3",
+    "arti": "semangat",
+    "paket": [
+      "basu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "こんどからきをつけます",
+    "kana": "こんどからきをつけます",
+    "rom": "kondo kara ki wo tsukemasu",
+    "arti": "lain kali hati-hati",
+    "paket": [
+      "basu",
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "さきます",
+    "kana": "さきます",
+    "rom": "sakimasu",
+    "arti": "mekar/berbunga",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "さそいます",
+    "kana": "さそいます",
+    "rom": "sasoimasu",
+    "arti": "mengajak",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "さだめます",
+    "kana": "さだめます",
+    "rom": "sadamemasu",
+    "arti": "menetapkan",
+    "paket": [
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "しかいします",
+    "kana": "しかいします",
+    "rom": "shikai shimasu",
+    "arti": "memandu acara (MC)",
+    "paket": [
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "しかります",
+    "kana": "しかります",
+    "rom": "shikarimasu",
+    "arti": "memarahi",
+    "paket": [
+      "aoi",
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "しつれいします",
+    "kana": "しつれいします",
+    "rom": "shitsurei shimasu",
+    "arti": "permisi",
+    "paket": [
+      "kagi",
+      "tamago",
+      "konpyuutaa",
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "しまいます",
+    "kana": "しまいます",
+    "rom": "shimaimasu",
+    "arti": "terlanjur (te-shimau)",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "します",
+    "kana": "します",
+    "rom": "shimasu",
+    "arti": "melakukan",
+    "paket": [
+      "hare",
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "しゅうりします",
+    "kana": "しゅうりします",
+    "rom": "shuuri shimasu",
+    "arti": "reparasi",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "しょうかいします",
+    "kana": "しょうかいします",
+    "rom": "shoukaishimasu",
+    "arti": "memperkenalkan",
+    "paket": [
+      "basu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "しょかいします",
+    "kana": "しょかいします",
+    "rom": "shoukai shimasu",
+    "arti": "memperkenalkan",
+    "paket": [
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "しらせます",
+    "kana": "しらせます",
+    "rom": "shirasemasu",
+    "arti": "mengabari",
+    "paket": [
+      "gakusei",
+      "tamago"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "しらべます",
+    "kana": "しらべます",
+    "rom": "shirabemasu",
+    "arti": "menyelidiki/memeriksa",
+    "paket": [
+      "tamago"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "すってるのにつかいます",
+    "kana": "すってるのにつかいます",
+    "rom": "sutteru no ni tsukaimasu",
+    "arti": "untuk",
+    "paket": [
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "すってるようになります",
+    "kana": "すってるようになります",
+    "rom": "sutteru you ni narimasu",
+    "arti": "menjadi",
+    "paket": [
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "すてます",
+    "kana": "すてます",
+    "rom": "sutemasu",
+    "arti": "membuang",
+    "paket": [
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "すみます",
+    "kana": "すみます",
+    "rom": "sumimasu",
+    "arti": "tinggal",
+    "paket": [
+      "aoi",
+      "hashi",
+      "konpyuutaa",
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "すみませんお待たせしました",
+    "kana": "すみませんおまたせします",
+    "rom": "sumimasen omatase shimasu",
+    "arti": "maaf telah membuat Anda menunggu",
+    "paket": [
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "すわります",
+    "kana": "すわります",
+    "rom": "suwarimasu",
+    "arti": "telah duduk",
+    "paket": [
+      "shatsu",
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "生活に慣れました",
+    "kana": "せいかつになれます",
+    "rom": "seikatsu ni naremasu",
+    "arti": "apakah sudah terbiasa dengan kehidupan",
+    "paket": [
+      "hashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "生産します",
+    "kana": "せいさんします",
+    "rom": "seisan shimasu",
+    "arti": "memproduksi",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "説明します",
+    "kana": "せつめいします",
+    "rom": "setsumei shimasu",
+    "arti": "menjelaskan",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "操作します",
+    "kana": "そうさします",
+    "rom": "sousa shimasu",
+    "arti": "mengoperasikan",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "そうします",
+    "kana": "そうします",
+    "rom": "sou shimasu",
+    "arti": "mari begitu",
+    "paket": [
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "相談します",
+    "kana": "そうだんします",
+    "rom": "soudan shimasu",
+    "arti": "berkonsultasi",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "たいせつにします",
+    "kana": "たいせつにします",
+    "rom": "taisetsu ni shimasu",
+    "arti": "akan saya jaga baik-baik",
+    "paket": [
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "たおれます",
+    "kana": "たおれます",
+    "rom": "taoremasu",
+    "arti": "roboh / tumbang",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "だします",
+    "kana": "だします",
+    "rom": "dashimasu",
+    "arti": "mengeluarkan",
+    "paket": [
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "たすけます",
+    "kana": "たすけます",
+    "rom": "tasukemasu",
+    "arti": "menolong",
+    "paket": [
+      "basu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "たのしみにしてます",
+    "kana": "たのしみにしてます",
+    "rom": "tanoshimi ni shitemasu",
+    "arti": "menantikan",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "たのみます",
+    "kana": "たのみます",
+    "rom": "tanomimasu",
+    "arti": "meminta / memesan",
+    "paket": [
+      "kagi",
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "食べます",
+    "kana": "たべます",
+    "rom": "tabemasu",
+    "arti": "makan",
+    "paket": [
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "試します",
+    "kana": "ためします",
+    "rom": "tameshimasu",
+    "arti": "mencoba",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "近づきます",
+    "kana": "ちかづきます",
+    "rom": "chikazukimasu",
+    "arti": "mendekati",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "つくります",
+    "kana": "つくります",
+    "rom": "tsukurimasu",
+    "arti": "membuat",
+    "paket": [
+      "hashi",
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "つたえます",
+    "kana": "つたえます",
+    "rom": "tsutaemasu",
+    "arti": "menyampaikan",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "できます",
+    "kana": "できます",
+    "rom": "dekimasu",
+    "arti": "bisa",
+    "paket": [
+      "aoi",
+      "konpyuutaa",
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "てつだいます",
+    "kana": "てつだいます",
+    "rom": "tetsudaimasu",
+    "arti": "membantu",
+    "paket": [
+      "basu",
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "トイレにいってさがします",
+    "kana": "トイレにいってさがします",
+    "rom": "toire ni itte sagashimasu",
+    "arti": "pergi mencari ke toilet",
+    "paket": [
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "どうぞおまたせします",
+    "kana": "どうぞおまたせします",
+    "rom": "douzo omatase shimasu",
+    "arti": "silakan membuat menunggu",
+    "paket": [
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "とおります",
+    "kana": "とおります",
+    "rom": "toorimasu",
+    "arti": "melintas / melewati",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "どこにいます",
+    "kana": "どこにいます",
+    "rom": "doko ni imasu",
+    "arti": "ada di mana",
+    "paket": [
+      "hashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "泊まりました",
+    "kana": "とまります",
+    "rom": "tomarimasu",
+    "arti": "menginap",
+    "paket": [
+      "tamago"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "とめます",
+    "kana": "とめます",
+    "rom": "tomemasu",
+    "arti": "menghentikan / mematikan",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "取りました",
+    "kana": "とります",
+    "rom": "torimasu",
+    "arti": "mengambil",
+    "paket": [
+      "aoi",
+      "tamago"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "なくします",
+    "kana": "なくします",
+    "rom": "nakushimasu",
+    "arti": "menghilangkan",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "何をしています",
+    "kana": "なにをしています",
+    "rom": "nani wo shite imasu",
+    "arti": "sedang/melakukan aktivitas apa",
+    "paket": [
+      "hashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ならいます",
+    "kana": "ならいます",
+    "rom": "naraimasu",
+    "arti": "belajar",
+    "paket": [
+      "orimasu",
+      "basu",
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ならっています",
+    "kana": "ならっています",
+    "rom": "naratte imasu",
+    "arti": "belajar",
+    "paket": [
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ならべます",
+    "kana": "ならべます",
+    "rom": "narabemasu",
+    "arti": "menyusun/menjejerkan",
+    "paket": [
+      "tamago"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "なります",
+    "kana": "なります",
+    "rom": "narimasu",
+    "arti": "sopan",
+    "paket": [
+      "basu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "のせる。のせます",
+    "kana": "のせる。のせます",
+    "rom": "noseru / nosemasu",
+    "arti": "menaruh di atas",
+    "paket": [
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "のぼります",
+    "kana": "のぼります",
+    "rom": "noborimasu",
+    "arti": "memanjat / mendaki",
+    "paket": [
+      "kagi",
+      "basu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "飲みます",
+    "kana": "のみます",
+    "rom": "nomimasu",
+    "arti": "minum",
+    "paket": [
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "のります",
+    "kana": "のります",
+    "rom": "norimasu",
+    "arti": "naik",
+    "paket": [
+      "aoi",
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "はいります",
+    "kana": "はいります",
+    "rom": "hairimasu",
+    "arti": "masuk",
+    "paket": [
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "はきます",
+    "kana": "はきます",
+    "rom": "hakimasu",
+    "arti": "memakai sepatu",
+    "paket": [
+      "aoi",
+      "jinja",
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "はじめます",
+    "kana": "はじめます",
+    "rom": "hajimemasu",
+    "arti": "memulai",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "はたらきます",
+    "kana": "はたらきます",
+    "rom": "hatarakimasu",
+    "arti": "bekerja",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "はなします",
+    "kana": "はなします",
+    "rom": "hanashimasu",
+    "arti": "sopan",
+    "paket": [
+      "basu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "話せます",
+    "kana": "はなせます",
+    "rom": "hanasemasu",
+    "arti": "bisa bicara",
+    "paket": [
+      "basu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "はなれます",
+    "kana": "はなれます",
+    "rom": "hanaremasu",
+    "arti": "menjauh",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "はります",
+    "kana": "はります",
+    "rom": "harimasu",
+    "arti": "menempel",
+    "paket": [
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "はれます",
+    "kana": "はれます",
+    "rom": "haremasu",
+    "arti": "bisa menjadi cerah",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ひきます",
+    "kana": "ひきます",
+    "rom": "hikimasu",
+    "arti": "menarik",
+    "paket": [
+      "aoi",
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "びっくりします",
+    "kana": "びっくりします",
+    "rom": "bikkuri shimasu",
+    "arti": "terkejut / kaget",
+    "paket": [
+      "kagi",
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ひろいます",
+    "kana": "ひろいます",
+    "rom": "hiroimasu",
+    "arti": "memungut",
+    "paket": [
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ふきます",
+    "kana": "ふきます",
+    "rom": "fukimasu",
+    "arti": "bertiup",
+    "paket": [
+      "aoi",
+      "jinja",
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ふります",
+    "kana": "ふります",
+    "rom": "furimasu",
+    "arti": "turun hujan",
+    "paket": [
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "まがります",
+    "kana": "まがります",
+    "rom": "magarimasu",
+    "arti": "berbelok",
+    "paket": [
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "巻きます",
+    "kana": "まきます",
+    "rom": "makimasu",
+    "arti": "menggulung",
+    "paket": [
+      "orimasu",
+      "haburashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "まちます",
+    "kana": "まちます",
+    "rom": "machimasu",
+    "arti": "menunggu",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "まよいます",
+    "kana": "まよいます",
+    "rom": "mayoimasu",
+    "arti": "bingung",
+    "paket": [
+      "aoi",
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "みえます",
+    "kana": "みえます",
+    "rom": "miemasu",
+    "arti": "terlihat",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "みます",
+    "kana": "みます",
+    "rom": "mimasu",
+    "arti": "menonton",
+    "paket": [
+      "gakusei"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "むきます",
+    "kana": "むきます",
+    "rom": "mukimasu",
+    "arti": "mengupas",
+    "paket": [
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "もどります",
+    "kana": "もどります",
+    "rom": "modorimasu",
+    "arti": "kembali",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "やきます",
+    "kana": "やきます",
+    "rom": "yakimasu",
+    "arti": "membakar",
+    "paket": [
+      "magarimasu",
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "やぶれます",
+    "kana": "やぶれます",
+    "rom": "yaburemasu",
+    "arti": "robek",
+    "paket": [
+      "aoi",
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "やまやいなかであすびます",
+    "kana": "やまやいなかであそびます",
+    "rom": "yama ya inaka de asobimasu",
+    "arti": "Gunung dan desa",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "やみます",
+    "kana": "やみます",
+    "rom": "yamimasu",
+    "arti": "reda / berhenti (hujan/salju)",
+    "paket": [
+      "haburashi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "やめます",
+    "kana": "やめます",
+    "rom": "yamemasu",
+    "arti": "berhenti",
+    "paket": [
+      "shatsu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ゆっくりしながらアニメをみます",
+    "kana": "ゆっくりしながらアニメをみます",
+    "rom": "yukkuri shinagara anime o mimasu",
+    "arti": "Menonton sambil santai",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ゆでます",
+    "kana": "ゆでます",
+    "rom": "yudemasu",
+    "arti": "merebus",
+    "paket": [
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "ようになります",
+    "kana": "ようになります",
+    "rom": "you ni narimasu",
+    "arti": "menjadi bisa...",
+    "paket": [
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "よごれます",
+    "kana": "よごれます",
+    "rom": "yogoremasu",
+    "arti": "kotor",
+    "paket": [
+      "aoi",
+      "kagi",
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "読みます",
+    "kana": "よみます",
+    "rom": "yomimasu",
+    "arti": "membaca",
+    "paket": [
+      "hashi",
+      "hare"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "よんでいます",
+    "kana": "よんでいます",
+    "rom": "yondeimasu",
+    "arti": "membaca",
+    "paket": [
+      "kagi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "れんらくをまちます",
+    "kana": "れんらくをまちます",
+    "rom": "renraku o machimasu",
+    "arti": "menunggu kabar",
+    "paket": [
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "わかれます",
+    "kana": "わかれます",
+    "rom": "wakaremasu",
+    "arti": "berpisah",
+    "paket": [
+      "basu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "わらいます",
+    "kana": "わらいます",
+    "rom": "waraimasu",
+    "arti": "tertawa",
+    "paket": [
+      "aoi",
+      "basu",
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "われます",
+    "kana": "われます",
+    "rom": "waremasu",
+    "arti": "pecah",
+    "paket": [
+      "aoi",
+      "kagi",
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "飲みます",
+    "kana": "飲みます",
+    "rom": "nomimasu",
+    "arti": "minum",
+    "paket": [
+      "kutsushita"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "運動しています",
+    "kana": "運動しています",
+    "rom": "undou shite imasu",
+    "arti": "berolahraga",
+    "paket": [
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "吸います",
+    "kana": "吸います",
+    "rom": "suimasu",
+    "arti": "menghirup/merokok",
+    "paket": [
+      "shatsu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "行きます",
+    "kana": "行きます",
+    "rom": "ikimasu",
+    "arti": "ayo pergi",
+    "paket": [
+      "orimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "作ります",
+    "kana": "作ります",
+    "rom": "tsukurimasu",
+    "arti": "membuat/memasak",
+    "paket": [
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "仕事します",
+    "kana": "仕事します",
+    "rom": "shigoto shimasu",
+    "arti": "bekerja",
+    "paket": [
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "始めました。はじめます",
+    "kana": "始めました。はじめます",
+    "rom": "hajimemasu",
+    "arti": "memulai",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "止まります",
+    "kana": "止まります",
+    "rom": "tomarimasu",
+    "arti": "berhenti",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "借ります",
+    "kana": "借ります",
+    "rom": "karimasu",
+    "arti": "meminjam",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "取ります",
+    "kana": "取ります",
+    "rom": "torimasu",
+    "arti": "mengambil",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "集まります",
+    "kana": "集まります",
+    "rom": "atsumarimasu",
+    "arti": "berkumpul",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "住んでいます",
+    "kana": "住んでいます",
+    "rom": "sunde imasu",
+    "arti": "tinggal",
+    "paket": [
+      "aoi",
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "食べます",
+    "kana": "食べます",
+    "rom": "tabemasu",
+    "arti": "makan",
+    "paket": [
+      "kutsushita"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "食事しています",
+    "kana": "食事しています",
+    "rom": "shokuji shite imasu",
+    "arti": "sedang makan",
+    "paket": [
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "寝ます",
+    "kana": "寝ます",
+    "rom": "nemasu",
+    "arti": "sopan",
+    "paket": [
+      "basu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "切ります",
+    "kana": "切ります",
+    "rom": "kiru",
+    "arti": "memotong",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "洗います",
+    "kana": "洗います",
+    "rom": "araimasu",
+    "arti": "mencuci",
+    "paket": [
+      "kutsushita"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "中止させます",
+    "kana": "中止させます",
+    "rom": "chuushi sasemasu",
+    "arti": "membatalkan (kausatif)",
+    "paket": [
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "中止されます",
+    "kana": "中止されます",
+    "rom": "chuushi saremasu",
+    "arti": "dibatalkan (pasif)",
+    "paket": [
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "中止します",
+    "kana": "中止します",
+    "rom": "chuushi shimasu",
+    "arti": "membatalkan",
+    "paket": [
+      "magarimasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "働いています",
+    "kana": "働いています",
+    "rom": "hataraite imasu",
+    "arti": "bekerja",
+    "paket": [
+      "aoi",
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "入ります",
+    "kana": "入ります",
+    "rom": "hairimasu",
+    "arti": "masuk (berendam)",
+    "paket": [
+      "konpyuutaa"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "分かります",
+    "kana": "分かります",
+    "rom": "wakarimasu",
+    "arti": "mengerti",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "聞きます",
+    "kana": "聞きます",
+    "rom": "kikimasu",
+    "arti": "mendengarkan",
+    "paket": [
+      "shatsu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "勉強しています",
+    "kana": "勉強しています",
+    "rom": "benkyou shite imasu",
+    "arti": "sedang belajar",
+    "paket": [
+      "aoi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "遊びます",
+    "kana": "遊びます",
+    "rom": "asobimasu",
+    "arti": "bermain",
+    "paket": [
+      "kuroi"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "揚げます",
+    "kana": "揚げます",
+    "rom": "agemasu",
+    "arti": "menggoreng",
+    "paket": [
+      "tomemasu"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "浴びます",
+    "kana": "浴びます",
+    "rom": "abimasu",
+    "arti": "menyiram / mandi",
+    "paket": [
+      "kutsushita"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "旅行します",
+    "kana": "旅行します",
+    "rom": "ryokou shimasu",
+    "arti": "berwisata",
+    "paket": [
+      "jinja"
+    ],
+    "tipe": "verb"
+  },
+  {
+    "kanji": "話します",
+    "kana": "話します",
+    "rom": "hanashimasu",
+    "arti": "berbicara",
+    "paket": [
+      "shatsu"
+    ],
+    "tipe": "verb"
+  }
+]

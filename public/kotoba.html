@@ -1,52 +1,212 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Hafalan Kosakata — SinauJepang</title>
-<link rel="stylesheet" href="/assets/css/tailwind.css">
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hafalan Kosakata - SinauJepang</title>
+  <meta name="description" content="Daftar kosakata dari semua paket soal. Klik header untuk mengurutkan.">
+  <script src="/assets/js/firebase-init.js"></script>
+  <script src="/assets/css/tailwind.css"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .j-badge { display: inline-block; text-[11px]; font-bold; padding: 0.125rem 0.5rem; border-radius: 0.25rem; white-space: nowrap; }
+    .table-custom { width: 100%; border-collapse: collapse; }
+    .table-custom th { text-left; font-extrabold; padding: 0.5rem 1rem; border: 1px solid #e5e7eb; }
+    .table-custom td { padding: 0.5rem 1rem; border: 1px solid #e5e7eb; }
+    .table-custom tr:hover { background-color: #f3f4f6; }
+    .badge-V { background-color: #DBEAFE; color: #1D4ED8; }
+    .badge-A { background-color: #DCFCE7; color: #15803D; }
+    .badge-N { background-color: #FEF3C7; color: #92400E; }
+    .badge-U { background-color: #EDE9FE; color: #7C3AED; }
+  </style>
 </head>
-<body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col selection:bg-fuji-200">
-<!-- Header bersama: site-layout.js -->
-<script src="/assets/js/indexeddb.js"></script>
-<script src="/assets/js/site-layout.js"></script>
-<main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
-<section class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
-<div class="px-4 pt-4 pb-3 border-b border-slate-100 flex flex-wrap items-center gap-2">
-<div class="mr-auto">
-<h1 class="font-extrabold text-slate-800 text-[15px] leading-tight"><i class="fa-solid fa-book-open text-fuji-500 mr-1.5"></i>Hafalan Kosakata</h1>
-<p class="text-[11px] text-slate-500 mt-0.5">Daftar kosakata dari semua paket soal. Klik header untuk mengurutkan.</p>
-</div>
-<span id="kCount" class="text-[11px] font-bold text-slate-500 bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full"></span>
-</div>
-<div class="px-4 py-3 bg-slate-50/70 border-b border-slate-100 flex flex-wrap gap-2 items-center">
-<select id="kJenis" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] font-bold text-slate-700 focus:outline-none focus:ring-2 focus:ring-fuji-300">
-<option value="">Semua jenis</option>
-<option value="V">🔵 Kata kerja (-masu)</option>
-<option value="A">🟢 Kata sifat</option>
-<option value="N">🟠 Kata benda</option>
-<option value="U">🟣 Ungkapan</option>
-</select>
-<select id="kPaket" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] text-slate-700 focus:outline-none focus:ring-2 focus:ring-fuji-300">
-<option value="">Semua paket</option>
-</select>
-<input id="kCari" placeholder="Cari kanji / kana / arti…" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] flex-1 min-w-[160px] focus:outline-none focus:ring-2 focus:ring-fuji-300">
-</div>
-<div class="overflow-auto max-h-[70vh]"><table class="w-full text-[13px] min-w-[720px]">
-<thead id="kHead" class="sticky top-0 bg-slate-50 text-slate-500 uppercase text-[11px] tracking-wide"></thead>
-<tbody id="kRows" class="divide-y divide-slate-100"></tbody>
-</table></div>
-<div class="p-3 border-t border-slate-100 bg-white">
-<button id="kMore" class="w-full bg-fuji-50 hover:bg-fuji-100 text-fuji-700 font-bold text-[13px] py-2.5 rounded-xl border border-fuji-200 transition-colors">Muat 200 lagi <i class="fa-solid fa-chevron-down ml-1"></i></button>
-</div>
-</section>
-</main>
-<script src="/assets/js/kotoba-data.js"></script>
-<script src="/assets/js/kotoba-verb.js"></script>
-<script src="/assets/js/kotoba-adj.js"></script>
-<script src="/assets/js/kotoba-noun.js"></script>
-<script src="/assets/js/kotoba-ungk.js"></script>
-<script src="/assets/js/kotoba.js"></script>
+<body class="bg-slate-50 text-slate-800">
+  <header class="bg-white shadow-sm border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 py-4">
+      <div class="flex justify-between items-center">
+        <div>
+          <h1 class="text-2xl font-bold text-slate-800">ðŸ“š Hafalan Kosakata</h1>
+          <p class="text-slate-600 text-sm">Daftar kosakata dari semua paket soal. Klik header untuk mengurutkan.</p>
+        </div>
+        <div class="flex gap-2">
+          <button onclick="loadData()" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
+            <i class="fa-solid fa-sync-alt mr-1"></i> Refresh
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="max-w-7xl mx-auto px-4 py-4">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+      <div class="relative">
+        <input type="text" id="kCari" placeholder="Cari kata..." class="w-full border border-slate-300 rounded-lg px-4 py-2 focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+        <i class="fa-solid fa-search absolute right-3 top-1/2 -translate-y-1/2 text-slate-400"></i>
+      </div>
+      <select id="kJenis" class="border border-slate-300 rounded-lg px-4 py-2">
+        <option value="">Semua Jenis</option>
+        <option value="V">Kata Kerja (Verb)</option>
+        <option value="A">Kata Sifat (Adjective)</option>
+        <option value="N">Kata Benda (Noun)</option>
+        <option value="U">Ungkapan (Expression)</option>
+      </select>
+      <select id="kPaket" class="border border-slate-300 rounded-lg px-4 py-2">
+        <option value="">Semua Paket</option>
+      </select>
+      <button onclick="loadMore()" class="border border-slate-300 rounded-lg px-4 py-2" id="kMore">
+        Muat 200 lagi
+      </button>
+    </div>
+  </div>
+  <div class="max-w-7xl mx-auto px-4 py-6 overflow-x-auto">
+    <table class="table-custom">
+      <thead>
+        <tr id="kHead">
+          <th><button data-k="kanji">Kanji / Kata</button></th>
+          <th><button data-k="kana">Kana</button></th>
+          <th><button data-k="rom">Romaji</button></th>
+          <th><button data-k="arti">Arti</button></th>
+          <th><button data-k="jenis">Jenis</button></th>
+          <th><button data-k="paket">Paket</button></th>
+        </tr>
+      </thead>
+      <tbody id="kRows">
+        <tr><td colspan="6" class="py-10 text-center text-slate-400 text-[13px]">Memuat data...</td></tr>
+      </tbody>
+    </table>
+  </div>
 </body>
 </html>
+ï»¿  <script>
+    let shown = 200, sortK = 'kanji', sortD = 1;
+    let allData = [];
+    let currentFilter = { jenis: '', paket: '', keyword: '' };
+
+    function esc(s) {
+      return String(s == null ? '' : s)
+        .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+
+    function render() {
+      const tbody = document.getElementById('kRows');
+      const pk = document.getElementById('kPaket').value;
+      const kw = document.getElementById('kCari').value.trim().toLowerCase();
+      const jn = document.getElementById('kJenis').value;
+
+      let list = allData.filter(o => {
+        if (jn && o.jenis !== jn) return false;
+        if (pk && !o.paket.includes(pk)) return false;
+        if (kw) {
+          const s = ((o.kanji || '') + ' ' + (o.kana || '') + ' ' + (o.rom || '') + ' ' + (o.arti || '')).toLowerCase();
+          if (s.indexOf(kw) < 0) return false;
+        }
+        return true;
+      });
+
+      list.sort((a, b) => {
+        const va = val(a, sortK), vb = val(b, sortK);
+        return va.localeCompare(vb, 'ja') * sortD;
+      });
+
+      document.getElementById('kCount').textContent = list.length + ' kosakata';
+
+      let html = '';
+      const shownList = list.slice(0, shown);
+      shownList.forEach(o => {
+        const badge = `<span class="j-badge ${o.jenis === 'V' ? 'badge-V' : o.jenis === 'A' ? 'badge-A' : o.jenis === 'U' ? 'badge-U' : 'badge-N'}">${o.jenis}</span>`;
+        const paket = (o.paket || []).map(p => `<span class="inline-block bg-slate-100 text-slate-700 border border-slate-200 text-[11px] font-bold px-2 py-0.5 rounded-md mr-1 mb-1">${p.replace('-quiz','')}</span>`).join('');
+        html += `
+          <tr class="hover:bg-slate-50 transition-colors">
+            <td class="px-4 py-2.5 font-bold text-slate-800 text-[15px]">${esc(o.kanji || '-')}</td>
+            <td class="px-4 py-2.5 text-slate-600">${esc(o.kana || '-')}</td>
+            <td class="px-4 py-2.5 text-slate-500 italic">${esc(o.rom || '-')}</td>
+            <td class="px-4 py-2.5 text-slate-700">${esc(o.arti || '-')}</td>
+            <td class="px-4 py-2.5">${badge}</td>
+            <td class="px-4 py-2.5">${paket}</td>
+          </tr>`;
+      });
+
+      tbody.innerHTML = html || `
+        <tr><td colspan="6" class="py-10 text-center text-slate-400 text-[13px]">Tidak ada yang cocok</td></tr>
+      `;
+
+      const more = document.getElementById('kMore');
+      const habis = shown >= list.length;
+      more.disabled = habis;
+      more.classList.toggle("opacity-50", habis);
+      more.innerHTML = habis ? "Semua sudah ditampilkan Ã¢Å“â€œ" : "Muat 200 lagi <i class='fa-solid fa-chevron-down ml-1'></i>";
+    }
+
+    function val(o, k) {
+      if (k === 'paket') return (o.paket || []).join(',');
+      if (k === 'jenis') return o.jenis || '';
+      return String(o[k] || '').toLowerCase();
+    }
+
+    function bindHead() {
+      const head = document.getElementById('kHead');
+      head.querySelectorAll('[data-k]').forEach(b => {
+        b.onclick = function() {
+          const k = b.getAttribute('data-k');
+          if (sortK === k) sortD = -sortD;
+          else { sortK = k; sortD = 1; }
+          document.getElementById('kHead').innerHTML = headHtml();
+          bindHead();
+          render();
+        };
+      });
+    }
+
+    function headHtml() {
+      return [
+        { k: 'kanji', l: 'Kanji / Kata' },
+        { k: 'kana', l: 'Kana' },
+        { k: 'rom', l: 'Romaji' },
+        { k: 'arti', l: 'Arti' },
+        { k: 'jenis', l: 'Jenis' },
+        { k: 'paket', l: 'Paket' }
+      ].map(c => `
+        <tr>
+          <th class="text-left font-extrabold px-4 py-3">
+            <button data-k="${c.k}" class="hover:text-fuji-600 uppercase tracking-wide">
+              ${c.l}
+            </button>
+          </th>
+        </tr>
+      `).join('');
+    }
+
+function loadData() {
+      const q = window.fujiDb.collection('kotoba');
+      const jenis = document.getElementById('kJenis').value;
+      const pk = document.getElementById('kPaket').value;
+      let query = q;
+      if (jenis) query = query.where('jenis', '==', jenis);
+      query.limit(500).get().then(snapshot => {
+        allData = [];
+        snapshot.forEach(doc => {
+          const d = doc.data();
+          allData.push({ kanji: d.kanji || '', kana: d.kana || '', rom: d.rom || '', arti: d.arti || '', jenis: d.jenis || 'N', paket: d.paket || [] });
+        });
+        render();
+      }).catch(err => { console.error('Error:', err); document.getElementById('kRows').innerHTML = `<tr><td colspan="6" class="py-10 text-center text-rose-500">Gagal: ${err.message}</td></tr>`; });
+    }
+
+    function init() {
+      const packSet = new Set();
+      allData.forEach(o => { o.paket?.forEach(p => packSet.add(p)); });
+      const ps = document.getElementById('kPaket');
+      packSet.forEach(p => { const o = document.createElement('option'); o.value = p; o.textContent = p.replace('-quiz',''); ps.appendChild(o); });
+      bindHead(); render();
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+      window.fujiAuth.onAuthStateChanged(function(user) {
+        if (user) {
+          // User is signed in
+          loadData();
+        } else {
+          // No user is signed in.
+          loadData();
+        }
+      });
+    });
