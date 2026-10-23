@@ -6,7 +6,7 @@
   <title>Hafalan Kosakata - SinauJepang</title>
   <meta name="description" content="Daftar kosakata dari semua paket soal. Klik header untuk mengurutkan.">
   <script src="/assets/js/firebase-init.js"></script>
-  <script src="/assets/css/tailwind.css"></script>
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     .j-badge { display: inline-block; text-[11px]; font-bold; padding: 0.125rem 0.5rem; border-radius: 0.25rem; white-space: nowrap; }
@@ -56,6 +56,7 @@
         Muat 200 lagi
       </button>
     </div>
+    <div class="text-sm text-slate-600 mt-3" id="kCount"></div>
   </div>
   <div class="max-w-7xl mx-auto px-4 py-6 overflow-x-auto">
     <table class="table-custom">
@@ -133,7 +134,7 @@
       const habis = shown >= list.length;
       more.disabled = habis;
       more.classList.toggle("opacity-50", habis);
-      more.innerHTML = habis ? "Semua sudah ditampilkan Ã¢Å“â€œ" : "Muat 200 lagi <i class='fa-solid fa-chevron-down ml-1'></i>";
+      more.innerHTML = habis ? "Semua sudah ditampilkan ✓" : "Muat 200 lagi <i class='fa-solid fa-chevron-down ml-1'></i>";
     }
 
     function val(o, k) {
@@ -181,7 +182,7 @@ function loadData() {
       const pk = document.getElementById('kPaket').value;
       let query = q;
       if (jenis) query = query.where('jenis', '==', jenis);
-      query.limit(500).get().then(snapshot => {
+      const p = query.limit(500).get().then(snapshot => {
         allData = [];
         snapshot.forEach(doc => {
           const d = doc.data();
@@ -189,6 +190,7 @@ function loadData() {
         });
         render();
       }).catch(err => { console.error('Error:', err); document.getElementById('kRows').innerHTML = `<tr><td colspan="6" class="py-10 text-center text-rose-500">Gagal: ${err.message}</td></tr>`; });
+      return p;
     }
 
     function init() {
@@ -201,12 +203,11 @@ function loadData() {
 
     document.addEventListener('DOMContentLoaded', function() {
       window.fujiAuth.onAuthStateChanged(function(user) {
-        if (user) {
-          // User is signed in
-          loadData();
-        } else {
-          // No user is signed in.
-          loadData();
-        }
+        // User is signed in, or no user. Both call loadData().
+        loadData().then(function() {
+          init();
+        }).catch(function(err) {
+          console.error('Gagal memuat data:', err);
+        });
       });
     });
