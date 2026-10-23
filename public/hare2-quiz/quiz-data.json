@@ -2341,7 +2341,7 @@
   {
     "no": 47,
     "section": "SESI 3 : CHOUKAI",
-    "title": "Pramusaji: Irasshaimase! Gochuumon wa okimari desu ka?\nPria: Hai. Etto, yottsu to sandoicchi o futatsu onegai shimasu.\nPramusaji: Kashikomarimashita. Onigiri ga yottsu, sandoicchi ga futatsu desu ne. Punyate Japan Duluuu~\n\n● Pria memesan apa?",
+    "title": "女の人: あのう、すみません。空手教室に申し込みたいんですが、まだ大丈夫ですか。\n男の人: はい、大丈夫ですよ。\n女の人: あのう、空手の服を持っていませんがいいですか。\n男の人: ええ、服はTシャツとズボンでいいですよ。\n\n● 何を持って行きますか。",
     "img": "",
     "options": [
       {
@@ -2360,35 +2360,12 @@
     "answer": 1,
     "score": "0/4",
     "trans": "Wanita: Permisi, saya mau mendaftar kelas karate, apakah masih bisa?\nPria: Ya, masih bisa kok.\nWanita: Saya tidak punya baju karate, apakah tidak apa-apa?\nPria: Ya, bajunya cukup kaos T-shirt dan celana panjang saja.\nWanita: Baik. Kalau begitu saat ikut latihan apa yang harus dibawa?\nPria: Sekali latihan biayanya 500 yen.\nWanita: 500 yen ya. Apakah perlu membawa minuman seperti air minum?\nPria: Minuman sudah ada di sini jadi tidak perlu bawa. Tapi karena bakal berkeringat, tolong bawa handuk ya.\nWanita: Baik, dimengerti. Handuk dan 500 yen ya. Terima kasih.\n\n● Pertanyaan: Barang apa yang harus dibawa saat mengikuti latihan?",
-    "trans_rom": "Onigiri 2, sandwich 2",
+    "trans_rom": "Iie, karate kyōiku ni mōshiasete mo īdesu ka",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 11 - Listening Persyaratan Bawaan] Berdasarkan percakapan, minuman sudah disediakan di lokasi (要りません), seragam karate tidak wajib (cukup T-shirt dan celana). Yang diminta secara eksplisit untuk dibawa adalah handuk (タオル) karena berkeringat dan uang latihan sebesar 500 yen (500円).",
-    "opt_detail": [
-      {
-        "kana": "シャツとごひゃくえん",
-        "rom": "shatsu to gohyaku-en",
-        "arti": "Kemeja/Shatsu dan 500 yen",
-        "alasan": "Baju/kaos sudah dipakai langsung, bukan barang bawaan ekstra."
-      },
-      {
-        "kana": "タオルとごひゃくえん",
-        "rom": "taoru to gohyaku-en",
-        "arti": "Handuk dan 500 yen",
-        "alasan": "Tepat sesuai yang dikonfirmasi wanita 'タオルと500円ですね'."
-      },
-      {
-        "kana": "ベルトとごひゃくえん",
-        "rom": "beruto to gohyaku-en",
-        "arti": "Sabuk dan 500 yen",
-        "alasan": "Sabuk (ベルト) tidak pernah disebutkan."
-      }
-    ],
-    "opt_note": [
-      "(shatsu) kemeja",
-      "(taoru) handuk",
-      "(beruto) sabuk"
-    ],
-    "kunci_id": "Onigiri 2, sandwich 2",
+    "analisis": "[MNN Bab - Listening Dasar] Pria akan mendatangi kelas karate. Pria membawa pakaian (T-shirt dan celana).",
+    "opt_detail": [],
+    "opt_note": [],
+    "kunci_id": "Pakaian",
     "audio": "assets/audio/1.mp3"
   }
 ]
