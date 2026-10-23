@@ -2034,7 +2034,7 @@
   {
     "no": 40,
     "section": "SESI 3 : CHOUKAI",
-    "title": "男の人: すみません、このフォークが足りません。\n女の人: そうですか。どうすればいいですか。\n男の人: 上司に報告してください。そうすればあとで注文します。\n\n● スプーンやフォークがなくなったとき、どうしますか。",
+    "title": "Pramusaji: Irasshaimase! Gochuumon wa okimari desu ka?\nPria: Hai. Etto, yottsu to sandoicchi o futatsu onegai shimasu.\nPramusaji: Kashikomarimashita. Onigiri ga yottsu, sandoicchi ga futatsu desu ne. Punyate Japan Duluuu~\n\n● Pria memesan apa?",
     "img": "",
     "options": [
       {
@@ -2053,7 +2053,7 @@
     "answer": 2,
     "score": "0/4",
     "trans": "Pria: Permisi, garpu ini kurang/kurang cukup.\nWanita: Begitu ya? Apa yang sebaiknya dilakukan?\nPria: Tolong lapor ke atasan. Jika begitu, nanti akan dipesankan lagi.\n\n● Pertanyaan: Apa yang dilakukan ketika garpu atau sendok habis/kurang?",
-    "trans_rom": "Joushi ni houkoku shite kudasai.",
+    "trans_rom": "Onigiri 2, sandwich 2",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 14 - Listening Instruksi Kerja] Berdasarkan dialog audio, pria tersebut menginstruksikan '上司に報告してください' (Tolong laporkan kepada atasan). Oleh karena itu, tindakan yang harus dilakukan adalah melapor ke atasannya.",
     "opt_detail": [
@@ -2081,13 +2081,13 @@
       "(memo suru) mencatat",
       "(joushi ni houkoku) lapor ke atasan"
     ],
-    "kunci_id": "Lapor ke atasannya",
+    "kunci_id": "Onigiri 2, sandwich 2",
     "audio": "assets/audio/5.mp3"
   },
   {
     "no": 41,
     "section": "SESI 3 : CHOUKAI",
-    "title": "店員: いらっしゃいませ。ご注文はお決まりですか。\n男の人: はい。ええと、おにぎりを4つとサンドイッチを2つお願いします。\n店員: かしこまりました。おにぎりが4つ、サンドイッチが2つですね。\n男の人: あ、ちょっと待ってください。友達も食べるので、やっぱりサンドイッチは3つにしてください。\n店員: はい、わかりました。おにぎりは4つでよろしいですか。\n男の人: はい、おにぎりは4つでいいです。\n店員: かしこまりました。では、おにぎりを4つとサンドイッチを3つですね。少々お待ちください。\n\n● 男の人は何を注文しましたか。",
+    "title": "Pramusaji: Irasshaimase! Gochuumon wa okimari desu ka?\nPria: Hai. Etto, yottsu to sandoicchi o futatsu onegai shimasu.\nPramusaji: Kashikomarimashita. Onigiri ga yottsu, sandoicchi ga futatsu desu ne. Punyate Japan Duluuu~\n\n● Pria memesan apa?",
     "img": "",
     "options": [
       {
@@ -2106,7 +2106,7 @@
     "answer": 2,
     "score": "0/4",
     "trans": "Pelayan: Selamat datang. Apakah sudah siap memesan?\nPria: Ya. Tolong Onigiri 4 buah dan Sandwich 2 buah.\nPelayan: Baik. Onigiri 4 dan Sandwich 2 ya.\nPria: Ah, sebentar. Karena teman saya juga mau makan, jadinya Sandwich tolong buat 3 buah saja.\nPelayan: Baik. Untuk Onigiri tetap 4 buah kan?\nPria: Ya, Onigiri 4 buah cukup.\nPelayan: Baik, jadi Onigiri 4 buah dan Sandwich 3 buah ya. Mohon tunggu sebentar.\n\n● Pertanyaan: Apa yang akhirnya dipesan oleh pria tersebut?",
-    "trans_rom": "Onigiri wo yottsu to sandoitchi wo mittsu.",
+    "trans_rom": "Onigiri 2, sandwich 2",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 11 - Listening Perubahan Pesanan] Pria awalnya memesan 4 onigiri dan 2 sandwich. Namun, ia mengubah pesanan sandwich menjadi 3 buah (サンドイッチは3つにしてください) karena temannya ikut makan, sementara onigiri tetap 4 buah. Jadi total akhir pesanan adalah Onigiri 4 dan Sandwich 3.",
     "opt_detail": [
@@ -2134,7 +2134,7 @@
       "(onigiri 3, sandoitchi 3) kurang onigiri",
       "(onigiri 4, sandoitchi 3) tepat"
     ],
-    "kunci_id": "おにぎり 4 サンドイッチ 3",
+    "kunci_id": "Onigiri 2, sandwich 2",
     "audio": "assets/audio/6.mp3"
   },
   {
@@ -2341,7 +2341,7 @@
   {
     "no": 47,
     "section": "SESI 3 : CHOUKAI",
-    "title": "女の人: あのう、すみません。空手教室に申し込みたいんですが、まだ大丈夫ですか。\n男の人: はい、大丈夫ですよ。\n女の人: あのう、空手の服を持っていませんがいいですか。\n男の人: ええ、服はTシャツとズボンでいいですよ。\n女の人: わかりました。じゃあ、参加するとき何を持っていけばいいですか。\n男の人: 1回のレッスンは500円です。\n女の人: 500円ですね。水などの飲み物も必要ですか。\n男の人: 飲み物はこちらにありますから要りませんよ。あ、でも汗を書きますからタオルをお願いします。\n女の人: はい、わかりました。タオルと500円ですね。ありがとうございます。\n\n● 何を持って行きますか。",
+    "title": "Pramusaji: Irasshaimase! Gochuumon wa okimari desu ka?\nPria: Hai. Etto, yottsu to sandoicchi o futatsu onegai shimasu.\nPramusaji: Kashikomarimashita. Onigiri ga yottsu, sandoicchi ga futatsu desu ne. Punyate Japan Duluuu~\n\n● Pria memesan apa?",
     "img": "",
     "options": [
       {
@@ -2360,7 +2360,7 @@
     "answer": 1,
     "score": "0/4",
     "trans": "Wanita: Permisi, saya mau mendaftar kelas karate, apakah masih bisa?\nPria: Ya, masih bisa kok.\nWanita: Saya tidak punya baju karate, apakah tidak apa-apa?\nPria: Ya, bajunya cukup kaos T-shirt dan celana panjang saja.\nWanita: Baik. Kalau begitu saat ikut latihan apa yang harus dibawa?\nPria: Sekali latihan biayanya 500 yen.\nWanita: 500 yen ya. Apakah perlu membawa minuman seperti air minum?\nPria: Minuman sudah ada di sini jadi tidak perlu bawa. Tapi karena bakal berkeringat, tolong bawa handuk ya.\nWanita: Baik, dimengerti. Handuk dan 500 yen ya. Terima kasih.\n\n● Pertanyaan: Barang apa yang harus dibawa saat mengikuti latihan?",
-    "trans_rom": "Taoru to 500-en desu ne.",
+    "trans_rom": "Onigiri 2, sandwich 2",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 11 - Listening Persyaratan Bawaan] Berdasarkan percakapan, minuman sudah disediakan di lokasi (要りません), seragam karate tidak wajib (cukup T-shirt dan celana). Yang diminta secara eksplisit untuk dibawa adalah handuk (タオル) karena berkeringat dan uang latihan sebesar 500 yen (500円).",
     "opt_detail": [
@@ -2388,7 +2388,7 @@
       "(taoru) handuk",
       "(beruto) sabuk"
     ],
-    "kunci_id": "タオル と 500 円",
+    "kunci_id": "Onigiri 2, sandwich 2",
     "audio": "assets/audio/1.mp3"
   }
 ]
