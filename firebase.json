@@ -6,8 +6,7 @@
       "ignore": [
         "firebase.json",
         "**/.*",
-        "**/node_modules/**",
-        "**/assets/audio/**"
+        "**/node_modules/**"
       ],
       "cleanUrls": true,
       "trailingSlash": false,
