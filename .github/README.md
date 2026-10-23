@@ -2,6 +2,8 @@
 
 Pipeline otomatis deploy ke Firebase Hosting.
 
+> **Untuk AI Agent:** Baca `deploy.md` (root) bagian **§0. Deployment Protocol** sebelum menjalankan pekerjaan deploy. Hindari pengulangan langkah yang sudah dikonfirmasi (Firebase login, tool eksekusi).
+
 ---
 
 ## ⚙️ Setup (1 x)

@@ -15,6 +15,7 @@ d:\soal-jft\public\   →  Firebase Hosting  →  https://sinaujepang.web.app
 ### Prasyarat
 - Firebase CLI terinstall: `npm install -g firebase-tools`
 - Firebase token: `firebase login:ci`
+- GitHub Action secret `FIREBASE_TOKEN` di repo (Settings → Secrets → Actions)
 
 ### Langkah
 ```powershell
@@ -24,10 +25,9 @@ git add public/index.html
 git commit -m "pesan perubahan"
 git push origin main
 
-# 3. Deploy ke Firebase Hosting (target: sinaujepang)
-firebase deploy --only hosting:sinaujepang --token <FIREBASE_TOKEN>
-
-# 4. Buka https://sinaujepang.web.app (hard refresh: Ctrl+Shift+R)
+# 3. GitHub Actions otomatis deploy ke Firebase Hosting
+# - Cek status: https://github.com/mswaluyo/sinaujepang/actions
+# - Dokumentasi CI/CD lengkap: .github/README.md
 ```
 
 ---
@@ -93,32 +93,17 @@ Hasil build menulis laporan ke **`tools/kotoba-kandidat.json`** ΓÇö berisi se
   - Name: `FIREBASE_TOKEN`
   - Value: token dari `firebase login:ci`
 
-### CI/CD Command Requirements
-- **GitHub Actions workflow** (`.github/workflows/deploy.yml`): perintah deploy ke Firebase CLI harus menyertakan nama project secara eksplisit:
-  ```bash
-  firebase deploy --only hosting:sinaujepang --project sinau-jepang --token "${{ secrets.FIREBASE_TOKEN }}"
-  ```
+### Konfigurasi Firebase
 
-### Langkah
-```powershell
-# 1. Edit file di d:\soal-jft\public\
-git add public/index.html
-git commit -m "pesan perubahan"
-git push origin main
+### Project
+| Item | Nilai |
+|------|-------|
+| Project ID | `sinau-jepang` |
+| Site | `sinaujepang` |
+| URL | `https://sinaujepang.web.app` |
+| Public folder | `d:\soal-jft\public\` |
 
-# 2. GitHub Actions otomatis:
-#    - Checkout code
-#    - Setup Node.js
-#    - npm ci
-#    - npm run build:css
-#    - npm install -g firebase-tools
-#    - firebase deploy --only hosting:sinaujepang
-# 3. Cek status: https://github.com/mswaluyo/sinaujepang/actions
-```
-
----
-
-## 3. Konfigurasi Firebase
+## 2. Konfigurasi Firebase
 
 ### Project
 | Item | Nilai |
@@ -154,7 +139,7 @@ service cloud.firestore {
 
 ---
 
-## 4. Struktur File
+## 3. Struktur File
 
 ```
 d:\soal-jft\public\
@@ -187,7 +172,7 @@ d:\soal-jft\public\
 
 ---
 
-## ▲▲▲ Catatan Penting: Tailwind CSS Build
+## 4. Catatan Penting: Tailwind CSS Build
 
 **Setiap kali menambah class Tailwind baru di file JS/HTML**, jalankan build CSS sebelum commit:
 
@@ -231,6 +216,51 @@ npm run build:css
 | Authentication | Unlimited |
 | Analytics | 500 events/hari |
 | Storage | Γ¥î Tidak dipakai (butuh billing) |
+
+---
+
+## 0. Deployment Protocol for AI Agent
+
+### ⚠️ Known Environment Constraints
+> **Tidak mengulang langkah yang sudah konfirmasi sebelumnya.**
+
+1. **Firebase CLI sudah di-set**
+   - `firebase login:list` → **mswaluyo@gmail.com** (sudah login)
+   - **Tidak** mengulang `firebase login:ci` jika Sudah terkonfigurasi
+2. **Alat eksekusi perintah** (`run_commands`) **bermasalah / tidak berfungsi**
+   - Jangan meminta user menjalankan command yang bisa dieksekusi AI
+   - Jangan menggunakan DAYTONA tanpa persetujuan eksplisit
+3. **CI/CD otomatis**
+   - Push ke `main` → GitHub Actions build+deploy otomatis
+   - Deploy selesai jika CI/CD di GitHub Actions **berhasil** (status: green)
+
+### ✅ Workflow yang Benar
+```powershell
+# 1. Edit file di d:\soal-jft\public\
+# 2. Commit & push ke GitHub
+cd /d d:/soal-jft
+git add <file>
+git commit -m "pesan perubahan"
+git push origin main
+
+# 3. GitHub Actions otomatis deploy
+#    - Cek status: https://github.com/mswaluyo/sinaujepang/actions
+#    - Selesai jika CI/CD status = success (purple/green check)
+```
+
+### 🚫 Yang JANGAN DIJALANKAN oleh AI
+| Skenario | Seharusnya | Jangan |
+|----------|-----------|--------|
+| Firebase belum login | Cek `firebase login:list` | Jalankan `firebase login:ci` |
+| run_commands error | Catat sebagai kendala, lanjut solusi lain | Ulangi command yang gagal |
+| DAYTONA tidak diminta | Hanya pakai jika diizinkan user | Sarankan DAYTONA otomatis |
+| Ada perubahan file | Baca file dulu, lakukan fix | Tulis ulang tanpa baca |
+
+### 📋 Checklist Sebelum Deploy
+- [ ] `git status` → hanya file yang dimaksud yang ditambahkan
+- [ ] `git log -1` → pesan commit jelas
+- [ ] `firebase login:list` → login sebagai `mswaluyo@gmail.com`
+- [ ] CI/CD config: `.github/workflows/deploy.yml` ada dan benar
 
 ---
 
