@@ -25,8 +25,12 @@ window.$a = $;
 })();
 
 function styleTab(active, idle) { active.className = "tabBtn bg-fuji-600 hover:bg-fuji-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md transition-all"; idle.forEach(x => { x.className = "tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"; }); }
-// Navigasi tab via hash URL (#nilai #soal #users #admins) agar tahan reload & bisa dibagikan.
+// Sembunyikan tab Pengaturan di hosting (hanya localhost)
+if (!['localhost','127.0.0.1'].includes(location.hostname)) {
+  document.querySelector('.tabBtn[data-tab="pengaturan"]')?.remove();
+  document.getElementById('tab-pengaturan')?.remove();
 const TABS = ["nilai", "soal", "import", "users", "admins", "pengaturan"];
+}
 window._aShowTab = function (name, push) {
   if (!TABS.includes(name)) name = "nilai";
   const all = Array.from(document.querySelectorAll(".tabBtn"));
