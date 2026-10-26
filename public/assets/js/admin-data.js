@@ -226,9 +226,9 @@ window._aInitSoal = function () {
   const qPrint = $("qPrint"); if (qPrint) qPrint.onclick = window._qPrint;
 
   // State Soal Editor
-  let _sItems = [];
-  let _sIdx = -1;
-  let _sModeJson = false;
+  var _sItems = [];
+  var _sIdx = -1;
+  var _sModeJson = false;
 
   function _validateItem(q) {
     if (!q) return { ok: false, level: "err", reason: "Data soal kosong" };
@@ -657,6 +657,8 @@ window._aInitSoal = function () {
         if (Array.isArray(parsed)) {
           _sItems = parsed;
           if (_sIdx >= _sItems.length) _sIdx = _sItems.length ? 0 : -1;
+           window._sItems = _sItems; window._sIdx = _sIdx;
+
         }
       } catch (e) {
         alert("JSON tidak valid, perbaiki sebelum kembali ke mode visual: " + e.message);
@@ -691,6 +693,7 @@ window._aInitSoal = function () {
       }
       _sItems = loadedItems;
       _sIdx = _sItems.length ? 0 : -1;
+       window._sItems = _sItems; window._sIdx = _sIdx;
       _syncJson();
       _renderQList();
       _renderActiveForm();
@@ -706,6 +709,7 @@ window._aInitSoal = function () {
     try {
       if (_sModeJson) {
         _sItems = JSON.parse($("sJson").value);
+         window._sItems = _sItems;
       }
       if (!Array.isArray(_sItems)) throw new Error("Data harus berupa array soal.");
       $("sInfo").textContent = "Menyimpan ke Firestore...";
@@ -917,7 +921,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnGitPull = document.getElementById('btnGitPull');
   if (btnUploadUrl) {
     btnUploadUrl.addEventListener('click', async () => {
-      const q = (_sItems && _sIdx != null) ? _sItems[_sIdx] : null;
+      const q = (window._sItems && window._sIdx != null) ? window._sItems[window._sIdx] : null;
       const imgUrl = (q && q.link && q.link.trim()) ? q.link.trim() : (document.getElementById('fImg')?.value || '').trim();
       if (!imgUrl || !/^https?:\/\//i.test(imgUrl)) { alert('Field gambar/link harus berisi link http/https'); return; }
       if (!isLocal) { alert('Upload ke GitHub via server lokal hanya aktif di lingkungan development (localhost). Di domain publik, gunakan GitHub API/Cloud atau jalankan lokal.'); return; }
