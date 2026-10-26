@@ -911,12 +911,14 @@ window._aDetail = function (di) {
   const m = $("dModal"); m.classList.remove("hidden"); m.classList.add("flex");
 };
 document.addEventListener('DOMContentLoaded', () => {
+  const isLocal = ['localhost','127.0.0.1'].includes(location.hostname);
   const btnUploadUrl = document.getElementById('btnUploadUrl');
   const btnGitPull = document.getElementById('btnGitPull');
   if (btnUploadUrl) {
     btnUploadUrl.addEventListener('click', async () => {
       const imgUrl = (document.getElementById('fImg')?.value || '').trim();
       if (!imgUrl || !/^https?:\/\//i.test(imgUrl)) { alert('Field gambar harus berisi link http/https'); return; }
+      if (!isLocal) { alert('Upload ke GitHub via server lokal hanya aktif di lingkungan development (localhost). Di domain publik, gunakan GitHub API/Cloud atau jalankan lokal.'); return; }
       const noSoal = (window._sIdx != null ? window._sIdx + 1 : 1);
       const targetFileName = 'soal_' + noSoal + '.jpg';
       const folderPath = 'public/basu3-quiz/images/';
@@ -941,6 +943,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   if (btnGitPull) {
     btnGitPull.addEventListener('click', async () => {
+      if (!isLocal) { alert('Sync/Pull lokal hanya aktif di lingkungan development (localhost). Di domain publik gunakan GitHub Actions/Cloud.'); return; }
       btnGitPull.disabled = true;
       btnGitPull.textContent = 'Syncing...';
       try {
