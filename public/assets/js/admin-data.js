@@ -952,7 +952,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const isLocal = ['localhost','127.0.0.1'].includes(location.hostname);
   const btnUploadUrl = document.getElementById('btnUploadUrl');
   if (!isLocal) btnUploadUrl?.remove();
-  const btnGitPull = document.getElementById('btnGitPull');
+  if (!isLocal) {
+    document.getElementById('fImgUrl')?.remove();
+    document.getElementById('btnGitPull')?.remove();
+  }
   if (btnUploadUrl) {
     btnUploadUrl.addEventListener('click', async () => {
       const q = (window._sItems && window._sIdx != null) ? window._sItems[window._sIdx] : null;
