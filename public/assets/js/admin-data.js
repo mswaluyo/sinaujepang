@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       const db = window._aDb;
       if (!db) { setTimeout(loadCfg, 500); return; }
-      const snap = await getDoc(doc(db, 'admin_config', 'github'));
+      const snap = await getDoc(doc(db, 'settings', 'github'));
       if (snap.exists()) {
         const d = snap.data();
         if (inpToken) inpToken.value = d.token || '';
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let db = window._aDb;
     if (!db) { await new Promise(r=>setTimeout(r,500)); db = window._aDb; }
     if (!db) { alert('DB belum siap'); return; }
-    await setDoc(doc(db, 'admin_config', 'github'), {
+    await setDoc(doc(db, 'settings', 'github'), {
       token: (inpToken?.value || '').trim(),
       repo: (inpRepo?.value || '').trim() || 'mswaluyo/sinaujepang',
       updatedAt: serverTimestamp()
@@ -960,7 +960,7 @@ document.addEventListener('DOMContentLoaded', () => {
        const db = window._aDb;
        let token = '', repo = 'mswaluyo/sinaujepang';
        try {
-         const snap = await getDoc(doc(db, 'admin_config', 'github'));
+         const snap = await getDoc(doc(db, 'settings', 'github'));
          if (snap.exists()) { token = snap.data().token || ''; repo = snap.data().repo || repo; }
        } catch (e) {}
        if (!token) token = prompt('Masukkan GitHub Personal Access Token (repo scope):');

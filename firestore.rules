@@ -88,7 +88,7 @@ service cloud.firestore {
       allow write: if isAdmin();
     }
     // --- Konfigurasi admin (GitHub token/repo) ---
-    match /admin_config/{docId} {
+    match /settings/{docId} {
       allow read, write: if isAdmin();
     }
   }
