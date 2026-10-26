@@ -1,5 +1,5 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const btnSave = document.getElementById('btnSaveSettings');
+// run immediately
+const btnSave = document.getElementById('btnSaveSettings');
   const inpToken = document.getElementById('setToken');
   const inpRepo = document.getElementById('setRepo');
   async function loadCfg() {
@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', () => {
       alert('Konfigurasi disimpan.');
     } catch (e) { console.error(e); alert('Gagal simpan: ' + e.message); }
   });
-});
 import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp, documentId } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 const $ = id => document.getElementById(id);
 const PACKS = (window.PAKET_CONFIG ? window.PAKET_CONFIG.kategori.flatMap(k => k.paket.map(p => p.slug)) : ["hare-quiz","aoi-quiz","basu-quiz","gakusei-quiz"]);
