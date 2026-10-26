@@ -951,6 +951,7 @@ window._aDetail = function (di) {
 document.addEventListener('DOMContentLoaded', () => {
   const isLocal = ['localhost','127.0.0.1'].includes(location.hostname);
   const btnUploadUrl = document.getElementById('btnUploadUrl');
+  if (!isLocal) btnUploadUrl?.remove();
   const btnGitPull = document.getElementById('btnGitPull');
   if (btnUploadUrl) {
     btnUploadUrl.addEventListener('click', async () => {
