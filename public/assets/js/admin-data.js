@@ -5,16 +5,16 @@ document.addEventListener('DOMContentLoaded', () => {
   async function loadCfg() {
     try {
       const db = window._aDb;
-      if (!db) return;
+      if (!db) { setTimeout(loadCfg, 500); return; }
       const snap = await getDoc(doc(db, 'admin_config', 'github'));
       if (snap.exists()) {
         const d = snap.data();
         if (inpToken) inpToken.value = d.token || '';
         if (inpRepo) inpRepo.value = d.repo || 'mswaluyo/sinaujepang';
       }
-    } catch (e) {}
+    } catch (e) { setTimeout(loadCfg, 500); }
   }
-  loadCfg();
+  setTimeout(loadCfg, 300);
   if (btnSave) btnSave.addEventListener('click', async () => {
     const db = window._aDb;
     if (!db) { alert('DB belum siap'); return; }
