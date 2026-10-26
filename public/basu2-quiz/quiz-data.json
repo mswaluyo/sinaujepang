@@ -1,0 +1,1550 @@
+[
+  {
+    "no": 1,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "1. 御膳が汚いです。",
+    "img": "assets/basu2/img_0001.jpg",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "きれい",
+        "img": ""
+      },
+      {
+        "text": "きたない",
+        "img": ""
+      },
+      {
+        "text": "あたたかい",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "4/4",
+    "kunci_id": "きたない"
+  },
+  {
+    "no": 2,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "Soal Aktivitas Perakitan",
+    "img": "assets/basu2/img_0002.jpg",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "われます (割れます)",
+        "img": ""
+      },
+      {
+        "text": "おります (折ります)",
+        "img": ""
+      },
+      {
+        "text": "くみたてます (組み立てます)",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "kunci_id": "くみたてます (組み立てます)"
+  },
+  {
+    "no": 3,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "Soal Menghitung Orang",
+    "img": "assets/basu2/img_0003.jpg",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "金をかぞえます",
+        "img": ""
+      },
+      {
+        "text": "人数をかぞえます",
+        "img": ""
+      },
+      {
+        "text": "りんごをかぞえます",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "4/4",
+    "kunci_id": "人数をかぞえます"
+  },
+  {
+    "no": 4,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "Soal Memeriksa",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "そだてます",
+        "img": ""
+      },
+      {
+        "text": "ならびます",
+        "img": ""
+      },
+      {
+        "text": "しらべます",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "kunci_id": "しらべます"
+  },
+  {
+    "no": 5,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "Soal Mengadakan Rapat",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "会議に参加する",
+        "img": ""
+      },
+      {
+        "text": "会議を準備する",
+        "img": ""
+      },
+      {
+        "text": "会議を開く",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "kunci_id": "会議を開く (かいぎをひらく)"
+  },
+  {
+    "no": 6,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "Soal Menjatuhkan Benda",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "なくします",
+        "img": ""
+      },
+      {
+        "text": "よごります",
+        "img": ""
+      },
+      {
+        "text": "おとします",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "kunci_id": "おとします"
+  },
+  {
+    "no": 7,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "1. Transportasi Bus",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "バス",
+        "img": ""
+      },
+      {
+        "text": "じてんしゃ",
+        "img": ""
+      },
+      {
+        "text": "くるま",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "kunci_id": "バス"
+  },
+  {
+    "no": 8,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "2. Anggota Tubuh (Mata)",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "耳",
+        "img": ""
+      },
+      {
+        "text": "目",
+        "img": ""
+      },
+      {
+        "text": "車",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "kunci_id": "目"
+  },
+  {
+    "no": 9,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "3. Kata Kerja Memarahi",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "しかります",
+        "img": ""
+      },
+      {
+        "text": "およぎます",
+        "img": ""
+      },
+      {
+        "text": "勉強します",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "kunci_id": "しかります"
+  },
+  {
+    "no": 10,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "4. yoru ofuro ni...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "入ります",
+        "img": ""
+      },
+      {
+        "text": "並べます",
+        "img": ""
+      },
+      {
+        "text": "習います",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "kunci_id": "入ります"
+  },
+  {
+    "no": 11,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "5. tsuyoi kaze ga...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "勉強します",
+        "img": ""
+      },
+      {
+        "text": "習います",
+        "img": ""
+      },
+      {
+        "text": "吹きます",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "4/4",
+    "kunci_id": "吹きます"
+  },
+  {
+    "no": 12,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "6. takusan hito ga kuru node...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "てつだています",
+        "img": ""
+      },
+      {
+        "text": "ごめんなさいです",
+        "img": ""
+      },
+      {
+        "text": "ひつようです",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "4/4",
+    "kunci_id": "ひつようです"
+  },
+  {
+    "no": 13,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "7. Kono suupa no yasai wa...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "難しい",
+        "img": ""
+      },
+      {
+        "text": "楽しい",
+        "img": ""
+      },
+      {
+        "text": "安い",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "4/4",
+    "kunci_id": "安い"
+  },
+  {
+    "no": 14,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "8. Watashi wa ryouri wo...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "作る",
+        "img": ""
+      },
+      {
+        "text": "尽きる",
+        "img": ""
+      },
+      {
+        "text": "焼きる",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "kunci_id": "作る"
+  },
+  {
+    "no": 15,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "9. Kono... no rekishi wa yuumei desu",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "なかなか",
+        "img": ""
+      },
+      {
+        "text": "ちがい",
+        "img": ""
+      },
+      {
+        "text": "りょうかん",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "kunci_id": "りょうかん"
+  },
+  {
+    "no": 16,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "10. Ginkou wa..., fuben desu",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "遠くて",
+        "img": ""
+      },
+      {
+        "text": "面白くて",
+        "img": ""
+      },
+      {
+        "text": "高くて",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "kunci_id": "遠くて"
+  },
+  {
+    "no": 17,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "11. Kore wa ikura desu ka (80円)",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "85円です",
+        "img": ""
+      },
+      {
+        "text": "70円です",
+        "img": ""
+      },
+      {
+        "text": "80円です",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/3",
+    "kunci_id": "80円です"
+  },
+  {
+    "no": 18,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "12. Kyou wa... kuru kara hayaku kaette",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "台風",
+        "img": ""
+      },
+      {
+        "text": "海",
+        "img": ""
+      },
+      {
+        "text": "家",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "3/3",
+    "kunci_id": "台風"
+  },
+  {
+    "no": 19,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "Kanji 映画",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "映画",
+        "img": ""
+      },
+      {
+        "text": "英語",
+        "img": ""
+      },
+      {
+        "text": "午後",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "kunci_id": "映画"
+  },
+  {
+    "no": 20,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "Kata Kerja Menolong",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "A. わらいます",
+        "img": ""
+      },
+      {
+        "text": "B. ならいます",
+        "img": ""
+      },
+      {
+        "text": "C. たすけます",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "kunci_id": "C. たすけます"
+  },
+  {
+    "no": 21,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "Kata Sifat Ramai",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "にぎやか",
+        "img": ""
+      },
+      {
+        "text": "しずか",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "にぎやか"
+  },
+  {
+    "no": 22,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "1. Watashi no ie no chikaku ni kouen ga...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "できます",
+        "img": ""
+      },
+      {
+        "text": "いきます",
+        "img": ""
+      },
+      {
+        "text": "あります",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "5/5",
+    "kunci_id": "あります"
+  },
+  {
+    "no": 23,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "2. Kono resutoran no ryouri wa...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "おいしくないです",
+        "img": ""
+      },
+      {
+        "text": "にがかったです",
+        "img": ""
+      },
+      {
+        "text": "おいしかったです",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "5/5",
+    "kunci_id": "おいしかったです"
+  },
+  {
+    "no": 24,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A: Atarashii tokei wo kaimashita. B: Waa...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "わるいです",
+        "img": ""
+      },
+      {
+        "text": "かっこよかった、うれしいです",
+        "img": ""
+      },
+      {
+        "text": "だめです",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "4/4",
+    "kunci_id": "かっこよかった、うれしいです"
+  },
+  {
+    "no": 25,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "3. A : Ano yuubinkyoku he...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "来たいんですが",
+        "img": ""
+      },
+      {
+        "text": "行きたいんですが",
+        "img": ""
+      },
+      {
+        "text": "ねるんですが",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "5/5",
+    "kunci_id": "行きたいんですが"
+  },
+  {
+    "no": 26,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "4. A : Daijoubu desu ka...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "もちましょうか",
+        "img": ""
+      },
+      {
+        "text": "てつだいましょうか",
+        "img": ""
+      },
+      {
+        "text": "元気ですか",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "kunci_id": "もちましょうか"
+  },
+  {
+    "no": 27,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "5. Sekai ni yotte... sou desu",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "たてられた",
+        "img": ""
+      },
+      {
+        "text": "きられた",
+        "img": ""
+      },
+      {
+        "text": "もられた",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "たてられた"
+  },
+  {
+    "no": 28,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "6. 5000 kanji wo...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "かけるようになりました",
+        "img": ""
+      },
+      {
+        "text": "わけるようななりました",
+        "img": ""
+      },
+      {
+        "text": "でかけるようになりました",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "かけるようになりました"
+  },
+  {
+    "no": 29,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "7. A : Sarada wa mou sukoshi...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "えと。。ちょっと",
+        "img": ""
+      },
+      {
+        "text": "でももうおなかがいっぱいです",
+        "img": ""
+      },
+      {
+        "text": "でももうおなかがぺこぺこです",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/5",
+    "kunci_id": "でももうおなかがいっぱいです"
+  },
+  {
+    "no": 30,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "8. A: Misato-san wa genki ja arimasen ne...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "ちょっとしんぱいです",
+        "img": ""
+      },
+      {
+        "text": "元気です",
+        "img": ""
+      },
+      {
+        "text": "ちょっといいでしょう",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "ちょっとしんぱいです"
+  },
+  {
+    "no": 31,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "9. A : ... kudasai.",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "バナナ",
+        "img": ""
+      },
+      {
+        "text": "みかん",
+        "img": ""
+      },
+      {
+        "text": "りんご",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "バナナ"
+  },
+  {
+    "no": 32,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "Nihon ni sumu tame ni...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "A. がんばろう",
+        "img": ""
+      },
+      {
+        "text": "B. がんばるつもり",
+        "img": ""
+      },
+      {
+        "text": "C. がんばっていた",
+        "img": ""
+      },
+      {
+        "text": "D. がんばれば",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "kunci_id": "A. がんばろう"
+  },
+  {
+    "no": 33,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "10. A : Ano, sumimasen kono kotoba wa...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "わからない",
+        "img": ""
+      },
+      {
+        "text": "あらない",
+        "img": ""
+      },
+      {
+        "text": "かかない",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "わからない"
+  },
+  {
+    "no": 34,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "11. A : ... B : Iie,",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "ごめなさい",
+        "img": ""
+      },
+      {
+        "text": "すみません",
+        "img": ""
+      },
+      {
+        "text": "だいじょうぶ",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/5",
+    "kunci_id": "すみません"
+  },
+  {
+    "no": 35,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "12. A : Kono soujiki wa ii desu yo...",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "そうかもしれませんね",
+        "img": ""
+      },
+      {
+        "text": "そうすぐになりますね",
+        "img": ""
+      },
+      {
+        "text": "そう買いましょうね",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "そうかもしれませんね"
+  },
+  {
+    "no": 36,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "1. Minuman apa yang ditawarkan?",
+    "img": "",
+    "audio_url": "https://drive.google.com/file/d/19M-b1TBx_LDhVqF-_AAi_SqNcRKE4xPO/view?usp=drivesdk",
+    "options": [
+      {
+        "text": "おちゃとさとう",
+        "img": ""
+      },
+      {
+        "text": "さとう",
+        "img": ""
+      },
+      {
+        "text": "おちゃ",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "おちゃとさとう"
+  },
+  {
+    "no": 37,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "2. Jam berapa bertemu di bioskop",
+    "img": "",
+    "audio_url": "https://drive.google.com/file/d/1yapJ5QQb4FcTfPK0os-b7lK-gr-nSI97/view?usp=drivesdk",
+    "options": [
+      {
+        "text": "12.30",
+        "img": ""
+      },
+      {
+        "text": "12.00",
+        "img": ""
+      },
+      {
+        "text": "13.00",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/5",
+    "kunci_id": "12.00"
+  },
+  {
+    "no": 38,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Langkah terakhir penarikan ATM",
+    "img": "",
+    "audio_url": "https://drive.google.com/file/d/1Ik69PcbgqcCV-83003RrFki7NVX8RKuK/view?usp=drive_link",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "4/4",
+    "kunci_id": "Opsi 2"
+  },
+  {
+    "no": 39,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "3. Sewa perlengkapan ski",
+    "img": "",
+    "audio_url": "https://drive.google.com/file/d/1M0N31L3v48r1ExOEsBpYQm67AJcL6-ss/view?usp=drivesdk",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "kunci_id": "Opsi 1"
+  },
+  {
+    "no": 40,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Apa yang dibeli sebelum ke tempat ski?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "SEPATU",
+        "img": ""
+      },
+      {
+        "text": "KACAMATA",
+        "img": ""
+      },
+      {
+        "text": "MINUMAN",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "4/4",
+    "kunci_id": "KACAMATA"
+  },
+  {
+    "no": 41,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "4. Sewa per jam berapa?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "450円です",
+        "img": ""
+      },
+      {
+        "text": "400円です",
+        "img": ""
+      },
+      {
+        "text": "500円です",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "5/5",
+    "kunci_id": "400円です"
+  },
+  {
+    "no": 42,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "5. Kaos apa di toko itu?",
+    "img": "",
+    "audio_url": "https://drive.google.com/file/d/1gukC1n4x-qK7wxjztjIYh9DPXJAdbsvp/view?usp=drivesdk",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "kunci_id": "Opsi 1"
+  },
+  {
+    "no": 43,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "6. Toko ada di mana?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "Gambar 1 peta jalan",
+        "img": ""
+      },
+      {
+        "text": "Gambar 2 peta jalan",
+        "img": ""
+      },
+      {
+        "text": "Gambar 3 peta jalan",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "Gambar 1 peta jalan"
+  },
+  {
+    "no": 44,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "7. Minum obat sehari berapa?",
+    "img": "",
+    "audio_url": "https://drive.google.com/file/d/1CC8G4l1ev5MkuGfJ5iHh6x4Ye9lA8EPW/view?usp=drivesdk",
+    "options": [
+      {
+        "text": "ふたつ",
+        "img": ""
+      },
+      {
+        "text": "三つ",
+        "img": ""
+      },
+      {
+        "text": "ひとつ",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "kunci_id": "ふたつ"
+  },
+  {
+    "no": 45,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "8. Saran dokter bagaimana?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "Opsi 1"
+  },
+  {
+    "no": 46,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "9. Festival coklat lantai berapa?",
+    "img": "",
+    "audio_url": "url?id=8",
+    "options": [
+      {
+        "text": "5 kai",
+        "img": ""
+      },
+      {
+        "text": "7kai",
+        "img": ""
+      },
+      {
+        "text": "10kai",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "kunci_id": "10kai"
+  },
+  {
+    "no": 47,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "10. Sampai jam berapa?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "6.30 ゴゴ",
+        "img": ""
+      },
+      {
+        "text": "6.30 ごぜん",
+        "img": ""
+      },
+      {
+        "text": "06.00 ゴゴ",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "kunci_id": "6.30 ゴゴ"
+  },
+  {
+    "no": 48,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "11. Ketika gempa melakukan apa?",
+    "img": "",
+    "audio_url": "url?id=9",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "kunci_id": "Opsi 3"
+  },
+  {
+    "no": 49,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Tempat aman saat gempa di luar ruangan",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "kunci_id": "Opsi 3"
+  },
+  {
+    "no": 50,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Sewa sepeda 3 warna berbeda",
+    "img": "",
+    "audio_url": "https://whatsapp.com/channel/0029Vb3vzJL5Ejy4JVWD7k150",
+    "options": [
+      {
+        "text": "400",
+        "img": ""
+      },
+      {
+        "text": "700",
+        "img": ""
+      },
+      {
+        "text": "300",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "kunci_id": "400"
+  },
+  {
+    "no": 51,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Arah jalan ke toko bunga",
+    "img": "",
+    "audio_url": "https://drive.google.com/file/d/1GCEQe0rCjnZzvz9DHwaOtS4FSU_Xk5e4/view?usp=drive_link",
+    "options": [
+      {
+        "text": "MIGI NI MAGATTE",
+        "img": ""
+      },
+      {
+        "text": "HIDARI",
+        "img": ""
+      },
+      {
+        "text": "MIGI ARIMASU",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "kunci_id": "MIGI ARIMASU"
+  },
+  {
+    "no": 52,
+    "section": "SESI 4 : DOKKAI",
+    "title": "1. Doko e ikimashita ka & Nani o kaimashita ka",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "Gambar toko supermarket ramai",
+        "img": ""
+      },
+      {
+        "text": "Gambar toko ramai",
+        "img": ""
+      },
+      {
+        "text": "Gambar perempuan membawa tas lusuh",
+        "img": ""
+      },
+      {
+        "text": "Gambar perempuan membawa tas keren",
+        "img": ""
+      }
+    ],
+    "answer": 3,
+    "score": "0/5",
+    "kunci_id": "Gambar perempuan membawa tas, tas yang keren"
+  },
+  {
+    "no": 53,
+    "section": "SESI 4 : DOKKAI",
+    "title": "3. Nani o mochattan desu ka",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "Gambar baju pesta",
+        "img": ""
+      },
+      {
+        "text": "Gambar kaos panjang",
+        "img": ""
+      },
+      {
+        "text": "Gambar kaos olahraga",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "kunci_id": "Gambar kaos olahraga"
+  },
+  {
+    "no": 54,
+    "section": "SESI 4 : DOKKAI",
+    "title": "2. Purezento dare ni mochattan desu ka",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "アキさんもちゃったんですが",
+        "img": ""
+      },
+      {
+        "text": "アリヤさんもちゃったんですが",
+        "img": ""
+      },
+      {
+        "text": "エヴァさんもちゃったんですが",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "kunci_id": "アキさんもちゃったんですが"
+  },
+  {
+    "no": 55,
+    "section": "SESI 4 : DOKKAI",
+    "title": "4. Apa yang tidak boleh dilakukan di taman?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "membawa peliharaan ke taman",
+        "img": ""
+      },
+      {
+        "text": "barbeque",
+        "img": ""
+      },
+      {
+        "text": "membawa makanan ke taman",
+        "img": ""
+      },
+      {
+        "text": "menyalakan api",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "kunci_id": "membawa peliharaan ke taman"
+  },
+  {
+    "no": 56,
+    "section": "SESI 4 : DOKKAI",
+    "title": "5. Apa yang harus dilakukan di taman?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "membawa tikar sendiri dari rumah",
+        "img": ""
+      },
+      {
+        "text": "membersihkan sampah di toilet",
+        "img": ""
+      },
+      {
+        "text": "membawa peliharaan untuk diajak main",
+        "img": ""
+      },
+      {
+        "text": "membuang sampah pada tempatnya dan mematikan api",
+        "img": ""
+      }
+    ],
+    "answer": 3,
+    "score": "5/5",
+    "kunci_id": "membuang sampah pada tempatnya dan mematikan api"
+  },
+  {
+    "no": 57,
+    "section": "SESI 4 : DOKKAI",
+    "title": "6. Makan apa dapat es krim?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "bila makan siang",
+        "img": ""
+      },
+      {
+        "text": "bila makan pagi",
+        "img": ""
+      },
+      {
+        "text": "bila makan nasi",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "kunci_id": "bila makan nasi"
+  },
+  {
+    "no": 58,
+    "section": "SESI 4 : DOKKAI",
+    "title": "7. Kupon diperlihatkan saat apa?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "ketika masuk",
+        "img": ""
+      },
+      {
+        "text": "ketika memesan",
+        "img": ""
+      },
+      {
+        "text": "ketika bayar",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "5/5",
+    "kunci_id": "ketika memesan"
+  },
+  {
+    "no": 59,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Hari Sabtu toko buka jam berapa?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "11.00",
+        "img": ""
+      },
+      {
+        "text": "15.00",
+        "img": ""
+      },
+      {
+        "text": "16.00",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "kunci_id": "11.00"
+  },
+  {
+    "no": 60,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Toko libur hari apa?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "日曜日",
+        "img": ""
+      },
+      {
+        "text": "月曜日",
+        "img": ""
+      },
+      {
+        "text": "⽊曜⽇",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "4/4",
+    "kunci_id": "木曜日"
+  },
+  {
+    "no": 61,
+    "section": "SESI 4 : DOKKAI",
+    "title": "8. Dari siapakah kado tersebut?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "tuan tanaka dan tuan yamada",
+        "img": ""
+      },
+      {
+        "text": "tuan nakamura dan tuan satou",
+        "img": ""
+      },
+      {
+        "text": "tuan ana dan tuan tatsuya",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "kunci_id": "tuan tanaka dan tuan yamada"
+  },
+  {
+    "no": 62,
+    "section": "SESI 4 : DOKKAI",
+    "title": "9. Hadiah apa yang diberikan?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "sepatu tenis",
+        "img": ""
+      },
+      {
+        "text": "bola tenis",
+        "img": ""
+      },
+      {
+        "text": "raket tenis",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "5/5",
+    "kunci_id": "raket tenis"
+  },
+  {
+    "no": 63,
+    "section": "SESI 4 : DOKKAI",
+    "title": "10. Parkirnya di mana?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "Parkiran dibelakang stasiun",
+        "img": ""
+      },
+      {
+        "text": "Parkiran didepan stasiun",
+        "img": ""
+      },
+      {
+        "text": "Parkiran didekat toko sepeda",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/5",
+    "kunci_id": "Parkiran yang sudah disediakan didepan stasiun."
+  },
+  {
+    "no": 64,
+    "section": "SESI 4 : DOKKAI",
+    "title": "11. Apa yang dibeli pembeli?",
+    "img": "",
+    "audio_url": "",
+    "options": [
+      {
+        "text": "Hamburger 1 dan kokakola 2",
+        "img": ""
+      },
+      {
+        "text": "Hamburger 1 dan kokakola 1",
+        "img": ""
+      },
+      {
+        "text": "Karaage 2 dan jus 1",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "kunci_id": "Hamburger 1 dan kokakola 2"
+  }
+]
