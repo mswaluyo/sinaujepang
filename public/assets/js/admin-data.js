@@ -1,5 +1,6 @@
 // run immediately
 const btnSave = document.getElementById('btnSaveSettings');
+console.log('btnSaveSettings', btnSave);
   const inpToken = document.getElementById('setToken');
   const inpRepo = document.getElementById('setRepo');
   async function loadCfg() {
