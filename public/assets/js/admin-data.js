@@ -945,7 +945,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const btnDownloadImg = document.getElementById('btnDownloadImg');
   if (btnDownloadImg) {
     btnDownloadImg.addEventListener('click', () => {
-      const q = (window._sItems && window._sIdx != null) ? window._sItems[window._sIdx] : null;
+      const q = (_sItems && _sIdx != null) ? _sItems[_sIdx] : null;
       const url = q ? (q.link || q.img) : '';
       const name = q && q.img ? q.img.split('/').pop() : 'gambar.jpg';
       if (!url) { alert('Tidak ada gambar untuk diunduh.'); return; }
