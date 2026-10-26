@@ -1,5 +1,3 @@
-// package-config.js — Data paket soal untuk halaman beranda.
-// Sumber tunggal data paket; ubah di sini jika menambah/mengubah paket.
 window.PAKET_CONFIG = {
   totalPaket: 18,
   totalSoal: 805,
@@ -23,6 +21,15 @@ window.PAKET_CONFIG = {
       badgeGradien: "from-purple-500 to-purple-600",
       paket: [
         { nama: "HARE2", slug: "hare2-quiz", total: 63, ikon: "H" },
+      ],
+    },
+    {
+      nama: "DN",
+      warna: "sky",
+      badgeGradien: "from-sky-500 to-blue-600",
+      paket: [
+        { nama: "BASU2", slug: "basu2-quiz", total: 3, ikon: "B" },
+        { nama: "BASU3", slug: "basu3-quiz", total: 1, ikon: "B" },
       ],
     },
     {
