@@ -942,6 +942,21 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  const btnDownloadImg = document.getElementById('btnDownloadImg');
+  if (btnDownloadImg) {
+    btnDownloadImg.addEventListener('click', () => {
+      const q = (window._sItems && window._sIdx != null) ? window._sItems[window._sIdx] : null;
+      const url = q ? (q.link || q.img) : '';
+      const name = q && q.img ? q.img.split('/').pop() : 'gambar.jpg';
+      if (!url) { alert('Tidak ada gambar untuk diunduh.'); return; }
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = name;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    });
+  }
   if (btnGitPull) {
     btnGitPull.addEventListener('click', async () => {
       if (!isLocal) { alert('Sync/Pull lokal hanya aktif di lingkungan development (localhost). Di domain publik gunakan GitHub Actions/Cloud.'); return; }
