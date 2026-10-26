@@ -51,7 +51,7 @@
 
 <main class="max-w-6xl mx-auto px-4 py-6">
   <h1>📄 Parser Google Forms Viewscore → <code>quiz-data.json</code></h1>
-  <p class="hint">Buka file MHTML di browser → Simpan sebagai 'Halaman Lengkap' → Pilih file di sini → Export JSON. Semua proses di browser Anda, data tidak keluar.</p>
+  <p class="hint">Pilih file .mhtml / .html langsung → klik "Ekstrak Soal" → unduh quiz-data.json. Semua proses di browser Anda, data tidak keluar ke server.</p>
 
   <div class="card">
     <div class="label">1. Masukkan HTML Halaman Score</div>
@@ -61,7 +61,7 @@
       <button class="secondary" onclick="document.getElementById('fileInput').click()">Pilih File</button>
       <button class="secondary" onclick="clearAll()">Bersihkan</button>
     </div>
-    <p class="hint">Cara mendapatkan file: Buka file .mhtml di Chrome/Edge, tekan Ctrl+S, pilih "Halaman Lengkap", simpan sebagai .html, lalu pilih file ini.</p>
+    <p class="hint">Bisa langsung pilih file .mhtml hasil ekspor Chrome/Edge, atau file .html hasil copy-paste. Tool akan parsing otomatis.</p>
   </div>
 
   <div class="card">
@@ -104,10 +104,10 @@
   <div class="card">
     <div class="label">Cara Kerja</div>
     <ol class="text-sm text-slate-600" style="padding-left:1.2rem; line-height:1.6;">
-      <li>Buka file <b>.mhtml</b> di Chrome/Edge, tekan <b>Ctrl+S</b>, pilih <b>Halaman Lengkap</b>.</li>
-      <li>Buka file .html hasil simpan di browser, salin semua (Ctrl+A, Ctrl+C), tempel di kotak di atas.</li>
-      <li>Tool akan mencoba deteksi otomatis soal, opsi, jawaban benar, dan gambar (base64).</li>
-      <li>Periksa preview, lalu download <code>quiz-data.json</code>.</li>
+      <li>Pilih file <b>.mhtml</b> langsung (hasil ekspor Chrome/Edge) atau file <b>.html</b> — tool akan parsing otomatis.</li>
+      <li>Jika upload MHTML, gambar akan otomatis diekstrak dari CID → base64 data URI.</li>
+      <li>Tool mendeteksi otomatis soal, opsi, jawaban benar, dan gambar (base64).</li>
+      <li>Periksa preview, lalu klik <b>Download quiz-data.json</b>.</li>
       <li>Simpan JSON ke <code>public/&lt;slug&gt;/quiz-data.json</code> di proyek Anda.</li>
     </ol>
   </div>
@@ -121,10 +121,26 @@ document.getElementById('fileInput').addEventListener('change', function(e){
   const f = e.target.files[0]; if(!f) return;
   const r = new FileReader();
   r.onload = function(ev){
-    document.getElementById('htmlInput').value = ev.target.result;
-    document.getElementById('status').textContent = 'File dimuat: '+f.name+' ('+Math.round(ev.target.result.length/1024)+' KB). Klik Ekstrak.';
-    document.getElementById('status').className = 'badge success';
-    autoDetect();
+    let raw = ev.target.result;
+    const isMhtml = f.name.toLowerCase().endsWith('.mhtml') || f.name.toLowerCase().endsWith('.mht') || /multipart\/related/i.test(raw);
+    if(isMhtml){
+      const parsed = parseMHTML(raw);
+      if(parsed){
+        document.getElementById('htmlInput').value = parsed.html;
+        document.getElementById('status').textContent = 'MHTML diparsing: '+parsed.imgCount+' gambar → '+Math.round(parsed.html.length/1024)+' KB. Klik Ekstrak.';
+        document.getElementById('status').className = 'badge success';
+        autoDetect();
+      } else {
+        document.getElementById('htmlInput').value = raw;
+        document.getElementById('status').textContent = 'Gagal parse MHTML. Coba paste HTML manual.';
+        document.getElementById('status').className = 'badge error';
+      }
+    } else {
+      document.getElementById('htmlInput').value = raw;
+      document.getElementById('status').textContent = 'File dimuat: '+f.name+' ('+Math.round(raw.length/1024)+' KB). Klik Ekstrak.';
+      document.getElementById('status').className = 'badge success';
+      autoDetect();
+    }
   };
   r.readAsText(f);
 });
@@ -138,6 +154,88 @@ function clearAll(){
   document.getElementById('statsImg').textContent='Gambar: 0';
   document.getElementById('status').textContent='Dibersihkan';
   document.getElementById('status').className='badge';
+}
+
+/**
+ * Parse MHTML (multipart/related) file di browser.
+ * Mengekstrak HTML utama + gambar (Content-ID -> base64 data URI).
+ */
+function parseMHTML(raw){
+  try {
+    raw = raw.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+    const boundaryMatch = raw.match(/^--([^\n]+)/m);
+    if(!boundaryMatch){ return null; }
+    const boundary = boundaryMatch[1];
+    const parts = raw.split('--' + boundary);
+    let html = '';
+    let imgCount = 0;
+
+    for(const part of parts){
+      const trimmed = part.trim();
+      if(!trimmed || trimmed === '--' || trimmed === '-- '){ continue; }
+      const headerEndIdx = trimmed.indexOf('\n\n');
+      if(headerEndIdx === -1){ continue; }
+      const headerBlock = trimmed.substring(0, headerEndIdx);
+      const body = trimmed.substring(headerEndIdx + 4);
+
+      const headers = {};
+      for(const line of headerBlock.split(/\n/)){
+        const m = line.match(/^([^:]+):\s*(.+)$/);
+        if(m){ headers[m[1].trim().toLowerCase()] = m[2].trim(); }
+      }
+      const contentType = headers['content-type'] || '';
+
+      let data = body;
+      const cte = headers['content-transfer-encoding'] || '';
+      if(cte.toLowerCase().includes('quoted-printable')){
+        data = decodeQuotedPrintable(body);
+      }
+
+      if(contentType.includes('text/html')){
+        html = data;
+      } else if(contentType.startsWith('image/')){
+        const cid = (headers['content-id'] || '').replace(/[<>]/g,'');
+        if(cid){
+          const base64 = data.replace(/\s/g,'');
+          const dataUri = 'data:' + contentType + ';base64,' + base64;
+          if(!window._mhtmlImages){ window._mhtmlImages = {}; }
+          window._mhtmlImages[cid] = dataUri;
+          window._mhtmlImages['<'+cid+'>'] = dataUri;
+          imgCount++;
+        }
+      }
+    }
+
+    if(!html){ return null; }
+
+    if(window._mhtmlImages){
+      html = html.replace(/src="(cid:.+?)"/gi, function(m, cid){
+        var key = cid.replace(/^cid:/i, '');
+        return 'src="'+ (window._mhtmlImages[key] || window._mhtmlImages['<'+key+'>'] || window._mhtmlImages[key.toLowerCase()] || '') +'"';
+      });
+      html = html.replace(/src=&quot;(cid:.+?)&quot;/gi, function(m, cid){
+        var key = cid.replace(/^cid:/i, '');
+        return 'src=&quot;'+ (window._mhtmlImages[key] || window._mhtmlImages['<'+key+'>'] || window._mhtmlImages[key.toLowerCase()] || '') +'&quot;';
+      });
+    }
+
+    return { html: html, imgCount: imgCount };
+  } catch(e){
+    console.error('parseMHTML error:', e);
+    return null;
+  }
+}
+
+/**
+ * Decode Quoted-Printable encoded string.
+ */
+function decodeQuotedPrintable(str){
+  return str
+    .replace(/=([0-9A-Fa-f]{2})/g, function(m, p1){
+      return String.fromCharCode(parseInt(p1, 16));
+    })
+    .replace(/=\r\n/g, '')
+    .replace(/=$/g, '');
 }
 
 function autoDetect(){
