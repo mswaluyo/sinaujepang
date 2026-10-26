@@ -1,21 +1,29 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const btnSettings = document.getElementById('btnSettings');
-  const modal = document.getElementById('settingsModal');
   const btnSave = document.getElementById('btnSaveSettings');
-  const btnClose = document.getElementById('btnCloseSettings');
-  if (btnSettings && modal) {
-    btnSettings.addEventListener('click', () => {
-      document.getElementById('setToken').value = localStorage.getItem('gh_token') || '';
-      document.getElementById('setRepo').value = localStorage.getItem('gh_repo') || 'mswaluyo/sinaujepang';
-      modal.classList.remove('hidden');
-    });
+  const inpToken = document.getElementById('setToken');
+  const inpRepo = document.getElementById('setRepo');
+  async function loadCfg() {
+    try {
+      const db = window._aDb;
+      if (!db) return;
+      const snap = await getDoc(doc(db, 'admin_config', 'github'));
+      if (snap.exists()) {
+        const d = snap.data();
+        if (inpToken) inpToken.value = d.token || '';
+        if (inpRepo) inpRepo.value = d.repo || 'mswaluyo/sinaujepang';
+      }
+    } catch (e) {}
   }
-  if (btnClose && modal) btnClose.addEventListener('click', () => modal.classList.add('hidden'));
-  if (btnSave) btnSave.addEventListener('click', () => {
-    localStorage.setItem('gh_token', document.getElementById('setToken').value.trim());
-    localStorage.setItem('gh_repo', document.getElementById('setRepo').value.trim() || 'mswaluyo/sinaujepang');
-    modal.classList.add('hidden');
-    alert('Pengaturan disimpan.');
+  loadCfg();
+  if (btnSave) btnSave.addEventListener('click', async () => {
+    const db = window._aDb;
+    if (!db) { alert('DB belum siap'); return; }
+    await setDoc(doc(db, 'admin_config', 'github'), {
+      token: (inpToken?.value || '').trim(),
+      repo: (inpRepo?.value || '').trim() || 'mswaluyo/sinaujepang',
+      updatedAt: serverTimestamp()
+    });
+    alert('Konfigurasi disimpan.');
   });
 });
 import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp, documentId } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
@@ -948,10 +956,14 @@ document.addEventListener('DOMContentLoaded', () => {
        const targetFileName = (q && q.img) ? q.img.split('/').pop() : ('soal_' + noSoal + '.jpg');
        const folderPath = 'public/basu3-quiz/images/';
        const fullPath = folderPath + targetFileName;
-       const token = localStorage.getItem('gh_token') || prompt('Masukkan GitHub Personal Access Token (repo scope):');
-       const repo = localStorage.getItem('gh_repo') || 'mswaluyo/sinaujepang';
+       const db = window._aDb;
+       let token = '', repo = 'mswaluyo/sinaujepang';
+       try {
+         const snap = await getDoc(doc(db, 'admin_config', 'github'));
+         if (snap.exists()) { token = snap.data().token || ''; repo = snap.data().repo || repo; }
+       } catch (e) {}
+       if (!token) token = prompt('Masukkan GitHub Personal Access Token (repo scope):');
        if (!token) { alert('Token diperlukan. Buka Pengaturan.'); return; }
-       if (token && !localStorage.getItem('gh_token')) localStorage.setItem('gh_token', token);
        btnUploadUrl.disabled = true;
        btnUploadUrl.textContent = 'Mengunggah...';
        try {
