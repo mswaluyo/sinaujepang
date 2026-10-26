@@ -179,6 +179,18 @@
       <input id="fImgUrl" type="text" placeholder="URL gambar (http/https)" class="w-full border rounded px-2 py-1 text-sm" />
       <button id="btnUploadUrl" type="button" class="flex-1 py-1.5 bg-emerald-600 text-white text-xs font-semibold rounded">Upload dari Link</button>
       <button id="btnGitPull" type="button" class="flex-1 py-1.5 bg-slate-700 text-white text-xs font-semibold rounded">Sync / Pull</button>
+    <button id="btnSettings" type="button" class="py-1.5 bg-slate-500 text-white text-xs font-semibold rounded">Pengaturan</button>
+    <div id="settingsModal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50">
+      <div class="bg-white p-4 rounded w-80">
+        <h3 class="font-semibold mb-2">Pengaturan GitHub</h3>
+        <input id="setToken" type="password" placeholder="GitHub PAT" class="w-full border rounded px-2 py-1 text-sm mb-2" />
+        <input id="setRepo" type="text" placeholder="owner/repo" class="w-full border rounded px-2 py-1 text-sm mb-2" />
+        <div class="flex gap-2">
+          <button id="btnSaveSettings" class="flex-1 py-1.5 bg-emerald-600 text-white text-xs rounded">Simpan</button>
+          <button id="btnCloseSettings" class="flex-1 py-1.5 bg-slate-500 text-white text-xs rounded">Tutup</button>
+        </div>
+      </div>
+    </div>
       <button id="btnDownloadImg" type="button" class="flex-1 py-1.5 bg-blue-600 text-white text-xs font-semibold rounded">Download Gambar</button>
     </div>
   </div>

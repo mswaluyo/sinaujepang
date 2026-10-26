@@ -1,3 +1,23 @@
+document.addEventListener('DOMContentLoaded', () => {
+  const btnSettings = document.getElementById('btnSettings');
+  const modal = document.getElementById('settingsModal');
+  const btnSave = document.getElementById('btnSaveSettings');
+  const btnClose = document.getElementById('btnCloseSettings');
+  if (btnSettings && modal) {
+    btnSettings.addEventListener('click', () => {
+      document.getElementById('setToken').value = localStorage.getItem('gh_token') || '';
+      document.getElementById('setRepo').value = localStorage.getItem('gh_repo') || 'mswaluyo/sinaujepang';
+      modal.classList.remove('hidden');
+    });
+  }
+  if (btnClose && modal) btnClose.addEventListener('click', () => modal.classList.add('hidden'));
+  if (btnSave) btnSave.addEventListener('click', () => {
+    localStorage.setItem('gh_token', document.getElementById('setToken').value.trim());
+    localStorage.setItem('gh_repo', document.getElementById('setRepo').value.trim() || 'mswaluyo/sinaujepang');
+    modal.classList.add('hidden');
+    alert('Pengaturan disimpan.');
+  });
+});
 import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp, documentId } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 const $ = id => document.getElementById(id);
 const PACKS = (window.PAKET_CONFIG ? window.PAKET_CONFIG.kategori.flatMap(k => k.paket.map(p => p.slug)) : ["hare-quiz","aoi-quiz","basu-quiz","gakusei-quiz"]);
@@ -928,8 +948,10 @@ document.addEventListener('DOMContentLoaded', () => {
        const targetFileName = (q && q.img) ? q.img.split('/').pop() : ('soal_' + noSoal + '.jpg');
        const folderPath = 'public/basu3-quiz/images/';
        const fullPath = folderPath + targetFileName;
-       const token = prompt('Masukkan GitHub Personal Access Token (repo scope):');
-       if (!token) { alert('Token diperlukan.'); return; }
+       const token = localStorage.getItem('gh_token') || prompt('Masukkan GitHub Personal Access Token (repo scope):');
+       const repo = localStorage.getItem('gh_repo') || 'mswaluyo/sinaujepang';
+       if (!token) { alert('Token diperlukan. Buka Pengaturan.'); return; }
+       if (token && !localStorage.getItem('gh_token')) localStorage.setItem('gh_token', token);
        btnUploadUrl.disabled = true;
        btnUploadUrl.textContent = 'Mengunggah...';
        try {
@@ -942,7 +964,7 @@ document.addEventListener('DOMContentLoaded', () => {
            reader.onerror = reject;
            reader.readAsDataURL(blob);
          });
-         const putRes = await fetch('https://api.github.com/repos/mswaluyo/sinaujepang/contents/' + fullPath, {
+         const putRes = await fetch('https://api.github.com/repos/' + repo + '/contents/' + fullPath, {
            method: 'PUT',
            headers: { 'Authorization': 'token ' + token, 'Content-Type': 'application/json' },
            body: JSON.stringify({ message: 'Upload image ' + targetFileName, content: base64 })
