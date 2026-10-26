@@ -1016,20 +1016,6 @@ document.addEventListener('DOMContentLoaded', () => {
       document.body.removeChild(a);
     });
   }
-  if (btnGitPull) {
-    btnGitPull.addEventListener('click', async () => {
-      if (!isLocal) { alert('Sync/Pull lokal hanya aktif di lingkungan development (localhost). Di domain publik gunakan GitHub Actions/Cloud.'); return; }
-      btnGitPull.disabled = true;
-      btnGitPull.textContent = 'Syncing...';
-      try {
-        const res = await fetch('http://localhost:3000/api/git-pull', { method: 'POST' });
-        const result = await res.json();
-        if (result.success) {
-          alert('Pull berhasil. Halaman akan refresh.');
-          location.reload();
-        } else {
-          alert('Gagal pull: ' + (result.error || 'unknown'));
-        }
       } catch (e) {
         alert('Gagal koneksi ke server lokal.');
       } finally {
