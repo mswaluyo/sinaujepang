@@ -1,6 +1,6 @@
 import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp, documentId } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 const $ = id => document.getElementById(id);
-const PACKS = ["hare-quiz","aoi-quiz","basu-quiz","gakusei-quiz","haburashi-quiz","jinja-quiz","kagi-quiz","kuroi-quiz","lolosyuk-quiz","magarimasu-quiz","orimasu-quiz","shatsu-quiz","tamago-quiz","tomemasu-quiz"];
+const PACKS = (window.PAKET_CONFIG ? window.PAKET_CONFIG.kategori.flatMap(k => k.paket.map(p => p.slug)) : ["hare-quiz","aoi-quiz","basu-quiz","gakusei-quiz"]);
 const _q = { mode: "ringkas", rows: [], shown: 50, lastDoc: null, done: false, loading: false, sort: "waktu", dir: -1 };
 function _qJftNum(p) { return Math.round(10 + ((p || 0) / 100) * 240); }
 // J eksak dari benar/total (tanpa lewat persen bulat) — SAMA dengan hasil.html & Detail.
@@ -349,17 +349,25 @@ window._aInitSoal = function () {
     $("fMnn").value = q.mnn || "";
     $("fAnalisis").value = q.analisis || "";
 
-    // Image preview
     const imgBox = $("fImgPreviewBox");
     const imgEl = $("fImgPreview");
+    const missingEl = $("fImgMissing");
     if (q.img && q.img.trim()) {
       const src = (q.img.startsWith("/") || q.img.startsWith("http")) ? q.img : ("/" + packSlug + "/" + q.img);
       imgEl.src = src;
-      imgEl.onerror = () => { imgEl.alt = "Gambar tidak ditemukan di: " + src; };
+      imgEl.onerror = () => {
+        imgEl.style.display = 'none';
+        if (missingEl) missingEl.classList.remove("hidden");
+      };
+      imgEl.onload = () => { imgEl.style.display = ''; if (missingEl) missingEl.classList.add("hidden"); };
       imgBox.classList.remove("hidden");
     } else {
       imgBox.classList.add("hidden");
+      if (missingEl) missingEl.classList.add("hidden");
     }
+
+     // (Download gambar lama dihapus)
+
 
     // Audio preview
     const audioEl = $("fAudioPlayer");
@@ -902,6 +910,117 @@ window._aDetail = function (di) {
   $("dSheet").innerHTML = "<iframe src=\"" + window._aDetailUrl + "\" class=\"w-full\" style=\"height:65vh;border:0;background:#fff\" title=\"Lembar hasil\"></iframe>";
   const m = $("dModal"); m.classList.remove("hidden"); m.classList.add("flex");
 };
+document.addEventListener('DOMContentLoaded', () => {
+  const btnUploadUrl = document.getElementById('btnUploadUrl');
+  const btnGitPull = document.getElementById('btnGitPull');
+  if (btnUploadUrl) {
+    btnUploadUrl.addEventListener('click', async () => {
+      const imgUrl = (document.getElementById('fImg')?.value || '').trim();
+      if (!imgUrl || !/^https?:\/\//i.test(imgUrl)) { alert('Field gambar harus berisi link http/https'); return; }
+      const noSoal = (window._sIdx != null ? window._sIdx + 1 : 1);
+      const targetFileName = 'soal_' + noSoal + '.jpg';
+      const folderPath = 'public/basu3-quiz/images/';
+      btnUploadUrl.disabled = true;
+      btnUploadUrl.textContent = 'Mengunggah...';
+      try {
+        const res = await fetch('http://localhost:3000/api/upload-url-to-github', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ imageUrl: imgUrl, fileName: targetFileName, folderPath })
+        });
+        const result = await res.json();
+        if (result.success) alert('Berhasil upload ke GitHub: ' + result.path);
+        else alert('Gagal: ' + (result.error || 'unknown'));
+      } catch (e) {
+        alert('Gagal koneksi ke server lokal.');
+      } finally {
+        btnUploadUrl.disabled = false;
+        btnUploadUrl.textContent = 'Upload dari Link ke GitHub';
+      }
+    });
+  }
+  if (btnGitPull) {
+    btnGitPull.addEventListener('click', async () => {
+      btnGitPull.disabled = true;
+      btnGitPull.textContent = 'Syncing...';
+      try {
+        const res = await fetch('http://localhost:3000/api/git-pull', { method: 'POST' });
+        const result = await res.json();
+        if (result.success) {
+          alert('Pull berhasil. Halaman akan refresh.');
+          location.reload();
+        } else {
+          alert('Gagal pull: ' + (result.error || 'unknown'));
+        }
+      } catch (e) {
+        alert('Gagal koneksi ke server lokal.');
+      } finally {
+        btnGitPull.disabled = false;
+        btnGitPull.textContent = 'Sync / Pull Gambar';
+      }
+    });
+  }
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('btnSaveBrowse');
+  if (!btn) return;
+  btn.addEventListener('click', async () => {
+    const fileInput = document.getElementById('fImgBrowse');
+    const file = fileInput?.files?.[0];
+    if (!file) { alert('Pilih file gambar dari laptop kamu dulu!'); return; }
+    const noSoal = (window._sIdx != null ? window._sIdx + 1 : 1);
+    const targetFileName = 'soal_' + noSoal + '.jpg';
+    const formData = new FormData();
+    formData.append('image', file);
+    formData.append('fileName', targetFileName);
+    const originalText = btn.textContent;
+    btn.disabled = true;
+    btn.textContent = 'Mengunggah...';
+    try {
+      const response = await fetch('http://localhost:3000/api/upload-to-github', { method: 'POST', body: formData });
+      const result = await response.json();
+      if (result.success) {
+        alert('Berhasil upload ke GitHub: ' + result.path);
+      } else {
+        alert('Gagal: ' + (result.error || 'unknown'));
+      }
+    } catch (err) {
+      alert('Gagal koneksi ke server lokal.');
+    } finally {
+      btn.disabled = false;
+      btn.textContent = originalText;
+    }
+  });
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const btn = document.getElementById('btnSaveBrowse');
+  if (!btn) return;
+  btn.addEventListener('click', async () => {
+    const fileInput = document.getElementById('fImgBrowse');
+    const file = fileInput?.files?.[0];
+    if (!file) { alert('Pilih file gambar dari laptop kamu dulu!'); return; }
+    const noSoal = (window._sIdx != null ? window._sIdx + 1 : 1);
+    const targetFileName = 'soal_' + noSoal + '.jpg';
+    const folderPath = 'public/basu3-quiz/images/';
+    const formData = new FormData();
+    formData.append('image', file);
+    formData.append('fileName', targetFileName);
+    formData.append('folderPath', folderPath);
+    try {
+      const response = await fetch('http://localhost:3000/api/save-image', { method: 'POST', body: formData });
+      const result = await response.json();
+      if (result.success) {
+        alert('Berhasil! Gambar disimpan ke ' + folderPath + targetFileName);
+        location.reload();
+      }
+    } catch (err) {
+      alert('Gagal simpan! Pastikan node server-upload.js berjalan di port 3000.');
+    }
+  });
+});
+
 window._aCloseDetail = function () { const m = $("dModal"); m.classList.add("hidden"); m.classList.remove("flex"); };
 window._aOpenDetail = function () { try { window.open(window._aDetailUrl || "/hasil.html", "_blank"); } catch (e) {} };
 window._aPrintDetail = function () {
