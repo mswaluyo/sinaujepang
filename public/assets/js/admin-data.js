@@ -16,7 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   setTimeout(loadCfg, 300);
   if (btnSave) btnSave.addEventListener('click', async () => {
-    const db = window._aDb;
+    let db = window._aDb;
+    if (!db) { await new Promise(r=>setTimeout(r,500)); db = window._aDb; }
     if (!db) { alert('DB belum siap'); return; }
     await setDoc(doc(db, 'admin_config', 'github'), {
       token: (inpToken?.value || '').trim(),
