@@ -19,6 +19,8 @@
 <button data-tab="import" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-file-import mr-1"></i>Import MHTML</button>
 <button data-tab="users" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-users mr-1"></i>Pengguna</button>
 <button data-tab="admins" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-shield-halved mr-1"></i>Admins</button>
+  <button data-tab="pengaturan" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-gear mr-1"></i>Pengaturan</button>
+
 </div>
 <section id="tab-nilai" class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
 <div class="px-4 pt-4 pb-3 border-b border-slate-100 flex flex-wrap items-center gap-2">
@@ -179,7 +181,7 @@
       <input id="fImgUrl" type="text" placeholder="URL gambar (http/https)" class="w-full border rounded px-2 py-1 text-sm" />
       <button id="btnUploadUrl" type="button" class="flex-1 py-1.5 bg-emerald-600 text-white text-xs font-semibold rounded">Upload dari Link</button>
       <button id="btnGitPull" type="button" class="flex-1 py-1.5 bg-slate-700 text-white text-xs font-semibold rounded">Sync / Pull</button>
-    <button id="btnSettings" type="button" class="py-1.5 bg-slate-500 text-white text-xs font-semibold rounded">Pengaturan</button>
+
     <div id="settingsModal" class="hidden fixed inset-0 bg-black/50 flex items-center justify-center z-50">
       <div class="bg-white p-4 rounded w-80">
         <h3 class="font-semibold mb-2">Pengaturan GitHub</h3>
@@ -307,3 +309,12 @@ try { window._aDb = getFirestore(window._aAuth.app); } catch(e) {}
 <script type="module" src="/assets/js/admin-auth.js"></script>
 </body>
 </html>
+
+<section id="tab-pengaturan" class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hidden">
+  <h2 class="text-lg font-bold mb-4">Pengaturan GitHub</h2>
+  <form class="max-w-md">
+    <input id="setToken" type="password" placeholder="GitHub PAT" class="w-full border rounded px-2 py-1 text-sm mb-2" />
+    <input id="setRepo" type="text" placeholder="owner/repo" class="w-full border rounded px-2 py-1 text-sm mb-2" />
+    <button id="btnSaveSettings" type="button" class="py-1.5 bg-emerald-600 text-white text-xs font-semibold rounded px-3">Simpan Konfigurasi</button>
+  </form>
+</section>
