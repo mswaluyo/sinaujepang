@@ -922,7 +922,7 @@ document.addEventListener('DOMContentLoaded', () => {
   if (btnUploadUrl) {
     btnUploadUrl.addEventListener('click', async () => {
       const q = (window._sItems && window._sIdx != null) ? window._sItems[window._sIdx] : null;
-      const imgUrl = (q && q.link && q.link.trim()) ? q.link.trim() : (document.getElementById('fImg')?.value || '').trim();
+      const imgUrl = (document.getElementById('fImgUrl')?.value || '').trim() || (q && q.link && q.link.trim()) ? (q && q.link && q.link.trim()) : '';
       if (!imgUrl || !/^https?:\/\//i.test(imgUrl)) { alert('Field gambar/link harus berisi link http/https'); return; }
       if (!isLocal) { alert('Upload ke GitHub via server lokal hanya aktif di lingkungan development (localhost). Di domain publik, gunakan GitHub API/Cloud atau jalankan lokal.'); return; }
       const noSoal = (window._sIdx != null ? window._sIdx + 1 : 1);
