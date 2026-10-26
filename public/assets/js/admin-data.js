@@ -1,4 +1,3 @@
-      }
 import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp, documentId } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 const $ = id => document.getElementById(id);
 const PACKS = (window.PAKET_CONFIG ? window.PAKET_CONFIG.kategori.flatMap(k => k.paket.map(p => p.slug)) : ["hare-quiz","aoi-quiz","basu-quiz","gakusei-quiz"]);
