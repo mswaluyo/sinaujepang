@@ -13,20 +13,6 @@ console.log('btnSaveSettings', btnSave);
         if (inpToken) inpToken.value = d.token || '';
         if (inpRepo) inpRepo.value = d.repo || 'mswaluyo/sinaujepang';
       }
-    } catch (e) { setTimeout(loadCfg, 500); }
-  }
-  setTimeout(loadCfg, 300);
-  if (btnSave) btnSave.addEventListener('click', async () => {
-    console.log('save clicked');
-    let db = window._aDb;
-    if (!db) { await new Promise(r=>setTimeout(r,500)); db = window._aDb; }
-    if (!db) { alert('DB belum siap'); return; }
-    try {
-      await setDoc(doc(db, 'settings', 'github'), {
-        token: (inpToken?.value || '').trim(),
-        repo: (inpRepo?.value || '').trim() || 'mswaluyo/sinaujepang',
-        updatedAt: serverTimestamp()
-      });
       console.log('saved');
       alert('Konfigurasi disimpan.');
     } catch (e) { console.error(e); alert('Gagal simpan: ' + e.message); }
