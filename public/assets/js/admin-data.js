@@ -1003,7 +1003,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   const btnDownloadImg = document.getElementById('btnDownloadImg');
   if (btnDownloadImg) {
-    btnDownloadImg.addEventListener('click', () => {
+    btnDownloadImg.addEventListener('click', async () => {
       const q = (_sItems && _sIdx != null) ? _sItems[_sIdx] : null;
       const url = q ? (q.link || q.img) : '';
       const name = q && q.img ? q.img.split('/').pop() : 'gambar.jpg';
