@@ -978,7 +978,6 @@ document.addEventListener('DOMContentLoaded', () => {
          btnUploadUrl.disabled = false;
          btnUploadUrl.textContent = 'Upload dari Link ke GitHub';
        }
-        btnUploadUrl.textContent = 'Upload dari Link ke GitHub';
       }
     });
   }
