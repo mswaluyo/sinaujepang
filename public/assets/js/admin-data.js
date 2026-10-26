@@ -16,15 +16,19 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   setTimeout(loadCfg, 300);
   if (btnSave) btnSave.addEventListener('click', async () => {
+    console.log('save clicked');
     let db = window._aDb;
     if (!db) { await new Promise(r=>setTimeout(r,500)); db = window._aDb; }
     if (!db) { alert('DB belum siap'); return; }
-    await setDoc(doc(db, 'settings', 'github'), {
-      token: (inpToken?.value || '').trim(),
-      repo: (inpRepo?.value || '').trim() || 'mswaluyo/sinaujepang',
-      updatedAt: serverTimestamp()
-    });
-    alert('Konfigurasi disimpan.');
+    try {
+      await setDoc(doc(db, 'settings', 'github'), {
+        token: (inpToken?.value || '').trim(),
+        repo: (inpRepo?.value || '').trim() || 'mswaluyo/sinaujepang',
+        updatedAt: serverTimestamp()
+      });
+      console.log('saved');
+      alert('Konfigurasi disimpan.');
+    } catch (e) { console.error(e); alert('Gagal simpan: ' + e.message); }
   });
 });
 import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp, documentId } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
