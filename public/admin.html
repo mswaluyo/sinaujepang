@@ -311,10 +311,12 @@ try { window._aDb = getFirestore(window._aAuth.app); } catch(e) {}
 </html>
 
 <section id="tab-pengaturan" class="bg-white rounded-2xl border border-slate-200 shadow-sm p-6 hidden">
-  <h2 class="text-lg font-bold mb-4">Pengaturan GitHub</h2>
-  <form class="max-w-md">
-    <input id="setToken" type="password" placeholder="GitHub PAT" class="w-full border rounded px-2 py-1 text-sm mb-2" />
-    <input id="setRepo" type="text" placeholder="owner/repo" class="w-full border rounded px-2 py-1 text-sm mb-2" />
-    <button id="btnSaveSettings" type="button" class="py-1.5 bg-emerald-600 text-white text-xs font-semibold rounded px-3">Simpan Konfigurasi</button>
-  </form>
+  <div class="max-w-xl mx-auto">
+    <h2 class="text-lg font-bold mb-4">Pengaturan GitHub</h2>
+    <form class="space-y-3">
+      <input id="setToken" type="password" placeholder="GitHub PAT" class="w-full border rounded px-3 py-2 text-sm" />
+      <input id="setRepo" type="text" placeholder="owner/repo" class="w-full border rounded px-3 py-2 text-sm" />
+      <button id="btnSaveSettings" type="button" class="py-2 px-4 bg-emerald-600 text-white text-sm font-semibold rounded">Simpan Konfigurasi</button>
+    </form>
+  </div>
 </section>
