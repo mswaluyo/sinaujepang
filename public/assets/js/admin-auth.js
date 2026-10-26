@@ -29,8 +29,8 @@ function styleTab(active, idle) { active.className = "tabBtn bg-fuji-600 hover:b
 if (!['localhost','127.0.0.1'].includes(location.hostname)) {
   document.querySelector('.tabBtn[data-tab="pengaturan"]')?.remove();
   document.getElementById('tab-pengaturan')?.remove();
-const TABS = ["nilai", "soal", "import", "users", "admins", "pengaturan"];
 }
+const TABS = ["nilai", "soal", "import", "users", "admins", "pengaturan"];
 window._aShowTab = function (name, push) {
   if (!TABS.includes(name)) name = "nilai";
   const all = Array.from(document.querySelectorAll(".tabBtn"));
