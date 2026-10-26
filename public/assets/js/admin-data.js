@@ -13,10 +13,6 @@ console.log('btnSaveSettings', btnSave);
         if (inpToken) inpToken.value = d.token || '';
         if (inpRepo) inpRepo.value = d.repo || 'mswaluyo/sinaujepang';
       }
-      console.log('saved');
-      alert('Konfigurasi disimpan.');
-    } catch (e) { console.error(e); alert('Gagal simpan: ' + e.message); }
-  });
 import { collection, getDocs, getDoc, doc, setDoc, deleteDoc, query, orderBy, limit, startAfter, serverTimestamp, documentId } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js";
 const $ = id => document.getElementById(id);
 const PACKS = (window.PAKET_CONFIG ? window.PAKET_CONFIG.kategori.flatMap(k => k.paket.map(p => p.slug)) : ["hare-quiz","aoi-quiz","basu-quiz","gakusei-quiz"]);
