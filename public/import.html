@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Import Soal MHTML — SinauJepang</title>
+<link rel="stylesheet" href="/assets/css/tailwind.css">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  * { box-sizing: border-box; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #f3f4f6; }
+  h1 { font-size: 1.25rem; margin-bottom: 1rem; color: #111827; }
+  .card { background: #fff; border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; box-shadow: 0 1px 3px rgba(0,0,0,0.05); }
+  .label { display: block; font-size: 0.85rem; font-weight: 600; color: #374151; margin-bottom: 0.4rem; }
+  textarea { width: 100%; height: 260px; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 0.85rem; border: 1px solid #d1d5db; border-radius: 6px; padding: 0.75rem; resize: vertical; }
+  input[type="file"] { width: 100%; padding: 0.6rem; border: 1px dashed #9ca3af; border-radius: 6px; background: #f9fafb; }
+  button { background: #2563eb; color: #fff; border: none; padding: 0.7rem 1.2rem; border-radius: 6px; font-weight: 600; cursor: pointer; margin: 0.25rem 0.25rem 0 0; }
+  button:hover { background: #1d4ed8; }
+  button.secondary { background: #4b5563; }
+  button.secondary:hover { background: #374151; }
+  .row { display: flex; gap: 0.75rem; align-items: flex-start; flex-wrap: wrap; }
+  .col { flex: 1; min-width: 260px; }
+  .hint { font-size: 0.8rem; color: #6b7280; margin-top: 0.25rem; }
+  .preview { border: 1px solid #e5e7eb; border-radius: 6px; padding: 1rem; background: #f9fafb; max-height: 400px; overflow-y: auto; }
+  .q-item { border-bottom: 1px solid #e5e7eb; padding: 0.75rem 0; display: flex; gap: 0.75rem; align-items: flex-start; }
+  .q-item:last-child { border-bottom: none; }
+  .q-no { font-weight: 700; color: #2563eb; min-width: 30px; }
+  .q-text { flex: 1; font-size: 0.9rem; color: #111827; }
+  .q-img { max-width: 120px; max-height: 80px; border: 1px solid #d1d5db; border-radius: 4px; }
+  .q-ans { color: #16a34a; font-weight: 700; font-size: 0.85rem; margin-top: 0.25rem; }
+  .stats { display: flex; gap: 1rem; font-size: 0.9rem; color: #4b5563; margin-bottom: 0.5rem; }
+  .badge { display: inline-block; padding: 0.15rem 0.5rem; border-radius: 4px; background: #e5e7eb; font-size: 0.75rem; font-weight: 600; color: #374151; margin-right: 0.25rem; }
+  .json-out { width: 100%; height: 320px; font-family: ui-monospace, monospace; font-size: 0.8rem; border: 1px solid #d1d5db; border-radius: 6px; padding: 0.75rem; resize: vertical; background: #1f2937; color: #10b981; }
+  .success { color: #16a34a; font-weight: 600; }
+  .warn { color: #d97706; font-weight: 600; }
+  .error { color: #dc2626; font-weight: 600; }
+  .hidden { display: none; }
+</style>
+</head>
+<body>
+
+<nav class="bg-white border-b border-slate-200 px-6 py-3">
+  <div class="max-w-6xl mx-auto flex items-center justify-between">
+    <a href="/admin.html" class="text-fuji-600 hover:text-fuji-700 font-bold text-sm flex items-center gap-2">
+      <i class="fa-solid fa-arrow-left"></i> Kembali ke Admin
+    </a>
+    <div class="text-xs text-slate-500">Import Soal dari MHTML / HTML</div>
+  </div>
+</nav>
+
+<main class="max-w-6xl mx-auto px-4 py-6">
+  <h1>📄 Parser Google Forms Viewscore → <code>quiz-data.json</code></h1>
+  <p class="hint">Buka file MHTML di browser → Simpan sebagai 'Halaman Lengkap' → Pilih file di sini → Export JSON. Semua proses di browser Anda, data tidak keluar.</p>
+
+  <div class="card">
+    <div class="label">1. Masukkan HTML Halaman Score</div>
+    <textarea id="htmlInput" placeholder="Paste isi file HTML yang disimpan dari MHTML..."></textarea>
+    <div class="row" style="margin-top:0.5rem;">
+      <input type="file" id="fileInput" accept=".html,.htm,.mhtml,.mht">
+      <button class="secondary" onclick="document.getElementById('fileInput').click()">Pilih File</button>
+      <button class="secondary" onclick="clearAll()">Bersihkan</button>
+    </div>
+    <p class="hint">Cara mendapatkan file: Buka file .mhtml di Chrome/Edge, tekan Ctrl+S, pilih "Halaman Lengkap", simpan sebagai .html, lalu pilih file ini.</p>
+  </div>
+
+  <div class="card">
+    <div class="label">2. Pengaturan Ekstraksi</div>
+    <div class="row">
+      <div class="col">
+        <div class="label">Nama Paket Quiz (slug)</div>
+        <input type="text" id="pkgSlug" value="basu0001-quiz" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-fuji-400">
+        <p class="hint">Contoh: basu0001-quiz. File akan disimpan di public/basu0001-quiz/quiz-data.json</p>
+      </div>
+      <div class="col">
+        <div class="label">CSS Selector Soal (opsional, biarkan kosong untuk otomatis)</div>
+        <input type="text" id="qSelector" value="" class="w-full border border-slate-300 rounded-lg px-3 py-2 text-xs focus:outline-none focus:ring-2 focus:ring-fuji-400">
+        <p class="hint">Contoh: .freebirdFormviewerViewItemsItemItem atau div[role='listitem']</p>
+      </div>
+    </div>
+    <button onclick="autoDetect()" style="margin-top:0.75rem;"><i class="fa-solid fa-magnifying-glass mr-1"></i>Ekstrak Soal</button>
+  </div>
+
+  <div class="card">
+    <div class="label">3. Preview Hasil Deteksi</div>
+    <div class="stats">
+      <span id="statsQ" class="badge">Soal: 0</span>
+      <span id="statsImg" class="badge">Gambar: 0</span>
+      <span id="status" class="badge">Belum diproses</span>
+    </div>
+    <div class="preview" id="preview"></div>
+  </div>
+
+  <div class="card hidden" id="jsonCard">
+    <div class="label">4. Hasil JSON (quiz-data.json)</div>
+    <textarea id="jsonOutput" class="json-out" readonly></textarea>
+    <div class="row" style="margin-top:0.5rem;">
+      <button onclick="copyJSON()">Salin ke Clipboard</button>
+      <button class="secondary" onclick="downloadJSON()">Download quiz-data.json</button>
+    </div>
+    <p class="hint mt-2">Simpan file JSON ke: <code>public/&lt;slug&gt;/quiz-data.json</code> lalu akses quiz via <code>quiz.html?p=&lt;slug&gt;</code></p>
+  </div>
+
+  <div class="card">
+    <div class="label">Cara Kerja</div>
+    <ol class="text-sm text-slate-600" style="padding-left:1.2rem; line-height:1.6;">
+      <li>Buka file <b>.mhtml</b> di Chrome/Edge, tekan <b>Ctrl+S</b>, pilih <b>Halaman Lengkap</b>.</li>
+      <li>Buka file .html hasil simpan di browser, salin semua (Ctrl+A, Ctrl+C), tempel di kotak di atas.</li>
+      <li>Tool akan mencoba deteksi otomatis soal, opsi, jawaban benar, dan gambar (base64).</li>
+      <li>Periksa preview, lalu download <code>quiz-data.json</code>.</li>
+      <li>Simpan JSON ke <code>public/&lt;slug&gt;/quiz-data.json</code> di proyek Anda.</li>
+    </ol>
+  </div>
+</main>
+
+<script>
+function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function trim(s){ return String(s==null?'':s).trim(); }
+
+document.getElementById('fileInput').addEventListener('change', function(e){
+  const f = e.target.files[0]; if(!f) return;
+  const r = new FileReader();
+  r.onload = function(ev){
+    document.getElementById('htmlInput').value = ev.target.result;
+    document.getElementById('status').textContent = 'File dimuat: '+f.name+' ('+Math.round(ev.target.result.length/1024)+' KB). Klik Ekstrak.';
+    document.getElementById('status').className = 'badge success';
+    autoDetect();
+  };
+  r.readAsText(f);
+});
+
+function clearAll(){
+  document.getElementById('htmlInput').value='';
+  document.getElementById('preview').innerHTML='';
+  document.getElementById('jsonOutput').value='';
+  document.getElementById('jsonCard').classList.add('hidden');
+  document.getElementById('statsQ').textContent='Soal: 0';
+  document.getElementById('statsImg').textContent='Gambar: 0';
+  document.getElementById('status').textContent='Dibersihkan';
+  document.getElementById('status').className='badge';
+}
+
+function autoDetect(){
+  const html = document.getElementById('htmlInput').value;
+  if(!trim(html)){
+    document.getElementById('preview').innerHTML = '<div class="warn">Masukkan HTML terlebih dahulu.</div>';
+    return;
+  }
+  const tpl = document.createElement('template');
+  tpl.innerHTML = html;
+  const doc = tpl.content;
+  let questions = [];
+  let items = doc.querySelectorAll('[role="listitem"]');
+  if(items.length === 0){ items = doc.querySelectorAll('.freebirdFormviewerViewItemsItemItem'); }
+  if(items.length === 0){ items = doc.querySelectorAll('div[jsname], div[data-item-id]'); }
+  if(items.length === 0){ items = doc.querySelectorAll('div'); }
+  const customSel = trim(document.getElementById('qSelector').value);
+  if(customSel){ items = doc.querySelectorAll(customSel); }
+  let imgCounter = 0;
+  items.forEach(function(el, idx){
+    const text = el.innerText || el.textContent || '';
+    const t = trim(text);
+    if(t.length < 3) return;
+    const inputs = el.querySelectorAll('input[type="radio"], input[type="checkbox"]');
+    let options = [];
+    let answerIndex = 0;
+    if(inputs.length > 0){
+      inputs.forEach(function(inp, i){
+        const label = inp.closest('label') || inp.parentElement;
+        const optText = trim(label ? (label.innerText || label.textContent) : '');
+        if(optText){
+          options.push(optText);
+          if(inp.checked || inp.getAttribute('aria-checked')==='true' || inp.hasAttribute('checked')){ answerIndex = i; }
+        }
+      });
+    }
+    if(options.length === 0){
+      const optMatches = t.match(/([A-D])[\.\s]+([^\n]+)/g);
+      if(optMatches){
+        optMatches.forEach(function(om){
+          options.push(trim(om.replace(/^[A-D][\.\s]+/, '')));
+        });
+      }
+    }
+    const imgs = el.querySelectorAll('img');
+    let qImg = '';
+    if(imgs.length > 0){
+      const src = imgs[0].src || '';
+      if(src){ qImg = src; }
+    }
+    if(options.length > 0 || t.length > 10){
+      questions.push({
+        no: questions.length + 1,
+        question: t,
+        options: options,
+        answer: answerIndex,
+        image: qImg
+      });
+    }
+  });
+  renderPreview(questions);
+}
+
+function renderPreview(questions){
+  const preview = document.getElementById('preview');
+  preview.innerHTML = '';
+  document.getElementById('statsQ').textContent = 'Soal: '+questions.length;
+  let totalImg = 0;
+  questions.forEach(function(q){ if(q.image) totalImg++; });
+  document.getElementById('statsImg').textContent = 'Gambar: '+totalImg;
+  if(questions.length === 0){
+    preview.innerHTML = '<div class="warn">Tidak ada soal terdeteksi. Coba ubah CSS Selector atau pastikan HTML adalah halaman score Google Forms.</div>';
+    return;
+  }
+  questions.forEach(function(q){
+    const div = document.createElement('div');
+    div.className = 'q-item';
+    let imgHtml = q.image ? '<img src="'+esc(q.image)+'" class="q-img" alt="soal">' : '';
+    div.innerHTML =
+      '<div class="q-no">#'+q.no+'</div>'+
+      '<div class="q-text">'+esc(q.question)+imgHtml+'</div>'+
+      '<div class="q-ans">Jawaban: '+ (q.answer+1) + ' | Opsi: ' + (q.options.length||0) + '</div>';
+    preview.appendChild(div);
+  });
+  const json = buildJSON(questions);
+  document.getElementById('jsonOutput').value = JSON.stringify(json, null, 2);
+  document.getElementById('jsonCard').classList.remove('hidden');
+  document.getElementById('status').textContent = 'Terdeteksi '+questions.length+' soal';
+  document.getElementById('status').className = 'badge success';
+}
+
+function buildJSON(questions){
+  const pkg = trim(document.getElementById('pkgSlug').value) || 'basu0001-quiz';
+  return questions.map(function(q){
+    let section = 'SESI 1 : MOJIGOI';
+    const t = q.question.toLowerCase();
+    if(t.includes('percakapan') || t.includes('expression') || t.includes('hyougen')) section = 'SESI 2 : HYOUGEN';
+    else if(t.includes('listening') || t.includes('choukai') || t.includes('audio')) section = 'SESI 3 : CHOUKAI';
+    else if(t.includes('membaca') || t.includes('dokkai') || t.includes('reading')) section = 'SESI 4 : DOKKAI';
+    const optionsObj = (q.options||[]).map(function(opt, i){ return { text: opt, img: '' }; });
+    const opt_detail = (q.options||[]).map(function(opt, i){
+      return { kana: opt, rom: '', arti: '', alasan: '' };
+    });
+    return {
+      no: q.no,
+      section: section,
+      title: q.question,
+      img: q.image || '',
+      options: optionsObj,
+      answer: q.answer || 0,
+      score: '0/4',
+      trans: '',
+      trans_rom: '-',
+      mnn: section.startsWith('SESI 1') ? 'Mojigoi' : 'Hyougen',
+      analisis: '[MNN] Silakan lengkapi pembahasan untuk soal ini.',
+      opt_detail: opt_detail,
+      opt_note: (q.options||[]).map(function(opt){ return '('+opt+')'; }),
+      kunci_id: q.options && q.options[q.answer] ? q.options[q.answer] : '',
+      salah: '',
+      audio: ''
+    };
+  });
+}
+
+function copyJSON(){
+  const ta = document.getElementById('jsonOutput');
+  ta.select();
+  document.execCommand('copy');
+  const btn = event.target;
+  const old = btn.textContent;
+  btn.textContent = 'Disalin!';
+  setTimeout(function(){ btn.textContent = old; }, 1200);
+}
+
+function downloadJSON(){
+  const json = document.getElementById('jsonOutput').value;
+  if(!json){ alert('Belum ada JSON'); return; }
+  const blob = new Blob([json], {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = (document.getElementById('pkgSlug').value || 'basu0001-quiz') + '-quiz-data.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+</script>
+
+</body>
+</html>

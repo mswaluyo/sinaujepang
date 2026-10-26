@@ -26,7 +26,7 @@ window.$a = $;
 
 function styleTab(active, idle) { active.className = "tabBtn bg-fuji-600 hover:bg-fuji-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md transition-all"; idle.forEach(x => { x.className = "tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"; }); }
 // Navigasi tab via hash URL (#nilai #soal #users #admins) agar tahan reload & bisa dibagikan.
-const TABS = ["nilai", "soal", "users", "admins"];
+const TABS = ["nilai", "soal", "import", "users", "admins"];
 window._aShowTab = function (name, push) {
   if (!TABS.includes(name)) name = "nilai";
   const all = Array.from(document.querySelectorAll(".tabBtn"));
@@ -65,6 +65,11 @@ document.addEventListener("click", (e) => {
   const btn = e.target.closest(".tabBtn");
   if (btn && btn.dataset && btn.dataset.tab) {
     e.preventDefault();
+    if (btn.dataset.tab === "import") {
+      // Halaman import adalah single-page terpisah (parser MHTML client-side)
+      window.open("/import.html", "_blank");
+      return;
+    }
     console.log("[Tab Clicked]:", btn.dataset.tab);
     window._aShowTab(btn.dataset.tab);
   }
