@@ -279,6 +279,17 @@
 <p class="text-xs text-slate-500 mb-3">Tambah admin via terminal: <code>node tools/make-admin.mjs email@gmail.com</code></p>
 <div id="aList" class="text-sm divide-y"></div>
 </section>
+
+<section id="tab-pengaturan" class="bg-white rounded-2xl border p-4 hidden">
+  <div class="max-w-xl mx-auto">
+    <h2 class="text-lg font-bold mb-4">Pengaturan GitHub</h2>
+    <form class="space-y-3">
+      <input id="setToken" type="password" placeholder="GitHub PAT" class="w-full border rounded px-3 py-2 text-sm" />
+      <input id="setRepo" type="text" placeholder="owner/repo" class="w-full border rounded px-3 py-2 text-sm" />
+      <button id="btnSaveSettings" type="button" class="py-2 px-4 bg-emerald-600 text-white text-sm font-semibold rounded">Simpan Konfigurasi</button>
+    </form>
+  </div>
+</section>
 </div>
 </main>
 <div id="dModal" class="hidden fixed inset-0 z-50 items-center justify-center bg-slate-900/60 p-4">
@@ -308,15 +319,4 @@ try { window._aDb = getFirestore(window._aAuth.app); } catch(e) {}
 <script type="module" src="/assets/js/admin-data.js"></script>
 <script type="module" src="/assets/js/admin-auth.js"></script>
 </body>
-</html>
-
-<section id="tab-pengaturan" class="bg-white rounded-2xl border p-4 hidden">
-  <div class="max-w-xl mx-auto">
-    <h2 class="text-lg font-bold mb-4">Pengaturan GitHub</h2>
-    <form class="space-y-3">
-      <input id="setToken" type="password" placeholder="GitHub PAT" class="w-full border rounded px-3 py-2 text-sm" />
-      <input id="setRepo" type="text" placeholder="owner/repo" class="w-full border rounded px-3 py-2 text-sm" />
-      <button id="btnSaveSettings" type="button" class="py-2 px-4 bg-emerald-600 text-white text-sm font-semibold rounded">Simpan Konfigurasi</button>
-    </form>
-  </div>
-</section>
+</html>
