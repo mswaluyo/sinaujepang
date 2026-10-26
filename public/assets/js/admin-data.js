@@ -352,8 +352,9 @@ window._aInitSoal = function () {
     const imgBox = $("fImgPreviewBox");
     const imgEl = $("fImgPreview");
     const missingEl = $("fImgMissing");
-    if (q.img && q.img.trim()) {
-      const src = (q.img.startsWith("/") || q.img.startsWith("http")) ? q.img : ("/" + packSlug + "/" + q.img);
+    if ((q.link && q.link.trim()) || (q.img && q.img.trim())) {
+      const raw = (q.link && q.link.trim()) ? q.link.trim() : q.img.trim();
+      const src = (raw.startsWith("/") || raw.startsWith("http")) ? raw : ("/" + packSlug + "/" + raw);
       imgEl.src = src;
       imgEl.onerror = () => {
         imgEl.style.display = 'none';
