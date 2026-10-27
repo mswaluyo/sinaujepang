@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
   /* Custom kanji explorer styles (biru) */
+  .kanji-container-blue { display: flex; flex-direction: column; align-items: center; padding: 12px; border-radius: 12px; transition: all 0.2s ease; cursor: default; }
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
     .jp-font { font-family: 'Noto Sans JP', sans-serif; }
     .jp-kanji-clear {
@@ -89,10 +90,7 @@
         white-space: normal;
       }
     }
-  </style>
 
-  /* Custom kanji explorer styles (biru) */
-  .kanji-container-blue {
     display: flex;
 </head>
 <body class="bg-fuji-50 text-slate-800 min-h-screen flex flex-col selection:bg-sky-100 selection:text-sky-800">
@@ -418,7 +416,7 @@
             </td>
             <td class="py-2.5 px-4" style="padding-left: 1.25rem;">
               <div class="flex items-center gap-2">
-                <span class="text-sky-500 font-mono text-base font-bold select-none">â””â”€â”€</span>
+                <span class="text-sky-500 font-mono text-base font-bold select-none">└──</span>
                 <span class="w-9 h-9 inline-flex items-center justify-center bg-white ${colorClassInduk} border border-sky-200 rounded-lg text-2xl jp-kanji-clear shadow-xs">
                   ${k.kanji}
                 </span>
@@ -439,7 +437,7 @@
           k.vocab.forEach((v, vIdx) => {
             rowCounter++;
             const isLastVocab = vIdx === k.vocab.length - 1;
-            const treeBranch = isLastVocab ? 'â””â”€â”€' : 'â”œâ”€â”€';
+            const treeBranch = isLastVocab ? '└──' : '├──';
             // Warna kanji berdasarkan radikal
             const radicalColor = {
               'åŠ›': 'text-amber-600',
@@ -614,3 +612,9 @@
 </body>
 </html>
 
+
+
+
+
+
+</style>
