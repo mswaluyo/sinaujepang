@@ -254,6 +254,12 @@
 
     // Render Kosakata Terkait
     renderVocab(kanjiObj.vocab || [], ch);
+
+    // Buka panel piktograf secara otomatis
+    const panel = $("panel-kanji");
+    if (panel) {
+      panel.classList.remove("hidden");
+    }
   }
 
   // Render Piktograf & Filosofi dari kanji-picfilo.json
@@ -313,59 +319,6 @@
     }).join("");
   }
 
-  // Toggle Piktograf saat klik kanji besar
-  $("kanji-display").onclick = () => {
-    const panel = $("panel-kanji");
-    if (panel) {
-      panel.classList.toggle("hidden");
-    }
-  };
-
-  // Pencarian Cepat Kanji
-  $("jCari").oninput = () => {
-    clearTimeout(window._searchTimer);
-    window._searchTimer = setTimeout(() => {
-      const q = $("jCari").value.trim().toLowerCase();
-      const searchGrid = $("jSearchGrid");
-      if (!q) {
-        searchGrid.classList.add("hidden");
-        searchGrid.innerHTML = "";
-        return;
-      }
-
-      const results = Object.values(allKanjiMap).filter(k => {
-        const chMatch = k.ch.toLowerCase().includes(q);
-        const readMatch = (k.bacaan || "").toLowerCase().includes(q);
-        const meanMatch = (k.arti || "").toLowerCase().includes(q);
-        const vocabMatch = (k.vocab || []).some(v => (v.k || "").includes(q) || (v.kana || "").includes(q) || (v.a || "").toLowerCase().includes(q));
-        return chMatch || readMatch || meanMatch || vocabMatch;
-      }).slice(0, 32);
-
-      searchGrid.classList.remove("hidden");
-      if (!results.length) {
-        searchGrid.innerHTML = "<p class='col-span-full text-center text-slate-400 text-xs py-2'>Tidak ada kanji yang cocok.</p>";
-      } else {
-        searchGrid.innerHTML = results.map(k => {
-          return `<button type="button" class="kanji-chip" data-search-k="${esc(k.ch)}" title="${esc(k.arti || "")}">
-            ${esc(k.ch)}
-          </button>`;
-        }).join("");
-
-        searchGrid.querySelectorAll("[data-search-k]").forEach(btn => {
-          btn.onclick = () => {
-            const ch = btn.getAttribute("data-search-k");
-            const info = allKanjiMap[ch];
-            if (info && info.radical) {
-              activeRadical = info.radical;
-              openRadical(info.radical);
-              selectKanji(ch);
-            }
-          };
-        });
-      }
-    }, 250);
-  };
-
   // Inisialisasi: Indeks Semua Kanji dari EXPLORER_DATA
   function init() {
     const expData = window.EXPLORER_DATA || {};
@@ -382,6 +335,65 @@
         };
       });
     });
+
+    // Toggle Piktograf saat klik kanji besar
+    const kanjiDisplayEl = $("kanji-display");
+    if (kanjiDisplayEl) {
+      kanjiDisplayEl.onclick = () => {
+        const panel = $("panel-kanji");
+        if (panel) {
+          panel.classList.toggle("hidden");
+        }
+      };
+    }
+
+    // Pencarian Cepat Kanji
+    const jCariEl = $("jCari");
+    if (jCariEl) {
+      jCariEl.oninput = () => {
+        clearTimeout(window._searchTimer);
+        window._searchTimer = setTimeout(() => {
+          const q = jCariEl.value.trim().toLowerCase();
+          const searchGrid = $("jSearchGrid");
+          if (!q) {
+            searchGrid.classList.add("hidden");
+            searchGrid.innerHTML = "";
+            return;
+          }
+
+          const results = Object.values(allKanjiMap).filter(k => {
+            const chMatch = k.ch.toLowerCase().includes(q);
+            const readMatch = (k.bacaan || "").toLowerCase().includes(q);
+            const meanMatch = (k.arti || "").toLowerCase().includes(q);
+            const vocabMatch = (k.vocab || []).some(v => (v.k || "").includes(q) || (v.kana || "").includes(q) || (v.a || "").toLowerCase().includes(q));
+            return chMatch || readMatch || meanMatch || vocabMatch;
+          }).slice(0, 32);
+
+          searchGrid.classList.remove("hidden");
+          if (!results.length) {
+            searchGrid.innerHTML = "<p class='col-span-full text-center text-slate-400 text-xs py-2'>Tidak ada kanji yang cocok.</p>";
+          } else {
+            searchGrid.innerHTML = results.map(k => {
+              return `<button type="button" class="kanji-chip" data-search-k="${esc(k.ch)}" title="${esc(k.arti || "")}">
+                ${esc(k.ch)}
+              </button>`;
+            }).join("");
+
+            searchGrid.querySelectorAll("[data-search-k]").forEach(btn => {
+              btn.onclick = () => {
+                const ch = btn.getAttribute("data-search-k");
+                const info = allKanjiMap[ch];
+                if (info && info.radical) {
+                  activeRadical = info.radical;
+                  openRadical(info.radical);
+                  // openRadical sudah memanggil selectKanji otomatis
+                }
+              };
+            });
+          }
+        }, 250);
+      };
+    }
 
     renderCategories();
     showLayer(1);

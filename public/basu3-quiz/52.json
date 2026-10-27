@@ -1,0 +1,55 @@
+[
+  {
+    "no": 52,
+    "section": "SESI 4 : DOKKAI",
+    "title": "二人は町で何ををする予定ですか (Apa yang akan mereka lakukan di kota?)",
+    "img": "images/dokkai_52.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "買い物をしたり、おいしいものを食べたりして、ゆっくり過ごしましょう (Opsi 1 - Berbelanja dan makan enak)",
+        "img": ""
+      },
+      {
+        "text": "旅行をする (Opsi 2 - Perjalanan/Traveling)",
+        "img": ""
+      },
+      {
+        "text": "映画を見に行く (Opsi 3 - Pergi menonton film)",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "trans": "Berdasarkan pesan teks di atas, kegiatan yang akan dilakukan di kota adalah berbelanja, makan makanan enak, dan bersantai (Opsi 1).",
+    "trans_rom": "Futari wa machi de nani o suru yotei desu ka. Kaimono o shitari, oishii mono o tabetari shite, yukkuri sugoshimashou.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 28/29 - Pola ~tari ~tari shimasu] Berdasarkan isi pesan chat Tanaka-san pada gambar soal sebelumnya, rencana aktivitas di kota adalah berbelanja dan makan bersama secara santai.",
+    "opt_detail": [
+      {
+        "kana": "かいものをする",
+        "rom": "kaimono o suru",
+        "arti": "berbelanja dan makan enak",
+        "alasan": "Tepat sesuai dengan kalimat dalam pesan teks '町で買い物をしたり、おいしいものを食べたりして...'."
+      },
+      {
+        "kana": "りょこうをする",
+        "rom": "ryokou o suru",
+        "arti": "melakukan perjalanan",
+        "alasan": "Tidak sesuai dengan isi detail pesan teks."
+      },
+      {
+        "kana": "えいがをみにいく",
+        "rom": "eiga o mi ni iku",
+        "arti": "pergi menonton film",
+        "alasan": "Pengecoh, tidak disebutkan dalam isi pesan."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 1"
+  }
+]

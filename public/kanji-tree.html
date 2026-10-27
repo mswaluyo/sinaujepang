@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hierarki Filologi Kanji Sederhana</title>
+  <style>
+    :root {
+      --bg: #0f0f23;
+      --card-bg: #1a1a2e;
+      --border: #16213e;
+      --text: #e0e1dd;
+      --text-dim: #7d8a86;
+      --main-blue: #2a9d8f;
+      --extra-yellow: #e9c46a;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; font-family: system-ui,-apple-system,sans-serif; }
+    body { background-color: var(--bg); color: var(--text); padding: 2rem 1rem; display: flex; justify-content: center; }
+    .container { width: 100%; max-width: 800px; }
+    h2 { font-size: 1.2rem; color: #f0f6fc; margin-bottom: 1.5rem; text-align: center; border-bottom: 1px solid var(--border); padding-bottom: 0.8rem; }
+    .branch { margin-left: 1rem; padding-left: 1rem; border-left: 2px solid var(--border); }
+  .label { position: relative; padding-right: 2rem; }
+  .label .badge { position: absolute; right: 0; top: 0; }
+    .node { margin-bottom: 0.8rem; }
+    .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+    .grid-full { display: block; margin-bottom: 0.8rem; }
+    .box { background: var(--card-bg); border: 1px solid var(--border); border-radius: 6px; padding: 0.8rem; }
+    .box-left { border-left: 4px solid var(--main-blue); }
+    .label { font-size: 0.7rem; color: var(--text-dim); text-transform: uppercase; font-weight: bold; margin-bottom: 0.2rem; }
+    .kanji { font-size: 1.5rem; font-weight: bold; color: var(--main-blue); line-height: 1.2; }
+    .title { font-size: 1rem; font-weight: 600; color: #f0f6fc; }
+    .desc { font-size: 0.82rem; color: var(--text-dim); margin-top: 0.2rem; line-height: 1.4; }
+    .blue { color: var(--main-blue) !important; font-weight: bold; }
+    .yellow { color: var(--extra-yellow) !important; font-weight: bold; }
+    @media (max-width: 600px) { .grid { grid-template-columns: 1fr; } .branch { margin-left: 0.6rem; padding-left: 0.5rem; } }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Hierarki Filologi Kanji Sederhana</h2>
+    <div id="tree-container"></div>
+  </div>
+
+  <!-- Data -->
+  <script src="assets/js/explorer-data.js"></script>
+  <!-- Helpers & GROUPS -->
+  <script src="assets/js/kanji-tree-render.js"></script>
+  <!-- Jukugo renderer -->
+  <script src="assets/js/kanji-tree-render-engine.js"></script>
+  <!-- Main render engine -->
+  <script src="assets/js/kanji-tree-render-main.js"></script>
+  <!-- Init -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var container = document.getElementById('tree-container');
+      if (window.KanjiTreeRender && container) {
+        window.KanjiTreeRender.renderTree(container);
+        window.KanjiTreeRender.addEtymologyFooter(container);
+      } else {
+        console.error('KanjiTreeRender not available!');
+      }
+    });
+  </script>
+</body>
+</html>

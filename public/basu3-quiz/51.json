@@ -1,0 +1,55 @@
+[
+  {
+    "no": 51,
+    "section": "SESI 4 : DOKKAI",
+    "title": "二人はどこへ行きますか (Ke mana mereka akan pergi?) / 二人は町で何ををする予定ですか (Apa yang akan mereka lakukan di kota?)",
+    "img": "images/dokkai_51.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "4/4",
+    "trans": "Berdasarkan pesan dari Tanaka-san, karena hujan dan tidak jadi ke laut, mereka pergi ke kota (Machi) untuk berjalan-jalan/berbelanja sesuai pilihan Opsi 2.",
+    "trans_rom": "Futari wa doko e ikimasu ka. Machi de nani o suru yotei desu ka.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 28/29 - Pemahaman Bacaan Pesan & Rencana] Membaca pesan singkat (e-mail/chat) dari Tanaka-san yang menjelaskan perubahan rencana akibat hujan, di mana mereka memutuskan pergi ke kota (Machi) untuk berbelanja dan makan.",
+    "opt_detail": [
+      {
+        "kana": "おぷし１",
+        "rom": "opsi 1",
+        "arti": "pilihan 1 (Umi / Laut)",
+        "alasan": "Keliru karena rencana ke laut dibatalkan akibat hujan."
+      },
+      {
+        "kana": "おぷし２",
+        "rom": "opsi 2",
+        "arti": "pilihan 2 (Machi / Kota & Belanja)",
+        "alasan": "Tepat sesuai isi pesan yang mengalihkan tujuan ke kota untuk berbelanja dan makan."
+      },
+      {
+        "kana": "おぷし３",
+        "rom": "opsi 3",
+        "arti": "pilihan 3 (Eki / Stasiun)",
+        "alasan": "Hanya tempat titik temu (ketemuan jam 11 di stasiun), bukan tujuan utama aktivitas."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 2"
+  }
+]

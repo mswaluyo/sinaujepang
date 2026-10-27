@@ -1,0 +1,161 @@
+[
+  {
+    "no": 57,
+    "section": "SESI 4 : DOKKAI",
+    "title": "1. ゴミの出し方 (Pertanyaan 1: Apa yang harus dilakukan terhadap koran dan brosur?)",
+    "img": "images/dokkai_57.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "ひもでまとめる",
+        "img": ""
+      },
+      {
+        "text": "袋に入れる",
+        "img": ""
+      },
+      {
+        "text": "2つ出す",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "4/4",
+    "trans": "Berdasarkan petunjuk gambar poster pembuangan sampah bagian 1, tindakan yang benar untuk koran dan brosur adalah diikat dengan tali (Opsi 2).",
+    "trans_rom": "Shinbun ya chirashi wa, himo de matomete kudasai.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 32/38 - Petunjuk Aturan Pembuangan Sampah] Berdasarkan poster '資源ごみの出し方' pada bagian atas gambar, aturan pembuangan koran dan brosur adalah diikat dengan tali (ひもでまとめる) yang posisinya berada pada Opsi 2.",
+    "opt_detail": [
+      {
+        "kana": "ひもでまとめる",
+        "rom": "himo de matomeru",
+        "arti": "diikat dengan tali",
+        "alasan": "Pilihan pertama pada soal gambar (Opsi 1 dalam pilihan ganda web)."
+      },
+      {
+        "kana": "おぷし２",
+        "rom": "opsi 2",
+        "arti": "Opsi 2 (Kunci Jawaban)",
+        "alasan": "Tepat sesuai dengan kunci jawaban gambar di mana koran/brosur harus diikat tali."
+      },
+      {
+        "kana": "ふくろにいれる",
+        "rom": "fukuro ni ireru",
+        "arti": "masukkan ke kantong",
+        "alasan": "Merujuk pada tahapan berikutnya untuk surat kabar."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 2"
+  },
+  {
+    "no": 58,
+    "section": "SESI 4 : DOKKAI",
+    "title": "2. イベントの案内 (Pertanyaan 2: Apa yang bisa dilakukan di event tersebut?)",
+    "img": "images/dokkai_58.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "食べ物を買う",
+        "img": ""
+      },
+      {
+        "text": "医者に診てもらう",
+        "img": ""
+      },
+      {
+        "text": "勉強をする",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "trans": "Berdasarkan poster festival kota (Shimin Matsuri), hal yang bisa dilakukan adalah membeli berbagai makanan (tabemono o kau).",
+    "trans_rom": "Shimin matsuri de wa tabemono o kau koto ga dekimasu.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 26/27 - Kemampuan & Informasi Acara] Berdasarkan bagian 'できること' (hal yang dapat dilakukan) pada poster festival, terdapat stan berbagai macam makanan (いろいろな食べ物の店).",
+    "opt_detail": [
+      {
+        "kana": "たべものをかう",
+        "rom": "tabemono o kau",
+        "arti": "membeli makanan",
+        "alasan": "Tepat sesuai dengan poin informasi 'いろいろな食べ物の店' di poster."
+      },
+      {
+        "kana": "いしゃにみてもらう",
+        "rom": "isha ni mite morau",
+        "arti": "diperiksa dokter",
+        "alasan": "Tidak sesuai dengan konteks festival."
+      },
+      {
+        "kana": "べんきょうをする",
+        "rom": "benkyou o suru",
+        "arti": "belajar",
+        "alasan": "Tidak sesuai dengan konteks acara."
+      }
+    ],
+    "opt_note": [
+      "食べ物を買う (membeli makanan)",
+      "医者に診てもらう (periksa ke dokter)",
+      "勉強をする (belajar)"
+    ],
+    "kunci_id": "食べ物を買う"
+  },
+  {
+    "no": 59,
+    "section": "SESI 4 : DOKKAI",
+    "title": "3. イベントの案内 (Pertanyaan 3: Apa yang harus dilakukan sebelum pergi ke event?)",
+    "img": "images/dokkai_59.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "エコバッグを持っていく",
+        "img": ""
+      },
+      {
+        "text": "チケットを買う",
+        "img": ""
+      },
+      {
+        "text": "車で行く",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "trans": "Berdasarkan informasi pada poster bagian '参加する人へ' (Kepada peserta/pengunjung), hal yang harus dibawa/dilakukan sebelum pergi adalah membawa tas ramah lingkungan (エコバッグ).",
+    "trans_rom": "Ikumae ni eko-baggu o motte itte kudasai.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 32/33 - Instruksi & Persiapan] Berdasarkan bagian '参加する人へ' pada poster festival, pengunjung diimbau untuk membawa kantong/tas belanja sendiri (エコバッグを持ってきてください).",
+    "opt_detail": [
+      {
+        "kana": "えこばっぐをもっていく",
+        "rom": "eko-baggu o motte iku",
+        "arti": "membawa eco bag",
+        "alasan": "Tepat sesuai dengan instruksi 'ゴミを持ち帰るために、エコバッグを持ってきてください'."
+      },
+      {
+        "kana": "ちけっとをかう",
+        "rom": "chiketto o kau",
+        "arti": "membeli tiket",
+        "alasan": "Tidak diperlukan karena acara ini gratis (入場無料)."
+      },
+      {
+        "kana": "くるまでいく",
+        "rom": "kuruma de iku",
+        "arti": "pergi dengan mobil",
+        "alasan": "Tidak disarankan karena tempat sangat padat."
+      }
+    ],
+    "opt_note": [
+      "エコバッグを持っていく (bawa tas belanja)",
+      "チケットを買う (beli tiket)",
+      "車で行く (pakai mobil)"
+    ],
+    "kunci_id": "エコバッグを持っていく"
+  }
+]

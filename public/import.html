@@ -35,6 +35,85 @@
   .success { color: #16a34a; font-weight: 600; }
   .warn { color: #d97706; font-weight: 600; }
   .error { color: #dc2626; font-weight: 600; }
+  .confirm-box { border: 2px solid #f59e0b; border-radius: 8px; padding: 1rem; background: #fffbeb; margin-bottom: 1rem; }
+  .confirm-box .confirm-text { font-size: 0.9rem; color: #92400e; }
+  .confirm-box .confirm-actions { display: flex; gap: 0.5rem; margin-top: 0.75rem; }
+  .confirm-box .confirm-actions button { flex: 1; padding: 0.5rem; font-size: 0.8rem; }
+  .btn-undo { background: #6b7280; }
+  .btn-undo:hover { background: #4b5563; }
+  /* Admin mode */
+  .mode-toggle { display: flex; gap: 0.5rem; margin-bottom: 1rem; }
+  .mode-toggle button { padding: 0.5rem 1rem; font-size: 0.85rem; }
+  .admin-form { display: none; }
+  .admin-form.active { display: block; }
+  .q-form { border: 1px solid #e5e7eb; border-radius: 8px; padding: 1.5rem; margin-bottom: 1rem; background: #fff; }
+  .q-form header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+  .q-form header h3 { margin: 0; font-size: 1rem; }
+  .q-form .form-group { margin-bottom: 0.75rem; }
+  .q-form label { font-size: 0.75rem; color: #6b7280; font-weight: 600; display: block; margin-bottom: 0.25rem; }
+  <div class="hint">Pilih file .mhtml / .html langsung → dapatkan <code>quiz-data.json</code>.</div>
+
+  <!-- Mode Toggle -->
+  <div class="card">
+    <div class="mode-toggle">
+      <button id="modeJson" class="btn-json active">📦 Mode JSON (keluarkan file)</button>
+      <button id="modeAdmin" class="btn-admin">✏️ Mode Admin (edit soal seperti admin#soal)</button>
+    </div>
+  </div>
+
+  <!-- JSON Mode (default) -->
+  <div id="jsonMode" class="card">
+    <div class="label">1. Masukkan HTML Halaman Score</div>
+    <textarea id="htmlInput" placeholder="Paste isi file HTML yang disimpan dari MHTML..."></textarea>
+    <div class="row" style="margin-top:0.5rem;">
+      <input type="file" id="fileInput" accept=".html,.htm,.mhtml,.mht">
+      <button class="secondary" onclick="document.getElementById('fileInput').click()">Pilih File</button>
+      <button class="secondary" onclick="clearAll()">Bersihkan</button>
+    </div>
+  </div>
+
+  <!-- JSON Output Card -->
+  <div id="jsonCard" class="card hidden">
+    <div class="label">2. Hasil Deteksi (JSON)</div>
+    <div class="stats" id="statsQ"><span class="badge">Soal: 0</span><span class="badge">Gambar: 0</span></div>
+    <div class="preview" id="preview"></div>
+    <textarea id="jsonOutput" class="json-out" readonly></textarea>
+    <div class="row" style="margin-top:0.75rem;">
+      <button onclick="copyJSON()">Salin ke Clipboard</button>
+      <button class="secondary" onclick="downloadJSON()">Download quiz-data.json</button>
+    </div>
+    <p class="hint mt-2">Simpan ini ke <code>public/&lt;slug&gt;/quiz-data.json</code> di proyek Anda.</p>
+  </div>
+
+  <!-- Admin Mode -->
+  <div id="adminMode" class="card hidden">
+    <div class="label">2. Mode Admin — Edit &amp; Konfirmasi Setiap Soal</div>
+    <div class="stats" id="statsQ"><span class="badge">Soal: 0</span></div>
+    <div id="adminContent">
+      <!-- Preview & Editor akan dimasukkan oleh JS -->
+    </div>
+    <div class="text-xs text-slate-500 mt-2">
+      ⚠️ Pastikan pilih <strong>pkgSlug</strong> di input di atas &amp; konfirmasi tiap soal sebelum simpan.
+    </div>
+  </div>
+
+  <!-- Confirmation Box -->
+  <div id="confirmBox" class="card hidden">
+    <div class="confirm-text" id="confirmText"></div>
+    <div class="confirm-actions">
+      <button class="secondary" onclick="skipQuestion()">Lanjut</button>
+      <button class="danger" onclick="skipAll()">Batal Semua</button>
+    </div>
+  </div>
+
+  .q-form input, .q-form textarea, .q-form select { width: 100%; padding: 0.5rem; border: 1px solid #d1d5db; border-radius: 4px; font-size: 0.85rem; font-family: ui-monospace, monospace; }
+  .q-form textarea { height: 60px; resize: vertical; }
+  .q-form .options-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 0.5rem; }
+  .q-form .options-grid label { display: flex; align-items: center; gap: 0.25rem; }
+  .q-form .options-grid input { width: 100%; margin: 0; }
+  .q-form .actions { display: flex; gap: 0.5rem; margin-top: 1rem; }
+  .q-form .actions button { flex: 1; padding: 0.5rem; font-size: 0.8rem; }
+
   .hidden { display: none; }
 </style>
 </head>
@@ -117,33 +196,43 @@
 function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
 function trim(s){ return String(s==null?'':s).trim(); }
 
+// ===== Mode Toggle =====
+document.getElementById('modeJson').onclick = function(){ switchMode('json'); };
+document.getElementById('modeAdmin').onclick = function(){ switchMode('admin'); };
+
+function switchMode(mode){
+  document.getElementById('modeJson').className = mode === 'json' ? 'btn-json active' : 'btn-json';
+  document.getElementById('modeAdmin').className = mode === 'admin' ? 'btn-admin active' : 'btn-admin';
+  document.getElementById('jsonMode').style.display = mode === 'json' ? 'block' : 'none';
+  document.getElementById('adminMode').style.display = mode === 'admin' ? 'block' : 'none';
+  document.getElementById('jsonCard').classList.toggle('hidden', mode !== 'json');
+  document.getElementById('adminContent').innerHTML = '';
+  if(mode === 'admin'){ loadAndParse(); }
+}
+
+// ===== File / HTML Input =====
 document.getElementById('fileInput').addEventListener('change', function(e){
   const f = e.target.files[0]; if(!f) return;
   const r = new FileReader();
   r.onload = function(ev){
-    let raw = ev.target.result;
+    const raw = ev.target.result;
     const isMhtml = f.name.toLowerCase().endsWith('.mhtml') || f.name.toLowerCase().endsWith('.mht') || /multipart\/related/i.test(raw);
     if(isMhtml){
       const parsed = parseMHTML(raw);
-      if(parsed){
-        document.getElementById('htmlInput').value = parsed.html;
-        document.getElementById('status').textContent = 'MHTML diparsing: '+parsed.imgCount+' gambar → '+Math.round(parsed.html.length/1024)+' KB. Klik Ekstrak.';
-        document.getElementById('status').className = 'badge success';
-        autoDetect();
-      } else {
-        document.getElementById('htmlInput').value = raw;
-        document.getElementById('status').textContent = 'Gagal parse MHTML. Coba paste HTML manual.';
-        document.getElementById('status').className = 'badge error';
-      }
+      if(parsed){ document.getElementById('htmlInput').value = parsed.html; autoDetect(); }
+      else { document.getElementById('htmlInput').value = raw; alert('Gagal parse MHTML. Coba paste HTML manual.'); }
     } else {
       document.getElementById('htmlInput').value = raw;
-      document.getElementById('status').textContent = 'File dimuat: '+f.name+' ('+Math.round(raw.length/1024)+' KB). Klik Ekstrak.';
-      document.getElementById('status').className = 'badge success';
       autoDetect();
     }
   };
   r.readAsText(f);
 });
+
+
+
+
+
 
 function clearAll(){
   document.getElementById('htmlInput').value='';
@@ -296,6 +385,7 @@ function autoDetect(){
       });
     }
   });
+  window.parsedQuestions = questions;
   renderPreview(questions);
 }
 
@@ -344,20 +434,223 @@ function buildJSON(questions){
       section: section,
       title: q.question,
       img: q.image || '',
-      options: optionsObj,
+    };
+  });
+}
+function buildJSON(questions){
+
+
+  const pkg = trim(document.getElementById('pkgSlug').value) || 'basu0001-quiz';
+  return questions.map(function(q){
+    let section = 'SESI 1 : MOJIGOI';
+    const t = q.question.toLowerCase();
+    if(t.includes('percakapan') || t.includes('expression') || t.includes('hyougen')) section = 'SESI 2 : HYOUGEN';
+    else if(t.includes('listening') || t.includes('choukai') || t.includes('audio')) section = 'SESI 3 : CHOUKAI';
+    else if(t.includes('membaca') || t.includes('dokkai') || t.includes('reading')) section = 'SESI 4 : DOKKAI';
+    const optionsObj = (q.options||[]).map(function(opt, i){ return { text: opt, img: '' }; });
+    const opt_detail = (q.options||[]).map(function(opt, i){
+      return { kana: opt, rom: '', arti: '', alasan: '' };
+    });
+    return {
+
+  q.confirmed = true;
+  if(state.steps[idx + 1]) showQuestion(idx + 1);
+  else finishAdmin();
+}
+
+function skipAll(){
+  const confirm = confirm('Yakin ingin membatalkan import? Data yang belum dikonfirmasi akan hilang.');
+  if(confirm){
+    document.getElementById('adminContent').innerHTML = '';
+    document.getElementById('confirmBox').classList.add('hidden');
+    document.getElementById('jsonOutput').value = '';
+    document.getElementById('jsonCard').classList.add('hidden');
+  }
+}
+
+function finishAdmin(){
+  const questions = state.steps.filter(q => q.confirmed);
+  if(questions.length === 0){ alert('Tidak ada soal yang dikonfirmasi.'); return; }
+
+  const questionsJSON = buildAdminJSON(questions);
+
+  document.getElementById('jsonOutput').value = JSON.stringify(questionsJSON, null, 2);
+  document.getElementById('jsonCard').classList.remove('hidden');
+  document.getElementById('adminContent').innerHTML = '';
+  document.getElementById('confirmBox').classList.add('hidden');
+  updateStats();
+}
+
+function buildAdminJSON(questions){
+  return questions.map(q => {
+    let section = 'SESI 1 : MOJIGOI';
+    const t = q.question.toLowerCase();
+    if(t.includes('percakapan') || t.includes('expression') || t.includes('hyougen')) section = 'SESI 2 : HYOUGEN';
+    else if(t.includes('listening') || t.includes('choukai') || t.includes('audio')) section = 'SESI 3 : CHOUKAI';
+    else if(t.includes('membaca') || t.includes('dokkai') || t.includes('reading')) section = 'SESI 4 : DOKKAI';
+
+    return {
+      no: q.no,
+      section: section,
+      title: q.question,
+      options: q.options.map(o => ({ text: o, img: '' })),
       answer: q.answer || 0,
       score: '0/4',
       trans: '',
       trans_rom: '-',
       mnn: section.startsWith('SESI 1') ? 'Mojigoi' : 'Hyougen',
       analisis: '[MNN] Silakan lengkapi pembahasan untuk soal ini.',
-      opt_detail: opt_detail,
-      opt_note: (q.options||[]).map(function(opt){ return '('+opt+')'; }),
-      kunci_id: q.options && q.options[q.answer] ? q.options[q.answer] : '',
+      opt_detail: q.options.map(o => ({ kana: o, rom: '', arti: '', alasan: '' })),
+      opt_note: q.options.map(o => `(${o})`),
+      kunci_id: q.options[q.answer] || '',
       salah: '',
       audio: ''
     };
   });
+}
+
+function loadAndParse(){
+  const html = document.getElementById('htmlInput').value;
+  if(!html){ alert('Masukkan HTML dulu.'); return; }
+  parseHTML(html);
+}
+
+function copyJSON(){
+  const ta = document.getElementById('jsonOutput');
+  ta.select();
+  document.execCommand('copy');
+  const btn = event.target;
+  const old = btn.textContent;
+  btn.textContent = 'Disalin!';
+  setTimeout(function(){ btn.textContent = old; }, 1200);
+}
+
+function downloadJSON(){
+  const json = document.getElementById('jsonOutput').value;
+  if(!json){ alert('Belum ada JSON'); return; }
+  const blob = new Blob([json], {type: 'application/json'});
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = (document.getElementById('pkgSlug').value || 'basu0001-quiz') + '-quiz-data.json';
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+  URL.revokeObjectURL(url);
+}
+</script>
+      options: optionsObj,
+      answer: q.answer || 0,
+
+// ===== Admin Mode =====
+function renderAdminMode(){
+  const container = document.getElementById('adminContent');
+  container.innerHTML = '';
+  state.steps = parsedQuestions.map((q, i) => ({
+    ...q,
+    step: i + 1,
+    total: parsedQuestions.length,
+    confirmed: false
+  }));
+  
+  if(parsedQuestions.length === 0){
+    container.innerHTML = '<div class="warn">Tidak ada soal terdeteksi. Pastikan HTML adalah halaman score Google Forms yang valid.</div>';
+    return;
+  }
+  
+  document.getElementById('statsQ').innerHTML = `<span class="badge">Total: ${parsedQuestions.length}</span><span class="badge">→ 1 / ${parsedQuestions.length}</span>`;
+  showQuestion(0);
+}
+
+function showQuestion(idx){
+  const q = state.steps[idx];
+  if(!q) return;
+  q.confirmed = false;
+  
+  const container = document.getElementById('adminContent');
+  container.innerHTML = `
+    <div class="confirm-box">
+      <div class="confirm-text">
+        <strong>Soal ${q.step} dari ${q.total}</strong><br>
+        <strong>Q:</strong> ${esc(q.question)}<br>
+        <strong>Pilihan:</strong> ${q.options.map((o, i) => `<span class="badge">${i+1}. ${esc(o)}</span>`).join(' ')}<br>
+        <strong>Status:</strong> <span class="label">Belum dikonfirmasi</span>
+      </div>
+      <div class="confirm-actions">
+        <button class="secondary" onclick="skipQuestion(${idx})">Lanjut</button>
+        <button class="danger" onclick="skipAll()">Batal Semua</button>
+      </div>
+    </div>
+    <div class="text-xs text-slate-500 mt-1">
+      ← Klik <strong>Lanjut</strong> → soal berikutnya. Atau <strong>Batal Semua</strong> .
+    </div>
+  `;
+  document.getElementById('confirmBox').classList.remove('hidden');
+  document.getElementById('confirmBox').dataset.current = idx;
+}
+
+function skipQuestion(idx){
+  const q = state.steps[idx];
+  q.confirmed = true;
+  if(state.steps[idx + 1]) showQuestion(idx + 1);
+  else finishAdmin();
+}
+
+function skipAll(){
+  const confirm = confirm('Yakin ingin membatalkan import? Data yang belum dikonfirmasi akan hilang.');
+  if(confirm){
+    document.getElementById('adminContent').innerHTML = '';
+    document.getElementById('confirmBox').classList.add('hidden');
+    document.getElementById('jsonOutput').value = '';
+    document.getElementById('jsonCard').classList.add('hidden');
+  }
+}
+
+function finishAdmin(){
+  const questions = state.steps.filter(q => q.confirmed);
+  if(questions.length === 0){ alert('Tidak ada soal yang dikonfirmasi.'); return; }
+  
+  const questionsJSON = buildAdminJSON(questions);
+  
+  document.getElementById('jsonOutput').value = JSON.stringify(questionsJSON, null, 2);
+  document.getElementById('jsonCard').classList.remove('hidden');
+  document.getElementById('adminContent').innerHTML = '';
+  document.getElementById('confirmBox').classList.add('hidden');
+  updateStats();
+}
+
+function buildAdminJSON(questions){
+  return questions.map(q => {
+    let section = 'SESI 1 : MOJIGOI';
+    const t = q.question.toLowerCase();
+    if(t.includes('percakapan') || t.includes('expression') || t.includes('hyougen')) section = 'SESI 2 : HYOUGEN';
+    else if(t.includes('listening') || t.includes('choukai') || t.includes('audio')) section = 'SESI 3 : CHOUKAI';
+    else if(t.includes('membaca') || t.includes('dokkai') || t.includes('reading')) section = 'SESI 4 : DOKKAI';
+    
+    return {
+      no: q.no,
+      section: section,
+      title: q.question,
+      options: q.options.map(o => ({ text: o, img: '' })),
+      answer: q.answer || 0,
+      score: '0/4',
+      trans: '',
+      trans_rom: '-',
+      mnn: section.startsWith('SESI 1') ? 'Mojigoi' : 'Hyougen',
+      analisis: '[MNN] Silakan lengkapi pembahasan untuk soal ini.',
+      opt_detail: q.options.map(o => ({ kana: o, rom: '', arti: '', alasan: '' })),
+      opt_note: q.options.map(o => `(${o})`),
+      kunci_id: q.options[q.answer] || '',
+      salah: '',
+      audio: ''
+    };
+  });
+}
+
+function loadAndParse(){
+  const html = document.getElementById('htmlInput').value;
+  if(!html){ alert('Masukkan HTML dulu.'); return; }
+  parseHTML(html);
 }
 
 function copyJSON(){

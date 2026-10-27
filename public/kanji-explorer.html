@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Kanji Explorer — SinauJepang</title>
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    /* Multi-layer page: 1 view aktif dengan animasi transisi geser ala Android */
+    .layer { display: none; }
+    .layer.on { display: block; }
+    .layer.slide-in { animation: slideIn .22s ease; }
+    .layer.slide-back { animation: slideBack .22s ease; }
+    @keyframes slideIn { from { opacity: 0; transform: translateX(28px); } to { opacity: 1; transform: translateX(0); } }
+    @keyframes slideBack { from { opacity: 0; transform: translateX(-28px); } to { opacity: 1; transform: translateX(0); } }
+
+    .rad-cat-card { display: flex; align-items: center; gap: 10px; min-height: 68px; padding: 10px 12px; border-radius: 14px; border: 2px solid #e2e8f0; background: #fff; cursor: pointer; text-align: left; transition: all .15s ease; }
+    .rad-cat-card:hover { border-color: #0284c7; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(2,132,199,0.08); }
+    .rad-cat-card.active { border-color: #0284c7; background: #f0f9ff; }
+
+    .rad-pill { position: relative; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding: 10px 6px 8px; border-radius: 14px; border: 2px solid #e2e8f0; background: #fff; cursor: pointer; transition: all .15s ease; line-height: 1.25; }
+    .rad-pill:hover { border-color: #0284c7; transform: translateY(-1px); box-shadow: 0 4px 12px rgba(2,132,199,0.08); }
+    .rad-pill.active { border-color: #0284c7; background: #0284c7; color: #fff; }
+    .rad-pill .rad-ch { font-size: 26px; font-weight: 800; color: #1e293b; line-height: 1.15; }
+    .rad-pill .rad-kana { font-size: 12px; font-weight: 700; color: #0284c7; white-space: nowrap; }
+    .rad-pill .rad-romaji { font-size: 11px; font-weight: 600; color: #d97706; white-space: nowrap; }
+    .rad-pill .rad-arti { font-size: 11px; font-weight: 600; color: #16a34a; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; max-width: 100%; }
+    .rad-pill .rad-count { position: absolute; top: 4px; right: 5px; background: #f1f5f9; color: #64748b; font-size: 10px; font-weight: 700; border-radius: 999px; padding: 1px 6px; line-height: 1.5; }
+    .rad-pill.active .rad-ch, .rad-pill.active .rad-kana, .rad-pill.active .rad-romaji, .rad-pill.active .rad-arti { color: #fff !important; }
+    .rad-pill.active .rad-count { background: rgba(255,255,255,0.25); color: #fff; }
+
+    .kanji-main { font-size: 84px; line-height: 1; margin: 4px 0; color: #1e293b; cursor: pointer; user-select: none; transition: transform .2s ease, color .2s ease; display: inline-block; font-weight: 900; }
+    .kanji-main:hover { transform: scale(1.08); color: #0284c7; }
+
+    .kanji-chip { font-size: 20px; font-weight: 800; min-width: 40px; height: 40px; border-radius: 12px; border: 1.5px solid #e2e8f0; background: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center; transition: all .15s ease; color: #1e293b; }
+    .kanji-chip:hover { border-color: #0284c7; transform: translateY(-1px); }
+    .kanji-chip.active { background: #0284c7; border-color: #0284c7; color: #fff; box-shadow: 0 4px 10px rgba(2,132,199,0.3); }
+
+    .k-target { color: #0284c7; font-weight: 900; font-size: 17px; }
+    .k-other { color: #d97706; font-weight: 700; font-size: 17px; }
+    .k-out { color: #e11d48; font-weight: 700; font-size: 17px; }
+  </style>
+</head>
+<body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between selection:bg-fuji-200">
+  <!-- Header bersama: site-layout.js -->
+  <script src="/assets/js/indexeddb.js"></script>
+  <script src="/assets/js/site-layout.js"></script>
+
+  <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
+    <!-- LAYER 1: Menu Kategori Radikal -->
+    <div id="layer-menu" class="layer on bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden p-4 sm:p-5">
+      <div class="flex flex-wrap items-center justify-between gap-2 pb-3 mb-3 border-b border-slate-100">
+        <div>
+          <h1 class="font-extrabold text-slate-800 text-base flex items-center gap-2">
+            <i class="fa-solid fa-language text-fuji-600 text-lg"></i>
+            <span>Kanji Explorer — Radikal</span>
+          </h1>
+          <p class="text-xs text-slate-500 mt-0.5">Pilih kategori radikal untuk menelusuri kanji dan kosakata hafalan.</p>
+        </div>
+        <span id="jCount" class="text-xs font-bold text-fuji-700 bg-fuji-50 border border-fuji-200 px-3 py-1 rounded-full"></span>
+      </div>
+
+      <!-- Kotak Pencarian Langsung -->
+      <div class="mb-4">
+        <div class="relative">
+          <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3 text-slate-400 text-sm"></i>
+          <input id="jCari" type="text" placeholder="Cari kanji / bacaan kana / arti bahasa Indonesia…" class="border border-slate-200 bg-slate-50/60 rounded-xl pl-10 pr-4 py-2.5 text-xs sm:text-sm w-full focus:outline-none focus:ring-2 focus:ring-fuji-300 focus:bg-white transition-all">
+        </div>
+        <div id="jSearchGrid" class="hidden mt-3 p-3 bg-slate-50 rounded-xl border border-slate-200 grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 gap-2 max-h-60 overflow-y-auto"></div>
+      </div>
+
+      <!-- Grid Kategori -->
+      <div id="jCats" class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5"></div>
+    </div>
+
+    <!-- LAYER 2: Daftar Pill Radikal Kategori -->
+    <div id="layer-radical" class="layer bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden p-4 sm:p-5">
+      <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+        <button onclick="window._jBack(1)" class="inline-flex items-center gap-1.5 text-xs font-bold text-fuji-600 hover:text-fuji-800 px-3 py-1.5 rounded-lg hover:bg-fuji-50 transition-all">
+          <i class="fa-solid fa-arrow-left"></i><span>Kategori</span>
+        </button>
+        <h2 id="jCatTitle" class="font-extrabold text-slate-800 text-sm sm:text-base">Radikal</h2>
+        <span id="jRadCount" class="text-xs font-semibold text-slate-500"></span>
+      </div>
+      <div id="jRads" class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-3"></div>
+    </div>
+
+    <!-- LAYER 3: Detail Kanji Interaktif -->
+    <div id="layer-kanji" class="layer bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden p-4 sm:p-5">
+      <!-- Navigasi Bar Atas -->
+      <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+        <button onclick="window._jBack(2)" class="inline-flex items-center gap-1.5 text-xs font-bold text-fuji-600 hover:text-fuji-800 px-3 py-1.5 rounded-lg hover:bg-fuji-50 transition-all">
+          <i class="fa-solid fa-arrow-left"></i><span id="jBackRadLabel">Radikal</span>
+        </button>
+        <span id="jRadBadge" class="text-xs font-bold text-slate-700 bg-slate-100 px-3 py-1 rounded-full"></span>
+      </div>
+
+      <!-- Tampilan Kanji Utama Raksasa -->
+      <div class="text-center py-2">
+        <div id="kanji-display" class="kanji-main" title="Klik untuk melihat piktograf & filosofi kanji">…</div>
+        <p class="text-[11px] text-slate-400 mb-1 flex items-center justify-center gap-1">
+          <i class="fa-regular fa-lightbulb text-amber-500"></i><span>Klik karakter kanji di atas untuk lihat piktograf &amp; filosofi</span>
+        </p>
+        <h3 class="text-sm sm:text-base font-bold text-slate-800">
+          <span>Arti Utama: </span><span id="meaning-display" class="text-fuji-700 font-extrabold">…</span>
+        </h3>
+      </div>
+
+      <hr class="my-4 border-slate-100">
+
+      <!-- Grid Chip Kanji Turunan Radikal Ini -->
+      <div class="mb-4">
+        <div class="text-xs font-bold text-slate-500 mb-2 flex items-center justify-between">
+          <span>Kanji Turunan Radikal Ini:</span>
+          <span id="jTurunanCount" class="text-[11px] font-semibold text-slate-400"></span>
+        </div>
+        <div id="kanji-grid" class="flex flex-wrap gap-2 justify-center max-h-48 overflow-y-auto p-1"></div>
+      </div>
+
+      <hr class="my-4 border-slate-100">
+
+      <!-- Panel Piktograf & Filosofi (Toggle saat kanji diklik) -->
+      <div id="panel-kanji" class="mb-4 p-4 rounded-xl border border-emerald-200 bg-emerald-50/70 text-xs text-slate-700 space-y-2">
+        <h4 class="font-extrabold text-emerald-900 text-sm flex items-center gap-1.5">
+          <i class="fa-solid fa-feather text-emerald-600"></i>
+          <span>Piktograf &amp; Filosofi Pembentukan Karakter</span>
+        </h4>
+        <div id="picfilo-content"></div>
+      </div>
+
+      <!-- Panel Kosakata Hafalan -->
+      <div class="mt-4">
+        <div class="flex items-center justify-between mb-2">
+          <h4 class="font-extrabold text-slate-800 text-sm flex items-center gap-1.5">
+            <i class="fa-solid fa-book-bookmark text-fuji-600"></i>
+            <span>Kosakata Hafalan Terkait:</span>
+          </h4>
+          <span id="vocab-count" class="text-[11px] font-bold text-slate-500 bg-slate-100 px-2.5 py-0.5 rounded-full"></span>
+        </div>
+        <div id="vocab-list" class="space-y-2"></div>
+      </div>
+    </div>
+  </main>
+
+  <script src="/assets/js/explorer-data.js"></script>
+  <script src="/assets/js/kanji.js"></script>
+</body>
+</html>

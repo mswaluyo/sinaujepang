@@ -2081,7 +2081,7 @@
       "(memo suru) mencatat",
       "(joushi ni houkoku) lapor ke atasan"
     ],
-    "kunci_id": "Onigiri 2, sandwich 2",
+    "kunci_id": "Lapor ke atasannya",
     "audio": "assets/audio/5.mp3"
   },
   {
@@ -2134,7 +2134,7 @@
       "(onigiri 3, sandoitchi 3) kurang onigiri",
       "(onigiri 4, sandoitchi 3) tepat"
     ],
-    "kunci_id": "Onigiri 2, sandwich 2",
+    "kunci_id": "おにぎり 4 サンドイッチ 3",
     "audio": "assets/audio/6.mp3"
   },
   {
@@ -2150,6 +2150,10 @@
       {
         "text": "Didepan hotel sakura",
         "img": "assets/hare_19.png"
+      },
+      {
+        "text": "Di seberang hotel sakura",
+        "img": ""
       }
     ],
     "answer": 0,
@@ -2170,11 +2174,18 @@
         "rom": "sakura hoteru no mae",
         "arti": "Di depan hotel sakura",
         "alasan": "Kata 'di depan' (前/mae) tidak disebutkan dalam dialog."
+      },
+      {
+        "kana": "ホテルさくらの向かい",
+        "rom": "sakura hoteru no makkai",
+        "arti": "Di seberang hotel sakura",
+        "alasan": "Tidak disebut dalam dialog."
       }
     ],
     "opt_note": [
       "(sakura hoteru no tonari) disamping hotel sakura",
-      "(sakura hoteru no mae) didepan hotel sakura"
+      "(sakura hoteru no mae) didepan hotel sakura",
+      "(makkai) seberang"
     ],
     "kunci_id": "Disamping hotel sakura",
     "audio": "assets/audio/7.mp3"
@@ -2363,9 +2374,32 @@
     "trans_rom": "Iie, karate kyōiku ni mōshiasete mo īdesu ka",
     "mnn": "Choukai",
     "analisis": "[MNN Bab - Listening Dasar] Pria akan mendatangi kelas karate. Pria membawa pakaian (T-shirt dan celana).",
-    "opt_detail": [],
-    "opt_note": [],
-    "kunci_id": "Pakaian",
+    "opt_detail": [
+      {
+        "kana": "シャツ",
+        "rom": "shatsu",
+        "arti": "Kaos T-shirt",
+        "alasan": "Pria memakai celana panjang, bukan kaos."
+      },
+      {
+        "kana": "タオル",
+        "rom": "tawooru",
+        "arti": "Handuk",
+        "alasan": "Tepat: 'Handuk dan 500 yen' disebutkan."
+      },
+      {
+        "kana": "ベルと",
+        "rom": "beruto",
+        "arti": "Dasi",
+        "alasan": "Tidak disebut dalam dialog."
+      }
+    ],
+    "opt_note": [
+      "(shatsu) kaos T-shirt",
+      "(tawooru) handuk",
+      "(beruto) dasi"
+    ],
+    "kunci_id": "タオル と 500 円",
     "audio": "assets/audio/1.mp3"
   }
 ]

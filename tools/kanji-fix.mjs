@@ -16,6 +16,9 @@ export const FIX = {
   "作": ["つくる", "membuat"],
   "借": ["かりる", "meminjam"],
   "働": ["はたらく", "bekerja"],
+  "洗": ["あらう", "mencuci"],
+  "泳": ["およぐ", "berenang"],
+  "泊": ["とまる", "bertemu / tinggal"],
 };
 // Kana + romaji radikal murni komponen: [kana, romaji]
 export const RADKANA = {

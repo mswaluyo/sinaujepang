@@ -1,0 +1,850 @@
+[
+  {
+    "no": 35,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Gambar laki laki ini menawarkan perempuan minuman apa",
+    "img": "images/choukai_35.jpg",
+    "link": "audio/choukai_1.mp3",
+    "options": [
+      {
+        "text": "おちゃとさとう",
+        "img": ""
+      },
+      {
+        "text": "さとう",
+        "img": ""
+      },
+      {
+        "text": "おちゃ",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Laki-laki menawarkan teh dan gula kepada perempuan.",
+    "trans_rom": "Ocha to satou.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 11 - Penawaran] Menyimak audio percakapan penawaran minuman di mana pilihan yang tepat adalah teh dan gula.",
+    "opt_detail": [
+      {
+        "kana": "おちゃとさとう",
+        "rom": "ocha to satou",
+        "arti": "teh dan gula",
+        "alasan": "Sesuai dengan percakapan audio dan gambar."
+      },
+      {
+        "kana": "さとう",
+        "rom": "satou",
+        "arti": "gula",
+        "alasan": "Hanya menyebutkan gula."
+      },
+      {
+        "kana": "おちゃ",
+        "rom": "ocha",
+        "arti": "teh",
+        "alasan": "Kurang lengkap dari detail audio."
+      }
+    ],
+    "opt_note": [
+      "teh dan gula",
+      "gula",
+      "teh"
+    ],
+    "kunci_id": "おちゃとさとう"
+  },
+  {
+    "no": 36,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Jam berapa bertemu di bioskop",
+    "img": "",
+    "link": "audio/choukai_2.mp3",
+    "options": [
+      {
+        "text": "12.30",
+        "img": ""
+      },
+      {
+        "text": "12.00",
+        "img": ""
+      },
+      {
+        "text": "13.00",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "5/5",
+    "trans": "Mereka berjanji bertemu di bioskop pukul 12.00.",
+    "trans_rom": "juu-ni ji ni aimasu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 4 - Waktu] Menyimak audio penetapan waktu pertemuan di bioskop.",
+    "opt_detail": [
+      {
+        "kana": "じゅうにじはん",
+        "rom": "juu-ni ji han",
+        "arti": "12.30",
+        "alasan": "Tidak sesuai audio."
+      },
+      {
+        "kana": "じゅうにじ",
+        "rom": "juu-ni ji",
+        "arti": "12.00",
+        "alasan": "Tepat pukul 12.00 sesuai audio."
+      },
+      {
+        "kana": "じゅういちじ",
+        "rom": "juu-ichi ji",
+        "arti": "13.00",
+        "alasan": "Tidak sesuai audio."
+      }
+    ],
+    "opt_note": [
+      "12.30",
+      "12.00",
+      "13.00"
+    ],
+    "kunci_id": "12.00"
+  },
+  {
+    "no": 37,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "langkah terakhir ketika melakukan penarikan di atm?",
+    "img": "",
+    "link": "audio/choukai_atm.mp3",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "trans": "Langkah terakhir penarikan uang di ATM.",
+    "trans_rom": "ATM de no saigo no saisu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 14 - Instruksi Transaksi] Menyimak urutan atau langkah akhir menggunakan mesin ATM.",
+    "opt_detail": [
+      {
+        "kana": "おぷし１",
+        "rom": "opsi 1",
+        "arti": "pilihan 1",
+        "alasan": "Keliru."
+      },
+      {
+        "kana": "おぷし２",
+        "rom": "opsi 2",
+        "arti": "pilihan 2",
+        "alasan": "Sesuai dengan langkah akhir penarikan."
+      },
+      {
+        "kana": "おぷし３",
+        "rom": "opsi 3",
+        "arti": "pilihan 3",
+        "alasan": "Keliru."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 2"
+  },
+  {
+    "no": 38,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Perempuan ini menyewa apa di tempat sky?",
+    "img": "images/choukai_38.jpg",
+    "link": "audio/choukai_3.mp3",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Perempuan tersebut menyewa perlengkapan ski sesuai opsi 1.",
+    "trans_rom": "Sukii o karimashita.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 14 - Sewa & Alat] Menyimak percakapan penyewaan alat ski.",
+    "opt_detail": [
+      {
+        "kana": "おぷし１",
+        "rom": "opsi 1",
+        "arti": "pilihan 1",
+        "alasan": "Sesuai dengan gambar pilihan pertama."
+      },
+      {
+        "kana": "おぷし２",
+        "rom": "opsi 2",
+        "arti": "pilihan 2",
+        "alasan": "Tidak sesuai audio."
+      },
+      {
+        "kana": "おぷし３",
+        "rom": "opsi 3",
+        "arti": "pilihan 3",
+        "alasan": "Tidak sesuai audio."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 1"
+  },
+  {
+    "no": 39,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "APA YANG DI BELI SEBELUM PERGI KE TEMPAT SKY?",
+    "img": "images/choukai_39_beli.jpg",
+    "link": "audio/choukai_sky_beli.mp3",
+    "options": [
+      {
+        "text": "SEPATU",
+        "img": ""
+      },
+      {
+        "text": "KACAMATA",
+        "img": ""
+      },
+      {
+        "text": "MINUMAN",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "4/4",
+    "trans": "Barang yang dibeli sebelum pergi ke tempat ski adalah kacamata.",
+    "trans_rom": "Sukii ni iku mae ni kakamata o kaimashita.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 18 - Persiapan Kegiatan] Menyimak barang belanjaan yang dibeli sebelum aktivitas ski.",
+    "opt_detail": [
+      {
+        "kana": "せぱつ",
+        "rom": "sepatu",
+        "arti": "sepatu",
+        "alasan": "Tidak sesuai audio."
+      },
+      {
+        "kana": "かかまた",
+        "rom": "kacamata",
+        "arti": "kacamata",
+        "alasan": "Sesuai dengan barang yang dibeli."
+      },
+      {
+        "kana": "みぬまん",
+        "rom": "minuman",
+        "arti": "minuman",
+        "alasan": "Tidak sesuai audio."
+      }
+    ],
+    "opt_note": [
+      "sepatu",
+      "kacamata",
+      "minuman"
+    ],
+    "kunci_id": "KACAMATA"
+  },
+  {
+    "no": 40,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Sewa per jam berapa?",
+    "img": "",
+    "link": "audio/choukai_4.mp3",
+    "options": [
+      {
+        "text": "450円です",
+        "img": ""
+      },
+      {
+        "text": "400円です",
+        "img": ""
+      },
+      {
+        "text": "500円です",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "5/5",
+    "trans": "Biaya sewanya adalah 400 yen.",
+    "trans_rom": "Yon-hyaku en desu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 3 - Harga] Menyimak informasi tarif sewa dalam percakapan.",
+    "opt_detail": [
+      {
+        "kana": "よんひゃくごじゅうえん",
+        "rom": "yon-hyaku go-juu en",
+        "arti": "450 yen",
+        "alasan": "Keliru."
+      },
+      {
+        "kana": "よんひゃくえん",
+        "rom": "yon-hyaku en",
+        "arti": "400 yen",
+        "alasan": "Sesuai dengan tarif yang disebutkan."
+      },
+      {
+        "kana": "ごひゃくえん",
+        "rom": "go-hyaku en",
+        "arti": "500 yen",
+        "alasan": "Keliru."
+      }
+    ],
+    "opt_note": [
+      "450円です",
+      "400円です",
+      "500円です"
+    ],
+    "kunci_id": "400円です"
+  },
+  {
+    "no": 41,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Di toko itu adanya kaos apa?",
+    "img": "images/choukai_41_toko.jpg",
+    "link": "audio/choukai_5.mp3",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Toko tersebut menyediakan kaos jenis opsi 1.",
+    "trans_rom": "Toku ni wa t-shatsu ga arimasu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 10 - Keberadaan] Menyimak ketersediaan produk kaos di toko.",
+    "opt_detail": [
+      {
+        "kana": "おぷし１",
+        "rom": "opsi 1",
+        "arti": "pilihan 1",
+        "alasan": "Sesuai dengan visual produk."
+      },
+      {
+        "kana": "おぷし２",
+        "rom": "opsi 2",
+        "arti": "pilihan 2",
+        "alasan": "Tidak sesuai."
+      },
+      {
+        "kana": "おぷし３",
+        "rom": "opsi 3",
+        "arti": "pilihan 3",
+        "alasan": "Tidak sesuai."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 1"
+  },
+  {
+    "no": 42,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Toko ada dimana?",
+    "img": "",
+    "link": "audio/choukai_6.mp3",
+    "options": [
+      {
+        "text": "Gambar 1 peta jalan",
+        "img": ""
+      },
+      {
+        "text": "Gambar 2 peta jalan",
+        "img": ""
+      },
+      {
+        "text": "Gambar 3 peta jalan",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Lokasi toko berada pada peta nomor 1.",
+    "trans_rom": "Toko wa ichi-ban no rodomappu desu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 3 - Letak Tempat] Mengidentifikasi denah atau peta lokasi toko.",
+    "opt_detail": [
+      {
+        "kana": "ばんごういち",
+        "rom": "bangou ichi",
+        "arti": "gambar 1",
+        "alasan": "Sesuai dengan rute peta nomor 1."
+      },
+      {
+        "kana": "ばんごうに",
+        "rom": "bangou ni",
+        "arti": "gambar 2",
+        "alasan": "Tidak sesuai."
+      },
+      {
+        "kana": "ばんごうさん",
+        "rom": "bangou san",
+        "arti": "gambar 3",
+        "alasan": "Tidak sesuai."
+      }
+    ],
+    "opt_note": [
+      "Gambar 1 peta jalan",
+      "Gambar 2 peta jalan",
+      "Gambar 3 peta jalan"
+    ],
+    "kunci_id": "Gambar 1 peta jalan"
+  },
+  {
+    "no": 43,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "minum obat sehari berapa?",
+    "img": "images/choukai_43.jpg",
+    "link": "audio/choukai_7.mp3",
+    "options": [
+      {
+        "text": "ふたつ",
+        "img": ""
+      },
+      {
+        "text": "三つ",
+        "img": ""
+      },
+      {
+        "text": "ひとつ",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Minum obat dua buah (futatsu) sehari.",
+    "trans_rom": "Futatsu nondemo kudasai.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 3 - Bilangan Benda] Menyimak dosis atau jumlah anjuran minum obat.",
+    "opt_detail": [
+      {
+        "kana": "ふたつ",
+        "rom": "futatsu",
+        "arti": "dua buah",
+        "alasan": "Sesuai instruksi dosis audio."
+      },
+      {
+        "kana": "みっつ",
+        "rom": "mittsu",
+        "arti": "tiga buah",
+        "alasan": "Tidak sesuai."
+      },
+      {
+        "kana": "ひとつ",
+        "rom": "hitotsu",
+        "arti": "satu buah",
+        "alasan": "Tidak sesuai."
+      }
+    ],
+    "opt_note": [
+      "ふたつ",
+      "三つ",
+      "ひとつ"
+    ],
+    "kunci_id": "ふたつ"
+  },
+  {
+    "no": 44,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "saran dokter bagaimana?",
+    "img": "images/choukai_44.jpg",
+    "link": "audio/choukai_8.mp3",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Saran dokter sesuai dengan pilihan opsi 1.",
+    "trans_rom": "Isha no susume wa opsi 1 desu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 32 - Saran] Menyimak anjuran medis dari dokter.",
+    "opt_detail": [
+      {
+        "kana": "おぷし１",
+        "rom": "opsi 1",
+        "arti": "pilihan 1",
+        "alasan": "Sesuai ilustrasi saran."
+      },
+      {
+        "kana": "おぷし２",
+        "rom": "opsi 2",
+        "arti": "pilihan 2",
+        "alasan": "Keliru."
+      },
+      {
+        "kana": "おぷし３",
+        "rom": "opsi 3",
+        "arti": "pilihan 3",
+        "alasan": "Keliru."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 1"
+  },
+  {
+    "no": 45,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Festival coklat lantai berapa?",
+    "img": "",
+    "link": "audio/choukai_9.mp3",
+    "options": [
+      {
+        "text": "5 kai",
+        "img": ""
+      },
+      {
+        "text": "7かい",
+        "img": ""
+      },
+      {
+        "text": "10かい",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "5/5",
+    "trans": "Festival cokelat berada di lantai 10.",
+    "trans_rom": "Chokoreeto fesutibaru wa juk-kai desu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 3 - Lantai] Menyimak informasi lokasi lantai acara.",
+    "opt_detail": [
+      {
+        "kana": "ごかい",
+        "rom": "go-kai",
+        "arti": "lantai 5",
+        "alasan": "Keliru."
+      },
+      {
+        "kana": "ななかい",
+        "rom": "nana-kai",
+        "arti": "lantai 7",
+        "alasan": "Keliru."
+      },
+      {
+        "kana": "じゅっかい",
+        "rom": "juk-kai",
+        "arti": "lantai 10",
+        "alasan": "Sesuai dengan informasi audio."
+      }
+    ],
+    "opt_note": [
+      "5 kai",
+      "7かい",
+      "10かい"
+    ],
+    "kunci_id": "10かい"
+  },
+  {
+    "no": 46,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "sampai jam berapa?",
+    "img": "",
+    "link": "audio/choukai_10.mp3",
+    "options": [
+      {
+        "text": "6.30 ゴゴ",
+        "img": ""
+      },
+      {
+        "text": "6.30 ごぜん",
+        "img": ""
+      },
+      {
+        "text": "06.00 ゴゴ",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Berakhir sampai pukul 06.30 sore (gogo).",
+    "trans_rom": "Gogo roku-ji han made desu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 4 - Waktu/AM-PM] Menyimak batas waktu operasional.",
+    "opt_detail": [
+      {
+        "kana": "ごごろくじはん",
+        "rom": "gogo roku-ji han",
+        "arti": "jam 6.30 sore",
+        "alasan": "Tepat sesuai keterangan audio."
+      },
+      {
+        "kana": "ごぜんろくじはん",
+        "rom": "gozen roku-ji han",
+        "arti": "jam 6.30 pagi",
+        "alasan": "Keliru waktu."
+      },
+      {
+        "kana": "ごごろくじ",
+        "rom": "gogo roku-ji",
+        "arti": "jam 6.00 sore",
+        "alasan": "Keliru menit."
+      }
+    ],
+    "opt_note": [
+      "6.30 ゴゴ",
+      "6.30 ごぜん",
+      "06.00 ゴゴ"
+    ],
+    "kunci_id": "6.30 ゴゴ"
+  },
+  {
+    "no": 47,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "ketika gempa melakukan apa? / KEMANKAH KETIKA TERJADI GEMPA TEMPAT YANG AMAN KETIKA DI LUAR RUANGAN",
+    "img": "images/choukai_47.jpg",
+    "link": "audio/choukai_11.mp3",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "5/5",
+    "trans": "Tempat aman saat gempa di luar ruangan adalah di lapangan terbuka.",
+    "trans_rom": "Jishin no toki, hiroba ni nigemasu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 38 - Instruksi Darurat] Menyimak mitigasi bencana alam gempa bumi di luar ruangan.",
+    "opt_detail": [
+      {
+        "kana": "おぷし１",
+        "rom": "opsi 1",
+        "arti": "pilihan 1",
+        "alasan": "Kurang tepat."
+      },
+      {
+        "kana": "おぷし２",
+        "rom": "opsi 2",
+        "arti": "pilihan 2",
+        "alasan": "Kurang tepat."
+      },
+      {
+        "kana": "おぷし３",
+        "rom": "opsi 3",
+        "arti": "pilihan 3",
+        "alasan": "Sesuai prosedur evakuasi di lapangan."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 3"
+  },
+  {
+    "no": 48,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "gambar sepeda 3 terparkir sewa nya 3 WARNA SEPEDE BERBEDA",
+    "img": "images/choukai_48.jpg",
+    "link": "audio/choukai_12.mp3",
+    "options": [
+      {
+        "text": "400",
+        "img": ""
+      },
+      {
+        "text": "700",
+        "img": ""
+      },
+      {
+        "text": "300",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Tarif sewa sepeda kuning adalah 400 yen.",
+    "trans_rom": "Kiiroi jitensha wa yon-hyaku en desu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 3 - Harga & Atribut] Menyimak informasi tarif sewa sepeda berdasarkan variasi warna.",
+    "opt_detail": [
+      {
+        "kana": "よんひゃく",
+        "rom": "yon-hyaku",
+        "arti": "400",
+        "alasan": "Sesuai label harga sepeda pada audio."
+      },
+      {
+        "kana": "ななひゃく",
+        "rom": "nana-hyaku",
+        "arti": "700",
+        "alasan": "Keliru."
+      },
+      {
+        "kana": "さんひゃく",
+        "rom": "san-hyaku",
+        "arti": "300",
+        "alasan": "Keliru."
+      }
+    ],
+    "opt_note": [
+      "400",
+      "700",
+      "300"
+    ],
+    "kunci_id": "400"
+  },
+  {
+    "no": 49,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "TOKO BUNGA ADA DI MANA? (Stasiun dekat apartemen -> kanan)",
+    "img": "",
+    "link": "audio/choukai_13.mp3",
+    "options": [
+      {
+        "text": "MIGI NI MAGATTE",
+        "img": ""
+      },
+      {
+        "text": "HIDARI",
+        "img": ""
+      },
+      {
+        "text": "MIGI ARIMASU",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "trans": "Toko bunga ada di sebelah kanan.",
+    "trans_rom": "Hana-ya wa migi ni arimasu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 6 - Petunjuk Arah] Menyimak navigasi arah jalan menuju toko bunga.",
+    "opt_detail": [
+      {
+        "kana": "みぎにまがって",
+        "rom": "migi ni magatte",
+        "arti": "belok kanan",
+        "alasan": "Merupakan instruksi belok, bukan keberadaan mutlak."
+      },
+      {
+        "kana": "ひだり",
+        "rom": "hidari",
+        "arti": "kiri",
+        "alasan": "Keliru arah."
+      },
+      {
+        "kana": "みぎにあります",
+        "rom": "migi ni arimasu",
+        "arti": "ada di sebelah kanan",
+        "alasan": "Tepat menunjukkan letak toko bunga sesuai percakapan."
+      }
+    ],
+    "opt_note": [
+      "MIGI NI MAGATTE",
+      "HIDARI",
+      "MIGI ARIMASU"
+    ],
+    "kunci_id": "MIGI ARIMASU"
+  },
+  {
+    "no": 50,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "SOAL BARU PASTI KELUAR - Pertanyaan Tambahan Choukai",
+    "img": "",
+    "link": "audio/choukai_14.mp3",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": ""
+      },
+      {
+        "text": "Opsi 2",
+        "img": ""
+      },
+      {
+        "text": "Opsi 3",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Jawaban yang benar sesuai audio adalah Opsi 1.",
+    "trans_rom": "Tadashii kotae wa opsi 1 desu.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab 1 - Percakapan Dasar] Menyimak soal tambahan Choukai dalam paket ujian.",
+    "opt_detail": [
+      {
+        "kana": "おぷし１",
+        "rom": "opsi 1",
+        "arti": "pilihan 1",
+        "alasan": "Sesuai dengan isi rekaman audio."
+      },
+      {
+        "kana": "おぷし２",
+        "rom": "opsi 2",
+        "arti": "pilihan 2",
+        "alasan": "Keliru."
+      },
+      {
+        "kana": "おぷし３",
+        "rom": "opsi 3",
+        "arti": "pilihan 3",
+        "alasan": "Keliru."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 1"
+  }
+]

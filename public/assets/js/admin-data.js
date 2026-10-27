@@ -352,8 +352,8 @@ window._aInitSoal = function () {
     const imgBox = $("fImgPreviewBox");
     const imgEl = $("fImgPreview");
     const missingEl = $("fImgMissing");
-    if ((q.link && q.link.trim()) || (q.img && q.img.trim())) {
-      const raw = (q.link && q.link.trim()) ? q.link.trim() : q.img.trim();
+    if ((q.img && q.img.trim()) || (q.link && q.link.trim())) {
+      const raw = (q.img && q.img.trim()) ? q.img.trim() : q.link.trim();
       const src = (raw.startsWith("/") || raw.startsWith("http")) ? raw : ("/" + packSlug + "/" + raw);
       imgEl.src = src;
       imgEl.onerror = () => {
@@ -973,22 +973,27 @@ document.addEventListener('DOMContentLoaded', () => {
     btnDownloadImg.addEventListener('click', async () => {
       const q = (_sItems && _sIdx != null) ? _sItems[_sIdx] : null;
       const url = q ? (q.link || q.img) : '';
-      const name = q && q.img ? q.img.split('/').pop() : 'gambar.jpg';
       if (!url) { alert('Tidak ada gambar untuk diunduh.'); return; }
-      const a = document.createElement('a');
-      a.href = url;
-      a.download = name;
-      document.body.appendChild(a);
-      a.click();
-      document.body.removeChild(a);
-    });
-  }
-      } catch (e) {
-        alert('Gagal koneksi ke server lokal.');
-      } finally {
-        btnGitPull.disabled = false;
-        btnGitPull.textContent = 'Sync / Pull Gambar';
-      }
+      const noSoal = (_sIdx != null ? _sIdx + 1 : 1);
+      const name = 'soal_' + noSoal + (q && q.img && q.img.includes('.') ? '.' + q.img.split('.').pop() : '.jpg');
+      // Coba via proxy lokal (port 3000) agar bisa rename gambar cross-origin
+      try {
+        const proxyUrl = 'http://localhost:3000/api/proxy-image?url=' + encodeURIComponent(url);
+        const res = await fetch(proxyUrl);
+        if (!res.ok) throw new Error('proxy failed');
+        const blob = await res.blob();
+        const blobUrl = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        a.download = name;
+        document.body.appendChild(a);
+        a.click();
+        a.remove();
+        setTimeout(() => URL.revokeObjectURL(blobUrl), 1000);
+        return;
+      } catch (e) {}
+      // Fallback terakhir: buka di tab baru
+      window.open(url, '_blank');
     });
   }
 });
@@ -1044,7 +1049,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const result = await response.json();
       if (result.success) {
         alert('Berhasil! Gambar disimpan ke ' + folderPath + targetFileName);
-        location.reload();
+        const imgEl = document.getElementById('fImgPreview');
+        if (imgEl) { imgEl.src = '/' + folderPath.replace(/^public\//, '') + targetFileName + '?t=' + Date.now(); }
+        const q = (_sItems && _sIdx != null) ? _sItems[_sIdx] : null;
+        if (q) { q.img = targetFileName; q.link = ''; if (typeof _syncJson === 'function') _syncJson(); }
       }
     } catch (err) {
       alert('Gagal simpan! Pastikan node server-upload.js berjalan di port 3000.');

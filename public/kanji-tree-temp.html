@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Struktur Tree Filologi Kanji</title>
+  <style>
+    :root {
+      --bg-color: #0d1117;
+      --card-bg: #161b22;
+      --card-border: #30363d;
+      --text-main: #c9d1d9;
+      --text-muted: #8b949e;
+      --line-color: #30363d;
+
+      /* PEWARNAAN ALUR UTAMA & TAMBAHAN */
+      --color-main-path: #06b6d4;  /* BIRU: Untuk alur utama (Grup, Ichi, Se, Gen, Wa) */
+      --color-extra-elem: #f59e0b; /* KUNING: Untuk elemen tambahan/luar alur */
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-main);
+      padding: 2rem 1rem;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    header {
+      width: 100%;
+      max-width: 950px;
+      margin-bottom: 2rem;
+      border-bottom: 1px solid var(--card-border);
+      padding-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 1.5rem;
+      color: #f0f6fc;
+      margin-bottom: 0.4rem;
+    }
+
+    header p {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    .tree-container {
+      width: 100%;
+      max-width: 950px;
+    }
+
+    .tree-node {
+      position: relative;
+      margin-left: 1.5rem;
+      padding-left: 1.2rem;
+      border-left: 2px dashed var(--line-color);
+    }
+
+    .tree-container > .tree-node {
+      margin-left: 0;
+      padding-left: 0;
+      border-left: none;
+    }
+
+    .tree-node::before {
+      content: "";
+      position: absolute;
+      top: 35px;
+      left: 0;
+      width: 1rem;
+      height: 2px;
+      background-color: var(--line-color);
+    }
+
+    .tree-container > .tree-node::before {
+      display: none;
+    }
+
+    .row-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    .card {
+      background-color: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: 8px;
+      padding: 0.9rem 1.1rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .card-left {
+      border-left: 4px solid var(--card-border);
+    }
+
+    /* KELAS TEMA BIRU (ALUR UTAMA SILSILAH) */
+    .theme-main-path .card-left { border-left-color: var(--color-main-path); }
+    .theme-main-path .main-kanji { color: var(--color-main-path); }
+    .theme-main-path .badge { background: rgba(6, 182, 212, 0.15); color: var(--color-main-path); }
+    .theme-main-path .picto-tag { color: var(--color-main-path); }
+
+    .kanji-header {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .main-kanji {
+      font-size: 1.8rem;
+      font-weight: bold;
+      line-height: 1;
+    }
+
+    .group-icon { font-size: 1.8rem; }
+
+    .romaji-title {
+      font-size: 1rem;
+      font-weight: 600;
+      color: #f0f6fc;
+    }
+
+    .sub-reading {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+    }
+
+    .meaning-text {
+      font-size: 0.85rem;
+      color: var(--text-main);
+      margin-top: 0.2rem;
+    }
+
+    .card-right {
+      background-color: rgba(22, 27, 34, 0.7);
+      border-style: dashed;
+    }
+
+    .picto-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .filo-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.35;
+    }
+
+    .badge {
+      font-size: 0.65rem;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      text-transform: uppercase;
+      font-weight: 700;
+      width: fit-content;
+      margin-bottom: 0.3rem;
+    }
+
+    /* HIGHLIGHT TEKS */
+    .txt-blue { color: var(--color-main-path) !important; font-weight: bold; }
+    .txt-yellow { color: var(--color-extra-elem) !important; font-weight: bold; }
+
+    @media (max-width: 700px) {
+      .row-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+
+  <header>
+    <h1>Struktur Tree Filologi Kanji</h1>
+    <p>Visualisasi Alur Filologi & Piktogram Kanji Dari Radikal Hingga Ungkapan Utuh</p>
+  </header>
+
+  <div class="tree-container">
+
+    <!-- ==================== GRUP 1: ALUR ICHI -> SE -> SE -> SE (BIRU) ==================== -->
+    <div class="tree-node theme-main-path">
+      <div class="row-grid">
+        <div class="card card-left">
+          <span class="badge">Grup Kategori 1</span>
+          <div class="kanji-header">
+            <span class="group-icon">📏</span>
+            <div>
+              <div class="romaji-title">Angka, Jumlah & Simbol Dasar</div>
+              <div class="sub-reading">Numbers, Quantities & Basic Symbols</div>
+            </div>
+          </div>
+          <div class="meaning-text">Kelompok unit dasar hitungan dan fondasi awal garis penulisan kanji.</div>
+        </div>
+        <div class="card card-right">
+          <div class="picto-tag">🔢 Unit & Garis Fondasi</div>
+          <div class="filo-desc">Konsep piktogram paling mendasar yang membentuk simbol hitungan awal serta penanda batas garis horizontal.</div>
+        </div>
+      </div>
+
+      <!-- RADIKAL: 一 (BIRU) -->
+      <div class="tree-node theme-main-path">
+        <div class="row-grid">
+          <div class="card card-left">
+            <span class="badge">Radikal Dasar</span>
+            <div class="kanji-header">
+              <span class="main-kanji">一</span>
+              <div>
+                <div class="romaji-title">Ichi</div>
+                <div class="sub-reading">いち / Ichi</div>
+              </div>
+            </div>
+            <div class="meaning-text">Satu / Garis Horizontal Dasar.</div>
+          </div>
+          <div class="card card-right">
+            <div class="picto-tag">➖ Horizontal Line</div>
+            <div class="filo-desc">Garis horizontal tunggal yang mewakili simbol angka satu atau landasan fondasi pada kanji tingkat lanjut.</div>
+          </div>
+        </div>
+
+        <!-- KANJI: 世 (BIRU) -->
+        <div class="tree-node theme-main-path">
+          <div class="row-grid">
+            <div class="card card-left">
+              <span class="badge">Karakter Kanji</span>
+              <div class="kanji-header">
+                <span class="main-kanji">世</span>
+                <div>
+                  <div class="romaji-title">SE / YO</div>
+                  <div class="sub-reading">せ / よ</div>
+                </div>
+              </div>
+              <div class="meaning-text">Dunia, Zaman, Generasi, Kehidupan.</div>
+            </div>
+            <div class="card card-right">
+              <div class="picto-tag">🌐 World / 30 Years</div>
+              <div class="filo-desc">Evolusi bentuk kuno 丗 (gabungan 3 angka 十 / 10+10+10). Melambangkan rentang 30 tahun = 1 generasi manusia di dunia.</div>
+            </div>
+          </div>
+
+          <!-- JUKUGO: 世話 (SE = BIRU, WA = KUNING/TAMBAHAN) -->
+          <div class="tree-node theme-main-path">
+            <div class="row-grid">
+              <div class="card card-left">
+                <span class="badge">Jukugo (Gabungan)</span>
+                <div class="kanji-header">
+                  <span class="main-kanji"><span class="txt-blue">世</span><span class="txt-yellow">話</span></span>
+                  <div>
+                    <div class="romaji-title">Sewa</div>
+                    <div class="sub-reading">せわ</div>
+                  </div>
+                </div>
+                <div class="meaning-text">Merawat, Membantu, Mengurus.</div>
+              </div>
+              <div class="card card-right">
+                <div class="picto-tag">🤲 Care & Assistance</div>
+                <div class="filo-desc">Gabungan elemen 世 dan 話 → Saling merawat/membantu di masyarakat.</div>
+              </div>
+            </div>
+
+            <!-- FRASA UTAMA: お世話になります (SE = BIRU, LAINNYA = KUNING/TAMBAHAN) -->
+            <div class="tree-node theme-main-path">
+              <div class="row-grid">
+                <div class="card card-left">
+                  <span class="badge">Frasa Ungkapan Utuh</span>
+                  <div class="kanji-header">
+                    <span class="main-kanji"><span class="txt-yellow">お</span><span class="txt-blue">世</span><span class="txt-yellow">話になります</span></span>
+                  </div>
+                  <div class="romaji-title">O-sewa ni narimasu</div>
+                  <div class="meaning-text">Terima kasih atas bantuan / kerja samanya.</div>
+                </div>
+                <div class="card card-right">
+                  <div class="picto-tag">🤝 Business Greeting</div>
+                  <div class="filo-desc">Ungkapan kesopanan standar bisnis dan sosial untuk meminta bantuan/membina hubungan kerja sama.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== GRUP 2: ALUR GON -> WA -> WA -> WA (BIRU) ==================== -->
+    <div class="tree-node theme-main-path" style="margin-top: 2rem;">
+      <div class="row-grid">
+        <div class="card card-left">
+          <span class="badge">Grup Kategori 2</span>
+          <div class="kanji-header">
+            <span class="group-icon">👤</span>
+            <div>
+              <div class="romaji-title">Tubuh, Anatomi & Komunikasi</div>
+              <div class="sub-reading">Body, Anatomy & Speech</div>
+            </div>
+          </div>
+          <div class="meaning-text">Kelompok karakter yang berasal dari piktogram organ tubuh dan aktivitas pembicaraan.</div>
+        </div>
+        <div class="card card-right">
+          <div class="picto-tag">🗣️ Anatomy & Expressions</div>
+          <div class="filo-desc">Karakter yang menggambarkan pergerakan anggota tubuh (mulut, lidah) untuk menghasilkan suara dan ucapan.</div>
+        </div>
+      </div>
+
+      <!-- RADIKAL: 言 (BIRU) -->
+      <div class="tree-node theme-main-path">
+        <div class="row-grid">
+          <div class="card card-left">
+            <span class="badge">Radikal Dasar</span>
+            <div class="kanji-header">
+              <span class="main-kanji">言</span>
+              <div>
+                <div class="romaji-title">Gen / Gon</div>
+                <div class="sub-reading">げん / ごん</div>
+              </div>
+            </div>
+            <div class="meaning-text">Kata, Perkataan, Ucapan.</div>
+          </div>
+          <div class="card card-right">
+            <div class="picto-tag">💬 Speech & Sound Wave</div>
+            <div class="filo-desc">Piktogram organ mulut (口) di bagian bawah yang memancarkan garis-garis gelombang ucapan ke atas.</div>
+          </div>
+        </div>
+
+        <!-- KANJI: 話 (BIRU) -->
+        <div class="tree-node theme-main-path">
+          <div class="row-grid">
+            <div class="card card-left">
+              <span class="badge">Karakter Kanji</span>
+              <div class="kanji-header">
+                <span class="main-kanji">話</span>
+                <div>
+                  <div class="romaji-title">WA / Hanashi</div>
+                  <div class="sub-reading">わ / はなし</div>
+                </div>
+              </div>
+              <div class="meaning-text">Berbicara, Percakapan, Cerita.</div>
+            </div>
+            <div class="card card-right">
+              <div class="picto-tag">🗣️ Talk & Conversation</div>
+              <div class="filo-desc">Penggabungan kata (言) dan lidah (舌 - organ tubuh) yang bergerak aktif ketika seseorang bercakap-cakap.</div>
+            </div>
+          </div>
+
+          <!-- JUKUGO: 世話 (WA = BIRU, SE = KUNING/TAMBAHAN) -->
+          <div class="tree-node theme-main-path">
+            <div class="row-grid">
+              <div class="card card-left">
+                <span class="badge">Jukugo (Gabungan)</span>
+                <div class="kanji-header">
+                  <span class="main-kanji"><span class="txt-yellow">世</span><span class="txt-blue">話</span></span>
+                  <div>
+                    <div class="romaji-title">Sewa</div>
+                    <div class="sub-reading">せわ</div>
+                  </div>
+                </div>
+                <div class="meaning-text">Merawat, Membantu, Mengurus.</div>
+              </div>
+              <div class="card card-right">
+                <div class="picto-tag">🤲 Care & Assistance</div>
+                <div class="filo-desc">Gabungan elemen 世 dan 話 → Saling merawat/membantu di masyarakat.</div>
+              </div>
+            </div>
+
+            <!-- FRASA UTAMA: お世話になります (WA = BIRU, LAINNYA = KUNING/TAMBAHAN) -->
+            <div class="tree-node theme-main-path">
+              <div class="row-grid">
+                <div class="card card-left">
+                  <span class="badge">Frasa Ungkapan Utuh</span>
+                  <div class="kanji-header">
+                    <span class="main-kanji"><span class="txt-yellow">お世</span><span class="txt-blue">話</span><span class="txt-yellow">になります</span></span>
+                  </div>
+                  <div class="romaji-title">O-sewa ni narimasu</div>
+                  <div class="meaning-text">Terima kasih atas bantuan / kerja samanya.</div>
+                </div>
+                <div class="card card-right">
+                  <div class="picto-tag">🤝 Business Greeting</div>
+                  <div class="filo-desc">Ungkapan kesopanan standar bisnis dan sosial untuk meminta bantuan/membina hubungan kerja sama.</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+

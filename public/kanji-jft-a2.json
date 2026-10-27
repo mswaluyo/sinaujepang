@@ -1,0 +1,7408 @@
+[
+  {
+    "kanji": "友",
+    "stroke": 4,
+    "radical": "又",
+    "radName": "mata (lagi)",
+    "arti": "teman",
+    "on": "ユウ",
+    "kun": "とも",
+    "vocab": [
+      {
+        "kanji": "友達",
+        "kana": "ともだち",
+        "rom": "tomodachi",
+        "arti": "teman",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "mata (lagi)",
+    "strokeRadikal": 2,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 21
+  },
+  {
+    "kanji": "動",
+    "stroke": 11,
+    "radical": "力",
+    "radName": "chikara (kekuatan)",
+    "arti": "bergerak",
+    "on": "ドウ",
+    "kun": "うご・く",
+    "vocab": [
+      {
+        "kanji": "動かない",
+        "kana": "うごかない",
+        "rom": "ugokanai",
+        "arti": "tidak bergerak",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "運動",
+        "kana": "うんどう",
+        "rom": "undou",
+        "arti": "olahraga",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "動物園",
+        "kana": "どうぶつえん",
+        "rom": "doubutsuen",
+        "arti": "kebun binatang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "ちから (kekuatan/tenaga)",
+    "strokeRadikal": 2,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 20
+  },
+  {
+    "kanji": "口",
+    "stroke": 3,
+    "radical": "口",
+    "radName": "kuchi (mulut)",
+    "arti": "mulut / pintu",
+    "on": "コウ・ク",
+    "kun": "くち",
+    "vocab": [
+      {
+        "kanji": "入口",
+        "kana": "いりぐち",
+        "rom": "iriguchi",
+        "arti": "pintu masuk",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "口",
+        "kana": "くち",
+        "rom": "kuchi",
+        "arti": "mulut",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "出口",
+        "kana": "でぐち",
+        "rom": "deguchi",
+        "arti": "pintu keluar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "非常口",
+        "kana": "ひじょうぐち",
+        "rom": "hijouguchi",
+        "arti": "pintu darurat",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "くち (mulut)",
+    "strokeRadikal": 3,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 2
+  },
+  {
+    "kanji": "右",
+    "stroke": 5,
+    "radical": "口",
+    "radName": "kuchi (mulut)",
+    "arti": "kanan",
+    "on": "ウ・ユウ",
+    "kun": "みぎ",
+    "vocab": [
+      {
+        "kanji": "右",
+        "kana": "みぎ",
+        "rom": "migi",
+        "arti": "kanan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "くち (mulut)",
+    "strokeRadikal": 3,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 2
+  },
+  {
+    "kanji": "名",
+    "stroke": 6,
+    "radical": "口",
+    "radName": "kuchi (mulut)",
+    "arti": "nama / terkenal",
+    "on": "メイ・ミョウ",
+    "kun": "な",
+    "vocab": [
+      {
+        "kanji": "有名な",
+        "kana": "ゆうめいな",
+        "rom": "yuumei na",
+        "arti": "terkenal",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "くち (mulut)",
+    "strokeRadikal": 3,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 2
+  },
+  {
+    "kanji": "屋",
+    "stroke": 9,
+    "radical": "尸",
+    "radName": "shikabane",
+    "arti": "atap / toko",
+    "on": "オク",
+    "kun": "や",
+    "vocab": [
+      {
+        "kanji": "部屋",
+        "kana": "へや",
+        "rom": "heya",
+        "arti": "kamar / ruangan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "しかばね (tubuh/atap)",
+    "strokeRadikal": 3,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 11
+  },
+  {
+    "kanji": "手",
+    "stroke": 4,
+    "radical": "手",
+    "radName": "te (tangan)",
+    "arti": "tangan",
+    "on": "シュ",
+    "kun": "て",
+    "vocab": [
+      {
+        "kanji": "手紙",
+        "kana": "てがみ",
+        "rom": "tegami",
+        "arti": "surat",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "手袋",
+        "kana": "てぶくろ",
+        "rom": "tebukuro",
+        "arti": "sarung tangan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "てへん (tehen - tangan)",
+    "strokeRadikal": 4,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 7
+  },
+  {
+    "kanji": "思",
+    "stroke": 9,
+    "radical": "心",
+    "radName": "kokoro (hati)",
+    "arti": "berpikir / merasa",
+    "on": "シ",
+    "kun": "おも・う",
+    "vocab": [
+      {
+        "kanji": "思います",
+        "kana": "おもいます",
+        "rom": "omoimasu",
+        "arti": "berpikir",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "したごころ / こころ (hati/perasaan)",
+    "strokeRadikal": 4,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 6
+  },
+  {
+    "kanji": "目",
+    "stroke": 5,
+    "radical": "目",
+    "radName": "me (mata)",
+    "arti": "mata",
+    "on": "モク",
+    "kun": "め",
+    "vocab": [
+      {
+        "kanji": "目",
+        "kana": "め",
+        "rom": "me",
+        "arti": "mata",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "めへん (mehen - mata)",
+    "strokeRadikal": 5,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 0
+  },
+  {
+    "kanji": "耳",
+    "stroke": 5,
+    "radical": "耳",
+    "radName": "mimi (telinga)",
+    "arti": "telinga",
+    "on": "ジ",
+    "kun": "みみ",
+    "vocab": [
+      {
+        "kanji": "耳",
+        "kana": "みみ",
+        "rom": "mimi",
+        "arti": "telinga",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "みみへん (mimihen - telinga)",
+    "strokeRadikal": 6,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 1
+  },
+  {
+    "kanji": "聞",
+    "stroke": 14,
+    "radical": "耳",
+    "radName": "mimi (telinga)",
+    "arti": "mendengar / bertanya",
+    "on": "ブン・モン",
+    "kun": "き・く",
+    "vocab": [
+      {
+        "kanji": "聞きます",
+        "kana": "ききます",
+        "rom": "kikimasu",
+        "arti": "mendengar / bertanya",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "みみへん (mimihen - telinga)",
+    "strokeRadikal": 6,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 1
+  },
+  {
+    "kanji": "肉",
+    "stroke": 6,
+    "radical": "肉",
+    "radName": "niku (daging)",
+    "arti": "daging",
+    "on": "ニク",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "牛肉",
+        "kana": "ぎゅうにく",
+        "rom": "gyuuniku",
+        "arti": "sapi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "肉",
+        "kana": "にく",
+        "rom": "niku",
+        "arti": "daging",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "豚肉",
+        "kana": "ぶたにく",
+        "rom": "butaniku",
+        "arti": "babi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "にく (daging)",
+    "strokeRadikal": 6,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 19
+  },
+  {
+    "kanji": "足",
+    "stroke": 7,
+    "radical": "足",
+    "radName": "ashi (kaki)",
+    "arti": "kaki / cukup",
+    "on": "ソク",
+    "kun": "あし / た・りる",
+    "vocab": [
+      {
+        "kanji": "足",
+        "kana": "あし",
+        "rom": "ashi",
+        "arti": "kaki",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "あしへん (ashihen - kaki)",
+    "strokeRadikal": 7,
+    "grupId": "tubuh_anatomi",
+    "grupOrder": 0,
+    "radOrder": 8
+  },
+  {
+    "kanji": "人",
+    "stroke": 2,
+    "radical": "人",
+    "radName": "hito (orang)",
+    "arti": "orang",
+    "on": "ジン・ニン",
+    "kun": "ひと",
+    "vocab": [
+      {
+        "kanji": "男の人",
+        "kana": "おとこのひと",
+        "rom": "otoko no hito",
+        "arti": "pria",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "女の人",
+        "kana": "おんなのひと",
+        "rom": "onna no hito",
+        "arti": "wanita",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "人",
+        "kana": "ひと",
+        "rom": "hito",
+        "arti": "orang",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 0
+  },
+  {
+    "kanji": "今",
+    "stroke": 4,
+    "radical": "人",
+    "radName": "hito (orang)",
+    "arti": "sekarang",
+    "on": "コン・キン",
+    "kun": "いま",
+    "vocab": [
+      {
+        "kanji": "今日",
+        "kana": "きょう",
+        "rom": "kyou",
+        "arti": "hari ini",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "今年",
+        "kana": "ことし",
+        "rom": "kotoshi",
+        "arti": "tahun ini",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "今月",
+        "kana": "こんげつ",
+        "rom": "kongetsu",
+        "arti": "bulan ini",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "今週",
+        "kana": "こんしゅう",
+        "rom": "konshuu",
+        "arti": "minggu ini",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 0
+  },
+  {
+    "kanji": "会",
+    "stroke": 6,
+    "radical": "人",
+    "radName": "hito (orang)",
+    "arti": "bertemu / perkumpulan",
+    "on": "カイ・エ",
+    "kun": "あ・う",
+    "vocab": [
+      {
+        "kanji": "会います",
+        "kana": "あいます",
+        "rom": "aimasu",
+        "arti": "bertemu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "会社",
+        "kana": "かいしゃ",
+        "rom": "kaisha",
+        "arti": "perusahaan / kantor",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "司会します",
+        "kana": "しかいします",
+        "rom": "shikai shimasu",
+        "arti": "memandu acara (MC)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 0
+  },
+  {
+    "kanji": "体",
+    "stroke": 7,
+    "radical": "人",
+    "radName": "ninben (orang)",
+    "arti": "tubuh / badan",
+    "on": "タイ・テイ",
+    "kun": "からだ",
+    "vocab": [
+      {
+        "kanji": "体が痛いんです",
+        "kana": "からだがいたいんです",
+        "rom": "karada",
+        "arti": "badan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 0
+  },
+  {
+    "kanji": "住",
+    "stroke": 7,
+    "radical": "人",
+    "radName": "ninben (orang)",
+    "arti": "tinggal / mukim",
+    "on": "ジュウ",
+    "kun": "す・む",
+    "vocab": [
+      {
+        "kanji": "住所",
+        "kana": "じゅうしょ",
+        "rom": "juusho",
+        "arti": "alamat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 0
+  },
+  {
+    "kanji": "作",
+    "stroke": 7,
+    "radical": "人",
+    "radName": "ninben (orang)",
+    "arti": "membuat",
+    "on": "サク・サ",
+    "kun": "つく・る",
+    "vocab": [
+      {
+        "kanji": "作ります",
+        "kana": "つくります",
+        "rom": "tsukurimasu",
+        "arti": "membuat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "作る",
+        "kana": "つくる",
+        "rom": "tsukuru",
+        "arti": "membuat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 0
+  },
+  {
+    "kanji": "何",
+    "stroke": 7,
+    "radical": "人",
+    "radName": "ninben (orang)",
+    "arti": "apa",
+    "on": "カ",
+    "kun": "なに・なん",
+    "vocab": [
+      {
+        "kanji": "何処ですか",
+        "kana": "どこですか",
+        "rom": "doko desu ka",
+        "arti": "di mana?",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 0
+  },
+  {
+    "kanji": "使",
+    "stroke": 8,
+    "radical": "人",
+    "radName": "ninben (orang)",
+    "arti": "menggunakan / memakai",
+    "on": "シ",
+    "kun": "つか・う",
+    "vocab": [
+      {
+        "kanji": "使いました",
+        "kana": "つかいました",
+        "rom": "tsukaimashita",
+        "arti": "sudah memakai",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "使います",
+        "kana": "つかいます",
+        "rom": "tsukaimasu",
+        "arti": "menggunakan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "使う",
+        "kana": "つかう",
+        "rom": "tsukau",
+        "arti": "memakai",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "使わない",
+        "kana": "つかわない",
+        "rom": "tsukawanai",
+        "arti": "tidak memakai",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 0
+  },
+  {
+    "kanji": "借",
+    "stroke": 10,
+    "radical": "人",
+    "radName": "ninben (orang)",
+    "arti": "meminjam",
+    "on": "シャク",
+    "kun": "か・りる",
+    "vocab": [
+      {
+        "kanji": "借ります",
+        "kana": "かります",
+        "rom": "karimasu",
+        "arti": "meminjam",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 0
+  },
+  {
+    "kanji": "働",
+    "stroke": 13,
+    "radical": "人",
+    "radName": "ninben (orang)",
+    "arti": "bekerja",
+    "on": "ドウ",
+    "kun": "はたら・く",
+    "vocab": [
+      {
+        "kanji": "働かない",
+        "kana": "はたらかない",
+        "rom": "hatarakanai",
+        "arti": "tidak bekerja",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "働きます",
+        "kana": "はたらきます",
+        "rom": "hatarakimasu",
+        "arti": "bekerja",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 0
+  },
+  {
+    "kanji": "子",
+    "stroke": 3,
+    "radical": "子",
+    "radName": "ko (anak)",
+    "arti": "anak",
+    "on": "シ・ス",
+    "kun": "こ",
+    "vocab": [
+      {
+        "kanji": "子供",
+        "kana": "こども",
+        "rom": "kodomo",
+        "arti": "anak-anak",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "帽子",
+        "kana": "ぼうし",
+        "rom": "boushi",
+        "arti": "topi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "こ (anak)",
+    "strokeRadikal": 3,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 2
+  },
+  {
+    "kanji": "学",
+    "stroke": 8,
+    "radical": "子",
+    "radName": "ko (anak)",
+    "arti": "belajar / ilmu",
+    "on": "ガク",
+    "kun": "まな・ぶ",
+    "vocab": [
+      {
+        "kanji": "学生",
+        "kana": "がくせい",
+        "rom": "gakusei",
+        "arti": "siswa / pelajar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "学校",
+        "kana": "がっこう",
+        "rom": "gakko",
+        "arti": "sekolah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "こ (anak)",
+    "strokeRadikal": 3,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 2
+  },
+  {
+    "kanji": "女",
+    "stroke": 3,
+    "radical": "女",
+    "radName": "onna (wanita)",
+    "arti": "wanita",
+    "on": "ジョ",
+    "kun": "おんな",
+    "vocab": [
+      {
+        "kanji": "女の人",
+        "kana": "おんなのひと",
+        "rom": "onna no hito",
+        "arti": "wanita",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "おんなへん (onnahen - wanita)",
+    "strokeRadikal": 3,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 1
+  },
+  {
+    "kanji": "好",
+    "stroke": 6,
+    "radical": "女",
+    "radName": "onna (wanita)",
+    "arti": "suka",
+    "on": "コウ",
+    "kun": "す・き / この・む",
+    "vocab": [
+      {
+        "kanji": "好きです",
+        "kana": "すきです",
+        "rom": "suki",
+        "arti": "suka",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "おんなへん (onnahen - wanita)",
+    "strokeRadikal": 3,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 1
+  },
+  {
+    "kanji": "始",
+    "stroke": 8,
+    "radical": "女",
+    "radName": "onna (wanita)",
+    "arti": "memulai",
+    "on": "シ",
+    "kun": "はじ・める",
+    "vocab": [
+      {
+        "kanji": "始めます",
+        "kana": "はじめます",
+        "rom": "memasu",
+        "arti": "memulai",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "おんなへん (onnahen - wanita)",
+    "strokeRadikal": 3,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 1
+  },
+  {
+    "kanji": "小",
+    "stroke": 3,
+    "radical": "小",
+    "radName": "shou (kecil)",
+    "arti": "kecil",
+    "on": "ショウ",
+    "kun": "ちい・さい",
+    "vocab": [
+      {
+        "kanji": "小さい",
+        "kana": "ちいさい",
+        "rom": "chiisai",
+        "arti": "kecil",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "しょう (kecil)",
+    "strokeRadikal": 3,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 6
+  },
+  {
+    "kanji": "大",
+    "stroke": 3,
+    "radical": "大",
+    "radName": "dai (besar)",
+    "arti": "besar",
+    "on": "ダイ・タイ",
+    "kun": "おお・きい",
+    "vocab": [
+      {
+        "kanji": "大きい",
+        "kana": "おおきい",
+        "rom": "ookii",
+        "arti": "besar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "だい (besar)",
+    "strokeRadikal": 3,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 5
+  },
+  {
+    "kanji": "父",
+    "stroke": 4,
+    "radical": "父",
+    "radName": "chichi (ayah)",
+    "arti": "ayah",
+    "on": "フ",
+    "kun": "ちち",
+    "vocab": [
+      {
+        "kanji": "父",
+        "kana": "ちち",
+        "rom": "chichi",
+        "arti": "ayah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "ちち (ayah)",
+    "strokeRadikal": 4,
+    "grupId": "manusia_relasi",
+    "grupOrder": 1,
+    "radOrder": 3
+  },
+  {
+    "kanji": "土",
+    "stroke": 3,
+    "radical": "土",
+    "radName": "tsuchi (tanah)",
+    "arti": "tanah / hari sabtu",
+    "on": "ド・ト",
+    "kun": "つち",
+    "vocab": [
+      {
+        "kanji": "土曜日",
+        "kana": "どようび",
+        "rom": "doyoubi",
+        "arti": "Sabtu",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "つちへん (tsuchihen - tanah)",
+    "strokeRadikal": 3,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 10
+  },
+  {
+    "kanji": "地",
+    "stroke": 6,
+    "radical": "土",
+    "radName": "tsuchi (tanah)",
+    "arti": "bumi / tanah",
+    "on": "チ・ジ",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "地震",
+        "kana": "じしん",
+        "rom": "jishin",
+        "arti": "gempa",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "つちへん (tsuchihen - tanah)",
+    "strokeRadikal": 3,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 10
+  },
+  {
+    "kanji": "火",
+    "stroke": 4,
+    "radical": "火",
+    "radName": "hi (api)",
+    "arti": "api / hari selasa",
+    "on": "カ",
+    "kun": "ひ",
+    "vocab": [
+      {
+        "kanji": "火曜日",
+        "kana": "かようび",
+        "rom": "kayoubi",
+        "arti": "Selasa",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "ひへん (hihen - api)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 9
+  },
+  {
+    "kanji": "月",
+    "stroke": 4,
+    "radical": "月",
+    "radName": "tsuki (bulan)",
+    "arti": "bulan",
+    "on": "ゲツ・ガツ",
+    "kun": "つき",
+    "vocab": [
+      {
+        "kanji": "九月",
+        "kana": "くがつ",
+        "rom": "kugatsu",
+        "arti": "September",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "月曜日",
+        "kana": "げつようび",
+        "rom": "getsuyoubi",
+        "arti": "Senin",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "今月",
+        "kana": "こんげつ",
+        "rom": "kongetsu",
+        "arti": "bulan ini",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "来月",
+        "kana": "らいげつ",
+        "rom": "raigetsu",
+        "arti": "bulan depan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "つきへん (tsukihen - bulan/daging)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 1
+  },
+  {
+    "kanji": "服",
+    "stroke": 8,
+    "radical": "月",
+    "radName": "tsuki",
+    "arti": "pakaian / menaati",
+    "on": "フク",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "素敵な服",
+        "kana": "すてきなふく",
+        "rom": "suteki na fuku",
+        "arti": "pakaian bagus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "服",
+        "kana": "ふく",
+        "rom": "fuku",
+        "arti": "pakaian",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "つきへん (tsukihen - bulan/daging)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 1
+  },
+  {
+    "kanji": "水",
+    "stroke": 4,
+    "radical": "水",
+    "radName": "mizu (air)",
+    "arti": "air / hari rabu",
+    "on": "スイ",
+    "kun": "みず",
+    "vocab": [
+      {
+        "kanji": "洪水",
+        "kana": "こうずい",
+        "rom": "kouzui",
+        "arti": "banjir",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "水曜日",
+        "kana": "すいようび",
+        "rom": "suiyoubi",
+        "arti": "Rabu",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "水",
+        "kana": "みず",
+        "rom": "mizu",
+        "arti": "air",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "さんずい (sanzui - air)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 8
+  },
+  {
+    "kanji": "注",
+    "stroke": 8,
+    "radical": "水",
+    "radName": "sanzui (air)",
+    "arti": "menuang / memusatkan",
+    "on": "チュウ",
+    "kun": "そそ・ぐ",
+    "vocab": [
+      {
+        "kanji": "注意",
+        "kana": "ちゅうい",
+        "rom": "chuui",
+        "arti": "perhatian / awas",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "注文",
+        "kana": "ちゅうもん",
+        "rom": "chuumon",
+        "arti": "memesan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "さんずい (sanzui - air)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 8
+  },
+  {
+    "kanji": "海",
+    "stroke": 9,
+    "radical": "水",
+    "radName": "sanzui (air)",
+    "arti": "laut",
+    "on": "カイ",
+    "kun": "うみ",
+    "vocab": [
+      {
+        "kanji": "海",
+        "kana": "うみ",
+        "rom": "umi",
+        "arti": "Laut",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "海岸",
+        "kana": "かいがん",
+        "rom": "kaigan",
+        "arti": "pantai laut",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "さんずい (sanzui - air)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 8
+  },
+  {
+    "kanji": "日",
+    "stroke": 4,
+    "radical": "日",
+    "radName": "hi (matahari)",
+    "arti": "hari / matahari",
+    "on": "ニチ・ジツ",
+    "kun": "ひ・か",
+    "vocab": [
+      {
+        "kanji": "明日",
+        "kana": "あした",
+        "rom": "ashita",
+        "arti": "besok",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "火曜日",
+        "kana": "かようび",
+        "rom": "kayoubi",
+        "arti": "Selasa",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "昨日",
+        "kana": "きのう",
+        "rom": "kinou",
+        "arti": "kemarin",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "今日",
+        "kana": "きょう",
+        "rom": "kyou",
+        "arti": "hari ini",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "金曜日",
+        "kana": "きんようび",
+        "rom": "kin'youbi",
+        "arti": "Jumat",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "月曜日",
+        "kana": "げつようび",
+        "rom": "getsuyoubi",
+        "arti": "Senin",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "水曜日",
+        "kana": "すいようび",
+        "rom": "suiyoubi",
+        "arti": "Rabu",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "土曜日",
+        "kana": "どようび",
+        "rom": "doyoubi",
+        "arti": "Sabtu",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "日曜日",
+        "kana": "にちようび",
+        "rom": "nichiyoubi",
+        "arti": "Minggu",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "毎日",
+        "kana": "まいにち",
+        "rom": "mainichi",
+        "arti": "setiap hari",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "木曜日",
+        "kana": "もくようび",
+        "rom": "mokuyoubi",
+        "arti": "Kamis",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "ひへん (hihen - matahari/hari)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 0
+  },
+  {
+    "kanji": "明",
+    "stroke": 8,
+    "radical": "日",
+    "radName": "hi (matahari)",
+    "arti": "terang / jelas",
+    "on": "メイ・ミョウ",
+    "kun": "あか・るい",
+    "vocab": [
+      {
+        "kanji": "明日",
+        "kana": "あした",
+        "rom": "ashita",
+        "arti": "besok",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "ひへん (hihen - matahari/hari)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 0
+  },
+  {
+    "kanji": "時",
+    "stroke": 10,
+    "radical": "日",
+    "radName": "hi (matahari)",
+    "arti": "waktu / jam",
+    "on": "ジ",
+    "kun": "とき",
+    "vocab": [
+      {
+        "kanji": "時間",
+        "kana": "じかん",
+        "rom": "jikan",
+        "arti": "jam / waktu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "時々",
+        "kana": "ときどき",
+        "rom": "tokidoki",
+        "arti": "kadang-kadang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "ひへん (hihen - matahari/hari)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 0
+  },
+  {
+    "kanji": "暑",
+    "stroke": 12,
+    "radical": "日",
+    "radName": "hi (matahari)",
+    "arti": "panas (cuaca)",
+    "on": "ショ",
+    "kun": "あつ・い",
+    "vocab": [
+      {
+        "kanji": "暑い",
+        "kana": "あつい",
+        "rom": "atsui",
+        "arti": "panas",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "ひへん (hihen - matahari/hari)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 0
+  },
+  {
+    "kanji": "曜",
+    "stroke": 18,
+    "radical": "日",
+    "radName": "hi (matahari)",
+    "arti": "hari dalam sepekan",
+    "on": "ヨウ",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "火曜日",
+        "kana": "かようび",
+        "rom": "kayoubi",
+        "arti": "Selasa",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "金曜日",
+        "kana": "きんようび",
+        "rom": "kin'youbi",
+        "arti": "Jumat",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "月曜日",
+        "kana": "げつようび",
+        "rom": "getsuyoubi",
+        "arti": "Senin",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "水曜日",
+        "kana": "すいようび",
+        "rom": "suiyoubi",
+        "arti": "Rabu",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "土曜日",
+        "kana": "どようび",
+        "rom": "doyoubi",
+        "arti": "Sabtu",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "日曜日",
+        "kana": "にちようび",
+        "rom": "nichiyoubi",
+        "arti": "Minggu",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "木曜日",
+        "kana": "もくようび",
+        "rom": "mokuyoubi",
+        "arti": "Kamis",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "ひへん (hihen - matahari/hari)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 0
+  },
+  {
+    "kanji": "木",
+    "stroke": 4,
+    "radical": "木",
+    "radName": "ki (pohon)",
+    "arti": "pohon / hari kamis",
+    "on": "ボク・モク",
+    "kun": "き",
+    "vocab": [
+      {
+        "kanji": "木曜日",
+        "kana": "もくようび",
+        "rom": "mokuyoubi",
+        "arti": "Kamis",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "きへん (kihen - pohon)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 7
+  },
+  {
+    "kanji": "本",
+    "stroke": 5,
+    "radical": "木",
+    "radName": "ki (pohon)",
+    "arti": "buku / asal",
+    "on": "ホン",
+    "kun": "もと",
+    "vocab": [
+      {
+        "kanji": "本",
+        "kana": "ほん",
+        "rom": "hon",
+        "arti": "buku",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "きへん (kihen - pohon)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 7
+  },
+  {
+    "kanji": "来",
+    "stroke": 7,
+    "radical": "木",
+    "radName": "ki (pohon)",
+    "arti": "datang / yang akan datang",
+    "on": "ライ",
+    "kun": "く・る / き・ます",
+    "vocab": [
+      {
+        "kanji": "来ます",
+        "kana": "きます",
+        "rom": "kimasu",
+        "arti": "datang",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "出来ます",
+        "kana": "できます",
+        "rom": "dekimasu",
+        "arti": "bisa",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "来月",
+        "kana": "らいげつ",
+        "rom": "raigetsu",
+        "arti": "bulan depan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "来週",
+        "kana": "らいしゅう",
+        "rom": "raishuu",
+        "arti": "minggu depan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "来年",
+        "kana": "らいねん",
+        "rom": "rainen",
+        "arti": "tahun depan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "きへん (kihen - pohon)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 7
+  },
+  {
+    "kanji": "東",
+    "stroke": 8,
+    "radical": "木",
+    "radName": "ki (pohon)",
+    "arti": "timur",
+    "on": "トウ",
+    "kun": "ひがし",
+    "vocab": [
+      {
+        "kanji": "東",
+        "kana": "ひがし",
+        "rom": "higashi",
+        "arti": "timur",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "きへん (kihen - pohon)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 7
+  },
+  {
+    "kanji": "校",
+    "stroke": 10,
+    "radical": "木",
+    "radName": "ki (pohon)",
+    "arti": "sekolah",
+    "on": "コウ",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "学校",
+        "kana": "がっこう",
+        "rom": "gakko",
+        "arti": "sekolah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "きへん (kihen - pohon)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 7
+  },
+  {
+    "kanji": "気",
+    "stroke": 6,
+    "radical": "气",
+    "radName": "kigamae (uap/udara)",
+    "arti": "udara / semangat / rasa",
+    "on": "キ・ケ",
+    "kun": "いき",
+    "vocab": [
+      {
+        "kanji": "気をつけます",
+        "kana": "きをつけます",
+        "rom": "ki wo tsukemasu",
+        "arti": "berhati-hati",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "きがまえ (uap/udara)",
+    "strokeRadikal": 4,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 6
+  },
+  {
+    "kanji": "雨",
+    "stroke": 8,
+    "radical": "雨",
+    "radName": "ame (hujan)",
+    "arti": "hujan",
+    "on": "ウ",
+    "kun": "あめ・あま",
+    "vocab": [
+      {
+        "kanji": "雨",
+        "kana": "あめ",
+        "rom": "ame",
+        "arti": "hujan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "あめかんむり (hujan/cuaca)",
+    "strokeRadikal": 8,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 4
+  },
+  {
+    "kanji": "電",
+    "stroke": 13,
+    "radical": "雨",
+    "radName": "ame (hujan)",
+    "arti": "listrik",
+    "on": "デン",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "電車",
+        "kana": "でんしゃ",
+        "rom": "densha",
+        "arti": "kereta",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "電話します",
+        "kana": "でんわします",
+        "rom": "denwa shimasu",
+        "arti": "menelepon",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "あめかんむり (hujan/cuaca)",
+    "strokeRadikal": 8,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 4
+  },
+  {
+    "kanji": "風",
+    "stroke": 9,
+    "radical": "風",
+    "radName": "kaze (angin)",
+    "arti": "angin",
+    "on": "フウ",
+    "kun": "かぜ",
+    "vocab": [
+      {
+        "kanji": "風",
+        "kana": "かぜ",
+        "rom": "kaze",
+        "arti": "angin",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "風邪",
+        "kana": "かぜ",
+        "rom": "kaze",
+        "arti": "pilek/flu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "台風",
+        "kana": "たいふう",
+        "rom": "taifu",
+        "arti": "topan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "かぜ (angin)",
+    "strokeRadikal": 9,
+    "grupId": "alam_elemen",
+    "grupOrder": 2,
+    "radOrder": 3
+  },
+  {
+    "kanji": "牛",
+    "stroke": 4,
+    "radical": "牛",
+    "radName": "ushi (sapi)",
+    "arti": "sapi",
+    "on": "ギュウ",
+    "kun": "うし",
+    "vocab": [
+      {
+        "kanji": "牛肉",
+        "kana": "ぎゅうにく",
+        "rom": "gyuuniku",
+        "arti": "sapi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "牛乳",
+        "kana": "ぎゅうにゅう",
+        "rom": "gyuunyuu",
+        "arti": "susu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🐾 Hewan",
+    "namaRadikal": "うしへん (ushihen - sapi)",
+    "strokeRadikal": 4,
+    "grupId": "hewan",
+    "grupOrder": 3,
+    "radOrder": 1
+  },
+  {
+    "kanji": "物",
+    "stroke": 8,
+    "radical": "牛",
+    "radName": "ushi (sapi)",
+    "arti": "benda / barang",
+    "on": "ブツ・モツ",
+    "kun": "もの",
+    "vocab": [
+      {
+        "kanji": "動物園",
+        "kana": "どうぶつえん",
+        "rom": "doubutsuen",
+        "arti": "kebun binatang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🐾 Hewan",
+    "namaRadikal": "うしへん (ushihen - sapi)",
+    "strokeRadikal": 4,
+    "grupId": "hewan",
+    "grupOrder": 3,
+    "radOrder": 1
+  },
+  {
+    "kanji": "特",
+    "stroke": 10,
+    "radical": "牛",
+    "radName": "ushi (sapi)",
+    "arti": "khusus / istimewa",
+    "on": "トク",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "特別",
+        "kana": "とくべつ",
+        "rom": "tokubetsu",
+        "arti": "khusus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🐾 Hewan",
+    "namaRadikal": "うしへん (ushihen - sapi)",
+    "strokeRadikal": 4,
+    "grupId": "hewan",
+    "grupOrder": 3,
+    "radOrder": 1
+  },
+  {
+    "kanji": "買",
+    "stroke": 12,
+    "radical": "貝",
+    "radName": "kai (kerang)",
+    "arti": "membeli",
+    "on": "バイ",
+    "kun": "か・う",
+    "vocab": [
+      {
+        "kanji": "買います",
+        "kana": "かいます",
+        "rom": "kaimasu",
+        "arti": "membeli",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🐾 Hewan",
+    "namaRadikal": "かいへん (kaihen - kerang/harta)",
+    "strokeRadikal": 7,
+    "grupId": "hewan",
+    "grupOrder": 3,
+    "radOrder": 9
+  },
+  {
+    "kanji": "駅",
+    "stroke": 14,
+    "radical": "馬",
+    "radName": "uma (kuda)",
+    "arti": "stasiun",
+    "on": "エキ",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "駅",
+        "kana": "えき",
+        "rom": "eki",
+        "arti": "stasiun",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🐾 Hewan",
+    "namaRadikal": "うまへん (umahen - kuda)",
+    "strokeRadikal": 10,
+    "grupId": "hewan",
+    "grupOrder": 3,
+    "radOrder": 2
+  },
+  {
+    "kanji": "魚",
+    "stroke": 11,
+    "radical": "魚",
+    "radName": "sakana (ikan)",
+    "arti": "ikan",
+    "on": "ギョ",
+    "kun": "さかな / うお",
+    "vocab": [
+      {
+        "kanji": "魚",
+        "kana": "さかな",
+        "rom": "sakana",
+        "arti": "ikan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🐾 Hewan",
+    "namaRadikal": "うおへん (uohen - ikan)",
+    "strokeRadikal": 11,
+    "grupId": "hewan",
+    "grupOrder": 3,
+    "radOrder": 4
+  },
+  {
+    "kanji": "乗",
+    "stroke": 9,
+    "radical": "禾",
+    "radName": "ine (padi)",
+    "arti": "naik (kendaraan)",
+    "on": "ジョウ",
+    "kun": "の・る",
+    "vocab": [
+      {
+        "kanji": "乗ります",
+        "kana": "のります",
+        "rom": "norimasu",
+        "arti": "naik (kendaraan)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌾 Tumbuhan & Makanan",
+    "namaRadikal": "のぎへん (nogihen - bulir padi)",
+    "strokeRadikal": 5,
+    "grupId": "tumbuhan",
+    "grupOrder": 4,
+    "radOrder": 1
+  },
+  {
+    "kanji": "花",
+    "stroke": 7,
+    "radical": "艸",
+    "radName": "kusa (rumput)",
+    "arti": "bunga",
+    "on": "カ",
+    "kun": "はな",
+    "vocab": [
+      {
+        "kanji": "花",
+        "kana": "はな",
+        "rom": "hana",
+        "arti": "bunga",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌾 Tumbuhan & Makanan",
+    "namaRadikal": "くさかんむり (rumput/tanaman)",
+    "strokeRadikal": 6,
+    "grupId": "tumbuhan",
+    "grupOrder": 4,
+    "radOrder": 0
+  },
+  {
+    "kanji": "茶",
+    "stroke": 9,
+    "radical": "艸",
+    "radName": "kusa (rumput)",
+    "arti": "teh",
+    "on": "チャ・サ",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "お茶",
+        "kana": "おちゃ",
+        "rom": "ocha",
+        "arti": "teh hijau",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌾 Tumbuhan & Makanan",
+    "namaRadikal": "くさかんむり (rumput/tanaman)",
+    "strokeRadikal": 6,
+    "grupId": "tumbuhan",
+    "grupOrder": 4,
+    "radOrder": 0
+  },
+  {
+    "kanji": "薬",
+    "stroke": 16,
+    "radical": "艸",
+    "radName": "kusa (rumput)",
+    "arti": "obat",
+    "on": "ヤク",
+    "kun": "くすり",
+    "vocab": [
+      {
+        "kanji": "薬",
+        "kana": "くすり",
+        "rom": "kusuri",
+        "arti": "obat",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌾 Tumbuhan & Makanan",
+    "namaRadikal": "くさかんむり (rumput/tanaman)",
+    "strokeRadikal": 6,
+    "grupId": "tumbuhan",
+    "grupOrder": 4,
+    "radOrder": 0
+  },
+  {
+    "kanji": "食",
+    "stroke": 9,
+    "radical": "食",
+    "radName": "shoku (makan)",
+    "arti": "makan / makanan",
+    "on": "ショク",
+    "kun": "た・べる",
+    "vocab": [
+      {
+        "kanji": "食事",
+        "kana": "しょくじ",
+        "rom": "shokuji",
+        "arti": "makan bersama",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "食堂",
+        "kana": "しょくどう",
+        "rom": "shokudou",
+        "arti": "kantin",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "食べます",
+        "kana": "たべます",
+        "rom": "tabemasu",
+        "arti": "makan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "食べる",
+        "kana": "たべる",
+        "rom": "taberu",
+        "arti": "makan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌾 Tumbuhan & Makanan",
+    "namaRadikal": "しょくへん (shokuhen - makanan)",
+    "strokeRadikal": 9,
+    "grupId": "tumbuhan",
+    "grupOrder": 4,
+    "radOrder": 6
+  },
+  {
+    "kanji": "飯",
+    "stroke": 12,
+    "radical": "食",
+    "radName": "shoku (makan)",
+    "arti": "nasi / hidangan",
+    "on": "ハン",
+    "kun": "めし",
+    "vocab": [
+      {
+        "kanji": "ご飯",
+        "kana": "ごはん",
+        "rom": "gohan",
+        "arti": "nasi / makanan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌾 Tumbuhan & Makanan",
+    "namaRadikal": "しょくへん (shokuhen - makanan)",
+    "strokeRadikal": 9,
+    "grupId": "tumbuhan",
+    "grupOrder": 4,
+    "radOrder": 6
+  },
+  {
+    "kanji": "飲",
+    "stroke": 12,
+    "radical": "食",
+    "radName": "shoku (makan)",
+    "arti": "minum",
+    "on": "イン",
+    "kun": "の・む",
+    "vocab": [
+      {
+        "kanji": "飲みます",
+        "kana": "のみます",
+        "rom": "nomimasu",
+        "arti": "minum",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌾 Tumbuhan & Makanan",
+    "namaRadikal": "しょくへん (shokuhen - makanan)",
+    "strokeRadikal": 9,
+    "grupId": "tumbuhan",
+    "grupOrder": 4,
+    "radOrder": 6
+  },
+  {
+    "kanji": "館",
+    "stroke": 16,
+    "radical": "食",
+    "radName": "shoku (makan)",
+    "arti": "gedung / balai / museum",
+    "on": "カン",
+    "kun": "やかた",
+    "vocab": [
+      {
+        "kanji": "図書館",
+        "kana": "としょかん",
+        "rom": "toshokan",
+        "arti": "perpustakaan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "旅館",
+        "kana": "りょうかん",
+        "rom": "ryokan",
+        "arti": "penginapan tradisional",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌾 Tumbuhan & Makanan",
+    "namaRadikal": "しょくへん (shokuhen - makanan)",
+    "strokeRadikal": 9,
+    "grupId": "tumbuhan",
+    "grupOrder": 4,
+    "radOrder": 6
+  },
+  {
+    "kanji": "安",
+    "stroke": 6,
+    "radical": "宀",
+    "radName": "ukanmuri (atap)",
+    "arti": "murah / tenang",
+    "on": "アン",
+    "kun": "やす・い",
+    "vocab": [
+      {
+        "kanji": "安い",
+        "kana": "やすい",
+        "rom": "yasui",
+        "arti": "murah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "うかんむり (atap rumah)",
+    "strokeRadikal": 3,
+    "grupId": "bangunan_transportasi",
+    "grupOrder": 5,
+    "radOrder": 1
+  },
+  {
+    "kanji": "室",
+    "stroke": 9,
+    "radical": "宀",
+    "radName": "ukanmuri",
+    "arti": "ruangan / kamar",
+    "on": "シツ",
+    "kun": "むろ",
+    "vocab": [
+      {
+        "kanji": "教室",
+        "kana": "きょうしつ",
+        "rom": "kyoushitsu",
+        "arti": "ruang kelas",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "うかんむり (atap rumah)",
+    "strokeRadikal": 3,
+    "grupId": "bangunan_transportasi",
+    "grupOrder": 5,
+    "radOrder": 1
+  },
+  {
+    "kanji": "家",
+    "stroke": 10,
+    "radical": "宀",
+    "radName": "ukanmuri",
+    "arti": "rumah / keluarga",
+    "on": "カ・ケ",
+    "kun": "いえ・や",
+    "vocab": [
+      {
+        "kanji": "家族",
+        "kana": "かぞく",
+        "rom": "kazoku",
+        "arti": "keluarga",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "うかんむり (atap rumah)",
+    "strokeRadikal": 3,
+    "grupId": "bangunan_transportasi",
+    "grupOrder": 5,
+    "radOrder": 1
+  },
+  {
+    "kanji": "店",
+    "stroke": 8,
+    "radical": "广",
+    "radName": "madare (rumah condong)",
+    "arti": "toko",
+    "on": "テン",
+    "kun": "みせ",
+    "vocab": [
+      {
+        "kanji": "店",
+        "kana": "みせ",
+        "rom": "mise",
+        "arti": "toko",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "まだれ (rumah condong)",
+    "strokeRadikal": 3,
+    "grupId": "bangunan_transportasi",
+    "grupOrder": 5,
+    "radOrder": 8
+  },
+  {
+    "kanji": "所",
+    "stroke": 8,
+    "radical": "戸",
+    "radName": "to (pintu)",
+    "arti": "tempat",
+    "on": "ショ",
+    "kun": "ところ",
+    "vocab": [
+      {
+        "kanji": "近所",
+        "kana": "きんじょ",
+        "rom": "kinjo",
+        "arti": "tetangga",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "市役所",
+        "kana": "しやくしょ",
+        "rom": "shiyakusho",
+        "arti": "kantor wali kota / balai kota",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "住所",
+        "kana": "じゅうしょ",
+        "rom": "juusho",
+        "arti": "alamat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "場所",
+        "kana": "ばしょ",
+        "rom": "basho",
+        "arti": "tempat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "とだれ (daun pintu)",
+    "strokeRadikal": 4,
+    "grupId": "bangunan_transportasi",
+    "grupOrder": 5,
+    "radOrder": 2
+  },
+  {
+    "kanji": "男",
+    "stroke": 7,
+    "radical": "田",
+    "radName": "ta (sawah)",
+    "arti": "pria / laki-laki",
+    "on": "ダン・ナン",
+    "kun": "おとこ",
+    "vocab": [
+      {
+        "kanji": "男",
+        "kana": "おとこ",
+        "rom": "otoko",
+        "arti": "laki-laki",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "男の人",
+        "kana": "おとこのひと",
+        "rom": "otoko no hito",
+        "arti": "pria",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "た (sawah)",
+    "strokeRadikal": 5,
+    "grupId": "bangunan_transportasi",
+    "grupOrder": 5,
+    "radOrder": 10
+  },
+  {
+    "kanji": "重",
+    "stroke": 9,
+    "radical": "里",
+    "radName": "sato (kampung)",
+    "arti": "berat / bertumpuk",
+    "on": "ジュウ・チョウ",
+    "kun": "おも・い / かさ・なる",
+    "vocab": [
+      {
+        "kanji": "重い",
+        "kana": "おもい",
+        "rom": "omoi",
+        "arti": "berat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "重くて",
+        "kana": "おもくて",
+        "rom": "omokute",
+        "arti": "berat (bentuk te)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "さと (kampung)",
+    "strokeRadikal": 7,
+    "grupId": "bangunan_transportasi",
+    "grupOrder": 5,
+    "radOrder": 4
+  },
+  {
+    "kanji": "間",
+    "stroke": 12,
+    "radical": "門",
+    "radName": "mon (gerbang)",
+    "arti": "antara / waktu / jangka",
+    "on": "カン・ケン",
+    "kun": "あいだ・ま",
+    "vocab": [
+      {
+        "kanji": "時間",
+        "kana": "じかん",
+        "rom": "jikan",
+        "arti": "jam / waktu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "もんがまえ (pintu gerbang)",
+    "strokeRadikal": 8,
+    "grupId": "bangunan_transportasi",
+    "grupOrder": 5,
+    "radOrder": 0
+  },
+  {
+    "kanji": "切",
+    "stroke": 4,
+    "radical": "刀",
+    "radName": "katana (pedang)",
+    "arti": "potong",
+    "on": "セツ",
+    "kun": "き・る",
+    "vocab": [
+      {
+        "kanji": "切ります",
+        "kana": "きります",
+        "rom": "kirimasu",
+        "arti": "memotong",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "りっとう / かたな (pedang)",
+    "strokeRadikal": 2,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 0
+  },
+  {
+    "kanji": "分",
+    "stroke": 4,
+    "radical": "刀",
+    "radName": "katana (pedang)",
+    "arti": "menit / membagi / paham",
+    "on": "ブン・フン",
+    "kun": "わ・かる",
+    "vocab": [
+      {
+        "kanji": "分",
+        "kana": "ふん",
+        "rom": "fun",
+        "arti": "menit",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "りっとう / かたな (pedang)",
+    "strokeRadikal": 2,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 0
+  },
+  {
+    "kanji": "前",
+    "stroke": 9,
+    "radical": "刀",
+    "radName": "katana (pedang)",
+    "arti": "depan / sebelum",
+    "on": "ゼン",
+    "kun": "まえ",
+    "vocab": [
+      {
+        "kanji": "午前",
+        "kana": "ごぜん",
+        "rom": "gozen",
+        "arti": "pagi (a.m.)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "前",
+        "kana": "まえ",
+        "rom": "mae",
+        "arti": "depan / sebelum",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "りっとう / かたな (pedang)",
+    "strokeRadikal": 2,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 0
+  },
+  {
+    "kanji": "北",
+    "stroke": 5,
+    "radical": "匕",
+    "radName": "saji (sendok)",
+    "arti": "utara",
+    "on": "ホク",
+    "kun": "きた",
+    "vocab": [
+      {
+        "kanji": "北",
+        "kana": "きた",
+        "rom": "kita",
+        "arti": "utara",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "saji (sendok)",
+    "strokeRadikal": 2,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 20
+  },
+  {
+    "kanji": "強",
+    "stroke": 11,
+    "radical": "弓",
+    "radName": "yumi (busur)",
+    "arti": "kuat / berjuang",
+    "on": "キョウ・ゴウ",
+    "kun": "つよ・い",
+    "vocab": [
+      {
+        "kanji": "強くて",
+        "kana": "つよくて",
+        "rom": "tsuyokute",
+        "arti": "kuat (bentuk te)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "勉強",
+        "kana": "べんきょう",
+        "rom": "benkyou",
+        "arti": "belajar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "ゆみへん (yumihen - busur)",
+    "strokeRadikal": 3,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 10
+  },
+  {
+    "kanji": "市",
+    "stroke": 5,
+    "radical": "巾",
+    "radName": "haba (kain)",
+    "arti": "kota / pasar",
+    "on": "シ",
+    "kun": "いち",
+    "vocab": [
+      {
+        "kanji": "市場",
+        "kana": "いちば",
+        "rom": "ichiba",
+        "arti": "pasar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "市役所",
+        "kana": "しやくしょ",
+        "rom": "shiyakusho",
+        "arti": "kantor wali kota / balai kota",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "haba (kain)",
+    "strokeRadikal": 3,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 4
+  },
+  {
+    "kanji": "帰",
+    "stroke": 10,
+    "radical": "巾",
+    "radName": "haba (kain)",
+    "arti": "pulang / kembali",
+    "on": "キ",
+    "kun": "かえ・る",
+    "vocab": [
+      {
+        "kanji": "帰ります",
+        "kana": "かえります",
+        "rom": "kaerimasu",
+        "arti": "pulang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "haba (kain)",
+    "strokeRadikal": 3,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 4
+  },
+  {
+    "kanji": "理",
+    "stroke": 11,
+    "radical": "玉",
+    "radName": "tama (batu giok)",
+    "arti": "alasan / logika / tata",
+    "on": "リ",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "修理します",
+        "kana": "しゅうりします",
+        "rom": "shuuri shimasu",
+        "arti": "reparasi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "たまへん (tamahen - permata)",
+    "strokeRadikal": 5,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 9
+  },
+  {
+    "kanji": "知",
+    "stroke": 8,
+    "radical": "矢",
+    "radName": "ya (panah)",
+    "arti": "mengetahui / kenal",
+    "on": "チ",
+    "kun": "し・る",
+    "vocab": [
+      {
+        "kanji": "知らせます",
+        "kana": "しらせます",
+        "rom": "shirasemasu",
+        "arti": "mengabari",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "や (panah)",
+    "strokeRadikal": 5,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 8
+  },
+  {
+    "kanji": "紙",
+    "stroke": 10,
+    "radical": "糸",
+    "radName": "ito (benang)",
+    "arti": "kertas",
+    "on": "シ",
+    "kun": "かみ",
+    "vocab": [
+      {
+        "kanji": "紙",
+        "kana": "かみ",
+        "rom": "kami",
+        "arti": "kertas",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "手紙",
+        "kana": "てがみ",
+        "rom": "tegami",
+        "arti": "surat",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "いとへん (itohen - benang)",
+    "strokeRadikal": 6,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 2
+  },
+  {
+    "kanji": "車",
+    "stroke": 7,
+    "radical": "車",
+    "radName": "kuruma (kendaraan)",
+    "arti": "mobil / roda",
+    "on": "シャ",
+    "kun": "くるま",
+    "vocab": [
+      {
+        "kanji": "車",
+        "kana": "くるま",
+        "rom": "kuruma",
+        "arti": "mobil",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "電車",
+        "kana": "でんしゃ",
+        "rom": "densha",
+        "arti": "kereta",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "くるまへん (kurumahen - kendaraan)",
+    "strokeRadikal": 7,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 16
+  },
+  {
+    "kanji": "転",
+    "stroke": 11,
+    "radical": "車",
+    "radName": "kuruma (kendaraan)",
+    "arti": "berguling / berpindah",
+    "on": "テン",
+    "kun": "ころ・がる",
+    "vocab": [
+      {
+        "kanji": "運転します",
+        "kana": "うんてんします",
+        "rom": "unten shimasu",
+        "arti": "mengemudi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "くるまへん (kurumahen - kendaraan)",
+    "strokeRadikal": 7,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 16
+  },
+  {
+    "kanji": "金",
+    "stroke": 8,
+    "radical": "金",
+    "radName": "kane (logam/emas)",
+    "arti": "emas / uang / hari jumat",
+    "on": "キン・コン",
+    "kun": "かね",
+    "vocab": [
+      {
+        "kanji": "金曜日",
+        "kana": "きんようび",
+        "rom": "kin'youbi",
+        "arti": "Jumat",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "かねへん (kanehen - logam/emas)",
+    "strokeRadikal": 8,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 1
+  },
+  {
+    "kanji": "銀",
+    "stroke": 14,
+    "radical": "金",
+    "radName": "kane (logam)",
+    "arti": "perak / bank",
+    "on": "ギン",
+    "kun": "しろがね",
+    "vocab": [
+      {
+        "kanji": "銀行",
+        "kana": "ぎんこう",
+        "rom": "ginkou",
+        "arti": "bank",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "かねへん (kanehen - logam/emas)",
+    "strokeRadikal": 8,
+    "grupId": "alat",
+    "grupOrder": 6,
+    "radOrder": 1
+  },
+  {
+    "kanji": "入",
+    "stroke": 2,
+    "radical": "入",
+    "radName": "hairu (masuk)",
+    "arti": "masuk",
+    "on": "ニュウ",
+    "kun": "はい・る / い・れる",
+    "vocab": [
+      {
+        "kanji": "入口",
+        "kana": "いりぐち",
+        "rom": "iriguchi",
+        "arti": "pintu masuk",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "入ります",
+        "kana": "はいります",
+        "rom": "hairimasu",
+        "arti": "masuk (berendam)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "hairu (masuk)",
+    "strokeRadikal": 2,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 8
+  },
+  {
+    "kanji": "後",
+    "stroke": 9,
+    "radical": "彳",
+    "radName": "gyouninben (langkah)",
+    "arti": "belakang / setelah",
+    "on": "ゴ・コウ",
+    "kun": "うし・ろ / あと",
+    "vocab": [
+      {
+        "kanji": "後で",
+        "kana": "あとで",
+        "rom": "ato de",
+        "arti": "nanti",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "後",
+        "kana": "うしろ",
+        "rom": "ushiro",
+        "arti": "belakang",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "午後",
+        "kana": "ごご",
+        "rom": "gogo",
+        "arti": "sore (p.m.)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "ぎょうにんべん (gyouninben - langkah jalan)",
+    "strokeRadikal": 3,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 10
+  },
+  {
+    "kanji": "待",
+    "stroke": 9,
+    "radical": "彳",
+    "radName": "gyouninben (langkah)",
+    "arti": "menunggu",
+    "on": "タイ",
+    "kun": "ま・つ",
+    "vocab": [
+      {
+        "kanji": "待ちます",
+        "kana": "まちます",
+        "rom": "machimasu",
+        "arti": "menunggu",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "ぎょうにんべん (gyouninben - langkah jalan)",
+    "strokeRadikal": 3,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 10
+  },
+  {
+    "kanji": "近",
+    "stroke": 7,
+    "radical": "辶",
+    "radName": "shinnyou (jalan)",
+    "arti": "dekat",
+    "on": "キン",
+    "kun": "ちか・い",
+    "vocab": [
+      {
+        "kanji": "近所",
+        "kana": "きんじょ",
+        "rom": "kinjo",
+        "arti": "tetangga",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "しんにょう (jalan/perpindahan)",
+    "strokeRadikal": 3,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 4
+  },
+  {
+    "kanji": "週",
+    "stroke": 11,
+    "radical": "辶",
+    "radName": "shinnyou (jalan)",
+    "arti": "minggu / pekan",
+    "on": "シュウ",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "今週",
+        "kana": "こんしゅう",
+        "rom": "konshuu",
+        "arti": "minggu ini",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "来週",
+        "kana": "らいしゅう",
+        "rom": "raishuu",
+        "arti": "minggu depan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "しんにょう (jalan/perpindahan)",
+    "strokeRadikal": 3,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 4
+  },
+  {
+    "kanji": "遠",
+    "stroke": 13,
+    "radical": "辶",
+    "radName": "shinnyou",
+    "arti": "jauh",
+    "on": "エン",
+    "kun": "とお・い",
+    "vocab": [
+      {
+        "kanji": "遠くて",
+        "kana": "とおくて",
+        "rom": "tookute",
+        "arti": "jauh (bentuk te)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "しんにょう (jalan/perpindahan)",
+    "strokeRadikal": 3,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 4
+  },
+  {
+    "kanji": "止",
+    "stroke": 4,
+    "radical": "止",
+    "radName": "tomeru",
+    "arti": "berhenti",
+    "on": "シ",
+    "kun": "と・まる",
+    "vocab": [
+      {
+        "kanji": "中止させます",
+        "kana": "ちゅうしさせます",
+        "rom": "chuushi sasemasu",
+        "arti": "membatalkan (kausatif)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "中止されます",
+        "kana": "ちゅうしされます",
+        "rom": "chuushi saremasu",
+        "arti": "dibatalkan (pasif)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "中止します",
+        "kana": "ちゅうしします",
+        "rom": "chuushi shimasu",
+        "arti": "membatalkan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "止めます",
+        "kana": "とめます",
+        "rom": "tomemasu",
+        "arti": "menghentikan / mematikan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "とめる (berhenti)",
+    "strokeRadikal": 4,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 5
+  },
+  {
+    "kanji": "歩",
+    "stroke": 8,
+    "radical": "止",
+    "radName": "tomeru (berhenti)",
+    "arti": "berjalan kaki",
+    "on": "ホ・ブ",
+    "kun": "ある・く / あゆ・む",
+    "vocab": [
+      {
+        "kanji": "歩いたり",
+        "kana": "あるいたり",
+        "rom": "aruitari",
+        "arti": "sesekali berjalan (bentuk tari)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "歩きます",
+        "kana": "あるきます",
+        "rom": "arukimasu",
+        "arti": "berjalan (bentuk masu)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "とめる (berhenti)",
+    "strokeRadikal": 4,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 5
+  },
+  {
+    "kanji": "旅",
+    "stroke": 10,
+    "radical": "方",
+    "radName": "hou (arah)",
+    "arti": "perjalanan / wisata",
+    "on": "リョ",
+    "kun": "たび",
+    "vocab": [
+      {
+        "kanji": "旅館",
+        "kana": "りょうかん",
+        "rom": "ryokan",
+        "arti": "penginapan tradisional",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "ほうへん (houhen - arah)",
+    "strokeRadikal": 4,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 7
+  },
+  {
+    "kanji": "立",
+    "stroke": 5,
+    "radical": "立",
+    "radName": "tatsu (berdiri)",
+    "arti": "berdiri",
+    "on": "リツ",
+    "kun": "た・つ",
+    "vocab": [
+      {
+        "kanji": "立ちます",
+        "kana": "たちます",
+        "rom": "tachimasu",
+        "arti": "berdiri",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "たつ (berdiri)",
+    "strokeRadikal": 5,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 9
+  },
+  {
+    "kanji": "行",
+    "stroke": 6,
+    "radical": "行",
+    "radName": "gyou (jalan/langkah)",
+    "arti": "pergi / baris",
+    "on": "コウ・ギョウ",
+    "kun": "い・く / おこな・う",
+    "vocab": [
+      {
+        "kanji": "行きます",
+        "kana": "いきます",
+        "rom": "ikimasu",
+        "arti": "pergi",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "銀行",
+        "kana": "ぎんこう",
+        "rom": "ginkou",
+        "arti": "bank",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "飛行機",
+        "kana": "ひこうき",
+        "rom": "hikouki",
+        "arti": "pesawat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "ぎょうがまえ (jalan)",
+    "strokeRadikal": 6,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 1
+  },
+  {
+    "kanji": "走",
+    "stroke": 7,
+    "radical": "走",
+    "radName": "hashiru (lari)",
+    "arti": "lari",
+    "on": "ソウ",
+    "kun": "はし・る",
+    "vocab": [
+      {
+        "kanji": "走って",
+        "kana": "はしって",
+        "rom": "hashitte",
+        "arti": "berlari",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "そうにょう (berlari)",
+    "strokeRadikal": 7,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 2
+  },
+  {
+    "kanji": "起",
+    "stroke": 10,
+    "radical": "走",
+    "radName": "hashiru (lari)",
+    "arti": "bangun / bangkit",
+    "on": "キ",
+    "kun": "お・きる / お・こす",
+    "vocab": [
+      {
+        "kanji": "起きます",
+        "kana": "おきます",
+        "rom": "okimasu",
+        "arti": "bangun",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "そうにょう (berlari)",
+    "strokeRadikal": 7,
+    "grupId": "aksi",
+    "grupOrder": 7,
+    "radOrder": 2
+  },
+  {
+    "kanji": "上",
+    "stroke": 3,
+    "radical": "一",
+    "radName": "ichi (satu)",
+    "arti": "atas / naik",
+    "on": "ジョウ",
+    "kun": "うえ / あ・がる",
+    "vocab": [
+      {
+        "kanji": "上がります",
+        "kana": "あがります",
+        "rom": "agarimasu",
+        "arti": "naik",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "上げます",
+        "kana": "あげます",
+        "rom": "agemasu",
+        "arti": "memberi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "いち (satu)",
+    "strokeRadikal": 1,
+    "grupId": "garis",
+    "grupOrder": 8,
+    "radOrder": 0
+  },
+  {
+    "kanji": "万",
+    "stroke": 3,
+    "radical": "一",
+    "radName": "ichi (satu)",
+    "arti": "sepuluh ribu",
+    "on": "マン・バン",
+    "kun": "よろず",
+    "vocab": [
+      {
+        "kanji": "万",
+        "kana": "まん",
+        "rom": "man",
+        "arti": "sepuluh ribu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "いち (satu)",
+    "strokeRadikal": 1,
+    "grupId": "garis",
+    "grupOrder": 8,
+    "radOrder": 0
+  },
+  {
+    "kanji": "丸",
+    "stroke": 3,
+    "radical": "丶",
+    "radName": "ten (titik)",
+    "arti": "bulat / lingkaran",
+    "on": "ガン",
+    "kun": "まる・い",
+    "vocab": [
+      {
+        "kanji": "丸い",
+        "kana": "まるい",
+        "rom": "marui",
+        "arti": "bulat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "ten (titik)",
+    "strokeRadikal": 1,
+    "grupId": "garis",
+    "grupOrder": 8,
+    "radOrder": 1
+  },
+  {
+    "kanji": "中",
+    "stroke": 4,
+    "radical": "丨",
+    "radName": "bou (garis vertikal)",
+    "arti": "tengah / dalam",
+    "on": "チュウ",
+    "kun": "なか",
+    "vocab": [
+      {
+        "kanji": "中止させます",
+        "kana": "ちゅうしさせます",
+        "rom": "chuushi sasemasu",
+        "arti": "membatalkan (kausatif)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "中止されます",
+        "kana": "ちゅうしされます",
+        "rom": "chuushi saremasu",
+        "arti": "dibatalkan (pasif)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "中止します",
+        "kana": "ちゅうしします",
+        "rom": "chuushi shimasu",
+        "arti": "membatalkan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "bou (garis vertikal)",
+    "strokeRadikal": 1,
+    "grupId": "garis",
+    "grupOrder": 8,
+    "radOrder": 4
+  },
+  {
+    "kanji": "半",
+    "stroke": 5,
+    "radical": "十",
+    "radName": "juu (sepuluh)",
+    "arti": "setengah",
+    "on": "ハン",
+    "kun": "なか・ば",
+    "vocab": [
+      {
+        "kanji": "半",
+        "kana": "はん",
+        "rom": "han",
+        "arti": "setengah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "じゅう (sepuluh)",
+    "strokeRadikal": 2,
+    "grupId": "garis",
+    "grupOrder": 8,
+    "radOrder": 7
+  },
+  {
+    "kanji": "南",
+    "stroke": 9,
+    "radical": "十",
+    "radName": "juu",
+    "arti": "selatan",
+    "on": "ナン",
+    "kun": "みなみ",
+    "vocab": [
+      {
+        "kanji": "南",
+        "kana": "みなみ",
+        "rom": "minami",
+        "arti": "selatan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "じゅう (sepuluh)",
+    "strokeRadikal": 2,
+    "grupId": "garis",
+    "grupOrder": 8,
+    "radOrder": 7
+  },
+  {
+    "kanji": "公",
+    "stroke": 4,
+    "radical": "八",
+    "radName": "hachi (delapan)",
+    "arti": "umum / publik",
+    "on": "コウ",
+    "kun": "おおやけ",
+    "vocab": [
+      {
+        "kanji": "公園",
+        "kana": "こうえん",
+        "rom": "kouen",
+        "arti": "taman",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "はち (delapan)",
+    "strokeRadikal": 2,
+    "grupId": "garis",
+    "grupOrder": 8,
+    "radOrder": 6
+  },
+  {
+    "kanji": "九",
+    "stroke": 2,
+    "radical": "乙",
+    "radName": "otsu (kedua)",
+    "arti": "sembilan",
+    "on": "キュウ・ク",
+    "kun": "ここの・つ",
+    "vocab": [
+      {
+        "kanji": "九月",
+        "kana": "くがつ",
+        "rom": "kugatsu",
+        "arti": "September",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🔷 Bentuk & Bingkai",
+    "namaRadikal": "otsu (kedua)",
+    "strokeRadikal": 1,
+    "grupId": "bentuk",
+    "grupOrder": 9,
+    "radOrder": 4
+  },
+  {
+    "kanji": "内",
+    "stroke": 4,
+    "radical": "冂",
+    "radName": "makigamae",
+    "arti": "dalam",
+    "on": "ナイ・ダイ",
+    "kun": "うち",
+    "vocab": [
+      {
+        "kanji": "案内します",
+        "kana": "あんないします",
+        "rom": "annai shimasu",
+        "arti": "memandu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🔷 Bentuk & Bingkai",
+    "namaRadikal": "まきがまえ (bingkai terbuka)",
+    "strokeRadikal": 2,
+    "grupId": "bentuk",
+    "grupOrder": 9,
+    "radOrder": 1
+  },
+  {
+    "kanji": "円",
+    "stroke": 4,
+    "radical": "冂",
+    "radName": "makigamae",
+    "arti": "yen / bulat",
+    "on": "エン",
+    "kun": "まる・い",
+    "vocab": [
+      {
+        "kanji": "円",
+        "kana": "えん",
+        "rom": "en",
+        "arti": "yen",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🔷 Bentuk & Bingkai",
+    "namaRadikal": "まきがまえ (bingkai terbuka)",
+    "strokeRadikal": 2,
+    "grupId": "bentuk",
+    "grupOrder": 9,
+    "radOrder": 1
+  },
+  {
+    "kanji": "出",
+    "stroke": 5,
+    "radical": "凵",
+    "radName": "kannyou (kotak terbuka)",
+    "arti": "keluar",
+    "on": "シュツ",
+    "kun": "で・る / だ・す",
+    "vocab": [
+      {
+        "kanji": "出来ます",
+        "kana": "できます",
+        "rom": "dekimasu",
+        "arti": "bisa",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "出口",
+        "kana": "でぐち",
+        "rom": "deguchi",
+        "arti": "pintu keluar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "出ます",
+        "kana": "でます",
+        "rom": "demasu",
+        "arti": "keluar",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🔷 Bentuk & Bingkai",
+    "namaRadikal": "かんにょう (kotak bawah)",
+    "strokeRadikal": 2,
+    "grupId": "bentuk",
+    "grupOrder": 9,
+    "radOrder": 8
+  },
+  {
+    "kanji": "教",
+    "stroke": 11,
+    "radical": "攴",
+    "radName": "bokuzukuri (pukul)",
+    "arti": "mengajar / ajaran",
+    "on": "キョウ",
+    "kun": "おし・える",
+    "vocab": [
+      {
+        "kanji": "教えます",
+        "kana": "おしえます",
+        "rom": "oshiemasu",
+        "arti": "mengajar / memberi tahu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "教室",
+        "kana": "きょうしつ",
+        "rom": "kyoushitsu",
+        "arti": "ruang kelas",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🔷 Bentuk & Bingkai",
+    "namaRadikal": "ぼくづくり (pukul/tindakan)",
+    "strokeRadikal": 4,
+    "grupId": "bentuk",
+    "grupOrder": 9,
+    "radOrder": 5
+  },
+  {
+    "kanji": "書",
+    "stroke": 10,
+    "radical": "曰",
+    "radName": "iwaku",
+    "arti": "menulis / buku",
+    "on": "ショ",
+    "kun": "か・く",
+    "vocab": [
+      {
+        "kanji": "書きます",
+        "kana": "かきます",
+        "rom": "kakimasu",
+        "arti": "menulis",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "図書館",
+        "kana": "としょかん",
+        "rom": "toshokan",
+        "arti": "perpustakaan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🔷 Bentuk & Bingkai",
+    "namaRadikal": "iwaku",
+    "strokeRadikal": 4,
+    "grupId": "bentuk",
+    "grupOrder": 9,
+    "radOrder": 3
+  },
+  {
+    "kanji": "年",
+    "stroke": 6,
+    "radical": "干",
+    "radName": "kan (kering)",
+    "arti": "tahun",
+    "on": "ネン",
+    "kun": "とし",
+    "vocab": [
+      {
+        "kanji": "今年",
+        "kana": "ことし",
+        "rom": "kotoshi",
+        "arti": "tahun ini",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "年",
+        "kana": "ねん",
+        "rom": "nen",
+        "arti": "tahun",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "来年",
+        "kana": "らいねん",
+        "rom": "rainen",
+        "arti": "tahun depan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "kan (kering)",
+    "strokeRadikal": 3,
+    "grupId": "sifat_keadaan",
+    "grupOrder": 10,
+    "radOrder": 5
+  },
+  {
+    "kanji": "文",
+    "stroke": 4,
+    "radical": "文",
+    "radName": "bun (tulisan)",
+    "arti": "kalimat / teks",
+    "on": "ブン・モン",
+    "kun": "ふみ",
+    "vocab": [
+      {
+        "kanji": "注文",
+        "kana": "ちゅうもん",
+        "rom": "chuumon",
+        "arti": "memesan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ぶん (tulisan)",
+    "strokeRadikal": 4,
+    "grupId": "sifat_keadaan",
+    "grupOrder": 10,
+    "radOrder": 12
+  },
+  {
+    "kanji": "社",
+    "stroke": 7,
+    "radical": "示",
+    "radName": "shimesu (altar)",
+    "arti": "perusahaan / kuil",
+    "on": "シャ",
+    "kun": "やしろ",
+    "vocab": [
+      {
+        "kanji": "会社",
+        "kana": "かいしゃ",
+        "rom": "kaisha",
+        "arti": "perusahaan / kantor",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "しめすへん (shimesuhen - ritual/dewa)",
+    "strokeRadikal": 5,
+    "grupId": "sifat_keadaan",
+    "grupOrder": 10,
+    "radOrder": 16
+  },
+  {
+    "kanji": "白",
+    "stroke": 5,
+    "radical": "白",
+    "radName": "shiro (putih)",
+    "arti": "putih",
+    "on": "ハク",
+    "kun": "しろ・い",
+    "vocab": [
+      {
+        "kanji": "面白い",
+        "kana": "おもしろい",
+        "rom": "omoshiroi",
+        "arti": "menarik",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "しろ (putih)",
+    "strokeRadikal": 5,
+    "grupId": "sifat_keadaan",
+    "grupOrder": 10,
+    "radOrder": 3
+  },
+  {
+    "kanji": "見",
+    "stroke": 7,
+    "radical": "見",
+    "radName": "miru (melihat)",
+    "arti": "melihat",
+    "on": "ケン",
+    "kun": "み・る",
+    "vocab": [
+      {
+        "kanji": "見えます",
+        "kana": "みえます",
+        "rom": "miemasu",
+        "arti": "terlihat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "見ます",
+        "kana": "みます",
+        "rom": "mimasu",
+        "arti": "menonton",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "見ません",
+        "kana": "みません",
+        "rom": "mimasen",
+        "arti": "tidak menonton",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "見る",
+        "kana": "みる",
+        "rom": "miru",
+        "arti": "melihat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "みる (melihat)",
+    "strokeRadikal": 7,
+    "grupId": "sifat_keadaan",
+    "grupOrder": 10,
+    "radOrder": 0
+  },
+  {
+    "kanji": "計",
+    "stroke": 9,
+    "radical": "言",
+    "radName": "gonben (ucapan)",
+    "arti": "mengukur / rencana",
+    "on": "ケイ",
+    "kun": "はか・る",
+    "vocab": [
+      {
+        "kanji": "計画",
+        "kana": "けいかく",
+        "rom": "keikaku",
+        "arti": "rencana",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ごんべん (gonben - ucapan/bahasa)",
+    "strokeRadikal": 7,
+    "grupId": "sifat_keadaan",
+    "grupOrder": 10,
+    "radOrder": 13
+  },
+  {
+    "kanji": "話",
+    "stroke": 13,
+    "radical": "言",
+    "radName": "gonben (ucapan)",
+    "arti": "berbicara / cerita",
+    "on": "ワ",
+    "kun": "はな・す / はなし",
+    "vocab": [
+      {
+        "kanji": "電話します",
+        "kana": "でんわします",
+        "rom": "denwa shimasu",
+        "arti": "menelepon",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "話しする",
+        "kana": "はなしする",
+        "rom": "hanashi suru",
+        "arti": "bicara",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "話します",
+        "kana": "はなします",
+        "rom": "hanashimasu",
+        "arti": "berbicara",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      },
+      {
+        "kanji": "話す",
+        "kana": "はなす",
+        "rom": "hanasu",
+        "arti": "bicara",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "話せる",
+        "kana": "はなせる",
+        "rom": "hanaseru",
+        "arti": "bisa bicara",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ごんべん (gonben - ucapan/bahasa)",
+    "strokeRadikal": 7,
+    "grupId": "sifat_keadaan",
+    "grupOrder": 10,
+    "radOrder": 13
+  },
+  {
+    "kanji": "読",
+    "stroke": 14,
+    "radical": "言",
+    "radName": "gonben (ucapan)",
+    "arti": "membaca",
+    "on": "ドク",
+    "kun": "よ・む",
+    "vocab": [
+      {
+        "kanji": "読みます",
+        "kana": "よみます",
+        "rom": "yomimasu",
+        "arti": "membaca",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ごんべん (gonben - ucapan/bahasa)",
+    "strokeRadikal": 7,
+    "grupId": "sifat_keadaan",
+    "grupOrder": 10,
+    "radOrder": 13
+  },
+  {
+    "kanji": "高",
+    "stroke": 10,
+    "radical": "高",
+    "radName": "takai (tinggi)",
+    "arti": "tinggi / mahal",
+    "on": "コウ",
+    "kun": "たか・い",
+    "vocab": [
+      {
+        "kanji": "高い",
+        "kana": "たかい",
+        "rom": "takai",
+        "arti": "tinggi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "たかい (tinggi)",
+    "strokeRadikal": 10,
+    "grupId": "sifat_keadaan",
+    "grupOrder": 10,
+    "radOrder": 2
+  },
+  {
+    "kanji": "兄",
+    "stroke": 5,
+    "radical": "儿",
+    "radName": "hitoashi",
+    "arti": "kakak laki-laki",
+    "on": "ケイ・キョウ",
+    "kun": "あに",
+    "vocab": [
+      {
+        "kanji": "兄",
+        "kana": "あに",
+        "rom": "ani",
+        "arti": "kakak laki-laki",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "ひとあし (kaki manusia)",
+    "strokeRadikal": 2,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "先",
+    "stroke": 5,
+    "radical": "儿",
+    "radName": "hitoashi (kaki manusia)",
+    "arti": "terdahulu / depan",
+    "on": "セン",
+    "kun": "さき",
+    "vocab": [
+      {
+        "kanji": "先生",
+        "kana": "せんせい",
+        "rom": "sensei",
+        "arti": "guru / pengajar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "ひとあし (kaki manusia)",
+    "strokeRadikal": 2,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "頭",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kepala",
+    "on": "-",
+    "kun": "あたまがいたいんです",
+    "vocab": [
+      {
+        "kanji": "頭が痛いんです",
+        "kana": "あたまがいたいんです",
+        "rom": "atama",
+        "arti": "kepala",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "痛",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kepala",
+    "on": "-",
+    "kun": "あたまがいたいんです",
+    "vocab": [
+      {
+        "kanji": "頭が痛いんです",
+        "kana": "あたまがいたいんです",
+        "rom": "atama",
+        "arti": "kepala",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "お腹が痛いんです",
+        "kana": "おなかがいたいんです",
+        "rom": "onaka",
+        "arti": "perut",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "体が痛いんです",
+        "kana": "からだがいたいんです",
+        "rom": "karada",
+        "arti": "badan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "集",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "berkumpul",
+    "on": "-",
+    "kun": "あつまります",
+    "vocab": [
+      {
+        "kanji": "集まります",
+        "kana": "あつまります",
+        "rom": "atsumarimasu",
+        "arti": "berkumpul",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "甘",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "manis",
+    "on": "-",
+    "kun": "あまい",
+    "vocab": [
+      {
+        "kanji": "甘い",
+        "kana": "あまい",
+        "rom": "amai",
+        "arti": "manis",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "案",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "memandu",
+    "on": "-",
+    "kun": "あんないします",
+    "vocab": [
+      {
+        "kanji": "案内します",
+        "kana": "あんないします",
+        "rom": "annai shimasu",
+        "arti": "memandu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "医",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "dokter",
+    "on": "-",
+    "kun": "いしゃ",
+    "vocab": [
+      {
+        "kanji": "医者",
+        "kana": "いしゃ",
+        "rom": "isha",
+        "arti": "dokter",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "者",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "dokter",
+    "on": "-",
+    "kun": "いしゃ",
+    "vocab": [
+      {
+        "kanji": "医者",
+        "kana": "いしゃ",
+        "rom": "isha",
+        "arti": "dokter",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "忙",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "sibuk",
+    "on": "-",
+    "kun": "いそがしい",
+    "vocab": [
+      {
+        "kanji": "忙しい",
+        "kana": "いそがしい",
+        "rom": "isogashii",
+        "arti": "sibuk",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "忙しかったです",
+        "kana": "いそがしかったです",
+        "rom": "isogashikatta desu",
+        "arti": "sibuk (lampau)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "場",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pasar",
+    "on": "-",
+    "kun": "いちば",
+    "vocab": [
+      {
+        "kanji": "市場",
+        "kana": "いちば",
+        "rom": "ichiba",
+        "arti": "pasar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "場所",
+        "kana": "ばしょ",
+        "rom": "basho",
+        "arti": "tempat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "受",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "resepsionis / meja informasi",
+    "on": "-",
+    "kun": "うけつけ",
+    "vocab": [
+      {
+        "kanji": "受付",
+        "kana": "うけつけ",
+        "rom": "uketsuke",
+        "arti": "resepsionis / meja informasi",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "付",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "resepsionis / meja informasi",
+    "on": "-",
+    "kun": "うけつけ",
+    "vocab": [
+      {
+        "kanji": "受付",
+        "kana": "うけつけ",
+        "rom": "uketsuke",
+        "arti": "resepsionis / meja informasi",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "歌",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "lagu",
+    "on": "-",
+    "kun": "うた",
+    "vocab": [
+      {
+        "kanji": "歌",
+        "kana": "うた",
+        "rom": "uta",
+        "arti": "lagu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "歌います",
+        "kana": "うたいます",
+        "rom": "utaimasu",
+        "arti": "bernyanyi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "嬉",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "gembira",
+    "on": "-",
+    "kun": "うれしい",
+    "vocab": [
+      {
+        "kanji": "嬉しい",
+        "kana": "うれしい",
+        "rom": "ureshii",
+        "arti": "gembira",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "嬉しかったです",
+        "kana": "うれしかったです",
+        "rom": "ureshikatta desu",
+        "arti": "senang (lampau)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "運",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "mengemudi",
+    "on": "-",
+    "kun": "うんてんします",
+    "vocab": [
+      {
+        "kanji": "運転します",
+        "kana": "うんてんします",
+        "rom": "unten shimasu",
+        "arti": "mengemudi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "運動",
+        "kana": "うんどう",
+        "rom": "undou",
+        "arti": "olahraga",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "映",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "film",
+    "on": "-",
+    "kun": "えいが",
+    "vocab": [
+      {
+        "kanji": "映画",
+        "kana": "えいが",
+        "rom": "eiga",
+        "arti": "film",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "画",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "film",
+    "on": "-",
+    "kun": "えいが",
+    "vocab": [
+      {
+        "kanji": "映画",
+        "kana": "えいが",
+        "rom": "eiga",
+        "arti": "film",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "計画",
+        "kana": "けいかく",
+        "rom": "keikaku",
+        "arti": "rencana",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "漫画",
+        "kana": "まんが",
+        "rom": "manga",
+        "arti": "komik",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "演",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "memerankan",
+    "on": "-",
+    "kun": "えんじる",
+    "vocab": [
+      {
+        "kanji": "演じる",
+        "kana": "えんじる",
+        "rom": "enjiru",
+        "arti": "memerankan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "夫",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "suami",
+    "on": "-",
+    "kun": "おっと",
+    "vocab": [
+      {
+        "kanji": "夫",
+        "kana": "おっと",
+        "rom": "otto",
+        "arti": "suami",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "落",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "menjatuhkan",
+    "on": "-",
+    "kun": "おとします",
+    "vocab": [
+      {
+        "kanji": "落とします",
+        "kana": "おとします",
+        "rom": "otoshimasu",
+        "arti": "menjatuhkan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "脅",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "mengancam",
+    "on": "-",
+    "kun": "おどします",
+    "vocab": [
+      {
+        "kanji": "脅します",
+        "kana": "おどします",
+        "rom": "odoshimasu",
+        "arti": "mengancam",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "腹",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "perut",
+    "on": "-",
+    "kun": "おなかがいたいんです",
+    "vocab": [
+      {
+        "kanji": "お腹が痛いんです",
+        "kana": "おなかがいたいんです",
+        "rom": "onaka",
+        "arti": "perut",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "面",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "menarik",
+    "on": "-",
+    "kun": "おもしろい",
+    "vocab": [
+      {
+        "kanji": "面白い",
+        "kana": "おもしろい",
+        "rom": "omoshiroi",
+        "arti": "menarik",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "泳",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "tidak berenang",
+    "on": "-",
+    "kun": "およがない",
+    "vocab": [
+      {
+        "kanji": "泳がない",
+        "kana": "およがない",
+        "rom": "oyoganai",
+        "arti": "tidak berenang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "泳ぎます",
+        "kana": "およぎます",
+        "rom": "oyogimasu",
+        "arti": "berenang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "降",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "turun (kendaraan)",
+    "on": "-",
+    "kun": "おります",
+    "vocab": [
+      {
+        "kanji": "降ります",
+        "kana": "おります",
+        "rom": "orimasu",
+        "arti": "turun (kendaraan)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "終",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "selesai",
+    "on": "-",
+    "kun": "おわります",
+    "vocab": [
+      {
+        "kanji": "終わります",
+        "kana": "おわります",
+        "rom": "owarimasu",
+        "arti": "selesai",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "岸",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pantai laut",
+    "on": "-",
+    "kun": "かいがん",
+    "vocab": [
+      {
+        "kanji": "海岸",
+        "kana": "かいがん",
+        "rom": "kaigan",
+        "arti": "pantai laut",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "快",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "cerah tanpa awan",
+    "on": "-",
+    "kun": "かいせい",
+    "vocab": [
+      {
+        "kanji": "快晴",
+        "kana": "かいせい",
+        "rom": "kaisei",
+        "arti": "cerah tanpa awan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "晴",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "cerah tanpa awan",
+    "on": "-",
+    "kun": "かいせい",
+    "vocab": [
+      {
+        "kanji": "快晴",
+        "kana": "かいせい",
+        "rom": "kaisei",
+        "arti": "cerah tanpa awan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "晴れ",
+        "kana": "はれ",
+        "rom": "hare",
+        "arti": "cerah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "掛",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "memakan waktu/biaya",
+    "on": "-",
+    "kun": "かかります",
+    "vocab": [
+      {
+        "kanji": "掛かります",
+        "kana": "かかります",
+        "rom": "kakarimasu",
+        "arti": "memakan waktu/biaya",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "柿",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "buah kesemek",
+    "on": "-",
+    "kun": "かき",
+    "vocab": [
+      {
+        "kanji": "柿",
+        "kana": "かき",
+        "rom": "kaki",
+        "arti": "buah kesemek",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "鍵",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kunci",
+    "on": "-",
+    "kun": "かぎ",
+    "vocab": [
+      {
+        "kanji": "鍵",
+        "kana": "かぎ",
+        "rom": "kagi",
+        "arti": "kunci",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "邪",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pilek/flu",
+    "on": "-",
+    "kun": "かぜ",
+    "vocab": [
+      {
+        "kanji": "風邪",
+        "kana": "かぜ",
+        "rom": "kaze",
+        "arti": "pilek/flu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "族",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "keluarga",
+    "on": "-",
+    "kun": "かぞく",
+    "vocab": [
+      {
+        "kanji": "家族",
+        "kana": "かぞく",
+        "rom": "kazoku",
+        "arti": "keluarga",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "必",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pasti / selalu",
+    "on": "-",
+    "kun": "かならず",
+    "vocab": [
+      {
+        "kanji": "必ず",
+        "kana": "かならず",
+        "rom": "kanarazu",
+        "arti": "pasti / selalu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "必要",
+        "kana": "ひつよう",
+        "rom": "hitsuyou",
+        "arti": "perlu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "被",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "memakai topi",
+    "on": "-",
+    "kun": "かぶります",
+    "vocab": [
+      {
+        "kanji": "被ります",
+        "kana": "かぶります",
+        "rom": "kaburimasu",
+        "arti": "memakai topi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "雷",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "petir",
+    "on": "-",
+    "kun": "かみなり",
+    "vocab": [
+      {
+        "kanji": "雷",
+        "kana": "かみなり",
+        "rom": "kaminari",
+        "arti": "petir",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "噛",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "menggigit",
+    "on": "-",
+    "kun": "かむ",
+    "vocab": [
+      {
+        "kanji": "噛む",
+        "kana": "かむ",
+        "rom": "kamu",
+        "arti": "menggigit",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "軽",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "ringan",
+    "on": "-",
+    "kun": "かるい",
+    "vocab": [
+      {
+        "kanji": "軽い",
+        "kana": "かるい",
+        "rom": "karui",
+        "arti": "ringan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "軽くて",
+        "kana": "かるくて",
+        "rom": "karukute",
+        "arti": "ringan (bentuk te)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "彼",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pacar (laki-laki)",
+    "on": "-",
+    "kun": "かれし",
+    "vocab": [
+      {
+        "kanji": "彼氏",
+        "kana": "かれし",
+        "rom": "kareshi",
+        "arti": "pacar (laki-laki)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "氏",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pacar (laki-laki)",
+    "on": "-",
+    "kun": "かれし",
+    "vocab": [
+      {
+        "kanji": "彼氏",
+        "kana": "かれし",
+        "rom": "kareshi",
+        "arti": "pacar (laki-laki)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "簡",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "mudah",
+    "on": "-",
+    "kun": "かんたん",
+    "vocab": [
+      {
+        "kanji": "簡単",
+        "kana": "かんたん",
+        "rom": "kantan",
+        "arti": "mudah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "単",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "mudah",
+    "on": "-",
+    "kun": "かんたん",
+    "vocab": [
+      {
+        "kanji": "簡単",
+        "kana": "かんたん",
+        "rom": "kantan",
+        "arti": "mudah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "刻",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "mencincang",
+    "on": "-",
+    "kun": "きざみます",
+    "vocab": [
+      {
+        "kanji": "刻みます",
+        "kana": "きざみます",
+        "rom": "kizamimasu",
+        "arti": "mencincang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "季",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "musim",
+    "on": "-",
+    "kun": "きせつ",
+    "vocab": [
+      {
+        "kanji": "季節",
+        "kana": "きせつ",
+        "rom": "kisetsu",
+        "arti": "musim",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "節",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "musim",
+    "on": "-",
+    "kun": "きせつ",
+    "vocab": [
+      {
+        "kanji": "季節",
+        "kana": "きせつ",
+        "rom": "kisetsu",
+        "arti": "musim",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "汚",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kotor",
+    "on": "-",
+    "kun": "きたない",
+    "vocab": [
+      {
+        "kanji": "汚い",
+        "kana": "きたない",
+        "rom": "kitanai",
+        "arti": "kotor",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "汚れます",
+        "kana": "よごれます",
+        "rom": "yogoremasu",
+        "arti": "menjadi kotor",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "昨",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kemarin",
+    "on": "-",
+    "kun": "きのう",
+    "vocab": [
+      {
+        "kanji": "昨日",
+        "kana": "きのう",
+        "rom": "kinou",
+        "arti": "kemarin",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "乳",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "susu",
+    "on": "-",
+    "kun": "ぎゅうにゅう",
+    "vocab": [
+      {
+        "kanji": "牛乳",
+        "kana": "ぎゅうにゅう",
+        "rom": "gyuunyuu",
+        "arti": "susu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "綺",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "bersih",
+    "on": "-",
+    "kun": "きれい",
+    "vocab": [
+      {
+        "kanji": "綺麗",
+        "kana": "きれい",
+        "rom": "kirei",
+        "arti": "bersih",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "麗",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "bersih",
+    "on": "-",
+    "kun": "きれい",
+    "vocab": [
+      {
+        "kanji": "綺麗",
+        "kana": "きれい",
+        "rom": "kirei",
+        "arti": "bersih",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "禁",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "dilarang merokok",
+    "on": "-",
+    "kun": "きんえん",
+    "vocab": [
+      {
+        "kanji": "禁煙",
+        "kana": "きんえん",
+        "rom": "kin'en",
+        "arti": "dilarang merokok",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "煙",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "dilarang merokok",
+    "on": "-",
+    "kun": "きんえん",
+    "vocab": [
+      {
+        "kanji": "禁煙",
+        "kana": "きんえん",
+        "rom": "kin'en",
+        "arti": "dilarang merokok",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "曇",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "mendung",
+    "on": "-",
+    "kun": "くもり",
+    "vocab": [
+      {
+        "kanji": "曇",
+        "kana": "くもり",
+        "rom": "kumori",
+        "arti": "mendung",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "怪",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "luka",
+    "on": "-",
+    "kun": "けがをしています",
+    "vocab": [
+      {
+        "kanji": "怪我をしています",
+        "kana": "けがをしています",
+        "rom": "kega",
+        "arti": "luka",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "我",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "luka",
+    "on": "-",
+    "kun": "けがをしています",
+    "vocab": [
+      {
+        "kanji": "怪我をしています",
+        "kana": "けがをしています",
+        "rom": "kega",
+        "arti": "luka",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "結",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "menikah",
+    "on": "-",
+    "kun": "けっこん",
+    "vocab": [
+      {
+        "kanji": "結婚",
+        "kana": "けっこん",
+        "rom": "kekkon",
+        "arti": "menikah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "婚",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "menikah",
+    "on": "-",
+    "kun": "けっこん",
+    "vocab": [
+      {
+        "kanji": "結婚",
+        "kana": "けっこん",
+        "rom": "kekkon",
+        "arti": "menikah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "園",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "taman",
+    "on": "-",
+    "kun": "こうえん",
+    "vocab": [
+      {
+        "kanji": "公園",
+        "kana": "こうえん",
+        "rom": "kouen",
+        "arti": "taman",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "動物園",
+        "kana": "どうぶつえん",
+        "rom": "doubutsuen",
+        "arti": "kebun binatang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "洪",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "banjir",
+    "on": "-",
+    "kun": "こうずい",
+    "vocab": [
+      {
+        "kanji": "洪水",
+        "kana": "こうずい",
+        "rom": "kouzui",
+        "arti": "banjir",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "交",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pos polisi",
+    "on": "-",
+    "kun": "こうばん",
+    "vocab": [
+      {
+        "kanji": "交番",
+        "kana": "こうばん",
+        "rom": "kouban",
+        "arti": "pos polisi",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "番",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pos polisi",
+    "on": "-",
+    "kun": "こうばん",
+    "vocab": [
+      {
+        "kanji": "交番",
+        "kana": "こうばん",
+        "rom": "kouban",
+        "arti": "pos polisi",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "午",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "sore (p.m.)",
+    "on": "-",
+    "kun": "ごご",
+    "vocab": [
+      {
+        "kanji": "午後",
+        "kana": "ごご",
+        "rom": "gogo",
+        "arti": "sore (p.m.)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "午前",
+        "kana": "ごぜん",
+        "rom": "gozen",
+        "arti": "pagi (a.m.)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "供",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "anak-anak",
+    "on": "-",
+    "kun": "こども",
+    "vocab": [
+      {
+        "kanji": "子供",
+        "kana": "こども",
+        "rom": "kodomo",
+        "arti": "anak-anak",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "箱",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "tempat sampah",
+    "on": "-",
+    "kun": "ごみばこ",
+    "vocab": [
+      {
+        "kanji": "ゴミ箱",
+        "kana": "ごみばこ",
+        "rom": "gomibako",
+        "arti": "tempat sampah",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "咲",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "mekar/berbunga",
+    "on": "-",
+    "kun": "さきます",
+    "vocab": [
+      {
+        "kanji": "咲きます",
+        "kana": "さきます",
+        "rom": "sakimasu",
+        "arti": "mekar/berbunga",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "挫",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "frustrasi / gagal",
+    "on": "-",
+    "kun": "ざせつ",
+    "vocab": [
+      {
+        "kanji": "挫折",
+        "kana": "ざせつ",
+        "rom": "zasetsu",
+        "arti": "frustrasi / gagal",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "折",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "frustrasi / gagal",
+    "on": "-",
+    "kun": "ざせつ",
+    "vocab": [
+      {
+        "kanji": "挫折",
+        "kana": "ざせつ",
+        "rom": "zasetsu",
+        "arti": "frustrasi / gagal",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "定",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "menetapkan",
+    "on": "-",
+    "kun": "さだめる",
+    "vocab": [
+      {
+        "kanji": "定める",
+        "kana": "さだめる",
+        "rom": "sadameru",
+        "arti": "menetapkan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "幸",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "bahagia",
+    "on": "-",
+    "kun": "しあわせ",
+    "vocab": [
+      {
+        "kanji": "幸せ",
+        "kana": "しあわせ",
+        "rom": "shiawase",
+        "arti": "bahagia",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "司",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "memandu acara (MC)",
+    "on": "-",
+    "kun": "しかいします",
+    "vocab": [
+      {
+        "kanji": "司会します",
+        "kana": "しかいします",
+        "rom": "shikai shimasu",
+        "arti": "memandu acara (MC)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "叱",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "memarahi",
+    "on": "-",
+    "kun": "しかります",
+    "vocab": [
+      {
+        "kanji": "叱ります",
+        "kana": "しかります",
+        "rom": "shikarimasu",
+        "arti": "memarahi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "試",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "ujian / tes",
+    "on": "-",
+    "kun": "しけん",
+    "vocab": [
+      {
+        "kanji": "試験",
+        "kana": "しけん",
+        "rom": "shiken",
+        "arti": "ujian / tes",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "試す",
+        "kana": "ためす",
+        "rom": "tamesu",
+        "arti": "mencoba",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "験",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "ujian / tes",
+    "on": "-",
+    "kun": "しけん",
+    "vocab": [
+      {
+        "kanji": "試験",
+        "kana": "しけん",
+        "rom": "shiken",
+        "arti": "ujian / tes",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "仕",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pekerjaan",
+    "on": "-",
+    "kun": "しごと",
+    "vocab": [
+      {
+        "kanji": "仕事",
+        "kana": "しごと",
+        "rom": "shigoto",
+        "arti": "pekerjaan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "事",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pekerjaan",
+    "on": "-",
+    "kun": "しごと",
+    "vocab": [
+      {
+        "kanji": "仕事",
+        "kana": "しごと",
+        "rom": "shigoto",
+        "arti": "pekerjaan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "食事",
+        "kana": "しょくじ",
+        "rom": "shokuji",
+        "arti": "makan bersama",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "震",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "gempa",
+    "on": "-",
+    "kun": "じしん",
+    "vocab": [
+      {
+        "kanji": "地震",
+        "kana": "じしん",
+        "rom": "jishin",
+        "arti": "gempa",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "静",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "sepi",
+    "on": "-",
+    "kun": "しずかな",
+    "vocab": [
+      {
+        "kanji": "静かな",
+        "kana": "しずかな",
+        "rom": "shizuka na",
+        "arti": "sepi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "質",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pertanyaan",
+    "on": "-",
+    "kun": "しつもん",
+    "vocab": [
+      {
+        "kanji": "質問",
+        "kana": "しつもん",
+        "rom": "shitsumon",
+        "arti": "pertanyaan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "問",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pertanyaan",
+    "on": "-",
+    "kun": "しつもん",
+    "vocab": [
+      {
+        "kanji": "質問",
+        "kana": "しつもん",
+        "rom": "shitsumon",
+        "arti": "pertanyaan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "閉",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "tutup (bentuk te dari shimeru, untuk 〜てください)",
+    "on": "-",
+    "kun": "しめて",
+    "vocab": [
+      {
+        "kanji": "閉めて",
+        "kana": "しめて",
+        "rom": "shimete (kata dasar: shimeru)",
+        "arti": "tutup (bentuk te dari shimeru, untuk 〜てください)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "役",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kantor wali kota / balai kota",
+    "on": "-",
+    "kun": "しやくしょ",
+    "vocab": [
+      {
+        "kanji": "市役所",
+        "kana": "しやくしょ",
+        "rom": "shiyakusho",
+        "arti": "kantor wali kota / balai kota",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "写",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "foto",
+    "on": "-",
+    "kun": "しゃしん",
+    "vocab": [
+      {
+        "kanji": "写真",
+        "kana": "しゃしん",
+        "rom": "shashin",
+        "arti": "foto",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "真",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "foto",
+    "on": "-",
+    "kun": "しゃしん",
+    "vocab": [
+      {
+        "kanji": "写真",
+        "kana": "しゃしん",
+        "rom": "shashin",
+        "arti": "foto",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "修",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "reparasi",
+    "on": "-",
+    "kun": "しゅうりします",
+    "vocab": [
+      {
+        "kanji": "修理します",
+        "kana": "しゅうりします",
+        "rom": "shuuri shimasu",
+        "arti": "reparasi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "紹",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "memperkenalkan",
+    "on": "-",
+    "kun": "しょうかいします",
+    "vocab": [
+      {
+        "kanji": "紹介します",
+        "kana": "しょうかいします",
+        "rom": "shoukai shimasu",
+        "arti": "memperkenalkan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "介",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "memperkenalkan",
+    "on": "-",
+    "kun": "しょうかいします",
+    "vocab": [
+      {
+        "kanji": "紹介します",
+        "kana": "しょうかいします",
+        "rom": "shoukai shimasu",
+        "arti": "memperkenalkan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "堂",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kantin",
+    "on": "-",
+    "kun": "しょくどう",
+    "vocab": [
+      {
+        "kanji": "食堂",
+        "kana": "しょくどう",
+        "rom": "shokudou",
+        "arti": "kantin",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "塩",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "asin",
+    "on": "-",
+    "kun": "しょっぱい",
+    "vocab": [
+      {
+        "kanji": "塩っぱい",
+        "kana": "しょっぱい",
+        "rom": "shoppai",
+        "arti": "asin",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "素",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "tas bagus",
+    "on": "-",
+    "kun": "すてきなバッグ",
+    "vocab": [
+      {
+        "kanji": "素敵なバッグ",
+        "kana": "すてきなバッグ",
+        "rom": "suteki na baggu",
+        "arti": "tas bagus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "素敵な服",
+        "kana": "すてきなふく",
+        "rom": "suteki na fuku",
+        "arti": "pakaian bagus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "素敵な袋",
+        "kana": "すてきなふくろ",
+        "rom": "suteki na fukuro",
+        "arti": "kantong bagus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "敵",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "tas bagus",
+    "on": "-",
+    "kun": "すてきなバッグ",
+    "vocab": [
+      {
+        "kanji": "素敵なバッグ",
+        "kana": "すてきなバッグ",
+        "rom": "suteki na baggu",
+        "arti": "tas bagus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "素敵な服",
+        "kana": "すてきなふく",
+        "rom": "suteki na fuku",
+        "arti": "pakaian bagus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "素敵な袋",
+        "kana": "すてきなふくろ",
+        "rom": "suteki na fukuro",
+        "arti": "kantong bagus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "袋",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kantong bagus",
+    "on": "-",
+    "kun": "すてきなふくろ",
+    "vocab": [
+      {
+        "kanji": "素敵な袋",
+        "kana": "すてきなふくろ",
+        "rom": "suteki na fukuro",
+        "arti": "kantong bagus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "手袋",
+        "kana": "てぶくろ",
+        "rom": "tebukuro",
+        "arti": "sarung tangan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "捨",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "membuang",
+    "on": "-",
+    "kun": "すてます",
+    "vocab": [
+      {
+        "kanji": "捨てます",
+        "kana": "すてます",
+        "rom": "sutemasu",
+        "arti": "membuang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "座",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "duduk",
+    "on": "-",
+    "kun": "すわります",
+    "vocab": [
+      {
+        "kanji": "座ります",
+        "kana": "すわります",
+        "rom": "suwarimasu",
+        "arti": "duduk",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "台",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "topan",
+    "on": "-",
+    "kun": "たいふう",
+    "vocab": [
+      {
+        "kanji": "台風",
+        "kana": "たいふう",
+        "rom": "taifu",
+        "arti": "topan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "楽",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "senang",
+    "on": "-",
+    "kun": "たのしい",
+    "vocab": [
+      {
+        "kanji": "楽しい",
+        "kana": "たのしい",
+        "rom": "tanoshii",
+        "arti": "senang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "楽しかったです",
+        "kana": "たのしかったです",
+        "rom": "tanoshikatta desu",
+        "arti": "seru (lampau)",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "卵",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "telur",
+    "on": "-",
+    "kun": "たまご",
+    "vocab": [
+      {
+        "kanji": "卵",
+        "kana": "たまご",
+        "rom": "tamago",
+        "arti": "telur",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "意",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "perhatian / awas",
+    "on": "-",
+    "kun": "ちゅうい",
+    "vocab": [
+      {
+        "kanji": "注意",
+        "kana": "ちゅうい",
+        "rom": "chuui",
+        "arti": "perhatian / awas",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "妻",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "istri",
+    "on": "-",
+    "kun": "つま",
+    "vocab": [
+      {
+        "kanji": "妻",
+        "kana": "つま",
+        "rom": "tsuma",
+        "arti": "istri",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "別",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "khusus",
+    "on": "-",
+    "kun": "とくべつ",
+    "vocab": [
+      {
+        "kanji": "特別",
+        "kana": "とくべつ",
+        "rom": "tokubetsu",
+        "arti": "khusus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "処",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "di mana?",
+    "on": "-",
+    "kun": "どこですか",
+    "vocab": [
+      {
+        "kanji": "何処ですか",
+        "kana": "どこですか",
+        "rom": "doko desu ka",
+        "arti": "di mana?",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "図",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "perpustakaan",
+    "on": "-",
+    "kun": "としょかん",
+    "vocab": [
+      {
+        "kanji": "図書館",
+        "kana": "としょかん",
+        "rom": "toshokan",
+        "arti": "perpustakaan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "整",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "rapi tertata",
+    "on": "-",
+    "kun": "ととのった",
+    "vocab": [
+      {
+        "kanji": "整った",
+        "kana": "ととのった",
+        "rom": "totonotta",
+        "arti": "rapi tertata",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "達",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "teman",
+    "on": "-",
+    "kun": "ともだち",
+    "vocab": [
+      {
+        "kanji": "友達",
+        "kana": "ともだち",
+        "rom": "tomodachi",
+        "arti": "teman",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "取",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "mengambil",
+    "on": "-",
+    "kun": "とります",
+    "vocab": [
+      {
+        "kanji": "取ります",
+        "kana": "とります",
+        "rom": "torimasu",
+        "arti": "mengambil",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "寝",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "tidur",
+    "on": "-",
+    "kun": "ねます",
+    "vocab": [
+      {
+        "kanji": "寝ます",
+        "kana": "ねます",
+        "rom": "nemasu",
+        "arti": "tidur",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "眠",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "mengantuk",
+    "on": "-",
+    "kun": "ねむい",
+    "vocab": [
+      {
+        "kanji": "眠い",
+        "kana": "ねむい",
+        "rom": "nemui",
+        "arti": "mengantuk",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "払",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "membayar",
+    "on": "-",
+    "kun": "はらって",
+    "vocab": [
+      {
+        "kanji": "払って",
+        "kana": "はらって",
+        "rom": "haratte",
+        "arti": "membayar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "貼",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "menempel",
+    "on": "-",
+    "kun": "はります",
+    "vocab": [
+      {
+        "kanji": "貼ります",
+        "kana": "はります",
+        "rom": "harimasu",
+        "arti": "menempel",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "飛",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pesawat",
+    "on": "-",
+    "kun": "ひこうき",
+    "vocab": [
+      {
+        "kanji": "飛行機",
+        "kana": "ひこうき",
+        "rom": "hikouki",
+        "arti": "pesawat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "機",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pesawat",
+    "on": "-",
+    "kun": "ひこうき",
+    "vocab": [
+      {
+        "kanji": "飛行機",
+        "kana": "ひこうき",
+        "rom": "hikouki",
+        "arti": "pesawat",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "非",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pintu darurat",
+    "on": "-",
+    "kun": "ひじょうぐち",
+    "vocab": [
+      {
+        "kanji": "非常口",
+        "kana": "ひじょうぐち",
+        "rom": "hijouguchi",
+        "arti": "pintu darurat",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "常",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "pintu darurat",
+    "on": "-",
+    "kun": "ひじょうぐち",
+    "vocab": [
+      {
+        "kanji": "非常口",
+        "kana": "ひじょうぐち",
+        "rom": "hijouguchi",
+        "arti": "pintu darurat",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "要",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "perlu",
+    "on": "-",
+    "kun": "ひつよう",
+    "vocab": [
+      {
+        "kanji": "必要",
+        "kana": "ひつよう",
+        "rom": "hitsuyou",
+        "arti": "perlu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "秒",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "detik",
+    "on": "-",
+    "kun": "びょう",
+    "vocab": [
+      {
+        "kanji": "秒",
+        "kana": "びょう",
+        "rom": "byou",
+        "arti": "detik",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "拾",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "memungut",
+    "on": "-",
+    "kun": "ひろいます",
+    "vocab": [
+      {
+        "kanji": "拾います",
+        "kana": "ひろいます",
+        "rom": "hiroimasu",
+        "arti": "memungut",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "吹",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "bertiup",
+    "on": "-",
+    "kun": "ふきます",
+    "vocab": [
+      {
+        "kanji": "吹きます",
+        "kana": "ふきます",
+        "rom": "fukimasu",
+        "arti": "bertiup",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "複",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "rumit",
+    "on": "-",
+    "kun": "ふくざつ",
+    "vocab": [
+      {
+        "kanji": "複雑",
+        "kana": "ふくざつ",
+        "rom": "fukuzatsu",
+        "arti": "rumit",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "雑",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "rumit",
+    "on": "-",
+    "kun": "ふくざつ",
+    "vocab": [
+      {
+        "kanji": "複雑",
+        "kana": "ふくざつ",
+        "rom": "fukuzatsu",
+        "arti": "rumit",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "豚",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "babi",
+    "on": "-",
+    "kun": "ぶたにく",
+    "vocab": [
+      {
+        "kanji": "豚肉",
+        "kana": "ぶたにく",
+        "rom": "butaniku",
+        "arti": "babi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "部",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kamar / ruangan",
+    "on": "-",
+    "kun": "へや",
+    "vocab": [
+      {
+        "kanji": "部屋",
+        "kana": "へや",
+        "rom": "heya",
+        "arti": "kamar / ruangan",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "勉",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "belajar",
+    "on": "-",
+    "kun": "べんきょう",
+    "vocab": [
+      {
+        "kanji": "勉強",
+        "kana": "べんきょう",
+        "rom": "benkyou",
+        "arti": "belajar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "帽",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "topi",
+    "on": "-",
+    "kun": "ぼうし",
+    "vocab": [
+      {
+        "kanji": "帽子",
+        "kana": "ぼうし",
+        "rom": "boushi",
+        "arti": "topi",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "毎",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "setiap hari",
+    "on": "-",
+    "kun": "まいにち",
+    "vocab": [
+      {
+        "kanji": "毎日",
+        "kana": "まいにち",
+        "rom": "mainichi",
+        "arti": "setiap hari",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "曲",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "berbelok",
+    "on": "-",
+    "kun": "まがります",
+    "vocab": [
+      {
+        "kanji": "曲がります",
+        "kana": "まがります",
+        "rom": "magarimasu",
+        "arti": "berbelok",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "巻",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "menggulung",
+    "on": "-",
+    "kun": "まきます",
+    "vocab": [
+      {
+        "kanji": "巻きます",
+        "kana": "まきます",
+        "rom": "makimasu",
+        "arti": "menggulung",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "迷",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "tersesat/bimbang",
+    "on": "-",
+    "kun": "まよいます",
+    "vocab": [
+      {
+        "kanji": "迷います",
+        "kana": "まよいます",
+        "rom": "mayoimasu",
+        "arti": "tersesat/bimbang",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "漫",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "komik",
+    "on": "-",
+    "kun": "まんが",
+    "vocab": [
+      {
+        "kanji": "漫画",
+        "kana": "まんが",
+        "rom": "manga",
+        "arti": "komik",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "剥",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "mengupas",
+    "on": "-",
+    "kun": "むきます",
+    "vocab": [
+      {
+        "kanji": "剥きます",
+        "kana": "むきます",
+        "rom": "mukimasu",
+        "arti": "mengupas",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "難",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "sulit",
+    "on": "-",
+    "kun": "むずかしい",
+    "vocab": [
+      {
+        "kanji": "難しい",
+        "kana": "むずかしい",
+        "rom": "muzukashii",
+        "arti": "sulit",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "戻",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kembali",
+    "on": "-",
+    "kun": "もどります",
+    "vocab": [
+      {
+        "kanji": "戻ります",
+        "kana": "もどります",
+        "rom": "modorimasu",
+        "arti": "kembali",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "戻る",
+        "kana": "もどる",
+        "rom": "modoru",
+        "arti": "kembali",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "焼",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "membakar",
+    "on": "-",
+    "kun": "やきます",
+    "vocab": [
+      {
+        "kanji": "焼きます",
+        "kana": "やきます",
+        "rom": "yakimasu",
+        "arti": "membakar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "野",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "sayuran",
+    "on": "-",
+    "kun": "やさい",
+    "vocab": [
+      {
+        "kanji": "野菜",
+        "kana": "やさい",
+        "rom": "yasai",
+        "arti": "sayuran",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "菜",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "sayuran",
+    "on": "-",
+    "kun": "やさい",
+    "vocab": [
+      {
+        "kanji": "野菜",
+        "kana": "やさい",
+        "rom": "yasai",
+        "arti": "sayuran",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "郵",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kantor pos",
+    "on": "-",
+    "kun": "ゆうびんきょく",
+    "vocab": [
+      {
+        "kanji": "郵便局",
+        "kana": "ゆうびんきょく",
+        "rom": "yuubinkyoku",
+        "arti": "kantor pos",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "便",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kantor pos",
+    "on": "-",
+    "kun": "ゆうびんきょく",
+    "vocab": [
+      {
+        "kanji": "郵便局",
+        "kana": "ゆうびんきょく",
+        "rom": "yuubinkyoku",
+        "arti": "kantor pos",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "局",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "kantor pos",
+    "on": "-",
+    "kun": "ゆうびんきょく",
+    "vocab": [
+      {
+        "kanji": "郵便局",
+        "kana": "ゆうびんきょく",
+        "rom": "yuubinkyoku",
+        "arti": "kantor pos",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "有",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "terkenal",
+    "on": "-",
+    "kun": "ゆうめいな",
+    "vocab": [
+      {
+        "kanji": "有名な",
+        "kana": "ゆうめいな",
+        "rom": "yuumei na",
+        "arti": "terkenal",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "雪",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "salju",
+    "on": "-",
+    "kun": "ゆき",
+    "vocab": [
+      {
+        "kanji": "雪",
+        "kana": "ゆき",
+        "rom": "yuki",
+        "arti": "salju",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "茹",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "merebus",
+    "on": "-",
+    "kun": "ゆでます",
+    "vocab": [
+      {
+        "kanji": "茹でます",
+        "kana": "ゆでます",
+        "rom": "yudemasu",
+        "arti": "merebus",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "渡",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "menyerahkan",
+    "on": "-",
+    "kun": "わたして",
+    "vocab": [
+      {
+        "kanji": "渡して",
+        "kana": "わたして",
+        "rom": "watashite",
+        "arti": "menyerahkan",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "笑",
+    "stroke": 8,
+    "radical": "Lainnya",
+    "radName": "Umum",
+    "arti": "tertawa",
+    "on": "-",
+    "kun": "わらいます",
+    "vocab": [
+      {
+        "kanji": "笑います",
+        "kana": "わらいます",
+        "rom": "waraimasu",
+        "arti": "tertawa",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "Umum",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "左",
+    "stroke": 5,
+    "radical": "工",
+    "radName": "kou (kerja)",
+    "arti": "kiri",
+    "on": "サ",
+    "kun": "ひだり",
+    "vocab": [
+      {
+        "kanji": "左",
+        "kana": "ひだり",
+        "rom": "hidari",
+        "arti": "kiri",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "kou (kerja)",
+    "strokeRadikal": 3,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "母",
+    "stroke": 5,
+    "radical": "毋",
+    "radName": "nakare",
+    "arti": "ibu",
+    "on": "ボ",
+    "kun": "はは",
+    "vocab": [
+      {
+        "kanji": "お母さん",
+        "kana": "おかあさん",
+        "rom": "okaasan",
+        "arti": "ibu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "母",
+        "kana": "はは",
+        "rom": "haha",
+        "arti": "ibu",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "nakare",
+    "strokeRadikal": 4,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "生",
+    "stroke": 5,
+    "radical": "生",
+    "radName": "sei (lahir)",
+    "arti": "hidup / lahir",
+    "on": "セイ・ショウ",
+    "kun": "い・きる / う・まれる",
+    "vocab": [
+      {
+        "kanji": "学生",
+        "kana": "がくせい",
+        "rom": "gakusei",
+        "arti": "siswa / pelajar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      },
+      {
+        "kanji": "先生",
+        "kana": "せんせい",
+        "rom": "sensei",
+        "arti": "guru / pengajar",
+        "keterangan": "Soal Kuis LOLOSYUK"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "せい (lahir/hidup)",
+    "strokeRadikal": 5,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "病",
+    "stroke": 10,
+    "radical": "疒",
+    "radName": "yamaidare (penyakit)",
+    "arti": "sakit / penyakit",
+    "on": "ビョウ",
+    "kun": "や・む",
+    "vocab": [
+      {
+        "kanji": "病院",
+        "kana": "びょういん",
+        "rom": "byouin",
+        "arti": "rumah sakit",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "やまいだれ (penyakit/sakit)",
+    "strokeRadikal": 5,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "西",
+    "stroke": 6,
+    "radical": "襾",
+    "radName": "nishi (barat)",
+    "arti": "barat",
+    "on": "セイ・サイ",
+    "kun": "にし",
+    "vocab": [
+      {
+        "kanji": "西",
+        "kana": "にし",
+        "rom": "nishi",
+        "arti": "barat",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "nishi (barat)",
+    "strokeRadikal": 6,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  },
+  {
+    "kanji": "院",
+    "stroke": 10,
+    "radical": "阜",
+    "radName": "kozatohen (bukit)",
+    "arti": "institusi / gedung",
+    "on": "イン",
+    "kun": "-",
+    "vocab": [
+      {
+        "kanji": "病院",
+        "kana": "びょういん",
+        "rom": "byouin",
+        "arti": "rumah sakit",
+        "keterangan": "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)"
+      }
+    ],
+    "grupRadikal": "🌐 Radikal Lainnya",
+    "namaRadikal": "こざとへん (kozatohen - bukit/tinggi)",
+    "strokeRadikal": 8,
+    "grupId": "lainnya",
+    "grupOrder": 99,
+    "radOrder": 99
+  }
+]

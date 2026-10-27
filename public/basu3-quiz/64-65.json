@@ -1,0 +1,108 @@
+[
+  {
+    "no": 64,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Berdasarkan gambar menu restoran di atas, jam berapakah restoran mulai buka setiap harinya?",
+    "img": "images/dokkai_64.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "朝の8時から",
+        "img": ""
+      },
+      {
+        "text": "朝の9時から",
+        "img": ""
+      },
+      {
+        "text": "朝の10時から",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Berdasarkan poster informasi restoran pada gambar, restoran buka mulai pukul 8 pagi.",
+    "trans_rom": "Resutoran wa asa no hachi-ji kara desu.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 4 - Jam & Waktu Operasional] Berdasarkan teks pengumuman pada gambar banner restoran ('レストランは朝の8時から夕方の9時まで営業しています'), restoran mulai beroperasi dari pukul 8 pagi.",
+    "opt_detail": [
+      {
+        "kana": "あさのはちじから",
+        "rom": "asa no hachi-ji kara",
+        "arti": "mulai jam 8 pagi",
+        "alasan": "Tepat sesuai dengan keterangan teks 'レストランは朝の8時から'."
+      },
+      {
+        "kana": "あさのくじから",
+        "rom": "asa no ku-ji kara",
+        "arti": "mulai jam 9 pagi",
+        "alasan": "Keliru."
+      },
+      {
+        "kana": "あさのじゅうじから",
+        "rom": "asa no juu-ji kara",
+        "arti": "mulai jam 10 pagi",
+        "alasan": "Keliru."
+      }
+    ],
+    "opt_note": [
+      "朝の8時から (mulai jam 8 pagi)",
+      "朝の9時から (mulai jam 9 pagi)",
+      "朝の10時から (mulai jam 10 pagi)"
+    ],
+    "kunci_id": "朝の8時から"
+  },
+  {
+    "no": 65,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Berdasarkan informasi pada gambar di atas, kapan kupon diskon dapat digunakan?",
+    "img": "images/dokkai_65.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "注文時にク―ポンをていじしてください",
+        "img": ""
+      },
+      {
+        "text": "お店に入るときに見せる",
+        "img": ""
+      },
+      {
+        "text": "会計のときに渡す",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Berdasarkan teks kupon pada gambar, kupon ditunjukkan saat memesan makanan.",
+    "trans_rom": "Chuumon-ji ni kuupon o teiji shite kudasai.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 14/32 - Instruksi & Prosedur] Berdasarkan keterangan pada gambar kupon ('ご注文時にクーポンをごていじしてください'), kupon harus ditunjukkan pada saat melakukan pemesanan (注文時).",
+    "opt_detail": [
+      {
+        "kana": "ちゅうもんときにていじする",
+        "rom": "chuumon-ji ni teiji suru",
+        "arti": "tunjukkan kupon saat memesan",
+        "alasan": "Tepat sesuai dengan instruksi teks pada bagian kupon di gambar."
+      },
+      {
+        "kana": "みせにはいるとき",
+        "rom": "mise ni hairu toki",
+        "arti": "menunjukkan saat masuk toko",
+        "alasan": "Keliru."
+      },
+      {
+        "kana": "かいけいのとき",
+        "rom": "kaikei no toki",
+        "arti": "menyerahkan saat pembayaran",
+        "alasan": "Keliru, instruksi mewajibkan saat pemesanan."
+      }
+    ],
+    "opt_note": [
+      "注文時にク―ポンをていじしてください (tunjukkan saat memesan)",
+      "お店に入るときに見せる (lihat saat masuk)",
+      "会計のときに渡す (serahkan saat bayar)"
+    ],
+    "kunci_id": "注文時にク―ポンをていじしてください"
+  }
+]

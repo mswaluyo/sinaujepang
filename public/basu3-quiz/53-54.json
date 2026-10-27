@@ -1,0 +1,108 @@
+[
+  {
+    "no": 53,
+    "section": "SESI 4 : DOKKAI",
+    "title": "チェタンさんはどこでプレゼントを買いましたか。",
+    "img": "images/dokkai_53.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "スーパー",
+        "img": ""
+      },
+      {
+        "text": "デパート",
+        "img": ""
+      },
+      {
+        "text": "カフェ",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "4/4",
+    "trans": "Di manakah Chetan-san membeli hadiah? Chetan-san membeli di department store (depato).",
+    "trans_rom": "Chetan-san wa doko de purezento o kaimashita ka. Depato de kaimashita.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 11/12 - Pemahaman Bacaan & Tempat Membeli] Berdasarkan teks bacaan pada gambar yang menunjukkan percintaan/persiapan pesta ulang tahun, Chetan pergi ke department store kota untuk membeli hadiah tas bagi Aki-san.",
+    "opt_detail": [
+      {
+        "kana": "すーぱー",
+        "rom": "suupaa",
+        "arti": "supermarket",
+        "alasan": "Bukan tempat yang dituju dalam cerita teks."
+      },
+      {
+        "kana": "でぱーと",
+        "rom": "depato",
+        "arti": "department store",
+        "alasan": "Tepat sesuai dengan kalimat dalam teks 'だから、チェタンさんはまちのデパートへいきました'."
+      },
+      {
+        "kana": "かふぇ",
+        "rom": "kafe",
+        "arti": "kafe",
+        "alasan": "Tidak sesuai dengan isi teks bacaan."
+      }
+    ],
+    "opt_note": [
+      "スーパー (supermarket)",
+      "デパート (department store)",
+      "カフェ (kafe)"
+    ],
+    "kunci_id": "デパート"
+  },
+  {
+    "no": 54,
+    "section": "SESI 4 : DOKKAI",
+    "title": "チェタンさんはアキさんに何をあげたいですか。",
+    "img": "images/dokkai_54.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "バッグ",
+        "img": ""
+      },
+      {
+        "text": "ほん",
+        "img": ""
+      },
+      {
+        "text": "とけい",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "4/4",
+    "trans": "Apa yang ingin Chetan-san berikan kepada Aki-san? Tas (baggu).",
+    "trans_rom": "Chetan-san wa Aki-san ni nani o agetai desu ka. Baggu o agetai desu.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 24 - Menyatakan Keinginan Memberi Benda ~tai desu] Berdasarkan teks bacaan pada gambar, Aki menyukai tas sehingga Chetan ingin memberikan hadiah berupa tas.",
+    "opt_detail": [
+      {
+        "kana": "ばっぐ",
+        "rom": "baggu",
+        "arti": "tas",
+        "alasan": "Tepat sesuai dengan kalimat 'アキさんはかばんがすきです。だから、チェタンさんは...バッグを買いました'."
+      },
+      {
+        "kana": "ほん",
+        "rom": "hon",
+        "arti": "buku",
+        "alasan": "Tidak disebutkan dalam teks."
+      },
+      {
+        "kana": "とけい",
+        "rom": "tokei",
+        "arti": "jam tangan",
+        "alasan": "Tidak sesuai dengan isi teks bacaan."
+      }
+    ],
+    "opt_note": [
+      "バッグ (tas)",
+      "ほん (buku)",
+      "とけい (jam tangan)"
+    ],
+    "kunci_id": "バッグ"
+  }
+]

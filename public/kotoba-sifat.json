@@ -1,0 +1,828 @@
+[
+ {
+  "kanji": "あおい",
+  "kana": "あおい",
+  "rom": "aoi",
+  "arti": "biru",
+  "paket": [
+   "aoi",
+   "kutsushita"
+  ]
+ },
+ {
+  "kanji": "あかい",
+  "kana": "あかい",
+  "rom": "akai",
+  "arti": "merah",
+  "paket": [
+   "aoi",
+   "kagi",
+   "tamago"
+  ]
+ },
+ {
+  "kanji": "あたたかい",
+  "kana": "あたたかい",
+  "rom": "atatakai",
+  "arti": "hangat",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
+  "kanji": "あまくない",
+  "kana": "あまくない",
+  "rom": "amakunai",
+  "arti": "tidak manis",
+  "paket": [
+   "magarimasu"
+  ]
+ },
+ {
+  "kanji": "あんない",
+  "kana": "あんない",
+  "rom": "annai",
+  "arti": "memandu / petunjuk",
+  "paket": [
+   "kagi"
+  ]
+ },
+ {
+  "kanji": "いそがしい",
+  "kana": "いそがしい",
+  "rom": "isogashii",
+  "arti": "sibuk",
+  "paket": [
+   "gakusei",
+   "orimasu"
+  ]
+ },
+ {
+  "kanji": "いってらっしゃい",
+  "kana": "いってらっしゃい",
+  "rom": "itte rasshai",
+  "arti": "selamat jalan",
+  "paket": [
+   "aoi",
+   "hare"
+  ]
+ },
+ {
+  "kanji": "うれしい",
+  "kana": "うれしい",
+  "rom": "ureshii",
+  "arti": "gembira",
+  "paket": [
+   "gakusei"
+  ]
+ },
+ {
+  "kanji": "おいしい",
+  "kana": "おいしい",
+  "rom": "oishii",
+  "arti": "enak / lezat",
+  "paket": [
+   "kutsushita"
+  ]
+ },
+ {
+  "kanji": "おいわい",
+  "kana": "おいわい",
+  "rom": "oiwai",
+  "arti": "hadiah perayaan",
+  "paket": [
+   "kutsushita"
+  ]
+ },
+ {
+  "kanji": "おおきい",
+  "kana": "おおきい",
+  "rom": "ookii",
+  "arti": "besar",
+  "paket": [
+   "tomemasu"
+  ]
+ },
+ {
+  "kanji": "おなかがいっぱい",
+  "kana": "おなかがいっぱい",
+  "rom": "onaka ga ippai",
+  "arti": "kenyang",
+  "paket": [
+   "aoi"
+  ]
+ },
+ {
+  "kanji": "おもい",
+  "kana": "おもい",
+  "rom": "omoi",
+  "arti": "berat",
+  "paket": [
+   "aoi",
+   "hare",
+   "shatsu",
+   "tamago"
+  ]
+ },
+ {
+  "kanji": "快晴",
+  "kana": "かいせい",
+  "rom": "kaisei",
+  "arti": "cerah tanpa awan",
+  "paket": [
+   "hare"
+  ]
+ },
+ {
+  "kanji": "買って行けばいい",
+  "kana": "かっていけばいい",
+  "rom": "katte ikeba ii",
+  "arti": "sebaiknya membeli lalu pergi",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
+  "kanji": "からい",
+  "kana": "からい",
+  "rom": "karai",
+  "arti": "pedas",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
+  "kanji": "借りたほうがいい",
+  "kana": "かりたほうがいい",
+  "rom": "karita hou ga ii",
+  "arti": "sebaiknya meminjam",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
+  "kanji": "借りてもいい",
+  "kana": "かりてもいい",
+  "rom": "karitemo ii",
+  "arti": "bolehkah meminjam",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
+  "kanji": "かるい",
+  "kana": "かるい",
+  "rom": "karui",
+  "arti": "ringan",
+  "paket": [
+   "aoi",
+   "basu",
+   "hare"
+  ]
+ },
+ {
+  "kanji": "汚い",
+  "kana": "きたない",
+  "rom": "kitanai",
+  "arti": "kotor",
+  "paket": [
+   "konpyuutaa",
+   "tomemasu",
+   "haburashi"
+  ]
+ },
+ {
+  "kanji": "来たほうがいい",
+  "kana": "きたほうがいい",
+  "rom": "kita hou ga ii",
+  "arti": "sebaiknya datang",
+  "paket": [
+   "haburashi"
+  ]
+ },
+ {
+  "kanji": "着て行けばいい",
+  "kana": "きていけばいい",
+  "rom": "kite ikeba ii",
+  "arti": "sebaiknya mengenakan lalu pergi",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
+  "kanji": "休憩",
+  "kana": "きゅうけい",
+  "rom": "kyuukei",
+  "arti": "istirahat",
+  "paket": [
+   "haburashi"
+  ]
+ },
+ {
+  "kanji": "きれい",
+  "kana": "きれい",
+  "rom": "kirei",
+  "arti": "bersih",
+  "paket": [
+   "aoi",
+   "konpyuutaa"
+  ]
+ },
+ {
+  "kanji": "きれいな",
+  "kana": "きれいな",
+  "rom": "kirei na",
+  "arti": "yang bersih",
+  "paket": [
+   "aoi",
+   "tomemasu"
+  ]
+ },
+ {
+  "kanji": "くらい",
+  "kana": "くらい",
+  "rom": "kurai",
+  "arti": "gelap",
+  "paket": [
+   "tamago"
+  ]
+ },
+ {
+  "kanji": "クラブに行きたい",
+  "kana": "クラブにいきたい",
+  "rom": "kurabu ni ikitai",
+  "arti": "Ingin ke klab",
+  "paket": [
+   "hare"
+  ]
+ },
+ {
+  "kanji": "くろい",
+  "kana": "くろい",
+  "rom": "kuroi",
+  "arti": "hitam",
+  "paket": [
+   "aoi",
+   "kutsushita"
+  ]
+ },
+ {
+  "kanji": "げんきな",
+  "kana": "げんきな",
+  "rom": "genki na",
+  "arti": "yang sehat",
+  "paket": [
+   "kutsushita"
+  ]
+ },
+ {
+  "kanji": "こうずい",
+  "kana": "こうずい",
+  "rom": "kouzui",
+  "arti": "banjir",
+  "paket": [
+   "orimasu"
+  ]
+ },
+ {
+  "kanji": "来なくては行けない",
+  "kana": "こなくてはいけない",
+  "rom": "konakutewa ikenai",
+  "arti": "harus datang",
+  "paket": [
+   "haburashi"
+  ]
+ },
+ {
+  "kanji": "こわい",
+  "kana": "こわい",
+  "rom": "kowai",
+  "arti": "takut",
+  "paket": [
+   "shatsu"
+  ]
+ },
+ {
+  "kanji": "さむい",
+  "kana": "さむい",
+  "rom": "samui",
+  "arti": "dingin (udara)",
+  "paket": [
+   "kuroi",
+   "tamago"
+  ]
+ },
+ {
+  "kanji": "試合",
+  "kana": "しあい",
+  "rom": "shiai",
+  "arti": "pertandingan",
+  "paket": [
+   "shatsu",
+   "haburashi"
+  ]
+ },
+ {
+  "kanji": "しごと",
+  "kana": "しごと",
+  "rom": "shigoto",
+  "arti": "pekerjaan",
+  "paket": [
+   "hare",
+   "shatsu"
+  ]
+ },
+ {
+  "kanji": "静か",
+  "kana": "しずか",
+  "rom": "shizuka",
+  "arti": "sepi / tenang",
+  "paket": [
+   "haburashi"
+  ]
+ },
+ {
+  "kanji": "しずかな",
+  "kana": "しずかな",
+  "rom": "shizuka",
+  "arti": "sepi",
+  "paket": [
+   "tomemasu"
+  ]
+ },
+ {
+  "kanji": "しっぱい",
+  "kana": "しっぱい",
+  "rom": "shippai",
+  "arti": "gagal",
+  "paket": [
+   "kagi"
+  ]
+ },
+ {
+  "kanji": "しょうたい",
+  "kana": "しょうたい",
+  "rom": "shoutai",
+  "arti": "undangan",
+  "paket": [
+   "kutsushita"
+  ]
+ },
+ {
+  "kanji": "しょくじ",
+  "kana": "しょくじ",
+  "rom": "shokuji",
+  "arti": "makan bersama",
+  "paket": [
+   "hare"
+  ]
+ },
+ {
+  "kanji": "しょっぱい",
+  "kana": "しょっぱい",
+  "rom": "shoppai",
+  "arti": "asin",
+  "paket": [
+   "orimasu"
+  ]
+ },
+ {
+  "kanji": "しろい",
+  "kana": "しろい",
+  "rom": "shiroi",
+  "arti": "putih",
+  "paket": [
+   "aoi",
+   "kutsushita"
+  ]
+ },
+ {
+  "kanji": "しんぱい",
+  "kana": "しんぱい",
+  "rom": "shinpai",
+  "arti": "khawatir",
+  "paket": [
+   "kagi"
+  ]
+ },
+ {
+  "kanji": "すいえい",
+  "kana": "すいえい",
+  "rom": "suiei",
+  "arti": "renang",
+  "paket": [
+   "tamago"
+  ]
+ },
+ {
+  "kanji": "すきな",
+  "kana": "すきな",
+  "rom": "suki na",
+  "arti": "yang disuka",
+  "paket": [
+   "jinja"
+  ]
+ },
+ {
+  "kanji": "すくない",
+  "kana": "すくない",
+  "rom": "sukunai",
+  "arti": "sedikit",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
+  "kanji": "すっぱい",
+  "kana": "すっぱい",
+  "rom": "suppai",
+  "arti": "asam",
+  "paket": [
+   "orimasu"
+  ]
+ },
+ {
+  "kanji": "せなかがいっぱい",
+  "kana": "せなかがいっぱい",
+  "rom": "senaka ga ippai",
+  "arti": "punggung penuh",
+  "paket": [
+   "aoi"
+  ]
+ },
+ {
+  "kanji": "せまい",
+  "kana": "せまい",
+  "rom": "semai",
+  "arti": "sempit",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
+  "kanji": "洗濯",
+  "kana": "せんたく",
+  "rom": "sentaku",
+  "arti": "mencuci pakaian",
+  "paket": [
+   "haburashi"
+  ]
+ },
+ {
+  "kanji": "早退",
+  "kana": "そうたい",
+  "rom": "soutai",
+  "arti": "pulang lebih awal",
+  "paket": [
+   "haburashi"
+  ]
+ },
+ {
+  "kanji": "だいじょうぶ",
+  "kana": "だいじょうぶ",
+  "rom": "daijoubu",
+  "arti": "tidak apa apa",
+  "paket": [
+   "orimasu"
+  ]
+ },
+ {
+  "kanji": "たかい",
+  "kana": "たかい",
+  "rom": "takai",
+  "arti": "tinggi/mahal",
+  "paket": [
+   "shatsu",
+   "tamago"
+  ]
+ },
+ {
+  "kanji": "たのしい",
+  "kana": "たのしい",
+  "rom": "tanoshii",
+  "arti": "senang",
+  "paket": [
+   "gakusei"
+  ]
+ },
+ {
+  "kanji": "使って行けばいい",
+  "kana": "つかっていけばいい",
+  "rom": "tsukatte ikeba ii",
+  "arti": "sebaiknya menggunakan lalu pergi",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
+  "kanji": "つめたい",
+  "kana": "つめたい",
+  "rom": "tsumetai",
+  "arti": "dingin (benda)",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
+  "kanji": "できない",
+  "kana": "できない",
+  "rom": "dekinai",
+  "arti": "tidak bisa",
+  "paket": [
+   "magarimasu"
+  ]
+ },
+ {
+  "kanji": "でも私はしたくない",
+  "kana": "でも私はしたくない",
+  "rom": "demo shitakunai",
+  "arti": "tapi tidak mau, kasar",
+  "paket": [
+   "konpyuutaa"
+  ]
+ },
+ {
+  "kanji": "でも眠い",
+  "kana": "でも眠い",
+  "rom": "demo nemui",
+  "arti": "tapi mengantuk",
+  "paket": [
+   "konpyuutaa"
+  ]
+ },
+ {
+  "kanji": "とおい",
+  "kana": "とおい",
+  "rom": "tooi",
+  "arti": "jauh",
+  "paket": [
+   "tamago"
+  ]
+ },
+ {
+  "kanji": "何になりたい",
+  "kana": "なにになりたい",
+  "rom": "nani ni naritai",
+  "arti": "ingin jadi apa",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
+  "kanji": "にぎやかな",
+  "kana": "にぎやかな",
+  "rom": "nigiyaka na",
+  "arti": "sebelum benda",
+  "paket": [
+   "orimasu"
+  ]
+ },
+ {
+  "kanji": "ねたい",
+  "kana": "ねたい",
+  "rom": "netai",
+  "arti": "Ingin tidur",
+  "paket": [
+   "hare"
+  ]
+ },
+ {
+  "kanji": "ねむい",
+  "kana": "ねむい",
+  "rom": "nemui",
+  "arti": "mengantuk",
+  "paket": [
+   "konpyuutaa",
+   "tomemasu"
+  ]
+ },
+ {
+  "kanji": "ばあい",
+  "kana": "ばあい",
+  "rom": "baai",
+  "arti": "apabila / kasus",
+  "paket": [
+   "hare"
+  ]
+ },
+ {
+  "kanji": "ひかない",
+  "kana": "ひかない",
+  "rom": "hikanai",
+  "arti": "tidak masuk angin",
+  "paket": [
+   "kagi"
+  ]
+ },
+ {
+  "kanji": "低い",
+  "kana": "ひくい",
+  "rom": "hikui",
+  "arti": "rendah",
+  "paket": [
+   "basu",
+   "haburashi"
+  ]
+ },
+ {
+  "kanji": "ひろい",
+  "kana": "ひろい",
+  "rom": "hiroi",
+  "arti": "luas / lapang",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
+  "kanji": "勉強",
+  "kana": "べんきょう",
+  "rom": "benkyou",
+  "arti": "belajar",
+  "paket": [
+   "shatsu",
+   "haburashi"
+  ]
+ },
+ {
+  "kanji": "まるい",
+  "kana": "まるい",
+  "rom": "marui",
+  "arti": "bulat",
+  "paket": [
+   "tamago"
+  ]
+ },
+ {
+  "kanji": "みじかい",
+  "kana": "みじかい",
+  "rom": "mijikai",
+  "arti": "pendek",
+  "paket": [
+   "basu",
+   "gakusei"
+  ]
+ },
+ {
+  "kanji": "みたい",
+  "kana": "みたい",
+  "rom": "mitai",
+  "arti": "ingin melihat",
+  "paket": [
+   "basu"
+  ]
+ },
+ {
+  "kanji": "むずかしい",
+  "kana": "むずかしい",
+  "rom": "muzukashii",
+  "arti": "sulit",
+  "paket": [
+   "orimasu"
+  ]
+ },
+ {
+  "kanji": "持って行けばいい",
+  "kana": "もっていけばいい",
+  "rom": "motte ikeba ii",
+  "arti": "sebaiknya membawa pergi",
+  "paket": [
+   "hashi"
+  ]
+ },
+ {
+  "kanji": "やすい",
+  "kana": "やすい",
+  "rom": "yasui",
+  "arti": "murah",
+  "paket": [
+   "konpyuutaa"
+  ]
+ },
+ {
+  "kanji": "ゆうめいな",
+  "kana": "ゆうめいな",
+  "rom": "yuumei na",
+  "arti": "terkenal",
+  "paket": [
+   "magarimasu"
+  ]
+ },
+ {
+  "kanji": "りょうり",
+  "kana": "りょうり",
+  "rom": "ryouri",
+  "arti": "masakan",
+  "paket": [
+   "aoi",
+   "jinja"
+  ]
+ },
+ {
+  "kanji": "わるい",
+  "kana": "わるい",
+  "rom": "warui",
+  "arti": "buruk",
+  "paket": [
+   "kagi"
+  ]
+ },
+ {
+  "kanji": "泳がない",
+  "kana": "泳がない",
+  "rom": "oyoganai",
+  "arti": "tidak berenang",
+  "paket": [
+   "magarimasu"
+  ]
+ },
+ {
+  "kanji": "好きな",
+  "kana": "好きな",
+  "rom": "suki na",
+  "arti": "yang disukai",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
+  "kanji": "食べない",
+  "kana": "食べない",
+  "rom": "tabenai",
+  "arti": "tidak makan",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
+  "kanji": "寝ない",
+  "kana": "寝ない",
+  "rom": "nenai",
+  "arti": "tidak tidur",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
+  "kanji": "静かな",
+  "kana": "静かな",
+  "rom": "shizuka na",
+  "arti": "sepi",
+  "paket": [
+   "konpyuutaa"
+  ]
+ },
+ {
+  "kanji": "大きい",
+  "kana": "大きい",
+  "rom": "ookii",
+  "arti": "besar",
+  "paket": [
+   "kagi"
+  ]
+ },
+ {
+  "kanji": "大変な",
+  "kana": "大変な",
+  "rom": "taihen na",
+  "arti": "yang berat; yang merepotkan",
+  "paket": [
+   "kuroi"
+  ]
+ },
+ {
+  "kanji": "働かない",
+  "kana": "働かない",
+  "rom": "hatarakanai",
+  "arti": "tidak bekerja",
+  "paket": [
+   "magarimasu"
+  ]
+ },
+ {
+  "kanji": "動かない",
+  "kana": "動かない",
+  "rom": "ugokanai",
+  "arti": "tidak bergerak",
+  "paket": [
+   "magarimasu"
+  ]
+ },
+ {
+  "kanji": "分からな",
+  "kana": "分からな",
+  "rom": "wakaranai",
+  "arti": "tidak paham",
+  "paket": [
+   "orimasu"
+  ]
+ },
+ {
+  "kanji": "面白い",
+  "kana": "面白い",
+  "rom": "omoshiroi",
+  "arti": "menarik",
+  "paket": [
+   "konpyuutaa"
+  ]
+ }
+]

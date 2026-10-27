@@ -1,50 +1,173 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Hafalan Kosakata</title>
-<link rel=stylesheet href=/assets/css/tailwind.css>
-<style>
-.badge { display:inline-block; font-weight:bold; padding:2px 4px; border-radius:4px; }
-.table th, .table td { padding:4px 8px; border:1px solid #e5e7eb; }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Hafalan Kosakata - SinauJepang</title>
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .bg-fuji-overlay {
+      background: linear-gradient(135deg, rgba(240, 249, 255, 0.94) 0%, rgba(224, 242, 254, 0.90) 100%);
+    }
+    .transition-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
 </head>
-<body>
-<h1>Hafalan Kosakata</h1>
-<input id=kCari placeholder=Search>
-<select id=kJenis><option value=>All</option><option value=V>Verb</option><option value=A>Adjective</option><option value=N>Noun</option><option value=U>Expression</option></select>
-<select id=kPaket><option value=>All Paket</option></select>
-<button onclick=loadData()>Refresh</button>
-<div id=kCount></div>
-<table id=kTable><thead><tr><th>Kanji</th><th>Kana</th><th>Romaji</th><th>Arti</th><th>Jenis</th><th>Paket</th></tr></thead>
-<tbody id=kRows></tbody>
-</table>
-<script>
+  <body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col selection:bg-fuji-200">
+  <!-- Header bersama: site-layout.js -->
+  <script src="/assets/js/indexeddb.js"></script>
+  <script src="/assets/js/site-layout.js"></script>
+  <main class="max-w-6xl mx-auto px-4 py-6 flex-grow w-full">
+    <div class="bg-white border-b border-slate-200 py-3 px-4">
+      <div class="flex flex-wrap items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <h1 class="text-xl font-extrabold text-slate-800"><i class="fa-solid fa-book-open text-fuji-600 mr-2"></i>Hafalan Kosakata</h1>
+        </div>
+        <div class="flex-1 max-w-lg"></div>
+      </div>
+    </div>
+
+    <!-- Filter & Search -->
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm p-4 mb-6">
+      <div class="flex flex-wrap gap-4 items-center">
+        <div class="flex-1 min-w-[200px]">
+          <label class="sr-only">Search</label>
+          <div class="relative">
+            <i class="fas fa-search absolute left-3 top-1/2 transform -translate-y-1/2 text-slate-400 text-sm"></i>
+            <input id="kCari" class="w-full pl-10 pr-4 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-fuji-500 focus:border-fuji-500 border-gray-300" placeholder="Cari kosakata..." />
+          </div>
+        </div>
+        <div class="flex-1 min-w-[150px]">
+          <label class="sr-only">Jenis</label>
+          <select id="kJenis" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-fuji-500 focus:border-fuji-500 bg-white">
+            <option value>All</option>
+            <option value="V">Verb (kerja)</option>
+            <option value="A">Adjective (sifat)</option>
+            <option value="N">Noun (benda)</option>
+            <option value="E">Expression (ungkapan)</option>
+          </select>
+        </div>
+        <div class="flex-1 min-w-[150px]">
+          <label class="sr-only">Paket</label>
+          <select id="kPaket" class="w-full px-3 py-2.5 border border-slate-300 rounded-lg text-sm focus:ring-2 focus:ring-fuji-500 focus:border-fuji-500 bg-white">
+            <option value>All Paket</option>
+          </select>
+        </div>
+        <button onclick="loadData()" class="inline-flex items-center gap-2 bg-fuji-600 hover:bg-fuji-700 text-white font-bold px-5 py-2.5 rounded-lg shadow-sm transition-all text-sm">
+          <i class="fa-solid fa-rotate-right"></i>
+          Refresh
+        </button>
+      </div>
+      <div id="kCount" class="mt-4 text-sm text-slate-600 text-center"></div>
+    </div>
+
+    <!-- Table -->
+    <div class="bg-white rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+      <div class="overflow-x-auto">
+        <table id="kTable" class="w-full text-sm">
+        <thead>
+          <tr class="bg-slate-50 border-b border-slate-200">
+            <th class="px-4 py-3 text-left font-extrabold text-slate-700 text-xs uppercase tracking-wider">Kanji</th>
+            <th class="px-4 py-3 text-left font-extrabold text-slate-700 text-xs uppercase tracking-wider">Kana</th>
+            <th class="px-4 py-3 text-left font-extrabold text-slate-700 text-xs uppercase tracking-wider">Romaji</th>
+            <th class="px-4 py-3 text-left font-extrabold text-slate-700 text-xs uppercase tracking-wider">Arti</th>
+            <th class="px-4 py-3 text-left font-extrabold text-slate-700 text-xs uppercase tracking-wider">Jenis</th>
+            <th class="px-4 py-3 text-left font-extrabold text-slate-700 text-xs uppercase tracking-wider">Paket</th>
+          </tr>
+        </thead>
+        <tbody id="kRows" class="divide-y divide-slate-200"></tbody>
+      </table>
+    </div>
+  </div>
+  </main>
+  <script>
 let allData = [];
+let shown = 200;
 function esc(s) { return (s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
-function render() {
-  const tbody = document.getElementById('kRows');
-  const kw = document.getElementById('kCari').value.toLowerCase();
-  const jn = document.getElementById('kJenis').value;
-  const pk = document.getElementById('kPaket').value;
-  let list = allData.filter(o => { if (jn && o.jenis!==jn) return false; if (pk && !o.paket.includes(pk)) return false; if (kw && !((o.kanji+' '+o.kana+' '+o.rom+' '+o.arti).toLowerCase().includes(kw))) return false; return true; });
-  list.sort((a,b) => a.kanji.localeCompare(b.kanji, 'ja'));
-  document.getElementById('kCount').textContent = list.length + ' kosakata';
-  let html = '';
-  for (let i=0; i<Math.min(200, list.length); i++) {
-    const o = list[i];
-    html += '<tr><td>'+esc(o.kanji)+'</td><td>'+esc(o.kana)+'</td><td>'+esc(o.rom)+'</td><td>'+esc(o.arti)+'</td><td>'+o.jenis+'</td><td>'+o.paket.join(', ')+'</td></tr>';
+
+function detectJenis(o) {
+    const k = (o.kana || '').trim(); const r = (o.rom || '').trim();
+    if (!k && !r) return 'N';
+    if (k.includes(' ') || r.includes(' ')) return 'E';              // kalimat / frasa (expression)
+    if (/[する]$/.test(k) || /suru$/i.test(r)) return 'V';           // suru-verb
+    if (/[くる]$/.test(k) || /kuru$/i.test(r)) return 'V';           // kuru-verb
+    if (/[る]$/.test(k) && !/[する]$/.test(k)) return 'V';           // ru-verb (5/1段)
+    if (/[い]$/.test(k) || /i$/.test(r)) return 'A';                // い-adjekti
+    return 'N';                                                     // default benda
   }
-  tbody.innerHTML = html || '<tr><td colspan=6>No data</td></tr>';
-  const more = document.getElementById('kMore');
-  more.disabled = shown >= list.length;
-}
-function loadData() {
-  fetch('/kosakata.json').then(r => r.json()).then(j => {
-    allData = (j.data || []).map(o => ({ kanji: o.kanji, kana: o.kana, rom: o.rom, arti: o.arti, jenis: 'N', paket: o.paket }));
+  // pasang listener supaya filter (cari/jenis/paket) otomatis terapkan tanpa klik Refresh
+  function attachFilterListeners() {
+    ['kCari', 'kJenis', 'kPaket'].forEach(id => {
+      const el = document.getElementById(id);
+      if (!el) return;
+      el.addEventListener('input', render);
+      el.addEventListener('change', render);
+    });
+  }
+
+  function render() {
+    const tbody = document.getElementById('kRows');
+    const kw = document.getElementById('kCari').value.trim().toLowerCase();
+    const jn = document.getElementById('kJenis').value;
+    const pk = document.getElementById('kPaket').value;
+    let list = allData.filter(o => {
+      if (jn && o.jenis !== jn) return false;
+      if (pk && !o.paket.includes(pk)) return false;
+      if (kw && !((o.kanji||'') + ' ' + (o.kana||'') + ' ' + (o.rom||'') + ' ' + (o.arti||'')).toLowerCase().includes(kw)) return false;
+      return true;
+    });
+    list.sort((a, b) => a.kanji.localeCompare(b.kanji, 'ja'));
+    // statistik jumlah per jenis kata: V(kerja) / A(sifat) / N(benda) / E(ungkapan)
+    const cn = { V: 0, A: 0, N: 0, E: 0 };
+    list.forEach(o => { const j = (o.jenis || 'N'); cn[j] = (cn[j] || 0) + 1; });
+    document.getElementById('kCount').textContent =
+      list.length + ' kosakata — V(kerja):' + cn.V + ' A(sifat):' + cn.A + ' N(benda):' + cn.N + ' E(ungkapan):' + cn.E;
+    let html = '';
+    for (let i=0; i<Math.min(200, list.length); i++) {
+      const o = list[i];
+      html += '<tr class=\'hover:bg-fuji-50/60 transition-colors\'>';
+      html += '<td class=\'px-4 py-3 font-bold text-slate-800\'>' + esc(o.kanji) + '</td>';
+      html += '<td class=\'px-4 py-3 text-slate-600\'>' + esc(o.kana) + '</td>';
+      html += '<td class=\'px-4 py-3 text-slate-500 italic\'>' + esc(o.rom) + '</td>';
+      html += '<td class=\'px-4 py-3 text-slate-700\'>' + esc(o.arti) + '</td>';
+      html += '<td class=\'px-4 py-3\'><span class=\'inline-block text-xs font-bold px-2 py-0.5 rounded-md border whitespace-nowrap \' + (o.jenis === \'V\' ? \'bg-blue-50 text-blue-700 border-blue-200\' : o.jenis === \'A\' ? \'bg-emerald-50 text-emerald-700 border-emerald-200\' : o.jenis === \'E\' ? \'bg-violet-50 text-violet-700 border-violet-200\' : \'bg-amber-50 text-amber-700 border-amber-200\') + \'\'>' + (o.jenis || 'N') + '</span' + (o.keterangan ? ' title="' + esc(o.keterangan) + '"' : '') + '></td>';
+      html += '<td class=\'px-4 py-3\'>' + (o.paket || []).map(p => '<span class=\'inline-block bg-fuji-50 text-fuji-700 border border-fuji-200 text-[11px] font-bold px-2 py-0.5 rounded-md whitespace-nowrap mr-1 mb-1\'>' + esc(p.replace('-quiz', '')) + '</span>').join('') + '</td>';
+      html += '</tr>';
+    }
+    tbody.innerHTML = html || '<tr><td colspan=\'6\' class=\'px-4 py-10 text-center text-slate-400 text-sm\'>No data matched.</td></tr>';
+  }
+
+  async function loadData() {
+    allData = [];
+    const files = ['verb', 'adjective', 'nouns', 'expression'];
+    const results = await Promise.all(files.map(f => fetch('/kotoba-data/' + f + '.js').then(r => r.json())));
+    for (const j of results) {
+      if (j && j.data) {
+        const arr = Array.isArray(j.data) ? j.data : Object.values(j.data);
+        for (const item of arr) {
+          allData.push({
+            kanji: item.kanji || '',
+            kana: item.kana || '',
+            rom: item.rom || '',
+            arti: item.arti || '',
+            jenis: item.jenis || detectJenis(item),
+            keterangan: item.keterangan || '',
+            paket: item.paket || []
+          });
+        }
+      }
+    }
     render();
-  }).catch(function(e) { alert('Error: ' + e); });
-}
-document.addEventListener('DOMContentLoaded', function() { loadData(); });
-</script>
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    loadData(); attachFilterListeners();
+  });
+  </script>
 </body>
 </html>

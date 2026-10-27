@@ -1,0 +1,108 @@
+[
+  {
+    "no": 70,
+    "section": "SESI 4 : DOKKAI",
+    "title": "問題1 (Mondai 1): 田中さんは 何の仕事をしていますか (Apa pekerjaan Tanaka-san?)",
+    "img": "images/dokkai_70.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "スポーツのコーチをしています。",
+        "img": ""
+      },
+      {
+        "text": "学校の先生をしています。",
+        "img": ""
+      },
+      {
+        "text": "本屋で働いています。",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "4/4",
+    "trans": "Berdasarkan gambar teks staff perkenalan di atas, apa pekerjaan Tanaka-san? Tanaka-san bekerja di toko buku.",
+    "trans_rom": "Tanaka-san wa honya de hataraite imasu.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 14/31 - Pekerjaan & Profesi] Berdasarkan teks pengenalan staff (スタッフ紹介) pada gambar banner ("こちらは田中さんです。田中さんは本屋で働いています"), pekerjaan Tanaka-san adalah bekerja di toko buku (C).",
+    "opt_detail": [
+      {
+        "kana": "すぽーつのこーち",
+        "rom": "supootsu no koochi o shite imasu",
+        "arti": "pelatih olahraga",
+        "alasan": "Keliru, ini adalah opsi A."
+      },
+      {
+        "kana": "がっこうのせんせい",
+        "rom": "gakkou no sensei o shite imasu",
+        "arti": "guru sekolah",
+        "alasan": "Keliru, ini adalah opsi B."
+      },
+      {
+        "kana": "ほんやではたらいています",
+        "rom": "honya de hataraite imasu",
+        "arti": "bekerja di toko buku",
+        "alasan": "Tepat sesuai dengan teks '田中さんは本屋で働いています' (Opsi C)."
+      }
+    ],
+    "opt_note": [
+      "スポーツのコーチをしています (Opsi A)",
+      "学校の先生をしています (Opsi B)",
+      "本屋で働いています (Opsi C)"
+    ],
+    "kunci_id": "本屋で働いています。"
+  },
+  {
+    "no": 71,
+    "section": "SESI 4 : DOKKAI",
+    "title": "問題2 (Mondai 2): 田中さんは 何が できますか (Apa yang bisa dilakukan Tanaka-san?)",
+    "img": "images/dokkai_71.jpg",
+    "link": "",
+    "options": [
+      {
+        "text": "日本語で説明することができます。",
+        "img": ""
+      },
+      {
+        "text": "英語で説明することができます。",
+        "img": ""
+      },
+      {
+        "text": "歌うことができます。",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "4/4",
+    "trans": "Berdasarkan gambar teks di atas, apa yang bisa dilakukan Tanaka-san? Tanaka-san dapat menjelaskan dalam bahasa Inggris.",
+    "trans_rom": "Eigo de setsumei suru koto ga dekimasu.",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab 18 - Kemampuan / Potensial ~koto ga dekimasu] Berdasarkan teks pada gambar ('また、英語で説明することができます。外国人のお客さんが来たとき、英語で本の場所を説明します'), kemampuan khusus Tanaka-san adalah menjelaskan dalam bahasa Inggris (B).",
+    "opt_detail": [
+      {
+        "kana": "にほんごでせつめいする",
+        "rom": "nihongo de setsumei suru koto ga dekimasu",
+        "arti": "bisa menjelaskan dalam bahasa Jepang",
+        "alasan": "Keliru, opsi A."
+      },
+      {
+        "kana": "えいごでせつめいする",
+        "rom": "eigo de setsumei suru koto ga dekimasu",
+        "arti": "bisa menjelaskan dalam bahasa Inggris",
+        "alasan": "Tepat sesuai dengan kalimat 'また、英語で説明することができます' (Opsi B pada gambar)."
+      },
+      {
+        "kana": "うとうことができる",
+        "rom": "utau koto ga dekiru",
+        "arti": "bisa bernyanyi",
+        "alasan": "Keliru, opsi C."
+      }
+    ],
+    "opt_note": [
+      "日本語で説明することができます (Opsi A)",
+      "英語で説明することができます (Opsi B)",
+      "歌うことができます (Opsi C)"
+    ],
+    "kunci_id": "英語で説明することができます。"
+  }
+]
