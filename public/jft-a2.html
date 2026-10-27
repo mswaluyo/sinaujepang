@@ -1,15 +1,16 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <title>Tabel Kanji JFT-A2 (Grup Kanji Explorer &amp; Radikal) — SinauJepang</title>
+  <title>Tabel Kanji JFT-A2 (Grup Kanji Explorer &amp; Radikal) â€” SinauJepang</title>
   <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
+  /* Custom kanji explorer styles (biru) */
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
     .jp-font { font-family: 'Noto Sans JP', sans-serif; }
     .jp-kanji-clear {
@@ -89,6 +90,10 @@
       }
     }
   </style>
+
+  /* Custom kanji explorer styles (biru) */
+  .kanji-container-blue {
+    display: flex;
 </head>
 <body class="bg-fuji-50 text-slate-800 min-h-screen flex flex-col selection:bg-sky-100 selection:text-sky-800">
   <script src="/assets/js/indexeddb.js"></script>
@@ -97,7 +102,7 @@
   <main class="max-w-6xl mx-auto px-2 sm:px-4 py-4 sm:py-8 flex-grow w-full">
     <!-- Header Banner -->
     <div class="banner-kanji-explorer rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-xl shadow-blue-500/15 mb-4 sm:mb-8 relative overflow-hidden">
-      <div class="absolute -right-6 sm:-right-10 -bottom-6 sm:-bottom-10 opacity-10 text-7xl sm:text-9xl font-black jp-font select-none text-white pointer-events-none">部<br>首</div>
+      <div class="absolute -right-6 sm:-right-10 -bottom-6 sm:-bottom-10 opacity-10 text-7xl sm:text-9xl font-black jp-font select-none text-white pointer-events-none">éƒ¨<br>é¦–</div>
       <div class="relative z-10 max-w-2xl">
         <div class="inline-flex items-center gap-1.5 sm:gap-2 banner-badge backdrop-blur-md px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
           <i class="fa-solid fa-compass"></i> Standar Grup Resmi Kanji Explorer
@@ -331,79 +336,79 @@
         const bacaanInduk = [k.kun !== '-' ? k.kun : '', k.on !== '-' ? k.on : ''].filter(Boolean).join(' / ');
         // Warna berdasar radikal
         const radicalColor = {
-          '力': 'text-amber-600',
-          '人': 'text-sky-600',
-          '口': 'text-blue-600',
-          '心': 'text-pink-600',
-          '目': 'text-gray-700',
-          '言': 'text-violet-600',
-          '木': 'text-emerald-600',
-          '水': 'text-sky-600',
-          '火': 'text-orange-600',
-          '日': 'text-amber-600',
-          '女': 'text-pink-500',
-          '手': 'text-sky-700',
-          '耳': 'text-cyan-600',
-          '肉': 'text-red-500',
-          '足': 'text-orange-700',
-          '子': 'text-rose-400',
-          '小': 'text-teal-600',
-          '大': 'text-yellow-700',
-          '父': 'text-amber-700',
-          '土': 'text-stone-600',
-          '牛': 'text-orange-600',
-          '魚': 'text-cyan-600',
-          '馬': 'text-indigo-600',
-          '貝': 'text-green-600',
-          '鳥': 'text-red-500',
-          '舟': 'text-blue-600',
-          '食': 'text-orange-700',
-          '宀': 'text-amber-600',
-          '辶': 'text-indigo-600',
-          '穴': 'text-stone-600',
-          '行': 'text-cyan-700',
-          '門': 'text-stone-700',
-          '刀': 'text-red-600',
-          '金': 'text-gray-700',
-          '雨': 'text-blue-500',
-          '竹': 'text-emerald-600',
-          '白': 'text-gray-400',
-          '見': 'text-blue-600',
-          '石': 'text-stone-500',
-          '虫': 'text-lime-700',
-          '革': 'text-red-600',
-          '糸': 'text-cyan-600',
-          '辛': 'text-orange-600',
-          '皿': 'text-blue-600',
-          '旡': 'text-stone-500',
-          '丿': 'text-stone-400',
-          '入': 'text-gray-600',
-          '鬥': 'text-red-600',
-          '丶': 'text-stone-500',
-          '亅': 'text-amber-600',
-          '冂': 'text-emerald-600',
-          '冖': 'text-blue-600',
-          '冫': 'text-cyan-600',
-          '凵': 'text-stone-600',
-          '厶': 'text-orange-600',
-          '又': 'text-rose-600',
-          '比': 'text-gray-600',
-          '夂': 'text-orange-600',
-          '巴': 'text-cyan-600',
-          '奀': 'text-amber-600',
-          '匕': 'text-rose-700',
-          '廴': 'text-violet-600',
-          '弓': 'text-amber-600',
-          '尢': 'text-rose-500',
-          '尸': 'text-stone-500',
-          '广': 'text-gray-700',
-          '廾': 'text-rose-600',
-          '巻': 'text-emerald-600',
-          '茵': 'text-green-600',
-          '艹': 'text-green-600',
-          '艿': 'text-lime-700',
-          '𧘇': 'text-red-600',
-          '⿱丬罔': 'text-blue-600'
+          'åŠ›': 'text-amber-600',
+          'äºº': 'text-sky-600',
+          'å£': 'text-blue-600',
+          'å¿ƒ': 'text-pink-600',
+          'ç›®': 'text-gray-700',
+          'è¨€': 'text-violet-600',
+          'æœ¨': 'text-emerald-600',
+          'æ°´': 'text-sky-600',
+          'ç«': 'text-orange-600',
+          'æ—¥': 'text-amber-600',
+          'å¥³': 'text-pink-500',
+          'æ‰‹': 'text-sky-700',
+          'è€³': 'text-cyan-600',
+          'è‚‰': 'text-red-500',
+          'è¶³': 'text-orange-700',
+          'å­': 'text-rose-400',
+          'å°': 'text-teal-600',
+          'å¤§': 'text-yellow-700',
+          'çˆ¶': 'text-amber-700',
+          'åœŸ': 'text-stone-600',
+          'ç‰›': 'text-orange-600',
+          'é­š': 'text-cyan-600',
+          'é¦¬': 'text-indigo-600',
+          'è²': 'text-green-600',
+          'é³¥': 'text-red-500',
+          'èˆŸ': 'text-blue-600',
+          'é£Ÿ': 'text-orange-700',
+          'å®€': 'text-amber-600',
+          'è¾¶': 'text-indigo-600',
+          'ç©´': 'text-stone-600',
+          'è¡Œ': 'text-cyan-700',
+          'é–€': 'text-stone-700',
+          'åˆ€': 'text-red-600',
+          'é‡‘': 'text-gray-700',
+          'é›¨': 'text-blue-500',
+          'ç«¹': 'text-emerald-600',
+          'ç™½': 'text-gray-400',
+          'è¦‹': 'text-blue-600',
+          'çŸ³': 'text-stone-500',
+          'è™«': 'text-lime-700',
+          'é©': 'text-red-600',
+          'ç³¸': 'text-cyan-600',
+          'è¾›': 'text-orange-600',
+          'çš¿': 'text-blue-600',
+          'æ—¡': 'text-stone-500',
+          'ä¸¿': 'text-stone-400',
+          'å…¥': 'text-gray-600',
+          'é¬¥': 'text-red-600',
+          'ä¸¶': 'text-stone-500',
+          'äº…': 'text-amber-600',
+          'å†‚': 'text-emerald-600',
+          'å†–': 'text-blue-600',
+          'å†«': 'text-cyan-600',
+          'å‡µ': 'text-stone-600',
+          'åŽ¶': 'text-orange-600',
+          'åˆ': 'text-rose-600',
+          'æ¯”': 'text-gray-600',
+          'å¤‚': 'text-orange-600',
+          'å·´': 'text-cyan-600',
+          'å¥€': 'text-amber-600',
+          'åŒ•': 'text-rose-700',
+          'å»´': 'text-violet-600',
+          'å¼“': 'text-amber-600',
+          'å°¢': 'text-rose-500',
+          'å°¸': 'text-stone-500',
+          'å¹¿': 'text-gray-700',
+          'å»¾': 'text-rose-600',
+          'å·»': 'text-emerald-600',
+          'èŒµ': 'text-green-600',
+          'è‰¹': 'text-green-600',
+          'è‰¿': 'text-lime-700',
+          'ð§˜‡': 'text-red-600',
+          'â¿±ä¸¬ç½”': 'text-blue-600'
         };
         const colorClassInduk = radicalColor[k.radical] || 'text-slate-800';
         html += `
@@ -413,11 +418,11 @@
             </td>
             <td class="py-2.5 px-4" style="padding-left: 1.25rem;">
               <div class="flex items-center gap-2">
-                <span class="text-sky-500 font-mono text-base font-bold select-none">└──</span>
+                <span class="text-sky-500 font-mono text-base font-bold select-none">â””â”€â”€</span>
                 <span class="w-9 h-9 inline-flex items-center justify-center bg-white ${colorClassInduk} border border-sky-200 rounded-lg text-2xl jp-kanji-clear shadow-xs">
                   ${k.kanji}
                 </span>
-                <span class="text-[10px] text-slate-500 font-mono">(${k.stroke}画)</span>
+                <span class="text-[10px] text-slate-500 font-mono">(${k.stroke}ç”»)</span>
               </div>
             </td>
             <td class="py-2.5 px-4 font-medium text-sky-900 text-sm">
@@ -434,92 +439,92 @@
           k.vocab.forEach((v, vIdx) => {
             rowCounter++;
             const isLastVocab = vIdx === k.vocab.length - 1;
-            const treeBranch = isLastVocab ? '└──' : '├──';
+            const treeBranch = isLastVocab ? 'â””â”€â”€' : 'â”œâ”€â”€';
             // Warna kanji berdasarkan radikal
             const radicalColor = {
-              '力': 'text-amber-600',
-              '人': 'text-sky-600',  // biru
-              '口': 'text-blue-600',
-              '心': 'text-pink-600',
-              '目': 'text-gray-700',
-              '言': 'text-violet-600',
-              '木': 'text-emerald-600',
-              '水': 'text-sky-600',
-              '火': 'text-orange-600',
-              '日': 'text-amber-600',
-              '女': 'text-pink-500',
-              '手': 'text-sky-700',
-              '耳': 'text-cyan-600',
-              '肉': 'text-red-500',
-              '足': 'text-orange-700',
-              '子': 'text-rose-400',
-              '小': 'text-teal-600',
-              '大': 'text-yellow-700',
-              '父': 'text-amber-700',
-              '土': 'text-stone-600',
-              '牛': 'text-orange-600',
-              '魚': 'text-cyan-600',
-              '馬': 'text-indigo-600',
-              '貝': 'text-green-600',
-              '鳥': 'text-red-500',
-              '舟': 'text-blue-600',
-              '食': 'text-orange-700',
-              '宀': 'text-amber-600',
-              '辶': 'text-indigo-600',
-              '穴': 'text-stone-600',
-              '行': 'text-cyan-700',
-              '門': 'text-stone-700',
-              '刀': 'text-red-600',
-              '金': 'text-gray-700',
-              '雨': 'text-blue-500',
-              '竹': 'text-emerald-600',
-              '白': 'text-gray-400',
-              '見': 'text-blue-600',
-              '石': 'text-stone-500',
-              '虫': 'text-lime-700',
-              '革': 'text-red-600',
-              '糸': 'text-cyan-600',
-              '辛': 'text-orange-600',
-              '皿': 'text-blue-600',
-              '旡': 'text-stone-500',
-              '丿': 'text-stone-400',
-              '入': 'text-gray-600',
-              '鬥': 'text-red-600',
-              '丶': 'text-stone-500',
-              '丿': 'text-stone-400',
-              '亅': 'text-amber-600',
-              '冂': 'text-emerald-600',
-              '冖': 'text-blue-600',
-              '冫': 'text-cyan-600',
-              '凵': 'text-stone-600',
-              '厶': 'text-orange-600',
-              '又': 'text-rose-600',
-              '比': 'text-gray-600',
-              '夂': 'text-orange-600',
-              '巴': 'text-cyan-600',
-              '奀': 'text-amber-600',
-              '匕': 'text-rose-700',
-              '廴': 'text-violet-600',
-              '弓': 'text-amber-600',
-              '尢': 'text-rose-500',
-              '尸': 'text-stone-500',
-              '广': 'text-gray-700',
-              '廾': 'text-rose-600',
-              '巻': 'text-emerald-600',
-              '茵': 'text-green-600',
-              '艹': 'text-green-600',
-              '艿': 'text-lime-700',
-              '𧘇': 'text-red-600',
-              '⿱丬罔': 'text-blue-600'
+              'åŠ›': 'text-amber-600',
+              'äºº': 'text-sky-600',  // biru
+              'å£': 'text-blue-600',
+              'å¿ƒ': 'text-pink-600',
+              'ç›®': 'text-gray-700',
+              'è¨€': 'text-violet-600',
+              'æœ¨': 'text-emerald-600',
+              'æ°´': 'text-sky-600',
+              'ç«': 'text-orange-600',
+              'æ—¥': 'text-amber-600',
+              'å¥³': 'text-pink-500',
+              'æ‰‹': 'text-sky-700',
+              'è€³': 'text-cyan-600',
+              'è‚‰': 'text-red-500',
+              'è¶³': 'text-orange-700',
+              'å­': 'text-rose-400',
+              'å°': 'text-teal-600',
+              'å¤§': 'text-yellow-700',
+              'çˆ¶': 'text-amber-700',
+              'åœŸ': 'text-stone-600',
+              'ç‰›': 'text-orange-600',
+              'é­š': 'text-cyan-600',
+              'é¦¬': 'text-indigo-600',
+              'è²': 'text-green-600',
+              'é³¥': 'text-red-500',
+              'èˆŸ': 'text-blue-600',
+              'é£Ÿ': 'text-orange-700',
+              'å®€': 'text-amber-600',
+              'è¾¶': 'text-indigo-600',
+              'ç©´': 'text-stone-600',
+              'è¡Œ': 'text-cyan-700',
+              'é–€': 'text-stone-700',
+              'åˆ€': 'text-red-600',
+              'é‡‘': 'text-gray-700',
+              'é›¨': 'text-blue-500',
+              'ç«¹': 'text-emerald-600',
+              'ç™½': 'text-gray-400',
+              'è¦‹': 'text-blue-600',
+              'çŸ³': 'text-stone-500',
+              'è™«': 'text-lime-700',
+              'é©': 'text-red-600',
+              'ç³¸': 'text-cyan-600',
+              'è¾›': 'text-orange-600',
+              'çš¿': 'text-blue-600',
+              'æ—¡': 'text-stone-500',
+              'ä¸¿': 'text-stone-400',
+              'å…¥': 'text-gray-600',
+              'é¬¥': 'text-red-600',
+              'ä¸¶': 'text-stone-500',
+              'ä¸¿': 'text-stone-400',
+              'äº…': 'text-amber-600',
+              'å†‚': 'text-emerald-600',
+              'å†–': 'text-blue-600',
+              'å†«': 'text-cyan-600',
+              'å‡µ': 'text-stone-600',
+              'åŽ¶': 'text-orange-600',
+              'åˆ': 'text-rose-600',
+              'æ¯”': 'text-gray-600',
+              'å¤‚': 'text-orange-600',
+              'å·´': 'text-cyan-600',
+              'å¥€': 'text-amber-600',
+              'åŒ•': 'text-rose-700',
+              'å»´': 'text-violet-600',
+              'å¼“': 'text-amber-600',
+              'å°¢': 'text-rose-500',
+              'å°¸': 'text-stone-500',
+              'å¹¿': 'text-gray-700',
+              'å»¾': 'text-rose-600',
+              'å·»': 'text-emerald-600',
+              'èŒµ': 'text-green-600',
+              'è‰¹': 'text-green-600',
+              'è‰¿': 'text-lime-700',
+              'ð§˜‡': 'text-red-600',
+              'â¿±ä¸¬ç½”': 'text-blue-600'
             };
             // Tentukan warna berdasarkan radikal
             // Prioritas:
-            // 1. Kalau kanji punya radikal sendiri → pakai map
-            // 2. Kalau kanji mengandung '口' → biru
+            // 1. Kalau kanji punya radikal sendiri â†’ pakai map
+            // 2. Kalau kanji mengandung 'å£' â†’ biru
             // 3. Default
-            let colorClass = radicalColor[v.radical] || 'text-stone-800';
+            let colorClass = 'text-blue-600';
             // Auto-detect radikal dari string kanji
-            if (v.kanji.includes('口')) {
+            if (v.kanji.includes('å£')) {
               colorClass = 'text-blue-600';
             }
             html += `
@@ -608,3 +613,4 @@
   </script>
 </body>
 </html>
+
