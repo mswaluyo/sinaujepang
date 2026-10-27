@@ -512,10 +512,15 @@
               '𧘇': 'text-red-600',
               '⿱丬罔': 'text-blue-600'
             };
+            // Tentukan warna berdasarkan radikal
+            // Prioritas:
+            // 1. Kalau kanji punya radikal sendiri → pakai map
+            // 2. Kalau kanji mengandung '口' → biru
+            // 3. Default
             let colorClass = radicalColor[v.radical] || 'text-stone-800';
-            // Bonus: kotoba entries nggak punya radical field, cek string kanji
-            if (!v.radical) {
-              if (v.kanji.includes('口')) colorClass = 'text-blue-600';
+            // Auto-detect radikal dari string kanji
+            if (v.kanji.includes('口')) {
+              colorClass = 'text-blue-600';
             }
             html += `
               <tr class="hover:bg-sky-50/20 transition-colors">
