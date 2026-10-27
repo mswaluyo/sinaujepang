@@ -352,19 +352,97 @@
           </tr>
         `;
 
-        // 4. Tingkat 3: Baris Kotoba Turunan (Level 3 - Menjorok Jauh ke Kanan: 56px)
+// 4. Tingkat 3: Baris Kotoba Turunan (Level 3 - Menjorok Jauh ke Kanan: 56px)
         if (k.vocab && k.vocab.length > 0) {
           k.vocab.forEach((v, vIdx) => {
             rowCounter++;
             const isLastVocab = vIdx === k.vocab.length - 1;
             const treeBranch = isLastVocab ? '└──' : '├──';
+            // Warna kanji berdasarkan radikal
+            const radicalColor = {
+              '力': 'text-amber-600',
+              '人': 'text-rose-500',
+              '口': 'text-blue-600',
+              '心': 'text-pink-600',
+              '目': 'text-gray-700',
+              '言': 'text-violet-600',
+              '木': 'text-emerald-600',
+              '水': 'text-sky-600',
+              '火': 'text-orange-600',
+              '日': 'text-amber-600',
+              '女': 'text-pink-500',
+              '手': 'text-sky-700',
+              '耳': 'text-cyan-600',
+              '肉': 'text-red-500',
+              '足': 'text-orange-700',
+              '子': 'text-rose-400',
+              '小': 'text-teal-600',
+              '大': 'text-yellow-700',
+              '父': 'text-amber-700',
+              '土': 'text-stone-600',
+              '牛': 'text-orange-600',
+              '魚': 'text-cyan-600',
+              '馬': 'text-indigo-600',
+              '貝': 'text-green-600',
+              '鳥': 'text-red-500',
+              '舟': 'text-blue-600',
+              '食': 'text-orange-700',
+              '宀': 'text-amber-600',
+              '辶': 'text-indigo-600',
+              '穴': 'text-stone-600',
+              '行': 'text-cyan-700',
+              '門': 'text-stone-700',
+              '刀': 'text-red-600',
+              '金': 'text-gray-700',
+              '雨': 'text-blue-500',
+              '竹': 'text-emerald-600',
+              '白': 'text-gray-400',
+              '見': 'text-blue-600',
+              '石': 'text-stone-500',
+              '虫': 'text-lime-700',
+              '革': 'text-red-600',
+              '糸': 'text-cyan-600',
+              '辛': 'text-orange-600',
+              '皿': 'text-blue-600',
+              '旡': 'text-stone-500',
+              '丿': 'text-stone-400',
+              '入': 'text-gray-600',
+              '鬥': 'text-red-600',
+              '丶': 'text-stone-500',
+              '丿': 'text-stone-400',
+              '亅': 'text-amber-600',
+              '冂': 'text-emerald-600',
+              '冖': 'text-blue-600',
+              '冫': 'text-cyan-600',
+              '凵': 'text-stone-600',
+              '厶': 'text-orange-600',
+              '又': 'text-rose-600',
+              '比': 'text-gray-600',
+              '夂': 'text-orange-600',
+              '巴': 'text-cyan-600',
+              '奀': 'text-amber-600',
+              '匕': 'text-rose-700',
+              '廴': 'text-violet-600',
+              '弓': 'text-amber-600',
+              '尢': 'text-rose-500',
+              '尸': 'text-stone-500',
+              '广': 'text-gray-700',
+              '廾': 'text-rose-600',
+              '巻': 'text-emerald-600',
+              '茵': 'text-green-600',
+              '艹': 'text-green-600',
+              '艿': 'text-lime-700',
+              '𧘇': 'text-red-600',
+              '⿱丬罔': 'text-blue-600'
+            };
+            const colorClass = radicalColor[v.radical] || 'text-stone-800';
             html += `
               <tr class="hover:bg-sky-50/20 transition-colors">
                 <td class="py-2.5 px-4 text-center text-xs text-slate-400 font-semibold">${rowCounter}</td>
                 <td class="py-2.5 px-4" style="padding-left: 3.75rem;">
                   <div class="flex items-center gap-2">
                     <span class="text-slate-300 font-mono text-sm select-none font-bold">${treeBranch}</span>
-                    <span class="text-slate-900 text-lg jp-kanji-clear bg-slate-50 px-2.5 py-0.5 rounded border border-slate-200">
+                    <span class="text-slate-900 text-lg jp-kanji-clear bg-slate-50 px-2.5 py-0.5 rounded border border-slate-200 ${colorClass}">
                       ${v.kanji}
                     </span>
                   </div>
