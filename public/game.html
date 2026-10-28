@@ -195,11 +195,14 @@
         // 1. Ekstraksi Level 1: Radikal Unik (121 radikal)
         const radMap = new Map();
         kanjiData.forEach(item => {
-          if (item.radical && (item.radName || item.namaRadikal) && !radMap.has(item.radical)) {
+          if (item.radical && !radMap.has(item.radical)) {
+            const kana = item.radMeta?.kana || (item.namaRadikal ? item.namaRadikal.split(' ')[0] : '') || '';
+            const arti = item.radMeta?.arti || item.artiRadikal || (item.radName ? item.radName.replace(/^[^(]+\(([^)]+)\).*/, '$1') : '') || item.radName || '';
             radMap.set(item.radical, {
               radical: item.radical,
+              kana: kana,
+              arti: arti,
               nama: item.radName || item.namaRadikal,
-              arti: item.artiRadikal || item.radMeta?.arti || item.radName || item.namaRadikal,
               grup: item.grupRadikal || 'Radikal Kanji'
             });
           }
@@ -339,6 +342,13 @@
       `;
     }
 
+    function getKanjiReading(k) {
+      const kun = k.kun && k.kun !== '-' ? k.kun : '';
+      const on = k.on && k.on !== '-' ? k.on : '';
+      if (kun && on) return `${kun} / ${on}`;
+      return kun || on || '';
+    }
+
     function renderKanjiQuestion(target) {
       const distractors = [];
 
@@ -346,25 +356,27 @@
       // LEVEL 1: RADIKAL KANJI (部首)
       // ==========================================
       if (kanjiLevel === 'radikal') {
-        const used = new Set([target.radical, target.arti]);
+        const targetOptionText = `${target.kana ? target.kana + ' — ' : ''}${target.arti}`;
+        const used = new Set([target.radical, targetOptionText]);
         const randomCandidates = shuffleArray(radicalData);
         for (let r of randomCandidates) {
-          if (r && r.arti && !used.has(r.radical) && !used.has(r.arti)) {
+          const rText = `${r.kana ? r.kana + ' — ' : ''}${r.arti}`;
+          if (r && r.arti && !used.has(r.radical) && !used.has(rText)) {
             used.add(r.radical);
-            used.add(r.arti);
-            distractors.push(r);
+            used.add(rText);
+            distractors.push({ ...r, optionText: rText });
             if (distractors.length >= 3) break;
           }
         }
         const options = [
-          { text: target.arti, isCorrect: true, item: target },
-          ...distractors.map(d => ({ text: d.arti, isCorrect: false, item: d }))
+          { text: targetOptionText, isCorrect: true, item: target },
+          ...distractors.map(d => ({ text: d.optionText, isCorrect: false, item: d }))
         ].sort(() => Math.random() - 0.5);
 
-        currentQ = { target: { kanji: target.radical }, options };
+        currentQ = { target: { kanji: target.radical, detail: `Radikal ${target.radical}: ${target.nama || targetOptionText}` }, options };
         document.getElementById('questionCategory').textContent = `LEVEL 1: RADIKAL • ${target.grup || 'Komponen Kanji'}`;
         document.getElementById('targetDisplay').textContent = target.radical;
-        document.getElementById('targetSub').innerHTML = `Nama Radikal: <b class="text-rose-600">${target.nama || '-'}</b>`;
+        document.getElementById('targetSub').innerHTML = '<span class="text-slate-400 font-medium">Pilihlah bacaan kana dan arti yang tepat</span>';
         renderOptionsGrid(options);
         return;
       }
@@ -373,25 +385,27 @@
       // LEVEL 3: KANJI KOTOBA / JUKUGO (熟語)
       // ==========================================
       if (kanjiLevel === 'kotoba') {
-        const used = new Set([target.word, target.arti]);
+        const targetOptionText = `${target.kana} — ${target.arti}`;
+        const used = new Set([target.word, targetOptionText]);
         const randomCandidates = shuffleArray(kanjiKotobaData);
         for (let v of randomCandidates) {
-          if (v && v.arti && !used.has(v.word) && !used.has(v.arti)) {
+          const vText = `${v.kana} — ${v.arti}`;
+          if (v && v.arti && !used.has(v.word) && !used.has(vText)) {
             used.add(v.word);
-            used.add(v.arti);
-            distractors.push(v);
+            used.add(vText);
+            distractors.push({ ...v, optionText: vText });
             if (distractors.length >= 3) break;
           }
         }
         const options = [
-          { text: target.arti, isCorrect: true, item: target },
-          ...distractors.map(d => ({ text: d.arti, isCorrect: false, item: d }))
+          { text: targetOptionText, isCorrect: true, item: target },
+          ...distractors.map(d => ({ text: d.optionText, isCorrect: false, item: d }))
         ].sort(() => Math.random() - 0.5);
 
-        currentQ = { target: { kanji: target.word }, options };
+        currentQ = { target: { kanji: target.word, detail: `${target.word} (${target.kana}) = ${target.arti} (Induk: ${target.parentKanji})` }, options };
         document.getElementById('questionCategory').textContent = `LEVEL 3: KANJI KOTOBA • Induk: 【${target.parentKanji}】`;
         document.getElementById('targetDisplay').textContent = target.word;
-        document.getElementById('targetSub').innerHTML = `Bacaan Kana: <b class="text-emerald-700">${target.kana}</b>`;
+        document.getElementById('targetSub').innerHTML = '<span class="text-slate-400 font-medium">Pilihlah bacaan kana dan arti yang tepat</span>';
         renderOptionsGrid(options);
         return;
       }
@@ -399,26 +413,30 @@
       // ==========================================
       // LEVEL 2: KANJI TUNGGAL (単漢字 - 336 Kanji)
       // ==========================================
-      const used = new Set([target.kanji, target.arti]);
+      const targetReading = getKanjiReading(target);
+      const targetOptionText = `${targetReading} — ${target.arti}`;
+      const used = new Set([target.kanji, targetOptionText]);
       const randomCandidates = shuffleArray(kanjiData);
       for (let k of randomCandidates) {
-        if (k && k.arti && !used.has(k.kanji) && !used.has(k.arti)) {
+        const kReading = getKanjiReading(k);
+        const kText = `${kReading} — ${k.arti}`;
+        if (k && k.arti && !used.has(k.kanji) && !used.has(kText)) {
           used.add(k.kanji);
-          used.add(k.arti);
-          distractors.push(k);
+          used.add(kText);
+          distractors.push({ ...k, optionText: kText });
           if (distractors.length >= 3) break;
         }
       }
 
       const options = [
-        { text: target.arti, isCorrect: true, item: target },
-        ...distractors.map(d => ({ text: d.arti, isCorrect: false, item: d }))
+        { text: targetOptionText, isCorrect: true, item: target },
+        ...distractors.map(d => ({ text: d.optionText, isCorrect: false, item: d }))
       ].sort(() => Math.random() - 0.5);
 
-      currentQ = { target, options };
+      currentQ = { target: { ...target, detail: `${target.kanji} [${targetReading}] = ${target.arti}` }, options };
       document.getElementById('questionCategory').textContent = `LEVEL 2: KANJI TUNGGAL • ${target.stroke || 0} Coretan • Radikal: ${target.radical || '-'}`;
       document.getElementById('targetDisplay').textContent = target.kanji;
-      document.getElementById('targetSub').innerHTML = `On: <b class="text-rose-600">${target.on || '-'}</b> • Kun: <b class="text-sky-600">${target.kun || '-'}</b>`;
+      document.getElementById('targetSub').innerHTML = '<span class="text-slate-400 font-medium">Pilihlah bacaan kana dan arti yang tepat</span>';
       renderOptionsGrid(options);
     }
 
@@ -491,7 +509,7 @@
         fbIcon.innerHTML = '<i class="fa-solid fa-check"></i>';
         fbTitle.className = 'font-extrabold text-sm text-emerald-800';
         fbTitle.textContent = 'Luar Biasa, Jawaban Benar! (+10 Poin)';
-        fbDetail.textContent = `${currentQ.target.kanji || currentQ.target.kana} = ${opt.text}`;
+        fbDetail.textContent = currentQ.target.detail || `${currentQ.target.kanji || currentQ.target.kana} = ${opt.text}`;
       } else {
         streak = 0;
         selectedBtn.classList.remove('bg-slate-50', 'border-slate-200');
@@ -511,7 +529,9 @@
         fbTitle.className = 'font-extrabold text-sm text-rose-800';
         fbTitle.textContent = 'Jawaban Kurang Tepat';
         const correctOpt = allOptions.find(o => o.isCorrect);
-        fbDetail.textContent = `Jawaban yang benar: ${correctOpt ? correctOpt.text : ''}`;
+        fbDetail.textContent = currentQ.target.detail 
+          ? `Jawaban yang benar: ${currentQ.target.detail}`
+          : `Jawaban yang benar: ${correctOpt ? correctOpt.text : ''}`;
       }
 
       document.getElementById('scoreVal').textContent = score;
