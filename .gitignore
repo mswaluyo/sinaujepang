@@ -20,3 +20,13 @@ bahan-soal/**
 referensi MNN/**
 # Tailwind CSS output (di-generate ulang via npm run build:css)
 public/assets/css/tailwind.css
+
+# --- Temporary / Debug / Logs / Dumps ----------------------
+*.log
+firebase-debug.log*
+*.hex
+extracted_*
+status*.txt
+null
+bundle/
+output/

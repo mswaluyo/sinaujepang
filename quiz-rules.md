@@ -1,67 +1,81 @@
-# **Hare-quiz: Aturan Membuat Soal**
+# **Panduan & Standar Format Pembuatan Soal Kuis (SinauJepang)**
 
-*File ini berisi panduan singkat untuk membuat soal baru.*
+Dokumen ini adalah acuan standar struktur data dan validasi pembuatan paket soal kuis CBT di platform SinauJepang (`public/<paket>-quiz/quiz-data.json`).
 
-## **Field Wajib Setiap Soal**
+---
 
-| Field | Deskripsi |
-|-------|-----------|
-| `no` | Nomor soal (unik, berurutan) |
-| `section` | Kategori: `"SESI 1 : MOJIGOI"`, `"SESI 2 : HYOUGEN"`, `"SESI 3 : CHOUKAI"`, atau `"SESI 4 : DOKKAI"` |
-| `title` | Judul soal/monton dialog |
-| `img` | Path gambar (biasanya `""`) |
-| `options` | Array 3 opsi |
-| `answer` | Indeks jawaban benar (0, 1, atau 2) |
-| `score` | Selalu `"0/4"` |
-| `trans` | Terjemahan Indonesia |
-| `trans_rom` | Terjemahan romaji atau `-` |
-| `mnn` | Tipe soal: `"Mojigoi"` (kosakata/gambar), `"Hyougen"` (tata bahasa/ungkapan), `"Choukai"` (mendengarkan), `"Dokkai"` (membaca) |
-| `analisis` | Penjelasan dalam Bahasa Indonesia |
-| `opt_detail` | Detail per opsi |
-| `opt_note` | Catatan pendek per opsi |
-| `kunci_id` | Kunci jawaban Jepang |
+## 1. Field Wajib Setiap Soal
 
-## **Struktur Options** (3 opsi)
+| Field | Tipe | Deskripsi & Nilai Standar |
+|---|---|---|
+| `no` | Number | Nomor urut soal unik (mulai dari 1 berurutan). |
+| `section` | String | Sesi ujian: `"SESI 1 : MOJIGOI"`, `"SESI 2 : HYOUGEN"`, `"SESI 3 : CHOUKAI"`, atau `"SESI 4 : DOKKAI"`. |
+| `title` | String | Teks pertanyaan, kalimat dialog, atau kalimat soal dalam bahasa Jepang. |
+| `img` | String | Path relatif gambar (contoh: `"images/soal_1.jpg"`), atau string kosong `""` jika tanpa gambar. |
+| `link` | String | (Opsional / Choukai) Path relatif audio listening (contoh: `"assets/audio/no_1.m4a"`). |
+| `options` | Array | Array 3 pilihan jawaban: `[{ "text": "...", "img": "" }, ...]`. |
+| `answer` | Number | Indeks jawaban yang benar (`0`, `1`, atau `2`). |
+| `score` | String | Nilai bobot soal: `"0/4"`. |
+| `trans` | String | Terjemahan bahasa Indonesia untuk soal/dialog. |
+| `trans_rom` | String | Romaji untuk soal, atau `"-"` jika tidak diperlukan. |
+| `mnn` | String | Kategori Minna no Nihongo / tipe soal: `"Mojigoi"`, `"Hyougen"`, `"Choukai"`, atau `"Dokkai"`. |
+| `analisis` | String | Penjelasan pembahasan jawaban, diawali format: `"[MNN Bab X - Topik] ..."`. |
+| `opt_detail` | Array | Array 3 objek rincian opsi: `[{ "kana": "...", "rom": "...", "arti": "...", "alasan": "..." }, ...]`. |
+| `opt_note` | Array | Array 3 string catatan singkat per opsi: `["...", "...", "..."]`. |
+| `kunci_id` | String | Teks pilihan benar dalam bahasa Jepang (harus sama persis dengan `options[answer].text`). |
 
-Array `options` berisi 3 objek (`text`, `img`); detail per opsi (`kana`, `rom`, `arti`, `alasan`) serta catatan (`opt_note`) dipisah ke `opt_detail` dan `opt_note`.
+---
 
-- `options` : array 3 objek `{ text, img }`
-- `opt_detail` : array 3 objek `{ kana, rom, arti, alasan }`
-- `opt_note` : array 3 string
+## 2. Struktur Detail Pilihan Jawaban (`options`, `opt_detail`, `opt_note`)
 
-## **Format `analisis`**
+Setiap soal memiliki 3 opsi dengan pasangan rincian analisis:
+1. `options`: 3 elemen array `{ "text": "...", "img": "..." }`.
+2. `opt_detail`: 3 elemen array `{ "kana": "...", "rom": "...", "arti": "...", "alasan": "..." }`.
+3. `opt_note`: 3 string catatan per opsi.
 
-Mulai dengan `"[MNN Bab X - Topik] penjelasan...\"`
+```json
+"options": [
+  { "text": "はい、そうです", "img": "" },
+  { "text": "いいえ、ちがいます", "img": "" },
+  { "text": "わかりません", "img": "" }
+],
+"opt_detail": [
+  { "kana": "はい、そうです", "rom": "hai, sou desu", "arti": "Ya, benar", "alasan": "Tepat untuk mengiyakan pertanyaan." },
+  { "kana": "いいえ、ちがいます", "rom": "iie, chigaimasu", "arti": "Bukan, salah", "alasan": "Konteks kalimat adalah afirmatif." },
+  { "kana": "わかりません", "rom": "wakarimasen", "arti": "Tidak tahu", "alasan": "Kurang tepat sesuai respon dialog." }
+],
+"opt_note": [
+  "Jawaban tepat",
+  "Pilihan pengecoh",
+  "Pilihan kurang tepat"
+]
+```
 
-- `Mojigoi` = SESI 1 (vocabulary/gambar)
-- `Hyougen` = SESI 2 (grammar/ungkapan)
-- `Choukai` = SESI 3 (mendengarkan/listening)
-- `Dokkai` = SESI 4 (membaca/reading)
+---
 
-## **Ceklist Submit Soal**
+## 3. Tipe Soal Berdasarkan Format
 
-- [ ] `no` sequential
-- [ ] `section` sesuai topik
-- [ ] `options` berisi 3 objek
-- [ ] `opt_detail` punya 3 objek `{ kana, rom, arti, alasan }`
-- [ ] `opt_note` punya 3 string
-- [ ] `score` = `"0/4"`
-- [ ] `trans` ada
-- [ ] `trans_rom` ada atau `-`
-- [ ] `mnn` benar
-- [ ] `analisis` mulai dengan `[MNN Bab X - Topik]`
-- [ ] `opt_detail` punya 3 objek
-- [ ] `opt_note` punya 3 string
-- [ ] `kunci_id` sesuai `text` opsi benar
-## **Tipe Soal (dari hare)**
+1. **Soal Gambar (Moji-Goi / Choukai):**
+   - `img` terisi path gambar.
+   - Deskripsi visual diletakkan di `analisis` atau `trans`.
+2. **Soal Teks / Kosakata / Partikel:**
+   - `title` berisi kalimat utama Jepang dengan tanda kurung `（　）`.
+   - `img` berupa string kosong `""`.
+3. **Soal Percakapan / Dialog:**
+   - `title` berisi dialog pembicara A dan B.
+4. **Soal Audio (Choukai):**
+   - `link` mengarah ke file audio listening yang valid di paket terkait.
 
-1. Gambar: `title` kosong/"Gambar berikut.", `img` terisi, `trans_rom` sering "-".
-2. Teks: `title` berisi kalimat Jepang/Indonesia, `img` bisa kosong.
-3. Percakapan teks: `title` berisi dialog, options berupa respons.
-4. Percakapan audio: `link`/audio terisi.
-5. Kanji (bertanda): opsi berupa kanji, `kunci_id` berupa kanji.
+---
 
-## **Konsistensi tambahan**
-- Deskripsi gambar taruh di `analisis`/`trans`, bukan di `title`.
-- `kunci_id` harus cocok dengan opsi yang benar; `answer` index sesuai.
-EOF
+## 4. Checklist Validasi Sebelum Submit Soal Baru
+
+- [ ] `no` berurutan tanpa ada nomor yang melompat atau terduplikasi.
+- [ ] `section` sesuai salah satu dari 4 sesi standar (MOJIGOI, HYOUGEN, CHOUKAI, DOKKAI).
+- [ ] `options` memiliki tepat 3 pilihan jawaban.
+- [ ] `answer` valid bernilai 0, 1, atau 2.
+- [ ] `kunci_id` sama persis dengan teks opsi di indeks `answer`.
+- [ ] `opt_detail` memiliki tepat 3 elemen dengan properti lengkap (`kana`, `rom`, `arti`, `alasan`).
+- [ ] `opt_note` memiliki tepat 3 elemen string.
+- [ ] `analisis` memiliki penjelasan komprehensif diawali `[MNN Bab X - ...]`.
+- [ ] Jalankan audit validasi: `node tools/validate-data.mjs` atau `node tools/cek-audit.mjs`.

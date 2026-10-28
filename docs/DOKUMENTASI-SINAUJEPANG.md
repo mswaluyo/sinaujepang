@@ -16,9 +16,9 @@
 | Deploy | Firebase Hosting (CI/CD via GitHub Actions) |
 | Auth | Google Sign-In |
 | Password gerbang | `Lolosyuk` (bukan gerbang aplikasi, hanya metadata `package.json`) |
-| Total kategori | 5 |
-| Total paket kuis | 17 |
-| Total soal | 742 |
+| Total kategori | 6 |
+| Total paket kuis | 19 |
+| Total soal | 810 |
 
 ---
 
@@ -79,19 +79,48 @@ d:\soal-jft\
 
 ## 4. Kategori & Paket Kuis
 
-### ✨ LOLOSYUK (6 paket)
-| Nama | S1 | S2 | S3 | S4 | Soal |
-|---|---|---|---|---|---|
-| GAKUSEI | 17 | 13 | 12 | 14 | 56 |
-| HARE | 19 | 16 | 12 | 13 | 60 |
-| MAGARIMASU | 18 | 10 | 12 | 12 | 52 |
-| ORIMASU | 19 | 14 | 10 | 14 | 57 |
-| TOMEMASU | 18 | 11 | 14 | 12 | 55 |
-| KONPYUUTAA | 17 | 15 | 17 | 14 | 63 |
-| **Total** | **108** | **79** | **77** | **89** | **343** |
+### 1. LOLOSYUK (6 paket, 343 soal)
+| Nama | Slug | Soal |
+|---|---|---|
+| GAKUSEI | `gakusei-quiz` | 56 |
+| HARE | `hare-quiz` | 60 |
+| MAGARIMASU | `magarimasu-quiz` | 52 |
+| ORIMASU | `orimasu-quiz` | 57 |
+| TOMEMASU | `tomemasu-quiz` | 55 |
+| KONPYUUTAA | `konpyuutaa-quiz` | 63 |
 
-### ✨ AC (1 paket baru)
-| Nama | S1 | S2 | S3 | S4 | Soal |
-|---|---|---|---|---|---|
-| HARE2 | – | – | – | – | 46 |
-```
+### 2. AC (1 paket, 46 soal)
+| Nama | Slug | Soal |
+|---|---|---|
+| HARE2 | `hare2-quiz` | 46 |
+
+### 3. DN (2 paket, 53 soal)
+| Nama | Slug | Soal |
+|---|---|---|
+| HASHIHASAMI | `hashi-quiz` | 25 |
+| JINJA | `jinja-quiz` | 28 |
+
+### 4. PRINCESS (4 paket, 137 soal)
+| Nama | Slug | Soal |
+|---|---|---|
+| BASU | `basu-quiz` | 26 |
+| BASU 3 | `basu3-quiz` | 72 |
+| TAMAGO | `tamago-quiz` | 26 |
+| HABURASHI | `haburashi-quiz` | 25 |
+
+### 5. TOKYO OMIYAGE (4 paket, 150 soal)
+| Nama | Slug | Soal |
+|---|---|---|
+| KUTSU SHITA | `kutsushita-quiz` | 46 |
+| SHATSU | `shatsu-quiz` | 48 |
+| KAGI | `kagi-quiz` | 36 |
+| AOI TORI | `aoi-quiz` | 29 |
+
+### 6. YUCHU (2 paket, 81 soal)
+| Nama | Slug | Soal |
+|---|---|---|
+| KUROI INU | `kuroi-quiz` | 47 |
+| AKAI KASA | `akai-quiz` | 34 |
+
+---
+**Total Keseluruhan:** 6 Kategori | 19 Paket Kuis | 810 Soal
