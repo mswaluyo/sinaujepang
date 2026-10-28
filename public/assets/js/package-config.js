@@ -1,6 +1,6 @@
 window.PAKET_CONFIG = {
-  "totalPaket": 19,
-  "totalSoal": 810,
+  "totalPaket": 18,
+  "totalSoal": 746,
   "kategori": [
     {
       "nama": "LOLOSYUK",
@@ -63,12 +63,6 @@ window.PAKET_CONFIG = {
       "warna": "sky",
       "badgeGradien": "from-sky-500 to-blue-600",
       "paket": [
-        {
-          "nama": "BASU2",
-          "slug": "basu2-quiz",
-          "total": 64,
-          "ikon": "B"
-        },
         {
           "nama": "BASU3",
           "slug": "basu3-quiz",
