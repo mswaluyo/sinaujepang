@@ -8839,5 +8839,2411 @@
       "romaji": "takai",
       "arti": "tinggi"
     }
+  },
+  {
+    "kanji": "一",
+    "stroke": 1,
+    "radical": "一",
+    "arti": "satu",
+    "on": "イチ, イツ",
+    "kun": "ひと, ひと・つ",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "いち (ichi - satu)",
+    "strokeRadikal": 1,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "一つ",
+        "kana": "ひとつ",
+        "rom": "hitotsu",
+        "arti": "satu buah"
+      },
+      {
+        "kanji": "一人",
+        "kana": "ひとり",
+        "rom": "hitori",
+        "arti": "satu orang"
+      },
+      {
+        "kanji": "一日",
+        "kana": "ついたち",
+        "rom": "tsuitachi",
+        "arti": "tanggal 1"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "いち (ichi - satu)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "いち",
+      "romaji": "ichi - satu",
+      "arti": "satu"
+    }
+  },
+  {
+    "kanji": "二",
+    "stroke": 2,
+    "radical": "二",
+    "arti": "dua",
+    "on": "ニ",
+    "kun": "ふた, ふた・つ",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "に (ni - dua)",
+    "strokeRadikal": 2,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "二つ",
+        "kana": "ふたつ",
+        "rom": "futatsu",
+        "arti": "dua buah"
+      },
+      {
+        "kanji": "二人",
+        "kana": "ふたり",
+        "rom": "futari",
+        "arti": "dua orang"
+      },
+      {
+        "kanji": "二日",
+        "kana": "ふつか",
+        "rom": "futsuka",
+        "arti": "tanggal 2"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "に (ni - dua)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "に",
+      "romaji": "ni - dua",
+      "arti": "dua"
+    }
+  },
+  {
+    "kanji": "三",
+    "stroke": 3,
+    "radical": "一",
+    "arti": "tiga",
+    "on": "サン",
+    "kun": "み, みっ・つ",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "いち (ichi - satu)",
+    "strokeRadikal": 1,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "三つ",
+        "kana": "みっつ",
+        "rom": "mittsu",
+        "arti": "tiga buah"
+      },
+      {
+        "kanji": "三日",
+        "kana": "みっか",
+        "rom": "mikka",
+        "arti": "tanggal 3"
+      },
+      {
+        "kanji": "三人",
+        "kana": "さんにん",
+        "rom": "sannin",
+        "arti": "tiga orang"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "いち (ichi - satu)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "いち",
+      "romaji": "ichi - satu",
+      "arti": "tiga"
+    }
+  },
+  {
+    "kanji": "四",
+    "stroke": 5,
+    "radical": "囗",
+    "arti": "empat",
+    "on": "シ",
+    "kun": "よ, よ・つ, よっ・つ, よん",
+    "grupRadikal": "🔷 Bentuk & Bingkai",
+    "namaRadikal": "くにがまえ (kunigamae - kotak)",
+    "strokeRadikal": 3,
+    "grupId": "bentuk_bingkai",
+    "vocab": [
+      {
+        "kanji": "四つ",
+        "kana": "よっつ",
+        "rom": "yottsu",
+        "arti": "empat buah"
+      },
+      {
+        "kanji": "四日",
+        "kana": "よっか",
+        "rom": "yokka",
+        "arti": "tanggal 4"
+      },
+      {
+        "kanji": "四人",
+        "kana": "よにん",
+        "rom": "yonin",
+        "arti": "empat orang"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "くにがまえ (kunigamae - kotak)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "くにがまえ",
+      "romaji": "kunigamae - kotak",
+      "arti": "empat"
+    }
+  },
+  {
+    "kanji": "五",
+    "stroke": 4,
+    "radical": "二",
+    "arti": "lima",
+    "on": "ゴ",
+    "kun": "いつ, いつ・つ",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "に (ni - dua)",
+    "strokeRadikal": 2,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "五つ",
+        "kana": "いつつ",
+        "rom": "itsutsu",
+        "arti": "lima buah"
+      },
+      {
+        "kanji": "五日",
+        "kana": "いつか",
+        "rom": "itsuka",
+        "arti": "tanggal 5"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "に (ni - dua)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "に",
+      "romaji": "ni - dua",
+      "arti": "lima"
+    }
+  },
+  {
+    "kanji": "六",
+    "stroke": 4,
+    "radical": "八",
+    "arti": "enam",
+    "on": "ロク",
+    "kun": "む, むっ・つ, むい",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "はち (hachi - delapan)",
+    "strokeRadikal": 2,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "六つ",
+        "kana": "むっつ",
+        "rom": "muttsu",
+        "arti": "enam buah"
+      },
+      {
+        "kanji": "六日",
+        "kana": "むいか",
+        "rom": "muika",
+        "arti": "tanggal 6"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "はち (hachi - delapan)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "はち",
+      "romaji": "hachi - delapan",
+      "arti": "enam"
+    }
+  },
+  {
+    "kanji": "七",
+    "stroke": 2,
+    "radical": "一",
+    "arti": "tujuh",
+    "on": "シチ",
+    "kun": "なな, なな・つ, なの",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "いち (ichi - satu)",
+    "strokeRadikal": 1,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "七つ",
+        "kana": "ななつ",
+        "rom": "nanatsu",
+        "arti": "tujuh buah"
+      },
+      {
+        "kanji": "七日",
+        "kana": "なのか",
+        "rom": "nanoka",
+        "arti": "tanggal 7"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "いち (ichi - satu)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "いち",
+      "romaji": "ichi - satu",
+      "arti": "tujuh"
+    }
+  },
+  {
+    "kanji": "八",
+    "stroke": 2,
+    "radical": "八",
+    "arti": "delapan",
+    "on": "ハチ",
+    "kun": "や, やっ・つ, よう",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "はち (hachi - delapan)",
+    "strokeRadikal": 2,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "八つ",
+        "kana": "やっつ",
+        "rom": "yattsu",
+        "arti": "delapan buah"
+      },
+      {
+        "kanji": "八日",
+        "kana": "ようか",
+        "rom": "youka",
+        "arti": "tanggal 8"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "はち (hachi - delapan)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "はち",
+      "romaji": "hachi - delapan",
+      "arti": "delapan"
+    }
+  },
+  {
+    "kanji": "十",
+    "stroke": 2,
+    "radical": "十",
+    "arti": "sepuluh",
+    "on": "ジュウ, ジッ",
+    "kun": "とお, と",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "じゅう (juu - sepuluh)",
+    "strokeRadikal": 2,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "十日",
+        "kana": "とおか",
+        "rom": "tooka",
+        "arti": "tanggal 10"
+      },
+      {
+        "kanji": "十分",
+        "kana": "じゅっぷん",
+        "rom": "juppun",
+        "arti": "10 menit"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "じゅう (juu - sepuluh)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "じゅう",
+      "romaji": "juu - sepuluh",
+      "arti": "sepuluh"
+    }
+  },
+  {
+    "kanji": "百",
+    "stroke": 6,
+    "radical": "白",
+    "arti": "ratus",
+    "on": "ヒャク",
+    "kun": "もも",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "しろ (shiro - putih)",
+    "strokeRadikal": 5,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "百円",
+        "kana": "ひゃくえん",
+        "rom": "hyakuen",
+        "arti": "100 yen"
+      },
+      {
+        "kanji": "三百",
+        "kana": "さんびゃく",
+        "rom": "sanbyaku",
+        "arti": "300"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "しろ (shiro - putih)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "しろ",
+      "romaji": "shiro - putih",
+      "arti": "ratus"
+    }
+  },
+  {
+    "kanji": "千",
+    "stroke": 3,
+    "radical": "十",
+    "arti": "ribu",
+    "on": "セン",
+    "kun": "ち",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "じゅう (juu - sepuluh)",
+    "strokeRadikal": 2,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "千円",
+        "kana": "せんえん",
+        "rom": "sen'en",
+        "arti": "1000 yen"
+      },
+      {
+        "kanji": "三千",
+        "kana": "さんぜん",
+        "rom": "sanzen",
+        "arti": "3000"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "じゅう (juu - sepuluh)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "じゅう",
+      "romaji": "juu - sepuluh",
+      "arti": "ribu"
+    }
+  },
+  {
+    "kanji": "下",
+    "stroke": 3,
+    "radical": "一",
+    "arti": "bawah / turun",
+    "on": "カ, ゲ",
+    "kun": "した, さ・がる, くだ・さる",
+    "grupRadikal": "〰️ Garis Dasar",
+    "namaRadikal": "いち (ichi - satu)",
+    "strokeRadikal": 1,
+    "grupId": "garis_dasar",
+    "vocab": [
+      {
+        "kanji": "地下鉄",
+        "kana": "ちかてつ",
+        "rom": "chikatetsu",
+        "arti": "kereta bawah tanah"
+      },
+      {
+        "kanji": "靴下",
+        "kana": "くつした",
+        "rom": "kutsushita",
+        "arti": "kaos kaki"
+      },
+      {
+        "kanji": "下さい",
+        "kana": "ください",
+        "rom": "kudasai",
+        "arti": "tolong berikan"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "いち (ichi - satu)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "いち",
+      "romaji": "ichi - satu",
+      "arti": "bawah / turun"
+    }
+  },
+  {
+    "kanji": "外",
+    "stroke": 5,
+    "radical": "夕",
+    "arti": "luar / asing",
+    "on": "ガイ, ゲ",
+    "kun": "そと, ほか, はず・す",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ゆう (yuu - petang)",
+    "strokeRadikal": 3,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "外国",
+        "kana": "がいこく",
+        "rom": "gaikoku",
+        "arti": "luar negeri"
+      },
+      {
+        "kanji": "外国人",
+        "kana": "がいこくじん",
+        "rom": "gaikokujin",
+        "arti": "orang asing"
+      },
+      {
+        "kanji": "外",
+        "kana": "そと",
+        "rom": "soto",
+        "arti": "di luar"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ゆう (yuu - petang)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ゆう",
+      "romaji": "yuu - petang",
+      "arti": "luar / asing"
+    }
+  },
+  {
+    "kanji": "私",
+    "stroke": 7,
+    "radical": "禾",
+    "arti": "saya / pribadi",
+    "on": "シ",
+    "kun": "わたし, わたくし",
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "のぎ (nogi - padi)",
+    "strokeRadikal": 5,
+    "grupId": "manusia_relasi",
+    "vocab": [
+      {
+        "kanji": "私",
+        "kana": "わたし",
+        "rom": "watashi",
+        "arti": "saya"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "のぎ (nogi - padi)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "のぎ",
+      "romaji": "nogi - padi",
+      "arti": "saya / pribadi"
+    }
+  },
+  {
+    "kanji": "自",
+    "stroke": 6,
+    "radical": "自",
+    "arti": "diri sendiri / otomatis",
+    "on": "ジ, シ",
+    "kun": "みずか・ら",
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "みずから (mizukara - hidung/sendiri)",
+    "strokeRadikal": 6,
+    "grupId": "tubuh_anatomi",
+    "vocab": [
+      {
+        "kanji": "自分",
+        "kana": "じぶん",
+        "rom": "jibun",
+        "arti": "diri sendiri"
+      },
+      {
+        "kanji": "自動車",
+        "kana": "じどうしゃ",
+        "rom": "jidousha",
+        "arti": "mobil"
+      },
+      {
+        "kanji": "自転車",
+        "kana": "じてんしゃ",
+        "rom": "jitensha",
+        "arti": "sepeda"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "みずから (mizukara - hidung/sendiri)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "みずから",
+      "romaji": "mizukara - hidung/sendiri",
+      "arti": "diri sendiri / otomatis"
+    }
+  },
+  {
+    "kanji": "語",
+    "stroke": 14,
+    "radical": "言",
+    "arti": "bahasa / berkata",
+    "on": "ゴ",
+    "kun": "かた・る",
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "ごんべん (gonben - kata/bicara)",
+    "strokeRadikal": 7,
+    "grupId": "manusia_relasi",
+    "vocab": [
+      {
+        "kanji": "日本語",
+        "kana": "にほんご",
+        "rom": "nihongo",
+        "arti": "bahasa Jepang"
+      },
+      {
+        "kanji": "英語",
+        "kana": "えいご",
+        "rom": "eigo",
+        "arti": "bahasa Inggris"
+      },
+      {
+        "kanji": "単語",
+        "kana": "たんご",
+        "rom": "tango",
+        "arti": "kosakata"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ごんべん (gonben - kata/bicara)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ごんべん",
+      "romaji": "gonben - kata/bicara",
+      "arti": "bahasa / berkata"
+    }
+  },
+  {
+    "kanji": "言",
+    "stroke": 7,
+    "radical": "言",
+    "arti": "mengatakan / kata",
+    "on": "ゲン, ゴン",
+    "kun": "い・う, こと",
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "ごんべん (gonben - kata/bicara)",
+    "strokeRadikal": 7,
+    "grupId": "manusia_relasi",
+    "vocab": [
+      {
+        "kanji": "言います",
+        "kana": "いいます",
+        "rom": "iimasu",
+        "arti": "berkata"
+      },
+      {
+        "kanji": "一言",
+        "kana": "ひとこと",
+        "rom": "hitokoto",
+        "arti": "sepatah kata"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ごんべん (gonben - kata/bicara)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ごんべん",
+      "romaji": "gonben - kata/bicara",
+      "arti": "mengatakan / kata"
+    }
+  },
+  {
+    "kanji": "英",
+    "stroke": 8,
+    "radical": "艸",
+    "arti": "Inggris / cerdas",
+    "on": "エイ",
+    "kun": "-",
+    "grupRadikal": "🌾 Tumbuhan & Makanan",
+    "namaRadikal": "くさかんむり (kusakanmuri - rumput)",
+    "strokeRadikal": 3,
+    "grupId": "tumbuhan_makanan",
+    "vocab": [
+      {
+        "kanji": "英語",
+        "kana": "えいご",
+        "rom": "eigo",
+        "arti": "bahasa Inggris"
+      },
+      {
+        "kanji": "英国",
+        "kana": "えいこく",
+        "rom": "eikoku",
+        "arti": "negara Inggris"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "くさかんむり (kusakanmuri - rumput)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "くさかんむり",
+      "romaji": "kusakanmuri - rumput",
+      "arti": "Inggris / cerdas"
+    }
+  },
+  {
+    "kanji": "員",
+    "stroke": 10,
+    "radical": "口",
+    "arti": "anggota / pegawai",
+    "on": "イン",
+    "kun": "-",
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "くち (kuchi - mulut)",
+    "strokeRadikal": 3,
+    "grupId": "manusia_relasi",
+    "vocab": [
+      {
+        "kanji": "会社員",
+        "kana": "かいしゃいん",
+        "rom": "kaishain",
+        "arti": "pegawai perusahaan"
+      },
+      {
+        "kanji": "店員",
+        "kana": "てんいん",
+        "rom": "ten'in",
+        "arti": "pegawai toko"
+      },
+      {
+        "kanji": "駅員",
+        "kana": "えきいん",
+        "rom": "eki'in",
+        "arti": "petugas stasiun"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "くち (kuchi - mulut)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "くち",
+      "romaji": "kuchi - mulut",
+      "arti": "anggota / pegawai"
+    }
+  },
+  {
+    "kanji": "元",
+    "stroke": 4,
+    "radical": "儿",
+    "arti": "asal / sumber / sehat",
+    "on": "ゲン, ガン",
+    "kun": "もと",
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "ひとあし (hitoashi - kaki manusia)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "vocab": [
+      {
+        "kanji": "元気",
+        "kana": "げんき",
+        "rom": "genki",
+        "arti": "sehat / bersemangat"
+      },
+      {
+        "kanji": "元旦",
+        "kana": "がんたん",
+        "rom": "gantan",
+        "arti": "hari tahun baru"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ひとあし (hitoashi - kaki manusia)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ひとあし",
+      "romaji": "hitoashi - kaki manusia",
+      "arti": "asal / sumber / sehat"
+    }
+  },
+  {
+    "kanji": "持",
+    "stroke": 9,
+    "radical": "手",
+    "arti": "membawa / memiliki",
+    "on": "ジ",
+    "kun": "も・つ",
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "てへん (tehen - tangan)",
+    "strokeRadikal": 3,
+    "grupId": "tubuh_anatomi",
+    "vocab": [
+      {
+        "kanji": "持ちます",
+        "kana": "もちます",
+        "rom": "mochimasu",
+        "arti": "membawa / memegang"
+      },
+      {
+        "kanji": "気持ち",
+        "kana": "きもち",
+        "rom": "kimochi",
+        "arti": "perasaan"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "てへん (tehen - tangan)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "てへん",
+      "romaji": "tehen - tangan",
+      "arti": "membawa / memiliki"
+    }
+  },
+  {
+    "kanji": "休",
+    "stroke": 6,
+    "radical": "人",
+    "arti": "istirahat / libur",
+    "on": "キュウ",
+    "kun": "やす・む, やす・まる",
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "にんべん (ninben - orang)",
+    "strokeRadikal": 2,
+    "grupId": "manusia_relasi",
+    "vocab": [
+      {
+        "kanji": "休みます",
+        "kana": "やすみます",
+        "rom": "yasumimasu",
+        "arti": "beristirahat / libur"
+      },
+      {
+        "kanji": "夏休み",
+        "kana": "なつやすみ",
+        "rom": "natsuyasumi",
+        "arti": "liburan musim panas"
+      },
+      {
+        "kanji": "休日",
+        "kana": "きゅうじつ",
+        "rom": "kyuujitsu",
+        "arti": "hari libur"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "にんべん (ninben - orang)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "にんべん",
+      "romaji": "ninben - orang",
+      "arti": "istirahat / libur"
+    }
+  },
+  {
+    "kanji": "着",
+    "stroke": 12,
+    "radical": "羊",
+    "arti": "tiba / memakai baju",
+    "on": "チャク, ジャク",
+    "kun": "き・る, つ・く",
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "ひつじ (hitsuji - domba)",
+    "strokeRadikal": 6,
+    "grupId": "aksi_gerak",
+    "vocab": [
+      {
+        "kanji": "着きます",
+        "kana": "つきます",
+        "rom": "tsukimasu",
+        "arti": "tiba / sampai"
+      },
+      {
+        "kanji": "着ます",
+        "kana": "きます",
+        "rom": "kimasu",
+        "arti": "memakai (baju)"
+      },
+      {
+        "kanji": "上着",
+        "kana": "うわぎ",
+        "rom": "uwagi",
+        "arti": "jaket / atasan"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ひつじ (hitsuji - domba)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ひつじ",
+      "romaji": "hitsuji - domba",
+      "arti": "tiba / memakai baju"
+    }
+  },
+  {
+    "kanji": "消",
+    "stroke": 10,
+    "radical": "水",
+    "arti": "padam / mematikan / hilang",
+    "on": "ショウ",
+    "kun": "き・える, け・す",
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "さんずい (sanzui - air)",
+    "strokeRadikal": 3,
+    "grupId": "alam_elemen",
+    "vocab": [
+      {
+        "kanji": "消します",
+        "kana": "けします",
+        "rom": "keshimasu",
+        "arti": "mematikan (lampu/api)"
+      },
+      {
+        "kanji": "消しゴム",
+        "kana": "けしごむ",
+        "rom": "keshigomu",
+        "arti": "penghapus"
+      },
+      {
+        "kanji": "消火器",
+        "kana": "しょうかき",
+        "rom": "shoukaki",
+        "arti": "alat pemadam api"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "さんずい (sanzui - air)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "さんずい",
+      "romaji": "sanzui - air",
+      "arti": "padam / mematikan / hilang"
+    }
+  },
+  {
+    "kanji": "説",
+    "stroke": 14,
+    "radical": "言",
+    "arti": "menjelaskan / teori",
+    "on": "セツ, ゼイ",
+    "kun": "と・く",
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "ごんべん (gonben - kata/bicara)",
+    "strokeRadikal": 7,
+    "grupId": "manusia_relasi",
+    "vocab": [
+      {
+        "kanji": "説明",
+        "kana": "せつめい",
+        "rom": "setsumei",
+        "arti": "penjelasan"
+      },
+      {
+        "kanji": "小説",
+        "kana": "しょうせつ",
+        "rom": "shousetsu",
+        "arti": "novel"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ごんべん (gonben - kata/bicara)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ごんべん",
+      "romaji": "gonben - kata/bicara",
+      "arti": "menjelaskan / teori"
+    }
+  },
+  {
+    "kanji": "習",
+    "stroke": 11,
+    "radical": "羽",
+    "arti": "belajar / berlatih",
+    "on": "シュウ",
+    "kun": "なら・う",
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "はね (hane - bulu/sayap)",
+    "strokeRadikal": 6,
+    "grupId": "aksi_gerak",
+    "vocab": [
+      {
+        "kanji": "習います",
+        "kana": "ならいます",
+        "rom": "naraimasu",
+        "arti": "belajar dari guru"
+      },
+      {
+        "kanji": "練習",
+        "kana": "れんしゅう",
+        "rom": "renshuu",
+        "arti": "latihan"
+      },
+      {
+        "kanji": "予習",
+        "kana": "よしゅう",
+        "rom": "yoshuu",
+        "arti": "belajar persiapan"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "はね (hane - bulu/sayap)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "はね",
+      "romaji": "hane - bulu/sayap",
+      "arti": "belajar / berlatih"
+    }
+  },
+  {
+    "kanji": "洗",
+    "stroke": 9,
+    "radical": "水",
+    "arti": "mencuci",
+    "on": "セン",
+    "kun": "あら・う",
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "さんずい (sanzui - air)",
+    "strokeRadikal": 3,
+    "grupId": "alam_elemen",
+    "vocab": [
+      {
+        "kanji": "洗います",
+        "kana": "あらいます",
+        "rom": "araimasu",
+        "arti": "mencuci"
+      },
+      {
+        "kanji": "洗濯",
+        "kana": "せんたく",
+        "rom": "sentaku",
+        "arti": "mencuci baju"
+      },
+      {
+        "kanji": "お手洗い",
+        "kana": "おてあらい",
+        "rom": "otearai",
+        "arti": "toilet / tempat cuci tangan"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "さんずい (sanzui - air)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "さんずい",
+      "romaji": "sanzui - air",
+      "arti": "mencuci"
+    }
+  },
+  {
+    "kanji": "送",
+    "stroke": 9,
+    "radical": "辵",
+    "arti": "mengirim / mengantar",
+    "on": "ソウ",
+    "kun": "おく・る",
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "しんにょう (shinnyou - jalan/gerak)",
+    "strokeRadikal": 3,
+    "grupId": "aksi_gerak",
+    "vocab": [
+      {
+        "kanji": "送ります",
+        "kana": "おくります",
+        "rom": "okurimasu",
+        "arti": "mengirim / mengantar"
+      },
+      {
+        "kanji": "見送り",
+        "kana": "みおくり",
+        "rom": "miokuri",
+        "arti": "mengantar kepergian"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "しんにょう (shinnyou - jalan/gerak)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "しんにょう",
+      "romaji": "shinnyou - jalan/gerak",
+      "arti": "mengirim / mengantar"
+    }
+  },
+  {
+    "kanji": "届",
+    "stroke": 8,
+    "radical": "尸",
+    "arti": "laporan / mengirimkan / sampai",
+    "on": "カイ",
+    "kun": "とど・く, とど・ける",
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "しかばね (shikabane - mayat/badan)",
+    "strokeRadikal": 3,
+    "grupId": "bangunan_tempat",
+    "vocab": [
+      {
+        "kanji": "届けます",
+        "kana": "とどけます",
+        "rom": "todokemasu",
+        "arti": "mengantarkan"
+      },
+      {
+        "kanji": "届出",
+        "kana": "とどけで",
+        "rom": "todokede",
+        "arti": "pemberitahuan resmi"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "しかばね (shikabane - mayat/badan)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "しかばね",
+      "romaji": "shikabane - mayat/badan",
+      "arti": "laporan / mengirimkan / sampai"
+    }
+  },
+  {
+    "kanji": "開",
+    "stroke": 12,
+    "radical": "門",
+    "arti": "membuka",
+    "on": "カイ",
+    "kun": "あ・く, あ・ける, ひら・く",
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "もんがまえ (mongamae - gerbang)",
+    "strokeRadikal": 8,
+    "grupId": "bangunan_tempat",
+    "vocab": [
+      {
+        "kanji": "開けます",
+        "kana": "あけます",
+        "rom": "akemasu",
+        "arti": "membuka"
+      },
+      {
+        "kanji": "開店",
+        "kana": "かいてん",
+        "rom": "kaiten",
+        "arti": "toko buka"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "もんがまえ (mongamae - gerbang)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "もんがまえ",
+      "romaji": "mongamae - gerbang",
+      "arti": "membuka"
+    }
+  },
+  {
+    "kanji": "売",
+    "stroke": 7,
+    "radical": "士",
+    "arti": "menjual",
+    "on": "バイ",
+    "kun": "う・る, う・れる",
+    "grupRadikal": "👥 Manusia & Relasi",
+    "namaRadikal": "さむらい (samurai - ksatria)",
+    "strokeRadikal": 3,
+    "grupId": "manusia_relasi",
+    "vocab": [
+      {
+        "kanji": "売ります",
+        "kana": "うります",
+        "rom": "urimasu",
+        "arti": "menjual"
+      },
+      {
+        "kanji": "売店",
+        "kana": "ばいてん",
+        "rom": "baiten",
+        "arti": "kios penjualan"
+      },
+      {
+        "kanji": "売り場",
+        "kana": "うりば",
+        "rom": "uriba",
+        "arti": "tempat penjualan"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "さむらい (samurai - ksatria)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "さむらい",
+      "romaji": "samurai - ksatria",
+      "arti": "menjual"
+    }
+  },
+  {
+    "kanji": "引",
+    "stroke": 4,
+    "radical": "弓",
+    "arti": "menarik",
+    "on": "イン",
+    "kun": "ひ・く, ひ・ける",
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "ゆみ (yumi - busur panah)",
+    "strokeRadikal": 3,
+    "grupId": "alat_benda",
+    "vocab": [
+      {
+        "kanji": "引きます",
+        "kana": "ひきます",
+        "rom": "hikimasu",
+        "arti": "menarik"
+      },
+      {
+        "kanji": "引き出し",
+        "kana": "ひきだし",
+        "rom": "hikidashi",
+        "arti": "laci"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ゆみ (yumi - busur panah)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ゆみ",
+      "romaji": "yumi - busur panah",
+      "arti": "menarik"
+    }
+  },
+  {
+    "kanji": "階",
+    "stroke": 12,
+    "radical": "阜",
+    "arti": "lantai (gedung) / tangga",
+    "on": "カイ",
+    "kun": "きざはし",
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "こざとへん (kozatohen - bukit)",
+    "strokeRadikal": 3,
+    "grupId": "bangunan_tempat",
+    "vocab": [
+      {
+        "kanji": "二階",
+        "kana": "にかい",
+        "rom": "nikai",
+        "arti": "lantai 2"
+      },
+      {
+        "kanji": "階段",
+        "kana": "かいだん",
+        "rom": "kaidan",
+        "arti": "tangga"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "こざとへん (kozatohen - bukit)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "こざとへん",
+      "romaji": "kozatohen - bukit",
+      "arti": "lantai (gedung) / tangga"
+    }
+  },
+  {
+    "kanji": "線",
+    "stroke": 15,
+    "radical": "糸",
+    "arti": "garis / jalur kereta",
+    "on": "セン",
+    "kun": "すじ",
+    "grupRadikal": "⚔️ Alat & Benda",
+    "namaRadikal": "いとへん (itohen - benang)",
+    "strokeRadikal": 6,
+    "grupId": "alat_benda",
+    "vocab": [
+      {
+        "kanji": "新幹線",
+        "kana": "しんかんせん",
+        "rom": "shinkansen",
+        "arti": "kereta cepat Shinkansen"
+      },
+      {
+        "kanji": "山手線",
+        "kana": "やまのてせん",
+        "rom": "yamanotesen",
+        "arti": "jalur Yamanote"
+      },
+      {
+        "kanji": "内線",
+        "kana": "ないせん",
+        "rom": "naisen",
+        "arti": "nomor ekstensi telepon"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "いとへん (itohen - benang)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "いとへん",
+      "romaji": "itohen - benang",
+      "arti": "garis / jalur kereta"
+    }
+  },
+  {
+    "kanji": "料",
+    "stroke": 10,
+    "radical": "斗",
+    "arti": "bahan / biaya / tarif",
+    "on": "リョウ",
+    "kun": "-",
+    "grupRadikal": "🌾 Tumbuhan & Makanan",
+    "namaRadikal": "とます (tomasu - takaran)",
+    "strokeRadikal": 4,
+    "grupId": "tumbuhan_makanan",
+    "vocab": [
+      {
+        "kanji": "料理",
+        "kana": "りょうり",
+        "rom": "ryouri",
+        "arti": "masakan"
+      },
+      {
+        "kanji": "料金",
+        "kana": "りょうきん",
+        "rom": "ryoukin",
+        "arti": "tarif / biaya"
+      },
+      {
+        "kanji": "無料",
+        "kana": "むりょう",
+        "rom": "muryou",
+        "arti": "gratis"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "とます (tomasu - takaran)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "とます",
+      "romaji": "tomasu - takaran",
+      "arti": "bahan / biaya / tarif"
+    }
+  },
+  {
+    "kanji": "町",
+    "stroke": 7,
+    "radical": "田",
+    "arti": "kota / blok lingkungan",
+    "on": "チョウ",
+    "kun": "まち",
+    "grupRadikal": "🏠 Bangunan & Tempat",
+    "namaRadikal": "た (ta - sawah)",
+    "strokeRadikal": 5,
+    "grupId": "bangunan_tempat",
+    "vocab": [
+      {
+        "kanji": "町",
+        "kana": "まち",
+        "rom": "machi",
+        "arti": "kota kecil / pemukiman"
+      },
+      {
+        "kanji": "下町",
+        "kana": "したまち",
+        "rom": "shitamachi",
+        "arti": "pusat kota lama"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "た (ta - sawah)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "た",
+      "romaji": "ta - sawah",
+      "arti": "kota / blok lingkungan"
+    }
+  },
+  {
+    "kanji": "道",
+    "stroke": 12,
+    "radical": "辵",
+    "arti": "jalan / jalur",
+    "on": "ドウ, トウ",
+    "kun": "みち",
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "しんにょう (shinnyou - jalan/gerak)",
+    "strokeRadikal": 3,
+    "grupId": "aksi_gerak",
+    "vocab": [
+      {
+        "kanji": "道",
+        "kana": "みち",
+        "rom": "michi",
+        "arti": "jalan"
+      },
+      {
+        "kanji": "水道",
+        "kana": "すいどう",
+        "rom": "suidou",
+        "arti": "air leding"
+      },
+      {
+        "kanji": "片道",
+        "kana": "かたみち",
+        "rom": "katamichi",
+        "arti": "perjalanan satu arah"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "しんにょう (shinnyou - jalan/gerak)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "しんにょう",
+      "romaji": "shinnyou - jalan/gerak",
+      "arti": "jalan / jalur"
+    }
+  },
+  {
+    "kanji": "山",
+    "stroke": 3,
+    "radical": "山",
+    "arti": "gunung",
+    "on": "サン",
+    "kun": "やま",
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "やま (yama - gunung)",
+    "strokeRadikal": 3,
+    "grupId": "alam_elemen",
+    "vocab": [
+      {
+        "kanji": "山",
+        "kana": "やま",
+        "rom": "yama",
+        "arti": "gunung"
+      },
+      {
+        "kanji": "富士山",
+        "kana": "ふじさん",
+        "rom": "fujisan",
+        "arti": "Gunung Fuji"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "やま (yama - gunung)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "やま",
+      "romaji": "yama - gunung",
+      "arti": "gunung"
+    }
+  },
+  {
+    "kanji": "田",
+    "stroke": 5,
+    "radical": "田",
+    "arti": "sawah",
+    "on": "デン",
+    "kun": "た",
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "た (ta - sawah)",
+    "strokeRadikal": 5,
+    "grupId": "alam_elemen",
+    "vocab": [
+      {
+        "kanji": "水田",
+        "kana": "すいでん",
+        "rom": "suiden",
+        "arti": "sawah berair"
+      },
+      {
+        "kanji": "山田",
+        "kana": "やまだ",
+        "rom": "yamada",
+        "arti": "Yamada (nama orang)"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "た (ta - sawah)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "た",
+      "romaji": "ta - sawah",
+      "arti": "sawah"
+    }
+  },
+  {
+    "kanji": "天",
+    "stroke": 4,
+    "radical": "大",
+    "arti": "langit / surga",
+    "on": "テン",
+    "kun": "あまつ, あめ",
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "だい (dai - besar)",
+    "strokeRadikal": 3,
+    "grupId": "alam_elemen",
+    "vocab": [
+      {
+        "kanji": "天気",
+        "kana": "てんき",
+        "rom": "tenki",
+        "arti": "cuaca"
+      },
+      {
+        "kanji": "天ぷら",
+        "kana": "てんぷら",
+        "rom": "tenpura",
+        "arti": "tempura"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "だい (dai - besar)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "だい",
+      "romaji": "dai - besar",
+      "arti": "langit / surga"
+    }
+  },
+  {
+    "kanji": "空",
+    "stroke": 8,
+    "radical": "穴",
+    "arti": "langit / kosong",
+    "on": "クウ",
+    "kun": "そら, あ・く, から",
+    "grupRadikal": "🌿 Alam & Elemen",
+    "namaRadikal": "あな (ana - lubang/gua)",
+    "strokeRadikal": 5,
+    "grupId": "alam_elemen",
+    "vocab": [
+      {
+        "kanji": "空",
+        "kana": "そら",
+        "rom": "sora",
+        "arti": "langit"
+      },
+      {
+        "kanji": "空港",
+        "kana": "くうこう",
+        "rom": "kuukou",
+        "arti": "bandara"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "あな (ana - lubang/gua)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "あな",
+      "romaji": "ana - lubang/gua",
+      "arti": "langit / kosong"
+    }
+  },
+  {
+    "kanji": "朝",
+    "stroke": 12,
+    "radical": "月",
+    "arti": "pagi",
+    "on": "チョウ",
+    "kun": "あさ",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "つき (tsuki - bulan)",
+    "strokeRadikal": 4,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "朝",
+        "kana": "あさ",
+        "rom": "asa",
+        "arti": "pagi"
+      },
+      {
+        "kanji": "朝ご飯",
+        "kana": "あさごはん",
+        "rom": "asagohan",
+        "arti": "sarapan"
+      },
+      {
+        "kanji": "今朝",
+        "kana": "けさ",
+        "rom": "kesa",
+        "arti": "pagi ini"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "つき (tsuki - bulan)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "つき",
+      "romaji": "tsuki - bulan",
+      "arti": "pagi"
+    }
+  },
+  {
+    "kanji": "夜",
+    "stroke": 8,
+    "radical": "夕",
+    "arti": "malam",
+    "on": "ヤ",
+    "kun": "よ, よる",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ゆう (yuu - petang)",
+    "strokeRadikal": 3,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "夜",
+        "kana": "よる",
+        "rom": "yoru",
+        "arti": "malam hari"
+      },
+      {
+        "kanji": "今夜",
+        "kana": "こんや",
+        "rom": "konya",
+        "arti": "malam ini"
+      },
+      {
+        "kanji": "夜勤",
+        "kana": "やきん",
+        "rom": "yakin",
+        "arti": "shift malam"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ゆう (yuu - petang)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ゆう",
+      "romaji": "yuu - petang",
+      "arti": "malam"
+    }
+  },
+  {
+    "kanji": "春",
+    "stroke": 9,
+    "radical": "日",
+    "arti": "musim semi",
+    "on": "シュン",
+    "kun": "はる",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ひ (hi - matahari)",
+    "strokeRadikal": 4,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "春",
+        "kana": "はる",
+        "rom": "haru",
+        "arti": "musim semi"
+      },
+      {
+        "kanji": "春休み",
+        "kana": "はるやすみ",
+        "rom": "haruyasumi",
+        "arti": "liburan musim semi"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ひ (hi - matahari)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ひ",
+      "romaji": "hi - matahari",
+      "arti": "musim semi"
+    }
+  },
+  {
+    "kanji": "夏",
+    "stroke": 10,
+    "radical": "夂",
+    "arti": "musim panas",
+    "on": "カ, ゲ",
+    "kun": "なつ",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ふゆがしら (fuyugashira - musim dingin)",
+    "strokeRadikal": 3,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "夏",
+        "kana": "なつ",
+        "rom": "natsu",
+        "arti": "musim panas"
+      },
+      {
+        "kanji": "夏祭り",
+        "kana": "なつまつり",
+        "rom": "natsumatsuri",
+        "arti": "festival musim panas"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ふゆがしら (fuyugashira - musim dingin)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ふゆがしら",
+      "romaji": "fuyugashira - musim dingin",
+      "arti": "musim panas"
+    }
+  },
+  {
+    "kanji": "秋",
+    "stroke": 9,
+    "radical": "禾",
+    "arti": "musim gugur",
+    "on": "シュウ",
+    "kun": "あき",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "のぎへん (nogihen - padi)",
+    "strokeRadikal": 5,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "秋",
+        "kana": "あき",
+        "rom": "aki",
+        "arti": "musim gugur"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "のぎへん (nogihen - padi)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "のぎへん",
+      "romaji": "nogihen - padi",
+      "arti": "musim gugur"
+    }
+  },
+  {
+    "kanji": "冬",
+    "stroke": 5,
+    "radical": "冫",
+    "arti": "musim dingin",
+    "on": "トウ",
+    "kun": "ふゆ",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "にすい (nisui - es)",
+    "strokeRadikal": 2,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "冬",
+        "kana": "ふゆ",
+        "rom": "fuyu",
+        "arti": "musim dingin"
+      },
+      {
+        "kanji": "冬休み",
+        "kana": "ふゆやすみ",
+        "rom": "fuyuyasumi",
+        "arti": "liburan musim dingin"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "にすい (nisui - es)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "にすい",
+      "romaji": "nisui - es",
+      "arti": "musim dingin"
+    }
+  },
+  {
+    "kanji": "少",
+    "stroke": 4,
+    "radical": "小",
+    "arti": "sedikit",
+    "on": "ショウ",
+    "kun": "すく・ない, すこ・し",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "しょう (shou - kecil)",
+    "strokeRadikal": 3,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "少し",
+        "kana": "すこし",
+        "rom": "sukoshi",
+        "arti": "sedikit"
+      },
+      {
+        "kanji": "少ない",
+        "kana": "すくない",
+        "rom": "sukunai",
+        "arti": "jumlahnya sedikit"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "しょう (shou - kecil)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "しょう",
+      "romaji": "shou - kecil",
+      "arti": "sedikit"
+    }
+  },
+  {
+    "kanji": "多",
+    "stroke": 6,
+    "radical": "夕",
+    "arti": "banyak",
+    "on": "タ",
+    "kun": "おお・い",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ゆう (yuu - petang)",
+    "strokeRadikal": 3,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "多い",
+        "kana": "おおい",
+        "rom": "ooi",
+        "arti": "banyak"
+      },
+      {
+        "kanji": "多少",
+        "kana": "たしょう",
+        "rom": "tashou",
+        "arti": "sedikit banyak"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ゆう (yuu - petang)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ゆう",
+      "romaji": "yuu - petang",
+      "arti": "banyak"
+    }
+  },
+  {
+    "kanji": "長",
+    "stroke": 8,
+    "radical": "長",
+    "arti": "panjang / pemimpin",
+    "on": "チョウ",
+    "kun": "なが・い",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ながい (nagai - panjang)",
+    "strokeRadikal": 8,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "長い",
+        "kana": "ながい",
+        "rom": "nagai",
+        "arti": "panjang"
+      },
+      {
+        "kanji": "社長",
+        "kana": "しゃちょう",
+        "rom": "shachou",
+        "arti": "direktur utama"
+      },
+      {
+        "kanji": "部長",
+        "kana": "ぶちょう",
+        "rom": "buchou",
+        "arti": "kepala divisi"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ながい (nagai - panjang)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ながい",
+      "romaji": "nagai - panjang",
+      "arti": "panjang / pemimpin"
+    }
+  },
+  {
+    "kanji": "短",
+    "stroke": 12,
+    "radical": "矢",
+    "arti": "pendek",
+    "on": "タン",
+    "kun": "みじか・い",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "や (ya - panah)",
+    "strokeRadikal": 5,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "短い",
+        "kana": "みじかい",
+        "rom": "mijikai",
+        "arti": "pendek"
+      },
+      {
+        "kanji": "短時間",
+        "kana": "たんじかん",
+        "rom": "tanjikan",
+        "arti": "waktu singkat"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "や (ya - panah)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "や",
+      "romaji": "ya - panah",
+      "arti": "pendek"
+    }
+  },
+  {
+    "kanji": "新",
+    "stroke": 13,
+    "radical": "斤",
+    "arti": "baru",
+    "on": "シン",
+    "kun": "あたら・しい, あら・た",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "おの (ono - kapak)",
+    "strokeRadikal": 4,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "新しい",
+        "kana": "あたらしい",
+        "rom": "atarashii",
+        "arti": "baru"
+      },
+      {
+        "kanji": "新聞",
+        "kana": "しんぶん",
+        "rom": "shinbun",
+        "arti": "koran"
+      },
+      {
+        "kanji": "新年",
+        "kana": "しんねん",
+        "rom": "shinnen",
+        "arti": "tahun baru"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "おの (ono - kapak)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "おの",
+      "romaji": "ono - kapak",
+      "arti": "baru"
+    }
+  },
+  {
+    "kanji": "古",
+    "stroke": 5,
+    "radical": "口",
+    "arti": "lama / kuno",
+    "on": "コ",
+    "kun": "ふる・い",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "くち (kuchi - mulut)",
+    "strokeRadikal": 3,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "古い",
+        "kana": "ふるい",
+        "rom": "furui",
+        "arti": "lama / usang"
+      },
+      {
+        "kanji": "中古",
+        "kana": "ちゅうこ",
+        "rom": "chuuko",
+        "arti": "barang bekas"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "くち (kuchi - mulut)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "くち",
+      "romaji": "kuchi - mulut",
+      "arti": "lama / kuno"
+    }
+  },
+  {
+    "kanji": "早",
+    "stroke": 6,
+    "radical": "日",
+    "arti": "cepat / pagi",
+    "on": "ソウ",
+    "kun": "はや・い",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ひ (hi - matahari)",
+    "strokeRadikal": 4,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "早い",
+        "kana": "はやい",
+        "rom": "hayai",
+        "arti": "cepat / lebih awal"
+      },
+      {
+        "kanji": "早く",
+        "kana": "はやく",
+        "rom": "hayaku",
+        "arti": "dengan cepat / segera"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ひ (hi - matahari)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ひ",
+      "romaji": "hi - matahari",
+      "arti": "cepat / pagi"
+    }
+  },
+  {
+    "kanji": "遅",
+    "stroke": 12,
+    "radical": "辵",
+    "arti": "lambat / terlambat",
+    "on": "チ",
+    "kun": "おそ・い,おく・れる",
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "しんにょう (shinnyou - jalan/gerak)",
+    "strokeRadikal": 3,
+    "grupId": "aksi_gerak",
+    "vocab": [
+      {
+        "kanji": "遅い",
+        "kana": "おそい",
+        "rom": "osoi",
+        "arti": "lambat / larut"
+      },
+      {
+        "kanji": "遅れます",
+        "kana": "おくremark",
+        "rom": "okuremasu",
+        "arti": "terlambat"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "しんにょう (shinnyou - jalan/gerak)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "しんにょう",
+      "romaji": "shinnyou - jalan/gerak",
+      "arti": "lambat / terlambat"
+    }
+  },
+  {
+    "kanji": "広",
+    "stroke": 5,
+    "radical": "广",
+    "arti": "luas",
+    "on": "コウ",
+    "kun": "ひろ・い",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "まだれ (madare - atap miring)",
+    "strokeRadikal": 3,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "広い",
+        "kana": "ひろい",
+        "rom": "hiroi",
+        "arti": "luas"
+      },
+      {
+        "kanji": "広場",
+        "kana": "ひろば",
+        "rom": "hiroba",
+        "arti": "lapangan / alun-alun"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "まだれ (madare - atap miring)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "まだれ",
+      "romaji": "madare - atap miring",
+      "arti": "luas"
+    }
+  },
+  {
+    "kanji": "無",
+    "stroke": 12,
+    "radical": "灬",
+    "arti": "tidak ada / tanpa",
+    "on": "ム, ブ",
+    "kun": "な・い",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "れっか (rekka - api)",
+    "strokeRadikal": 4,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "無料",
+        "kana": "むりょう",
+        "rom": "muryou",
+        "arti": "gratis"
+      },
+      {
+        "kanji": "無理",
+        "kana": "むり",
+        "rom": "muri",
+        "arti": "mustahil / memaksakan"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "れっか (rekka - api)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "れっか",
+      "romaji": "rekka - api",
+      "arti": "tidak ada / tanpa"
+    }
+  },
+  {
+    "kanji": "以",
+    "stroke": 5,
+    "radical": "人",
+    "arti": "sejak / batas acuan",
+    "on": "イ",
+    "kun": "もっ・て",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "ひと (hito - orang)",
+    "strokeRadikal": 2,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "以上",
+        "kana": "いじょう",
+        "rom": "ijou",
+        "arti": "lebih dari / sekian"
+      },
+      {
+        "kanji": "以下",
+        "kana": "いか",
+        "rom": "ika",
+        "arti": "kurang dari"
+      },
+      {
+        "kanji": "以外",
+        "kana": "いがい",
+        "rom": "igai",
+        "arti": "selain itu"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "ひと (hito - orang)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "ひと",
+      "romaji": "hito - orang",
+      "arti": "sejak / batas acuan"
+    }
+  },
+  {
+    "kanji": "悪",
+    "stroke": 11,
+    "radical": "心",
+    "arti": "buruk / jahat",
+    "on": "アク",
+    "kun": "わる・い",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "こころ (kokoro - hati)",
+    "strokeRadikal": 4,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "悪い",
+        "kana": "わるい",
+        "rom": "warui",
+        "arti": "buruk / jelek"
+      },
+      {
+        "kanji": "気分が悪い",
+        "kana": "きぶんがわるい",
+        "rom": "kibun ga warui",
+        "arti": "merasa tidak enak badan"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "こころ (kokoro - hati)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "こころ",
+      "romaji": "kokoro - hati",
+      "arti": "buruk / jahat"
+    }
+  },
+  {
+    "kanji": "色",
+    "stroke": 6,
+    "radical": "色",
+    "arti": "warna",
+    "on": "ショク, シキ",
+    "kun": "いろ",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "いろ (iro - warna)",
+    "strokeRadikal": 6,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "色",
+        "kana": "いろ",
+        "rom": "iro",
+        "arti": "warna"
+      },
+      {
+        "kanji": "色々",
+        "kana": "いろいろ",
+        "rom": "iroiro",
+        "arti": "beraneka ragam"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "いろ (iro - warna)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "いろ",
+      "romaji": "iro - warna",
+      "arti": "warna"
+    }
+  },
+  {
+    "kanji": "心",
+    "stroke": 4,
+    "radical": "心",
+    "arti": "hati / pikiran",
+    "on": "シン",
+    "kun": "こころ",
+    "grupRadikal": "👤 Tubuh & Anatomi",
+    "namaRadikal": "こころ (kokoro - hati)",
+    "strokeRadikal": 4,
+    "grupId": "tubuh_anatomi",
+    "vocab": [
+      {
+        "kanji": "安心",
+        "kana": "あんしん",
+        "rom": "anshin",
+        "arti": "lega / tenang"
+      },
+      {
+        "kanji": "心配",
+        "kana": "しんぱい",
+        "rom": "shinpai",
+        "arti": "khawatir"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "こころ (kokoro - hati)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "こころ",
+      "romaji": "kokoro - hati",
+      "arti": "hati / pikiran"
+    }
+  },
+  {
+    "kanji": "度",
+    "stroke": 9,
+    "radical": "广",
+    "arti": "derajat / kali",
+    "on": "ド, ト",
+    "kun": "たび",
+    "grupRadikal": "✨ Sifat & Keadaan",
+    "namaRadikal": "まだれ (madare - atap miring)",
+    "strokeRadikal": 3,
+    "grupId": "sifat_keadaan",
+    "vocab": [
+      {
+        "kanji": "今度",
+        "kana": "こんど",
+        "rom": "kondo",
+        "arti": "kali ini / lain kali"
+      },
+      {
+        "kanji": "一度",
+        "kana": "いちど",
+        "rom": "ichido",
+        "arti": "satu kali"
+      },
+      {
+        "kanji": "温度",
+        "kana": "おんど",
+        "rom": "ondo",
+        "arti": "suhu"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "まだれ (madare - atap miring)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "まだれ",
+      "romaji": "madare - atap miring",
+      "arti": "derajat / kali"
+    }
+  },
+  {
+    "kanji": "急",
+    "stroke": 9,
+    "radical": "心",
+    "arti": "bergegas / mendadak",
+    "on": "キュウ",
+    "kun": "いそ・ぐ",
+    "grupRadikal": "🏃 Aksi & Gerak",
+    "namaRadikal": "こころ (kokoro - hati)",
+    "strokeRadikal": 4,
+    "grupId": "aksi_gerak",
+    "vocab": [
+      {
+        "kanji": "急ぎます",
+        "kana": "いそぎます",
+        "rom": "isogimasu",
+        "arti": "bergegas / buru-buru"
+      },
+      {
+        "kanji": "急行",
+        "kana": "きゅうこう",
+        "rom": "kyuukou",
+        "arti": "kereta ekspres"
+      },
+      {
+        "kanji": "特急",
+        "kana": "とっきゅう",
+        "rom": "tokkyuu",
+        "arti": "ekspres terbatas"
+      }
+    ],
+    "isTambahan": true,
+    "badgeKeterangan": "Tambahan Standar JFT-A2 & Lolos Yuk",
+    "radName": "こころ (kokoro - hati)",
+    "radOrder": 99,
+    "grupOrder": 99,
+    "radMeta": {
+      "kana": "こころ",
+      "romaji": "kokoro - hati",
+      "arti": "bergegas / mendadak"
+    }
   }
 ]

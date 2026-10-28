@@ -72,8 +72,10 @@
       background: #f1f5f9;
       padding: 4px;
       border-radius: 12px;
-      width: 360px;
+      overflow-x: auto;
+      max-width: 100%;
       flex-shrink: 0;
+      scrollbar-width: thin;
     }
     .search-group-container {
       flex: 1;
@@ -207,7 +209,7 @@
       <div class="relative z-10 max-w-3xl">
         <h1 class="text-xl sm:text-3xl font-extrabold tracking-tight mb-2 text-white">Kanji &amp; Kotoba Standar JFT-A2</h1>
         <p class="banner-subtext text-xs sm:text-sm leading-relaxed">
-          Eksplorasi lengkap <strong class="text-white">273 Kanji</strong> berbasis pohon radikal (Kanji Explorer) dan <strong class="text-white">Daftar Kotoba A2</strong> terintegrasi.
+          Portal Terpadu Standar JFT-Basic A2: <strong class="text-white">336 Kanji Explorer</strong>, <strong class="text-white">Daftar Kotoba A2</strong>, <strong class="text-white">Pola Tata Bahasa (Hyougen)</strong>, dan <strong class="text-white">Bedah Dokumen Nyata (Dokkai)</strong>.
         </p>
       </div>
     </div>
@@ -217,10 +219,16 @@
       <!-- Tab Switcher -->
       <div class="tab-group-container">
         <button id="tab-tabel-kanji" class="tab-btn active">
-          <i class="fa-solid fa-table"></i> Tabel Kanji Standar
+          🈁 Kanji Explorer
         </button>
         <button id="tab-kotoba" class="tab-btn">
-          <i class="fa-solid fa-book-open"></i> Daftar Kotoba A2
+          📖 Kotoba A2
+        </button>
+        <button id="tab-hyougen" class="tab-btn">
+          ✍️ Pola Hyougen &amp; Bunpou
+        </button>
+        <button id="tab-dokkai" class="tab-btn">
+          📑 Bedah Dokkai &amp; Rambu
         </button>
       </div>
 
@@ -267,6 +275,42 @@
       </div>
     </section>
 
+    <!-- VIEW 3: DAFTAR POLA TATA BAHASA & UNGKAPAN (HYOUGEN) -->
+    <section id="view-hyougen-table" class="hidden space-y-4">
+      <div class="bg-white rounded-xl sm:rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+        <div class="p-4 sm:p-5 bg-gradient-to-r from-sky-50 to-blue-50 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <h2 class="text-base sm:text-lg font-extrabold text-slate-800 flex items-center gap-2">
+              <i class="fa-solid fa-feather-pointed text-sky-600"></i> Pola Tata Bahasa &amp; Ungkapan Standar JFT-A2
+            </h2>
+            <p class="text-xs text-slate-600 mt-0.5">
+              Acuan materi penting Sesi 2 (Hyougen) yang paling sering muncul di simulasi ujian CBT &amp; Lolos Yuk.
+            </p>
+          </div>
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white text-sky-700 border border-sky-200 shadow-2xs self-start sm:self-auto">
+            15 Pola Kunci Can-Do
+          </span>
+        </div>
+
+        <div class="overflow-x-auto -webkit-overflow-scrolling-touch">
+          <table class="w-full text-left border-collapse mobile-table">
+            <thead>
+              <tr class="bg-slate-50/90 border-b border-slate-200 text-[11px] sm:text-xs font-bold text-slate-500 uppercase tracking-wider">
+                <th class="py-2.5 sm:py-3.5 px-2 sm:px-4 w-10 sm:w-14 text-center">No</th>
+                <th class="py-2.5 sm:py-3.5 px-2 sm:px-4 min-w-[180px] sm:w-64">Pola Kalimat</th>
+                <th class="py-2.5 sm:py-3.5 px-2 sm:px-4 min-w-[140px] sm:w-52">Arti &amp; Kategori</th>
+                <th class="py-2.5 sm:py-3.5 px-2 sm:px-4 min-w-[200px]">Rumus Sambungan</th>
+                <th class="py-2.5 sm:py-3.5 px-2 sm:px-4 min-w-[240px]">Contoh Kalimat &amp; Analisis</th>
+              </tr>
+            </thead>
+            <tbody id="hyougen-table-body" class="divide-y divide-slate-100 text-xs sm:text-sm">
+              <!-- Rendered by JS -->
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
     <!-- VIEW 2: DAFTAR KOTOBA LENGKAP -->
     <section id="view-kotoba-table" class="hidden space-y-4">
       <div class="bg-white rounded-xl sm:rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
@@ -288,6 +332,30 @@
         </div>
       </div>
     </section>
+  
+    <!-- VIEW 4: PANDUAN DOKKAI & DOKUMEN NYATA -->
+    <section id="view-dokkai-table" class="hidden space-y-4">
+      <div class="bg-white rounded-xl sm:rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+        <div class="p-4 sm:p-5 bg-gradient-to-r from-emerald-50 to-teal-50 border-b border-slate-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+          <div>
+            <h2 class="text-base sm:text-lg font-extrabold text-slate-800 flex items-center gap-2">
+              <i class="fa-solid fa-file-invoice text-emerald-600"></i> Panduan Membaca Dokumen Nyata (Sesi 4 Dokkai)
+            </h2>
+            <p class="text-xs text-slate-600 mt-0.5">
+              Glosarium istilah praktis papan pengumuman apartemen, jadwal sampah, pamflet diskon, memo kantor, dan rambu keselamatan kerja.
+            </p>
+          </div>
+          <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-bold bg-white text-emerald-700 border border-emerald-200 shadow-2xs self-start sm:self-auto">
+            5 Modul Teks Realistis
+          </span>
+        </div>
+
+        <div id="dokkai-cards-container" class="p-4 sm:p-6 grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <script>
@@ -298,8 +366,16 @@
 
     const tabKanji = document.getElementById('tab-tabel-kanji');
     const tabKotoba = document.getElementById('tab-kotoba');
+    const tabHyougen = document.getElementById('tab-hyougen');
+    const tabDokkai = document.getElementById('tab-dokkai');
     const viewKanji = document.getElementById('view-kanji-table');
     const viewKotoba = document.getElementById('view-kotoba-table');
+    const viewHyougen = document.getElementById('view-hyougen-table');
+    const viewDokkai = document.getElementById('view-dokkai-table');
+    const hyougenTableBody = document.getElementById('hyougen-table-body');
+    const dokkaiCardsContainer = document.getElementById('dokkai-cards-container');
+    let hyougenData = [];
+    let dokkaiData = [];
     const kanjiTableBody = document.getElementById('kanji-table-body');
     const kotobaTableBody = document.getElementById('kotoba-table-body');
     const inputSearch = document.getElementById('input-search');
@@ -402,18 +478,24 @@
 
     async function init() {
       try {
-        const [resKanji, resKotoba] = await Promise.all([
+        const [resKanji, resKotoba, resHyougen, resDokkai] = await Promise.all([
           fetch('/kanji-jft-a2.json'),
-          fetch('/kotoba-lolosyuk.json')
+          fetch('/kotoba-lolosyuk.json'),
+          fetch('/hyougen-jft-a2.json'),
+          fetch('/dokkai-jft-a2.json')
         ]);
         kanjiData = await resKanji.json();
         kotobaData = await resKotoba.json();
+        hyougenData = await resHyougen.json();
+        dokkaiData = await resDokkai.json();
 
 // stats counter in banner removed
 
         buildGroupShortcuts();
         renderKanjiTable();
         renderKotobaTable();
+        renderHyougenTable();
+        renderDokkaiCards();
       } catch (err) {
         console.error("Gagal memuat data:", err);
       }
@@ -570,6 +652,7 @@
                   ${k.kanji}
                 </span>
                 <span class="text-[10px] text-sky-700 bg-sky-100 border border-sky-200 px-2 py-0.5 rounded-full font-bold ml-1">${k.stroke} coretan</span>
+                ${k.isTambahan ? `<span class="text-[10px] text-amber-800 bg-amber-100/90 border border-amber-300 px-2 py-0.5 rounded-full font-bold ml-1 inline-flex items-center gap-1 shadow-2xs"><i class="fa-solid fa-star text-amber-500 text-[9px]"></i> Tambahan Standar A2 / Lolos Yuk</span>` : ''}
               </div>
             </td>
             <td class="py-2.5 px-4">
@@ -636,6 +719,21 @@
     }
 
     // Render Tabel Kotoba
+    function getShortCat(k) {
+      const label = k.kategori_jft || (k.keterangan && k.keterangan.includes("LOLOSYUK") ? "Lolos Yuk" : "Standar A2");
+      const map = {
+        "Soal Kuis LOLOSYUK": { text: "Lolos Yuk", cls: "bg-emerald-50 text-emerald-700 border-emerald-200" },
+        "Kanji Wajib JFT-Basic A2 (Tambahan Esensial)": { text: "Standar A2", cls: "bg-sky-50 text-sky-700 border-sky-200" },
+        "Waktu & Kalender": { text: "Waktu", cls: "bg-amber-50 text-amber-700 border-amber-200" },
+        "Kata Kerja Esensial": { text: "Verba", cls: "bg-purple-50 text-purple-700 border-purple-200" },
+        "Orang & Relasi": { text: "Relasi", cls: "bg-rose-50 text-rose-700 border-rose-200" },
+        "Rambu & Arah": { text: "Rambu", cls: "bg-blue-50 text-blue-700 border-blue-200" },
+        "Benda & Makanan": { text: "Benda", cls: "bg-orange-50 text-orange-700 border-orange-200" },
+        "Tempat & Fasilitas": { text: "Fasilitas", cls: "bg-teal-50 text-teal-700 border-teal-200" }
+      };
+      return map[label] || { text: label || "A2", cls: "bg-slate-100 text-slate-700 border-slate-200" };
+    }
+
     function renderKotobaTable() {
       let filtered = kotobaData;
       if (searchQuery.trim()) {
@@ -676,30 +774,40 @@
             ${k.arti || '-'}
           </td>
           <td class="py-2.5 px-4">
-            <span class="inline-block px-2.5 py-0.5 rounded-full text-[11px] font-semibold ${k.keterangan?.includes('LOLOSYUK') ? 'bg-emerald-50 text-emerald-700 border border-emerald-200' : 'bg-blue-50 text-blue-700 border border-blue-200'}">
-              ${k.keterangan || 'JFT-A2'}
+            <span class="inline-block px-2 py-0.5 rounded-md text-[10px] sm:text-xs font-bold border ${getShortCat(k).cls}">
+              ${getShortCat(k).text}
             </span>
           </td>
         </tr>
       `).join('');
     }
 
-    // Tab Switching Konsisten
-    tabKanji.onclick = () => {
-      currentView = 'kanji';
-      tabKanji.classList.add('active');
-      tabKotoba.classList.remove('active');
-      viewKanji.classList.remove('hidden');
-      viewKotoba.classList.add('hidden');
-    };
+    // Tab Switching Terintegrasi 4 Tab
+    function switchTab(viewName) {
+      currentView = viewName;
+      const tabs = [
+        { name: "kanji", btn: tabKanji, view: viewKanji, fn: renderKanjiTable },
+        { name: "kotoba", btn: tabKotoba, view: viewKotoba, fn: renderKotobaTable },
+        { name: "hyougen", btn: tabHyougen, view: viewHyougen, fn: renderHyougenTable },
+        { name: "dokkai", btn: tabDokkai, view: viewDokkai, fn: renderDokkaiCards }
+      ];
 
-    tabKotoba.onclick = () => {
-      currentView = 'kotoba';
-      tabKotoba.classList.add('active');
-      tabKanji.classList.remove('active');
-      viewKotoba.classList.remove('hidden');
-      viewKanji.classList.add('hidden');
-    };
+      tabs.forEach(t => {
+        if (t.name === viewName) {
+          t.btn?.classList.add("active");
+          t.view?.classList.remove("hidden");
+          if (typeof t.fn === "function") t.fn();
+        } else {
+          t.btn?.classList.remove("active");
+          t.view?.classList.add("hidden");
+        }
+      });
+    }
+
+    if (tabKanji) tabKanji.onclick = () => switchTab("kanji");
+    if (tabKotoba) tabKotoba.onclick = () => switchTab("kotoba");
+    if (tabHyougen) tabHyougen.onclick = () => switchTab("hyougen");
+    if (tabDokkai) tabDokkai.onclick = () => switchTab("dokkai");
 
     // Live Search
     inputSearch.oninput = (e) => {
@@ -710,7 +818,9 @@
         btnClearSearch.classList.add('hidden');
       }
       if (currentView === 'kanji') renderKanjiTable();
-      else renderKotobaTable();
+      else if (currentView === 'kotoba') renderKotobaTable();
+      else if (currentView === 'hyougen') renderHyougenTable();
+      else if (currentView === 'dokkai') renderDokkaiCards();
     };
 
     btnClearSearch.onclick = () => {
@@ -719,8 +829,156 @@
       btnClearSearch.classList.add('hidden');
       inputSearch.focus();
       if (currentView === 'kanji') renderKanjiTable();
-      else renderKotobaTable();
+      else if (currentView === 'kotoba') renderKotobaTable();
+      else if (currentView === 'hyougen') renderHyougenTable();
+      else if (currentView === 'dokkai') renderDokkaiCards();
     };
+
+    
+    // Render Tabel Pola Hyougen (Tata Bahasa A2)
+    
+    // Render Kartu Panduan Dokkai & Dokumen Nyata (Sesi 4)
+    function renderDokkaiCards() {
+      if (!dokkaiCardsContainer) return;
+      let filtered = dokkaiData;
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase().trim();
+        filtered = filtered.filter(d => {
+          return (d.judul && d.judul.toLowerCase().includes(q)) ||
+                 (d.kategori && d.kategori.toLowerCase().includes(q)) ||
+                 (d.tips_ujian && d.tips_ujian.toLowerCase().includes(q)) ||
+                 (d.istilah_kunci && d.istilah_kunci.some(k => 
+                   (k.jp && k.jp.toLowerCase().includes(q)) ||
+                   (k.kana && k.kana.toLowerCase().includes(q)) ||
+                   (k.arti && k.arti.toLowerCase().includes(q))
+                 ));
+        });
+      }
+
+      if (filtered.length === 0) {
+        dokkaiCardsContainer.innerHTML = `
+          <div class="col-span-full py-12 text-center text-slate-400">
+            <i class="fa-regular fa-face-frown text-3xl mb-2"></i>
+            <p class="text-sm font-semibold">Materi dokumen tidak ditemukan.</p>
+          </div>
+        `;
+        return;
+      }
+
+      dokkaiCardsContainer.innerHTML = filtered.map(item => `
+        <div class="bg-slate-50/70 border border-slate-200/90 rounded-2xl p-4 sm:p-5 flex flex-col justify-between hover:border-emerald-300 hover:shadow-md transition-all">
+          <div>
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-700 bg-emerald-100/80 border border-emerald-200 px-2 py-0.5 rounded-md">
+                ${item.kategori}
+              </span>
+              <span class="text-[11px] text-slate-400 font-medium font-mono">
+                ${item.tipe_teks}
+              </span>
+            </div>
+            <h3 class="text-base sm:text-lg font-bold text-slate-800 mb-3">
+              ${item.judul}
+            </h3>
+
+            <!-- Tabel Istilah Kunci -->
+            <div class="bg-white rounded-xl border border-slate-200 overflow-hidden mb-3">
+              <div class="divide-y divide-slate-100 text-xs">
+                ${item.istilah_kunci.map(k => `
+                  <div class="p-2 sm:p-2.5 flex items-center justify-between gap-2">
+                    <div>
+                      <div class="jp-kanji-clear font-bold text-slate-900 text-sm sm:text-base text-emerald-800">${k.jp}</div>
+                      <div class="text-[11px] text-slate-400 font-medium">${k.kana}</div>
+                    </div>
+                    <div class="text-right text-xs font-semibold text-slate-600 max-w-[55%]">
+                      ${k.arti}
+                    </div>
+                  </div>
+                `).join('')}
+              </div>
+            </div>
+          </div>
+
+          <!-- Tips Ujian CBT -->
+          <div class="bg-amber-50/80 border border-amber-200/80 rounded-xl p-3 text-xs text-amber-900 flex items-start gap-2">
+            <i class="fa-solid fa-lightbulb text-amber-500 mt-0.5 text-sm shrink-0"></i>
+            <div>
+              <strong class="font-bold">Tips Sesi 4:</strong> ${item.tips_ujian}
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    function renderHyougenTable() {
+      let filtered = hyougenData;
+      if (searchQuery.trim()) {
+        const q = searchQuery.toLowerCase().trim();
+        filtered = filtered.filter(h => {
+          return (h.pola && h.pola.toLowerCase().includes(q)) ||
+                 (h.romaji && h.romaji.toLowerCase().includes(q)) ||
+                 (h.arti && h.arti.toLowerCase().includes(q)) ||
+                 (h.kategori && h.kategori.toLowerCase().includes(q)) ||
+                 (h.rumus && h.rumus.toLowerCase().includes(q)) ||
+                 (h.contoh_jp && h.contoh_jp.toLowerCase().includes(q)) ||
+                 (h.contoh_id && h.contoh_id.toLowerCase().includes(q));
+        });
+      }
+
+      if (filtered.length === 0) {
+        hyougenTableBody.innerHTML = `
+          <tr>
+            <td colspan="5" class="py-12 text-center text-slate-400">
+              <i class="fa-solid fa-magnifying-glass text-2xl mb-2 text-slate-300"></i>
+              <p class="text-sm font-semibold">Pola tata bahasa tidak ditemukan</p>
+            </td>
+          </tr>
+        `;
+        return;
+      }
+
+      hyougenTableBody.innerHTML = filtered.map((h, i) => `
+        <tr class="hover:bg-slate-50/80 transition-colors">
+          <td class="py-3 px-2 sm:px-4 text-center font-semibold text-slate-400 text-xs">
+            ${i + 1}
+          </td>
+          <td class="py-3 px-2 sm:px-4">
+            <div class="jp-kanji-clear text-sm sm:text-base font-bold text-sky-700">
+              ${h.pola}
+            </div>
+            <div class="text-[11px] sm:text-xs text-slate-400 font-mono mt-0.5">
+              ${h.romaji}
+            </div>
+          </td>
+          <td class="py-3 px-2 sm:px-4">
+            <span class="inline-block px-2 py-0.5 rounded-md text-[10px] sm:text-xs font-semibold bg-sky-50 text-sky-700 border border-sky-100 mb-1">
+              ${h.kategori}
+            </span>
+            <div class="text-xs sm:text-sm font-medium text-slate-700 leading-snug">
+              ${h.arti}
+            </div>
+          </td>
+          <td class="py-3 px-2 sm:px-4">
+            <div class="bg-slate-50 border border-slate-200/80 rounded-lg p-2 text-xs text-slate-700 font-mono leading-relaxed">
+              ${h.rumus}
+            </div>
+          </td>
+          <td class="py-3 px-2 sm:px-4">
+            <div class="text-xs sm:text-sm text-slate-800 font-medium jp-font">
+              ${h.contoh_jp}
+            </div>
+            <div class="text-xs text-slate-500 italic mt-0.5">
+              ${h.contoh_id}
+            </div>
+            ${h.catatan ? `
+              <div class="mt-1.5 text-[11px] text-amber-700 bg-amber-50/70 border border-amber-200/60 rounded px-2 py-1 flex items-start gap-1">
+                <i class="fa-solid fa-circle-info mt-0.5 shrink-0 text-[10px]"></i>
+                <span>${h.catatan}</span>
+              </div>
+            ` : ''}
+          </td>
+        </tr>
+      `).join('');
+    }
 
     init();
   </script>

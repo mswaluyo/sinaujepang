@@ -1,0 +1,197 @@
+[
+  {
+    "id": 1,
+    "judul": "Pemberitahuan Buang Sampah (ごみの出し方)",
+    "kategori": "Apartemen & Lingkungan",
+    "tipe_teks": "Papan Pengumuman / Jadwal",
+    "istilah_kunci": [
+      {
+        "jp": "燃えるごみ / 可燃ごみ",
+        "kana": "もえるごみ / かねんごみ",
+        "arti": "Sampah mudah terbakar (sisa makanan, kertas)"
+      },
+      {
+        "jp": "燃えないごみ / 不燃ごみ",
+        "kana": "もえないごみ / ふねんごみ",
+        "arti": "Sampah tidak mudah terbakar (kaca, logam, kaleng)"
+      },
+      {
+        "jp": "資源ごみ",
+        "kana": "しげんごみ",
+        "arti": "Sampah daur ulang (botol PET, kardus)"
+      },
+      {
+        "jp": "粗大ごみ",
+        "kana": "そだいごみ",
+        "arti": "Sampah berukuran besar (butuh tiket khusus)"
+      },
+      {
+        "jp": "収集日",
+        "kana": "しゅうしゅうび",
+        "arti": "Hari pengambilan / pengangkutan sampah"
+      },
+      {
+        "jp": "朝8時までに出してください",
+        "kana": "あさはちじまでに出してください",
+        "arti": "Harap buang sebelum jam 8 pagi"
+      }
+    ],
+    "tips_ujian": "Perhatikan tabel hari (火・金) dan jenis sampah yang ditanyakan dalam soal. Jangan sampai tertukar antara 燃える dan 燃えない."
+  },
+  {
+    "id": 2,
+    "judul": "Brosur Diskon Toko & Supermarket (セール・割引)",
+    "kategori": "Belanja & Promosi",
+    "tipe_teks": "Brosur / Flyer / Kupon",
+    "istilah_kunci": [
+      {
+        "jp": "半額",
+        "kana": "はんがく",
+        "arti": "Diskon 50% / Setengah harga"
+      },
+      {
+        "jp": "〇割引",
+        "kana": "〇わりびき",
+        "arti": "Diskon kelipatan 10% (1割 = 10%, 2割 = 20%, 3割 = 30%)"
+      },
+      {
+        "jp": "税込み / 税抜き",
+        "kana": "ぜいこみ / ぜいぬき",
+        "arti": "Termasuk pajak / Belum termasuk pajak"
+      },
+      {
+        "jp": "本日限り / 期間限定",
+        "kana": "ほんじつかぎり / きかんげんてい",
+        "arti": "Hanya berlaku hari ini / Periode terbatas"
+      },
+      {
+        "jp": "お一人様〇点限り",
+        "kana": "おひとりさま〇てんかぎり",
+        "arti": "Maksimal pembelian 〇 buah per orang"
+      },
+      {
+        "jp": "レジにて",
+        "kana": "れじにて",
+        "arti": "Dipotong saat di kasir"
+      }
+    ],
+    "tips_ujian": "Pertanyaan sering menanyakan: 'Berapa harga yang harus dibayar jika membeli barang A pada hari tertentu?' atau 'Berapa batas maksimal pembelian?'."
+  },
+  {
+    "id": 3,
+    "judul": "Memo & Pesan Tempat Kerja (社内伝言メモ・連絡)",
+    "kategori": "Pekerjaan & Kantor",
+    "tipe_teks": "Memo / Catatan Telepon / Email Singkat",
+    "istilah_kunci": [
+      {
+        "jp": "伝言メモ",
+        "kana": "でんごんめも",
+        "arti": "Memo pesan telepon"
+      },
+      {
+        "jp": "折り返しお電話ください",
+        "kana": "おりかえしおでんわください",
+        "arti": "Mohon telepon balik segera"
+      },
+      {
+        "jp": "また後で電話します",
+        "kana": "またあとででんわします",
+        "arti": "Akan menelepon kembali nanti"
+      },
+      {
+        "jp": "打ち合わせ / 会議",
+        "kana": "うちあわせ / かいぎ",
+        "arti": "Rapat / Pertemuan kerja"
+      },
+      {
+        "jp": "外出中 / 席を外しています",
+        "kana": "がいしゅつちゅう / せきをはずしています",
+        "arti": "Sedang keluar / Sedang tidak di meja"
+      },
+      {
+        "jp": "至急",
+        "kana": "しきゅう",
+        "arti": "Segera / Sangat penting"
+      }
+    ],
+    "tips_ujian": "Cari siapa pengirim pesan (宛先), siapa penerima (差出人), dan tindakan apa yang harus dilakukan penerima setelah membaca memo."
+  },
+  {
+    "id": 4,
+    "judul": "Panduan & Rambu Fasilitas Publik (駅・病院・公共施設)",
+    "kategori": "Fasilitas & Transportasi",
+    "tipe_teks": "Papan Petunjuk & Rambu",
+    "istilah_kunci": [
+      {
+        "jp": "受付",
+        "kana": "うけつけ",
+        "arti": "Meja pendaftaran / Resepsionis"
+      },
+      {
+        "jp": "休診日 / 定休日",
+        "kana": "きゅうしんび / ていきゅうび",
+        "arti": "Hari libur klinik/dokter / Hari libur toko"
+      },
+      {
+        "jp": "非常口",
+        "kana": "ひじょうぐち",
+        "arti": "Pintu darurat / Exit evakuasi"
+      },
+      {
+        "jp": "立ち入り禁止",
+        "kana": "たちいりきんし",
+        "arti": "Dilarang masuk"
+      },
+      {
+        "jp": "優先席",
+        "kana": "ゆうせんせき",
+        "arti": "Kursi prioritas (lansia, ibu hamil, sakit)"
+      },
+      {
+        "jp": "禁煙",
+        "kana": "きんえん",
+        "arti": "Dilarang merokok"
+      },
+      {
+        "jp": "精算機",
+        "kana": "せいさんき",
+        "arti": "Mesin penyesuaian tarif tiket"
+      }
+    ],
+    "tips_ujian": "Sering muncul pada soal Sesi 4 mencocokkan jadwal buka/tutup klinik atau rambu apa yang harus dipatuhi di tempat kerja/stasiun."
+  },
+  {
+    "id": 5,
+    "judul": "Label Kemasan Makanan & Tanggal Kedaluwarsa",
+    "kategori": "Kehidupan Sehari-hari",
+    "tipe_teks": "Label Produk Makanan",
+    "istilah_kunci": [
+      {
+        "jp": "賞味期限",
+        "kana": "しょうみきげん",
+        "arti": "Best Before (paling enak dikonsumsi sebelum tanggal ini)"
+      },
+      {
+        "jp": "消費期限",
+        "kana": "しょうひきげん",
+        "arti": "Use By / Expired (batas aman konsumsi, jangan dimakan setelahnya)"
+      },
+      {
+        "jp": "要冷蔵 / 要冷凍",
+        "kana": "ようれいぞう / ようれいとう",
+        "arti": "Wajib disimpan di kulkas / Wajib dibekukan di freezer"
+      },
+      {
+        "jp": "原材料名",
+        "kana": "げんざいりょうめい",
+        "arti": "Daftar komposisi / bahan baku"
+      },
+      {
+        "jp": "保存方法",
+        "kana": "ほぞんほうほう",
+        "arti": "Cara penyimpanan barang"
+      }
+    ],
+    "tips_ujian": "Soal Dokkai sering menanyakan cara penyimpanan yang benar atau tanggal batas makanan tersebut masih aman dikonsumsi."
+  }
+]

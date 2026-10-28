@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "pola": "〜てもいいです / 〜てはいけません",
+    "romaji": "~te mo ii desu / ~te wa ikemasen",
+    "arti": "Boleh (Izin) / Tidak boleh (Larangan)",
+    "kategori": "Izin & Larangan",
+    "rumus": "Kata Kerja Bentuk-Te + もいいです / はいけません",
+    "contoh_jp": "ここで 写真を 撮ってもいいですか。/ ここで タバコを 吸ってはいけません。",
+    "contoh_id": "Bolehkan mengambil foto di sini? / Tidak boleh merokok di sini.",
+    "catatan": "Sangat sering keluar di soal aturan tempat umum, keselamatan kerja, dan museum."
+  },
+  {
+    "id": 2,
+    "pola": "〜なければなりません / 〜なくてもいいです",
+    "romaji": "~nakereba narimasen / ~nakute mo ii desu",
+    "arti": "Harus / Tidak perlu (Tidak harus)",
+    "kategori": "Keharusan & Kelonggaran",
+    "rumus": "Kata Kerja Bentuk-Nai (buang い) + ければなりません / くてもいいです",
+    "contoh_jp": "あしたまでに レポートを 出さなければなりません。",
+    "contoh_id": "Harus mengumpulkan laporan sampai besok.",
+    "catatan": "Wajib dihafal untuk soal instruksi kerja dan batas waktu (tenggat waktu)."
+  },
+  {
+    "id": 3,
+    "pola": "〜ことができます / 〜V-れる・られる (Potensial)",
+    "romaji": "~koto ga dekimasu / Kata Kerja Potensial",
+    "arti": "Bisa / Dapat melakukan sesuatu (Kemampuan)",
+    "kategori": "Kemampuan",
+    "rumus": "KK Bentuk Kamus + ことができます ATAU KK Bentuk Potensial (G1: e-masu, G2: rare-masu)",
+    "contoh_jp": "日本語を 話すことができます。(日本語が 話せます)",
+    "contoh_id": "Saya bisa berbicara bahasa Jepang.",
+    "catatan": "Partikel を sering berubah menjadi が saat menggunakan kata kerja bentuk potensial."
+  },
+  {
+    "id": 4,
+    "pola": "〜たいです / 〜たくないです",
+    "romaji": "~tai desu / ~taku nai desu",
+    "arti": "Ingin / Tidak ingin melakukan sesuatu",
+    "kategori": "Keinginan",
+    "rumus": "Kata Kerja Bentuk Masu (buang ます) + たいです",
+    "contoh_jp": "日本へ 行きたいです。/ 何も 食べたくないです。",
+    "contoh_id": "Saya ingin pergi ke Jepang. / Saya tidak ingin makan apa pun.",
+    "catatan": "Hanya untuk keinginan pembicara (orang pertama) atau menanyakan ke lawan bicara."
+  },
+  {
+    "id": 5,
+    "pola": "〜つもりです / 〜ようと思います (Volitif)",
+    "romaji": "~tsumori desu / ~you to omoimasu",
+    "arti": "Berniat / Berencana untuk...",
+    "kategori": "Rencana & Tekad",
+    "rumus": "KK Kamus + つもりです ATAU KK Volitif (〜おう/〜よう) + と思います",
+    "contoh_jp": "来年 日本で 働くつもりです。/ もっと 勉強しようと思います。",
+    "contoh_id": "Tahun depan berniat bekerja di Jepang. / Saya berniat belajar lebih giat lagi.",
+    "catatan": "Pola volitif + と思います menyatakan tekad pribadi pembicara saat itu juga."
+  },
+  {
+    "id": 6,
+    "pola": "〜たことがあります / 〜たことがありません",
+    "romaji": "~ta koto ga arimasu",
+    "arti": "Pernah / Belum pernah melakukan...",
+    "kategori": "Pengalaman",
+    "rumus": "Kata Kerja Bentuk-Ta (Lampau Biasa) + ことがあります",
+    "contoh_jp": "富士山に 登ったことがありますか。",
+    "contoh_id": "Apakah Anda pernah mendaki Gunung Fuji?",
+    "catatan": "Dipakai untuk menceritakan rekam jejak atau pengalaman hidup."
+  },
+  {
+    "id": 7,
+    "pola": "〜たり、〜たりします",
+    "romaji": "~tari, ~tari shimasu",
+    "arti": "Melakukan A, melakukan B, dan sebagainya",
+    "kategori": "Daftar Aktivitas",
+    "rumus": "KK Bentuk-Ta + り、KK Bentuk-Ta + りします",
+    "contoh_jp": "日曜日は 買いものを したり、映画を 見たりします。",
+    "contoh_id": "Pada hari Minggu saya berbelanja, menonton film, dan lain-lain.",
+    "catatan": "Menyebutkan contoh beberapa aktivitas secara representatif (bukan berurutan waktu)."
+  },
+  {
+    "id": 8,
+    "pola": "〜たほうがいいです / 〜ないほうがいいです",
+    "romaji": "~ta hou ga ii desu / ~nai hou ga ii desu",
+    "arti": "Sebaiknya / Sebaiknya tidak...",
+    "kategori": "Saran & Nasihat",
+    "rumus": "KK Bentuk-Ta + ほうがいいです / KK Bentuk-Nai + ほうがいいです",
+    "contoh_jp": "薬を 飲んだほうがいいですよ。/ 無理を しないほうがいいです。",
+    "contoh_id": "Sebaiknya Anda minum obat. / Sebaiknya jangan memaksakan diri.",
+    "catatan": "Digunakan untuk memberikan anjuran langsung atau nasihat kesehatan kepada rekan kerja."
+  },
+  {
+    "id": 9,
+    "pola": "〜から / 〜ので",
+    "romaji": "~kara / ~node",
+    "arti": "Karena / Oleh karena itu (Alasan)",
+    "kategori": "Alasan & Sebab",
+    "rumus": "Kalimat Biasa + から (Subjektif) / Kalimat Biasa + ので (Objektif/Sopan)",
+    "contoh_jp": "頭が 痛いので、少し 休んでもいいですか。",
+    "contoh_id": "Karena kepala saya sakit, bolehkah saya istirahat sebentar?",
+    "catatan": "〜ので lebih sopan dan sering dipakai saat izin kepada atasan atau pelanggan."
+  },
+  {
+    "id": 10,
+    "pola": "〜たら / 〜と / 〜ば",
+    "romaji": "~tara / ~to / ~ba",
+    "arti": "Jika / Kalau / Apabila...",
+    "kategori": "Pengandaian & Syarat",
+    "rumus": "KK Bentuk-Ta + ら / KK Bentuk Kamus + と (Akibat pasti/mesin)",
+    "contoh_jp": "この ボタンを 押すと、おつりが 出ます。/ 時間が あったら、行きましょう。",
+    "contoh_id": "Jika menekan tombol ini, uang kembalian akan keluar. / Kalau ada waktu, ayo pergi.",
+    "catatan": "Pola 〜と selalu menyatakan hubungan sebab-akibat alami atau cara kerja tombol/mesin."
+  },
+  {
+    "id": 11,
+    "pola": "〜てしまいました / 〜てしまう",
+    "romaji": "~te shimaimashita",
+    "arti": "Telah selesai / Tidak sengaja / Menyesal",
+    "kategori": "Penyelesaian & Penyesalan",
+    "rumus": "Kata Kerja Bentuk-Te + しまいました",
+    "contoh_jp": "パスポートを なくしてしまいました。",
+    "contoh_id": "Saya tidak sengaja menghilangkan paspor saya.",
+    "catatan": "Kerap muncul pada soal dialog yang menceritakan masalah atau kejadian tidak terduga."
+  },
+  {
+    "id": 12,
+    "pola": "〜てくれませんか / 〜てもらえませんか",
+    "romaji": "~te kuremasen ka / ~te moraemasen ka",
+    "arti": "Maukah Anda membantu / Bisakah tolong...",
+    "kategori": "Permintaan Tolong",
+    "rumus": "Kata Kerja Bentuk-Te + くれませんか / もらえませんか",
+    "contoh_jp": "書き方を 教えてもらえませんか。",
+    "contoh_id": "Bisakah tolong ajarkan saya cara menulisnya?",
+    "catatan": "Ungkapan sopan meminta bantuan di tempat kerja atau instansi resmi."
+  },
+  {
+    "id": 13,
+    "pola": "〜すぎます / 〜すぎる",
+    "romaji": "~sugimasu / ~sugiru",
+    "arti": "Terlalu / Berlebihan",
+    "kategori": "Tingkatan",
+    "rumus": "KK Masu (buang ます) / KS-i (buang い) / KS-na + すぎます",
+    "contoh_jp": "きのう お酒を 飲みすぎました。/ この 部屋は 狭すぎます。",
+    "contoh_id": "Kemarin saya terlalu banyak minum sake. / Kamar ini terlalu sempit.",
+    "catatan": "Menunjukkan keadaan yang melampaui batas wajar sehingga bernilai negatif."
+  },
+  {
+    "id": 14,
+    "pola": "〜やすいです / 〜にくいです",
+    "romaji": "~yasui desu / ~nikui desu",
+    "arti": "Mudah dilakukan / Sulit dilakukan",
+    "kategori": "Karakteristik & Kemudahan",
+    "rumus": "Kata Kerja Bentuk Masu (buang ます) + やすいです / にくいです",
+    "contoh_jp": "この ペンは とても 書きやすいです。/ この 字は 小さくて 読みにくいです。",
+    "contoh_id": "Pulpen ini sangat mudah dipakai menulis. / Tulisan ini kecil sehingga sulit dibaca.",
+    "catatan": "Digunakan untuk menilai sifat kemudahan atau kesulitan suatu alat/benda."
+  },
+  {
+    "id": 15,
+    "pola": "〜前に / 〜あとで / 〜てから",
+    "romaji": "~mae ni / ~ato de / ~te kara",
+    "arti": "Sebelum / Sesudah / Setelah itu",
+    "kategori": "Urutan Waktu",
+    "rumus": "KK Kamus + 前に / KK Bentuk-Ta + あとで / KK Bentuk-Te + から",
+    "contoh_jp": "寝る前に 歯を 磨きます。/ 手を 洗ってから、食事を します。",
+    "contoh_id": "Menggosok gigi sebelum tidur. / Setelah mencuci tangan, lalu makan.",
+    "catatan": "Kerap menjadi kunci jawaban soal listening dan dokkai instruksi kerja."
+  }
+]
