@@ -1,0 +1,107 @@
+﻿// test-render.mjs
+// Verifikasi rendering kanji-tree-render.js + engine + main dengan data explorer
+import fs from "node:fs";
+
+// Mock browser DOM minimal
+class MockDiv {
+  constructor() { this.innerHTML = ""; this.textContent = ""; }
+}
+var documentMock = {
+  createElement: function(tag) { return new MockDiv(); },
+};
+var windowMock = {};
+globalThis.document = documentMock;
+globalThis.window = windowMock;
+
+// Load data
+const dataContent = fs.readFileSync("public/assets/js/explorer-data.js", "utf8");
+const idx = dataContent.indexOf("window.EXPLORER_DATA = ");
+const jsonStr = dataContent.slice(idx + "window.EXPLORER_DATA = ".length).trim().replace(/;\s*$/, "");
+windowMock.EXPLORER_DATA = JSON.parse(jsonStr);
+
+// Load helpers (kanji-tree-render.js)
+const helpersCode = fs.readFileSync("public/assets/js/kanji-tree-render.js", "utf8");
+eval(helpersCode);
+
+// Load jukugo renderer (kanji-tree-render-engine.js)
+const engineCode = fs.readFileSync("public/assets/js/kanji-tree-render-engine.js", "utf8");
+eval(engineCode);
+
+// Load main render (kanji-tree-render-main.js)
+const mainCode = fs.readFileSync("public/assets/js/kanji-tree-render-main.js", "utf8");
+eval(mainCode);
+
+// Verify render function exists
+if (!windowMock.KanjiTreeRender || !windowMock.KanjiTreeRender.renderTree) {
+  console.error("FAIL: KanjiTreeRender.renderTree not found");
+  process.exit(1);
+}
+console.log("PASS: KanjiTreeRender.renderTree exists");
+
+// Test render
+const mockContainer = new MockDiv();
+windowMock.KanjiTreeRender.renderTree(mockContainer);
+
+const html = mockContainer.innerHTML;
+
+// Verifikasi pola kelas baru dari Gemini reference
+const checks = [
+  { label: "grid-full rumpun exists", test: html.includes('class="grid-full"') },
+  { label: "box box-left exists", test: html.includes('class="box box-left"') },
+  { label: "label 1. Rumpun exists", test: html.includes('class="label level-1"') },
+  { label: "label 2. Radikal Dasar exists", test: html.includes('class="label level-2"') },
+  { label: "label 3. Kanji Tunggal exists", test: html.includes('class="label level-3"') },
+  { label: "label 4. Jukugo exists", test: html.includes("4. Kanji Gabungan (Jukugo)") },
+  { label: "label 5. Kotoba exists", test: html.includes("5. Frasa Utuh (Kotoba)") },
+  { label: "blue color class exists", test: html.includes('class="blue"') || html.includes('class="label blue"') },
+  { label: "yellow color class exists", test: html.includes('class="yellow"') },
+  { label: "branch nesting exists", test: html.includes('class="branch"') },
+  { label: "node exists", test: html.includes('class="node"') },
+  { label: "kanji font class exists", test: html.includes('class="kanji"') },
+  { label: "desc class exists", test: html.includes('class="desc"') },
+  { label: "title class exists", test: html.includes('class="title blue"') },
+  { label: "subtitle exists", test: html.includes("Nature &amp; Natural Elements") },
+  { label: "group order: Alam before Manusia", test: html.indexOf("Alam &amp; Elemen Alam") > 0 && html.indexOf("Alam &amp; Elemen Alam") < html.indexOf("Manusia &amp; Relasi Sosial") },
+  { label: "group order: Manusia before Angka", test: html.indexOf("Manusia &amp; Relasi Sosial") > 0 && html.indexOf("Manusia &amp; Relasi Sosial") < html.indexOf("Angka &amp; Simbol Dasar") },
+];
+
+var passCount = 0;
+for (const check of checks) {
+  if (check.test) {
+    console.log("PASS: " + check.label);
+    passCount++;
+  } else {
+    console.log("FAIL: " + check.label);
+  }
+}
+
+console.log("\n" + passCount + "/" + checks.length + " checks passed");
+
+// Hitung statistik
+const rumpunCount = (html.match(/class="label level-1"/g) || []).length;
+const radikalCount = (html.match(/class="label level-2"/g) || []).length;
+const tankanjiCount = (html.match(/class="label level-3"/g) || []).length;
+const radikalCount = (html.match(/2\. Radikal Dasar/g) || []).length;
+const tankanjiCount = (html.match(/3\. Kanji Tunggal/g) || []).length;
+const jukugoCount = (html.match(/4\. Kanji Gabungan/g) || []).length;
+const kotobaCount = (html.match(/5\. Frasa Utuh/g) || []).length;
+const blueSpans = (html.match(/class="blue"/g) || []).length;
+const yellowSpans = (html.match(/class="yellow"/g) || []).length;
+
+console.log("\n=== Statistik Rendering ===");
+console.log("Rumpun groups:", rumpunCount);
+console.log("Radikal cards:", radikalCount);
+console.log("Tankanji nodes:", tankanjiCount);
+console.log("Jukugo entries:", jukugoCount);
+console.log("Kotoba entries:", kotobaCount);
+console.log("Blue spans (main kanji):", blueSpans);
+console.log("Yellow spans (extra):", yellowSpans);
+console.log("Total HTML length:", html.length, "chars");
+
+if (passCount === checks.length && rumpunCount > 0 && radikalCount > 0 && tankanjiCount > 0) {
+  console.log("\nâœ“ SEMUA TEST BERHASIL");
+  process.exit(0);
+} else {
+  console.log("\nâœ— ADA TEST YANG GAGAL");
+  process.exit(1);
+}

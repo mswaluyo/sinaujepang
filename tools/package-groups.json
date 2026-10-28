@@ -1,0 +1,63 @@
+[
+  {
+    "nama": "LOLOSYUK",
+    "warna": "sky",
+    "badgeGradien": "from-sky-500 to-blue-600",
+    "paket": [
+      "gakusei-quiz",
+      "hare-quiz",
+      "magarimasu-quiz",
+      "orimasu-quiz",
+      "tomemasu-quiz",
+      "konpyuutaa-quiz"
+    ]
+  },
+  {
+    "nama": "AC",
+    "warna": "purple",
+    "badgeGradien": "from-purple-500 to-purple-600",
+    "paket": [
+      "hare2-quiz"
+    ]
+  },
+  {
+    "nama": "DN",
+    "warna": "sky",
+    "badgeGradien": "from-sky-500 to-blue-600",
+    "paket": [
+      "basu2-quiz",
+      "basu3-quiz"
+    ]
+  },
+  {
+    "nama": "PRINCESS",
+    "warna": "rose",
+    "badgeGradien": "from-rose-500 to-rose-600",
+    "paket": [
+      "kuroi-quiz",
+      "kutsushita-quiz",
+      "shatsu-quiz",
+      "tamago-quiz"
+    ]
+  },
+  {
+    "nama": "TOKYO OMIYAGE",
+    "warna": "emerald",
+    "badgeGradien": "from-emerald-500 to-emerald-600",
+    "paket": [
+      "aoi-quiz",
+      "basu-quiz",
+      "jinja-quiz",
+      "kagi-quiz"
+    ]
+  },
+  {
+    "nama": "YUCHU",
+    "warna": "amber",
+    "badgeGradien": "from-red-500 to-orange-500",
+    "paket": [
+      "hashi-quiz",
+      "haburashi-quiz"
+    ]
+  }
+]
