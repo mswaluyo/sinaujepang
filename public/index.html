@@ -1,6 +1,16 @@
 ﻿<!DOCTYPE html>
 <html lang="id">
 <head>
+  <script>
+    // Tangkap aktivasi link bio TikTok
+    try {
+      var p = new URLSearchParams(window.location.search);
+      var ak = p.get('akses');
+      if (ak === 'tiktok' || ak === 'tiktok-follower') {
+        localStorage.setItem('jft_tiktok_unlocked', 'true');
+      }
+    } catch (e) {}
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -120,19 +130,42 @@
           </div>
         </div>
 
-        <!-- Kunci Akses Soal: Tampil jika belum login -->
-        <div id="paket-locked-box" class="bg-white/95 backdrop-blur-md rounded-3xl p-8 sm:p-12 text-center max-w-xl mx-auto border border-fuji-200 shadow-xl shadow-fuji-500/10">
+        <!-- Kunci Akses 1: Jika Belum Login Google -->
+        <div id="paket-login-locked" class="bg-white/95 backdrop-blur-md rounded-3xl p-8 sm:p-12 text-center max-w-xl mx-auto border border-fuji-200 shadow-xl shadow-fuji-500/10">
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-fuji-600 to-fuji-400 text-white flex items-center justify-center mx-auto mb-5 text-2xl shadow-lg shadow-fuji-500/25">
             <i class="fa-solid fa-lock"></i>
           </div>
           <h3 class="text-2xl font-extrabold text-slate-800 mb-2">Akses Latihan Terkunci</h3>
           <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Masuk dengan akun Google terlebih dahulu untuk membuka 18 paket latihan CBT JFT-Basic A2, pembahasan, dan pencatatan riwayat skor.
+            Masuk dengan akun Google terlebih dahulu untuk mulai membuka 18 paket latihan CBT JFT-Basic A2 dan pencatatan skor.
           </p>
           <button onclick="openLoginModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-fuji-600 hover:bg-fuji-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg shadow-fuji-600/30 transition-all hover:scale-105 text-sm">
             <i class="fa-brands fa-google text-base"></i>
             <span>Masuk Sekarang — Gratis</span>
           </button>
+        </div>
+
+        <!-- Kunci Akses 2: Sudah Login TAPI Belum Klik Link Bio TikTok -->
+        <div id="paket-tiktok-locked" class="hidden bg-white/95 backdrop-blur-md rounded-3xl p-8 sm:p-12 text-center max-w-xl mx-auto border border-slate-300 shadow-2xl relative overflow-hidden">
+          <div class="w-16 h-16 rounded-2xl text-white flex items-center justify-center mx-auto mb-5 text-2xl shadow-lg" style="background-color:#010101;box-shadow:0 4px 14px rgba(0,0,0,0.35);">
+            <i class="fa-brands fa-tiktok text-3xl" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i>
+          </div>
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold mb-3 border border-slate-200">
+            <span>Langkah Terakhir Aktivasi Akun</span>
+          </div>
+          <h3 class="text-2xl font-extrabold text-slate-800 mb-2">Buka Materi Lewat Bio TikTok</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6 text-left sm:text-center">
+            Materi 797 soal CBT ini 100% gratis. Untuk membuka akses permanen:<br/>
+            <span class="font-bold text-slate-800">1. Buka &amp; Follow akun TikTok kami: <span class="text-fuji-600">@danyangkedungselur</span></span><br/>
+            <span class="font-bold text-slate-800">2. Klik link yang ada di BIO profil TikTok tersebut</span> untuk membuka seluruh bank soal selamanya.
+          </p>
+          <a href="https://www.tiktok.com/@danyangkedungselur" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105 text-sm" style="background-color:#010101;">
+            <i class="fa-brands fa-tiktok text-lg" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i>
+            <span>Buka Profil TikTok @danyangkedungselur &rarr;</span>
+          </a>
+          <p class="text-[11px] text-slate-400 mt-4 italic">
+            *Setelah mengklik link di bio TikTok, Anda akan otomatis kembali ke sini dengan akses terbuka 100%.
+          </p>
         </div>
 
         <!-- Target Render Kartu Soal Otomatis (Sesuai ID package-render.js) -->
@@ -246,20 +279,39 @@
         var u = null;
         try { u = await window.IndexedDB.getItem("jft_user"); } catch (e) {}
         var b = document.getElementById("loginBtn"), info = document.getElementById("uInfo");
-        var lockedBox = document.getElementById("paket-locked-box");
+        var loginLock = document.getElementById("paket-login-locked");
+        var tiktokLock = document.getElementById("paket-tiktok-locked");
         var paketBox = document.getElementById("paket-render-container");
+        
+        // Cek status unlock tiktok
+        var isUnlocked = false;
+        try {
+          if (localStorage.getItem("jft_tiktok_unlocked") === "true") isUnlocked = true;
+          if (u && (u.email || "").toLowerCase() === "mswaluyo@gmail.com") isUnlocked = true;
+        } catch (e) {}
+
         if (!u) {
           if (b) { b.innerHTML = '<span>Masuk Google</span>'; b.onclick = function(){ openLoginModal(); }; }
           if (info) { info.classList.add("hidden"); }
-          if (lockedBox) lockedBox.classList.remove("hidden");
+          if (loginLock) loginLock.classList.remove("hidden");
+          if (tiktokLock) tiktokLock.classList.add("hidden");
           if (paketBox) paketBox.classList.add("hidden");
           return;
         }
-        if (lockedBox) lockedBox.classList.add("hidden");
-        if (paketBox) {
-          paketBox.classList.remove("hidden");
-          if (typeof window.renderPackSectionScoresAll === 'function') {
-            window.renderPackSectionScoresAll();
+
+        // Sudah login Google, cek apakah sudah unlock lewat bio TikTok
+        if (loginLock) loginLock.classList.add("hidden");
+
+        if (!isUnlocked) {
+          if (tiktokLock) tiktokLock.classList.remove("hidden");
+          if (paketBox) paketBox.classList.add("hidden");
+        } else {
+          if (tiktokLock) tiktokLock.classList.add("hidden");
+          if (paketBox) {
+            paketBox.classList.remove("hidden");
+            if (typeof window.renderPackSectionScoresAll === 'function') {
+              window.renderPackSectionScoresAll();
+            }
           }
         }
         if (b) { b.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i><span>Keluar</span>'; b.onclick = function(){ window.fujiLogout(); }; }
