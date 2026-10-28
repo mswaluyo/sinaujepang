@@ -173,13 +173,14 @@
             <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 text-left">
               Masukkan Kode Akses dari Bio TikTok:
             </label>
-            <div class="flex gap-2">
-              <input type="text" id="tiktokCodeInput" placeholder="Ketik kode di sini..." class="flex-1 px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-fuji-600 focus:ring-2 focus:ring-fuji-200 text-sm font-mono font-bold uppercase tracking-wider text-center text-slate-800 bg-white" maxlength="20" autocomplete="off">
-              <button onclick="verifikasiKodeTikTok()" class="bg-fuji-600 hover:bg-fuji-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-all shadow-md shadow-fuji-600/30">
-                Buka Akses
+            <div class="flex flex-col gap-3">
+              <input type="text" id="tiktokCodeInput" placeholder="Ketik kode di sini..." class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:outline-none focus:border-fuji-600 focus:ring-2 focus:ring-fuji-200 text-base font-mono font-bold uppercase tracking-widest text-center text-slate-800 bg-white shadow-inner" maxlength="20" autocomplete="off">
+              <button onclick="verifikasiKodeTikTok()" class="w-full bg-fuji-600 hover:bg-fuji-700 text-white font-bold py-3.5 rounded-xl text-sm transition-all shadow-md shadow-fuji-600/30 hover:scale-[1.02] flex items-center justify-center gap-2">
+                <i class="fa-solid fa-lock-open text-xs"></i>
+                <span>Buka Akses Soal</span>
               </button>
             </div>
-            <p id="tiktokCodeErr" class="text-xs text-rose-600 font-semibold mt-2 min-h-[16px] text-left"></p>
+            <p id="tiktokCodeErr" class="text-xs text-rose-600 font-semibold mt-2 min-h-[16px] text-center"></p>
           </div>
           <p class="text-[11px] text-slate-400 mt-4">
             *Aktivasi ini hanya perlu dilakukan sekali seumur hidup untuk akun Anda.
