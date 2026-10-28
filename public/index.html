@@ -429,6 +429,21 @@
         try {
           localStorage.setItem("jft_tiktok_unlocked", "true");
         } catch (e) {}
+        try {
+          if (window.IndexedDB && window.IndexedDB.setItem) {
+            window.IndexedDB.setItem("jft_tiktok_unlocked", true);
+          }
+        } catch (e) {}
+        // Simpan permanen ke cloud Firestore di dokumen user
+        try {
+          var curUser = (window.fujiAuth && window.fujiAuth.currentUser) || window.fujiUser;
+          if (curUser && curUser.uid && window.fujiDb) {
+            import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js").then(function(fsMod) {
+              var uRef = fsMod.doc(window.fujiDb, "users", curUser.uid);
+              fsMod.setDoc(uRef, { tiktokUnlocked: true, tiktokUnlockedAt: fsMod.serverTimestamp() }, { merge: true }).catch(function(){});
+            }).catch(function(){});
+          }
+        } catch (e) {}
         setTimeout(function() {
           renderUser().catch(function(){});
           // Redirect jika datang dari halaman spesifik

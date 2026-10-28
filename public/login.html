@@ -79,12 +79,22 @@ if (/(^|[?&])out=1/.test(location.search)) {
   try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
   signOut(auth).catch(function () {});
 }
-onAuthStateChanged(auth, function (u) {
+onAuthStateChanged(auth, async function (u) {
   if (u) {
     const userData = { uid: u.uid, name: u.displayName, email: u.email, photo: u.photoURL };
     try { localStorage.setItem("jft_user", JSON.stringify(userData)); } catch (e) {}
     try { window.IndexedDB.setItem("jft_user", userData); } catch (e) {}
     try { touchUser(u); } catch (e) {}
+    // Cek apakah akun ini sudah pernah unlock kode akses sebelumnya di Firestore
+    try {
+      const uDoc = await getDoc(doc(db, "users", u.uid));
+      if (uDoc.exists() && uDoc.data().tiktokUnlocked === true) {
+        localStorage.setItem("jft_tiktok_unlocked", "true");
+        if (window.IndexedDB && window.IndexedDB.setItem) {
+          window.IndexedDB.setItem("jft_tiktok_unlocked", true);
+        }
+      }
+    } catch (e) {}
     const params = new URLSearchParams(window.location.search);
     const redirectUrl = params.get("redirect");
     if (redirectUrl && !redirectUrl.startsWith("//") && !redirectUrl.includes(":")) {
