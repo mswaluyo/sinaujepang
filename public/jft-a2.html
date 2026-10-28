@@ -5,19 +5,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
-  <title>Tabel Kanji JFT-A2 (Grup Kanji Explorer &amp; Radikal) â€” SinauJepang</title>
+  <title>Kanji &amp; Kotoba Standar JFT-A2 — SinauJepang</title>
   <link rel="stylesheet" href="/assets/css/tailwind.css">
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
-  /* Custom kanji explorer styles (biru) */
-  .kanji-container-blue { display: flex; flex-direction: column; align-items: center; padding: 12px; border-radius: 12px; transition: all 0.2s ease; cursor: default; }
     body { font-family: 'Plus Jakarta Sans', sans-serif; }
     .jp-font { font-family: 'Noto Sans JP', sans-serif; }
     .jp-kanji-clear {
       font-family: 'Noto Sans JP', sans-serif;
-      font-weight: 400 !important;
-      letter-spacing: 0.05em;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+    .kanji-highlight-blue {
+      color: #0284c7 !important; /* sky/blue solid */
+      font-weight: 700 !important;
+    }
+    .kanji-box-tunggal {
+      color: #0284c7 !important;
+      border-color: #7dd3fc !important;
+      background-color: #ffffff !important;
+      font-weight: 700 !important;
     }
     .badge-stroke { font-feature-settings: "tnum"; font-variant-numeric: tabular-nums; }
     .banner-kanji-explorer {
@@ -45,26 +53,123 @@
       background: #f8fafc;
       border-left: 5px solid #0284c7;
     }
-    .tab-btn {
+    .control-toolbar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 12px;
       background: #ffffff;
-      color: #64748b;
       border: 1px solid #e2e8f0;
-      padding: 0.5rem 1rem;
-      border-radius: 0.375rem;
+      border-radius: 16px;
+      padding: 10px 14px;
+      margin-bottom: 20px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+    .tab-group-container {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: #f1f5f9;
+      padding: 4px;
+      border-radius: 12px;
+      width: 360px;
+      flex-shrink: 0;
+    }
+    .search-group-container {
+      flex: 1;
+      min-width: 0;
+      position: relative;
+      display: flex;
+      align-items: center;
+    }
+    .search-input-field {
+      width: 100%;
+      height: 40px;
+      padding-left: 42px !important;
+      padding-right: 38px !important;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 12px;
+      font-size: 0.875rem;
+      color: #1e293b;
+      box-sizing: border-box;
+      outline: none;
+      transition: all 0.2s ease;
+    }
+    .search-input-field:focus {
+      background-color: #ffffff;
+      border-color: #0284c7;
+      box-shadow: 0 0 0 3px rgba(2, 132, 199, 0.15);
+    }
+    .search-lens-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+      font-size: 14px;
+      pointer-events: none;
+      z-index: 10;
+    }
+    .search-clear-btn {
+      position: absolute;
+      right: 10px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: #94a3b8;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 6px;
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 10;
+      transition: all 0.15s ease;
+    }
+    .search-clear-btn:hover {
+      color: #475569;
+      background: #e2e8f0;
+    }
+    @media (max-width: 768px) {
+      .control-toolbar {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .tab-group-container {
+        width: 100%;
+      }
+    }
+    .tab-btn {
+      flex: 1 1 50%;
+      height: 40px;
+      padding: 0 12px;
+      border-radius: 8px;
       font-size: 0.875rem;
       font-weight: 700;
+      white-space: nowrap;
       display: inline-flex;
       align-items: center;
-      gap: 0.5rem;
+      justify-content: center;
+      gap: 6px;
       cursor: pointer;
+      border: 1px solid transparent;
+      background: transparent;
+      color: #64748b;
+      box-sizing: border-box;
       transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .tab-btn:hover { background: #f8fafc; border-color: #cbd5e1; color: #334155; }
+    .tab-btn:hover:not(.active) {
+      background: #ffffff;
+      color: #0f172a;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    }
     .tab-btn.active {
-      background: linear-gradient(135deg, #0369a1 0%, #1d4ed8 100%);
-      color: #ffffff;
-      border-color: transparent;
-      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.25);
+      background: linear-gradient(135deg, #0284c7 0%, #2563eb 100%);
+      color: #ffffff !important;
+      border-color: transparent !important;
+      box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
     }
 
     /* Mobile Enhancements & Responsiveness */
@@ -90,7 +195,6 @@
         white-space: normal;
       }
     }
-
   </style>
 </head>
 <body class="bg-fuji-50 text-slate-800 min-h-screen flex flex-col selection:bg-sky-100 selection:text-sky-800">
@@ -99,46 +203,19 @@
 
   <main class="max-w-6xl mx-auto px-2 sm:px-4 py-4 sm:py-8 flex-grow w-full">
     <!-- Header Banner -->
-    <div class="banner-kanji-explorer rounded-2xl sm:rounded-3xl p-4 sm:p-8 shadow-xl shadow-blue-500/15 mb-4 sm:mb-8 relative overflow-hidden">
-      <div class="absolute -right-6 sm:-right-10 -bottom-6 sm:-bottom-10 opacity-10 text-7xl sm:text-9xl font-black jp-font select-none text-white pointer-events-none">éƒ¨<br>é¦–</div>
-      <div class="relative z-10 max-w-2xl">
-        <div class="inline-flex items-center gap-1.5 sm:gap-2 banner-badge backdrop-blur-md px-2.5 sm:px-3.5 py-1 sm:py-1.5 rounded-full text-[11px] sm:text-xs font-bold uppercase tracking-wider mb-2 sm:mb-3">
-          <i class="fa-solid fa-compass"></i> Standar Grup Resmi Kanji Explorer
-        </div>
-        <h1 class="text-xl sm:text-4xl font-extrabold tracking-tight mb-2 text-white">Tabel Kanji Standar JFT-A2</h1>
-        <p class="banner-subtext text-xs sm:text-base leading-relaxed">
-          Tabel kanji terstruktur: disortir berurutan dari 
-          <strong class="text-white">Grup Radikal (Kanji Explorer)</strong> &rarr; 
-          <strong class="text-white">Radikal</strong> &rarr; 
-          <strong class="text-white">Jumlah Coretan (paling sederhana)</strong>.
+    <div class="banner-kanji-explorer rounded-2xl sm:rounded-3xl p-5 sm:p-7 shadow-xl shadow-blue-500/15 mb-4 sm:mb-6 relative overflow-hidden">
+      <div class="relative z-10 max-w-3xl">
+        <h1 class="text-xl sm:text-3xl font-extrabold tracking-tight mb-2 text-white">Kanji &amp; Kotoba Standar JFT-A2</h1>
+        <p class="banner-subtext text-xs sm:text-sm leading-relaxed">
+          Eksplorasi lengkap <strong class="text-white">273 Kanji</strong> berbasis pohon radikal (Kanji Explorer) dan <strong class="text-white">Daftar Kotoba A2</strong> terintegrasi.
         </p>
-      </div>
-
-      <!-- Quick Stats Counter -->
-      <div class="mt-4 sm:mt-6 pt-4 sm:pt-6 border-t border-white/20 grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4">
-        <div class="bg-white/10 sm:bg-transparent p-2 sm:p-0 rounded-xl">
-          <span class="text-[10px] sm:text-xs banner-stat-label block font-semibold mb-0.5">Total Kanji</span>
-          <span id="stat-total-kanji" class="text-lg sm:text-2xl font-black banner-stat-val">273</span>
-        </div>
-        <div class="bg-white/10 sm:bg-transparent p-2 sm:p-0 rounded-xl">
-          <span class="text-[10px] sm:text-xs banner-stat-label block font-semibold mb-0.5">Grup Explorer</span>
-          <span class="text-lg sm:text-2xl font-black banner-stat-val">11 Kategori</span>
-        </div>
-        <div class="bg-white/10 sm:bg-transparent p-2 sm:p-0 rounded-xl">
-          <span class="text-[10px] sm:text-xs banner-stat-label block font-semibold mb-0.5">Total Kosakata</span>
-          <span id="stat-total-kotoba" class="text-lg sm:text-2xl font-black banner-stat-val">303</span>
-        </div>
-        <div class="bg-white/10 sm:bg-transparent p-2 sm:p-0 rounded-xl">
-          <span class="text-[10px] sm:text-xs banner-stat-label block font-semibold mb-0.5">Hierarki Urutan</span>
-          <span class="text-sm sm:text-xl font-black banner-stat-val">Grup &rarr; Radikal &rarr; Stroke</span>
-        </div>
       </div>
     </div>
 
-    <!-- Controls & Search -->
-    <div class="bg-white rounded-xl sm:rounded-2xl border border-slate-200 p-3 sm:p-4 shadow-sm mb-4 sm:mb-6 flex flex-col sm:flex-row items-stretch sm:items-center justify-between gap-3 sm:gap-4">
-      <!-- Tabs Switcher -->
-      <div class="flex items-center gap-1 sm:gap-1.5 bg-slate-100 p-1 rounded-xl w-full sm:w-auto">
+    <!-- Controls (1 Baris Penuh: Tab Kanji + Tab Kotoba + Search Box) -->
+    <div class="control-toolbar">
+      <!-- Tab Switcher -->
+      <div class="tab-group-container">
         <button id="tab-tabel-kanji" class="tab-btn active">
           <i class="fa-solid fa-table"></i> Tabel Kanji Standar
         </button>
@@ -147,11 +224,14 @@
         </button>
       </div>
 
-      <!-- Search Box -->
-      <div class="relative flex-1 max-w-full sm:max-w-md">
-        <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-400 text-sm"></i>
-        <input id="input-search" type="text" placeholder="Cari kanji, radikal, arti, cara baca..."
-          class="w-full pl-9 pr-3 py-2 bg-slate-50 border border-slate-200 rounded-xl text-xs sm:text-sm focus:bg-white focus:outline-none focus:ring-2 focus:ring-sky-500/20 focus:border-sky-500 transition-all">
+      <!-- Search Input (Lensa Pas & Bebas Halangan Ketik) -->
+      <div class="search-group-container">
+        <i class="fa-solid fa-magnifying-glass search-lens-icon"></i>
+        <input id="input-search" type="text" placeholder="Cari kanji, radikal, arti, cara baca (Romaji/Kana)..."
+          class="search-input-field" autocomplete="off">
+        <button id="btn-clear-search" class="hidden search-clear-btn" title="Hapus pencarian">
+          <i class="fa-solid fa-xmark text-sm"></i>
+        </button>
       </div>
     </div>
 
@@ -172,11 +252,11 @@
         <div class="overflow-x-auto -webkit-overflow-scrolling-touch">
           <table class="w-full text-left border-collapse mobile-table">
             <thead>
-              <tr class="bg-slate-100/90 border-b border-slate-200 text-[11px] sm:text-xs font-extrabold text-slate-600 uppercase tracking-wider sticky top-0 z-10">
-                <th class="py-2.5 sm:py-3 px-2 sm:px-4 w-10 sm:w-12 text-center">No</th>
-                <th class="py-2.5 sm:py-3 px-2 sm:px-4 min-w-[170px] sm:w-80">Kanji &amp; Tree</th>
-                <th class="py-2.5 sm:py-3 px-2 sm:px-4 min-w-[150px] sm:w-64">Cara Baca</th>
-                <th class="py-2.5 sm:py-3 px-2 sm:px-4 min-w-[140px]">Arti Indonesia</th>
+              <tr class="bg-slate-100 border-b border-slate-200 text-[11px] sm:text-xs font-bold text-slate-600 uppercase tracking-wider sticky top-0 z-20 shadow-xs">
+                <th class="py-3 px-2 sm:px-4 w-12 sm:w-16 text-center">No</th>
+                <th class="py-3 px-3 sm:px-4 min-w-[180px] sm:w-80">Kanji &amp; Tree</th>
+                <th class="py-3 px-3 sm:px-4 min-w-[160px] sm:w-72">Cara Baca</th>
+                <th class="py-3 px-3 sm:px-4 min-w-[160px]">Arti Indonesia</th>
               </tr>
             </thead>
             <tbody id="kanji-table-body" class="text-xs sm:text-sm divide-y divide-slate-100">
@@ -223,6 +303,7 @@
     const kanjiTableBody = document.getElementById('kanji-table-body');
     const kotobaTableBody = document.getElementById('kotoba-table-body');
     const inputSearch = document.getElementById('input-search');
+    const btnClearSearch = document.getElementById('btn-clear-search');
     const groupShortcuts = document.getElementById('group-shortcuts');
 
     
@@ -328,8 +409,7 @@
         kanjiData = await resKanji.json();
         kotobaData = await resKotoba.json();
 
-        document.getElementById('stat-total-kanji').innerText = kanjiData.length;
-        document.getElementById('stat-total-kotoba').innerText = kotobaData.length;
+// stats counter in banner removed
 
         buildGroupShortcuts();
         renderKanjiTable();
@@ -357,14 +437,29 @@
 
       if (searchQuery.trim()) {
         const q = searchQuery.toLowerCase().trim();
-        filtered = filtered.filter(k => 
-          k.kanji.includes(q) ||
-          k.radical.includes(q) ||
-          k.grupRadikal.toLowerCase().includes(q) ||
-          k.namaRadikal.toLowerCase().includes(q) ||
-          k.arti.toLowerCase().includes(q) ||
-          k.vocab.some(v => v.kanji.includes(q) || v.kana.includes(q) || v.arti.toLowerCase().includes(q))
-        );
+        filtered = filtered.filter(k => {
+          const matchKanji = (k.kanji && k.kanji.includes(q));
+          const matchRadical = (k.radical && k.radical.includes(q));
+          const matchGrup = (k.grupRadikal && k.grupRadikal.toLowerCase().includes(q));
+          const matchNamaRad = (k.namaRadikal && k.namaRadikal.toLowerCase().includes(q));
+          const matchArti = (k.arti && k.arti.toLowerCase().includes(q));
+          const matchKun = (k.kun && k.kun.toLowerCase().includes(q));
+          const matchOn = (k.on && k.on.toLowerCase().includes(q));
+          const kunRomaji = k.kun ? kanaToRomaji(k.kun, false).toLowerCase() : '';
+          const onRomaji = k.on ? kanaToRomaji(k.on, true).toLowerCase() : '';
+          const matchRomaji = kunRomaji.includes(q) || onRomaji.includes(q);
+          const radKana = k.radMeta?.kana ? k.radMeta.kana.toLowerCase() : '';
+          const radRom = k.radMeta?.romaji ? k.radMeta.romaji.toLowerCase() : '';
+          const radArti = k.radMeta?.arti ? k.radMeta.arti.toLowerCase() : '';
+          const matchRadMeta = radKana.includes(q) || radRom.includes(q) || radArti.includes(q);
+          const matchVocab = k.vocab && k.vocab.some(v => 
+            (v.kanji && v.kanji.includes(q)) ||
+            (v.kana && v.kana.toLowerCase().includes(q)) ||
+            (v.rom && v.rom.toLowerCase().includes(q)) ||
+            (v.arti && v.arti.toLowerCase().includes(q))
+          );
+          return matchKanji || matchRadical || matchGrup || matchNamaRad || matchArti || matchKun || matchOn || matchRomaji || matchRadMeta || matchVocab;
+        });
       }
 
       if (filtered.length === 0) {
@@ -471,7 +566,7 @@
             <td class="py-2.5 px-4" style="padding-left: 1.25rem;">
               <div class="flex items-center gap-2">
                 <span class="text-sky-500 font-mono text-base font-bold select-none">└──</span>
-                <span class="w-9 h-9 inline-flex items-center justify-center bg-white text-sky-800 border border-sky-300 rounded-lg text-2xl jp-kanji-clear shadow-xs font-bold">
+                <span class="w-9 h-9 inline-flex items-center justify-center kanji-box-tunggal border rounded-lg text-2xl jp-kanji-clear shadow-xs">
                   ${k.kanji}
                 </span>
                 <span class="text-[10px] text-sky-700 bg-sky-100 border border-sky-200 px-2 py-0.5 rounded-full font-bold ml-1">${k.stroke} coretan</span>
@@ -494,101 +589,23 @@
             rowCounter++;
             const isLastVocab = vIdx === k.vocab.length - 1;
             const treeBranch = isLastVocab ? '└──' : '├──';
-            // Warna kanji berdasarkan radikal
-            const radicalColor = {
-              'åŠ›': 'text-amber-600',
-              'äºº': 'text-sky-600',  // biru
-              'å£': 'text-blue-600',
-              'å¿ƒ': 'text-pink-600',
-              'ç›®': 'text-gray-700',
-              'è¨€': 'text-violet-600',
-              'æœ¨': 'text-emerald-600',
-              'æ°´': 'text-sky-600',
-              'ç«': 'text-orange-600',
-              'æ—¥': 'text-amber-600',
-              'å¥³': 'text-pink-500',
-              'æ‰‹': 'text-sky-700',
-              'è€³': 'text-cyan-600',
-              'è‚‰': 'text-red-500',
-              'è¶³': 'text-orange-700',
-              'å­': 'text-rose-400',
-              'å°': 'text-teal-600',
-              'å¤§': 'text-yellow-700',
-              'çˆ¶': 'text-amber-700',
-              'åœŸ': 'text-stone-600',
-              'ç‰›': 'text-orange-600',
-              'é­š': 'text-cyan-600',
-              'é¦¬': 'text-indigo-600',
-              'è²': 'text-green-600',
-              'é³¥': 'text-red-500',
-              'èˆŸ': 'text-blue-600',
-              'é£Ÿ': 'text-orange-700',
-              'å®€': 'text-amber-600',
-              'è¾¶': 'text-indigo-600',
-              'ç©´': 'text-stone-600',
-              'è¡Œ': 'text-cyan-700',
-              'é–€': 'text-stone-700',
-              'åˆ€': 'text-red-600',
-              'é‡‘': 'text-gray-700',
-              'é›¨': 'text-blue-500',
-              'ç«¹': 'text-emerald-600',
-              'ç™½': 'text-gray-400',
-              'è¦‹': 'text-blue-600',
-              'çŸ³': 'text-stone-500',
-              'è™«': 'text-lime-700',
-              'é©': 'text-red-600',
-              'ç³¸': 'text-cyan-600',
-              'è¾›': 'text-orange-600',
-              'çš¿': 'text-blue-600',
-              'æ—¡': 'text-stone-500',
-              'ä¸¿': 'text-stone-400',
-              'å…¥': 'text-gray-600',
-              'é¬¥': 'text-red-600',
-              'ä¸¶': 'text-stone-500',
-              'ä¸¿': 'text-stone-400',
-              'äº…': 'text-amber-600',
-              'å†‚': 'text-emerald-600',
-              'å†–': 'text-blue-600',
-              'å†«': 'text-cyan-600',
-              'å‡µ': 'text-stone-600',
-              'åŽ¶': 'text-orange-600',
-              'åˆ': 'text-rose-600',
-              'æ¯”': 'text-gray-600',
-              'å¤‚': 'text-orange-600',
-              'å·´': 'text-cyan-600',
-              'å¥€': 'text-amber-600',
-              'åŒ•': 'text-rose-700',
-              'å»´': 'text-violet-600',
-              'å¼“': 'text-amber-600',
-              'å°¢': 'text-rose-500',
-              'å°¸': 'text-stone-500',
-              'å¹¿': 'text-gray-700',
-              'å»¾': 'text-rose-600',
-              'å·»': 'text-emerald-600',
-              'èŒµ': 'text-green-600',
-              'è‰¹': 'text-green-600',
-              'è‰¿': 'text-lime-700',
-              'ð§˜‡': 'text-red-600',
-              'â¿±ä¸¬ç½”': 'text-blue-600'
-            };
-            // Tentukan warna berdasarkan radikal
-            // Prioritas:
-            // 1. Kalau kanji punya radikal sendiri â†’ pakai map
-            // 2. Kalau kanji mengandung 'å£' â†’ biru
-            // 3. Default
-            let colorClass = 'text-blue-600';
-            // Auto-detect radikal dari string kanji
-            if (v.kanji.includes('å£')) {
-              colorClass = 'text-blue-600';
-            }
+            // Highlight karakter kanji yang sama dengan kanji tunggal induknya
+            const parentChar = k.kanji;
+            const highlightedKanji = Array.from(v.kanji).map(ch => {
+              if (ch === parentChar) {
+                return `<span class="kanji-highlight-blue">${ch}</span>`;
+              }
+              return `<span class="text-slate-700">${ch}</span>`;
+            }).join('');
+
             html += `
               <tr class="hover:bg-sky-50/20 transition-colors">
                 <td class="py-2.5 px-4 text-center text-xs text-slate-400 font-semibold">${rowCounter}</td>
                 <td class="py-2.5 px-4" style="padding-left: 3.75rem;">
                   <div class="flex items-center gap-2">
                     <span class="text-slate-300 font-mono text-sm select-none font-bold">${treeBranch}</span>
-                    <span class="text-slate-900 text-lg jp-kanji-clear bg-slate-50 px-2.5 py-0.5 rounded border border-slate-200 ${colorClass}">
-                      ${v.kanji}
+                    <span class="text-lg jp-kanji-clear bg-slate-50 px-2.5 py-0.5 rounded border border-slate-200">
+                      ${highlightedKanji}
                     </span>
                   </div>
                 </td>
@@ -606,6 +623,16 @@
       });
 
       kanjiTableBody.innerHTML = html;
+      const counterText = document.getElementById('search-counter-text');
+      const counterBadge = document.getElementById('search-counter-badge');
+      if (counterText && counterBadge) {
+        if (searchQuery.trim()) {
+          counterBadge.classList.remove('hidden');
+          counterText.innerText = `${filtered.length} Kanji (${rowCounter} Kosakata)`;
+        } else {
+          counterText.innerText = `Total ${kanjiData.length} Kanji`;
+        }
+      }
     }
 
     // Render Tabel Kotoba
@@ -677,6 +704,20 @@
     // Live Search
     inputSearch.oninput = (e) => {
       searchQuery = e.target.value;
+      if (searchQuery.trim().length > 0) {
+        btnClearSearch.classList.remove('hidden');
+      } else {
+        btnClearSearch.classList.add('hidden');
+      }
+      if (currentView === 'kanji') renderKanjiTable();
+      else renderKotobaTable();
+    };
+
+    btnClearSearch.onclick = () => {
+      inputSearch.value = '';
+      searchQuery = '';
+      btnClearSearch.classList.add('hidden');
+      inputSearch.focus();
       if (currentView === 'kanji') renderKanjiTable();
       else renderKotobaTable();
     };
@@ -685,10 +726,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
-
-</style>
