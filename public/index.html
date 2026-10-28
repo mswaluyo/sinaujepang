@@ -108,8 +108,8 @@
     <section id="latihan-soal" class="relative bg-fuji-overlay py-16 md:py-24 border-b border-fuji-100">
       <div class="max-w-6xl mx-auto px-4 space-y-12">
         
-        <!-- Header Umum Simulasi Terpusat -->
-        <div class="text-center max-w-3xl mx-auto">
+        <!-- Header Umum Simulasi Terpusat (Hanya tampil saat terbuka) -->
+        <div id="paket-header-info" class="hidden text-center max-w-3xl mx-auto">
           <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-fuji-100/90 text-fuji-700 text-xs sm:text-sm font-semibold border border-fuji-200 mb-4 backdrop-blur-sm shadow-sm">
             <i class="fa-solid fa-bolt text-amber-500"></i>
             <span>Timer • Audio • Skor Real-time • Pembahasan Lengkap</span>
@@ -131,15 +131,16 @@
         </div>
 
         <!-- Kunci Akses 1: Jika Belum Login Google -->
-        <div id="paket-login-locked" class="bg-white/95 backdrop-blur-md rounded-3xl p-8 sm:p-12 text-center max-w-xl mx-auto border border-fuji-200 shadow-xl shadow-fuji-500/10">
-          <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-fuji-600 to-fuji-400 text-white flex items-center justify-center mx-auto mb-5 text-2xl shadow-lg shadow-fuji-500/25">
+        <div id="paket-login-locked" class="bg-white rounded-3xl p-8 sm:p-12 text-center max-w-lg mx-auto border border-slate-200 shadow-2xl shadow-slate-900/10 my-4">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-500 to-fuji-600 text-white flex items-center justify-center mx-auto mb-5 text-2xl shadow-lg shadow-sky-500/25">
             <i class="fa-solid fa-lock"></i>
           </div>
-          <h3 class="text-2xl font-extrabold text-slate-800 mb-2">Akses Latihan Terkunci</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Masuk dengan akun Google terlebih dahulu untuk mulai membuka 18 paket latihan CBT JFT-Basic A2 dan pencatatan skor.
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800 mb-2">Simulasi CBT JFT-Basic</h2>
+          <h3 class="text-sm font-bold uppercase tracking-wider text-fuji-600 mb-4">Akses Latihan Terkunci</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-8 max-w-sm mx-auto">
+            Masuk dengan akun Google Anda terlebih dahulu untuk membuka 18 paket simulasi CBT JFT-Basic A2 dan pencatatan skor.
           </p>
-          <button onclick="openLoginModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-fuji-600 hover:bg-fuji-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg shadow-fuji-600/30 transition-all hover:scale-105 text-sm">
+          <button onclick="openLoginModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-sky-600 to-fuji-600 hover:from-sky-700 hover:to-fuji-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg shadow-sky-500/30 transition-all hover:scale-105 text-sm">
             <i class="fa-brands fa-google text-base"></i>
             <span>Masuk Sekarang — Gratis</span>
           </button>
@@ -307,6 +308,7 @@
           u = { uid: window.fujiUser.uid, name: window.fujiUser.displayName, email: window.fujiUser.email };
         }
         var b = document.getElementById("loginBtn"), info = document.getElementById("uInfo");
+        var headerInfo = document.getElementById("paket-header-info");
         var loginLock = document.getElementById("paket-login-locked");
         var tiktokLock = document.getElementById("paket-tiktok-locked");
         var paketBox = document.getElementById("paket-render-container");
@@ -321,6 +323,7 @@
         if (!u) {
           if (b) { b.innerHTML = '<span>Masuk Google</span>'; b.onclick = function(){ openLoginModal(); }; }
           if (info) { info.classList.add("hidden"); }
+          if (headerInfo) headerInfo.classList.add("hidden");
           if (loginLock) loginLock.classList.remove("hidden");
           if (tiktokLock) tiktokLock.classList.add("hidden");
           if (paketBox) paketBox.classList.add("hidden");
@@ -331,9 +334,11 @@
         if (loginLock) loginLock.classList.add("hidden");
 
         if (!isUnlocked) {
+          if (headerInfo) headerInfo.classList.add("hidden");
           if (tiktokLock) tiktokLock.classList.remove("hidden");
           if (paketBox) paketBox.classList.add("hidden");
         } else {
+          if (headerInfo) headerInfo.classList.remove("hidden");
           if (tiktokLock) tiktokLock.classList.add("hidden");
           if (paketBox) {
             paketBox.classList.remove("hidden");
