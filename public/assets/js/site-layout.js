@@ -71,7 +71,7 @@
     f += '<div class="flex items-center justify-center gap-3 mt-2">';
     f += '<a href="https://wa.me/6285649049086" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1eb856] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-whatsapp text-sm"></i><span>Sugeng Waluyo</span></a>';
     f += '<a href="https://www.facebook.com/maswaluyo/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#1464cc] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-facebook text-sm"></i><span>Sugeng Waluyo</span></a>';
-    f += '<a href="https://www.tiktok.com/@danyangkedungselur" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#000000] hover:bg-[#1f2937] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-tiktok text-sm"></i><span>@danyangkedungselur</span></a>';
+    f += '<a href="https://www.tiktok.com/@danyangkedungselur" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-white font-semibold px-4 py-2 rounded-full text-xs shadow-md transition-all" style="background-color:#010101;box-shadow:0 2px 8px rgba(0,0,0,0.3);"><i class="fa-brands fa-tiktok text-sm" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i><span style="letter-spacing:0.02em;">@danyangkedungselur</span></a>';
     f += "</div></div></footer>";
     return f;
   }
