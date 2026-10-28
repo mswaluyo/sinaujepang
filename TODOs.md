@@ -3,7 +3,7 @@
 ## 📌 Status Umum Proyek
 - **Target Hosting:** `sinaujepang` (`https://sinaujepang.web.app`)
 - **Total Kategori:** 6 Kategori (`LOLOSYUK`, `AC`, `DN`, `PRINCESS`, `TOKYO OMIYAGE`, `YUCHU`)
-- **Total Paket Kuis:** 19 Paket aktif (810 soal)
+- **Total Paket Kuis:** 18 Paket aktif (746 soal)
 - **Pipeline CI/CD:** GitHub Actions dengan build otomatis Tailwind CSS
 
 ---
