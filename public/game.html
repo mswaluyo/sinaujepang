@@ -68,21 +68,16 @@
         </div>
       </div>
 
-      <!-- Filter Level Khusus Mode Kanji -->
+      <!-- Filter Level Khusus Mode Kanji: 1 Radikal, 2 Kanji Tunggal, 3 Kanji Kotoba -->
       <div id="levelFilterBox"
         class="bg-white/80 backdrop-blur-md rounded-2xl p-3 border border-slate-200 mb-6 flex flex-wrap items-center justify-center gap-2 text-xs font-bold text-slate-600 shadow-sm">
-        <span class="text-slate-400 mr-1"><i class="fa-solid fa-layer-group"></i> Level Kanji:</span>
-        <button onclick="setKanjiLevel('semua')" id="lvl-semua"
-          class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-800 text-white transition-all">Semua (336)</button>
-        <button onclick="setKanjiLevel('n5')" id="lvl-n5"
-          class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 1
-          (N5: 1-4 Coretan)</button>
-        <button onclick="setKanjiLevel('a21')" id="lvl-a21"
-          class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 2
-          (A2.1: 5-8 Coretan)</button>
-        <button onclick="setKanjiLevel('a22')" id="lvl-a22"
-          class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 3
-          (A2.2: 9+ Coretan)</button>
+        <span class="text-slate-400 mr-1"><i class="fa-solid fa-layer-group"></i> Level Mode:</span>
+        <button onclick="setKanjiLevel('radikal')" id="lvl-radikal"
+          class="lvl-btn px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 1: Radikal (部首)</button>
+        <button onclick="setKanjiLevel('tunggal')" id="lvl-tunggal"
+          class="lvl-btn px-3.5 py-1.5 rounded-xl bg-slate-800 text-white transition-all">Level 2: Kanji Tunggal (単漢字)</button>
+        <button onclick="setKanjiLevel('kotoba')" id="lvl-kotoba"
+          class="lvl-btn px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 3: Kanji Kotoba (熟語)</button>
       </div>
 
       <!-- Main Game Card -->
@@ -161,9 +156,11 @@
   <script>
     // State Aplikasi Game (Non-Repeating Deck System)
     let currentMode = 'kanji'; // 'kanji' | 'kotoba'
-    let kanjiLevel = 'semua';  // 'semua' | 'n5' | 'a21' | 'a22'
+    let kanjiLevel = 'tunggal'; // 'radikal' (Level 1) | 'tunggal' (Level 2) | 'kotoba' (Level 3)
     let kanjiData = [];
     let kotobaData = [];
+    let radicalData = [];
+    let kanjiKotobaData = [];
     
     // Antrean Soal Unik (Deck yang diacak agar tidak ada yang terulang)
     let activeQueue = [];
@@ -185,7 +182,7 @@
       return a;
     }
 
-    // Load Datasets
+    // Load Datasets & Extract Sub-levels
     async function initDatasets() {
       try {
         const [resKanji, resKotoba] = await Promise.all([
@@ -194,6 +191,41 @@
         ]);
         kanjiData = resKanji || [];
         kotobaData = (resKotoba && resKotoba.data) ? resKotoba.data : [];
+
+        // 1. Ekstraksi Level 1: Radikal Unik (121 radikal)
+        const radMap = new Map();
+        kanjiData.forEach(item => {
+          if (item.radical && (item.radName || item.namaRadikal) && !radMap.has(item.radical)) {
+            radMap.set(item.radical, {
+              radical: item.radical,
+              nama: item.radName || item.namaRadikal,
+              arti: item.artiRadikal || item.radMeta?.arti || item.radName || item.namaRadikal,
+              grup: item.grupRadikal || 'Radikal Kanji'
+            });
+          }
+        });
+        radicalData = Array.from(radMap.values());
+
+        // 2. Ekstraksi Level 3: Kanji Kotoba / Jukugo (554 kosakata kanji gabungan)
+        const vList = [];
+        kanjiData.forEach(item => {
+          if (Array.isArray(item.vocab)) {
+            item.vocab.forEach(v => {
+              const w = v.word || v.kanji || v.t || '';
+              const m = v.arti || v.m || '';
+              if (w && m) {
+                vList.push({
+                  parentKanji: item.kanji,
+                  word: w,
+                  kana: v.kana || v.r || '',
+                  arti: m
+                });
+              }
+            });
+          }
+        });
+        kanjiKotobaData = vList;
+
         rebuildQueue();
         nextQuestion();
       } catch (e) {
@@ -201,21 +233,19 @@
       }
     }
 
-    // Filter Kanji List sesuai Level
-    function getFilteredKanji() {
-      if (!kanjiData.length) return [];
-      if (kanjiLevel === 'n5') return kanjiData.filter(k => (k.stroke || 0) <= 4);
-      if (kanjiLevel === 'a21') return kanjiData.filter(k => (k.stroke || 0) >= 5 && (k.stroke || 0) <= 8);
-      if (kanjiLevel === 'a22') return kanjiData.filter(k => (k.stroke || 0) >= 9);
-      return kanjiData;
-    }
-
-    // Membangun Antrean Soal Baru Tanpa Duplikasi
+    // Membangun Antrean Soal Baru Tanpa Duplikasi Sesuai Level
     function rebuildQueue() {
       if (currentMode === 'kanji') {
-        const pool = getFilteredKanji();
-        activeQueue = shuffleArray(pool);
+        if (kanjiLevel === 'radikal') {
+          activeQueue = shuffleArray(radicalData);
+        } else if (kanjiLevel === 'kotoba') {
+          activeQueue = shuffleArray(kanjiKotobaData);
+        } else {
+          // Default: Level 2 Kanji Tunggal (336 kanji)
+          activeQueue = shuffleArray(kanjiData);
+        }
       } else {
+        // Mode Tebak Kotoba Umum
         activeQueue = shuffleArray(kotobaData);
       }
       totalInQueue = activeQueue.length;
@@ -310,11 +340,66 @@
     }
 
     function renderKanjiQuestion(target) {
-      // Cari 3 pengecoh acak yang artinya berbeda dari target
       const distractors = [];
-      const used = new Set([target.kanji, target.arti]);
 
-      // Acak data kanji untuk mencari pengecoh
+      // ==========================================
+      // LEVEL 1: RADIKAL KANJI (部首)
+      // ==========================================
+      if (kanjiLevel === 'radikal') {
+        const used = new Set([target.radical, target.arti]);
+        const randomCandidates = shuffleArray(radicalData);
+        for (let r of randomCandidates) {
+          if (r && r.arti && !used.has(r.radical) && !used.has(r.arti)) {
+            used.add(r.radical);
+            used.add(r.arti);
+            distractors.push(r);
+            if (distractors.length >= 3) break;
+          }
+        }
+        const options = [
+          { text: target.arti, isCorrect: true, item: target },
+          ...distractors.map(d => ({ text: d.arti, isCorrect: false, item: d }))
+        ].sort(() => Math.random() - 0.5);
+
+        currentQ = { target: { kanji: target.radical }, options };
+        document.getElementById('questionCategory').textContent = `LEVEL 1: RADIKAL • ${target.grup || 'Komponen Kanji'}`;
+        document.getElementById('targetDisplay').textContent = target.radical;
+        document.getElementById('targetSub').innerHTML = `Nama Radikal: <b class="text-rose-600">${target.nama || '-'}</b>`;
+        renderOptionsGrid(options);
+        return;
+      }
+
+      // ==========================================
+      // LEVEL 3: KANJI KOTOBA / JUKUGO (熟語)
+      // ==========================================
+      if (kanjiLevel === 'kotoba') {
+        const used = new Set([target.word, target.arti]);
+        const randomCandidates = shuffleArray(kanjiKotobaData);
+        for (let v of randomCandidates) {
+          if (v && v.arti && !used.has(v.word) && !used.has(v.arti)) {
+            used.add(v.word);
+            used.add(v.arti);
+            distractors.push(v);
+            if (distractors.length >= 3) break;
+          }
+        }
+        const options = [
+          { text: target.arti, isCorrect: true, item: target },
+          ...distractors.map(d => ({ text: d.arti, isCorrect: false, item: d }))
+        ].sort(() => Math.random() - 0.5);
+
+        currentQ = { target: { kanji: target.word }, options };
+        document.getElementById('questionCategory').textContent = `LEVEL 3: KANJI KOTOBA • Induk: 【${target.parentKanji}】`;
+        document.getElementById('targetDisplay').textContent = target.word;
+        document.getElementById('targetSub').innerHTML = `Bacaan Kana: <b class="text-emerald-700">${target.kana}</b>`;
+        renderOptionsGrid(options);
+        return;
+      }
+
+      // ==========================================
+      // LEVEL 2: KANJI TUNGGAL (単漢字 - 336 Kanji)
+      // ==========================================
+      const used = new Set([target.kanji, target.arti]);
       const randomCandidates = shuffleArray(kanjiData);
       for (let k of randomCandidates) {
         if (k && k.arti && !used.has(k.kanji) && !used.has(k.arti)) {
@@ -331,11 +416,9 @@
       ].sort(() => Math.random() - 0.5);
 
       currentQ = { target, options };
-
-      document.getElementById('questionCategory').textContent = `KANJI • ${target.stroke || 0} Coretan • Radikal: ${target.radical || '-'}`;
+      document.getElementById('questionCategory').textContent = `LEVEL 2: KANJI TUNGGAL • ${target.stroke || 0} Coretan • Radikal: ${target.radical || '-'}`;
       document.getElementById('targetDisplay').textContent = target.kanji;
       document.getElementById('targetSub').innerHTML = `On: <b class="text-rose-600">${target.on || '-'}</b> • Kun: <b class="text-sky-600">${target.kun || '-'}</b>`;
-
       renderOptionsGrid(options);
     }
 
