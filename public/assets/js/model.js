@@ -6,7 +6,7 @@ var QuizRepository = (function () {
   function quizSlug() {
     try {
       var q = (location && location.search) || "";
-      var m = q.match(/[?&]p=([a-z0-9]+-quiz)/i);
+      var m = q.match(/[?&]p=([a-z0-9_-]+-quiz)/i);
       if (m) return m[1].toLowerCase();
     } catch (e) {}
     if (window.QUIZ_META && window.QUIZ_META.slug) return window.QUIZ_META.slug;
@@ -16,7 +16,7 @@ var QuizRepository = (function () {
     var s = quizSlug();
     if (s) return "/" + s + "/";
     var p = String((location && location.pathname) || "/");
-    var m = p.match(/\/([a-z0-9]+-quiz)\/?(?:index\.html)?$/i);
+    var m = p.match(/\/([a-z0-9_-]+-quiz)\/?(?:index\.html)?$/i);
     if (m) return "/" + m[1] + "/";
     return p.charAt(p.length - 1) === "/" ? p : p.substring(0, p.lastIndexOf("/") + 1);
   }
