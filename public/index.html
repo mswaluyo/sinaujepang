@@ -296,6 +296,15 @@
       try {
         var u = null;
         try { u = await window.IndexedDB.getItem("jft_user"); } catch (e) {}
+        if (!u) {
+          try {
+            var local = localStorage.getItem("jft_user");
+            if (local) u = JSON.parse(local);
+          } catch (e) {}
+        }
+        if (!u && window.fujiUser) {
+          u = { uid: window.fujiUser.uid, name: window.fujiUser.displayName, email: window.fujiUser.email };
+        }
         var b = document.getElementById("loginBtn"), info = document.getElementById("uInfo");
         var loginLock = document.getElementById("paket-login-locked");
         var tiktokLock = document.getElementById("paket-tiktok-locked");
