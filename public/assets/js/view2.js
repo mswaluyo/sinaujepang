@@ -32,7 +32,8 @@ QuizView.fbHTML = function (q, my, ok) {
   var fullT = titleOf(q);
   var emptyTitle = !q.title || !String(q.title || '').trim();
   var looksLikeSoalNum = /^soal\s*\d+$/i.test(String(fullT || ''));
-  var isImgQ = (emptyTitle || looksLikeSoalNum);
+  var isGambarText = /^(gambar\s*berikut|gambar\s*di\s*atas)/i.test(String(fullT || '').trim());
+  var isImgQ = (emptyTitle || looksLikeSoalNum || isGambarText || Boolean(q.img && (!q.title || isGambarText)));
   var kanaVal = (!isImgQ) ? fullT : '-';
   var cleanAna = String(q.analisis || '-').replace(/\s*Kunci\s*:\s*[a-dA-D][.\s]*/g, ' ').replace(/\s{2,}/g, ' ').trim() || '-';
   var h = '';
@@ -51,8 +52,8 @@ QuizView.fbHTML = function (q, my, ok) {
   h += '<div class="bg-emerald-50/50 p-2.5 rounded-lg border border-emerald-100"><span class="text-emerald-700 block text-xs font-semibold mb-0.5">Terjemahan Utuh:</span><span class="font-medium text-emerald-950 text-sm" style="white-space:pre-line">' + esc(trans) + '</span></div>';
   h += '</div></div>';
   h += '<div class="bg-white border border-emerald-100 rounded-xl p-4 space-y-2">';
-  h += '<div class="text-xs font-bold text-emerald-800 uppercase tracking-wider">2. Pola Tata Bahasa (Grammar)</div>';
-  h += '<p class="text-slate-700 text-sm leading-relaxed">' + esc(cleanAna) + '</p></div>';
+  h += '<div class="text-xs font-bold text-emerald-800 uppercase tracking-wider">2. Pola Tata Bahasa & Pembahasan</div>';
+  h += '<p class="text-slate-700 text-sm leading-relaxed" style="white-space:pre-line">' + esc(cleanAna) + '</p></div>';
   h += QuizView.optListHTML(q) + '</div>';
   return h;
 };
