@@ -92,6 +92,7 @@
 
   // Keluar: pakai fujiLogout bila ada (beranda); selain itu lewat ?out=1 di login.html
   function logoutFallback() {
+    try { localStorage.removeItem("jft_user"); } catch (e) {}
     try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
     location.replace("/login.html?out=1");
   }

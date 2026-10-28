@@ -243,12 +243,15 @@
         var authMod = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js");
         var r = await authMod.signInWithPopup(window.fujiAuth, new authMod.GoogleAuthProvider());
         var u = r.user;
-        try { window.IndexedDB.setItem("jft_user", { name: u.displayName, email: u.email, photo: u.photoURL }); } catch (e) {}
+        var uObj = { uid: u.uid, name: u.displayName, email: u.email, photo: u.photoURL };
+        try { localStorage.setItem("jft_user", JSON.stringify(uObj)); } catch (e) {}
+        try { window.IndexedDB.setItem("jft_user", uObj); } catch (e) {}
         closeLoginModal();
         renderUser();
       } catch (e) { alert("Gagal masuk: " + (e.message || e.code)); }
     }
     window.fujiLogout = async function () {
+      try { localStorage.removeItem("jft_user"); } catch (e) {}
       try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
       window.fujiUser = null;
       try {

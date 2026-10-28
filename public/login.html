@@ -81,10 +81,19 @@ if (/(^|[?&])out=1/.test(location.search)) {
 }
 onAuthStateChanged(auth, function (u) {
   if (u) {
-    try { window.IndexedDB.setItem("jft_user", { name: u.displayName, email: u.email, photo: u.photoURL }); } catch (e) {}
+    const userData = { uid: u.uid, name: u.displayName, email: u.email, photo: u.photoURL };
+    try { localStorage.setItem("jft_user", JSON.stringify(userData)); } catch (e) {}
+    try { window.IndexedDB.setItem("jft_user", userData); } catch (e) {}
     try { touchUser(u); } catch (e) {}
-    location.replace("/");
+    const params = new URLSearchParams(window.location.search);
+    const redirectUrl = params.get("redirect");
+    if (redirectUrl && !redirectUrl.startsWith("//") && !redirectUrl.includes(":")) {
+      location.replace(redirectUrl);
+    } else {
+      location.replace("/");
+    }
   } else {
+    try { localStorage.removeItem("jft_user"); } catch (e) {}
     try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
     $("loginBox").classList.remove("hide");
     $("userBox").classList.add("hide");
