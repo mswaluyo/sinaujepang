@@ -68,10 +68,10 @@
     f += '<div class="max-w-5xl mx-auto px-4 text-center">';
     f += '<p class="text-slate-700 font-bold text-sm mb-1">SinauJepang (sinaujepang.web.app)</p>';
     f += '<p class="text-slate-600 text-xs mb-3">Didedikasikan untuk seluruh pejuang Tokutei Ginou Indonesia. Semoga sukses melangkah ke Jepang!</p>';
-    f += '<div class="flex items-center justify-center gap-3 mt-2">';
-    f += '<a href="https://wa.me/6285649049086" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1eb856] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-whatsapp text-sm"></i><span>Sugeng Waluyo</span></a>';
-    f += '<a href="https://www.facebook.com/maswaluyo/" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#1877F2] hover:bg-[#1464cc] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all"><i class="fa-brands fa-facebook text-sm"></i><span>Sugeng Waluyo</span></a>';
-    f += '<a href="https://www.tiktok.com/@danyangkedungselur" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-white font-semibold px-4 py-2 rounded-full text-xs shadow-md transition-all" style="background-color:#010101;box-shadow:0 2px 8px rgba(0,0,0,0.3);"><i class="fa-brands fa-tiktok text-sm" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i><span style="letter-spacing:0.02em;">@danyangkedungselur</span></a>';
+    f += '<div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 mt-3">';
+    f += '<a href="https://www.tiktok.com/@danyangkedungselur" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-white font-semibold px-4 py-2 rounded-full text-xs shadow-md transition-all hover:scale-105" style="background-color:#010101;box-shadow:0 2px 8px rgba(0,0,0,0.3);"><i class="fa-brands fa-tiktok text-sm" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i><span style="letter-spacing:0.02em;">TikTok: @danyangkedungselur</span></a>';
+    f += '<a href="https://www.facebook.com/maswaluyo/" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1877F2] hover:bg-[#1464cc] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all hover:scale-105"><i class="fa-brands fa-facebook text-sm"></i><span>Facebook: Sugeng Waluyo</span></a>';
+    f += '<a href="https://wa.me/6285649049086" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1eb856] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all hover:scale-105"><i class="fa-brands fa-whatsapp text-sm"></i><span>WhatsApp: Sugeng Waluyo</span></a>';
     f += "</div></div></footer>";
     return f;
   }
