@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <script src="/assets/js/auth-guard.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Tebak Kanji & Kotoba — Game SinauJepang</title>
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    .bg-fuji-overlay {
+      background: linear-gradient(135deg, rgba(240, 249, 255, .95) 0%, rgba(224, 242, 254, .92) 100%),
+                  url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1920&auto=format&fit=crop');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .opt-card {
+      transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .opt-card:hover {
+      transform: translateY(-2px);
+    }
+  </style>
+</head>
+<body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col selection:bg-fuji-200">
+  <!-- Header Bersama -->
+  <script src="/assets/js/indexeddb.js"></script>
+  <script src="/assets/js/site-layout.js"></script>
+
+  <main class="flex-grow bg-fuji-overlay px-4 py-8 md:py-12 flex flex-col items-center justify-center">
+    <div class="max-w-2xl w-full">
+
+      <!-- Header & Mode Switcher -->
+      <div class="text-center mb-6">
+        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold mb-3 border border-amber-200 shadow-sm">
+          <i class="fa-solid fa-gamepad text-amber-600"></i>
+          <span>Asah Otak • Kuis Cepat 4 Pilihan</span>
+        </div>
+        <h1 class="text-2xl sm:text-3xl font-extrabold text-slate-800 mb-2">
+          Mini Game <span id="gameTitleHighlight" class="text-rose-600">Tebak Kanji</span>
+        </h1>
+        <p class="text-slate-600 text-xs sm:text-sm">
+          Pilih arti atau bacaan yang paling tepat dalam waktu singkat.
+        </p>
+
+        <!-- Switch Game Mode: Kanji vs Kotoba -->
+        <div class="inline-flex bg-white/90 p-1.5 rounded-2xl border border-slate-200 shadow-sm mt-4 backdrop-blur-md">
+          <button id="tabKanji" onclick="switchGameMode('kanji')" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all bg-rose-600 text-white shadow-md shadow-rose-600/20 flex items-center gap-2">
+            <i class="fa-solid fa-language"></i>
+            <span>Tebak Kanji</span>
+          </button>
+          <button id="tabKotoba" onclick="switchGameMode('kotoba')" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all text-slate-600 hover:text-emerald-700 flex items-center gap-2">
+            <i class="fa-solid fa-book-open"></i>
+            <span>Tebak Kotoba</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Filter Level Khusus Mode Kanji -->
+      <div id="levelFilterBox" class="bg-white/80 backdrop-blur-md rounded-2xl p-3 border border-slate-200 mb-6 flex flex-wrap items-center justify-center gap-2 text-xs font-bold text-slate-600 shadow-sm">
+        <span class="text-slate-400 mr-1"><i class="fa-solid fa-layer-group"></i> Level Kanji:</span>
+        <button onclick="setKanjiLevel('semua')" id="lvl-semua" class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-800 text-white transition-all">Semua (336)</button>
+        <button onclick="setKanjiLevel('n5')" id="lvl-n5" class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 1 (N5: 1-4 Coretan)</button>
+        <button onclick="setKanjiLevel('a21')" id="lvl-a21" class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 2 (A2.1: 5-8 Coretan)</button>
+        <button onclick="setKanjiLevel('a22')" id="lvl-a22" class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 3 (A2.2: 9+ Coretan)</button>
+      </div>
+
+      <!-- Main Game Card -->
+      <div class="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-2xl relative overflow-hidden">
+        
+        <!-- Score Bar & Streak -->
+        <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-100 text-xs sm:text-sm">
+          <div class="flex items-center gap-3">
+            <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+              <i class="fa-solid fa-circle-check text-emerald-500"></i>
+              <span>Skor: <b id="scoreVal" class="text-emerald-800 text-base">0</b></span>
+            </span>
+            <span class="bg-amber-50 text-amber-700 border border-amber-200 font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+              <i class="fa-solid fa-fire text-amber-500"></i>
+              <span>Streak: <b id="streakVal" class="text-amber-800">0</b></span>
+            </span>
+          </div>
+          <button onclick="resetGame()" class="text-slate-400 hover:text-slate-600 font-semibold text-xs flex items-center gap-1 transition-all">
+            <i class="fa-solid fa-rotate-right"></i>
+            <span>Reset</span>
+          </button>
+        </div>
+
+        <!-- Question Box -->
+        <div class="text-center py-4 mb-6">
+          <span id="questionCategory" class="text-[11px] font-bold uppercase tracking-wider text-slate-400 bg-slate-100 px-3 py-1 rounded-full">KANJI</span>
+          
+          <!-- Karakter Utama Soal (Kanji / Kosakata) -->
+          <div id="targetDisplay" class="my-4 font-black tracking-tight text-slate-800 select-none transition-all text-6xl sm:text-7xl font-sans min-h-[80px] flex items-center justify-center">
+            ...
+          </div>
+          
+          <!-- Sub petunjuk (bacaan furigana / romaji jika ada) -->
+          <div id="targetSub" class="text-sm font-semibold text-slate-500 min-h-[22px]">
+            Apa arti dari karakter di atas?
+          </div>
+        </div>
+
+        <!-- 4 Options Grid -->
+        <div id="optionsGrid" class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-6">
+          <!-- Di-render dinamis 4 kartu -->
+        </div>
+
+        <!-- Feedback & Next Action Bar -->
+        <div id="feedbackBar" class="hidden rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left transition-all">
+          <div class="flex items-center gap-3">
+            <div id="feedbackIcon" class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg"></div>
+            <div>
+              <p id="feedbackTitle" class="font-extrabold text-sm"></p>
+              <p id="feedbackDetail" class="text-xs text-slate-600"></p>
+            </div>
+          </div>
+          <button id="nextBtn" onclick="nextQuestion()" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-all shadow-md">
+            Lanjut Soal Berikutnya &rarr;
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    // State Aplikasi Game
+    let currentMode = 'kanji'; // 'kanji' | 'kotoba'
+    let kanjiLevel = 'semua';  // 'semua' | 'n5' | 'a21' | 'a22'
+    let kanjiData = [];
+    let kotobaData = [];
+    let score = 0;
+    let streak = 0;
+    let currentQ = null;
+    let isAnswered = false;
+
+    // Load Datasets
+    async function initDatasets() {
+      try {
+        const [resKanji, resKotoba] = await Promise.all([
+          fetch('/kanji-jft-a2.json').then(r => r.json()),
+          fetch('/kosakata.json').then(r => r.json())
+        ]);
+        kanjiData = resKanji || [];
+        kotobaData = (resKotoba && resKotoba.data) ? resKotoba.data : [];
+        nextQuestion();
+      } catch (e) {
+        console.error('Gagal memuat dataset game:', e);
+      }
+    }
+
+    // Switch Mode Game
+    window.switchGameMode = function(mode) {
+      if (currentMode === mode) return;
+      currentMode = mode;
+      
+      const tabK = document.getElementById('tabKanji');
+      const tabW = document.getElementById('tabKotoba');
+      const lvlBox = document.getElementById('levelFilterBox');
+      const hl = document.getElementById('gameTitleHighlight');
+
+      if (mode === 'kanji') {
+        tabK.className = 'px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all bg-rose-600 text-white shadow-md shadow-rose-600/20 flex items-center gap-2';
+        tabW.className = 'px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all text-slate-600 hover:text-emerald-700 flex items-center gap-2';
+        lvlBox.classList.remove('hidden');
+        hl.textContent = 'Tebak Kanji';
+        hl.className = 'text-rose-600';
+      } else {
+        tabW.className = 'px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all bg-emerald-600 text-white shadow-md shadow-emerald-600/20 flex items-center gap-2';
+        tabK.className = 'px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all text-slate-600 hover:text-rose-700 flex items-center gap-2';
+        lvlBox.classList.add('hidden');
+        hl.textContent = 'Tebak Kotoba';
+        hl.className = 'text-emerald-600';
+      }
+      nextQuestion();
+    };
+
+    // Filter Level Mode Kanji
+    window.setKanjiLevel = function(lvl) {
+      kanjiLevel = lvl;
+      document.querySelectorAll('.lvl-btn').forEach(b => {
+        b.className = 'lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all';
+      });
+      const activeBtn = document.getElementById('lvl-' + lvl);
+      if (activeBtn) {
+        activeBtn.className = 'lvl-btn px-3 py-1.5 rounded-xl bg-slate-800 text-white transition-all';
+      }
+      nextQuestion();
+    };
+
+    // Filter Kanji List sesuai Level
+    function getFilteredKanji() {
+      if (!kanjiData.length) return [];
+      if (kanjiLevel === 'n5') return kanjiData.filter(k => (k.stroke || 0) <= 4);
+      if (kanjiLevel === 'a21') return kanjiData.filter(k => (k.stroke || 0) >= 5 && (k.stroke || 0) <= 8);
+      if (kanjiLevel === 'a22') return kanjiData.filter(k => (k.stroke || 0) >= 9);
+      return kanjiData;
+    }
+
+    // Generate Soal Baru (4 Pilihan Acak)
+    window.nextQuestion = function() {
+      isAnswered = false;
+      document.getElementById('feedbackBar').classList.add('hidden');
+
+      if (currentMode === 'kanji') {
+        generateKanjiQuestion();
+      } else {
+        generateKotobaQuestion();
+      }
+    };
+
+    function generateKanjiQuestion() {
+      const pool = getFilteredKanji();
+      if (pool.length < 4) return;
+
+      // Pilih 1 target acak
+      const correctIdx = Math.floor(Math.random() * pool.length);
+      const target = pool[correctIdx];
+
+      // Ambil 3 pengecoh acak yang berbeda
+      const distractors = [];
+      const used = new Set([target.kanji]);
+
+      while (distractors.length < 3) {
+        const rand = kanjiData[Math.floor(Math.random() * kanjiData.length)];
+        if (rand && rand.arti && !used.has(rand.kanji) && rand.arti !== target.arti) {
+          used.add(rand.kanji);
+          distractors.push(rand);
+        }
+      }
+
+      // Gabungkan dan acak 4 opsi
+      const options = [
+        { text: target.arti, isCorrect: true, item: target },
+        ...distractors.map(d => ({ text: d.arti, isCorrect: false, item: d }))
+      ].sort(() => Math.random() - 0.5);
+
+      currentQ = { target, options };
+
+      // Render ke UI
+      document.getElementById('questionCategory').textContent = `KANJI • ${target.stroke || 0} Coretan • Radikal: ${target.radical || '-'}`;
+      document.getElementById('targetDisplay').textContent = target.kanji;
+      document.getElementById('targetSub').innerHTML = `On: <b class="text-rose-600">${target.on || '-'}</b> • Kun: <b class="text-sky-600">${target.kun || '-'}</b>`;
+      
+      renderOptionsGrid(options);
+    }
+
+    function generateKotobaQuestion() {
+      if (kotobaData.length < 4) return;
+
+      const target = kotobaData[Math.floor(Math.random() * kotobaData.length)];
+      const distractors = [];
+      const used = new Set([target.arti]);
+
+      while (distractors.length < 3) {
+        const rand = kotobaData[Math.floor(Math.random() * kotobaData.length)];
+        if (rand && rand.arti && !used.has(rand.arti)) {
+          used.add(rand.arti);
+          distractors.push(rand);
+        }
+      }
+
+      const options = [
+        { text: target.arti, isCorrect: true, item: target },
+        ...distractors.map(d => ({ text: d.arti, isCorrect: false, item: d }))
+      ].sort(() => Math.random() - 0.5);
+
+      currentQ = { target, options };
+
+      document.getElementById('questionCategory').textContent = 'KOTOBA A2';
+      document.getElementById('targetDisplay').textContent = target.kanji || target.kana;
+      document.getElementById('targetSub').innerHTML = target.kanji !== target.kana 
+        ? `Kana: <b class="text-emerald-700">${target.kana}</b> • Romaji: <i class="text-slate-500">${target.rom || ''}</i>`
+        : `Romaji: <i class="text-slate-500">${target.rom || ''}</i>`;
+
+      renderOptionsGrid(options);
+    }
+
+    function renderOptionsGrid(options) {
+      const grid = document.getElementById('optionsGrid');
+      const letters = ['A', 'B', 'C', 'D'];
+      grid.innerHTML = '';
+
+      options.forEach((opt, idx) => {
+        const btn = document.createElement('button');
+        btn.className = 'opt-card bg-slate-50 hover:bg-slate-100 border border-slate-200 rounded-2xl p-4 text-left font-bold text-slate-800 flex items-center gap-3 transition-all';
+        btn.innerHTML = `
+          <span class="w-8 h-8 rounded-xl bg-white border border-slate-200 flex items-center justify-center text-xs font-black text-slate-600 shadow-sm shrink-0">
+            ${letters[idx]}
+          </span>
+          <span class="text-xs sm:text-sm flex-1 leading-snug">${opt.text}</span>
+        `;
+        btn.onclick = () => selectAnswer(opt, btn, options);
+        grid.appendChild(btn);
+      });
+    }
+
+    function selectAnswer(opt, selectedBtn, allOptions) {
+      if (isAnswered) return;
+      isAnswered = true;
+
+      const fbBar = document.getElementById('feedbackBar');
+      const fbIcon = document.getElementById('feedbackIcon');
+      const fbTitle = document.getElementById('feedbackTitle');
+      const fbDetail = document.getElementById('feedbackDetail');
+      const allButtons = document.querySelectorAll('.opt-card');
+
+      if (opt.isCorrect) {
+        score += 10;
+        streak += 1;
+        selectedBtn.classList.remove('bg-slate-50', 'border-slate-200');
+        selectedBtn.classList.add('bg-emerald-500', 'text-white', 'border-emerald-600', 'shadow-md');
+        
+        fbBar.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-emerald-50 border border-emerald-200';
+        fbIcon.className = 'w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg bg-emerald-500';
+        fbIcon.innerHTML = '<i class="fa-solid fa-check"></i>';
+        fbTitle.className = 'font-extrabold text-sm text-emerald-800';
+        fbTitle.textContent = 'Luar Biasa, Jawaban Benar! (+10 Poin)';
+        fbDetail.textContent = `${currentQ.target.kanji || currentQ.target.kana} = ${opt.text}`;
+      } else {
+        streak = 0;
+        selectedBtn.classList.remove('bg-slate-50', 'border-slate-200');
+        selectedBtn.classList.add('bg-rose-500', 'text-white', 'border-rose-600', 'shadow-md');
+
+        // Tandai jawaban yang benar
+        allOptions.forEach((o, i) => {
+          if (o.isCorrect && allButtons[i]) {
+            allButtons[i].classList.remove('bg-slate-50', 'border-slate-200');
+            allButtons[i].classList.add('bg-emerald-100', 'border-emerald-400', 'text-emerald-900');
+          }
+        });
+
+        fbBar.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-rose-50 border border-rose-200';
+        fbIcon.className = 'w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg bg-rose-500';
+        fbIcon.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+        fbTitle.className = 'font-extrabold text-sm text-rose-800';
+        fbTitle.textContent = 'Jawaban Kurang Tepat';
+        const correctOpt = allOptions.find(o => o.isCorrect);
+        fbDetail.textContent = `Jawaban yang benar: ${correctOpt ? correctOpt.text : ''}`;
+      }
+
+      document.getElementById('scoreVal').textContent = score;
+      document.getElementById('streakVal').textContent = streak;
+      fbBar.classList.remove('hidden');
+    }
+
+    window.resetGame = function() {
+      score = 0;
+      streak = 0;
+      document.getElementById('scoreVal').textContent = '0';
+      document.getElementById('streakVal').textContent = '0';
+      nextQuestion();
+    };
+
+    // Mulai saat halaman dibuka
+    document.addEventListener('DOMContentLoaded', initDatasets);
+  </script>
+</body>
+</html>

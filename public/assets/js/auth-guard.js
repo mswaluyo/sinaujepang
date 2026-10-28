@@ -17,7 +17,7 @@
       var newUrl = window.location.pathname + newQuery + window.location.hash;
       window.history.replaceState({}, document.title, newUrl);
     }
-  } catch (e) {}
+  } catch (e) { }
 
   function getUser() {
     try {
@@ -26,7 +26,7 @@
         var parsed = JSON.parse(cached);
         if (parsed && (parsed.email || parsed.name || parsed.uid)) return parsed;
       }
-    } catch (e) {}
+    } catch (e) { }
     return null;
   }
 
@@ -36,7 +36,7 @@
     try {
       if (localStorage.getItem('jft_tiktok_unlocked') === 'true') return true;
       if (u && u.tiktokUnlocked === true) return true;
-    } catch (e) {}
+    } catch (e) { }
     return false;
   }
 
@@ -46,7 +46,7 @@
   if (!user) {
     try {
       if (document.documentElement) document.documentElement.style.display = 'none';
-    } catch (e) {}
+    } catch (e) { }
     var target = encodeURIComponent(window.location.pathname + window.location.search);
     window.location.replace('/login.html?redirect=' + target);
     return;
@@ -56,7 +56,7 @@
   if (!isTikTokUnlocked(user)) {
     try {
       if (document.documentElement) document.documentElement.style.display = 'none';
-    } catch (e) {}
+    } catch (e) { }
     window.location.replace('/?kunci=tiktok&redirect=' + encodeURIComponent(window.location.pathname + window.location.search));
     return;
   }

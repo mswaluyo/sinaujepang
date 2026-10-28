@@ -17,7 +17,8 @@
   var NAV_ACTIVE = {
     latihan: "bg-fuji-50 text-fuji-700",
     kotoba: "bg-emerald-50 text-emerald-700",
-    kanji: "bg-rose-50 text-rose-700"
+    kanji: "bg-rose-50 text-rose-700",
+    game: "bg-amber-50 text-amber-700"
   };
 
   // Tombol login versi awal (ikon Google + teks); diganti renderUser bila sudah ada sesi
@@ -43,7 +44,7 @@
     h += '<a href="/#latihan-soal" data-nav="latihan" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-fuji-600 hover:bg-fuji-50 transition-all">Latihan</a>';
     h += '<a href="/kotoba" data-nav="kotoba" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all"><i class="fa-solid fa-book-open mr-1"></i>Kotoba</a>';
     h += '<a href="/kanji" data-nav="kanji" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-rose-600 hover:bg-rose-50 transition-all"><i class="fa-solid fa-language mr-1"></i>Kanji</a>';
-    h += '<a href="/jft-a2.html" data-nav="jft-a2" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-sky-600 hover:bg-sky-50 transition-all"><i class="fa-solid fa-graduation-cap mr-1"></i>JFT-A2</a>';
+    h += '<a href="/jft-a2.html" data-nav="jft-a2" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-sky-600 hover:bg-sky-50 transition-all"><i class="fa-solid fa-graduation-cap mr-1"></i>JFT-A2</a><a href="/game.html" data-nav="game" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-amber-600 hover:bg-amber-50 transition-all"><i class="fa-solid fa-gamepad mr-1"></i>Game</a>';
     h += "</nav>";
     h += '<a id="adminBtn" href="/admin" class="hidden items-center gap-2 bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold px-3.5 py-1.5 rounded-full transition-all text-xs border border-amber-500"><i class="fa-solid fa-shield-halved"></i><span>Admin</span></a>';
     h += '<button onclick="SiteLayout.donate()" class="hidden sm:flex items-center gap-2 bg-amber-50 hover:bg-amber-100 text-amber-700 font-semibold px-3.5 py-1.5 rounded-full border border-amber-200 transition-all text-xs"><i class="fa-solid fa-mug-hot text-amber-600"></i><span>Traktir Kopi</span></button>';
@@ -55,7 +56,7 @@
     h += '<a href="/" data-nav="latihan" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-fuji-600 hover:bg-fuji-50 transition-all">Latihan</a>';
     h += '<a href="/kotoba" data-nav="kotoba" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all"><i class="fa-solid fa-book-open mr-1"></i>Kotoba</a>';
     h += '<a href="/kanji" data-nav="kanji" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-rose-600 hover:bg-rose-50 transition-all"><i class="fa-solid fa-language mr-1"></i>Kanji</a>';
-    h += '<a href="/jft-a2.html" data-nav="jft-a2" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-sky-600 hover:bg-sky-50 transition-all"><i class="fa-solid fa-graduation-cap mr-1"></i>JFT-A2</a>';
+    h += '<a href="/jft-a2.html" data-nav="jft-a2" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-sky-600 hover:bg-sky-50 transition-all"><i class="fa-solid fa-graduation-cap mr-1"></i>JFT-A2</a><a href="/game.html" data-nav="game" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-amber-600 hover:bg-amber-50 transition-all"><i class="fa-solid fa-gamepad mr-1"></i>Game</a>';
     h += "</div></div>";
     h += "</header>";
     return h;
@@ -82,6 +83,7 @@
     if (p === "/kotoba") return "kotoba";
     if (p === "/kanji") return "kanji";
     if (p === "/quiz" || p === "/hasil") return "latihan";
+    if (p === "/game") return "game";
     return "";
   }
 
