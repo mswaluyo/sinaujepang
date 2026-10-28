@@ -320,6 +320,21 @@
           if (u && (u.email || "").toLowerCase() === "mswaluyo@gmail.com") isUnlocked = true;
         } catch (e) {}
 
+        // Fallback cek langsung ke Firestore jika di browser belum sinkron
+        if (!isUnlocked && u && u.uid && window.fujiDb) {
+          try {
+            var fsMod = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js");
+            var snap = await fsMod.getDoc(fsMod.doc(window.fujiDb, "users", u.uid));
+            if (snap.exists() && snap.data().tiktokUnlocked === true) {
+              isUnlocked = true;
+              localStorage.setItem("jft_tiktok_unlocked", "true");
+              if (window.IndexedDB && window.IndexedDB.setItem) {
+                window.IndexedDB.setItem("jft_tiktok_unlocked", true);
+              }
+            }
+          } catch (e) {}
+        }
+
         if (!u) {
           if (b) { b.innerHTML = '<span>Masuk Google</span>'; b.onclick = function(){ openLoginModal(); }; }
           if (info) { info.classList.add("hidden"); }
