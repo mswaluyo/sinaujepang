@@ -3,7 +3,7 @@
     "no": 35,
     "section": "SESI 3 : CHOUKAI",
     "title": "Gambar laki laki ini menawarkan perempuan minuman apa",
-    "img": "images/choukai_35.jpg",
+    "img": "images/soal_35.jpg",
     "link": "audio/choukai_1.mp3",
     "options": [
       {
@@ -50,7 +50,8 @@
       "gula",
       "teh"
     ],
-    "kunci_id": "おちゃとさとう"
+    "kunci_id": "おちゃとさとう",
+    "audio": "audio/choukai_1.mp3"
   },
   {
     "no": 36,
@@ -77,7 +78,7 @@
     "trans": "Mereka berjanji bertemu di bioskop pukul 12.00.",
     "trans_rom": "juu-ni ji ni aimasu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 4 - Waktu] Menyimak audio penetapan waktu pertemuan di bioskop.",
+    "analisis": "[MNN Bab 4 - Waktu] Menyimak audio penetapan waktu pertemuan di bioskop.\n\n【Percakapan / Skrip Audio】:\nA: ゆきさん、どうぞこちらへ。\nB: ありがとうございます。お邪魔します。\nA: お茶を飲みますか。\nB: はい、いただきます。\nA: 砂糖は入れますか。\nB: はい、少しだけ入れてください。お願いします。\nA: わかりました。ミルクも入れますか。\nB: いいえ、ミルクはいりません。お茶だけで大丈夫です。\nA: どうぞ。熱いので気をつけてくださいね。\nB: ありがとうございます。いい匂いですね。\n\n【Cara Baca (Romaji)】:\nA: Yuki-san, douzo kochira e.\nB: Arigatou gozaimasu. Ojama shimasu.\nA: Ocha o nomimasu ka.\nB: Hai, itadakimasu.\nA: Satou wa iremasu ka.\nB: Hai, sukoshi dake irete kudasai. Onegai shimasu.\nA: Wakarimashita. Miruku mo iremasu ka.\nB: Iie, miruku wa irimasen. Ocha dake de daijoubu desu.\nA: Douzo. Atsui node ki o tsukete kudasai ne.\nB: Arigatou gozaimasu. Ii nioi desu ne.\n\n【Terjemahan Percakapan】:\nA: Yuki, silakan lewat sini.\nB: Terima kasih. Permisi.\nA: Mau minum teh?\nB: Ya, terima kasih.\nA: Mau ditambah gula?\nB: Ya, tolong masukkan sedikit saja ya.\nA: Baik. Mau pakai susu juga?\nB: Tidak, susu tidak usah. Teh saja sudah cukup.\nA: Silakan. Hati-hati ya, masih panas.\nB: Terima kasih. Aromanya harum sekali ya.",
     "opt_detail": [
       {
         "kana": "じゅうにじはん",
@@ -103,7 +104,11 @@
       "12.00",
       "13.00"
     ],
-    "kunci_id": "12.00"
+    "kunci_id": "12.00",
+    "dialogue": "A: ゆきさん、どうぞこちらへ。\nB: ありがとうございます。お邪魔します。\nA: お茶を飲みますか。\nB: はい、いただきます。\nA: 砂糖は入れますか。\nB: はい、少しだけ入れてください。お願いします。\nA: わかりました。ミルクも入れますか。\nB: いいえ、ミルクはいりません。お茶だけで大丈夫です。\nA: どうぞ。熱いので気をつけてくださいね。\nB: ありがとうございます。いい匂いですね。",
+    "dialogue_rom": "A: Yuki-san, douzo kochira e.\nB: Arigatou gozaimasu. Ojama shimasu.\nA: Ocha o nomimasu ka.\nB: Hai, itadakimasu.\nA: Satou wa iremasu ka.\nB: Hai, sukoshi dake irete kudasai. Onegai shimasu.\nA: Wakarimashita. Miruku mo iremasu ka.\nB: Iie, miruku wa irimasen. Ocha dake de daijoubu desu.\nA: Douzo. Atsui node ki o tsukete kudasai ne.\nB: Arigatou gozaimasu. Ii nioi desu ne.",
+    "dialogue_id": "A: Yuki, silakan lewat sini.\nB: Terima kasih. Permisi.\nA: Mau minum teh?\nB: Ya, terima kasih.\nA: Mau ditambah gula?\nB: Ya, tolong masukkan sedikit saja ya.\nA: Baik. Mau pakai susu juga?\nB: Tidak, susu tidak usah. Teh saja sudah cukup.\nA: Silakan. Hati-hati ya, masih panas.\nB: Terima kasih. Aromanya harum sekali ya.",
+    "audio": "audio/choukai_2.mp3"
   },
   {
     "no": 37,
@@ -130,7 +135,7 @@
     "trans": "Langkah terakhir penarikan uang di ATM.",
     "trans_rom": "ATM de no saigo no saisu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 14 - Instruksi Transaksi] Menyimak urutan atau langkah akhir menggunakan mesin ATM.",
+    "analisis": "[MNN Bab 14 - Instruksi Transaksi] Menyimak urutan atau langkah akhir menggunakan mesin ATM.\n\n【Percakapan / Skrip Audio】:\nA: さよこさん、明日の映画、一緒に見に行きませんか。\nB: いいですね。何時に会いましょうか。\nA: 12時はどうですか。\nB: はい、わかりました。12時に映画館の前ですね。\nA: また明日！\n\n【Cara Baca (Romaji)】:\nA: Sayoko-san, ashita no eiga, issho ni mi ni ikimasen ka.\nB: Ii desu ne. Nanji ni aimashou ka.\nA: Juuni-ji wa dou desu ka.\nB: Hai, wakarimashita. Juuni-ji ni eigakan no mae desu ne.\nA: Mata ashita!\n\n【Terjemahan Percakapan】:\nA: Sayoko, bagaimana kalau besok kita pergi nonton bioskop bareng?\nB: Boleh juga. Mau ketemu jam berapa?\nA: Bagaimana kalau jam 12.00?\nB: Baik, mengerti. Jam 12.00 di depan bioskop ya.\nA: Sampai jumpa besok!",
     "opt_detail": [
       {
         "kana": "おぷし１",
@@ -156,13 +161,17 @@
       "Opsi 2",
       "Opsi 3"
     ],
-    "kunci_id": "Opsi 2"
+    "kunci_id": "Opsi 2",
+    "dialogue": "A: さよこさん、明日の映画、一緒に見に行きませんか。\nB: いいですね。何時に会いましょうか。\nA: 12時はどうですか。\nB: はい、わかりました。12時に映画館の前ですね。\nA: また明日！",
+    "dialogue_rom": "A: Sayoko-san, ashita no eiga, issho ni mi ni ikimasen ka.\nB: Ii desu ne. Nanji ni aimashou ka.\nA: Juuni-ji wa dou desu ka.\nB: Hai, wakarimashita. Juuni-ji ni eigakan no mae desu ne.\nA: Mata ashita!",
+    "dialogue_id": "A: Sayoko, bagaimana kalau besok kita pergi nonton bioskop bareng?\nB: Boleh juga. Mau ketemu jam berapa?\nA: Bagaimana kalau jam 12.00?\nB: Baik, mengerti. Jam 12.00 di depan bioskop ya.\nA: Sampai jumpa besok!",
+    "audio": "audio/choukai_atm.mp3"
   },
   {
     "no": 38,
     "section": "SESI 3 : CHOUKAI",
     "title": "Perempuan ini menyewa apa di tempat sky?",
-    "img": "images/choukai_38.jpg",
+    "img": "images/soal_38.jpg",
     "link": "audio/choukai_3.mp3",
     "options": [
       {
@@ -178,12 +187,12 @@
         "img": ""
       }
     ],
-    "answer": 0,
+    "answer": 2,
     "score": "5/5",
     "trans": "Perempuan tersebut menyewa perlengkapan ski sesuai opsi 1.",
     "trans_rom": "Sukii o karimashita.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 14 - Sewa & Alat] Menyimak percakapan penyewaan alat ski.",
+    "analisis": "[MNN Bab 14 - Sewa & Alat] Menyimak percakapan penyewaan alat ski.\n\n【Percakapan / Skrip Audio】:\nA: すみません、銀行のATMでお金を下ろしたいんですが、どうすればいいですか。\nB: まず、挿入口にカードを入れてください。\nA: はい。それからどうしますか。\nB: 「お引き出し」を押してください。\nA: はい。次は何をしますか。\nB: 下ろしたい金額を入力してください。\nA: 5万円下ろしたいです。\nB: それから、明細票が必要かどうか選んでください。\nA: 明細票は必要ありません。\nB: わかりました。最後に、お金とカードを忘れずに取ってくださいね。\nA: はい、ありがとうございます。\n\n【Cara Baca (Romaji)】:\nA: Sumimasen, ginkou no ATM de okane o oroshitai n desu ga, dou sureba ii desu ka.\nB: Mazu, sounyuukuchi ni kaado o irete kudasai.\nA: Hai. Sorekara dou shimasu ka.\nB: 'Ohikidashi' o oshite kudasai.\nA: Hai. Tsugi wa nani o shimasu ka.\nB: Oroshitai kingaku o nyuuryoku shite kudasai.\nA: Goman-en oroshitai desu.\nB: Sorekara, meesaihyou ga hitsuyou ka dou ka erande kudasai.\nA: Meesaihyou wa hitsuyou arimasen.\nB: Wakarimashita. Saigo ni, okane to kaado o wasurezu ni totte kudasai ne.\nA: Hai, arigatou gozaimasu.\n\n【Terjemahan Percakapan】:\nA: Permisi, saya ingin menarik uang di mesin ATM bank, bagaimana caranya ya?\nB: Pertama, masukkan kartu ke lubang kartu.\nA: Ya. Lalu apa yang harus dilakukan?\nB: Tekan tombol 'Tarik Tunai' (お引き出し).\nA: Ya. Selanjutnya?\nB: Masukkan jumlah uang yang ingin diambil.\nA: Saya ingin menarik 50.000 yen.\nB: Setelah itu, pilih apakah Anda memerlukan struk bukti transaksi atau tidak.\nA: Struk tidak perlu.\nB: Baik. Terakhir, jangan lupa ambil uang tunai dan kartu ATM Anda ya.\nA: Baik, terima kasih banyak.",
     "opt_detail": [
       {
         "kana": "おぷし１",
@@ -209,13 +218,17 @@
       "Opsi 2",
       "Opsi 3"
     ],
-    "kunci_id": "Opsi 1"
+    "kunci_id": "Opsi 3",
+    "dialogue": "A: すみません、銀行のATMでお金を下ろしたいんですが、どうすればいいですか。\nB: まず、挿入口にカードを入れてください。\nA: はい。それからどうしますか。\nB: 「お引き出し」を押してください。\nA: はい。次は何をしますか。\nB: 下ろしたい金額を入力してください。\nA: 5万円下ろしたいです。\nB: それから、明細票が必要かどうか選んでください。\nA: 明細票は必要ありません。\nB: わかりました。最後に、お金とカードを忘れずに取ってくださいね。\nA: はい、ありがとうございます。",
+    "dialogue_rom": "A: Sumimasen, ginkou no ATM de okane o oroshitai n desu ga, dou sureba ii desu ka.\nB: Mazu, sounyuukuchi ni kaado o irete kudasai.\nA: Hai. Sorekara dou shimasu ka.\nB: 'Ohikidashi' o oshite kudasai.\nA: Hai. Tsugi wa nani o shimasu ka.\nB: Oroshitai kingaku o nyuuryoku shite kudasai.\nA: Goman-en oroshitai desu.\nB: Sorekara, meesaihyou ga hitsuyou ka dou ka erande kudasai.\nA: Meesaihyou wa hitsuyou arimasen.\nB: Wakarimashita. Saigo ni, okane to kaado o wasurezu ni totte kudasai ne.\nA: Hai, arigatou gozaimasu.",
+    "dialogue_id": "A: Permisi, saya ingin menarik uang di mesin ATM bank, bagaimana caranya ya?\nB: Pertama, masukkan kartu ke lubang kartu.\nA: Ya. Lalu apa yang harus dilakukan?\nB: Tekan tombol 'Tarik Tunai' (お引き出し).\nA: Ya. Selanjutnya?\nB: Masukkan jumlah uang yang ingin diambil.\nA: Saya ingin menarik 50.000 yen.\nB: Setelah itu, pilih apakah Anda memerlukan struk bukti transaksi atau tidak.\nA: Struk tidak perlu.\nB: Baik. Terakhir, jangan lupa ambil uang tunai dan kartu ATM Anda ya.\nA: Baik, terima kasih banyak.",
+    "audio": "audio/choukai_3.mp3"
   },
   {
     "no": 39,
     "section": "SESI 3 : CHOUKAI",
     "title": "APA YANG DI BELI SEBELUM PERGI KE TEMPAT SKY?",
-    "img": "images/choukai_39_beli.jpg",
+    "img": "images/soal_39.jpg",
     "link": "audio/choukai_sky_beli.mp3",
     "options": [
       {
@@ -236,7 +249,7 @@
     "trans": "Barang yang dibeli sebelum pergi ke tempat ski adalah kacamata.",
     "trans_rom": "Sukii ni iku mae ni kakamata o kaimashita.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 18 - Persiapan Kegiatan] Menyimak barang belanjaan yang dibeli sebelum aktivitas ski.",
+    "analisis": "[MNN Bab 18 - Persiapan Kegiatan] Menyimak barang belanjaan yang dibeli sebelum aktivitas ski.\n\n【Percakapan / Skrip Audio】:\nA: すみません、スキーの板とウェアを借りたいんですが。\nB: はい、かしこまりました。手袋も要りますか。\nA: いいえ、手袋は持っていますので結構です。\nB: わかりました。では、スキー板とジャケットのレンタルですね。\nA: ありがとうございます。\n\n【Cara Baca (Romaji)】:\nA: Sumimasen, sukii no ita to wea o karitai n desu ga.\nB: Hai, kashikomarimashita. Tebukuro mo irimasu ka.\nA: Iie, tebukuro wa motte imasu node kekkou desu.\nB: Wakarimashita. Dewa, sukii-ita to jaketto no rentaru desu ne.\nA: Arigatou gozaimasu.\n\n【Terjemahan Percakapan】:\nA: Permisi, saya ingin menyewa papan ski dan baju hangat/jaket.\nB: Baik, dimengerti. Apakah sarung tangan juga butuh?\nA: Tidak, sarung tangan saya sudah bawa sendiri, jadi tidak perlu.\nB: Baik. Berarti menyewa papan ski dan jaket ya.\nA: Terima kasih banyak.",
     "opt_detail": [
       {
         "kana": "せぱつ",
@@ -262,7 +275,11 @@
       "kacamata",
       "minuman"
     ],
-    "kunci_id": "KACAMATA"
+    "kunci_id": "KACAMATA",
+    "dialogue": "A: すみません、スキーの板とウェアを借りたいんですが。\nB: はい、かしこまりました。手袋も要りますか。\nA: いいえ、手袋は持っていますので結構です。\nB: わかりました。では、スキー板とジャケットのレンタルですね。\nA: ありがとうございます。",
+    "dialogue_rom": "A: Sumimasen, sukii no ita to wea o karitai n desu ga.\nB: Hai, kashikomarimashita. Tebukuro mo irimasu ka.\nA: Iie, tebukuro wa motte imasu node kekkou desu.\nB: Wakarimashita. Dewa, sukii-ita to jaketto no rentaru desu ne.\nA: Arigatou gozaimasu.",
+    "dialogue_id": "A: Permisi, saya ingin menyewa papan ski dan baju hangat/jaket.\nB: Baik, dimengerti. Apakah sarung tangan juga butuh?\nA: Tidak, sarung tangan saya sudah bawa sendiri, jadi tidak perlu.\nB: Baik. Berarti menyewa papan ski dan jaket ya.\nA: Terima kasih banyak.",
+    "audio": "audio/choukai_sky_beli.mp3"
   },
   {
     "no": 40,
@@ -289,7 +306,7 @@
     "trans": "Biaya sewanya adalah 400 yen.",
     "trans_rom": "Yon-hyaku en desu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 3 - Harga] Menyimak informasi tarif sewa dalam percakapan.",
+    "analisis": "[MNN Bab 3 - Harga] Menyimak informasi tarif sewa dalam percakapan.\n\n【Percakapan / Skrip Audio】:\nA: スキー場へ行く前に、何か買っておくものはありますか。\nB: ゴーグル（サングラス）を持っていかないと、雪の反射で目が痛くなりますよ。\nA: わかりました！じゃあ、サングラスを買ってから行きましょう。\n\n【Cara Baca (Romaji)】:\nA: Sukiijou e iku mae ni, nanika katte oku mono wa arimasu ka.\nB: Googuru (sangurasu) o motte ikanai to, yuki no hansha de me ga itaku narimasu yo.\nA: Wakarimashita! Jaa, sangurasu o katte kara ikimashou.\n\n【Terjemahan Percakapan】:\nA: Sebelum pergi ke tempat ski, adakah barang yang perlu dibeli dulu?\nB: Kalau tidak bawa kacamata salju (kacamata hitam), pantulan salju akan bikin mata sakit lho.\nA: Baik! Kalau begitu mari beli kacamata hitam dulu sebelum pergi.",
     "opt_detail": [
       {
         "kana": "よんひゃくごじゅうえん",
@@ -315,13 +332,17 @@
       "400円です",
       "500円です"
     ],
-    "kunci_id": "400円です"
+    "kunci_id": "400円です",
+    "dialogue": "A: スキー場へ行く前に、何か買っておくものはありますか。\nB: ゴーグル（サングラス）を持っていかないと、雪の反射で目が痛くなりますよ。\nA: わかりました！じゃあ、サングラスを買ってから行きましょう。",
+    "dialogue_rom": "A: Sukiijou e iku mae ni, nanika katte oku mono wa arimasu ka.\nB: Googuru (sangurasu) o motte ikanai to, yuki no hansha de me ga itaku narimasu yo.\nA: Wakarimashita! Jaa, sangurasu o katte kara ikimashou.",
+    "dialogue_id": "A: Sebelum pergi ke tempat ski, adakah barang yang perlu dibeli dulu?\nB: Kalau tidak bawa kacamata salju (kacamata hitam), pantulan salju akan bikin mata sakit lho.\nA: Baik! Kalau begitu mari beli kacamata hitam dulu sebelum pergi.",
+    "audio": "audio/choukai_4.mp3"
   },
   {
     "no": 41,
     "section": "SESI 3 : CHOUKAI",
     "title": "Di toko itu adanya kaos apa?",
-    "img": "images/choukai_41_toko.jpg",
+    "img": "images/soal_41.jpg",
     "link": "audio/choukai_5.mp3",
     "options": [
       {
@@ -342,7 +363,7 @@
     "trans": "Toko tersebut menyediakan kaos jenis opsi 1.",
     "trans_rom": "Toku ni wa t-shatsu ga arimasu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 10 - Keberadaan] Menyimak ketersediaan produk kaos di toko.",
+    "analisis": "[MNN Bab 10 - Keberadaan] Menyimak ketersediaan produk kaos di toko.\n\n【Percakapan / Skrip Audio】:\nA: すみません、黒いTシャツのS、M、Lサイズはありますか。\nB: かしこまりました。確認いたします……すみません、今はMサイズしかありません。いかがですか。\nA: じゃあ、Mサイズを1枚ください。\nB: ありがとうございます。お会計は400円です。\n\n【Cara Baca (Romaji)】:\nA: Sumimasen, kuroi tiishatsu no S, M, L saizu wa arimasu ka.\nB: Kashikomarimashita. Kakunin itashimasu... Sumimasen, ima wa M saizu shika arimasen. Ikaga desu ka.\nA: Jaa, M saizu o ichimai kudasai.\nB: Arigatou gozaimasu. Okaikei wa yonbyaku-en desu.\n\n【Terjemahan Percakapan】:\nA: Permisi, apakah ada kaos hitam ukuran S, M, dan L?\nB: Baik, saya cek dulu ya... Maaf, saat ini hanya tersisa ukuran M saja. Bagaimana?\nA: Kalau begitu, saya ambil ukuran M satu lembar.\nB: Terima kasih. Total biayanya 400 yen.",
     "opt_detail": [
       {
         "kana": "おぷし１",
@@ -368,7 +389,11 @@
       "Opsi 2",
       "Opsi 3"
     ],
-    "kunci_id": "Opsi 1"
+    "kunci_id": "Opsi 1",
+    "dialogue": "A: すみません、黒いTシャツのS、M、Lサイズはありますか。\nB: かしこまりました。確認いたします……すみません、今はMサイズしかありません。いかがですか。\nA: じゃあ、Mサイズを1枚ください。\nB: ありがとうございます。お会計は400円です。",
+    "dialogue_rom": "A: Sumimasen, kuroi tiishatsu no S, M, L saizu wa arimasu ka.\nB: Kashikomarimashita. Kakunin itashimasu... Sumimasen, ima wa M saizu shika arimasen. Ikaga desu ka.\nA: Jaa, M saizu o ichimai kudasai.\nB: Arigatou gozaimasu. Okaikei wa yonbyaku-en desu.",
+    "dialogue_id": "A: Permisi, apakah ada kaos hitam ukuran S, M, dan L?\nB: Baik, saya cek dulu ya... Maaf, saat ini hanya tersisa ukuran M saja. Bagaimana?\nA: Kalau begitu, saya ambil ukuran M satu lembar.\nB: Terima kasih. Total biayanya 400 yen.",
+    "audio": "audio/choukai_5.mp3"
   },
   {
     "no": 42,
@@ -395,7 +420,7 @@
     "trans": "Lokasi toko berada pada peta nomor 1.",
     "trans_rom": "Toko wa ichi-ban no rodomappu desu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 3 - Letak Tempat] Mengidentifikasi denah atau peta lokasi toko.",
+    "analisis": "[MNN Bab 3 - Letak Tempat] Mengidentifikasi denah atau peta lokasi toko.\n\n【Percakapan / Skrip Audio】:\nA: すみません、このお店にはどんなTシャツがありますか。\nB: 今あるのはこちらのタイプ（Opsi 1）だけになります。\nA: わかりました。これをお願いします。\n\n【Cara Baca (Romaji)】:\nA: Sumimasen, kono omise ni wa donna tiishatsu ga arimasu ka.\nB: Ima aru no wa kochira no taipu dake ni narimasu.\nA: Wakarimashita. Kore o onegai shimasu.\n\n【Terjemahan Percakapan】:\nA: Permisi, di toko ini ada kaos yang model seperti apa ya?\nB: Yang tersedia saat ini hanya tipe model ini saja (Opsi 1).\nA: Baik, tolong yang ini ya.",
     "opt_detail": [
       {
         "kana": "ばんごういち",
@@ -421,13 +446,17 @@
       "Gambar 2 peta jalan",
       "Gambar 3 peta jalan"
     ],
-    "kunci_id": "Gambar 1 peta jalan"
+    "kunci_id": "Gambar 1 peta jalan",
+    "dialogue": "A: すみません、このお店にはどんなTシャツがありますか。\nB: 今あるのはこちらのタイプ（Opsi 1）だけになります。\nA: わかりました。これをお願いします。",
+    "dialogue_rom": "A: Sumimasen, kono omise ni wa donna tiishatsu ga arimasu ka.\nB: Ima aru no wa kochira no taipu dake ni narimasu.\nA: Wakarimashita. Kore o onegai shimasu.",
+    "dialogue_id": "A: Permisi, di toko ini ada kaos yang model seperti apa ya?\nB: Yang tersedia saat ini hanya tipe model ini saja (Opsi 1).\nA: Baik, tolong yang ini ya.",
+    "audio": "audio/choukai_6.mp3"
   },
   {
     "no": 43,
     "section": "SESI 3 : CHOUKAI",
     "title": "minum obat sehari berapa?",
-    "img": "images/choukai_43.jpg",
+    "img": "images/soal_43.jpg",
     "link": "audio/choukai_7.mp3",
     "options": [
       {
@@ -448,7 +477,7 @@
     "trans": "Minum obat dua buah (futatsu) sehari.",
     "trans_rom": "Futatsu nondemo kudasai.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 3 - Bilangan Benda] Menyimak dosis atau jumlah anjuran minum obat.",
+    "analisis": "[MNN Bab 3 - Bilangan Benda] Menyimak dosis atau jumlah anjuran minum obat.\n\n【Percakapan / Skrip Audio】:\nA: すみません、お店はどこにありますか。\nB: 駅から出て真っ直ぐ進んで、最初の角を左に曲がったところにありますよ（マップ1番）。\nA: わかりました、ありがとうございます。\n\n【Cara Baca (Romaji)】:\nA: Sumimasen, omise wa doko ni arimasu ka.\nB: Eki kara dete massugu susunde, saisho no kado o hidari ni magatta tokoro ni arimasu yo.\nA: Wakarimashita, arigatou gozaimasu.\n\n【Terjemahan Percakapan】:\nA: Permisi, toko itu lokasinya di sebelah mana ya?\nB: Dari stasiun keluar jalan lurus, lalu di tikungan pertama belok ke kiri, ada di sebelah situ (Peta Nomor 1).\nA: Baik, terima kasih banyak.",
     "opt_detail": [
       {
         "kana": "ふたつ",
@@ -474,13 +503,17 @@
       "三つ",
       "ひとつ"
     ],
-    "kunci_id": "ふたつ"
+    "kunci_id": "ふたつ",
+    "dialogue": "A: すみません、お店はどこにありますか。\nB: 駅から出て真っ直ぐ進んで、最初の角を左に曲がったところにありますよ（マップ1番）。\nA: わかりました、ありがとうございます。",
+    "dialogue_rom": "A: Sumimasen, omise wa doko ni arimasu ka.\nB: Eki kara dete massugu susunde, saisho no kado o hidari ni magatta tokoro ni arimasu yo.\nA: Wakarimashita, arigatou gozaimasu.",
+    "dialogue_id": "A: Permisi, toko itu lokasinya di sebelah mana ya?\nB: Dari stasiun keluar jalan lurus, lalu di tikungan pertama belok ke kiri, ada di sebelah situ (Peta Nomor 1).\nA: Baik, terima kasih banyak.",
+    "audio": "audio/choukai_7.mp3"
   },
   {
     "no": 44,
     "section": "SESI 3 : CHOUKAI",
     "title": "saran dokter bagaimana?",
-    "img": "images/choukai_44.jpg",
+    "img": "images/soal_44.jpg",
     "link": "audio/choukai_8.mp3",
     "options": [
       {
@@ -501,7 +534,7 @@
     "trans": "Saran dokter sesuai dengan pilihan opsi 1.",
     "trans_rom": "Isha no susume wa opsi 1 desu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 32 - Saran] Menyimak anjuran medis dari dokter.",
+    "analisis": "[MNN Bab 32 - Saran] Menyimak anjuran medis dari dokter.\n\n【Percakapan / Skrip Audio】:\n医師: こんにちは。風邪の症状ですね。この薬を1日に2つずつ飲んでください。必ず食後に飲むようにしてくださいね。\n患者: わかりました。食後に2つずつですね。\n\n【Cara Baca (Romaji)】:\nIshi: Konnichiwa. Kaze no shoujou desu ne. Kono kusuri o ichinichi ni futatsu zutsu nonde kudasai. Kanarazu shokugo ni nomu you ni shite kudasai ne.\nKanja: Wakarimashita. Shokugo ni futatsu zutsu desu ne.\n\n【Terjemahan Percakapan】:\nDokter: Halo. Ini gejala masuk angin/flu ya. Tolong minum obat ini sehari 2 butir (2 kali). Pastikan diminum sehabis makan ya.\nPasien: Baik. Sehabis makan 2 butir ya.",
     "opt_detail": [
       {
         "kana": "おぷし１",
@@ -527,7 +560,11 @@
       "Opsi 2",
       "Opsi 3"
     ],
-    "kunci_id": "Opsi 1"
+    "kunci_id": "Opsi 1",
+    "dialogue": "医師: こんにちは。風邪の症状ですね。この薬を1日に2つずつ飲んでください。必ず食後に飲むようにしてくださいね。\n患者: わかりました。食後に2つずつですね。",
+    "dialogue_rom": "Ishi: Konnichiwa. Kaze no shoujou desu ne. Kono kusuri o ichinichi ni futatsu zutsu nonde kudasai. Kanarazu shokugo ni nomu you ni shite kudasai ne.\nKanja: Wakarimashita. Shokugo ni futatsu zutsu desu ne.",
+    "dialogue_id": "Dokter: Halo. Ini gejala masuk angin/flu ya. Tolong minum obat ini sehari 2 butir (2 kali). Pastikan diminum sehabis makan ya.\nPasien: Baik. Sehabis makan 2 butir ya.",
+    "audio": "audio/choukai_8.mp3"
   },
   {
     "no": 45,
@@ -554,7 +591,7 @@
     "trans": "Festival cokelat berada di lantai 10.",
     "trans_rom": "Chokoreeto fesutibaru wa juk-kai desu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 3 - Lantai] Menyimak informasi lokasi lantai acara.",
+    "analisis": "[MNN Bab 3 - Lantai] Menyimak informasi lokasi lantai acara.\n\n【Percakapan / Skrip Audio】:\n医師: 体を無理しないように、しっかり休んでください。特に夜は早く寝ることが大切です。\n患者: はい、わかりました。お酒やタバコはどうですか。\n医師: お酒は控えたほうがいいです。タバコも体に悪いですから、できるだけやめてください。\n患者: はい、わかりました。ありがとうございます。\n\n【Cara Baca (Romaji)】:\nIshi: Karada o muri shinai you ni, shikkari yasunde kudasai. Tokuni yoru wa hayaku neru koto ga taisetsu desu.\nKanja: Hai, wakarimashita. Osake ya tabako wa dou desu ka.\nIshi: Osake wa hikaeta hou ga ii desu. Tabako mo karada ni warui desu kara, dekiru dake yamete kudasai.\nKanja: Hai, wakarimashita. Arigatou gozaimasu.\n\n【Terjemahan Percakapan】:\nDokter: Jangan memaksakan diri, istirahatlah yang cukup. Terutama di malam hari, penting untuk tidur lebih awal.\nPasien: Baik, dokter. Kalau minum alkohol atau merokok bagaimana?\nDokter: Sebaiknya hindari alkohol dulu. Rokok juga tidak baik untuk tubuh, sebisa mungkin berhenti dulu ya.\nPasien: Baik dokter, saya mengerti. Terima kasih.",
     "opt_detail": [
       {
         "kana": "ごかい",
@@ -580,7 +617,11 @@
       "7かい",
       "10かい"
     ],
-    "kunci_id": "10かい"
+    "kunci_id": "10かい",
+    "dialogue": "医師: 体を無理しないように、しっかり休んでください。特に夜は早く寝ることが大切です。\n患者: はい、わかりました。お酒やタバコはどうですか。\n医師: お酒は控えたほうがいいです。タバコも体に悪いですから、できるだけやめてください。\n患者: はい、わかりました。ありがとうございます。",
+    "dialogue_rom": "Ishi: Karada o muri shinai you ni, shikkari yasunde kudasai. Tokuni yoru wa hayaku neru koto ga taisetsu desu.\nKanja: Hai, wakarimashita. Osake ya tabako wa dou desu ka.\nIshi: Osake wa hikaeta hou ga ii desu. Tabako mo karada ni warui desu kara, dekiru dake yamete kudasai.\nKanja: Hai, wakarimashita. Arigatou gozaimasu.",
+    "dialogue_id": "Dokter: Jangan memaksakan diri, istirahatlah yang cukup. Terutama di malam hari, penting untuk tidur lebih awal.\nPasien: Baik, dokter. Kalau minum alkohol atau merokok bagaimana?\nDokter: Sebaiknya hindari alkohol dulu. Rokok juga tidak baik untuk tubuh, sebisa mungkin berhenti dulu ya.\nPasien: Baik dokter, saya mengerti. Terima kasih.",
+    "audio": "audio/choukai_9.mp3"
   },
   {
     "no": 46,
@@ -607,7 +648,7 @@
     "trans": "Berakhir sampai pukul 06.30 sore (gogo).",
     "trans_rom": "Gogo roku-ji han made desu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 4 - Waktu/AM-PM] Menyimak batas waktu operasional.",
+    "analisis": "[MNN Bab 4 - Waktu/AM-PM] Menyimak batas waktu operasional.\n\n【Percakapan / Skrip Audio】:\nA: チョコレートのフェスティバルがあるんだって。\nB: そうなの？何階であるの？\nA: 10階だよ。午後6時半までやってるんだって。楽しみだね、一緒に行こう！\nB: うん、行こう！チョコレート大好き！\n\n【Cara Baca (Romaji)】:\nA: Chokoreeto no fesutibaru ga aru n datte.\nB: Sou na no? Nankai de aru no?\nA: Jukkai da yo. Gogo rokujihan made yatteru n datte. Tanoshimi da ne, issho ni ikou!\nB: Un, ikou! Chokoreeto daisuki!\n\n【Terjemahan Percakapan】:\nA: Katanya ada festival cokelat lho.\nB: Oh ya? Di lantai berapa diadakannya?\nA: Di lantai 10. Acaranya buka sampai jam 6.30 sore lho. Seru ya, yuk kita pergi bareng!\nB: Ayo! Aku suka banget cokelat!",
     "opt_detail": [
       {
         "kana": "ごごろくじはん",
@@ -633,13 +674,17 @@
       "6.30 ごぜん",
       "06.00 ゴゴ"
     ],
-    "kunci_id": "6.30 ゴゴ"
+    "kunci_id": "6.30 ゴゴ",
+    "dialogue": "A: チョコレートのフェスティバルがあるんだって。\nB: そうなの？何階であるの？\nA: 10階だよ。午後6時半までやってるんだって。楽しみだね、一緒に行こう！\nB: うん、行こう！チョコレート大好き！",
+    "dialogue_rom": "A: Chokoreeto no fesutibaru ga aru n datte.\nB: Sou na no? Nankai de aru no?\nA: Jukkai da yo. Gogo rokujihan made yatteru n datte. Tanoshimi da ne, issho ni ikou!\nB: Un, ikou! Chokoreeto daisuki!",
+    "dialogue_id": "A: Katanya ada festival cokelat lho.\nB: Oh ya? Di lantai berapa diadakannya?\nA: Di lantai 10. Acaranya buka sampai jam 6.30 sore lho. Seru ya, yuk kita pergi bareng!\nB: Ayo! Aku suka banget cokelat!",
+    "audio": "audio/choukai_10.mp3"
   },
   {
     "no": 47,
     "section": "SESI 3 : CHOUKAI",
     "title": "ketika gempa melakukan apa? / KEMANKAH KETIKA TERJADI GEMPA TEMPAT YANG AMAN KETIKA DI LUAR RUANGAN",
-    "img": "images/choukai_47.jpg",
+    "img": "images/soal_47.jpg",
     "link": "audio/choukai_11.mp3",
     "options": [
       {
@@ -660,7 +705,7 @@
     "trans": "Tempat aman saat gempa di luar ruangan adalah di lapangan terbuka.",
     "trans_rom": "Jishin no toki, hiroba ni nigemasu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 38 - Instruksi Darurat] Menyimak mitigasi bencana alam gempa bumi di luar ruangan.",
+    "analisis": "[MNN Bab 38 - Instruksi Darurat] Menyimak mitigasi bencana alam gempa bumi di luar ruangan.\n\n【Percakapan / Skrip Audio】:\nA: フェスティバルは何時までですか。\nB: 午後6時半（6:30 ゴゴ）までですよ。\n\n【Cara Baca (Romaji)】:\nA: Fesutibaru wa nanji made desu ka.\nB: Gogo rokujihan (gogo 6:30) made desu yo.\n\n【Terjemahan Percakapan】:\nA: Festivalnya buka sampai jam berapa ya?\nB: Sampai jam 6.30 sore (gogo) lho.",
     "opt_detail": [
       {
         "kana": "おぷし１",
@@ -686,13 +731,17 @@
       "Opsi 2",
       "Opsi 3"
     ],
-    "kunci_id": "Opsi 3"
+    "kunci_id": "Opsi 3",
+    "dialogue": "A: フェスティバルは何時までですか。\nB: 午後6時半（6:30 ゴゴ）までですよ。",
+    "dialogue_rom": "A: Fesutibaru wa nanji made desu ka.\nB: Gogo rokujihan (gogo 6:30) made desu yo.",
+    "dialogue_id": "A: Festivalnya buka sampai jam berapa ya?\nB: Sampai jam 6.30 sore (gogo) lho.",
+    "audio": "audio/choukai_11.mp3"
   },
   {
     "no": 48,
     "section": "SESI 3 : CHOUKAI",
     "title": "gambar sepeda 3 terparkir sewa nya 3 WARNA SEPEDE BERBEDA",
-    "img": "images/choukai_48.jpg",
+    "img": "images/soal_48.jpg",
     "link": "audio/choukai_12.mp3",
     "options": [
       {
@@ -713,7 +762,7 @@
     "trans": "Tarif sewa sepeda kuning adalah 400 yen.",
     "trans_rom": "Kiiroi jitensha wa yon-hyaku en desu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 3 - Harga & Atribut] Menyimak informasi tarif sewa sepeda berdasarkan variasi warna.",
+    "analisis": "[MNN Bab 3 - Harga & Atribut] Menyimak informasi tarif sewa sepeda berdasarkan variasi warna.\n\n【Percakapan / Skrip Audio】:\nアナウンス: お知らせです。地震が起きたときは慌てないでください。室内にいるときはまず机の下に隠れて身を守ってください。外にいるときは、広い公園や広場などの安全な場所に避難してください。\n\n【Cara Baca (Romaji)】:\nAnaunsu: Oshirase desu. Jishin ga okita toki wa awatenaide kudasai. Shitsunai ni iru toki wa mazu tsukue no shita ni kakurete mi o mamotte kudasai. Soto ni iru toki wa, hiroi kouen ya hiroba nado no anzen na basho ni hinan shite kudasai.\n\n【Terjemahan Percakapan】:\nPengumuman: Perhatian. Saat gempa bumi terjadi, jangan panik. Bila berada di dalam ruangan, berlindunglah di bawah meja. Bila berada di luar ruangan, mengungsilah ke tempat terbuka yang aman seperti lapangan atau taman yang luas.",
     "opt_detail": [
       {
         "kana": "よんひゃく",
@@ -739,7 +788,11 @@
       "700",
       "300"
     ],
-    "kunci_id": "400"
+    "kunci_id": "400",
+    "dialogue": "アナウンス: お知らせです。地震が起きたときは慌てないでください。室内にいるときはまず机の下に隠れて身を守ってください。外にいるときは、広い公園や広場などの安全な場所に避難してください。",
+    "dialogue_rom": "Anaunsu: Oshirase desu. Jishin ga okita toki wa awatenaide kudasai. Shitsunai ni iru toki wa mazu tsukue no shita ni kakurete mi o mamotte kudasai. Soto ni iru toki wa, hiroi kouen ya hiroba nado no anzen na basho ni hinan shite kudasai.",
+    "dialogue_id": "Pengumuman: Perhatian. Saat gempa bumi terjadi, jangan panik. Bila berada di dalam ruangan, berlindunglah di bawah meja. Bila berada di luar ruangan, mengungsilah ke tempat terbuka yang aman seperti lapangan atau taman yang luas.",
+    "audio": "audio/choukai_12.mp3"
   },
   {
     "no": 49,
@@ -766,7 +819,7 @@
     "trans": "Toko bunga ada di sebelah kanan.",
     "trans_rom": "Hana-ya wa migi ni arimasu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 6 - Petunjuk Arah] Menyimak navigasi arah jalan menuju toko bunga.",
+    "analisis": "[MNN Bab 6 - Petunjuk Arah] Menyimak navigasi arah jalan menuju toko bunga.\n\n【Percakapan / Skrip Audio】:\n客: すみません、自転車を借りたいんですが。\n店員: はい、こちらの3台からお選びいただけます。\n客: 3台とも色が違いますね。いくらですか。\n店員: 赤い自転車は700円です。\n客: 700円ですか、ちょっと高いですね。では青い自転車はいくらですか。\n店員: 青い自転車は300円です。\n客: 安いですね、でも少し小さいですね。では黄色い自転車はどうですか。\n店員: 400円です。\n客: 大きさもちょうどいいですね。じゃあ黄色い自転車をお願いします。\n店員: はい、わかりました。\n\n【Cara Baca (Romaji)】:\nKyaku: Sumimasen, jitensha o karitai n desu ga.\nTen'in: Hai, kochira no sandai kara oerabi itadakemasu.\nKyaku: Sandai tomo iro ga chigaimasu ne. Ikura desu ka.\nTen'in: Akai jitensha wa nanahyaku-en desu.\nKyaku: Nanahyaku-en desu ka, chotto takai desu ne. Dewa aoi jitensha wa ikura desu ka.\nTen'in: Aoi jitensha wa sanbyaku-en desu.\nKyaku: Yasui desu ne, demo sukoshi chiisai desu ne. Dewa kiiroi jitensha wa dou desu ka.\nTen'in: Yonbyaku-en desu.\nKyaku: Ookisa mo choudo ii desu ne. Jaa kiiroi jitensha o onegai shimasu.\nTen'in: Hai, wakarimashita.\n\n【Terjemahan Percakapan】:\nPelanggan: Permisi, saya mau sewa sepeda.\nPetugas: Baik, Anda bisa memilih dari 3 sepeda ini.\nPelanggan: Ketiganya beda warna ya. Berapa sewanya?\nPetugas: Yang warna merah 700 yen.\nPelanggan: 700 yen ya, agak mahal ya. Kalau yang warna biru berapa?\nPetugas: Yang warna biru 300 yen.\nPelanggan: Murah ya, tapi ukurannya agak kecil. Kalau yang warna kuning berapa?\nPetugas: Yang kuning 400 yen.\nPelanggan: Ukurannya pas ya. Kalau begitu saya sewa sepeda kuning saja.\nPetugas: Baik, dimengerti.",
     "opt_detail": [
       {
         "kana": "みぎにまがって",
@@ -792,7 +845,11 @@
       "HIDARI",
       "MIGI ARIMASU"
     ],
-    "kunci_id": "MIGI ARIMASU"
+    "kunci_id": "MIGI ARIMASU",
+    "dialogue": "客: すみません、自転車を借りたいんですが。\n店員: はい、こちらの3台からお選びいただけます。\n客: 3台とも色が違いますね。いくらですか。\n店員: 赤い自転車は700円です。\n客: 700円ですか、ちょっと高いですね。では青い自転車はいくらですか。\n店員: 青い自転車は300円です。\n客: 安いですね、でも少し小さいですね。では黄色い自転車はどうですか。\n店員: 400円です。\n客: 大きさもちょうどいいですね。じゃあ黄色い自転車をお願いします。\n店員: はい、わかりました。",
+    "dialogue_rom": "Kyaku: Sumimasen, jitensha o karitai n desu ga.\nTen'in: Hai, kochira no sandai kara oerabi itadakemasu.\nKyaku: Sandai tomo iro ga chigaimasu ne. Ikura desu ka.\nTen'in: Akai jitensha wa nanahyaku-en desu.\nKyaku: Nanahyaku-en desu ka, chotto takai desu ne. Dewa aoi jitensha wa ikura desu ka.\nTen'in: Aoi jitensha wa sanbyaku-en desu.\nKyaku: Yasui desu ne, demo sukoshi chiisai desu ne. Dewa kiiroi jitensha wa dou desu ka.\nTen'in: Yonbyaku-en desu.\nKyaku: Ookisa mo choudo ii desu ne. Jaa kiiroi jitensha o onegai shimasu.\nTen'in: Hai, wakarimashita.",
+    "dialogue_id": "Pelanggan: Permisi, saya mau sewa sepeda.\nPetugas: Baik, Anda bisa memilih dari 3 sepeda ini.\nPelanggan: Ketiganya beda warna ya. Berapa sewanya?\nPetugas: Yang warna merah 700 yen.\nPelanggan: 700 yen ya, agak mahal ya. Kalau yang warna biru berapa?\nPetugas: Yang warna biru 300 yen.\nPelanggan: Murah ya, tapi ukurannya agak kecil. Kalau yang warna kuning berapa?\nPetugas: Yang kuning 400 yen.\nPelanggan: Ukurannya pas ya. Kalau begitu saya sewa sepeda kuning saja.\nPetugas: Baik, dimengerti.",
+    "audio": "audio/choukai_13.mp3"
   },
   {
     "no": 50,
@@ -819,7 +876,7 @@
     "trans": "Jawaban yang benar sesuai audio adalah Opsi 1.",
     "trans_rom": "Tadashii kotae wa opsi 1 desu.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab 1 - Percakapan Dasar] Menyimak soal tambahan Choukai dalam paket ujian.",
+    "analisis": "[MNN Bab 1 - Percakapan Dasar] Menyimak soal tambahan Choukai dalam paket ujian.\n\n【Percakapan / Skrip Audio】:\n客: すみません、今アパートの近くの駅にいます。そこから花屋へ行きたいんですが、どう行けばいいですか。\n案内: 駅を出たら左に曲がってください。左に行くとコンビニがあります。そのコンビニの前を通って真っ直ぐ進んでください。本屋が見えたら、交差点を右に曲がってください（右に曲がって）。そこに花屋がありますよ。\n客: わかりました。ありがとうございます。\n\n【Cara Baca (Romaji)】:\nKyaku: Sumimasen, ima apaato no chikaku no eki ni imasu. Soko kara hanaya e ikitai n desu ga, dou ikeba ii desu ka.\nAnnai: Eki o detara hidari ni magatte kudasai. Hidari ni iku to konbini ga arimasu. Sono konbini no mae o tootte massugu susunde kudasai. Hon'ya ga mietara, kousaten o migi ni magatte kudasai (migi ni magatte). Soko ni hanaya ga arimasu yo.\nKyaku: Wakarimashita. Arigatou gozaimasu.\n\n【Terjemahan Percakapan】:\nPelanggan: Permisi, sekarang saya ada di stasiun dekat apartemen. Mau ke toko bunga dari sana, jalannya lewat mana ya?\nPetugas: Keluar dari stasiun, belok ke kiri. Jalan ke kiri ada minimarket (konbini). Lewati depan minimarket lalu lurus terus. Kalau sudah kelihatan toko buku, beloklah ke kanan di persimpangan (migi ni magatte). Toko bunganya ada di situ.\nPelanggan: Baik, saya mengerti. Terima kasih banyak.",
     "opt_detail": [
       {
         "kana": "おぷし１",
@@ -845,6 +902,10 @@
       "Opsi 2",
       "Opsi 3"
     ],
-    "kunci_id": "Opsi 1"
+    "kunci_id": "MIGI NI MAGATTE",
+    "dialogue": "客: すみません、今アパートの近くの駅にいます。そこから花屋へ行きたいんですが、どう行けばいいですか。\n案内: 駅を出たら左に曲がってください。左に行くとコンビニがあります。そのコンビニの前を通って真っ直ぐ進んでください。本屋が見えたら、交差点を右に曲がってください（右に曲がって）。そこに花屋がありますよ。\n客: わかりました。ありがとうございます。",
+    "dialogue_rom": "Kyaku: Sumimasen, ima apaato no chikaku no eki ni imasu. Soko kara hanaya e ikitai n desu ga, dou ikeba ii desu ka.\nAnnai: Eki o detara hidari ni magatte kudasai. Hidari ni iku to konbini ga arimasu. Sono konbini no mae o tootte massugu susunde kudasai. Hon'ya ga mietara, kousaten o migi ni magatte kudasai (migi ni magatte). Soko ni hanaya ga arimasu yo.\nKyaku: Wakarimashita. Arigatou gozaimasu.",
+    "dialogue_id": "Pelanggan: Permisi, sekarang saya ada di stasiun dekat apartemen. Mau ke toko bunga dari sana, jalannya lewat mana ya?\nPetugas: Keluar dari stasiun, belok ke kiri. Jalan ke kiri ada minimarket (konbini). Lewati depan minimarket lalu lurus terus. Kalau sudah kelihatan toko buku, beloklah ke kanan di persimpangan (migi ni magatte). Toko bunganya ada di situ.\nPelanggan: Baik, saya mengerti. Terima kasih banyak.",
+    "audio": "audio/choukai_14.mp3"
   }
 ]

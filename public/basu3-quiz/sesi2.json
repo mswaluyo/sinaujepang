@@ -6,9 +6,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "できます", "img": "" },
-      { "text": "いきます", "img": "" },
-      { "text": "あります", "img": "" }
+      {
+        "text": "できます",
+        "img": ""
+      },
+      {
+        "text": "いきます",
+        "img": ""
+      },
+      {
+        "text": "あります",
+        "img": ""
+      }
     ],
     "answer": 2,
     "score": "0/4",
@@ -17,11 +26,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 10 - Keberadaan Benda Mati] Untuk menyatakan keberadaan benda mati atau tempat (seperti taman, gedung, dll) menggunakan pola ~ ga arimasu.",
     "opt_detail": [
-      { "kana": "できます", "rom": "dekimasu", "arti": "bisa / dapat", "alasan": "Tidak sesuai untuk menyatakan keberadaan taman." },
-      { "kana": "いきます", "rom": "ikimasu", "arti": "pergi", "alasan": "Kata kerja arah, tidak cocok dengan partikel ga." },
-      { "kana": "あります", "rom": "arimasu", "arti": "ada", "alasan": "Pola baku untuk menyatakan adanya benda mati/tempat." }
+      {
+        "kana": "できます",
+        "rom": "dekimasu",
+        "arti": "bisa / dapat",
+        "alasan": "Tidak sesuai untuk menyatakan keberadaan taman."
+      },
+      {
+        "kana": "いきます",
+        "rom": "ikimasu",
+        "arti": "pergi",
+        "alasan": "Kata kerja arah, tidak cocok dengan partikel ga."
+      },
+      {
+        "kana": "あります",
+        "rom": "arimasu",
+        "arti": "ada",
+        "alasan": "Pola baku untuk menyatakan adanya benda mati/tempat."
+      }
     ],
-    "opt_note": ["(dekimasu) bisa", "(ikimasu) pergi", "(arimasu) ada"],
+    "opt_note": [
+      "(dekimasu) bisa",
+      "(ikimasu) pergi",
+      "(arimasu) ada"
+    ],
     "kunci_id": "あります"
   },
   {
@@ -31,9 +59,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "おいしくないです", "img": "" },
-      { "text": "にがかったです", "img": "" },
-      { "text": "おいしかったです", "img": "" }
+      {
+        "text": "おいしくないです",
+        "img": ""
+      },
+      {
+        "text": "にがかったです",
+        "img": ""
+      },
+      {
+        "text": "おいしかったです",
+        "img": ""
+      }
     ],
     "answer": 2,
     "score": "0/4",
@@ -42,11 +79,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 19 - Pengalaman & Sifat] Penggunaan bentuk lampau kata sifat untuk memberikan alasan positif.",
     "opt_detail": [
-      { "kana": "おいしくないです", "rom": "oishikunai desu", "arti": "tidak enak", "alasan": "Bertentangan dengan fakta pernah makan kembali." },
-      { "kana": "にがかったです", "rom": "nigakatta desu", "arti": "pahit", "alasan": "Rasa yang tidak umum untuk pujian restoran." },
-      { "kana": "おいしかったです", "rom": "oishikatta desu", "arti": "enak", "alasan": "Alasan yang wajar mengapa seseorang pernah makan di tempat tersebut." }
+      {
+        "kana": "おいしくないです",
+        "rom": "oishikunai desu",
+        "arti": "tidak enak",
+        "alasan": "Bertentangan dengan fakta pernah makan kembali."
+      },
+      {
+        "kana": "にがかったです",
+        "rom": "nigakatta desu",
+        "arti": "pahit",
+        "alasan": "Rasa yang tidak umum untuk pujian restoran."
+      },
+      {
+        "kana": "おいしかったです",
+        "rom": "oishikatta desu",
+        "arti": "enak",
+        "alasan": "Alasan yang wajar mengapa seseorang pernah makan di tempat tersebut."
+      }
     ],
-    "opt_note": ["(oishikunai desu) tidak enak", "(nigakatta desu) pahit", "(oishikatta desu) enak"],
+    "opt_note": [
+      "(oishikunai desu) tidak enak",
+      "(nigakatta desu) pahit",
+      "(oishikatta desu) enak"
+    ],
     "kunci_id": "おいしかったです"
   },
   {
@@ -56,9 +112,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "わるいです", "img": "" },
-      { "text": "かっこよかった、うれしいです", "img": "" },
-      { "text": "だめです", "img": "" }
+      {
+        "text": "わるいです",
+        "img": ""
+      },
+      {
+        "text": "かっこよかった、うれしいです",
+        "img": ""
+      },
+      {
+        "text": "だめです",
+        "img": ""
+      }
     ],
     "answer": 1,
     "score": "0/4",
@@ -67,11 +132,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 8 - Pujian & Perasaan] Ungkapan merespons barang baru milik orang lain dengan pujian dan ekspresi senang.",
     "opt_detail": [
-      { "kana": "わるいです", "rom": "warui desu", "arti": "buruk", "alasan": "Tidak tepat untuk merespons barang baru." },
-      { "kana": "かっこいいです", "rom": "kakkoii desu", "arti": "keren / bagus", "alasan": "Sesuai untuk memuji jam tangan baru." },
-      { "kana": "だめです", "rom": "dame desu", "arti": "tidak boleh / payah", "alasan": "Merupakan penolakan atau penilaian negatif." }
+      {
+        "kana": "わるいです",
+        "rom": "warui desu",
+        "arti": "buruk",
+        "alasan": "Tidak tepat untuk merespons barang baru."
+      },
+      {
+        "kana": "かっこいいです",
+        "rom": "kakkoii desu",
+        "arti": "keren / bagus",
+        "alasan": "Sesuai untuk memuji jam tangan baru."
+      },
+      {
+        "kana": "だめです",
+        "rom": "dame desu",
+        "arti": "tidak boleh / payah",
+        "alasan": "Merupakan penolakan atau penilaian negatif."
+      }
     ],
-    "opt_note": ["(warui desu) buruk", "(kakkoii desu) keren", "(dame desu) tidak boleh"],
+    "opt_note": [
+      "(warui desu) buruk",
+      "(kakkoii desu) keren",
+      "(dame desu) tidak boleh"
+    ],
     "kunci_id": "かっこよかった、うれしいです"
   },
   {
@@ -81,9 +165,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "来たいんですが", "img": "" },
-      { "text": "行きたいんですが", "img": "" },
-      { "text": "ねるんですが", "img": "" }
+      {
+        "text": "来たいんですが",
+        "img": ""
+      },
+      {
+        "text": "行きたいんですが",
+        "img": ""
+      },
+      {
+        "text": "ねるんですが",
+        "img": ""
+      }
     ],
     "answer": 1,
     "score": "0/4",
@@ -92,11 +185,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 34 - Menyatakan Keinginan & Konteks ~n desu ga] Menggunakan pola ikitai n desu ga untuk membuka percakapan.",
     "opt_detail": [
-      { "kana": "きたいんですが", "rom": "kitai n desu ga", "arti": "ingin datang", "alasan": "Kurang tepat karena subjek bergerak menuju ke kantor pos." },
-      { "kana": "いきたいんですが", "rom": "ikitai n desu ga", "arti": "ingin pergi", "alasan": "Tepat, menyatakan keinginan pergi ke kantor pos." },
-      { "kana": "ねるんですが", "rom": "neru n desu ga", "arti": "mau tidur", "alasan": "Tidak nyambung dengan konteks pergi ke kantor pos." }
+      {
+        "kana": "きたいんですが",
+        "rom": "kitai n desu ga",
+        "arti": "ingin datang",
+        "alasan": "Kurang tepat karena subjek bergerak menuju ke kantor pos."
+      },
+      {
+        "kana": "いきたいんですが",
+        "rom": "ikitai n desu ga",
+        "arti": "ingin pergi",
+        "alasan": "Tepat, menyatakan keinginan pergi ke kantor pos."
+      },
+      {
+        "kana": "ねるんですが",
+        "rom": "neru n desu ga",
+        "arti": "mau tidur",
+        "alasan": "Tidak nyambung dengan konteks pergi ke kantor pos."
+      }
     ],
-    "opt_note": ["(kitai n desu ga) ingin datang", "(ikitai n desu ga) ingin pergi", "(neru n desu ga) mau tidur"],
+    "opt_note": [
+      "(kitai n desu ga) ingin datang",
+      "(ikitai n desu ga) ingin pergi",
+      "(neru n desu ga) mau tidur"
+    ],
     "kunci_id": "行きたいんですが"
   },
   {
@@ -106,23 +218,51 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "もちましょうか", "img": "" },
-      { "text": "てつだいましょうか", "img": "" },
-      { "text": "元気ですか", "img": "" }
+      {
+        "text": "もちましょうか",
+        "img": ""
+      },
+      {
+        "text": "てつだいましょうか",
+        "img": ""
+      },
+      {
+        "text": "元気ですか",
+        "img": ""
+      }
     ],
     "answer": 1,
     "score": "0/4",
     "trans": "A: Apakah tidak apa-apa? Perlukah saya bantu? B: Ya, tolong.",
     "trans_rom": "A: Daijoubu desu ka, tetsudaimashou ka. B: Hai onegai shimasu.",
     "mnn": "Hyougen",
-    "analisis": "[MNN Bab 14 - Tawaran Bantuan ~mashou ka] Menawarkan bantuan kepada orang lain yang sedang kesulitan.",
+    "analisis": "[MNN Bab 44 - Ungkapan Kerja] Ungkapan 会議を準備する dibaca かいぎをじゅんびする (kaigi o junbi suru) yang berarti mempersiapkan rapat.",
     "opt_detail": [
-      { "kana": "もちましょうか", "rom": "mochimashou ka", "arti": "perlukah saya bawakan?", "alasan": "Terlalu spesifik membawakan barang." },
-      { "kana": "てつだいましょうか", "rom": "tetsudaimashou ka", "arti": "perlukah saya bantu?", "alasan": "Ungkapan umum yang tepat untuk menawarkan bantuan luas." },
-      { "kana": "げんきですか", "rom": "genki desu ka", "arti": "apa kabar?", "alasan": "Tidak sesuai dengan konteks menawarkan pertolongan." }
+      {
+        "kana": "もちましょうか",
+        "rom": "mochimashou ka",
+        "arti": "perlukah saya bawakan?",
+        "alasan": "Terlalu spesifik membawakan barang."
+      },
+      {
+        "kana": "てつだいましょうか",
+        "rom": "tetsudaimashou ka",
+        "arti": "perlukah saya bantu?",
+        "alasan": "Ungkapan umum yang tepat untuk menawarkan bantuan luas."
+      },
+      {
+        "kana": "げんきですか",
+        "rom": "genki desu ka",
+        "arti": "apa kabar?",
+        "alasan": "Tidak sesuai dengan konteks menawarkan pertolongan."
+      }
     ],
-    "opt_note": ["(mochimashou ka) perlukah dibawakan", "(tetsudaimashou ka) perlukah dibantu", "(genki desu ka) apa kabar"],
-    "kunci_id": "てつだいましょうか"
+    "opt_note": [
+      "(mochimashou ka) perlukah dibawakan",
+      "(tetsudaimashou ka) perlukah dibantu",
+      "(genki desu ka) apa kabar"
+    ],
+    "kunci_id": "会議を準備する (かいぎをじゅんびする)"
   },
   {
     "no": 6,
@@ -131,9 +271,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "たてられた", "img": "" },
-      { "text": "きられた", "img": "" },
-      { "text": "もられた", "img": "" }
+      {
+        "text": "たてられた",
+        "img": ""
+      },
+      {
+        "text": "きられた",
+        "img": ""
+      },
+      {
+        "text": "もられた",
+        "img": ""
+      }
     ],
     "answer": 0,
     "score": "0/4",
@@ -142,11 +291,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 37 - Kalimat Pasif & ~ni yotte] Pola kalimat pasif dengan penanda pelaku 'ni yotte' dan bentuk desas-desus 'sou desu'.",
     "opt_detail": [
-      { "kana": "たてられた", "rom": "taterareta", "arti": "dibangun (pasif)", "alasan": "Bentuk pasif dari tateru, cocok dengan pola ~ni yotte." },
-      { "kana": "きられた", "rom": "kirareta", "arti": "dipotong / ditebang", "alasan": "Tidak sesuai dengan konteks pembangunan." },
-      { "kana": "もられた", "rom": "morareta", "arti": "bocor / diterima", "alasan": "Tidak sesuai konteks kalimat." }
+      {
+        "kana": "たてられた",
+        "rom": "taterareta",
+        "arti": "dibangun (pasif)",
+        "alasan": "Bentuk pasif dari tateru, cocok dengan pola ~ni yotte."
+      },
+      {
+        "kana": "きられた",
+        "rom": "kirareta",
+        "arti": "dipotong / ditebang",
+        "alasan": "Tidak sesuai dengan konteks pembangunan."
+      },
+      {
+        "kana": "もられた",
+        "rom": "morareta",
+        "arti": "bocor / diterima",
+        "alasan": "Tidak sesuai konteks kalimat."
+      }
     ],
-    "opt_note": ["(taterareta) dibangun", "(kirareta) dipotong", "(morareta) bocor"],
+    "opt_note": [
+      "(taterareta) dibangun",
+      "(kirareta) dipotong",
+      "(morareta) bocor"
+    ],
     "kunci_id": "たてられた"
   },
   {
@@ -156,9 +324,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "かけるようになりました", "img": "" },
-      { "text": "わけるようななりました", "img": "" },
-      { "text": "でかけるようになりました", "img": "" }
+      {
+        "text": "かけるようになりました",
+        "img": ""
+      },
+      {
+        "text": "わけるようななりました",
+        "img": ""
+      },
+      {
+        "text": "でかけるようになりました",
+        "img": ""
+      }
     ],
     "answer": 0,
     "score": "0/4",
@@ -167,11 +344,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 36 - Perubahan Potensial ~you ni narimashita] Menyatakan perubahan kemampuan dari tidak bisa menjadi bisa.",
     "opt_detail": [
-      { "kana": "かけるようになりました", "rom": "kakeru you ni narimashita", "arti": "jadi bisa menulis", "alasan": "Sesuai dengan objek kanji (menulis kanji)." },
-      { "kana": "わけるようになりました", "rom": "wakeru you ni narimashita", "arti": "jadi bisa membagi", "alasan": "Kurang lazim untuk pencapaian jumlah kanji." },
-      { "kana": "でかけるようになりました", "rom": "dekakeru you ni narimashita", "arti": "jadi bisa pergi", "alasan": "Tidak nyambung dengan objek kanji." }
+      {
+        "kana": "かけるようになりました",
+        "rom": "kakeru you ni narimashita",
+        "arti": "jadi bisa menulis",
+        "alasan": "Sesuai dengan objek kanji (menulis kanji)."
+      },
+      {
+        "kana": "わけるようになりました",
+        "rom": "wakeru you ni narimashita",
+        "arti": "jadi bisa membagi",
+        "alasan": "Kurang lazim untuk pencapaian jumlah kanji."
+      },
+      {
+        "kana": "でかけるようになりました",
+        "rom": "dekakeru you ni narimashita",
+        "arti": "jadi bisa pergi",
+        "alasan": "Tidak nyambung dengan objek kanji."
+      }
     ],
-    "opt_note": ["(kakeru you ni narimashita) jadi bisa menulis", "(wakeru you ni narimashita) jadi bisa membagi", "(dekakeru you ni narimashita) jadi bisa pergi"],
+    "opt_note": [
+      "(kakeru you ni narimashita) jadi bisa menulis",
+      "(wakeru you ni narimashita) jadi bisa membagi",
+      "(dekakeru you ni narimashita) jadi bisa pergi"
+    ],
     "kunci_id": "かけるようになりました"
   },
   {
@@ -181,9 +377,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "えと。。ちょっと", "img": "" },
-      { "text": "でももうおなかがいっぱいです", "img": "" },
-      { "text": "でももうおなかがぺこぺこです", "img": "" }
+      {
+        "text": "えと。。ちょっと",
+        "img": ""
+      },
+      {
+        "text": "でももうおなかがいっぱいです",
+        "img": ""
+      },
+      {
+        "text": "でももうおなかがぺこぺこです",
+        "img": ""
+      }
     ],
     "answer": 1,
     "score": "0/4",
@@ -192,11 +397,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 11 - Menolak Tawaran Makanan dengan Sopan] Respon penolakan halus saat ditawari makanan karena sudah kenyang.",
     "opt_detail": [
-      { "kana": "えと… ちょっと", "rom": "eto... chotto", "arti": "anu... sebentar", "alasan": "Kurang lengkap sebagai alasan penolakan." },
-      { "kana": "でももうおなかがいっぱいです", "rom": "demo mou onaka ga ippai desu", "arti": "tapi perut saya sudah kenyang", "alasan": "Alasan yang tepat dan sopan untuk menolak tambahan makanan." },
-      { "kana": "でももうおなかがぺこぺこです", "rom": "demo mou onaka ga pekopeko desu", "arti": "tapi perut saya lapar", "alasan": "Jika lapar, seharusnya menerima tawaran, bukan menolak." }
+      {
+        "kana": "えと… ちょっと",
+        "rom": "eto... chotto",
+        "arti": "anu... sebentar",
+        "alasan": "Kurang lengkap sebagai alasan penolakan."
+      },
+      {
+        "kana": "でももうおなかがいっぱいです",
+        "rom": "demo mou onaka ga ippai desu",
+        "arti": "tapi perut saya sudah kenyang",
+        "alasan": "Alasan yang tepat dan sopan untuk menolak tambahan makanan."
+      },
+      {
+        "kana": "でももうおなかがぺこぺこです",
+        "rom": "demo mou onaka ga pekopeko desu",
+        "arti": "tapi perut saya lapar",
+        "alasan": "Jika lapar, seharusnya menerima tawaran, bukan menolak."
+      }
     ],
-    "opt_note": ["(eto... chotto) anu...", "(demo mou onaka ga ippai desu) sudah kenyang", "(demo mou onaka ga pekopeko desu) sudah lapar"],
+    "opt_note": [
+      "(eto... chotto) anu...",
+      "(demo mou onaka ga ippai desu) sudah kenyang",
+      "(demo mou onaka ga pekopeko desu) sudah lapar"
+    ],
     "kunci_id": "でももうおなかがいっぱいです"
   },
   {
@@ -206,9 +430,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "ちょっとしんぱいです", "img": "" },
-      { "text": "元気です", "img": "" },
-      { "text": "ちょっといいでしょう", "img": "" }
+      {
+        "text": "ちょっとしんぱいです",
+        "img": ""
+      },
+      {
+        "text": "元気です",
+        "img": ""
+      },
+      {
+        "text": "ちょっといいでしょう",
+        "img": ""
+      }
     ],
     "answer": 0,
     "score": "0/4",
@@ -217,11 +450,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 32 - Menyatakan Kekhawatiran] Ungkapan rasa khawatir terhadap kondisi kesehatan orang lain.",
     "opt_detail": [
-      { "kana": "ちょっとしんぱいです", "rom": "chotto shinpai desu", "arti": "saya sedikit khawatir", "alasan": "Sesuai dengan situasi melihat rekan yang kondisinya kurang baik." },
-      { "kana": "げんきです", "rom": "genki desu", "arti": "sehat", "alasan": "Bertentangan dengan premis awal bahwa Misato sedang tidak sehat." },
-      { "kana": "ちょっといいでしょう", "rom": "chotto ii deshou", "arti": "agaknya bagus ya", "alasan": "Tidak sesuai konteks kepedulian kesehatan." }
+      {
+        "kana": "ちょっとしんぱいです",
+        "rom": "chotto shinpai desu",
+        "arti": "saya sedikit khawatir",
+        "alasan": "Sesuai dengan situasi melihat rekan yang kondisinya kurang baik."
+      },
+      {
+        "kana": "げんきです",
+        "rom": "genki desu",
+        "arti": "sehat",
+        "alasan": "Bertentangan dengan premis awal bahwa Misato sedang tidak sehat."
+      },
+      {
+        "kana": "ちょっといいでしょう",
+        "rom": "chotto ii deshou",
+        "arti": "agaknya bagus ya",
+        "alasan": "Tidak sesuai konteks kepedulian kesehatan."
+      }
     ],
-    "opt_note": ["(chotto shinpai desu) sedikit khawatir", "(genki desu) sehat", "(chotto ii deshou) silakan"],
+    "opt_note": [
+      "(chotto shinpai desu) sedikit khawatir",
+      "(genki desu) sehat",
+      "(chotto ii deshou) silakan"
+    ],
     "kunci_id": "ちょっとしんぱいです"
   },
   {
@@ -231,9 +483,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "バナナ", "img": "" },
-      { "text": "みかん", "img": "" },
-      { "text": "りんご", "img": "" }
+      {
+        "text": "バナナ",
+        "img": ""
+      },
+      {
+        "text": "みかん",
+        "img": ""
+      },
+      {
+        "text": "りんご",
+        "img": ""
+      }
     ],
     "answer": 0,
     "score": "0/4",
@@ -242,11 +503,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 3 - Transaksi Belanja / Meminta Benda] Pola kalimat permintaan [Benda] o kudasai saat berbelanja.",
     "opt_detail": [
-      { "kana": "バナナ", "rom": "banana", "arti": "pisang", "alasan": "Benda umum yang dapat dibeli dengan pola ~ o kudasai." },
-      { "kana": "みかん", "rom": "mikan", "arti": "jeruk", "alasan": "Opsi alternatif nomina benda." },
-      { "kana": "りんご", "rom": "ringo", "arti": "apel", "alasan": "Opsi alternatif nomina benda." }
+      {
+        "kana": "バナナ",
+        "rom": "banana",
+        "arti": "pisang",
+        "alasan": "Benda umum yang dapat dibeli dengan pola ~ o kudasai."
+      },
+      {
+        "kana": "みかん",
+        "rom": "mikan",
+        "arti": "jeruk",
+        "alasan": "Opsi alternatif nomina benda."
+      },
+      {
+        "kana": "りんご",
+        "rom": "ringo",
+        "arti": "apel",
+        "alasan": "Opsi alternatif nomina benda."
+      }
     ],
-    "opt_note": ["(banana) pisang", "(mikan) jeruk", "(ringo) apel"],
+    "opt_note": [
+      "(banana) pisang",
+      "(mikan) jeruk",
+      "(ringo) apel"
+    ],
     "kunci_id": "バナナ"
   },
   {
@@ -256,9 +536,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "わからない", "img": "" },
-      { "text": "あらない", "img": "" },
-      { "text": "かかない", "img": "" }
+      {
+        "text": "わからない",
+        "img": ""
+      },
+      {
+        "text": "あらない",
+        "img": ""
+      },
+      {
+        "text": "かかない",
+        "img": ""
+      }
     ],
     "answer": 0,
     "score": "0/4",
@@ -267,11 +556,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 20 - Bentuk Biasa / Ungkapan Bertanya Arti] Mengungkapkan ketidakpahaman terhadap suatu kata.",
     "opt_detail": [
-      { "kana": "わからない", "rom": "wakaranai", "arti": "tidak mengerti", "alasan": "Tepat, karena setelah itu lawan bicara menawarkan bantuan penjelasan." },
-      { "kana": "あらない", "rom": "aranai", "arti": "bentuk salah", "alasan": "Bukan kosakata bahasa Jepang yang baku." },
-      { "kana": "かかない", "rom": "kakanai", "arti": "tidak menulis", "alasan": "Tidak nyambung dengan tawaran penjelasan." }
+      {
+        "kana": "わからない",
+        "rom": "wakaranai",
+        "arti": "tidak mengerti",
+        "alasan": "Tepat, karena setelah itu lawan bicara menawarkan bantuan penjelasan."
+      },
+      {
+        "kana": "あらない",
+        "rom": "aranai",
+        "arti": "bentuk salah",
+        "alasan": "Bukan kosakata bahasa Jepang yang baku."
+      },
+      {
+        "kana": "かかない",
+        "rom": "kakanai",
+        "arti": "tidak menulis",
+        "alasan": "Tidak nyambung dengan tawaran penjelasan."
+      }
     ],
-    "opt_note": ["(wakaranai) tidak mengerti", "(aranai) salah", "(kakanai) tidak menulis"],
+    "opt_note": [
+      "(wakaranai) tidak mengerti",
+      "(aranai) salah",
+      "(kakanai) tidak menulis"
+    ],
     "kunci_id": "わからない"
   },
   {
@@ -281,9 +589,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "ごめなさい", "img": "" },
-      { "text": "すみません", "img": "" },
-      { "text": "だいじょうぶ", "img": "" }
+      {
+        "text": "ごめなさい",
+        "img": ""
+      },
+      {
+        "text": "すみません",
+        "img": ""
+      },
+      {
+        "text": "だいじょうぶ",
+        "img": ""
+      }
     ],
     "answer": 1,
     "score": "0/4",
@@ -292,11 +609,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 1 - Salam & Ungkapan Sehari-hari] Pasangan ungkapan meminta maaf/memanggil (sumimasen) dan respon penenang (iie).",
     "opt_detail": [
-      { "kana": "ごめんなさい", "rom": "gomennasai", "arti": "maaf", "alasan": "Bentuk kasual, kurang formal dibanding sumimasen." },
-      { "kana": "すみません", "rom": "sumimasen", "arti": "permisi / maaf", "alasan": "Ungkapan serbaguna untuk memanggil atau meminta maaf." },
-      { "kana": "だいじょうぶ", "rom": "daijoubu", "arti": "tidak apa-apa", "alasan": "Kurang pas sebagai pembuka kalimat sapaan." }
+      {
+        "kana": "ごめんなさい",
+        "rom": "gomennasai",
+        "arti": "maaf",
+        "alasan": "Bentuk kasual, kurang formal dibanding sumimasen."
+      },
+      {
+        "kana": "すみません",
+        "rom": "sumimasen",
+        "arti": "permisi / maaf",
+        "alasan": "Ungkapan serbaguna untuk memanggil atau meminta maaf."
+      },
+      {
+        "kana": "だいじょうぶ",
+        "rom": "daijoubu",
+        "arti": "tidak apa-apa",
+        "alasan": "Kurang pas sebagai pembuka kalimat sapaan."
+      }
     ],
-    "opt_note": ["(gomennasai) maaf", "(sumimasen) permisi", "(daijoubu) tidak apa-apa"],
+    "opt_note": [
+      "(gomennasai) maaf",
+      "(sumimasen) permisi",
+      "(daijoubu) tidak apa-apa"
+    ],
     "kunci_id": "すみません"
   },
   {
@@ -306,9 +642,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "そうかもしれませんね", "img": "" },
-      { "text": "そうすぐになりますね", "img": "" },
-      { "text": "そう買いましょうね", "img": "" }
+      {
+        "text": "そうかもしれませんね",
+        "img": ""
+      },
+      {
+        "text": "そうすぐになりますね",
+        "img": ""
+      },
+      {
+        "text": "そう買いましょうね",
+        "img": ""
+      }
     ],
     "answer": 0,
     "score": "0/4",
@@ -317,11 +662,30 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 37/38 - Ungkapan Persetujuan Lembut ~kamo shirenai] Respon setuju secara halus atau mengakui pendapat orang lain.",
     "opt_detail": [
-      { "kana": "そうかもしれませんね", "rom": "sou kamo shiremasen ne", "arti": "mungkin begitu ya", "alasan": "Ungkapan merespon keluhan secara netral dan sopan." },
-      { "kana": "そうすぐになりますね", "rom": "sou sugu ni narimasu ne", "arti": "segera jadi begitu ya", "alasan": "Tidak sesuai tata bahasa dan konteks." },
-      { "kana": "そうかいましょうね", "rom": "sou kaimashou ne", "arti": "mari kita beli begitu ya", "alasan": "Tidak logis diucapkan saat merespon keluhan berat." }
+      {
+        "kana": "そうかもしれませんね",
+        "rom": "sou kamo shiremasen ne",
+        "arti": "mungkin begitu ya",
+        "alasan": "Ungkapan merespon keluhan secara netral dan sopan."
+      },
+      {
+        "kana": "そうすぐになりますね",
+        "rom": "sou sugu ni narimasu ne",
+        "arti": "segera jadi begitu ya",
+        "alasan": "Tidak sesuai tata bahasa dan konteks."
+      },
+      {
+        "kana": "そうかいましょうね",
+        "rom": "sou kaimashou ne",
+        "arti": "mari kita beli begitu ya",
+        "alasan": "Tidak logis diucapkan saat merespon keluhan berat."
+      }
     ],
-    "opt_note": ["(sou kamo shiremasen ne) mungkin begitu", "(sou sugu ni narimasu ne) segera jadi", "(sou kaimashou ne) mari beli"],
+    "opt_note": [
+      "(sou kamo shiremasen ne) mungkin begitu",
+      "(sou sugu ni narimasu ne) segera jadi",
+      "(sou kaimashou ne) mari beli"
+    ],
     "kunci_id": "そうかもしれませんね"
   },
   {
@@ -331,9 +695,18 @@
     "img": "",
     "link": "",
     "options": [
-      { "text": "がんばろう", "img": "" },
-      { "text": "がんばるつもり", "img": "" },
-      { "text": "がんばっていた", "img": "" }
+      {
+        "text": "がんばろう",
+        "img": ""
+      },
+      {
+        "text": "がんばるつもり",
+        "img": ""
+      },
+      {
+        "text": "がんばっていた",
+        "img": ""
+      }
     ],
     "answer": 0,
     "score": "0/4",
@@ -342,11 +715,33 @@
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 31 - Bentuk Volitif ~you to omoimasu] Menyatakan niat atau tekad pribadi untuk melakukan sesuatu.",
     "opt_detail": [
-      { "kana": "がんばろう", "img": "", "rom": "gambarou", "arti": "ayo bersemangat / berniat bersemangat", "alasan": "Bentuk volitif yang tepat dipadukan dengan ~to omoimasu untuk menyatakan tekad." },
-      { "kana": "がんばるつもり", "img": "", "rom": "ganbaru tsumori", "arti": "bermaksud bersemangat", "alasan": "Pola tsumori tidak langsung digabung dengan to omoimasu dalam konstruksi ini." },
-      { "kana": "がんばっていた", "img": "", "rom": "ganbatte ita", "arti": "sedang bersemangat", "alasan": "Bentuk lampau kontinu, tidak sesuai untuk tekad ke depan." }
+      {
+        "kana": "がんばろう",
+        "img": "",
+        "rom": "gambarou",
+        "arti": "ayo bersemangat / berniat bersemangat",
+        "alasan": "Bentuk volitif yang tepat dipadukan dengan ~to omoimasu untuk menyatakan tekad."
+      },
+      {
+        "kana": "がんばるつもり",
+        "img": "",
+        "rom": "ganbaru tsumori",
+        "arti": "bermaksud bersemangat",
+        "alasan": "Pola tsumori tidak langsung digabung dengan to omoimasu dalam konstruksi ini."
+      },
+      {
+        "kana": "がんばっていた",
+        "img": "",
+        "rom": "ganbatte ita",
+        "arti": "sedang bersemangat",
+        "alasan": "Bentuk lampau kontinu, tidak sesuai untuk tekad ke depan."
+      }
     ],
-    "opt_note": ["(gambarou) ayo bersemangat", "(ganbaru tsumori) berniat", "(ganbatte ita) sedang bersemangat"],
+    "opt_note": [
+      "(gambarou) ayo bersemangat",
+      "(ganbaru tsumori) berniat",
+      "(ganbatte ita) sedang bersemangat"
+    ],
     "kunci_id": "がんばろう"
   }
 ]
