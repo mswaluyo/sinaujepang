@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <script src="/assets/js/auth-guard.js"></script>
   <meta charset="UTF-8">
@@ -8,24 +9,28 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <title>Tebak Kanji & Kotoba — Game SinauJepang</title>
   <link rel="stylesheet" href="/assets/css/tailwind.css">
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     .bg-fuji-overlay {
       background: linear-gradient(135deg, rgba(240, 249, 255, .95) 0%, rgba(224, 242, 254, .92) 100%),
-                  url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1920&auto=format&fit=crop');
+        url('https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?q=80&w=1920&auto=format&fit=crop');
       background-size: cover;
       background-position: center;
       background-attachment: fixed;
     }
+
     .opt-card {
       transition: all 0.18s cubic-bezier(0.4, 0, 0.2, 1);
     }
+
     .opt-card:hover {
       transform: translateY(-2px);
     }
   </style>
 </head>
+
 <body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col selection:bg-fuji-200">
   <!-- Header Bersama -->
   <script src="/assets/js/indexeddb.js"></script>
@@ -36,7 +41,8 @@
 
       <!-- Header & Mode Switcher -->
       <div class="text-center mb-6">
-        <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold mb-3 border border-amber-200 shadow-sm">
+        <div
+          class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-bold mb-3 border border-amber-200 shadow-sm">
           <i class="fa-solid fa-gamepad text-amber-600"></i>
           <span>Asah Otak • Kuis Cepat 4 Pilihan</span>
         </div>
@@ -49,11 +55,13 @@
 
         <!-- Switch Game Mode: Kanji vs Kotoba -->
         <div class="inline-flex bg-white/90 p-1.5 rounded-2xl border border-slate-200 shadow-sm mt-4 backdrop-blur-md">
-          <button id="tabKanji" onclick="switchGameMode('kanji')" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all bg-rose-600 text-white shadow-md shadow-rose-600/20 flex items-center gap-2">
+          <button id="tabKanji" onclick="switchGameMode('kanji')"
+            class="px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all bg-rose-600 text-white shadow-md shadow-rose-600/20 flex items-center gap-2">
             <i class="fa-solid fa-language"></i>
             <span>Tebak Kanji</span>
           </button>
-          <button id="tabKotoba" onclick="switchGameMode('kotoba')" class="px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all text-slate-600 hover:text-emerald-700 flex items-center gap-2">
+          <button id="tabKotoba" onclick="switchGameMode('kotoba')"
+            class="px-5 py-2 rounded-xl text-xs sm:text-sm font-extrabold transition-all text-slate-600 hover:text-emerald-700 flex items-center gap-2">
             <i class="fa-solid fa-book-open"></i>
             <span>Tebak Kotoba</span>
           </button>
@@ -61,30 +69,46 @@
       </div>
 
       <!-- Filter Level Khusus Mode Kanji -->
-      <div id="levelFilterBox" class="bg-white/80 backdrop-blur-md rounded-2xl p-3 border border-slate-200 mb-6 flex flex-wrap items-center justify-center gap-2 text-xs font-bold text-slate-600 shadow-sm">
+      <div id="levelFilterBox"
+        class="bg-white/80 backdrop-blur-md rounded-2xl p-3 border border-slate-200 mb-6 flex flex-wrap items-center justify-center gap-2 text-xs font-bold text-slate-600 shadow-sm">
         <span class="text-slate-400 mr-1"><i class="fa-solid fa-layer-group"></i> Level Kanji:</span>
-        <button onclick="setKanjiLevel('semua')" id="lvl-semua" class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-800 text-white transition-all">Semua (336)</button>
-        <button onclick="setKanjiLevel('n5')" id="lvl-n5" class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 1 (N5: 1-4 Coretan)</button>
-        <button onclick="setKanjiLevel('a21')" id="lvl-a21" class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 2 (A2.1: 5-8 Coretan)</button>
-        <button onclick="setKanjiLevel('a22')" id="lvl-a22" class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 3 (A2.2: 9+ Coretan)</button>
+        <button onclick="setKanjiLevel('semua')" id="lvl-semua"
+          class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-800 text-white transition-all">Semua (336)</button>
+        <button onclick="setKanjiLevel('n5')" id="lvl-n5"
+          class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 1
+          (N5: 1-4 Coretan)</button>
+        <button onclick="setKanjiLevel('a21')" id="lvl-a21"
+          class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 2
+          (A2.1: 5-8 Coretan)</button>
+        <button onclick="setKanjiLevel('a22')" id="lvl-a22"
+          class="lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 3
+          (A2.2: 9+ Coretan)</button>
       </div>
 
       <!-- Main Game Card -->
-      <div class="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-2xl relative overflow-hidden">
-        
+      <div
+        class="bg-white/95 backdrop-blur-md rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-2xl relative overflow-hidden">
+
         <!-- Score Bar & Streak -->
         <div class="flex items-center justify-between pb-4 mb-6 border-b border-slate-100 text-xs sm:text-sm">
           <div class="flex items-center gap-3">
-            <span class="bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+            <span
+              class="bg-emerald-50 text-emerald-700 border border-emerald-200 font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
               <i class="fa-solid fa-circle-check text-emerald-500"></i>
               <span>Skor: <b id="scoreVal" class="text-emerald-800 text-base">0</b></span>
             </span>
-            <span class="bg-amber-50 text-amber-700 border border-amber-200 font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+            <span
+              class="bg-amber-50 text-amber-700 border border-amber-200 font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
               <i class="fa-solid fa-fire text-amber-500"></i>
               <span>Streak: <b id="streakVal" class="text-amber-800">0</b></span>
             </span>
+            <span class="bg-sky-50 text-sky-700 border border-sky-200 font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+              <i class="fa-solid fa-list-ol text-sky-500"></i>
+              <span>Progres: <b id="progressVal" class="text-sky-800">0 / 0</b></span>
+            </span>
           </div>
-          <button onclick="resetGame()" class="text-slate-400 hover:text-slate-600 font-semibold text-xs flex items-center gap-1 transition-all">
+          <button onclick="resetGame()"
+            class="text-slate-400 hover:text-slate-600 font-semibold text-xs flex items-center gap-1 transition-all">
             <i class="fa-solid fa-rotate-right"></i>
             <span>Reset</span>
           </button>
@@ -92,13 +116,15 @@
 
         <!-- Question Box -->
         <div class="text-center py-4 mb-6">
-          <span id="questionCategory" class="text-[11px] font-bold uppercase tracking-wider text-slate-400 bg-slate-100 px-3 py-1 rounded-full">KANJI</span>
-          
+          <span id="questionCategory"
+            class="text-[11px] font-bold uppercase tracking-wider text-slate-400 bg-slate-100 px-3 py-1 rounded-full">KANJI</span>
+
           <!-- Karakter Utama Soal (Kanji / Kosakata) -->
-          <div id="targetDisplay" class="my-4 font-black tracking-tight text-slate-800 select-none transition-all text-6xl sm:text-7xl font-sans min-h-[80px] flex items-center justify-center">
+          <div id="targetDisplay"
+            class="my-4 font-black tracking-tight text-slate-800 select-none transition-all text-6xl sm:text-7xl font-sans min-h-[80px] flex items-center justify-center">
             ...
           </div>
-          
+
           <!-- Sub petunjuk (bacaan furigana / romaji jika ada) -->
           <div id="targetSub" class="text-sm font-semibold text-slate-500 min-h-[22px]">
             Apa arti dari karakter di atas?
@@ -111,15 +137,18 @@
         </div>
 
         <!-- Feedback & Next Action Bar -->
-        <div id="feedbackBar" class="hidden rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left transition-all">
+        <div id="feedbackBar"
+          class="hidden rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left transition-all">
           <div class="flex items-center gap-3">
-            <div id="feedbackIcon" class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg"></div>
+            <div id="feedbackIcon" class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg">
+            </div>
             <div>
               <p id="feedbackTitle" class="font-extrabold text-sm"></p>
               <p id="feedbackDetail" class="text-xs text-slate-600"></p>
             </div>
           </div>
-          <button id="nextBtn" onclick="nextQuestion()" class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-all shadow-md">
+          <button id="nextBtn" onclick="nextQuestion()"
+            class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-all shadow-md">
             Lanjut Soal Berikutnya &rarr;
           </button>
         </div>
@@ -130,15 +159,31 @@
   </main>
 
   <script>
-    // State Aplikasi Game
+    // State Aplikasi Game (Non-Repeating Deck System)
     let currentMode = 'kanji'; // 'kanji' | 'kotoba'
     let kanjiLevel = 'semua';  // 'semua' | 'n5' | 'a21' | 'a22'
     let kanjiData = [];
     let kotobaData = [];
+    
+    // Antrean Soal Unik (Deck yang diacak agar tidak ada yang terulang)
+    let activeQueue = [];
+    let totalInQueue = 0;
+    let completedCount = 0;
+
     let score = 0;
     let streak = 0;
     let currentQ = null;
     let isAnswered = false;
+
+    // Algoritma Fisher-Yates Shuffle murni
+    function shuffleArray(arr) {
+      const a = [...arr];
+      for (let i = a.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [a[i], a[j]] = [a[j], a[i]];
+      }
+      return a;
+    }
 
     // Load Datasets
     async function initDatasets() {
@@ -149,17 +194,47 @@
         ]);
         kanjiData = resKanji || [];
         kotobaData = (resKotoba && resKotoba.data) ? resKotoba.data : [];
+        rebuildQueue();
         nextQuestion();
       } catch (e) {
         console.error('Gagal memuat dataset game:', e);
       }
     }
 
+    // Filter Kanji List sesuai Level
+    function getFilteredKanji() {
+      if (!kanjiData.length) return [];
+      if (kanjiLevel === 'n5') return kanjiData.filter(k => (k.stroke || 0) <= 4);
+      if (kanjiLevel === 'a21') return kanjiData.filter(k => (k.stroke || 0) >= 5 && (k.stroke || 0) <= 8);
+      if (kanjiLevel === 'a22') return kanjiData.filter(k => (k.stroke || 0) >= 9);
+      return kanjiData;
+    }
+
+    // Membangun Antrean Soal Baru Tanpa Duplikasi
+    function rebuildQueue() {
+      if (currentMode === 'kanji') {
+        const pool = getFilteredKanji();
+        activeQueue = shuffleArray(pool);
+      } else {
+        activeQueue = shuffleArray(kotobaData);
+      }
+      totalInQueue = activeQueue.length;
+      completedCount = 0;
+      updateProgressUI();
+    }
+
+    function updateProgressUI() {
+      const pEl = document.getElementById('progressVal');
+      if (pEl) {
+        pEl.textContent = `${completedCount} / ${totalInQueue}`;
+      }
+    }
+
     // Switch Mode Game
-    window.switchGameMode = function(mode) {
+    window.switchGameMode = function (mode) {
       if (currentMode === mode) return;
       currentMode = mode;
-      
+
       const tabK = document.getElementById('tabKanji');
       const tabW = document.getElementById('tabKotoba');
       const lvlBox = document.getElementById('levelFilterBox');
@@ -178,11 +253,12 @@
         hl.textContent = 'Tebak Kotoba';
         hl.className = 'text-emerald-600';
       }
+      rebuildQueue();
       nextQuestion();
     };
 
     // Filter Level Mode Kanji
-    window.setKanjiLevel = function(lvl) {
+    window.setKanjiLevel = function (lvl) {
       kanjiLevel = lvl;
       document.querySelectorAll('.lvl-btn').forEach(b => {
         b.className = 'lvl-btn px-3 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all';
@@ -191,51 +267,64 @@
       if (activeBtn) {
         activeBtn.className = 'lvl-btn px-3 py-1.5 rounded-xl bg-slate-800 text-white transition-all';
       }
+      rebuildQueue();
       nextQuestion();
     };
 
-    // Filter Kanji List sesuai Level
-    function getFilteredKanji() {
-      if (!kanjiData.length) return [];
-      if (kanjiLevel === 'n5') return kanjiData.filter(k => (k.stroke || 0) <= 4);
-      if (kanjiLevel === 'a21') return kanjiData.filter(k => (k.stroke || 0) >= 5 && (k.stroke || 0) <= 8);
-      if (kanjiLevel === 'a22') return kanjiData.filter(k => (k.stroke || 0) >= 9);
-      return kanjiData;
-    }
-
-    // Generate Soal Baru (4 Pilihan Acak)
-    window.nextQuestion = function() {
+    // Ambil Soal Berikutnya (Pop dari Antrean Unik)
+    window.nextQuestion = function () {
       isAnswered = false;
       document.getElementById('feedbackBar').classList.add('hidden');
 
+      // Jika antrean habis, seluruh soal di mode/level ini telah tuntas!
+      if (!activeQueue || activeQueue.length === 0) {
+        showRoundCompleted();
+        return;
+      }
+
+      // Ambil 1 item dari depan antrean (dijamin belum pernah keluar)
+      const target = activeQueue.pop();
+      completedCount++;
+      updateProgressUI();
+
       if (currentMode === 'kanji') {
-        generateKanjiQuestion();
+        renderKanjiQuestion(target);
       } else {
-        generateKotobaQuestion();
+        renderKotobaQuestion(target);
       }
     };
 
-    function generateKanjiQuestion() {
-      const pool = getFilteredKanji();
-      if (pool.length < 4) return;
+    function showRoundCompleted() {
+      const grid = document.getElementById('optionsGrid');
+      document.getElementById('targetDisplay').innerHTML = '🎉';
+      document.getElementById('questionCategory').textContent = 'RONDE SELESAI';
+      document.getElementById('targetSub').innerHTML = `<b class="text-emerald-600 font-bold text-base">Hebat! Anda telah menyelesaikan seluruh ${totalInQueue} soal tanpa ada yang terulang!</b>`;
+      grid.innerHTML = `
+        <div class="col-span-1 sm:col-span-2 text-center p-6 bg-emerald-50 rounded-2xl border border-emerald-200">
+          <p class="text-sm text-slate-700 mb-4 font-semibold">Semua soal pada level ini sudah berhasil Anda taklukkan.</p>
+          <button onclick="rebuildQueue(); nextQuestion();" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-8 py-3 rounded-full text-sm shadow-md transition-all">
+            Ulangi Ronde Baru (Diacak Lagi)
+          </button>
+        </div>
+      `;
+    }
 
-      // Pilih 1 target acak
-      const correctIdx = Math.floor(Math.random() * pool.length);
-      const target = pool[correctIdx];
-
-      // Ambil 3 pengecoh acak yang berbeda
+    function renderKanjiQuestion(target) {
+      // Cari 3 pengecoh acak yang artinya berbeda dari target
       const distractors = [];
-      const used = new Set([target.kanji]);
+      const used = new Set([target.kanji, target.arti]);
 
-      while (distractors.length < 3) {
-        const rand = kanjiData[Math.floor(Math.random() * kanjiData.length)];
-        if (rand && rand.arti && !used.has(rand.kanji) && rand.arti !== target.arti) {
-          used.add(rand.kanji);
-          distractors.push(rand);
+      // Acak data kanji untuk mencari pengecoh
+      const randomCandidates = shuffleArray(kanjiData);
+      for (let k of randomCandidates) {
+        if (k && k.arti && !used.has(k.kanji) && !used.has(k.arti)) {
+          used.add(k.kanji);
+          used.add(k.arti);
+          distractors.push(k);
+          if (distractors.length >= 3) break;
         }
       }
 
-      // Gabungkan dan acak 4 opsi
       const options = [
         { text: target.arti, isCorrect: true, item: target },
         ...distractors.map(d => ({ text: d.arti, isCorrect: false, item: d }))
@@ -243,26 +332,23 @@
 
       currentQ = { target, options };
 
-      // Render ke UI
       document.getElementById('questionCategory').textContent = `KANJI • ${target.stroke || 0} Coretan • Radikal: ${target.radical || '-'}`;
       document.getElementById('targetDisplay').textContent = target.kanji;
       document.getElementById('targetSub').innerHTML = `On: <b class="text-rose-600">${target.on || '-'}</b> • Kun: <b class="text-sky-600">${target.kun || '-'}</b>`;
-      
+
       renderOptionsGrid(options);
     }
 
-    function generateKotobaQuestion() {
-      if (kotobaData.length < 4) return;
-
-      const target = kotobaData[Math.floor(Math.random() * kotobaData.length)];
+    function renderKotobaQuestion(target) {
       const distractors = [];
       const used = new Set([target.arti]);
 
-      while (distractors.length < 3) {
-        const rand = kotobaData[Math.floor(Math.random() * kotobaData.length)];
-        if (rand && rand.arti && !used.has(rand.arti)) {
-          used.add(rand.arti);
-          distractors.push(rand);
+      const randomCandidates = shuffleArray(kotobaData);
+      for (let w of randomCandidates) {
+        if (w && w.arti && !used.has(w.arti)) {
+          used.add(w.arti);
+          distractors.push(w);
+          if (distractors.length >= 3) break;
         }
       }
 
@@ -275,7 +361,7 @@
 
       document.getElementById('questionCategory').textContent = 'KOTOBA A2';
       document.getElementById('targetDisplay').textContent = target.kanji || target.kana;
-      document.getElementById('targetSub').innerHTML = target.kanji !== target.kana 
+      document.getElementById('targetSub').innerHTML = target.kanji !== target.kana
         ? `Kana: <b class="text-emerald-700">${target.kana}</b> • Romaji: <i class="text-slate-500">${target.rom || ''}</i>`
         : `Romaji: <i class="text-slate-500">${target.rom || ''}</i>`;
 
@@ -316,7 +402,7 @@
         streak += 1;
         selectedBtn.classList.remove('bg-slate-50', 'border-slate-200');
         selectedBtn.classList.add('bg-emerald-500', 'text-white', 'border-emerald-600', 'shadow-md');
-        
+
         fbBar.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-emerald-50 border border-emerald-200';
         fbIcon.className = 'w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg bg-emerald-500';
         fbIcon.innerHTML = '<i class="fa-solid fa-check"></i>';
@@ -350,11 +436,12 @@
       fbBar.classList.remove('hidden');
     }
 
-    window.resetGame = function() {
+    window.resetGame = function () {
       score = 0;
       streak = 0;
       document.getElementById('scoreVal').textContent = '0';
       document.getElementById('streakVal').textContent = '0';
+      rebuildQueue();
       nextQuestion();
     };
 
@@ -362,4 +449,5 @@
     document.addEventListener('DOMContentLoaded', initDatasets);
   </script>
 </body>
+
 </html>
