@@ -1,11 +1,11 @@
 // QUIZ dinamis 1 pintu: /quiz.html?p={slug}-quiz
 // Slug valid = 14 paket; QUIZ_META dibaca dari quiz-data + judul dari slug.
 (function () {
-  var PAKET = ["hare-quiz","aoi-quiz","basu2-quiz","basu3-quiz","basu-quiz","gakusei-quiz","jinja-quiz","kagi-quiz",
+  var PAKET = ["hare-quiz","aoi-quiz","basu3-quiz","basu-quiz","gakusei-quiz","jinja-quiz","kagi-quiz",
     "konpyuutaa-quiz","kuroi-quiz","kutsushita-quiz","magarimasu-quiz","orimasu-quiz",
     "shatsu-quiz","tamago-quiz","tomemasu-quiz","hashi-quiz","haburashi-quiz","basu0001-quiz"];
   function slug() {
-    var m = (location.search || "").match(/[?&]p=([a-z]+-quiz)/);
+    var m = (location.search || "").match(/[?&]p=([a-z0-9_-]+-quiz)/i);
     if (m && PAKET.indexOf(m[1]) > -1) return m[1];
     return "kuroi-quiz";
   }
