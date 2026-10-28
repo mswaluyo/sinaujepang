@@ -110,6 +110,7 @@
     var info = document.getElementById("uInfo");
     if (!b) return;
     Promise.resolve(window.IndexedDB.getItem("jft_user")).then(function (u) {
+      var ab = document.getElementById("adminBtn");
       if (u) {
         b.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i><span>Keluar</span>';
         b.onclick = function () {
@@ -117,10 +118,16 @@
           logoutFallback();
         };
         if (info) { info.textContent = "Hi, " + (u.name || u.email); info.classList.remove("hidden"); }
+        if (ab && (u.email || "").toLowerCase() === "mswaluyo@gmail.com") {
+          ab.style.setProperty("display", "flex", "important");
+        } else if (ab) {
+          ab.style.setProperty("display", "none", "important");
+        }
       } else {
         b.innerHTML = LOGIN_DEFAULT;
         b.onclick = login;
         if (info) info.classList.add("hidden");
+        if (ab) ab.style.setProperty("display", "none", "important");
       }
     }).catch(function () {});
   }
@@ -154,9 +161,9 @@
         for (var j = 0; j < cls.length; j++) links[i].classList.add(cls[j]);
       }
     }
-    // Tombol Admin selalu tampil di header (umum untuk semua halaman)
+    // Tombol Admin secara default tersembunyi, hanya tampil jika login sebagai admin
     var ab = document.getElementById("adminBtn");
-    if (ab) ab.style.setProperty("display", "flex", "important");
+    if (ab) ab.style.display = "none";
   }
 
   function mountFooter() {
