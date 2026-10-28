@@ -145,26 +145,44 @@
           </button>
         </div>
 
-        <!-- Kunci Akses 2: Sudah Login TAPI Belum Klik Link Bio TikTok -->
+        <!-- Kunci Akses 2: Sudah Login TAPI Belum Aktivasi Kode Bio TikTok -->
         <div id="paket-tiktok-locked" class="hidden bg-white/95 backdrop-blur-md rounded-3xl p-8 sm:p-12 text-center max-w-xl mx-auto border border-slate-300 shadow-2xl relative overflow-hidden">
-          <div class="w-16 h-16 rounded-2xl text-white flex items-center justify-center mx-auto mb-5 text-2xl shadow-lg" style="background-color:#010101;box-shadow:0 4px 14px rgba(0,0,0,0.35);">
+          <div class="w-16 h-16 rounded-2xl text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg" style="background-color:#010101;box-shadow:0 4px 14px rgba(0,0,0,0.35);">
             <i class="fa-brands fa-tiktok text-3xl" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i>
           </div>
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-bold mb-3 border border-slate-200">
-            <span>Langkah Terakhir Aktivasi Akun</span>
+          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-50 text-rose-600 text-xs font-bold mb-3 border border-rose-200">
+            <i class="fa-solid fa-key text-[11px]"></i>
+            <span>Aktivasi Gratis via Bio TikTok</span>
           </div>
-          <h3 class="text-2xl font-extrabold text-slate-800 mb-2">Buka Materi Lewat Bio TikTok</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6 text-left sm:text-center">
-            Materi 797 soal CBT ini 100% gratis. Untuk membuka akses permanen:<br/>
-            <span class="font-bold text-slate-800">1. Buka &amp; Follow akun TikTok kami: <span class="text-fuji-600">@danyangkedungselur</span></span><br/>
-            <span class="font-bold text-slate-800">2. Klik link yang ada di BIO profil TikTok tersebut</span> untuk membuka seluruh bank soal selamanya.
+          <h3 class="text-2xl font-extrabold text-slate-800 mb-2">Buka Bank Soal JFT-Basic A2</h3>
+          <p class="text-slate-600 text-sm leading-relaxed mb-6">
+            Seluruh 797 soal CBT &amp; materi ini 100% GRATIS.<br/>
+            Silakan <span class="font-bold text-slate-800">Follow akun TikTok kami</span> &amp; ambil <span class="font-bold text-fuji-600">Kode Akses Web</span> yang tertera di Bio profil TikTok:
           </p>
-          <a href="https://www.tiktok.com/@danyangkedungselur" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 text-white font-bold px-8 py-4 rounded-full shadow-lg transition-all hover:scale-105 text-sm" style="background-color:#010101;">
-            <i class="fa-brands fa-tiktok text-lg" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i>
-            <span>Buka Profil TikTok @danyangkedungselur &rarr;</span>
-          </a>
-          <p class="text-[11px] text-slate-400 mt-4 italic">
-            *Setelah mengklik link di bio TikTok, Anda akan otomatis kembali ke sini dengan akses terbuka 100%.
+
+          <!-- Tombol Cek Profil TikTok -->
+          <div class="mb-6">
+            <a href="https://www.tiktok.com/@danyangkedungselur" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 text-white font-bold px-6 py-3 rounded-full text-xs shadow-md transition-all hover:scale-105" style="background-color:#010101;">
+              <i class="fa-brands fa-tiktok text-sm" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i>
+              <span>Lihat Kode di Bio TikTok @danyangkedungselur &rarr;</span>
+            </a>
+          </div>
+
+          <!-- Form Input Kode Akses -->
+          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 max-w-md mx-auto">
+            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 text-left">
+              Masukkan Kode Akses dari Bio TikTok:
+            </label>
+            <div class="flex gap-2">
+              <input type="text" id="tiktokCodeInput" placeholder="Contoh: JFT2026" class="flex-1 px-4 py-3 rounded-xl border border-slate-300 focus:outline-none focus:border-fuji-600 focus:ring-2 focus:ring-fuji-200 text-sm font-mono font-bold uppercase tracking-wider text-center text-slate-800 bg-white" maxlength="20">
+              <button onclick="verifikasiKodeTikTok()" class="bg-fuji-600 hover:bg-fuji-700 text-white font-bold px-6 py-3 rounded-xl text-sm transition-all shadow-md shadow-fuji-600/30">
+                Buka Akses
+              </button>
+            </div>
+            <p id="tiktokCodeErr" class="text-xs text-rose-600 font-semibold mt-2 min-h-[16px] text-left"></p>
+          </div>
+          <p class="text-[11px] text-slate-400 mt-4">
+            *Aktivasi ini hanya perlu dilakukan sekali seumur hidup untuk akun Anda.
           </p>
         </div>
 
@@ -384,6 +402,40 @@
     });
     renderUser().catch(function(){});
     setTimeout(function(){ renderAdminBtn().catch(function(){}); }, 1500);
+    window.verifikasiKodeTikTok = function() {
+      var inp = document.getElementById("tiktokCodeInput");
+      var err = document.getElementById("tiktokCodeErr");
+      if (!inp) return;
+      var val = (inp.value || "").trim().toUpperCase();
+      if (!val) {
+        if (err) err.textContent = "Silakan masukkan kode akses terlebih dahulu.";
+        return;
+      }
+      if (val === "JFT2026") {
+        if (err) {
+          err.className = "text-xs text-emerald-600 font-semibold mt-2 text-left";
+          err.textContent = "Berhasil! Membuka seluruh paket soal...";
+        }
+        try {
+          localStorage.setItem("jft_tiktok_unlocked", "true");
+        } catch (e) {}
+        setTimeout(function() {
+          renderUser().catch(function(){});
+          // Redirect jika datang dari halaman spesifik
+          var p = new URLSearchParams(window.location.search);
+          var redir = p.get("redirect");
+          if (redir && !redir.startsWith("//") && !redir.includes(":")) {
+            window.location.replace(redir);
+          }
+        }, 600);
+      } else {
+        if (err) {
+          err.className = "text-xs text-rose-600 font-semibold mt-2 text-left";
+          err.textContent = "Kode tidak cocok. Buka bio TikTok @danyangkedungselur untuk melihat kode yang benar.";
+        }
+      }
+    };
+
     function scrollToSoal() {
       var t = document.getElementById('latihan-soal');
       if (t) t.scrollIntoView({ behavior: 'smooth' });

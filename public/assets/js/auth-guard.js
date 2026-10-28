@@ -1,18 +1,17 @@
 // ============================================================
 // auth-guard.js — Penjaga Akses Materi SinauJepang
 // 1. Cek sesi login Google (jft_user).
-// 2. Cek status aktivasi Link Bio TikTok (?akses=tiktok atau jft_tiktok_unlocked).
+// 2. Cek status aktivasi Kode / Link Bio TikTok (?akses=tiktok atau jft_tiktok_unlocked).
 // ============================================================
 (function () {
   'use strict';
 
-  // 1. Tangkap aktivasi via URL parameter dari Link Bio TikTok
+  // Tangkap aktivasi via URL parameter dari Link Bio TikTok jika ada
   try {
     var params = new URLSearchParams(window.location.search);
     var aksesParam = params.get('akses');
     if (aksesParam && (aksesParam === 'tiktok' || aksesParam === 'tiktok-follower')) {
       localStorage.setItem('jft_tiktok_unlocked', 'true');
-      // Bersihkan param dari address bar agar rapi tanpa reload
       params.delete('akses');
       var newQuery = params.toString() ? '?' + params.toString() : '';
       var newUrl = window.location.pathname + newQuery + window.location.hash;
@@ -53,7 +52,7 @@
     return;
   }
 
-  // B. Sudah login tapi belum klik link bio TikTok: redirect ke halaman beranda untuk unlock
+  // B. Sudah login tapi belum aktifkan Kode/Bio TikTok: redirect ke halaman beranda
   if (!isTikTokUnlocked(user)) {
     try {
       if (document.documentElement) document.documentElement.style.display = 'none';
