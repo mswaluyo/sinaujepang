@@ -55,6 +55,12 @@ window.PAKET_CONFIG = {
           "slug": "orimasu2-quiz",
           "total": 44,
           "ikon": "O2"
+        },
+        {
+          "nama": "SHIMEMASU 2",
+          "slug": "shimemasu2-quiz",
+          "total": 52,
+          "ikon": "S2"
         }
       ]
     },
