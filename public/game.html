@@ -28,6 +28,14 @@
     .opt-card:hover {
       transform: translateY(-2px);
     }
+
+    /* Karakter Utama Kanji Ekstra Besar (10x lebih menonjol & jernih) */
+    .kanji-huge-display {
+      font-size: clamp(6rem, 20vw, 9rem);
+      line-height: 1.05;
+      font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', 'Noto Sans JP', sans-serif;
+      text-shadow: 0 4px 24px rgba(15, 23, 42, 0.08);
+    }
   </style>
 </head>
 
@@ -73,11 +81,14 @@
         class="bg-white/80 backdrop-blur-md rounded-2xl p-3 border border-slate-200 mb-6 flex flex-wrap items-center justify-center gap-2 text-xs font-bold text-slate-600 shadow-sm">
         <span class="text-slate-400 mr-1"><i class="fa-solid fa-layer-group"></i> Level Mode:</span>
         <button onclick="setKanjiLevel('radikal')" id="lvl-radikal"
-          class="lvl-btn px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 1: Radikal (部首)</button>
+          class="lvl-btn px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level
+          1: Radikal (部首)</button>
         <button onclick="setKanjiLevel('tunggal')" id="lvl-tunggal"
-          class="lvl-btn px-3.5 py-1.5 rounded-xl bg-slate-800 text-white transition-all">Level 2: Kanji Tunggal (単漢字)</button>
+          class="lvl-btn px-3.5 py-1.5 rounded-xl bg-slate-800 text-white transition-all">Level 2: Kanji Tunggal
+          (単漢字)</button>
         <button onclick="setKanjiLevel('kotoba')" id="lvl-kotoba"
-          class="lvl-btn px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level 3: Kanji Kotoba (熟語)</button>
+          class="lvl-btn px-3.5 py-1.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 transition-all">Level
+          3: Kanji Kotoba (熟語)</button>
       </div>
 
       <!-- Main Game Card -->
@@ -97,7 +108,8 @@
               <i class="fa-solid fa-fire text-amber-500"></i>
               <span>Streak: <b id="streakVal" class="text-amber-800">0</b></span>
             </span>
-            <span class="bg-sky-50 text-sky-700 border border-sky-200 font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
+            <span
+              class="bg-sky-50 text-sky-700 border border-sky-200 font-bold px-3 py-1 rounded-full flex items-center gap-1.5">
               <i class="fa-solid fa-list-ol text-sky-500"></i>
               <span>Progres: <b id="progressVal" class="text-sky-800">0 / 0</b></span>
             </span>
@@ -116,8 +128,7 @@
 
           <!-- Karakter Utama Soal (Kanji / Kosakata) -->
           <div id="targetDisplay"
-            class="my-3 font-black tracking-normal text-slate-800 select-none transition-all text-7xl sm:text-8xl md:text-9xl min-h-[110px] sm:min-h-[130px] flex items-center justify-center leading-none"
-            style="font-family: 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', 'Yu Gothic', 'Meiryo', sans-serif;">
+            class="kanji-huge-display my-4 font-black tracking-normal text-slate-900 select-none transition-all min-h-[140px] sm:min-h-[170px] flex items-center justify-center">
             ...
           </div>
 
@@ -133,12 +144,12 @@
         </div>
 
         <!-- Feedback & Next Action Card -->
-        <div id="feedbackBar"
-          class="hidden rounded-3xl p-5 sm:p-6 transition-all shadow-sm space-y-4">
-          
+        <div id="feedbackBar" class="hidden rounded-3xl p-5 sm:p-6 transition-all shadow-sm space-y-4">
+
           <!-- 1. Status Jawaban (Paling Atas) -->
           <div class="flex items-center gap-3.5">
-            <div id="feedbackIcon" class="w-11 h-11 rounded-2xl flex items-center justify-center text-white text-xl shrink-0 shadow-sm">
+            <div id="feedbackIcon"
+              class="w-11 h-11 rounded-2xl flex items-center justify-center text-white text-xl shrink-0 shadow-sm">
             </div>
             <div>
               <h4 id="feedbackTitle" class="font-black text-base sm:text-lg tracking-tight"></h4>
@@ -177,7 +188,7 @@
     let radicalData = [];
     let kanjiKotobaData = [];
     let picfiloMap = {};
-    
+
     // Antrean Soal Unik (Deck yang diacak agar tidak ada yang terulang)
     let activeQueue = [];
     let totalInQueue = 0;
