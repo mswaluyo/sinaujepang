@@ -131,7 +131,8 @@ function renderNilai() {
     window._qLastD = _qSortRows(Object.values(g)).slice(0, _q.shown); window._qLastD.forEach((o, _ix) => {
       _qDetailRows.push({ name: o.name, email: o.email, slug: o.slug, benar: o.bestBenar, total: o.total, t: o.bestT || o.last, secs: o.bestSecs, n: o.nShow });
       const di = _qDetailRows.length - 1;
-      const ok = o.best >= 75;
+      const jftVal = _qJftExact(o.bestBenar, o.total);
+      const ok = jftVal >= 200;
       html += "<tr class='hover:bg-fuji-50/60 transition-colors'>"
         + "<td class='px-4 py-2.5 text-slate-500 whitespace-nowrap'>" + _qFmt(o.bestT || o.last) + "</td>"
         + "<td class='px-3 py-2.5'><div class='font-bold text-slate-800 leading-tight'>" + _qEsc(o.name || "-") + "</div><div class='text-[11px] text-slate-400'>" + _qEsc(o.email || "") + "</div></td>"
@@ -151,7 +152,8 @@ function renderNilai() {
     _qSortRows(listFin).slice(0, _q.shown).forEach(v => {
       _qDetailRows.push({ name: v.name, email: v.email, slug: v.slug, benar: v.benar, total: v.total, t: v._t, secs: v.secs || null });
       const di = _qDetailRows.length - 1;
-      const ok = (v.skor || 0) >= 75;
+      const jftVal = _qJftExact(v.benar, v.total);
+      const ok = jftVal >= 200;
       html += "<tr class='hover:bg-fuji-50/60 transition-colors'>"
         + "<td class='px-4 py-2.5 text-slate-500 whitespace-nowrap'>" + _qFmt(v._t) + "</td>"
         + "<td class='px-3 py-2.5'><div class='font-bold text-slate-800 leading-tight'>" + _qEsc(v.name || "-") + "</div><div class='text-[11px] text-slate-400'>" + _qEsc(v.email || "") + "</div></td>"
