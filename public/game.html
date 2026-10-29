@@ -133,27 +133,32 @@
 
         <!-- Feedback & Next Action Card -->
         <div id="feedbackBar"
-          class="hidden rounded-3xl p-5 sm:p-6 transition-all shadow-sm">
+          class="hidden rounded-3xl p-5 sm:p-6 transition-all shadow-sm space-y-4">
           
-          <!-- Baris Utama: Status + Tombol Lanjut -->
-          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-black/5">
-            <div class="flex items-center gap-3.5">
-              <div id="feedbackIcon" class="w-11 h-11 rounded-2xl flex items-center justify-center text-white text-xl shrink-0 shadow-sm">
-              </div>
-              <div>
-                <h4 id="feedbackTitle" class="font-black text-base sm:text-lg tracking-tight"></h4>
-                <p id="feedbackDetail" class="text-xs sm:text-sm text-slate-600 font-semibold mt-0.5"></p>
-              </div>
+          <!-- 1. Status Jawaban (Paling Atas) -->
+          <div class="flex items-center gap-3.5">
+            <div id="feedbackIcon" class="w-11 h-11 rounded-2xl flex items-center justify-center text-white text-xl shrink-0 shadow-sm">
+            </div>
+            <div>
+              <h4 id="feedbackTitle" class="font-black text-base sm:text-lg tracking-tight"></h4>
+              <p id="feedbackDetail" class="text-xs sm:text-sm text-slate-600 font-semibold mt-0.5"></p>
+            </div>
+          </div>
+
+          <!-- 2. Penjelasan Piktograf & Filosofi (Tengah) -->
+          <div id="feedbackPicfilo" class="hidden pt-1">
+          </div>
+
+          <!-- 3. Poin & Tombol Lanjut Soal (Paling Bawah) -->
+          <div class="pt-3 border-t border-black/5 flex flex-col sm:flex-row items-center justify-between gap-3">
+            <div id="feedbackPoints" class="text-xs sm:text-sm font-extrabold flex items-center gap-2">
+              <!-- Diisi dinamis: (+10 Poin) / (+0 Poin) -->
             </div>
             <button id="nextBtn" onclick="nextQuestion()"
-              class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 active:scale-95 text-white font-bold px-6 py-3 rounded-2xl text-xs sm:text-sm transition-all shadow-md flex items-center justify-center gap-2 shrink-0">
+              class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 active:scale-95 text-white font-bold px-7 py-3 rounded-2xl text-xs sm:text-sm transition-all shadow-md flex items-center justify-center gap-2 shrink-0">
               <span>Lanjut Soal Berikutnya</span>
               <i class="fa-solid fa-arrow-right text-xs"></i>
             </button>
-          </div>
-
-          <!-- Kartu Penjelasan Asal-Usul, Piktograf & Filosofi -->
-          <div id="feedbackPicfilo" class="hidden pt-4">
           </div>
         </div>
 
@@ -532,18 +537,24 @@
       const fbDetail = document.getElementById('feedbackDetail');
       const allButtons = document.querySelectorAll('.opt-card');
 
+      const fbPoints = document.getElementById('feedbackPoints');
+
       if (opt.isCorrect) {
         score += 10;
         streak += 1;
         selectedBtn.classList.remove('bg-slate-50', 'border-slate-200');
         selectedBtn.classList.add('bg-emerald-500', 'text-white', 'border-emerald-600', 'shadow-md');
 
-        fbBar.className = 'rounded-3xl p-5 sm:p-6 transition-all shadow-sm bg-emerald-50/90 border border-emerald-200';
+        fbBar.className = 'rounded-3xl p-5 sm:p-6 transition-all shadow-sm bg-emerald-50/90 border border-emerald-200 space-y-4';
         fbIcon.className = 'w-11 h-11 rounded-2xl flex items-center justify-center text-white text-xl bg-emerald-500 shadow-sm shrink-0';
         fbIcon.innerHTML = '<i class="fa-solid fa-check"></i>';
         fbTitle.className = 'font-black text-base sm:text-lg text-emerald-900 tracking-tight';
-        fbTitle.textContent = 'Luar Biasa, Jawaban Benar! (+10 Poin)';
+        fbTitle.textContent = 'Luar Biasa, Jawaban Benar!';
         fbDetail.innerHTML = `Karakter: <b class="text-slate-800">${currentQ.target.kanji || currentQ.target.kana}</b> &rarr; <span class="text-emerald-800 font-bold">${opt.text}</span>`;
+
+        if (fbPoints) {
+          fbPoints.innerHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-emerald-100 text-emerald-800 border border-emerald-300 shadow-sm"><i class="fa-solid fa-circle-plus text-emerald-600"></i> +10 Poin Bertambah!</span>';
+        }
       } else {
         streak = 0;
         selectedBtn.classList.remove('bg-slate-50', 'border-slate-200');
@@ -557,7 +568,7 @@
           }
         });
 
-        fbBar.className = 'rounded-3xl p-5 sm:p-6 transition-all shadow-sm bg-rose-50/90 border border-rose-200';
+        fbBar.className = 'rounded-3xl p-5 sm:p-6 transition-all shadow-sm bg-rose-50/90 border border-rose-200 space-y-4';
         fbIcon.className = 'w-11 h-11 rounded-2xl flex items-center justify-center text-white text-xl bg-rose-500 shadow-sm shrink-0';
         fbIcon.innerHTML = '<i class="fa-solid fa-xmark"></i>';
         fbTitle.className = 'font-black text-base sm:text-lg text-rose-900 tracking-tight';
@@ -565,6 +576,10 @@
         const correctOpt = allOptions.find(o => o.isCorrect);
         const correctText = currentQ.target.detail || (correctOpt ? correctOpt.text : '');
         fbDetail.innerHTML = `Kunci yang benar: <b class="text-slate-900 bg-white/70 px-2.5 py-0.5 rounded-lg border border-rose-200 inline-block mt-0.5">${correctText}</b>`;
+
+        if (fbPoints) {
+          fbPoints.innerHTML = '<span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-rose-100 text-rose-800 border border-rose-300 shadow-sm"><i class="fa-solid fa-circle-minus text-rose-500"></i> +0 Poin</span>';
+        }
       }
 
       // Render Penjelasan Piktograf & Filosofi (Level Radikal & Kanji Tunggal)
