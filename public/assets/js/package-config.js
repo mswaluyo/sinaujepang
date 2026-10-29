@@ -1,6 +1,6 @@
 window.PAKET_CONFIG = {
-  "totalPaket": 18,
-  "totalSoal": 746,
+  "totalPaket": 19,
+  "totalSoal": 803,
   "kategori": [
     {
       "nama": "LOLOSYUK",
@@ -30,6 +30,12 @@ window.PAKET_CONFIG = {
           "slug": "orimasu-quiz",
           "total": 57,
           "ikon": "O"
+        },
+        {
+          "nama": "ORIMASU 2 (Latihan Ulang)",
+          "slug": "orimasu2-quiz",
+          "total": 57,
+          "ikon": "O2"
         },
         {
           "nama": "TOMEMASU",
