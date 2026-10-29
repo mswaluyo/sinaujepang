@@ -3,6 +3,19 @@ window.PAKET_CONFIG = {
   "totalSoal": 803,
   "kategori": [
     {
+      "nama": "MNN",
+      "warna": "amber",
+      "badgeGradien": "from-amber-500 to-orange-600",
+      "paket": [
+        {
+          "nama": "ORIMASU 2",
+          "slug": "orimasu2-quiz",
+          "total": 57,
+          "ikon": "O2"
+        }
+      ]
+    },
+    {
       "nama": "LOLOSYUK",
       "warna": "sky",
       "badgeGradien": "from-sky-500 to-blue-600",
@@ -30,12 +43,6 @@ window.PAKET_CONFIG = {
           "slug": "orimasu-quiz",
           "total": 57,
           "ikon": "O"
-        },
-        {
-          "nama": "ORIMASU 2 (Latihan Ulang)",
-          "slug": "orimasu2-quiz",
-          "total": 57,
-          "ikon": "O2"
         },
         {
           "nama": "TOMEMASU",
