@@ -1376,8 +1376,8 @@
   },
   {
     "no": 26,
-    "title": "Toshokan ada di sebelah mana?",
-    "subTitle": "(Toshokan ada di sebelah mana?)",
+    "title": "図書館は どこに ありますか。\n(Toshokan wa doko ni arimasu ka.)",
+    "subTitle": "Perpustakaan ada di sebelah mana?",
     "img": "",
     "audio": "assets/audio_c1.wav",
     "options": [
@@ -1397,42 +1397,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "(Toshokan ada di sebelah mana?)",
-    "trans_rom": "-",
+    "trans": "Petunjuk arah jalan: Berada di lampu merah kedua, belok ke kiri, lalu posisinya ada di sisi kiri jalan.",
+    "trans_rom": "Futatsu-me no shingou o hidari e magatte, michi no hidarigawa ni arimasu.",
     "mnn": "Choukai",
-    "analisis": "Jawaban A benar karena secara akurat menjelaskan lokasi perpustakaan berada di sisi kiri jalan setelah lampu merah kedua. Tips: Perhatikan detail arah seperti \"kiri\" atau \"kanan\" saat mendengarkan petunjuk arah.",
+    "analisis": "[MNN Bab 23 - Menyimak Petunjuk Arah Jalan (Michi-annai)] Dalam rekaman audio penutur memberikan petunjuk rute jalan: melewati lampu merah kedua (二つ目の信号 / futatsu-me no shingou), lalu belok ke kiri (左へ曲がります / hidari e magarimasu), dan gedung perpustakaan berada di sisi kiri jalan (道の左側 / michi no hidari-gawa). Kunci jawaban yang tepat adalah opsi ketiga.",
     "opt_detail": [
       {
         "kana": "posisi ada di lampu merah pertama, belok kanan di sisi kiri jalan",
         "rom": "-",
-        "arti": "posisi ada di lampu merah pertama, belok kanan di sisi kiri jalan",
-        "alasan": "Pilihan salah."
+        "arti": "lampu merah ke-1, belok kanan, sisi kiri",
+        "alasan": "Salah. Audio menyebutkan lampu merah kedua (futatsu-me), bukan pertama, dan belok kiri bukan kanan."
       },
       {
         "kana": "posisi ada di lampu merah kedua, belok kiri di sisi kanan jalan",
         "rom": "-",
-        "arti": "posisi ada di lampu merah kedua, belok kiri di sisi kanan jalan",
-        "alasan": "Pilihan salah."
+        "arti": "lampu merah ke-2, belok kiri, sisi kanan",
+        "alasan": "Salah pada posisi sisi jalan: rekaman menyebutkan di sebelah kiri jalan (hidari-gawa), bukan kanan (migi-gawa)."
       },
       {
         "kana": "posisi ada di lampu merah kedua, belok kiri di sisi kiri jalan",
         "rom": "-",
-        "arti": "posisi ada di lampu merah kedua, belok kiri di sisi kiri jalan",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "arti": "lampu merah ke-2, belok kiri, sisi kiri",
+        "alasan": "Tepat sekali. Sesuai 100% dengan urutan navigasi rekaman: lampu merah kedua -> belok kiri -> sisi kiri jalan."
       }
     ],
     "kunci_id": "posisi ada di lampu merah kedua, belok kiri di sisi kiri jalan",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(posisi ada di lampu merah pertama, belok kanan di sisi kiri jalan)",
-      "(posisi ada di lampu merah kedua, belok kiri di sisi kanan jalan)",
-      "(posisi ada di lampu merah kedua, belok kiri di sisi kiri jalan)"
+      "(lampu ke-1, belok kanan) salah arah",
+      "(lampu ke-2, sisi kanan) salah sisi",
+      "(lampu ke-2, belok kiri, sisi kiri) benar"
     ]
   },
   {
     "no": 27,
-    "title": "berapa umur anak perempuan?",
-    "subTitle": "(berapa umur anak perempuan?)",
+    "title": "女の子は 何歳ですか。\n(Onnanoko wa nansai desu ka.)",
+    "subTitle": "Berapa umur anak perempuan dalam percakapan?",
     "img": "",
     "audio": "assets/audio_c2.wav",
     "options": [
@@ -1452,42 +1452,42 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "(berapa umur anak perempuan?)",
-    "trans_rom": "-",
+    "trans": "Pertanyaan usia anak perempuan: Umurnya adalah 4 tahun (yon-sai).",
+    "trans_rom": "Onnanoko wa yon-sai desu.",
     "mnn": "Choukai",
-    "analisis": "Jawaban B benar karena sesuai dengan informasi usia anak perempuan yang disebutkan dalam soal. Tips: Perhatikan baik-baik angka dan informasi yang diberikan dalam soal sebelum memilih jawaban.",
+    "analisis": "[MNN Bab 1/11 - Menyimak Usia Anak (Nansai / Sai)] Dalam percakapan keluarga/anak, penutur menanyakan usia anak perempuan. Angka 4 tahun dalam bahasa Jepang diucapkan よんさい (yonsai / 4歳). Opsi 8 tahun diucapkan はっさい (hassai) dan 6 tahun ろくさい (rokusai). Kunci jawaban yang benar adalah 4 歳 (4 tahun).",
     "opt_detail": [
       {
         "kana": "8 歳",
-        "rom": "-",
+        "rom": "hassai",
         "arti": "8 tahun",
-        "alasan": "Pilihan salah."
+        "alasan": "Pengecoh angka usia anak lain yang mungkin disebut atau sekadar angka pengecoh."
       },
       {
         "kana": "4 歳",
-        "rom": "-",
+        "rom": "yonsai",
         "arti": "4 tahun",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "alasan": "Tepat sekali. Rekaman audio secara jelas menyebutkan anak perempuan tersebut berusia 4 tahun (よんさい)."
       },
       {
         "kana": "6 歳",
-        "rom": "-",
+        "rom": "rokusai",
         "arti": "6 tahun",
-        "alasan": "Pilihan salah."
+        "alasan": "Salah. Pengecoh angka genap."
       }
     ],
     "kunci_id": "4 歳",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(8 tahun)",
-      "(4 tahun)",
-      "(6 tahun)"
+      "(hassai) 8 tahun",
+      "(yonsai) 4 tahun (kunci)",
+      "(rokusai) 6 tahun"
     ]
   },
   {
     "no": 28,
-    "title": "Pesan makanan apa?",
-    "subTitle": "(Pesan makanan apa?)",
+    "title": "何を 注文しますか。\n(Nani o chuumon shimasu ka.)",
+    "subTitle": "Makanan apa yang dipesan?",
     "img": "",
     "audio": "assets/audio_c3.wav",
     "options": [
@@ -1507,42 +1507,42 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "(Pesan makanan apa?)",
-    "trans_rom": "-",
+    "trans": "Pesanan makanan di restoran: Memesan tempura dan sepiring nasi putih (tenpura to gohan).",
+    "trans_rom": "Tenpura to gohan o chuumon shimasu.",
     "mnn": "Choukai",
-    "analisis": "Jawaban C menyebutkan dua jenis makanan (tempura dan nasi) yang merupakan kombinasi umum dalam pesanan makanan. Tips: Perhatikan apakah pertanyaan meminta satu item atau lebih.",
+    "analisis": "[MNN Bab 3/13 - Percakapan Restoran & Memesan Makanan] Dalam percakapan di kedai makan/restoran, pembicara memilih menu makanan. Pembicara memesan kombinasi hidangan: てんぷら と ごはん (tenpura to gohan = tempura dan nasi). Opsi てんぷら saja tidak lengkap karena ia juga menambah nasi, sedangkan ラーメン tidak dipesan.",
     "opt_detail": [
       {
         "kana": "てんぷら",
-        "rom": "-",
-        "arti": "tempura",
-        "alasan": "Pilihan salah."
+        "rom": "tenpura",
+        "arti": "tempura saja",
+        "alasan": "Kurang lengkap, karena pembicara memesan paket tempura bersama dengan nasi (gohan)."
       },
       {
         "kana": "てんぷら と ごはん",
-        "rom": "-",
-        "arti": "Tempura dan nasi",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "tenpura to gohan",
+        "arti": "tempura dan nasi",
+        "alasan": "Tepat sekali. Sesuai dengan item pesanan lengkap yang diucapkan pembicara pada akhir percakapan."
       },
       {
         "kana": "ラーメン",
-        "rom": "-",
-        "arti": "ramen",
-        "alasan": "Pilihan salah."
+        "rom": "raamen",
+        "arti": "ramen / mie kuah",
+        "alasan": "Salah. Pembicara tidak memesan mie ramen."
       }
     ],
     "kunci_id": "てんぷら と ごはん",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(tempura)",
-      "(Tempura dan nasi)",
-      "(ramen)"
+      "(tenpura) tempura saja (kurang)",
+      "(tenpura to gohan) tempura & nasi (kunci)",
+      "(raamen) mie ramen"
     ]
   },
   {
     "no": 29,
-    "title": "Dengarkan untuk soal nomor 28 &amp; 29\r\n\r\nApa yang perlu di bawa?",
-    "subTitle": "(Dengarkan untuk soal nomor 28 &amp; 29\r\n\r\nApa yang perlu di bawa?)",
+    "title": "何を持って行かなければなりませんか。\n(Nani o motte ikanakereba narimasen ka.)",
+    "subTitle": "Barang apa yang perlu dibawa?",
     "img": "",
     "audio": "assets/audio_c4.wav",
     "options": [
@@ -1562,42 +1562,42 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "(Dengarkan untuk soal nomor 28 &amp; 29\r\n\r\nApa yang perlu di bawa?)",
-    "trans_rom": "-",
+    "trans": "Instruksi perlengkapan: Barang yang harus dibawa untuk mencatat adalah pulpen (pen).",
+    "trans_rom": "Pen o motte ikanakereba narimasen.",
     "mnn": "Choukai",
-    "analisis": "Jawaban C (ペン - pulpen) adalah barang yang paling umum dan logis untuk dibawa saat membutuhkan alat tulis untuk mencatat atau mengerjakan tugas. Tips: Selalu perhatikan konteks percakapan atau situasi yang diberikan dalam soal untuk memilih jawaban yang paling sesuai.",
+    "analisis": "[MNN Bab 17 - Pola Keharusan Membawa Barang (~nakereba narimasen)] Dalam rekaman instruksi atau pengumuman kegiatan, penutur menegaskan barang wajib yang harus dibawa peserta untuk keperluan tulis-menulis yaitu ペン (pen = pulpen/pena). Opsi おもちゃ (mainan) dan 本 (buku) tidak diminta untuk dibawa.",
     "opt_detail": [
       {
         "kana": "ペン",
-        "rom": "-",
-        "arti": "pena",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "pen",
+        "arti": "pulpen / pena",
+        "alasan": "Tepat sekali. Rekaman menegaskan peserta harus membawa alat tulis pulpen (ペンを持ってきてください / ペンが必要です)."
       },
       {
         "kana": "おもちゃ",
-        "rom": "-",
-        "arti": "mainan",
-        "alasan": "Pilihan salah."
+        "rom": "omocha",
+        "arti": "mainan anak",
+        "alasan": "Salah. Mainan tidak termasuk barang yang diminta dibawa."
       },
       {
         "kana": "本",
-        "rom": "-",
+        "rom": "hon",
         "arti": "buku",
-        "alasan": "Pilihan salah."
+        "alasan": "Salah. Buku bukan barang yang diinstruksikan untuk dibawa."
       }
     ],
     "kunci_id": "ペン",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(pena)",
-      "(mainan)",
-      "(buku)"
+      "(pen) pulpen (kunci)",
+      "(omocha) mainan",
+      "(hon) buku"
     ]
   },
   {
     "no": 30,
-    "title": "Berapa buah?",
-    "subTitle": "(Berapa buah?)",
+    "title": "果物は 全部で 何個ありますか。\n(Kudamono wa zenbu de nanko arimasu ka.)",
+    "subTitle": "Ada berapa jumlah buah seluruhnya?",
     "img": "",
     "audio": "assets/audio_c5.m4a",
     "options": [
@@ -1617,42 +1617,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "(Berapa buah?)",
-    "trans_rom": "-",
+    "trans": "Jumlah buah: Seluruhnya ada 10 buah (juu-ko / juu-nin).",
+    "trans_rom": "Kudamono wa zenbu de jukko (10-ko) arimasu.",
     "mnn": "Choukai",
-    "analisis": "Jawaban B benar karena jumlah buah yang ditanyakan adalah 10. Tips: Perhatikan baik-baik jumlah objek yang ditunjukkan dalam soal sebelum memilih jawaban.",
+    "analisis": "[MNN Bab 11 - Kata Bantu Hitung Barang (Kosuu / ~ko / ~tsu)] Percakapan menanyakan total kuantitas buah yang dibeli atau disiapkan. Kata kunci angka yang disebutkan pada hasil penghitungan total adalah 10 buah (10個 / じゅっこ / とお). Angka 12 (juuni) atau 20 (nijuu) merupakan angka pengecoh.",
     "opt_detail": [
       {
         "kana": "12 buah",
-        "rom": "-",
+        "rom": "juuni-ko",
         "arti": "12 buah",
-        "alasan": "Pilihan salah."
+        "alasan": "Pengecoh jumlah kuantitas."
       },
       {
         "kana": "20 buah",
-        "rom": "-",
+        "rom": "nijuu-ko",
         "arti": "20 buah",
-        "alasan": "Pilihan salah."
+        "alasan": "Pengecoh jumlah puluhan."
       },
       {
         "kana": "10 buah",
-        "rom": "-",
+        "rom": "jukko / too",
         "arti": "10 buah",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "alasan": "Tepat sekali. Jumlah total buah yang disebutkan dalam dialog adalah 10 buah."
       }
     ],
     "kunci_id": "10 buah",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(12 buah)",
-      "(20 buah)",
-      "(10 buah)"
+      "(12 buah) salah hitung",
+      "(20 buah) pengecoh",
+      "(10 buah) tepat (kunci)"
     ]
   },
   {
     "no": 31,
-    "title": "Kenapa suka musim gugur ?",
-    "subTitle": "(Kenapa suka musim gugur ?)",
+    "title": "どうして 秋が 好きですか。\n(Doushite aki ga suki desu ka.)",
+    "subTitle": "Mengapa pembicara menyukai musim gugur?",
     "img": "",
     "audio": "assets/audio_c6.wav",
     "options": [
@@ -1672,42 +1672,42 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "(Kenapa suka musim gugur ?)",
-    "trans_rom": "-",
+    "trans": "Alasan suka musim gugur: Karena banyak buah-buahan lezat di musim gugur (kudamono ga oishii kara).",
+    "trans_rom": "Kudamono ga oishii kara, aki ga suki desu.",
     "mnn": "Choukai",
-    "analisis": "くだもの (kudamono) berarti \"buah-buahan\". Musim gugur adalah musim panen berbagai macam buah-buahan yang lezat, sehingga menjadi alasan yang umum disukai dari musim gugur. Tips: Perhatikan apakah pertanyaan menanyakan deskripsi atau alasan.",
+    "analisis": "[MNN Bab 9/12 - Menyimak Alasan Mengapa (Doushite ~ Kara)] Pembicara ditanya alasan menyukai musim gugur (秋 / aki). Dalam dialognya ia menyebutkan bahwa di musim gugur buah-buahan sangat enak dan banyak dipanen (くだものが おいしいですから / kudamono ga oishii kara desu). Suhu sejuk (すずしい) atau pemandangan (景色 / keshiki) bukan poin utama yang ditekankannya sebagai alasan kesukaannya.",
     "opt_detail": [
       {
         "kana": "すずしい",
-        "rom": "-",
-        "arti": "Dingin",
-        "alasan": "Pilihan salah."
+        "rom": "suzushii",
+        "arti": "sejuk / adem",
+        "alasan": "Meskipun musim gugur sejuk, pembicara menegaskan alasan utamanya adalah karena kulinernya (buah-buahan)."
       },
       {
         "kana": "くだもの",
-        "rom": "-",
-        "arti": "buah",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "kudamono",
+        "arti": "buah-buahan",
+        "alasan": "Tepat sekali. Pembicara secara eksplisit mengutarakan kegemarannya makan aneka buah musim gugur (くだものが美味しいから)."
       },
       {
         "kana": "景色",
-        "rom": "-",
-        "arti": "pemandangan",
-        "alasan": "Pilihan salah."
+        "rom": "keshiki",
+        "arti": "pemandangan alam",
+        "alasan": "Pemandangan daun musim gugur (momiji) bukan alasan yang disebut pembicara."
       }
     ],
     "kunci_id": "くだもの",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Dingin)",
-      "(buah)",
-      "(pemandangan)"
+      "(suzushii) sejuk (pengecoh)",
+      "(kudamono) buah-buahan (kunci)",
+      "(keshiki) pemandangan"
     ]
   },
   {
     "no": 32,
-    "title": "Dengarkan baik-baik untuk soal no 31 &amp; 32\r\n\r\nBencana apa yang sedang terjadi?",
-    "subTitle": "(Dengarkan baik-baik untuk soal no 31 &amp; 32\r\n\r\nBencana apa yang sedang terjadi?)",
+    "title": "どんな 災害が 起きていますか。\n(Donna saigai ga okite imasu ka.)",
+    "subTitle": "Bencana alam apa yang sedang terjadi dalam berita/pengumuman?",
     "img": "",
     "audio": "assets/audio_c7.wav",
     "options": [
@@ -1727,42 +1727,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "(Dengarkan baik-baik untuk soal no 31 &amp; 32\r\n\r\nBencana apa yang sedang terjadi?)",
-    "trans_rom": "-",
+    "trans": "Kondisi darurat: Bencana alam yang sedang melanda adalah badai topan besar (taifuu).",
+    "trans_rom": "Ima, taifuu ga chikazuite imasu / kite imasu.",
     "mnn": "Choukai",
-    "analisis": "Jawaban C (たいふう) berarti angin topan, yang merupakan bencana alam yang sedang terjadi sesuai konteks soal. Tips: Perhatikan baik-baik kata kunci dalam soal untuk menentukan jenis bencana yang dimaksud.",
+    "analisis": "[MNN Bab 45 - Menyimak Berita Cuaca Darurat & Bencana Alam (Saigai)] Siaran darurat atau berita radio memperingatkan warga mengenai datangnya badai taifun (たいふう / 台風) yang disertai angin kencang dan hujan lebat. Opsi 地震 (jishin = gempa bumi) dan かじ (kaji = kebakaran) tidak sesuai dengan isi siaran bahaya cuaca.",
     "opt_detail": [
       {
         "kana": "地震",
-        "rom": "-",
+        "rom": "jishin",
         "arti": "gempa bumi",
-        "alasan": "Pilihan salah."
+        "alasan": "Salah. Siaran tidak menyiarkan bencana gempa tektonik."
       },
       {
         "kana": "かじ",
-        "rom": "-",
-        "arti": "Kemudi",
-        "alasan": "Pilihan salah."
+        "rom": "kaji",
+        "arti": "kebakaran",
+        "alasan": "Salah. Tidak ada insiden kebakaran yang diberitakan."
       },
       {
         "kana": "たいふう",
-        "rom": "-",
-        "arti": "Taifuu",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "taifuu",
+        "arti": "badai topan / taifun",
+        "alasan": "Tepat sekali. Kata kunci utama siaran peringatan cuaca darurat adalah 台風 (たいふう)."
       }
     ],
     "kunci_id": "たいふう",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(gempa bumi)",
-      "(Kemudi)",
-      "(Taifuu)"
+      "(jishin) gempa bumi",
+      "(kaji) kebakaran",
+      "(taifuu) badai topan (kunci)"
     ]
   },
   {
     "no": 33,
-    "title": "Pergi menungsi kemana?",
-    "subTitle": "(Pergi menungsi kemana?)",
+    "title": "どこへ 避難しますか。\n(Doko e hinan shimasu ka.)",
+    "subTitle": "Warga harus pergi mengungsi ke mana?",
     "img": "",
     "audio": "assets/audio_c8.m4a",
     "options": [
@@ -1782,42 +1782,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "(Pergi menungsi kemana?)",
-    "trans_rom": "-",
+    "trans": "Instruksi evakuasi: Warga diminta segera pergi mengungsi ke tempat evakuasi / shelter (hinanjo).",
+    "trans_rom": "Hinanjo e hinan shite kudasai.",
     "mnn": "Choukai",
-    "analisis": "\"避難所\" (hinanjo) secara spesifik berarti \"tempat pengungsian\" atau \"shelter\". Tips: Perhatikan makna kata yang berkaitan dengan situasi darurat atau bencana.",
+    "analisis": "[MNN Bab 45 - Instruksi Penyelamatan Diri Bencana Alam] Melanjutkan siaran darurat bencana badai topan, petugas menginstruksikan penduduk untuk segera mengungsi demi keselamatan diri ke balai/tempat penampungan pengungsian resmi (ひなんじょ / 避難所). Tetap tinggal di rumah (家) atau pergi ke taman terbuka (こうえん) sangat berbahaya saat badai topan.",
     "opt_detail": [
       {
         "kana": "家",
-        "rom": "-",
+        "rom": "ie",
         "arti": "rumah",
-        "alasan": "Pilihan salah."
+        "alasan": "Salah. Penduduk diinstruksikan keluar mengungsi dari area rumah yang rawan."
       },
       {
         "kana": "こうえん",
-        "rom": "-",
-        "arti": "Taman",
-        "alasan": "Pilihan salah."
+        "rom": "kouen",
+        "arti": "taman terbuka",
+        "alasan": "Salah. Taman terbuka berbahaya saat badai topan karena risiko pohon tumbang."
       },
       {
         "kana": "ひなんじょ",
-        "rom": "-",
-        "arti": "Hinanjo",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "hinanjo",
+        "arti": "tempat penampungan pengungsi (shelter)",
+        "alasan": "Tepat sekali. Petugas mengumumkan warga untuk berkumpul di gedung pengungsian resmi (ひなんじょ)."
       }
     ],
     "kunci_id": "ひなんじょ",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(rumah)",
-      "(Taman)",
-      "(Hinanjo)"
+      "(ie) rumah",
+      "(kouen) taman terbuka",
+      "(hinanjo) tempat pengungsian (kunci)"
     ]
   },
   {
     "no": 34,
-    "title": "Toilet nya ada dimana?",
-    "subTitle": "(Toilet nya ada dimana?)",
+    "title": "トイレは どこに ありますか。\n(Toire wa doko ni arimasu ka.)",
+    "subTitle": "Toilet berada di sebelah mana?",
     "img": "",
     "audio": "assets/audio_c9.wav",
     "options": [
@@ -1837,36 +1837,36 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "(Toilet nya ada dimana?)",
-    "trans_rom": "-",
+    "trans": "Lokasi fasilitas umum: Toilet berada tepat di sebelah toko buku (hon'ya no tonari).",
+    "trans_rom": "Toire wa hon'ya no tonari ni arimasu.",
     "mnn": "Choukai",
-    "analisis": "Jawaban C (本屋のとなり - di sebelah toko buku) adalah jawaban yang tepat untuk menanyakan lokasi toilet. Tips: Perhatikan kata kunci dalam pertanyaan untuk memilih jawaban yang paling relevan.",
+    "analisis": "[MNN Bab 10 - Menyimak Posisi Letak Fasilitas (Tonari / Mae)] Penutur menanyakan posisi toilet kepada petugas/lawan bicara. Penutur diberitahu bahwa posisi toilet adalah di samping persis toko buku (ほんやの となり / 本屋の隣). Pilihan こうえんのまえ (di depan taman) dan こんびにのとなり (di sebelah minimarket) merupakan lokasi pengecoh.",
     "opt_detail": [
       {
         "kana": "こうえんのまえ",
-        "rom": "-",
-        "arti": "Di depan sekolah",
-        "alasan": "Pilihan salah."
+        "rom": "kouen no mae",
+        "arti": "di depan taman",
+        "alasan": "Salah. Kata kunci posisi yang disebut bukan di depan taman."
       },
       {
         "kana": "ほんやのとなり",
-        "rom": "-",
-        "arti": "Benar-benar di sebelah",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "hon'ya no tonari",
+        "arti": "di sebelah toko buku",
+        "alasan": "Tepat sekali. Rekaman audio menyebutkan dengan jelas: 本屋の隣にあります (ada di samping toko buku)."
       },
       {
         "kana": "こんびにのとなり",
-        "rom": "-",
-        "arti": "Halo tetangga sebelah",
-        "alasan": "Pilihan salah."
+        "rom": "konbini no tonari",
+        "arti": "di sebelah minimarket",
+        "alasan": "Salah. Minimarket bukan patokan letak toilet dalam dialog ini."
       }
     ],
     "kunci_id": "ほんやのとなり",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Di depan sekolah)",
-      "(Benar-benar di sebelah)",
-      "(Halo tetangga sebelah)"
+      "(kouen no mae) di depan taman",
+      "(hon'ya no tonari) di sebelah toko buku (kunci)",
+      "(konbini no tonari) di sebelah minimarket"
     ]
   },
   {
