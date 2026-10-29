@@ -133,19 +133,24 @@
 
         <!-- Feedback & Next Action Bar -->
         <div id="feedbackBar"
-          class="hidden rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left transition-all">
-          <div class="flex items-center gap-3">
-            <div id="feedbackIcon" class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg">
+          class="hidden rounded-2xl p-4 sm:p-5 flex flex-col gap-3 transition-all">
+          <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
+            <div class="flex items-center gap-3">
+              <div id="feedbackIcon" class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg shrink-0">
+              </div>
+              <div>
+                <p id="feedbackTitle" class="font-extrabold text-sm"></p>
+                <p id="feedbackDetail" class="text-xs text-slate-600 font-medium"></p>
+              </div>
             </div>
-            <div>
-              <p id="feedbackTitle" class="font-extrabold text-sm"></p>
-              <p id="feedbackDetail" class="text-xs text-slate-600"></p>
-            </div>
+            <button id="nextBtn" onclick="nextQuestion()"
+              class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-all shadow-md shrink-0">
+              Lanjut Soal Berikutnya &rarr;
+            </button>
           </div>
-          <button id="nextBtn" onclick="nextQuestion()"
-            class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-all shadow-md">
-            Lanjut Soal Berikutnya &rarr;
-          </button>
+          <!-- Box Penjelasan Piktograf & Filosofi Kanji/Radikal -->
+          <div id="feedbackPicfilo" class="hidden mt-1 pt-3 border-t border-slate-200/80 text-left text-xs leading-relaxed space-y-1.5">
+          </div>
         </div>
 
       </div>
@@ -161,6 +166,7 @@
     let kotobaData = [];
     let radicalData = [];
     let kanjiKotobaData = [];
+    let picfiloMap = {};
     
     // Antrean Soal Unik (Deck yang diacak agar tidak ada yang terulang)
     let activeQueue = [];
@@ -185,12 +191,18 @@
     // Load Datasets & Extract Sub-levels
     async function initDatasets() {
       try {
-        const [resKanji, resKotoba] = await Promise.all([
+        const [resKanji, resKotoba, resPicfilo] = await Promise.all([
           fetch('/kanji-jft-a2.json').then(r => r.json()),
-          fetch('/kosakata.json').then(r => r.json())
+          fetch('/kosakata.json').then(r => r.json()),
+          fetch('/assets/data/kanji-picfilo.json').then(r => r.json()).catch(() => [])
         ]);
         kanjiData = resKanji || [];
         kotobaData = (resKotoba && resKotoba.data) ? resKotoba.data : [];
+        if (Array.isArray(resPicfilo)) {
+          resPicfilo.forEach(item => {
+            if (item && item.kanji) picfiloMap[item.kanji] = item;
+          });
+        }
 
         // 1. Ekstraksi Level 1: Radikal Unik (121 radikal)
         const radMap = new Map();
@@ -373,7 +385,16 @@
           ...distractors.map(d => ({ text: d.optionText, isCorrect: false, item: d }))
         ].sort(() => Math.random() - 0.5);
 
-        currentQ = { target: { kanji: target.radical, detail: `Radikal ${target.radical}: ${target.nama || targetOptionText}` }, options };
+        const info = picfiloMap[target.radical];
+        currentQ = {
+          target: {
+            kanji: target.radical,
+            detail: `Radikal ${target.radical}: ${target.nama || targetOptionText}`,
+            pic: info ? info.pic : '',
+            filo: info ? info.filo : ''
+          },
+          options
+        };
         document.getElementById('questionCategory').textContent = `LEVEL 1: RADIKAL • ${target.grup || 'Komponen Kanji'}`;
         document.getElementById('targetDisplay').textContent = target.radical;
         document.getElementById('targetSub').innerHTML = '<span class="text-slate-400 font-medium">Pilihlah bacaan kana dan arti yang tepat</span>';
@@ -433,7 +454,16 @@
         ...distractors.map(d => ({ text: d.optionText, isCorrect: false, item: d }))
       ].sort(() => Math.random() - 0.5);
 
-      currentQ = { target: { ...target, detail: `${target.kanji} [${targetReading}] = ${target.arti}` }, options };
+      const info = picfiloMap[target.kanji];
+      currentQ = {
+        target: {
+          ...target,
+          detail: `${target.kanji} [${targetReading}] = ${target.arti}`,
+          pic: info ? info.pic : '',
+          filo: info ? info.filo : ''
+        },
+        options
+      };
       document.getElementById('questionCategory').textContent = `LEVEL 2: KANJI TUNGGAL • ${target.stroke || 0} Coretan • Radikal: ${target.radical || '-'}`;
       document.getElementById('targetDisplay').textContent = target.kanji;
       document.getElementById('targetSub').innerHTML = '<span class="text-slate-400 font-medium">Pilihlah bacaan kana dan arti yang tepat</span>';
@@ -532,6 +562,34 @@
         fbDetail.textContent = currentQ.target.detail 
           ? `Jawaban yang benar: ${currentQ.target.detail}`
           : `Jawaban yang benar: ${correctOpt ? correctOpt.text : ''}`;
+      }
+
+      // Render Penjelasan Piktograf & Filosofi (Level Radikal & Kanji Tunggal)
+      const fbPicfilo = document.getElementById('feedbackPicfilo');
+      if (fbPicfilo) {
+        const hasPicOrFilo = currentQ && currentQ.target && (currentQ.target.pic || currentQ.target.filo);
+        if (hasPicOrFilo) {
+          const targetChar = currentQ.target.kanji || '';
+          let htmlInfo = '';
+          if (currentQ.target.pic) {
+            htmlInfo += `<div class="flex items-start gap-1.5"><b class="text-amber-800 shrink-0 font-bold">🖼️ Piktograf:</b> <span class="text-slate-700">${currentQ.target.pic}</span></div>`;
+          }
+          if (currentQ.target.filo) {
+            htmlInfo += `<div class="flex items-start gap-1.5"><b class="text-sky-800 shrink-0 font-bold">💡 Filosofi:</b> <span class="text-slate-700">${currentQ.target.filo}</span></div>`;
+          }
+          fbPicfilo.innerHTML = `
+            <div class="bg-white/80 rounded-xl p-3 border border-slate-200 shadow-sm space-y-1.5">
+              <div class="text-[11px] font-black tracking-wider uppercase text-slate-500 mb-1 flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Asal-Usul & Makna Karakter 【${targetChar}】
+              </div>
+              ${htmlInfo}
+            </div>
+          `;
+          fbPicfilo.classList.remove('hidden');
+        } else {
+          fbPicfilo.innerHTML = '';
+          fbPicfilo.classList.add('hidden');
+        }
       }
 
       document.getElementById('scoreVal').textContent = score;
