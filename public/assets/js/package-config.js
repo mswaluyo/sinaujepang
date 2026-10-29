@@ -1,6 +1,6 @@
 window.PAKET_CONFIG = {
-  "totalPaket": 19,
-  "totalSoal": 803,
+  "totalPaket": 21,
+  "totalSoal": 879,
   "kategori": [
     {
       "nama": "LOLOSYUK",
@@ -61,6 +61,12 @@ window.PAKET_CONFIG = {
           "slug": "shimemasu2-quiz",
           "total": 52,
           "ikon": "S2"
+        },
+        {
+          "nama": "GENKAN",
+          "slug": "genkan-quiz",
+          "total": 50,
+          "ikon": "G"
         }
       ]
     },
