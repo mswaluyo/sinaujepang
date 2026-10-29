@@ -28,7 +28,7 @@ window.PAKET_CONFIG = {
         {
           "nama": "ORIMASU",
           "slug": "orimasu-quiz",
-          "total": 57,
+          "total": 44,
           "ikon": "O"
         },
         {
@@ -53,7 +53,7 @@ window.PAKET_CONFIG = {
         {
           "nama": "ORIMASU 2",
           "slug": "orimasu2-quiz",
-          "total": 57,
+          "total": 44,
           "ikon": "O2"
         }
       ]
