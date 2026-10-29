@@ -300,33 +300,33 @@
     "trans": "(Apakah Anda punya pertanyaan?)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "\"しつもん\" (shitsumon) adalah cara penulisan yang benar untuk kata \"pertanyaan\" dalam bahasa Jepang. Tips: Perhatikan perbedaan antara hiragana し (shi) dan つ (tsu) karena sering tertukar.",
+    "analisis": "[MNN Bab 14/26 - Cara Baca Kanji & On'yomi] Kanji 質問 terdiri dari 質 (shitsu - mutu/dasar) dan 問 (mon - bertanya). Cara baca kana yang benar dan baku adalah しつもん (shitsumon) yang berarti 'pertanyaan'. Kalimat: 「質問が ありますか」 artinya 'Apakah ada pertanyaan?'.",
     "opt_detail": [
       {
         "kana": "しすもん",
-        "rom": "-",
-        "arti": "Shisumon",
-        "alasan": "Pilihan salah."
+        "rom": "shisumon",
+        "arti": "bukan kata baku (pengecoh bunyi)",
+        "alasan": "Pengecoh fonetik dengan mengganti 'tsu' kecil/penuh menjadi 'su'. Cara baca yang benar adalah menggunakan つ (tsu)."
       },
       {
         "kana": "しつもん",
-        "rom": "-",
-        "arti": "Pertanyaan",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "shitsumon",
+        "arti": "pertanyaan",
+        "alasan": "Tepat sekali. 質問 dibaca しつもん (shitsumon), merupakan kosakata standar di kelas/percakapan kerja untuk mengajukan pertanyaan."
       },
       {
         "kana": "ちゅもん",
-        "rom": "-",
-        "arti": "Chumon",
-        "alasan": "Pilihan salah."
+        "rom": "chumon",
+        "arti": "salah ucap dari chuumon (pesanan)",
+        "alasan": "ちゅもん merupakan pelafalan yang salah dari 注文 (ちゅうもん - pesanan makanan/barang)."
       }
     ],
     "kunci_id": "しつもん",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Shisumon)",
-      "(Pertanyaan)",
-      "(Chumon)"
+      "(shisumon) salah baca",
+      "(shitsumon) pertanyaan",
+      "(chumon) salah baca dari pesanan"
     ]
   },
   {
@@ -355,33 +355,33 @@
     "trans": "(Orang-orang di [lingkungan])",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "Hiragana きんじょ adalah pembacaan yang benar untuk kanji [近所]. Tips: Perhatikan baik-baik bentuk dan urutan goresan kanji untuk menentukan pembacaan hiragana yang tepat.",
+    "analisis": "[MNN Bab 13/28 - Kanji Gabungan On'yomi] Kanji 近所 terdiri dari 近 (kin - dekat) dan 所 (jo / sho - tempat). Gabungan keduanya dibaca きんじょ (kinjo) dengan bunyi vokal pendek 'o', bukan vokal panjang 'ou'. Artinya adalah 'tetangga' atau 'lingkungan sekitar tempat tinggal'. Kalimat: 「近所の人」 artinya 'orang tetangga / warga sekitar'.",
     "opt_detail": [
       {
         "kana": "きじょう",
-        "rom": "-",
-        "arti": "Kijo",
-        "alasan": "Pilihan salah."
+        "rom": "kijou",
+        "arti": "bukan bacaan 近所",
+        "alasan": "Huruf 近 pada kosakata 近所 memiliki bunyi on'yomi 'kin', bukan 'ki'."
       },
       {
         "kana": "きんじょ",
-        "rom": "-",
-        "arti": "Kinjo",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "kinjo",
+        "arti": "lingkungan sekitar / tetangga",
+        "alasan": "Tepat sekali. 近所 dibaca きんじょ (kinjo) dengan akhiran 'jo' pendek tanpa pemanjangan 'u'."
       },
       {
         "kana": "きんじょう",
-        "rom": "-",
-        "arti": "Kinjou",
-        "alasan": "Pilihan salah."
+        "rom": "kinjou",
+        "arti": "pengecoh vokal panjang (ou)",
+        "alasan": "Pengecoh umum pembelajar. Kanji 所 pada kata 近所 dibaca pendek 'jo' (じょ), bukan dipanjangkan menjadi 'jou' (じょう)."
       }
     ],
     "kunci_id": "きんじょ",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Kijo)",
-      "(Kinjo)",
-      "(Kinjou)"
+      "(kijou) salah baca",
+      "(kinjo) lingkungan tetangga",
+      "(kinjou) salah baca (vokal panjang)"
     ]
   },
   {
@@ -410,33 +410,33 @@
     "trans": "(Datang ke Jepang [September])",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "\"がつ\" adalah partikel yang digunakan untuk menunjukkan bulan dalam bahasa Jepang. Tips: Ingatlah bahwa \"がつ\" digunakan untuk bulan dan \"ようび\" untuk hari.",
+    "analisis": "[MNN Bab 5 - Penyebutan Nama Bulan] Untuk menyebut urutan nama bulan ke-1 sampai ke-12 (Januari s.d. Desember), angka ditempel dengan sufiks 月 yang dibaca がつ (gatsu). Khusus bulan September (9月) dibaca くがつ (kugatsu) atau [angka 9]がつ. Kalimat: 「日本に 9月に 来ます」 artinya 'Akan datang ke Jepang pada bulan September'.",
     "opt_detail": [
       {
         "kana": "9がつ",
-        "rom": "-",
-        "arti": "9 tahun",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "kugatsu",
+        "arti": "bulan September (nama bulan ke-9)",
+        "alasan": "Tepat sekali. Sufiks がつ (gatsu) digunakan khusus untuk nama bulan dalam kalender (9月 = くがつ)."
       },
       {
         "kana": "9ようび",
-        "rom": "-",
-        "arti": "9 tahun",
-        "alasan": "Pilihan salah."
+        "rom": "9-youbi",
+        "arti": "bukan bentuk hari (youbi untuk hari senin-minggu)",
+        "alasan": "Sufiks ようび (youbi) hanya digunakan untuk nama hari dalam sepekan (contoh: げつようび, かようび), tidak dipasangkan dengan angka kalender."
       },
       {
         "kana": "9げつ",
-        "rom": "-",
-        "arti": "9 mengerti",
-        "alasan": "Pilihan salah."
+        "rom": "9-getsu",
+        "arti": "sufiks durasi lama bulan (harus berpasangan: 9か月)",
+        "alasan": "げつ (getsu) biasanya digunakan untuk menghitung rentang durasi waktu (contoh: 9か月 - 9 bulan lamanya), bukan penanggalan nama bulan September."
       }
     ],
     "kunci_id": "9がつ",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(9 tahun)",
-      "(9 tahun)",
-      "(9 mengerti)"
+      "(kugatsu) bulan September",
+      "(youbi) sufiks hari",
+      "(getsu) sufiks durasi waktu"
     ]
   },
   {
@@ -465,33 +465,33 @@
     "trans": "(Saya akan mendapatkan ____)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "\"ふく\" (pakaian) adalah objek yang paling umum dikenakan dengan kata kerja \"きます\". Tips: Ingatlah bahwa \"きます\" biasanya digunakan untuk pakaian yang dikenakan di tubuh.",
+    "analisis": "[MNN Bab 20 - Kata Kerja Memakai Pakaian] Bahasa Jepang membedakan kata kerja 'memakai' berdasarkan letak tubuh: (1) Pakaian badan atas (baju, kemeja, gaun) = きます (kimasu / 着ます); (2) Pakaian bawah (celana, rok, sepatu) = はきます (hakimasu); (3) Aksesori kepala (topi) = かぶります (kaburimasu). Kalimat: 「ふくを きます」 artinya 'Memakai pakaian/baju'.",
     "opt_detail": [
       {
         "kana": "ふく",
-        "rom": "-",
-        "arti": "menghapus",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "fuku",
+        "arti": "baju / pakaian badan",
+        "alasan": "Tepat sekali. ふく (服) dikenakan di tubuh bagian atas/utama, sehingga kata kerja pasangannya adalah きます (kimasu)."
       },
       {
         "kana": "ずぼん",
-        "rom": "-",
-        "arti": "Celana panjang",
-        "alasan": "Pilihan salah."
+        "rom": "zubon",
+        "arti": "celana panjang",
+        "alasan": "Celana panjang dikenakan di tubuh bagian bawah (kaki), sehingga kata kerja yang wajib digunakan adalah はきます (hakimasu), bukan きます."
       },
       {
         "kana": "ぼうし",
-        "rom": "-",
+        "rom": "boushi",
         "arti": "topi",
-        "alasan": "Pilihan salah."
+        "alasan": "Topi dikenakan di kepala, sehingga kata kerja yang harus digunakan adalah かぶります (kaburimasu), bukan きます."
       }
     ],
     "kunci_id": "ふく",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(menghapus)",
-      "(Celana panjang)",
-      "(topi)"
+      "(fuku) pakaian badan",
+      "(zubon) celana panjang",
+      "(boushi) topi"
     ]
   },
   {
@@ -520,33 +520,33 @@
     "trans": "(Saat ini saya di ____)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "Kata \"店\" (mise) berarti toko. Kalimat \"今は店にいます\" berarti \"Sekarang saya berada di toko\", yang merupakan kalimat yang logis. Tips: Perhatikan makna kata yang Anda pilih agar sesuai dengan konteks kalimat.",
+    "analisis": "[MNN Bab 10 - Kata Kerja Keberadaan Imasu & Partikel Tempat Ni] Pola kalimat: [Tempat] に います ([Tempat] ni imasu) digunakan untuk menyatakan keberadaan makhluk hidup (manusia/hewan) di suatu lokasi. Di antara pilihan kanji yang tersedia, satu-satunya kanji yang menunjukkan nama tempat/fasilitas adalah 店 dibaca みせ (mise - toko). Kalimat: 「今は 店に います」 artinya 'Sekarang saya sedang berada di toko'.",
     "opt_detail": [
       {
         "kana": "足",
-        "rom": "-",
+        "rom": "ashi",
         "arti": "kaki",
-        "alasan": "Pilihan salah."
+        "alasan": "足 (あし) adalah anggota tubuh (kaki), tidak logis dipasangkan sebagai lokasi fisik seseorang berada ( に います)."
       },
       {
         "kana": "店",
-        "rom": "-",
-        "arti": "toko",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "mise",
+        "arti": "toko / kedai",
+        "alasan": "Tepat sekali. 店 (みせ) merupakan kata benda tempat/lokasi yang tepat untuk melengkapi pola kalimat keberadaan: 店に います (berada di toko)."
       },
       {
         "kana": "予定",
-        "rom": "-",
-        "arti": "jadwal",
-        "alasan": "Pilihan salah."
+        "rom": "yotei",
+        "arti": "rencana / jadwal",
+        "alasan": "予定 (よてい) adalah konsep abstrak (jadwal/rencana), bukan nama tempat fisik."
       }
     ],
     "kunci_id": "店",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(kaki)",
-      "(toko)",
-      "(jadwal)"
+      "(ashi) kaki",
+      "(mise) toko / kedai",
+      "(yotei) rencana / jadwal"
     ]
   },
   {
