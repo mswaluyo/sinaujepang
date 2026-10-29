@@ -1,0 +1,2862 @@
+[
+  {
+    "no": 1,
+    "title": "",
+    "subTitle": "(Perhatikan gambar berikut.)",
+    "img": "assets/1.jpg",
+    "audio": "",
+    "options": [
+      {
+        "text": "かんじます",
+        "img": ""
+      },
+      {
+        "text": "はしります",
+        "img": ""
+      },
+      {
+        "text": "しめます",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "Gambar menunjukkan seseorang sedang menutup jendela / pintu geser.",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Gambar memperlihatkan seseorang sedang menutup jendela/pintu geser. Kata kerja dalam bahasa Jepang untuk 'menutup' adalah しめます (shimemasu - 閉めます). Pilihan A: かんじます (merasa), Pilihan B: はしります (berlari).",
+    "opt_detail": [
+      {
+        "kana": "かんじます",
+        "rom": "-",
+        "arti": "Merasa (kanjimasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "はしります",
+        "rom": "-",
+        "arti": "Berlari (hashirimasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "しめます",
+        "rom": "-",
+        "arti": "Menutup (shimemasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "しめます",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Merasa (kanjimasu))",
+      "(Berlari (hashirimasu))",
+      "(Menutup (shimemasu))"
+    ]
+  },
+  {
+    "no": 2,
+    "title": "",
+    "subTitle": "(Perhatikan gambar berikut.)",
+    "img": "assets/2.jpg",
+    "audio": "",
+    "options": [
+      {
+        "text": "バース",
+        "img": ""
+      },
+      {
+        "text": "じてんしゃ",
+        "img": ""
+      },
+      {
+        "text": "バス",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "Gambar memperlihatkan kendaraan bus umum.",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Gambar memperlihatkan kendaraan bus umum. Penulisan katakana yang benar untuk bus adalah バス (basu) dengan vokal pendek. Pilihan A salah penulisan vokal panjang, dan Pilihan B adalah sepeda.",
+    "opt_detail": [
+      {
+        "kana": "バース",
+        "rom": "-",
+        "arti": "Baasu (salah eja)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "じてんしゃ",
+        "rom": "-",
+        "arti": "Sepeda",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "バス",
+        "rom": "-",
+        "arti": "Bus (basu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "バス",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Baasu (salah eja))",
+      "(Sepeda)",
+      "(Bus (basu))"
+    ]
+  },
+  {
+    "no": 3,
+    "title": "",
+    "subTitle": "(Perhatikan gambar berikut.)",
+    "img": "assets/3.jpg",
+    "audio": "",
+    "options": [
+      {
+        "text": "目",
+        "img": ""
+      },
+      {
+        "text": "車",
+        "img": ""
+      },
+      {
+        "text": "耳",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "Gambar memperlihatkan sepasang mata.",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Gambar menunjukkan sepasang mata. Kanji untuk mata adalah 目 (me). Pilihan A: 車 (mobil), Pilihan C: 耳 (telinga).",
+    "opt_detail": [
+      {
+        "kana": "目",
+        "rom": "-",
+        "arti": "Mata (me)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "車",
+        "rom": "-",
+        "arti": "Mobil (kuruma)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "耳",
+        "rom": "-",
+        "arti": "Telinga (mimi)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "目",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Mata (me))",
+      "(Mobil (kuruma))",
+      "(Telinga (mimi))"
+    ]
+  },
+  {
+    "no": 4,
+    "title": "",
+    "subTitle": "(Perhatikan gambar berikut.)",
+    "img": "assets/4.jpg",
+    "audio": "",
+    "options": [
+      {
+        "text": "しかります",
+        "img": ""
+      },
+      {
+        "text": "勉強します",
+        "img": ""
+      },
+      {
+        "text": "およぎます",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "Gambar memperlihatkan seseorang yang sedang memarahi temannya.",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Gambar memperlihatkan seseorang sedang memarahi atau menegur temannya. Kata kerja yang tepat adalah しかります (shikarimasu - memarahi). Pilihan A: 勉強します (belajar), Pilihan C: およぎます (berenang).",
+    "opt_detail": [
+      {
+        "kana": "しかります",
+        "rom": "-",
+        "arti": "Memarahi (shikarimasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "勉強します",
+        "rom": "-",
+        "arti": "Belajar",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "およぎます",
+        "rom": "-",
+        "arti": "Berenang",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "しかります",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Memarahi (shikarimasu))",
+      "(Belajar)",
+      "(Berenang)"
+    ]
+  },
+  {
+    "no": 5,
+    "title": "よる おふろ に____",
+    "subTitle": "(Pada malam hari [masuk] ke bak mandi.)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "並べます",
+        "img": ""
+      },
+      {
+        "text": "習います",
+        "img": ""
+      },
+      {
+        "text": "入ります",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "(Pada malam hari [masuk] ke bak mandi.)",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Ungkapan baku dalam bahasa Jepang untuk masuk/berendam di bak mandi air hangat adalah お風呂に入ります (ofuro ni hairimasu). Kalimat: 'Di malam hari masuk berendam di bak mandi'.",
+    "opt_detail": [
+      {
+        "kana": "並べます",
+        "rom": "-",
+        "arti": "Menjajarkan (narabemasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "習います",
+        "rom": "-",
+        "arti": "Belajar/kursus (naraimasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "入ります",
+        "rom": "-",
+        "arti": "Masuk (hairimasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "入ります",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Menjajarkan (narabemasu))",
+      "(Belajar/kursus (naraimasu))",
+      "(Masuk (hairimasu))"
+    ]
+  },
+  {
+    "no": 6,
+    "title": "つよい かぜ が____",
+    "subTitle": "(Angin kencang [bertiup].)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "勉強します",
+        "img": ""
+      },
+      {
+        "text": "吹きます",
+        "img": ""
+      },
+      {
+        "text": "習います",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "(Angin kencang [bertiup].)",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Kata kerja alami yang berpasangan dengan angin (風が) adalah 吹きます (fukimasu - bertiup). Kalimat: 'Angin kencang bertiup'.",
+    "opt_detail": [
+      {
+        "kana": "勉強します",
+        "rom": "-",
+        "arti": "Belajar",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "吹きます",
+        "rom": "-",
+        "arti": "Bertiup (fukimasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "習います",
+        "rom": "-",
+        "arti": "Belajar",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "吹きます",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Belajar)",
+      "(Bertiup (fukimasu))",
+      "(Belajar)"
+    ]
+  },
+  {
+    "no": 7,
+    "title": "たくさん ひと が くる ので、コップ が もって_____",
+    "subTitle": "(Karena banyak orang yang datang, cangkir lebih banyak [dibutuhkan].)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "てつだています",
+        "img": ""
+      },
+      {
+        "text": "ひつようです",
+        "img": ""
+      },
+      {
+        "text": "ごめんなさいです",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "(Karena banyak orang yang datang, cangkir lebih banyak [dibutuhkan].)",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Karena banyak orang yang datang (たくさん人が来るので), maka gelas/cangkir lebih banyak dibutuhkan/diperlukan. Kata yang tepat adalah 必要です (hitsuyou desu).",
+    "opt_detail": [
+      {
+        "kana": "てつだています",
+        "rom": "-",
+        "arti": "Sedang membantu (salah bentuk)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ひつようです",
+        "rom": "-",
+        "arti": "Dibutuhkan / diperlukan (hitsuyou desu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "ごめんなさいです",
+        "rom": "-",
+        "arti": "Mohon maaf",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "ひつようです",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Sedang membantu (salah bentuk))",
+      "(Dibutuhkan / diperlukan (hitsuyou desu))",
+      "(Mohon maaf)"
+    ]
+  },
+  {
+    "no": 8,
+    "title": "この スーパ の やさい は_____です",
+    "subTitle": "(Sayuran di supermarket ini [murah].)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "安い",
+        "img": ""
+      },
+      {
+        "text": "楽しい",
+        "img": ""
+      },
+      {
+        "text": "難しい",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "(Sayuran di supermarket ini [murah].)",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Sifat sayur di supermarket yang paling lazim adalah harganya murah, yaitu 安い (yasui). Pilihan B: 楽しい (menyenangkan), Pilihan C: 難しい (sulit).",
+    "opt_detail": [
+      {
+        "kana": "安い",
+        "rom": "-",
+        "arti": "Murah (yasui)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "楽しい",
+        "rom": "-",
+        "arti": "Menyenangkan (tanoshii)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "難しい",
+        "rom": "-",
+        "arti": "Sulit (muzukashii)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "安い",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Murah (yasui))",
+      "(Menyenangkan (tanoshii))",
+      "(Sulit (muzukashii))"
+    ]
+  },
+  {
+    "no": 9,
+    "title": "わたし は りょうり を____ことができます",
+    "subTitle": "(Saya bisa [membuat] masakan.)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "作る",
+        "img": ""
+      },
+      {
+        "text": "焼きる",
+        "img": ""
+      },
+      {
+        "text": "尽きる",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "(Saya bisa [membuat] masakan.)",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Pola kemampuan kata kerja bentuk kamus + ことができます. Membuat masakan adalah 料理を作る (ryouri wo tsukuru). Jadi bentuknya adalah 作ることができます.",
+    "opt_detail": [
+      {
+        "kana": "作る",
+        "rom": "-",
+        "arti": "Membuat (tsukuru)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "焼きる",
+        "rom": "-",
+        "arti": "Bentuk salah",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "尽きる",
+        "rom": "-",
+        "arti": "Habis (tsukiru)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "作る",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Membuat (tsukuru))",
+      "(Bentuk salah)",
+      "(Habis (tsukiru))"
+    ]
+  },
+  {
+    "no": 10,
+    "title": "この___の れきし は 有名です",
+    "subTitle": "(Sejarah [penginapan tradisional] ini terkenal.)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "りょうかん",
+        "img": ""
+      },
+      {
+        "text": "なかなか",
+        "img": ""
+      },
+      {
+        "text": "ちがい",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "(Sejarah [penginapan tradisional] ini terkenal.)",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Kata benda yang cocok dengan sejarah (歴史) terkenal adalah penginapan tradisional Jepang yaitu 旅館 / りょうかん (ryoukan). Kalimat: 'Sejarah penginapan ini terkenal'.",
+    "opt_detail": [
+      {
+        "kana": "りょうかん",
+        "rom": "-",
+        "arti": "Penginapan tradisional (ryoukan)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "なかなか",
+        "rom": "-",
+        "arti": "Cukup lumayan (nakanaka)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ちがい",
+        "rom": "-",
+        "arti": "Perbedaan (chigai)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "りょうかん",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Penginapan tradisional (ryoukan))",
+      "(Cukup lumayan (nakanaka))",
+      "(Perbedaan (chigai))"
+    ]
+  },
+  {
+    "no": 11,
+    "title": "ぎんこう は____ ふべんです",
+    "subTitle": "(Bank itu [jauh] sehingga tidak praktis.)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "遠くて",
+        "img": ""
+      },
+      {
+        "text": "高くて",
+        "img": ""
+      },
+      {
+        "text": "面白くて",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "(Bank itu [jauh] sehingga tidak praktis.)",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Alasan suatu tempat tidak praktis (不便 - fuben) adalah karena lokasinya yang jauh, yaitu 遠い (tooi) dalam bentuk sambung ~te menjadi 遠くて (tookute). 'Karena banknya jauh, jadi tidak praktis'.",
+    "opt_detail": [
+      {
+        "kana": "遠くて",
+        "rom": "-",
+        "arti": "Jauh sehingga... (tookute)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "高くて",
+        "rom": "-",
+        "arti": "Mahal / tinggi (takakute)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "面白くて",
+        "rom": "-",
+        "arti": "Menarik (omoshirokute)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "遠くて",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Jauh sehingga... (tookute))",
+      "(Mahal / tinggi (takakute))",
+      "(Menarik (omoshirokute))"
+    ]
+  },
+  {
+    "no": 12,
+    "title": "これ は いくらですか",
+    "subTitle": "(Berapakah harga ini?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "85円です",
+        "img": ""
+      },
+      {
+        "text": "80千です",
+        "img": ""
+      },
+      {
+        "text": "80門です",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "(Berapakah harga ini?)",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Menjawab pertanyaan harga (いくらですか) menggunakan satuan mata uang Jepang 円 (en). Jawaban yang masuk akal dan benar tata bahasanya adalah 85円です (hachijuugo-en desu).",
+    "opt_detail": [
+      {
+        "kana": "85円です",
+        "rom": "-",
+        "arti": "85 Yen (85円です)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "80千です",
+        "rom": "-",
+        "arti": "80 ribu (tidak lazim)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "80門です",
+        "rom": "-",
+        "arti": "Satuan salah",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "85円です",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(85 Yen (85円です))",
+      "(80 ribu (tidak lazim))",
+      "(Satuan salah)"
+    ]
+  },
+  {
+    "no": 13,
+    "title": "きょうは___来るから はやくかえってください.",
+    "subTitle": "(Karena hari ini [angin topan/taifun] akan datang, silakan lekas pulang.)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "家",
+        "img": ""
+      },
+      {
+        "text": "台風",
+        "img": ""
+      },
+      {
+        "text": "海",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 1 : MOJIGOI",
+    "trans": "(Karena hari ini [angin topan/taifun] akan datang, silakan lekas pulang.)",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Alasan diminta lekas pulang adalah karena ada badai topan/taifun yang datang (台風が来るから). Kosakata yang tepat adalah 台風 (taifuu).",
+    "opt_detail": [
+      {
+        "kana": "家",
+        "rom": "-",
+        "arti": "Rumah (ie)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "台風",
+        "rom": "-",
+        "arti": "Angin topan / taifun (taifuu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "海",
+        "rom": "-",
+        "arti": "Laut (umi)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "台風",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Rumah (ie))",
+      "(Angin topan / taifun (taifuu))",
+      "(Laut (umi))"
+    ]
+  },
+  {
+    "no": 14,
+    "title": "",
+    "subTitle": "(Perhatikan gambar berikut.)",
+    "img": "assets/h1.jpg",
+    "audio": "",
+    "options": [
+      {
+        "text": "午後",
+        "img": ""
+      },
+      {
+        "text": "英語",
+        "img": ""
+      },
+      {
+        "text": "映画",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "Gambar memperlihatkan suasana gedung bioskop dan film.",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Gambar menunjukkan ruangan bioskop atau film yang sedang diputar. Bahasa Jepang untuk film/bioskop adalah 映画 (eiga). Pilihan A: 午後 (sore/p.m.), Pilihan B: 英語 (bahasa Inggris).",
+    "opt_detail": [
+      {
+        "kana": "午後",
+        "rom": "-",
+        "arti": "Sore / p.m. (gogo)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "英語",
+        "rom": "-",
+        "arti": "Bahasa Inggris (eigo)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "映画",
+        "rom": "-",
+        "arti": "Film / bioskop (eiga)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "映画",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Sore / p.m. (gogo))",
+      "(Bahasa Inggris (eigo))",
+      "(Film / bioskop (eiga))"
+    ]
+  },
+  {
+    "no": 15,
+    "title": "",
+    "subTitle": "(Perhatikan gambar berikut.)",
+    "img": "assets/h2.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "わらいます",
+        "img": ""
+      },
+      {
+        "text": "ならいます",
+        "img": ""
+      },
+      {
+        "text": "たすけます",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "Gambar memperlihatkan seseorang yang sedang menolong anak tenggelam di air.",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Gambar memperlihatkan anak yang tenggelam di air sedang berseru meminta pertolongan (助けて). Kata kerja yang berkaitan adalah たすけます (tasukemasu - menolong/membantu). Pilihan A: わらいます (tertawa), Pilihan C: ならいます (belajar).",
+    "opt_detail": [
+      {
+        "kana": "わらいます",
+        "rom": "-",
+        "arti": "Tertawa (waraimasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ならいます",
+        "rom": "-",
+        "arti": "Belajar (naraimasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "たすけます",
+        "rom": "-",
+        "arti": "Menolong / menyelamatkan (tasukemasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "たすけます",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Tertawa (waraimasu))",
+      "(Belajar (naraimasu))",
+      "(Menolong / menyelamatkan (tasukemasu))"
+    ]
+  },
+  {
+    "no": 16,
+    "title": "",
+    "subTitle": "(Perhatikan gambar berikut.)",
+    "img": "assets/h3.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "しずか",
+        "img": ""
+      },
+      {
+        "text": "にぎやか",
+        "img": ""
+      },
+      {
+        "text": "駅",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "Gambar memperlihatkan suasana perkotaan yang ramai meriah.",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Gambar suasana kawasan pertokoan dan jalanan perkotaan yang penuh orang dan ramai. Kata sifat-na yang tepat adalah にぎやか (nigiyaka - ramai/meriah). Pilihan B: しずか (tenang/sepi).",
+    "opt_detail": [
+      {
+        "kana": "しずか",
+        "rom": "-",
+        "arti": "Tenang / sepi (shizuka)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "にぎやか",
+        "rom": "-",
+        "arti": "Ramai / meriah (nigiyaka)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "駅",
+        "rom": "-",
+        "arti": "Stasiun (eki)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "にぎやか",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Tenang / sepi (shizuka))",
+      "(Ramai / meriah (nigiyaka))",
+      "(Stasiun (eki))"
+    ]
+  },
+  {
+    "no": 17,
+    "title": "わたし の いえ の ちかく に きれいなこうえん が___",
+    "subTitle": "(Di dekat rumah saya [ada] taman yang indah.)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "あります",
+        "img": ""
+      },
+      {
+        "text": "できます",
+        "img": ""
+      },
+      {
+        "text": "いきます",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(Di dekat rumah saya [ada] taman yang indah.)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Menyatakan keberadaan benda mati atau fasilitas umum (taman/こうえん) di suatu tempat menggunakan kata kerja あります (arimasu). 'Di dekat rumah saya ada taman yang indah'.",
+    "opt_detail": [
+      {
+        "kana": "あります",
+        "rom": "-",
+        "arti": "Ada (arimasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "できます",
+        "rom": "-",
+        "arti": "Bisa / selesai dibangun",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "いきます",
+        "rom": "-",
+        "arti": "Pergi (ikimasu)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "あります",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Ada (arimasu))",
+      "(Bisa / selesai dibangun)",
+      "(Pergi (ikimasu))"
+    ]
+  },
+  {
+    "no": 18,
+    "title": "このレストラン の りょうり は____わたし は 食べたこと が あります",
+    "subTitle": "(Masakan restoran ini [enak], saya pernah memakannya.)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "おいしかったです",
+        "img": ""
+      },
+      {
+        "text": "おいしくないです",
+        "img": ""
+      },
+      {
+        "text": "にがかったです",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(Masakan restoran ini [enak], saya pernah memakannya.)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Menyatakan kesan pengalaman positif makan di restoran: 'Masakan restoran ini enak lho, saya pernah memakannya'. Kata sifat bentuk lampau yang sesuai adalah おいしかったです (oishikatta desu - enak/lezat).",
+    "opt_detail": [
+      {
+        "kana": "おいしかったです",
+        "rom": "-",
+        "arti": "Enak / lezat (oishikatta desu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "おいしくないです",
+        "rom": "-",
+        "arti": "Tidak enak",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "にがかったです",
+        "rom": "-",
+        "arti": "Pahit rasanya (nigakatta desu)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "おいしかったです",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Enak / lezat (oishikatta desu))",
+      "(Tidak enak)",
+      "(Pahit rasanya (nigakatta desu))"
+    ]
+  },
+  {
+    "no": 19,
+    "title": "A : あのゆびんきょうくへ____\r\n\r\nB : はいいきましょう。",
+    "subTitle": "(A : Saya [ingin pergi] ke kantor pos itu...\r\nB : Baik, ayo kita pergi bersama.)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "ねるんですが",
+        "img": ""
+      },
+      {
+        "text": "来たいんですが",
+        "img": ""
+      },
+      {
+        "text": "行きたいんですが",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(A : Saya [ingin pergi] ke kantor pos itu...\r\nB : Baik, ayo kita pergi bersama.)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Ungkapan pembuka ajakan atau permohonan petunjuk arah yang halus: ~e ikitai n desu ga (saya ingin pergi ke kantor pos itu...). Lawan bicara merespons dengan ajakan: 'はいいきましょう' (mari kita pergi).",
+    "opt_detail": [
+      {
+        "kana": "ねるんですが",
+        "rom": "-",
+        "arti": "Ingin tidur...",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "来たいんですが",
+        "rom": "-",
+        "arti": "Ingin datang...",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "行きたいんですが",
+        "rom": "-",
+        "arti": "Ingin pergi... (ikitai n desu ga)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "行きたいんですが",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Ingin tidur...)",
+      "(Ingin datang...)",
+      "(Ingin pergi... (ikitai n desu ga))"
+    ]
+  },
+  {
+    "no": 20,
+    "title": "A : 大丈夫ですか____\r\n\r\nB: はいお願いします。",
+    "subTitle": "(A : Apakah Anda tidak apa-apa? [Maukah saya bawakan?]\r\nB : Ya, tolong ya.)",
+    "img": "assets/h7.jpg",
+    "audio": "",
+    "options": [
+      {
+        "text": "もちましょうか",
+        "img": ""
+      },
+      {
+        "text": "てつだいましょうか",
+        "img": ""
+      },
+      {
+        "text": "元気ですか",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(A : Apakah Anda tidak apa-apa? [Maukah saya bawakan?]\r\nB : Ya, tolong ya.)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Gambar menunjukkan seseorang yang keberatan membawa tas/koper barang bawaan. Penutur A menawarkan bantuan membawakan barang dengan pola ~mashou ka: もちましょうか (Mochimashou ka - 'Maukah saya bawakan?'). Lawan bicara menerima: はいお願いします.",
+    "opt_detail": [
+      {
+        "kana": "もちましょうか",
+        "rom": "-",
+        "arti": "Maukah saya bawakan? (mochimashou ka)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "てつだいましょうか",
+        "rom": "-",
+        "arti": "Maukah saya bantu?",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "元気ですか",
+        "rom": "-",
+        "arti": "Apakah Anda sehat?",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "もちましょうか",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Maukah saya bawakan? (mochimashou ka))",
+      "(Maukah saya bantu?)",
+      "(Apakah Anda sehat?)"
+    ]
+  },
+  {
+    "no": 21,
+    "title": "せかい に よって___そうです",
+    "subTitle": "(Kabarnya [dibangun] oleh...)",
+    "img": "assets/h8.jpg",
+    "audio": "",
+    "options": [
+      {
+        "text": "もられた",
+        "img": ""
+      },
+      {
+        "text": "きられた",
+        "img": ""
+      },
+      {
+        "text": "たてられた",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(Kabarnya [dibangun] oleh...)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Gambar bangunan bersejarah. Bentuk pasif (ukemi) dari 建てる (tateru - membangun) adalah 建てられた (taterareta - dibangun). 'Kabarnya dibangun oleh...'.",
+    "opt_detail": [
+      {
+        "kana": "もられた",
+        "rom": "-",
+        "arti": "Bentuk tidak sesuai",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "きられた",
+        "rom": "-",
+        "arti": "Dipotong",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "たてられた",
+        "rom": "-",
+        "arti": "Dibangun (taterareta)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "たてられた",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Bentuk tidak sesuai)",
+      "(Dipotong)",
+      "(Dibangun (taterareta))"
+    ]
+  },
+  {
+    "no": 22,
+    "title": "5000 かんじを_____",
+    "subTitle": "(Sekarang sudah [menjadi bisa menulis] 5000 kanji.)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "わけるようななりました",
+        "img": ""
+      },
+      {
+        "text": "でかけるようになりました",
+        "img": ""
+      },
+      {
+        "text": "かけるようになりました",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(Sekarang sudah [menjadi bisa menulis] 5000 kanji.)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Menyatakan perubahan kemampuan (menjadi bisa melakukan sesuatu): kata kerja bentuk potensial 書ける (kakeru - bisa menulis) + ようになりました. Kalimat: 'Sekarang sudah menjadi bisa menulis 5000 kanji'.",
+    "opt_detail": [
+      {
+        "kana": "わけるようななりました",
+        "rom": "-",
+        "arti": "Bentuk salah",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "でかけるようになりました",
+        "rom": "-",
+        "arti": "Menjadi bisa bepergian",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "かけるようになりました",
+        "rom": "-",
+        "arti": "Menjadi bisa menulis (kakeru you ni narimashita)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "かけるようになりました",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Bentuk salah)",
+      "(Menjadi bisa bepergian)",
+      "(Menjadi bisa menulis (kakeru you ni narimashita))"
+    ]
+  },
+  {
+    "no": 23,
+    "title": "A : サラダはもうすこしいかがですか。\r\n\r\nB : ______",
+    "subTitle": "(A : Apakah mau tambah salad lagi?\r\nB : [Terima kasih, tapi perut saya sudah kenyang].)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "でももうおなかがいっぱいです",
+        "img": ""
+      },
+      {
+        "text": "でももうおなかがぺこぺこです",
+        "img": ""
+      },
+      {
+        "text": "えと。。ちょっと",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(A : Apakah mau tambah salad lagi?\r\nB : [Terima kasih, tapi perut saya sudah kenyang].)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Ketika ditawari tambah salad (いかがですか), respons menolak secara halus karena sudah kenyang adalah でももうおなかがいっぱいです (demo mou onaka ga ippai desu - 'Terima kasih, tapi perut saya sudah kenyang').",
+    "opt_detail": [
+      {
+        "kana": "でももうおなかがいっぱいです",
+        "rom": "-",
+        "arti": "Tapi perut saya sudah kenyang",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "でももうおなかがぺこぺこです",
+        "rom": "-",
+        "arti": "Tapi perut saya keroncongan/sangat lapar",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "えと。。ちょっと",
+        "rom": "-",
+        "arti": "Emm... agak...",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "でももうおなかがいっぱいです",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Tapi perut saya sudah kenyang)",
+      "(Tapi perut saya keroncongan/sangat lapar)",
+      "(Emm... agak...)"
+    ]
+  },
+  {
+    "no": 24,
+    "title": "A : ミサトさんはげんきがじゃありませんね。\r\n\r\nB : かおのいろのあかくなりました。\r\n\r\nA : ______",
+    "subTitle": "(A : Misato-san kelihatannya tidak enak badan ya.\r\nB : Warna wajahnya memerah.\r\nA : [Saya agak khawatir ya].)",
+    "img": "assets/h11.jpg",
+    "audio": "",
+    "options": [
+      {
+        "text": "元気です",
+        "img": ""
+      },
+      {
+        "text": "ちょっとしんぱいです",
+        "img": ""
+      },
+      {
+        "text": "ちょっといいでしょう",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(A : Misato-san kelihatannya tidak enak badan ya.\r\nB : Warna wajahnya memerah.\r\nA : [Saya agak khawatir ya].)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Melihat teman yang tidak sehat dan wajahnya memerah karena demam, ungkapan simpati dan kekhawatiran yang tepat adalah ちょっと心配です (chotto shinpai desu - 'Saya agak khawatir').",
+    "opt_detail": [
+      {
+        "kana": "元気です",
+        "rom": "-",
+        "arti": "Sehat",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ちょっとしんぱいです",
+        "rom": "-",
+        "arti": "Saya agak khawatir (chotto shinpai desu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "ちょっといいでしょう",
+        "rom": "-",
+        "arti": "Mungkin agak bagus ya",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "ちょっとしんぱいです",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Sehat)",
+      "(Saya agak khawatir (chotto shinpai desu))",
+      "(Mungkin agak bagus ya)"
+    ]
+  },
+  {
+    "no": 25,
+    "title": "A : ____ください。\r\n\r\nB : はい、どうも ありがとうございます。",
+    "subTitle": "(A : Silakan ambil [pisang] ini.\r\nB : Ya, terima kasih banyak.)",
+    "img": "assets/h12.jpg",
+    "audio": "",
+    "options": [
+      {
+        "text": "バナナ",
+        "img": ""
+      },
+      {
+        "text": "りんご",
+        "img": ""
+      },
+      {
+        "text": "みかん",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(A : Silakan ambil [pisang] ini.\r\nB : Ya, terima kasih banyak.)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Gambar memperlihatkan buah pisang yang sedang ditawarkan/diberikan. Bahasa Jepang untuk buah pisang adalah バナナ (banana). Pilihan A: jeruk (mikan), Pilihan C: apel (ringo).",
+    "opt_detail": [
+      {
+        "kana": "バナナ",
+        "rom": "-",
+        "arti": "Pisang (banana)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "りんご",
+        "rom": "-",
+        "arti": "Apel (ringo)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "みかん",
+        "rom": "-",
+        "arti": "Jeruk (mikan)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "バナナ",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Pisang (banana))",
+      "(Apel (ringo))",
+      "(Jeruk (mikan))"
+    ]
+  },
+  {
+    "no": 26,
+    "title": "A : あの、すみません このことばは____ですが\r\n\r\nB : はい、おしえましょうか",
+    "subTitle": "(A : Maaf, kata ini saya [tidak mengerti], tapi...\r\nB : Baik, mau saya beri tahu artinya?)",
+    "img": "assets/h13.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "あらない",
+        "img": ""
+      },
+      {
+        "text": "かかない",
+        "img": ""
+      },
+      {
+        "text": "わからない",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(A : Maaf, kata ini saya [tidak mengerti], tapi...\r\nB : Baik, mau saya beri tahu artinya?)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Ketika meminta tolong dijelaskan arti suatu kata kepada orang lain: 'permisi, kata ini saya tidak mengerti/paham...' (わからないですが). Lawan bicara menawarkan: 'はい、おしえましょうか' (mau saya ajari?).",
+    "opt_detail": [
+      {
+        "kana": "あらない",
+        "rom": "-",
+        "arti": "Bentuk tidak ada",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "かかない",
+        "rom": "-",
+        "arti": "Tidak menulis (kakanai)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "わからない",
+        "rom": "-",
+        "arti": "Tidak mengerti (wakaranai)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "わからない",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Bentuk tidak ada)",
+      "(Tidak menulis (kakanai))",
+      "(Tidak mengerti (wakaranai))"
+    ]
+  },
+  {
+    "no": 27,
+    "title": "A : ____\r\n\r\nB : いいえ、",
+    "subTitle": "(A : [Maafkan saya]\r\nB : Tidak apa-apa...)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "すみません",
+        "img": ""
+      },
+      {
+        "text": "ごめなさい",
+        "img": ""
+      },
+      {
+        "text": "だいじょうぶ",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(A : [Maafkan saya]\r\nB : Tidak apa-apa...)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Respons atas ucapan permintaan maaf 'ごめんなさい' (maaf ya) dari lawan bicara yang santai dan akrab adalah 'いいえ' (tidak apa-apa / bukan masalah).",
+    "opt_detail": [
+      {
+        "kana": "すみません",
+        "rom": "-",
+        "arti": "Permisi",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ごめなさい",
+        "rom": "-",
+        "arti": "Maafkan saya (gomen nasai)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "だいじょうぶ",
+        "rom": "-",
+        "arti": "Tidak apa-apa",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "ごめなさい",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Permisi)",
+      "(Maafkan saya (gomen nasai))",
+      "(Tidak apa-apa)"
+    ]
+  },
+  {
+    "no": 28,
+    "title": "A : このそうじきはいですよ。あの 機能 (fungsi) がたくさんあります。\r\n\r\nB : ______",
+    "subTitle": "(A : Mesin penyedot debu ini bagus lho, fiturnya ada banyak sekali.\r\nB : [Bisa jadi begitu ya].)",
+    "img": "assets/h15.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "そうすぐになりますね",
+        "img": ""
+      },
+      {
+        "text": "そう買いましょうね",
+        "img": ""
+      },
+      {
+        "text": "そうかもしれませんね",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 2 : HYOUGEN",
+    "trans": "(A : Mesin penyedot debu ini bagus lho, fiturnya ada banyak sekali.\r\nB : [Bisa jadi begitu ya].)",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Merespons pendapat atau rekomendasi orang lain mengenai keunggulan mesin penyedot debu (掃除機): ungkapan persetujuan yang sopan dan tidak langsung adalah そうかもしれませんね (sou kamo shiremasen ne - 'Bisa jadi begitu ya / mungkin benar').",
+    "opt_detail": [
+      {
+        "kana": "そうすぐになりますね",
+        "rom": "-",
+        "arti": "Bentuk salah",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "そう買いましょうね",
+        "rom": "-",
+        "arti": "Mari beli begitu ya",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "そうかもしれませんね",
+        "rom": "-",
+        "arti": "Bisa jadi begitu ya (sou kamo shiremasen ne)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "そうかもしれませんね",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Bentuk salah)",
+      "(Mari beli begitu ya)",
+      "(Bisa jadi begitu ya (sou kamo shiremasen ne))"
+    ]
+  },
+  {
+    "no": 29,
+    "title": "A: 何時に 会う？ 12時30分は どうかな。\nB: どこで 待ち合わせする？\nA: 入り口の 前で 待っているね。\nB: わかった。じゃあ、12時30分に 入り口の 前で 会おう。\n\n【質問】映画を 見るために、何時に どこで 会いますか。",
+    "subTitle": "(Mau menonton film, janjian jam berapa dan di mana?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "12;30 入口",
+        "img": ""
+      },
+      {
+        "text": "12;30 出口",
+        "img": ""
+      },
+      {
+        "text": "12;45 出口",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "A: Mau ketemuan jam berapa? Bagaimana kalau jam 12:30?\nB: Ketemuannya di sebelah mana?\nA: Saya tunggu di depan pintu masuk ya.\nB: Oke, paham. Kalau begitu mari kita bertemu jam 12:30 di depan pintu masuk.\n\n[Pertanyaan] Mau menonton film, janjian jam berapa dan di mana?",
+    "trans_rom": "A: Nanji ni au? Juuni-ji sanjuppun wa dou kana.\nB: Doko de machiawase suru?\nA: Iriguchi no mae de matte iru ne.\nB: Wakatta. Jaa, juuni-ji sanjuppun ni iriguchi no mae de aou.\n\n[Shitsumon] Eiga o miru tame ni, nanji ni doko de aimasu ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Dalam audio terdengar jelas: '何時に会う？12時30分はどうかな... どこで待ち合わせする？入り口の前で待っているね。わかった、じゃあ12時30分に入り口の前で会おう' (Janjian jam berapa? Bagaimana kalau jam 12:30? Bertemu di mana? Di depan pintu masuk). Jadi jam 12:30 di pintu masuk (12:30 入口).",
+    "opt_detail": [
+      {
+        "kana": "12;30 入口",
+        "rom": "-",
+        "arti": "Jam 12:30 di pintu masuk (入口)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "12;30 出口",
+        "rom": "-",
+        "arti": "Jam 12:30 di pintu keluar (出口)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "12;45 出口",
+        "rom": "-",
+        "arti": "Jam 12:45 di pintu keluar (出口)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "12;30 入口",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Jam 12:30 di pintu masuk (入口))",
+      "(Jam 12:30 di pintu keluar (出口))",
+      "(Jam 12:45 di pintu keluar (出口))"
+    ]
+  },
+  {
+    "no": 30,
+    "title": "客: すみません、この 黒いシャツは ありますか。\n店員: あいにく Lサイズは 売り切れてしまいました。ですが、こちらの Mサイズでしたら 黒色が ございますよ。\n客: そうですか。じゃあ、Mサイズを 見せてください。\n\n【質問】店には どんな服が ありますか。",
+    "subTitle": "(Baju apa yang tersedia di toko?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "XL size, warna biru",
+        "img": ""
+      },
+      {
+        "text": "M size, warna hitam",
+        "img": ""
+      },
+      {
+        "text": "XL size, warna hitam",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "Pelanggan: Permisi, apakah ada kemeja warna hitam yang ini?\nPelayan: Sayang sekali ukuran L sudah habis terjual. Tapi kalau untuk ukuran M yang ini, warna hitam masih ada lho.\nPelanggan: Begitu ya. Kalau begitu tolong perlihatkan yang ukuran M.\n\n[Pertanyaan] Baju apa yang masih tersedia di toko?",
+    "trans_rom": "Kyaku: Sumimasen, kono kuroi shatsu wa arimasu ka.\nTen'in: Ainiku Eru-saizu wa urikirete shimaimashita. Desu ga, kochira no Emu-saizu deshita ra kuro-iro ga gozaimasu yo.\nKyaku: Sou desu ka. Jaa, Emu-saizu o misete kudasai.\n\n[Shitsumon] Mise ni wa donna fuku ga arimasu ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Staf toko mengatakan: 'あいにくLサイズは売り切れてしまいました。ですがこちらのMサイズでしたら黒色がございますよ' (Sayang sekali ukuran L sudah habis terjual. Tetapi kalau ukuran M ini, warna hitam ada stoknya). Jadi yang tersedia adalah baju warna hitam ukuran M.",
+    "opt_detail": [
+      {
+        "kana": "XL size, warna biru",
+        "rom": "-",
+        "arti": "Ukuran XL, warna biru",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "M size, warna hitam",
+        "rom": "-",
+        "arti": "Ukuran M, warna hitam",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "XL size, warna hitam",
+        "rom": "-",
+        "arti": "Ukuran XL, warna hitam",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "M size, warna hitam",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Ukuran XL, warna biru)",
+      "(Ukuran M, warna hitam)",
+      "(Ukuran XL, warna hitam)"
+    ]
+  },
+  {
+    "no": 31,
+    "title": "A: スキー旅行の 準備は できた？\nB: うん、スキーの 道具や 服は ぜんぶ そろったよ。\nA: 忘れ物はない？\nB: 大丈夫、準備万端だよ。\n\n【質問】旅行の 前に 何の 準備を しましたか。",
+    "subTitle": "(Dengarkan baik-baik untuk nomor 30 &amp; 31: Topik persiapan apa yang dibicarakan?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "PERALATAN FOTO",
+        "img": ""
+      },
+      {
+        "text": "PERALATAN SKI",
+        "img": ""
+      },
+      {
+        "text": "PERALATAN MASAK",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "A: Apakah persiapan untuk liburan ski sudah selesai?\nB: Ya, peralatan ski dan pakaian hangat semuanya sudah lengkap kok.\nA: Tidak ada barang yang tertinggal kan?\nB: Aman, semuanya sudah siap beres.\n\n[Pertanyaan] Persiapan peralatan apa yang dibicarakan sebelum berangkat?",
+    "trans_rom": "A: Sukii-ryokou no junbi wa dekita?\nB: Un, sukii no dougu ya fuku wa zenbu sorotta yo.\nA: Wasuremono wa nai?\nB: Daijoubu, junbi bantan da yo.\n\n[Shitsumon] Ryokou no mae ni nan no junbi o shimashita ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Topik percakapan adalah persiapan liburan ski (スキー旅行の準備). Pembicara menyebutkan peralatan ski semuanya disewa di lokasi (スキー用具は現地で全部レンタルする).",
+    "opt_detail": [
+      {
+        "kana": "PERALATAN FOTO",
+        "rom": "-",
+        "arti": "Peralatan foto",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "PERALATAN SKI",
+        "rom": "-",
+        "arti": "Peralatan bermain ski",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "PERALATAN MASAK",
+        "rom": "-",
+        "arti": "Peralatan memasak",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "PERALATAN SKI",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Peralatan foto)",
+      "(Peralatan bermain ski)",
+      "(Peralatan memasak)"
+    ]
+  },
+  {
+    "no": 32,
+    "title": "A: スキー場は 日差しが 強いから、忘れずに サングラスを 買っておかないとね。\nB: そうだね。出発する 前に 買いに 行こう。\n\n【質問】出発する 前に まず 何を 買いますか。",
+    "subTitle": "(Apa yang akan dibeli terlebih dahulu sebelum berangkat?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "Cemilan",
+        "img": ""
+      },
+      {
+        "text": "Kacamata",
+        "img": ""
+      },
+      {
+        "text": "Baju",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "A: Karena sinar matahari di tempat ski sangat terik, kita tidak boleh lupa harus membeli kacamata hitam dulu ya.\nB: Benar juga. Ayo kita beli dulu sebelum berangkat.\n\n[Pertanyaan] Apa yang akan dibeli terlebih dahulu sebelum berangkat?",
+    "trans_rom": "A: Sukii-jou wa hizashi ga tsuyoi kara, wasurezu ni sangurasu o katte okanai to ne.\nB: Sou da ne. Shuppatsu suru mae ni kai ni ikou.\n\n[Shitsumon] Shuppatsu suru mae ni mazu nani o kaimasu ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Pembicara mengatakan: '日差しが強いから忘れずにサングラスを買っておかないと' (Karena sinar matahari di sana sangat terik, saya harus ingat membeli kacamata hitam / sunglasses). Jadi barang yang dibeli adalah kacamata hitam (サングラス).",
+    "opt_detail": [
+      {
+        "kana": "Cemilan",
+        "rom": "-",
+        "arti": "Camilan makanan",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Kacamata",
+        "rom": "-",
+        "arti": "Kacamata hitam (sunglasses)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "Baju",
+        "rom": "-",
+        "arti": "Baju hangat",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "Kacamata",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Camilan makanan)",
+      "(Kacamata hitam (sunglasses))",
+      "(Baju hangat)"
+    ]
+  },
+  {
+    "no": 33,
+    "title": "医師: お薬を 出しますね。これは 1日に 2回 飲んでください。朝と 晩に 飲めば いいですよ。\n患者: わかりました。1日 2回ですね。\n\n【質問】薬は 1日に 何回 飲みますか。",
+    "subTitle": "(Dengarkan baik-baik untuk soal nomor 32 &amp; 33: Obat diminum berapa kali sehari?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "2回",
+        "img": ""
+      },
+      {
+        "text": "1回",
+        "img": ""
+      },
+      {
+        "text": "3回",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "Dokter: Saya resepkan obat ya. Obat ini tolong diminum 2 kali sehari. Diminum pagi dan malam hari saja sudah cukup.\nPasien: Baik dokter, 2 kali sehari ya.\n\n[Pertanyaan] Obat harus diminum berapa kali dalam sehari?",
+    "trans_rom": "Ishi: Okusuri o dashimasu ne. Kore wa ichi-nichi ni ni-kai nonde kudasai. Asa to ban ni nomeba ii desu yo.\nKanja: Wakarimashita. Ichi-nichi ni-kai desu ne.\n\n[Shitsumon] Kusuri wa ichi-nichi ni nankai nomimasu ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Dokter memberi tahu petunjuk: 'お薬を出しますね。これは1日に2回飲んでください。朝と晩に飲めばいいです' (Saya berikan obat ya, ini tolong diminum 2 kali sehari, pagi dan malam). Jadi diminum 2 kali sehari (2回).",
+    "opt_detail": [
+      {
+        "kana": "2回",
+        "rom": "-",
+        "arti": "2 Kali sehari (2回)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "1回",
+        "rom": "-",
+        "arti": "1 Kali sehari",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "3回",
+        "rom": "-",
+        "arti": "3 Kali sehari",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "2回",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(2 Kali sehari (2回))",
+      "(1 Kali sehari)",
+      "(3 Kali sehari)"
+    ]
+  },
+  {
+    "no": 34,
+    "title": "医師: それから 早く 治すためには、しっかり 休むことが 大切です。今日は しっかり 寝ていてくださいね。\n患者: はい、ゆっくり 休むように します。\n\n【質問】早く 治すために、医師は どんな アドバイスを しましたか。",
+    "subTitle": "(Apa saran dokter agar pasien lekas sembuh?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "Joging",
+        "img": ""
+      },
+      {
+        "text": "Istirahat/Tidur",
+        "img": ""
+      },
+      {
+        "text": "Yoga",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "Dokter: Kemudian agar lekas sembuh, sangat penting untuk beristirahat dengan baik. Hari ini banyak-banyak tidur/istirahat ya.\nPasien: Baik dokter, saya akan beristirahat dengan cukup.\n\n[Pertanyaan] Nasihat apa yang diberikan dokter agar pasien lekas sembuh?",
+    "trans_rom": "Ishi: Sore kara hayaku naosu tame ni wa, shikkari yasumu koto ga taisetsu desu. Kyou wa shikkari nete ite kudasai ne.\nKanja: Hai, yukkuri yasumu you ni shimasu.\n\n[Shitsumon] Hayaku naosu tame ni, ishi wa donna adobaisu o shimashita ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Dokter menasihati: 'それから早く治すためにはしっかり休むことが大切です。今日はしっかり寝ていてくださいね' (Supaya cepat sembuh, penting untuk banyak istirahat. Hari ini tidur dan istirahatlah yang cukup). Saran dokter adalah istirahat dan tidur yang cukup.",
+    "opt_detail": [
+      {
+        "kana": "Joging",
+        "rom": "-",
+        "arti": "Olahraga lari joging",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Istirahat/Tidur",
+        "rom": "-",
+        "arti": "Istirahat / tidur yang cukup",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "Yoga",
+        "rom": "-",
+        "arti": "Melakukan yoga",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "Istirahat/Tidur",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Olahraga lari joging)",
+      "(Istirahat / tidur yang cukup)",
+      "(Melakukan yoga)"
+    ]
+  },
+  {
+    "no": 35,
+    "title": "放送: 緊急地震速報です。大きな 揺れを 感じたら、絶対に 慌てては いけません。最初に すべきことは、自分の 身を 守ることです。近くに 丈夫な 机が ある場合は、すぐに その下に 入ってください。\n\n【質問】地震の とき、まず 最初は 何を しなければなりませんか。",
+    "subTitle": "(Dengarkan baik-baik untuk soal nomor 34 &amp; 35: Tindakan pertama saat gempa adalah apa?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "lari ke tepi sungai",
+        "img": ""
+      },
+      {
+        "text": "Pakai helem",
+        "img": ""
+      },
+      {
+        "text": "Berlindung di bawah meja",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "Siaran: Berita darurat gempa bumi. Jika merasakan guncangan besar, jangan panik. Hal pertama yang harus dilakukan adalah melindungi keselamatan diri Anda. Jika di dekat Anda ada meja yang kokoh, segera masuk berlindung di bawah meja.\n\n[Pertanyaan] Saat gempa bumi terjadi, apa tindakan pertama yang harus dilakukan?",
+    "trans_rom": "Housou: Kinkyuu jishin sokuhou desu. Ookina yure o kanjitara, zettai ni awatete wa ikemasen. Saisho ni subeki koto wa, jibun no mi o mamoru koto desu. Chikaku ni joubu na tsukue ga aru baai wa, sugu ni sono shita ni haitte kudasai.\n\n[Shitsumon] Jishin no toki, mazu saisho wa nani o shinakereba narimasen ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Siaran darurat menyampaikan: 'まず大きな揺れを感じたら絶対に慌ててはいけません。最初にすべきことは自分の身を守ることです。近くに丈夫な机がある場合はすぐにその下に入ってください' (Hal pertama adalah melindungi diri, segera masuk ke bawah meja yang kokoh dan lindungi kepala).",
+    "opt_detail": [
+      {
+        "kana": "lari ke tepi sungai",
+        "rom": "-",
+        "arti": "Lari ke tepi sungai",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Pakai helem",
+        "rom": "-",
+        "arti": "Memakai helm",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Berlindung di bawah meja",
+        "rom": "-",
+        "arti": "Berlindung di bawah meja yang kokoh",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "Berlindung di bawah meja",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Lari ke tepi sungai)",
+      "(Memakai helm)",
+      "(Berlindung di bawah meja yang kokoh)"
+    ]
+  },
+  {
+    "no": 36,
+    "title": "放送: 揺れが 収まったら、ゆっくりと 建物から 出て、外の 広い 広場へ 避難してください。そこは 建物が 崩れる 心配のない、一番 安全な 場所です。\n\n【質問】どこへ 避難すれば いいですか。",
+    "subTitle": "(Pergi ke mana untuk mengungsi dan berlindung?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "Lapangan",
+        "img": ""
+      },
+      {
+        "text": "Samping bangunan",
+        "img": ""
+      },
+      {
+        "text": "Tepi laut",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "Siaran: Setelah guncangan mereda, keluarlah dari gedung perlahan-lahan dan mengungsilah ke lapangan terbuka yang luas. Di sana adalah tempat paling aman tanpa rasa khawatir tertimpa reruntuhan bangunan.\n\n[Pertanyaan] Di manakah lokasi tempat aman untuk mengungsi dan berlindung?",
+    "trans_rom": "Housou: Yure ga osamattara, yukkuri to tatemono kara dete, soto no hiroi hiroba e hinan shite kudasai. Soko wa tatemono ga kuzureru shinpai no nai, ichiban anzen na basho desu.\n\n[Shitsumon] Doko e hinan sureba ii desu ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Penyiar mengarahkan: 'ゆっくりと建物から出て外の広い広場へ避難してください。そこは建物が崩れる心配がない一番安全な場所です' (Keluarlah perlahan dan mengungsilah ke lapangan terbuka yang luas di luar gedung). Tempatnya adalah lapangan terbuka (広場 - hiroba).",
+    "opt_detail": [
+      {
+        "kana": "Lapangan",
+        "rom": "-",
+        "arti": "Lapangan terbuka yang luas (広場)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "Samping bangunan",
+        "rom": "-",
+        "arti": "Di samping gedung tinggi",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Tepi laut",
+        "rom": "-",
+        "arti": "Di tepi pantai/laut",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "Lapangan",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Lapangan terbuka yang luas (広場))",
+      "(Di samping gedung tinggi)",
+      "(Di tepi pantai/laut)"
+    ]
+  },
+  {
+    "no": 37,
+    "title": "客: すみません、自転車を 借りたいのですが、料金は いくらですか。\n店員: はい、自転車は 1時間 400円で ございます。\n客: 400円ですね。1時間 お願いします。\n\n【質問】自転車を 1時間 借りる 料金は いくらですか。",
+    "subTitle": "(Berapa biaya meminjam sepeda selama 1 jam?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "800 円",
+        "img": ""
+      },
+      {
+        "text": "1200 円",
+        "img": ""
+      },
+      {
+        "text": "400 円",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "Pelanggan: Permisi, saya ingin menyewa sepeda, berapa biayanya?\nPetugas: Ya, biaya sewa sepeda adalah 400 yen untuk 1 jam.\nPelanggan: 400 yen ya. Saya sewa untuk 1 jam ya.\n\n[Pertanyaan] Berapakah biaya menyewa sepeda selama 1 jam?",
+    "trans_rom": "Kyaku: Sumimasen, jitensha o karitai no desu ga, ryoukin wa ikura desu ka.\nTen'in: Hai, jitensha wa ichi-jikan yonhyaku-en de gozaimasu.\nKyaku: Yonhyaku-en desu ne. Ichi-jikan onegai shimasu.\n\n[Shitsumon] Jitensha o ichi-jikan kariru ryoukin wa ikura desu ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Pelanggan bertanya biaya sewa: '自転車を借りたいのですが料金はいくらですか？'. Petugas menjawab: 'はい、料金は一時間400円でございます' (Biaya sewa sepeda adalah 400 Yen per jam). Jadi biayanya adalah 400 Yen (400円).",
+    "opt_detail": [
+      {
+        "kana": "800 円",
+        "rom": "-",
+        "arti": "800 Yen",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "1200 円",
+        "rom": "-",
+        "arti": "1200 Yen",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "400 円",
+        "rom": "-",
+        "arti": "400 Yen (400円)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "400 円",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(800 Yen)",
+      "(1200 Yen)",
+      "(400 Yen (400円))"
+    ]
+  },
+  {
+    "no": 38,
+    "title": "A: この コーヒー、かなり 苦いね。\nB: ちょっと 砂糖を 足しても いいかな？\nA: うん、じゃあ 砂糖を 2杯ほど 入れてみるよ。\n\n【質問】苦い コーヒーに 何を 入れますか。",
+    "subTitle": "(Apa yang dituangkan/dimasukkan ke dalam cangkir kopi?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "Es batu",
+        "img": ""
+      },
+      {
+        "text": "Susu",
+        "img": ""
+      },
+      {
+        "text": "Gula",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "A: Kopi ini rasanya cukup pahit ya.\nB: Boleh tidak ya kalau kita tambah gula sedikit?\nA: Boleh, kalau begitu saya coba masukkan sekitar 2 sendok gula pasir ya.\n\n[Pertanyaan] Apa yang dimasukkan/dituangkan ke dalam kopi?",
+    "trans_rom": "A: Kono koohii, kanari nigai ne.\nB: Chotto satou o tashite mo ii kana?\nA: Un, jaa satou o ni-hai hodo irete miru yo.\n\n[Shitsumon] Nigai koohii ni nani o iremasu ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Pembicara mengeluh kopi hitam terlalu pahit: 'このコーヒーかなり苦いね... ちょっと砂糖を足してもいいかな？じゃあ砂糖を2杯ほど入れてみるよ' (Kopi ini cukup pahit, boleh saya tambah gula? Saya masukkan 2 sendok gula pasir). Jadi yang dituangkan adalah gula pasir (砂糖 - satou).",
+    "opt_detail": [
+      {
+        "kana": "Es batu",
+        "rom": "-",
+        "arti": "Es batu",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Susu",
+        "rom": "-",
+        "arti": "Susu cair",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Gula",
+        "rom": "-",
+        "arti": "Gula pasir (砂糖)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "Gula",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Es batu)",
+      "(Susu cair)",
+      "(Gula pasir (砂糖))"
+    ]
+  },
+  {
+    "no": 39,
+    "title": "客: すみません、チョコレートフェスティバルは 何階で やっていますか。\n案内係: チョコレートフェスティバルは 9階で 開催しております。\n客: 9階ですね。ありがとうございます。\n\n【質問】イベントは 何階で やっていますか。",
+    "subTitle": "(Di lantai berapakah Festival Cokelat diselenggarakan?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "Lantai 9",
+        "img": ""
+      },
+      {
+        "text": "Lantai 8",
+        "img": ""
+      },
+      {
+        "text": "Lantai 6",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "Pengunjung: Permisi, festival cokelat diselenggarakan di lantai berapa ya?\nPetugas: Festival cokelat diselenggarakan di lantai 9.\nPengunjung: Lantai 9 ya. Terima kasih banyak.\n\n[Pertanyaan] Di lantai berapakah festival cokelat diadakan?",
+    "trans_rom": "Kyaku: Sumimasen, chokoreeto fesutibaru wa nan-kai de yatte imasu ka.\nAnnai-gakari: Chokoreeto fesutibaru wa kyuu-kai de kaisai shite orimasu.\nKyaku: Kyuu-kai desu ne. Arigatou gozaimasu.\n\n[Shitsumon] Ibento wa nan-kai de yatte imasu ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Pengunjung bertanya: 'チョコレートフェスティバルは何階でやっていますか？'. Petugas menjawab: 'チョコレートフェスティバルは9階で開催しております' (Festival cokelat diadakan di lantai 9). Jadi di lantai 9 (9階).",
+    "opt_detail": [
+      {
+        "kana": "Lantai 9",
+        "rom": "-",
+        "arti": "Lantai 9 (9階)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "Lantai 8",
+        "rom": "-",
+        "arti": "Lantai 8",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Lantai 6",
+        "rom": "-",
+        "arti": "Lantai 6",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "Lantai 9",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Lantai 9 (9階))",
+      "(Lantai 8)",
+      "(Lantai 6)"
+    ]
+  },
+  {
+    "no": 40,
+    "title": "客: すみません、本日の 営業時間は 何時までですか。\n案内係: 本日の 営業は 18時30分までと なっております。\n客: 18時30分ですね。わかりました。\n\n【質問】本日の 終了時間は 何時ですか。",
+    "subTitle": "(Pukul berapakah festival cokelat selesai hari ini?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "Jam 14:00",
+        "img": ""
+      },
+      {
+        "text": "Jam 17:30",
+        "img": ""
+      },
+      {
+        "text": "Jam 18:30",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 3 : CHOUKAI",
+    "trans": "Pengunjung: Permisi, jam operasional buka hari ini sampai pukul berapa ya?\nPetugas: Jam operasional buka hari ini sampai pukul 18:30.\nPengunjung: Jam 18:30 ya. Mengerti, terima kasih.\n\n[Pertanyaan] Pukul berapakah jam selesai/tutup acara festival hari ini?",
+    "trans_rom": "Kyaku: Sumimasen, honjitsu no eigyou jikan wa nanji made desu ka.\nAnnai-gakari: Honjitsu no eigyou wa juuhachi-ji sanjuppun made to natte orimasu.\nKyaku: Juuhachi-ji sanjuppun desu ne. Wakarimashita.\n\n[Shitsumon] Honjitsu no shuuryou jikan wa nanji desu ka.",
+    "mnn": "Choukai",
+    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Pengunjung bertanya: '本日の終了時間は何時ですか？'. Petugas menjawab: '本日の営業は18時30分までとなっております' (Hari ini buka sampai pukul 18:30 sore). Jadi selesai pukul 18:30.",
+    "opt_detail": [
+      {
+        "kana": "Jam 14:00",
+        "rom": "-",
+        "arti": "Pukul 14:00",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Jam 17:30",
+        "rom": "-",
+        "arti": "Pukul 17:30",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Jam 18:30",
+        "rom": "-",
+        "arti": "Pukul 18:30 (18時30分)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "Jam 18:30",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Pukul 14:00)",
+      "(Pukul 17:30)",
+      "(Pukul 18:30 (18時30分))"
+    ]
+  },
+  {
+    "no": 41,
+    "title": "[ Bacaan ]\nPesan SMS: A-san mengajak: '来週の土曜日、どこかの町へ行きませんか' (Sabtu depan maukah pergi ke suatu kota?). B-san setuju: 'いいですね！ぜひ行きましょう'.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nAda SMS berisi ajakan\r\n\r\nIngin pergi kemana?",
+    "subTitle": "([ Dokkai ] Ada SMS ajakan: Ingin pergi ke mana?)",
+    "img": "assets/d1.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "Ke kota",
+        "img": ""
+      },
+      {
+        "text": "Ke laut",
+        "img": ""
+      },
+      {
+        "text": "Ke desa",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Teks pesan obrolan ponsel antara A-san dan B-san.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Ada SMS ajakan: Ingin pergi ke mana?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Dalam teks pesan SMS, A-san menulis: 'どこかの町へ行きませんか' (Maukah pergi ke suatu kota?). B-san menjawab bahwa di kota itu ada banyak toko. Jadi tujuannya adalah pergi ke kota (町へ行く).",
+    "opt_detail": [
+      {
+        "kana": "Ke kota",
+        "rom": "-",
+        "arti": "Ke kota (町)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "Ke laut",
+        "rom": "-",
+        "arti": "Ke laut (海)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Ke desa",
+        "rom": "-",
+        "arti": "Ke desa (村)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "Ke kota",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Ke kota (町))",
+      "(Ke laut (海))",
+      "(Ke desa (村))"
+    ]
+  },
+  {
+    "no": 42,
+    "title": "[ Bacaan ]\nTeks pesan SMS: B-san menyatakan 'その町には店がたくさんありますから、買い物をしたいです。新しい服を買いたいです' (Karena di kota itu banyak toko, saya ingin belanja beli baju baru).\n\n[ Pertanyaan ]\nIngin melakukan apa disana?",
+    "subTitle": "(Ingin melakukan apa di sana?)",
+    "img": "assets/d1.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "kencan",
+        "img": ""
+      },
+      {
+        "text": "jalan-jalan",
+        "img": ""
+      },
+      {
+        "text": "Berbelanja",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Tujuan aktivitas yang ingin dilakukan di kota.\n\n[ Terjemahan Pertanyaan ]\n(Ingin melakukan apa di sana?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] B-san menjelaskan keinginannya: '買い物をしたいです。新しい服を買いたいです' (Saya ingin belanja membeli pakaian baru). Jadi aktivitas yang ingin dilakukan adalah berbelanja (買い物).",
+    "opt_detail": [
+      {
+        "kana": "kencan",
+        "rom": "-",
+        "arti": "Kencan",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "jalan-jalan",
+        "rom": "-",
+        "arti": "Jalan-jalan santai",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Berbelanja",
+        "rom": "-",
+        "arti": "Berbelanja (買い物)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "Berbelanja",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Kencan)",
+      "(Jalan-jalan santai)",
+      "(Berbelanja (買い物))"
+    ]
+  },
+  {
+    "no": 43,
+    "title": "[ Bacaan ]\nKartu ucapan kado ulang tahun dari Li-san dan A-san yang memberikan hadiah baju olahraga.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nMendapat kado dari siapa?",
+    "subTitle": "([ Dokkai ] Mendapat kado hadiah dari siapa?)",
+    "img": "assets/d3.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "かりなさん",
+        "img": ""
+      },
+      {
+        "text": "さとうさん",
+        "img": ""
+      },
+      {
+        "text": "りさんとあさん",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Catatan pesan hadiah ulang tahun.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Mendapat kado hadiah dari siapa?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Pada teks bacaan kartu hadiah tertulis pengirim kado adalah Li-san dan A-san (りさんとあさん).",
+    "opt_detail": [
+      {
+        "kana": "かりなさん",
+        "rom": "-",
+        "arti": "Karina-san",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "さとうさん",
+        "rom": "-",
+        "arti": "Satou-san",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "りさんとあさん",
+        "rom": "-",
+        "arti": "Li-san dan A-san (りさんとあさん)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "りさんとあさん",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Karina-san)",
+      "(Satou-san)",
+      "(Li-san dan A-san (りさんとあさん))"
+    ]
+  },
+  {
+    "no": 44,
+    "title": "[ Bacaan ]\nHadiah yang diberikan berupa pakaian olahraga tenis berwarna merah muda (pink).\n\n[ Pertanyaan ]\nMendapatkan hadiah apa?",
+    "subTitle": "(Mendapatkan kado hadiah berupa apa?)",
+    "img": "assets/d3.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "Baju tenis warna pink",
+        "img": ""
+      },
+      {
+        "text": "Baju senam warna pink",
+        "img": ""
+      },
+      {
+        "text": "Baju joging warna pink",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Keterangan jenis kado yang diterima.\n\n[ Terjemahan Pertanyaan ]\n(Mendapatkan kado hadiah berupa apa?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Hadiah yang tercantum dalam bacaan adalah baju tenis berwarna pink (ピンクのテニスウェア).",
+    "opt_detail": [
+      {
+        "kana": "Baju tenis warna pink",
+        "rom": "-",
+        "arti": "Baju tenis warna pink",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "Baju senam warna pink",
+        "rom": "-",
+        "arti": "Baju senam warna pink",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "Baju joging warna pink",
+        "rom": "-",
+        "arti": "Baju joging warna pink",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "Baju tenis warna pink",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Baju tenis warna pink)",
+      "(Baju senam warna pink)",
+      "(Baju joging warna pink)"
+    ]
+  },
+  {
+    "no": 45,
+    "title": "[ Bacaan ]\nPapan peraturan tata tertib di taman kota.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nApa yang tidak boleh dilakukan ditaman?",
+    "subTitle": "([ Dokkai ] Larangan: Hal apa yang dilarang dilakukan di taman?)",
+    "img": "assets/d5.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "恋人を公園に連れて行きます",
+        "img": ""
+      },
+      {
+        "text": "飲み物を公園に持っていきます",
+        "img": ""
+      },
+      {
+        "text": "ペットを公園に連れて行きます",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Papan petunjuk aturan taman umum.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Larangan: Hal apa yang dilarang dilakukan di taman?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Pada papan larangan taman tertera tanda larangan membawa binatang peliharaan (ペットを公園に連れて行くことは禁止 / dilarang membawa hewan peliharaan ke taman).",
+    "opt_detail": [
+      {
+        "kana": "恋人を公園に連れて行きます",
+        "rom": "-",
+        "arti": "Membawa pasangan ke taman",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "飲み物を公園に持っていきます",
+        "rom": "-",
+        "arti": "Membawa minuman ke taman",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ペットを公園に連れて行きます",
+        "rom": "-",
+        "arti": "Membawa hewan peliharaan ke taman (ペットを連れて行く)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "ペットを公園に連れて行きます",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Membawa pasangan ke taman)",
+      "(Membawa minuman ke taman)",
+      "(Membawa hewan peliharaan ke taman (ペットを連れて行く))"
+    ]
+  },
+  {
+    "no": 46,
+    "title": "[ Bacaan ]\nKegiatan yang diperbolehkan di area taman kota.\n\n[ Pertanyaan ]\nApa yang dilakukan ditaman?",
+    "subTitle": "(Aktivitas apa yang dapat dilakukan di taman?)",
+    "img": "assets/d5.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "つり",
+        "img": ""
+      },
+      {
+        "text": "ペットを連れて行きます",
+        "img": ""
+      },
+      {
+        "text": "バーベキュー",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Fasilitas kegiatan di taman umum.\n\n[ Terjemahan Pertanyaan ]\n(Aktivitas apa yang dapat dilakukan di taman?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Berdasarkan papan petunjuk fasilitas taman, terdapat area khusus untuk barbeque (バーベキュー広場) yang dapat digunakan pengunjung.",
+    "opt_detail": [
+      {
+        "kana": "つり",
+        "rom": "-",
+        "arti": "Memancing",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ペットを連れて行きます",
+        "rom": "-",
+        "arti": "Membawa hewan peliharaan",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "バーベキュー",
+        "rom": "-",
+        "arti": "Barbeque (バーベキュー)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "バーベキュー",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Memancing)",
+      "(Membawa hewan peliharaan)",
+      "(Barbeque (バーベキュー))"
+    ]
+  },
+  {
+    "no": 47,
+    "title": "[ Bacaan ]\nPamflet jadwal pertunjukan konser musik di aula gedung serbaguna.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nBisa mendengar music dimana?",
+    "subTitle": "([ Dokkai ] Di manakah tempat bisa mendengarkan pertunjukan musik?)",
+    "img": "assets/d7.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "がっこう",
+        "img": ""
+      },
+      {
+        "text": "スーパー",
+        "img": ""
+      },
+      {
+        "text": "ホール",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Pamflet informasi acara musik.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Di manakah tempat bisa mendengarkan pertunjukan musik?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Pada pamflet acara tertera lokasi pertunjukan musik diselenggarakan di dalam aula / hall gedung (ホール - hooru).",
+    "opt_detail": [
+      {
+        "kana": "がっこう",
+        "rom": "-",
+        "arti": "Sekolah",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "スーパー",
+        "rom": "-",
+        "arti": "Supermarket",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ホール",
+        "rom": "-",
+        "arti": "Hall / Aula pertunjukan (ホール)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "ホール",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Sekolah)",
+      "(Supermarket)",
+      "(Hall / Aula pertunjukan (ホール))"
+    ]
+  },
+  {
+    "no": 48,
+    "title": "[ Bacaan ]\nJadwal jam pertunjukan musik pada pamflet.\n\n[ Pertanyaan ]\nJam berapa diadakan nya?",
+    "subTitle": "(Pukul berapakah acara musik tersebut diselenggarakan?)",
+    "img": "assets/d7.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "15:00",
+        "img": ""
+      },
+      {
+        "text": "14:00",
+        "img": ""
+      },
+      {
+        "text": "12:30",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Jadwal waktu pada brosur konser.\n\n[ Terjemahan Pertanyaan ]\n(Pukul berapakah acara musik tersebut diselenggarakan?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Waktu mulai konser musik yang tertulis pada brosur adalah pukul 15:00 sore.",
+    "opt_detail": [
+      {
+        "kana": "15:00",
+        "rom": "-",
+        "arti": "Pukul 15:00",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "14:00",
+        "rom": "-",
+        "arti": "Pukul 14:00",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "12:30",
+        "rom": "-",
+        "arti": "Pukul 12:30",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "15:00",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Pukul 15:00)",
+      "(Pukul 14:00)",
+      "(Pukul 12:30)"
+    ]
+  },
+  {
+    "no": 49,
+    "title": "[ Bacaan ]\nJadwal operasional toko / klinik pada hari Sabtu.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nSabtu buka jam berapa?",
+    "subTitle": "([ Dokkai ] Hari Sabtu toko/klinik buka mulai pukul berapa?)",
+    "img": "assets/d9.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "10:30",
+        "img": ""
+      },
+      {
+        "text": "11:00",
+        "img": ""
+      },
+      {
+        "text": "10:00",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Tabel jam operasional mingguan.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Hari Sabtu toko/klinik buka mulai pukul berapa?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Berdasarkan tabel jam operasional, pada hari Sabtu (土曜日) waktu buka dimulai pada pukul 11:00 siang.",
+    "opt_detail": [
+      {
+        "kana": "10:30",
+        "rom": "-",
+        "arti": "Pukul 10:30",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "11:00",
+        "rom": "-",
+        "arti": "Pukul 11:00",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "10:00",
+        "rom": "-",
+        "arti": "Pukul 10:00",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "11:00",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Pukul 10:30)",
+      "(Pukul 11:00)",
+      "(Pukul 10:00)"
+    ]
+  },
+  {
+    "no": 50,
+    "title": "[ Bacaan ]\nHari libur rutin mingguan (定休日 - teikyuubi).\n\n[ Pertanyaan ]\nLibur hari apa?",
+    "subTitle": "(Toko/klinik tersebut libur pada hari apa?)",
+    "img": "assets/d9.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "日曜日",
+        "img": ""
+      },
+      {
+        "text": "木曜日",
+        "img": ""
+      },
+      {
+        "text": "土曜日",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Keterangan hari libur operasional.\n\n[ Terjemahan Pertanyaan ]\n(Toko/klinik tersebut libur pada hari apa?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Pada keterangan hari libur toko (定休日) tertulis hari Kamis (木曜日 - mokuyoubi).",
+    "opt_detail": [
+      {
+        "kana": "日曜日",
+        "rom": "-",
+        "arti": "Hari Minggu (日曜日)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "木曜日",
+        "rom": "-",
+        "arti": "Hari Kamis (木曜日)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "土曜日",
+        "rom": "-",
+        "arti": "Hari Sabtu (土曜日)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "木曜日",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Hari Minggu (日曜日))",
+      "(Hari Kamis (木曜日))",
+      "(Hari Sabtu (土曜日))"
+    ]
+  },
+  {
+    "no": 51,
+    "title": "[ Bacaan ]\nKupon promo restoran untuk es krim gratis bagi pengunjung.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nES CREAM DIBERIIKAN SETELAH APA ?",
+    "subTitle": "([ Dokkai ] Es krim gratis diberikan setelah melakukan apa?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "ちゅうもんを やっています",
+        "img": ""
+      },
+      {
+        "text": "かう とき",
+        "img": ""
+      },
+      {
+        "text": "ご飯を食べる",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Syarat ketentuan kupon gratis es krim restoran.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Es krim gratis diberikan setelah melakukan apa?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Kupon es krim menyatakan bahwa es krim penutup disajikan setelah pengunjung selesai menyantap hidangan utama / nasi (ご飯を食べた後 / ご飯を食べる).",
+    "opt_detail": [
+      {
+        "kana": "ちゅうもんを やっています",
+        "rom": "-",
+        "arti": "Saat sedang memesan",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "かう とき",
+        "rom": "-",
+        "arti": "Saat membayar/membeli",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ご飯を食べる",
+        "rom": "-",
+        "arti": "Setelah selesai makan hidangan utama/nasi (ご飯を食べる)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ],
+    "kunci_id": "ご飯を食べる",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Saat sedang memesan)",
+      "(Saat membayar/membeli)",
+      "(Setelah selesai makan hidangan utama/nasi (ご飯を食べる))"
+    ]
+  },
+  {
+    "no": 52,
+    "title": "[ Bacaan ]\nKetentuan penyerahan atau penunjukan kupon tiket promosi.\n\n[ Pertanyaan ]\nMenunjukan tiket pas kapan?",
+    "subTitle": "(Kapan tiket/kupon promosi harus ditunjukkan kepada staf?)",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "注文",
+        "img": ""
+      },
+      {
+        "text": "買います",
+        "img": ""
+      },
+      {
+        "text": "帰ります",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/4",
+    "section": "SESI 4 : DOKKAI",
+    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">(Aturan penukaran kupon promosi.\n\n[ Terjemahan Pertanyaan ]\n(Kapan tiket/kupon promosi harus ditunjukkan kepada staf?)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Pada petunjuk penggunaan kupon tertulis: 'ご注文の際にご提示ください' (Tolong tunjukkan kupon ini pada saat melakukan pemesanan / 注文時). Jadi ditunjukkan saat memesan makanan (注文 - chuumon).",
+    "opt_detail": [
+      {
+        "kana": "注文",
+        "rom": "-",
+        "arti": "Saat memesan makanan (注文)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "買います",
+        "rom": "-",
+        "arti": "Saat membayar (買います)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "帰ります",
+        "rom": "-",
+        "arti": "Saat mau pulang (帰ります)",
+        "alasan": "Pilihan salah."
+      }
+    ],
+    "kunci_id": "注文",
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "opt_note": [
+      "(Saat memesan makanan (注文))",
+      "(Saat membayar (買います))",
+      "(Saat mau pulang (帰ります))"
+    ]
+  }
+]
