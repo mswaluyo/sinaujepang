@@ -25,33 +25,33 @@
     "trans": "(Perhatikan gambar berikut.)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "Gambar memperlihatkan seseorang sedang turun dari kendaraan bus/kereta. Kata kerja dalam bahasa Jepang untuk \"turun (dari kendaraan)\" adalah おります (orimasu - bentuk kamus: 降りる / おりる). Pilihan A: のります (naik kendaraan), Pilihan C: まがります (berbelok/menikung).",
+    "analisis": "[MNN Bab 16 - Kata Kerja Gerakan (Golongan 2)] Gambar memperlihatkan seorang penumpang yang sedang melangkah turun dari pintu bus. Kata kerja untuk 'turun (dari kendaraan)' dalam bahasa Jepang adalah おります (orimasu - bentuk kamus: 降りる / おりる). Partikel yang mendampingi kendaraan saat turun adalah を (contoh: バスを おります).",
     "opt_detail": [
       {
         "kana": "おります",
-        "rom": "-",
-        "arti": "Turun kendaraan (orimasu)",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "orimasu",
+        "arti": "turun (dari kendaraan)",
+        "alasan": "Tepat sekali. おります (orimasu) digunakan khusus untuk menyatakan tindakan keluar/turun dari moda transportasi (bus, kereta, mobil)."
       },
       {
         "kana": "まがります",
-        "rom": "-",
-        "arti": "Berbelok (magarimasu)",
-        "alasan": "Pilihan salah."
+        "rom": "magarimasu",
+        "arti": "berbelok / menikung",
+        "alasan": "まがります (magarimasu) berarti berbelok arah di persimpangan jalan (contoh: 右へ まがります), bukan tindakan turun dari bus."
       },
       {
         "kana": "のります",
-        "rom": "-",
-        "arti": "Naik kendaraan (norimasu)",
-        "alasan": "Pilihan salah."
+        "rom": "norimasu",
+        "arti": "naik (ke kendaraan)",
+        "alasan": "のります (norimasu) merupakan antonim (lawan kata) dari おります yang berarti naik ke dalam kendaraan (contoh: バスに のります)."
       }
     ],
     "kunci_id": "おります",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Turun kendaraan (orimasu))",
-      "(Berbelok (magarimasu))",
-      "(Naik kendaraan (norimasu))"
+      "(orimasu) turun kendaraan",
+      "(magarimasu) berbelok",
+      "(norimasu) naik kendaraan"
     ]
   },
   {
@@ -80,33 +80,33 @@
     "trans": "(Perhatikan gambar berikut)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "Jawaban B (公園 - taman) sangat tepat karena gambar tersebut jelas menampilkan sebuah taman dengan berbagai fasilitas. Tips: Perhatikan detail visual dalam gambar untuk mencocokkan dengan kosakata yang diberikan.",
+    "analisis": "[MNN Bab 13/18 - Kanji N4/N5 Tempat Umum] Gambar menampilkan area terbuka hijau yang asri dengan jalan setapak, pepohonan, bangku santai, dan area bermain publik. Kosakata kanji yang tepat adalah 公園 dibaca こうえん (kouen) yang berarti 'taman'.",
     "opt_detail": [
       {
         "kana": "公園",
-        "rom": "-",
-        "arti": "taman",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "kouen",
+        "arti": "taman kota / taman bermain",
+        "alasan": "Tepat sekali. 公園 (こうえん) gabungan dari 公 (umum/publik) dan 園 (kebun/taman), merujuk langsung ke fasilitas taman rekreasi umum pada gambar."
       },
       {
         "kana": "台風",
-        "rom": "-",
-        "arti": "topan",
-        "alasan": "Pilihan salah."
+        "rom": "taifuu",
+        "arti": "badai topan / taifun",
+        "alasan": "台風 (たいふう) berarti badai tropis atau topan dahsyat, sama sekali tidak sesuai dengan suasana tenang taman rekreasi."
       },
       {
         "kana": "医者",
-        "rom": "-",
+        "rom": "isha",
         "arti": "dokter",
-        "alasan": "Pilihan salah."
+        "alasan": "医者 (いしゃ) adalah profesi medis/dokter, bukan nama tempat atau fasilitas rekreasi luar ruangan."
       }
     ],
     "kunci_id": "公園",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(taman)",
-      "(topan)",
-      "(dokter)"
+      "(kouen) taman",
+      "(taifuu) badai topan",
+      "(isha) dokter"
     ]
   },
   {
@@ -135,33 +135,33 @@
     "trans": "(Perhatikan gambar berikut)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "Kata sifat \"丸い\" (marui) berarti \"bulat\", yang menggambarkan bentuk objek pada gambar. Tips: Perhatikan makna kata sifat dan kata kerja yang diberikan untuk mencocokkan dengan konteks gambar.",
+    "analisis": "[MNN Bab 19 - Kata Sifat I] Gambar menunjukkan objek geometri berbidang bundar melingkar. Kata sifat bentuk I dalam bahasa Jepang untuk 'bulat / bundar' adalah 丸い dibaca まるい (marui).",
     "opt_detail": [
       {
         "kana": "丸い",
-        "rom": "-",
-        "arti": "bulat",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "marui",
+        "arti": "bulat / bundar",
+        "alasan": "Tepat sekali. 丸い (まるい) adalah kata sifat yang mendeskripsikan objek bulat bundar (seperti bola, lingkaran, atau koin)."
       },
       {
         "kana": "切ります",
-        "rom": "-",
-        "arti": "memotong",
-        "alasan": "Pilihan salah."
+        "rom": "kirimasu",
+        "arti": "memotong / menggunting",
+        "alasan": "切ります (きります) adalah kata kerja tindakan memotong sesuatu dengan pisau/gunting, bukan kata sifat bentuk lingkaran."
       },
       {
         "kana": "大切",
-        "rom": "-",
-        "arti": "penting",
-        "alasan": "Pilihan salah."
+        "rom": "taisetsu",
+        "arti": "penting / berharga",
+        "alasan": "大切 (たいせつ) adalah kata sifat Na yang berarti bernilai tinggi atau penting (contoh: 大切な人), bukan mendeskripsikan wujud fisik bulat."
       }
     ],
     "kunci_id": "丸い",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(bulat)",
-      "(memotong)",
-      "(penting)"
+      "(marui) bulat / bundar",
+      "(kirimasu) memotong",
+      "(taisetsu) penting / berharga"
     ]
   },
   {
@@ -190,33 +190,33 @@
     "trans": "(Perhatikan gambar berikut)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "Kata \"やきます\" (yakimasu) berarti \"memanggang\" atau \"membakar\", yang cocok untuk menggambarkan proses memasak roti di oven. Tips: Perhatikan kata kerja yang paling tepat menggambarkan tindakan yang terlihat dalam gambar.",
+    "analisis": "[MNN Bab 20/38 - Kata Kerja Kuliner & Masak] Gambar memperlihatkan proses memasak bahan makanan (roti/pastry) di dalam oven atau panggangan panas. Kata kerja untuk 'memanggang / membakar' dalam bahasa Jepang adalah やきます (yakimasu - bentuk kamus: 焼く / やく).",
     "opt_detail": [
       {
         "kana": "すきます",
-        "rom": "-",
-        "arti": "Saya menyukainya",
-        "alasan": "Pilihan salah."
+        "rom": "sukimasu",
+        "arti": "menjadi kosong / lapar",
+        "alasan": "すきます (sukimasu) biasa digunakan pada idiom お腹がすきます (onaka ga sukimasu) yang artinya perut menjadi kosong alias lapar, bukan memasak."
       },
       {
         "kana": "よやくします",
-        "rom": "-",
-        "arti": "Semoga beruntung",
-        "alasan": "Pilihan salah."
+        "rom": "yoyakushimasu",
+        "arti": "memesan / mereservasi",
+        "alasan": "よやくします (yoyakushimasu) berarti memesan tiket, kamar hotel, atau reservasi meja restoran terlebih dahulu."
       },
       {
         "kana": "やきます",
-        "rom": "-",
-        "arti": "aku akan berhasil",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "yakimasu",
+        "arti": "memanggang / membakar",
+        "alasan": "Tepat sekali. やきます (yakimasu) digunakan untuk aktivitas memanggang roti di oven (パンを やきます) maupun memanggang daging (肉を 焼きます)."
       }
     ],
     "kunci_id": "やきます",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Saya menyukainya)",
-      "(Semoga beruntung)",
-      "(aku akan berhasil)"
+      "(sukimasu) menjadi lapar/kosong",
+      "(yoyakushimasu) mereservasi / memesan",
+      "(yakimasu) memanggang / membakar"
     ]
   },
   {
@@ -245,33 +245,33 @@
     "trans": "(Perhatikan gambar berikut)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "Kata \"台風\" (taifuu) secara spesifik merujuk pada badai topan, yang sesuai dengan visual pada gambar. Tips: Perhatikan skala dan intensitas fenomena alam yang digambarkan untuk memilih kata yang paling tepat.",
+    "analisis": "[MNN Bab 45 - Bencana Alam & Cuaca Ekstrem] Gambar menampilkan pusaran siklon atmosfer besar disertai angin kencang berputar dan hujan badai yang melanda daratan. Istilah cuaca bencana alam untuk 'badai topan / taifun' adalah kanji 台風 dibaca たいふう (taifuu).",
     "opt_detail": [
       {
         "kana": "風",
-        "rom": "-",
-        "arti": "angin",
-        "alasan": "Pilihan salah."
+        "rom": "kaze",
+        "arti": "angin (biasa)",
+        "alasan": "風 (かぜ) hanya berarti embusan angin sehari-hari secara umum, tidak menggambarkan bencana badai berskala besar dengan pusaran siklon raksasa."
       },
       {
         "kana": "台風",
-        "rom": "-",
-        "arti": "topan",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "taifuu",
+        "arti": "badai topan / taifun tropis",
+        "alasan": "Tepat sekali. 台風 (たいふう) merujuk langsung pada sistem badai tropis raksasa dengan hujan lebat dan angin kencang berpusar seperti pada citra radar cuaca di gambar."
       },
       {
         "kana": "竜巻",
-        "rom": "-",
-        "arti": "angin topan",
-        "alasan": "Pilihan salah."
+        "rom": "tatsumaki",
+        "arti": "angin puting beliung / tornado",
+        "alasan": "竜巻 (たつまき) adalah kolom udara berputar sempit (tornado/puting beliung corong lokal dari awan cumulonimbus), bukan badai siklon tropis benua (taifun)."
       }
     ],
     "kunci_id": "台風",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(angin)",
-      "(topan)",
-      "(angin topan)"
+      "(kaze) angin biasa",
+      "(taifuu) badai topan",
+      "(tatsumaki) puting beliung / tornado"
     ]
   },
   {
