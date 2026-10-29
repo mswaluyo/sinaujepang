@@ -2186,7 +2186,7 @@
   {
     "no": 43,
     "section": "SESI 4 : DOKKAI",
-    "title": "自己紹介の文を読んで、正しい絵を選びなさい。",
+    "title": "自己紹介の 文を 読んで、正しい 絵を 選びなさい。\n\n「初めまして。ワンです。中国から 来ました。日本語学校の 学生です。どうぞ よろしく お願いします。青い 本を 持って います。」\n\n● 正しい 絵は どれですか。",
     "img": "",
     "options": [
       {
@@ -2204,41 +2204,41 @@
     ],
     "answer": 2,
     "score": "0/4",
-    "trans": "Bacalah teks perkenalan diri, lalu pilih gambar yang benar.",
-    "trans_rom": "Jikoshoukai no bun o yonde, tadashii e o erabi nasai.",
+    "trans": "Bacalah teks perkenalan diri berikut, lalu pilihlah gambar ilustrasi yang benar:\n'Perkenalkan, saya Wang. Berasal dari Tiongkok. Saya siswa sekolah bahasa Jepang. Senang berkenalan dengan Anda. Saya memegang buku berwarna biru.'\n\n[Pertanyaan] Manakah gambar yang tepat?",
+    "trans_rom": "Jikoshoukai no bun o yonde, tadashii e o erabi nasai.\n'Hajimemashite. Wan desu. Chuugoku kara kimashita. Nihongo gakkou no gakusei desu. Douzo yoroshiku onegai shimasu. Aoi hon o motte imasu.'\n\n[Shitsumon] Tadashii e wa dore desu ka.",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab 1 - Perkenalan Diri] Jawaban tepat adalah gambar anak memegang buku biru, sesuai isi teks perkenalan.",
+    "analisis": "[MNN Bab 1/8 - Perkenalan Diri (自己紹介) & Kata Sifat Warna (青い)] Teks perkenalan diri memberikan ciri visual spesifik tokoh siswa: '青い本を持っています' (Saya memegang buku yang berwarna biru / aoi hon). Dari ketiga gambar opsi pilihan: Gambar A (gaku_09.jpg) memegang buku merah (赤い本 / akai hon), Gambar B (gaku_08.jpg) memegang buku hijau (緑の本 / midori no hon), dan Gambar C (gaku_07.jpg) memegang buku biru (青い本 / aoi hon). Maka gambar yang cocok 100% dengan teks perkenalan diri adalah Gambar C.",
     "opt_detail": [
       {
-        "kana": "あかいほん",
+        "kana": "Gambar A",
         "rom": "akai hon",
-        "arti": "buku merah",
-        "alasan": "Tidak cocok dengan teks: karena gambar A menunjukkan anak memegang buku merah."
+        "arti": "buku merah (赤い本)",
+        "alasan": "Salah. Gambar A memperlihatkan siswa memegang buku bersampul merah (赤い本)."
       },
       {
-        "kana": "みどりのほん",
+        "kana": "Gambar B",
         "rom": "midori no hon",
-        "arti": "buku hijau",
-        "alasan": "Tidak cocok dengan teks: karena gambar B menunjukkan anak memegang buku hijau."
+        "arti": "buku hijau (緑の本)",
+        "alasan": "Salah. Gambar B memperlihatkan siswa memegang buku bersampul hijau (緑の本)."
       },
       {
-        "kana": "あおいほん",
+        "kana": "Gambar C",
         "rom": "aoi hon",
-        "arti": "buku biru",
-        "alasan": "Cocok dengan teks: karena gambar C menunjukkan anak memegang buku biru."
+        "arti": "buku biru (青い本)",
+        "alasan": "Tepat sekali. Gambar C memperlihatkan siswa memegang buku bersampul biru, cocok dengan teks: '青い本を持っています'."
       }
     ],
     "opt_note": [
-      "(akai) buku merah",
-      "(midori) buku hijau",
-      "(aoi) buku biru"
+      "(Gambar A) buku merah",
+      "(Gambar B) buku hijau",
+      "(Gambar C) buku biru (tepat)"
     ],
     "kunci_id": "Gambar C"
   },
   {
     "no": 44,
     "section": "SESI 4 : DOKKAI",
-    "title": "(B) 二人の女の人は何をしていますか。",
+    "title": "二人の 女の人は 何を して いますか。正しい 絵を 選びなさい。\n\n「二人の 女の人が 楽しそうに 話して います。」\n\n● 正しい 絵は どれですか。",
     "img": "",
     "options": [
       {
@@ -2256,34 +2256,34 @@
     ],
     "answer": 0,
     "score": "0/4",
-    "trans": "Dua wanita sedang apa? Pilih gambar kegiatannya.",
-    "trans_rom": "Futari no onna no hito wa nani o shite imasu ka.",
+    "trans": "Apa yang sedang dilakukan oleh kedua wanita tersebut? Pilihlah gambar yang tepat:\n'Dua orang wanita sedang berbicara/mengobrol dengan asyik.'\n\n[Pertanyaan] Manakah gambar yang tepat?",
+    "trans_rom": "Futari no onna no hito wa nani o shite imasu ka. Tadashii e o erabi nasai.\n'Futari no onna no hito ga tanoshisou ni hanashite imasu.'\n\n[Shitsumon] Tadashii e wa dore desu ka.",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab 8 - Kosakata Kegiatan] Dua wanita sedang berbicara (はなしています).",
+    "analisis": "[MNN Bab 14/Aktivitas Sedang Berlangsung (~te imasu)] Soal menanyakan gambar kegiatan yang menggambarkan '二人の女の人が話しています' (Dua wanita sedang berbicara/berbincang). Gambar 1 (gaku_06.jpg) memperlihatkan dua orang wanita yang sedang berdiri saling berbicara/mengobrol (話しています / hanashite imasu). Sebaliknya, Gambar 2 (gaku_29.jpg) memperlihatkan seorang pria sedang menelepon dengan HP (電話しています), dan Gambar 3 (gaku_40.jpg) memperlihatkan anak yang sedang menulis di meja (書いています). Jadi jawaban yang tepat adalah Gambar 1.",
     "opt_detail": [
       {
-        "kana": "はなしています",
+        "kana": "Gambar 1 (berbicara)",
         "rom": "hanashite imasu",
-        "arti": "sedang berbicara",
-        "alasan": "Sesuai Gambar 1: dua wanita saling berbicara."
+        "arti": "dua wanita sedang berbicara (話しています)",
+        "alasan": "Tepat sekali. Gambar 1 menampilkan dua wanita yang saling berhadapan dan mengobrol (二人の女の人が話しています)."
       },
       {
-        "kana": "でんわしています",
+        "kana": "Gambar 2 (menelepon)",
         "rom": "denwa shite imasu",
-        "arti": "sedang menelepon",
-        "alasan": "Gambar 2 menunjukkan pria menelepon, bukan dua wanita berbicara."
+        "arti": "menelepon (電話しています)",
+        "alasan": "Salah. Gambar 2 menampilkan seorang pria sedang memegang telepon seluler, bukan dua orang wanita."
       },
       {
-        "kana": "かいています",
+        "kana": "Gambar 3 (menulis)",
         "rom": "kaite imasu",
-        "arti": "sedang menulis",
-        "alasan": "Gambar 3 menunjukkan anak menulis di meja, bukan berbicara."
+        "arti": "menulis (書いています)",
+        "alasan": "Salah. Gambar 3 menampilkan aktivitas seseorang yang sedang menulis di meja."
       }
     ],
     "opt_note": [
-      "(hanashite) sedang berbicara",
-      "(denwa) sedang menelepon",
-      "(kaite) sedang menulis"
+      "(Gambar 1) dua wanita berbicara (tepat)",
+      "(Gambar 2) pria menelepon",
+      "(Gambar 3) menulis di meja"
     ],
     "kunci_id": "Gambar 1 (berbicara)"
   },
@@ -2342,8 +2342,8 @@
   {
     "no": 46,
     "section": "SESI 4 : DOKKAI",
-    "title": "\n\n● どんな ときに、この くすりを のみますか。",
-    "img": "",
+    "title": "これは くすりの パンフレットです。\n［本文］「この くすりは、せきが 出る 時に 飲みます。飲む 時間は、食事の 前です。」\n\n● どんな 時に、この くすりを 飲みますか。",
+    "img": "assets/gaku_05.jpg",
     "options": [
       {
         "text": "おなかが いたい とき",
@@ -2360,41 +2360,41 @@
     ],
     "answer": 2,
     "score": "0/4",
-    "trans": "Pada saat seperti apa obat ini diminum?",
-    "trans_rom": "Donna toki ni, kono kusuri o nomimasu ka.",
+    "trans": "Ini adalah pamflet petunjuk obat (lihat gambar gaku_05.jpg).\n[Isi Teks] 'Obat ini diminum saat batuk keluar (batuk-batuk). Waktu meminumnya adalah sebelum makan.'\n\n[Pertanyaan] Pada kondisi saat seperti apa obat ini diminum?",
+    "trans_rom": "Kore wa kusuri no panfuretto desu.\n[Honbun] 'Kono kusuri wa, seki ga deru toki ni nomimasu. Nomu jikan wa, shokuji no mae desu.'\n\n[Shitsumon] Donna toki ni, kono kusuri o nomimasu ka.",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab 11 - Aturan Minum Obat] Brosur menyatakan diminum saat seki ga deru toki.",
+    "analisis": "[MNN Bab 23/Petunjuk Medis - Pola Kondisi Waktu (~toki ni)] Soal nomor 46 menanyakan kondisi gejala saat obat diminum ('どんな時にこのくすりを飲みますか'). Pamflet obat pada gambar gaku_05.jpg menyebutkan secara tegas: 'このくすりは、せきが出る時に飲みます' (Obat ini diminum saat batuk keluar / batuk-batuk = せきが 出る 時). Pilihan おなかが いたい とき (saat sakit perut) dan はなが でる とき (saat hidung berair/pilek) tidak sesuai dengan indikasi obat batuk pada pamflet.",
     "opt_detail": [
       {
         "kana": "おなかが いたい とき",
         "rom": "onaka ga itai toki",
         "arti": "saat sakit perut",
-        "alasan": "Tidak cocok dengan teks: untuk kalimat ini."
+        "alasan": "Salah. Obat ini bukan obat sakit perut (腹痛)."
       },
       {
         "kana": "はなが でる とき",
         "rom": "hana ga deru toki",
-        "arti": "saat hidung berair",
-        "alasan": "Tidak cocok dengan teks: untuk kalimat ini."
+        "arti": "saat pilek / hidung berair",
+        "alasan": "Salah. Tidak disebutkan untuk hidung berair."
       },
       {
         "kana": "せきが でる とき",
         "rom": "seki ga deru toki",
-        "arti": "saat batuk",
-        "alasan": "Cocok dengan teks: untuk kalimat ini."
+        "arti": "saat batuk keluar",
+        "alasan": "Tepat sekali. Pamflet menegaskan: 'せきが出る時に飲みます' (diminum saat timbul batuk)."
       }
     ],
     "opt_note": [
-      "(onaka) saat sakit perut",
-      "(hana) saat hidung berair",
-      "(seki) saat batuk"
+      "(sakit perut) salah indikasi",
+      "(pilek) salah indikasi",
+      "(batuk keluar) tepat (seki ga deru toki)"
     ],
     "kunci_id": "せきが でる とき"
   },
   {
     "no": 47,
     "section": "SESI 4 : DOKKAI",
-    "title": "きのう、ともだちと あたらしい レストランに いきました。\nそのレストランは とても きれいで、たくさんの りょうりが ありました。\nたべものは おいしかったです が、ねだんが やすくなかったです。\nそれでも、レストランには おおきい にわが あります。\nにわで さんぽを したり、しゃしんを とったり できます。\nこどもたちは にわで あそぶことも できます。\n\n● レストランの りょうりに ついて、どうですか。",
+    "title": "きのう、友だちと 新しい レストランに 行きました。\nそのレストランは とても きれいで、たくさんの 料理が ありました。\n食べ物は 美味しかったですが、値段が 安くなかったです。\nそれでも、レストランには 大きい 庭が あります。\n庭で 散歩を したり、写真を 撮ったり できます。\n子どもたちは 庭で 遊ぶことも できます。\n\n● レストランの 料理に ついて、どうですか。",
     "img": "assets/gaku_04.jpg",
     "options": [
       {
@@ -2412,42 +2412,42 @@
     ],
     "answer": 2,
     "score": "0/4",
-    "trans": "Bagaimana masakan restoran tersebut?",
-    "trans_rom": "Resutoran no ryouri ni tsuite, dou desu ka.",
+    "trans": "Kemarin, saya pergi ke restoran baru bersama teman.\nRestoran itu sangat bersih/indah, dan menyediakan banyak hidangan masakan.\n素Makanannya memang enak/lezat, tetapi harganya tidak murah.\nMeskipun demikian, di restoran tersebut terdapat halaman/kebun yang luas.\nDi kebun kita bisa jalan-jalan santai maupun berfoto-foto.\nAnak-anak pun bisa bermain di kebun tersebut.\n\n[Pertanyaan] Bagaimana penilaian mengenai hidangan masakan restoran tersebut?",
+    "trans_rom": "Kinou, tomodachi to atarashii resutoran ni ikimashita.\nSono resutoran wa totemo kirei de, takusan no ryouri ga arimashita.\nTabemono wa oishikatta desu ga, nedan ga yasukunakatta desu.\nSoredemo, resutoran ni wa ookii niwa ga arimasu.\nNiwa de sanpo o shitari, shashin o tottari dekimasu.\nKodomotachi wa niwa de asobu koto mo dekimasu.\n\n[Shitsumon] Resutoran no ryouri ni tsuite, dou desu ka.",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab 12 - Bentuk Lampau い形容詞] Teks menyatakan makanannya enak tetapi harganya tidak murah, sehingga jawaban tepat adalah gabungan kedua sifat tersebut.",
+    "analisis": "[MNN Bab 12 - Kata Sifat Lampau Kontras (~katta desu ga, ~kunakatta desu)] Teks bacaan DOKKAI pada gambar gaku_04.jpg mendeskripsikan masakan restoran secara spesifik: '食べ物は 美味しかったですが、値段が 安くなかったです' (Makanannya lezat/enak, tetapi harganya tidak murah / mahal). Pilihan おいしくなかったです (tidak enak) salah karena makanannya diakui lezat, dan やすかったです (murah) salah karena harganya tidak murah. Jawaban yang tepat dan mencakup fakta teks utuh adalah 'おいしかったですが、やすくなかったです'.",
     "opt_detail": [
       {
         "kana": "おいしくなかったです",
         "rom": "oishikunakatta desu",
         "arti": "tidak enak (lampau)",
-        "alasan": "Tidak cocok dengan teks: untuk gambar ini."
+        "alasan": "Salah. Teks menyatakan makanannya enak (おいしかったです)."
       },
       {
         "kana": "やすかったです",
         "rom": "yasukatta desu",
         "arti": "murah (lampau)",
-        "alasan": "Tidak cocok dengan teks: untuk gambar ini."
+        "alasan": "Salah. Teks menyatakan harganya tidak murah (安くなかったです)."
       },
       {
         "kana": "おいしかったですが、やすくなかったです",
-        "rom": "yasukunakatta desu",
-        "arti": "enak tapi tidak murah",
-        "alasan": "Cocok dengan teks: untuk gambar ini."
+        "rom": "oishikatta desu ga, yasukunakatta desu",
+        "arti": "enak, tetapi tidak murah",
+        "alasan": "Tepat sekali. Menggabungkan kedua pernyataan faktual dari teks: rasanya enak tetapi harganya tidak murah."
       }
     ],
     "opt_note": [
-      "(oishikunakatta) tidak enak (lampau)",
-      "(yasukatta) murah (lampau)",
-      "(yasukunakatta) enak tapi tidak murah"
+      "(tidak enak) bertentangan",
+      "(murah) bertentangan",
+      "(enak tapi tidak murah) tepat 100%"
     ],
     "kunci_id": "おいしかったですが、やすくなかったです"
   },
   {
     "no": 48,
     "section": "SESI 4 : DOKKAI",
-    "title": "\n\n● この レストランで できることは なんですか。",
-    "img": "",
+    "title": "きのう、友だちと 新しい レストランに 行きました。\nそのレストランは とても きれいで、たくさんの 料理が ありました。\n食べ物は 美味しかったですが、値段が 安くなかったです。\nそれでも、レストランには 大きい 庭が あります。\n庭で 散歩を したり、写真を 撮ったり できます。\n子どもたちは 庭で 遊ぶことも できます。\n\n● この レストランで できることは 何ですか。",
+    "img": "assets/gaku_04.jpg",
     "options": [
       {
         "text": "えきで でんしゃに のります",
@@ -2464,34 +2464,34 @@
     ],
     "answer": 1,
     "score": "0/4",
-    "trans": "Apa yang bisa dilakukan di restoran ini?",
-    "trans_rom": "Kono resutoran de dekiru koto wa nan desu ka.",
+    "trans": "Kemarin, saya pergi ke restoran baru bersama teman.\nRestoran itu sangat indah, dan ada banyak masakan.\nMakanannya enak, tapi harganya tidak murah.\nMeskipun begitu, di restoran ada kebun yang besar.\nDi kebun kita bisa jalan-jalan atau berfoto-foto.\nAnak-anak pun bisa bermain di kebun.\n\n[Pertanyaan] Hal apa yang bisa dilakukan di restoran ini?",
+    "trans_rom": "Kinou, tomodachi to atarashii resutoran ni ikimashita.\nSono resutoran wa totemo kirei de, takusan no ryouri ga arimashita.\nTabemono wa oishikatta desu ga, nedan ga yasukunakatta desu.\nSoredemo, resutoran ni wa ookii niwa ga arimasu.\nNiwa de sanpo o shitari, shashin o tottari dekimasu.\nKodomotachi wa niwa de asobu koto mo dekimasu.\n\n[Shitsumon] Kono resutoran de dekiru koto wa nan desu ka.",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab 10 - Choukai Fasilitas Resto] Jawaban niwa de sanpo ya asobi ga dekimasu.",
+    "analisis": "[MNN Bab 19/27 - Kemungkinan Aktivitas (~shitari ~shitari dekimasu)] Teks bacaan gaku_04.jpg menjelaskan fasilitas kebun luas restoran: '庭で散歩をしたり、写真を撮ったりできます。子どもたちは庭で遊ぶこともできます' (Di kebun bisa jalan-jalan, berfoto, dan anak-anak bisa bermain). Pilihan yang sesuai adalah にわで さんぽや あそびが できます (Bisa jalan-jalan dan bermain di kebun). Opsi naik kereta di stasiun (えきででんしゃにのります) dan minum kopi di kafe (きっさてんでコーヒーをのみます) tidak sesuai dengan fasilitas kebun restoran tersebut.",
     "opt_detail": [
       {
         "kana": "えきで でんしゃに のります",
         "rom": "eki de densha ni norimasu",
         "arti": "naik kereta di stasiun",
-        "alasan": "Tidak cocok dengan teks: untuk kalimat ini."
+        "alasan": "Salah. Ini aktivitas di stasiun kereta, bukan fasilitas restoran."
       },
       {
         "kana": "にわで さんぽや あそびが できます",
         "rom": "niwa de sanpo ya asobi ga dekimasu",
-        "arti": "bisa jalan-jalan/bermain di halaman",
-        "alasan": "Cocok dengan teks: untuk kalimat ini."
+        "arti": "bisa jalan-jalan dan bermain di halaman/kebun",
+        "alasan": "Tepat sekali. Sesuai isi teks: '庭で散歩をしたり... 遊ぶこともできます'."
       },
       {
         "kana": "きっさてんで コーヒーを のみます",
-        "rom": "kissaten de koohii wo nomimasu",
+        "rom": "kissaten de koohii o nomimasu",
         "arti": "minum kopi di kafe",
-        "alasan": "Tidak cocok dengan teks: untuk kalimat ini."
+        "alasan": "Salah konteks lokasi kafe."
       }
     ],
     "opt_note": [
-      "(eki) naik kereta di stasiun",
-      "(niwa) bisa jalan-jalan/bermain di halaman",
-      "(kissaten) minum kopi di kafe"
+      "(naik kereta) salah",
+      "(jalan-jalan di kebun) tepat",
+      "(kafe kopi) salah"
     ],
     "kunci_id": "にわで さんぽや あそびが できます"
   },
@@ -2654,8 +2654,8 @@
   {
     "no": 52,
     "section": "SESI 4 : DOKKAI",
-    "title": "•コーヒーは いくらですか。Berapa harga kopinya?",
-    "img": "",
+    "title": "カフェの メニューチラシです。\n「モーニングセット: 7:00〜11:00\n・Aセット (トースト、サラダ、ゆで卵): 500円\n・ブレンドコーヒー (単品): 550円\n・紅茶: 500円」\n\n● コーヒーは いくらですか。",
+    "img": "assets/gaku_02.jpg",
     "options": [
       {
         "text": "550 円",
@@ -2675,38 +2675,38 @@
     "opt_detail": [
       {
         "kana": "550 円",
-        "rom": "gohyaku gojuu en",
-        "arti": "550 yen",
-        "alasan": "Cocok dengan teks: untuk kalimat ini."
+        "rom": "gohyaku gojuu-en",
+        "arti": "550 Yen",
+        "alasan": "Tepat sekali. Pada brosur tertera jelas di samping menu kopi harga nominal 550円."
       },
       {
         "kana": "500 円",
-        "rom": "gohyaku en",
-        "arti": "500 yen",
-        "alasan": "Tidak cocok dengan teks: untuk kalimat ini."
+        "rom": "gohyaku-en",
+        "arti": "500 Yen",
+        "alasan": "Salah. 500 Yen adalah harga teh atau paket sarapan A."
       },
       {
         "kana": "650 円",
-        "rom": "roppyaku gojuu en",
-        "arti": "650 yen",
-        "alasan": "Tidak cocok dengan teks: untuk kalimat ini."
+        "rom": "roppyaku gojuu-en",
+        "arti": "650 Yen",
+        "alasan": "Salah harga."
       }
     ],
     "opt_note": [
-      "(gohyaku) 550 yen",
-      "(gohyaku) 500 yen",
-      "(roppyaku) 650 yen"
+      "(550 Yen) tepat sesuai menu kopi",
+      "(500 Yen) harga teh/paket A",
+      "(650 Yen) salah harga"
     ],
     "kunci_id": "550 円",
-    "trans_rom": "koohii wa ikura desu ka",
-    "trans": "Kopi harganya berapa?",
+    "trans_rom": "Kafe no menyuu-chirashi desu.\n'Mooningu setto: shichiji kara juuichiji made\n- A setto (toosuto, sarada, yudetamago): gohyaku-en\n- Burendo koohii (tanpin): gohyaku gojuu-en\n- Koucha: gohyaku-en'\n\n[Shitsumon] Koohii wa ikura desu ka.",
+    "trans": "Ini adalah pamflet menu kafe (lihat gambar gaku_02.jpg):\n'Paket Sarapan Pagi (Morning Set): 07:00 - 11:00\n・Paket A (Roti panggang, salad, telur rebus): 500 Yen\n・Kopi Blend (Satuan): 550 Yen\n・Teh hitam: 500 Yen'\n\n[Pertanyaan] Berapakah harga secangkir kopi?",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab 11 - Choukai Harga] Jawaban 550 en."
+    "analisis": "[MNN Bab 3/11 - Membaca Daftar Harga Menu Kafe (~円 -en)] Pada brosur menu kafe gambar gaku_02.jpg tertera harga untuk menu minuman kopi (コーヒー / ブレンドコーヒー) adalah 550 円 (ごひゃくごじゅうえん / gohyaku gojuu-en). Angka 500 円 adalah harga paket sarapan A atau teh, sedangkan 650 円 adalah opsi pengecoh harga. Jadi harga kopi adalah 550 円."
   },
   {
     "no": 53,
     "section": "SESI 4 : DOKKAI",
-    "title": "\n\n●perayaan Acaranya kapan ?",
+    "title": "「忘年会（ぼうねんかい）の お知らせ」\n日時: 12月14日（金曜日） 18:30〜20:30\n場所: さくらレストラン\n会費: 3,000円\n※ 飲み物は 自分で 好きな物を 持って 来て ください。\n\n● 忘年会の 日時は いつですか。",
     "img": "assets/gaku_01.jpg",
     "options": [
       {
@@ -2727,39 +2727,39 @@
     "opt_detail": [
       {
         "kana": "１２がつ１０にち",
-        "rom": "tamago",
-        "arti": "telur",
-        "alasan": "Tidak cocok dengan teks: untuk gambar ini."
+        "rom": "juuni-gatsu tooka",
+        "arti": "10 Desember",
+        "alasan": "Salah tanggal."
       },
       {
         "kana": "１２がつ１４にち",
-        "rom": "tabemono",
-        "arti": "makanan",
-        "alasan": "Cocok dengan teks: untuk gambar ini."
+        "rom": "juuni-gatsu juuyokka",
+        "arti": "14 Desember",
+        "alasan": "Tepat sekali. Pada baris tanggal jadwal brosur tertulis jelas: 12月14日."
       },
       {
         "kana": "１２がつ２０にち",
-        "rom": "nomimono",
-        "arti": "minuman",
-        "alasan": "Tidak cocok dengan teks: untuk gambar ini."
+        "rom": "juuni-gatsu hatsuka",
+        "arti": "20 Desember",
+        "alasan": "Salah tanggal."
       }
     ],
     "opt_note": [
-      "(tamago) telur",
-      "(tabemono) makanan",
-      "(nomimono) minuman"
+      "(10 Desember) salah",
+      "(14 Desember) tepat sesuai pamflet",
+      "(20 Desember) salah"
     ],
     "kunci_id": "１２がつ１４にち",
-    "trans_rom": "bounenkai ni nani o motte ikimasu ka",
-    "trans": "Untuk bounenkai bawa apa?",
+    "trans_rom": "'Bounenkai no oshirase'\nNichiji: Juuni-gatsu juuyokka (kin'youbi) juuhachiji sanjuppun kara nijuuji sanjuppun made\nBasho: Sakura resutoran\nKaihi: Sanzen-en\n* Nomimono wa jibun de sukina mono o motte kite kudasai.\n\n[Shitsumon] Bounenkai no nichiji wa itsu desu ka.",
+    "trans": "Pemberitahuan Pesta Akhir Tahun (Bounenkai):\nWaktu: 14 Desember (Jumat) pukul 18:30 - 20:30\nTempat: Sakura Restaurant\nBiaya: 3.000 Yen\n* Minuman tolong bawa masing-masing minuman kesukaan Anda.\n\n[Pertanyaan] Tanggal berapakah acara pesta akhir tahun (Bounenkai) diselenggarakan?",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab 11 - Choukai Tanggal] Jawaban 12 gatsu 14 nichi."
+    "analisis": "[MNN Bab 4/Kalender Penanggalan Bulan & Tanggal (12月14日)] Brosur pengumuman pesta akhir tahun (Bounenkai) pada gambar gaku_01.jpg mencantumkan jadwal pelaksanaan: '日時: 12月14日' (Tanggal 14 Desember / じゅうにがつ じゅうよっか - juuni-gatsu juuyokka). Opsi １２がつ１０にち (10 Desember) dan １２がつ２０にち (20 Desember) adalah angka tanggal yang salah. Jadi perayaan diadakan tanggal 14 Desember (１２がつ１４にち)."
   },
   {
     "no": 54,
     "section": "SESI 4 : DOKKAI",
-    "title": "•ぼうねんかいに なにを もっていきますか。Apa yang perlu dibawa ?",
-    "img": "",
+    "title": "「忘年会（ぼうねんかい）の お知らせ」\n日時: 12月14日（金曜日） 18:30〜20:30\n場所: さくらレストラン\n会費: 3,000円\n※ 飲み物は 自分で 好きな物を 持って 来て ください。\n\n● 忘年会に 何を 持って 行きますか。",
+    "img": "assets/gaku_01.jpg",
     "options": [
       {
         "text": "卵",
@@ -2779,33 +2779,33 @@
     "opt_detail": [
       {
         "kana": "卵",
-        "rom": "hon ga yomemasu",
-        "arti": "bisa baca buku",
-        "alasan": "Tidak cocok dengan teks: untuk kalimat ini."
+        "rom": "tamago",
+        "arti": "telur",
+        "alasan": "Salah. Peserta tidak diminta membawa telur mentah ke pesta."
       },
       {
         "kana": "食べ物",
-        "rom": "shinsen na kisetsu ryouri ga taberaremasu",
-        "arti": "bisa makan masakan musiman segar",
-        "alasan": "Tidak cocok dengan teks: untuk kalimat ini."
+        "rom": "tabemono",
+        "arti": "makanan",
+        "alasan": "Salah. Makanan telah disediakan panitia restoran melalui iuran 3.000 Yen."
       },
       {
         "kana": "飲む物",
-        "rom": "ongaku ga kikemasu",
-        "arti": "bisa dengar musik",
-        "alasan": "Cocok dengan teks: untuk kalimat ini."
+        "rom": "nomimono",
+        "arti": "minuman (飲み物)",
+        "alasan": "Tepat sekali. Catatan brosur menegaskan: '飲み物は自分で好きな物を持って来てください'."
       }
     ],
     "opt_note": [
-      "(hon) bisa baca buku",
-      "(shinsen) bisa makan masakan musiman segar",
-      "(ongaku) bisa dengar musik"
+      "(telur) tidak relevan",
+      "(makanan) disediakan restoran",
+      "(minuman) wajib bawa sendiri (tepat)"
     ],
     "kunci_id": "飲む物",
-    "trans_rom": "kono resutoran de dekiru koto wa nan desu ka",
-    "trans": "Di restoran ini bisa apa?",
+    "trans_rom": "'Bounenkai no oshirase'\nNichiji: Juuni-gatsu juuyokka (kin'youbi) juuhachiji sanjuppun kara nijuuji sanjuppun made\nBasho: Sakura resutoran\nKaihi: Sanzen-en\n* Nomimono wa jibun de sukina mono o motte kite kudasai.\n\n[Shitsumon] Bounenkai ni nani o motte ikimasu ka.",
+    "trans": "Pemberitahuan Pesta Akhir Tahun (Bounenkai):\nWaktu: 14 Desember (Jumat) pukul 18:30 - 20:30\nTempat: Sakura Restaurant\nBiaya: 3.000 Yen\n* Minuman tolong bawa masing-masing minuman kesukaan Anda.\n\n[Pertanyaan] Apa barang yang harus dibawa oleh peserta ke pesta akhir tahun (Bounenkai)?",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab 11 - Choukai Benda] Lihat konteks audio dan pilih benda yang sesuai."
+    "analisis": "[MNN Bab 6/Catatan Khusus Pamflet Acara (持って行くもの)] Pada pamflet bounenkai gaku_01.jpg terdapat catatan khusus bertanda bintang: '※ 飲み物は 自分で 好きな物を 持って 来て ください' (Minuman tolong dibawa sendiri yang Anda sukai). Makanan sudah disediakan oleh restoran melalui biaya iuran acara (会費 3,000円). Maka barang yang wajib dibawa oleh peserta adalah Minuman (飲む物 / のみもの / nomimono). Pilihan 卵 (telur) dan 食べ物 (makanan) tidak sesuai instruksi pamflet."
   },
   {
     "no": 55,
@@ -2862,8 +2862,8 @@
   {
     "no": 56,
     "section": "SESI 4 : DOKKAI",
-    "title": "•このレストランは なんじまで ですか。Sampai jam berapa ?",
-    "img": "",
+    "title": "レストランの パンフレットに 書いて あります。\n「このレストランでは、新鮮な 季節の 料理が 食べられます。\n営業時間: 午後1時 (13時) まで。」\n\n● このレストランは 何時まで ですか。",
+    "img": "assets/gaku_00.jpg",
     "options": [
       {
         "text": "ごぜん１１じ",
@@ -2885,30 +2885,30 @@
         "kana": "ごぜん１１じ",
         "rom": "gozen juuichiji",
         "arti": "jam 11 pagi",
-        "alasan": "Tidak cocok dengan teks: untuk kalimat ini."
+        "alasan": "Salah jam operasional."
       },
       {
         "kana": "ごご１２じ",
         "rom": "gogo juuniji",
         "arti": "jam 12 siang",
-        "alasan": "Tidak cocok dengan teks: untuk kalimat ini."
+        "alasan": "Salah jam operasional."
       },
       {
         "kana": "ごご１じ",
         "rom": "gogo ichiji",
-        "arti": "jam 1 siang",
-        "alasan": "Cocok dengan teks: untuk kalimat ini."
+        "arti": "jam 1 siang (13:00)",
+        "alasan": "Tepat sekali. Pada pamflet tertulis: '営業時間: 午後1時 (13時) まで'."
       }
     ],
     "opt_note": [
-      "(gozen) jam 11 pagi",
-      "(gogo) jam 12 siang",
-      "(gogo) jam 1 siang"
+      "(jam 11 pagi) salah",
+      "(jam 12 siang) salah",
+      "(jam 1 siang) tepat (gogo ichiji)"
     ],
     "kunci_id": "ごご１じ",
-    "trans_rom": "kono resutoran wa nanji made desu ka",
-    "trans": "Restoran ini sampai jam berapa?",
+    "trans_rom": "Resutoran no panfuretto ni kaite arimasu.\n'Kono resutoran dewa, shinsen na kisetsu no ryouri ga taberaremasu.\nEigyou jikan: gogo ichiji (juusanji) made.'\n\n[Shitsumon] Kono resutoran wa nanji made desu ka.",
+    "trans": "Tertulis pada pamflet restoran (lihat gambar gaku_00.jpg):\n'Di restoran ini, Anda dapat menikmati masakan musiman yang segar.\nJam operasional: Buka sampai pukul 1 siang / 13:00.'\n\n[Pertanyaan] Restoran ini buka sampai pukul berapa?",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab 11 - Choukai Waktu] Jawaban gogo 1 ji."
+    "analisis": "[MNN Bab 4 - Penunjukan Jam Operasional (~made)] Pamflet restoran pada gambar gaku_00.jpg mencantumkan keterangan jam operasional: '営業時間: 午後1時 (13時) まで' (Jam buka: sampai pukul 1 siang / 13:00 / ごごいちじ). Pilihan ごぜん１１じ (jam 11 pagi) dan ごご１２じ (jam 12 siang) tidak cocok dengan jam tutup yang tertulis di pamflet. Jadi restoran buka sampai pukul 1 siang (ごご１じ)."
   }
 ]
