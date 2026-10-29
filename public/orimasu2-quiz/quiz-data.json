@@ -276,7 +276,7 @@
   },
   {
     "no": 6,
-    "title": "[ 質問 ]がありますか",
+    "title": "質問が ありますか。",
     "subTitle": "(Apakah Anda punya pertanyaan?)",
     "img": "",
     "audio": "",
@@ -297,8 +297,8 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 1 : MOJIGOI",
-    "trans": "(Apakah Anda punya pertanyaan?)",
-    "trans_rom": "-",
+    "trans": "Apakah Anda memiliki pertanyaan?",
+    "trans_rom": "Shitsumon ga arimasu ka.",
     "mnn": "Mojigoi",
     "analisis": "[MNN Bab 14/26 - Cara Baca Kanji & On'yomi (Kanji Yomi)] Soal tipe teks murni ini menguji kompetensi membaca kanji tanpa bantuan gambar. Kanji 質問 terdiri dari 質 (shitsu - mutu/dasar) dan 問 (mon - bertanya). Cara baca kana baku adalah しつもん (shitsumon) yang berarti 'pertanyaan'. Peserta diuji apakah mampu membedakan bunyi fonetik yang benar dan tidak tertipu oleh pilihan pengecoh bunyi seperti しすもん atau ちゅもん. Kalimat: 「質問が ありますか」 = 'Apakah Anda punya pertanyaan?'.",
     "opt_detail": [
@@ -331,7 +331,7 @@
   },
   {
     "no": 7,
-    "title": "[ 近所 ]の人",
+    "title": "近所の人",
     "subTitle": "(Orang-orang di [lingkungan])",
     "img": "",
     "audio": "",
@@ -352,8 +352,8 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 1 : MOJIGOI",
-    "trans": "(Orang-orang di [lingkungan])",
-    "trans_rom": "-",
+    "trans": "Orang tetangga / warga sekitar.",
+    "trans_rom": "Kinjo no hito",
     "mnn": "Mojigoi",
     "analisis": "[MNN Bab 13/28 - Kanji Gabungan On'yomi & Durasi Vokal] Soal teks ini menguji ketepatan membaca kanji 近所 yang terdiri dari 近 (kin - dekat) dan 所 (jo - tempat). Cara baca yang benar adalah きんじょ (kinjo) dengan akhiran vokal pendek 'jo'. Di sini peserta diuji agar tidak tertipu oleh jebakan vokal panjang (chouon) seperti きんじょう (kinjou), karena dalam bahasa Jepang perbedaan vokal pendek dan panjang sangat krusial. Kalimat: 「近所の人」 = 'Orang tetangga / warga sekitar'.",
     "opt_detail": [
@@ -386,7 +386,7 @@
   },
   {
     "no": 8,
-    "title": "日本に [ 9月 ] 来ます",
+    "title": "日本に 9月に 来ます。",
     "subTitle": "(Datang ke Jepang [September])",
     "img": "",
     "audio": "",
@@ -407,8 +407,8 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 1 : MOJIGOI",
-    "trans": "(Datang ke Jepang [September])",
-    "trans_rom": "-",
+    "trans": "Akan datang ke Jepang pada bulan September.",
+    "trans_rom": "Nihon ni kugatsu ni kimasu.",
     "mnn": "Mojigoi",
     "analisis": "[MNN Bab 5 - Tata Bahasa Penanggalan Kalender & Sufiks Waktu] Soal teks ini menguji penguasaan sufiks penanggalan. Untuk nama bulan kalender ke-1 sampai ke-12 digunakan sufiks 月 yang dibaca がつ (gatsu), sehingga bulan September (9月) dibaca くがつ (kugatsu). Pilihan ようび khusus untuk hari dalam sepekan (senin-minggu), sedangkan げつ untuk durasi rentang waktu (misal: 9か月 = selama 9 bulan). Kalimat: 「日本に 9月に 来ます」 = 'Akan datang ke Jepang pada bulan September'.",
     "opt_detail": [
@@ -441,7 +441,7 @@
   },
   {
     "no": 9,
-    "title": "____ をきます",
+    "title": "服を着ます。",
     "subTitle": "(Saya akan mendapatkan ____)",
     "img": "",
     "audio": "",
@@ -462,8 +462,8 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 1 : MOJIGOI",
-    "trans": "(Saya akan mendapatkan ____)",
-    "trans_rom": "-",
+    "trans": "Memakai pakaian / baju.",
+    "trans_rom": "Fuku o kimasu.",
     "mnn": "Mojigoi",
     "analisis": "[MNN Bab 20 - Kolokasi Tata Bahasa Kata Kerja Memakai (Collocation Rules)] Soal teks ini menguji pengetahuan pasangan kata kerja dan benda tanpa bantuan visual. Bahasa Jepang membedakan kata kerja memakai sesuai letak tubuh: (1) Pakaian badan atas/utama memakai きます (kimasu / 着ます); (2) Pakaian bawah (celana/rok/sepatu) memakai はきます (hakimasu); (3) Aksesori kepala (topi) memakai かぶります (kaburimasu). Karena predikat pada soal adalah きます, maka satu-satunya kata benda yang sah menurut tata bahasa adalah ふく (fuku - baju/pakaian).",
     "opt_detail": [
@@ -496,7 +496,7 @@
   },
   {
     "no": 10,
-    "title": "今は____ にいます",
+    "title": "今は 店に います。",
     "subTitle": "(Saat ini saya di ____)",
     "img": "",
     "audio": "",
@@ -517,8 +517,8 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 1 : MOJIGOI",
-    "trans": "(Saat ini saya di ____)",
-    "trans_rom": "-",
+    "trans": "Sekarang saya sedang berada di toko.",
+    "trans_rom": "Ima wa mise ni imasu.",
     "mnn": "Mojigoi",
     "analisis": "[MNN Bab 10 - Pola Keberadaan [Tempat] に います & Seleksi Kategori Kanji] Soal teks ini menguji pemahaman struktur keberadaan mahluk hidup: [Lokasi Fasilitas/Tempat] に います. Dari ketiga pilihan kanji: 足 (ashi - kaki/anggota tubuh), 店 (mise - toko/tempat fisik), dan 予定 (yotei - jadwal/rencana/konsep abstrak), hanya 店 yang merupakan kata benda tempat. Kalimat: 「今は 店に います」 = 'Sekarang saya sedang berada di toko'.",
     "opt_detail": [
@@ -1376,7 +1376,7 @@
   },
   {
     "no": 26,
-    "title": "図書館は どこに ありますか。\n(Toshokan wa doko ni arimasu ka.)",
+    "title": "図書館は どこに ありますか。",
     "subTitle": "Perpustakaan ada di sebelah mana?",
     "img": "",
     "audio": "assets/audio_c1.wav",
@@ -1397,8 +1397,8 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Petunjuk arah jalan: Berada di lampu merah kedua, belok ke kiri, lalu posisinya ada di sisi kiri jalan.",
-    "trans_rom": "Futatsu-me no shingou o hidari e magatte, michi no hidarigawa ni arimasu.",
+    "trans": "Perpustakaan ada di sebelah mana? (Jawab: Berada di lampu merah kedua, belok ke kiri, lalu posisinya ada di sisi kiri jalan).",
+    "trans_rom": "Toshokan wa doko ni arimasu ka. (Futatsu-me no shingou o hidari e magatte, michi no hidari-gawa ni arimasu.)",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 23 - Menyimak Petunjuk Arah Jalan (Michi-annai)] Dalam rekaman audio penutur memberikan petunjuk rute jalan: melewati lampu merah kedua (二つ目の信号 / futatsu-me no shingou), lalu belok ke kiri (左へ曲がります / hidari e magarimasu), dan gedung perpustakaan berada di sisi kiri jalan (道の左側 / michi no hidari-gawa). Kunci jawaban yang tepat adalah opsi ketiga.",
     "opt_detail": [
@@ -1431,7 +1431,7 @@
   },
   {
     "no": 27,
-    "title": "女の子は 何歳ですか。\n(Onnanoko wa nansai desu ka.)",
+    "title": "女の子は 何歳ですか。",
     "subTitle": "Berapa umur anak perempuan dalam percakapan?",
     "img": "",
     "audio": "assets/audio_c2.wav",
@@ -1452,8 +1452,8 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Pertanyaan usia anak perempuan: Umurnya adalah 4 tahun (yon-sai).",
-    "trans_rom": "Onnanoko wa yon-sai desu.",
+    "trans": "Berapa umur anak perempuan dalam percakapan? (Jawab: Berusia 4 tahun).",
+    "trans_rom": "Onnanoko wa nan-sai desu ka. (Yon-sai desu.)",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 1/11 - Menyimak Usia Anak (Nansai / Sai)] Dalam percakapan keluarga/anak, penutur menanyakan usia anak perempuan. Angka 4 tahun dalam bahasa Jepang diucapkan よんさい (yonsai / 4歳). Opsi 8 tahun diucapkan はっさい (hassai) dan 6 tahun ろくさい (rokusai). Kunci jawaban yang benar adalah 4 歳 (4 tahun).",
     "opt_detail": [
@@ -1486,7 +1486,7 @@
   },
   {
     "no": 28,
-    "title": "何を 注文しますか。\n(Nani o chuumon shimasu ka.)",
+    "title": "何を 注文しますか。",
     "subTitle": "Makanan apa yang dipesan?",
     "img": "",
     "audio": "assets/audio_c3.wav",
@@ -1507,8 +1507,8 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Pesanan makanan di restoran: Memesan tempura dan sepiring nasi putih (tenpura to gohan).",
-    "trans_rom": "Tenpura to gohan o chuumon shimasu.",
+    "trans": "Makanan apa yang dipesan pembicara? (Jawab: Memesan tempura dan nasi).",
+    "trans_rom": "Nani o chuumon shimasu ka. (Tenpura to gohan o chuumon shimasu.)",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 3/13 - Percakapan Restoran & Memesan Makanan] Dalam percakapan di kedai makan/restoran, pembicara memilih menu makanan. Pembicara memesan kombinasi hidangan: てんぷら と ごはん (tenpura to gohan = tempura dan nasi). Opsi てんぷら saja tidak lengkap karena ia juga menambah nasi, sedangkan ラーメン tidak dipesan.",
     "opt_detail": [
@@ -1541,7 +1541,7 @@
   },
   {
     "no": 29,
-    "title": "何を持って行かなければなりませんか。\n(Nani o motte ikanakereba narimasen ka.)",
+    "title": "何を持って行かなければなりませんか。",
     "subTitle": "Barang apa yang perlu dibawa?",
     "img": "",
     "audio": "assets/audio_c4.wav",
@@ -1562,8 +1562,8 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Instruksi perlengkapan: Barang yang harus dibawa untuk mencatat adalah pulpen (pen).",
-    "trans_rom": "Pen o motte ikanakereba narimasen.",
+    "trans": "Barang apa yang harus dibawa peserta? (Jawab: Pulpen untuk mencatat).",
+    "trans_rom": "Nani o motte ikanakereba narimasen ka. (Pen o motte ikanakereba narimasen.)",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 17 - Pola Keharusan Membawa Barang (~nakereba narimasen)] Dalam rekaman instruksi atau pengumuman kegiatan, penutur menegaskan barang wajib yang harus dibawa peserta untuk keperluan tulis-menulis yaitu ペン (pen = pulpen/pena). Opsi おもちゃ (mainan) dan 本 (buku) tidak diminta untuk dibawa.",
     "opt_detail": [
@@ -1596,7 +1596,7 @@
   },
   {
     "no": 30,
-    "title": "果物は 全部で 何個ありますか。\n(Kudamono wa zenbu de nanko arimasu ka.)",
+    "title": "果物は 全部で 何個ありますか。",
     "subTitle": "Ada berapa jumlah buah seluruhnya?",
     "img": "",
     "audio": "assets/audio_c5.m4a",
@@ -1617,8 +1617,8 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Jumlah buah: Seluruhnya ada 10 buah (juu-ko / juu-nin).",
-    "trans_rom": "Kudamono wa zenbu de jukko (10-ko) arimasu.",
+    "trans": "Ada berapa jumlah buah seluruhnya? (Jawab: Total ada 10 buah).",
+    "trans_rom": "Kudamono wa zenbu de nan-ko arimasu ka. (Jukko arimasu.)",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 11 - Kata Bantu Hitung Barang (Kosuu / ~ko / ~tsu)] Percakapan menanyakan total kuantitas buah yang dibeli atau disiapkan. Kata kunci angka yang disebutkan pada hasil penghitungan total adalah 10 buah (10個 / じゅっこ / とお). Angka 12 (juuni) atau 20 (nijuu) merupakan angka pengecoh.",
     "opt_detail": [
@@ -1651,7 +1651,7 @@
   },
   {
     "no": 31,
-    "title": "どうして 秋が 好きですか。\n(Doushite aki ga suki desu ka.)",
+    "title": "どうして 秋が 好きですか。",
     "subTitle": "Mengapa pembicara menyukai musim gugur?",
     "img": "",
     "audio": "assets/audio_c6.wav",
@@ -1672,8 +1672,8 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Alasan suka musim gugur: Karena banyak buah-buahan lezat di musim gugur (kudamono ga oishii kara).",
-    "trans_rom": "Kudamono ga oishii kara, aki ga suki desu.",
+    "trans": "Mengapa pembicara menyukai musim gugur? (Jawab: Karena buah-buahannya sangat lezat).",
+    "trans_rom": "Doushite aki ga suki desu ka. (Kudamono ga oishii kara desu.)",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 9/12 - Menyimak Alasan Mengapa (Doushite ~ Kara)] Pembicara ditanya alasan menyukai musim gugur (秋 / aki). Dalam dialognya ia menyebutkan bahwa di musim gugur buah-buahan sangat enak dan banyak dipanen (くだものが おいしいですから / kudamono ga oishii kara desu). Suhu sejuk (すずしい) atau pemandangan (景色 / keshiki) bukan poin utama yang ditekankannya sebagai alasan kesukaannya.",
     "opt_detail": [
@@ -1706,7 +1706,7 @@
   },
   {
     "no": 32,
-    "title": "どんな 災害が 起きていますか。\n(Donna saigai ga okite imasu ka.)",
+    "title": "どんな 災害が 起きていますか。",
     "subTitle": "Bencana alam apa yang sedang terjadi dalam berita/pengumuman?",
     "img": "",
     "audio": "assets/audio_c7.wav",
@@ -1727,8 +1727,8 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Kondisi darurat: Bencana alam yang sedang melanda adalah badai topan besar (taifuu).",
-    "trans_rom": "Ima, taifuu ga chikazuite imasu / kite imasu.",
+    "trans": "Bencana alam apa yang sedang terjadi dalam pengumuman? (Jawab: Badai topan besar / taifun).",
+    "trans_rom": "Donna saigai ga okite imasu ka. (Taifuu ga kite imasu.)",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 45 - Menyimak Berita Cuaca Darurat & Bencana Alam (Saigai)] Siaran darurat atau berita radio memperingatkan warga mengenai datangnya badai taifun (たいふう / 台風) yang disertai angin kencang dan hujan lebat. Opsi 地震 (jishin = gempa bumi) dan かじ (kaji = kebakaran) tidak sesuai dengan isi siaran bahaya cuaca.",
     "opt_detail": [
@@ -1761,7 +1761,7 @@
   },
   {
     "no": 33,
-    "title": "どこへ 避難しますか。\n(Doko e hinan shimasu ka.)",
+    "title": "どこへ 避難しますか。",
     "subTitle": "Warga harus pergi mengungsi ke mana?",
     "img": "",
     "audio": "assets/audio_c8.m4a",
@@ -1782,8 +1782,8 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Instruksi evakuasi: Warga diminta segera pergi mengungsi ke tempat evakuasi / shelter (hinanjo).",
-    "trans_rom": "Hinanjo e hinan shite kudasai.",
+    "trans": "Warga harus pergi mengungsi ke mana? (Jawab: Ke tempat penampungan pengungsian / shelter).",
+    "trans_rom": "Doko e hinan shimasu ka. (Hinanjo e hinan shimasu.)",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 45 - Instruksi Penyelamatan Diri Bencana Alam] Melanjutkan siaran darurat bencana badai topan, petugas menginstruksikan penduduk untuk segera mengungsi demi keselamatan diri ke balai/tempat penampungan pengungsian resmi (ひなんじょ / 避難所). Tetap tinggal di rumah (家) atau pergi ke taman terbuka (こうえん) sangat berbahaya saat badai topan.",
     "opt_detail": [
@@ -1816,7 +1816,7 @@
   },
   {
     "no": 34,
-    "title": "トイレは どこに ありますか。\n(Toire wa doko ni arimasu ka.)",
+    "title": "トイレは どこに ありますか。",
     "subTitle": "Toilet berada di sebelah mana?",
     "img": "",
     "audio": "assets/audio_c9.wav",
@@ -1837,8 +1837,8 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Lokasi fasilitas umum: Toilet berada tepat di sebelah toko buku (hon'ya no tonari).",
-    "trans_rom": "Toire wa hon'ya no tonari ni arimasu.",
+    "trans": "Toilet berada di sebelah mana? (Jawab: Tepat berada di sebelah toko buku).",
+    "trans_rom": "Toire wa doko ni arimasu ka. (Hon'ya no tonari ni arimasu.)",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 10 - Menyimak Posisi Letak Fasilitas (Tonari / Mae)] Penutur menanyakan posisi toilet kepada petugas/lawan bicara. Penutur diberitahu bahwa posisi toilet adalah di samping persis toko buku (ほんやの となり / 本屋の隣). Pilihan こうえんのまえ (di depan taman) dan こんびにのとなり (di sebelah minimarket) merupakan lokasi pengecoh.",
     "opt_detail": [
