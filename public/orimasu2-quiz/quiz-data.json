@@ -300,7 +300,7 @@
     "trans": "(Apakah Anda punya pertanyaan?)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[MNN Bab 14/26 - Cara Baca Kanji & On'yomi] Kanji 質問 terdiri dari 質 (shitsu - mutu/dasar) dan 問 (mon - bertanya). Cara baca kana yang benar dan baku adalah しつもん (shitsumon) yang berarti 'pertanyaan'. Kalimat: 「質問が ありますか」 artinya 'Apakah ada pertanyaan?'.",
+    "analisis": "[MNN Bab 14/26 - Cara Baca Kanji & On'yomi (Kanji Yomi)] Soal tipe teks murni ini menguji kompetensi membaca kanji tanpa bantuan gambar. Kanji 質問 terdiri dari 質 (shitsu - mutu/dasar) dan 問 (mon - bertanya). Cara baca kana baku adalah しつもん (shitsumon) yang berarti 'pertanyaan'. Peserta diuji apakah mampu membedakan bunyi fonetik yang benar dan tidak tertipu oleh pilihan pengecoh bunyi seperti しすもん atau ちゅもん. Kalimat: 「質問が ありますか」 = 'Apakah Anda punya pertanyaan?'.",
     "opt_detail": [
       {
         "kana": "しすもん",
@@ -355,7 +355,7 @@
     "trans": "(Orang-orang di [lingkungan])",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[MNN Bab 13/28 - Kanji Gabungan On'yomi] Kanji 近所 terdiri dari 近 (kin - dekat) dan 所 (jo / sho - tempat). Gabungan keduanya dibaca きんじょ (kinjo) dengan bunyi vokal pendek 'o', bukan vokal panjang 'ou'. Artinya adalah 'tetangga' atau 'lingkungan sekitar tempat tinggal'. Kalimat: 「近所の人」 artinya 'orang tetangga / warga sekitar'.",
+    "analisis": "[MNN Bab 13/28 - Kanji Gabungan On'yomi & Durasi Vokal] Soal teks ini menguji ketepatan membaca kanji 近所 yang terdiri dari 近 (kin - dekat) dan 所 (jo - tempat). Cara baca yang benar adalah きんじょ (kinjo) dengan akhiran vokal pendek 'jo'. Di sini peserta diuji agar tidak tertipu oleh jebakan vokal panjang (chouon) seperti きんじょう (kinjou), karena dalam bahasa Jepang perbedaan vokal pendek dan panjang sangat krusial. Kalimat: 「近所の人」 = 'Orang tetangga / warga sekitar'.",
     "opt_detail": [
       {
         "kana": "きじょう",
@@ -410,7 +410,7 @@
     "trans": "(Datang ke Jepang [September])",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[MNN Bab 5 - Penyebutan Nama Bulan] Untuk menyebut urutan nama bulan ke-1 sampai ke-12 (Januari s.d. Desember), angka ditempel dengan sufiks 月 yang dibaca がつ (gatsu). Khusus bulan September (9月) dibaca くがつ (kugatsu) atau [angka 9]がつ. Kalimat: 「日本に 9月に 来ます」 artinya 'Akan datang ke Jepang pada bulan September'.",
+    "analisis": "[MNN Bab 5 - Tata Bahasa Penanggalan Kalender & Sufiks Waktu] Soal teks ini menguji penguasaan sufiks penanggalan. Untuk nama bulan kalender ke-1 sampai ke-12 digunakan sufiks 月 yang dibaca がつ (gatsu), sehingga bulan September (9月) dibaca くがつ (kugatsu). Pilihan ようび khusus untuk hari dalam sepekan (senin-minggu), sedangkan げつ untuk durasi rentang waktu (misal: 9か月 = selama 9 bulan). Kalimat: 「日本に 9月に 来ます」 = 'Akan datang ke Jepang pada bulan September'.",
     "opt_detail": [
       {
         "kana": "9がつ",
@@ -465,7 +465,7 @@
     "trans": "(Saya akan mendapatkan ____)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[MNN Bab 20 - Kata Kerja Memakai Pakaian] Bahasa Jepang membedakan kata kerja 'memakai' berdasarkan letak tubuh: (1) Pakaian badan atas (baju, kemeja, gaun) = きます (kimasu / 着ます); (2) Pakaian bawah (celana, rok, sepatu) = はきます (hakimasu); (3) Aksesori kepala (topi) = かぶります (kaburimasu). Kalimat: 「ふくを きます」 artinya 'Memakai pakaian/baju'.",
+    "analisis": "[MNN Bab 20 - Kolokasi Tata Bahasa Kata Kerja Memakai (Collocation Rules)] Soal teks ini menguji pengetahuan pasangan kata kerja dan benda tanpa bantuan visual. Bahasa Jepang membedakan kata kerja memakai sesuai letak tubuh: (1) Pakaian badan atas/utama memakai きます (kimasu / 着ます); (2) Pakaian bawah (celana/rok/sepatu) memakai はきます (hakimasu); (3) Aksesori kepala (topi) memakai かぶります (kaburimasu). Karena predikat pada soal adalah きます, maka satu-satunya kata benda yang sah menurut tata bahasa adalah ふく (fuku - baju/pakaian).",
     "opt_detail": [
       {
         "kana": "ふく",
@@ -520,7 +520,7 @@
     "trans": "(Saat ini saya di ____)",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[MNN Bab 10 - Kata Kerja Keberadaan Imasu & Partikel Tempat Ni] Pola kalimat: [Tempat] に います ([Tempat] ni imasu) digunakan untuk menyatakan keberadaan makhluk hidup (manusia/hewan) di suatu lokasi. Di antara pilihan kanji yang tersedia, satu-satunya kanji yang menunjukkan nama tempat/fasilitas adalah 店 dibaca みせ (mise - toko). Kalimat: 「今は 店に います」 artinya 'Sekarang saya sedang berada di toko'.",
+    "analisis": "[MNN Bab 10 - Pola Keberadaan [Tempat] に います & Seleksi Kategori Kanji] Soal teks ini menguji pemahaman struktur keberadaan mahluk hidup: [Lokasi Fasilitas/Tempat] に います. Dari ketiga pilihan kanji: 足 (ashi - kaki/anggota tubuh), 店 (mise - toko/tempat fisik), dan 予定 (yotei - jadwal/rencana/konsep abstrak), hanya 店 yang merupakan kata benda tempat. Kalimat: 「今は 店に います」 = 'Sekarang saya sedang berada di toko'.",
     "opt_detail": [
       {
         "kana": "足",

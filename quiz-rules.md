@@ -64,11 +64,16 @@ Setiap soal memiliki 3 opsi dengan pasangan rincian analisis:
    - `opt_detail`: Masing-masing opsi diuraikan makna kanji/kosakata dan alasan mengapa cocok atau tidak cocok dengan gambar.
    - `opt_note`: Ringkasan cepat bacaan romaji & arti per opsi, contoh: `["(kouen) taman", "(taifuu) badai topan", "(isha) dokter"]`.
 
-2. **Soal Teks / Kosakata / Partikel:**
-   - `title` berisi kalimat utama Jepang dengan tanda kurung `（　）` atau `[ Kanji ]`.
+2. **Soal Teks Murni (Moji-Goi Nomor 6 s.d. 10 - Tanpa Gambar):**
+   - **Tujuan Ujian Resmi**: Sengaja **TIDAK menggunakan gambar** agar peserta tidak menebak arti dari gambar, melainkan diuji kompetensi linguistik murni:
+     1. **Cara Baca Kanji (*Kanji Yomi*)**: Menguji pelafalan on'yomi/kun'yomi yang tepat (contoh: `[ 質問 ]` dibaca `しつもん` vs `しすもん`) dan kepekaan vokal panjang/pendek (*chouon*) (contoh: `[ 近所 ]` dibaca pendek `きんじょ`, bukan panjang `きんじょう`).
+     2. **Sufiks Waktu & Kalender**: Menguji pembedaan penanggalan bulan `がつ` (contoh: `9がつ`) vs hari `ようび` vs rentang durasi `げつ`.
+     3. **Aturan Kolokasi Pasangan Kata (*Collocation*)**: Menguji pasangan kata kerja yang menuntut kata benda spesifik (contoh: predikat `きます` [memakai baju atas] wajib berpasangan dengan `ふく`, bukan `ずぼん` [memakai pakaian bawah = `はきます`] atau `ぼうし` [memakai topi = `かぶります`]).
+     4. **Kategori Kata & Pola Struktur Keberadaan**: Menguji seleksi kata benda tempat pada pola `[Tempat] に います` (contoh: `店` [toko] vs `足` [anggota tubuh] vs `予定` [jadwal/abstrak]).
+   - `title` berisi kalimat utama Jepang dengan tanda kurung `（　）` atau penanda `[ Kanji ]`.
    - `img` berupa string kosong `""`.
    - `trans` berisi terjemahan utuh bahasa Indonesia dari kalimat soal.
-   - `analisis` membedah pola partikel, cara baca on'yomi/kun'yomi, serta jebakan fonetik (seperti vokal panjang vs pendek, tsu vs su).
+   - `analisis` membedah pola partikel, aturan kolokasi, cara baca on'yomi/kun'yomi, serta membongkar jebakan fonetik.
 
 3. **Soal Percakapan / Dialog (Hyougen):**
    - `title` berisi dialog percakapan pembicara A dan B yang menuntut respon balasan wajar sesuai tingkat kesopanan (keigo / desu-masu).
