@@ -131,25 +131,29 @@
           <!-- Di-render dinamis 4 kartu -->
         </div>
 
-        <!-- Feedback & Next Action Bar -->
+        <!-- Feedback & Next Action Card -->
         <div id="feedbackBar"
-          class="hidden rounded-2xl p-4 sm:p-5 flex flex-col gap-3 transition-all">
-          <div class="flex flex-col sm:flex-row items-center justify-between gap-3 text-center sm:text-left">
-            <div class="flex items-center gap-3">
-              <div id="feedbackIcon" class="w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg shrink-0">
+          class="hidden rounded-3xl p-5 sm:p-6 transition-all shadow-sm">
+          
+          <!-- Baris Utama: Status + Tombol Lanjut -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-4 border-b border-black/5">
+            <div class="flex items-center gap-3.5">
+              <div id="feedbackIcon" class="w-11 h-11 rounded-2xl flex items-center justify-center text-white text-xl shrink-0 shadow-sm">
               </div>
               <div>
-                <p id="feedbackTitle" class="font-extrabold text-sm"></p>
-                <p id="feedbackDetail" class="text-xs text-slate-600 font-medium"></p>
+                <h4 id="feedbackTitle" class="font-black text-base sm:text-lg tracking-tight"></h4>
+                <p id="feedbackDetail" class="text-xs sm:text-sm text-slate-600 font-semibold mt-0.5"></p>
               </div>
             </div>
             <button id="nextBtn" onclick="nextQuestion()"
-              class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 text-white font-bold px-6 py-2.5 rounded-xl text-xs transition-all shadow-md shrink-0">
-              Lanjut Soal Berikutnya &rarr;
+              class="w-full sm:w-auto bg-slate-900 hover:bg-slate-800 active:scale-95 text-white font-bold px-6 py-3 rounded-2xl text-xs sm:text-sm transition-all shadow-md flex items-center justify-center gap-2 shrink-0">
+              <span>Lanjut Soal Berikutnya</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
             </button>
           </div>
-          <!-- Box Penjelasan Piktograf & Filosofi Kanji/Radikal -->
-          <div id="feedbackPicfilo" class="hidden mt-1 pt-3 border-t border-slate-200/80 text-left text-xs leading-relaxed space-y-1.5">
+
+          <!-- Kartu Penjelasan Asal-Usul, Piktograf & Filosofi -->
+          <div id="feedbackPicfilo" class="hidden pt-4">
           </div>
         </div>
 
@@ -389,7 +393,7 @@
         currentQ = {
           target: {
             kanji: target.radical,
-            detail: `Radikal ${target.radical}: ${target.nama || targetOptionText}`,
+            detail: targetOptionText,
             pic: info ? info.pic : '',
             filo: info ? info.filo : ''
           },
@@ -534,34 +538,33 @@
         selectedBtn.classList.remove('bg-slate-50', 'border-slate-200');
         selectedBtn.classList.add('bg-emerald-500', 'text-white', 'border-emerald-600', 'shadow-md');
 
-        fbBar.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-emerald-50 border border-emerald-200';
-        fbIcon.className = 'w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg bg-emerald-500';
+        fbBar.className = 'rounded-3xl p-5 sm:p-6 transition-all shadow-sm bg-emerald-50/90 border border-emerald-200';
+        fbIcon.className = 'w-11 h-11 rounded-2xl flex items-center justify-center text-white text-xl bg-emerald-500 shadow-sm shrink-0';
         fbIcon.innerHTML = '<i class="fa-solid fa-check"></i>';
-        fbTitle.className = 'font-extrabold text-sm text-emerald-800';
+        fbTitle.className = 'font-black text-base sm:text-lg text-emerald-900 tracking-tight';
         fbTitle.textContent = 'Luar Biasa, Jawaban Benar! (+10 Poin)';
-        fbDetail.textContent = currentQ.target.detail || `${currentQ.target.kanji || currentQ.target.kana} = ${opt.text}`;
+        fbDetail.innerHTML = `Karakter: <b class="text-slate-800">${currentQ.target.kanji || currentQ.target.kana}</b> &rarr; <span class="text-emerald-800 font-bold">${opt.text}</span>`;
       } else {
         streak = 0;
         selectedBtn.classList.remove('bg-slate-50', 'border-slate-200');
-        selectedBtn.classList.add('bg-rose-500', 'text-white', 'border-rose-600', 'shadow-md');
+        selectedBtn.classList.add('bg-rose-50', 'border-rose-400', 'text-rose-900', 'ring-2', 'ring-rose-300');
 
         // Tandai jawaban yang benar
         allOptions.forEach((o, i) => {
           if (o.isCorrect && allButtons[i]) {
             allButtons[i].classList.remove('bg-slate-50', 'border-slate-200');
-            allButtons[i].classList.add('bg-emerald-100', 'border-emerald-400', 'text-emerald-900');
+            allButtons[i].classList.add('bg-emerald-100', 'border-emerald-500', 'text-emerald-950', 'font-extrabold', 'ring-2', 'ring-emerald-400/50');
           }
         });
 
-        fbBar.className = 'rounded-2xl p-4 flex flex-col sm:flex-row items-center justify-between gap-3 bg-rose-50 border border-rose-200';
-        fbIcon.className = 'w-10 h-10 rounded-xl flex items-center justify-center text-white text-lg bg-rose-500';
+        fbBar.className = 'rounded-3xl p-5 sm:p-6 transition-all shadow-sm bg-rose-50/90 border border-rose-200';
+        fbIcon.className = 'w-11 h-11 rounded-2xl flex items-center justify-center text-white text-xl bg-rose-500 shadow-sm shrink-0';
         fbIcon.innerHTML = '<i class="fa-solid fa-xmark"></i>';
-        fbTitle.className = 'font-extrabold text-sm text-rose-800';
+        fbTitle.className = 'font-black text-base sm:text-lg text-rose-900 tracking-tight';
         fbTitle.textContent = 'Jawaban Kurang Tepat';
         const correctOpt = allOptions.find(o => o.isCorrect);
-        fbDetail.textContent = currentQ.target.detail 
-          ? `Jawaban yang benar: ${currentQ.target.detail}`
-          : `Jawaban yang benar: ${correctOpt ? correctOpt.text : ''}`;
+        const correctText = currentQ.target.detail || (correctOpt ? correctOpt.text : '');
+        fbDetail.innerHTML = `Kunci yang benar: <b class="text-slate-900 bg-white/70 px-2.5 py-0.5 rounded-lg border border-rose-200 inline-block mt-0.5">${correctText}</b>`;
       }
 
       // Render Penjelasan Piktograf & Filosofi (Level Radikal & Kanji Tunggal)
@@ -570,19 +573,35 @@
         const hasPicOrFilo = currentQ && currentQ.target && (currentQ.target.pic || currentQ.target.filo);
         if (hasPicOrFilo) {
           const targetChar = currentQ.target.kanji || '';
-          let htmlInfo = '';
+          let rowsHtml = '';
           if (currentQ.target.pic) {
-            htmlInfo += `<div class="flex items-start gap-1.5"><b class="text-amber-800 shrink-0 font-bold">🖼️ Piktograf:</b> <span class="text-slate-700">${currentQ.target.pic}</span></div>`;
+            rowsHtml += `
+              <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 bg-white/95 rounded-xl p-3 border border-slate-200/80">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-amber-50 text-amber-900 font-extrabold text-[11px] shrink-0 border border-amber-200 w-fit">
+                  <i class="fa-solid fa-image text-amber-600"></i> Piktograf
+                </span>
+                <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">${currentQ.target.pic}</span>
+              </div>
+            `;
           }
           if (currentQ.target.filo) {
-            htmlInfo += `<div class="flex items-start gap-1.5"><b class="text-sky-800 shrink-0 font-bold">💡 Filosofi:</b> <span class="text-slate-700">${currentQ.target.filo}</span></div>`;
+            rowsHtml += `
+              <div class="flex flex-col sm:flex-row sm:items-start gap-1 sm:gap-3 bg-white/95 rounded-xl p-3 border border-slate-200/80">
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-sky-50 text-sky-900 font-extrabold text-[11px] shrink-0 border border-sky-200 w-fit">
+                  <i class="fa-solid fa-lightbulb text-sky-600"></i> Filosofi
+                </span>
+                <span class="text-slate-700 text-xs sm:text-sm leading-relaxed">${currentQ.target.filo}</span>
+              </div>
+            `;
           }
           fbPicfilo.innerHTML = `
-            <div class="bg-white/80 rounded-xl p-3 border border-slate-200 shadow-sm space-y-1.5">
-              <div class="text-[11px] font-black tracking-wider uppercase text-slate-500 mb-1 flex items-center gap-1.5">
-                <span class="w-2 h-2 rounded-full bg-emerald-500"></span> Asal-Usul & Makna Karakter 【${targetChar}】
+            <div class="space-y-2.5">
+              <div class="text-[11px] font-black tracking-wider uppercase text-slate-500 flex items-center gap-2">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 inline-block"></span> Asal-Usul & Makna Karakter 【${targetChar}】
               </div>
-              ${htmlInfo}
+              <div class="grid grid-cols-1 gap-2">
+                ${rowsHtml}
+              </div>
             </div>
           `;
           fbPicfilo.classList.remove('hidden');
