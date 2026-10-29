@@ -1541,7 +1541,7 @@
   },
   {
     "no": 29,
-    "title": "A: 何時に 会う？ 12時30分は どうかな。\nB: どこで 待ち合わせする？\nA: 入り口の 前で 待っているね。\nB: わかった。じゃあ、12時30分に 入り口の 前で 会おう。\n\n【質問】映画を 見るために、何時に どこで 会いますか。",
+    "title": "A: 今日は 一緒に 映画を 見に 行こうよ。前から 見たかった 映画なんだ。\nB: いいね。ぜひ 行こう。何時に 会う？\nA: 12時30分は どうかな。その時間なら 映画に 間に合うと 思う。\nB: うん。12時30分で いいよ。どこで 待ち合わせする？\nA: 入口の 前で 待っているね。\nB: わかった。じゃあ、12時30分に 入口の 前で 会おう。楽しみだね。\n\n【質問】映画を 見るために、何時に どこで 会いますか。",
     "subTitle": "(Mau menonton film, janjian jam berapa dan di mana?)",
     "img": "",
     "audio": "assets/audio_c1.wav",
@@ -1562,10 +1562,10 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "A: Mau ketemuan jam berapa? Bagaimana kalau jam 12:30?\nB: Ketemuannya di sebelah mana?\nA: Saya tunggu di depan pintu masuk ya.\nB: Oke, paham. Kalau begitu mari kita bertemu jam 12:30 di depan pintu masuk.\n\n[Pertanyaan] Mau menonton film, janjian jam berapa dan di mana?",
-    "trans_rom": "A: Nanji ni au? Juuni-ji sanjuppun wa dou kana.\nB: Doko de machiawase suru?\nA: Iriguchi no mae de matte iru ne.\nB: Wakatta. Jaa, juuni-ji sanjuppun ni iriguchi no mae de aou.\n\n[Shitsumon] Eiga o miru tame ni, nanji ni doko de aimasu ka.",
+    "trans": "A: Hari ini ayo pergi nonton film bareng. Ini film yang sudah lama ingin kutonton lho.\nB: Bagus juga. Ayo pastinya! Mau ketemu jam berapa?\nA: Bagaimana kalau jam 12:30? Kalau jam segitu sepertinya bakal sempat untuk nonton film.\nB: Ya. Jam 12:30 boleh. Janjian ketemuan di mana?\nA: Aku tunggu di depan pintu masuk (入口) ya.\nB: Paham. Kalau begitu, mari ketemu jam 12:30 di depan pintu masuk. Nggak sabar ya!\n\n[Pertanyaan] Mau menonton film, janjian jam berapa dan di mana?",
+    "trans_rom": "A: Kyou wa issho ni eiga o mi ni ikou yo. Mae kara mitakatta eiga nan da.\nB: Ii ne. Zehi ikou. Nanji ni au?\nA: Juuni-ji sanjuppun wa dou kana. Sono jikan nara eiga ni maniau to omou.\nB: Un. Juuni-ji sanjuppun de ii yo. Doko de machiawase suru?\nA: Iriguchi no mae de matte iru ne.\nB: Wakatta. Jaa, juuni-ji sanjuppun ni iriguchi no mae de aou. Tanoshimi da ne.\n\n[Shitsumon] Eiga o miru tame ni, nanji ni doko de aimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Dalam audio terdengar jelas: '何時に会う？12時30分はどうかな... どこで待ち合わせする？入り口の前で待っているね。わかった、じゃあ12時30分に入り口の前で会おう' (Janjian jam berapa? Bagaimana kalau jam 12:30? Bertemu di mana? Di depan pintu masuk). Jadi jam 12:30 di pintu masuk (12:30 入口).",
+    "analisis": "[MNN Bab 37/Percakapan Sehari-hari - Janji Temu Bioskop] Dalam audio percakapan terdengar jelas percakapan janjian nonton film:\n1. Jam temu: A mengusulkan '12時30分はどうかな' (Bagaimana kalau jam 12:30?), dan B menyetujui 'うん、12時30分でいいよ' (Ya, jam 12:30 boleh).\n2. Lokasi temu: A mengatakan '入口の前で待っているね' (Aku tunggu di depan pintu masuk), dan B mengonfirmasi 'じゃあ、12時30分に入口の前で会おう' (Kalau begitu, jam 12:30 ketemu di depan pintu masuk/iriguchi). Maka pilihan yang tepat adalah '12;30 入口'.",
     "opt_detail": [
       {
         "kana": "12;30 入口",
@@ -1596,7 +1596,7 @@
   },
   {
     "no": 30,
-    "title": "客: すみません、この 黒いシャツは ありますか。\n店員: あいにく Lサイズは 売り切れてしまいました。ですが、こちらの Mサイズでしたら 黒色が ございますよ。\n客: そうですか。じゃあ、Mサイズを 見せてください。\n\n【質問】店には どんな服が ありますか。",
+    "title": "客: すみません、この 黒いシャツの Lサイズは ありますか。\n店員: 申し訳ございません。あいにく Lサイズは 売り切れてしまいました。\n客: そうですか、残念です。\n店員: ですが、こちらの Mサイズでしたら、黒色が ございますよ。\n客: 本当ですか？ Mサイズで 黒色ですね。少し 見せて いただけますか。\n\n【質問】店には どんな服が ありますか。",
     "subTitle": "(Baju apa yang tersedia di toko?)",
     "img": "",
     "audio": "assets/audio_c2.wav",
@@ -1617,10 +1617,10 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Pelanggan: Permisi, apakah ada kemeja warna hitam yang ini?\nPelayan: Sayang sekali ukuran L sudah habis terjual. Tapi kalau untuk ukuran M yang ini, warna hitam masih ada lho.\nPelanggan: Begitu ya. Kalau begitu tolong perlihatkan yang ukuran M.\n\n[Pertanyaan] Baju apa yang masih tersedia di toko?",
-    "trans_rom": "Kyaku: Sumimasen, kono kuroi shatsu wa arimasu ka.\nTen'in: Ainiku Eru-saizu wa urikirete shimaimashita. Desu ga, kochira no Emu-saizu deshita ra kuro-iro ga gozaimasu yo.\nKyaku: Sou desu ka. Jaa, Emu-saizu o misete kudasai.\n\n[Shitsumon] Mise ni wa donna fuku ga arimasu ka.",
+    "trans": "Pelanggan: Permisi, apakah ada kemeja warna hitam yang ini ukuran L?\nPelayan: Mohon maaf sekali. Sayang sekali ukuran L sudah habis terjual.\nPelanggan: Begitu ya, sayang sekali.\nPelayan: Tetapi, kalau untuk ukuran M yang sebelah sini, warna hitam ada lho.\nPelanggan: Benarkah? Ukuran M warna hitam ya. Boleh tolong perlihatkan sebentar?\n\n[Pertanyaan] Baju apa yang tersedia di toko?",
+    "trans_rom": "Kyaku: Sumimasen, kono kuroi shatsu no Eru-saizu wa arimasu ka.\nTen'in: Moushiwake gozaimasen. Ainiku Eru-saizu wa urikirete shimaimashita.\nKyaku: Sou desu ka, zannen desu.\nTen'in: Desu ga, kochira no Emu-saizu deshita ra, kuro-iro ga gozaimasu yo.\nKyaku: Hontou desu ka? Emu-saizu de kuro-iro desu ne. Sukoshi misete itadakemasu ka.\n\n[Shitsumon] Mise ni wa donna fuku ga arimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Staf toko mengatakan: 'あいにくLサイズは売り切れてしまいました。ですがこちらのMサイズでしたら黒色がございますよ' (Sayang sekali ukuran L sudah habis terjual. Tetapi kalau ukuran M ini, warna hitam ada stoknya). Jadi yang tersedia adalah baju warna hitam ukuran M.",
+    "analisis": "[MNN Bab 49/Keigo Layanan Toko - Berbelanja Pakaian] Pelayan toko menjelaskan: '申し訳ございません。あいにくLサイズは売り切れてしまいました。ですが、こちらのMサイズでしたら、黒色がございますよ' (Mohon maaf, sayang sekali ukuran L sudah habis terjual. Tapi kalau ukuran M ini, warna hitam ada stoknya). Baju yang tersedia di toko adalah ukuran M warna hitam (M size, warna hitam).",
     "opt_detail": [
       {
         "kana": "XL size, warna biru",
@@ -1651,7 +1651,7 @@
   },
   {
     "no": 31,
-    "title": "A: スキー旅行の 準備は できた？\nB: うん、スキーの 道具や 服は ぜんぶ そろったよ。\nA: 忘れ物はない？\nB: 大丈夫、準備万端だよ。\n\n【質問】旅行の 前に 何の 準備を しましたか。",
+    "title": "A: スキー旅行の 準備は もう 終わった？\nB: スキー用具は 現地で 全部 レンタルするから 大丈夫だよ。\nA: そうなんだ。じゃあ 出発する 前に 何か 買って おくものは ないの？\nB: 日差しが 強いから、忘れずに サングラスを 買って おかないと。\nA: それは 大切だね。忘れないように 気を つけてね。\n\n【質問】スキー用具は どう 準備しますか。",
     "subTitle": "(Dengarkan baik-baik untuk nomor 30 &amp; 31: Topik persiapan apa yang dibicarakan?)",
     "img": "",
     "audio": "assets/audio_c3.wav",
@@ -1672,10 +1672,10 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "A: Apakah persiapan untuk liburan ski sudah selesai?\nB: Ya, peralatan ski dan pakaian hangat semuanya sudah lengkap kok.\nA: Tidak ada barang yang tertinggal kan?\nB: Aman, semuanya sudah siap beres.\n\n[Pertanyaan] Persiapan peralatan apa yang dibicarakan sebelum berangkat?",
-    "trans_rom": "A: Sukii-ryokou no junbi wa dekita?\nB: Un, sukii no dougu ya fuku wa zenbu sorotta yo.\nA: Wasuremono wa nai?\nB: Daijoubu, junbi bantan da yo.\n\n[Shitsumon] Ryokou no mae ni nan no junbi o shimashita ka.",
+    "trans": "A: Persiapan wisata skinya sudah selesai belum?\nB: Peralatan ski semuanya akan dirental di lokasi, jadi aman kok.\nA: Oh begitu ya. Terus sebelum berangkat, apa tidak ada barang yang perlu dibeli dulu?\nB: Karena terik matahari silau/kuat, aku harus beli kacamata hitam (sunglasses) jangan sampai lupa.\nA: Wah itu penting ya. Hati-hati ya jangan sampai lupa!\n\n[Pertanyaan] Dengarkan baik-baik untuk nomor 31: APA PERALATAN YANG DIBAWA? (Bagaimana persiapan peralatan ski?)",
+    "trans_rom": "A: Sukii-ryokou no junbi wa mou owatta?\nB: Sukii-yougu wa genchi de zenbu rentaru suru kara daijoubu da yo.\nA: Sou nan da. Jaa shuppatsu suru mae ni nanika katte oku mono wa nai no?\nB: Hizashi ga tsuyoi kara, wasurezu ni sangurasu o katte okanai to.\nA: Sore wa taisetsu da ne. Wasurenai you ni ki o tsukete ne.\n\n[Shitsumon] Sukii-yougu wa dou junbi shimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Topik percakapan adalah persiapan liburan ski (スキー旅行の準備). Pembicara menyebutkan peralatan ski semuanya disewa di lokasi (スキー用具は現地で全部レンタルする).",
+    "analisis": "[MNN Bab 30 - Bentuk ~te oku & Persiapan Wisata] B mengatakan secara eksplisit perihal peralatan ski: 'スキー用具は現地で全部レンタルするから大丈夫だよ' (Peralatan ski semuanya akan dirental/sewa di lokasi setempat jadi aman). Maka peralatannya tidak beli dan tidak bawa dari rumah, melainkan menyewa di tempat/lokasi ski (Rental).",
     "opt_detail": [
       {
         "kana": "PERALATAN FOTO",
@@ -1706,7 +1706,7 @@
   },
   {
     "no": 32,
-    "title": "A: スキー場は 日差しが 強いから、忘れずに サングラスを 買っておかないとね。\nB: そうだね。出発する 前に 買いに 行こう。\n\n【質問】出発する 前に まず 何を 買いますか。",
+    "title": "A: スキー旅行の 準備は もう 終わった？\nB: スキー用具は 現地で 全部 レンタルするから 大丈夫だよ。\nA: そうなんだ。じゃあ 出発する 前に 何か 買って おくものは ないの？\nB: 日差しが 強いから、忘れずに サングラスを 買って おかないと。\nA: それは 大切だね。忘れないように 気を つけてね。\n\n【質問】出発する 前に、何を 買いますか。",
     "subTitle": "(Apa yang akan dibeli terlebih dahulu sebelum berangkat?)",
     "img": "",
     "audio": "assets/audio_c4.wav",
@@ -1727,10 +1727,10 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "A: Karena sinar matahari di tempat ski sangat terik, kita tidak boleh lupa harus membeli kacamata hitam dulu ya.\nB: Benar juga. Ayo kita beli dulu sebelum berangkat.\n\n[Pertanyaan] Apa yang akan dibeli terlebih dahulu sebelum berangkat?",
-    "trans_rom": "A: Sukii-jou wa hizashi ga tsuyoi kara, wasurezu ni sangurasu o katte okanai to ne.\nB: Sou da ne. Shuppatsu suru mae ni kai ni ikou.\n\n[Shitsumon] Shuppatsu suru mae ni mazu nani o kaimasu ka.",
+    "trans": "A: Persiapan wisata skinya sudah selesai belum?\nB: Peralatan ski semuanya akan dirental di lokasi, jadi aman kok.\nA: Oh begitu ya. Terus sebelum berangkat, apa tidak ada barang yang perlu dibeli dulu?\nB: Karena terik matahari silau/kuat, aku harus beli kacamata hitam (sunglasses) jangan sampai lupa.\nA: Wah itu penting ya. Hati-hati ya jangan sampai lupa!\n\n[Pertanyaan] Apa yang akan dibeli terlebih dahulu sebelum berangkat?",
+    "trans_rom": "A: Sukii-ryokou no junbi wa mou owatta?\nB: Sukii-yougu wa genchi de zenbu rentaru suru kara daijoubu da yo.\nA: Sou nan da. Jaa shuppatsu suru mae ni nanika katte oku mono wa nai no?\nB: Hizashi ga tsuyoi kara, wasurezu ni sangurasu o katte okanai to.\nA: Sore wa taisetsu da ne. Wasurenai you ni ki o tsukete ne.\n\n[Shitsumon] Shuppatsu suru mae ni, nani o kaimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Pembicara mengatakan: '日差しが強いから忘れずにサングラスを買っておかないと' (Karena sinar matahari di sana sangat terik, saya harus ingat membeli kacamata hitam / sunglasses). Jadi barang yang dibeli adalah kacamata hitam (サングラス).",
+    "analisis": "[MNN Bab 30 - Tindakan Persiapan (~te oku)] A menanyakan barang apa yang harus dibeli sebelum berangkat ('出発する前に何か買っておくものは?'). B menjawab: '日差しが強いから、忘れずにサングラスを買っておかないと' (Karena terik sinar matahari silau, aku harus membeli kacamata hitam/sunglasses). Jadi barang yang akan dibeli adalah kacamata hitam (Kacamata hitam).",
     "opt_detail": [
       {
         "kana": "Cemilan",
@@ -1761,7 +1761,7 @@
   },
   {
     "no": 33,
-    "title": "医師: お薬を 出しますね。これは 1日に 2回 飲んでください。朝と 晩に 飲めば いいですよ。\n患者: わかりました。1日 2回ですね。\n\n【質問】薬は 1日に 何回 飲みますか。",
+    "title": "医師: お薬を 出しますね。これは 1日に 2回 飲んで ください。\n患者: はい、わかりました。朝と 晩に 飲めば いいですか。\n医師: はい、そうです。それから 早く 治すためには しっかり 休むことが 大切です。今日は しっかり 寝ていて くださいね。\n患者: はい、先生。ありがとうございました。\n\n【質問】薬は 1日に 何回 飲みますか。",
     "subTitle": "(Dengarkan baik-baik untuk soal nomor 32 &amp; 33: Obat diminum berapa kali sehari?)",
     "img": "",
     "audio": "assets/audio_c5.wav",
@@ -1782,10 +1782,10 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Dokter: Saya resepkan obat ya. Obat ini tolong diminum 2 kali sehari. Diminum pagi dan malam hari saja sudah cukup.\nPasien: Baik dokter, 2 kali sehari ya.\n\n[Pertanyaan] Obat harus diminum berapa kali dalam sehari?",
-    "trans_rom": "Ishi: Okusuri o dashimasu ne. Kore wa ichi-nichi ni ni-kai nonde kudasai. Asa to ban ni nomeba ii desu yo.\nKanja: Wakarimashita. Ichi-nichi ni-kai desu ne.\n\n[Shitsumon] Kusuri wa ichi-nichi ni nankai nomimasu ka.",
+    "trans": "Dokter: Saya berikan obat ya. Obat ini tolong diminum 2 kali dalam sehari.\nPasien: Baik, saya mengerti. Apakah cukup diminum saat pagi dan malam hari?\nDokter: Ya, betul sekali. Selain itu, untuk lekas sembuh, sangat penting untuk beristirahat dengan baik. Hari ini tolong tidur yang cukup ya.\nPasien: Baik, Dokter. Terima kasih banyak.\n\n[Pertanyaan] Dengarkan baik-baik untuk soal nomor 33: Obat diminum berapa kali dalam sehari?",
+    "trans_rom": "Ishi: O-kusuri o dashimasu ne. Kore wa ichi-nichi ni ni-kai nonde kudasai.\nKanja: Hai, wakarimashita. Asa to ban ni nomeba ii desu ka.\nIshi: Hai, sou desu. Sorekara hayaku naosu tame ni wa shikkari yasumu koto ga taisetsu desu. Kyou wa shikkari nete ite kudasai ne.\nKanja: Hai, sensei. Arigatou gozaimashita.\n\n[Shitsumon] Kusuri wa ichi-nichi ni nan-kai nomimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Dokter memberi tahu petunjuk: 'お薬を出しますね。これは1日に2回飲んでください。朝と晩に飲めばいいです' (Saya berikan obat ya, ini tolong diminum 2 kali sehari, pagi dan malam). Jadi diminum 2 kali sehari (2回).",
+    "analisis": "[MNN Bab 11/Fasilitas Medis - Frekuensi Minum Obat] Dokter menerangkan aturan pakai obat: 'お薬を出しますね。これは1日に2回飲んでください' (Saya berikan obat ya. Ini tolong diminum 2 kali sehari). Pasien menegaskan '朝と晩に飲めばいいですか' (Pagi dan malam?), dan dokter mengiyakan 'はい、そうです'. Jadi obat diminum 2 kali sehari (Pagi dan malam 2x sehari).",
     "opt_detail": [
       {
         "kana": "2回",
@@ -1816,7 +1816,7 @@
   },
   {
     "no": 34,
-    "title": "医師: それから 早く 治すためには、しっかり 休むことが 大切です。今日は しっかり 寝ていてくださいね。\n患者: はい、ゆっくり 休むように します。\n\n【質問】早く 治すために、医師は どんな アドバイスを しましたか。",
+    "title": "医師: お薬を 出しますね。これは 1日に 2回 飲んで ください。\n患者: はい、わかりました。朝と 晩に 飲めば いいですか。\n医師: はい、そうです。それから 早く 治すためには しっかり 休むことが 大切です。今日は しっかり 寝ていて くださいね。\n患者: はい、先生。ありがとうございました。\n\n【質問】早く 治すために、医師は どんな アドバイスを しましたか。",
     "subTitle": "(Apa saran dokter agar pasien lekas sembuh?)",
     "img": "",
     "audio": "assets/audio_c6.wav",
@@ -1837,10 +1837,10 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Dokter: Kemudian agar lekas sembuh, sangat penting untuk beristirahat dengan baik. Hari ini banyak-banyak tidur/istirahat ya.\nPasien: Baik dokter, saya akan beristirahat dengan cukup.\n\n[Pertanyaan] Nasihat apa yang diberikan dokter agar pasien lekas sembuh?",
-    "trans_rom": "Ishi: Sore kara hayaku naosu tame ni wa, shikkari yasumu koto ga taisetsu desu. Kyou wa shikkari nete ite kudasai ne.\nKanja: Hai, yukkuri yasumu you ni shimasu.\n\n[Shitsumon] Hayaku naosu tame ni, ishi wa donna adobaisu o shimashita ka.",
+    "trans": "Dokter: Saya berikan obat ya. Obat ini tolong diminum 2 kali dalam sehari.\nPasien: Baik, saya mengerti. Apakah cukup diminum saat pagi dan malam hari?\nDokter: Ya, betul sekali. Selain itu, untuk lekas sembuh, sangat penting untuk beristirahat dengan baik. Hari ini tolong tidur yang cukup ya.\nPasien: Baik, Dokter. Terima kasih banyak.\n\n[Pertanyaan] Apa saran dokter agar pasien lekas sembuh?",
+    "trans_rom": "Ishi: O-kusuri o dashimasu ne. Kore wa ichi-nichi ni ni-kai nonde kudasai.\nKanja: Hai, wakarimashita. Asa to ban ni nomeba ii desu ka.\nIshi: Hai, sou desu. Sorekara hayaku naosu tame ni wa shikkari yasumu koto ga taisetsu desu. Kyou wa shikkari nete ite kudasai ne.\nKanja: Hai, sensei. Arigatou gozaimashita.\n\n[Shitsumon] Hayaku naosu tame ni, ishi wa donna adobaisu o shimashita ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Dokter menasihati: 'それから早く治すためにはしっかり休むことが大切です。今日はしっかり寝ていてくださいね' (Supaya cepat sembuh, penting untuk banyak istirahat. Hari ini tidur dan istirahatlah yang cukup). Saran dokter adalah istirahat dan tidur yang cukup.",
+    "analisis": "[MNN Bab 19/23 - Nasihat Kesehatan Dokter] Dokter menasihati pasien agar cepat pulih: '早く治すためにはしっかり休むことが大切です。今日はしっかり寝ていてくださいね' (Untuk lekas sembuh, penting sekali untuk beristirahat sebaik-baiknya. Hari ini tolong tidur/istirahat yang banyak ya). Maka saran dokter adalah istirahat dan tidur yang banyak (Istirahat/Tidur).",
     "opt_detail": [
       {
         "kana": "Joging",
@@ -1871,7 +1871,7 @@
   },
   {
     "no": 35,
-    "title": "放送: 緊急地震速報です。大きな 揺れを 感じたら、絶対に 慌てては いけません。最初に すべきことは、自分の 身を 守ることです。近くに 丈夫な 机が ある場合は、すぐに その下に 入ってください。\n\n【質問】地震の とき、まず 最初は 何を しなければなりませんか。",
+    "title": "アナウンス: 皆さん、緊急放送です。地震が 発生した 時の 行動に ついて 説明します。よく 聞いて ください。まず、大きな 揺れを 感じたら 絶対に 慌てては いけません。最初に すべきことは 自分の 身を 守ることです。近くに 丈夫な 机が ある場合は、すぐに その下に 入って ください。そして、両手で しっかりと 頭を 隠して 姿勢を 低く 保って ください。揺れが 治まったら、急がずに 周りの 状況を 確認して ください。もし 火を 使っている 場合は、落ち着いて 火を 消して ください。その後、慌てて 走らずに ゆっくりと 建物から 出て、外の 広い 広場へ 避難して ください。そこは 建物が 崩れる 心配が ない 一番 安全な 場所です。避難した 後は、係員や 地域の 指示が あるまで、その 広い 広場で 待機するように して ください。自分勝手な 行動は せず、みんなで 協力して 行動しましょう。\n\n【質問】地震の 揺れを 感じた時、最初に 何を しますか。",
     "subTitle": "(Dengarkan baik-baik untuk soal nomor 34 &amp; 35: Tindakan pertama saat gempa adalah apa?)",
     "img": "",
     "audio": "assets/audio_c7.wav",
@@ -1892,10 +1892,10 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Siaran: Berita darurat gempa bumi. Jika merasakan guncangan besar, jangan panik. Hal pertama yang harus dilakukan adalah melindungi keselamatan diri Anda. Jika di dekat Anda ada meja yang kokoh, segera masuk berlindung di bawah meja.\n\n[Pertanyaan] Saat gempa bumi terjadi, apa tindakan pertama yang harus dilakukan?",
-    "trans_rom": "Housou: Kinkyuu jishin sokuhou desu. Ookina yure o kanjitara, zettai ni awatete wa ikemasen. Saisho ni subeki koto wa, jibun no mi o mamoru koto desu. Chikaku ni joubu na tsukue ga aru baai wa, sugu ni sono shita ni haitte kudasai.\n\n[Shitsumon] Jishin no toki, mazu saisho wa nani o shinakereba narimasen ka.",
+    "trans": "Pengumuman: Semuanya, ini adalah siaran darurat. Kami akan menjelaskan tindakan saat terjadi gempa bumi. Mohon dengarkan baik-baik. Pertama, jika merasakan guncangan besar, jangan sekali-kali panik. Hal pertama yang harus dilakukan adalah melindungi keselamatan diri sendiri. Jika di dekat Anda ada meja yang kokoh, segera masuk ke bawah meja tersebut. Lalu lindungi kepala kuat-kuat dengan kedua tangan dan jaga postur tubuh tetap rendah. Setelah guncangan mereda, jangan tergesa-gesa dan periksalah situasi sekitar. Jika sedang menyalakan api/kompor, tenanglah dan padamkan api tersebut. Setelah itu, jangan berlari panik, keluarlah dari gedung perlahan-lahan dan mengungsilah ke lapangan terbuka yang luas di luar gedung. Di sana adalah tempat paling aman tanpa kekhawatiran tertimpa bangunan roboh. Setelah evakuasi, tetaplah menunggu di lapangan luas tersebut hingga ada instruksi dari petugas atau aparat setempat. Jangan bertindak sesuka hati, mari bertindak bersama-sama secara kooperatif.\n\n[Pertanyaan] Dengarkan baik-baik untuk soal nomor 35: Saat gempa bumi, apa tindakan yang harus dilakukan pertama kali?",
+    "trans_rom": "Anaunsu: Minasan, kinkyuu housou desu. Jishin ga hassei shita toki no koudou ni tsuite setsumei shimasu. Yoku kiite kudasai. Mazu, ookina yure o kanjitara zettai ni awatete wa ikemasen. Saisho ni subeki koto wa jibun no mi o mamoru koto desu. Chikaku ni joubu na tsukue ga aru baai wa, sugu ni sono shita ni haitte kudasai. Soshite, ryoute de shikkari to atama o kakushite shisei o hikuku tamotte kudasai. Yure ga osamattara, isogazu ni mawari no joukyou o kakunin shite kudasai. Moshi hi o tsukatte iru baai wa, ochitsuite hi o keshite kudasai. Sono ato, awatete hashirazu ni yukkuri to tatemono kara dete, soto no hiroi hiroba e hinan shite kudasai. Soko wa tatemono ga kuzureru shinpai ga nai ichiban anzen na basho desu. Hinan shita ato wa, kakari'in ya chiiki no shiji ga aru made, sono hiroi hiroba de taiki suru you ni shite kudasai. Jibungatte na koudou wa sezu, minna de kyouryoku shite koudou shimashou.\n\n[Shitsumon] Jishin no yure o kanjita toki, saisho ni nani o shimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Siaran darurat menyampaikan: 'まず大きな揺れを感じたら絶対に慌ててはいけません。最初にすべきことは自分の身を守ることです。近くに丈夫な机がある場合はすぐにその下に入ってください' (Hal pertama adalah melindungi diri, segera masuk ke bawah meja yang kokoh dan lindungi kepala).",
+    "analisis": "[MNN Bab Menyimak - Prosedur Evakuasi Gempa Bumi] Penyiar siaran darurat menegaskan tindakan awal saat ada guncangan besar: '最初にすべきことは自分の身を守ることです。近くに丈夫な机がある場合は、すぐにその下に入ってください' (Hal pertama yang harus dilakukan adalah melindungi diri. Bila ada meja kokoh di dekat Anda, segera masuk ke bawah meja). Pilihan yang benar adalah 'Berlindung di bawah meja'.",
     "opt_detail": [
       {
         "kana": "lari ke tepi sungai",
@@ -1926,7 +1926,7 @@
   },
   {
     "no": 36,
-    "title": "放送: 揺れが 収まったら、ゆっくりと 建物から 出て、外の 広い 広場へ 避難してください。そこは 建物が 崩れる 心配のない、一番 安全な 場所です。\n\n【質問】どこへ 避難すれば いいですか。",
+    "title": "アナウンス: 皆さん、緊急放送です。地震が 発生した 時の 行動に ついて 説明します。よく 聞いて ください。まず、大きな 揺れを 感じたら 絶対に 慌てては いけません。最初に すべきことは 自分の 身を 守ることです。近くに 丈夫な 机が ある場合は、すぐに その下に 入って ください。そして、両手で しっかりと 頭を 隠して 姿勢を 低く 保って ください。揺れが 治まったら、急がずに 周りの 状況を 確認して ください。もし 火を 使っている 場合は、落ち着いて 火を 消して ください。その後、慌てて 走らずに ゆっくりと 建物から 出て、外の 広い 広場へ 避難して ください。そこは 建物が 崩れる 心配が ない 一番 安全な 場所です。避難した 後は、係員や 地域の 指示が あるまで、その 広い 広場で 待機するように して ください。自分勝手な 行動は せず、みんなで 協力して 行動しましょう。\n\n【質問】揺れが 治まった後、どこへ 避難しますか。",
     "subTitle": "(Pergi ke mana untuk mengungsi dan berlindung?)",
     "img": "",
     "audio": "assets/audio_c8.wav",
@@ -1947,10 +1947,10 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Siaran: Setelah guncangan mereda, keluarlah dari gedung perlahan-lahan dan mengungsilah ke lapangan terbuka yang luas. Di sana adalah tempat paling aman tanpa rasa khawatir tertimpa reruntuhan bangunan.\n\n[Pertanyaan] Di manakah lokasi tempat aman untuk mengungsi dan berlindung?",
-    "trans_rom": "Housou: Yure ga osamattara, yukkuri to tatemono kara dete, soto no hiroi hiroba e hinan shite kudasai. Soko wa tatemono ga kuzureru shinpai no nai, ichiban anzen na basho desu.\n\n[Shitsumon] Doko e hinan sureba ii desu ka.",
+    "trans": "Pengumuman: Semuanya, ini adalah siaran darurat. Kami akan menjelaskan tindakan saat terjadi gempa bumi. Mohon dengarkan baik-baik. Pertama, jika merasakan guncangan besar, jangan sekali-kali panik. Hal pertama yang harus dilakukan adalah melindungi keselamatan diri sendiri. Jika di dekat Anda ada meja yang kokoh, segera masuk ke bawah meja tersebut. Lalu lindungi kepala kuat-kuat dengan kedua tangan dan jaga postur tubuh tetap rendah. Setelah guncangan mereda, jangan tergesa-gesa dan periksalah situasi sekitar. Jika sedang menyalakan api/kompor, tenanglah dan padamkan api tersebut. Setelah itu, jangan berlari panik, keluarlah dari gedung perlahan-lahan dan mengungsilah ke lapangan terbuka yang luas di luar gedung. Di sana adalah tempat paling aman tanpa kekhawatiran tertimpa bangunan roboh. Setelah evakuasi, tetaplah menunggu di lapangan luas tersebut hingga ada instruksi dari petugas atau aparat setempat. Jangan bertindak sesuka hati, mari bertindak bersama-sama secara kooperatif.\n\n[Pertanyaan] Pergi ke mana untuk mengungsi dan berlindung?",
+    "trans_rom": "Anaunsu: Minasan, kinkyuu housou desu. Jishin ga hassei shita toki no koudou ni tsuite setsumei shimasu. Yoku kiite kudasai. Mazu, ookina yure o kanjitara zettai ni awatete wa ikemasen. Saisho ni subeki koto wa jibun no mi o mamoru koto desu. Chikaku ni joubu na tsukue ga aru baai wa, sugu ni sono shita ni haitte kudasai. Soshite, ryoute de shikkari to atama o kakushite shisei o hikuku tamotte kudasai. Yure ga osamattara, isogazu ni mawari no joukyou o kakunin shite kudasai. Moshi hi o tsukatte iru baai wa, ochitsuite hi o keshite kudasai. Sono ato, awatete hashirazu ni yukkuri to tatemono kara dete, soto no hiroi hiroba e hinan shite kudasai. Soko wa tatemono ga kuzureru shinpai ga nai ichiban anzen na basho desu. Hinan shita ato wa, kakari'in ya chiiki no shiji ga aru made, sono hiroi hiroba de taiki suru you ni shite kudasai. Jibungatte na koudou wa sezu, minna de kyouryoku shite koudou shimashou.\n\n[Shitsumon] Yure ga osamatta ato, doko e hinan shimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Penyiar mengarahkan: 'ゆっくりと建物から出て外の広い広場へ避難してください。そこは建物が崩れる心配がない一番安全な場所です' (Keluarlah perlahan dan mengungsilah ke lapangan terbuka yang luas di luar gedung). Tempatnya adalah lapangan terbuka (広場 - hiroba).",
+    "analisis": "[MNN Bab Menyimak - Lokasi Evakuasi Gempa Bumi] Siaran darurat mengarahkan tempat berlindung setelah guncangan berhenti: 'その後、慌てて走らずにゆっくりと建物から出て外の広い広場へ避難してください。そこは建物が崩れる心配がない一番安全な場所です' (Keluarlah perlahan dari gedung dan mengungsilah ke lapangan luas di luar. Di sana tempat paling aman tanpa risiko tertimpa reruntuhan). Lokasi evakuasi adalah lapangan luas (Lapangan).",
     "opt_detail": [
       {
         "kana": "Lapangan",
@@ -1981,7 +1981,7 @@
   },
   {
     "no": 37,
-    "title": "客: すみません、自転車を 借りたいのですが、料金は いくらですか。\n店員: はい、自転車は 1時間 400円で ございます。\n客: 400円ですね。1時間 お願いします。\n\n【質問】自転車を 1時間 借りる 料金は いくらですか。",
+    "title": "客: すみません、自転車を 借りたいのですが、料金は いくらですか。\n店員: はい、料金は 1時間 400円で ございます。\n客: 1時間 400円ですね。わかりました。じゃあ、3時間 お願いします。\n店員: 承知いたしました。では、こちらに お名前を 書いて ください。\n\n【質問】自転車を 1時間 借りる 料金は いくらですか。",
     "subTitle": "(Berapa biaya meminjam sepeda selama 1 jam?)",
     "img": "",
     "audio": "assets/audio_c9.wav",
@@ -2002,10 +2002,10 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Pelanggan: Permisi, saya ingin menyewa sepeda, berapa biayanya?\nPetugas: Ya, biaya sewa sepeda adalah 400 yen untuk 1 jam.\nPelanggan: 400 yen ya. Saya sewa untuk 1 jam ya.\n\n[Pertanyaan] Berapakah biaya menyewa sepeda selama 1 jam?",
-    "trans_rom": "Kyaku: Sumimasen, jitensha o karitai no desu ga, ryoukin wa ikura desu ka.\nTen'in: Hai, jitensha wa ichi-jikan yonhyaku-en de gozaimasu.\nKyaku: Yonhyaku-en desu ne. Ichi-jikan onegai shimasu.\n\n[Shitsumon] Jitensha o ichi-jikan kariru ryoukin wa ikura desu ka.",
+    "trans": "Pelanggan: Permisi, saya ingin menyewa sepeda, berapa biayanya ya?\nPelayan: Baik, tarif biayanya 400 Yen per 1 jam.\nPelanggan: 1 jam 400 Yen ya. Paham. Kalau begitu, saya pinjam selama 3 jam ya.\nPelayan: Baik, dimengerti. Kalau begitu, silakan tulis nama Anda di sini.\n\n[Pertanyaan] Berapa biaya meminjam sepeda selama 1 jam?",
+    "trans_rom": "Kyaku: Sumimasen, jitensha o karitai no desu ga, ryoukin wa ikura desu ka.\nTen'in: Hai, ryoukin wa ichi-jikan yonhyaku-en de gozaimasu.\nKyaku: Ichi-jikan yonhyaku-en desu ne. Wakarimashita. Jaa, san-jikan onegai shimasu.\nTen'in: Shouchi itashimashita. Dewa, kochira ni o-namae o kaite kudasai.\n\n[Shitsumon] Jitensha o ichi-jikan kariru ryoukin wa ikura desu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Pelanggan bertanya biaya sewa: '自転車を借りたいのですが料金はいくらですか？'. Petugas menjawab: 'はい、料金は一時間400円でございます' (Biaya sewa sepeda adalah 400 Yen per jam). Jadi biayanya adalah 400 Yen (400円).",
+    "analisis": "[MNN Bab 49/Penghitungan Durasi & Uang] Staf rental sepeda menyebutkan tarif per jam dengan sopan: '料金は1時間400円でございます' (Tarifnya adalah 400 Yen untuk 1 jam). Pelanggan kemudian meminjam 3 jam (400 x 3 = 1.200 Yen total), namun pertanyaan menanyakan tarif 1 jam ('1時間借りる料金'). Jadi tarif 1 jam adalah 400 Yen (400 円).",
     "opt_detail": [
       {
         "kana": "800 円",
@@ -2036,7 +2036,7 @@
   },
   {
     "no": 38,
-    "title": "A: この コーヒー、かなり 苦いね。\nB: ちょっと 砂糖を 足しても いいかな？\nA: うん、じゃあ 砂糖を 2杯ほど 入れてみるよ。\n\n【質問】苦い コーヒーに 何を 入れますか。",
+    "title": "A: この コーヒー、思ったよりも かなり 苦いね。\nB: 本当だね。ブラックコーヒーだから、そのまま 飲むには 少し 強いかもしれないね。\nA: 私は やっぱり 甘い コーヒーの 方が 好きだな。ちょっと 砂糖を 足しても いいかな？\nB: もちろん。自分好みの 味に するのが 一番だよ。\nA: じゃあ、砂糖を 2杯ほど 入れてみるよ。よく 混ぜて……うん、これで だいぶ 飲みやすく なったよ。\nB: そうなんだ。そんなに 味が 変わるの？ 私も 一口 飲んでみようかな。\nA: どうぞ。やっぱり 砂糖を 入れると まろやかに なるね。\nB: ほんとだ。これなら 私にも ちょうど いい 甘さだね。\n\n【質問】苦い コーヒーに 何を 入れますか。",
     "subTitle": "(Apa yang dituangkan/dimasukkan ke dalam cangkir kopi?)",
     "img": "",
     "audio": "assets/audio_c10.wav",
@@ -2057,10 +2057,10 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "A: Kopi ini rasanya cukup pahit ya.\nB: Boleh tidak ya kalau kita tambah gula sedikit?\nA: Boleh, kalau begitu saya coba masukkan sekitar 2 sendok gula pasir ya.\n\n[Pertanyaan] Apa yang dimasukkan/dituangkan ke dalam kopi?",
-    "trans_rom": "A: Kono koohii, kanari nigai ne.\nB: Chotto satou o tashite mo ii kana?\nA: Un, jaa satou o ni-hai hodo irete miru yo.\n\n[Shitsumon] Nigai koohii ni nani o iremasu ka.",
+    "trans": "A: Kopi ini ternyata jauh lebih pahit daripada yang kukira ya.\nB: Beneran ya. Karena ini kopi hitam (black coffee), mungkin agak terlalu pekat kalau diminum langsung begitu saja.\nA: Aku bagaimanapun juga lebih suka kopi yang manis. Boleh nggak ya kalau kutambahkan sedikit gula?\nB: Tentu saja boleh. Menyesuaikan dengan selera sendiri itu yang terbaik kok.\nA: Kalau begitu, aku coba masukkan gula sekitar 2 sendok ya. Diaduk rata... wah, begini jadi jauh lebih enak diminum.\nB: Oh ya? Bisa berubah rasa sebanyak itu ya? Boleh kucicipi seteguk?\nA: Silakan. Memang ya kalau dimasukkan gula rasanya jadi lembut (maroyaka).\nB: Wah iya benar! Kalau begini manisnya pas juga buatku.\n\n[Pertanyaan] Apa yang dituangkan/dimasukkan ke dalam cangkir kopi?",
+    "trans_rom": "A: Kono koohii, omotta yori mo kanari nigai ne.\nB: Hontou da ne. Burakku koohii dakara, sono mama nomu ni wa sukoshi tsuyoi kamo shirenai ne.\nA: Watashi wa yappari amai koohii no hou ga suki da na. Chotto satou o tashitemo ii kana?\nB: Mochiron. Jibun-gonomi no aji ni suru no ga ichiban da yo.\nA: Jaa, satou o ni-hai hodo irete miru yo. Yoku mazete... un, kore de daibu nomiyasuku natta yo.\nB: Sou nan da. Sonna ni aji ga kawaru no? Watashi mo hito-kuchi nonde miyou kana.\nA: Douzo. Yappari satou o ireru to maroyaka ni naru ne.\nB: Honto da. Kore nara watashi ni mo choudo ii amasa da ne.\n\n[Shitsumon] Nigai koohii ni nani o iremasu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Pembicara mengeluh kopi hitam terlalu pahit: 'このコーヒーかなり苦いね... ちょっと砂糖を足してもいいかな？じゃあ砂糖を2杯ほど入れてみるよ' (Kopi ini cukup pahit, boleh saya tambah gula? Saya masukkan 2 sendok gula pasir). Jadi yang dituangkan adalah gula pasir (砂糖 - satou).",
+    "analisis": "[MNN Bab 38/44 - Kata Sifat Rasa & Tindakan] Penutur mengeluhkan kopi yang pahit ('かなり苦いね'), lalu berinisiatif menambahkan gula: 'ちょっと砂糖を足してもいいかな... 砂糖を2杯ほど入れてみるよ' (Bolehkah kutambahkan gula... Aku masukkan gula sekitar 2 sendok). Maka bahan yang dimasukkan ke dalam kopi adalah gula / satou (Gula (砂糖)).",
     "opt_detail": [
       {
         "kana": "Es batu",
@@ -2091,7 +2091,7 @@
   },
   {
     "no": 39,
-    "title": "客: すみません、チョコレートフェスティバルは 何階で やっていますか。\n案内係: チョコレートフェスティバルは 9階で 開催しております。\n客: 9階ですね。ありがとうございます。\n\n【質問】イベントは 何階で やっていますか。",
+    "title": "客: すみません、チョコレートフェスティバルは 何階で やっていますか。\n店員: チョコレートフェスティバルは 9階で 開催して おります。\n客: 9階ですね。ありがとうございます。ちなみに 本日の 終了時間は 何時ですか。\n店員: 本日の 営業は 18時30分までと なって おります。\n客: わかりました。まだ 時間が ありますね。急いで 行きます。\n\n【質問】チョコレートフェスティバルは 何階で 行われて いますか。",
     "subTitle": "(Di lantai berapakah Festival Cokelat diselenggarakan?)",
     "img": "",
     "audio": "assets/audio_c11.wav",
@@ -2112,10 +2112,10 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Pengunjung: Permisi, festival cokelat diselenggarakan di lantai berapa ya?\nPetugas: Festival cokelat diselenggarakan di lantai 9.\nPengunjung: Lantai 9 ya. Terima kasih banyak.\n\n[Pertanyaan] Di lantai berapakah festival cokelat diadakan?",
-    "trans_rom": "Kyaku: Sumimasen, chokoreeto fesutibaru wa nan-kai de yatte imasu ka.\nAnnai-gakari: Chokoreeto fesutibaru wa kyuu-kai de kaisai shite orimasu.\nKyaku: Kyuu-kai desu ne. Arigatou gozaimasu.\n\n[Shitsumon] Ibento wa nan-kai de yatte imasu ka.",
+    "trans": "Pengunjung: Permisi, festival cokelat diadakan di lantai berapa ya?\nResepsionis: Festival cokelat diselenggarakan di lantai 9 (九階).\nPengunjung: Lantai 9 ya. Terima kasih banyak. Ngomong-ngomong jam selesai untuk hari ini jam berapa ya?\nResepsionis: Untuk hari ini jam operasionalnya buka sampai pukul 18:30.\nPengunjung: Baik, paham. Masih ada waktu ya. Saya akan bergegas ke sana.\n\n[Pertanyaan] Dengarkan baik-baik untuk soal no 39: Di lantai berapa diadakan acara festival cokelat?",
+    "trans_rom": "Kyaku: Sumimasen, chokoreeto fesutibaru wa nan-kai de yatte imasu ka.\nTen'in: Chokoreeto fesutibaru wa kyuu-kai de kaisai shite orimasu.\nKyaku: Kyuu-kai desu ne. Arigatou gozaimasu. Chinamini honjitsu no shuuryou jikan wa nanji desu ka.\nTen'in: Honjitsu no eigyou wa juuhachi-ji sanjuppun made to natte orimasu.\nKyaku: Wakarimashita. Mada jikan ga arimasu ne. Isoide ikimasu.\n\n[Shitsumon] Chokoreeto fesutibaru wa nan-kai de okonawarete imasu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Pengunjung bertanya: 'チョコレートフェスティバルは何階でやっていますか？'. Petugas menjawab: 'チョコレートフェスティバルは9階で開催しております' (Festival cokelat diadakan di lantai 9). Jadi di lantai 9 (9階).",
+    "analisis": "[MNN Bab 3/Penghitungan Lantai Gedung (~階 -kai/-gai)] Pengunjung menanyakan lantai acara ('何階でやっていますか'), dan staf toserba menjawab dengan sopan: 'チョコレートフェスティバルは9階で開催しております' (Festival cokelat diselenggarakan di lantai 9 / kyuu-kai). Maka acara berlangsung di lantai 9 (9階 (Lantai 9)).",
     "opt_detail": [
       {
         "kana": "Lantai 9",
@@ -2146,7 +2146,7 @@
   },
   {
     "no": 40,
-    "title": "客: すみません、本日の 営業時間は 何時までですか。\n案内係: 本日の 営業は 18時30分までと なっております。\n客: 18時30分ですね。わかりました。\n\n【質問】本日の 終了時間は 何時ですか。",
+    "title": "客: すみません、チョコレートフェスティバルは 何階で やっていますか。\n店員: チョコレートフェスティバルは 9階で 開催して おります。\n客: 9階ですね。ありがとうございます。ちなみに 本日の 終了時間は 何時ですか。\n店員: 本日の 営業は 18時30分までと なって おります。\n客: わかりました。まだ 時間が ありますね。急いで 行きます。\n\n【質問】チョコレートフェスティバルの 本日の 終了時間は 何時ですか。",
     "subTitle": "(Pukul berapakah festival cokelat selesai hari ini?)",
     "img": "",
     "audio": "assets/audio_c12.wav",
@@ -2167,10 +2167,10 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Pengunjung: Permisi, jam operasional buka hari ini sampai pukul berapa ya?\nPetugas: Jam operasional buka hari ini sampai pukul 18:30.\nPengunjung: Jam 18:30 ya. Mengerti, terima kasih.\n\n[Pertanyaan] Pukul berapakah jam selesai/tutup acara festival hari ini?",
-    "trans_rom": "Kyaku: Sumimasen, honjitsu no eigyou jikan wa nanji made desu ka.\nAnnai-gakari: Honjitsu no eigyou wa juuhachi-ji sanjuppun made to natte orimasu.\nKyaku: Juuhachi-ji sanjuppun desu ne. Wakarimashita.\n\n[Shitsumon] Honjitsu no shuuryou jikan wa nanji desu ka.",
+    "trans": "Pengunjung: Permisi, festival cokelat diadakan di lantai berapa ya?\nResepsionis: Festival cokelat diselenggarakan di lantai 9 (九階).\nPengunjung: Lantai 9 ya. Terima kasih banyak. Ngomong-ngomong jam selesai untuk hari ini jam berapa ya?\nResepsionis: Untuk hari ini jam operasionalnya buka sampai pukul 18:30.\nPengunjung: Baik, paham. Masih ada waktu ya. Saya akan bergegas ke sana.\n\n[Pertanyaan] Pukul berapakah festival cokelat selesai hari ini?",
+    "trans_rom": "Kyaku: Sumimasen, chokoreeto fesutibaru wa nan-kai de yatte imasu ka.\nTen'in: Chokoreeto fesutibaru wa kyuu-kai de kaisai shite orimasu.\nKyaku: Kyuu-kai desu ne. Arigatou gozaimasu. Chinamini honjitsu no shuuryou jikan wa nanji desu ka.\nTen'in: Honjitsu no eigyou wa juuhachi-ji sanjuppun made to natte orimasu.\nKyaku: Wakarimashita. Mada jikan ga arimasu ne. Isoide ikimasu.\n\n[Shitsumon] Chokoreeto fesutibaru no honjitsu no shuuryou jikan wa nanji desu ka.",
     "mnn": "Choukai",
-    "analisis": "[MNN Bab Menyimak - Pemahaman Audio] Pengunjung bertanya: '本日の終了時間は何時ですか？'. Petugas menjawab: '本日の営業は18時30分までとなっております' (Hari ini buka sampai pukul 18:30 sore). Jadi selesai pukul 18:30.",
+    "analisis": "[MNN Bab 4/Penunjukan Jam & Menit] Pengunjung menanyakan jam tutup hari ini ('本日の終了時間は何時ですか'). Staf toserba menjawab: '本日の営業は18時30分までとなっております' (Operasional hari ini buka sampai pukul 18:30 / juuhachi-ji sanjuppun). Jam 18:30 setara dengan jam 6:30 sore (Jam 18:30).",
     "opt_detail": [
       {
         "kana": "Jam 14:00",
