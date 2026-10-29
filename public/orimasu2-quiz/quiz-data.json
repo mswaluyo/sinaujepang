@@ -551,8 +551,8 @@
   },
   {
     "no": 11,
-    "title": "としょかんで おかしを _____だめ",
-    "subTitle": "(Jangan _____ makanan di perpustakaan)",
+    "title": "としょかんで おかしを _____ だめ。",
+    "subTitle": "Toshokan de okashi o _____ dame.",
     "img": "",
     "audio": "",
     "options": [
@@ -572,42 +572,42 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(Jangan _____ makanan di perpustakaan)",
-    "trans_rom": "-",
+    "trans": "Di perpustakaan tidak boleh _____ camilan / makanan ringan.",
+    "trans_rom": "Toshokan de okashi o tabecha dame.",
     "mnn": "Hyougen",
-    "analisis": "A. たべちゃ adalah bentuk kasual dari たべてしまう (tabete shimau), yang sering digunakan untuk mengekspresikan penyesalan atau untuk menekankan bahwa sesuatu telah selesai dilakukan, atau dalam konteks ini, untuk menyatakan larangan yang kuat. Tips: Perhatikan nuansa makna dan tingkat kesopanan yang dibutuhkan oleh konteks kalimat.",
+    "analisis": "[MNN Bab 26/40 - Pola Larangan Percakapan Kasual (~cha dame)] Pola percakapan sehari-hari untuk menyatakan larangan atau tidak boleh melakukan sesuatu adalah bentuk ~ては だめ (~tewa dame), yang dalam ragam lisan santai/kasual disingkat menjadi ~ちゃ だめ (~cha dame). Kata kerja たべる (makan) bentuk te-nya adalah たべて (tabete), sehingga jika digabungkan menjadi たべちゃ だめ (tabecha dame = jangan makan / tidak boleh makan).",
     "opt_detail": [
       {
         "kana": "たべます",
-        "rom": "-",
-        "arti": "saya akan makan",
-        "alasan": "Pilihan salah."
+        "rom": "tabemasu",
+        "arti": "makan (bentuk masu)",
+        "alasan": "Bentuk masu tidak bisa langsung disambungkan dengan partikel/kata 'dame'."
       },
       {
         "kana": "たべちゃ",
-        "rom": "-",
-        "arti": "Tabecha",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "tabecha",
+        "arti": "makan (singkatan dari tabete wa)",
+        "alasan": "Tepat sekali. Pola ~ちゃ だめ (~cha dame) adalah ungkapan lisan untuk melarang melakukan sesuatu."
       },
       {
         "kana": "たべる",
-        "rom": "-",
-        "arti": "makan",
-        "alasan": "Pilihan salah."
+        "rom": "taberu",
+        "arti": "makan (bentuk kamus)",
+        "alasan": "Bentuk kamus langsung + dame bukanlah pola tata bahasa larangan yang baku."
       }
     ],
     "kunci_id": "たべちゃ",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(saya akan makan)",
-      "(Tabecha)",
-      "(makan)"
+      "(tabemasu) bentuk sopan",
+      "(tabecha) singkatan tabete wa (larangan)",
+      "(taberu) bentuk kamus"
     ]
   },
   {
     "no": 12,
-    "title": "べんきょうした____、テストは だめでした",
-    "subTitle": "(Saya mencoba yang terbaik ____, tetapi saya gagal dalam ujian.)",
+    "title": "べんきょうした _____、テストは だめでした。",
+    "subTitle": "Benkyou shita _____ , tesuto wa dame deshita.",
     "img": "",
     "audio": "",
     "options": [
@@ -627,42 +627,42 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(Saya mencoba yang terbaik ____, tetapi saya gagal dalam ujian.)",
-    "trans_rom": "-",
+    "trans": "Padahal sudah belajar _____, tetapi hasil ujiannya buruk/gagal.",
+    "trans_rom": "Benkyou shita noni, tesuto wa dame deshita.",
     "mnn": "Hyougen",
-    "analisis": "\"のに\" digunakan untuk menunjukkan kontras atau hasil yang tidak sesuai harapan meskipun ada suatu kondisi. Belajar seharusnya membuat lulus, tapi malah tidak lulus. Tips: Gunakan \"のに\" saat ada kontras antara harapan dan kenyataan.",
+    "analisis": "[MNN Bab 45 - Konjungsi Pertentangan / Kekecewaan (~noni)] Partikel konjungsi のに (noni) diletakkan setelah bentuk biasa (futsuukei) untuk menyatakan situasi kontradiktif atau hasil yang berlawanan dengan harapan penutur (mengandung nuansa kekecewaan / penyesalan yang mendalam: 'padahal... tapi kenyataannya...'). Pola: べんきょうしたのに (padahal sudah belajar).",
     "opt_detail": [
       {
         "kana": "のに",
-        "rom": "-",
-        "arti": "Meskipun",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "noni",
+        "arti": "padahal / meskipun",
+        "alasan": "Tepat sekali. Menyatakan rasa kecewa karena kenyataan ujiannya buruk bertentangan dengan usaha belajar yang sudah dilakukan."
       },
       {
         "kana": "ので",
-        "rom": "-",
-        "arti": "Jadi",
-        "alasan": "Pilihan salah."
+        "rom": "node",
+        "arti": "karena / oleh sebab itu",
+        "alasan": "Node menyatakan sebab-akibat logis (karena sudah belajar -> seharusnya hasilnya bagus, bukan gagal)."
       },
       {
         "kana": "のは",
-        "rom": "-",
-        "arti": "Noha",
-        "alasan": "Pilihan salah."
+        "rom": "noha",
+        "arti": "hal yang / bahwa",
+        "alasan": "Noha adalah pola nominalisasi penekanan topik kalimat, bukan konjungsi pertentangan."
       }
     ],
     "kunci_id": "のに",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Meskipun)",
-      "(Jadi)",
-      "(Noha)"
+      "(noni) padahal / meskipun (kecewa)",
+      "(node) karena (sebab-akibat)",
+      "(noha) nominalisasi topik"
     ]
   },
   {
     "no": 13,
-    "title": "ぎゅにく は すき、でもさかな は _______です",
-    "subTitle": "(Aku suka ikan, tapi aku tidak suka ikan.)",
+    "title": "ぎゅうにくは すき、でも さかなは _____ です。",
+    "subTitle": "Gyuuniku wa suki, demo sakana wa _____ desu.",
     "img": "",
     "audio": "",
     "options": [
@@ -682,42 +682,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(Aku suka ikan, tapi aku tidak suka ikan.)",
-    "trans_rom": "-",
+    "trans": "Saya suka daging sapi, tapi kalau ikan _____ .",
+    "trans_rom": "Gyuuniku wa suki, demo sakana wa suki ja nai desu.",
     "mnn": "Hyougen",
-    "analisis": "\"Suki ja nai\" (好きじゃない) berarti \"tidak suka\". Ini melengkapi kalimat dengan menyatakan ketidaksukaan terhadap ikan, yang kontras dengan kesukaan terhadap daging. Tips: Perhatikan kata penghubung seperti \"demo\" (でも) yang seringkali menunjukkan kontras atau pertentangan.",
+    "analisis": "[MNN Bab 8/9 - Bentuk Negatif Kata Sifat-Na & Konjungsi Demo] Kata すき (suki - suka) tergolong kata sifat-Na. Bentuk negatif sopannya adalah すきじゃ ありません atau すきじゃない です (suki ja nai desu = tidak suka). Karena kalimat diawali konjungsi pertentangan でも (demo = tetapi), maka klausa kedua wajib menyatakan kontras negatif terhadap rasa suka pada daging sapi.",
     "opt_detail": [
       {
         "kana": "すき",
-        "rom": "-",
-        "arti": "menyukai",
-        "alasan": "Pilihan salah."
+        "rom": "suki",
+        "arti": "suka (afirmatif)",
+        "alasan": "Bertentangan dengan kata sambung demo (tetapi) yang menuntut makna lawan (negatif)."
       },
       {
         "kana": "すきな",
-        "rom": "-",
-        "arti": "favorit",
-        "alasan": "Pilihan salah."
+        "rom": "sukina",
+        "arti": "yang disukai (penerang kata benda)",
+        "alasan": "Bentuk 'sukina' harus diikuti kata benda (contoh: 好きな人), tidak bisa langsung menempel pada です di akhir kalimat."
       },
       {
         "kana": "すき じゃない",
-        "rom": "-",
-        "arti": "Saya tidak menyukainya",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "suki ja nai",
+        "arti": "tidak suka (negatif)",
+        "alasan": "Tepat sekali. すきじゃない です adalah bentuk negatif kata sifat-Na yang cocok melengkapi kontras kalimat."
       }
     ],
     "kunci_id": "すき じゃない",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(menyukai)",
-      "(favorit)",
-      "(Saya tidak menyukainya)"
+      "(suki) suka (positif)",
+      "(sukina) bentuk penjelas nomina",
+      "(suki ja nai) tidak suka (negatif)"
     ]
   },
   {
     "no": 14,
-    "title": "私は小さい頃ギターを_____",
-    "subTitle": "(Saya bermain gitar _____ ketika saya masih kecil)",
+    "title": "私は 小さい頃 ギターを _____。",
+    "subTitle": "Watashi wa chiisai koro gitaa o _____ .",
     "img": "",
     "audio": "",
     "options": [
@@ -737,42 +737,42 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(Saya bermain gitar _____ ketika saya masih kecil)",
-    "trans_rom": "-",
+    "trans": "Saya _____ gitar waktu masih kecil.",
+    "trans_rom": "Watashi wa chiisai koro gitaa o naraimashita.",
     "mnn": "Hyougen",
-    "analisis": "\"習いました\" (narimashita) adalah bentuk lampau dari \"習う\" (narau) yang berarti \"belajar\". Kalimat ini berarti \"Ketika saya masih kecil, saya belajar gitar.\" Tips: Perhatikan bentuk lampau kata kerja yang benar dan artinya agar sesuai dengan konteks kalimat.",
+    "analisis": "[MNN Bab 7 - Kata Kerja Belajar/Les (Naraimasu)] Kata 小さい頃 (chiisai koro = masa kecil) menandakan peristiwa lampau. Kata kerja yang tepat untuk keahlian atau alat musik (gitar) adalah 習いました (naraimashita = belajar/les dari orang lain). Pilihan lain typo fatal: はたらきますた (salah bentuk dari hatarakimashita) dan りおりしますた (salah ejaan dan bentuk dari ryouri shimashita).",
     "opt_detail": [
       {
         "kana": "習いました。",
-        "rom": "-",
-        "arti": "Saya mempelajarinya.",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "naraimashita",
+        "arti": "belajar / mengambil les (lampau)",
+        "alasan": "Tepat sekali. Gitar dipelajari/dileskan (ギターを 習いました) dan menggunakan bentuk lampau yang benar."
       },
       {
         "kana": "はたらきますた",
-        "rom": "-",
-        "arti": "saya sedang bekerja",
-        "alasan": "Pilihan salah."
+        "rom": "hatarakimasuta",
+        "arti": "salah bentuk (bekerja)",
+        "alasan": "Selain tidak cocok untuk gitar, bentuk lampau bahasa Jepang yang benar berakhiran -mashita (ました), bukan -masuta (ますた)."
       },
       {
         "kana": "りおりしますた",
-        "rom": "-",
-        "arti": "Saya ingin melakukan reoris",
-        "alasan": "Pilihan salah."
+        "rom": "riorishimasuta",
+        "arti": "salah ejaan (memasak)",
+        "alasan": "Salah ketik dari ryouri (料理) dan berakhiran -masuta yang tidak baku."
       }
     ],
     "kunci_id": "習いました。",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Saya mempelajarinya.)",
-      "(saya sedang bekerja)",
-      "(Saya ingin melakukan reoris)"
+      "(naraimashita) belajar/les (lampau)",
+      "(hatarakimasuta) salah bentuk & arti",
+      "(riorishimasuta) salah ejaan"
     ]
   },
   {
     "no": 15,
-    "title": "A:明日どこに_____\r\nB:駅の前あいましょう",
-    "subTitle": "(A: Dimana kamu besok_____B: Mari kita bertemu di depan stasiun)",
+    "title": "A: 明日 どこで _____。\nB: 駅の前で 会いましょう。",
+    "subTitle": "A: Ashita doko de _____ .\nB: Eki no mae de aimashou.",
     "img": "",
     "audio": "",
     "options": [
@@ -792,42 +792,42 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(A: Dimana kamu besok_____B: Mari kita bertemu di depan stasiun)",
-    "trans_rom": "-",
+    "trans": "A: Besok kita bertemu di mana?\nB: Mari kita bertemu di depan stasiun.",
+    "trans_rom": "A: Ashita doko de aimasu ka.\nB: Eki no mae de aimashou.",
     "mnn": "Hyougen",
-    "analisis": "\"あいますか\" adalah bentuk pertanyaan yang sopan untuk menanyakan apakah \"bertemu\" atau \"bertemu di sana\". Tips: Perhatikan apakah kalimat tersebut berfungsi sebagai pertanyaan atau ajakan.",
+    "analisis": "[MNN Bab 5/6 - Kalimat Tanya Informasi Lokasi Bertemu] Pembicara A menanyakan lokasi pertemuan ('Di mana besok kita akan bertemu?'). Bentuk pertanyaan sopan yang tepat untuk menanyakan rencana adalah kata kerja bentuk tanya あいますか (aimasu ka / 会いますか). Respon B menggunakan ajakan pembicara ~ましょう (aimashou = ayo/mari kita bertemu).",
     "opt_detail": [
       {
         "kana": "あいません",
-        "rom": "-",
-        "arti": "saya minta maaf",
-        "alasan": "Pilihan salah."
+        "rom": "aimasen",
+        "arti": "tidak bertemu (negatif)",
+        "alasan": "Merupakan bentuk negatif pernyataan, bukan kalimat tanya."
       },
       {
         "kana": "あいますか",
-        "rom": "-",
-        "arti": "Apakah kamu terbuka?",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "aimasu ka",
+        "arti": "apakah bertemu? (kalimat tanya)",
+        "alasan": "Tepat sekali. Bentuk pertanyaan sopan standar berpasangan dengan kata tanya tempat どこで."
       },
       {
         "kana": "あいましょうか",
-        "rom": "-",
-        "arti": "Bagaimana kalau kita bertemu?",
-        "alasan": "Pilihan salah."
+        "rom": "aimashou ka",
+        "arti": "bagaimana kalau kita bertemu?",
+        "alasan": "Merupakan ungkapan menawarkan ide/ajakan langsung, kurang tepat ditaruh setelah kata tanya spesifik tempat どこで di sini."
       }
     ],
     "kunci_id": "あいますか",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(saya minta maaf)",
-      "(Apakah kamu terbuka?)",
-      "(Bagaimana kalau kita bertemu?)"
+      "(aimasen) tidak bertemu",
+      "(aimasu ka) apakah bertemu? (tanya)",
+      "(aimashou ka) tawaran ajakan"
     ]
   },
   {
     "no": 16,
-    "title": "A: 結婚のおいわいにどんなものいいですか\r\nB :赤いものがいい_____",
-    "subTitle": "(A: Apa yang kamu inginkan untuk menikah?B:Yang merah bagus_____)",
+    "title": "A: 結婚の お祝いに どんなものが いいですか。\nB: 赤いものが いい _____。",
+    "subTitle": "A: Kekkon no oiwai ni donna mono ga ii desu ka.\nB: Akai mono ga ii _____ .",
     "img": "",
     "audio": "",
     "options": [
@@ -847,42 +847,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(A: Apa yang kamu inginkan untuk menikah?B:Yang merah bagus_____)",
-    "trans_rom": "-",
+    "trans": "A: Untuk hadiah pernikahan, barang seperti apa yang bagus?\nB: Menurut saya, barang yang berwarna merah bagus.",
+    "trans_rom": "A: Kekkon no oiwai ni donna mono ga ii desu ka.\nB: Akai mono ga ii to omoimasu.",
     "mnn": "Hyougen",
-    "analisis": "\"と思います\" (to omoimasu - saya pikir) adalah ungkapan yang tepat untuk menyatakan pendapat atau saran dalam percakapan ini. Tips: Perhatikan konteks kalimat dan pilihan kata yang paling umum digunakan untuk menyatakan pendapat.",
+    "analisis": "[MNN Bab 21 - Menyampaikan Opini / Saran (~to omoimasu)] Untuk mengutarakan opini, pendapat pribadi, atau usulan secara santun, penutur menggunakan pola kalimat: [Bentuk Biasa / Kalimat] + と思います (to omoimasu = saya kira / menurut pemikiran saya). Kata sifat 赤いものがいい (barang berwarna merah bagus) langsung disambung dengan partikel kutipan opini と (to) + 思います.",
     "opt_detail": [
       {
         "kana": "考えます",
-        "rom": "-",
-        "arti": "Saya akan memikirkannya",
-        "alasan": "Pilihan salah."
+        "rom": "kangaemasu",
+        "arti": "memikirkan / mempertimbangkan",
+        "alasan": "Tidak bisa disambung langsung tanpa partikel, dan bermakna proses berpikir logis, bukan mengutarakan opini santun."
       },
       {
         "kana": "思います",
-        "rom": "-",
-        "arti": "Saya kira demikian",
-        "alasan": "Pilihan salah."
+        "rom": "omoimasu",
+        "arti": "berpikir (tanpa partikel to)",
+        "alasan": "Kurang partikel kutipan 'to' (と). Mengutarakan opini wajib menggunakan pola ~to omoimasu."
       },
       {
         "kana": "と思います",
-        "rom": "-",
-        "arti": "Saya kira demikian",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "to omoimasu",
+        "arti": "saya pikir / menurut saya",
+        "alasan": "Tepat sekali. Ungkapan standar MNN Bab 21 untuk menyampaikan saran atau opini pribadi."
       }
     ],
     "kunci_id": "と思います",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Saya akan memikirkannya)",
-      "(Saya kira demikian)",
-      "(Saya kira demikian)"
+      "(kangaemasu) mempertimbangkan",
+      "(omoimasu) kurang partikel to",
+      "(to omoimasu) menurut saya (opini)"
     ]
   },
   {
     "no": 17,
-    "title": "飲み物のつくえのうえに___ だめですよう",
-    "subTitle": "(Selain membuat minuman ____ Saya harap itu tidak bagus.)",
+    "title": "飲み物を つくえの 上に _____ だめですよ。",
+    "subTitle": "Nomimono o tsukue no ue ni _____ dame desu yo.",
     "img": "",
     "audio": "",
     "options": [
@@ -902,42 +902,42 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(Selain membuat minuman ____ Saya harap itu tidak bagus.)",
-    "trans_rom": "-",
+    "trans": "Tidak boleh meletakkan minuman di atas meja, lho.",
+    "trans_rom": "Nomimono o tsukue no ue ni oicha dame desu yo.",
     "mnn": "Hyougen",
-    "analisis": "\"おいちゃ\" adalah bentuk negatif dari kata kerja \"置く\" (oku - meletakkan), yang berarti \"jangan meletakkan\". Ini sesuai dengan konteks larangan dalam kalimat. Tips: Perhatikan bentuk kata kerja yang digunakan dalam kalimat larangan.",
+    "analisis": "[MNN Bab 26/40 - Pola Larangan Lisan (~cha dame) dari Kata Kerja Okimasu] Kata kerja おく (oku / 置きます = meletakkan) adalah kata kerja golongan 1 berakhiran ku, sehingga bentuk te-nya adalah おいて (oite). Pola larangan ~ては だめ (tewa dame) pada kata kerja berakhiran ~te mengalami kontraksi percakapan menjadi ~ちゃ だめ (cha dame), menghasilkan おいちゃ だめ (oicha dame = jangan taruh / jangan letakkan).",
     "opt_detail": [
       {
         "kana": "おいちゃ",
-        "rom": "-",
-        "arti": "Ocha",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "oicha",
+        "arti": "meletakkan (kontraksi oite wa)",
+        "alasan": "Tepat sekali. Dari kata kerja oku (oite) + wa dame -> oicha dame."
       },
       {
         "kana": "おいじゃ",
-        "rom": "-",
-        "arti": "Hai",
-        "alasan": "Pilihan salah."
+        "rom": "oija",
+        "arti": "bukan bentuk baku",
+        "alasan": "Akhiran -ja hanya terbentuk dari kata kerja bentuk de (contoh: nonde wa -> nonja). Karena oite berakhiran te, maka menjadi cha."
       },
       {
         "kana": "おいし",
-        "rom": "-",
-        "arti": "Lezat",
-        "alasan": "Pilihan salah."
+        "rom": "oishi",
+        "arti": "potongan kata oishii (enak)",
+        "alasan": "Tidak ada hubungannya dengan tata bahasa larangan meletakkan barang."
       }
     ],
     "kunci_id": "おいちゃ",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Ocha)",
-      "(Hai)",
-      "(Lezat)"
+      "(oicha) jangan taruh (larangan)",
+      "(oija) salah bentuk fonetik",
+      "(oishi) salah kata"
     ]
   },
   {
     "no": 18,
-    "title": "タイのコンサートは_____",
-    "subTitle": "(Konser di Thailand adalah _____)",
+    "title": "タイの コンサートは _____。",
+    "subTitle": "Tai no konsaato wa _____ .",
     "img": "",
     "audio": "",
     "options": [
@@ -957,42 +957,42 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(Konser di Thailand adalah _____)",
-    "trans_rom": "-",
+    "trans": "Konser di Thailand bagaimana (keadaannya)?",
+    "trans_rom": "Tai no konsaato wa dou deshita ka.",
     "mnn": "Hyougen",
-    "analisis": "\"どうでしたか\" digunakan untuk menanyakan bagaimana pengalaman atau pendapat seseorang tentang sesuatu, cocok untuk menanyakan tentang konser. Tips: Perhatikan konteks kalimat untuk memilih kata tanya yang tepat.",
+    "analisis": "[MNN Bab 8/12 - Menanyakan Kesan Pengalaman Lampau (~dou deshita ka)] Untuk menanyakan kesan, keadaan, atau penilaian lawan bicara mengenai suatu acara atau tempat yang telah terjadi di masa lampau, digunakan ungkapan tanya どうでしたか (dou deshita ka = bagaimana keadaannya?). Pilihan lain salah ketik / tidak baku: どしたんですか (kurang u) dan どしらですか (salah ketik).",
     "opt_detail": [
       {
         "kana": "どしたんですか",
-        "rom": "-",
-        "arti": "Ada apa?",
-        "alasan": "Pilihan salah."
+        "rom": "doshitan desu ka",
+        "arti": "salah ketik dari dou shitan desu ka (ada apa)",
+        "alasan": "Selain salah ejaan, 'dou shitan desu ka' digunakan untuk menanyakan ada masalah apa pada seseorang, bukan menanyakan kesan konser."
       },
       {
         "kana": "どうでしたか",
-        "rom": "-",
-        "arti": "Bagaimana tadi?",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "dou deshita ka",
+        "arti": "bagaimana (kesan/keadaannya)?",
+        "alasan": "Tepat sekali. Pola baku MNN Bab 8/12 untuk menanyakan kesan pengalaman masa lalu."
       },
       {
         "kana": "どしらですか",
-        "rom": "-",
-        "arti": "Siapa kamu?",
-        "alasan": "Pilihan salah."
+        "rom": "doshira desu ka",
+        "arti": "salah ketik dari dochira desu ka",
+        "alasan": "Dochira menanyakan arah/pilihan di antara dua hal, bukan kesan konser."
       }
     ],
     "kunci_id": "どうでしたか",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Ada apa?)",
-      "(Bagaimana tadi?)",
-      "(Siapa kamu?)"
+      "(doshitan desu ka) ada apa (salah eja)",
+      "(dou deshita ka) bagaimana keadaannya?",
+      "(doshira desu ka) salah ketik"
     ]
   },
   {
     "no": 19,
-    "title": "A:ワンさんそのかばんはおもそうです、大丈夫ですか\r\nBはい、大丈夫です ______",
-    "subTitle": "(A: Tuan Wang, tas itu terlihat aneh. Apakah tidak apa-apa?Ya, tidak apa-apa ______)",
+    "title": "A: ワンさん、その かばんは 重そうですね。大丈夫ですか。\nB: はい、大丈夫です。_____。",
+    "subTitle": "A: Wan-san, sono kaban wa omosou desu ne. Daijoubu desu ka.\nB: Hai, daijoubu desu. _____ .",
     "img": "",
     "audio": "",
     "options": [
@@ -1012,42 +1012,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(A: Tuan Wang, tas itu terlihat aneh. Apakah tidak apa-apa?Ya, tidak apa-apa ______)",
-    "trans_rom": "-",
+    "trans": "A: Wang-san, tas itu kelihatannya berat ya. Apakah tidak apa-apa?\nB: Ya, saya tidak apa-apa. Terima kasih banyak (atas perhatiannya).",
+    "trans_rom": "A: Wan-san, sono kaban wa omosou desu ne. Daijoubu desu ka.\nB: Hai, daijoubu desu. Arigatou gozaimasu.",
     "mnn": "Hyougen",
-    "analisis": "\"ありがとうございます\" (arigatou gozaimasu) berarti \"Terima kasih\" dan merupakan respons yang sopan ketika seseorang menawarkan bantuan atau perhatian. Tips: Perhatikan makna ungkapan yang digunakan dalam percakapan.",
+    "analisis": "[MNN Bab 24/43 - Merespon Perhatian Lawan Bicara] Pembicara A menunjukkan kepedulian atas beban tas B yang tampak berat (重そう / omosou = tampak berat). Setelah B menyatakan dirinya baik-baik saja (はい、大丈夫です), sopan santun komunikasi Jepang mewajibkan penutur menyampaikan terima kasih atas simpati tersebut dengan ungkapan ありがとうございます (arigatou gozaimasu).",
     "opt_detail": [
       {
         "kana": "いってきます",
-        "rom": "-",
-        "arti": "aku pergi",
-        "alasan": "Pilihan salah."
+        "rom": "itte kimasu",
+        "arti": "saya berangkat dulu",
+        "alasan": "Diucapkan saat berpamitan keluar rumah/kantor, tidak relevan dengan konteks perhatian tas berat."
       },
       {
         "kana": "おだいじに",
-        "rom": "-",
-        "arti": "Terutama",
-        "alasan": "Pilihan salah."
+        "rom": "odaiji ni",
+        "arti": "semoga lekas sembuh",
+        "alasan": "Diucapkan untuk orang yang sedang sakit, bukan untuk membalas perhatian tas berat."
       },
       {
         "kana": "ありがとうございます",
-        "rom": "-",
-        "arti": "Terima kasih",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "arigatou gozaimasu",
+        "arti": "terima kasih banyak",
+        "alasan": "Tepat sekali. Ungkapan santun membalas perhatian dan kepedulian lawan bicara."
       }
     ],
     "kunci_id": "ありがとうございます",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(aku pergi)",
-      "(Terutama)",
-      "(Terima kasih)"
+      "(itte kimasu) saya berangkat",
+      "(odaiji ni) semoga lekas sembuh",
+      "(arigatou gozaimasu) terima kasih banyak"
     ]
   },
   {
     "no": 20,
-    "title": "A: せんたくきがこわれてしまいますた\r\nB:たいへんですね\r\nA: はい 、______",
-    "subTitle": "(A: Ruang bawah tanah akan rusakB: Itu masalah besarJ: Ya,______)",
+    "title": "A: 洗濯機が こわれてしまいました。\nB: たいへんですね。\nA: はい、_____。",
+    "subTitle": "A: Sentakuki ga kowarete shimaimashita.\nB: Taihen desu ne.\nA: Hai, _____ .",
     "img": "",
     "audio": "",
     "options": [
@@ -1067,42 +1067,42 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(A: Ruang bawah tanah akan rusakB: Itu masalah besarJ: Ya,______)",
-    "trans_rom": "-",
+    "trans": "A: Mesin cuci saya rusak.\nB: Wah, repot sekali ya.\nA: Iya, jadi sebenarnya saya ada permintaan tolong...",
+    "trans_rom": "A: Sentakuki ga kowarete shimaimashita.\nB: Taihen desu ne.\nA: Hai, sorede onegai ga aru n desu ga.",
     "mnn": "Hyougen",
-    "analisis": "Jawaban \"それでお願いがあるんですが\" (Jadi, saya punya permintaan) adalah kelanjutan logis dari percakapan. Setelah menyatakan masalah, A ingin meminta bantuan. Tips: Perhatikan alur percakapan dan hubungan sebab-akibat antar kalimat.",
+    "analisis": "[MNN Bab 26 - Pola Pendahuluan Meminta Bantuan (~n desu ga)] Ketika seseorang mengalami masalah (mesin cuci rusak) dan ingin meminta bantuan lawan bicara (misal menumpang mencuci baju), ungkapan pengantar yang halus dan lazim digunakan dalam percakapan bisnis/sosial Jepang adalah それで お願いがあるんですが (sorede onegai ga aru n desu ga = oleh karena itu, sebenarnya ada hal yang ingin saya mintakan tolong...). Akhiran ~n desu ga berfungsi melembutkan permohonan.",
     "opt_detail": [
       {
         "kana": "それでお願いがあるんですが",
-        "rom": "-",
-        "arti": "Jadi saya punya permintaan.",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "sorede onegai ga aru n desu ga",
+        "arti": "jadi, sebenarnya saya ada permohonan tolong...",
+        "alasan": "Tepat sekali. Jembatan pembuka yang santun untuk mengutarakan maksud permohonan bantuan setelah menceritakan kesulitan."
       },
       {
         "kana": "よろしくおねがいします",
-        "rom": "-",
-        "arti": "Terima kasih atas bantuan Anda.",
-        "alasan": "Pilihan salah."
+        "rom": "yoroshiku onegai shimasu",
+        "arti": "mohon bantuannya",
+        "alasan": "Terlalu mendadak dan kaku jika langsung diucapkan sebelum menjelaskan apa yang ingin dimintakan tolong."
       },
       {
         "kana": "どぞ",
-        "rom": "-",
-        "arti": "Silakan",
-        "alasan": "Pilihan salah."
+        "rom": "dozo",
+        "arti": "silakan (salah eja dari douzo)",
+        "alasan": "Digunakan untuk mempersilakan orang lain, bukan untuk meminta tolong atas masalah sendiri."
       }
     ],
     "kunci_id": "それでお願いがあるんですが",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Jadi saya punya permintaan.)",
-      "(Terima kasih atas bantuan Anda.)",
-      "(Silakan)"
+      "(sorede onegai ga aru n desu ga) pengantar minta bantuan",
+      "(yoroshiku onegai shimasu) mohon bantuannya",
+      "(dozo) silakan (salah eja)"
     ]
   },
   {
     "no": 21,
-    "title": "A: どうしたんですか\r\nB: ねつがあって\r\nC:  ______",
-    "subTitle": "(J: Ada apa?B: Ada masalahC:______)",
+    "title": "A: どうしたんですか。\nB: ねつが あって…。\nC: _____。",
+    "subTitle": "A: Dou shitan desu ka.\nB: Netsu ga atte...\nC: _____ .",
     "img": "",
     "audio": "",
     "options": [
@@ -1122,42 +1122,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(J: Ada apa?B: Ada masalahC:______)",
-    "trans_rom": "-",
+    "trans": "A: Kamu kenapa?\nB: Badan saya demam...\nC: Cepat sembuh ya (jaga kesehatan baik-baik).",
+    "trans_rom": "A: Dou shitan desu ka.\nB: Netsu ga atte...\nC: Odaiji ni.",
     "mnn": "Hyougen",
-    "analisis": "\"Odaijini\" adalah ungkapan simpati dan harapan agar cepat sembuh, sangat cocok diucapkan ketika seseorang memberitahu bahwa mereka sakit. Tips: Perhatikan konteks percakapan untuk memilih ungkapan yang tepat.",
+    "analisis": "[MNN Bab 14/26 - Ungkapan Simpati untuk Orang Sakit (Odaiji ni)] Ketika mendengar teman atau rekan mengeluh demam (熱があって) atau sedang sakit, respon wajib dalam etika kesopanan Jepang adalah mendoakan kesembuhannya dengan ucapan お大事に (おだいじに / odaiji ni = semoga lekas pulih / jaga dirimu baik-baik).",
     "opt_detail": [
       {
         "kana": "お大に",
-        "rom": "-",
-        "arti": "secara luas",
-        "alasan": "Pilihan salah."
+        "rom": "odaini",
+        "arti": "salah kanji & tidak lengkap",
+        "alasan": "Penulisan kanji rusak dan tidak memiliki makna yang sah dalam bahasa Jepang."
       },
       {
         "kana": "おせわになります",
-        "rom": "-",
-        "arti": "Saya akan sibuk",
-        "alasan": "Pilihan salah."
+        "rom": "osewa ni narimasu",
+        "arti": "terima kasih atas bantuannya",
+        "alasan": "Diucapkan dalam hubungan kerja sama bisnis/kolega, bukan saat seseorang sedang sakit demam."
       },
       {
         "kana": "おだいじに",
-        "rom": "-",
-        "arti": "Terutama",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "odaiji ni",
+        "arti": "semoga lekas sembuh",
+        "alasan": "Tepat sekali. Ungkapan baku penuh empati ketika mendengar seseorang sedang terserang demam atau sakit."
       }
     ],
     "kunci_id": "おだいじに",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(secara luas)",
-      "(Saya akan sibuk)",
-      "(Terutama)"
+      "(odaini) penulisan salah",
+      "(osewa ni narimasu) terima kasih bantuannya",
+      "(odaiji ni) semoga lekas sembuh"
     ]
   },
   {
     "no": 22,
-    "title": "A: タイのコンサートはどうですか\r\nB: ______ 楽しいかったです",
-    "subTitle": "(A: Bagaimana dengan konser di Thailand?B: ______ Itu menyenangkan.)",
+    "title": "A: タイの コンサートは どうでしたか。\nB: _____ 楽しかったです。",
+    "subTitle": "A: Tai no konsaato wa dou deshita ka.\nB: _____ tanoshikatta desu.",
     "img": "",
     "audio": "",
     "options": [
@@ -1177,42 +1177,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(A: Bagaimana dengan konser di Thailand?B: ______ Itu menyenangkan.)",
-    "trans_rom": "-",
+    "trans": "A: Bagaimana konser di Thailand kemarin?\nB: Suasananya ramai meriah dan sangat menyenangkan.",
+    "trans_rom": "A: Tai no konsaato wa dou deshita ka.\nB: Nigiyaka de tanoshikatta desu.",
     "mnn": "Hyougen",
-    "analisis": "\"にぎやかで\" adalah bentuk penghubung dari kata sifat-na \"にぎやか\", yang memungkinkan penyambungan dengan kata kerja atau kata sifat lain, termasuk untuk menyatakan pengalaman masa lalu seperti \"楽しかったです\". Tips: Ingatlah untuk mengubah kata sifat-na menjadi bentuk \"-で\" sebelum menyambungkannya dengan kata lain.",
+    "analisis": "[MNN Bab 16 - Menggabungkan Dua Kata Sifat (~de)] Untuk menyambungkan dua kata sifat (kata sifat-Na + kata sifat-I) yang bermakna searah/positif, kata sifat-Na にぎやか (ramai meriah) harus diubah ke bentuk penghubung (te-kei) yaitu dengan menambahkan で (de), menghasilkan にぎやかで (nigiyaka de = ramai meriah dan...).",
     "opt_detail": [
       {
         "kana": "にぎやかに",
-        "rom": "-",
-        "arti": "Hidup",
-        "alasan": "Pilihan salah."
+        "rom": "nigiyaka ni",
+        "arti": "dengan ramai (adverbia)",
+        "alasan": "Bentuk adverbia (ni) memodifikasi kata kerja tindakan, bukan untuk menggabungkan dua kata sifat."
       },
       {
         "kana": "賑やか",
-        "rom": "-",
-        "arti": "sibuk",
-        "alasan": "Pilihan salah."
+        "rom": "nigiyaka",
+        "arti": "ramai (bentuk dasar tanpa de)",
+        "alasan": "Bentuk dasar tidak bisa langsung digabungkan berurutan dengan kata sifat berikutnya (tanoshikatta)."
       },
       {
         "kana": "にぎやかで",
-        "rom": "-",
-        "arti": "Hidup",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "nigiyaka de",
+        "arti": "ramai dan... (bentuk te)",
+        "alasan": "Tepat sekali. Partikel de berfungsi sebagai kata hubung 'dan' untuk kata sifat golongan Na."
       }
     ],
     "kunci_id": "にぎやかで",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Hidup)",
-      "(sibuk)",
-      "(Hidup)"
+      "(nigiyaka ni) dengan ramai (adverbia)",
+      "(nigiyaka) bentuk dasar (tanpa penghubung)",
+      "(nigiyaka de) ramai dan... (penghubung te)"
     ]
   },
   {
     "no": 23,
-    "title": "A:おおさかがとっても楽しいかったです、。_____\r\nB:じゃ、こんどいってみます",
-    "subTitle": "(A: Osaka sangat menyenangkan. _____B: Kalau begitu, aku akan mencobanya lain kali.)",
+    "title": "A: 大阪が とっても 楽しかったです。_____。\nB: じゃ、今度 行ってみます。",
+    "subTitle": "A: Oosaka ga tottemo tanoshikatta desu. _____ .\nB: Ja, kondo itte mimasu.",
     "img": "",
     "audio": "",
     "options": [
@@ -1232,42 +1232,42 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(A: Osaka sangat menyenangkan. _____B: Kalau begitu, aku akan mencobanya lain kali.)",
-    "trans_rom": "-",
+    "trans": "A: Osaka kemarin sangat menyenangkan lho. Kamu pasti harus coba pergi ke sana!\nB: Wah kalau begitu, lain kali saya akan coba pergi ke sana.",
+    "trans_rom": "A: Oosaka ga tottemo tanoshikatta desu. Zehi itte mite kudasai.\nB: Ja, kondo itte mimasu.",
     "mnn": "Hyougen",
-    "analisis": "\"ぜひ行ってみてください\" (Cobalah untuk pergi) adalah respons yang sopan dan mendorong pembicara B untuk mencoba pergi ke Osaka, sesuai dengan antusiasme pembicara A. Tips: Perhatikan konteks percakapan untuk memilih ungkapan yang paling sesuai.",
+    "analisis": "[MNN Bab 26/40 - Rekomendasi Antusias (Zehi ~te mite kudasai)] Pembicara A sangat terkesan dengan pengalamannya di Osaka dan ingin merekomendasikannya secara kuat kepada B. Ungkapan rekomendasi antusias yang tepat adalah ぜひ 行ってみてください (zehi itte mite kudasai = kamu benar-benar harus mencoba pergi ke sana!). Respon B: じゃ、今度 行ってみます (Kalau begitu, lain kali saya coba ke sana) membuktikan B menerima anjuran antusias A.",
     "opt_detail": [
       {
         "kana": "行きませんか",
-        "rom": "-",
-        "arti": "Apakah Anda ingin pergi?",
-        "alasan": "Pilihan salah."
+        "rom": "ikimasen ka",
+        "arti": "maukah pergi bersama?",
+        "alasan": "Merupakan ajakan untuk pergi bersama-sama saat itu juga, padahal respon B adalah 'lain kali saya akan coba pergi sendiri'."
       },
       {
         "kana": "ぜひ行ってみてください",
-        "rom": "-",
-        "arti": "Silakan pergi dan mencobanya",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "zehi itte mite kudasai",
+        "arti": "kamu pasti harus coba pergi ke sana!",
+        "alasan": "Tepat sekali. Kata keterangan zehi (benar-benar/pasti) + te mite kudasai (cobalah) adalah bentuk rekomendasi tempat wisata yang paling alami."
       },
       {
         "kana": "行きましょう",
-        "rom": "-",
-        "arti": "Ayo pergi",
-        "alasan": "Pilihan salah."
+        "rom": "ikimashou",
+        "arti": "mari kita pergi",
+        "alasan": "Ajakan langsung, tidak cocok dengan respon B yang menyatakan akan mencoba pergi di lain waktu secara mandiri."
       }
     ],
     "kunci_id": "ぜひ行ってみてください",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Apakah Anda ingin pergi?)",
-      "(Silakan pergi dan mencobanya)",
-      "(Ayo pergi)"
+      "(ikimasen ka) ajakan pergi bersama",
+      "(zehi itte mite kudasai) rekomendasi sangat dianjurkan",
+      "(ikimashou) mari kita pergi"
     ]
   },
   {
     "no": 24,
-    "title": "A:こちらは夫でず\r\nB:よろしく\r\nA: よろしくおねがいしますいつも奥さんに _____",
-    "subTitle": "(A: Ini bukan suamikuB: Senang bertemu denganmuA: Terima kasih atas dukungan Anda yang tiada henti, istri saya _____)",
+    "title": "A: こちらは 夫です。\nB: どうぞよろしく。\nA: よろしくお願いします。いつも 妻が _____。",
+    "subTitle": "A: Kochira wa otto desu.\nB: Douzo yoroshiku.\nA: Yoroshiku onegai shimasu. Itsumo tsuma ga _____ .",
     "img": "",
     "audio": "",
     "options": [
@@ -1287,42 +1287,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(A: Ini bukan suamikuB: Senang bertemu denganmuA: Terima kasih atas dukungan Anda yang tiada henti, istri saya _____)",
-    "trans_rom": "-",
+    "trans": "A: Ini suami saya.\nB: Senang berkenalan dengan Anda.\nA: Senang berkenalan dengan Anda. Terima kasih banyak karena selalu membimbing dan merepotkan istri saya.",
+    "trans_rom": "A: Kochira wa otto desu.\nB: Douzo yoroshiku.\nA: Yoroshiku onegai shimasu. Itsumo tsuma ga osewa ni natte imasu.",
     "mnn": "Hyougen",
-    "analisis": "\"お世話になっています\" adalah ungkapan sopan yang umum digunakan untuk berterima kasih atas bantuan atau dukungan yang telah diterima, terutama dalam konteks hubungan yang sudah terjalin. Tips: Perhatikan tingkat kesopanan (keigo) yang sesuai dengan situasi dan lawan bicara.",
+    "analisis": "[MNN Bab 28/49 - Ungkapan Salam Sopan Pertemuan Pasangan/Keluarga (Osewa ni natte imasu)] Saat memperkenalkan pasangan/keluarga kepada rekan kerja atau atasan, ungkapan etika kesopanan formal yang wajib diucapkan adalah いつも お世話になっています (itsumo osewa ni natte imasu = terima kasih atas segala kebaikan, bantuan, dan bimbingan yang selalu Anda berikan kepada keluarga saya).",
     "opt_detail": [
       {
         "kana": "ありがとうございます",
-        "rom": "-",
-        "arti": "Terima kasih",
-        "alasan": "Pilihan salah."
+        "rom": "arigatou gozaimasu",
+        "arti": "terima kasih",
+        "alasan": "Terlalu umum dan kurang memenuhi standar formalitas salam perkenalan keluarga dalam kultur Jepang."
       },
       {
         "kana": "よろしく",
-        "rom": "-",
-        "arti": "Senang bertemu dengan Anda",
-        "alasan": "Pilihan salah."
+        "rom": "yoroshiku",
+        "arti": "salam kenal (kasual)",
+        "alasan": "Bentuk kasual yang tidak sopan diucapkan kepada atasan/kenalan pasangan."
       },
       {
         "kana": "お世話になっています",
-        "rom": "-",
-        "arti": "Terima kasih atas bantuan Anda",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "osewa ni natte imasu",
+        "arti": "terima kasih telah banyak membantu/membimbing",
+        "alasan": "Tepat sekali. Ungkapan salam resmi wajib saat keluarga memperkenalkan diri kepada rekan/kolega kerja."
       }
     ],
     "kunci_id": "お世話になっています",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Terima kasih)",
-      "(Senang bertemu dengan Anda)",
-      "(Terima kasih atas bantuan Anda)"
+      "(arigatou gozaimasu) terima kasih (umum)",
+      "(yoroshiku) kasual / tidak sopan",
+      "(osewa ni natte imasu) salam terima kasih relasi resmi"
     ]
   },
   {
     "no": 25,
-    "title": "A:このふくろはなくのためですか\r\nB:ゴミ _____",
-    "subTitle": "(A: Apakah tas ini sia-sia?B: Sampah _____)",
+    "title": "A: この ふくろは 何のためですか。\nB: ゴミを _____。",
+    "subTitle": "A: Kono fukuro wa nan no tame desu ka.\nB: Gomi o _____ .",
     "img": "",
     "audio": "",
     "options": [
@@ -1342,36 +1342,36 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "(A: Apakah tas ini sia-sia?B: Sampah _____)",
-    "trans_rom": "-",
+    "trans": "A: Kantong ini untuk apa kegunaannya?\nB: Digunakan untuk membuang sampah.",
+    "trans_rom": "A: Kono fukuro wa nan no tame desu ka.\nB: Gomi o suteru no ni tsukaimasu.",
     "mnn": "Hyougen",
-    "analisis": "Jawaban \"すてるのにつかいます\" berarti \"digunakan untuk membuang\", yang secara logis menjawab pertanyaan \"apakah kantong ini untuk membuang?\". Tips: Perhatikan partikel \"に\" yang menunjukkan tujuan atau kegunaan.",
+    "analisis": "[MNN Bab 42 - Menyatakan Fungsi dan Tujuan Alat/Benda (~no ni tsukaimasu)] Pola kalimat untuk menerangkan fungsi, kegunaan, atau tujuan suatu benda alat adalah: [Kata Kerja Bentuk Kamus] + のに 使います (no ni tsukaimasu = digunakan untuk [melakukan sesuatu]). Kalimat: ゴミを すてるのに つかいます (Gomi o suteru no ni tsukaimasu = digunakan untuk membuang sampah).",
     "opt_detail": [
       {
         "kana": "すてるのにつかいます",
-        "rom": "-",
-        "arti": "Saya menggunakannya untuk membuang",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "suteru no ni tsukaimasu",
+        "arti": "digunakan untuk membuang",
+        "alasan": "Tepat sekali. Pola baku MNN Bab 42 [V-Kamus + のに 使います] untuk menjawab fungsi suatu benda/wadah."
       },
       {
         "kana": "すてることです",
-        "rom": "-",
-        "arti": "Itu adalah membuang",
-        "alasan": "Pilihan salah."
+        "rom": "suteru koto desu",
+        "arti": "adalah hal membuang",
+        "alasan": "Hanya mendefinisikan makna konsep, tidak menyatakan fungsi kegunaan barang."
       },
       {
         "kana": "すてるようになります",
-        "rom": "-",
-        "arti": "Anda akan bisa membuangnya",
-        "alasan": "Pilihan salah."
+        "rom": "suteru you ni narimasu",
+        "arti": "menjadi bisa/terbiasa membuang",
+        "alasan": "Menyatakan perubahan kebiasaan atau kemampuan dari waktu ke waktu, bukan fungsi kantong plastik."
       }
     ],
     "kunci_id": "すてるのにつかいます",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Saya menggunakannya untuk membuang)",
-      "(Itu adalah membuang)",
-      "(Anda akan bisa membuangnya)"
+      "(suteru no ni tsukaimasu) digunakan untuk membuang (fungsi alat)",
+      "(suteru koto desu) adalah hal membuang",
+      "(suteru you ni narimasu) menjadi terbiasa membuang"
     ]
   },
   {
