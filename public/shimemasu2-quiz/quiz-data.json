@@ -1073,30 +1073,30 @@
     "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Gambar menunjukkan seseorang yang keberatan membawa tas/koper barang bawaan. Penutur A menawarkan bantuan membawakan barang dengan pola ~mashou ka: もちましょうか (Mochimashou ka - 'Maukah saya bawakan?'). Lawan bicara menerima: はいお願いします.",
     "opt_detail": [
       {
-        "kana": "きをつけて かえって ください",
-        "rom": "ki wo tsukete kaette kudasai",
-        "arti": "Hati-hatilah di jalan saat pulang",
-        "alasan": "Tepat sekali. Menjawab kabar bahwa rekan kerja hendak pulang duluan (お先に失礼します), ucapan salam pelepasan yang hangat dan sopan adalah 'hati-hatilah di jalan saat pulang'."
+        "kana": "もちましょうか",
+        "rom": "mochimashou ka",
+        "arti": "Maukah saya bawakan? (mochimashou ka)",
+        "alasan": "Tepat sekali. Gambar/situasi menunjukkan seseorang keberatan membawa barang bawaan. Pola tawaran membawakan barang secara sopan adalah もちましょうか (Maukah saya bawakan?)."
       },
       {
-        "kana": "おかえりなさい",
-        "rom": "okaerinasai",
-        "arti": "Selamat datang kembali di rumah",
-        "alasan": "Salah. おかえりなさい diucapkan kepada anggota keluarga atau rekan yang baru saja tiba kembali, bukan untuk orang yang mau berangkat pulang."
+        "kana": "てつだいましょうか",
+        "rom": "tetsudaimashou ka",
+        "arti": "Maukah saya bantu?",
+        "alasan": "Kurang spesifik. Dalam konteks melihat seseorang memegang barang bawaan berat, ungkapan paling tepat dan natural adalah membawakan barangnya (もちましょうか)."
       },
       {
-        "kana": "ごめんください",
-        "rom": "gomen kudasai",
-        "arti": "Permisi (mengetuk pintu)",
-        "alasan": "Salah. ごめんください digunakan saat bertamu mengetuk pintu rumah seseorang, tidak cocok diucapkan di kantor."
+        "kana": "元気ですか",
+        "rom": "genki desu ka",
+        "arti": "Apakah Anda sehat / apa kabar?",
+        "alasan": "Salah. 元気ですか adalah sapaan menanyakan kabar kesehatan, tidak cocok digunakan saat menawarkan bantuan pada barang bawaan yang dijawab 'はい、お願いします'."
       }
     ],
     "kunci_id": "もちましょうか",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Hati-hatilah di jalan saat pulang)",
-      "(Selamat datang kembali di rumah)",
-      "(Permisi (mengetuk pintu))"
+      "(Maukah saya bawakan? (mochimashou ka))",
+      "(Maukah saya bantu?)",
+      "(Apakah Anda sehat / apa kabar?)"
     ]
   },
   {
@@ -1128,30 +1128,30 @@
     "analisis": "[MNN Bab 37 - Kalimat Pasif (Ukemi) ~ni yotte & Desas-desus ~sou desu] Gambar menunjukkan bangunan bersejarah. Pada konstruksi kalimat pasif dengan penanda pihak perancang/pembuat (によって), kata kerja yang tepat untuk bangunan adalah 建てられた (taterareta - dibangun, bentuk pasif dari 建てる). Pola: [Pencipta] に よって 建てられた そうです (Kabarnya dibangun oleh arsitek terkenal).",
     "opt_detail": [
       {
-        "kana": "えんぴつ",
-        "rom": "enpitsu",
-        "arti": "Pensil tulis",
-        "alasan": "Salah. えんぴつ berarti pensil kayu, bukan mesin pendingin ruangan."
+        "kana": "もられた",
+        "rom": "morareta",
+        "arti": "Dituangkan / disajikan (bukan pasif bangunan)",
+        "alasan": "Salah. Kata 盛る (moru) digunakan untuk menyajikan/menuangkan makanan ke mangkuk, tidak bisa untuk mendirikan bangunan."
       },
       {
-        "kana": "エアコン",
-        "rom": "eakon",
-        "arti": "AC / pendingin ruangan (eakon)",
-        "alasan": "Tepat sekali. Karena cuaca ruangan sangat panas (あついですね), penutur menawarkan bantuan untuk menyalakan pendingin ruangan: エアコンを つけましょうか (Mau saya nyalakan AC-nya?)."
+        "kana": "きられた",
+        "rom": "kirareta",
+        "arti": "Dipotong / ditebang",
+        "alasan": "Salah. 切られた (kirareta) adalah bentuk pasif dari 切る (memotong/menebang), tidak relevan dengan pembangunan gedung oleh arsitek."
       },
       {
-        "kana": "とけい",
-        "rom": "tokei",
-        "arti": "Jam dinding / tangan",
-        "alasan": "Tepat sekali. Bentuk pasif (ukemi) dari 建てる (tateru = membangun) adalah 建てられた (taterareta = dibangun), berpasangan pasif dengan penanda agen arsitek (によって)."
+        "kana": "たてられた",
+        "rom": "taterareta",
+        "arti": "Dibangun (taterareta)",
+        "alasan": "Tepat sekali. Bentuk pasif (ukemi) dari 建てる (tateru = membangun) adalah 建てられた (taterareta = dibangun), berpasangan tepat dengan penanda pembuat arsitek (によって)."
       }
     ],
     "kunci_id": "たてられた",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Pensil tulis)",
-      "(AC / pendingin ruangan (eakon))",
-      "(Jam dinding / tangan)"
+      "(Dituangkan / disajikan)",
+      "(Dipotong / ditebang)",
+      "(Dibangun (taterareta))"
     ]
   },
   {
@@ -1183,30 +1183,30 @@
     "analisis": "[MNN Bab 36 - Perubahan Kemampuan (~you ni narimashita)] Menyatakan perkembangan kemampuan yang baru tercapai menggunakan kata kerja bentuk potensial + ように なりました. Potensial dari 書く (kaku - menulis) adalah 書ける (kakeru - bisa menulis) yang berpasangan dengan objek berpartikel が: 漢字が書けるように なりました.",
     "opt_detail": [
       {
-        "kana": "そうしましょう",
-        "rom": "sou shimashou",
-        "arti": "Mari kita lakukan begitu (sou shimashou)",
-        "alasan": "Tepat sekali. Respons persetujuan yang antusias terhadap ajakan lawan bicara (〜ましょうか) adalah 'そうしましょう' (Ayo, mari kita lakukan demikian!)."
+        "kana": "わけるようななりました",
+        "rom": "wakeru you na narimashita",
+        "arti": "Bentuk salah secara tata bahasa",
+        "alasan": "Salah. Partikelnya keliru (menggunakan な bukannya に) dan kata kerja 分ける berarti membagi/memisahkan, bukan menulis."
       },
       {
-        "kana": "これですね",
-        "rom": "kore desu ne",
-        "arti": "Yang ini ya",
-        "alasan": "Salah. これですね digunakan untuk mengonfirmasi suatu benda yang ditunjuk, tidak menjawab sebuah ajakan berbuat sesuatu."
+        "kana": "でかけるようになりました",
+        "rom": "dekakeru you ni narimashita",
+        "arti": "Menjadi bisa bepergian keluar",
+        "alasan": "Salah. 出かける berarti pergi ke luar rumah, tidak masuk akal dengan objek jumlah huruf kanji (漢字が 500字)."
       },
       {
-        "kana": "そうですね",
-        "rom": "sou desu ne",
-        "arti": "Iya ya / benar juga",
-        "alasan": "Tepat sekali. Kata kerja bentuk potensial 書ける (bisa menulis) bergabung dengan ように なりました untuk menyatakan perubahan kemampuan yang sebelumnya belum bisa menjadi bisa."
+        "kana": "かけるようになりました",
+        "rom": "kakeru you ni narimashita",
+        "arti": "Menjadi bisa menulis (kakeru you ni narimashita)",
+        "alasan": "Tepat sekali. Bentuk potensial dari 書く (menulis) adalah 書ける (bisa menulis). Digabung dengan ように なりました untuk menyatakan perubahan kemampuan dari belum bisa menjadi bisa."
       }
     ],
     "kunci_id": "かけるようになりました",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Mari kita lakukan begitu (sou shimashou))",
-      "(Yang ini ya)",
-      "(Iya ya / benar juga)"
+      "(Bentuk salah secara tata bahasa)",
+      "(Menjadi bisa bepergian keluar)",
+      "(Menjadi bisa menulis (kakeru you ni narimashita))"
     ]
   },
   {
@@ -1788,30 +1788,30 @@
     "analisis": "[MNN Bab 11/Fasilitas Medis - Frekuensi Minum Obat] Dokter menerangkan aturan pakai obat: 'お薬を出しますね。これは1日に2回飲んでください' (Saya berikan obat ya. Ini tolong diminum 2 kali sehari). Pasien menegaskan '朝と晩に飲めばいいですか' (Pagi dan malam?), dan dokter mengiyakan 'はい、そうです'. Jadi obat diminum 2 kali sehari (Pagi dan malam 2x sehari).",
     "opt_detail": [
       {
-        "kana": "Tidur yang cukup",
-        "rom": "tidur yang cukup",
-        "arti": "Tidur dan istirahat yang cukup",
-        "alasan": "Tepat sekali. Dokter menegaskan bahwa untuk lekas sembuh pasien wajib istirahat total dan tidur yang cukup ('早く治すためにはしっかり休むことが大切です。今日はしっかり寝ていてください')."
+        "kana": "2回",
+        "rom": "ni-kai",
+        "arti": "2 kali sehari (2回)",
+        "alasan": "Tepat sekali. Dokter menginstruksikan aturan minum obat dengan jelas: 'これは 1日に 2回 飲んで ください' (Ini diminum 2 kali sehari)."
       },
       {
-        "kana": "Olah raga",
-        "rom": "olahraga",
-        "arti": "Berolahraga",
-        "alasan": "Salah. Orang yang sedang sakit dilarang berolahraga berat, dokter memerintahkan istirahat."
+        "kana": "1回",
+        "rom": "ik-kai",
+        "arti": "1 kali sehari",
+        "alasan": "Salah. Dokter tidak mengatakan diminum 1 kali sehari."
       },
       {
-        "kana": "Makan yang banyak",
-        "rom": "makan yang banyak",
-        "arti": "Makan yang banyak",
-        "alasan": "Salah. Nasihat utama dokter berfokus pada istirahat tidur yang cukup dan minum obat secara teratur."
+        "kana": "3回",
+        "rom": "san-kai",
+        "arti": "3 kali sehari",
+        "alasan": "Salah. Pasien mengonfirmasi '朝と晩' (pagi dan malam hari), yang berarti 2 kali, bukan 3 kali."
       }
     ],
     "kunci_id": "2回",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Tidur dan istirahat yang cukup)",
-      "(Berolahraga)",
-      "(Makan yang banyak)"
+      "(2 kali sehari (2回))",
+      "(1 kali sehari)",
+      "(3 kali sehari)"
     ]
   },
   {
@@ -1843,30 +1843,30 @@
     "analisis": "[MNN Bab 19/23 - Nasihat Kesehatan Dokter] Dokter menasihati pasien agar cepat pulih: '早く治すためにはしっかり休むことが大切です。今日はしっかり寝ていてくださいね' (Untuk lekas sembuh, penting sekali untuk beristirahat sebaik-baiknya. Hari ini tolong tidur/istirahat yang banyak ya). Maka saran dokter adalah istirahat dan tidur yang banyak (Istirahat/Tidur).",
     "opt_detail": [
       {
-        "kana": "1",
-        "rom": "ichi",
-        "arti": "1 kali sehari",
-        "alasan": "Salah. Aturan minum obat bukan 1 kali sehari, melainkan dua kali."
+        "kana": "Joging",
+        "rom": "jogingu",
+        "arti": "Berlari joging",
+        "alasan": "Salah. Dokter tidak menyarankan aktivitas fisik berat seperti joging saat sedang sakit."
       },
       {
-        "kana": "2",
-        "rom": "ni",
-        "arti": "2 kali sehari",
-        "alasan": "Tepat sekali. Dokter menjelaskan aturan konsumsi obat: 'これは1日に2回飲んでください' (Obat ini diminum 2 kali sehari, yaitu pada pagi dan malam hari)."
+        "kana": "Istirahat/Tidur",
+        "rom": "yasumu / neru",
+        "arti": "Istirahat dan tidur yang cukup",
+        "alasan": "Tepat sekali. Dokter menyarankan agar lekas sembuh: '早く治すためにはしっかり休むことが大切です。今日はしっかり寝ていてください' (Penting untuk istirahat, hari ini tidurlah yang cukup)."
       },
       {
-        "kana": "3",
-        "rom": "san",
-        "arti": "3 kali sehari",
-        "alasan": "Salah. Dokter tidak menyebutkan 3 kali minum, pasien juga mengonfirmasi '朝と晩' (pagi dan malam = 2 kali)."
+        "kana": "Yoga",
+        "rom": "yoga",
+        "arti": "Senam yoga",
+        "alasan": "Salah. Percakapan tidak menyebutkan senam yoga sama sekali."
       }
     ],
     "kunci_id": "Istirahat/Tidur",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(1 kali sehari)",
-      "(2 kali sehari)",
-      "(3 kali sehari)"
+      "(Berlari joging)",
+      "(Istirahat dan tidur yang cukup)",
+      "(Senam yoga)"
     ]
   },
   {
@@ -1898,30 +1898,30 @@
     "analisis": "[MNN Bab Menyimak - Prosedur Evakuasi Gempa Bumi] Penyiar siaran darurat menegaskan tindakan awal saat ada guncangan besar: '最初にすべきことは自分の身を守ることです。近くに丈夫な机がある場合は、すぐにその下に入ってください' (Hal pertama yang harus dilakukan adalah melindungi diri. Bila ada meja kokoh di dekat Anda, segera masuk ke bawah meja). Pilihan yang benar adalah 'Berlindung di bawah meja'.",
     "opt_detail": [
       {
-        "kana": "Tetap diam di tempat",
-        "rom": "tetap diam di tempat",
-        "arti": "Tetap diam di tempat tanpa bertindak",
-        "alasan": "Salah. Diam saja tanpa melindungi diri sangat berbahaya karena bisa tertimpa benda jatuh dari atas."
+        "kana": "lari ke tepi sungai",
+        "rom": "kawa no soba e nigeru",
+        "arti": "Lari ke tepi sungai",
+        "alasan": "Salah. Mengungsi ke tepi sungai saat gempa berisiko bahaya longsor atau luapan air, tidak disarankan."
       },
       {
-        "kana": "Sembunyi dibawah meja",
-        "rom": "sembunyi dibawah meja",
-        "arti": "Berlindung di bawah meja",
-        "alasan": "Tepat sekali. Petunjuk keselamatan pertama saat gempa: '揺れを感じたら、まずは頭を守るために机の下に隠れてください' (Jika merasakan guncangan, pertama lindungi kepala dengan sembunyi di bawah meja)."
+        "kana": "Pakai helem",
+        "rom": "herumetto wo kaburu",
+        "arti": "Memakai helm",
+        "alasan": "Salah. Pengumuman tidak menyebutkan mencari helm terlebih dahulu saat gempa baru berguncang."
       },
       {
-        "kana": "Langsung lari keluar",
-        "rom": "langsung lari keluar",
-        "arti": "Langsung panik berlari keluar gedung",
-        "alasan": "Salah. Pengumuman menegaskan untuk tidak panik berlari keluar ('慌てて外に飛び出さないで') karena bahaya tertimpa serpihan kaca."
+        "kana": "Berlindung di bawah meja",
+        "rom": "tsukue no shita ni hairu",
+        "arti": "Berlindung di bawah meja yang kokoh",
+        "alasan": "Tepat sekali. Langkah awal saat gempa: '近くに丈夫な机がある場合は、すぐにその下に入ってください。そして、両手でしっかりと頭を隠して姿勢を低く保ってください' (Segera masuk ke bawah meja kokoh dan lindungi kepala)."
       }
     ],
     "kunci_id": "Berlindung di bawah meja",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Tetap diam di tempat tanpa bertindak)",
-      "(Berlindung di bawah meja)",
-      "(Langsung panik berlari keluar gedung)"
+      "(Lari ke tepi sungai)",
+      "(Memakai helm)",
+      "(Berlindung di bawah meja yang kokoh)"
     ]
   },
   {
@@ -1953,30 +1953,30 @@
     "analisis": "[MNN Bab Menyimak - Lokasi Evakuasi Gempa Bumi] Siaran darurat mengarahkan tempat berlindung setelah guncangan berhenti: 'その後、慌てて走らずにゆっくりと建物から出て外の広い広場へ避難してください。そこは建物が崩れる心配がない一番安全な場所です' (Keluarlah perlahan dari gedung dan mengungsilah ke lapangan luas di luar. Di sana tempat paling aman tanpa risiko tertimpa reruntuhan). Lokasi evakuasi adalah lapangan luas (Lapangan).",
     "opt_detail": [
       {
-        "kana": "Rumah",
-        "rom": "rumah",
-        "arti": "Pulang ke rumah masing-masing",
-        "alasan": "Salah. Pengungsi diarahkan menuju titik kumpul terbuka terdekat, bukan pulang ke rumah pribadi."
-      },
-      {
-        "kana": "Gedung",
-        "rom": "gedung",
-        "arti": "Tetap berada di dalam gedung",
-        "alasan": "Salah. Setelah guncangan mereda, warga justru diminta keluar gedung secara tertib demi menghindari risiko bangunan runtuh."
-      },
-      {
         "kana": "Lapangan",
-        "rom": "lapangan",
-        "arti": "Lapangan terbuka yang luas (広場)",
-        "alasan": "Tepat sekali. Lokasi evakuasi resmi yang disebutkan aman dari reruntuhan adalah lapangan luas di luar gedung ('外の広い広場へ避難してください')."
+        "rom": "hiroba",
+        "arti": "Lapangan luas di luar gedung (広場)",
+        "alasan": "Tepat sekali. Pengumuman evakuasi setelah guncangan berhenti: 'ゆっくりと建物から出て、外の広い広場へ避難してください' (Keluarlah perlahan dari gedung dan mengungsilah ke lapangan terbuka yang luas)."
+      },
+      {
+        "kana": "Samping bangunan",
+        "rom": "tatemono no tonari",
+        "arti": "Di samping bangunan gedung",
+        "alasan": "Salah. Berada di samping gedung sangat berbahaya karena risiko tertimpa runtuhan tembok atau kaca jendela."
+      },
+      {
+        "kana": "Tepi laut",
+        "rom": "kaigan",
+        "arti": "Di tepi pantai/laut",
+        "alasan": "Salah. Mendekati laut pascagempa sangat membahayakan keselamatan karena risiko gelombang tsunami."
       }
     ],
     "kunci_id": "Lapangan",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Pulang ke rumah masing-masing)",
-      "(Tetap berada di dalam gedung)",
-      "(Lapangan terbuka yang luas (広場))"
+      "(Lapangan luas di luar gedung (広場))",
+      "(Di samping bangunan gedung)",
+      "(Di tepi pantai/laut)"
     ]
   },
   {
