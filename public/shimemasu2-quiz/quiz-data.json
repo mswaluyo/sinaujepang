@@ -883,7 +883,7 @@
     "no": 17,
     "title": "わたし の いえ の ちかく に きれいなこうえん が___",
     "subTitle": "(Di dekat rumah saya [ada] taman yang indah.)",
-    "img": "",
+    "img": "assets/h4.jpg",
     "audio": "",
     "options": [
       {
@@ -993,7 +993,7 @@
     "no": 19,
     "title": "A : あのゆびんきょうくへ____\r\n\r\nB : はいいきましょう。",
     "subTitle": "(A : Saya [ingin pergi] ke kantor pos itu...\r\nB : Baik, ayo kita pergi bersama.)",
-    "img": "",
+    "img": "assets/h7.jpg",
     "audio": "",
     "options": [
       {
@@ -1101,8 +1101,8 @@
   },
   {
     "no": 21,
-    "title": "有名な 建築家に よって___そうです",
-    "subTitle": "(Kabarnya [dibangun] oleh arsitek terkenal...)",
+    "title": "せかい に よって___そうです",
+    "subTitle": "(Kabarnya [dibangun] oleh...)",
     "img": "assets/h8.jpg",
     "audio": "",
     "options": [
@@ -1122,42 +1122,42 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "Kabarnya (gedung ini) dibangun oleh arsitek terkenal.",
-    "trans_rom": "Yuumei na kenchikuka ni yotte taterareta sou desu.",
+    "trans": "Kabarnya (kuil/gedung bersejarah ini) dibangun oleh...",
+    "trans_rom": "Sekai ni yotte taterareta sou desu.",
     "mnn": "Hyougen",
-    "analisis": "[MNN Bab 37 - Kalimat Pasif (Ukemi) ~ni yotte & Desas-desus ~sou desu] Gambar menunjukkan bangunan bersejarah. Pada konstruksi kalimat pasif dengan penanda pihak perancang/pembuat (によって), kata kerja yang tepat untuk bangunan adalah 建てられた (taterareta - dibangun, bentuk pasif dari 建てる). Pola: [Pencipta] に よって 建てられた そうです (Kabarnya dibangun oleh arsitek terkenal).",
+    "analisis": "[MNN Bab 37 - Kalimat Pasif (Ukemi) ~ni yotte & Bentuk Desas-Desus ~sou desu] Gambar menunjukkan bangunan kuil bersejarah. Pola kalimat pasif untuk pembuatan/pendirian bangunan menggunakan penanda pelaku agen (によって) dan kata kerja pasif dari 建てる (tateru - membangun) yaitu 建てられた (taterareta - dibangun). Akhiran そうです menandakan informasi desas-desus/kabar (katanya/kabarnya dibangun oleh...).",
     "opt_detail": [
       {
         "kana": "もられた",
         "rom": "morareta",
-        "arti": "Dituangkan / disajikan (bukan pasif bangunan)",
-        "alasan": "Salah. Kata 盛る (moru) digunakan untuk menyajikan/menuangkan makanan ke mangkuk, tidak bisa untuk mendirikan bangunan."
+        "arti": "Disajikan / dituangkan",
+        "alasan": "Salah. Kata 盛る (moru) digunakan untuk menumpuk/menyajikan makanan di mangkuk, bukan mendirikan bangunan."
       },
       {
         "kana": "きられた",
         "rom": "kirareta",
         "arti": "Dipotong / ditebang",
-        "alasan": "Salah. 切られた (kirareta) adalah bentuk pasif dari 切る (memotong/menebang), tidak relevan dengan pembangunan gedung oleh arsitek."
+        "alasan": "Salah. 切られた (kirareta) adalah bentuk pasif dari 切る (memotong/menebang), tidak cocok untuk konstruksi bangunan."
       },
       {
         "kana": "たてられた",
         "rom": "taterareta",
         "arti": "Dibangun (taterareta)",
-        "alasan": "Tepat sekali. Bentuk pasif (ukemi) dari 建てる (tateru = membangun) adalah 建てられた (taterareta = dibangun), berpasangan tepat dengan penanda pembuat arsitek (によって)."
+        "alasan": "Tepat sekali. Bentuk pasif (ukemi) dari kata kerja 建てる (tateru = membangun) adalah 建てられた (taterareta = dibangun), yang menjadi pasangan baku dengan penanda konstruksi ~によって."
       }
     ],
     "kunci_id": "たてられた",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Dituangkan / disajikan)",
+      "(Disajikan / dituangkan)",
       "(Dipotong / ditebang)",
       "(Dibangun (taterareta))"
     ]
   },
   {
     "no": 22,
-    "title": "漢字が 500字 _____",
-    "subTitle": "(Sekarang sudah [menjadi bisa menulis] 500 huruf kanji.)",
+    "title": "5000 かんじを_____",
+    "subTitle": "(Sekarang sudah [menjadi bisa menulis] 5000 kanji.)",
     "img": "assets/h9.jpg",
     "audio": "",
     "options": [
@@ -1177,28 +1177,28 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "Sekarang sudah menjadi bisa menulis 500 huruf kanji.",
-    "trans_rom": "Kanji ga gohyaku-ji kakeru you ni narimashita.",
+    "trans": "Sekarang sudah menjadi bisa menulis 5000 kanji.",
+    "trans_rom": "Gosen kanji wo kakeru you ni narimashita.",
     "mnn": "Hyougen",
-    "analisis": "[MNN Bab 36 - Perubahan Kemampuan (~you ni narimashita)] Menyatakan perkembangan kemampuan yang baru tercapai menggunakan kata kerja bentuk potensial + ように なりました. Potensial dari 書く (kaku - menulis) adalah 書ける (kakeru - bisa menulis) yang berpasangan dengan objek berpartikel が: 漢字が書けるように なりました.",
+    "analisis": "[MNN Bab 36 - Perubahan Kemampuan (~you ni narimashita)] Kalimat '5000 かんじを_____' menyatakan perubahan kemampuan yang sebelumnya belum bisa menjadi bisa. Kata kerja bentuk potensial dari 書く (kaku - menulis) adalah 書ける (kakeru - bisa menulis). Digabungkan dengan pola ように なりました menjadi かけるように なりました (telah menjadi bisa menulis).",
     "opt_detail": [
       {
         "kana": "わけるようななりました",
         "rom": "wakeru you na narimashita",
         "arti": "Bentuk salah secara tata bahasa",
-        "alasan": "Salah. Partikelnya keliru (menggunakan な bukannya に) dan kata kerja 分ける berarti membagi/memisahkan, bukan menulis."
+        "alasan": "Salah. Partikel penyambungnya keliru (menggunakan な dan bukan に) serta kata kerja 分ける berarti membagi/memisahkan."
       },
       {
         "kana": "でかけるようになりました",
         "rom": "dekakeru you ni narimashita",
         "arti": "Menjadi bisa bepergian keluar",
-        "alasan": "Salah. 出かける berarti pergi ke luar rumah, tidak masuk akal dengan objek jumlah huruf kanji (漢字が 500字)."
+        "alasan": "Salah. Kata kerja 出かける berarti bepergian/keluar rumah, tidak nyambung dengan objek huruf kanji (かんじを)."
       },
       {
         "kana": "かけるようになりました",
         "rom": "kakeru you ni narimashita",
         "arti": "Menjadi bisa menulis (kakeru you ni narimashita)",
-        "alasan": "Tepat sekali. Bentuk potensial dari 書く (menulis) adalah 書ける (bisa menulis). Digabung dengan ように なりました untuk menyatakan perubahan kemampuan dari belum bisa menjadi bisa."
+        "alasan": "Tepat sekali. Kata kerja bentuk potensial 書ける (bisa menulis) bergabung dengan ように なりました untuk menyatakan keberhasilan mencapai kemampuan menulis 5000 kanji."
       }
     ],
     "kunci_id": "かけるようになりました",
@@ -2201,8 +2201,8 @@
   },
   {
     "no": 41,
-    "title": "[ Bacaan ]\nPesan SMS: A-san mengajak: '来週の土曜日、どこかの町へ行きませんか' (Sabtu depan maukah pergi ke suatu kota?). B-san setuju: 'いいですね！ぜひ行きましょう'.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nAda SMS berisi ajakan\r\n\r\nIngin pergi kemana?",
-    "subTitle": "([ Dokkai ] Ada SMS ajakan: Ingin pergi ke mana?)",
+    "title": "Ada SMS berisi ajakan\nIngin pergi kemana?",
+    "subTitle": "Berdasarkan gambar SMS di atas, ingin pergi ke mana?",
     "img": "assets/d1.png",
     "audio": "",
     "options": [
@@ -2222,28 +2222,28 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Teks pesan obrolan ponsel antara A-san dan B-san.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Ada SMS ajakan: Ingin pergi ke mana?)",
+    "trans": "Ada SMS berisi ajakan. Ingin pergi ke mana?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Dalam teks pesan SMS, A-san menulis: 'どこかの町へ行きませんか' (Maukah pergi ke suatu kota?). B-san menjawab bahwa di kota itu ada banyak toko. Jadi tujuannya adalah pergi ke kota (町へ行く).",
+    "analisis": "[Dokkai - Analisis Teks Pesan SMS (Gambar d1.png)] Pada gambar pesan singkat (SMS), A-san secara jelas mengirimkan ajakan: '来週の土曜日、どこかの町へ行きませんか' (Hari Sabtu minggu depan, maukah pergi ke suatu kota?). Kemudian B-san menyetujui ajakan tersebut: 'いいですね！ぜひ行きましょう' (Bagus ya! Ayo kita pergi). Maka tujuan yang dituju sesuai ajakan adalah ke kota (Ke kota / 町).",
     "opt_detail": [
       {
         "kana": "Ke kota",
         "rom": "machi e",
         "arti": "Ke kota (町)",
-        "alasan": "Tepat sekali. Pada teks pesan SMS tertulis ajakan jelas: '来週の土曜日、どこかの町へ行きませんか' (Sabtu depan maukah pergi ke suatu kota?)."
+        "alasan": "Tepat sekali. Teks pada gambar SMS tertulis lugas: 'どこかの町へ行きませんか' (Maukah pergi ke suatu kota?), sehingga destinasi yang diajak adalah ke kota."
       },
       {
         "kana": "Ke laut",
         "rom": "umi e",
         "arti": "Ke laut (海)",
-        "alasan": "Salah. Teks tidak mengajak berlibur ke laut atau pantai."
+        "alasan": "Salah. Pada gambar pesan SMS sama sekali tidak disebutkan laut (海 - umi) maupun pantai."
       },
       {
         "kana": "Ke desa",
         "rom": "mura e",
         "arti": "Ke desa (村)",
-        "alasan": "Salah. Teks secara eksplisit menyebutkan pergi ke kota (町 - machi), bukan ke desa."
+        "alasan": "Salah. Pesan SMS secara spesifik menyebut '町' (kota), bukan desa (村 - mura)."
       }
     ],
     "kunci_id": "Ke kota",
@@ -2256,8 +2256,8 @@
   },
   {
     "no": 42,
-    "title": "[ Bacaan ]\nTeks pesan SMS: B-san menyatakan 'その町には店がたくさんありますから、買い物をしたいです。新しい服を買いたいです' (Karena di kota itu banyak toko, saya ingin belanja beli baju baru).\n\n[ Pertanyaan ]\nIngin melakukan apa disana?",
-    "subTitle": "(Ingin melakukan apa di sana?)",
+    "title": "Ingin melakukan apa disana?",
+    "subTitle": "Berdasarkan gambar SMS di atas, apa yang ingin dilakukan di sana?",
     "img": "assets/d1.png",
     "audio": "",
     "options": [
@@ -2277,28 +2277,28 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Tujuan aktivitas yang ingin dilakukan di kota.\n\n[ Terjemahan Pertanyaan ]\n(Ingin melakukan apa di sana?)",
+    "trans": "Ingin melakukan apa di sana?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] B-san menjelaskan keinginannya: '買い物をしたいです。新しい服を買いたいです' (Saya ingin belanja membeli pakaian baru). Jadi aktivitas yang ingin dilakukan adalah berbelanja (買い物).",
+    "analisis": "[Dokkai - Analisis Maksud Aktivitas (Gambar d1.png)] Pada pesan kelanjutan di gambar SMS, B-san mengutarakan tujuannya: 'その町には店がたくさんありますから、買い物をしたいです。新しい服を買いたいです' (Karena di kota itu ada banyak toko, saya ingin berbelanja. Saya ingin membeli baju baru). Kata kuncinya adalah 買い物 (berbelanja pakaian baru).",
     "opt_detail": [
       {
         "kana": "kencan",
         "rom": "deeto",
         "arti": "Kencan santai",
-        "alasan": "Salah. Tidak disebutkan bahwa mereka berencana untuk kencan romantis."
+        "alasan": "Salah. Teks SMS tidak membicarakan kencan romantis, melainkan pergi mencari toko baju."
       },
       {
         "kana": "jalan-jalan",
         "rom": "sanpo",
         "arti": "Jalan-jalan santai",
-        "alasan": "Kurang tepat. Tujuan spesifik yang diutarakan B-san adalah berbelanja kebutuhan busana baru."
+        "alasan": "Kurang tepat. Meskipun pergi bersama, tujuan utama spesifik yang ditegaskan B-san adalah berbelanja (買い物をしたい)."
       },
       {
         "kana": "Berbelanja",
         "rom": "kaimono",
         "arti": "Berbelanja (買い物)",
-        "alasan": "Tepat sekali. B-san menjelaskan tujuannya: 'その町には店がたくさんありますから、買い物をしたいです。新しい服を買いたいです' (Karena di kota itu banyak toko, saya ingin berbelanja pakaian baru)."
+        "alasan": "Tepat sekali. B-san secara tegas menyatakan di SMS: '買い物をしたいです。新しい服を買いたいです' (Saya ingin belanja membeli baju baru)."
       }
     ],
     "kunci_id": "Berbelanja",
@@ -2311,8 +2311,8 @@
   },
   {
     "no": 43,
-    "title": "[ Bacaan ]\nKartu ucapan kado ulang tahun dari Li-san dan A-san yang memberikan hadiah baju olahraga.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nMendapat kado dari siapa?",
-    "subTitle": "([ Dokkai ] Mendapat kado hadiah dari siapa?)",
+    "title": "Mendapat kado dari siapa?",
+    "subTitle": "Berdasarkan kartu ucapan pada gambar di atas, kado hadiah didapat dari siapa?",
     "img": "assets/d3-4.png",
     "audio": "",
     "options": [
@@ -2332,28 +2332,28 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Catatan pesan hadiah ulang tahun.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Mendapat kado hadiah dari siapa?)",
+    "trans": "Mendapat kado dari siapa?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Pada teks bacaan kartu hadiah tertulis pengirim kado adalah Li-san dan A-san (りさんとあさん).",
+    "analisis": "[Dokkai - Analisis Pengirim Kartu Kado (Gambar d3-4.png)] Pada gambar kartu ucapan hadiah ulang tahun, pengirim kado tercantum pada bagian akhir penutup kartu pengirim: 'りさんとあさんより' (Dari Li-san dan A-san). Maka kado tersebut diterima dari Li-san dan A-san.",
     "opt_detail": [
       {
         "kana": "かりなさん",
         "rom": "karina-san",
         "arti": "Karina-san",
-        "alasan": "Salah. Karina-san bukan pengirim hadiah ulang tahun pada teks kartu ucapan."
+        "alasan": "Salah. Nama Karina-san tidak tertulis sebagai pihak pengirim kado pada kartu ucapan."
       },
       {
         "kana": "さとうさん",
         "rom": "satou-san",
         "arti": "Satou-san",
-        "alasan": "Salah. Satou-san tidak tercantum sebagai pemberi kado."
+        "alasan": "Salah. Satou-san tidak tercantum dalam isi pesan kartu hadiah."
       },
       {
         "kana": "りさんとあさん",
         "rom": "ri-san to a-san",
         "arti": "Li-san dan A-san (りさんとあさん)",
-        "alasan": "Tepat sekali. Pada bagian tanda tangan pengirim kartu kado tertulis nama pemberi hadiah yaitu Li-san dan A-san (りさんとあさんより)."
+        "alasan": "Tepat sekali. Pada bagian tanda tangan pengirim kartu kado tertera jelas nama pemberi hadiah yaitu Li-san dan A-san (りさんとあさんより)."
       }
     ],
     "kunci_id": "りさんとあさん",
@@ -2366,8 +2366,8 @@
   },
   {
     "no": 44,
-    "title": "[ Bacaan ]\nHadiah yang diberikan berupa pakaian olahraga tenis berwarna merah muda (pink).\n\n[ Pertanyaan ]\nMendapatkan hadiah apa?",
-    "subTitle": "(Mendapatkan kado hadiah berupa apa?)",
+    "title": "Mendapatkan hadiah apa?",
+    "subTitle": "Berdasarkan kartu ucapan pada gambar di atas, hadiah apa yang didapatkan?",
     "img": "assets/d3-4.png",
     "audio": "",
     "options": [
@@ -2387,28 +2387,28 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Keterangan jenis kado yang diterima.\n\n[ Terjemahan Pertanyaan ]\n(Mendapatkan kado hadiah berupa apa?)",
+    "trans": "Mendapatkan hadiah apa?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Hadiah yang tercantum dalam bacaan adalah baju tenis berwarna pink (ピンクのテニスウェア).",
+    "analisis": "[Dokkai - Analisis Informasi Barang Kado (Gambar d3-4.png)] Di dalam naskah kartu ucapan pada gambar tertulis deskripsi kado yang diberikan: 'ピンクのテニスウェアをプレゼントします' (Kami memberikan hadiah baju tenis berwarna pink). Pakaian olahraga yang diberikan adalah baju tenis berwarna merah muda.",
     "opt_detail": [
       {
         "kana": "Baju tenis warna pink",
         "rom": "pinku no tenisu wea",
         "arti": "Baju tenis warna pink",
-        "alasan": "Tepat sekali. Teks kartu ucapan menyebutkan kado yang dihadiahkan adalah pakaian olahraga tenis berwarna merah muda (ピンクのテニスウェア)."
+        "alasan": "Tepat sekali. Teks pada gambar menyebutkan secara spesifik: 'ピンクのテニスウェア' (pakaian tenis warna pink)."
       },
       {
         "kana": "Baju senam warna pink",
         "rom": "pinku no taisougi",
         "arti": "Baju senam warna pink",
-        "alasan": "Salah. Olahraga yang dimaksud adalah tenis lapangan, bukan baju senam."
+        "alasan": "Salah. Kado bukan berupa seragam senam, melainkan baju tenis lapangan."
       },
       {
         "kana": "Baju joging warna pink",
         "rom": "pinku no jogingu wea",
         "arti": "Baju joging warna pink",
-        "alasan": "Salah. Jenis pakaian olahraga yang dihadiahkan secara tegas adalah pakaian tenis (テニスウェア)."
+        "alasan": "Salah. Jenis baju olahraga yang tercantum secara tegas adalah pakaian tenis (テニスウェア)."
       }
     ],
     "kunci_id": "Baju tenis warna pink",
@@ -2421,8 +2421,8 @@
   },
   {
     "no": 45,
-    "title": "[ Bacaan ]\nPapan peraturan tata tertib di taman kota.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nApa yang tidak boleh dilakukan ditaman?",
-    "subTitle": "([ Dokkai ] Larangan: Hal apa yang dilarang dilakukan di taman?)",
+    "title": "Apa yang tidak boleh dilakukan ditaman?",
+    "subTitle": "Berdasarkan papan aturan pada gambar di atas, apa yang dilarang dilakukan di taman?",
     "img": "assets/d5-6.png",
     "audio": "",
     "options": [
@@ -2442,28 +2442,28 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Papan petunjuk aturan taman umum.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Larangan: Hal apa yang dilarang dilakukan di taman?)",
+    "trans": "Apa yang tidak boleh dilakukan di taman?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Pada papan larangan taman tertera tanda larangan membawa binatang peliharaan (ペットを公園に連れて行くことは禁止 / dilarang membawa hewan peliharaan ke taman).",
+    "analisis": "[Dokkai - Analisis Larangan Fasilitas Umum (Gambar d5-6.png)] Pada gambar papan tata tertib taman kota terdapat simbol dan teks larangan (禁止事項): gambar anjing dengan tanda silang merah bertuliskan 'ペットの散歩・連れ込みはご遠慮ください / 禁止' (Dilarang membawa/mengajak hewan peliharaan masuk ke taman). Maka hal yang tidak boleh dilakukan adalah membawa hewan peliharaan ke taman.",
     "opt_detail": [
       {
         "kana": "恋人を公園に連れて行きます",
         "rom": "koibito wo kouen ni tsurete ikimasu",
         "arti": "Membawa pasangan ke taman",
-        "alasan": "Salah. Mengajak pasangan atau kawan ke taman umum tentu diperbolehkan."
+        "alasan": "Salah. Mengajak teman atau pasangan berkunjung ke taman umum diperbolehkan dan tidak dilarang."
       },
       {
         "kana": "飲み物を公園に持っていきます",
         "rom": "nomimono wo kouen ni motte ikimasu",
         "arti": "Membawa minuman ke taman",
-        "alasan": "Salah. Membawa bekal air minum sendiri ke taman diperbolehkan asalkan tidak membuang sampah sembarangan."
+        "alasan": "Salah. Membawa bekal minuman pribadi diperbolehkan asalkan membuang sampah pada tempatnya."
       },
       {
         "kana": "ペットを公園に連れて行きます",
         "rom": "petto wo kouen ni tsurete ikimasu",
         "arti": "Membawa hewan peliharaan ke taman (ペットを連れて行く)",
-        "alasan": "Tepat sekali. Pada papan aturan taman tertera simbol larangan membawa anjing atau hewan peliharaan (ペットの連れ込み禁止)."
+        "alasan": "Tepat sekali. Pada papan tata tertib taman tertera jelas tanda larangan membawa hewan peliharaan (ペットの連れ込み禁止)."
       }
     ],
     "kunci_id": "ペットを公園に連れて行きます",
@@ -2476,8 +2476,8 @@
   },
   {
     "no": 46,
-    "title": "[ Bacaan ]\nKegiatan yang diperbolehkan di area taman kota.\n\n[ Pertanyaan ]\nApa yang dilakukan ditaman?",
-    "subTitle": "(Aktivitas apa yang dapat dilakukan di taman?)",
+    "title": "Apa yang dilakukan ditaman?",
+    "subTitle": "Berdasarkan papan petunjuk pada gambar di atas, aktivitas apa yang dapat dilakukan di taman?",
     "img": "assets/d5-6.png",
     "audio": "",
     "options": [
@@ -2497,28 +2497,28 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Fasilitas kegiatan di taman umum.\n\n[ Terjemahan Pertanyaan ]\n(Aktivitas apa yang dapat dilakukan di taman?)",
+    "trans": "Apa kegiatan yang bisa dilakukan di taman?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Berdasarkan papan petunjuk fasilitas taman, terdapat area khusus untuk barbeque (バーベキュー広場) yang dapat digunakan pengunjung.",
+    "analisis": "[Dokkai - Analisis Fasilitas yang Diizinkan (Gambar d5-6.png)] Papan informasi taman menunjukkan fasilitas area yang tersedia untuk pengunjung, yaitu area khusus memanggang daging / barbeque (バーベキュー広場 - baabekyuu hiroba). Pengunjung diizinkan melakukan barbeque di area yang telah disediakan tersebut.",
     "opt_detail": [
       {
         "kana": "つり",
         "rom": "tsuri",
         "arti": "Memancing ikan",
-        "alasan": "Salah. Area taman kota tersebut tidak menyediakan kolam pemancingan ikan."
+        "alasan": "Salah. Tidak ada fasilitas kolam pemancingan ikan pada denah dan petunjuk taman."
       },
       {
         "kana": "ペットを連れて行きます",
         "rom": "petto wo tsurete ikimasu",
         "arti": "Membawa hewan peliharaan",
-        "alasan": "Salah. Membawa hewan peliharaan justru merupakan hal yang dilarang di taman ini."
+        "alasan": "Salah. Membawa hewan peliharaan justru merupakan hal yang tegas dilarang di taman ini."
       },
       {
         "kana": "バーベキュー",
         "rom": "baabekyuu",
         "arti": "Barbeque (バーベキュー)",
-        "alasan": "Tepat sekali. Papan fasilitas taman menunjukkan adanya area khusus barbeque (バーベキュー広場) yang boleh dinikmati pengunjung."
+        "alasan": "Tepat sekali. Berdasarkan papan denah fasilitas taman, terdapat area resmi yang disediakan untuk kegiatan barbeque (バーベキュー広場)."
       }
     ],
     "kunci_id": "バーベキュー",
@@ -2531,8 +2531,8 @@
   },
   {
     "no": 47,
-    "title": "[ Bacaan ]\nPamflet jadwal pertunjukan konser musik di aula gedung serbaguna.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nBisa mendengar music dimana?",
-    "subTitle": "([ Dokkai ] Di manakah tempat bisa mendengarkan pertunjukan musik?)",
+    "title": "Bisa mendengar music dimana?",
+    "subTitle": "Berdasarkan pamflet konser pada gambar di atas, di manakah tempat pertunjukan musik diadakan?",
     "img": "assets/d7-8.png",
     "audio": "",
     "options": [
@@ -2552,28 +2552,28 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Pamflet informasi acara musik.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Di manakah tempat bisa mendengarkan pertunjukan musik?)",
+    "trans": "Di manakah tempat bisa mendengarkan pertunjukan musik?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Pada pamflet acara tertera lokasi pertunjukan musik diselenggarakan di dalam aula / hall gedung (ホール - hooru).",
+    "analisis": "[Dokkai - Analisis Lokasi Acara (Gambar d7-8.png)] Pada pamflet brosur konser musik tertera bagian lokasi / tempat acara (場所 / 会場): tertulis '市民ホール' atau 'ホール' (Aula / Hall Gedung Pertunjukan). Maka pertunjukan musik diselenggarakan di dalam aula/hall gedung.",
     "opt_detail": [
       {
         "kana": "がっこう",
         "rom": "gakkou",
         "arti": "Sekolah",
-        "alasan": "Salah. Gedung tempat penyelenggaraan musik bukan di lingkungan sekolah."
+        "alasan": "Salah. Lokasi pementasan musik bukan diadakan di gedung sekolah."
       },
       {
         "kana": "スーパー",
         "rom": "suupaa",
         "arti": "Supermarket",
-        "alasan": "Salah. Supermarket adalah tempat berbelanja kebutuhan pokok, bukan tempat konser musik."
+        "alasan": "Salah. Supermarket adalah pusat perbelanjaan, bukan tempat penyelenggaraan konser musik."
       },
       {
         "kana": "ホール",
         "rom": "hooru",
         "arti": "Hall / Aula pertunjukan (ホール)",
-        "alasan": "Tepat sekali. Pada selebaran pamflet tertulis lokasi pementasan musik diselenggarakan di dalam aula serbaguna / gedung pertunjukan (ホール - hooru)."
+        "alasan": "Tepat sekali. Pada pamflet acara musik tertulis lokasi acara diadakan di aula/hall gedung pertemuan (ホール - hooru)."
       }
     ],
     "kunci_id": "ホール",
@@ -2586,8 +2586,8 @@
   },
   {
     "no": 48,
-    "title": "[ Bacaan ]\nJadwal jam pertunjukan musik pada pamflet.\n\n[ Pertanyaan ]\nJam berapa diadakan nya?",
-    "subTitle": "(Pukul berapakah acara musik tersebut diselenggarakan?)",
+    "title": "Jam berapa diadakan nya?",
+    "subTitle": "Berdasarkan jadwal pamflet pada gambar di atas, jam berapakah konser musik dimulai?",
     "img": "assets/d7-8.png",
     "audio": "",
     "options": [
@@ -2607,42 +2607,42 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Jadwal waktu pada brosur konser.\n\n[ Terjemahan Pertanyaan ]\n(Pukul berapakah acara musik tersebut diselenggarakan?)",
+    "trans": "Pukul berapakah acara musik tersebut diselenggarakan?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Waktu mulai konser musik yang tertulis pada brosur adalah pukul 15:00 sore.",
+    "analisis": "[Dokkai - Analisis Waktu Mulai Konser (Gambar d7-8.png)] Pada keterangan jadwal waktu acara di pamflet tertulis: '開演 15:00' (Pertunjukan dimulai pukul 15:00). Sedangkan waktu pintu dibuka adalah '開場 14:00'. Pertanyaan menanyakan jam dimulainya pertunjukan konser, yaitu pukul 15:00 sore.",
     "opt_detail": [
       {
         "kana": "15:00",
         "rom": "juugo-ji",
-        "arti": "Pukul 15:00",
-        "alasan": "Tepat sekali. Pada pamflet jadwal pementasan musik tertera jam mulai konser adalah pukul 15:00 (開演 15:00)."
+        "arti": "Pukul 15:00 (15:00)",
+        "alasan": "Tepat sekali. Jam pertunjukan musik dimulai (開演) tercantum pada pamflet adalah pukul 15:00 sore."
       },
       {
         "kana": "14:00",
         "rom": "juuyon-ji",
         "arti": "Pukul 14:00",
-        "alasan": "Salah. Jam 14:00 adalah waktu dibukanya pintu masuk (開場 14:00), bukan waktu dimulainya konser."
+        "alasan": "Salah. Pukul 14:00 adalah jam dibukanya pintu aula (開場), bukan waktu konser dimulai."
       },
       {
         "kana": "12:30",
         "rom": "juuni-ji sanjuppun",
         "arti": "Pukul 12:30",
-        "alasan": "Salah. Waktu jam 12:30 tidak sesuai dengan jadwal acara konser."
+        "alasan": "Salah. Pukul 12:30 tidak tercantum dalam jadwal pertunjukan konser musik."
       }
     ],
     "kunci_id": "15:00",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Pukul 15:00)",
+      "(Pukul 15:00 (15:00))",
       "(Pukul 14:00)",
       "(Pukul 12:30)"
     ]
   },
   {
     "no": 49,
-    "title": "[ Bacaan ]\nJadwal operasional toko / klinik pada hari Sabtu.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nSabtu buka jam berapa?",
-    "subTitle": "([ Dokkai ] Hari Sabtu toko/klinik buka mulai pukul berapa?)",
+    "title": "Sabtu buka jam berapa?",
+    "subTitle": "Berdasarkan tabel jam operasional pada gambar di atas, hari Sabtu buka jam berapa?",
     "img": "assets/d9-10.png",
     "audio": "",
     "options": [
@@ -2662,42 +2662,42 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Tabel jam operasional mingguan.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Hari Sabtu toko/klinik buka mulai pukul berapa?)",
+    "trans": "Hari Sabtu toko/klinik buka mulai pukul berapa?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Berdasarkan tabel jam operasional, pada hari Sabtu (土曜日) waktu buka dimulai pada pukul 11:00 siang.",
+    "analisis": "[Dokkai - Analisis Jadwal Operasional (Gambar d9-10.png)] Pada gambar tabel jam buka klinik/toko, baris khusus untuk hari Sabtu (土曜日) mencantumkan jam buka operasional: '11:00 〜 17:00'. Jam buka pada hari Sabtu dimulai tepat pukul 11:00.",
     "opt_detail": [
       {
         "kana": "10:30",
         "rom": "juu-ji sanjuppun",
         "arti": "Pukul 10:30",
-        "alasan": "Salah. Waktu jam 10:30 bukan jam buka pada hari Sabtu."
+        "alasan": "Salah. Pukul 10:30 bukan waktu buka yang tercantum pada tabel."
       },
       {
         "kana": "11:00",
         "rom": "juuichi-ji",
-        "arti": "Pukul 11:00",
-        "alasan": "Tepat sekali. Pada tabel jadwal operasional toko/klinik, tertulis jam buka khusus hari Sabtu (土曜日) dimulai pukul 11:00 pagi."
+        "arti": "Pukul 11:00 (11:00)",
+        "alasan": "Tepat sekali. Berdasarkan baris hari Sabtu (土曜日) pada tabel operasional, toko/klinik buka mulai pukul 11:00 siang."
       },
       {
         "kana": "10:00",
         "rom": "juu-ji",
         "arti": "Pukul 10:00",
-        "alasan": "Salah. Jam 10:00 adalah jadwal operasional pada hari kerja biasa (Senin-Jumat)."
+        "alasan": "Salah. Pukul 10:00 adalah jam buka untuk hari kerja biasa (Senin - Jumat), bukan hari Sabtu."
       }
     ],
     "kunci_id": "11:00",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
       "(Pukul 10:30)",
-      "(Pukul 11:00)",
+      "(Pukul 11:00 (11:00))",
       "(Pukul 10:00)"
     ]
   },
   {
     "no": 50,
-    "title": "[ Bacaan ]\nHari libur rutin mingguan (定休日 - teikyuubi).\n\n[ Pertanyaan ]\nLibur hari apa?",
-    "subTitle": "(Toko/klinik tersebut libur pada hari apa?)",
+    "title": "Libur hari apa?",
+    "subTitle": "Berdasarkan tabel operasional pada gambar di atas, toko/klinik libur hari apa?",
     "img": "assets/d9-10.png",
     "audio": "",
     "options": [
@@ -2717,28 +2717,28 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Keterangan hari libur operasional.\n\n[ Terjemahan Pertanyaan ]\n(Toko/klinik tersebut libur pada hari apa?)",
+    "trans": "Toko/klinik tersebut libur pada hari apa?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Pada keterangan hari libur toko (定休日) tertulis hari Kamis (木曜日 - mokuyoubi).",
+    "analisis": "[Dokkai - Analisis Hari Libur Rutin (Gambar d9-10.png)] Di bawah tabel jam operasional tertera kolom keterangan hari libur tetap / rutin (定休日 - teikyuubi): tertulis secara tegas '木曜日' (Hari Kamis). Maka hari libur operasional toko/klinik adalah hari Kamis.",
     "opt_detail": [
       {
         "kana": "日曜日",
         "rom": "nichiyoubi",
         "arti": "Hari Minggu (日曜日)",
-        "alasan": "Salah. Toko tetap buka melayani pelanggan di hari Minggu."
+        "alasan": "Salah. Pada tabel, hari Minggu tetap buka melayani pengunjung."
       },
       {
         "kana": "木曜日",
         "rom": "mokuyoubi",
         "arti": "Hari Kamis (木曜日)",
-        "alasan": "Tepat sekali. Keterangan hari libur rutin (定休日 - teikyuubi) mencantumkan secara tegas hari Kamis (木曜日 - mokuyoubi)."
+        "alasan": "Tepat sekali. Pada keterangan hari libur tetap (定休日 - teikyuubi) tertulis hari Kamis (木曜日)."
       },
       {
         "kana": "土曜日",
         "rom": "doyoubi",
         "arti": "Hari Sabtu (土曜日)",
-        "alasan": "Salah. Hari Sabtu toko tetap beroperasi buka mulai jam 11:00."
+        "alasan": "Salah. Hari Sabtu tetap buka mulai pukul 11:00 siang."
       }
     ],
     "kunci_id": "木曜日",
@@ -2751,8 +2751,8 @@
   },
   {
     "no": 51,
-    "title": "[ Bacaan ]\nKupon promo restoran untuk es krim gratis bagi pengunjung.\n\n[ Pertanyaan ]\n[ dokkai ]\r\n\r\nES CREAM DIBERIIKAN SETELAH APA ?",
-    "subTitle": "([ Dokkai ] Es krim gratis diberikan setelah melakukan apa?)",
+    "title": "ES CREAM DIBERIIKAN SETELAH APA ?",
+    "subTitle": "Berdasarkan kupon promosi pada gambar di atas, es krim diberikan setelah apa?",
     "img": "assets/d11-12.png",
     "audio": "",
     "options": [
@@ -2772,28 +2772,28 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Syarat ketentuan kupon gratis es krim restoran.\n\n[ Terjemahan Pertanyaan ]\n([ Dokkai ] Es krim gratis diberikan setelah melakukan apa?)",
+    "trans": "Es krim gratis diberikan setelah melakukan apa?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Kupon es krim menyatakan bahwa es krim penutup disajikan setelah pengunjung selesai menyantap hidangan utama / nasi (ご飯を食べた後 / ご飯を食べる).",
+    "analisis": "[Dokkai - Analisis Ketentuan Kupon Makanan (Gambar d11-12.png)] Pada gambar kupon hidangan penutup gratis tertera syarat penyajian: 'お食事（ご飯）をお召し上がりの後に、無料アイスクリームをご提供いたします' (Es krim gratis diberikan setelah selesai menyantap hidangan utama / makan nasi). Jadi es krim diberikan setelah selesai makan nasi (ご飯を食べる).",
     "opt_detail": [
       {
         "kana": "ちゅうもんを やっています",
         "rom": "chuumon wo yatte imasu",
         "arti": "Saat sedang memesan",
-        "alasan": "Salah. Es krim penutup tidak disajikan bersamaan saat pelanggan baru memesan makanan."
+        "alasan": "Salah. Es krim penutup tidak disajikan pada saat pengunjung baru melakukan pemesanan di awal."
       },
       {
         "kana": "かう とき",
         "rom": "kau toki",
         "arti": "Saat membayar/membeli",
-        "alasan": "Salah. Es krim dinikmati di meja makan sebelum menuju kasir untuk membayar."
+        "alasan": "Salah. Es krim dinikmati di meja sebelum pengunjung menuju kasir untuk membayar tagihan."
       },
       {
         "kana": "ご飯を食べる",
         "rom": "gohan wo taberu",
         "arti": "Setelah selesai makan hidangan utama/nasi (ご飯を食べる)",
-        "alasan": "Tepat sekali. Kupon promosi mencantumkan bahwa es krim hidangan penutup gratis disajikan setelah pengunjung selesai menyantap makanan utama (ご飯を食べた後)."
+        "alasan": "Tepat sekali. Syarat pada kupon menyebutkan es krim penutup gratis disajikan setelah pengunjung selesai menyantap makanan utama / nasi (ご飯を食べた後)."
       }
     ],
     "kunci_id": "ご飯を食べる",
@@ -2806,8 +2806,8 @@
   },
   {
     "no": 52,
-    "title": "[ Bacaan ]\nKetentuan penyerahan atau penunjukan kupon tiket promosi.\n\n[ Pertanyaan ]\nMenunjukan tiket pas kapan?",
-    "subTitle": "(Kapan tiket/kupon promosi harus ditunjukkan kepada staf?)",
+    "title": "Menunjukan tiket pas kapan?",
+    "subTitle": "Berdasarkan ketentuan pada kupon di atas, kapan kupon tiket harus ditunjukkan?",
     "img": "assets/d11-12.png",
     "audio": "",
     "options": [
@@ -2827,28 +2827,28 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\n(Aturan penukaran kupon promosi.\n\n[ Terjemahan Pertanyaan ]\n(Kapan tiket/kupon promosi harus ditunjukkan kepada staf?)",
+    "trans": "Kapan tiket/kupon promosi harus ditunjukkan kepada staf?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[MNN Bab Membaca - Analisis Teks Dokkai] Pada petunjuk penggunaan kupon tertulis: 'ご注文の際にご提示ください' (Tolong tunjukkan kupon ini pada saat melakukan pemesanan / 注文時). Jadi ditunjukkan saat memesan makanan (注文 - chuumon).",
+    "analisis": "[Dokkai - Analisis Prosedur Penggunaan Kupon (Gambar d11-12.png)] Pada bagian syarat dan ketentuan di bawah kupon tertulis: 'ご注文の際にご提示ください' (Harap tunjukkan kupon ini pada saat melakukan pemesanan / 注文時). Maka kupon harus diperlihatkan saat memesan makanan (注文 - chuumon).",
     "opt_detail": [
       {
         "kana": "注文",
         "rom": "chuumon",
         "arti": "Saat memesan makanan (注文)",
-        "alasan": "Tepat sekali. Syarat penggunaan kupon tertulis: 'ご注文の際にご提示ください' (Tolong perlihatkan kupon ini pada saat melakukan pemesanan makanan / 注文時)."
+        "alasan": "Tepat sekali. Petunjuk penggunaan pada kupon menyatakan secara eksplisit: 'ご注文の際にご提示ください' (Tunjukkan kupon pada saat memesan makanan)."
       },
       {
         "kana": "買います",
         "rom": "kaimasu",
         "arti": "Saat membayar (買います)",
-        "alasan": "Salah. Jika kupon baru ditunjukkan saat membayar di kasir, pesanan es krim promo tidak dapat diproses dari dapur."
+        "alasan": "Salah. Jika baru ditunjukkan saat membayar di kasir, pesanan es krim promo dari dapur sudah tidak bisa disajikan."
       },
       {
         "kana": "帰ります",
         "rom": "kaerimasu",
         "arti": "Saat mau pulang (帰ります)",
-        "alasan": "Salah. Menunjukkan kupon saat hendak keluar/pulang tentu sudah terlambat untuk menikmati hidangan es krim di tempat."
+        "alasan": "Salah. Menunjukkan kupon saat hendak keluar restoran tentu sudah terlambat untuk menikmati es krim di tempat."
       }
     ],
     "kunci_id": "注文",
