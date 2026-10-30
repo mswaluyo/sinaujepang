@@ -7,15 +7,15 @@
     "audio": "",
     "options": [
       {
-        "text": "おります",
+        "text": "おります [ 降ります ]",
         "img": ""
       },
       {
-        "text": "まがります",
+        "text": "まがります [ 曲がります ]",
         "img": ""
       },
       {
-        "text": "のります",
+        "text": "のります [ 乗ります ]",
         "img": ""
       }
     ],
@@ -28,25 +28,25 @@
     "analisis": "[MNN Bab 16 - Kata Kerja Gerakan (Golongan 2)] Gambar memperlihatkan seorang penumpang yang sedang melangkah turun dari pintu bus. Kata kerja untuk 'turun (dari kendaraan)' dalam bahasa Jepang adalah おります (orimasu - bentuk kamus: 降りる / おりる). Partikel yang mendampingi kendaraan saat turun adalah を (contoh: バスを おります).",
     "opt_detail": [
       {
-        "kana": "おります",
+        "kana": "おります [ 降ります ]",
         "rom": "orimasu",
         "arti": "turun (dari kendaraan)",
         "alasan": "Tepat sekali. おります (orimasu) digunakan khusus untuk menyatakan tindakan keluar/turun dari moda transportasi (bus, kereta, mobil)."
       },
       {
-        "kana": "まがります",
+        "kana": "まがります [ 曲がります ]",
         "rom": "magarimasu",
         "arti": "berbelok / menikung",
         "alasan": "まがります (magarimasu) berarti berbelok arah di persimpangan jalan (contoh: 右へ まがります), bukan tindakan turun dari bus."
       },
       {
-        "kana": "のります",
+        "kana": "のります [ 乗ります ]",
         "rom": "norimasu",
         "arti": "naik (ke kendaraan)",
         "alasan": "のります (norimasu) merupakan antonim (lawan kata) dari おります yang berarti naik ke dalam kendaraan (contoh: バスに のります)."
       }
     ],
-    "kunci_id": "おります",
+    "kunci_id": "おります [ 降ります ]",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
       "(orimasu) turun kendaraan",
@@ -172,15 +172,15 @@
     "audio": "",
     "options": [
       {
-        "text": "すきます",
+        "text": "すきます [ 空きます ]",
         "img": ""
       },
       {
-        "text": "よやくします",
+        "text": "よやくします [ 予約します ]",
         "img": ""
       },
       {
-        "text": "やきます",
+        "text": "やきます [ 焼きます ]",
         "img": ""
       }
     ],
@@ -193,25 +193,25 @@
     "analisis": "[MNN Bab 20/38 - Kata Kerja Kuliner & Masak] Gambar memperlihatkan proses memasak bahan makanan (roti/pastry) di dalam oven atau panggangan panas. Kata kerja untuk 'memanggang / membakar' dalam bahasa Jepang adalah やきます (yakimasu - bentuk kamus: 焼く / やく).",
     "opt_detail": [
       {
-        "kana": "すきます",
+        "kana": "すきます [ 空きます ]",
         "rom": "sukimasu",
         "arti": "menjadi kosong / lapar",
         "alasan": "すきます (sukimasu) biasa digunakan pada idiom お腹がすきます (onaka ga sukimasu) yang artinya perut menjadi kosong alias lapar, bukan memasak."
       },
       {
-        "kana": "よやくします",
+        "kana": "よやくします [ 予約します ]",
         "rom": "yoyakushimasu",
         "arti": "memesan / mereservasi",
         "alasan": "よやくします (yoyakushimasu) berarti memesan tiket, kamar hotel, atau reservasi meja restoran terlebih dahulu."
       },
       {
-        "kana": "やきます",
+        "kana": "やきます [ 焼きます ]",
         "rom": "yakimasu",
         "arti": "memanggang / membakar",
         "alasan": "Tepat sekali. やきます (yakimasu) digunakan untuk aktivitas memanggang roti di oven (パンを やきます) maupun memanggang daging (肉を 焼きます)."
       }
     ],
-    "kunci_id": "やきます",
+    "kunci_id": "やきます [ 焼きます ]",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
       "(sukimasu) menjadi lapar/kosong",
@@ -441,8 +441,8 @@
   },
   {
     "no": 9,
-    "title": "服を着ます。",
-    "subTitle": "(Saya akan mendapatkan ____)",
+    "title": "_____ を 着ます。",
+    "subTitle": "(Memakai _____.)",
     "img": "",
     "audio": "",
     "options": [
@@ -463,7 +463,7 @@
     "score": "0/4",
     "section": "SESI 1 : MOJIGOI",
     "trans": "Memakai pakaian / baju.",
-    "trans_rom": "Fuku o kimasu.",
+    "trans_rom": "_____ o kimasu.",
     "mnn": "Mojigoi",
     "analisis": "[MNN Bab 20 - Kolokasi Tata Bahasa Kata Kerja Memakai (Collocation Rules)] Soal teks ini menguji pengetahuan pasangan kata kerja dan benda tanpa bantuan visual. Bahasa Jepang membedakan kata kerja memakai sesuai letak tubuh: (1) Pakaian badan atas/utama memakai きます (kimasu / 着ます); (2) Pakaian bawah (celana/rok/sepatu) memakai はきます (hakimasu); (3) Aksesori kepala (topi) memakai かぶります (kaburimasu). Karena predikat pada soal adalah きます, maka satu-satunya kata benda yang sah menurut tata bahasa adalah ふく (fuku - baju/pakaian).",
     "opt_detail": [
@@ -496,8 +496,8 @@
   },
   {
     "no": 10,
-    "title": "今は 店に います。",
-    "subTitle": "(Saat ini saya di ____)",
+    "title": "今は _____ に います。",
+    "subTitle": "(Saat ini saya berada di _____.)",
     "img": "",
     "audio": "",
     "options": [
@@ -518,9 +518,9 @@
     "score": "0/4",
     "section": "SESI 1 : MOJIGOI",
     "trans": "Sekarang saya sedang berada di toko.",
-    "trans_rom": "Ima wa mise ni imasu.",
+    "trans_rom": "Ima wa _____ ni imasu.",
     "mnn": "Mojigoi",
-    "analisis": "[MNN Bab 10 - Pola Keberadaan [Tempat] に います & Seleksi Kategori Kanji] Soal teks ini menguji pemahaman struktur keberadaan mahluk hidup: [Lokasi Fasilitas/Tempat] に います. Dari ketiga pilihan kanji: 足 (ashi - kaki/anggota tubuh), 店 (mise - toko/tempat fisik), dan 予定 (yotei - jadwal/rencana/konsep abstrak), hanya 店 yang merupakan kata benda tempat. Kalimat: 「今は 店に います」 = 'Sekarang saya sedang berada di toko'.",
+    "analisis": "[MNN Bab 10 - Pola Keberadaan [Tempat] に います & Seleksi Kategori Kanji] Soal rumpang ini menguji pemahaman struktur keberadaan mahluk hidup: [Lokasi Fasilitas/Tempat] に います. Dari ketiga pilihan kanji: 足 (ashi - kaki/anggota tubuh), 店 (mise - toko/tempat fisik), dan 予定 (yotei - jadwal/rencana/konsep abstrak), hanya 店 yang merupakan kata benda tempat. Kalimat lengkap: 「今は 店に います」 = 'Sekarang saya sedang berada di toko'.",
     "opt_detail": [
       {
         "kana": "足",
@@ -1266,8 +1266,8 @@
   },
   {
     "no": 24,
-    "title": "A: こちらは 夫です。\nB: どうぞよろしく。\nA: よろしくお願いします。いつも 妻が _____。",
-    "subTitle": "A: Kochira wa otto desu.\nB: Douzo yoroshiku.\nA: Yoroshiku onegai shimasu. Itsumo tsuma ga _____ .",
+    "title": "A: こちらは 夫です。\nB: どうぞよろしく。\nC: よろしくお願いします。いつも 妻が _____。",
+    "subTitle": "A: Kochira wa otto desu.\nB: Douzo yoroshiku.\nC: Yoroshiku onegai shimasu. Itsumo tsuma ga _____ .",
     "img": "",
     "audio": "",
     "options": [
@@ -1287,10 +1287,10 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
-    "trans": "A: Ini suami saya.\nB: Senang berkenalan dengan Anda.\nA: Senang berkenalan dengan Anda. Terima kasih banyak karena selalu membimbing dan merepotkan istri saya.",
-    "trans_rom": "A: Kochira wa otto desu.\nB: Douzo yoroshiku.\nA: Yoroshiku onegai shimasu. Itsumo tsuma ga osewa ni natte imasu.",
+    "trans": "A (Istri): Ini suami saya.\nB (Rekan/Atasan): Senang berkenalan dengan Anda.\nC (Suami): Mohon bantuannya. Istri saya selalu merepotkan/dibantu oleh Anda (terima kasih banyak atas bantuannya selama ini).",
+    "trans_rom": "A: Kochira wa otto desu.\nB: Douzo yoroshiku.\nC: Yoroshiku onegai shimasu. Itsumo tsuma ga osewa ni natte imasu.",
     "mnn": "Hyougen",
-    "analisis": "[MNN Bab 28/49 - Ungkapan Salam Sopan Pertemuan Pasangan/Keluarga (Osewa ni natte imasu)] Saat memperkenalkan pasangan/keluarga kepada rekan kerja atau atasan, ungkapan etika kesopanan formal yang wajib diucapkan adalah いつも お世話になっています (itsumo osewa ni natte imasu = terima kasih atas segala kebaikan, bantuan, dan bimbingan yang selalu Anda berikan kepada keluarga saya).",
+    "analisis": "[MNN Bab 28/49 - Ungkapan Salam Sopan Pertemuan Pasangan/Keluarga (Osewa ni natte imasu)] Percakapan 3 orang: A (istri) memperkenalkan suaminya (C) kepada rekan kerja (B). Setelah B menyapa, C (suami) membalas salam dengan ungkapan etika kesopanan formal: 「よろしくお願いします。いつも妻がお世話になっています」 (Mohon bantuannya. Istri saya selalu merepotkan/dibantu oleh Anda = terima kasih banyak atas bantuan dan bimbingan Anda kepada istri saya).",
     "opt_detail": [
       {
         "kana": "ありがとうございます",
@@ -1871,8 +1871,8 @@
   },
   {
     "no": 35,
-    "title": "[ Bacaan ]\n[ dokkai ]\n今日、新しい 店が オープンしました。\nいろいろな 品物を 売っています。\n今、5000円以上 買い物を した 人に、新しい コップを プレゼントします。\nまた、店に 来た 全員に、タオルを 無料で あげます。\nコップは 買い物を した 人だけですが、タオルは だれでも もらえます。\n\n[ Pertanyaan ]\n1.Peralatan rumah tangga apa yang di terima gratis?",
-    "subTitle": "(1.Peralatan rumah tangga apa yang di terima gratis?)",
+    "title": "[ Bacaan ]\n[ dokkai ]\n今日、新しい 店が オープンしました。\nいろいろな 品物を 売っています。\n今、5000円以上 買い物を した 人に、新しい コップを プレゼントします。\nまた、店に 来た 全員に、タオルを 無料で あげます。\nコップは 買い物を した 人だけですが、タオルは だれでも もらえます。\n\n[ Pertanyaan ]\n1. 店に 来た 人は、何を 無料で（ただで）もらえますか。\n(Barang apa yang bisa didapatkan secara gratis oleh orang yang datang ke toko?)",
+    "subTitle": "(1. Barang apa yang bisa didapatkan secara gratis oleh semua pengunjung toko?)",
     "img": "",
     "audio": "",
     "options": [
@@ -1892,36 +1892,36 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">([ dokkai ]\nToko baru dibuka hari ini.\nKami menjual berbagai macam barang.\nSaat ini kami memberikan cangkir baru kepada siapa saja yang membeli lebih dari 5.000 yen.\nKami juga akan membagikan handuk gratis kepada semua orang yang datang ke toko.\nCangkir hanya tersedia bagi mereka yang berbelanja, tetapi siapa pun dapat menerima handuk.\n\n[ Terjemahan Pertanyaan ]\n(1.Peralatan rumah tangga apa yang di terima gratis?)",
+    "trans": "[ Terjemahan Bacaan ]\nHari ini, toko baru telah resmi dibuka (grand opening).\nKami menjual beraneka macam barang kebutuhan.\nSaat ini, bagi siapa saja yang berbelanja senilai 5.000 Yen ke atas, kami memberikan hadiah berupa cangkir (gelas) baru.\nSelain itu, kepada SEMUA orang yang datang berkunjung ke toko, kami membagikan HANDUK secara GRATIS (muryou de).\nCangkir hanya untuk orang yang berbelanja, tetapi handuk bisa didapatkan oleh siapa saja.\n\n[ Terjemahan Pertanyaan ]\n(1. Barang apa yang bisa didapatkan secara gratis oleh setiap orang yang datang ke toko?)",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "Teks menyatakan bahwa \"店に 来た 全員に、タオルを 無料で あげます\" (kepada semua orang yang datang ke toko, kami akan memberikan handuk secara gratis). Tips: Perhatikan kata benda yang merujuk pada objek fisik yang disebutkan dalam teks.",
+    "analisis": "[MNN Bab 24 - Dokkai Pemberian Hadiah Promosi (無料で あげます / だれでも もらえます)] Teks bacaan membedakan dua jenis hadiah promosi pembukaan toko: (1) Cangkir (コップ) hanya untuk yang berbelanja di atas 5.000 Yen (5000円以上 買い物をした人だけ); (2) Handuk (タオル) diberikan secara GRATIS tanpa syarat belanja kepada siapa saja/semua pengunjung yang datang: 「店に 来た 全員に、タオルを 無料で あげます。タオルは だれでも もらえます」. Maka barang yang didapatkan secara gratis oleh pengunjung adalah Handuk (タオル - taoru).",
     "opt_detail": [
       {
         "kana": "テント",
-        "rom": "-",
-        "arti": "tenda",
-        "alasan": "Pilihan salah."
+        "rom": "tento",
+        "arti": "tenda (kemah)",
+        "alasan": "Salah. Di dalam teks sama sekali tidak menyebutkan kata tenda kemah (テント)."
       },
       {
         "kana": "オープン",
-        "rom": "-",
-        "arti": "membuka",
-        "alasan": "Pilihan salah."
+        "rom": "oopun",
+        "arti": "buka / grand opening",
+        "alasan": "Salah. オープン (open) adalah kata kerja serapan untuk pembukaan toko, bukan barang fisik yang dibagikan."
       },
       {
         "kana": "タオル",
-        "rom": "-",
+        "rom": "taoru",
         "arti": "handuk",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "alasan": "Tepat sekali. Teks menegaskan: 「店に 来た 全員に、タオルを 無料で あげます」 (Kepada semua pengunjung toko, handuk diberikan gratis)."
       }
     ],
     "kunci_id": "タオル",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(tenda)",
-      "(membuka)",
-      "(handuk)"
+      "(tento) tenda kemah",
+      "(oopun) pembukaan toko",
+      "(taoru) handuk (hadiah gratis)"
     ]
   },
   {
@@ -1947,42 +1947,42 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">([ dokkai ]\nKisah kesehatan\nAku merasa tidak enak badan sejak tadi malam. Demamku tinggi dan kepalaku sakit. Ketika saya pergi ke rumah sakit, saya mengetahui bahwa saya terkena flu. Guru memberi saya obat. Mengenai minuman, guru berkata, ``Air dan jus boleh saja, tapi tolong minum teh.'' Silakan minum obat dan teh dan istirahat.\n\n[ Terjemahan Pertanyaan ]\n(1. Ketika influenza apa yang sakit?)",
+    "trans": "[ Terjemahan Bacaan ]\nCerita tentang Kondisi Tubuh / Kesehatan\nSejak kemarin malam kondisi tubuh saya buruk. Demam saya tinggi dan kepala saya sakit. Ketika pergi ke rumah sakit, ternyata terkena influenza. Dokter memberi saya obat. Mengenai minuman, dokter berkata: \"Air putih atau jus boleh, tetapi tolong minumlah teh.\" Minumlah obat beserta teh, lalu beristirahatlah dengan tenang.\n\n[ Terjemahan Pertanyaan ]\n(1. Ketika terkena influenza, bagian tubuh apa yang terasa sakit?)",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "Teks menyatakan 「熱が 高くて、頭が 痛いです」 yang berarti \"Demam tinggi dan kepala sakit\". Tips: Perhatikan kata benda yang terkait dengan bagian tubuh yang disebutkan setelah kata sifat yang menggambarkan rasa sakit.",
+    "analisis": "[MNN Bab 4 - Dokkai Keluhan Sakit & Gejala Penyakit (頭が痛い)] Pada bacaan tertulis jelas mengenai gejala yang dirasakan: 「熱が 高くて、頭が 痛いです。病院に 行ったら、インフルエンザでした」 (Demam tinggi dan sakit kepala. Saat pergi ke rumah sakit, ternyata terkena influenza). Jadi ketika terkena influenza, bagian tubuh yang sakit adalah Kepala (頭 / あたま - atama).",
     "opt_detail": [
       {
         "kana": "お腹",
-        "rom": "-",
+        "rom": "onaka",
         "arti": "perut",
-        "alasan": "Pilihan salah."
+        "alasan": "Salah. Di dalam teks tidak disebutkan bahwa perutnya sakit (bukan お腹が痛い)."
       },
       {
         "kana": "頭",
-        "rom": "-",
+        "rom": "atama",
         "arti": "kepala",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "alasan": "Tepat sekali. Teks secara eksplisit menyebutkan: 「頭が 痛いです」 (kepala sakit)."
       },
       {
         "kana": "顔",
-        "rom": "-",
-        "arti": "menghadapi",
-        "alasan": "Pilihan salah."
+        "rom": "kao",
+        "arti": "wajah / muka",
+        "alasan": "Salah. 顔 (kao) berarti wajah/muka, bukan bagian tubuh yang dikeluhkan sakit pada teks."
       }
     ],
     "kunci_id": "頭",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(perut)",
-      "(kepala)",
-      "(menghadapi)"
+      "(onaka) perut",
+      "(atama) kepala",
+      "(kao) wajah / muka"
     ]
   },
   {
     "no": 37,
-    "title": "[ Bacaan ]\n[ dokkai ]\n体調の おはなし\n昨日の 夜から 体調が 悪いです。熱が 高くて、頭が 痛いです。病院に 行ったら、インフルエンザでした。先生は 薬を くれました。飲み物に ついて 先生は 「水や ジュースも いいですが、お茶を 飲んでください」と 言いました。薬と お茶を 飲んで、ゆっくり 休んで ください。\n\n[ Pertanyaan ]\n2. Apa yang harus diminum?",
-    "subTitle": "(2. Apa yang harus diminum?)",
+    "title": "[ Bacaan ]\n[ dokkai ]\n体調の おはなし\n昨日の 夜から 体調が 悪いです。熱が 高くて、頭が 痛いです。病院に 行ったら、インフルエンザでした。先生は 薬を くれました。飲み物に ついて 先生は 「水や ジュースも いいですが、お茶を 飲んでください」と 言いました。薬と お茶を 飲んで、ゆっくり 休んで ください。\n\n[ Pertanyaan ]\n2. 先生（医者）は 何を 飲むように 言いましたか。\n(Minuman apa yang disarankan dokter untuk diminum?)",
+    "subTitle": "(2. Minuman apa yang dianjurkan oleh dokter untuk diminum?)",
     "img": "",
     "audio": "",
     "options": [
@@ -2002,36 +2002,36 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">([ dokkai ]\nKisah kesehatan\nAku merasa tidak enak badan sejak tadi malam. Demamku tinggi dan kepalaku sakit. Ketika saya pergi ke rumah sakit, saya mengetahui bahwa saya terkena flu. Guru memberi saya obat. Mengenai minuman, guru berkata, ``Air dan jus boleh saja, tapi tolong minum teh.'' Silakan minum obat dan teh dan istirahat.\n\n[ Terjemahan Pertanyaan ]\n(2. Apa yang harus diminum?)",
+    "trans": "[ Terjemahan Bacaan ]\nCerita tentang Kondisi Kesehatan\nSejak kemarin malam kondisi fisik saya memburuk. Demam saya tinggi dan kepala terasa sakit. Ketika pergi memeriksakan diri ke rumah sakit, ternyata terkena influenza. Dokter memberi saya obat. Mengenai minuman, dokter menasihati: \"Air putih atau jus boleh saja, tetapi tolong minumlah teh hangat (ocha).\" Minumlah obat beserta teh, lalu beristirahatlah dengan tenang.\n\n[ Terjemahan Pertanyaan ]\n(2. Minuman apa yang diminta/dianjurkan oleh dokter untuk diminum?)",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "Pilihan A, お茶 (teh), adalah jawaban yang paling tepat karena teh adalah minuman yang sangat umum dan sering ditawarkan dalam berbagai situasi di Jepang. Tips: Perhatikan konteks budaya saat memilih jawaban untuk pertanyaan mengenai minuman.",
+    "analisis": "[MNN Bab 4 - Dokkai Instruksi Dokter (~てください)] Pada kalimat kutipan ucapan dokter tertulis secara spesifik petunjuk yang harus dijalankan: 「飲み物に ついて 先生は 『水や ジュースも いいですが、お茶を 飲んでください』と 言いました」 (Mengenai minuman, dokter berkata: \"Air putih dan jus memang boleh, TETAPI tolong minumlah teh hangat\"). Partikel が (tetapi) mengalihkan penekanan dari air/jus ke minuman yang diprioritaskan/diminta, yaitu Teh (お茶 / おちゃ - ocha). Kalimat penutup juga menegaskan kembali: 「薬と お茶を 飲んで、ゆっくり 休んで ください」.",
     "opt_detail": [
       {
         "kana": "水",
-        "rom": "-",
-        "arti": "air",
-        "alasan": "Pilihan salah."
+        "rom": "mizu",
+        "arti": "air putih",
+        "alasan": "Kurang tepat. Meskipun dokter mengatakan air boleh (水もいいですが), instruksi tegas yang diutamakan memakai bentuk ~てください adalah meminum teh (お茶を飲んでください)."
       },
       {
         "kana": "お茶",
-        "rom": "-",
-        "arti": "teh",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "ocha",
+        "arti": "teh (hangat)",
+        "alasan": "Tepat sekali. Dokter meminta secara langsung: 「お茶を 飲んでください」 (Tolong minumlah teh) dan 「薬と お茶を 飲んで」 (Minumlah obat dan teh)."
       },
       {
         "kana": "ジュース",
-        "rom": "-",
+        "rom": "juusu",
         "arti": "jus",
-        "alasan": "Pilihan salah."
+        "alasan": "Kurang tepat. Dokter menyatakan jus boleh saja sebagai opsi sekunder, bukan instruksi utama yang diminta untuk diminum."
       }
     ],
     "kunci_id": "お茶",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(air)",
-      "(teh)",
-      "(jus)"
+      "(mizu) air putih (opsi pelengkap)",
+      "(ocha) teh (anjuran utama dokter)",
+      "(juusu) jus (opsi pelengkap)"
     ]
   },
   {
@@ -2057,7 +2057,7 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">([ dokkai ]\nBerita Sakurayan\nSakuraya buka setiap hari.\nBuka jam 10 pagi dan tutup jam 7 malam.\nToko itu memiliki pakaian dan barang-barang rumah tangga.\nJaket itu dijual seharga 1.200 yen.\nKulkas berharga 29.000 yen.\nKulkas ini populer. Sangat nyaman karena tidak menggunakan banyak listrik.\n\n[ Terjemahan Pertanyaan ]\n(1. Sampai jam berapa buka toko?)",
+    "trans": "[ Terjemahan Bacaan ]\n([ dokkai ]\nBerita Sakurayan\nSakuraya buka setiap hari.\nBuka jam 10 pagi dan tutup jam 7 malam.\nToko itu memiliki pakaian dan barang-barang rumah tangga.\nJaket itu dijual seharga 1.200 yen.\nKulkas berharga 29.000 yen.\nKulkas ini populer. Sangat nyaman karena tidak menggunakan banyak listrik.\n\n[ Terjemahan Pertanyaan ]\n(1. Sampai jam berapa buka toko?)",
     "trans_rom": "-",
     "mnn": "Dokkai",
     "analisis": "Teks menyatakan \"夜は 午後7時に 閉まります\", yang berarti toko tutup pada pukul 7 malam. Tips: Perhatikan dengan cermat angka dan keterangan waktu (朝/午前, 午後/夜) dalam teks.",
@@ -2112,7 +2112,7 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">([ dokkai ]\nBerita Sakurayan\nSakuraya buka setiap hari.\nBuka jam 10 pagi dan tutup jam 7 malam.\nToko itu memiliki pakaian dan barang-barang rumah tangga.\nJaket itu dijual seharga 1.200 yen.\nKulkas berharga 29.000 yen.\nKulkas ini populer. Sangat nyaman karena tidak menggunakan banyak listrik.\n\n[ Terjemahan Pertanyaan ]\n(2.Harga jaket berapa?)",
+    "trans": "[ Terjemahan Bacaan ]\n([ dokkai ]\nBerita Sakurayan\nSakuraya buka setiap hari.\nBuka jam 10 pagi dan tutup jam 7 malam.\nToko itu memiliki pakaian dan barang-barang rumah tangga.\nJaket itu dijual seharga 1.200 yen.\nKulkas berharga 29.000 yen.\nKulkas ini populer. Sangat nyaman karena tidak menggunakan banyak listrik.\n\n[ Terjemahan Pertanyaan ]\n(2.Harga jaket berapa?)",
     "trans_rom": "-",
     "mnn": "Dokkai",
     "analisis": "Jawaban B benar karena harga jaket yang disebutkan dalam soal adalah 1200 円. Tips: Selalu perhatikan angka dan informasi yang tertera dalam soal sebelum memilih jawaban.",
@@ -2167,7 +2167,7 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">([ dokkai ]\nBerita Sakurayan\nSakuraya buka setiap hari.\nBuka jam 10 pagi dan tutup jam 7 malam.\nToko itu memiliki pakaian dan barang-barang rumah tangga.\nJaket itu dijual seharga 1.200 yen.\nKulkas berharga 29.000 yen.\nKulkas ini populer. Sangat nyaman karena tidak menggunakan banyak listrik.\n\n[ Terjemahan Pertanyaan ]\n(3.Harga kulkas berapa?)",
+    "trans": "[ Terjemahan Bacaan ]\n([ dokkai ]\nBerita Sakurayan\nSakuraya buka setiap hari.\nBuka jam 10 pagi dan tutup jam 7 malam.\nToko itu memiliki pakaian dan barang-barang rumah tangga.\nJaket itu dijual seharga 1.200 yen.\nKulkas berharga 29.000 yen.\nKulkas ini populer. Sangat nyaman karena tidak menggunakan banyak listrik.\n\n[ Terjemahan Pertanyaan ]\n(3.Harga kulkas berapa?)",
     "trans_rom": "-",
     "mnn": "Dokkai",
     "analisis": "Jawaban A benar karena 29.000 円 adalah harga yang tepat untuk kulkas sesuai dengan informasi yang diberikan. Tips: Selalu perhatikan angka dan nilai mata uang yang tertera pada pilihan jawaban agar sesuai dengan informasi soal.",
@@ -2222,7 +2222,7 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">([ dokkai ]\nKisah perjalanan\nCuacanya bagus hari ini.\nDi pagi hari, saya mendaki gunung.\nAku akan pergi melihat air di sore hari.\nPenginapan ini terletak di depan stasiun.\nSaat ini aku sedang beristirahat di kamarku di penginapan.\n\n[ Terjemahan Pertanyaan ]\n(1. Ketika siang melakukan apa?)",
+    "trans": "[ Terjemahan Bacaan ]\n([ dokkai ]\nKisah perjalanan\nCuacanya bagus hari ini.\nDi pagi hari, saya mendaki gunung.\nAku akan pergi melihat air di sore hari.\nPenginapan ini terletak di depan stasiun.\nSaat ini aku sedang beristirahat di kamarku di penginapan.\n\n[ Terjemahan Pertanyaan ]\n(1. Ketika siang melakukan apa?)",
     "trans_rom": "-",
     "mnn": "Dokkai",
     "analisis": "Jawaban B benar karena teks secara eksplisit menyatakan bahwa pada siang hari, subjek pergi untuk \"melihat air\" (水を &lt;strong&gt;見に&lt;/strong&gt; 行きます). Tips: Perhatikan kata kerja dan objek yang digunakan dalam kalimat untuk memahami makna yang tepat.",
@@ -2277,42 +2277,42 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">([ dokkai ]\nKisah perjalanan\nCuacanya bagus hari ini.\nDi pagi hari, saya mendaki gunung.\nAku akan pergi melihat air di sore hari.\nPenginapan ini terletak di depan stasiun.\nSaat ini aku sedang beristirahat di kamarku di penginapan.\n\n[ Terjemahan Pertanyaan ]\n(2.Sekarang ada dimana?)",
+    "trans": "[ Terjemahan Bacaan ]\nCerita tentang Perjalanan / Liburan\nHari ini cuacanya bagus.\nPada pagi hari, saya telah mendaki gunung.\nSiang nanti, saya akan pergi melihat danau / air terjun (air).\nRyokan (penginapan tradisional Jepang) terletak di depan stasiun.\nSekarang, saya sedang beristirahat di dalam kamar Ryokan.\n\n[ Terjemahan Pertanyaan ]\n(2. Sekarang saya sedang berada di mana?)",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "Jawaban C (りょかん - penginapan tradisional Jepang) adalah jawaban yang tepat untuk pertanyaan \"Sekarang ada dimana?\". Tips: Perhatikan baik-baik arti dari setiap pilihan jawaban dalam kaitannya dengan pertanyaan.",
+    "analisis": "[MNN Bab 27/Dokkai Lokasi Keberadaan (今、どこにいますか)] Pada kalimat terakhir teks bacaan secara eksplisit tertulis keberadaan pembicara saat ini: 「今、私は 旅館の 部屋で 休んで います」 (Sekarang, saya sedang beristirahat di kamar Ryokan / penginapan tradisional Jepang). Oleh karena itu, tempat pembicara berada sekarang adalah di Ryokan (旅館 / りょかん - ryokan).",
     "opt_detail": [
       {
         "kana": "りょかん",
-        "rom": "-",
-        "arti": "Ryokan",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "ryokan",
+        "arti": "penginapan tradisional Jepang (Ryokan)",
+        "alasan": "Tepat sekali. Kalimat terakhir menyatakan secara jelas: 「今、私は 旅館の 部屋で 休んで います」 (Sekarang saya sedang beristirahat di kamar Ryokan)."
       },
       {
         "kana": "ホテル",
-        "rom": "-",
-        "arti": "Hotel",
-        "alasan": "Pilihan salah."
+        "rom": "hoteru",
+        "arti": "hotel gaya barat",
+        "alasan": "Salah. Di dalam teks tempat menginapnya adalah 旅館 (ryokan), bukan hotel bergaya barat (ホテル)."
       },
       {
         "kana": "ぎんこう",
-        "rom": "-",
-        "arti": "Ginkgo",
-        "alasan": "Pilihan salah."
+        "rom": "ginkou",
+        "arti": "bank",
+        "alasan": "Salah. ぎんこう (銀行) adalah kantor bank, sama sekali tidak disebutkan pada teks perjalanan ini."
       }
     ],
     "kunci_id": "りょかん",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(Ryokan)",
-      "(Hotel)",
-      "(Ginkgo)"
+      "(ryokan) penginapan tradisional Jepang",
+      "(hoteru) hotel",
+      "(ginkou) bank"
     ]
   },
   {
     "no": 43,
-    "title": "[ Bacaan ]\n[ dokkai ]\nメールの おしらせ\n田中さんからの メールです。\n今、10時です。田中さんと 会う 時間は 11時です。\n日付と 詳しい 時間は、この メールに 書いてあります。\nメールの 11時の 下を 見て ください。\n\n[ Pertanyaan ]\n1. Tentang email, ditanya jam berapa?",
-    "subTitle": "(1. Tentang email, ditanya jam berapa?)",
+    "title": "[ Bacaan ]\n[ dokkai ]\nメールの おしらせ\n田中さんからの メールです。\n今、10時です。田中さんと 会う 時間は 11時です。\n日付と 詳しい 時間は、この メールに 書いてあります。\nメールの 11時の 下を 見て ください。\n\n[ Pertanyaan ]\n1. Tanaka-san to au jikan wa nanji desu ka? (Pukul berapa waktu bertemu dengan Tanaka-san?)",
+    "subTitle": "(1. Pukul berapa janji bertemu dengan Tanaka-san?)",
     "img": "",
     "audio": "",
     "options": [
@@ -2332,42 +2332,42 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">([ dokkai ]\nNotifikasi email\nIni email dari Pak Tanaka.\nSekarang jam 10. Waktu untuk bertemu Pak Tanaka adalah jam 11.\nTanggal dan waktu detailnya akan ditulis di email ini.\nSilakan lihat bagian bawah email pada jam 11.\n\n[ Terjemahan Pertanyaan ]\n(1. Tentang email, ditanya jam berapa?)",
+    "trans": "[ Terjemahan Bacaan ]\nPemberitahuan melalui Email\nIni adalah email dari Tanaka-san.\nSekarang pukul 10:00. Waktu untuk bertemu dengan Tanaka-san adalah pukul 11:00.\nTanggal dan rincian waktu tertulis di dalam email ini.\nSilakan lihat bagian di bawah tulisan pukul 11:00 pada email tersebut.\n\n[ Terjemahan Pertanyaan ]\n(1. Pukul berapakah waktu untuk bertemu dengan Tanaka-san?)",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "Teks email dengan jelas menyatakan bahwa waktu bertemu dengan Tanaka-san adalah pukul 11:00. Tips: Perhatikan baik-baik angka jam dan menit yang disebutkan dalam teks.",
+    "analisis": "[MNN Bab 4 - Dokkai Jam Pertemuan (会う時間)] Kalimat kedua teks email secara tegas menyatakan waktu pertemuan: 「今、10時です。田中さんと 会う 時間は 11時です」 (Sekarang jam 10. Waktu untuk bertemu Tanaka-san adalah pukul 11:00). Maka waktu janji bertemu yang tepat adalah pukul 11:00 (11時 / じゅういちじ). Pukul 10:00 adalah waktu saat ini saat membaca/menulis email.",
     "opt_detail": [
       {
         "kana": "11:30",
-        "rom": "-",
-        "arti": "11:30",
-        "alasan": "Pilihan salah."
+        "rom": "juuichiji sanjuppun",
+        "arti": "pukul 11:30",
+        "alasan": "Salah. Angka menit 30 sama sekali tidak tertulis pada teks email."
       },
       {
         "kana": "11:00",
-        "rom": "-",
-        "arti": "11:00",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "juuichiji",
+        "arti": "pukul 11:00",
+        "alasan": "Tepat sekali. Teks menyatakan secara eksplisit: 「田中さんと 会う 時間は 11時です」 (Waktu bertemu Tanaka-san pukul 11:00)."
       },
       {
         "kana": "10:00",
-        "rom": "-",
-        "arti": "10:00",
-        "alasan": "Pilihan salah."
+        "rom": "juuji",
+        "arti": "pukul 10:00",
+        "alasan": "Salah. Pukul 10:00 adalah waktu sekarang (今、10時です), bukan jam janji bertemu."
       }
     ],
     "kunci_id": "11:00",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(11:30)",
-      "(11:00)",
-      "(10:00)"
+      "(11:30) pengecoh waktu",
+      "(11:00) waktu janji temu",
+      "(10:00) waktu sekarang"
     ]
   },
   {
     "no": 44,
-    "title": "[ Bacaan ]\n[ dokkai ]\nメールの おしらせ\n田中さんからの メールです。\n今、10時です。田中さんと 会う 時間は 11時です。\n日付と 詳しい 時間は、この メールに 書いてあります。\nメールの 11時の 下を 見て ください。\n\n[ Pertanyaan ]\n2. Tanggal dan jam ada dimana?",
-    "subTitle": "(2. Tanggal dan jam ada dimana?)",
+    "title": "[ Bacaan ]\n[ dokkai ]\nメールの おしらせ\n田中さんからの メールです。\n今、10時です。田中さんと 会う 時間は 11時です。\n日付と 詳しい 時間は、この メールに 書いてあります。\nメールの 11時の 下を 見て ください。\n\n[ Pertanyaan ]\n2. Di bagian mana tanggal dan waktu detail tertulis?",
+    "subTitle": "(2. Di mana rincian tanggal dan jam janji temu tertulis?)",
     "img": "",
     "audio": "",
     "options": [
@@ -2387,36 +2387,36 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 4 : DOKKAI",
-    "trans": "[ Terjemahan Bacaan ]\ncolor:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif\">([ dokkai ]\nNotifikasi email\nIni email dari Pak Tanaka.\nSekarang jam 10. Waktu untuk bertemu Pak Tanaka adalah jam 11.\nTanggal dan waktu detailnya akan ditulis di email ini.\nSilakan lihat bagian bawah email pada jam 11.\n\n[ Terjemahan Pertanyaan ]\n(2. Tanggal dan jam ada dimana?)",
+    "trans": "[ Terjemahan Bacaan ]\nPemberitahuan melalui Email\nIni adalah email dari Tanaka-san.\nSekarang pukul 10:00. Waktu untuk bertemu dengan Tanaka-san adalah pukul 11:00.\nTanggal dan rincian waktu tertulis di dalam email ini.\nSilakan lihat bagian di bawah tulisan pukul 11:00 pada email tersebut.\n\n[ Terjemahan Pertanyaan ]\n(2. Di bagian manakah rincian tanggal dan waktu tertulis?)",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "Jawaban A benar karena tanggal dan jam biasanya ditampilkan di bagian bawah atau di bawah informasi jam. Tips: Perhatikan posisi informasi yang umum ditemukan pada sebuah pesan atau dokumen.",
+    "analisis": "[MNN Bab 10 - Dokkai Posisi Petunjuk Teks (〜の下)] Kalimat terakhir teks memberikan petunjuk lokasi secara jelas: 「メールの 11時の 下を 見て ください」 (Tolong lihat bagian di bawah tulisan jam 11 pada email). Kata penunjuk posisi 下 (shita) berarti \"bawah\", sehingga posisi detail tanggal dan jam berada di bawah tulisan jam 11:00.",
     "opt_detail": [
       {
         "kana": "ada dibawah jam",
-        "rom": "-",
-        "arti": "ada dibawah jam",
-        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+        "rom": "11-ji no shita",
+        "arti": "ada di bawah jam (11:00)",
+        "alasan": "Tepat sekali. Teks menginstruksikan: 「11時の 下を 見て ください」 (Silakan lihat di bawah jam 11)."
       },
       {
         "kana": "ada di tengah email",
-        "rom": "-",
+        "rom": "meeru no mannaka",
         "arti": "ada di tengah email",
-        "alasan": "Pilihan salah."
+        "alasan": "Salah. Tidak disebutkan kata posisi tengah (真ん中 - mannaka)."
       },
       {
         "kana": "ada di atas email",
-        "rom": "-",
+        "rom": "meeru no ue",
         "arti": "ada di atas email",
-        "alasan": "Pilihan salah."
+        "alasan": "Salah. Petunjuk mengarahkan ke bawah (下 - shita), bukan ke atas (上 - ue)."
       }
     ],
     "kunci_id": "ada dibawah jam",
     "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
     "opt_note": [
-      "(ada dibawah jam)",
-      "(ada di tengah email)",
-      "(ada di atas email)"
+      "(ada dibawah jam) sesuai instruksi 11時の下",
+      "(ada di tengah email) pengecoh posisi",
+      "(ada di atas email) pengecoh posisi"
     ]
   }
 ]

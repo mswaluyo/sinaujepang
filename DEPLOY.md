@@ -97,6 +97,10 @@ Jika kata tersebut layak dimasukkan ke kamus hafalan, tambahkan entri ke file ma
 | Live URL | `https://sinaujepang.web.app` |
 | Public Folder | `public/` |
 
+> ⚠️ **PERINGATAN PENTING**:
+> Web ini **TIDAK** di-deploy ke `https://nihongo-course.web.app/`.
+> Target hosting dan project Firebase resmi yang digunakan hanya **`sinau-jepang`** (`https://sinaujepang.web.app/`). Jangan menggunakan project `nihongo-course`.
+
 ### File Konfigurasi Firebase
 - `.firebaserc` : Pemetaan alias target hosting `sinaujepang`.
 - `firebase.json` : Konfigurasi hosting, cache header, dan rewrites.

@@ -7,15 +7,15 @@
     "audio": "",
     "options": [
       {
-        "text": "げんかん",
+        "text": "げんかん [ 玄関 ]",
         "img": ""
       },
       {
-        "text": "だいどころ",
+        "text": "だいどころ [ 台所 ]",
         "img": ""
       },
       {
-        "text": "にわ",
+        "text": "にわ [ 庭 ]",
         "img": ""
       }
     ],
@@ -28,19 +28,19 @@
     "analisis": "[MNN Bab 8/Rumah Tinggal - Bagian Rumah Khas Jepang] Gambar menampilkan area pintu masuk rumah tradisional/modern Jepang tempat melepas dan menata sepatu. Bagian ini dinamakan げんかん (玄関 / genkan = foyer/pintu masuk rumah). Opsi だいどころ (dapur) dan にわ (halaman/taman) tidak sesuai dengan gambar.",
     "opt_detail": [
       {
-        "kana": "げんかん",
+        "kana": "げんかん [ 玄関 ]",
         "rom": "genkan",
         "arti": "pintu masuk / foyer rumah",
         "alasan": "Tepat sekali. Gambar memperlihatkan area pintu masuk rumah tempat melepas sepatu."
       },
       {
-        "kana": "だいどころ",
+        "kana": "だいどころ [ 台所 ]",
         "rom": "daidokoro",
         "arti": "dapur",
         "alasan": "Salah. Daidokoro adalah ruangan dapur untuk memasak."
       },
       {
-        "kana": "にわ",
+        "kana": "にわ [ 庭 ]",
         "rom": "niwa",
         "arti": "halaman / kebun / taman",
         "alasan": "Salah. Niwa adalah halaman luar atau taman rumah."
@@ -51,7 +51,7 @@
       "(daidokoro) dapur",
       "(niwa) halaman"
     ],
-    "kunci_id": "げんかん",
+    "kunci_id": "げんかん [ 玄関 ]",
     "salah": "Pilihan lain tidak cocok dengan gambar dan kunci jawaban."
   },
   {
@@ -62,15 +62,15 @@
     "audio": "",
     "options": [
       {
-        "text": "はなします",
+        "text": "はなします [ 話します ]",
         "img": ""
       },
       {
-        "text": "しごと",
+        "text": "しごと [ 仕事 ]",
         "img": ""
       },
       {
-        "text": "きゅうけい",
+        "text": "きゅうけい [ 休憩 ]",
         "img": ""
       }
     ],
@@ -83,19 +83,19 @@
     "analisis": "[MNN Bab 4 - Aktivitas Kerja & Istirahat] Gambar menunjukkan seseorang yang sedang beristirahat melepaskan lelah dari rutinitas kerja. Istilah yang tepat adalah きゅうけい (休憩 / kyuukei = istirahat sejenak / jeda istirahat). Opsi はなします (berbicara) dan しごと (pekerjaan) tidak sesuai dengan konteks santai di gambar.",
     "opt_detail": [
       {
-        "kana": "はなします",
+        "kana": "はなします [ 話します ]",
         "rom": "hanashimasu",
         "arti": "berbicara / mengobrol",
         "alasan": "Salah. Tokoh pada gambar sedang beristirahat santai sendirian, bukan sedang mengobrol."
       },
       {
-        "kana": "しごと",
+        "kana": "しごと [ 仕事 ]",
         "rom": "shigoto",
         "arti": "pekerjaan / bekerja",
         "alasan": "Salah. Shigoto berarti bekerja, berlawanan dengan tindakan istirahat."
       },
       {
-        "kana": "きゅうけい",
+        "kana": "きゅうけい [ 休憩 ]",
         "rom": "kyuukei",
         "arti": "istirahat sejenak",
         "alasan": "Tepat sekali. Menggambarkan jeda istirahat sejenak (休憩) dari aktivitas."
@@ -106,7 +106,7 @@
       "(shigoto) kerja",
       "(kyuukei) istirahat"
     ],
-    "kunci_id": "きゅうけい",
+    "kunci_id": "きゅうけい [ 休憩 ]",
     "salah": "Pilihan lain tidak cocok dengan gambar dan kunci jawaban."
   },
   {
@@ -172,11 +172,11 @@
     "audio": "",
     "options": [
       {
-        "text": "まど",
+        "text": "まど [ 窓 ]",
         "img": ""
       },
       {
-        "text": "でんき",
+        "text": "でんき [ 電気 ]",
         "img": ""
       },
       {
@@ -193,13 +193,13 @@
     "analisis": "[MNN Bab 2/14 - Perlengkapan Kamar] Gambar menampilkan sebuah jendela ruangan. Kosakata bahasa Jepang untuk jendela adalah まど (窓 / mado). Opsi でんき (lampu listrik) dan ドア (pintu) tidak mewakili gambar jendela tersebut.",
     "opt_detail": [
       {
-        "kana": "まど",
+        "kana": "まど [ 窓 ]",
         "rom": "mado",
         "arti": "jendela",
         "alasan": "Tepat sekali. Gambar jelas memperlihatkan sebuah jendela kaca (窓)."
       },
       {
-        "kana": "でんき",
+        "kana": "でんき [ 電気 ]",
         "rom": "denki",
         "arti": "lampu / listrik",
         "alasan": "Salah. Denki merujuk pada daya listrik atau lampu penerangan."
@@ -216,7 +216,7 @@
       "(denki) lampu",
       "(doa) pintu"
     ],
-    "kunci_id": "まど",
+    "kunci_id": "まど [ 窓 ]",
     "salah": "Pilihan lain tidak cocok dengan gambar dan kunci jawaban."
   },
   {
@@ -227,15 +227,15 @@
     "audio": "",
     "options": [
       {
-        "text": "あやまリます",
+        "text": "あやまります [ 謝ります ]",
         "img": ""
       },
       {
-        "text": "べんきょうします",
+        "text": "べんきょうします [ 勉強します ]",
         "img": ""
       },
       {
-        "text": "しかります",
+        "text": "しかります [ 叱ります ]",
         "img": ""
       }
     ],
@@ -248,19 +248,19 @@
     "analisis": "[MNN Bab 33/Etika Sosial - Meminta Maaf] Gambar memperlihatkan seorang pria membungkukkan badan untuk meminta maaf atas kesalahan yang dilakukan. Kata kerja yang tepat adalah あやまります (謝ります / ayamarimasu = meminta maaf). Pilihan べんきょうします (belajar) dan しかります (memarahi orang lain) tidak sesuai gesture membungkuk minta maaf.",
     "opt_detail": [
       {
-        "kana": "あやまリます",
+        "kana": "あやまります [ 謝ります ]",
         "rom": "ayamarimasu",
         "arti": "meminta maaf",
         "alasan": "Tepat sekali. Gesture membungkuk menunjukkan tindakan memohon maaf (謝る)."
       },
       {
-        "kana": "べんきょうします",
+        "kana": "べんきょうします [ 勉強します ]",
         "rom": "benkyou shimasu",
         "arti": "belajar",
         "alasan": "Salah. Bukan sedang belajar di meja buku."
       },
       {
-        "kana": "しかります",
+        "kana": "しかります [ 叱ります ]",
         "rom": "shikarimasu",
         "arti": "memarahi",
         "alasan": "Salah. Shikarimasu adalah tindakan memarahi orang lain, bukan meminta maaf."
@@ -271,7 +271,7 @@
       "(benkyou shimasu) belajar",
       "(shikarimasu) memarahi"
     ],
-    "kunci_id": "あやまリます",
+    "kunci_id": "あやまります [ 謝ります ]",
     "salah": "Pilihan lain tidak cocok dengan gambar dan kunci jawaban."
   },
   {

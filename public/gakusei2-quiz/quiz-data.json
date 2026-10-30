@@ -7,15 +7,15 @@
     "audio": "",
     "options": [
       {
-        "text": "がくせい",
+        "text": "がくせい [ 学生 ]",
         "img": ""
       },
       {
-        "text": "いしゃ",
+        "text": "いしゃ [ 医者 ]",
         "img": ""
       },
       {
-        "text": "せんせい",
+        "text": "せんせい [ 先生 ]",
         "img": ""
       }
     ],
@@ -28,19 +28,19 @@
     "analisis": "[MNN Bab 1 - Profesi dan Status Sosial] Gambar menunjukkan seorang anak laki-laki berseragam sekolah dengan dasi dan ransel sekolah di dalam ruang kelas. Istilah bahasa Jepang untuk siswa/pelajar adalah がくせい (学生 / gakusei). Opsi いしゃ (dokter) dan せんせい (guru) tidak sesuai dengan identitas gambar.",
     "opt_detail": [
       {
-        "kana": "がくせい",
+        "kana": "がくせい [ 学生 ]",
         "rom": "gakusei",
         "arti": "siswa / pelajar / mahasiswa",
         "alasan": "Tepat sekali. Gambar menampilkan anak sekolah/pelajar di ruang kelas."
       },
       {
-        "kana": "いしゃ",
+        "kana": "いしゃ [ 医者 ]",
         "rom": "isha",
         "arti": "dokter",
         "alasan": "Salah. Isha merujuk pada dokter medis."
       },
       {
-        "kana": "せんせい",
+        "kana": "せんせい [ 先生 ]",
         "rom": "sensei",
         "arti": "guru / pengajar",
         "alasan": "Salah. Sensei merujuk pada sosok guru atau pengajar."
@@ -51,7 +51,7 @@
       "(isha) dokter",
       "(sensei) guru"
     ],
-    "kunci_id": "がくせい",
+    "kunci_id": "がくせい [ 学生 ]",
     "salah": "Pilihan lain tidak cocok dengan profesi/status orang dalam gambar."
   },
   {
@@ -117,7 +117,7 @@
     "audio": "",
     "options": [
       {
-        "text": "かみ",
+        "text": "かみ [ 紙 ]",
         "img": ""
       },
       {
@@ -125,7 +125,7 @@
         "img": ""
       },
       {
-        "text": "きっぷ",
+        "text": "きっぷ [ 切符 ]",
         "img": ""
       }
     ],
@@ -138,7 +138,7 @@
     "analisis": "[MNN Bab 2 - Benda-benda di Sekitar Kita] Gambar menunjukkan selembar kertas putih polos. Kosakata bahasa Jepang untuk kertas adalah かみ (紙 / kami). Opsi カメラ (kamera) adalah alat potret, dan きっぷ (tiket/karcis) adalah tiket perjalanan/masuk.",
     "opt_detail": [
       {
-        "kana": "かみ",
+        "kana": "かみ [ 紙 ]",
         "rom": "kami",
         "arti": "kertas",
         "alasan": "Tepat sekali. Gambar memperlihatkan lembaran kertas putih."
@@ -150,7 +150,7 @@
         "alasan": "Salah. Kamera adalah peranti fotografi."
       },
       {
-        "kana": "きっぷ",
+        "kana": "きっぷ [ 切符 ]",
         "rom": "kippu",
         "arti": "karcis / tiket",
         "alasan": "Salah. Kippu adalah tiket kendaraan umum/masuk pertunjukan."
@@ -161,7 +161,7 @@
       "(kamera) kamera",
       "(kippu) tiket karcis"
     ],
-    "kunci_id": "かみ",
+    "kunci_id": "かみ [ 紙 ]",
     "salah": "Pilihan lain tidak cocok dengan benda yang ada pada gambar."
   },
   {

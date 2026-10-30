@@ -2,7 +2,8 @@
 
 ## 1. Ringkasan Proyek
 - Nama Platform: Sinau Jepang / Fuji Manabi
-- Live URL: https://sinaujepang.web.app/
+- Live URL: https://sinaujepang.web.app/ (Target Project Firebase: `sinau-jepang` / Site: `sinaujepang`)
+- Catatan Penting Deploy: Web ini **TIDAK** di-deploy ke https://nihongo-course.web.app/. Jangan pernah gunakan target atau project `nihongo-course`.
 - Deskripsi: Web App Edukasi & CBT Engine Simulasi Soal JFT-Basic A2 dan JLPT N5 (Moji-Goi, Bunpou, Dokkai, Choukai/Listening).
 
 ## 2. Tech Stack
