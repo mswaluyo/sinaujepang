@@ -174,6 +174,19 @@ window.PAKET_CONFIG = {
           "ikon": "K"
         }
       ]
+    },
+    {
+      "nama": "SSW (SPECIFIED SKILLED WORKER)",
+      "warna": "amber",
+      "badgeGradien": "from-amber-500 to-orange-600",
+      "paket": [
+        {
+          "nama": "SSW PETERNAKAN",
+          "slug": "ssw-peternakan-quiz",
+          "total": 45,
+          "ikon": "畜"
+        }
+      ]
     }
   ]
 };
