@@ -20,22 +20,24 @@
 
   <style>
     body {
-      background-color: #121214;
+      background-color: #0f0f12;
       color: #ffffff;
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
       overflow: hidden;
       margin: 0;
     }
     .video-tile {
-      background: #1e1e24;
+      background: #18181e;
       border: 1px solid rgba(255, 255, 255, 0.08);
       position: relative;
-      border-radius: 12px;
+      border-radius: 14px;
       overflow: hidden;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      transition: border-color 0.2s ease, box-shadow 0.2s ease;
     }
     .active-speaker {
       border: 2px solid #22c55e !important;
+      box-shadow: 0 0 16px rgba(34, 197, 94, 0.35) !important;
     }
   </style>
 </head>
@@ -49,7 +51,7 @@
         <span>Terhubung (Encrypted)</span>
       </div>
       <span class="text-xs text-slate-400 hidden sm:inline">|</span>
-      <span class="text-xs font-medium text-slate-200 hidden sm:inline">Kaiwa Practice Room 01: 佐藤先生の会話レッスン</span>
+      <span class="text-xs font-medium text-slate-200 hidden sm:inline">Kaiwa Practice Room: 佐藤先生 & 由紀アシスタント</span>
     </div>
 
     <!-- Mode & Meeting Duration -->
@@ -61,59 +63,80 @@
     </div>
   </header>
 
-  <!-- ── 2. ZOOM MAIN STAGE (GRID TILE: SATO-SENSEI + USER) ── -->
-  <main class="flex-1 p-3 grid grid-cols-1 md:grid-cols-2 gap-3 overflow-hidden relative">
+  <!-- ── 2. ZOOM MAIN STAGE (3 TILES: SATO-SAN + YUKI-CHAN + USER) ── -->
+  <main class="flex-1 p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 overflow-hidden relative">
 
-    <!-- Tile 1: Sato-san 3D VRM Video Feed -->
+    <!-- Tile 1: Sato-san (Sensei) -->
     <div id="sato-tile" class="video-tile flex flex-col items-center justify-center relative">
-      <!-- 3D Canvas Sato-san -->
-      <div id="vrm-canvas-container" class="w-full h-full"></div>
+      <div id="sato-canvas-container" class="w-full h-full"></div>
 
-      <!-- Loading Overlay Model -->
-      <div id="loading" class="absolute inset-0 bg-[#1e1e24] flex flex-col items-center justify-center text-white z-30 transition-opacity duration-300">
-        <div class="w-10 h-10 border-3 border-sky-400 border-t-transparent rounded-full animate-spin mb-3"></div>
-        <div class="text-sm font-semibold">Menghubungkan video Sato-san...</div>
-        <div id="load-progress" class="text-xs text-slate-400 mt-1">0%</div>
+      <!-- Loading Overlay Sato-san -->
+      <div id="loading-sato" class="absolute inset-0 bg-[#18181e] flex flex-col items-center justify-center text-white z-30 transition-opacity duration-300">
+        <div class="w-9 h-9 border-3 border-sky-400 border-t-transparent rounded-full animate-spin mb-2"></div>
+        <div class="text-xs font-semibold text-slate-300">Menghubungkan Sato-san...</div>
+        <div id="sato-progress" class="text-[11px] text-slate-500 mt-0.5">0%</div>
       </div>
 
-      <!-- Speaker Tag (Pojok Kiri Bawah) -->
-      <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10">
+      <!-- Speaker Tag -->
+      <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10">
         <div id="sato-mic-icon" class="text-xs text-white">
           <i class="fa-solid fa-microphone"></i>
         </div>
         <span class="text-xs font-medium text-white tracking-wide">Sato-san (佐藤さん)</span>
         <span class="text-[10px] bg-sky-500/20 text-sky-400 px-1.5 py-0.5 rounded font-bold">Sensei</span>
       </div>
+    </div>
 
-      <!-- Floating Subtitle Percakapan di dalam Tile Sato-san -->
-      <div id="dialog-box" class="hidden absolute bottom-12 left-4 right-4 bg-black/85 backdrop-blur-md px-4 py-2.5 rounded-xl border border-white/15 text-center z-20">
-        <div id="dialog-jp" class="text-sm font-bold text-sky-300">こんにちは！声が聞こえますか？今日も楽しく日本語を練習しましょう！</div>
-        <div id="dialog-id" class="text-xs text-slate-300 mt-0.5">Halo! Apakah suaraku terdengar? Mari berlatih bahasa Jepang dengan santai hari ini!</div>
+    <!-- Tile 2: Yuki-chan (Asisten / TA) -->
+    <div id="yuki-tile" class="video-tile flex flex-col items-center justify-center relative">
+      <div id="yuki-canvas-container" class="w-full h-full"></div>
+
+      <!-- Loading Overlay Yuki-chan -->
+      <div id="loading-yuki" class="absolute inset-0 bg-[#18181e] flex flex-col items-center justify-center text-white z-30 transition-opacity duration-300">
+        <div class="w-9 h-9 border-3 border-pink-400 border-t-transparent rounded-full animate-spin mb-2"></div>
+        <div class="text-xs font-semibold text-slate-300">Menghubungkan Yuki-chan...</div>
+        <div id="yuki-progress" class="text-[11px] text-slate-500 mt-0.5">0%</div>
+      </div>
+
+      <!-- Speaker Tag -->
+      <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10">
+        <div id="yuki-mic-icon" class="text-xs text-white">
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+        <span class="text-xs font-medium text-white tracking-wide">Yuki-chan (由紀ちゃん)</span>
+        <span class="text-[10px] bg-pink-500/20 text-pink-400 px-1.5 py-0.5 rounded font-bold">Asisten</span>
       </div>
     </div>
 
-    <!-- Tile 2: User Webcam / Local Feed -->
-    <div class="video-tile flex flex-col items-center justify-center relative bg-[#18181b]">
+    <!-- Tile 3: User Webcam / Local Video Feed -->
+    <div class="video-tile flex flex-col items-center justify-center relative bg-[#141419] sm:col-span-2 md:col-span-1">
       <video id="user-webcam" class="w-full h-full object-cover -scale-x-100 hidden" autoplay playsinline muted></video>
       
-      <!-- Fallback Avatar jika kamera belum/tidak diizinkan -->
+      <!-- Fallback Avatar jika kamera belum aktif -->
       <div id="user-avatar-fallback" class="flex flex-col items-center justify-center gap-3">
-        <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
+        <div class="w-20 h-20 rounded-full bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-2xl font-bold text-white shadow-lg">
           <i class="fa-solid fa-user"></i>
         </div>
-        <span class="text-sm font-semibold text-slate-300">Kamera Anda (Belajar Kaiwa)</span>
+        <span class="text-xs font-semibold text-slate-300">Kamera Anda (Gakusei)</span>
         <button id="btn-enable-cam" class="text-xs px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-slate-200 transition flex items-center gap-1.5">
-          <i class="fa-solid fa-camera"></i> Nyalakan Kamera Saya
+          <i class="fa-solid fa-camera"></i> Nyalakan Kamera
         </button>
       </div>
 
-      <!-- User Name Tag (Pojok Kiri Bawah) -->
-      <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10">
+      <!-- User Name Tag -->
+      <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10">
         <div id="user-mic-icon" class="text-xs text-white">
           <i class="fa-solid fa-microphone"></i>
         </div>
-        <span id="user-name-label" class="text-xs font-medium text-white">Anda (Gakusei)</span>
+        <span class="text-xs font-medium text-white">Anda (Gakusei)</span>
       </div>
+    </div>
+
+    <!-- Floating Subtitle Percakapan Aktif Zoom -->
+    <div id="dialog-box" class="hidden absolute bottom-5 left-1/2 -translate-x-1/2 max-w-xl w-11/12 bg-black/90 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 text-center z-30 shadow-2xl">
+      <div id="dialog-speaker" class="text-[11px] font-bold text-amber-400 mb-0.5 uppercase tracking-wider">Sato-san</div>
+      <div id="dialog-jp" class="text-sm sm:text-base font-bold text-sky-300 leading-snug">こんにちは！今日も一緒に日本語を練習しましょう！</div>
+      <div id="dialog-id" class="text-xs text-slate-300 mt-1">Halo! Mari berlatih bahasa Jepang bersama hari ini!</div>
     </div>
 
   </main>
@@ -123,34 +146,32 @@
 
     <!-- Kontrol Suara & Video Kiri -->
     <div class="flex items-center gap-2">
-      <!-- Tombol Bicara / Voice Input -->
-      <button id="btn-toggle-mic" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-xs font-medium flex flex-col items-center gap-1 transition min-w-[64px]">
-        <i class="fa-solid fa-microphone text-base text-emerald-400"></i>
+      <button id="btn-toggle-mic" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-xs font-medium flex flex-col items-center gap-1 transition min-w-[60px]">
+        <i class="fa-solid fa-microphone text-sm text-emerald-400"></i>
         <span>Mute</span>
       </button>
 
-      <button id="btn-toggle-cam" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-xs font-medium flex flex-col items-center gap-1 transition min-w-[64px]">
-        <i class="fa-solid fa-video text-base text-slate-300"></i>
+      <button id="btn-toggle-cam" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-xs font-medium flex flex-col items-center gap-1 transition min-w-[60px]">
+        <i class="fa-solid fa-video text-sm text-slate-300"></i>
         <span>Video</span>
       </button>
     </div>
 
-    <!-- Kontrol Interaksi Tengah (Topik & Latihan) -->
-    <div class="flex items-center gap-2 sm:gap-3">
-      <!-- Tombol Pilihan Percakapan / Latihan -->
-      <button id="btn-kaiwa-jiko" class="px-3 py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-400 border border-sky-500/30 text-xs font-medium flex items-center gap-2 transition">
-        <i class="fa-regular fa-comment-dots"></i>
-        <span class="hidden sm:inline">Topik:</span> Perkenalan (自己紹介)
+    <!-- Kontrol Interaksi Tengah (Dialog Interaktif) -->
+    <div class="flex items-center gap-2 sm:gap-2.5">
+      <button id="btn-kaiwa-intro" class="px-3 py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-400 border border-sky-500/30 text-xs font-medium flex items-center gap-1.5 transition">
+        <i class="fa-regular fa-comments"></i>
+        <span>Sapaan Pembuka</span>
       </button>
 
-      <button id="btn-kaiwa-aisatsu" class="px-3 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/30 text-xs font-medium flex items-center gap-2 transition">
-        <i class="fa-regular fa-hand"></i>
-        <span class="hidden sm:inline">Topik:</span> Salam Kerja (挨拶)
+      <button id="btn-kaiwa-tips" class="px-3 py-2 rounded-xl bg-pink-500/20 hover:bg-pink-500/30 text-pink-400 border border-pink-500/30 text-xs font-medium flex items-center gap-1.5 transition">
+        <i class="fa-regular fa-lightbulb"></i>
+        <span>Tips dari Yuki</span>
       </button>
 
-      <button id="btn-kaiwa-shitsumon" class="px-3 py-2 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 text-purple-400 border border-purple-500/30 text-xs font-medium flex items-center gap-2 transition">
-        <i class="fa-solid fa-circle-question"></i>
-        <span class="hidden sm:inline">Tanya:</span> Tanya Tugas (質問)
+      <button id="btn-kaiwa-kerja" class="px-3 py-2 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 text-purple-400 border border-purple-500/30 text-xs font-medium flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-briefcase"></i>
+        <span>Latihan Aisatsu Kerja</span>
       </button>
     </div>
 
@@ -164,116 +185,89 @@
 
   </footer>
 
-  <!-- ── 4. SCRIPT THREE.JS + VRM ENGINE UNTUK TILE ZOOM SATO-SAN ── -->
+  <!-- ── 4. SCRIPT DUAL VRM: THREE.JS ENGINE SATO-SAN & YUKI-CHAN ── -->
   <script type="module">
     import * as THREE from 'three';
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { VRMLoaderPlugin, VRMUtils } from '@pixiv/three-vrm';
 
-    // ── Setup 3D Scene untuk Kamera Zoom Sato-san ──
-    const container = document.getElementById('vrm-canvas-container');
-    const scene = new THREE.Scene();
-    scene.background = new THREE.Color(0x27272a); // Background virtual meeting room
-
-    // Sudut pandang webcam Zoom: fokus dada ke kepala
-    const camera = new THREE.PerspectiveCamera(26, container.clientWidth / container.clientHeight, 0.1, 20.0);
-    camera.position.set(0.0, 1.34, 1.15);
-
-    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
-    renderer.setSize(container.clientWidth, container.clientHeight);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-    renderer.toneMapping = THREE.ACESFilmicToneMapping;
-    renderer.toneMappingExposure = 1.1;
-    container.appendChild(renderer.domElement);
-
-    // ── Pencahayaan Webcam Studio ──
-    const ambientLight = new THREE.AmbientLight(0xffffff, 1.6);
-    scene.add(ambientLight);
-
-    const keyLight = new THREE.DirectionalLight(0xfff6ed, 2.0);
-    keyLight.position.set(0.8, 2.0, 1.5);
-    scene.add(keyLight);
-
-    const fillLight = new THREE.DirectionalLight(0xe0f2fe, 1.2);
-    fillLight.position.set(-1.0, 1.2, 0.8);
-    scene.add(fillLight);
-
-    // Virtual Background Kantor Jepang Minimalis
-    const bgWall = new THREE.Mesh(
-      new THREE.PlaneGeometry(6, 4),
-      new THREE.MeshStandardMaterial({ color: 0x3f3f46, roughness: 0.9 })
-    );
-    bgWall.position.set(0, 1.4, -0.6);
-    scene.add(bgWall);
-
-    // Sandaran Kursi Kantor di belakang Sato-san
-    const chairBack = new THREE.Mesh(
-      new THREE.BoxGeometry(0.55, 0.65, 0.06),
-      new THREE.MeshStandardMaterial({ color: 0x18181b, roughness: 0.8 })
-    );
-    chairBack.position.set(0, 1.28, -0.12);
-    scene.add(chairBack);
-
-    // ── State Model Sato-san ──
-    let currentVrm = null;
     const clock = new THREE.Clock();
 
-    let blinkTimer = 0;
-    let blinkInterval = 3.0;
-    let isBlinking = false;
-    let blinkProgress = 0;
+    // ── Factory Helper untuk Setup Kamera & Scene Per Tile ──
+    function createTileScene(containerId) {
+      const container = document.getElementById(containerId);
+      const scene = new THREE.Scene();
+      scene.background = new THREE.Color(0x27272a);
 
-    let isSpeaking = false;
-    let talkTimer = 0;
+      const camera = new THREE.PerspectiveCamera(26, container.clientWidth / container.clientHeight, 0.1, 20.0);
+      camera.position.set(0.0, 1.34, 1.15); // Close-up portrait Zoom webcam
 
-    // Load File Sato-san.vrm
-    const loader = new GLTFLoader();
-    loader.register((parser) => new VRMLoaderPlugin(parser));
+      const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+      renderer.setSize(container.clientWidth, container.clientHeight);
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+      renderer.toneMapping = THREE.ACESFilmicToneMapping;
+      renderer.toneMappingExposure = 1.1;
+      container.appendChild(renderer.domElement);
 
-    loader.load(
-      '/models/sato-san.vrm',
-      (gltf) => {
-        const vrm = gltf.userData.vrm;
-        if (!vrm) return;
+      // Pencahayaan
+      const ambientLight = new THREE.AmbientLight(0xffffff, 1.6);
+      scene.add(ambientLight);
 
-        currentVrm = vrm;
-        VRMUtils.removeUnnecessaryVertices(gltf.scene);
-        VRMUtils.combineSkeletons(gltf.scene);
+      const keyLight = new THREE.DirectionalLight(0xfff6ed, 2.0);
+      keyLight.position.set(0.8, 2.0, 1.5);
+      scene.add(keyLight);
 
-        vrm.scene.rotation.y = 0; // Wajah lurus menatap kamera Zoom
-        scene.add(vrm.scene);
+      const fillLight = new THREE.DirectionalLight(0xe0f2fe, 1.2);
+      fillLight.position.set(-1.0, 1.2, 0.8);
+      scene.add(fillLight);
 
-        // Pose Duduk Alami menghadap webcam
-        applyZoomPose(vrm);
+      // Virtual Background Meeting Wall
+      const wall = new THREE.Mesh(
+        new THREE.PlaneGeometry(6, 4),
+        new THREE.MeshStandardMaterial({ color: 0x3f3f46, roughness: 0.9 })
+      );
+      wall.position.set(0, 1.4, -0.6);
+      scene.add(wall);
 
-        // Hilangkan loading
-        const loadingEl = document.getElementById('loading');
-        loadingEl.classList.add('opacity-0', 'pointer-events-none');
-        setTimeout(() => loadingEl.remove(), 400);
+      // Sandaran Kursi Kantor di belakang
+      const chair = new THREE.Mesh(
+        new THREE.BoxGeometry(0.55, 0.65, 0.06),
+        new THREE.MeshStandardMaterial({ color: 0x18181b, roughness: 0.8 })
+      );
+      chair.position.set(0, 1.28, -0.12);
+      scene.add(chair);
 
-        // Auto salam pertama saat Zoom dimulai
-        setTimeout(() => {
-          speakSato(
-            'こんにちは！佐藤です。Zoomミーティングへようこそ。声はよく聞こえますか？',
-            'Halo! Saya Sato. Selamat datang di Zoom meeting ini. Apakah suaraku terdengar jelas?'
-          );
-        }, 1000);
-      },
-      (p) => {
-        if (p.total > 0) {
-          const pct = Math.round((p.loaded / p.total) * 100);
-          document.getElementById('load-progress').textContent = `${pct}%`;
-        }
-      },
-      (err) => {
-        console.error('Error load vrm:', err);
-      }
-    );
+      return { container, scene, camera, renderer };
+    }
 
-    // Pose Webcam Zoom (Lengan turun ke bawah rileks di luar frame kamera)
+    // Buat dua scene terpisah untuk kedua karakter
+    const satoRoom = createTileScene('sato-canvas-container');
+    const yukiRoom = createTileScene('yuki-canvas-container');
+
+    // ── State Masing-masing Karakter ──
+    const stateSato = {
+      vrm: null,
+      blinkTimer: 0,
+      blinkInterval: 3.2,
+      isBlinking: false,
+      blinkProgress: 0,
+      isSpeaking: false,
+      talkTimer: 0
+    };
+
+    const stateYuki = {
+      vrm: null,
+      blinkTimer: 0,
+      blinkInterval: 2.8,
+      isBlinking: false,
+      blinkProgress: 0,
+      isSpeaking: false,
+      talkTimer: 0
+    };
+
+    // Pose Zoom Alami (Lengan turun santai menghadap webcam)
     function applyZoomPose(vrm) {
       if (!vrm || !vrm.humanoid) return;
-
       const leftUpperArm = vrm.humanoid.getNormalizedBoneNode('leftUpperArm');
       const rightUpperArm = vrm.humanoid.getNormalizedBoneNode('rightUpperArm');
       if (leftUpperArm) leftUpperArm.rotation.set(0, 0, -1.35);
@@ -285,149 +279,262 @@
       if (rightLowerArm) rightLowerArm.rotation.set(0, 0, -0.2);
     }
 
-    // Auto Blink
-    function updateBlink(delta) {
-      if (!currentVrm || !currentVrm.expressionManager) return;
-      blinkTimer += delta;
-      if (!isBlinking && blinkTimer >= blinkInterval) {
-        isBlinking = true;
-        blinkTimer = 0;
-        blinkProgress = 0;
-        blinkInterval = 2.5 + Math.random() * 3.5;
+    // ── Load Sato-san.vrm ──
+    const loaderSato = new GLTFLoader();
+    loaderSato.register((parser) => new VRMLoaderPlugin(parser));
+    loaderSato.load(
+      '/models/sato-san.vrm',
+      (gltf) => {
+        const vrm = gltf.userData.vrm;
+        if (!vrm) return;
+        stateSato.vrm = vrm;
+        VRMUtils.removeUnnecessaryVertices(gltf.scene);
+        VRMUtils.combineSkeletons(gltf.scene);
+        vrm.scene.rotation.y = 0;
+        satoRoom.scene.add(vrm.scene);
+        applyZoomPose(vrm);
+
+        const el = document.getElementById('loading-sato');
+        el.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => el.remove(), 400);
+      },
+      (p) => {
+        if (p.total > 0) {
+          const pct = Math.round((p.loaded / p.total) * 100);
+          document.getElementById('sato-progress').textContent = `${pct}%`;
+        }
+      },
+      (err) => console.error('Error load sato-san:', err)
+    );
+
+    // ── Load Yuki-chan.vrm ──
+    const loaderYuki = new GLTFLoader();
+    loaderYuki.register((parser) => new VRMLoaderPlugin(parser));
+    loaderYuki.load(
+      '/models/yuki-chan.vrm',
+      (gltf) => {
+        const vrm = gltf.userData.vrm;
+        if (!vrm) return;
+        stateYuki.vrm = vrm;
+        VRMUtils.removeUnnecessaryVertices(gltf.scene);
+        VRMUtils.combineSkeletons(gltf.scene);
+        vrm.scene.rotation.y = 0;
+        yukiRoom.scene.add(vrm.scene);
+        applyZoomPose(vrm);
+
+        const el = document.getElementById('loading-yuki');
+        el.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => el.remove(), 400);
+
+        // Sambutan otomatis saat meeting siap
+        setTimeout(() => {
+          speakSato(
+            'みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！由紀さんもよろしくお願いします。',
+            'Halo semuanya! Saya Sato. Hari ini mari mulai latihan percakapan lewat Zoom! Yuki-san, mohon bantuannya juga ya.',
+            () => {
+              setTimeout(() => {
+                speakYuki(
+                  'はい！アシスタントの由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
+                  'Siap! Saya Yuki sebagai asisten. Santai saja dan mari mengobrol dengan seru ya! Salam kenal semuanya!'
+                );
+              }, 800);
+            }
+          );
+        }, 1200);
+      },
+      (p) => {
+        if (p.total > 0) {
+          const pct = Math.round((p.loaded / p.total) * 100);
+          document.getElementById('yuki-progress').textContent = `${pct}%`;
+        }
+      },
+      (err) => console.error('Error load yuki-chan:', err)
+    );
+
+    // ── Helper Animasi Karakter ──
+    function updateCharacter(st, delta, elapsed, isAssistant = false) {
+      if (!st.vrm) return;
+      const vrm = st.vrm;
+
+      // 1. Kedipan Mata
+      st.blinkTimer += delta;
+      if (!st.isBlinking && st.blinkTimer >= st.blinkInterval) {
+        st.isBlinking = true;
+        st.blinkTimer = 0;
+        st.blinkProgress = 0;
+        st.blinkInterval = 2.5 + Math.random() * 3.5;
       }
-      if (isBlinking) {
-        blinkProgress += delta * 12;
-        const w = Math.sin(Math.min(Math.PI, blinkProgress));
-        currentVrm.expressionManager.setValue('blink', w);
-        if (blinkProgress >= Math.PI) {
-          currentVrm.expressionManager.setValue('blink', 0);
-          isBlinking = false;
+      if (st.isBlinking && vrm.expressionManager) {
+        st.blinkProgress += delta * 12;
+        const w = Math.sin(Math.min(Math.PI, st.blinkProgress));
+        vrm.expressionManager.setValue('blink', w);
+        if (st.blinkProgress >= Math.PI) {
+          vrm.expressionManager.setValue('blink', 0);
+          st.isBlinking = false;
         }
       }
+
+      // 2. Lipsync Berbicara
+      if (vrm.expressionManager) {
+        if (st.isSpeaking) {
+          st.talkTimer += delta * 15;
+          const aa = Math.max(0, Math.sin(st.talkTimer) * 0.7);
+          vrm.expressionManager.setValue('aa', aa);
+        } else {
+          const cur = vrm.expressionManager.getValue('aa');
+          if (cur > 0) vrm.expressionManager.setValue('aa', Math.max(0, cur - delta * 5));
+        }
+      }
+
+      // 3. Pose Zoom & Natural Idle
+      applyZoomPose(vrm);
+      if (vrm.humanoid) {
+        const spine = vrm.humanoid.getNormalizedBoneNode('spine');
+        if (spine) {
+          spine.rotation.x = Math.sin(elapsed * (isAssistant ? 1.7 : 1.5)) * 0.015;
+          spine.rotation.y = Math.cos(elapsed * (isAssistant ? 0.9 : 0.7)) * 0.012;
+        }
+        const head = vrm.humanoid.getNormalizedBoneNode('head');
+        if (head) {
+          head.rotation.x = Math.sin(elapsed * (isAssistant ? 1.4 : 1.2)) * 0.018;
+          if (isAssistant) {
+            head.rotation.z = Math.sin(elapsed * 0.8) * 0.03; // Karakter Yuki sedikit memiringkan kepala menggemaskan
+          }
+        }
+      }
+
+      vrm.update(delta);
     }
 
-    // Gerak Halus Napas & Gestur Mendengarkan
-    function updateNaturalIdle(elapsedTime) {
-      if (!currentVrm || !currentVrm.humanoid) return;
-      const spine = currentVrm.humanoid.getNormalizedBoneNode('spine');
-      if (spine) {
-        spine.rotation.x = Math.sin(elapsedTime * 1.6) * 0.015;
-        spine.rotation.y = Math.cos(elapsedTime * 0.7) * 0.012;
-      }
-      const head = currentVrm.humanoid.getNormalizedBoneNode('head');
-      if (head) {
-        // Sedikit mengangguk alami saat percakapan
-        head.rotation.x = Math.sin(elapsedTime * 1.3) * 0.018;
-      }
-    }
-
-    // Lipsync Berbicara
-    function updateSpeech(delta) {
-      if (!currentVrm || !currentVrm.expressionManager) return;
-      if (isSpeaking) {
-        talkTimer += delta * 15;
-        const aa = Math.max(0, Math.sin(talkTimer) * 0.7);
-        currentVrm.expressionManager.setValue('aa', aa);
-      } else {
-        const cur = currentVrm.expressionManager.getValue('aa');
-        if (cur > 0) currentVrm.expressionManager.setValue('aa', Math.max(0, cur - delta * 5));
-      }
-    }
-
-    // Animation Loop
+    // ── Main Render Loop ──
     function animate() {
       requestAnimationFrame(animate);
       const delta = clock.getDelta();
       const elapsed = clock.getElapsedTime();
 
-      if (currentVrm) {
-        updateBlink(delta);
-        updateSpeech(delta);
-        applyZoomPose(currentVrm);
-        updateNaturalIdle(elapsed);
-        currentVrm.update(delta);
-      }
+      // Render Sato-san Tile
+      updateCharacter(stateSato, delta, elapsed, false);
+      satoRoom.renderer.render(satoRoom.scene, satoRoom.camera);
 
-      renderer.render(scene, camera);
+      // Render Yuki-chan Tile
+      updateCharacter(stateYuki, delta, elapsed, true);
+      yukiRoom.renderer.render(yukiRoom.scene, yukiRoom.camera);
     }
     animate();
 
     // Resize Handler
     window.addEventListener('resize', () => {
-      camera.aspect = container.clientWidth / container.clientHeight;
-      camera.updateProjectionMatrix();
-      renderer.setSize(container.clientWidth, container.clientHeight);
+      [satoRoom, yukiRoom].forEach((rm) => {
+        rm.camera.aspect = rm.container.clientWidth / rm.container.clientHeight;
+        rm.camera.updateProjectionMatrix();
+        rm.renderer.setSize(rm.container.clientWidth, rm.container.clientHeight);
+      });
     });
 
-    // ── Fungsi Suara Sato-san (Speech Synthesizer + Active Speaker Border) ──
+    // ── Suara & Subtitle Percakapan Dua Arah ──
     const dialogBox = document.getElementById('dialog-box');
+    const dialogSpeaker = document.getElementById('dialog-speaker');
     const dialogJp = document.getElementById('dialog-jp');
     const dialogId = document.getElementById('dialog-id');
-    const satoTile = document.getElementById('sato-tile');
 
-    function speakSato(jpText, idText) {
+    const satoTile = document.getElementById('sato-tile');
+    const yukiTile = document.getElementById('yuki-tile');
+
+    function speakSato(jpText, idText, onComplete) {
+      yukiTile.classList.remove('active-speaker');
+      satoTile.classList.add('active-speaker');
+
+      dialogSpeaker.textContent = 'Sato-san (Sensei)';
+      dialogSpeaker.className = 'text-[11px] font-bold text-sky-400 mb-0.5 uppercase tracking-wider';
       dialogJp.textContent = jpText;
       dialogId.textContent = idText;
       dialogBox.classList.remove('hidden');
 
-      // Indikator Active Speaker Zoom (Kotak Hijau di sekeliling video Sato)
-      satoTile.classList.add('active-speaker');
+      playTTS(jpText, 1.0, 1.0, () => {
+        stateSato.isSpeaking = true;
+        if (stateSato.vrm?.expressionManager) stateSato.vrm.expressionManager.setValue('happy', 0.5);
+      }, () => {
+        stateSato.isSpeaking = false;
+        satoTile.classList.remove('active-speaker');
+        if (stateSato.vrm?.expressionManager) stateSato.vrm.expressionManager.setValue('happy', 0);
+        if (onComplete) onComplete();
+      });
+    }
 
+    function speakYuki(jpText, idText, onComplete) {
+      satoTile.classList.remove('active-speaker');
+      yukiTile.classList.add('active-speaker');
+
+      dialogSpeaker.textContent = 'Yuki-chan (Assistant)';
+      dialogSpeaker.className = 'text-[11px] font-bold text-pink-400 mb-0.5 uppercase tracking-wider';
+      dialogJp.textContent = jpText;
+      dialogId.textContent = idText;
+      dialogBox.classList.remove('hidden');
+
+      // Yuki nada suara sedikit lebih tinggi/ceria
+      playTTS(jpText, 1.05, 1.2, () => {
+        stateYuki.isSpeaking = true;
+        if (stateYuki.vrm?.expressionManager) stateYuki.vrm.expressionManager.setValue('happy', 0.7);
+      }, () => {
+        stateYuki.isSpeaking = false;
+        yukiTile.classList.remove('active-speaker');
+        if (stateYuki.vrm?.expressionManager) stateYuki.vrm.expressionManager.setValue('happy', 0);
+        if (onComplete) onComplete();
+      });
+    }
+
+    function playTTS(text, rate, pitch, onStart, onEnd) {
       if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
-        const u = new SpeechSynthesisUtterance(jpText);
+        const u = new SpeechSynthesisUtterance(text);
         u.lang = 'ja-JP';
-        u.rate = 1.0;
-
-        u.onstart = () => {
-          isSpeaking = true;
-          if (currentVrm && currentVrm.expressionManager) {
-            currentVrm.expressionManager.setValue('happy', 0.5);
-          }
-        };
-
-        u.onend = () => {
-          isSpeaking = false;
-          satoTile.classList.remove('active-speaker');
-          if (currentVrm && currentVrm.expressionManager) {
-            currentVrm.expressionManager.setValue('happy', 0);
-          }
-        };
-
-        u.onerror = () => {
-          isSpeaking = false;
-          satoTile.classList.remove('active-speaker');
-        };
-
+        u.rate = rate || 1.0;
+        u.pitch = pitch || 1.0;
+        u.onstart = onStart;
+        u.onend = onEnd;
+        u.onerror = onEnd;
         window.speechSynthesis.speak(u);
       } else {
-        isSpeaking = true;
-        setTimeout(() => {
-          isSpeaking = false;
-          satoTile.classList.remove('active-speaker');
-        }, 3500);
+        onStart();
+        setTimeout(onEnd, 3500);
       }
     }
 
-    // ── Pilihan Topik Pembicaraan Kaiwa ──
-    document.getElementById('btn-kaiwa-jiko').addEventListener('click', () => {
+    // ── Tombol Interaksi Skenario Kaiwa ──
+    document.getElementById('btn-kaiwa-intro').addEventListener('click', () => {
       speakSato(
-        'はじめまして！私の名前は佐藤です。あなたの自己紹介を聞かせてください。趣味は何ですか？',
-        'Senang berkenalan dengan Anda! Nama saya Sato. Boleh ceritakan tentang diri Anda? Apa hobi Anda?'
+        'まずは自己紹介から始めましょうか。出身地やお名前を教えてください。',
+        'Mari kita mulai dari perkenalan diri terlebih dahulu. Bisakah beritahu nama dan daerah asal Anda?',
+        () => {
+          setTimeout(() => {
+            speakYuki(
+              '緊張しなくて大丈夫ですよ！「はじめまして、〜です」と言ってみましょう！',
+              'Tidak perlu gugup kok! Coba katakan "Hajimemashite, (nama) desu" ya!'
+            );
+          }, 600);
+        }
       );
     });
 
-    document.getElementById('btn-kaiwa-aisatsu').addEventListener('click', () => {
-      speakSato(
-        'おはようございます！今日も一日お仕事頑張りましょう。何か質問や分からないことはありますか？',
-        'Selamat pagi! Mari bersemangat kerja hari ini. Apakah ada pertanyaan atau hal yang belum dipahami?'
+    document.getElementById('btn-kaiwa-tips').addEventListener('click', () => {
+      speakYuki(
+        '日本語で大切なのは大きな声で元気に挨拶することです！「はい！」と返事をするだけでも好印象ですよ！',
+        'Hal terpenting dalam bahasa Jepang adalah menyapa dengan suara jelas dan bersemangat! Menjawab "Hai!" saja sudah memberikan kesan yang sangat baik lho!'
       );
     });
 
-    document.getElementById('btn-kaiwa-shitsumon').addEventListener('click', () => {
+    document.getElementById('btn-kaiwa-kerja').addEventListener('click', () => {
       speakSato(
-        '作業の手順についてですね。まずは安全第一で確認しましょう。どの部分が気になりますか？',
-        'Mengenai prosedur kerja ya. Yang terpenting utamakan keselamatan kerja terlebih dahulu. Bagian mana yang ingin Anda tanyakan?'
+        '職場の基本挨拶を練習しましょう。仕事を始めるときは「よろしくお願いします」、終わるときは「お疲れ様でした」です。',
+        'Mari latih salam dasar di tempat kerja. Saat mulai bekerja ucapkan "Yoroshiku onegaishimasu", dan saat selesai ucapkan "Otsukaresama deshita".',
+        () => {
+          setTimeout(() => {
+            speakYuki(
+              '一緒に声に出して練習してみましょう！せーの、「お疲れ様でした！」',
+              'Ayo kita ucapkan bersama-sama! Satu, dua, tiga: "Otsukaresama deshita!"'
+            );
+          }, 600);
+        }
       );
     });
 
@@ -443,9 +550,9 @@
         userWebcam.srcObject = stream;
         userWebcam.classList.remove('hidden');
         avatarFallback.classList.add('hidden');
-        btnToggleCam.querySelector('i').className = 'fa-solid fa-video text-base text-emerald-400';
+        btnToggleCam.querySelector('i').className = 'fa-solid fa-video text-sm text-emerald-400';
       } catch (e) {
-        console.warn('Webcam tidak dapat diakses / ditolak:', e);
+        console.warn('Webcam tidak dapat diakses:', e);
       }
     }
 
@@ -457,7 +564,7 @@
         userWebcam.srcObject = null;
         userWebcam.classList.add('hidden');
         avatarFallback.classList.remove('hidden');
-        btnToggleCam.querySelector('i').className = 'fa-solid fa-video-slash text-base text-rose-400';
+        btnToggleCam.querySelector('i').className = 'fa-solid fa-video-slash text-sm text-rose-400';
       } else {
         startWebcam();
       }
@@ -469,10 +576,10 @@
     btnToggleMic.addEventListener('click', () => {
       isMuted = !isMuted;
       if (isMuted) {
-        btnToggleMic.querySelector('i').className = 'fa-solid fa-microphone-slash text-base text-rose-400';
+        btnToggleMic.querySelector('i').className = 'fa-solid fa-microphone-slash text-sm text-rose-400';
         btnToggleMic.querySelector('span').textContent = 'Unmute';
       } else {
-        btnToggleMic.querySelector('i').className = 'fa-solid fa-microphone text-base text-emerald-400';
+        btnToggleMic.querySelector('i').className = 'fa-solid fa-microphone text-sm text-emerald-400';
         btnToggleMic.querySelector('span').textContent = 'Mute';
       }
     });
