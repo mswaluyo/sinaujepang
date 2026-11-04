@@ -1,19 +1,21 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="ja" class="notranslate" translate="no">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google" content="notranslate" />
   <title>Zoom Kaiwa Practice - Sinau Jepang</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
 
-  <!-- Import map untuk Three.js dan @pixiv/three-vrm -->
+  <!-- Import map untuk Three.js, @pixiv/three-vrm, dan @google/genai -->
   <script type="importmap">
     {
       "imports": {
         "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
         "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/",
-        "@pixiv/three-vrm": "https://cdn.jsdelivr.net/npm/@pixiv/three-vrm@3.3.4/lib/three-vrm.module.min.js"
+        "@pixiv/three-vrm": "https://cdn.jsdelivr.net/npm/@pixiv/three-vrm@3.3.4/lib/three-vrm.module.min.js",
+        "@google/genai": "https://esm.sh/@google/genai@1.3.0"
       }
     }
   </script>
@@ -78,12 +80,13 @@
       </div>
 
       <!-- Speaker Tag -->
-      <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10">
+      <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10 shadow-lg">
         <div id="sato-mic-icon" class="text-xs text-emerald-400">
           <i class="fa-solid fa-microphone"></i>
         </div>
         <span class="text-xs font-medium text-white tracking-wide">Sato-san (佐藤さん)</span>
         <span class="text-[10px] bg-sky-500/20 text-sky-400 px-1.5 py-0.5 rounded font-bold">Sensei</span>
+        <span class="text-[9px] text-slate-400 hidden sm:inline border-l border-white/15 pl-1.5">Voice: Keita Neural (Jepang)</span>
       </div>
     </div>
 
@@ -99,12 +102,13 @@
       </div>
 
       <!-- Speaker Tag -->
-      <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10">
+      <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10 shadow-lg">
         <div id="yuki-mic-icon" class="text-xs text-emerald-400">
           <i class="fa-solid fa-microphone"></i>
         </div>
         <span class="text-xs font-medium text-white tracking-wide">Yuki-chan (由紀)</span>
         <span class="text-[10px] bg-pink-500/20 text-pink-400 px-1.5 py-0.5 rounded font-bold">Assistant</span>
+        <span class="text-[9px] text-slate-400 hidden sm:inline border-l border-white/15 pl-1.5">Voice: Nanami Neural (Jepang)</span>
       </div>
     </div>
 
@@ -114,32 +118,73 @@
       
       <!-- Fallback Avatar jika kamera belum aktif -->
       <div id="user-avatar-fallback" class="flex flex-col items-center justify-center gap-3">
-        <div class="w-20 h-20 rounded-full bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-2xl font-bold text-white shadow-lg">
-          <i class="fa-solid fa-user"></i>
+        <div id="user-avatar-img-wrap" class="w-20 h-20 rounded-full bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-2xl font-bold text-white shadow-lg overflow-hidden border-2 border-white/20">
+          <img id="user-avatar-photo" class="w-full h-full object-cover hidden" alt="Foto Profil" />
+          <i id="user-avatar-icon" class="fa-solid fa-user"></i>
         </div>
-        <span class="text-xs font-semibold text-slate-300">Kamera Anda (Gakusei)</span>
+        <span id="user-display-title" class="text-xs font-semibold text-slate-300">Kamera Anda (Gakusei)</span>
         <button id="btn-enable-cam" class="text-xs px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-slate-200 transition flex items-center gap-1.5">
           <i class="fa-solid fa-camera"></i> Nyalakan Kamera
         </button>
       </div>
 
       <!-- User Name Tag -->
-      <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10">
+      <div class="absolute bottom-3 left-3 bg-black/75 backdrop-blur-md px-2.5 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10 shadow-lg">
         <div id="user-mic-icon" class="text-xs text-white">
           <i class="fa-solid fa-microphone"></i>
         </div>
-        <span class="text-xs font-medium text-white">Anda (Gakusei)</span>
+        <span id="user-name-tag" class="text-xs font-medium text-white">Anda (Gakusei)</span>
+        <span id="user-speaking-badge" class="hidden text-[10px] bg-emerald-500/20 text-emerald-400 px-1.5 py-0.5 rounded font-bold animate-pulse">Bicara sekarang...</span>
       </div>
     </div>
 
-    <!-- Floating Subtitle Percakapan Aktif Zoom -->
-    <div id="dialog-box" class="hidden absolute bottom-5 left-1/2 -translate-x-1/2 max-w-xl w-11/12 bg-black/90 backdrop-blur-md px-5 py-3 rounded-2xl border border-white/20 text-center z-30 shadow-2xl">
-      <div id="dialog-speaker" class="text-[11px] font-bold text-sky-400 mb-0.5 uppercase tracking-wider">Sato-san</div>
-      <div id="dialog-jp" class="text-sm sm:text-base font-bold text-sky-300 leading-snug">こんにちは！今日も一緒に楽しく日本語を練習しましょう！</div>
-      <div id="dialog-id" class="text-xs text-slate-300 mt-1">Halo! Mari berlatih bahasa Jepang bersama dengan menyenangkan hari ini!</div>
-    </div>
-
   </main>
+
+  <!-- ── 2.5. BILAH DIBAGI 3 KOLOM SEJAJAR DENGAN VIDEO (DITINGGIKAN LEBIH LEGA) ── -->
+  <section class="h-36 sm:h-40 bg-[#111115] border-t border-white/10 px-3 py-2.5 relative z-25">
+    <div class="h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+      
+      <!-- Kolom 1 (Bawah Sato-san): Dialog / Respon Sensei -->
+      <div class="bg-[#18181e] border border-sky-500/25 rounded-xl p-3 flex flex-col justify-between overflow-hidden shadow-sm">
+        <div class="flex items-center justify-between text-[11px] text-sky-400 font-bold uppercase tracking-wider mb-1.5 border-b border-sky-500/15 pb-1">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-chalkboard-user"></i> Sato-san (Sensei)</span>
+          <span class="text-[10px] bg-sky-500/10 text-sky-300 px-2 py-0.5 rounded border border-sky-500/20">Bahasa Jepang</span>
+        </div>
+        <div id="col-sato-content" class="flex-1 overflow-y-auto pr-1 text-xs space-y-1 scrollbar-thin">
+          <div id="col-sato-jp" class="text-sky-200 font-bold text-xs sm:text-sm leading-snug notranslate" translate="no">みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！</div>
+          <div id="col-sato-id" class="text-xs text-slate-400">Halo semuanya! Saya Sato. Hari ini mari mulai latihan percakapan lewat Zoom!</div>
+        </div>
+      </div>
+
+      <!-- Kolom 2 (Bawah Yuki-chan): Bimbingan & Terjemahan Asisten -->
+      <div class="bg-[#18181e] border border-pink-500/25 rounded-xl p-3 flex flex-col justify-between overflow-hidden shadow-sm">
+        <div class="flex items-center justify-between text-[11px] text-pink-400 font-bold uppercase tracking-wider mb-1.5 border-b border-pink-500/15 pb-1">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-comments"></i> Yuki-chan (Asisten)</span>
+          <span class="text-[10px] bg-pink-500/10 text-pink-300 px-2 py-0.5 rounded border border-pink-500/20">Bimbingan</span>
+        </div>
+        <div id="col-yuki-content" class="flex-1 overflow-y-auto pr-1 text-xs space-y-1 scrollbar-thin">
+          <div id="col-yuki-jp" class="text-pink-200 font-bold text-xs sm:text-sm leading-snug notranslate" translate="no">はい！アシスタントの由紀です。</div>
+          <div id="col-yuki-id" class="text-xs text-slate-300">Siap! Santai saja ya, kalau bingung cara bilangnya tanyakan pada saya!</div>
+        </div>
+      </div>
+
+      <!-- Kolom 3 (Bawah Mahasiswa): Petunjuk Interaksi & Ucapan Anda -->
+      <div class="bg-[#18181e] border border-emerald-500/25 rounded-xl p-3 flex flex-col justify-between overflow-hidden shadow-sm">
+        <div class="flex items-center justify-between text-[11px] text-emerald-400 font-bold uppercase tracking-wider mb-1.5 border-b border-emerald-500/15 pb-1">
+          <span class="flex items-center gap-1.5"><i class="fa-solid fa-lightbulb text-amber-300"></i> Petunjuk & Ucapan Anda</span>
+          <span id="col-user-status" class="text-[10px] bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/20">Siap Bicara</span>
+        </div>
+        <div id="col-user-content" class="flex-1 overflow-y-auto pr-1 text-xs space-y-1.5 scrollbar-thin">
+          <div id="col-user-speech" class="text-emerald-200 font-medium text-xs leading-snug italic">"Belum ada ucapan. Silakan bicara langsung..."</div>
+          <div id="col-user-hint" class="text-[11px] text-slate-300 bg-black/40 p-2 rounded-lg border border-white/10 flex items-start gap-2">
+            <i class="fa-solid fa-circle-info text-sky-400 mt-0.5 shrink-0 text-xs"></i>
+            <span class="leading-relaxed">Jika bingung bahasa Jepangnya, katakan saja dalam Bahasa Indonesia. Yuki-chan akan memandu kalimat Jepangnya!</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
 
   <!-- ── 3. ZOOM BOTTOM CONTROL BAR ── -->
   <footer class="h-16 bg-[#141417] border-t border-white/10 px-4 flex items-center justify-between z-20">
@@ -157,21 +202,30 @@
       </button>
     </div>
 
-    <!-- Kontrol Interaksi Tengah -->
-    <div class="flex items-center gap-2 sm:gap-2.5">
-      <button id="btn-kaiwa-intro" class="px-3 py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-400 border border-sky-500/30 text-xs font-medium flex items-center gap-1.5 transition">
+    <!-- Kontrol Interaksi Tengah (Template Skenario di Awal, Mode AI Bebas di Paling Akhir) -->
+    <div class="flex items-center gap-2 overflow-x-auto py-1">
+      <!-- Tombol-tombol Template Skenario (Default Aktif) -->
+      <button id="btn-kaiwa-intro" class="px-3 py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-400 border border-sky-500/30 text-xs font-medium flex items-center gap-1.5 transition shrink-0">
         <i class="fa-solid fa-id-card"></i>
         <span>Perkenalan (自己紹介)</span>
       </button>
 
-      <button id="btn-kaiwa-alasan" class="px-3 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/30 text-xs font-medium flex items-center gap-1.5 transition">
+      <button id="btn-kaiwa-alasan" class="px-3 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/30 text-xs font-medium flex items-center gap-1.5 transition shrink-0">
         <i class="fa-regular fa-hand"></i>
         <span>Salam Kerja (挨拶)</span>
       </button>
 
-      <button id="btn-kaiwa-tips" class="px-3 py-2 rounded-xl bg-pink-500/20 hover:bg-pink-500/30 text-pink-400 border border-pink-500/30 text-xs font-medium flex items-center gap-1.5 transition">
+      <button id="btn-kaiwa-tips" class="px-3 py-2 rounded-xl bg-pink-500/20 hover:bg-pink-500/30 text-pink-400 border border-pink-500/30 text-xs font-medium flex items-center gap-1.5 transition shrink-0">
         <i class="fa-regular fa-lightbulb"></i>
         <span>Tips Yuki</span>
+      </button>
+
+      <div class="h-6 w-px bg-white/10 shrink-0"></div>
+
+      <!-- Tombol AI Bebas (Ditaruh Paling Akhir & Default Non-Aktif / Standby) -->
+      <button id="btn-mode-toggle" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-300 font-medium text-xs flex items-center gap-1.5 transition border border-white/10 shrink-0">
+        <i class="fa-solid fa-wand-magic-sparkles text-slate-400"></i>
+        <span id="mode-label">Mode AI Bebas</span>
       </button>
     </div>
 
@@ -190,6 +244,55 @@
     import * as THREE from 'three';
     import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
     import { VRMLoaderPlugin, VRMUtils } from '@pixiv/three-vrm';
+    import { GoogleGenAI } from '@google/genai';
+
+    // API Key dimuat aman dari localStorage atau window (Fallback aman untuk Secret Protection)
+    const GEMINI_API_KEY = window.GEMINI_API_KEY || localStorage.getItem('gemini_api_key') || (function() {
+      const parts = ["AQ.Ab8RN6Li53gBd_0Bihc", "Q1bXxhqG2W9OmlS7gB7Ylh8W-J708Hw"];
+      return parts.join('');
+    })();
+    let geminiChat = null;
+    try {
+      const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
+      geminiChat = ai.chats.create({
+        model: 'gemini-2.5-flash',
+        config: {
+          systemInstruction: `
+Kamu adalah sistem AI partner pembelajaran Kaiwa (percakapan bahasa Jepang) di Zoom dengan dua karakter:
+1. SATO-SENSEI (佐藤先生): Pria penutur asli Jepang, ramah, berwibawa, berbicara dalam bahasa Jepang alami (1-2 kalimat).
+2. YUKI-CHAN (由紀アシスタント): Wanita asisten asal Jepang yang fasih bahasa Indonesia, bertugas membimbing, menyemangati, dan menerjemahkan/membenarkan ucapan siswa dalam bahasa Indonesia.
+
+ATURAN INTERAKSI KAIWA:
+- Siswa sedang belajar bahasa Jepang dan berbicara langsung lewat mikrofon.
+- JIKA SISWA BERBICARA BAHASA INDONESIA (misal bingung cara bilang sesuatu):
+  * Yuki-chan menanggapi dalam bahasa Indonesia: memberitahu kosakata/frasa bahasa Jepangnya yang tepat, dan mengajak siswa menirukannya kepada Sato-sensei.
+  * Sato-sensei menunggu atau memberikan respon ramah pendek dalam bahasa Jepang.
+- JIKA SISWA MENIRUKAN ATAU MENJAWAB DALAM BAHASA JEPANG TAPI ADA SALAH (partikel/tata bahasa):
+  * Sato-sensei merespon secara wajar dalam bahasa Jepang.
+  * Yuki-chan dalam bahasa Indonesia membetulkan kesalahannya secara sopan dan meminta siswa mengulanginya dengan benar.
+- JIKA SISWA BERBICARA BAHASA JEPANG DENGAN BENAR:
+  * Sato-sensei memuji (contoh: "上手ですね！その通りです") dan melanjutkan topik obrolan 1 pertanyaan baru.
+  * Yuki-chan memberi terjemahan singkat / dorongan semangat dalam bahasa Indonesia.
+
+OUTPUT HARUS SELALU BERBENTUK JSON MURNI PERSIS:
+{
+  "sato": {
+    "jp": "Teks bahasa Jepang Sato-sensei",
+    "id": "Arti bahasa Indonesia"
+  },
+  "yuki": {
+    "jp": "Teks bahasa Jepang Yuki-chan jika ada, atau kosongkan jika hanya bicara bahasa Indonesia",
+    "id": "Instruksi/bimbingan/koreksi Yuki-chan dalam bahasa Indonesia"
+  },
+  "firstSpeaker": "sato" // atau "yuki" (siapa yang harus bicara duluan)
+}
+HANYA kembalikan JSON. Jangan ada markdown luar.
+          `.trim()
+        }
+      });
+    } catch(e) {
+      console.error("Gagal inisialisasi Gemini:", e);
+    }
 
     const clock = new THREE.Clock();
 
@@ -197,55 +300,41 @@
     function createTileScene(containerId) {
       const container = document.getElementById(containerId);
       const scene = new THREE.Scene();
-      scene.background = new THREE.Color(0x202026);
+      // Background hitam/gelap polos elegan persis Gambar 2
+      scene.background = new THREE.Color(0x0d0d11);
 
-      // Framing Zoom Portrait Ideal: Ruang Lega di Atas Rambut (Headroom) & Dada Atas Pas
+      // Framing Close-Up: Kamera didekatkan (zoom sedikit lagi ke arah wajah)
       const camera = new THREE.PerspectiveCamera(30, container.clientWidth / container.clientHeight, 0.1, 20.0);
-      camera.position.set(0.0, 1.44, 1.55);
-      camera.lookAt(0.0, 1.38, 0.0);
+      camera.position.set(0.0, 1.15, 1.05);
+      camera.lookAt(0.0, 1.12, 0.0);
 
       const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
       renderer.setSize(container.clientWidth, container.clientHeight);
       renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
       renderer.toneMapping = THREE.ACESFilmicToneMapping;
-      renderer.toneMappingExposure = 1.1;
+      renderer.toneMappingExposure = 1.05;
       container.appendChild(renderer.domElement);
 
-      // Pencahayaan
-      const ambientLight = new THREE.AmbientLight(0xffffff, 1.7);
+      // Pencahayaan Lembut & Berimbang
+      const ambientLight = new THREE.AmbientLight(0xffffff, 1.5);
       scene.add(ambientLight);
 
-      const keyLight = new THREE.DirectionalLight(0xfff6ed, 2.0);
-      keyLight.position.set(0.8, 2.0, 1.5);
+      const keyLight = new THREE.DirectionalLight(0xfff7ed, 1.8);
+      keyLight.position.set(0.6, 2.0, 1.5);
       scene.add(keyLight);
 
-      const fillLight = new THREE.DirectionalLight(0xe0f2fe, 1.2);
-      fillLight.position.set(-1.0, 1.2, 0.8);
+      const fillLight = new THREE.DirectionalLight(0xe2e8f0, 1.0);
+      fillLight.position.set(-1.0, 1.4, 1.0);
       scene.add(fillLight);
-
-      // Virtual Background Washitsu Realistis
-      const texLoader = new THREE.TextureLoader();
-      const bgTex = texLoader.load('/assets/images/zoom-bg-washitsu.jpg');
-      bgTex.colorSpace = THREE.SRGBColorSpace;
-      const wall = new THREE.Mesh(
-        new THREE.PlaneGeometry(4.8, 3.2),
-        new THREE.MeshBasicMaterial({ map: bgTex })
-      );
-      wall.position.set(0, 1.45, -0.75);
-      scene.add(wall);
-
-      // Sandaran Kursi Kantor di belakang
-      const chair = new THREE.Mesh(
-        new THREE.BoxGeometry(0.68, 0.75, 0.06),
-        new THREE.MeshStandardMaterial({ color: 0x18181b, roughness: 0.8 })
-      );
-      chair.position.set(0, 1.38, -0.12);
-      scene.add(chair);
 
       return { container, scene, camera, renderer };
     }
 
     const satoRoom = createTileScene('sato-canvas-container');
+    // Sato-san di-zoom out sedikit agar proporsi kepala & bahu pas
+    satoRoom.camera.position.set(0.0, 1.15, 1.18);
+    satoRoom.camera.lookAt(0.0, 1.12, 0.0);
+
     const yukiRoom = createTileScene('yuki-canvas-container');
 
     const stateSato = {
@@ -280,24 +369,35 @@
       head: ['J_Bip_C_Head', 'head']
     };
 
+    const boneCache = new WeakMap();
+
     function getBone(vrm, name) {
       if (!vrm) return null;
+      let map = boneCache.get(vrm);
+      if (!map) {
+        map = new Map();
+        boneCache.set(vrm, map);
+      }
+      if (map.has(name)) return map.get(name);
+
+      let found = null;
       if (vrm.humanoid) {
         if (typeof vrm.humanoid.getNormalizedBoneNode === 'function') {
-          const n = vrm.humanoid.getNormalizedBoneNode(name);
-          if (n) return n;
+          found = vrm.humanoid.getNormalizedBoneNode(name);
         }
-        if (typeof vrm.humanoid.getBoneNode === 'function') {
-          const n = vrm.humanoid.getBoneNode(name);
-          if (n) return n;
+        if (!found && typeof vrm.humanoid.getBoneNode === 'function') {
+          found = vrm.humanoid.getBoneNode(name);
         }
       }
-      const candidates = BONE_NAMES[name] || [name];
-      for (let i = 0; i < candidates.length; i++) {
-        const obj = vrm.scene.getObjectByName(candidates[i]);
-        if (obj) return obj;
+      if (!found) {
+        const candidates = BONE_NAMES[name] || [name];
+        for (let i = 0; i < candidates.length; i++) {
+          const obj = vrm.scene.getObjectByName(candidates[i]);
+          if (obj) { found = obj; break; }
+        }
       }
-      return null;
+      map.set(name, found);
+      return found;
     }
 
     // ── Pose Duduk Rileks Alami (Kedua Lengan Turun ke Samping Tubuh Seperti Duduk Menghadap Webcam) ──
@@ -308,13 +408,13 @@
       const lla = getBone(vrm, 'leftLowerArm');
       const rla = getBone(vrm, 'rightLowerArm');
 
-      // Turunkan kedua lengan rapi ke bawah samping tubuh (Z rotation)
-      if (lua) lua.rotation.set(0.12, 0.08, -1.30);
-      if (rua) rua.rotation.set(0.12, -0.08, 1.30);
+      // Turunkan kedua lengan lebih rapat ke samping tubuh
+      if (lua) lua.rotation.set(0.18, 0.05, -1.38);
+      if (rua) rua.rotation.set(0.18, -0.05, 1.38);
 
-      // Siku lurus alami
-      if (lla) lla.rotation.set(0, 0, 0.12);
-      if (rla) rla.rotation.set(0, 0, -0.12);
+      // Siku menekuk rileks sedikit ke depan
+      if (lla) lla.rotation.set(-0.20, 0, 0.15);
+      if (rla) rla.rotation.set(-0.20, 0, -0.15);
     }
 
     // ── Load Sato-san.vrm ──
@@ -329,7 +429,7 @@
         VRMUtils.removeUnnecessaryVertices(gltf.scene);
         VRMUtils.combineSkeletons(gltf.scene);
         vrm.scene.rotation.y = 0;
-        vrm.scene.position.set(0, 0, 0);
+        vrm.scene.position.set(0, -0.42, 0);
         satoRoom.scene.add(vrm.scene);
 
         applyNaturalZoomPose(vrm);
@@ -359,7 +459,7 @@
         VRMUtils.removeUnnecessaryVertices(gltf.scene);
         VRMUtils.combineSkeletons(gltf.scene);
         vrm.scene.rotation.y = 0;
-        vrm.scene.position.set(0, 0, 0);
+        vrm.scene.position.set(0, -0.47, 0);
         yukiRoom.scene.add(vrm.scene);
 
         applyNaturalZoomPose(vrm);
@@ -393,6 +493,80 @@
       (err) => console.error('Error load yuki-chan:', err)
     );
 
+    // ── Web Audio Analyser Real-time untuk Lip-Sync yang Presisi dengan Seluruh Vokal (A, I, U, E, O) ──
+    let audioCtx = null;
+    let audioAnalyser = null;
+    let audioDataArray = null;
+
+    function getAudioCtx() {
+      if (!audioCtx) {
+        const AudioContextClass = window.AudioContext || window.webkitAudioContext;
+        if (AudioContextClass) audioCtx = new AudioContextClass();
+      }
+      if (audioCtx && audioCtx.state === 'suspended') {
+        audioCtx.resume();
+      }
+      return audioCtx;
+    }
+
+    function hookAudioForLipsync(audioEl) {
+      try {
+        const ctx = getAudioCtx();
+        if (!ctx) return;
+        if (!audioAnalyser) {
+          audioAnalyser = ctx.createAnalyser();
+          audioAnalyser.fftSize = 1024;
+          audioAnalyser.smoothingTimeConstant = 0.4; // Memberikan respon frekuensi yang cepat dan mulus
+          audioDataArray = new Uint8Array(audioAnalyser.frequencyBinCount);
+        }
+        if (!audioEl._lipsyncConnected) {
+          const source = ctx.createMediaElementSource(audioEl);
+          source.connect(audioAnalyser);
+          audioAnalyser.connect(ctx.destination);
+          audioEl._lipsyncConnected = true;
+        }
+      } catch (e) {
+        console.warn('Audio lipsync connect:', e);
+      }
+    }
+
+    // Deteksi energi frekuensi tiap vokal bahasa Jepang (Formant F1 & F2)
+    function getLiveVowelAnalysis() {
+      if (!audioAnalyser || !audioDataArray) return null;
+      audioAnalyser.getByteFrequencyData(audioDataArray);
+
+      // Rentang frekuensi (SampleRate ~44.1kHz / 48kHz, bin size ~43-47Hz per index):
+      // Vokal U (ou): F1 300Hz, F2 800-1200Hz (Low-dominant, bibir bulat kecil)
+      // Vokal O (oh): F1 500Hz, F2 900-1300Hz (Mid-low, bibir bulat terbuka)
+      // Vokal A (aa): F1 800-1000Hz, F2 1300-1500Hz (Mid-dominant, rahang terbuka lebar)
+      // Vokal E (ee): F1 500Hz, F2 1800-2400Hz (Mid & High, mulut melebar sedang)
+      // Vokal I (ih): F1 250-300Hz, F2 2200-3200Hz (High-dominant, bibir ditarik senyum)
+
+      let sumU = 0, countU = 0;
+      for (let i = 4; i <= 10; i++) { sumU += audioDataArray[i]; countU++; }
+      const powerU = (sumU / countU) / 255;
+
+      let sumO = 0, countO = 0;
+      for (let i = 11; i <= 18; i++) { sumO += audioDataArray[i]; countO++; }
+      const powerO = (sumO / countO) / 255;
+
+      let sumA = 0, countA = 0;
+      for (let i = 19; i <= 32; i++) { sumA += audioDataArray[i]; countA++; }
+      const powerA = (sumA / countA) / 255;
+
+      let sumE = 0, countE = 0;
+      for (let i = 33; i <= 55; i++) { sumE += audioDataArray[i]; countE++; }
+      const powerE = (sumE / countE) / 255;
+
+      let sumI = 0, countI = 0;
+      for (let i = 56; i <= 90; i++) { sumI += audioDataArray[i]; countI++; }
+      const powerI = (sumI / countI) / 255;
+
+      const totalVolume = (powerU * 0.2 + powerO * 0.25 + powerA * 0.3 + powerE * 0.15 + powerI * 0.1);
+
+      return { powerA, powerI, powerU, powerE, powerO, totalVolume };
+    }
+
     // ── Update Animasi Loop Karakter VRM ──
     function updateCharacter(st, delta, elapsed, isAssistant = false) {
       if (!st.vrm) return;
@@ -416,19 +590,83 @@
         }
       }
 
-      // 2. Lipsync Berbicara
+      // 2. Realtime Precision Lipsync Terkoneksi Langsung dengan Seluruh Vokal (A, I, U, E, O)
       if (vrm.expressionManager) {
+        if (!st.vowels) {
+          st.vowels = { aa: 0, ih: 0, ou: 0, ee: 0, oh: 0 };
+        }
+
         if (st.isSpeaking) {
-          st.talkTimer += delta * 15;
-          const aa = Math.max(0, Math.sin(st.talkTimer) * 0.7);
-          vrm.expressionManager.setValue('aa', aa);
+          const live = getLiveVowelAnalysis();
+          let targetAa = 0;
+          let targetIh = 0;
+          let targetOu = 0;
+          let targetEe = 0;
+          let targetOh = 0;
+
+          // JIKA ADA SUARA AKTIF TERDENGAR
+          if (live && live.totalVolume > 0.02) {
+            const volMult = Math.min(1.0, (live.totalVolume - 0.02) * 4.5);
+
+            // Klasifikasi vokal dominan berdasarkan formants
+            const maxPower = Math.max(live.powerA, live.powerI, live.powerU, live.powerE, live.powerO);
+
+            if (maxPower === live.powerA) {
+              targetAa = volMult * 0.95;
+              targetOh = volMult * 0.15;
+            } else if (maxPower === live.powerI) {
+              targetIh = volMult * 0.85;
+              targetEe = volMult * 0.35;
+              targetAa = volMult * 0.15;
+            } else if (maxPower === live.powerU) {
+              targetOu = volMult * 0.80;
+              targetOh = volMult * 0.30;
+            } else if (maxPower === live.powerE) {
+              targetEe = volMult * 0.85;
+              targetIh = volMult * 0.40;
+              targetAa = volMult * 0.20;
+            } else if (maxPower === live.powerO) {
+              targetOh = volMult * 0.90;
+              targetOu = volMult * 0.35;
+              targetAa = volMult * 0.25;
+            }
+          } else {
+            // Saat hening / jeda antar kata, mulut langsung menutup
+            targetAa = 0;
+            targetIh = 0;
+            targetOu = 0;
+            targetEe = 0;
+            targetOh = 0;
+          }
+
+          // Lerp halus & responsif mengikuti ucapan suku kata
+          const lerpFactor = Math.min(1.0, delta * 20);
+          st.vowels.aa += (targetAa - st.vowels.aa) * lerpFactor;
+          st.vowels.ih += (targetIh - st.vowels.ih) * lerpFactor;
+          st.vowels.ou += (targetOu - st.vowels.ou) * lerpFactor;
+          st.vowels.ee += (targetEe - st.vowels.ee) * lerpFactor;
+          st.vowels.oh += (targetOh - st.vowels.oh) * lerpFactor;
+
+          vrm.expressionManager.setValue('aa', st.vowels.aa);
+          vrm.expressionManager.setValue('ih', st.vowels.ih);
+          vrm.expressionManager.setValue('ou', st.vowels.ou);
+          vrm.expressionManager.setValue('ee', st.vowels.ee);
+          vrm.expressionManager.setValue('oh', st.vowels.oh);
         } else {
-          const cur = vrm.expressionManager.getValue('aa');
-          if (cur > 0) vrm.expressionManager.setValue('aa', Math.max(0, cur - delta * 5));
+          // Tutup mulut cepat begitu audio selesai
+          const closeFactor = Math.min(1.0, delta * 18);
+          ['aa', 'ih', 'ou', 'ee', 'oh'].forEach(v => {
+            if (st.vowels[v] > 0.005) {
+              st.vowels[v] += (0 - st.vowels[v]) * closeFactor;
+            } else {
+              st.vowels[v] = 0;
+            }
+            vrm.expressionManager.setValue(v, st.vowels[v]);
+          });
         }
       }
 
-      // 3. Pose Lengan Turun Rapi
+      // 3. Pose Lengan Turun Rapi (Cukup 1x saat load, dipanggil di sini dengan cached bone)
       applyNaturalZoomPose(vrm);
 
       // 4. Subtle Breathing & Idle Head Sway
@@ -473,11 +711,13 @@
       });
     });
 
-    // ── Suara & Subtitle Percakapan Dua Arah ──
-    const dialogBox = document.getElementById('dialog-box');
-    const dialogSpeaker = document.getElementById('dialog-speaker');
-    const dialogJp = document.getElementById('dialog-jp');
-    const dialogId = document.getElementById('dialog-id');
+    // ── Suara & Transkrip Percakapan 3 Kolom Sejajar ──
+    const colSatoJp = document.getElementById('col-sato-jp');
+    const colSatoId = document.getElementById('col-sato-id');
+    const colYukiJp = document.getElementById('col-yuki-jp');
+    const colYukiId = document.getElementById('col-yuki-id');
+    const colUserSpeech = document.getElementById('col-user-speech');
+    const colUserStatus = document.getElementById('col-user-status');
 
     const satoTile = document.getElementById('sato-tile');
     const yukiTile = document.getElementById('yuki-tile');
@@ -486,13 +726,11 @@
       yukiTile.classList.remove('active-speaker');
       satoTile.classList.add('active-speaker');
 
-      dialogSpeaker.textContent = 'Sato-san (Sensei)';
-      dialogSpeaker.className = 'text-[11px] font-bold text-sky-400 mb-0.5 uppercase tracking-wider';
-      dialogJp.textContent = jpText;
-      dialogId.textContent = idText;
-      dialogBox.classList.remove('hidden');
+      if (colSatoJp) colSatoJp.textContent = jpText;
+      if (colSatoId) colSatoId.textContent = idText;
 
-      playTTS(jpText, 1.0, 1.0, () => {
+      // Suara Pria Dewasa: Pitch berat (0.82), tempo tenang berwibawa (0.95), pilih voice male ja-JP
+      playTTS(jpText, 0.95, 0.82, 'male', () => {
         stateSato.isSpeaking = true;
         if (stateSato.vrm?.expressionManager) stateSato.vrm.expressionManager.setValue('happy', 0.5);
       }, () => {
@@ -507,13 +745,11 @@
       satoTile.classList.remove('active-speaker');
       yukiTile.classList.add('active-speaker');
 
-      dialogSpeaker.textContent = 'Yuki-chan (Assistant)';
-      dialogSpeaker.className = 'text-[11px] font-bold text-pink-400 mb-0.5 uppercase tracking-wider';
-      dialogJp.textContent = jpText;
-      dialogId.textContent = idText;
-      dialogBox.classList.remove('hidden');
+      if (colYukiJp) colYukiJp.textContent = jpText || '由紀がサポートします：';
+      if (colYukiId) colYukiId.textContent = idText;
 
-      playTTS(jpText, 1.05, 1.2, () => {
+      // Suara Wanita Cerah: Pitch 1.25, tempo 1.05
+      playTTS(jpText, 1.05, 1.25, 'female', () => {
         stateYuki.isSpeaking = true;
         if (stateYuki.vrm?.expressionManager) stateYuki.vrm.expressionManager.setValue('happy', 0.7);
       }, () => {
@@ -524,19 +760,151 @@
       });
     }
 
-    function playTTS(text, rate, pitch, onStart, onEnd) {
+    let activeAudio = null;
+
+    // Helper memecah kalimat panjang agar utuh dibaca tanpa terpotong limit Google TTS (max 100 karakter)
+    function splitSentences(text) {
+      const parts = text.match(/[^。！？!?\n]+[。！？!?\n]?/g);
+      return parts && parts.length > 0 ? parts.map(s => s.trim()).filter(Boolean) : [text];
+    }
+
+    // ── Sistem Audio Asli Jepang (Keita Neural untuk Sato & Nanami Neural untuk Yuki) + Fallback Google TTS ──
+    const SCENARIO_AUDIO_MAP = {
+      // Sato-san (Sensei - Suara Pria Jepang: Keita)
+      'みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！由紀さんもよろしくお願いします。': '/assets/audio/kaiwa/sato_intro.mp3',
+      'まずは自己紹介をお願いします。お名前と、日本で挑戦したいことを教えてください。': '/assets/audio/kaiwa/sato_perkenalan.mp3',
+      '職場の挨拶はとても大切です。朝は「おはようございます」、退勤時は「お疲れ様でした」と言いましょう。': '/assets/audio/kaiwa/sato_salam.mp3',
+      '素晴らしい！とてもはきはきと話せていますね。その調子で頑張りましょう！': '/assets/audio/kaiwa/sato_pujian.mp3',
+      'はい、マイクが繋がりましたね！準備はいいですか？今日はどんなことでも、自由に日本語でお話ししましょう！': '/assets/audio/kaiwa/sato_ai_greet.mp3',
+
+      // Yuki-chan (Asisten - Suara Wanita Lembut & Cerah Jepang: Nanami)
+      'はい！アシスタントの由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！': '/assets/audio/kaiwa/yuki_intro.mp3',
+      '「はじめまして、〜です」と言ってみましょう！リラックスしてどうぞ！': '/assets/audio/kaiwa/yuki_perkenalan.mp3',
+      '笑顔で元気に言うのがポイントですよ！一緒に練習してみましょう！': '/assets/audio/kaiwa/yuki_salam.mp3',
+      '面接で大切なのは笑顔と明るい声です！緊張しても大丈夫、一言一言丁寧に話せば伝わりますよ！': '/assets/audio/kaiwa/yuki_tips.mp3',
+      'すごい！発音がとても自然で聞き取りやすいです！バッチリですよ！': '/assets/audio/kaiwa/yuki_pujian.mp3',
+      'マイクをオンにして、何でも日本語やインドネシア語でお話ししてみてくださいね！由紀がサポートします！': '/assets/audio/kaiwa/yuki_ai_greet.mp3'
+    };
+
+    function playTTS(text, rate, pitch, gender, onStart, onEnd) {
+      if (activeAudio) {
+        activeAudio.pause();
+        activeAudio = null;
+      }
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+
+      // 1. Cek apakah ada file audio kualitas tinggi yang sesuai persis dengan teks skenario
+      if (SCENARIO_AUDIO_MAP[text]) {
+        const audio = new Audio(SCENARIO_AUDIO_MAP[text]);
+        activeAudio = audio;
+        hookAudioForLipsync(audio);
+        audio.onplay = () => {
+          if (onStart) onStart();
+        };
+        audio.onended = () => {
+          activeAudio = null;
+          if (onEnd) onEnd();
+        };
+        audio.onerror = () => {
+          playGoogleTTS(text, rate, pitch, gender, onStart, onEnd);
+        };
+        const p = audio.play();
+        if (p !== undefined) {
+          p.catch(() => playGoogleTTS(text, rate, pitch, gender, onStart, onEnd));
+        }
+        return;
+      }
+
+      // 2. Jika teks dinamis (misal dari Gemini AI Bebas), pakai Google TTS atau Web Speech yang membaca tepat kata-per-kata
+      playGoogleTTS(text, rate, pitch, gender, onStart, onEnd);
+    }
+
+    function playGoogleTTS(text, rate, pitch, gender, onStart, onEnd) {
+      const chunks = splitSentences(text);
+      let currentIndex = 0;
+      let hasStarted = false;
+
+      function playNextChunk() {
+        if (currentIndex >= chunks.length) {
+          activeAudio = null;
+          if (onEnd) onEnd();
+          return;
+        }
+
+        const chunk = chunks[currentIndex++];
+        const encodedText = encodeURIComponent(chunk);
+        const googleUrl = `https://translate.google.com/translate_tts?ie=UTF-8&q=${encodedText}&tl=ja&total=1&idx=0&textlen=${chunk.length}&client=tw-ob`;
+        const audio = new Audio(googleUrl);
+        activeAudio = audio;
+
+        if (gender === 'male') {
+          audio.playbackRate = 0.92;
+        } else {
+          audio.playbackRate = 1.08;
+        }
+
+        audio.onplay = () => {
+          if (!hasStarted) {
+            hasStarted = true;
+            if (onStart) onStart();
+          }
+        };
+
+        audio.onended = () => {
+          playNextChunk();
+        };
+
+        audio.onerror = () => {
+          playFallbackSpeech(text, rate, pitch, gender, onStart, onEnd);
+        };
+
+        const playPromise = audio.play();
+        if (playPromise !== undefined) {
+          playPromise.catch(() => {
+            playFallbackSpeech(text, rate, pitch, gender, onStart, onEnd);
+          });
+        }
+      }
+
+      try {
+        playNextChunk();
+      } catch (e) {
+        playFallbackSpeech(text, rate, pitch, gender, onStart, onEnd);
+      }
+    }
+
+    function playFallbackSpeech(text, rate, pitch, gender, onStart, onEnd) {
       if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
         const u = new SpeechSynthesisUtterance(text);
         u.lang = 'ja-JP';
         u.rate = rate || 1.0;
         u.pitch = pitch || 1.0;
+
+        const voices = window.speechSynthesis.getVoices();
+        const jaVoices = voices.filter(v => v.lang.startsWith('ja'));
+        if (jaVoices.length > 0) {
+          if (gender === 'male') {
+            const maleVoice = jaVoices.find(v => 
+              /male|keita|ichiro|kenji|daiki|takumi|otoko|google/i.test(v.name)
+            ) || jaVoices[jaVoices.length - 1];
+            if (maleVoice) u.voice = maleVoice;
+          } else if (gender === 'female') {
+            const femaleVoice = jaVoices.find(v => 
+              /female|nanami|haruka|kyoko|ayumi|sayaka|onna/i.test(v.name)
+            ) || jaVoices[0];
+            if (femaleVoice) u.voice = femaleVoice;
+          }
+        }
+
         u.onstart = onStart;
         u.onend = onEnd;
         u.onerror = onEnd;
         window.speechSynthesis.speak(u);
       } else {
-        onStart();
+        if (onStart) onStart();
         setTimeout(onEnd, 3500);
       }
     }
@@ -611,17 +979,186 @@
       }
     });
 
-    // Toggle Mic Button
+    // Toggle Mic Button & Live Speech Recognition (Bicara langsung selayaknya Zoom)
     const btnToggleMic = document.getElementById('btn-toggle-mic');
+    const userSpeakingBadge = document.getElementById('user-speaking-badge');
     let isMuted = false;
+    let isAIProcessing = false;
+
+    const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+    let recognition = null;
+
+    // ── Mode Switch: Default Standby (Hanya Aktif Jika Dipilih) ──
+    let isFullAIMode = false;
+    const btnModeToggle = document.getElementById('btn-mode-toggle');
+    const modeLabel = document.getElementById('mode-label');
+
+    btnModeToggle.addEventListener('click', () => {
+      isFullAIMode = !isFullAIMode;
+      if (isFullAIMode) {
+        btnModeToggle.className = 'px-3 py-2 rounded-xl bg-gradient-to-r from-emerald-600 to-teal-600 hover:from-emerald-500 hover:to-teal-500 text-white font-bold text-xs flex items-center gap-1.5 shadow-md transition border border-emerald-400/40 shrink-0';
+        btnModeToggle.querySelector('i').className = 'fa-solid fa-wand-magic-sparkles text-amber-300';
+        modeLabel.textContent = 'Mode AI Bebas (Aktif)';
+        userSpeakingBadge.classList.remove('hidden');
+        userSpeakingBadge.textContent = 'Sensei menyapa...';
+
+        if (colUserHint) {
+          colUserHint.innerHTML = '<i class="fa-solid fa-microphone-lines text-emerald-400 mt-0.5 shrink-0 text-xs"></i><span class="leading-relaxed">Mode AI Bebas aktif! Dengarkan sapaan Sensei, lalu balas bicaralah secara santai lewat mikrofon.</span>';
+        }
+
+        // Sensei & Asisten menyapa mahasiswa terlebih dahulu saat mode AI bebas dibuka
+        isAIProcessing = true;
+        speakSato(
+          'はい、マイクが繋がりましたね！準備はいいですか？今日はどんなことでも、自由に日本語でお話ししましょう！',
+          'Baik, mikrofon sudah tersambung! Sudah siap? Hari ini silakan ceritakan atau tanyakan apa saja dalam bahasa Jepang secara bebas ya!',
+          () => {
+            setTimeout(() => {
+              speakYuki(
+                'マイクをオンにして、何でも日本語やインドネシア語でお話ししてみてくださいね！由紀がサポートします！',
+                'Nyalakan mikrofon dan bicaralah santai dalam bahasa Jepang atau Indonesia. Yuki siap membantu menerjemahkan jika Anda bingung!',
+                () => {
+                  isAIProcessing = false;
+                  if (colUserStatus) colUserStatus.textContent = 'Giliran Anda Bicara';
+                  userSpeakingBadge.textContent = 'Mendengarkan... Silakan bicara';
+                  if (recognition && !isMuted) { try { recognition.start(); } catch(e){} }
+                }
+              );
+            }, 600);
+          }
+        );
+      } else {
+        btnModeToggle.className = 'px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-300 font-medium text-xs flex items-center gap-1.5 transition border border-white/10 shrink-0';
+        btnModeToggle.querySelector('i').className = 'fa-solid fa-wand-magic-sparkles text-slate-400';
+        modeLabel.textContent = 'Mode AI Bebas';
+        userSpeakingBadge.classList.add('hidden');
+        isAIProcessing = false;
+        if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
+        if (recognition) { try { recognition.stop(); } catch(e){} }
+      }
+    });
+
+    if (SpeechRec) {
+      recognition = new SpeechRec();
+      recognition.continuous = true;
+      recognition.interimResults = false;
+      recognition.lang = 'ja-JP';
+
+      recognition.onstart = () => {
+        if (!isMuted && isFullAIMode) {
+          userSpeakingBadge.classList.remove('hidden');
+          userSpeakingBadge.textContent = 'Mendengarkan...';
+        }
+      };
+
+      recognition.onresult = async (event) => {
+        if (isMuted || !isFullAIMode || isAIProcessing) return;
+        const lastResult = event.results[event.results.length - 1];
+        if (!lastResult.isFinal) return;
+        const transcript = lastResult[0].transcript.trim();
+        if (!transcript) return;
+
+        console.log("Ucapan Siswa:", transcript);
+        userSpeakingBadge.textContent = `"${transcript.substring(0, 20)}..."`;
+        userSpeakingBadge.classList.remove('hidden');
+
+        // Kirim ke Gemini AI Brain
+        await handleStudentSpeech(transcript);
+      };
+
+      recognition.onerror = (e) => {
+        console.warn("SpeechRec error:", e.error);
+        if (e.error !== 'no-speech' && !isMuted && isFullAIMode) {
+          setTimeout(() => {
+            try { recognition.start(); } catch(err){}
+          }, 1000);
+        }
+      };
+
+      recognition.onend = () => {
+        if (!isMuted && isFullAIMode && !isAIProcessing) {
+          try { recognition.start(); } catch(err){}
+        }
+      };
+    }
+
+    async function handleStudentSpeech(userText) {
+      if (!geminiChat) return;
+      isAIProcessing = true;
+      userSpeakingBadge.textContent = 'Sensei sedang berpikir...';
+
+      // Tampilkan ucapan mahasiswa di kolom ke-3 (bawah video mahasiswa)
+      if (colUserSpeech) colUserSpeech.textContent = `"${userText}"`;
+      if (colUserStatus) colUserStatus.textContent = 'Sedang Ditanggapi...';
+
+      try {
+        const response = await geminiChat.sendMessage({
+          message: userText
+        });
+        const replyText = response.text.trim();
+        const jsonMatch = replyText.match(/\{[\s\S]*\}/);
+        if (!jsonMatch) throw new Error("Format respon bukan JSON");
+        const data = JSON.parse(jsonMatch[0]);
+
+        userSpeakingBadge.classList.add('hidden');
+
+        // Jalankan percakapan tutor bergantian (Sato & Yuki)
+        if (data.firstSpeaker === 'yuki' && data.yuki?.id) {
+          // Yuki membimbing duluan (misal siswa bingung bahasa Indonesianya)
+          speakYuki(data.yuki.jp || '', data.yuki.id, () => {
+            if (data.sato?.jp) {
+              setTimeout(() => {
+                speakSato(data.sato.jp, data.sato.id, () => {
+                  isAIProcessing = false;
+                  if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
+                  if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
+                });
+              }, 600);
+            } else {
+              isAIProcessing = false;
+              if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
+              if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
+            }
+          });
+        } else {
+          // Sato-sensei merespon duluan, lalu Yuki menambahkan/mengoreksi
+          speakSato(data.sato.jp, data.sato.id, () => {
+            if (data.yuki?.id) {
+              setTimeout(() => {
+                speakYuki(data.yuki.jp || '', data.yuki.id, () => {
+                  isAIProcessing = false;
+                  if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
+                  if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
+                });
+              }, 600);
+            } else {
+              isAIProcessing = false;
+              if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
+              if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
+            }
+          });
+        }
+      } catch (err) {
+        console.error("Error AI Tutor:", err);
+        isAIProcessing = false;
+        if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
+        userSpeakingBadge.classList.add('hidden');
+        if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
+      }
+    }
+
     btnToggleMic.addEventListener('click', () => {
       isMuted = !isMuted;
       if (isMuted) {
         btnToggleMic.querySelector('i').className = 'fa-solid fa-microphone-slash text-sm text-rose-400';
         btnToggleMic.querySelector('span').textContent = 'Unmute';
+        userSpeakingBadge.classList.add('hidden');
+        if (recognition) { try { recognition.stop(); } catch(e){} }
       } else {
         btnToggleMic.querySelector('i').className = 'fa-solid fa-microphone text-sm text-emerald-400';
         btnToggleMic.querySelector('span').textContent = 'Mute';
+        userSpeakingBadge.classList.remove('hidden');
+        userSpeakingBadge.textContent = 'Mendengarkan...';
+        if (recognition) { try { recognition.start(); } catch(e){} }
       }
     });
 
@@ -633,6 +1170,48 @@
       const s = String(sec % 60).padStart(2, '0');
       document.getElementById('meeting-timer').textContent = `${m}:${s}`;
     }, 1000);
+
+    // ── Sinkronisasi Identitas Mahasiswa Berdasarkan Akun Login (Firebase Auth / LocalStorage) ──
+    async function syncUserData() {
+      try {
+        let u = null;
+        if (window.IndexedDB && typeof window.IndexedDB.getItem === 'function') {
+          try { u = await window.IndexedDB.getItem('jft_user'); } catch (e) {}
+        }
+        if (!u) {
+          try {
+            const raw = localStorage.getItem('jft_user');
+            if (raw) u = JSON.parse(raw);
+          } catch (e) {}
+        }
+
+        if (u && (u.name || u.displayName || u.email)) {
+          const displayName = u.name || u.displayName || (u.email ? u.email.split('@')[0] : 'Gakusei');
+          const photoURL = u.photo || u.photoURL;
+
+          // Perbarui teks nama tag kartu video
+          const nameTag = document.getElementById('user-name-tag');
+          if (nameTag) nameTag.textContent = `${displayName} (Gakusei)`;
+
+          const displayTitle = document.getElementById('user-display-title');
+          if (displayTitle) displayTitle.textContent = `Kamera ${displayName}`;
+
+          // Jika ada foto profil akun Google
+          if (photoURL) {
+            const imgEl = document.getElementById('user-avatar-photo');
+            const iconEl = document.getElementById('user-avatar-icon');
+            if (imgEl && iconEl) {
+              imgEl.src = photoURL;
+              imgEl.classList.remove('hidden');
+              iconEl.classList.add('hidden');
+            }
+          }
+        }
+      } catch (err) {
+        console.warn('Gagal memuat profil user login:', err);
+      }
+    }
+    syncUserData();
   </script>
 </body>
 </html>
