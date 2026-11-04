@@ -67,7 +67,12 @@ window.PAKET_CONFIG = {
           "nama": "MAGARIMASU 2",
           "slug": "magarimasu2-quiz",
           "total": 50,
-          "ikon": "M2"
+          "ikon": "M2",
+          "soalTambahan": {
+            "nama": "Soal Tambahan",
+            "slug": "magarimasu-tambahan-quiz",
+            "total": 51
+          }
         }
       ]
     },
