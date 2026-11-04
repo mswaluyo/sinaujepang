@@ -170,3 +170,4 @@ with open('public/quizzes/hare3-quiz/quiz-data.json', 'w', encoding='utf-8') as 
     json.dump(all_questions, out, ensure_ascii=False, indent=2)
 
 print('SUCCESS: Created public/quizzes/hare3-quiz/quiz-data.json with 55 questions!')
+
