@@ -3,58 +3,6 @@
     "no": 1,
     "section": "SESI 1 : MOJIGOI",
     "title": "",
-    "img": "assets/konpyuutaa_q1.jpg",
-    "options": [
-      {
-        "text": "コンピューター",
-        "img": ""
-      },
-      {
-        "text": "テレビ",
-        "img": ""
-      },
-      {
-        "text": "パソコン",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "0/4",
-    "analisis": "[MNN Bab 2 - Katakana Benda] Kata serapan untuk komputer adalah konpyuutaa.",
-    "mnn": "Mojigoi",
-    "trans": "Gambar menunjukkan perangkat komputer di ruang kelas.",
-    "kunci_id": "コンピューター",
-    "opt_note": [
-      "(konpyuutaa) komputer",
-      "(terebi) televisi",
-      "(pasokon) komputer pribadi"
-    ],
-    "opt_detail": [
-      {
-        "kana": "コンピューター",
-        "rom": "konpyuutaa",
-        "arti": "komputer",
-        "alasan": "Kata serapan yang tepat untuk perangkat di gambar."
-      },
-      {
-        "kana": "テレビ",
-        "rom": "terebi",
-        "arti": "televisi",
-        "alasan": "Benda berbeda, bukan perangkat di gambar."
-      },
-      {
-        "kana": "パソコン",
-        "rom": "pasokon",
-        "arti": "komputer pribadi",
-        "alasan": "Singkatan personal computer, bukan kunci soal ini."
-      }
-    ],
-    "trans_rom": "-"
-  },
-  {
-    "no": 2,
-    "section": "SESI 1 : MOJIGOI",
-    "title": "",
     "img": "assets/konpyuutaa_q2.jpg",
     "options": [
       {
@@ -104,7 +52,7 @@
     "trans_rom": "-"
   },
   {
-    "no": 3,
+    "no": 2,
     "section": "SESI 1 : MOJIGOI",
     "title": "",
     "img": "assets/konpyuutaa_q3.jpg",
@@ -156,7 +104,7 @@
     "trans_rom": "-"
   },
   {
-    "no": 4,
+    "no": 3,
     "section": "SESI 1 : MOJIGOI",
     "title": "",
     "img": "assets/konpyuutaa_q4.jpg",
@@ -208,7 +156,7 @@
     "trans_rom": "-"
   },
   {
-    "no": 5,
+    "no": 4,
     "section": "SESI 1 : MOJIGOI",
     "title": "",
     "img": "assets/konpyuutaa_q5.jpg",
@@ -260,7 +208,7 @@
     "trans_rom": "-"
   },
   {
-    "no": 6,
+    "no": 5,
     "section": "SESI 1 : MOJIGOI",
     "title": "「目」のほうが多いです。",
     "img": "assets/konpyuutaa_q6.jpg",
@@ -312,7 +260,7 @@
     "trans_rom": "【me】 no hou ga ooi desu."
   },
   {
-    "no": 7,
+    "no": 6,
     "section": "SESI 1 : MOJIGOI",
     "title": "",
     "img": "assets/konpyuutaa_q7.jpg",
@@ -364,7 +312,7 @@
     "trans_rom": "-"
   },
   {
-    "no": 8,
+    "no": 7,
     "section": "SESI 1 : MOJIGOI",
     "title": "この____のれきしは有名です。",
     "img": "assets/konpyuutaa_q8.jpg",
@@ -416,7 +364,7 @@
     "trans_rom": "Kono ____ no rekishi wa yuumei desu."
   },
   {
-    "no": 9,
+    "no": 8,
     "section": "SESI 1 : MOJIGOI",
     "title": "お風呂に____。",
     "img": "",
@@ -468,7 +416,7 @@
     "trans_rom": "Ofuro ni ____。"
   },
   {
-    "no": 10,
+    "no": 9,
     "section": "SESI 1 : MOJIGOI",
     "title": "強い風が____。",
     "img": "",
@@ -520,7 +468,7 @@
     "trans_rom": "Tsuyoi kaze ga ____。"
   },
   {
-    "no": 11,
+    "no": 10,
     "section": "SESI 1 : MOJIGOI",
     "title": "このトマト、80____。",
     "img": "",
@@ -572,7 +520,7 @@
     "trans_rom": "Kono tomato, hachijuu ____。"
   },
   {
-    "no": 12,
+    "no": 11,
     "section": "SESI 1 : MOJIGOI",
     "title": "明日、____がきます。外へ出かけないでください。",
     "img": "",
@@ -624,7 +572,7 @@
     "trans_rom": "Ashita, ____ ga kimasu. Soto e dekakenaide kudasai."
   },
   {
-    "no": 13,
+    "no": 12,
     "section": "SESI 1 : MOJIGOI",
     "title": "このスーパーのやさいは____です。",
     "img": "",
@@ -676,7 +624,7 @@
     "trans_rom": "Kono suupaa no yasai wa ____ desu."
   },
   {
-    "no": 14,
+    "no": 13,
     "section": "SESI 1 : MOJIGOI",
     "title": "料理を____。",
     "img": "",
@@ -728,7 +676,7 @@
     "trans_rom": "Ryouri wo ____。"
   },
   {
-    "no": 15,
+    "no": 14,
     "section": "SESI 1 : MOJIGOI",
     "title": "ぎんこうは____、ふべんです。",
     "img": "",
@@ -780,7 +728,7 @@
     "trans_rom": "Ginkou wa ____, fuben desu."
   },
   {
-    "no": 16,
+    "no": 15,
     "section": "SESI 1 : MOJIGOI",
     "title": "わたしはりょうりを____できます。",
     "img": "",
@@ -832,7 +780,7 @@
     "trans_rom": "Watashi wa ryouri wo ____ dekimasu."
   },
   {
-    "no": 17,
+    "no": 16,
     "section": "SESI 1 : MOJIGOI",
     "title": "たくさんひとがくるので、コップが____です。",
     "img": "",
@@ -884,7 +832,7 @@
     "trans_rom": "Takusan hito ga kuru node, koppu ga ____ desu."
   },
   {
-    "no": 18,
+    "no": 17,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: 彼の家はどこですか？\nB: わたしのいえのちかくにきれいなこうえんが ( _______)",
     "img": "assets/konpyuutaa_q18.jpg",
@@ -936,7 +884,7 @@
     "trans_rom": "watashi no ie no chikaku ni kirei na kouen ga ..."
   },
   {
-    "no": 19,
+    "no": 18,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: あぶない！おぼれそうです！_________！\nB: だいじょうぶ、すぐたすけます！",
     "img": "assets/konpyuutaa_q19.jpg",
@@ -988,7 +936,7 @@
     "trans_rom": "abunai! oboresou desu! ...!"
   },
   {
-    "no": 20,
+    "no": 19,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: ごめんください\nB: いらっしゃい、どうぞあがってください",
     "img": "",
@@ -1040,7 +988,7 @@
     "trans_rom": "gomen kudasai. irasshai, douzo agatte kudasai"
   },
   {
-    "no": 21,
+    "no": 20,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: あたらしいとけいをかいました。\nB: わあ、＿＿＿＿＿＿！",
     "img": "assets/konpyuutaa_q21.jpg",
@@ -1092,7 +1040,7 @@
     "trans_rom": "atarashii tokei wo kaimashita. waa, ...!"
   },
   {
-    "no": 22,
+    "no": 21,
     "section": "SESI 2 : HYOUGEN",
     "title": "A:___________\nB: いいえ。",
     "img": "assets/konpyuutaa_q22.jpg",
@@ -1144,7 +1092,7 @@
     "trans_rom": "... iie."
   },
   {
-    "no": 23,
+    "no": 22,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: 休みの日はいつからですか。\nB: 来月の10日からです。\nA: 休みの日は何をしますか。\nB: いいえ、＿＿＿＿＿＿。",
     "img": "",
@@ -1196,7 +1144,7 @@
     "trans_rom": "yasumi no hi wa itsu kara desu ka. raigetsu no tooka kara desu. yasumi no hi wa nani wo shimasu ka. iie, ..."
   },
   {
-    "no": 24,
+    "no": 23,
     "section": "SESI 2 : HYOUGEN",
     "title": "味はどう?",
     "img": "assets/konpyuutaa_q24.jpg",
@@ -1248,7 +1196,7 @@
     "trans_rom": "aji wa dou?"
   },
   {
-    "no": 25,
+    "no": 24,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: このてんぷらはおいしいですよ。\nB: すみません、あるれぎがあるので、えびを＿＿＿のがかゆいです。",
     "img": "",
@@ -1300,7 +1248,7 @@
     "trans_rom": "kono tenpura wa oishii desu yo. sumimasen,arerugii ga aru node, ebi wo ... no ga kayui desu"
   },
   {
-    "no": 26,
+    "no": 25,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: はじめまして。あさこさんにおひさしぶり。\nB: ____________________。",
     "img": "",
@@ -1352,7 +1300,7 @@
     "trans_rom": "hajimemashite. asako san ni ohisashiburi"
   },
   {
-    "no": 27,
+    "no": 26,
     "section": "SESI 2 : HYOUGEN",
     "title": "にもつがおもそうですね、_________\nありがとうございます。",
     "img": "assets/konpyuutaa_q27.jpg",
@@ -1404,7 +1352,7 @@
     "trans_rom": "nimotsu ga omosou desu ne, ..."
   },
   {
-    "no": 28,
+    "no": 27,
     "section": "SESI 2 : HYOUGEN",
     "title": "Konbini.\nA: あの ちょっと、\nB:あそこのコンビニへ（________）A:じゃあ いきましょう",
     "img": "assets/konpyuutaa_q28.jpg",
@@ -1456,7 +1404,7 @@
     "trans_rom": "ano, chotto. asoko no konbini e ... jaa, ikimashou"
   },
   {
-    "no": 29,
+    "no": 28,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: サラダはもうすこしいかがですか.\nB: ___________",
     "img": "",
@@ -1508,7 +1456,7 @@
     "trans_rom": "sarada wa mou sukoshi ikaga desu ka. ..."
   },
   {
-    "no": 30,
+    "no": 29,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: ミサトさんはげんきがじゃありませんね。\nB: かおのいろのあかくなりました。\nA: （ちょっとしんぱいです） \nB: こんどはなしをしてみます。\nA: おねがいします。",
     "img": "assets/konpyuutaa_q30.jpg",
@@ -1560,7 +1508,7 @@
     "trans_rom": "misato san wa genki ja arimasen ne. kao no iro ga akaku narimashita. chotto shinpai desu"
   },
   {
-    "no": 31,
+    "no": 30,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: じしんあったとき、どうしますか?\nB: 机の上に_________",
     "img": "assets/konpyuutaa_q31.jpg",
@@ -1612,7 +1560,7 @@
     "trans_rom": "jishin ga atta toki, dou shimasu ka? tsukue no ue ni ..."
   },
   {
-    "no": 32,
+    "no": 31,
     "section": "SESI 2 : HYOUGEN",
     "title": "A: いらっしゃいませ、何がほしいですか?。\nB: バナナ、ふたふくろ___________",
     "img": "assets/konpyuutaa_q32.jpg",
@@ -1664,7 +1612,7 @@
     "trans_rom": "irasshaimase, nani ga hoshii desu ka. banana, futa fukuro ..."
   },
   {
-    "no": 33,
+    "no": 32,
     "section": "SESI 3 : CHOUKAI",
     "title": "Ada percakapan tentang kuil tua",
     "img": "assets/konpyuutaa_q33.jpg",
@@ -1715,7 +1663,7 @@
     ]
   },
   {
-    "no": 34,
+    "no": 33,
     "section": "SESI 3 : CHOUKAI",
     "title": "Ada gambar perempuan duduk di meja sedang menulis dipinggirnya ada bacaan tentang dia bisa menulis 5000 kanji",
     "img": "assets/konpyuutaa_q34.jpg",
@@ -1766,7 +1714,7 @@
     ]
   },
   {
-    "no": 35,
+    "no": 34,
     "section": "SESI 3 : CHOUKAI",
     "title": "Ada gambar percakapan perempuan sama laki-laki, perempuannya bilang gak ngerti ことば",
     "img": "",
@@ -1817,58 +1765,7 @@
     ]
   },
   {
-    "no": 36,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "Ada gambar orang yang nawarin penyedot debu, ada percakapan intinya penyedot debunya banyak fungsinya, tapi berat ketika digunakan",
-    "img": "assets/konpyuutaa_q36.jpg",
-    "options": [
-      {
-        "text": "そうかもしれませんね",
-        "img": ""
-      },
-      {
-        "text": "そうですよ",
-        "img": ""
-      },
-      {
-        "text": "ちがいますよ",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "0/4",
-    "analisis": "[MNN - Choukai] Vacuum banyak fungsi tapi berat:<b>そうかもしれませんね</b>=mungkin begitu ya.",
-    "mnn": "Choukai",
-    "trans": "Vacuum banyak fungsi tapi berat",
-    "kunci_id": "そうかもしれませんね",
-    "opt_note": [
-      "(sou kamoshiremasen ne) mungkin begitu ya - kunci tepat",
-      "(sou desu yo) memang begitu - pengecoh",
-      "(chigaimasu yo) salah kok - pengecoh"
-    ],
-    "opt_detail": [
-      {
-        "kana": "そうかもしれませんね",
-        "rom": "sou kamoshiremasen ne",
-        "arti": "mungkin begitu ya",
-        "alasan": "Pola kemungkinan kamoshiremasen (mungkin) untuk menyetujui dugaan lawan bicara."
-      },
-      {
-        "kana": "そうですよ",
-        "rom": "sou desu yo",
-        "arti": "memang begitu kok",
-        "alasan": "Pengecoh: kepastian mutlak, tidak sesuai respon praduga di dialog."
-      },
-      {
-        "kana": "ちがいますよ",
-        "rom": "chigaimasu yo",
-        "arti": "salah kok / berbeda",
-        "alasan": "Pengecoh: penolakan langsung."
-      }
-    ]
-  },
-  {
-    "no": 37,
+    "no": 35,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN : janji melihat film janji jam berpa? ",
     "img": "",
@@ -1920,7 +1817,7 @@
     "trans_rom": "eiga wo miru yakusoku, nanji doko?"
   },
   {
-    "no": 38,
+    "no": 36,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN :ke toko bertanya size baju  L warna hitam tapi tidak ada. #Jadi membeli ukuran apa? ",
     "img": "",
@@ -1982,7 +1879,7 @@
     "trans_rom": "L saizu no kuro ga nai. nani wo kau?"
   },
   {
-    "no": 39,
+    "no": 37,
     "section": "SESI 3 : CHOUKAI",
     "title": "Apa yang dipinjam perempuan saat pergi SKI? ",
     "img": "",
@@ -2034,7 +1931,7 @@
     "trans_rom": "sukii ni iku toki, nani wo kariru?"
   },
   {
-    "no": 40,
+    "no": 38,
     "section": "SESI 3 : CHOUKAI",
     "title": "( masih soal diatas) #apa yg akan dibeli dahulu sebelum berangkat? ",
     "img": "",
@@ -2096,7 +1993,7 @@
     "trans_rom": "shuppatsu mae ni, nani wo kau?"
   },
   {
-    "no": 41,
+    "no": 39,
     "section": "SESI 3 : CHOUKAI",
     "title": "ADA PERCAKAPAN : tentang MINUM OBAT BERAPA KALI SEHARI? ",
     "img": "",
@@ -2148,7 +2045,7 @@
     "trans_rom": "kusuri wa ichinichi nankai?"
   },
   {
-    "no": 42,
+    "no": 40,
     "section": "SESI 3 : CHOUKAI",
     "title": "MASIH SOAL DIATAS : periksa kedokter disarankan bagaimana? ",
     "img": "",
@@ -2200,7 +2097,7 @@
     "trans_rom": "isha no susume wa?"
   },
   {
-    "no": 43,
+    "no": 41,
     "section": "SESI 3 : CHOUKAI",
     "title": "ADA PERCAKAPAN TENTANG GEMPA hal apa y dilakukan saat gempa? ",
     "img": "",
@@ -2252,7 +2149,7 @@
     "trans_rom": "jishin no toki, nani wo suru?"
   },
   {
-    "no": 44,
+    "no": 42,
     "section": "SESI 3 : CHOUKAI",
     "title": "MASIH SOAL DIATASpergi kemana saat gempa? ",
     "img": "",
@@ -2304,7 +2201,7 @@
     "trans_rom": "jishin no toki, doko e iku?"
   },
   {
-    "no": 45,
+    "no": 43,
     "section": "SESI 3 : CHOUKAI",
     "title": "TENTANG BIAYA MEMINJAM 1 JAM BERPA? ",
     "img": "",
@@ -2356,7 +2253,7 @@
     "trans_rom": "ichijikan kariru no wa ikura?"
   },
   {
-    "no": 46,
+    "no": 44,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN : tentang kopi. Apa yang dituangkan didalam kopi? ",
     "img": "",
@@ -2408,7 +2305,7 @@
     "trans_rom": "koohii ni nani wo ireru?"
   },
   {
-    "no": 47,
+    "no": 45,
     "section": "SESI 3 : CHOUKAI",
     "title": "TENANG VESTIVAL COKLATA: dilantai berpa VESTIVAL coklat diadakan?? ",
     "img": "",
@@ -2460,7 +2357,7 @@
     "trans_rom": "chokoreeto fesutibaru wa nankai?"
   },
   {
-    "no": 48,
+    "no": 46,
     "section": "SESI 3 : CHOUKAI",
     "title": "MASIH SOAL DIATASB: kapan waktu selesai VESTIVAL?? ",
     "img": "",
@@ -2522,7 +2419,7 @@
     "trans_rom": "fesutibaru wa itsu made?"
   },
   {
-    "no": 49,
+    "no": 47,
     "section": "SESI 3 : CHOUKAI",
     "title": "ADA GAMBAR PETA MENUNJUKKAN ARAH KEMANA? ",
     "img": "",
@@ -2584,7 +2481,7 @@
     "trans_rom": "chizu wa doko wo sashite iru?"
   },
   {
-    "no": 50,
+    "no": 48,
     "section": "SESI 4 : DOKKAI",
     "title": "ADA SMS YG BERISI AJAKAN#ingin pergi kemana?",
     "img": "",
@@ -2636,7 +2533,7 @@
     "trans_rom": "SMS no sasoi, doko e iku?"
   },
   {
-    "no": 51,
+    "no": 49,
     "section": "SESI 4 : DOKKAI",
     "title": "(b)  ingin melakukan apa dikota itu? ",
     "img": "",
@@ -2688,7 +2585,7 @@
     "trans_rom": "sono machi de nani wo suru?"
   },
   {
-    "no": 52,
+    "no": 50,
     "section": "SESI 4 : DOKKAI",
     "title": "mendapatkan kado dari siapa?",
     "img": "",
@@ -2740,7 +2637,7 @@
     "trans_rom": "purezento wa dare kara?"
   },
   {
-    "no": 53,
+    "no": 51,
     "section": "SESI 4 : DOKKAI",
     "title": "(b) mendapatkan hadiah apa? ",
     "img": "",
@@ -2802,7 +2699,7 @@
     "trans_rom": "purezento wa nani?"
   },
   {
-    "no": 54,
+    "no": 52,
     "section": "SESI 4 : DOKKAI",
     "title": "apa yg tidak boleh dilakukan ditaman?",
     "img": "",
@@ -2854,7 +2751,7 @@
     "trans_rom": "kouen de shite wa ikenai koto wa?"
   },
   {
-    "no": 55,
+    "no": 53,
     "section": "SESI 4 : DOKKAI",
     "title": "(b) apa yang dilakukan ditaman? ",
     "img": "",
@@ -2906,7 +2803,7 @@
     "trans_rom": "kouen de suru koto wa?"
   },
   {
-    "no": 56,
+    "no": 54,
     "section": "SESI 4 : DOKKAI",
     "title": "4(a) bisa mendengarkan musik dimna? ",
     "img": "",
@@ -2958,7 +2855,7 @@
     "trans_rom": "ongaku ga kikeru no wa doko?"
   },
   {
-    "no": 57,
+    "no": 55,
     "section": "SESI 4 : DOKKAI",
     "title": "(b) kapan makananya ada banyak? ",
     "img": "",
@@ -3010,7 +2907,7 @@
     "trans_rom": "tabemono ga ooi no wa itsu?"
   },
   {
-    "no": 58,
+    "no": 56,
     "section": "SESI 4 : DOKKAI",
     "title": "5(a) sabtu toko buka jam berapa? ",
     "img": "assets/konpyuutaa_q58.jpg",
@@ -3062,7 +2959,7 @@
     "trans_rom": "doyoubi, mise wa nanji kara?"
   },
   {
-    "no": 59,
+    "no": 57,
     "section": "SESI 4 : DOKKAI",
     "title": "(b) toko libur hari apa? ",
     "img": "",
@@ -3114,7 +3011,7 @@
     "trans_rom": "mise no yasumi wa itsu?"
   },
   {
-    "no": 60,
+    "no": 58,
     "section": "SESI 4 : DOKKAI",
     "title": "6(a) es criem diberikan setelah apa? ",
     "img": "assets/konpyuutaa_q60.jpg",
@@ -3166,7 +3063,7 @@
     "trans_rom": "aisukuriimu wa nani no ato?"
   },
   {
-    "no": 61,
+    "no": 59,
     "section": "SESI 4 : DOKKAI",
     "title": "(b) menunjukkan tiket pas kapan? ",
     "img": "assets/konpyuutaa_q61.jpg",
@@ -3218,7 +3115,7 @@
     "trans_rom": "chiketto wa itsu miseru?"
   },
   {
-    "no": 62,
+    "no": 60,
     "section": "SESI 4 : DOKKAI",
     "title": "7 (a) スタッフ紹介 (Sutaffu Shōkai / Perkenalan Staf) Tentang menanyakan pekerjan seseorang. #bekerjanya dimna.? ",
     "img": "",
@@ -3280,7 +3177,7 @@
     "trans_rom": "sutaffu wa doko de hataraite iru?"
   },
   {
-    "no": 63,
+    "no": 61,
     "section": "SESI 4 : DOKKAI",
     "title": "7 ( b ) スタッフ紹介 (Sutaffu Shōkai / Perkenalan Staf)  ",
     "img": "",
