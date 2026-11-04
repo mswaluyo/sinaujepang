@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sato-san 3D Virtual Partner - Sinau Jepang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Import map untuk Three.js dan @pixiv/three-vrm modern ES Modules -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/",
+        "@pixiv/three-vrm": "https://cdn.jsdelivr.net/npm/@pixiv/three-vrm@3.3.4/lib/three-vrm.module.min.js"
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: radial-gradient(circle at 50% 30%, #f1f5f9 0%, #cbd5e1 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+    #canvas-container {
+      width: 100vw;
+      height: 100vh;
+      display: block;
+    }
+  </style>
+</head>
+<body class="relative select-none">
+
+  <!-- 3D Canvas Container -->
+  <div id="canvas-container"></div>
+
+  <!-- Loading Overlay -->
+  <div id="loading" class="absolute inset-0 bg-slate-900/80 backdrop-blur-sm flex flex-col items-center justify-center text-white z-50 transition-opacity duration-500">
+    <div class="w-12 h-12 border-4 border-sky-400 border-t-transparent rounded-full animate-spin mb-4"></div>
+    <div class="text-lg font-semibold tracking-wide">Memuat Sato-san 3D Model...</div>
+    <div id="load-progress" class="text-sm text-slate-300 mt-1">0%</div>
+  </div>
+
+  <!-- Top Navigation & Info -->
+  <header class="absolute top-4 left-4 right-4 flex items-center justify-between pointer-events-none z-10">
+    <div class="bg-white/85 backdrop-blur-md px-4 py-2.5 rounded-2xl shadow-sm border border-white/60 pointer-events-auto flex items-center gap-3">
+      <a href="/" class="text-slate-600 hover:text-slate-900 text-sm font-semibold flex items-center gap-1.5 transition">
+        <i class="fa-solid fa-arrow-left"></i> Kembali
+      </a>
+      <span class="w-[1px] h-4 bg-slate-300"></span>
+      <div>
+        <h1 class="text-sm font-bold text-slate-800">Sato-san (佐藤さん)</h1>
+        <p class="text-[11px] text-slate-500">Virtual Japanese Practice Partner</p>
+      </div>
+    </div>
+
+    <!-- Quick Audio/Mic Controls -->
+    <div class="bg-white/85 backdrop-blur-md px-3 py-2 rounded-2xl shadow-sm border border-white/60 pointer-events-auto flex items-center gap-2">
+      <button id="btn-speak-sample" class="px-3 py-1.5 bg-sky-500 hover:bg-sky-600 text-white text-xs font-medium rounded-xl shadow transition flex items-center gap-1.5">
+        <i class="fa-solid fa-volume-high"></i> Sapa ("Konnichiwa")
+      </button>
+      <button id="btn-reset-cam" class="p-2 text-slate-600 hover:bg-slate-100 rounded-xl transition" title="Reset Kamera">
+        <i class="fa-solid fa-arrows-rotate"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- Expression & Interaction Tray (Bawah) -->
+  <div class="absolute bottom-6 left-1/2 -translate-x-1/2 bg-white/90 backdrop-blur-md px-4 py-3 rounded-2xl shadow-lg border border-white/60 flex items-center gap-2 z-10">
+    <span class="text-xs font-semibold text-slate-500 mr-1"><i class="fa-regular fa-face-smile"></i> Ekspresi:</span>
+    <button class="exp-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 hover:bg-sky-50 text-slate-700 hover:text-sky-600 transition" data-exp="happy">Senang (Happy)</button>
+    <button class="exp-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 hover:bg-sky-50 text-slate-700 hover:text-sky-600 transition" data-exp="neutral">Netral</button>
+    <button class="exp-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 hover:bg-sky-50 text-slate-700 hover:text-sky-600 transition" data-exp="surprised">Kaget (Surprised)</button>
+    <button class="exp-btn px-3 py-1.5 rounded-xl text-xs font-semibold bg-slate-100 hover:bg-sky-50 text-slate-700 hover:text-sky-600 transition" data-exp="relaxed">Rileks</button>
+  </div>
+
+  <!-- Subtitle Percakapan Floating -->
+  <div id="dialog-box" class="hidden absolute bottom-24 left-1/2 -translate-x-1/2 max-w-lg w-11/12 bg-slate-900/85 text-white backdrop-blur-md px-5 py-3.5 rounded-2xl shadow-xl border border-slate-700 text-center z-10 transition-all">
+    <div id="dialog-jp" class="text-base font-bold text-sky-300">こんにちは！今日も一緒に日本語を練習しましょう！</div>
+    <div id="dialog-id" class="text-xs text-slate-300 mt-0.5">Halo! Hari ini mari berlatih percakapan bahasa Jepang bersama!</div>
+  </div>
+
+  <!-- Three.js + VRM App Script -->
+  <script type="module">
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+    import { VRMLoaderPlugin, VRMUtils } from '@pixiv/three-vrm';
+
+    // ── 1. Setup Scene, Camera, Renderer ──
+    const container = document.getElementById('canvas-container');
+    const scene = new THREE.Scene();
+
+    const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 20.0);
+    camera.position.set(0.0, 1.35, 1.35); // Focus setengah badan / portrait Sato-san
+
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.05;
+    container.appendChild(renderer.domElement);
+
+    // OrbitControls (Bisa rotasi halus, zoom dibatasi agar tidak menembus)
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.screenSpacePanning = true;
+    controls.target.set(0.0, 1.25, 0.0); // Titik fokus wajah & dada
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.minDistance = 0.6;
+    controls.maxDistance = 3.5;
+    controls.maxPolarAngle = Math.PI / 2 + 0.1; // Jangan sampai tembus ke bawah lantai
+    controls.update();
+
+    // ── 2. Tata Cahaya (Lighting Studio) ──
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.4);
+    scene.add(ambientLight);
+
+    const mainLight = new THREE.DirectionalLight(0xfff6ed, 1.8);
+    mainLight.position.set(1.0, 2.5, 1.5);
+    scene.add(mainLight);
+
+    const fillLight = new THREE.DirectionalLight(0xe0f2fe, 1.0);
+    fillLight.position.set(-1.5, 1.5, -0.5);
+    scene.add(fillLight);
+
+    // ── 3. State & Variabel Animasi ──
+    let currentVrm = null;
+    let clock = new THREE.Clock();
+
+    // State Animasi Alami (Kedipan & Napas)
+    let blinkTimer = 0;
+    let blinkInterval = 3.5; // Kedip setiap ~3.5 detik
+    let isBlinking = false;
+    let blinkProgress = 0;
+
+    // State Berbicara (Lipsync sederhana simulasi 'aa')
+    let isSpeaking = false;
+    let talkTimer = 0;
+
+    // ── 4. Memuat File Sato-san.vrm ──
+    const loader = new GLTFLoader();
+    loader.register((parser) => new VRMLoaderPlugin(parser));
+
+    const modelPath = '/models/sato-san.vrm';
+
+    loader.load(
+      modelPath,
+      (gltf) => {
+        const vrm = gltf.userData.vrm;
+        if (!vrm) {
+          console.error('File yang dimuat bukan format VRM yang valid.');
+          return;
+        }
+
+        currentVrm = vrm;
+
+        // Optimasi & rotasi default VRM
+        VRMUtils.removeUnnecessaryVertices(gltf.scene);
+        VRMUtils.combineSkeletons(gltf.scene);
+        vrm.scene.rotation.y = Math.PI; // Menghadap langsung ke kamera depan
+        scene.add(vrm.scene);
+
+        // Sedikit turunkan lengan jika pose T-Pose / A-Pose terlalu kaku
+        if (vrm.humanoid) {
+          const leftUpperArm = vrm.humanoid.getNormalizedBoneNode('leftUpperArm');
+          const rightUpperArm = vrm.humanoid.getNormalizedBoneNode('rightUpperArm');
+          if (leftUpperArm) leftUpperArm.rotation.z = 1.1; // Turunkan lengan kiri
+          if (rightUpperArm) rightUpperArm.rotation.z = -1.1; // Turunkan lengan kanan
+        }
+
+        // Hilangkan loading overlay
+        const loadingEl = document.getElementById('loading');
+        loadingEl.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => loadingEl.remove(), 500);
+      },
+      (progress) => {
+        if (progress.total > 0) {
+          const pct = Math.round((progress.loaded / progress.total) * 100);
+          document.getElementById('load-progress').textContent = `${pct}%`;
+        }
+      },
+      (error) => {
+        console.error('Gagal memuat Sato-san.vrm:', error);
+        document.getElementById('load-progress').innerHTML = '<span class="text-rose-400">Gagal memuat model Sato-san.vrm. Pastikan path file benar.</span>';
+      }
+    );
+
+    // ── 5. Logika Kedipan Mata Otomatis (Blink Engine) ──
+    function updateBlink(delta) {
+      if (!currentVrm || !currentVrm.expressionManager) return;
+
+      blinkTimer += delta;
+      if (!isBlinking && blinkTimer >= blinkInterval) {
+        isBlinking = true;
+        blinkTimer = 0;
+        blinkProgress = 0;
+        blinkInterval = 2.5 + Math.random() * 3.5; // Waktu kedip acak antara 2.5s - 6s
+      }
+
+      if (isBlinking) {
+        blinkProgress += delta * 12; // Kecepatan kedipan
+        // Kurva buka-tutup mata (sinusoidal)
+        const weight = Math.sin(Math.min(Math.PI, blinkProgress));
+        
+        currentVrm.expressionManager.setValue('blink', weight);
+
+        if (blinkProgress >= Math.PI) {
+          currentVrm.expressionManager.setValue('blink', 0);
+          isBlinking = false;
+        }
+      }
+    }
+
+    // ── 6. Logika Napas Alami & Gerak Halus (Breathing & Subtle Sway) ──
+    function updateNaturalIdle(elapsedTime) {
+      if (!currentVrm || !currentVrm.humanoid) return;
+
+      // Gerakan napas pada tulang dada (chest / spine)
+      const spine = currentVrm.humanoid.getNormalizedBoneNode('spine');
+      if (spine) {
+        spine.rotation.x = Math.sin(elapsedTime * 1.8) * 0.02; // Tarik & hembus napas
+        spine.rotation.y = Math.cos(elapsedTime * 0.8) * 0.015; // Ayunan halus santai
+      }
+
+      // Gerakan kepala sedikit mengikuti arah napas
+      const head = currentVrm.humanoid.getNormalizedBoneNode('head');
+      if (head) {
+        head.rotation.x = Math.sin(elapsedTime * 1.5) * 0.015;
+      }
+    }
+
+    // ── 7. Logika Lipsync / Mulut Berbicara (Mouth Motion) ──
+    function updateSpeech(delta) {
+      if (!currentVrm || !currentVrm.expressionManager) return;
+
+      if (isSpeaking) {
+        talkTimer += delta * 14;
+        const openMouth = Math.max(0, Math.sin(talkTimer) * 0.75);
+        currentVrm.expressionManager.setValue('aa', openMouth);
+      } else {
+        // Kembalikan mulut ke posisi diam jika berhenti bicara
+        const currentAa = currentVrm.expressionManager.getValue('aa');
+        if (currentAa > 0) {
+          currentVrm.expressionManager.setValue('aa', Math.max(0, currentAa - delta * 5));
+        }
+      }
+    }
+
+    // ── 8. Render Loop Utama (Animation Loop) ──
+    function animate() {
+      requestAnimationFrame(animate);
+
+      const delta = clock.getDelta();
+      const elapsedTime = clock.getElapsedTime();
+
+      // Update VRM Physics & BlendShapes
+      if (currentVrm) {
+        updateBlink(delta);
+        updateSpeech(delta);
+        updateNaturalIdle(elapsedTime);
+        currentVrm.update(delta);
+      }
+
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // ── 9. Handler Responsif Window Resize ──
+    window.addEventListener('resize', () => {
+      camera.aspect = window.innerWidth / window.innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+
+    // ── 10. Fitur Interaktif UI & Web Speech Synthesizer ──
+    // Tombol Ganti Ekspresi Wajah
+    const expButtons = document.querySelectorAll('.exp-btn');
+    expButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        if (!currentVrm || !currentVrm.expressionManager) return;
+        
+        // Reset semua ekspresi utama
+        ['happy', 'surprised', 'relaxed', 'neutral'].forEach((exp) => {
+          currentVrm.expressionManager.setValue(exp, 0);
+        });
+
+        const targetExp = btn.getAttribute('data-exp');
+        if (targetExp !== 'neutral') {
+          currentVrm.expressionManager.setValue(targetExp, 1.0);
+        }
+
+        // Update styling tombol aktif
+        expButtons.forEach((b) => b.classList.replace('bg-sky-500', 'bg-slate-100'));
+        expButtons.forEach((b) => b.classList.replace('text-white', 'text-slate-700'));
+        btn.classList.replace('bg-slate-100', 'bg-sky-500');
+        btn.classList.replace('text-slate-700', 'text-white');
+      });
+    });
+
+    // Tombol Bicara (Konnichiwa) + Web Speech API (Suara Bahasa Jepang)
+    const btnSpeak = document.getElementById('btn-speak-sample');
+    const dialogBox = document.getElementById('dialog-box');
+
+    btnSpeak.addEventListener('click', () => {
+      const textJP = 'こんにちは！今日も一緒に日本語を練習しましょう！頑張ってくださいね。';
+      
+      dialogBox.classList.remove('hidden');
+
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utter = new SpeechSynthesisUtterance(textJP);
+        utter.lang = 'ja-JP';
+        utter.rate = 1.0;
+
+        utter.onstart = () => {
+          isSpeaking = true;
+          if (currentVrm && currentVrm.expressionManager) {
+            currentVrm.expressionManager.setValue('happy', 0.6);
+          }
+        };
+
+        utter.onend = () => {
+          isSpeaking = false;
+          setTimeout(() => {
+            dialogBox.classList.add('hidden');
+          }, 3500);
+        };
+
+        utter.onerror = () => {
+          isSpeaking = false;
+        };
+
+        window.speechSynthesis.speak(utter);
+      } else {
+        // Fallback simulasi visual jika browser tidak mengaktifkan TTS
+        isSpeaking = true;
+        setTimeout(() => {
+          isSpeaking = false;
+          dialogBox.classList.add('hidden');
+        }, 3000);
+      }
+    });
+
+    // Reset Sudut Pandang Kamera
+    document.getElementById('btn-reset-cam').addEventListener('click', () => {
+      camera.position.set(0.0, 1.35, 1.35);
+      controls.target.set(0.0, 1.25, 0.0);
+      controls.update();
+    });
+  </script>
+</body>
+</html>
