@@ -1,6 +1,6 @@
 window.PAKET_CONFIG = {
-  "totalPaket": 19,
-  "totalSoal": 829,
+  "totalPaket": 20,
+  "totalSoal": 884,
   "kategori": [
     {
       "nama": "BARU",
@@ -40,6 +40,12 @@ window.PAKET_CONFIG = {
           "slug": "genkan-quiz",
           "total": 50,
           "ikon": "G"
+        },
+        {
+          "nama": "HARE 3",
+          "slug": "hare3-quiz",
+          "total": 55,
+          "ikon": "H3"
         }
       ]
     },

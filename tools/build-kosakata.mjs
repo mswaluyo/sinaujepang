@@ -4,7 +4,7 @@
 import fs from "node:fs";
 import path from "node:path";
 
-const root = "public";
+const root = fs.existsSync("public/quizzes") ? "public/quizzes" : "public";
 const dirs = fs.readdirSync(root, { withFileTypes: true })
   .filter(d => d.isDirectory() && d.name.endsWith("-quiz"))
   .map(d => d.name);
