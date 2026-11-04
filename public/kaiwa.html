@@ -200,7 +200,7 @@
       scene.background = new THREE.Color(0x27272a);
 
       const camera = new THREE.PerspectiveCamera(32, container.clientWidth / container.clientHeight, 0.1, 20.0);
-      camera.position.set(0.0, 1.22, 1.55); // Framing proporsional seluruh kepala, badan, dan meja
+      camera.position.set(0.0, 1.20, 1.42); // Framing presisi ala foto eksekutif Kenji Sato
 
       const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
       renderer.setSize(container.clientWidth, container.clientHeight);
@@ -312,7 +312,7 @@
       return null;
     }
 
-            // ── Pose Duduk Formal Alami Sato-san (Lengan Rileks Rapi ke Samping Tubuh) ──
+            // ── Pose Duduk Formal Eksekutif Kenji Sato (Tangan Bertaut di Atas Meja Rapat) ──
     function applySatoExecutivePose(vrm) {
       if (!vrm) return;
 
@@ -323,17 +323,17 @@
       const lh = getBone(vrm, 'leftHand');
       const rh = getBone(vrm, 'rightHand');
 
-      // 1. Turunkan lengan atas rapi ke samping badan (Z axis standar)
-      if (lua) lua.rotation.set(0.15, 0.10, -1.25);
-      if (rua) rua.rotation.set(0.15, -0.10, 1.25);
+      // 1. Lengan Atas: Membuka wajar membentuk segitiga bahu ke siku di atas meja
+      if (lua) lua.rotation.set(-0.50, 0.15, -0.72);
+      if (rua) rua.rotation.set(-0.50, -0.15, 0.72);
 
-      // 2. Siku rileks lurus/sedikit maju alami
-      if (lla) lla.rotation.set(0, 0, 0.15);
-      if (rla) rla.rotation.set(0, 0, -0.15);
+      // 2. Lengan Bawah: Tekuk siku ke arah tengah meja tempat kedua tangan bertemu
+      if (lla) lla.rotation.set(0.12, -0.38, 1.25);
+      if (rla) rla.rotation.set(0.12, 0.38, -1.25);
 
-      // 3. Telapak tangan rileks
-      if (lh) lh.rotation.set(0, 0, 0);
-      if (rh) rh.rotation.set(0, 0, 0);
+      // 3. Telapak Tangan: Menangkup rapi satu sama lain di tengah permukaan meja
+      if (lh) lh.rotation.set(0.10, 0.15, 0.25);
+      if (rh) rh.rotation.set(0.10, -0.15, -0.25);
     }
 
     // Pose Zoom Asisten Yuki-chan (Lengan rileks ke samping bawah)
