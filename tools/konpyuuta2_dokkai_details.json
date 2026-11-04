@@ -1,0 +1,156 @@
+[
+  {
+    "no": 38,
+    "pert": "[ Dokkai ] Bacaan panjang perkenalan diri part 1 ([ Dokkai ] Teks bacaan perkenalan diri bagian 1: Gambar mana yang sesuai dengan isi teks?)",
+    "konteks": "Teks bacaan perkenalan diri siswa baru mengenai kegemaran membaca dan kepemilikan buku catatan warna biru (青い本). (Teks bacaan narasi perkenalan diri.)",
+    "opts": [
+      "A -",
+      "B -",
+      "C Gambar orang pegang buku warna biru"
+    ],
+    "penj": "💡 Pada bacaan perkenalan diri bagian 1, penulis menceritakan hobi membacanya dan selalu membawa buku catatan/buku berwarna biru (青い本). Ilustrasi yang sesuai dengan isi bacaan adalah gambar orang memegang buku berwarna biru."
+  },
+  {
+    "no": 39,
+    "pert": "[ Dokkai ] Bacaan panjang perkenalan diri part 2 ([ Dokkai ] Teks bacaan perkenalan diri bagian 2: Kegiatan apa yang diceritakan?)",
+    "konteks": "Teks bacaan perkenalan diri kelanjutan bagian 2 tentang interaksi dan aktivitas mengobrol bersama teman (友達とおしゃべり・会話). (Teks bacaan perkenalan diri bagian 2.)",
+    "opts": [
+      "A -",
+      "B Gambar 2 orang mengobrol",
+      "C -"
+    ],
+    "penj": "💡 Pada bagian kedua bacaan perkenalan diri, penulis menceritakan bagaimana ia menikmati waktu bercakap-cakap santai dan berdiskusi dengan teman-temannya di kelas. Gambar yang tepat adalah dua orang sedang mengobrol."
+  },
+  {
+    "no": 40,
+    "pert": "[ dokkai ] Pamflet Obat part 1 ([ Dokkai ] Pamflet Obat bagian 1: Kapan atau untuk gejala apa obat ini diminum?)",
+    "konteks": "Pamflet informasi khasiat dan indikasi obat batuk. (Pamflet informasi obat dan indikasi medis.)",
+    "opts": [
+      "A -",
+      "B -",
+      "C obat diminum ketika merasa せきがでる"
+    ],
+    "penj": "💡 Berdasarkan pamflet petunjuk obat, obat tersebut diindikasikan khusus untuk meredakan gejala batuk (せきが出る時 / seki ga deru toki)."
+  },
+  {
+    "no": 41,
+    "pert": "[ dokkai ] Pamflet Obat part 2 ([ Dokkai ] Pamflet Obat bagian 2: Kapan obat ini harus diminum?)",
+    "konteks": "Pamflet aturan pakai mengenai waktu konsumsi obat (この薬はいつ飲みますか). (Petunjuk aturan minum obat.)",
+    "opts": [
+      "A -",
+      "B -",
+      "C kapan minum obat : 食事の前に"
+    ],
+    "penj": "💡 Pada petunjuk pemakaian obat tertulis bahwa obat harus diminum sebelum makan (食事の前に / 食前 - shokuzen)."
+  },
+  {
+    "no": 42,
+    "pert": "[ dokkai ] Bacaan panjang tentang restoran dan masakannya ([ Dokkai ] Teks bacaan restoran: Pengalaman apa yang dirasakan mengenai restoran tersebut?)",
+    "konteks": "【森の レストランへ ようこそ！】自然の中に ある レストランです。 おいしい 料理と すてきな 景色が 楽しめます。 (Brosur restoran hutan alami dan ulasan pengunjung.)",
+    "opts": [
+      "A -",
+      "B -",
+      "C 値段がやすなかったです"
+    ],
+    "penj": "💡 Dalam ulasan pengalaman bersantap di restoran hutan tersebut, diungkapkan bahwa makanannya sangat lezat namun harganya tidaklah murah (値段が安くなかったです / harganya cukup tinggi/mahal)."
+  },
+  {
+    "no": 43,
+    "pert": "[ dokkai ] Apa yang bisa dilakukan di restoran ? ([ Dokkai ] Apa kegiatan yang bisa dilakukan di restoran tersebut?)",
+    "konteks": "Fasilitas taman outdoor di restoran hutan (庭で遊ぶ). (Brosur fasilitas restoran alami.)",
+    "opts": [
+      "A -",
+      "B -",
+      "C Jawabannya ada にわ nya"
+    ],
+    "penj": "💡 Pamflet restoran menerangkan fasilitas area pekarangan/taman yang luas di mana pengunjung atau anak-anak bisa bermain di taman (庭で遊びます / niwa de asobimasu)."
+  },
+  {
+    "no": 44,
+    "pert": "[ dokkai ] Perintah Fotocopy \n\nsampai jam berapa paling lambat ? ([ Dokkai ] Instruksi Fotokopi: Paling lambat jam berapa dokumen harus selesai difotokopi?)",
+    "konteks": "Memo instruksi kantor mengenai batas waktu fotokopi dokumen sebelum rapat. (Memo perintah kerja fotokopi dokumen.)",
+    "opts": [
+      "A -",
+      "B -",
+      "C 13.00"
+    ],
+    "penj": "💡 Pada memo kerja kantor tertulis instruksi jelas: 13時までにコピーしてください (Tolong fotokopi dokumen sebelum pukul 13.00). Jadi paling lambat jam 13.00."
+  },
+  {
+    "no": 45,
+    "pert": "[ dokkai ] fotocopy ditaruh dimana ? ([ Dokkai ] Hasil fotokopi ditaruh di mana?)",
+    "konteks": "Instruksi penempatan hasil fotokopi dokumen. (Lokasi penyerahan dokumen fotokopi.)",
+    "opts": [
+      "A -",
+      "B -",
+      "C Gambar meja diatas ada kertas dan pamflet nama"
+    ],
+    "penj": "💡 Memo menyebutkan agar dokumen hasil salinan ditaruh di atas meja kerja staf yang meminta (meja bertuliskan plang nama staf bersangkutan)."
+  },
+  {
+    "no": 46,
+    "pert": "[ dokkai ] Pamflet makanan\n\nSampai Jam berapa モーニングセット (Morning Set)? ([ Dokkai ] Pamflet Makanan: Sampai jam berapa menu Morning Set disajikan?)",
+    "konteks": "Pamflet menu sarapan pagi kafe (Morning Set). (Pamflet menu sarapan pagi di kafe.)",
+    "opts": [
+      "A 11:30",
+      "B -",
+      "C -"
+    ],
+    "penj": "💡 Pamflet kafe mencantumkan bahwa menu sarapan pagi (モーニングセット / Morning Set) dilayani hingga pukul 11:30."
+  },
+  {
+    "no": 47,
+    "pert": "[ dokkai ] Berapa harga Kopi ? ([ Dokkai ] Berapa harga Kopi pada daftar menu kafe?)",
+    "konteks": "Daftar harga minuman pada pamflet kafe. (Brosur daftar harga minuman kafe.)",
+    "opts": [
+      "A -",
+      "B -",
+      "C 550 円"
+    ],
+    "penj": "💡 Berdasarkan daftar harga pada brosur menu kafe, harga untuk segelas kopi (コーヒー) tertera seharga 550 Yen (550円)."
+  },
+  {
+    "no": 48,
+    "pert": "[ dokkai ] Pemberitahuan ばにんかい:\n\nperayaan Acaranya kapan ? ([ Dokkai ] Pemberitahuan Pesta Akhir Tahun (Bounenkai): Perayaan acaranya diadakan tanggal berapa?)",
+    "konteks": "Undangan pesta akhir tahun perusahaan (忘年会 / ぼうねんかい). (Surat pemberitahuan pesta akhir tahun.)",
+    "opts": [
+      "A -",
+      "B -",
+      "C 12 月 14 日"
+    ],
+    "penj": "💡 Pada surat pemberitahuan pesta perayaan akhir tahun (忘年会), tertera tanggal pelaksanaan acara yaitu pada tanggal 14 Desember (12月14日)."
+  },
+  {
+    "no": 49,
+    "pert": "[ dokkai ] Apa yang perlu dibawa ? ([ Dokkai ] Apa yang perlu dibawa oleh peserta pesta?)",
+    "konteks": "Persyaratan barang bawaan peserta pesta (持ち物). (Keterangan barang bawaan peserta pada undangan.)",
+    "opts": [
+      "A 飲み物",
+      "B -",
+      "C -"
+    ],
+    "penj": "💡 Pada bagian 持ち物 (barang bawaan yang harus dibawa), tercantum 飲み物 (minuman), di mana para peserta diminta membawa minuman kesukaan masing-masing."
+  },
+  {
+    "no": 50,
+    "pert": "[ dokkai ] Pamflet Restoran\n\nApa yang dilakukan didalam restoran ? ([ Dokkai ] Pamflet Restoran: Keistimewaan apa yang bisa dinikmati di restoran?)",
+    "konteks": "Informasi menu dan keistimewaan santapan di restoran. (Brosur promosi kuliner restoran.)",
+    "opts": [
+      "A -",
+      "B -",
+      "C しんせんな きせつ りょうりが たべられる"
+    ],
+    "penj": "💡 Keunggulan utama restoran yang disebutkan dalam pamflet adalah tamu dapat menyantap hidangan musiman yang segar (しんせんな 季節料理が 食べられる / 新鮮な季節料理が食べられる)."
+  },
+  {
+    "no": 51,
+    "pert": "[ dokkai ] Sampai jam berapa ? ([ Dokkai ] Sampai jam berapa batas waktu kegiatan tersebut?)",
+    "konteks": "Batas waktu acara / penyelesaian kegiatan dalam dokumen instruksi. (Keterangan batas waktu pada dokumen pengumuman.)",
+    "opts": [
+      "A Jam 13.00",
+      "B -",
+      "C -"
+    ],
+    "penj": "💡 Berdasarkan dokumen instruksi atau pengumuman yang tercantum, batas waktu pelaksanaan kegiatan tersebut adalah tepat pada Jam 13.00."
+  }
+]

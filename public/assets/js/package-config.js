@@ -62,6 +62,12 @@ window.PAKET_CONFIG = {
             "slug": "konpyuutaa-tambahan-quiz",
             "total": 61
           }
+        },
+        {
+          "nama": "MAGARIMASU 2",
+          "slug": "magarimasu2-quiz",
+          "total": 50,
+          "ikon": "M2"
         }
       ]
     },
