@@ -133,16 +133,34 @@ try{document.getElementById("h-date").textContent=dt.toLocaleDateString("id-ID")
 if(!R){document.getElementById("h-skor").textContent="-";document.getElementById("h-pin").style.left="0%";document.getElementById("h-pin-n").textContent="-";return;}
 var benar=R.benar||0,total=R.total||0;
 var pc=total?Math.round(benar/total*100):0;
-var J=Math.round(10+(benar/total)*240);if(isNaN(J))J=0;
-var lv=J>=200?"A2":J>=175?"A2.1":J>=145?"A1":"-";
+var isSSW = /^ssw-/i.test(slug);
+var J, lv, pass;
+if (isSSW) {
+  J = pc;
+  pass = pc >= 65;
+  lv = pass ? "LULUS" : "BELUM LULUS";
+} else {
+  J = Math.round(10+(benar/total)*240); if(isNaN(J)) J = 0;
+  pass = J >= 200;
+  lv = J >= 200 ? "A2" : J >= 175 ? "A2.1" : J >= 145 ? "A1" : "-";
+}
 document.getElementById("h-benar").textContent=benar+" / "+total+" ("+pc+"%)";
-document.getElementById("h-skor").textContent=J;
+document.getElementById("h-skor").textContent=isSSW ? (pc + "%") : J;
 document.getElementById("h-level").textContent=lv;
 var st=document.getElementById("h-status");
-if(J>=200){st.textContent="LULUS";st.style.background="#d1fae5";st.style.color="#065f46";}
-else{st.textContent="BELUM LULUS";st.style.background="#fee2e2";st.style.color="#991b1b";}
-document.getElementById("h-pin").style.left=Math.max(0,Math.min(100,((J-10)/240)*100))+"%";
-document.getElementById("h-pin-n").textContent=J;
+if(pass){st.textContent=isSSW ? "LULUS (MIN. 65%)" : "LULUS";st.style.background="#d1fae5";st.style.color="#065f46";}
+else{st.textContent=isSSW ? "BELUM LULUS (<65%)" : "BELUM LULUS";st.style.background="#fee2e2";st.style.color="#991b1b";}
+if(isSSW){
+  document.getElementById("h-pin").style.left=Math.max(0,Math.min(100,pc))+"%";
+  document.getElementById("h-pin-n").textContent=pc+"%";
+  var targetEl=document.querySelector(".h-bar-target");
+  if(targetEl){targetEl.style.left="65%";targetEl.title="Target Kelulusan SSW (65%)";}
+  var lbls=document.querySelectorAll(".h-bar-labels span");
+  if(lbls && lbls.length>=3){lbls[0].textContent="0%";lbls[1].textContent="65% (Min. Lulus SSW)";lbls[2].textContent="100%";}
+} else {
+  document.getElementById("h-pin").style.left=Math.max(0,Math.min(100,((J-10)/240)*100))+"%";
+  document.getElementById("h-pin-n").textContent=J;
+}
 
 var SECN={sec1:["文字と語彙","Script and Vocabulary"],sec2:["会話と表現","Conversation and Expression"],sec3:["聴解","Listening Comprehension"],sec4:["読解","Reading Comprehension"]};
 var box=document.getElementById("h-secs");

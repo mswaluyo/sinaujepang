@@ -28,14 +28,21 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
     return null;
   }
   function jftPos(j) { return Math.max(0, Math.min(100, ((j - 10) / 240) * 100)); }
+  function isSSW(slug) {
+    return /^ssw-/i.test(slug || "");
+  }
   function badgeHTML(r, slug) {
     var has = !!r;
-    var j = has ? jftEst(r.skor) : 0, lv = has ? jftLevel(j) : "-";
-    var lvCls = has ? (j >= 200 ? "bg-emerald-100 text-emerald-700" : j >= 145 ? "bg-amber-100 text-amber-700" : "bg-rose-100 text-rose-700") : "bg-sky-100 text-sky-700";
+    var ssw = isSSW(slug);
     var benar = has ? (r.benar || 0) : 0;
     var total = has ? (r.total || 0) : 0;
     var jawab = has ? (r.jawab != null ? r.jawab : benar) : 0;
-    var pct = has && r.skor != null ? r.skor : 0;
+    var pct = has && r.skor != null ? r.skor : (total ? Math.round(benar / total * 100) : 0);
+    var j = has ? (ssw ? pct : jftEst(r.skor)) : 0;
+    var lv = has ? (ssw ? (pct >= 65 ? "LULUS" : "BELUM LULUS") : jftLevel(j)) : "-";
+    var pass = ssw ? (pct >= 65) : (j >= 200);
+    var lvCls = has ? (pass ? "bg-emerald-100 text-emerald-700" : "bg-rose-100 text-rose-700") : "bg-sky-100 text-sky-700";
+    
     // ── Tanggal (didefinisikan SEBELUM dipakai headLine) ──
     var tgl = '';
     if (has && r.at) {
@@ -44,7 +51,47 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
         tgl = '<span class="text-[10px] text-slate-400">' + d.toLocaleDateString('id-ID', { day:'numeric', month:'short', year:'numeric' }) + '</span>';
       } catch(e){}
     }
-    // ── 3 segmen tabel: BENAR | SKOR | LEVEL (satu baris, border pemisah) ──
+
+    if (ssw) {
+      // ── SSW Mode: Skala 0-100% (Standar Lulus Min. 65%) ──
+      var headLineSSW = has
+        ? '<div class="flex items-center justify-between text-[11px] mb-2 pb-2 border-b border-slate-200/60">'
+          + '<span class="text-slate-500">BENAR <b class="text-slate-800">' + benar + '/' + total + '</b></span>'
+          + '<span aria-hidden="true" class="w-2"></span>'
+          + '<span class="text-slate-500">SKOR <b class="text-slate-800">' + pct + '%</b></span>'
+          + '<span aria-hidden="true" class="w-2"></span>'
+          + '<span class="text-slate-500">HASIL <b class="' + (pass ? 'text-emerald-600' : 'text-rose-600') + '">' + lv + '</b></span>'
+          + (tgl ? ' <span class="text-slate-400">' + tgl + '</span>' : '')
+          + '</div>'
+        : '<div class="flex items-center justify-between text-[11px] mb-2 pb-2 border-b border-slate-200/60 text-slate-400">Belum mengerjakan</div>';
+
+      var posSSW = Math.max(0, Math.min(100, pct));
+      var pinSSW = has
+        ? '<div class="absolute z-10 pointer-events-none" style="left:' + posSSW.toFixed(2) + '%;bottom:100%;transform:translateX(-50%);margin-bottom:-1px">'
+          + '<span class="bg-slate-800 text-white font-bold text-[10px] px-1.5 py-0.5 rounded-md shadow inline-block whitespace-nowrap">' + pct + '%</span>'
+          + '<div class="w-0 h-0 border-l-[4px] border-l-transparent border-r-[4px] border-r-transparent border-t-[4px] border-t-slate-800 mx-auto"></div>'
+          + '</div>'
+        : '';
+      var markerSSW = '<div class="absolute top-0 bottom-0 w-[2px] bg-slate-700" style="left:65%" title="Target Kelulusan 65%"></div>';
+      var barSSW = has
+        ? '<div class="w-full h-2.5 rounded-full bg-gradient-to-r from-rose-400 via-amber-300 to-emerald-400 relative shadow-inner overflow-visible">' + pinSSW + markerSSW + '</div>'
+        : '<div class="w-full h-2.5 rounded-full bg-slate-200 relative"><div class="absolute top-0 bottom-0 w-[2px] bg-slate-300" style="left:65%"></div></div>';
+      var skalaSSW = '<div class="relative text-[11px] text-slate-500 font-bold mt-1.5 h-6" style="padding-left:4px;padding-right:4px">'
+        + '<span style="position:absolute;left:4px;top:0">0%</span>'
+        + '<span class="absolute text-center top-0 text-emerald-600 font-bold" style="left:65%;transform:translateX(-50%)">65%<br/><span class="text-[9px] text-emerald-600 font-normal">Lulus</span></span>'
+        + '<span style="position:absolute;right:4px;top:0">100%</span>'
+        + '</div>';
+
+      return '<div class="rounded-xl border border-slate-200/80 bg-white p-3 my-2 shadow-inner select-none">'
+        + headLineSSW
+        + '<div class="relative" style="margin-top:28px;margin-bottom:8px">'
+        + barSSW
+        + skalaSSW
+        + '</div>'
+        + '</div>';
+    }
+
+    // ── 3 segmen tabel JFT: BENAR | SKOR | LEVEL (satu baris, border pemisah) ──
     var headLine = has
       ? '<div class="flex items-center justify-between text-[11px] mb-2 pb-2 border-b border-slate-200/60">'
         + '<span class="text-slate-500">BENAR <b class="text-slate-800">' + benar + '/' + total + '</b></span>'
@@ -105,11 +152,15 @@ function jftLevel(j) { return j >= 200 ? "A2" : j >= 175 ? "A2.1" : j >= 145 ? "
       var footStatus = '<span class="score-foot text-[11px] text-slate-400 font-medium flex items-center gap-1"><i class="fa-solid fa-play text-sky-400"></i><span>Siap Mengerjakan</span></span>';
       
       if (r) {
+        var ssw = isSSW(slug);
+        var pct = r.skor != null ? r.skor : (r.total ? Math.round(r.benar / r.total * 100) : 0);
         var j = jftEst(r.skor);
-        ok = j >= 200;
+        ok = ssw ? (pct >= 65) : (j >= 200);
         fin = (r.total && (r.jawab == null || r.jawab >= r.total));
+        var passText = ssw ? "Lulus (Min. 65%)" : "Lulus (Min. 200)";
+        var failText = ssw ? "Belum Lulus (Min. 65%)" : "Belum Lulus (Min. 200)";
         footStatus = '<span class="score-foot text-[11px] font-semibold flex items-center gap-1 ' + (ok ? "text-emerald-600" : "text-rose-500") + '">'
-          + (ok ? '<i class="fa-solid fa-circle-check"></i><span>Lulus (Min. 200)</span>' : '<i class="fa-solid fa-circle-xmark"></i><span>Belum Lulus (Min. 200)</span>')
+          + (ok ? '<i class="fa-solid fa-circle-check"></i><span>' + passText + '</span>' : '<i class="fa-solid fa-circle-xmark"></i><span>' + failText + '</span>')
           + '</span>';
         txtAct = fin ? "Ulangi Simulasi" : "Lanjutkan (" + (r.jawab || r.benar) + "/" + r.total + ")";
       }
