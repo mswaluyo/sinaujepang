@@ -319,37 +319,39 @@
 
     // ── 6. Logika Napas Alami & Gerak Halus (Breathing & Subtle Sway) ──
     
-    // ── Fungsi Pose Duduk Stabil di Kursi & Meja ──
+    // ── Fungsi Pose Duduk Alami & Tangan Mengetik di Keyboard Laptop ──
     function applySittingPose(vrm) {
       if (!vrm || !vrm.humanoid) return;
 
       // 1. Paha ditekuk 90 derajat ke depan
       const leftUpperLeg = vrm.humanoid.getNormalizedBoneNode('leftUpperLeg');
       const rightUpperLeg = vrm.humanoid.getNormalizedBoneNode('rightUpperLeg');
-      if (leftUpperLeg) leftUpperLeg.rotation.set(-1.52, 0.08, 0);
-      if (rightUpperLeg) rightUpperLeg.rotation.set(-1.52, -0.08, 0);
+      if (leftUpperLeg) leftUpperLeg.rotation.set(-1.50, 0.05, 0);
+      if (rightUpperLeg) rightUpperLeg.rotation.set(-1.50, -0.05, 0);
 
-      // 2. Betis ditekuk 90 derajat ke bawah menuju lantai
+      // 2. Betis lurus ke bawah
       const leftLowerLeg = vrm.humanoid.getNormalizedBoneNode('leftLowerLeg');
       const rightLowerLeg = vrm.humanoid.getNormalizedBoneNode('rightLowerLeg');
-      if (leftLowerLeg) leftLowerLeg.rotation.set(1.52, 0, 0);
-      if (rightLowerLeg) rightLowerLeg.rotation.set(1.52, 0, 0);
+      if (leftLowerLeg) leftLowerLeg.rotation.set(1.50, 0, 0);
+      if (rightLowerLeg) rightLowerLeg.rotation.set(1.50, 0, 0);
 
-      // 3. Posisi Lengan bertumpu santai di atas meja
+      // 3. Pundak dan Lengan Atas diarahkan ke bawah dan maju ke meja (rapat ke badan)
       const leftUpperArm = vrm.humanoid.getNormalizedBoneNode('leftUpperArm');
       const rightUpperArm = vrm.humanoid.getNormalizedBoneNode('rightUpperArm');
-      if (leftUpperArm) leftUpperArm.rotation.set(-0.48, 0.12, -0.62);
-      if (rightUpperArm) rightUpperArm.rotation.set(-0.48, -0.12, 0.62);
+      if (leftUpperArm) leftUpperArm.rotation.set(-0.35, -0.20, -0.18);
+      if (rightUpperArm) rightUpperArm.rotation.set(-0.35, 0.20, 0.18);
 
+      // 4. Lengan Bawah ditekuk maju ke arah keyboard laptop
       const leftLowerArm = vrm.humanoid.getNormalizedBoneNode('leftLowerArm');
       const rightLowerArm = vrm.humanoid.getNormalizedBoneNode('rightLowerArm');
-      if (leftLowerArm) leftLowerArm.rotation.set(-0.72, 0, -0.35);
-      if (rightLowerArm) rightLowerArm.rotation.set(-0.72, 0, 0.35);
+      if (leftLowerArm) leftLowerArm.rotation.set(-1.15, -0.35, 0.45);
+      if (rightLowerArm) rightLowerArm.rotation.set(-1.15, 0.35, -0.45);
 
+      // 5. Telapak Tangan menelungkup santai di dekat keyboard laptop
       const leftHand = vrm.humanoid.getNormalizedBoneNode('leftHand');
       const rightHand = vrm.humanoid.getNormalizedBoneNode('rightHand');
-      if (leftHand) leftHand.rotation.set(0.1, 0, -0.15);
-      if (rightHand) rightHand.rotation.set(0.1, 0, 0.15);
+      if (leftHand) leftHand.rotation.set(0.15, -0.1, -0.3);
+      if (rightHand) rightHand.rotation.set(0.15, 0.1, 0.3);
     }
 
     function updateNaturalIdle(elapsedTime) {
