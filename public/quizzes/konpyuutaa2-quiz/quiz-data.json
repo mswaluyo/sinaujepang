@@ -46,7 +46,10 @@
       "コンピューター (Komputer)"
     ],
     "image": "assets/konpyuuta.jpg",
-    "kunci_id": "コンピューター"
+    "kunci_id": "コンピューター",
+    "mnn": "Mojigoi",
+    "trans": "Soal bergambar: konpyuuta.jpg",
+    "img": "assets/konpyuuta.jpg"
   },
   {
     "no": 2,
@@ -95,7 +98,10 @@
       "かぎ (Kunci)"
     ],
     "image": "assets/kagi1.png",
-    "kunci_id": "かぎ"
+    "kunci_id": "かぎ",
+    "mnn": "Mojigoi",
+    "trans": "Soal bergambar: kagi1.png",
+    "img": "assets/kagi1.png"
   },
   {
     "no": 3,
@@ -144,7 +150,10 @@
       "おまつり (Festival / perayaan)"
     ],
     "image": "assets/kagi2.png",
-    "kunci_id": "けっこん"
+    "kunci_id": "けっこん",
+    "mnn": "Mojigoi",
+    "trans": "Soal bergambar: kagi2.png",
+    "img": "assets/kagi2.png"
   },
   {
     "no": 4,
@@ -193,7 +202,10 @@
       "待ちます (Menunggu)"
     ],
     "image": "assets/kagi3.png",
-    "kunci_id": "案内します"
+    "kunci_id": "案内します",
+    "mnn": "Mojigoi",
+    "trans": "Soal bergambar: kagi3.png",
+    "img": "assets/kagi3.png"
   },
   {
     "no": 5,
@@ -241,7 +253,9 @@
       "かるくて (Ringan)",
       "あかくて (Merah)"
     ],
-    "kunci_id": "かるくて"
+    "kunci_id": "かるくて",
+    "mnn": "Mojigoi",
+    "trans": "このカメラ は [ 軽くて ] つかいやすいです"
   },
   {
     "no": 6,
@@ -289,7 +303,9 @@
       "じゆうしゅ (Jiyuushu salah eja)",
       "じゅうしょ (Alamat juusho)"
     ],
-    "kunci_id": "じゅうしょ"
+    "kunci_id": "じゅうしょ",
+    "mnn": "Mojigoi",
+    "trans": "あなた の [ 住所 ]を 教えてください"
   },
   {
     "no": 7,
@@ -337,7 +353,9 @@
       "たのしかったです (Menyenangkan aktivitas)",
       "いそがしかったです (Sangat sibuk)"
     ],
-    "kunci_id": "うれしかったです"
+    "kunci_id": "うれしかったです",
+    "mnn": "Mojigoi",
+    "trans": "かっこい時計 を もらって。。。。。。。"
   },
   {
     "no": 8,
@@ -385,7 +403,9 @@
       "見ます (Menonton / melihat)",
       "聞きます (Mendengarkan)"
     ],
-    "kunci_id": "見ます"
+    "kunci_id": "見ます",
+    "mnn": "Mojigoi",
+    "trans": "まいにち テレビ を 。。。。。"
   },
   {
     "no": 9,
@@ -433,7 +453,9 @@
       "半 (Setengah han)",
       "年 (Tahun nen)"
     ],
-    "kunci_id": "分"
+    "kunci_id": "分",
+    "mnn": "Mojigoi",
+    "trans": "こんばん は ゆびんきょく で 7時30____ に 待ち合わせます。"
   },
   {
     "no": 10,
@@ -481,7 +503,9 @@
       "食べて (Makan tabete)",
       "始めて (Memulai hajimete)"
     ],
-    "kunci_id": "始めて"
+    "kunci_id": "始めて",
+    "mnn": "Mojigoi",
+    "trans": "らいげつ から テニス を_____みよう と おもっています"
   },
   {
     "no": 11,
@@ -529,7 +553,9 @@
       "泳ぎたり (Salah konjugasi seharusnya oyoitari)",
       "歩いたり (Berjalan kaki aruitari)"
     ],
-    "kunci_id": "歩いたり"
+    "kunci_id": "歩いたり",
+    "mnn": "Mojigoi",
+    "trans": "体 の けんこう の ため に____うんどうしたり"
   },
   {
     "no": 12,
@@ -577,7 +603,9 @@
       "時間 (Durasi jam jikan)",
       "分 (Menit fun)"
     ],
-    "kunci_id": "年"
+    "kunci_id": "年",
+    "mnn": "Mojigoi",
+    "trans": "ことし は 2024 [ ねん ]"
   },
   {
     "no": 13,
@@ -625,7 +653,9 @@
       "おしえます (Mengajari)",
       "さそいます (Mengajak)"
     ],
-    "kunci_id": "しらせます"
+    "kunci_id": "しらせます",
+    "mnn": "Mojigoi",
+    "trans": "メル で イベント に ついて 友達 に _____"
   },
   {
     "no": 14,
@@ -673,7 +703,9 @@
       "どうぞ (Silakan douzo)",
       "こちらこそ (Sama-sama pihak kami)"
     ],
-    "kunci_id": "どうぞ"
+    "kunci_id": "どうぞ",
+    "mnn": "Mojigoi",
+    "trans": "A : ここで_____  B : ありがとうございます"
   },
   {
     "no": 15,
@@ -721,7 +753,9 @@
       "あります (Ada benda mati)",
       "います (Ada makhluk bernyawa)"
     ],
-    "kunci_id": "います"
+    "kunci_id": "います",
+    "mnn": "Hyougen",
+    "trans": "A : もしもし。今どこですか  B : 今 郵便局 に_____"
   },
   {
     "no": 16,
@@ -769,7 +803,9 @@
       "できますよ (Bisa lho informasi)",
       "できますね (Bisa ya penegasan)"
     ],
-    "kunci_id": "できますか"
+    "kunci_id": "できますか",
+    "mnn": "Hyougen",
+    "trans": "A : キﾐさん、お国 は どちらですか。 B : かんこくです。 A : キﾐさん、かんこくご が _____"
   },
   {
     "no": 17,
@@ -817,7 +853,9 @@
       "忙しくて (Sibuk sehingga...)",
       "ひまなので (Karena senggang)"
     ],
-    "kunci_id": "忙しくて"
+    "kunci_id": "忙しくて",
+    "mnn": "Hyougen",
+    "trans": "A : 仕事 は どうですか？ B : 最近、仕事 は _____時間 が ありません"
   },
   {
     "no": 18,
@@ -865,7 +903,9 @@
       "食べ買った (Salah bentuk tata bahasa)",
       "食べ過ぎ (Terlalu banyak makan)"
     ],
-    "kunci_id": "食べると"
+    "kunci_id": "食べると",
+    "mnn": "Hyougen",
+    "trans": "A :よかったら、 このテンプラ は おいしですよ。 B：すみません。アルレギ が あるので、_____ 身体 が かゆくなります。"
   },
   {
     "no": 19,
@@ -913,7 +953,9 @@
       "教えてほしいですか。 (Apakah Anda ingin diajari?)",
       "教えてくださいませんか。 (Sudikah Anda mengajari saya? permohonan sopan)"
     ],
-    "kunci_id": "教えてくださいませんか。"
+    "kunci_id": "教えてくださいませんか。",
+    "mnn": "Hyougen",
+    "trans": "A : あのう。。すみません B : はい、なんですか  A : このかんじ の 読み方 を _____"
   },
   {
     "no": 20,
@@ -961,7 +1003,9 @@
       "書いています (Sedang menulis)",
       "書いてください (Tolong tuliskan)"
     ],
-    "kunci_id": "書いてあります"
+    "kunci_id": "書いてあります",
+    "mnn": "Hyougen",
+    "trans": "A : あのう、すみません、日本語 の 本 は クラス に 忘れました。 B : どんな 本ですか。 A : 名前 が _____"
   },
   {
     "no": 21,
@@ -1009,7 +1053,9 @@
       "木雨ですね (Hujan kayu tidak ada)",
       "雪が降りますね (Turun salju ya)"
     ],
-    "kunci_id": "いい天気ですね"
+    "kunci_id": "いい天気ですね",
+    "mnn": "Hyougen",
+    "trans": "A : ________ B : そうですね。"
   },
   {
     "no": 22,
@@ -1057,7 +1103,9 @@
       "できれば (Sebisa mungkin)",
       "食べたら (Setelah makan)"
     ],
-    "kunci_id": "よかったら"
+    "kunci_id": "よかったら",
+    "mnn": "Hyougen",
+    "trans": "この 後、みんなと一緒に 食事にいくんです______ 一緒に行きませんか。"
   },
   {
     "no": 23,
@@ -1105,7 +1153,9 @@
       "よかった (Syukurlah)",
       "ざんねん (Sayang sekali)"
     ],
-    "kunci_id": "お久しぶり"
+    "kunci_id": "お久しぶり",
+    "mnn": "Hyougen",
+    "trans": "A :もしもし、エリカさんですか。私はトノです。 B :トノさんですか____ です。お元気ですか。"
   },
   {
     "no": 24,
@@ -1153,7 +1203,9 @@
       "言っていましたか (Tadi mengatakan apa)",
       "書きましたか (Apakah Anda tulis)"
     ],
-    "kunci_id": "言っていましたか"
+    "kunci_id": "言っていましたか",
+    "mnn": "Hyougen",
+    "trans": "あのう、すみません、今のアナウンス は なんと_____"
   },
   {
     "no": 25,
@@ -1201,7 +1253,9 @@
       "今度から気を付けます (Mulai lain kali saya akan lebih berhati-hati)",
       "今度からお願いします (Mulai lain kali tolong ya)"
     ],
-    "kunci_id": "今度から気を付けます"
+    "kunci_id": "今度から気を付けます",
+    "mnn": "Hyougen",
+    "trans": "A : 全部 かたづけましたか. B : はい, わかりました。 A : 電気 が ついていますよ。 B : あ、すみません。_____"
   },
   {
     "no": 26,
@@ -1251,7 +1305,8 @@
     ],
     "audio": "assets/c1.wav",
     "trans": "Percakapan telepon antara Tanaka dan Sato di pagi hari.",
-    "kunci_id": "パンとたまご"
+    "kunci_id": "パンとたまご",
+    "mnn": "Choukai"
   },
   {
     "no": 27,
@@ -1301,7 +1356,8 @@
     ],
     "audio": "assets/c2.wav",
     "trans": "Percakapan menanyakan kondisi cuaca.",
-    "kunci_id": "はれ"
+    "kunci_id": "はれ",
+    "mnn": "Choukai"
   },
   {
     "no": 28,
@@ -1351,7 +1407,8 @@
     ],
     "audio": "assets/c3.wav",
     "trans": "Guru memberikan pengumuman di dalam kelas.",
-    "kunci_id": "120ページ"
+    "kunci_id": "120ページ",
+    "mnn": "Choukai"
   },
   {
     "no": 29,
@@ -1401,7 +1458,8 @@
     ],
     "audio": "assets/c3.wav",
     "trans": "Instruksi guru di kelas.",
-    "kunci_id": "聞きます"
+    "kunci_id": "聞きます",
+    "mnn": "Choukai"
   },
   {
     "no": 30,
@@ -1451,7 +1509,8 @@
     ],
     "audio": "assets/c4.wav",
     "trans": "Dua orang berbincang mengenai kebiasaan hidup sehat.",
-    "kunci_id": "ヨガ"
+    "kunci_id": "ヨガ",
+    "mnn": "Choukai"
   },
   {
     "no": 31,
@@ -1501,7 +1560,8 @@
     ],
     "audio": "assets/c5.wav",
     "trans": "Pengumuman resmi dari perpustakaan.",
-    "kunci_id": "3 週間"
+    "kunci_id": "3 週間",
+    "mnn": "Choukai"
   },
   {
     "no": 32,
@@ -1551,7 +1611,8 @@
     ],
     "audio": "assets/c5.wav",
     "trans": "Pengumuman jam operasional perpustakaan di hari Sabtu.",
-    "kunci_id": "午後 10 時まで"
+    "kunci_id": "午後 10 時まで",
+    "mnn": "Choukai"
   },
   {
     "no": 33,
@@ -1601,7 +1662,8 @@
     ],
     "audio": "assets/c6.wav",
     "trans": "Percakapan dua teman sekolah mengenai transportasi harian.",
-    "kunci_id": "バス"
+    "kunci_id": "バス",
+    "mnn": "Choukai"
   },
   {
     "no": 34,
@@ -1651,7 +1713,8 @@
     ],
     "audio": "assets/c7.wav",
     "trans": "Percakapan merencanakan liburan musim panas.",
-    "kunci_id": "7 月 24 日"
+    "kunci_id": "7 月 24 日",
+    "mnn": "Choukai"
   },
   {
     "no": 35,
@@ -1701,7 +1764,8 @@
     ],
     "audio": "assets/c7.wav",
     "trans": "Rencana tempat liburan musim panas.",
-    "kunci_id": "駅のちかくじんじゃ"
+    "kunci_id": "駅のちかくじんじゃ",
+    "mnn": "Choukai"
   },
   {
     "no": 36,
@@ -1751,7 +1815,8 @@
     ],
     "audio": "assets/c8.wav",
     "trans": "Situasi percakapan di tempat olahraga.",
-    "kunci_id": "Gambar orang pegang penyedot debu/Vacum cleaner"
+    "kunci_id": "Gambar orang pegang penyedot debu/Vacum cleaner",
+    "mnn": "Choukai"
   },
   {
     "no": 37,
@@ -1801,7 +1866,8 @@
     ],
     "audio": "assets/c8.wav",
     "trans": "Kendala pemesanan lapangan olahraga.",
-    "kunci_id": "Gambar tidak bisa memesan dari telepon (orang memegang handphone)"
+    "kunci_id": "Gambar tidak bisa memesan dari telepon (orang memegang handphone)",
+    "mnn": "Choukai"
   },
   {
     "no": 38,
@@ -1849,7 +1915,9 @@
       "- (-)",
       "Gambar orang pegang buku warna biru (Gambar orang memegang buku berwarna biru)"
     ],
-    "kunci_id": "Gambar orang pegang buku warna biru"
+    "kunci_id": "Gambar orang pegang buku warna biru",
+    "mnn": "Dokkai",
+    "trans": "[ Dokkai ] Bacaan panjang perkenalan diri part 1"
   },
   {
     "no": 39,
@@ -1897,7 +1965,9 @@
       "Gambar 2 orang mengobrol (Gambar 2 orang sedang mengobrol / bercakap-cakap)",
       "- (-)"
     ],
-    "kunci_id": "Gambar 2 orang mengobrol"
+    "kunci_id": "Gambar 2 orang mengobrol",
+    "mnn": "Dokkai",
+    "trans": "[ Dokkai ] Bacaan panjang perkenalan diri part 2"
   },
   {
     "no": 40,
@@ -1945,7 +2015,9 @@
       "- (-)",
       "obat diminum ketika merasa せきがでる (Obat diminum ketika merasa batuk せきがでる)"
     ],
-    "kunci_id": "obat diminum ketika merasa せきがでる"
+    "kunci_id": "obat diminum ketika merasa せきがでる",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Pamflet Obat part 1"
   },
   {
     "no": 41,
@@ -1993,7 +2065,9 @@
       "- (-)",
       "kapan minum obat : 食事の前に (Waktu minum obat: Sebelum makan 食事の前に)"
     ],
-    "kunci_id": "kapan minum obat : 食事の前に"
+    "kunci_id": "kapan minum obat : 食事の前に",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Pamflet Obat part 2"
   },
   {
     "no": 42,
@@ -2041,7 +2115,9 @@
       "- (-)",
       "値段がやすなかったです (Harganya tidak murah cukup mahal)"
     ],
-    "kunci_id": "値段がやすなかったです"
+    "kunci_id": "値段がやすなかったです",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Bacaan panjang tentang restoran dan masakannya"
   },
   {
     "no": 43,
@@ -2089,7 +2165,9 @@
       "- (-)",
       "Jawabannya ada にわ nya (Bermain di taman pekarangan 庭で遊びます)"
     ],
-    "kunci_id": "Jawabannya ada にわ nya"
+    "kunci_id": "Jawabannya ada にわ nya",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Apa yang bisa dilakukan di restoran ?"
   },
   {
     "no": 44,
@@ -2137,7 +2215,9 @@
       "- (-)",
       "13.00 (Pukul 13.00)"
     ],
-    "kunci_id": "13.00"
+    "kunci_id": "13.00",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Perintah Fotocopy  sampai jam berapa paling lambat ?"
   },
   {
     "no": 45,
@@ -2185,7 +2265,9 @@
       "- (-)",
       "Gambar meja diatas ada kertas dan pamflet nama (Gambar meja kerja yang di atasnya ada dokumen dan plang nama staf)"
     ],
-    "kunci_id": "Gambar meja diatas ada kertas dan pamflet nama"
+    "kunci_id": "Gambar meja diatas ada kertas dan pamflet nama",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] fotocopy ditaruh dimana ?"
   },
   {
     "no": 46,
@@ -2233,7 +2315,9 @@
       "- (-)",
       "- (-)"
     ],
-    "kunci_id": "11:30"
+    "kunci_id": "11:30",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Pamflet makanan Sampai Jam berapa モーニングセット (Morning Set)?"
   },
   {
     "no": 47,
@@ -2281,7 +2365,9 @@
       "- (-)",
       "550 円 (550 Yen)"
     ],
-    "kunci_id": "550 円"
+    "kunci_id": "550 円",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Berapa harga Kopi ?"
   },
   {
     "no": 48,
@@ -2329,7 +2415,9 @@
       "- (-)",
       "12 月 14 日 (14 Desember 12月14日)"
     ],
-    "kunci_id": "12 月 14 日"
+    "kunci_id": "12 月 14 日",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Pemberitahuan ばにんかい: perayaan Acaranya kapan ?"
   },
   {
     "no": 49,
@@ -2377,7 +2465,9 @@
       "- (-)",
       "- (-)"
     ],
-    "kunci_id": "飲み物"
+    "kunci_id": "飲み物",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Apa yang perlu dibawa ?"
   },
   {
     "no": 50,
@@ -2425,7 +2515,9 @@
       "- (-)",
       "しんせんな きせつ りょうりが たべられる (Dapat menyantap masakan musiman yang segar 新鮮な季節料理が食べられる)"
     ],
-    "kunci_id": "しんせんな きせつ りょうりが たべられる"
+    "kunci_id": "しんせんな きせつ りょうりが たべられる",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Pamflet Restoran Apa yang dilakukan didalam restoran ?"
   },
   {
     "no": 51,
@@ -2473,6 +2565,8 @@
       "- (-)",
       "- (-)"
     ],
-    "kunci_id": "Jam 13.00"
+    "kunci_id": "Jam 13.00",
+    "mnn": "Dokkai",
+    "trans": "[ dokkai ] Sampai jam berapa ?"
   }
 ]
