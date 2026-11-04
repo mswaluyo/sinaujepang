@@ -4,6 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google" content="notranslate" />
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
   <title>Zoom Kaiwa Practice - Sinau Jepang</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <script src="https://cdn.tailwindcss.com"></script>
@@ -43,7 +45,7 @@
     }
   </style>
 </head>
-<body class="h-screen w-screen flex flex-col justify-between select-none">
+<body class="h-screen w-screen flex flex-col justify-between select-none overflow-x-hidden md:overflow-hidden">
 
   <!-- ── 1. ZOOM TOP BAR ── -->
   <header class="h-12 bg-[#141417] border-b border-white/10 px-4 flex items-center justify-between z-20">
@@ -56,20 +58,40 @@
       <span class="text-xs font-medium text-slate-200 hidden sm:inline">Ruang Latihan Kaiwa: 佐藤先生 (Sato VRoid 3D) & 由紀アシスタント</span>
     </div>
 
-    <!-- Mode & Meeting Duration -->
-    <div class="flex items-center gap-3">
+    <!-- Mode & Meeting Duration + Modular Selector -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Selector Karakter -->
+      <div class="flex items-center gap-1 bg-white/5 border border-white/10 rounded-lg px-1.5 py-0.5 text-xs">
+        <label for="select-partner" class="text-slate-400 text-[10px] hidden lg:inline">Partner:</label>
+        <select id="select-partner" class="bg-transparent text-xs text-white font-medium focus:outline-none cursor-pointer">
+          <option value="both" class="bg-[#18181e] text-white">Sato & Yuki (Duet)</option>
+          <option value="sato" class="bg-[#18181e] text-sky-400">Sato-san Saja</option>
+          <option value="yuki" class="bg-[#18181e] text-pink-400">Yuki-chan Saja</option>
+        </select>
+      </div>
+
+      <!-- Selector Skenario / Model Latihan -->
+      <div class="flex items-center gap-1 bg-white/5 border border-white/10 rounded-lg px-1.5 py-0.5 text-xs">
+        <label for="select-scenario" class="text-slate-400 text-[10px] hidden lg:inline">Model:</label>
+        <select id="select-scenario" class="bg-transparent text-xs text-amber-300 font-semibold focus:outline-none cursor-pointer">
+          <option value="kaiwa" class="bg-[#18181e] text-amber-300">Kaiwa Harian (Casual)</option>
+          <option value="mendan" class="bg-[#18181e] text-sky-300">Mendan (Konsultasi)</option>
+          <option value="mensetsu" class="bg-[#18181e] text-emerald-300">Mensetsu (Interview Formal)</option>
+        </select>
+      </div>
+
       <div id="meeting-timer" class="text-xs font-mono text-slate-400">00:00</div>
-      <a href="/" class="text-xs text-rose-400 hover:text-rose-300 bg-rose-500/10 hover:bg-rose-500/20 px-3 py-1.5 rounded-lg transition font-medium">
+      <a href="/" class="text-xs text-rose-400 hover:text-rose-300 bg-rose-500/10 hover:bg-rose-500/20 px-2.5 sm:px-3 py-1.5 rounded-lg transition font-medium">
         <i class="fa-solid fa-phone-slash mr-1"></i> Keluar
       </a>
     </div>
   </header>
 
   <!-- ── 2. ZOOM MAIN STAGE (3 TILES: SATO-SAN + YUKI-CHAN + USER) ── -->
-  <main class="flex-1 p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 overflow-hidden relative">
+  <main class="flex-1 p-2 sm:p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-3 overflow-y-auto md:overflow-hidden relative">
 
     <!-- Tile 1: Sato-san (VRoid 3D Sensei) -->
-    <div id="sato-tile" class="video-tile flex flex-col items-center justify-center relative">
+    <div id="sato-tile" class="video-tile min-h-[220px] sm:min-h-[260px] md:min-h-0 h-full flex flex-col items-center justify-center relative">
       <div id="sato-canvas-container" class="w-full h-full"></div>
 
       <!-- Loading Sato -->
@@ -91,7 +113,7 @@
     </div>
 
     <!-- Tile 2: Yuki-chan (VRoid 3D Assistant) -->
-    <div id="yuki-tile" class="video-tile flex flex-col items-center justify-center relative">
+    <div id="yuki-tile" class="video-tile min-h-[220px] sm:min-h-[260px] md:min-h-0 h-full flex flex-col items-center justify-center relative">
       <div id="yuki-canvas-container" class="w-full h-full"></div>
 
       <!-- Loading Yuki -->
@@ -113,7 +135,7 @@
     </div>
 
     <!-- Tile 3: User Webcam / Local Video Feed -->
-    <div class="video-tile flex flex-col items-center justify-center relative bg-[#121216] sm:col-span-2 md:col-span-1">
+    <div class="video-tile min-h-[180px] sm:min-h-[240px] md:min-h-0 h-full flex flex-col items-center justify-center relative bg-[#121216] sm:col-span-2 md:col-span-1">
       <video id="user-webcam" class="w-full h-full object-cover -scale-x-100 hidden" autoplay playsinline muted></video>
       
       <!-- Fallback Avatar jika kamera belum aktif -->
@@ -140,90 +162,88 @@
 
   </main>
 
-  <!-- ── 2.5. BILAH DIBAGI 3 KOLOM SEJAJAR DENGAN VIDEO (DITINGGIKAN LEBIH LEGA) ── -->
-  <section class="h-36 sm:h-40 bg-[#111115] border-t border-white/10 px-3 py-2.5 relative z-25">
-    <div class="h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3">
+  <!-- ── 2.5. SINGLE FOCUS CHAT BOX (SEPERTI SUBTITLE ZOOM INTERAKTIF) ── -->
+  <section class="h-auto md:h-32 bg-[#111115] border-t border-white/10 px-3 py-2.5 relative z-25 shrink-0">
+    <div id="single-chat-box" class="h-full bg-[#18181e] border border-sky-500/30 rounded-2xl p-3 sm:p-3.5 flex flex-col justify-between shadow-lg transition-all duration-300">
       
-      <!-- Kolom 1 (Bawah Sato-san): Dialog / Respon Sensei -->
-      <div class="bg-[#18181e] border border-sky-500/25 rounded-xl p-3 flex flex-col justify-between overflow-hidden shadow-sm">
-        <div class="flex items-center justify-between text-[11px] text-sky-400 font-bold uppercase tracking-wider mb-1.5 border-b border-sky-500/15 pb-1">
-          <span class="flex items-center gap-1.5"><i class="fa-solid fa-chalkboard-user"></i> Sato-san (Sensei)</span>
-          <span class="text-[10px] bg-sky-500/10 text-sky-300 px-2 py-0.5 rounded border border-sky-500/20">Bahasa Jepang</span>
+      <!-- Header Single Box: Speaker Avatar, Name, & Tag -->
+      <div class="flex items-center justify-between mb-1.5 border-b border-white/10 pb-1.5">
+        <div class="flex items-center gap-2">
+          <div id="chat-speaker-badge" class="w-6 h-6 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs">
+            <i id="chat-speaker-icon" class="fa-solid fa-chalkboard-user"></i>
+          </div>
+          <span id="chat-speaker-name" class="text-xs sm:text-sm font-bold text-sky-400">Sato-san (Sensei)</span>
+          <span id="chat-speaker-role" class="text-[10px] bg-sky-500/10 text-sky-300 px-2 py-0.5 rounded border border-sky-500/20">Bahasa Jepang</span>
         </div>
-        <div id="col-sato-content" class="flex-1 overflow-y-auto pr-1 text-xs space-y-1 scrollbar-thin">
-          <div id="col-sato-jp" class="text-sky-200 font-bold text-xs sm:text-sm leading-snug notranslate" translate="no">みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！</div>
-          <div id="col-sato-id" class="text-xs text-slate-400">Halo semuanya! Saya Sato. Hari ini mari mulai latihan percakapan lewat Zoom!</div>
-        </div>
-      </div>
-
-      <!-- Kolom 2 (Bawah Yuki-chan): Bimbingan & Terjemahan Asisten -->
-      <div class="bg-[#18181e] border border-pink-500/25 rounded-xl p-3 flex flex-col justify-between overflow-hidden shadow-sm">
-        <div class="flex items-center justify-between text-[11px] text-pink-400 font-bold uppercase tracking-wider mb-1.5 border-b border-pink-500/15 pb-1">
-          <span class="flex items-center gap-1.5"><i class="fa-solid fa-comments"></i> Yuki-chan (Asisten)</span>
-          <span class="text-[10px] bg-pink-500/10 text-pink-300 px-2 py-0.5 rounded border border-pink-500/20">Bimbingan</span>
-        </div>
-        <div id="col-yuki-content" class="flex-1 overflow-y-auto pr-1 text-xs space-y-1 scrollbar-thin">
-          <div id="col-yuki-jp" class="text-pink-200 font-bold text-xs sm:text-sm leading-snug notranslate" translate="no">はい！アシスタントの由紀です。</div>
-          <div id="col-yuki-id" class="text-xs text-slate-300">Siap! Santai saja ya, kalau bingung cara bilangnya tanyakan pada saya!</div>
-        </div>
-      </div>
-
-      <!-- Kolom 3 (Bawah Mahasiswa): Petunjuk Interaksi & Ucapan Anda -->
-      <div class="bg-[#18181e] border border-emerald-500/25 rounded-xl p-3 flex flex-col justify-between overflow-hidden shadow-sm">
-        <div class="flex items-center justify-between text-[11px] text-emerald-400 font-bold uppercase tracking-wider mb-1.5 border-b border-emerald-500/15 pb-1">
-          <span class="flex items-center gap-1.5"><i class="fa-solid fa-lightbulb text-amber-300"></i> Petunjuk & Ucapan Anda</span>
+        
+        <!-- Hint Status Kanan -->
+        <div class="flex items-center gap-2">
+          <span id="chat-turn-status" class="text-[10px] text-slate-400 hidden sm:inline">
+            <i class="fa-solid fa-volume-high text-emerald-400 animate-pulse mr-1"></i> Sedang Berbicara
+          </span>
           <span id="col-user-status" class="text-[10px] bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/20">Siap Bicara</span>
         </div>
-        <div id="col-user-content" class="flex-1 overflow-y-auto pr-1 text-xs space-y-1.5 scrollbar-thin">
-          <div id="col-user-speech" class="text-emerald-200 font-medium text-xs leading-snug italic">"Belum ada ucapan. Silakan bicara langsung..."</div>
-          <div id="col-user-hint" class="text-[11px] text-slate-300 bg-black/40 p-2 rounded-lg border border-white/10 flex items-start gap-2">
-            <i class="fa-solid fa-circle-info text-sky-400 mt-0.5 shrink-0 text-xs"></i>
-            <span class="leading-relaxed">Jika bingung bahasa Jepangnya, katakan saja dalam Bahasa Indonesia. Yuki-chan akan memandu kalimat Jepangnya!</span>
-          </div>
+      </div>
+
+      <!-- Content Area Single Box: Teks Utama Jepang + Terjemahan Indonesia + Petunjuk -->
+      <div class="flex-1 overflow-y-auto pr-1 text-xs sm:text-sm space-y-1 scrollbar-thin">
+        <div id="chat-main-jp" class="text-white font-bold text-sm sm:text-base leading-snug notranslate" translate="no">
+          みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！
         </div>
+        <div id="chat-main-id" class="text-xs sm:text-sm text-slate-300">
+          Halo semuanya! Saya Sato. Hari ini mari mulai latihan percakapan lewat Zoom!
+        </div>
+      </div>
+
+      <!-- Hidden hook elements agar kompatibel dengan script yang sudah ada -->
+      <div class="hidden">
+        <div id="col-sato-content"><div id="col-sato-jp"></div><div id="col-sato-id"></div></div>
+        <div id="col-yuki-content"><div id="col-yuki-jp"></div><div id="col-yuki-id"></div></div>
+        <div id="col-user-speech"></div>
+        <div id="col-user-hint"></div>
       </div>
 
     </div>
   </section>
 
   <!-- ── 3. ZOOM BOTTOM CONTROL BAR ── -->
-  <footer class="h-16 bg-[#141417] border-t border-white/10 px-4 flex items-center justify-between z-20">
+  <footer class="h-16 bg-[#141417] border-t border-white/10 px-2 sm:px-4 flex items-center justify-between z-20 shrink-0">
 
     <!-- Kontrol Suara & Video Kiri -->
-    <div class="flex items-center gap-2">
-      <button id="btn-toggle-mic" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-xs font-medium flex flex-col items-center gap-1 transition min-w-[60px]">
+    <div class="flex items-center gap-1.5 sm:gap-2">
+      <button id="btn-toggle-mic" class="px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-[11px] sm:text-xs font-medium flex flex-col items-center gap-0.5 transition min-w-[50px] sm:min-w-[60px]">
         <i class="fa-solid fa-microphone text-sm text-emerald-400"></i>
         <span>Mute</span>
       </button>
 
-      <button id="btn-toggle-cam" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-xs font-medium flex flex-col items-center gap-1 transition min-w-[60px]">
+      <button id="btn-toggle-cam" class="px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-[11px] sm:text-xs font-medium flex flex-col items-center gap-0.5 transition min-w-[50px] sm:min-w-[60px]">
         <i class="fa-solid fa-video text-sm text-slate-300"></i>
         <span>Video</span>
       </button>
     </div>
 
     <!-- Kontrol Interaksi Tengah (Template Skenario di Awal, Mode AI Bebas di Paling Akhir) -->
-    <div class="flex items-center gap-2 overflow-x-auto py-1">
+    <div class="flex items-center gap-1.5 sm:gap-2 overflow-x-auto py-1 max-w-[60%] sm:max-w-none scrollbar-none">
       <!-- Tombol-tombol Template Skenario (Default Aktif) -->
-      <button id="btn-kaiwa-intro" class="px-3 py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-400 border border-sky-500/30 text-xs font-medium flex items-center gap-1.5 transition shrink-0">
+      <button id="btn-kaiwa-intro" class="px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-400 border border-sky-500/30 text-[11px] sm:text-xs font-medium flex items-center gap-1.5 transition shrink-0">
         <i class="fa-solid fa-id-card"></i>
-        <span>Perkenalan (自己紹介)</span>
+        <span>Perkenalan</span>
       </button>
 
-      <button id="btn-kaiwa-alasan" class="px-3 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/30 text-xs font-medium flex items-center gap-1.5 transition shrink-0">
+      <button id="btn-kaiwa-alasan" class="px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/30 text-[11px] sm:text-xs font-medium flex items-center gap-1.5 transition shrink-0">
         <i class="fa-regular fa-hand"></i>
-        <span>Salam Kerja (挨拶)</span>
+        <span>Salam</span>
       </button>
 
-      <button id="btn-kaiwa-tips" class="px-3 py-2 rounded-xl bg-pink-500/20 hover:bg-pink-500/30 text-pink-400 border border-pink-500/30 text-xs font-medium flex items-center gap-1.5 transition shrink-0">
+      <button id="btn-kaiwa-tips" class="px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl bg-pink-500/20 hover:bg-pink-500/30 text-pink-400 border border-pink-500/30 text-[11px] sm:text-xs font-medium flex items-center gap-1.5 transition shrink-0">
         <i class="fa-regular fa-lightbulb"></i>
-        <span>Tips Yuki</span>
+        <span>Tips</span>
       </button>
 
       <div class="h-6 w-px bg-white/10 shrink-0"></div>
 
       <!-- Tombol AI Bebas (Ditaruh Paling Akhir & Default Non-Aktif / Standby) -->
-      <button id="btn-mode-toggle" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-300 font-medium text-xs flex items-center gap-1.5 transition border border-white/10 shrink-0">
+      <button id="btn-mode-toggle" class="px-2.5 sm:px-3 py-1.5 sm:py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-300 font-medium text-[11px] sm:text-xs flex items-center gap-1.5 transition border border-white/10 shrink-0">
         <i class="fa-solid fa-wand-magic-sparkles text-slate-400"></i>
         <span id="mode-label">Mode AI Bebas</span>
       </button>
@@ -231,7 +251,7 @@
 
     <!-- Kontrol Kanan (End Call) -->
     <div class="flex items-center gap-2">
-      <a href="/" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-md">
+      <a href="/" class="px-3 sm:px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-md">
         <i class="fa-solid fa-phone-slash"></i>
         <span class="hidden sm:inline">Akhiri</span>
       </a>
@@ -251,47 +271,141 @@
       const parts = ["AQ.Ab8RN6Li53gBd_0Bihc", "Q1bXxhqG2W9OmlS7gB7Ylh8W-J708Hw"];
       return parts.join('');
     })();
-    let geminiChat = null;
-    try {
-      const ai = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
-      geminiChat = ai.chats.create({
-        model: 'gemini-2.5-flash',
-        config: {
-          systemInstruction: `
-Kamu adalah sistem AI partner pembelajaran Kaiwa (percakapan bahasa Jepang) di Zoom dengan dua karakter:
-1. SATO-SENSEI (佐藤先生): Pria penutur asli Jepang, ramah, berwibawa, berbicara dalam bahasa Jepang alami (1-2 kalimat).
-2. YUKI-CHAN (由紀アシスタント): Wanita asisten asal Jepang yang fasih bahasa Indonesia, bertugas membimbing, menyemangati, dan menerjemahkan/membenarkan ucapan siswa dalam bahasa Indonesia.
+    // ── MASTER MODULAR SYSTEM PROMPT CONFIGURATION ──
+    const MASTER_AI_CONFIG = {
+      master_system_prompt: "Anda adalah mesin kecerdasan buatan penutur asli bahasa Jepang untuk aplikasi latihan percakapan web Zoom Kaiwa SinauJepang. Anda harus mematuhi aturan Karakter dan Skenario/Model yang sedang aktif.",
+      characters: {
+        sato: {
+          name: "Sato-san (佐藤先生)",
+          persona: "Kamu adalah Sato-san, seorang pria dewasa dengan pembawaan tenang, tegas, berwibawa, dan profesional. Karaktermu cenderung serius, disiplin, namun sangat menghargai usaha siswa."
+        },
+        yuki: {
+          name: "Yuki-chan (由紀)",
+          persona: "Kamu adalah Yuki-chan, seorang asisten atau mentor wanita yang ramah, hangat, sabar, ceria, dan sangat suportif kepada pembelajar bahasa. Mengerti bahasa Indonesia dan sigap membantu menerjemahkan."
+        },
+        both: {
+          name: "Duet Sato-Sensei & Yuki-Chan",
+          persona: "Sato-sensei memimpin sebagai penutur bahasa Jepang utama, sedangkan Yuki-chan mendampingi sebagai asisten ramah yang memfasilitasi bimbingan, koreksi, dan terjemahan bahasa Indonesia."
+        }
+      },
+      scenarios: {
+        kaiwa: {
+          mode_name: "Kaiwa Harian (Casual Conversation)",
+          instruction: "Ajak pengguna mengobrol santai sehari-hari (seperti hobi, cuaca, makanan kesukaan, atau kegiatan harian). Gunakan bahasa Jepang bentuk biasa (Futsuutai). Buat suasana senatural mungkin seperti mengobrol dengan teman dekat."
+        },
+        mendan: {
+          mode_name: "Mendan (Konsultasi & Bimbingan Belajar)",
+          instruction: "Bertindaklah sebagai pihak yang membimbing sesi konsultasi/evaluasi. Bantu pengguna memecahkan masalah belajar bahasa Jepang, kendala persiapan JFT/JLPT, atau target kerja ke Jepang. Gunakan bahasa sopan standar (Desu / Masu)."
+        },
+        mensetsu: {
+          mode_name: "Mensetsu (Simulasi Wawancara Kerja Formal / Tokutei Ginou)",
+          instruction: "Lakukan simulasi wawancara kerja formal secara profesional. Ajukan pertanyaan interview satu per satu (seperti perkenalan diri/jiko shoukai, alasan melamar ke Jepang, kelebihan-kekurangan, pengalaman kerja) dan wajib menggunakan bahasa Jepang tingkat formal (Keigo / Sonkeigo / Kenjougo)."
+        }
+      },
+      global_rule: "Berikan respons dalam bahasa Jepang yang natural. Sesuaikan tingkat kesopanan bahasa (Futsuutai, Desu/Masu, atau Keigo) dengan aturan skenario yang dipilih. Jaga agar kalimat tidak terlalu panjang (1-2 kalimat) agar tercipta dialog dua arah yang interaktif."
+    };
 
-ATURAN INTERAKSI KAIWA:
+    function buildModularSystemInstruction(selectedChar = 'both', selectedScenario = 'kaiwa') {
+      const charData = MASTER_AI_CONFIG.characters[selectedChar] || MASTER_AI_CONFIG.characters.both;
+      const scenData = MASTER_AI_CONFIG.scenarios[selectedScenario] || MASTER_AI_CONFIG.scenarios.kaiwa;
+
+      return `
+${MASTER_AI_CONFIG.master_system_prompt}
+
+[IDENTITAS KARAKTER AKTIF]
+Nama: ${charData.name}
+Karakter/Persona: ${charData.persona}
+
+[SKENARIO / MODEL LATIHAN AKTIF]
+Mode: ${scenData.mode_name}
+Instruksi Skenario: ${scenData.instruction}
+
+[ATURAN UTAMA INTERAKSI]
+${MASTER_AI_CONFIG.global_rule}
 - Siswa sedang belajar bahasa Jepang dan berbicara langsung lewat mikrofon.
-- JIKA SISWA BERBICARA BAHASA INDONESIA (misal bingung cara bilang sesuatu):
-  * Yuki-chan menanggapi dalam bahasa Indonesia: memberitahu kosakata/frasa bahasa Jepangnya yang tepat, dan mengajak siswa menirukannya kepada Sato-sensei.
-  * Sato-sensei menunggu atau memberikan respon ramah pendek dalam bahasa Jepang.
-- JIKA SISWA MENIRUKAN ATAU MENJAWAB DALAM BAHASA JEPANG TAPI ADA SALAH (partikel/tata bahasa):
-  * Sato-sensei merespon secara wajar dalam bahasa Jepang.
-  * Yuki-chan dalam bahasa Indonesia membetulkan kesalahannya secara sopan dan meminta siswa mengulanginya dengan benar.
-- JIKA SISWA BERBICARA BAHASA JEPANG DENGAN BENAR:
-  * Sato-sensei memuji (contoh: "上手ですね！その通りです") dan melanjutkan topik obrolan 1 pertanyaan baru.
-  * Yuki-chan memberi terjemahan singkat / dorongan semangat dalam bahasa Indonesia.
+- JIKA SISWA BERBICARA BAHASA INDONESIA (karena belum tahu bahasa Jepangnya):
+  Bantu berikan kosakata/frasa bahasa Jepangnya yang sesuai konteks skenario, lalu ajak siswa mengucapkannya.
+- JIKA SISWA BERBICARA BAHASA JEPANG TAPI SALAH:
+  Tanggapi secara wajar dan perbaiki kesalahannya secara suportif.
+- JIKA SISWA MENJAWAB DENGAN BENAR:
+  Puji pencapaiannya lalu ajukan 1 pertanyaan kelanjutan berikutnya.
 
-OUTPUT HARUS SELALU BERBENTUK JSON MURNI PERSIS:
+[FORMAT OUTPUT WAJIB JSON MURNI PERSIS]:
 {
   "sato": {
-    "jp": "Teks bahasa Jepang Sato-sensei",
-    "id": "Arti bahasa Indonesia"
+    "jp": "Teks bahasa Jepang Sato-sensei (isi kosong jika hanya Yuki yang aktif)",
+    "id": "Arti atau terjemahan bahasa Indonesia"
   },
   "yuki": {
-    "jp": "Teks bahasa Jepang Yuki-chan jika ada, atau kosongkan jika hanya bicara bahasa Indonesia",
-    "id": "Instruksi/bimbingan/koreksi Yuki-chan dalam bahasa Indonesia"
+    "jp": "Teks bahasa Jepang Yuki-chan (jika Yuki bicara Jepang)",
+    "id": "Instruksi/bimbingan/terjemahan Yuki-chan dalam bahasa Indonesia"
   },
-  "firstSpeaker": "sato" // atau "yuki" (siapa yang harus bicara duluan)
+  "firstSpeaker": "${selectedChar === 'yuki' ? 'yuki' : (selectedChar === 'sato' ? 'sato' : 'sato')}"
 }
-HANYA kembalikan JSON. Jangan ada markdown luar.
-          `.trim()
+HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
+      `.trim();
+    }
+
+    let geminiClient = null;
+    let geminiChat = null;
+    let activePartner = 'both';
+    let activeScenario = 'kaiwa';
+
+    function initGeminiChat() {
+      try {
+        if (!geminiClient) {
+          geminiClient = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
         }
+        const instruction = buildModularSystemInstruction(activePartner, activeScenario);
+        geminiChat = geminiClient.chats.create({
+          model: 'gemini-2.5-flash',
+          config: {
+            systemInstruction: instruction
+          }
+        });
+        console.log(`[Gemini AI] Sesi diinisialisasi ulang: Partner=${activePartner}, Model=${activeScenario}`);
+      } catch (e) {
+        console.error("Gagal inisialisasi Gemini:", e);
+      }
+    }
+
+    // Inisialisasi awal
+    initGeminiChat();
+
+    // Event listener saat user mengganti Karakter atau Model Latihan
+    const selectPartner = document.getElementById('select-partner');
+    const selectScenario = document.getElementById('select-scenario');
+
+    if (selectPartner) {
+      selectPartner.addEventListener('change', (e) => {
+        activePartner = e.target.value;
+        initGeminiChat();
+        updateTileLayoutVisibility();
       });
-    } catch(e) {
-      console.error("Gagal inisialisasi Gemini:", e);
+    }
+
+    if (selectScenario) {
+      selectScenario.addEventListener('change', (e) => {
+        activeScenario = e.target.value;
+        initGeminiChat();
+      });
+    }
+
+    function updateTileLayoutVisibility() {
+      const satoTileEl = document.getElementById('sato-tile');
+      const yukiTileEl = document.getElementById('yuki-tile');
+
+      if (activePartner === 'sato') {
+        satoTileEl.classList.remove('hidden');
+        yukiTileEl.classList.add('hidden');
+      } else if (activePartner === 'yuki') {
+        satoTileEl.classList.add('hidden');
+        yukiTileEl.classList.remove('hidden');
+      } else {
+        satoTileEl.classList.remove('hidden');
+        yukiTileEl.classList.remove('hidden');
+      }
+      setTimeout(handleResize, 100);
     }
 
     const clock = new THREE.Clock();
@@ -702,21 +816,36 @@ HANYA kembalikan JSON. Jangan ada markdown luar.
     }
     animate();
 
-    // Resize Handler
-    window.addEventListener('resize', () => {
+    // Resize Handler dengan ResizeObserver agar responsif instan saat orientasi HP berubah atau viewport mengecil
+    function handleResize() {
       [satoRoom, yukiRoom].forEach((rm) => {
-        rm.camera.aspect = rm.container.clientWidth / rm.container.clientHeight;
-        rm.camera.updateProjectionMatrix();
-        rm.renderer.setSize(rm.container.clientWidth, rm.container.clientHeight);
+        if (!rm || !rm.container) return;
+        const width = rm.container.clientWidth;
+        const height = rm.container.clientHeight;
+        if (width > 0 && height > 0) {
+          rm.camera.aspect = width / height;
+          rm.camera.updateProjectionMatrix();
+          rm.renderer.setSize(width, height);
+        }
       });
-    });
+    }
 
-    // ── Suara & Transkrip Percakapan 3 Kolom Sejajar ──
-    const colSatoJp = document.getElementById('col-sato-jp');
-    const colSatoId = document.getElementById('col-sato-id');
-    const colYukiJp = document.getElementById('col-yuki-jp');
-    const colYukiId = document.getElementById('col-yuki-id');
-    const colUserSpeech = document.getElementById('col-user-speech');
+    window.addEventListener('resize', handleResize);
+    if (window.ResizeObserver) {
+      const ro = new ResizeObserver(handleResize);
+      ro.observe(satoRoom.container);
+      ro.observe(yukiRoom.container);
+    }
+
+    // ── Single Subtitle & Chat Box System ──
+    const singleChatBox = document.getElementById('single-chat-box');
+    const chatSpeakerBadge = document.getElementById('chat-speaker-badge');
+    const chatSpeakerIcon = document.getElementById('chat-speaker-icon');
+    const chatSpeakerName = document.getElementById('chat-speaker-name');
+    const chatSpeakerRole = document.getElementById('chat-speaker-role');
+    const chatTurnStatus = document.getElementById('chat-turn-status');
+    const chatMainJp = document.getElementById('chat-main-jp');
+    const chatMainId = document.getElementById('chat-main-id');
     const colUserStatus = document.getElementById('col-user-status');
 
     const satoTile = document.getElementById('sato-tile');
@@ -726,8 +855,21 @@ HANYA kembalikan JSON. Jangan ada markdown luar.
       yukiTile.classList.remove('active-speaker');
       satoTile.classList.add('active-speaker');
 
-      if (colSatoJp) colSatoJp.textContent = jpText;
-      if (colSatoId) colSatoId.textContent = idText;
+      // Update Single Box ke tampilan Sato-san (Theme: Sky Blue)
+      singleChatBox.className = 'h-full bg-[#18181e] border-2 border-sky-500/50 rounded-2xl p-3 sm:p-3.5 flex flex-col justify-between shadow-lg shadow-sky-950/30 transition-all duration-300';
+      chatSpeakerBadge.className = 'w-6 h-6 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs';
+      chatSpeakerIcon.className = 'fa-solid fa-chalkboard-user';
+      chatSpeakerName.textContent = 'Sato-san (佐藤先生)';
+      chatSpeakerName.className = 'text-xs sm:text-sm font-bold text-sky-400';
+      chatSpeakerRole.textContent = 'Sensei (Bahasa Jepang)';
+      chatSpeakerRole.className = 'text-[10px] bg-sky-500/10 text-sky-300 px-2 py-0.5 rounded border border-sky-500/20';
+
+      chatMainJp.className = 'text-sky-100 font-bold text-sm sm:text-base leading-snug notranslate';
+      chatMainJp.textContent = jpText;
+      chatMainId.className = 'text-xs sm:text-sm text-slate-300';
+      chatMainId.textContent = idText;
+
+      chatTurnStatus.innerHTML = '<i class="fa-solid fa-volume-high text-sky-400 animate-pulse mr-1"></i> Sato-san Berbicara';
 
       // Suara Pria Dewasa: Pitch berat (0.82), tempo tenang berwibawa (0.95), pilih voice male ja-JP
       playTTS(jpText, 0.95, 0.82, 'male', () => {
@@ -745,8 +887,21 @@ HANYA kembalikan JSON. Jangan ada markdown luar.
       satoTile.classList.remove('active-speaker');
       yukiTile.classList.add('active-speaker');
 
-      if (colYukiJp) colYukiJp.textContent = jpText || '由紀がサポートします：';
-      if (colYukiId) colYukiId.textContent = idText;
+      // Update Single Box ke tampilan Yuki-chan (Theme: Pink)
+      singleChatBox.className = 'h-full bg-[#18181e] border-2 border-pink-500/50 rounded-2xl p-3 sm:p-3.5 flex flex-col justify-between shadow-lg shadow-pink-950/30 transition-all duration-300';
+      chatSpeakerBadge.className = 'w-6 h-6 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center text-xs';
+      chatSpeakerIcon.className = 'fa-solid fa-comments';
+      chatSpeakerName.textContent = 'Yuki-chan (由紀アシスタント)';
+      chatSpeakerName.className = 'text-xs sm:text-sm font-bold text-pink-400';
+      chatSpeakerRole.textContent = 'Bimbingan & Tips';
+      chatSpeakerRole.className = 'text-[10px] bg-pink-500/10 text-pink-300 px-2 py-0.5 rounded border border-pink-500/20';
+
+      chatMainJp.className = 'text-pink-100 font-bold text-sm sm:text-base leading-snug notranslate';
+      chatMainJp.textContent = jpText || '由紀がサポートします：';
+      chatMainId.className = 'text-xs sm:text-sm text-slate-300';
+      chatMainId.textContent = idText;
+
+      chatTurnStatus.innerHTML = '<i class="fa-solid fa-volume-high text-pink-400 animate-pulse mr-1"></i> Yuki-chan Menjelaskan';
 
       // Suara Wanita Cerah: Pitch 1.25, tempo 1.05
       playTTS(jpText, 1.05, 1.25, 'female', () => {
@@ -1086,8 +1241,20 @@ HANYA kembalikan JSON. Jangan ada markdown luar.
       isAIProcessing = true;
       userSpeakingBadge.textContent = 'Sensei sedang berpikir...';
 
-      // Tampilkan ucapan mahasiswa di kolom ke-3 (bawah video mahasiswa)
-      if (colUserSpeech) colUserSpeech.textContent = `"${userText}"`;
+      // Tampilkan ucapan mahasiswa langsung di Single Box
+      singleChatBox.className = 'h-full bg-[#18181e] border-2 border-emerald-500/50 rounded-2xl p-3 sm:p-3.5 flex flex-col justify-between shadow-lg shadow-emerald-950/30 transition-all duration-300';
+      chatSpeakerBadge.className = 'w-6 h-6 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-xs';
+      chatSpeakerIcon.className = 'fa-solid fa-user';
+      chatSpeakerName.textContent = 'Anda (Mahasiswa)';
+      chatSpeakerName.className = 'text-xs sm:text-sm font-bold text-emerald-400';
+      chatSpeakerRole.textContent = 'Ucapan Masuk';
+      chatSpeakerRole.className = 'text-[10px] bg-emerald-500/10 text-emerald-300 px-2 py-0.5 rounded border border-emerald-500/20';
+
+      chatMainJp.className = 'text-emerald-200 font-medium text-sm sm:text-base leading-snug italic';
+      chatMainJp.textContent = `"${userText}"`;
+      chatMainId.className = 'text-xs sm:text-sm text-slate-400';
+      chatMainId.textContent = 'Sensei dan Yuki sedang merespons...';
+
       if (colUserStatus) colUserStatus.textContent = 'Sedang Ditanggapi...';
 
       try {
@@ -1101,9 +1268,27 @@ HANYA kembalikan JSON. Jangan ada markdown luar.
 
         userSpeakingBadge.classList.add('hidden');
 
-        // Jalankan percakapan tutor bergantian (Sato & Yuki)
-        if (data.firstSpeaker === 'yuki' && data.yuki?.id) {
-          // Yuki membimbing duluan (misal siswa bingung bahasa Indonesianya)
+        // Jalankan percakapan tutor sesuai partner aktif & data respon AI
+        if (activePartner === 'yuki') {
+          // Mode Solo Yuki
+          const yukiTextJp = data.yuki?.jp || data.sato?.jp || '';
+          const yukiTextId = data.yuki?.id || data.sato?.id || '';
+          speakYuki(yukiTextJp, yukiTextId, () => {
+            isAIProcessing = false;
+            if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
+            if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
+          });
+        } else if (activePartner === 'sato') {
+          // Mode Solo Sato
+          const satoTextJp = data.sato?.jp || data.yuki?.jp || '';
+          const satoTextId = data.sato?.id || data.yuki?.id || '';
+          speakSato(satoTextJp, satoTextId, () => {
+            isAIProcessing = false;
+            if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
+            if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
+          });
+        } else if (data.firstSpeaker === 'yuki' && data.yuki?.id) {
+          // Mode Duet: Yuki membimbing duluan
           speakYuki(data.yuki.jp || '', data.yuki.id, () => {
             if (data.sato?.jp) {
               setTimeout(() => {
@@ -1120,7 +1305,7 @@ HANYA kembalikan JSON. Jangan ada markdown luar.
             }
           });
         } else {
-          // Sato-sensei merespon duluan, lalu Yuki menambahkan/mengoreksi
+          // Mode Duet: Sato-sensei merespon duluan, lalu Yuki menambahkan
           speakSato(data.sato.jp, data.sato.id, () => {
             if (data.yuki?.id) {
               setTimeout(() => {
@@ -1136,6 +1321,7 @@ HANYA kembalikan JSON. Jangan ada markdown luar.
               if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
             }
           });
+        }
         }
       } catch (err) {
         console.error("Error AI Tutor:", err);
