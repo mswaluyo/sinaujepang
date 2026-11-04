@@ -274,42 +274,72 @@
       talkTimer: 0
     };
 
-    // ── Helper Ambil Bone Node Tiga Tingkat (Normalized, Raw, atau Object Hierarchy) ──
+            // ── Helper Universal Ambil Bone Node (Support getBoneNode, Normalized, Raw, & VRoid Object3D) ──
+    const VROID_BONE_MAP = {
+      leftUpperArm: ['J_Bip_L_UpperArm', 'leftUpperArm'],
+      rightUpperArm: ['J_Bip_R_UpperArm', 'rightUpperArm'],
+      leftLowerArm: ['J_Bip_L_LowerArm', 'leftLowerArm'],
+      rightLowerArm: ['J_Bip_R_LowerArm', 'rightLowerArm'],
+      leftHand: ['J_Bip_L_Hand', 'leftHand'],
+      rightHand: ['J_Bip_R_Hand', 'rightHand'],
+      spine: ['J_Bip_C_Spine', 'spine'],
+      head: ['J_Bip_C_Head', 'head']
+    };
+
     function getBone(vrm, name) {
-      if (!vrm || !vrm.humanoid) return null;
-      let node = vrm.humanoid.getNormalizedBoneNode(name);
-      if (node) return node;
-      if (typeof vrm.humanoid.getRawBoneNode === 'function') {
-        node = vrm.humanoid.getRawBoneNode(name);
-        if (node) return node;
+      if (!vrm) return null;
+      if (vrm.humanoid) {
+        // Metode resmi Three-VRM: getBoneNode()
+        if (typeof vrm.humanoid.getBoneNode === 'function') {
+          const n = vrm.humanoid.getBoneNode(name);
+          if (n) return n;
+        }
+        if (typeof vrm.humanoid.getNormalizedBoneNode === 'function') {
+          const n = vrm.humanoid.getNormalizedBoneNode(name);
+          if (n) return n;
+        }
+        if (typeof vrm.humanoid.getRawBoneNode === 'function') {
+          const n = vrm.humanoid.getRawBoneNode(name);
+          if (n) return n;
+        }
       }
-      if (vrm.humanoid.humanBones && vrm.humanoid.humanBones[name]) {
-        return vrm.humanoid.humanBones[name].node || null;
+      // Direct Object3D mesh search
+      const names = VROID_BONE_MAP[name] || [name];
+      for (let i = 0; i < names.length; i++) {
+        const found = vrm.scene.getObjectByName(names[i]);
+        if (found) return found;
       }
       return null;
     }
 
-    // ── Pose Resmi Sato-san: Duduk Tegak & Kedua Tangan Bertaut Rapi di Atas Meja ──
+        // ── Pose Resmi Sato-san: Duduk Tegak & Kedua Tangan Bertaut Rapi di Atas Meja ──
     function applySatoExecutivePose(vrm) {
-      if (!vrm || !vrm.humanoid) return;
+      if (!vrm) return;
 
-      // 1. Turunkan lengan atas rapat ke samping badan & maju mengarah ke meja
       const lua = getBone(vrm, 'leftUpperArm');
       const rua = getBone(vrm, 'rightUpperArm');
-      if (lua) lua.rotation.set(-0.45, 0.25, -1.25);
-      if (rua) rua.rotation.set(-0.45, -0.25, 1.25);
-
-      // 2. Tekuk siku ke depan tengah meja
       const lla = getBone(vrm, 'leftLowerArm');
       const rla = getBone(vrm, 'rightLowerArm');
-      if (lla) lla.rotation.set(0.20, -0.85, 1.65);
-      if (rla) rla.rotation.set(0.20, 0.85, -1.65);
-
-      // 3. Tangan bertaut di tengah meja
       const lh = getBone(vrm, 'leftHand');
       const rh = getBone(vrm, 'rightHand');
-      if (lh) lh.rotation.set(0.15, 0.15, 0.40);
-      if (rh) rh.rotation.set(0.15, -0.15, -0.40);
+
+      // Paha ditekuk duduk
+      const lul = getBone(vrm, 'leftUpperLeg');
+      const rul = getBone(vrm, 'rightUpperLeg');
+      if (lul) lul.rotation.set(-1.50, 0, 0);
+      if (rul) rul.rotation.set(-1.50, 0, 0);
+
+      // 1. Lengan Atas turun merapat ke samping dada dan maju ke arah meja
+      if (lua) lua.rotation.set(-0.45, 0.25, -1.35);
+      if (rua) rua.rotation.set(-0.45, -0.25, 1.35);
+
+      // 2. Siku ditekuk masuk ke tengah meja
+      if (lla) lla.rotation.set(0.10, -0.90, 1.70);
+      if (rla) rla.rotation.set(0.10, 0.90, -1.70);
+
+      // 3. Telapak tangan saling menangkup di tengah meja
+      if (lh) lh.rotation.set(0.20, 0.20, 0.35);
+      if (rh) rh.rotation.set(0.20, -0.20, -0.35);
     }
 
     // Pose Zoom Asisten Yuki-chan (Lengan rileks ke samping bawah)
