@@ -199,8 +199,8 @@
       const scene = new THREE.Scene();
       scene.background = new THREE.Color(0x27272a);
 
-      const camera = new THREE.PerspectiveCamera(26, container.clientWidth / container.clientHeight, 0.1, 20.0);
-      camera.position.set(0.0, 1.34, 1.15); // Close-up portrait Zoom webcam
+      const camera = new THREE.PerspectiveCamera(32, container.clientWidth / container.clientHeight, 0.1, 20.0);
+      camera.position.set(0.0, 1.28, 1.75); // Framing proporsional seluruh kepala, badan, dan meja
 
       const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
       renderer.setSize(container.clientWidth, container.clientHeight);
@@ -229,11 +229,11 @@
       wall.position.set(0, 1.4, -0.6);
       scene.add(wall);
 
-      // Meja Kayu Hangat di Bagian Bawah Kamera (Forefront Desk)
-      const deskGeo = new THREE.BoxGeometry(1.6, 0.08, 0.6);
-      const deskMat = new THREE.MeshStandardMaterial({ color: 0xa16207, roughness: 0.35 });
+      // Meja Rapat Kayu Eksekutif (Wood Desk di depan karakter)
+      const deskGeo = new THREE.BoxGeometry(1.8, 0.08, 0.7);
+      const deskMat = new THREE.MeshStandardMaterial({ color: 0x9a3412, roughness: 0.35 });
       const desk = new THREE.Mesh(deskGeo, deskMat);
-      desk.position.set(0, 0.88, 0.35);
+      desk.position.set(0, 0.76, 0.38);
       scene.add(desk);
 
       // Sandaran Kursi di belakang
@@ -272,27 +272,33 @@
       talkTimer: 0
     };
 
-    // ── Pose Resmi Sato-san: Kedua Tangan Bertaut Rapi di Atas Meja (Executive Clasped Hands) ──
+    // ── Pose Resmi Sato-san: Duduk Tegak & Kedua Tangan Bertaut di Atas Meja ──
     function applySatoExecutivePose(vrm) {
       if (!vrm || !vrm.humanoid) return;
 
-      // 1. Lengan Atas diarahkan ke bawah-depan merapat ke dada
+      // Bahu rileks turun sedikit
+      const leftShoulder = vrm.humanoid.getNormalizedBoneNode('leftShoulder');
+      const rightShoulder = vrm.humanoid.getNormalizedBoneNode('rightShoulder');
+      if (leftShoulder) leftShoulder.rotation.set(0, 0, -0.08);
+      if (rightShoulder) rightShoulder.rotation.set(0, 0, 0.08);
+
+      // 1. Lengan Atas (Bahu ke Siku): turun ke samping dada dan maju sedikit ke meja
       const leftUpperArm = vrm.humanoid.getNormalizedBoneNode('leftUpperArm');
       const rightUpperArm = vrm.humanoid.getNormalizedBoneNode('rightUpperArm');
-      if (leftUpperArm) leftUpperArm.rotation.set(-0.55, 0.30, -0.95);
-      if (rightUpperArm) rightUpperArm.rotation.set(-0.55, -0.30, 0.95);
+      if (leftUpperArm) leftUpperArm.rotation.set(-0.45, 0.20, -1.15);
+      if (rightUpperArm) rightUpperArm.rotation.set(-0.45, -0.20, 1.15);
 
-      // 2. Lengan Bawah ditekuk masuk ke tengah menuju atas permukaan meja
+      // 2. Lengan Bawah (Siku ke Pergelangan): ditekuk masuk 90 derajat ke depan tengah meja
       const leftLowerArm = vrm.humanoid.getNormalizedBoneNode('leftLowerArm');
       const rightLowerArm = vrm.humanoid.getNormalizedBoneNode('rightLowerArm');
-      if (leftLowerArm) leftLowerArm.rotation.set(-0.25, -0.65, 1.85);
-      if (rightLowerArm) rightLowerArm.rotation.set(-0.25, 0.65, -1.85);
+      if (leftLowerArm) leftLowerArm.rotation.set(-0.20, -0.85, 1.55);
+      if (rightLowerArm) rightLowerArm.rotation.set(-0.20, 0.85, -1.55);
 
-      // 3. Telapak Tangan saling bertaut di tengah meja
+      // 3. Telapak Tangan: bertaut menelungkup di tengah meja
       const leftHand = vrm.humanoid.getNormalizedBoneNode('leftHand');
       const rightHand = vrm.humanoid.getNormalizedBoneNode('rightHand');
-      if (leftHand) leftHand.rotation.set(0.15, 0.1, 0.35);
-      if (rightHand) rightHand.rotation.set(0.15, -0.1, -0.35);
+      if (leftHand) leftHand.rotation.set(0.15, 0.20, 0.40);
+      if (rightHand) rightHand.rotation.set(0.15, -0.20, -0.40);
     }
 
     // Pose Zoom Asisten Yuki-chan (Rileks Santai)
