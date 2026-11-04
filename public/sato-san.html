@@ -95,7 +95,7 @@
     const scene = new THREE.Scene();
 
     const camera = new THREE.PerspectiveCamera(30, window.innerWidth / window.innerHeight, 0.1, 20.0);
-    camera.position.set(0.0, 1.15, 1.55); // Sudut pandang berhadapan di meja
+    camera.position.set(0.0, 1.15, 1.45); // Sudut pandang berhadapan di meja
 
     const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
@@ -107,7 +107,7 @@
     // OrbitControls (Bisa rotasi halus, zoom dibatasi agar tidak menembus)
     const controls = new OrbitControls(camera, renderer.domElement);
     controls.screenSpacePanning = true;
-    controls.target.set(0.0, 0.95, 0.15); // Titik fokus wajah & dada
+    controls.target.set(0.0, 0.92, 0.18); // Titik fokus wajah & dada
     controls.enableDamping = true;
     controls.dampingFactor = 0.05;
     controls.minDistance = 0.6;
@@ -126,58 +126,107 @@
     const fillLight = new THREE.DirectionalLight(0xe0f2fe, 1.0);
     fillLight.position.set(-1.5, 1.5, -0.5);
     scene.add(fillLight);
-    // ── 2.1 Tambahkan Set Meja dan Kursi 3D (Room Furniture) ──
-    const deskGroup = new THREE.Group();
+    // ── 2.1 Set Ruangan, Meja & Kursi Kerja 3D Lengkap ──
+    const roomGroup = new THREE.Group();
 
-    // Daun Meja (Wood texture look)
-    const tableTopGeo = new THREE.BoxGeometry(1.4, 0.05, 0.7);
-    const tableTopMat = new THREE.MeshStandardMaterial({ color: 0x8b5a2b, roughness: 0.45, metalness: 0.05 });
-    const tableTop = new THREE.Mesh(tableTopGeo, tableTopMat);
-    tableTop.position.set(0, 0.72, 0.28);
-    deskGroup.add(tableTop);
+    // Lantai Ruangan (Matte Floor)
+    const floor = new THREE.Mesh(
+      new THREE.PlaneGeometry(10, 10),
+      new THREE.MeshStandardMaterial({ color: 0xe2e8f0, roughness: 0.85 })
+    );
+    floor.rotation.x = -Math.PI / 2;
+    floor.position.y = 0;
+    floor.receiveShadow = true;
+    roomGroup.add(floor);
 
-    // Kaki Meja
-    const legGeo = new THREE.CylinderGeometry(0.025, 0.025, 0.72, 16);
-    const legMat = new THREE.MeshStandardMaterial({ color: 0x334155, roughness: 0.5 });
-    [[-0.62, 0.05], [0.62, 0.05], [-0.62, 0.52], [0.62, 0.52]].forEach(([x, z]) => {
-      const leg = new THREE.Mesh(legGeo, legMat);
-      leg.position.set(x, 0.36, z);
-      deskGroup.add(leg);
+    // ── Meja Belajar / Kerja (Desk) ──
+    // Daun Meja Kayu Hangat
+    const tableTop = new THREE.Mesh(
+      new THREE.BoxGeometry(1.3, 0.045, 0.65),
+      new THREE.MeshStandardMaterial({ color: 0xb45309, roughness: 0.35, metalness: 0.05 })
+    );
+    tableTop.position.set(0, 0.68, 0.26);
+    roomGroup.add(tableTop);
+
+    // Kaki Meja Besi Minimalis
+    const tableLegMat = new THREE.MeshStandardMaterial({ color: 0x1e293b, roughness: 0.4 });
+    const legGeo = new THREE.CylinderGeometry(0.02, 0.02, 0.68, 16);
+    [[-0.58, 0.02], [0.58, 0.02], [-0.58, 0.50], [0.58, 0.50]].forEach(([x, z]) => {
+      const leg = new THREE.Mesh(legGeo, tableLegMat);
+      leg.position.set(x, 0.34, z);
+      roomGroup.add(leg);
     });
 
-    // Laptop di atas meja
+    // ── Kursi Kantor Sato-san (Office Chair) ──
+    const chairGroup = new THREE.Group();
+    const chairMat = new THREE.MeshStandardMaterial({ color: 0x1e293b, roughness: 0.7 });
+
+    // Bantalan Duduk Kursi (Seat Cushion)
+    const chairSeat = new THREE.Mesh(new THREE.BoxGeometry(0.46, 0.07, 0.44), chairMat);
+    chairSeat.position.set(0, 0.44, -0.06);
+    chairGroup.add(chairSeat);
+
+    // Sandaran Punggung Kursi (Backrest)
+    const chairBack = new THREE.Mesh(new THREE.BoxGeometry(0.44, 0.52, 0.05), chairMat);
+    chairBack.position.set(0, 0.73, -0.26);
+    chairGroup.add(chairBack);
+
+    // Tiang Kursi Hidrolik
+    const chairStem = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.03, 0.03, 0.42, 16),
+      new THREE.MeshStandardMaterial({ color: 0x475569, metalness: 0.8, roughness: 0.2 })
+    );
+    chairStem.position.set(0, 0.21, -0.06);
+    chairGroup.add(chairStem);
+
+    // Kaki Bintang Kursi (Star Base)
+    for (let i = 0; i < 5; i++) {
+      const angle = (i / 5) * Math.PI * 2;
+      const starLeg = new THREE.Mesh(
+        new THREE.BoxGeometry(0.04, 0.03, 0.24),
+        new THREE.MeshStandardMaterial({ color: 0x334155, metalness: 0.6 })
+      );
+      starLeg.position.set(Math.sin(angle) * 0.12, 0.05, -0.06 + Math.cos(angle) * 0.12);
+      starLeg.rotation.y = angle;
+      chairGroup.add(starLeg);
+    }
+    roomGroup.add(chairGroup);
+
+    // ── Aksesoris Meja (Laptop, Buku Catatan, Cangkir Teh) ──
+    // Laptop
     const laptopBase = new THREE.Mesh(
       new THREE.BoxGeometry(0.32, 0.012, 0.22),
-      new THREE.MeshStandardMaterial({ color: 0x1e293b, metalness: 0.8, roughness: 0.2 })
+      new THREE.MeshStandardMaterial({ color: 0x334155, metalness: 0.7, roughness: 0.25 })
     );
-    laptopBase.position.set(0, 0.75, 0.35);
-    deskGroup.add(laptopBase);
+    laptopBase.position.set(0, 0.71, 0.32);
+    roomGroup.add(laptopBase);
 
     const laptopScreen = new THREE.Mesh(
       new THREE.BoxGeometry(0.32, 0.2, 0.01),
-      new THREE.MeshStandardMaterial({ color: 0x0f172a, metalness: 0.8, roughness: 0.3 })
+      new THREE.MeshStandardMaterial({ color: 0x0f172a, metalness: 0.7, roughness: 0.3 })
     );
-    laptopScreen.position.set(0, 0.84, 0.25);
-    laptopScreen.rotation.x = -0.25;
-    deskGroup.add(laptopScreen);
+    laptopScreen.position.set(0, 0.80, 0.22);
+    laptopScreen.rotation.x = -0.28;
+    roomGroup.add(laptopScreen);
 
-    // Cangkir Kopi / Teh
+    // Buku Catatan Pelajaran Jepang di meja
+    const noteBook = new THREE.Mesh(
+      new THREE.BoxGeometry(0.18, 0.015, 0.24),
+      new THREE.MeshStandardMaterial({ color: 0x0284c7, roughness: 0.6 })
+    );
+    noteBook.position.set(-0.35, 0.71, 0.32);
+    noteBook.rotation.y = 0.2;
+    roomGroup.add(noteBook);
+
+    // Cangkir Ocha / Kopi
     const mug = new THREE.Mesh(
-      new THREE.CylinderGeometry(0.04, 0.035, 0.09, 16),
+      new THREE.CylinderGeometry(0.038, 0.03, 0.08, 16),
       new THREE.MeshStandardMaterial({ color: 0xf8fafc, roughness: 0.2 })
     );
-    mug.position.set(0.35, 0.79, 0.38);
-    deskGroup.add(mug);
+    mug.position.set(0.35, 0.74, 0.35);
+    roomGroup.add(mug);
 
-    // Sandaran Kursi di belakang Sato-san
-    const chairBack = new THREE.Mesh(
-      new THREE.BoxGeometry(0.48, 0.55, 0.04),
-      new THREE.MeshStandardMaterial({ color: 0x1e293b, roughness: 0.7 })
-    );
-    chairBack.position.set(0, 0.85, -0.32);
-    deskGroup.add(chairBack);
-
-    scene.add(deskGroup);
+    scene.add(roomGroup);
 
 
     // ── 3. State & Variabel Animasi ──
@@ -219,40 +268,11 @@
         vrm.scene.rotation.y = 0; 
         scene.add(vrm.scene);
 
-        // ── Pose Duduk di Meja Belajar / Kerja ──
-        // Turunkan ketinggian tubuh model agar pas di kursi
-        vrm.scene.position.set(0, -0.42, 0);
+        // ── Posisikan Sato-san Duduk Tepat di Bantalan Kursi ──
+        vrm.scene.position.set(0, -0.38, -0.05);
 
-        if (vrm.humanoid) {
-          // 1. Tekuk Paha (Hips & Legs) membentuk sudut duduk 90 derajat
-          const leftUpperLeg = vrm.humanoid.getNormalizedBoneNode('leftUpperLeg');
-          const rightUpperLeg = vrm.humanoid.getNormalizedBoneNode('rightUpperLeg');
-          if (leftUpperLeg) leftUpperLeg.rotation.set(-1.45, 0.08, 0);
-          if (rightUpperLeg) rightUpperLeg.rotation.set(-1.45, -0.08, 0);
-
-          // 2. Tekuk Lutut (Lower Legs) ke bawah 90 derajat
-          const leftLowerLeg = vrm.humanoid.getNormalizedBoneNode('leftLowerLeg');
-          const rightLowerLeg = vrm.humanoid.getNormalizedBoneNode('rightLowerLeg');
-          if (leftLowerLeg) leftLowerLeg.rotation.set(1.45, 0, 0);
-          if (rightLowerLeg) rightLowerLeg.rotation.set(1.45, 0, 0);
-
-          // 3. Pose Lengan di Atas Meja (Mengetik / Rileks Bertumpu)
-          const leftUpperArm = vrm.humanoid.getNormalizedBoneNode('leftUpperArm');
-          const rightUpperArm = vrm.humanoid.getNormalizedBoneNode('rightUpperArm');
-          if (leftUpperArm) leftUpperArm.rotation.set(-0.45, 0.15, -0.65);
-          if (rightUpperArm) rightUpperArm.rotation.set(-0.45, -0.15, 0.65);
-
-          const leftLowerArm = vrm.humanoid.getNormalizedBoneNode('leftLowerArm');
-          const rightLowerArm = vrm.humanoid.getNormalizedBoneNode('rightLowerArm');
-          if (leftLowerArm) leftLowerArm.rotation.set(-0.75, 0, -0.45);
-          if (rightLowerArm) rightLowerArm.rotation.set(-0.75, 0, 0.45);
-
-          // 4. Telapak Tangan menghadap meja
-          const leftHand = vrm.humanoid.getNormalizedBoneNode('leftHand');
-          const rightHand = vrm.humanoid.getNormalizedBoneNode('rightHand');
-          if (leftHand) leftHand.rotation.set(0.1, 0, -0.2);
-          if (rightHand) rightHand.rotation.set(0.1, 0, 0.2);
-        }
+        // Kunci pose duduk agar stabil
+        applySittingPose(vrm);
 
         // Hilangkan loading overlay
         const loadingEl = document.getElementById('loading');
@@ -298,6 +318,40 @@
     }
 
     // ── 6. Logika Napas Alami & Gerak Halus (Breathing & Subtle Sway) ──
+    
+    // ── Fungsi Pose Duduk Stabil di Kursi & Meja ──
+    function applySittingPose(vrm) {
+      if (!vrm || !vrm.humanoid) return;
+
+      // 1. Paha ditekuk 90 derajat ke depan
+      const leftUpperLeg = vrm.humanoid.getNormalizedBoneNode('leftUpperLeg');
+      const rightUpperLeg = vrm.humanoid.getNormalizedBoneNode('rightUpperLeg');
+      if (leftUpperLeg) leftUpperLeg.rotation.set(-1.52, 0.08, 0);
+      if (rightUpperLeg) rightUpperLeg.rotation.set(-1.52, -0.08, 0);
+
+      // 2. Betis ditekuk 90 derajat ke bawah menuju lantai
+      const leftLowerLeg = vrm.humanoid.getNormalizedBoneNode('leftLowerLeg');
+      const rightLowerLeg = vrm.humanoid.getNormalizedBoneNode('rightLowerLeg');
+      if (leftLowerLeg) leftLowerLeg.rotation.set(1.52, 0, 0);
+      if (rightLowerLeg) rightLowerLeg.rotation.set(1.52, 0, 0);
+
+      // 3. Posisi Lengan bertumpu santai di atas meja
+      const leftUpperArm = vrm.humanoid.getNormalizedBoneNode('leftUpperArm');
+      const rightUpperArm = vrm.humanoid.getNormalizedBoneNode('rightUpperArm');
+      if (leftUpperArm) leftUpperArm.rotation.set(-0.48, 0.12, -0.62);
+      if (rightUpperArm) rightUpperArm.rotation.set(-0.48, -0.12, 0.62);
+
+      const leftLowerArm = vrm.humanoid.getNormalizedBoneNode('leftLowerArm');
+      const rightLowerArm = vrm.humanoid.getNormalizedBoneNode('rightLowerArm');
+      if (leftLowerArm) leftLowerArm.rotation.set(-0.72, 0, -0.35);
+      if (rightLowerArm) rightLowerArm.rotation.set(-0.72, 0, 0.35);
+
+      const leftHand = vrm.humanoid.getNormalizedBoneNode('leftHand');
+      const rightHand = vrm.humanoid.getNormalizedBoneNode('rightHand');
+      if (leftHand) leftHand.rotation.set(0.1, 0, -0.15);
+      if (rightHand) rightHand.rotation.set(0.1, 0, 0.15);
+    }
+
     function updateNaturalIdle(elapsedTime) {
       if (!currentVrm || !currentVrm.humanoid) return;
 
@@ -343,6 +397,7 @@
       if (currentVrm) {
         updateBlink(delta);
         updateSpeech(delta);
+        applySittingPose(currentVrm);
         updateNaturalIdle(elapsedTime);
         currentVrm.update(delta);
       }
