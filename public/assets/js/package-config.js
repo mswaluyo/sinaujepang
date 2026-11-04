@@ -49,7 +49,7 @@ window.PAKET_CONFIG = {
           "soalTambahan": {
             "nama": "Soal Tambahan",
             "slug": "hare-tambahan-quiz",
-            "total": 68
+            "total": 60
           }
         }
       ]
