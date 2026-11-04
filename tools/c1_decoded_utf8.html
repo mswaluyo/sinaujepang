@@ -1,0 +1,3030 @@
+<!DOCTYPE html><html lang="id" data-qb-installed="true"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><link rel="stylesheet" type="text/css" href="cid:css-4db574da-a33d-4878-af58-eddefdfc8244@mhtml.blink" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ujian CBT — KONPYUUTA Okt Nov</title>
+  <meta name="description" content="Halaman ujian CBT JFT Basic">
+  <link rel="preconnect" href="https://fonts.googleapis.com/">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;family=Noto+Serif+JP:wght@300;400;500;700;900&amp;family=Shippori+Mincho:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://jft.minnanihongo.id/assets/css/ujian.css">
+  
+</head>
+<body>
+
+<!-- ── HEADER ──────────────────────────────────────────────── -->
+<header class="cbt-header">
+  <div class="cbt-header-left">
+    <button class="nav-toggle-mob" id="navToggleBtn">☰</button>
+    <div class="cbt-logo">🎌</div>
+    <div class="cbt-header-info">
+      <div class="cbt-paket-name">KONPYUUTA Okt Nov</div>
+      <div class="cbt-peserta-name">✏ caradin david</div>
+    </div>
+  </div>
+  <div class="cbt-timer" id="cbtTimer">⏱ 56:35</div>
+  <button class="cbt-submit-btn">🏁 Selesai Seksi</button>
+</header>
+
+<!-- ── BODY ────────────────────────────────────────────────── -->
+<div class="cbt-body">
+
+  <!-- ── LEFT NAV PANEL ────────────────────────────────────── -->
+  <aside class="cbt-nav-panel" id="navPanel">
+    <div class="nav-panel-header">
+      <span>Navigasi Soal</span>
+      <button class="nav-close-mob" style="margin-left:auto;background:none;border:none;color:var(--text3);font-size:16px;cursor:pointer;">✕</button>
+    </div>
+
+    <!-- Seksi tabs -->
+    <div class="nav-seksi-tabs" id="navSeksiTabs">
+      <button class="nav-seksi-tab locked" style="">
+        <span class="nav-seksi-dot" style="background:#94a3b8"></span>
+        <span class="ja">🔒 もじ・ごい</span>
+        <span class="nav-seksi-count">14</span>
+      </button>
+      <button class="nav-seksi-tab locked" style="">
+        <span class="nav-seksi-dot" style="background:#94a3b8"></span>
+        <span class="ja">🔒 ひょうげん</span>
+        <span class="nav-seksi-count">11</span>
+      </button>
+      <button class="nav-seksi-tab active" style="background:#8b5cf618;color:#8b5cf6">
+        <span class="nav-seksi-dot" style="background:#8b5cf6"></span>
+        <span class="ja">ちょうかい</span>
+        <span class="nav-seksi-count">12</span>
+      </button>
+      <button class="nav-seksi-tab disabled-next" style="">
+        <span class="nav-seksi-dot" style="background:#f59e0b"></span>
+        <span class="ja">🔒 どっかい</span>
+        <span class="nav-seksi-count">14</span>
+      </button></div>
+
+    <!-- Nomor soal grid -->
+    <div class="nav-nomor-wrap" id="navNomorWrap">
+      <div class="nav-nomor-grid" id="navNomorGrid"><button class="nav-btn aktif">1</button><button class="nav-btn">2</button><button class="nav-btn">3</button><button class="nav-btn">4</button><button class="nav-btn">5</button><button class="nav-btn">6</button><button class="nav-btn">7</button><button class="nav-btn">8</button><button class="nav-btn">9</button><button class="nav-btn">10</button><button class="nav-btn">11</button><button class="nav-btn">12</button></div>
+    </div>
+
+    <!-- Legend -->
+    <div class="nav-legend">
+      <div class="legend-item"><div class="legend-dot aktif"></div><span>Aktif</span></div>
+      <div class="legend-item"><div class="legend-dot terjawab"></div><span>Dijawab</span></div>
+      <div class="legend-item"><div class="legend-dot ditandai"></div><span>Ditandai</span></div>
+      <div class="legend-item"><div class="legend-dot belum"></div><span>Belum</span></div>
+    </div>
+  </aside>
+
+  <!-- ── MOBILE NAV BACKDROP ─────────────────────────────── -->
+  <div class="nav-panel-backdrop" id="navPanelBackdrop"></div>
+
+  <!-- ── CENTER: SOAL ──────────────────────────────────────── -->
+  <div class="cbt-soal-panel" id="soalPanel">
+    <div class="loading-screen" id="loadingScreen" style="display: none;">
+      <div class="spinner-lg"></div>
+      <div style="font-size:14px;color:var(--text3)">Memuat soal ujian...</div>
+    </div>
+    <div id="soalContent" style="display: block;">
+      <div class="soal-area" id="soalArea"><div class="seksi-banner" style="background: rgba(59, 130, 246, 0.063); border-color: rgba(59, 130, 246, 0.19); display: none;" id="seksi-129">
+      <span class="seksi-banner-icon">📖</span>
+      <div>
+        <div class="seksi-banner-name ja" style="color:#3b82f6">もじ・ごい</div>
+        <div class="seksi-banner-name-id" style="color:#3b82f6">Huruf &amp; Kosakata</div>
+      </div>
+      <div style="margin-left:auto;font-size:12px;opacity:.8;display:flex;align-items:center;gap:10px;">
+        <span>14 soal</span>
+        <button style="background:var(--grad-red);color:#fff;border:none;padding:5px 12px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;">
+          🔒 Selesaikan Seksi 1
+        </button>
+      </div>
+    </div>
+    
+    <div class="soal-card hide-furigana" id="soal-1460" data-soal-id="1460" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">1</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1460" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        <img src="https://jft.minnanihongo.id/uploads/images/6aba268580121_konpyuuta.jpg" class="soal-img" alt="Gambar soal">
+        
+        <div class="soal-pertanyaan ja">Perhatikan gambar berikut</div>
+        <div class="soal-terjemahan dokai-terjemahan-1460" style="display: none;">(Perhatikan gambar berikut.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1460-A">
+        <div class="pilihan-key" id="key-1460-A">A</div>
+        <div>
+          <div class="pilihan-text ja">ボード</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1460" style="display: none;">(Papan)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1460-B">
+        <div class="pilihan-key" id="key-1460-B">B</div>
+        <div>
+          <div class="pilihan-text ja">ほん</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1460" style="display: none;">(Buku)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1460-C">
+        <div class="pilihan-key" id="key-1460-C">C</div>
+        <div>
+          <div class="pilihan-text ja">コンピューター</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1460" style="display: none;">(Komputer)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1460" disabled="">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1460">1 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1460">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1461" data-soal-id="1461" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">2</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1461" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        <img src="https://jft.minnanihongo.id/uploads/images/6a13f8371dd0d_kagi1.png" class="soal-img" alt="Gambar soal">
+        
+        <div class="soal-pertanyaan ja">Perhatikan gambar berikut</div>
+        <div class="soal-terjemahan dokai-terjemahan-1461" style="display: none;">(Perhatikan gambar berikut.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1461-A">
+        <div class="pilihan-key" id="key-1461-A">A</div>
+        <div>
+          <div class="pilihan-text ja">ほんだな</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1461" style="display: none;">(Rak buku)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1461-B">
+        <div class="pilihan-key" id="key-1461-B">B</div>
+        <div>
+          <div class="pilihan-text ja">がぎ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1461" style="display: none;">(Gagi (salah penulisan))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1461-C">
+        <div class="pilihan-key" id="key-1461-C">C</div>
+        <div>
+          <div class="pilihan-text ja">かぎ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1461" style="display: none;">(Kunci)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1461">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1461">2 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1461">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1462" data-soal-id="1462" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">3</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1462" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        <img src="https://jft.minnanihongo.id/uploads/images/6a13fb01e0c9b_kagi2.png" class="soal-img" alt="Gambar soal">
+        
+        <div class="soal-pertanyaan ja">Perhatikan gambar berikut</div>
+        <div class="soal-terjemahan dokai-terjemahan-1462" style="display: none;">(Perhatikan gambar berikut.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1462-A">
+        <div class="pilihan-key" id="key-1462-A">A</div>
+        <div>
+          <div class="pilihan-text ja">けっこん</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1462" style="display: none;">(Pernikahan)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1462-B">
+        <div class="pilihan-key" id="key-1462-B">B</div>
+        <div>
+          <div class="pilihan-text ja">けこん</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1462" style="display: none;">(Kekon (salah eja))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1462-C">
+        <div class="pilihan-key" id="key-1462-C">C</div>
+        <div>
+          <div class="pilihan-text ja">おまつり</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1462" style="display: none;">(Festival / perayaan)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1462">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1462">3 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1462">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1463" data-soal-id="1463" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">4</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1463" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        <img src="https://jft.minnanihongo.id/uploads/images/6a13ff628eb0f_kagi3.png" class="soal-img" alt="Gambar soal">
+        
+        <div class="soal-pertanyaan ja">Perhatikan gambar berikut</div>
+        <div class="soal-terjemahan dokai-terjemahan-1463" style="display: none;">(Perhatikan gambar berikut.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1463-A">
+        <div class="pilihan-key" id="key-1463-A">A</div>
+        <div>
+          <div class="pilihan-text ja">切ります</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1463" style="display: none;">(Memotong)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1463-B">
+        <div class="pilihan-key" id="key-1463-B">B</div>
+        <div>
+          <div class="pilihan-text ja">案内します</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1463" style="display: none;">(Memandu / mengantar)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1463-C">
+        <div class="pilihan-key" id="key-1463-C">C</div>
+        <div>
+          <div class="pilihan-text ja">待ちます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1463" style="display: none;">(Menunggu)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1463">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1463">4 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1463">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1464" data-soal-id="1464" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">5</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1464" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">このカメラ は [ 軽くて ] つかいやすいです</div>
+        <div class="soal-terjemahan dokai-terjemahan-1464" style="display: none;">(Kamera ini [ringan] dan mudah digunakan.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1464-A">
+        <div class="pilihan-key" id="key-1464-A">A</div>
+        <div>
+          <div class="pilihan-text ja">たのしくて</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1464" style="display: none;">(Menyenangkan)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1464-B">
+        <div class="pilihan-key" id="key-1464-B">B</div>
+        <div>
+          <div class="pilihan-text ja">かるくて</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1464" style="display: none;">(Ringan)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1464-C">
+        <div class="pilihan-key" id="key-1464-C">C</div>
+        <div>
+          <div class="pilihan-text ja">あかくて</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1464" style="display: none;">(Merah)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1464">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1464">5 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1464">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1465" data-soal-id="1465" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">6</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1465" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">あなた の [ 住所 ]を 教えてください</div>
+        <div class="soal-terjemahan dokai-terjemahan-1465" style="display: none;">(Tolong beri tahu [alamat] Anda.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1465-A">
+        <div class="pilihan-key" id="key-1465-A">A</div>
+        <div>
+          <div class="pilihan-text ja">じゅしょ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1465" style="display: none;">(Jusho (salah eja))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1465-B">
+        <div class="pilihan-key" id="key-1465-B">B</div>
+        <div>
+          <div class="pilihan-text ja">じゆうしゅ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1465" style="display: none;">(Jiyuushu (salah eja))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1465-C">
+        <div class="pilihan-key" id="key-1465-C">C</div>
+        <div>
+          <div class="pilihan-text ja">じゅうしょ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1465" style="display: none;">(Alamat (juusho))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1465">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1465">6 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1465">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1466" data-soal-id="1466" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">7</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1466" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">かっこい時計 を もらって。。。。。。。 </div>
+        <div class="soal-terjemahan dokai-terjemahan-1466" style="display: none;">(Mendapat jam tangan yang keren, saya merasa.......)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1466-A">
+        <div class="pilihan-key" id="key-1466-A">A</div>
+        <div>
+          <div class="pilihan-text ja">うれしかったです</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1466" style="display: none;">(Merasa senang / gembira)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1466-B">
+        <div class="pilihan-key" id="key-1466-B">B</div>
+        <div>
+          <div class="pilihan-text ja">たのしかったです</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1466" style="display: none;">(Menyenangkan (aktivitas))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1466-C">
+        <div class="pilihan-key" id="key-1466-C">C</div>
+        <div>
+          <div class="pilihan-text ja">いそがしかったです</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1466" style="display: none;">(Sangat sibuk)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1466">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1466">7 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1466">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1467" data-soal-id="1467" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">8</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1467" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">まいにち テレビ を 。。。。。</div>
+        <div class="soal-terjemahan dokai-terjemahan-1467" style="display: none;">(Setiap hari saya ..... televisi.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1467-A">
+        <div class="pilihan-key" id="key-1467-A">A</div>
+        <div>
+          <div class="pilihan-text ja">読みます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1467" style="display: none;">(Membaca)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1467-B">
+        <div class="pilihan-key" id="key-1467-B">B</div>
+        <div>
+          <div class="pilihan-text ja">見ます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1467" style="display: none;">(Menonton / melihat)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1467-C">
+        <div class="pilihan-key" id="key-1467-C">C</div>
+        <div>
+          <div class="pilihan-text ja">聞きます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1467" style="display: none;">(Mendengarkan)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1467">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1467">8 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1467">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1468" data-soal-id="1468" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">9</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1468" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">こんばん は ゆびんきょく で 7時30____ に 待ち合わせます。</div>
+        <div class="soal-terjemahan dokai-terjemahan-1468" style="display: none;">(Malam ini kita janjian bertemu di kantor pos pada pukul 7 lewat 30 [menit].)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1468-A">
+        <div class="pilihan-key" id="key-1468-A">A</div>
+        <div>
+          <div class="pilihan-text ja">分</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1468" style="display: none;">(Menit (fun/pun))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1468-B">
+        <div class="pilihan-key" id="key-1468-B">B</div>
+        <div>
+          <div class="pilihan-text ja">半</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1468" style="display: none;">(Setengah (han))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1468-C">
+        <div class="pilihan-key" id="key-1468-C">C</div>
+        <div>
+          <div class="pilihan-text ja">年</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1468" style="display: none;">(Tahun (nen))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1468">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1468">9 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1468">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1469" data-soal-id="1469" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">10</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1469" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">らいげつ から テニス を_____みよう と おもっています</div>
+        <div class="soal-terjemahan dokai-terjemahan-1469" style="display: none;">(Mulai bulan depan saya berniat mencoba [memulai] bermain tenis.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1469-A">
+        <div class="pilihan-key" id="key-1469-A">A</div>
+        <div>
+          <div class="pilihan-text ja">読んで</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1469" style="display: none;">(Membaca (yonde))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1469-B">
+        <div class="pilihan-key" id="key-1469-B">B</div>
+        <div>
+          <div class="pilihan-text ja">食べて</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1469" style="display: none;">(Makan (tabete))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1469-C">
+        <div class="pilihan-key" id="key-1469-C">C</div>
+        <div>
+          <div class="pilihan-text ja">始めて</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1469" style="display: none;">(Memulai (hajimete))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1469">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1469">10 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1469">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1470" data-soal-id="1470" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">11</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1470" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">体 の けんこう の ため に____うんどうしたり</div>
+        <div class="soal-terjemahan dokai-terjemahan-1470" style="display: none;">(Demi kesehatan tubuh, [berjalan kaki] dan berolahraga...)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1470-A">
+        <div class="pilihan-key" id="key-1470-A">A</div>
+        <div>
+          <div class="pilihan-text ja">走たり</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1470" style="display: none;">(Salah konjugasi (seharusnya hashittari))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1470-B">
+        <div class="pilihan-key" id="key-1470-B">B</div>
+        <div>
+          <div class="pilihan-text ja">泳ぎたり</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1470" style="display: none;">(Salah konjugasi (seharusnya oyoitari))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1470-C">
+        <div class="pilihan-key" id="key-1470-C">C</div>
+        <div>
+          <div class="pilihan-text ja">歩いたり</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1470" style="display: none;">(Berjalan kaki (aruitari))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1470">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1470">11 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1470">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1471" data-soal-id="1471" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">12</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1471" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">ことし は 2024 [ ねん ]</div>
+        <div class="soal-terjemahan dokai-terjemahan-1471" style="display: none;">(Tahun ini adalah [tahun] 2024.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1471-A">
+        <div class="pilihan-key" id="key-1471-A">A</div>
+        <div>
+          <div class="pilihan-text ja">年</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1471" style="display: none;">(Tahun (nen))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1471-B">
+        <div class="pilihan-key" id="key-1471-B">B</div>
+        <div>
+          <div class="pilihan-text ja">時間</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1471" style="display: none;">(Durasi jam (jikan))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1471-C">
+        <div class="pilihan-key" id="key-1471-C">C</div>
+        <div>
+          <div class="pilihan-text ja">分</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1471" style="display: none;">(Menit (fun))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1471">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1471">12 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1471">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1472" data-soal-id="1472" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">13</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1472" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">メル で イベント に ついて 友達 に _____</div>
+        <div class="soal-terjemahan dokai-terjemahan-1472" style="display: none;">(Melalui email, saya [mengabarkan] mengenai acara kepada teman.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1472-A">
+        <div class="pilihan-key" id="key-1472-A">A</div>
+        <div>
+          <div class="pilihan-text ja">しらせます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1472" style="display: none;">(Mengabarkan / memberitahukan)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1472-B">
+        <div class="pilihan-key" id="key-1472-B">B</div>
+        <div>
+          <div class="pilihan-text ja">おしえます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1472" style="display: none;">(Mengajari)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1472-C">
+        <div class="pilihan-key" id="key-1472-C">C</div>
+        <div>
+          <div class="pilihan-text ja">さそいます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1472" style="display: none;">(Mengajak)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1472">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1472">13 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn" id="next-1472">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1473" data-soal-id="1473" data-kat-id="129" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">14</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1473" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        <img src="https://jft.minnanihongo.id/uploads/images/6a1406d47a4f3_kagi4.png" class="soal-img" alt="Gambar soal">
+        
+        <div class="soal-pertanyaan ja">A : ここで_____ 
+B : ありがとうございます</div>
+        <div class="soal-terjemahan dokai-terjemahan-1473" style="display: none;">(A : Di sini, [silakan]..... 
+B : Terima kasih banyak.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1473-A">
+        <div class="pilihan-key" id="key-1473-A">A</div>
+        <div>
+          <div class="pilihan-text ja">どうも</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1473" style="display: none;">(Terima kasih banyak (singkat))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1473-B">
+        <div class="pilihan-key" id="key-1473-B">B</div>
+        <div>
+          <div class="pilihan-text ja">どうぞ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1473" style="display: none;">(Silakan (douzo))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1473-C">
+        <div class="pilihan-key" id="key-1473-C">C</div>
+        <div>
+          <div class="pilihan-text ja">こちらこそ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1473" style="display: none;">(Sama-sama (pihak kami))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1473">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1473">14 / 14 (Seksi 1)</span>
+        <button class="cbt-footer-btn btn-selesai-seksi-footer" id="next-1473">⏩ Selesaikan Seksi Ini →</button>
+      </div>
+    </div>
+  <div class="seksi-banner" style="background: rgba(16, 185, 129, 0.063); border-color: rgba(16, 185, 129, 0.19); display: none;" id="seksi-130">
+      <span class="seksi-banner-icon">💬</span>
+      <div>
+        <div class="seksi-banner-name ja" style="color:#10b981">ひょうげん</div>
+        <div class="seksi-banner-name-id" style="color:#10b981">Ekspresi &amp; Percakapan</div>
+      </div>
+      <div style="margin-left:auto;font-size:12px;opacity:.8;display:flex;align-items:center;gap:10px;">
+        <span>11 soal</span>
+        <button style="background:var(--grad-red);color:#fff;border:none;padding:5px 12px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;">
+          🔒 Selesaikan Seksi 2
+        </button>
+      </div>
+    </div>
+    
+    <div class="soal-card hide-furigana" id="soal-1474" data-soal-id="1474" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">1</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1474" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">A : もしもし。今どこですか
+
+ B : 今 郵便局 に_____</div>
+        <div class="soal-terjemahan dokai-terjemahan-1474" style="display: none;">(A : Halo. Sekarang kamu ada di mana?
+B : Sekarang saya [ada] di kantor pos.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1474-A">
+        <div class="pilihan-key" id="key-1474-A">A</div>
+        <div>
+          <div class="pilihan-text ja">いません</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1474" style="display: none;">(Tidak ada)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1474-B">
+        <div class="pilihan-key" id="key-1474-B">B</div>
+        <div>
+          <div class="pilihan-text ja">あります</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1474" style="display: none;">(Ada (benda mati))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1474-C">
+        <div class="pilihan-key" id="key-1474-C">C</div>
+        <div>
+          <div class="pilihan-text ja">います</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1474" style="display: none;">(Ada (makhluk bernyawa))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1474" disabled="">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1474">1 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn" id="next-1474">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1475" data-soal-id="1475" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">2</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1475" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">A : キﾐさん、お国 は どちらですか。
+
+B : かんこくです。
+
+A : キﾐさん、かんこくご が _____</div>
+        <div class="soal-terjemahan dokai-terjemahan-1475" style="display: none;">(A : Kimi-san, asal negaranya dari mana?
+B : Korea.
+A : Kimi-san, apakah [bisa] bahasa Korea?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1475-A">
+        <div class="pilihan-key" id="key-1475-A">A</div>
+        <div>
+          <div class="pilihan-text ja">できますか</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1475" style="display: none;">(Bisakah / apakah bisa? (pertanyaan))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1475-B">
+        <div class="pilihan-key" id="key-1475-B">B</div>
+        <div>
+          <div class="pilihan-text ja">できますよ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1475" style="display: none;">(Bisa lho (informasi))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1475-C">
+        <div class="pilihan-key" id="key-1475-C">C</div>
+        <div>
+          <div class="pilihan-text ja">できますね</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1475" style="display: none;">(Bisa ya (penegasan))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1475">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1475">2 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn" id="next-1475">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1476" data-soal-id="1476" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">3</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1476" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">A : 仕事 は どうですか？
+
+B : 最近、仕事 は _____時間 が ありません</div>
+        <div class="soal-terjemahan dokai-terjemahan-1476" style="display: none;">(A : Bagaimana pekerjaannya?
+B : Akhir-akhir ini, karena pekerjaan [sibuk], tidak ada waktu.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1476-A">
+        <div class="pilihan-key" id="key-1476-A">A</div>
+        <div>
+          <div class="pilihan-text ja">やすみですから</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1476" style="display: none;">(Karena libur)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1476-B">
+        <div class="pilihan-key" id="key-1476-B">B</div>
+        <div>
+          <div class="pilihan-text ja">忙しくて</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1476" style="display: none;">(Sibuk sehingga...)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1476-C">
+        <div class="pilihan-key" id="key-1476-C">C</div>
+        <div>
+          <div class="pilihan-text ja">ひまなので</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1476" style="display: none;">(Karena senggang)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1476">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1476">3 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn" id="next-1476">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1477" data-soal-id="1477" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">4</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1477" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">A :よかったら、 このテンプラ は おいしですよ。
+
+B：すみません。アルレギ が あるので、_____ 身体 が かゆくなります。</div>
+        <div class="soal-terjemahan dokai-terjemahan-1477" style="display: none;">(A : Kalau mau, tempura ini enak lho.
+B : Maaf. Karena saya ada alergi, [jika makan], tubuh saya menjadi gatal.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1477-A">
+        <div class="pilihan-key" id="key-1477-A">A</div>
+        <div>
+          <div class="pilihan-text ja">食べると</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1477" style="display: none;">(Jika makan (syarat alami))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1477-B">
+        <div class="pilihan-key" id="key-1477-B">B</div>
+        <div>
+          <div class="pilihan-text ja">食べ買った</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1477" style="display: none;">(Salah bentuk tata bahasa)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1477-C">
+        <div class="pilihan-key" id="key-1477-C">C</div>
+        <div>
+          <div class="pilihan-text ja">食べ過ぎ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1477" style="display: none;">(Terlalu banyak makan)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1477">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1477">4 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn" id="next-1477">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1478" data-soal-id="1478" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">5</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1478" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">A : あのう。。すみません
+
+B : はい、なんですか 
+
+A : このかんじ の 読み方 を _____</div>
+        <div class="soal-terjemahan dokai-terjemahan-1478" style="display: none;">(A : Permisi...
+B : Ya, ada apa?
+A : [Sudikah Anda mengajari saya] cara membaca kanji ini?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1478-A">
+        <div class="pilihan-key" id="key-1478-A">A</div>
+        <div>
+          <div class="pilihan-text ja">教えてあげませんか。</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1478" style="display: none;">(Maukah Anda saya ajari?)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1478-B">
+        <div class="pilihan-key" id="key-1478-B">B</div>
+        <div>
+          <div class="pilihan-text ja">教えてほしいですか。</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1478" style="display: none;">(Apakah Anda ingin diajari?)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1478-C">
+        <div class="pilihan-key" id="key-1478-C">C</div>
+        <div>
+          <div class="pilihan-text ja">教えてくださいませんか。</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1478" style="display: none;">(Sudikah Anda mengajari saya? (permohonan sopan))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1478">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1478">5 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn" id="next-1478">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1479" data-soal-id="1479" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">6</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1479" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">A : あのう、すみません、日本語 の 本 は クラス に 忘れました。
+
+B : どんな 本ですか。
+
+A : 名前 が _____</div>
+        <div class="soal-terjemahan dokai-terjemahan-1479" style="display: none;">(A : Permisi, buku bahasa Jepang saya ketinggalan di kelas.
+B : Buku yang seperti apa?
+A : [Tertulis/tertera] nama saya di bukunya.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1479-A">
+        <div class="pilihan-key" id="key-1479-A">A</div>
+        <div>
+          <div class="pilihan-text ja">書いてあります</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1479" style="display: none;">(Tertulis / tertera (hasil perbuatan))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1479-B">
+        <div class="pilihan-key" id="key-1479-B">B</div>
+        <div>
+          <div class="pilihan-text ja">書いています</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1479" style="display: none;">(Sedang menulis)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1479-C">
+        <div class="pilihan-key" id="key-1479-C">C</div>
+        <div>
+          <div class="pilihan-text ja">書いてください</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1479" style="display: none;">(Tolong tuliskan)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1479">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1479">6 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn" id="next-1479">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1480" data-soal-id="1480" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">7</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1480" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        <img src="https://jft.minnanihongo.id/uploads/images/6a140aa1acae7_kagi5.png" class="soal-img" alt="Gambar soal">
+        
+        <div class="soal-pertanyaan ja">A : ________
+
+B : そうですね。</div>
+        <div class="soal-terjemahan dokai-terjemahan-1480" style="display: none;">(A : [Cuacanya bagus ya]
+B : Iya, benar ya.)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1480-A">
+        <div class="pilihan-key" id="key-1480-A">A</div>
+        <div>
+          <div class="pilihan-text ja">いい天気ですね</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1480" style="display: none;">(Cuaca yang bagus/cerah ya)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1480-B">
+        <div class="pilihan-key" id="key-1480-B">B</div>
+        <div>
+          <div class="pilihan-text ja">木雨ですね</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1480" style="display: none;">(Hujan kayu (tidak ada))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1480-C">
+        <div class="pilihan-key" id="key-1480-C">C</div>
+        <div>
+          <div class="pilihan-text ja">雪が降りますね</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1480" style="display: none;">(Turun salju ya)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1480">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1480">7 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn" id="next-1480">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1481" data-soal-id="1481" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">8</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1481" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">この 後、みんなと一緒に 食事にいくんです______
+
+一緒に行きませんか。</div>
+        <div class="soal-terjemahan dokai-terjemahan-1481" style="display: none;">(Setelah ini saya mau pergi makan bersama semuanya, [kalau tidak keberatan], maukah pergi bersama?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1481-A">
+        <div class="pilihan-key" id="key-1481-A">A</div>
+        <div>
+          <div class="pilihan-text ja">よかったら</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1481" style="display: none;">(Kalau tidak keberatan / bila berkenan)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1481-B">
+        <div class="pilihan-key" id="key-1481-B">B</div>
+        <div>
+          <div class="pilihan-text ja">できれば</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1481" style="display: none;">(Sebisa mungkin)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1481-C">
+        <div class="pilihan-key" id="key-1481-C">C</div>
+        <div>
+          <div class="pilihan-text ja">食べたら</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1481" style="display: none;">(Setelah makan)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1481">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1481">8 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn" id="next-1481">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1482" data-soal-id="1482" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">9</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1482" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">A :もしもし、エリカさんですか。私はトノです。
+
+B :トノさんですか____ です。お元気ですか。</div>
+        <div class="soal-terjemahan dokai-terjemahan-1482" style="display: none;">(A : Halo, apakah Erika-san? Saya Tono.
+B : Tono-san kah? [Sudah lama tidak jumpa/kontak] ya. Apa kabar?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1482-A">
+        <div class="pilihan-key" id="key-1482-A">A</div>
+        <div>
+          <div class="pilihan-text ja">お久しぶり</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1482" style="display: none;">(Sudah lama tidak jumpa / kontak)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1482-B">
+        <div class="pilihan-key" id="key-1482-B">B</div>
+        <div>
+          <div class="pilihan-text ja">よかった</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1482" style="display: none;">(Syukurlah)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1482-C">
+        <div class="pilihan-key" id="key-1482-C">C</div>
+        <div>
+          <div class="pilihan-text ja">ざんねん</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1482" style="display: none;">(Sayang sekali)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1482">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1482">9 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn" id="next-1482">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1483" data-soal-id="1483" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">10</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1483" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">あのう、すみません、今のアナウンス は なんと_____</div>
+        <div class="soal-terjemahan dokai-terjemahan-1483" style="display: none;">(Permisi, pengumuman barusan [mengatakan] apa ya?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1483-A">
+        <div class="pilihan-key" id="key-1483-A">A</div>
+        <div>
+          <div class="pilihan-text ja">思いましたか</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1483" style="display: none;">(Apakah Anda pikir)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1483-B">
+        <div class="pilihan-key" id="key-1483-B">B</div>
+        <div>
+          <div class="pilihan-text ja">言っていましたか</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1483" style="display: none;">(Tadi mengatakan apa)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1483-C">
+        <div class="pilihan-key" id="key-1483-C">C</div>
+        <div>
+          <div class="pilihan-text ja">書きましたか</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1483" style="display: none;">(Apakah Anda tulis)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1483">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1483">10 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn" id="next-1483">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1484" data-soal-id="1484" data-kat-id="130" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">11</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1484" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+        
+        
+        <div class="soal-pertanyaan ja">A : 全部 かたづけましたか.
+
+B : はい, わかりました。
+
+A : 電気 が ついていますよ。
+
+B : あ、すみません。_____</div>
+        <div class="soal-terjemahan dokai-terjemahan-1484" style="display: none;">(A : Apakah semuanya sudah dirapikan?
+B : Ya, baik.
+A : Lampunya masih menyala lho.
+B : Ah, maaf. [Lain kali saya akan lebih berhati-hati].)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1484-A">
+        <div class="pilihan-key" id="key-1484-A">A</div>
+        <div>
+          <div class="pilihan-text ja">いまからはじめます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1484" style="display: none;">(Mulai sekarang saya mulai)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1484-B">
+        <div class="pilihan-key" id="key-1484-B">B</div>
+        <div>
+          <div class="pilihan-text ja">今度から気を付けます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1484" style="display: none;">(Mulai lain kali saya akan lebih berhati-hati)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1484-C">
+        <div class="pilihan-key" id="key-1484-C">C</div>
+        <div>
+          <div class="pilihan-text ja">今度からお願いします</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1484" style="display: none;">(Mulai lain kali tolong ya)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1484">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1484">11 / 11 (Seksi 2)</span>
+        <button class="cbt-footer-btn btn-selesai-seksi-footer" id="next-1484">⏩ Selesaikan Seksi Ini →</button>
+      </div>
+    </div>
+  <div class="seksi-banner active-seksi" style="background: rgba(139, 92, 246, 0.063); border-color: rgba(139, 92, 246, 0.19); display: flex;" id="seksi-131">
+      <span class="seksi-banner-icon">🎧</span>
+      <div>
+        <div class="seksi-banner-name ja" style="color:#8b5cf6">ちょうかい</div>
+        <div class="seksi-banner-name-id" style="color:#8b5cf6">Kemampuan Mendengar</div>
+      </div>
+      <div style="margin-left:auto;font-size:12px;opacity:.8;display:flex;align-items:center;gap:10px;">
+        <span>12 soal</span>
+        <button style="background:var(--grad-red);color:#fff;border:none;padding:5px 12px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;">
+          🔒 Selesaikan Seksi 3
+        </button>
+      </div>
+    </div>
+    
+    <div class="soal-card hide-furigana active-soal" id="soal-1485" data-soal-id="1485" data-kat-id="131" style="display: block;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">1</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1485" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Tanaka menelepon Sato di pagi hari dan menanyakan kegiatan serta menu sarapannya.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1485" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Percakapan telepon antara Tanaka dan Sato di pagi hari.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1485">
+        <button type="button" class="play-audio-btn" id="audio-btn-1485" data-soal-id="1485" data-audio-src="uploads/audio/6a140f229e76a_GeneratedAudioMay252026-3_55PM.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1485"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1485" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1485">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1485"></div>
+              <div class="play-count-dot" id="dot2-1485"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1485">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1485">
+          <div class="audio-progress-fill" id="progress-fill-1485"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Sarapan paginya apa?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1485" style="display: none;">(Sarapan paginya apa?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1485-A">
+        <div class="pilihan-key" id="key-1485-A">A</div>
+        <div>
+          <div class="pilihan-text ja">たまご</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1485" style="display: none;">(Telur saja)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1485-B">
+        <div class="pilihan-key" id="key-1485-B">B</div>
+        <div>
+          <div class="pilihan-text ja">パンとたまご</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1485" style="display: none;">(Roti dan telur)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1485-C">
+        <div class="pilihan-key" id="key-1485-C">C</div>
+        <div>
+          <div class="pilihan-text ja">ラーメン</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1485" style="display: none;">(Ramen)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1485" disabled="">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1485">1 / 12 (Seksi 3)</span>
+        <button class="cbt-footer-btn" id="next-1485">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1486" data-soal-id="1486" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">2</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1486" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Percakapan melalui telepon yang menanyakan kondisi cuaca saat ini.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1486" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Percakapan menanyakan kondisi cuaca.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1486">
+        <button type="button" class="play-audio-btn" id="audio-btn-1486" data-soal-id="1486" data-audio-src="uploads/audio/6a142c2160f72_kagi2.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1486"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1486" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1486">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1486"></div>
+              <div class="play-count-dot" id="dot2-1486"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1486">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1486">
+          <div class="audio-progress-fill" id="progress-fill-1486"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Hari ini cuacanya bagaimana?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1486" style="display: none;">(Hari ini cuacanya bagaimana?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1486-A">
+        <div class="pilihan-key" id="key-1486-A">A</div>
+        <div>
+          <div class="pilihan-text ja">あめ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1486" style="display: none;">(Hujan (ame))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1486-B">
+        <div class="pilihan-key" id="key-1486-B">B</div>
+        <div>
+          <div class="pilihan-text ja">くもり</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1486" style="display: none;">(Berawan (kumori))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1486-C">
+        <div class="pilihan-key" id="key-1486-C">C</div>
+        <div>
+          <div class="pilihan-text ja">はれ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1486" style="display: none;">(Cerah (hare))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1486">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1486">2 / 12 (Seksi 3)</span>
+        <button class="cbt-footer-btn" id="next-1486">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1487" data-soal-id="1487" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">3</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1487" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Guru membuka pelajaran baru di kelas dan memberikan instruksi kepada siswa.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1487" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Guru memberikan pengumuman di dalam kelas.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1487">
+        <button type="button" class="play-audio-btn" id="audio-btn-1487" data-soal-id="1487" data-audio-src="uploads/audio/6a143065ba44a_kagi3-4.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1487"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1487" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1487">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1487"></div>
+              <div class="play-count-dot" id="dot2-1487"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1487">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1487">
+          <div class="audio-progress-fill" id="progress-fill-1487"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Untuk soal nomor 27 &amp; 28, dengarkan baik-baik (Buka buku halaman berapa?)</div>
+        <div class="soal-terjemahan dokai-terjemahan-1487" style="display: none;">(Untuk soal nomor 27 &amp; 28, dengarkan baik-baik (Buku dibuka halaman berapa?))</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1487-A">
+        <div class="pilihan-key" id="key-1487-A">A</div>
+        <div>
+          <div class="pilihan-text ja">110ページ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1487" style="display: none;">(Halaman 110)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1487-B">
+        <div class="pilihan-key" id="key-1487-B">B</div>
+        <div>
+          <div class="pilihan-text ja">120ページ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1487" style="display: none;">(Halaman 120)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1487-C">
+        <div class="pilihan-key" id="key-1487-C">C</div>
+        <div>
+          <div class="pilihan-text ja">220ページ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1487" style="display: none;">(Halaman 220)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1487">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1487"></span>
+        <button class="cbt-footer-btn" id="next-1487">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1488" data-soal-id="1488" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">4</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1488" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Instruksi guru mengenai apa yang perlu dilakukan murid saat penjelasan berlangsung.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1488" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Instruksi guru di kelas.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1488">
+        <button type="button" class="play-audio-btn" id="audio-btn-1488" data-soal-id="1488" data-audio-src="uploads/audio/6a143065ba44a_kagi3-4.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1488"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1488" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1488">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1488"></div>
+              <div class="play-count-dot" id="dot2-1488"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1488">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1488">
+          <div class="audio-progress-fill" id="progress-fill-1488"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">apa yang harus dilakukan siswa?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1488" style="display: none;">(Apa yang harus dilakukan siswa?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1488-A">
+        <div class="pilihan-key" id="key-1488-A">A</div>
+        <div>
+          <div class="pilihan-text ja">泳ぎます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1488" style="display: none;">(Berenang (oyogimasu))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1488-B">
+        <div class="pilihan-key" id="key-1488-B">B</div>
+        <div>
+          <div class="pilihan-text ja">聞きます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1488" style="display: none;">(Mendengarkan (kikimasu))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1488-C">
+        <div class="pilihan-key" id="key-1488-C">C</div>
+        <div>
+          <div class="pilihan-text ja">読みます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1488" style="display: none;">(Membaca (yomimasu))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1488">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1488"></span>
+        <button class="cbt-footer-btn" id="next-1488">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1489" data-soal-id="1489" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">5</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1489" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Percakapan dua orang di pagi hari mengenai aktivitas olahraga.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1489" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Dua orang berbincang mengenai kebiasaan hidup sehat.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1489">
+        <button type="button" class="play-audio-btn" id="audio-btn-1489" data-soal-id="1489" data-audio-src="uploads/audio/6a147229b0c44_kagi5.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1489"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1489" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1489">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1489"></div>
+              <div class="play-count-dot" id="dot2-1489"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1489">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1489">
+          <div class="audio-progress-fill" id="progress-fill-1489"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Apa yang mereka bicarakan ?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1489" style="display: none;">(Apa yang mereka bicarakan?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1489-A">
+        <div class="pilihan-key" id="key-1489-A">A</div>
+        <div>
+          <div class="pilihan-text ja">ヨガ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1489" style="display: none;">(Yoga)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1489-B">
+        <div class="pilihan-key" id="key-1489-B">B</div>
+        <div>
+          <div class="pilihan-text ja">買い物</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1489" style="display: none;">(Berbelanja)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1489-C">
+        <div class="pilihan-key" id="key-1489-C">C</div>
+        <div>
+          <div class="pilihan-text ja">遊ぶ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1489" style="display: none;">(Bermain)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1489">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1489"></span>
+        <button class="cbt-footer-btn" id="next-1489">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1490" data-soal-id="1490" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">6</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1490" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Pengumuman dari staf perpustakaan mengenai peraturan peminjaman buku.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1490" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Pengumuman resmi dari perpustakaan.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1490">
+        <button type="button" class="play-audio-btn" id="audio-btn-1490" data-soal-id="1490" data-audio-src="uploads/audio/6a14757ce7348_kagi6-7.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1490"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1490" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1490">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1490"></div>
+              <div class="play-count-dot" id="dot2-1490"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1490">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1490">
+          <div class="audio-progress-fill" id="progress-fill-1490"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Untuk soal nomor 30 &amp; 31    Berapa minggu batas peminjaman buku perpustakaan?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1490" style="display: none;">(Untuk soal nomor 30 &amp; 31: Berapa minggu batas peminjaman buku perpustakaan?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1490-A">
+        <div class="pilihan-key" id="key-1490-A">A</div>
+        <div>
+          <div class="pilihan-text ja">3 週間</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1490" style="display: none;">(3 Minggu)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1490-B">
+        <div class="pilihan-key" id="key-1490-B">B</div>
+        <div>
+          <div class="pilihan-text ja">2 週間</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1490" style="display: none;">(2 Minggu)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1490-C">
+        <div class="pilihan-key" id="key-1490-C">C</div>
+        <div>
+          <div class="pilihan-text ja">1 週間</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1490" style="display: none;">(1 Minggu)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1490">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1490"></span>
+        <button class="cbt-footer-btn" id="next-1490">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1491" data-soal-id="1491" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">7</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1491" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Informasi jam operasional perpustakaan pada hari Sabtu.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1491" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Pengumuman jam operasional perpustakaan di hari Sabtu.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1491">
+        <button type="button" class="play-audio-btn" id="audio-btn-1491" data-soal-id="1491" data-audio-src="uploads/audio/6a14757ce7348_kagi6-7.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1491"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1491" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1491">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1491"></div>
+              <div class="play-count-dot" id="dot2-1491"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1491">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1491">
+          <div class="audio-progress-fill" id="progress-fill-1491"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Sabtu malam buka sampai jam berapa?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1491" style="display: none;">(Sabtu malam buka sampai jam berapa?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1491-A">
+        <div class="pilihan-key" id="key-1491-A">A</div>
+        <div>
+          <div class="pilihan-text ja">午後 10 時まで</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1491" style="display: none;">(Sampai pukul 10 malam (22:00))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1491-B">
+        <div class="pilihan-key" id="key-1491-B">B</div>
+        <div>
+          <div class="pilihan-text ja">午前 10 時まで</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1491" style="display: none;">(Sampai pukul 10 pagi)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1491-C">
+        <div class="pilihan-key" id="key-1491-C">C</div>
+        <div>
+          <div class="pilihan-text ja">午前  10 時 30 分まで</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1491" style="display: none;">(Sampai pukul 10:30 pagi)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1491">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1491"></span>
+        <button class="cbt-footer-btn" id="next-1491">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1492" data-soal-id="1492" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">8</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1492" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Percakapan antara Kenji dan Yuki tentang transportasi berangkat ke sekolah.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1492" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Percakapan dua teman sekolah mengenai transportasi harian.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1492">
+        <button type="button" class="play-audio-btn" id="audio-btn-1492" data-soal-id="1492" data-audio-src="uploads/audio/6a147bb43abef_kagi8.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1492"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1492" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1492">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1492"></div>
+              <div class="play-count-dot" id="dot2-1492"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1492">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1492">
+          <div class="audio-progress-fill" id="progress-fill-1492"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Kendaraan apa yang di pakai perempuan?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1492" style="display: none;">(Kendaraan apa yang digunakan oleh si perempuan?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1492-A">
+        <div class="pilihan-key" id="key-1492-A">A</div>
+        <div>
+          <div class="pilihan-text ja">あるきます</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1492" style="display: none;">(Jalan kaki)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1492-B">
+        <div class="pilihan-key" id="key-1492-B">B</div>
+        <div>
+          <div class="pilihan-text ja">バス</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1492" style="display: none;">(Bus)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1492-C">
+        <div class="pilihan-key" id="key-1492-C">C</div>
+        <div>
+          <div class="pilihan-text ja">じてんしゃ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1492" style="display: none;">(Sepeda)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1492">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1492"></span>
+        <button class="cbt-footer-btn" id="next-1492">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1493" data-soal-id="1493" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">9</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1493" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Dua sahabat membicarakan jadwal liburan musim panas dan destinasi liburan.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1493" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Percakapan merencanakan liburan musim panas.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1493">
+        <button type="button" class="play-audio-btn" id="audio-btn-1493" data-soal-id="1493" data-audio-src="uploads/audio/6a147e03755f6_kagi9-10.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1493"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1493" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1493">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1493"></div>
+              <div class="play-count-dot" id="dot2-1493"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1493">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1493">
+          <div class="audio-progress-fill" id="progress-fill-1493"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Untuk soal no 33 &amp; 34    Liburan musim panas mulai kapan?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1493" style="display: none;">(Untuk soal no 33 &amp; 34: Liburan musim panas mulai kapan?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1493-A">
+        <div class="pilihan-key" id="key-1493-A">A</div>
+        <div>
+          <div class="pilihan-text ja">7 月 14 日</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1493" style="display: none;">(14 Juli)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1493-B">
+        <div class="pilihan-key" id="key-1493-B">B</div>
+        <div>
+          <div class="pilihan-text ja">6 月 24 日</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1493" style="display: none;">(24 Juni)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1493-C">
+        <div class="pilihan-key" id="key-1493-C">C</div>
+        <div>
+          <div class="pilihan-text ja">7 月 24 日</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1493" style="display: none;">(24 Juli)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1493">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1493"></span>
+        <button class="cbt-footer-btn" id="next-1493">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1494" data-soal-id="1494" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">10</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1494" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Destinasi wisata yang ingin dikunjungi saat liburan musim panas.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1494" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Rencana tempat liburan musim panas.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1494">
+        <button type="button" class="play-audio-btn" id="audio-btn-1494" data-soal-id="1494" data-audio-src="uploads/audio/6a147e03755f6_kagi9-10.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1494"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1494" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1494">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1494"></div>
+              <div class="play-count-dot" id="dot2-1494"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1494">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1494">
+          <div class="audio-progress-fill" id="progress-fill-1494"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Dimana tempat yang ingin di kunjungi?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1494" style="display: none;">(Di mana tempat yang ingin dikunjungi?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1494-A">
+        <div class="pilihan-key" id="key-1494-A">A</div>
+        <div>
+          <div class="pilihan-text ja">駅のちかくじんじゃ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1494" style="display: none;">(Kuil Shinto dekat stasiun)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1494-B">
+        <div class="pilihan-key" id="key-1494-B">B</div>
+        <div>
+          <div class="pilihan-text ja">駅のちかくスーパー</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1494" style="display: none;">(Supermarket dekat stasiun)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1494-C">
+        <div class="pilihan-key" id="key-1494-C">C</div>
+        <div>
+          <div class="pilihan-text ja">駅のちかくうみ</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1494" style="display: none;">(Laut dekat stasiun)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1494">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1494"></span>
+        <button class="cbt-footer-btn" id="next-1494">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1495" data-soal-id="1495" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">11</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1495" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Situasi ketika seorang wanita menemui staf pria di tempat olahraga.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1495" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Situasi percakapan di tempat olahraga.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1495">
+        <button type="button" class="play-audio-btn" id="audio-btn-1495" data-soal-id="1495" data-audio-src="uploads/audio/6a1482d8031c2_kagi11-12.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1495"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1495" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1495">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1495"></div>
+              <div class="play-count-dot" id="dot2-1495"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1495">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1495">
+          <div class="audio-progress-fill" id="progress-fill-1495"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Untuk soal no 35 &amp; 36    Sicowo sedang apa?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1495" style="display: none;">(Untuk soal no 35 &amp; 36: Si pria sedang melakukan apa?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1495-A">
+        <div class="pilihan-key" id="key-1495-A">A</div>
+        <div>
+          <div class="pilihan-text ja">Gambar orang menelpon</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1495" style="display: none;">(Gambar orang menelepon)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1495-B">
+        <div class="pilihan-key" id="key-1495-B">B</div>
+        <div>
+          <div class="pilihan-text ja">Gambar orang pegang telpon</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1495" style="display: none;">(Gambar orang memegang telepon)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1495-C">
+        <div class="pilihan-key" id="key-1495-C">C</div>
+        <div>
+          <div class="pilihan-text ja">Gambar orang pegang penyedot debu/Vacum cleaner</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1495" style="display: none;">(Gambar orang memegang penyedot debu / vacuum cleaner)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1495">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1495"></span>
+        <button class="cbt-footer-btn" id="next-1495">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1496" data-soal-id="1496" data-kat-id="131" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">12</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1496" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Kendala yang dialami perempuan saat ingin menyewa lapangan olahraga.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1496" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Kendala pemesanan lapangan olahraga.</div>
+      </div>
+        
+        <div class="audio-box" id="audio-box-1496">
+        <button type="button" class="play-audio-btn" id="audio-btn-1496" data-soal-id="1496" data-audio-src="uploads/audio/6a1482d8031c2_kagi11-12.wav">
+          <svg class="play-icon" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" id="icon-play-1496"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg class="pause-icon" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" id="icon-pause-1496" style="display:none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        <div class="play-count-container">
+          <div class="play-title">🎧 Audio Mendengarkan (Choukai)</div>
+          <span class="play-count" id="count-1496">Tekan untuk memutar audio</span>
+          <div style="display: flex; align-items: center; flex-wrap: wrap; gap: 8px; margin-top: 5px;">
+            <div class="play-count-badge">
+              <div class="play-count-dot" id="dot1-1496"></div>
+              <div class="play-count-dot" id="dot2-1496"></div>
+              <span style="font-size:10px;color:#7c3aed;font-weight:700;margin-left:2px">Maks 2x</span>
+            </div>
+            <div class="audio-wave" id="wave-1496">
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div><div class="audio-wave-bar"></div>
+              <div class="audio-wave-bar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="audio-progress-bar" id="progress-container-1496">
+          <div class="audio-progress-fill" id="progress-fill-1496"></div>
+        </div>
+      </div>
+        <div class="soal-pertanyaan ja">Perempuan mengalami masalah apa?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1496" style="display: none;">(Perempuan mengalami masalah apa?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1496-A">
+        <div class="pilihan-key" id="key-1496-A">A</div>
+        <div>
+          <div class="pilihan-text ja">Gambar tidak bisa memesan dari telepon (orang memegang handphone)</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1496" style="display: none;">(Gambar tidak bisa memesan lapangan melalui telepon seluler)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1496-B">
+        <div class="pilihan-key" id="key-1496-B">B</div>
+        <div>
+          <div class="pilihan-text ja">Gambar tidak bisa menelpon</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1496" style="display: none;">(Gambar tidak bisa menelepon sama sekali)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1496-C">
+        <div class="pilihan-key" id="key-1496-C">C</div>
+        <div>
+          <div class="pilihan-text ja">Gambar tidak bisa membeli barang online</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1496" style="display: none;">(Gambar tidak bisa membeli barang secara daring)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1496">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1496"></span>
+        <button class="cbt-footer-btn" id="next-1496">Selanjutnya →</button>
+      </div>
+    </div>
+  <div class="seksi-banner" style="background: rgba(245, 158, 11, 0.063); border-color: rgba(245, 158, 11, 0.19); display: none;" id="seksi-132">
+      <span class="seksi-banner-icon">📄</span>
+      <div>
+        <div class="seksi-banner-name ja" style="color:#f59e0b">どっかい</div>
+        <div class="seksi-banner-name-id" style="color:#f59e0b">Kemampuan Membaca</div>
+      </div>
+      <div style="margin-left:auto;font-size:12px;opacity:.8;display:flex;align-items:center;gap:10px;">
+        <span>14 soal</span>
+        <button style="background:var(--grad-red);color:#fff;border:none;padding:5px 12px;border-radius:6px;font-size:12px;font-weight:700;cursor:pointer;">
+          🔒 Selesaikan Seksi 4
+        </button>
+      </div>
+    </div>
+    
+    <div class="soal-card hide-furigana" id="soal-1497" data-soal-id="1497" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">1</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1497" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Teks bacaan perkenalan diri siswa baru mengenai kegemaran membaca dan kepemilikan buku catatan warna biru (青い本).</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1497" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Teks bacaan narasi perkenalan diri.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ Dokkai ] Bacaan panjang perkenalan diri part 1</div>
+        <div class="soal-terjemahan dokai-terjemahan-1497" style="display: none;">([ Dokkai ] Teks bacaan perkenalan diri bagian 1: Gambar mana yang sesuai dengan isi teks?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1497-A">
+        <div class="pilihan-key" id="key-1497-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1497" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1497-B">
+        <div class="pilihan-key" id="key-1497-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1497" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1497-C">
+        <div class="pilihan-key" id="key-1497-C">C</div>
+        <div>
+          <div class="pilihan-text ja">Gambar orang pegang buku warna biru</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1497" style="display: none;">(Gambar orang memegang buku berwarna biru)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1497">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1497"></span>
+        <button class="cbt-footer-btn" id="next-1497">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1498" data-soal-id="1498" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">2</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1498" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Teks bacaan perkenalan diri kelanjutan bagian 2 tentang interaksi dan aktivitas mengobrol bersama teman (友達とおしゃべり・会話).</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1498" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Teks bacaan perkenalan diri bagian 2.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ Dokkai ] Bacaan panjang perkenalan diri part 2</div>
+        <div class="soal-terjemahan dokai-terjemahan-1498" style="display: none;">([ Dokkai ] Teks bacaan perkenalan diri bagian 2: Kegiatan apa yang diceritakan?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1498-A">
+        <div class="pilihan-key" id="key-1498-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1498" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1498-B">
+        <div class="pilihan-key" id="key-1498-B">B</div>
+        <div>
+          <div class="pilihan-text ja">Gambar 2 orang mengobrol</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1498" style="display: none;">(Gambar 2 orang sedang mengobrol / bercakap-cakap)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1498-C">
+        <div class="pilihan-key" id="key-1498-C">C</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1498" style="display: none;">(-)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1498">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1498"></span>
+        <button class="cbt-footer-btn" id="next-1498">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1499" data-soal-id="1499" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">3</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1499" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Pamflet informasi khasiat dan indikasi obat batuk.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1499" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Pamflet informasi obat dan indikasi medis.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] Pamflet Obat part 1</div>
+        <div class="soal-terjemahan dokai-terjemahan-1499" style="display: none;">([ Dokkai ] Pamflet Obat bagian 1: Kapan atau untuk gejala apa obat ini diminum?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1499-A">
+        <div class="pilihan-key" id="key-1499-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1499" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1499-B">
+        <div class="pilihan-key" id="key-1499-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1499" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1499-C">
+        <div class="pilihan-key" id="key-1499-C">C</div>
+        <div>
+          <div class="pilihan-text ja">obat diminum ketika merasa せきがでる</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1499" style="display: none;">(Obat diminum ketika merasa batuk (せきがでる))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1499">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1499"></span>
+        <button class="cbt-footer-btn" id="next-1499">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1500" data-soal-id="1500" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">4</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1500" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Pamflet aturan pakai mengenai waktu konsumsi obat (この薬はいつ飲みますか).</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1500" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Petunjuk aturan minum obat.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] Pamflet Obat part 2</div>
+        <div class="soal-terjemahan dokai-terjemahan-1500" style="display: none;">([ Dokkai ] Pamflet Obat bagian 2: Kapan obat ini harus diminum?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1500-A">
+        <div class="pilihan-key" id="key-1500-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1500" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1500-B">
+        <div class="pilihan-key" id="key-1500-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1500" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1500-C">
+        <div class="pilihan-key" id="key-1500-C">C</div>
+        <div>
+          <div class="pilihan-text ja">kapan minum obat : 食事の前に</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1500" style="display: none;">(Waktu minum obat: Sebelum makan (食事の前に))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1500">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1500"></span>
+        <button class="cbt-footer-btn" id="next-1500">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1501" data-soal-id="1501" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">5</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1501" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">【森の レストランへ ようこそ！】自然の中に ある レストランです。 おいしい 料理と すてきな 景色が 楽しめます。</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1501" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Brosur restoran hutan alami dan ulasan pengunjung.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] Bacaan panjang tentang restoran dan masakannya</div>
+        <div class="soal-terjemahan dokai-terjemahan-1501" style="display: none;">([ Dokkai ] Teks bacaan restoran: Pengalaman apa yang dirasakan mengenai restoran tersebut?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1501-A">
+        <div class="pilihan-key" id="key-1501-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1501" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1501-B">
+        <div class="pilihan-key" id="key-1501-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1501" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1501-C">
+        <div class="pilihan-key" id="key-1501-C">C</div>
+        <div>
+          <div class="pilihan-text ja">値段がやすなかったです</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1501" style="display: none;">(Harganya tidak murah (cukup mahal))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1501">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1501"></span>
+        <button class="cbt-footer-btn" id="next-1501">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1502" data-soal-id="1502" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">6</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1502" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Fasilitas taman outdoor di restoran hutan (庭で遊ぶ).</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1502" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Brosur fasilitas restoran alami.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] Apa yang bisa dilakukan di restoran ?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1502" style="display: none;">([ Dokkai ] Apa kegiatan yang bisa dilakukan di restoran tersebut?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1502-A">
+        <div class="pilihan-key" id="key-1502-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1502" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1502-B">
+        <div class="pilihan-key" id="key-1502-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1502" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1502-C">
+        <div class="pilihan-key" id="key-1502-C">C</div>
+        <div>
+          <div class="pilihan-text ja">Jawabannya ada にわ nya</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1502" style="display: none;">(Bermain di taman pekarangan (庭で遊びます))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1502">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1502"></span>
+        <button class="cbt-footer-btn" id="next-1502">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1503" data-soal-id="1503" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">7</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1503" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Memo instruksi kantor mengenai batas waktu fotokopi dokumen sebelum rapat.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1503" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Memo perintah kerja fotokopi dokumen.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja"> [ dokkai ] Perintah Fotocopy 
+
+sampai jam berapa paling lambat ?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1503" style="display: none;">([ Dokkai ] Instruksi Fotokopi: Paling lambat jam berapa dokumen harus selesai difotokopi?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1503-A">
+        <div class="pilihan-key" id="key-1503-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1503" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1503-B">
+        <div class="pilihan-key" id="key-1503-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1503" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1503-C">
+        <div class="pilihan-key" id="key-1503-C">C</div>
+        <div>
+          <div class="pilihan-text ja">13.00</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1503" style="display: none;">(Pukul 13.00)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1503">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1503"></span>
+        <button class="cbt-footer-btn" id="next-1503">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1504" data-soal-id="1504" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">8</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1504" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Instruksi penempatan hasil fotokopi dokumen.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1504" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Lokasi penyerahan dokumen fotokopi.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] fotocopy ditaruh dimana ?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1504" style="display: none;">([ Dokkai ] Hasil fotokopi ditaruh di mana?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1504-A">
+        <div class="pilihan-key" id="key-1504-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1504" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1504-B">
+        <div class="pilihan-key" id="key-1504-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1504" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1504-C">
+        <div class="pilihan-key" id="key-1504-C">C</div>
+        <div>
+          <div class="pilihan-text ja">Gambar meja diatas ada kertas dan pamflet nama</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1504" style="display: none;">(Gambar meja kerja yang di atasnya ada dokumen dan plang nama staf)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1504">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1504"></span>
+        <button class="cbt-footer-btn" id="next-1504">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1505" data-soal-id="1505" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">9</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1505" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Pamflet menu sarapan pagi kafe (Morning Set).</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1505" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Pamflet menu sarapan pagi di kafe.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] Pamflet makanan
+
+Sampai Jam berapa モーニングセット (Morning Set)?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1505" style="display: none;">([ Dokkai ] Pamflet Makanan: Sampai jam berapa menu Morning Set disajikan?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1505-A">
+        <div class="pilihan-key" id="key-1505-A">A</div>
+        <div>
+          <div class="pilihan-text ja">11:30</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1505" style="display: none;">(Pukul 11:30)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1505-B">
+        <div class="pilihan-key" id="key-1505-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1505" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1505-C">
+        <div class="pilihan-key" id="key-1505-C">C</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1505" style="display: none;">(-)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1505">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1505"></span>
+        <button class="cbt-footer-btn" id="next-1505">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1506" data-soal-id="1506" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">10</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1506" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Daftar harga minuman pada pamflet kafe.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1506" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Brosur daftar harga minuman kafe.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] Berapa harga Kopi ?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1506" style="display: none;">([ Dokkai ] Berapa harga Kopi pada daftar menu kafe?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1506-A">
+        <div class="pilihan-key" id="key-1506-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1506" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1506-B">
+        <div class="pilihan-key" id="key-1506-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1506" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1506-C">
+        <div class="pilihan-key" id="key-1506-C">C</div>
+        <div>
+          <div class="pilihan-text ja">550 円</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1506" style="display: none;">(550 Yen)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1506">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1506"></span>
+        <button class="cbt-footer-btn" id="next-1506">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1507" data-soal-id="1507" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">11</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1507" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Undangan pesta akhir tahun perusahaan (忘年会 / ぼうねんかい).</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1507" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Surat pemberitahuan pesta akhir tahun.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] Pemberitahuan ばにんかい:
+
+perayaan Acaranya kapan ?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1507" style="display: none;">([ Dokkai ] Pemberitahuan Pesta Akhir Tahun (Bounenkai): Perayaan acaranya diadakan tanggal berapa?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1507-A">
+        <div class="pilihan-key" id="key-1507-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1507" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1507-B">
+        <div class="pilihan-key" id="key-1507-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1507" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1507-C">
+        <div class="pilihan-key" id="key-1507-C">C</div>
+        <div>
+          <div class="pilihan-text ja">12 月 14 日</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1507" style="display: none;">(14 Desember (12月14日))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1507">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1507"></span>
+        <button class="cbt-footer-btn" id="next-1507">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1508" data-soal-id="1508" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">12</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1508" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Persyaratan barang bawaan peserta pesta (持ち物).</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1508" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Keterangan barang bawaan peserta pada undangan.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] Apa yang perlu dibawa ?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1508" style="display: none;">([ Dokkai ] Apa yang perlu dibawa oleh peserta pesta?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1508-A">
+        <div class="pilihan-key" id="key-1508-A">A</div>
+        <div>
+          <div class="pilihan-text ja">飲み物</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1508" style="display: none;">(Minuman (飲み物))</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1508-B">
+        <div class="pilihan-key" id="key-1508-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1508" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1508-C">
+        <div class="pilihan-key" id="key-1508-C">C</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1508" style="display: none;">(-)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1508">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1508"></span>
+        <button class="cbt-footer-btn" id="next-1508">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1509" data-soal-id="1509" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">13</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1509" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Informasi menu dan keistimewaan santapan di restoran.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1509" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Brosur promosi kuliner restoran.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] Pamflet Restoran
+
+Apa yang dilakukan didalam restoran ?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1509" style="display: none;">([ Dokkai ] Pamflet Restoran: Keistimewaan apa yang bisa dinikmati di restoran?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1509-A">
+        <div class="pilihan-key" id="key-1509-A">A</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1509" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1509-B">
+        <div class="pilihan-key" id="key-1509-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1509" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1509-C">
+        <div class="pilihan-key" id="key-1509-C">C</div>
+        <div>
+          <div class="pilihan-text ja">しんせんな きせつ りょうりが たべられる</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1509" style="display: none;">(Dapat menyantap masakan musiman yang segar (新鮮な季節料理が食べられる))</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1509">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1509"></span>
+        <button class="cbt-footer-btn" id="next-1509">Selanjutnya →</button>
+      </div>
+    </div>
+    <div class="soal-card hide-furigana" id="soal-1510" data-soal-id="1510" data-kat-id="132" style="display: none;">
+      <div class="soal-card-header">
+        <div class="soal-nomor">
+          <span class="soal-nomor-badge">14</span>
+          <span>Soal &nbsp;·&nbsp; Seksi 1</span>
+        </div>
+        <div style="display: flex; gap: 8px; align-items: center;">
+          
+          <button type="button" class="btn-toggle-arti">👁️ Lihat Arti</button>
+          <button class="flag-btn" id="flag-1510" title="Tandai soal">🚩 Tandai</button>
+        </div>
+      </div>
+      <div class="soal-body">
+        
+      <div class="soal-konteks">
+        <div class="ja">Batas waktu acara / penyelesaian kegiatan dalam dokumen instruksi.</div>
+        <div class="soal-konteks-terjemahan dokai-terjemahan-1510" style="display: none; margin-top: 8px; border-top: 1px dashed rgba(188,47,47,0.15); padding-top: 8px; font-style: italic; color: var(--text3); font-size: 13px; font-family: 'Plus Jakarta Sans', sans-serif;">Keterangan batas waktu pada dokumen pengumuman.</div>
+      </div>
+        
+        
+        <div class="soal-pertanyaan ja">[ dokkai ] Sampai jam berapa ?</div>
+        <div class="soal-terjemahan dokai-terjemahan-1510" style="display: none;">([ Dokkai ] Sampai jam berapa batas waktu kegiatan tersebut?)</div>
+        <div class="pilihan-list">
+      <div class="pilihan-item" id="pil-1510-A">
+        <div class="pilihan-key" id="key-1510-A">A</div>
+        <div>
+          <div class="pilihan-text ja">Jam 13.00</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1510" style="display: none;">(Jam 13.00)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1510-B">
+        <div class="pilihan-key" id="key-1510-B">B</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1510" style="display: none;">(-)</div>
+        </div>
+      </div>
+      <div class="pilihan-item" id="pil-1510-C">
+        <div class="pilihan-key" id="key-1510-C">C</div>
+        <div>
+          <div class="pilihan-text ja">-</div>
+          <div class="pilihan-terjemahan dokai-terjemahan-1510" style="display: none;">(-)</div>
+        </div>
+      </div></div>
+      </div>
+      <div class="soal-nav-footer">
+        <button class="cbt-footer-btn" id="prev-1510">← Sebelumnya</button>
+        <span class="cbt-footer-status" id="pos-1510"></span>
+        <button class="cbt-footer-btn" id="next-1510">Selanjutnya →</button>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+</div>
+
+<!-- ── MODAL KONFIRMASI SELESAI SEKSI ────────────────────── -->
+<div class="overlay" id="overlaySeksi">
+  <div class="overlay-box" style="max-width:540px">
+    <div class="overlay-strip"></div>
+    <div class="overlay-icon" id="overlayIconSeksi">🔒</div>
+    <div class="overlay-title" id="overlayTitleSeksi">Selesaikan Seksi 2: ひょうげん?</div>
+    <div class="overlay-sub" id="overlaySubTextSeksi" style="line-height:1.6;margin-bottom:1rem">⚠️ <strong>PERHATIAN (Ujian CBT Asli):</strong> Setelah menyelesaikan seksi ini, Anda <strong>TIDAK DAPAT KEMBALI LAGI</strong> ke seksi ini.<br><span style="color:#ef4444;font-weight:700">Masih ada 11 soal belum dijawab</span> di seksi ini.</div>
+    <div class="overlay-stats" id="overlayStatsSeksi">
+    <div class="overlay-stat">
+      <div class="overlay-stat-val" style="color:var(--green)">0</div>
+      <div class="overlay-stat-lbl">Terjawab</div>
+    </div>
+    <div class="overlay-stat">
+      <div class="overlay-stat-val" style="color:var(--red-light)">11</div>
+      <div class="overlay-stat-lbl">Belum</div>
+    </div>
+    <div class="overlay-stat">
+      <div class="overlay-stat-val" style="color:var(--gold)">0</div>
+      <div class="overlay-stat-lbl">Ditandai</div>
+    </div></div>
+    <div class="overlay-btn-group" style="margin-top:1.5rem">
+      <button class="btn-lanjut">⬅ Lanjut Kerjakan Seksi Ini</button>
+      <button class="btn-selesai" id="btnYaSelesaiSeksi">🔒 Ya, Akhiri Seksi &amp; Lanjut ke Seksi 3 →</button>
+    </div>
+  </div>
+</div>
+
+<!-- ── MODAL LOADING SUBMIT ──────────────────────────────── -->
+<div class="overlay" id="overlayLoading">
+  <div class="overlay-box">
+    <div class="overlay-strip"></div>
+    <div class="overlay-icon">⏳</div>
+    <div class="overlay-title">Menghitung Skor...</div>
+    <div class="overlay-sub">Mohon tunggu sebentar.</div>
+    <div class="spinner-lg" style="margin:1rem auto"></div>
+  </div>
+</div>
+
+
+
+
+<div id="cbtToast" style="position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: rgb(15, 23, 42); color: rgb(255, 255, 255); padding: 12px 24px; border-radius: 12px; font-size: 13.5px; font-weight: 700; z-index: 9999; box-shadow: rgba(0, 0, 0, 0.3) 0px 10px 30px; border: 1px solid rgba(255, 255, 255, 0.2); max-width: 90vw; text-align: center; transition: 0.3s; opacity: 0; pointer-events: none;">🔒 Seksi 2 telah dikunci. Sekarang Anda memasuki Seksi 3: ちょうかい</div></body></html>
+--

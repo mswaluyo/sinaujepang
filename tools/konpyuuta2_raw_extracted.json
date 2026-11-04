@@ -1,0 +1,1583 @@
+[
+  {
+    "index": 1,
+    "q_txt": "Perhatikan gambar berikut",
+    "q_trans": "(Perhatikan gambar berikut.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "https://jft.minnanihongo.id/uploads/images/6aba268580121_konpyuuta.jpg",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "ボード",
+        "trans": "(Papan)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "ほん",
+        "trans": "(Buku)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "コンピューター",
+        "trans": "(Komputer)",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Gambar menunjukkan seperangkat komputer desktop (PC). Dalam bahasa Jepang katakana disebut コンピューター (konpyuutaa). Opsi A: ボード (papan), Opsi B: ほん (buku)."
+  },
+  {
+    "index": 2,
+    "q_txt": "Perhatikan gambar berikut",
+    "q_trans": "(Perhatikan gambar berikut.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "https://jft.minnanihongo.id/uploads/images/6a13f8371dd0d_kagi1.png",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "ほんだな",
+        "trans": "(Rak buku)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "がぎ",
+        "trans": "(Gagi (salah penulisan))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "かぎ",
+        "trans": "(Kunci)",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Gambar menunjukkan sebuah kunci. Bahasa Jepang untuk kunci adalah かぎ (kagi). Pilihan A 'がぎ' salah eja (menggunakan dakuten pada ga), dan C 'ほんだな' berarti rak buku."
+  },
+  {
+    "index": 3,
+    "q_txt": "Perhatikan gambar berikut",
+    "q_trans": "(Perhatikan gambar berikut.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "https://jft.minnanihongo.id/uploads/images/6a13fb01e0c9b_kagi2.png",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "けっこん",
+        "trans": "(Pernikahan)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "けこん",
+        "trans": "(Kekon (salah eja))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "おまつり",
+        "trans": "(Festival / perayaan)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Gambar memperlihatkan sepasang pengantin dalam suasana pernikahan. Kosakata bahasa Jepang untuk pernikahan adalah けっこん (kekkon - 結婚) dengan konsonan ganda sokuon kecil (っ). Pilihan C: おまつり (festival)."
+  },
+  {
+    "index": 4,
+    "q_txt": "Perhatikan gambar berikut",
+    "q_trans": "(Perhatikan gambar berikut.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "https://jft.minnanihongo.id/uploads/images/6a13ff628eb0f_kagi3.png",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "切ります",
+        "trans": "(Memotong)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "案内します",
+        "trans": "(Memandu / mengantar)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "待ちます",
+        "trans": "(Menunggu)",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Gambar menunjukkan seorang petugas sedang memandu atau mengantar tamu menunjukkan arah jalan. Kata kerja yang tepat adalah 案内します (annai shimasu) yang berarti memandu atau mengantar. Pilihan A: 切ります (memotong), C: 待ちます (menunggu)."
+  },
+  {
+    "index": 5,
+    "q_txt": "このカメラ は [ 軽くて ] つかいやすいです",
+    "q_trans": "(Kamera ini [ringan] dan mudah digunakan.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "たのしくて",
+        "trans": "(Menyenangkan)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "かるくて",
+        "trans": "(Ringan)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "あかくて",
+        "trans": "(Merah)",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Kanji 軽くて dibaca かるくて (karukute), yaitu bentuk ~te dari kata sifat-i 軽い (karui) yang berarti 'ringan'. Kalimat: 'Kamera ini ringan dan mudah digunakan'."
+  },
+  {
+    "index": 6,
+    "q_txt": "あなた の [ 住所 ]を 教えてください",
+    "q_trans": "(Tolong beri tahu [alamat] Anda.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "じゅしょ",
+        "trans": "(Jusho (salah eja))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "じゆうしゅ",
+        "trans": "(Jiyuushu (salah eja))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "じゅうしょ",
+        "trans": "(Alamat (juusho))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Kanji 住所 dibaca じゅうしょ (juusho) yang berarti 'alamat tempat tinggal'. Perhatikan pemanjangan vokal 'uu' pada 'juu'."
+  },
+  {
+    "index": 7,
+    "q_txt": "かっこい時計 を もらって。。。。。。。",
+    "q_trans": "(Mendapat jam tangan yang keren, saya merasa.......)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "うれしかったです",
+        "trans": "(Merasa senang / gembira)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "たのしかったです",
+        "trans": "(Menyenangkan (aktivitas))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "いそがしかったです",
+        "trans": "(Sangat sibuk)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Ketika menerima hadiah barang yang bagus dan keren (かっこい時計をもらって), perasaan hati yang timbul adalah senang/gembira, yaitu うれしかったです (ureshikatta desu). Pilihan B: sibuk, C: menyenangkan (biasanya untuk kegiatan/acara)."
+  },
+  {
+    "index": 8,
+    "q_txt": "まいにち テレビ を 。。。。。",
+    "q_trans": "(Setiap hari saya ..... televisi.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "読みます",
+        "trans": "(Membaca)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "見ます",
+        "trans": "(Menonton / melihat)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "聞きます",
+        "trans": "(Mendengarkan)",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Kata kerja yang berpasangan dengan objek televisi (テレビを) adalah 見ます (mimasu - menonton/melihat). Opsi B: 聞きます (mendengar), Opsi C: 読みます (membaca)."
+  },
+  {
+    "index": 9,
+    "q_txt": "こんばん は ゆびんきょく で 7時30____ に 待ち合わせます。",
+    "q_trans": "(Malam ini kita janjian bertemu di kantor pos pada pukul 7 lewat 30 [menit].)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "分",
+        "trans": "(Menit (fun/pun))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "半",
+        "trans": "(Setengah (han))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "年",
+        "trans": "(Tahun (nen))",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Untuk menyatakan satuan menit setelah angka (30 menit), digunakan kanji 分 (ふん/ぷん). 7時30分 dibaca shichiji sanjuppun (jam 7 lewat 30 menit). Jika menggunakan 半 (setengah), tidak memakai angka 30 (cukup 7時半)."
+  },
+  {
+    "index": 10,
+    "q_txt": "らいげつ から テニス を_____みよう と おもっています",
+    "q_trans": "(Mulai bulan depan saya berniat mencoba [memulai] bermain tenis.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "読んで",
+        "trans": "(Membaca (yonde))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "食べて",
+        "trans": "(Makan (tabete))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "始めて",
+        "trans": "(Memulai (hajimete))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Pola tata bahasa ~te miyou to omotteimasu (berniat mencoba melakukan sesuatu). Kata kerja yang berpasangan dengan memulai aktivitas olahraga (tenis) adalah 始めて (hajimete, bentuk ~te dari 始める). Kalimat: 'Mulai bulan depan saya berniat mencoba memulai main tenis'."
+  },
+  {
+    "index": 11,
+    "q_txt": "体 の けんこう の ため に____うんどうしたり",
+    "q_trans": "(Demi kesehatan tubuh, [berjalan kaki] dan berolahraga...)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "走たり",
+        "trans": "(Salah konjugasi (seharusnya hashittari))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "泳ぎたり",
+        "trans": "(Salah konjugasi (seharusnya oyoitari))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "歩いたり",
+        "trans": "(Berjalan kaki (aruitari))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Pola pendaftaran tindakan percontohan ~tari ~tari shimasu. Kata kerja 歩く (aruku - berjalan kaki) berubah menjadi bentuk ~tari: 歩いたり (aruitari). Pilihan A salah bentuk (seharusnya oyoitari), B salah bentuk (seharusnya hashittari)."
+  },
+  {
+    "index": 12,
+    "q_txt": "ことし は 2024 [ ねん ]",
+    "q_trans": "(Tahun ini adalah [tahun] 2024.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "年",
+        "trans": "(Tahun (nen))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "時間",
+        "trans": "(Durasi jam (jikan))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "分",
+        "trans": "(Menit (fun))",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Kata 'ねん' (tahun) ditulis dengan kanji 年 (nen). 2024年 berarti tahun 2024. Pilihan B: 分 (menit), C: 時間 (durasi jam)."
+  },
+  {
+    "index": 13,
+    "q_txt": "メル で イベント に ついて 友達 に _____",
+    "q_trans": "(Melalui email, saya [mengabarkan] mengenai acara kepada teman.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "しらせます",
+        "trans": "(Mengabarkan / memberitahukan)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "おしえます",
+        "trans": "(Mengajari)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "さそいます",
+        "trans": "(Mengajak)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Ungkapan ~ni tsuite tomodachi ni shirasemasu berarti 'memberitahukan/mengabarkan perihal acara kepada teman'. Kata kerja yang tepat adalah しらせます (shirasemasu / 知らせます)."
+  },
+  {
+    "index": 14,
+    "q_txt": "A : ここで_____ \nB : ありがとうございます",
+    "q_trans": "(A : Di sini, [silakan]..... \nB : Terima kasih banyak.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "https://jft.minnanihongo.id/uploads/images/6a1406d47a4f3_kagi4.png",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "どうも",
+        "trans": "(Terima kasih banyak (singkat))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "どうぞ",
+        "trans": "(Silakan (douzo))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "こちらこそ",
+        "trans": "(Sama-sama (pihak kami))",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Pada gambar terlihat seseorang menawarkan kursi/tempat duduk kepada orang lain. Ungkapan yang tepat untuk mempersilakan adalah どうぞ (douzo - 'silakan'). Lawan bicara membalas dengan 'ありがとうございます'."
+  },
+  {
+    "index": 15,
+    "q_txt": "A : もしもし。今どこですか\n\n B : 今 郵便局 に_____",
+    "q_trans": "(A : Halo. Sekarang kamu ada di mana?\nB : Sekarang saya [ada] di kantor pos.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "いません",
+        "trans": "(Tidak ada)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "あります",
+        "trans": "(Ada (benda mati))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "います",
+        "trans": "(Ada (makhluk bernyawa))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Untuk menyatakan keberadaan orang (makhluk bernyawa) di suatu tempat (郵便局に), digunakan kata kerja います (imasu). あります hanya digunakan untuk benda mati."
+  },
+  {
+    "index": 16,
+    "q_txt": "A : キﾐさん、お国 は どちらですか。\n\nB : かんこくです。\n\nA : キﾐさん、かんこくご が _____",
+    "q_trans": "(A : Kimi-san, asal negaranya dari mana?\nB : Korea.\nA : Kimi-san, apakah [bisa] bahasa Korea?)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "できますか",
+        "trans": "(Bisakah / apakah bisa? (pertanyaan))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "できますよ",
+        "trans": "(Bisa lho (informasi))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "できますね",
+        "trans": "(Bisa ya (penegasan))",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Penutur A bertanya mengenai kemampuan bahasa Korea Kimi-san. Kalimat tanya yang sopan ditandai dengan partikel tanya か, yaitu できますか (dekimasu ka - 'apakah bisa?')."
+  },
+  {
+    "index": 17,
+    "q_txt": "A : 仕事 は どうですか？\n\nB : 最近、仕事 は _____時間 が ありません",
+    "q_trans": "(A : Bagaimana pekerjaannya?\nB : Akhir-akhir ini, karena pekerjaan [sibuk], tidak ada waktu.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "やすみですから",
+        "trans": "(Karena libur)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "忙しくて",
+        "trans": "(Sibuk sehingga...)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "ひまなので",
+        "trans": "(Karena senggang)",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Kata sifat 忙しい (isogashii - sibuk) dalam bentuk ~te (忙しくて) berfungsi menyatakan alasan atau sebab: 'karena sibuk bekerja, akhir-akhir ini tidak ada waktu'."
+  },
+  {
+    "index": 18,
+    "q_txt": "A :よかったら、 このテンプラ は おいしですよ。\n\nB：すみません。アルレギ が あるので、_____ 身体 が かゆくなります。",
+    "q_trans": "(A : Kalau mau, tempura ini enak lho.\nB : Maaf. Karena saya ada alergi, [jika makan], tubuh saya menjadi gatal.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "食べると",
+        "trans": "(Jika makan (syarat alami))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "食べ買った",
+        "trans": "(Salah bentuk tata bahasa)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "食べ過ぎ",
+        "trans": "(Terlalu banyak makan)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Partikel syarat と setelah kata kerja bentuk kamus (食べると) menyatakan hubungan sebab-akibat alami atau kondisi fisik yang pasti terjadi: 'jika makan, tubuh saya langsung menjadi gatal'."
+  },
+  {
+    "index": 19,
+    "q_txt": "A : あのう。。すみません\n\nB : はい、なんですか \n\nA : このかんじ の 読み方 を _____",
+    "q_trans": "(A : Permisi...\nB : Ya, ada apa?\nA : [Sudikah Anda mengajari saya] cara membaca kanji ini?)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "教えてあげませんか。",
+        "trans": "(Maukah Anda saya ajari?)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "教えてほしいですか。",
+        "trans": "(Apakah Anda ingin diajari?)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "教えてくださいませんか。",
+        "trans": "(Sudikah Anda mengajari saya? (permohonan sopan))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Ungkapan permohonan sopan tingkat tinggi untuk meminta bantuan lawan bicara mengajari sesuatu adalah ~te kudasaimasen ka (教えてくださいませんか - sudikah Anda mengajari saya?)."
+  },
+  {
+    "index": 20,
+    "q_txt": "A : あのう、すみません、日本語 の 本 は クラス に 忘れました。\n\nB : どんな 本ですか。\n\nA : 名前 が _____",
+    "q_trans": "(A : Permisi, buku bahasa Jepang saya ketinggalan di kelas.\nB : Buku yang seperti apa?\nA : [Tertulis/tertera] nama saya di bukunya.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "書いてあります",
+        "trans": "(Tertulis / tertera (hasil perbuatan))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "書いています",
+        "trans": "(Sedang menulis)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "書いてください",
+        "trans": "(Tolong tuliskan)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Pola tata bahasa [Benda] が + kata kerja transitif bentuk ~te arimasu (名前が書いてあります) digunakan untuk menyatakan kondisi suatu benda yang sengaja telah diperbuat seseorang (tertulis nama)."
+  },
+  {
+    "index": 21,
+    "q_txt": "A : ________\n\nB : そうですね。",
+    "q_trans": "(A : [Cuacanya bagus ya]\nB : Iya, benar ya.)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "https://jft.minnanihongo.id/uploads/images/6a140aa1acae7_kagi5.png",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "いい天気ですね",
+        "trans": "(Cuaca yang bagus/cerah ya)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "木雨ですね",
+        "trans": "(Hujan kayu (tidak ada))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "雪が降りますね",
+        "trans": "(Turun salju ya)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Gambar menunjukkan suasana cuaca yang cerah dan terang. Salam basa-basi cuaca yang sangat lazim digunakan adalah いい天気ですね (ii tenki desu ne - 'Cuacanya bagus/cerah ya'). Lawan bicara menyetujui: そうですね."
+  },
+  {
+    "index": 22,
+    "q_txt": "この 後、みんなと一緒に 食事にいくんです______\n\n一緒に行きませんか。",
+    "q_trans": "(Setelah ini saya mau pergi makan bersama semuanya, [kalau tidak keberatan], maukah pergi bersama?)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "よかったら",
+        "trans": "(Kalau tidak keberatan / bila berkenan)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "できれば",
+        "trans": "(Sebisa mungkin)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "食べたら",
+        "trans": "(Setelah makan)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Ungkapan よかったら (yokattara) digunakan saat mengajak seseorang secara sopan dan halus tanpa memaksa, yang bermakna 'kalau tidak keberatan / bila berkenan'."
+  },
+  {
+    "index": 23,
+    "q_txt": "A :もしもし、エリカさんですか。私はトノです。\n\nB :トノさんですか____ です。お元気ですか。",
+    "q_trans": "(A : Halo, apakah Erika-san? Saya Tono.\nB : Tono-san kah? [Sudah lama tidak jumpa/kontak] ya. Apa kabar?)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "お久しぶり",
+        "trans": "(Sudah lama tidak jumpa / kontak)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "よかった",
+        "trans": "(Syukurlah)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "ざんねん",
+        "trans": "(Sayang sekali)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Ketika menyapa orang yang sudah lama tidak saling kontak melalui telepon atau bertemu, ungkapan yang tepat adalah お久しぶりです (ohisashiburi desu - 'sudah lama tidak berjumpa/kontak')."
+  },
+  {
+    "index": 24,
+    "q_txt": "あのう、すみません、今のアナウンス は なんと_____",
+    "q_trans": "(Permisi, pengumuman barusan [mengatakan] apa ya?)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "思いましたか",
+        "trans": "(Apakah Anda pikir)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "言っていましたか",
+        "trans": "(Tadi mengatakan apa)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "書きましたか",
+        "trans": "(Apakah Anda tulis)",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Untuk menanyakan isi pesan yang baru saja diumumkan melalui pengeras suara (アナウンス), ungkapan yang tepat adalah なんと言っていましたか (nan to itte imashita ka - 'tadi mengumumkan/bilang apa ya?')."
+  },
+  {
+    "index": 25,
+    "q_txt": "A : 全部 かたづけましたか.\n\nB : はい, わかりました。\n\nA : 電気 が ついていますよ。\n\nB : あ、すみません。_____",
+    "q_trans": "(A : Apakah semuanya sudah dirapikan?\nB : Ya, baik.\nA : Lampunya masih menyala lho.\nB : Ah, maaf. [Lain kali saya akan lebih berhati-hati].)",
+    "konteks_ja": "",
+    "konteks_id": "",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "いまからはじめます",
+        "trans": "(Mulai sekarang saya mulai)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "今度から気を付けます",
+        "trans": "(Mulai lain kali saya akan lebih berhati-hati)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "今度からお願いします",
+        "trans": "(Mulai lain kali tolong ya)",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Ketika diingatkan bahwa lampu masih menyala padahal seharusnya sudah dibereskan, respons meminta maaf dan berjanji akan lebih cermat adalah 今度から気を付けます (kondo kara ki wo tsukemasu - 'Mulai lain kali saya akan lebih berhati-hati')."
+  },
+  {
+    "index": 26,
+    "q_txt": "Sarapan paginya apa?",
+    "q_trans": "(Sarapan paginya apa?)",
+    "konteks_ja": "Tanaka menelepon Sato di pagi hari dan menanyakan kegiatan serta menu sarapannya.",
+    "konteks_id": "Percakapan telepon antara Tanaka dan Sato di pagi hari.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a140f229e76a_GeneratedAudioMay252026-3_55PM.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "たまご",
+        "trans": "(Telur saja)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "パンとたまご",
+        "trans": "(Roti dan telur)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "ラーメン",
+        "trans": "(Ramen)",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Dalam audio, Sato menjawab: '今日はねパンと卵。シンプルだけど一番美味しいよ。目玉焼きだよ。カリカリにトーストしたパンに載せて食べてる' (Hari ini roti dan telur. Telur mata sapi ditaruh di atas roti bakar renyah). Jadi menu sarapannya adalah roti dan telur (パンとたまご)."
+  },
+  {
+    "index": 27,
+    "q_txt": "Hari ini cuacanya bagaimana?",
+    "q_trans": "(Hari ini cuacanya bagaimana?)",
+    "konteks_ja": "Percakapan melalui telepon yang menanyakan kondisi cuaca saat ini.",
+    "konteks_id": "Percakapan menanyakan kondisi cuaca.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a142c2160f72_kagi2.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "あめ",
+        "trans": "(Hujan (ame))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "くもり",
+        "trans": "(Berawan (kumori))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "はれ",
+        "trans": "(Cerah (hare))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Dalam percakapan terdengar: '今そっちの天気はどう？今日は晴れだよ。青空がきれいだよ。へえいいな、こっちも晴れてるよ' (Bagaimana cuaca di sana? Hari ini cerah, langit biru bersih. Di sini juga cerah). Jadi cuacanya adalah cerah (はれ)."
+  },
+  {
+    "index": 28,
+    "q_txt": "Untuk soal nomor 27 & 28, dengarkan baik-baik (Buka buku halaman berapa?)",
+    "q_trans": "(Untuk soal nomor 27 & 28, dengarkan baik-baik (Buku dibuka halaman berapa?))",
+    "konteks_ja": "Guru membuka pelajaran baru di kelas dan memberikan instruksi kepada siswa.",
+    "konteks_id": "Guru memberikan pengumuman di dalam kelas.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a143065ba44a_kagi3-4.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "110ページ",
+        "trans": "(Halaman 110)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "120ページ",
+        "trans": "(Halaman 120)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "220ページ",
+        "trans": "(Halaman 220)",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Guru menginstruksikan kepada siswa di kelas: '今日は新しいユニットに入ります。教科書の120ページ、120ページを開けてください。百二十ページですね' (Buka halaman 120 buku pelajaran). Jadi halaman 120 (120ページ)."
+  },
+  {
+    "index": 29,
+    "q_txt": "apa yang harus dilakukan siswa?",
+    "q_trans": "(Apa yang harus dilakukan siswa?)",
+    "konteks_ja": "Instruksi guru mengenai apa yang perlu dilakukan murid saat penjelasan berlangsung.",
+    "konteks_id": "Instruksi guru di kelas.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a143065ba44a_kagi3-4.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "泳ぎます",
+        "trans": "(Berenang (oyogimasu))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "聞きます",
+        "trans": "(Mendengarkan (kikimasu))",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "読みます",
+        "trans": "(Membaca (yomimasu))",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Guru menegaskan: 'ですから今はペンを置いて、私の話をよく聞いてください。一度しか言いませんから集中して聞いてくださいね' (Oleh karena itu sekarang letakkan pulpen kalian dan dengarkan penjelasan saya baik-baik). Jadi siswa harus mendengarkan (聞きます)."
+  },
+  {
+    "index": 30,
+    "q_txt": "Apa yang mereka bicarakan ?",
+    "q_trans": "(Apa yang mereka bicarakan?)",
+    "konteks_ja": "Percakapan dua orang di pagi hari mengenai aktivitas olahraga.",
+    "konteks_id": "Dua orang berbincang mengenai kebiasaan hidup sehat.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a147229b0c44_kagi5.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "ヨガ",
+        "trans": "(Yoga)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "買い物",
+        "trans": "(Berbelanja)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "遊ぶ",
+        "trans": "(Bermain)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Dalam dialog terdengar: 'おはよう今日もヨガをする？うんもちろん。ヨガをすると体が軽くなるね... 健康のためにこれからも続けよう' (Selamat pagi, hari ini yoga juga? Tentu saja, melakukan yoga membuat badan terasa ringan). Topik yang dibicarakan adalah olahraga Yoga (ヨガ)."
+  },
+  {
+    "index": 31,
+    "q_txt": "Untuk soal nomor 30 & 31    Berapa minggu batas peminjaman buku perpustakaan?",
+    "q_trans": "(Untuk soal nomor 30 & 31: Berapa minggu batas peminjaman buku perpustakaan?)",
+    "konteks_ja": "Pengumuman dari staf perpustakaan mengenai peraturan peminjaman buku.",
+    "konteks_id": "Pengumuman resmi dari perpustakaan.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a14757ce7348_kagi6-7.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "3 週間",
+        "trans": "(3 Minggu)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "2 週間",
+        "trans": "(2 Minggu)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "1 週間",
+        "trans": "(1 Minggu)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Pengumuman dari perpustakaan menyatakan: '本は3週間借りることができます。3週間以内に返してください' (Buku dapat dipinjam selama 3 minggu. Harap kembalikan dalam 3 minggu). Jadi batasnya adalah 3 minggu (3週間)."
+  },
+  {
+    "index": 32,
+    "q_txt": "Sabtu malam buka sampai jam berapa?",
+    "q_trans": "(Sabtu malam buka sampai jam berapa?)",
+    "konteks_ja": "Informasi jam operasional perpustakaan pada hari Sabtu.",
+    "konteks_id": "Pengumuman jam operasional perpustakaan di hari Sabtu.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a14757ce7348_kagi6-7.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "午後 10 時まで",
+        "trans": "(Sampai pukul 10 malam (22:00))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "午前 10 時まで",
+        "trans": "(Sampai pukul 10 pagi)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "午前  10 時 30 分まで",
+        "trans": "(Sampai pukul 10:30 pagi)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Pengumuman perpustakaan menyebutkan: '土曜日は午後10時まで空いています' (Pada hari Sabtu buka sampai jam 10 malam). Pilihan A: 午後10時まで (pukul 22.00 malam)."
+  },
+  {
+    "index": 33,
+    "q_txt": "Kendaraan apa yang di pakai perempuan?",
+    "q_trans": "(Kendaraan apa yang digunakan oleh si perempuan?)",
+    "konteks_ja": "Percakapan antara Kenji dan Yuki tentang transportasi berangkat ke sekolah.",
+    "konteks_id": "Percakapan dua teman sekolah mengenai transportasi harian.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a147bb43abef_kagi8.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "あるきます",
+        "trans": "(Jalan kaki)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "バス",
+        "trans": "(Bus)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "じてんしゃ",
+        "trans": "(Sepeda)",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Kenji bertanya bagaimana Yuki pergi ke sekolah. Yuki menjawab: '私は毎日バスを使ってきています。バス停が家のすぐ近くにありますから' (Saya setiap hari naik bus, karena halte bus dekat sekali dari rumah). Sementara Kenji naik sepeda. Jadi perempuan naik bus (バス)."
+  },
+  {
+    "index": 34,
+    "q_txt": "Untuk soal no 33 & 34    Liburan musim panas mulai kapan?",
+    "q_trans": "(Untuk soal no 33 & 34: Liburan musim panas mulai kapan?)",
+    "konteks_ja": "Dua sahabat membicarakan jadwal liburan musim panas dan destinasi liburan.",
+    "konteks_id": "Percakapan merencanakan liburan musim panas.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a147e03755f6_kagi9-10.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "7 月 14 日",
+        "trans": "(14 Juli)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "6 月 24 日",
+        "trans": "(24 Juni)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "7 月 24 日",
+        "trans": "(24 Juli)",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Dalam audio terdengar jelas: '今年の夏休みはいつから始まるんだっけ？確か7月24日からだよ。カレンダーで確認したんだ' (Liburan musim panas mulai kapan ya? Pasti mulai tanggal 24 Juli, saya sudah cek di kalender). Jadi tanggal 24 Juli (7月24日)."
+  },
+  {
+    "index": 35,
+    "q_txt": "Dimana tempat yang ingin di kunjungi?",
+    "q_trans": "(Di mana tempat yang ingin dikunjungi?)",
+    "konteks_ja": "Destinasi wisata yang ingin dikunjungi saat liburan musim panas.",
+    "konteks_id": "Rencana tempat liburan musim panas.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a147e03755f6_kagi9-10.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "駅のちかくじんじゃ",
+        "trans": "(Kuil Shinto dekat stasiun)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "駅のちかくスーパー",
+        "trans": "(Supermarket dekat stasiun)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "駅のちかくうみ",
+        "trans": "(Laut dekat stasiun)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Pembicara menceritakan: 'ネットで画像を見つけたんだけど、駅のすぐ近くに綺麗な神社がある場所なんだ。駅のホームから鳥居が見えるんだね。ここに行ってみたい' (Saya melihat foto di internet, ada kuil Shinto yang indah di dekat stasiun, gerbang torii terlihat dari peron). Tempat yang ingin dikunjungi adalah kuil Shinto dekat stasiun (駅のちかくじんじゃ)."
+  },
+  {
+    "index": 36,
+    "q_txt": "Untuk soal no 35 & 36    Sicowo sedang apa?",
+    "q_trans": "(Untuk soal no 35 & 36: Si pria sedang melakukan apa?)",
+    "konteks_ja": "Situasi ketika seorang wanita menemui staf pria di tempat olahraga.",
+    "konteks_id": "Situasi percakapan di tempat olahraga.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a1482d8031c2_kagi11-12.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "Gambar orang menelpon",
+        "trans": "(Gambar orang menelepon)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "Gambar orang pegang telpon",
+        "trans": "(Gambar orang memegang telepon)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "Gambar orang pegang penyedot debu/Vacum cleaner",
+        "trans": "(Gambar orang memegang penyedot debu / vacuum cleaner)",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Staf pria berkata: 'あ、掃除機の音がうるさかったですね。すみません' (Ah, suara mesin penyedot debu / vacuum cleaner tadi berisik ya, maaf). Menunjukkan bahwa si pria sedang membersihkan tempat dengan memegang vacuum cleaner."
+  },
+  {
+    "index": 37,
+    "q_txt": "Perempuan mengalami masalah apa?",
+    "q_trans": "(Perempuan mengalami masalah apa?)",
+    "konteks_ja": "Kendala yang dialami perempuan saat ingin menyewa lapangan olahraga.",
+    "konteks_id": "Kendala pemesanan lapangan olahraga.",
+    "img_src": "",
+    "audio_src": "uploads/audio/6a1482d8031c2_kagi11-12.wav",
+    "options": [
+      {
+        "key": "A",
+        "text": "Gambar tidak bisa memesan dari telepon (orang memegang handphone)",
+        "trans": "(Gambar tidak bisa memesan lapangan melalui telepon seluler)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "Gambar tidak bisa menelpon",
+        "trans": "(Gambar tidak bisa menelepon sama sekali)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "Gambar tidak bisa membeli barang online",
+        "trans": "(Gambar tidak bisa membeli barang secara daring)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Perempuan tersebut menjelaskan masalahnya: 'すみません、スマホで電話してもコートの予約ができないんですが' (Permisi, meskipun menelepon dengan smartphone, saya tidak bisa melakukan booking lapangan). Masalahnya adalah tidak bisa memesan / reservasi lewat telepon seluler."
+  },
+  {
+    "index": 38,
+    "q_txt": "[ Dokkai ] Bacaan panjang perkenalan diri part 1",
+    "q_trans": "([ Dokkai ] Teks bacaan perkenalan diri bagian 1: Gambar mana yang sesuai dengan isi teks?)",
+    "konteks_ja": "Teks bacaan perkenalan diri siswa baru mengenai kegemaran membaca dan kepemilikan buku catatan warna biru (青い本).",
+    "konteks_id": "Teks bacaan narasi perkenalan diri.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "Gambar orang pegang buku warna biru",
+        "trans": "(Gambar orang memegang buku berwarna biru)",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Pada bacaan perkenalan diri bagian 1, penulis menceritakan hobi membacanya dan selalu membawa buku catatan/buku berwarna biru (青い本). Ilustrasi yang sesuai dengan isi bacaan adalah gambar orang memegang buku berwarna biru."
+  },
+  {
+    "index": 39,
+    "q_txt": "[ Dokkai ] Bacaan panjang perkenalan diri part 2",
+    "q_trans": "([ Dokkai ] Teks bacaan perkenalan diri bagian 2: Kegiatan apa yang diceritakan?)",
+    "konteks_ja": "Teks bacaan perkenalan diri kelanjutan bagian 2 tentang interaksi dan aktivitas mengobrol bersama teman (友達とおしゃべり・会話).",
+    "konteks_id": "Teks bacaan perkenalan diri bagian 2.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "Gambar 2 orang mengobrol",
+        "trans": "(Gambar 2 orang sedang mengobrol / bercakap-cakap)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      }
+    ],
+    "kunci": "B",
+    "penjelasan": "💡 Pada bagian kedua bacaan perkenalan diri, penulis menceritakan bagaimana ia menikmati waktu bercakap-cakap santai dan berdiskusi dengan teman-temannya di kelas. Gambar yang tepat adalah dua orang sedang mengobrol."
+  },
+  {
+    "index": 40,
+    "q_txt": "[ dokkai ] Pamflet Obat part 1",
+    "q_trans": "([ Dokkai ] Pamflet Obat bagian 1: Kapan atau untuk gejala apa obat ini diminum?)",
+    "konteks_ja": "Pamflet informasi khasiat dan indikasi obat batuk.",
+    "konteks_id": "Pamflet informasi obat dan indikasi medis.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "obat diminum ketika merasa せきがでる",
+        "trans": "(Obat diminum ketika merasa batuk (せきがでる))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Berdasarkan pamflet petunjuk obat, obat tersebut diindikasikan khusus untuk meredakan gejala batuk (せきが出る時 / seki ga deru toki)."
+  },
+  {
+    "index": 41,
+    "q_txt": "[ dokkai ] Pamflet Obat part 2",
+    "q_trans": "([ Dokkai ] Pamflet Obat bagian 2: Kapan obat ini harus diminum?)",
+    "konteks_ja": "Pamflet aturan pakai mengenai waktu konsumsi obat (この薬はいつ飲みますか).",
+    "konteks_id": "Petunjuk aturan minum obat.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "kapan minum obat : 食事の前に",
+        "trans": "(Waktu minum obat: Sebelum makan (食事の前に))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Pada petunjuk pemakaian obat tertulis bahwa obat harus diminum sebelum makan (食事の前に / 食前 - shokuzen)."
+  },
+  {
+    "index": 42,
+    "q_txt": "[ dokkai ] Bacaan panjang tentang restoran dan masakannya",
+    "q_trans": "([ Dokkai ] Teks bacaan restoran: Pengalaman apa yang dirasakan mengenai restoran tersebut?)",
+    "konteks_ja": "【森の レストランへ ようこそ！】自然の中に ある レストランです。 おいしい 料理と すてきな 景色が 楽しめます。",
+    "konteks_id": "Brosur restoran hutan alami dan ulasan pengunjung.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "値段がやすなかったです",
+        "trans": "(Harganya tidak murah (cukup mahal))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Dalam ulasan pengalaman bersantap di restoran hutan tersebut, diungkapkan bahwa makanannya sangat lezat namun harganya tidaklah murah (値段が安くなかったです / harganya cukup tinggi/mahal)."
+  },
+  {
+    "index": 43,
+    "q_txt": "[ dokkai ] Apa yang bisa dilakukan di restoran ?",
+    "q_trans": "([ Dokkai ] Apa kegiatan yang bisa dilakukan di restoran tersebut?)",
+    "konteks_ja": "Fasilitas taman outdoor di restoran hutan (庭で遊ぶ).",
+    "konteks_id": "Brosur fasilitas restoran alami.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "Jawabannya ada にわ nya",
+        "trans": "(Bermain di taman pekarangan (庭で遊びます))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Pamflet restoran menerangkan fasilitas area pekarangan/taman yang luas di mana pengunjung atau anak-anak bisa bermain di taman (庭で遊びます / niwa de asobimasu)."
+  },
+  {
+    "index": 44,
+    "q_txt": "[ dokkai ] Perintah Fotocopy \n\nsampai jam berapa paling lambat ?",
+    "q_trans": "([ Dokkai ] Instruksi Fotokopi: Paling lambat jam berapa dokumen harus selesai difotokopi?)",
+    "konteks_ja": "Memo instruksi kantor mengenai batas waktu fotokopi dokumen sebelum rapat.",
+    "konteks_id": "Memo perintah kerja fotokopi dokumen.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "13.00",
+        "trans": "(Pukul 13.00)",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Pada memo kerja kantor tertulis instruksi jelas: 13時までにコピーしてください (Tolong fotokopi dokumen sebelum pukul 13.00). Jadi paling lambat jam 13.00."
+  },
+  {
+    "index": 45,
+    "q_txt": "[ dokkai ] fotocopy ditaruh dimana ?",
+    "q_trans": "([ Dokkai ] Hasil fotokopi ditaruh di mana?)",
+    "konteks_ja": "Instruksi penempatan hasil fotokopi dokumen.",
+    "konteks_id": "Lokasi penyerahan dokumen fotokopi.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "Gambar meja diatas ada kertas dan pamflet nama",
+        "trans": "(Gambar meja kerja yang di atasnya ada dokumen dan plang nama staf)",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Memo menyebutkan agar dokumen hasil salinan ditaruh di atas meja kerja staf yang meminta (meja bertuliskan plang nama staf bersangkutan)."
+  },
+  {
+    "index": 46,
+    "q_txt": "[ dokkai ] Pamflet makanan\n\nSampai Jam berapa モーニングセット (Morning Set)?",
+    "q_trans": "([ Dokkai ] Pamflet Makanan: Sampai jam berapa menu Morning Set disajikan?)",
+    "konteks_ja": "Pamflet menu sarapan pagi kafe (Morning Set).",
+    "konteks_id": "Pamflet menu sarapan pagi di kafe.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "11:30",
+        "trans": "(Pukul 11:30)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Pamflet kafe mencantumkan bahwa menu sarapan pagi (モーニングセット / Morning Set) dilayani hingga pukul 11:30."
+  },
+  {
+    "index": 47,
+    "q_txt": "[ dokkai ] Berapa harga Kopi ?",
+    "q_trans": "([ Dokkai ] Berapa harga Kopi pada daftar menu kafe?)",
+    "konteks_ja": "Daftar harga minuman pada pamflet kafe.",
+    "konteks_id": "Brosur daftar harga minuman kafe.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "550 円",
+        "trans": "(550 Yen)",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Berdasarkan daftar harga pada brosur menu kafe, harga untuk segelas kopi (コーヒー) tertera seharga 550 Yen (550円)."
+  },
+  {
+    "index": 48,
+    "q_txt": "[ dokkai ] Pemberitahuan ばにんかい:\n\nperayaan Acaranya kapan ?",
+    "q_trans": "([ Dokkai ] Pemberitahuan Pesta Akhir Tahun (Bounenkai): Perayaan acaranya diadakan tanggal berapa?)",
+    "konteks_ja": "Undangan pesta akhir tahun perusahaan (忘年会 / ぼうねんかい).",
+    "konteks_id": "Surat pemberitahuan pesta akhir tahun.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "12 月 14 日",
+        "trans": "(14 Desember (12月14日))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Pada surat pemberitahuan pesta perayaan akhir tahun (忘年会), tertera tanggal pelaksanaan acara yaitu pada tanggal 14 Desember (12月14日)."
+  },
+  {
+    "index": 49,
+    "q_txt": "[ dokkai ] Apa yang perlu dibawa ?",
+    "q_trans": "([ Dokkai ] Apa yang perlu dibawa oleh peserta pesta?)",
+    "konteks_ja": "Persyaratan barang bawaan peserta pesta (持ち物).",
+    "konteks_id": "Keterangan barang bawaan peserta pada undangan.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "飲み物",
+        "trans": "(Minuman (飲み物))",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Pada bagian 持ち物 (barang bawaan yang harus dibawa), tercantum 飲み物 (minuman), di mana para peserta diminta membawa minuman kesukaan masing-masing."
+  },
+  {
+    "index": 50,
+    "q_txt": "[ dokkai ] Pamflet Restoran\n\nApa yang dilakukan didalam restoran ?",
+    "q_trans": "([ Dokkai ] Pamflet Restoran: Keistimewaan apa yang bisa dinikmati di restoran?)",
+    "konteks_ja": "Informasi menu dan keistimewaan santapan di restoran.",
+    "konteks_id": "Brosur promosi kuliner restoran.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "しんせんな きせつ りょうりが たべられる",
+        "trans": "(Dapat menyantap masakan musiman yang segar (新鮮な季節料理が食べられる))",
+        "img": ""
+      }
+    ],
+    "kunci": "C",
+    "penjelasan": "💡 Keunggulan utama restoran yang disebutkan dalam pamflet adalah tamu dapat menyantap hidangan musiman yang segar (しんせんな 季節料理が 食べられる / 新鮮な季節料理が食べられる)."
+  },
+  {
+    "index": 51,
+    "q_txt": "[ dokkai ] Sampai jam berapa ?",
+    "q_trans": "([ Dokkai ] Sampai jam berapa batas waktu kegiatan tersebut?)",
+    "konteks_ja": "Batas waktu acara / penyelesaian kegiatan dalam dokumen instruksi.",
+    "konteks_id": "Keterangan batas waktu pada dokumen pengumuman.",
+    "img_src": "",
+    "audio_src": "",
+    "options": [
+      {
+        "key": "A",
+        "text": "Jam 13.00",
+        "trans": "(Jam 13.00)",
+        "img": ""
+      },
+      {
+        "key": "B",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      },
+      {
+        "key": "C",
+        "text": "-",
+        "trans": "(-)",
+        "img": ""
+      }
+    ],
+    "kunci": "A",
+    "penjelasan": "💡 Berdasarkan dokumen instruksi atau pengumuman yang tercantum, batas waktu pelaksanaan kegiatan tersebut adalah tepat pada Jam 13.00."
+  }
+]

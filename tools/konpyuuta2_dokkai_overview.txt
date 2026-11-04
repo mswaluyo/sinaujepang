@@ -1,0 +1,78 @@
+#38 (No 38) | Imgs: []
+Konteks: Teks bacaan perkenalan diri siswa baru mengenai kegemaran membaca dan kepemilikan buku catatan warna biru (青い本). Teks bacaan narasi perkenalan diri.
+Pertanyaan: [ Dokkai ] Bacaan panjang perkenalan diri part 1
+Options: ['A - (-)', 'B - (-)', 'C Gambar orang pegang buku warna biru (Gambar orang memegang buku berwarna biru)']
+----------------------------------------
+#39 (No 39) | Imgs: []
+Konteks: Teks bacaan perkenalan diri kelanjutan bagian 2 tentang interaksi dan aktivitas mengobrol bersama teman (友達とおしゃべり・会話). Teks bacaan perkenalan diri bagian 2.
+Pertanyaan: [ Dokkai ] Bacaan panjang perkenalan diri part 2
+Options: ['A - (-)', 'B Gambar 2 orang mengobrol (Gambar 2 orang sedang mengobrol / bercakap-cakap)', 'C - (-)']
+----------------------------------------
+#40 (No 40) | Imgs: []
+Konteks: Pamflet informasi khasiat dan indikasi obat batuk. Pamflet informasi obat dan indikasi medis.
+Pertanyaan: [ dokkai ] Pamflet Obat part 1
+Options: ['A - (-)', 'B - (-)', 'C obat diminum ketika merasa せきがでる (Obat diminum ketika merasa batuk (せきがでる))']
+----------------------------------------
+#41 (No 41) | Imgs: []
+Konteks: Pamflet aturan pakai mengenai waktu konsumsi obat (この薬はいつ飲みますか). Petunjuk aturan minum obat.
+Pertanyaan: [ dokkai ] Pamflet Obat part 2
+Options: ['A - (-)', 'B - (-)', 'C kapan minum obat : 食事の前に (Waktu minum obat: Sebelum makan (食事の前に))']
+----------------------------------------
+#42 (No 42) | Imgs: []
+Konteks: 【森の レストランへ ようこそ！】自然の中に ある レストランです。 おいしい 料理と すてきな 景色が 楽しめます。 Brosur restoran hutan alami dan ulasan pengunjung.
+Pertanyaan: [ dokkai ] Bacaan panjang tentang restoran dan masakannya
+Options: ['A - (-)', 'B - (-)', 'C 値段がやすなかったです (Harganya tidak murah (cukup mahal))']
+----------------------------------------
+#43 (No 43) | Imgs: []
+Konteks: Fasilitas taman outdoor di restoran hutan (庭で遊ぶ). Brosur fasilitas restoran alami.
+Pertanyaan: [ dokkai ] Apa yang bisa dilakukan di restoran ?
+Options: ['A - (-)', 'B - (-)', 'C Jawabannya ada にわ nya (Bermain di taman pekarangan (庭で遊びます))']
+----------------------------------------
+#44 (No 44) | Imgs: []
+Konteks: Memo instruksi kantor mengenai batas waktu fotokopi dokumen sebelum rapat. Memo perintah kerja fotokopi dokumen.
+Pertanyaan: [ dokkai ] Perintah Fotocopy 
+
+sampai jam berapa paling lambat ?
+Options: ['A - (-)', 'B - (-)', 'C 13.00 (Pukul 13.00)']
+----------------------------------------
+#45 (No 45) | Imgs: []
+Konteks: Instruksi penempatan hasil fotokopi dokumen. Lokasi penyerahan dokumen fotokopi.
+Pertanyaan: [ dokkai ] fotocopy ditaruh dimana ?
+Options: ['A - (-)', 'B - (-)', 'C Gambar meja diatas ada kertas dan pamflet nama (Gambar meja kerja yang di atasnya ada dokumen dan plang nama staf)']
+----------------------------------------
+#46 (No 46) | Imgs: []
+Konteks: Pamflet menu sarapan pagi kafe (Morning Set). Pamflet menu sarapan pagi di kafe.
+Pertanyaan: [ dokkai ] Pamflet makanan
+
+Sampai Jam berapa モーニングセット (Morning Set)?
+Options: ['A 11:30 (Pukul 11:30)', 'B - (-)', 'C - (-)']
+----------------------------------------
+#47 (No 47) | Imgs: []
+Konteks: Daftar harga minuman pada pamflet kafe. Brosur daftar harga minuman kafe.
+Pertanyaan: [ dokkai ] Berapa harga Kopi ?
+Options: ['A - (-)', 'B - (-)', 'C 550 円 (550 Yen)']
+----------------------------------------
+#48 (No 48) | Imgs: []
+Konteks: Undangan pesta akhir tahun perusahaan (忘年会 / ぼうねんかい). Surat pemberitahuan pesta akhir tahun.
+Pertanyaan: [ dokkai ] Pemberitahuan ばにんかい:
+
+perayaan Acaranya kapan ?
+Options: ['A - (-)', 'B - (-)', 'C 12 月 14 日 (14 Desember (12月14日))']
+----------------------------------------
+#49 (No 49) | Imgs: []
+Konteks: Persyaratan barang bawaan peserta pesta (持ち物). Keterangan barang bawaan peserta pada undangan.
+Pertanyaan: [ dokkai ] Apa yang perlu dibawa ?
+Options: ['A 飲み物 (Minuman (飲み物))', 'B - (-)', 'C - (-)']
+----------------------------------------
+#50 (No 50) | Imgs: []
+Konteks: Informasi menu dan keistimewaan santapan di restoran. Brosur promosi kuliner restoran.
+Pertanyaan: [ dokkai ] Pamflet Restoran
+
+Apa yang dilakukan didalam restoran ?
+Options: ['A - (-)', 'B - (-)', 'C しんせんな きせつ りょうりが たべられる (Dapat menyantap masakan musiman yang segar (新鮮な季節料理が食べられる))']
+----------------------------------------
+#51 (No 51) | Imgs: []
+Konteks: Batas waktu acara / penyelesaian kegiatan dalam dokumen instruksi. Keterangan batas waktu pada dokumen pengumuman.
+Pertanyaan: [ dokkai ] Sampai jam berapa ?
+Options: ['A Jam 13.00 (Jam 13.00)', 'B - (-)', 'C - (-)']
+----------------------------------------

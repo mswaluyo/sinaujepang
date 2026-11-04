@@ -1,0 +1,2427 @@
+[
+  {
+    "no": 1,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "",
+    "options": [
+      {
+        "text": "ボード",
+        "img": ""
+      },
+      {
+        "text": "ほん",
+        "img": ""
+      },
+      {
+        "text": "コンピューター",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Bab 2 - Katakana Peralatan] Gambar menunjukkan sebuah komputer desktop lengkap (PC). Dalam bahasa Jepang, komputer diserap ke dalam katakana menjadi **コンピューター (konpyuutaa)**. Pilihan ボード berarti papan, sedangkan ほん berarti buku.",
+    "opt_detail": [
+      {
+        "kana": "ボード",
+        "rom": "boodo",
+        "arti": "papan",
+        "alasan": "ボード (board) berarti papan pengumuman/tulis, bukan komputer."
+      },
+      {
+        "kana": "ほん",
+        "rom": "hon",
+        "arti": "buku",
+        "alasan": "ほん (buku) tidak sesuai dengan visual perangkat elektronik komputer pada gambar."
+      },
+      {
+        "kana": "コンピューター",
+        "rom": "konpyuutaa",
+        "arti": "komputer",
+        "alasan": "コンピューター adalah kosakata katakana resmi untuk komputer desktop."
+      }
+    ],
+    "opt_note": [
+      "ボード (Papan)",
+      "ほん (Buku)",
+      "コンピューター (Komputer)"
+    ],
+    "image": "assets/konpyuuta.jpg"
+  },
+  {
+    "no": 2,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "",
+    "options": [
+      {
+        "text": "ほんだな",
+        "img": ""
+      },
+      {
+        "text": "がぎ",
+        "img": ""
+      },
+      {
+        "text": "かぎ",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Bab 2 - Benda Sehari-hari] Gambar memperlihatkan sebuah kunci pintu/gembok. Dalam bahasa Jepang, kunci adalah **かぎ (kagi)**. Pilihan がぎ adalah jebakan penulisan dakuten keliru, dan ほんだな berarti rak buku.",
+    "opt_detail": [
+      {
+        "kana": "ほんだな",
+        "rom": "hondana",
+        "arti": "rak buku",
+        "alasan": "ほんだな berarti rak buku, tidak cocok dengan gambar kunci logam kecil."
+      },
+      {
+        "kana": "がぎ",
+        "rom": "gagi",
+        "arti": "salah eja",
+        "alasan": "がぎ adalah jebakan ejaan salah (huruf ka diberi dakuten menjadi ga)."
+      },
+      {
+        "kana": "かぎ",
+        "rom": "kagi",
+        "arti": "kunci",
+        "alasan": "かぎ adalah kosakata yang benar dan tepat untuk kunci."
+      }
+    ],
+    "opt_note": [
+      "ほんだな (Rak buku)",
+      "がぎ (Gagi salah penulisan)",
+      "かぎ (Kunci)"
+    ],
+    "image": "assets/kagi1.png"
+  },
+  {
+    "no": 3,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "",
+    "options": [
+      {
+        "text": "けっこん",
+        "img": ""
+      },
+      {
+        "text": "けこん",
+        "img": ""
+      },
+      {
+        "text": "おまつり",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Bab 39 / Bab 41 - Kosakata Acara & Kehidupan] Gambar memperlihatkan pasangan pengantin merayakan pernikahan. Kosakata bahasa Jepang untuk pernikahan adalah **けっこん (kekkon - 結婚)** dengan konsonan ganda sokuon kecil (っ). Pilihan けこん salah eja, dan おまつり berarti festival.",
+    "opt_detail": [
+      {
+        "kana": "けっこん",
+        "rom": "kekkon",
+        "arti": "pernikahan",
+        "alasan": "けっこん (結婚) adalah istilah resmi untuk pernikahan."
+      },
+      {
+        "kana": "けこん",
+        "rom": "kekon",
+        "arti": "salah eja",
+        "alasan": "けこん kurang huruf sokuon kecil (っ) sehingga pelafalannya salah."
+      },
+      {
+        "kana": "おまつり",
+        "rom": "omatsuri",
+        "arti": "festival",
+        "alasan": "おまつり mengacu pada matsuri/perayaan kuil tradisional, bukan resepsi pernikahan."
+      }
+    ],
+    "opt_note": [
+      "けっこん (Pernikahan)",
+      "けこん (Kekon salah eja)",
+      "おまつり (Festival / perayaan)"
+    ],
+    "image": "assets/kagi2.png"
+  },
+  {
+    "no": 4,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "",
+    "options": [
+      {
+        "text": "切ります",
+        "img": ""
+      },
+      {
+        "text": "案内します",
+        "img": ""
+      },
+      {
+        "text": "待ちます",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Bab 14 / Bab 49 - Pelayanan & Kata Kerja Gerak] Gambar menunjukkan staf petugas berseragam sedang mengarahkan jalan kepada pengunjung. Kata kerja yang tepat adalah **案内します (annai shimasu = memandu/mengantar arah)**. Pilihan 切ります berarti memotong, dan 待ちます berarti menunggu.",
+    "opt_detail": [
+      {
+        "kana": "切ります",
+        "rom": "kirimasu",
+        "arti": "memotong",
+        "alasan": "切ります berarti memotong benda dengan pisau/gunting, tidak relevan."
+      },
+      {
+        "kana": "案内します",
+        "rom": "annai shimasu",
+        "arti": "memandu / mengantar",
+        "alasan": "案内します tepat mendeskripsikan aktivitas petugas pemandu informasi jalan."
+      },
+      {
+        "kana": "待ちます",
+        "rom": "machimasu",
+        "arti": "menunggu",
+        "alasan": "待ちます berarti menunggu seseorang, tidak sesuai dengan aksi menunjukkan arah."
+      }
+    ],
+    "opt_note": [
+      "切ります (Memotong)",
+      "案内します (Memandu / mengantar)",
+      "待ちます (Menunggu)"
+    ],
+    "image": "assets/kagi3.png"
+  },
+  {
+    "no": 5,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "このカメラ は [ 軽くて ] つかいやすいです",
+    "options": [
+      {
+        "text": "たのしくて",
+        "img": ""
+      },
+      {
+        "text": "かるくて",
+        "img": ""
+      },
+      {
+        "text": "あかくて",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Bab 8 / Bab 16 - Cara Baca Kanji Kata Sifat-i] Kanji **軽い** memiliki arti 'ringan' dan dibaca **かるい (karui)**. Dalam bentuk penyambung ~te, kata sifat ini berubah menjadi **軽くて (かるくて - karukute)**. Kalimat: このカメラは軽くてつかいやすいです (Kamera ini ringan dan mudah dipakai).",
+    "opt_detail": [
+      {
+        "kana": "たのしくて",
+        "rom": "tanoshikute",
+        "arti": "menyenangkan",
+        "alasan": "たのしくて adalah bentuk ~te dari 楽しい (tanoshii = menyenangkan)."
+      },
+      {
+        "kana": "かるくて",
+        "rom": "karukute",
+        "arti": "ringan",
+        "alasan": "かるくて adalah cara baca kanji 軽くて yang benar."
+      },
+      {
+        "kana": "あかくて",
+        "rom": "akakute",
+        "arti": "merah",
+        "alasan": "あかくて adalah bentuk ~te dari 赤い (akai = merah)."
+      }
+    ],
+    "opt_note": [
+      "たのしくて (Menyenangkan)",
+      "かるくて (Ringan)",
+      "あかくて (Merah)"
+    ]
+  },
+  {
+    "no": 6,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "あなた の [ 住所 ]を 教えてください",
+    "options": [
+      {
+        "text": "じゅしょ",
+        "img": ""
+      },
+      {
+        "text": "じゆうしゅ",
+        "img": ""
+      },
+      {
+        "text": "じゅうしょ",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Bab 3 - Kosakata Identitas & Kanji] Kanji **住所** berarti 'alamat tempat tinggal'. Cara bacanya adalah **じゅうしょ (juusho)** dengan bunyi vokal panjang 'uu' pada kanji 住 (じゅう) dan pendek pada kanji 所 (しょ).",
+    "opt_detail": [
+      {
+        "kana": "じゅしょ",
+        "rom": "jusho",
+        "arti": "salah eja (vokal pendek)",
+        "alasan": "じゅしょ salah karena tidak memiliki vokal panjang 'uu' pada ju."
+      },
+      {
+        "kana": "じゆうしゅ",
+        "rom": "jiyuushu",
+        "arti": "salah baca",
+        "alasan": "じゆうしゅ adalah bentuk salah eja yang rancu."
+      },
+      {
+        "kana": "じゅうしょ",
+        "rom": "juusho",
+        "arti": "alamat",
+        "alasan": "じゅうしょ adalah cara baca kanji 住所 yang baku."
+      }
+    ],
+    "opt_note": [
+      "じゅしょ (Jusho salah eja)",
+      "じゆうしゅ (Jiyuushu salah eja)",
+      "じゅうしょ (Alamat juusho)"
+    ]
+  },
+  {
+    "no": 7,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "かっこい時計 を もらって。。。。。。。",
+    "options": [
+      {
+        "text": "うれしかったです",
+        "img": ""
+      },
+      {
+        "text": "たのしかったです",
+        "img": ""
+      },
+      {
+        "text": "いそがしかったです",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Ketika menerima hadiah barang yang bagus dan keren (かっこい時計をもらって), perasaan hati yang timbul adalah senang/gembira, yaitu うれしかったです (ureshikatta desu). Pilihan B: sibuk, C: menyenangkan (biasanya untuk kegiatan/acara).",
+    "opt_detail": [
+      {
+        "kana": "うれしかったです",
+        "rom": "",
+        "arti": "Merasa senang / gembira",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "たのしかったです",
+        "rom": "",
+        "arti": "Menyenangkan aktivitas",
+        "alasan": "Pilihan B (たのしかったです) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "いそがしかったです",
+        "rom": "",
+        "arti": "Sangat sibuk",
+        "alasan": "Pilihan C (いそがしかったです) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "うれしかったです (Merasa senang / gembira)",
+      "たのしかったです (Menyenangkan aktivitas)",
+      "いそがしかったです (Sangat sibuk)"
+    ]
+  },
+  {
+    "no": 8,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "まいにち テレビ を 。。。。。",
+    "options": [
+      {
+        "text": "読みます",
+        "img": ""
+      },
+      {
+        "text": "見ます",
+        "img": ""
+      },
+      {
+        "text": "聞きます",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Kata kerja yang berpasangan dengan objek televisi (テレビを) adalah 見ます (mimasu - menonton/melihat). Opsi B: 聞きます (mendengar), Opsi C: 読みます (membaca).",
+    "opt_detail": [
+      {
+        "kana": "読みます",
+        "rom": "",
+        "arti": "Membaca",
+        "alasan": "Pilihan A (読みます) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "見ます",
+        "rom": "",
+        "arti": "Menonton / melihat",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "聞きます",
+        "rom": "",
+        "arti": "Mendengarkan",
+        "alasan": "Pilihan C (聞きます) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "読みます (Membaca)",
+      "見ます (Menonton / melihat)",
+      "聞きます (Mendengarkan)"
+    ]
+  },
+  {
+    "no": 9,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "こんばん は ゆびんきょく で 7時30____ に 待ち合わせます。",
+    "options": [
+      {
+        "text": "分",
+        "img": ""
+      },
+      {
+        "text": "半",
+        "img": ""
+      },
+      {
+        "text": "年",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Untuk menyatakan satuan menit setelah angka (30 menit), digunakan kanji 分 (ふん/ぷん). 7時30分 dibaca shichiji sanjuppun (jam 7 lewat 30 menit). Jika menggunakan 半 (setengah), tidak memakai angka 30 (cukup 7時半).",
+    "opt_detail": [
+      {
+        "kana": "分",
+        "rom": "",
+        "arti": "Menit fun/pun",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "半",
+        "rom": "",
+        "arti": "Setengah han",
+        "alasan": "Pilihan B (半) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "年",
+        "rom": "",
+        "arti": "Tahun nen",
+        "alasan": "Pilihan C (年) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "分 (Menit fun/pun)",
+      "半 (Setengah han)",
+      "年 (Tahun nen)"
+    ]
+  },
+  {
+    "no": 10,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "らいげつ から テニス を_____みよう と おもっています",
+    "options": [
+      {
+        "text": "読んで",
+        "img": ""
+      },
+      {
+        "text": "食べて",
+        "img": ""
+      },
+      {
+        "text": "始めて",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pola tata bahasa ~te miyou to omotteimasu (berniat mencoba melakukan sesuatu). Kata kerja yang berpasangan dengan memulai aktivitas olahraga (tenis) adalah 始めて (hajimete, bentuk ~te dari 始める). Kalimat: 'Mulai bulan depan saya berniat mencoba memulai main tenis'.",
+    "opt_detail": [
+      {
+        "kana": "読んで",
+        "rom": "",
+        "arti": "Membaca yonde",
+        "alasan": "Pilihan A (読んで) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "食べて",
+        "rom": "",
+        "arti": "Makan tabete",
+        "alasan": "Pilihan B (食べて) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "始めて",
+        "rom": "",
+        "arti": "Memulai hajimete",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "読んで (Membaca yonde)",
+      "食べて (Makan tabete)",
+      "始めて (Memulai hajimete)"
+    ]
+  },
+  {
+    "no": 11,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "体 の けんこう の ため に____うんどうしたり",
+    "options": [
+      {
+        "text": "走たり",
+        "img": ""
+      },
+      {
+        "text": "泳ぎたり",
+        "img": ""
+      },
+      {
+        "text": "歩いたり",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pola pendaftaran tindakan percontohan ~tari ~tari shimasu. Kata kerja 歩く (aruku - berjalan kaki) berubah menjadi bentuk ~tari: 歩いたり (aruitari). Pilihan A salah bentuk (seharusnya oyoitari), B salah bentuk (seharusnya hashittari).",
+    "opt_detail": [
+      {
+        "kana": "走たり",
+        "rom": "",
+        "arti": "Salah konjugasi seharusnya hashittari",
+        "alasan": "Pilihan A (走たり) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "泳ぎたり",
+        "rom": "",
+        "arti": "Salah konjugasi seharusnya oyoitari",
+        "alasan": "Pilihan B (泳ぎたり) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "歩いたり",
+        "rom": "",
+        "arti": "Berjalan kaki aruitari",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "走たり (Salah konjugasi seharusnya hashittari)",
+      "泳ぎたり (Salah konjugasi seharusnya oyoitari)",
+      "歩いたり (Berjalan kaki aruitari)"
+    ]
+  },
+  {
+    "no": 12,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "ことし は 2024 [ ねん ]",
+    "options": [
+      {
+        "text": "年",
+        "img": ""
+      },
+      {
+        "text": "時間",
+        "img": ""
+      },
+      {
+        "text": "分",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Kata 'ねん' (tahun) ditulis dengan kanji 年 (nen). 2024年 berarti tahun 2024. Pilihan B: 分 (menit), C: 時間 (durasi jam).",
+    "opt_detail": [
+      {
+        "kana": "年",
+        "rom": "",
+        "arti": "Tahun nen",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "時間",
+        "rom": "",
+        "arti": "Durasi jam jikan",
+        "alasan": "Pilihan B (時間) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "分",
+        "rom": "",
+        "arti": "Menit fun",
+        "alasan": "Pilihan C (分) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "年 (Tahun nen)",
+      "時間 (Durasi jam jikan)",
+      "分 (Menit fun)"
+    ]
+  },
+  {
+    "no": 13,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "メル で イベント に ついて 友達 に _____",
+    "options": [
+      {
+        "text": "しらせます",
+        "img": ""
+      },
+      {
+        "text": "おしえます",
+        "img": ""
+      },
+      {
+        "text": "さそいます",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Ungkapan ~ni tsuite tomodachi ni shirasemasu berarti 'memberitahukan/mengabarkan perihal acara kepada teman'. Kata kerja yang tepat adalah しらせます (shirasemasu / 知らせます).",
+    "opt_detail": [
+      {
+        "kana": "しらせます",
+        "rom": "",
+        "arti": "Mengabarkan / memberitahukan",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "おしえます",
+        "rom": "",
+        "arti": "Mengajari",
+        "alasan": "Pilihan B (おしえます) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "さそいます",
+        "rom": "",
+        "arti": "Mengajak",
+        "alasan": "Pilihan C (さそいます) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "しらせます (Mengabarkan / memberitahukan)",
+      "おしえます (Mengajari)",
+      "さそいます (Mengajak)"
+    ]
+  },
+  {
+    "no": 14,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "A : ここで_____ \nB : ありがとうございます",
+    "options": [
+      {
+        "text": "どうも",
+        "img": ""
+      },
+      {
+        "text": "どうぞ",
+        "img": ""
+      },
+      {
+        "text": "こちらこそ",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pada gambar terlihat seseorang menawarkan kursi/tempat duduk kepada orang lain. Ungkapan yang tepat untuk mempersilakan adalah どうぞ (douzo - 'silakan'). Lawan bicara membalas dengan 'ありがとうございます'.",
+    "opt_detail": [
+      {
+        "kana": "どうも",
+        "rom": "",
+        "arti": "Terima kasih banyak singkat",
+        "alasan": "Pilihan A (どうも) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "どうぞ",
+        "rom": "",
+        "arti": "Silakan douzo",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "こちらこそ",
+        "rom": "",
+        "arti": "Sama-sama pihak kami",
+        "alasan": "Pilihan C (こちらこそ) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "どうも (Terima kasih banyak singkat)",
+      "どうぞ (Silakan douzo)",
+      "こちらこそ (Sama-sama pihak kami)"
+    ]
+  },
+  {
+    "no": 15,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A : もしもし。今どこですか\n\n B : 今 郵便局 に_____",
+    "options": [
+      {
+        "text": "いません",
+        "img": ""
+      },
+      {
+        "text": "あります",
+        "img": ""
+      },
+      {
+        "text": "います",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Untuk menyatakan keberadaan orang (makhluk bernyawa) di suatu tempat (郵便局に), digunakan kata kerja います (imasu). あります hanya digunakan untuk benda mati.",
+    "opt_detail": [
+      {
+        "kana": "いません",
+        "rom": "",
+        "arti": "Tidak ada",
+        "alasan": "Pilihan A (いません) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "あります",
+        "rom": "",
+        "arti": "Ada benda mati",
+        "alasan": "Pilihan B (あります) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "います",
+        "rom": "",
+        "arti": "Ada makhluk bernyawa",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "いません (Tidak ada)",
+      "あります (Ada benda mati)",
+      "います (Ada makhluk bernyawa)"
+    ]
+  },
+  {
+    "no": 16,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A : キﾐさん、お国 は どちらですか。\n\nB : かんこくです。\n\nA : キﾐさん、かんこくご が _____",
+    "options": [
+      {
+        "text": "できますか",
+        "img": ""
+      },
+      {
+        "text": "できますよ",
+        "img": ""
+      },
+      {
+        "text": "できますね",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Penutur A bertanya mengenai kemampuan bahasa Korea Kimi-san. Kalimat tanya yang sopan ditandai dengan partikel tanya か, yaitu できますか (dekimasu ka - 'apakah bisa?').",
+    "opt_detail": [
+      {
+        "kana": "できますか",
+        "rom": "",
+        "arti": "Bisakah / apakah bisa? pertanyaan",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "できますよ",
+        "rom": "",
+        "arti": "Bisa lho informasi",
+        "alasan": "Pilihan B (できますよ) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "できますね",
+        "rom": "",
+        "arti": "Bisa ya penegasan",
+        "alasan": "Pilihan C (できますね) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "できますか (Bisakah / apakah bisa? pertanyaan)",
+      "できますよ (Bisa lho informasi)",
+      "できますね (Bisa ya penegasan)"
+    ]
+  },
+  {
+    "no": 17,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A : 仕事 は どうですか？\n\nB : 最近、仕事 は _____時間 が ありません",
+    "options": [
+      {
+        "text": "やすみですから",
+        "img": ""
+      },
+      {
+        "text": "忙しくて",
+        "img": ""
+      },
+      {
+        "text": "ひまなので",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Kata sifat 忙しい (isogashii - sibuk) dalam bentuk ~te (忙しくて) berfungsi menyatakan alasan atau sebab: 'karena sibuk bekerja, akhir-akhir ini tidak ada waktu'.",
+    "opt_detail": [
+      {
+        "kana": "やすみですから",
+        "rom": "",
+        "arti": "Karena libur",
+        "alasan": "Pilihan A (やすみですから) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "忙しくて",
+        "rom": "",
+        "arti": "Sibuk sehingga...",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "ひまなので",
+        "rom": "",
+        "arti": "Karena senggang",
+        "alasan": "Pilihan C (ひまなので) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "やすみですから (Karena libur)",
+      "忙しくて (Sibuk sehingga...)",
+      "ひまなので (Karena senggang)"
+    ]
+  },
+  {
+    "no": 18,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A :よかったら、 このテンプラ は おいしですよ。\n\nB：すみません。アルレギ が あるので、_____ 身体 が かゆくなります。",
+    "options": [
+      {
+        "text": "食べると",
+        "img": ""
+      },
+      {
+        "text": "食べ買った",
+        "img": ""
+      },
+      {
+        "text": "食べ過ぎ",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Partikel syarat と setelah kata kerja bentuk kamus (食べると) menyatakan hubungan sebab-akibat alami atau kondisi fisik yang pasti terjadi: 'jika makan, tubuh saya langsung menjadi gatal'.",
+    "opt_detail": [
+      {
+        "kana": "食べると",
+        "rom": "",
+        "arti": "Jika makan syarat alami",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "食べ買った",
+        "rom": "",
+        "arti": "Salah bentuk tata bahasa",
+        "alasan": "Pilihan B (食べ買った) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "食べ過ぎ",
+        "rom": "",
+        "arti": "Terlalu banyak makan",
+        "alasan": "Pilihan C (食べ過ぎ) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "食べると (Jika makan syarat alami)",
+      "食べ買った (Salah bentuk tata bahasa)",
+      "食べ過ぎ (Terlalu banyak makan)"
+    ]
+  },
+  {
+    "no": 19,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A : あのう。。すみません\n\nB : はい、なんですか \n\nA : このかんじ の 読み方 を _____",
+    "options": [
+      {
+        "text": "教えてあげませんか。",
+        "img": ""
+      },
+      {
+        "text": "教えてほしいですか。",
+        "img": ""
+      },
+      {
+        "text": "教えてくださいませんか。",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Ungkapan permohonan sopan tingkat tinggi untuk meminta bantuan lawan bicara mengajari sesuatu adalah ~te kudasaimasen ka (教えてくださいませんか - sudikah Anda mengajari saya?).",
+    "opt_detail": [
+      {
+        "kana": "教えてあげませんか。",
+        "rom": "",
+        "arti": "Maukah Anda saya ajari?",
+        "alasan": "Pilihan A (教えてあげませんか。) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "教えてほしいですか。",
+        "rom": "",
+        "arti": "Apakah Anda ingin diajari?",
+        "alasan": "Pilihan B (教えてほしいですか。) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "教えてくださいませんか。",
+        "rom": "",
+        "arti": "Sudikah Anda mengajari saya? permohonan sopan",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "教えてあげませんか。 (Maukah Anda saya ajari?)",
+      "教えてほしいですか。 (Apakah Anda ingin diajari?)",
+      "教えてくださいませんか。 (Sudikah Anda mengajari saya? permohonan sopan)"
+    ]
+  },
+  {
+    "no": 20,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A : あのう、すみません、日本語 の 本 は クラス に 忘れました。\n\nB : どんな 本ですか。\n\nA : 名前 が _____",
+    "options": [
+      {
+        "text": "書いてあります",
+        "img": ""
+      },
+      {
+        "text": "書いています",
+        "img": ""
+      },
+      {
+        "text": "書いてください",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pola tata bahasa [Benda] が + kata kerja transitif bentuk ~te arimasu (名前が書いてあります) digunakan untuk menyatakan kondisi suatu benda yang sengaja telah diperbuat seseorang (tertulis nama).",
+    "opt_detail": [
+      {
+        "kana": "書いてあります",
+        "rom": "",
+        "arti": "Tertulis / tertera hasil perbuatan",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "書いています",
+        "rom": "",
+        "arti": "Sedang menulis",
+        "alasan": "Pilihan B (書いています) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "書いてください",
+        "rom": "",
+        "arti": "Tolong tuliskan",
+        "alasan": "Pilihan C (書いてください) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "書いてあります (Tertulis / tertera hasil perbuatan)",
+      "書いています (Sedang menulis)",
+      "書いてください (Tolong tuliskan)"
+    ]
+  },
+  {
+    "no": 21,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A : ________\n\nB : そうですね。",
+    "options": [
+      {
+        "text": "いい天気ですね",
+        "img": ""
+      },
+      {
+        "text": "木雨ですね",
+        "img": ""
+      },
+      {
+        "text": "雪が降りますね",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Gambar menunjukkan suasana cuaca yang cerah dan terang. Salam basa-basi cuaca yang sangat lazim digunakan adalah いい天気ですね (ii tenki desu ne - 'Cuacanya bagus/cerah ya'). Lawan bicara menyetujui: そうですね.",
+    "opt_detail": [
+      {
+        "kana": "いい天気ですね",
+        "rom": "",
+        "arti": "Cuaca yang bagus/cerah ya",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "木雨ですね",
+        "rom": "",
+        "arti": "Hujan kayu tidak ada",
+        "alasan": "Pilihan B (木雨ですね) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "雪が降りますね",
+        "rom": "",
+        "arti": "Turun salju ya",
+        "alasan": "Pilihan C (雪が降りますね) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "いい天気ですね (Cuaca yang bagus/cerah ya)",
+      "木雨ですね (Hujan kayu tidak ada)",
+      "雪が降りますね (Turun salju ya)"
+    ]
+  },
+  {
+    "no": 22,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "この 後、みんなと一緒に 食事にいくんです______\n\n一緒に行きませんか。",
+    "options": [
+      {
+        "text": "よかったら",
+        "img": ""
+      },
+      {
+        "text": "できれば",
+        "img": ""
+      },
+      {
+        "text": "食べたら",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Ungkapan よかったら (yokattara) digunakan saat mengajak seseorang secara sopan dan halus tanpa memaksa, yang bermakna 'kalau tidak keberatan / bila berkenan'.",
+    "opt_detail": [
+      {
+        "kana": "よかったら",
+        "rom": "",
+        "arti": "Kalau tidak keberatan / bila berkenan",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "できれば",
+        "rom": "",
+        "arti": "Sebisa mungkin",
+        "alasan": "Pilihan B (できれば) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "食べたら",
+        "rom": "",
+        "arti": "Setelah makan",
+        "alasan": "Pilihan C (食べたら) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "よかったら (Kalau tidak keberatan / bila berkenan)",
+      "できれば (Sebisa mungkin)",
+      "食べたら (Setelah makan)"
+    ]
+  },
+  {
+    "no": 23,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A :もしもし、エリカさんですか。私はトノです。\n\nB :トノさんですか____ です。お元気ですか。",
+    "options": [
+      {
+        "text": "お久しぶり",
+        "img": ""
+      },
+      {
+        "text": "よかった",
+        "img": ""
+      },
+      {
+        "text": "ざんねん",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Ketika menyapa orang yang sudah lama tidak saling kontak melalui telepon atau bertemu, ungkapan yang tepat adalah お久しぶりです (ohisashiburi desu - 'sudah lama tidak berjumpa/kontak').",
+    "opt_detail": [
+      {
+        "kana": "お久しぶり",
+        "rom": "",
+        "arti": "Sudah lama tidak jumpa / kontak",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "よかった",
+        "rom": "",
+        "arti": "Syukurlah",
+        "alasan": "Pilihan B (よかった) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "ざんねん",
+        "rom": "",
+        "arti": "Sayang sekali",
+        "alasan": "Pilihan C (ざんねん) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "お久しぶり (Sudah lama tidak jumpa / kontak)",
+      "よかった (Syukurlah)",
+      "ざんねん (Sayang sekali)"
+    ]
+  },
+  {
+    "no": 24,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "あのう、すみません、今のアナウンス は なんと_____",
+    "options": [
+      {
+        "text": "思いましたか",
+        "img": ""
+      },
+      {
+        "text": "言っていましたか",
+        "img": ""
+      },
+      {
+        "text": "書きましたか",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Untuk menanyakan isi pesan yang baru saja diumumkan melalui pengeras suara (アナウンス), ungkapan yang tepat adalah なんと言っていましたか (nan to itte imashita ka - 'tadi mengumumkan/bilang apa ya?').",
+    "opt_detail": [
+      {
+        "kana": "思いましたか",
+        "rom": "",
+        "arti": "Apakah Anda pikir",
+        "alasan": "Pilihan A (思いましたか) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "言っていましたか",
+        "rom": "",
+        "arti": "Tadi mengatakan apa",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "書きましたか",
+        "rom": "",
+        "arti": "Apakah Anda tulis",
+        "alasan": "Pilihan C (書きましたか) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "思いましたか (Apakah Anda pikir)",
+      "言っていましたか (Tadi mengatakan apa)",
+      "書きましたか (Apakah Anda tulis)"
+    ]
+  },
+  {
+    "no": 25,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A : 全部 かたづけましたか.\n\nB : はい, わかりました。\n\nA : 電気 が ついていますよ。\n\nB : あ、すみません。_____",
+    "options": [
+      {
+        "text": "いまからはじめます",
+        "img": ""
+      },
+      {
+        "text": "今度から気を付けます",
+        "img": ""
+      },
+      {
+        "text": "今度からお願いします",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Ketika diingatkan bahwa lampu masih menyala padahal seharusnya sudah dibereskan, respons meminta maaf dan berjanji akan lebih cermat adalah 今度から気を付けます (kondo kara ki wo tsukemasu - 'Mulai lain kali saya akan lebih berhati-hati').",
+    "opt_detail": [
+      {
+        "kana": "いまからはじめます",
+        "rom": "",
+        "arti": "Mulai sekarang saya mulai",
+        "alasan": "Pilihan A (いまからはじめます) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "今度から気を付けます",
+        "rom": "",
+        "arti": "Mulai lain kali saya akan lebih berhati-hati",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "今度からお願いします",
+        "rom": "",
+        "arti": "Mulai lain kali tolong ya",
+        "alasan": "Pilihan C (今度からお願いします) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "いまからはじめます (Mulai sekarang saya mulai)",
+      "今度から気を付けます (Mulai lain kali saya akan lebih berhati-hati)",
+      "今度からお願いします (Mulai lain kali tolong ya)"
+    ]
+  },
+  {
+    "no": 26,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "もしもし、佐藤さん、おはよう! あ、田中さん、おはよう。どうしたの? 今忙しい?電話しても大丈夫? うん、全然。今ちょうど朝ごはんを食べているところだよ。 へぇ、今日の朝ごはんは何? 今日はね、パンと卵。シンプルだけど一番美味しいよ。 いいね。卵はどうやって作ったの? 目玉焼きだよ。カリカリにトーストしたパンになせて食べてる。 うわぁ、美味しそう。コーヒーも飲んでるの? うん。ブラックコーヒー。パンと卵によく合うよ。 いい朝だね。なんだか私もパンと卵が食べたくなってきた。 ふふ、今度一緒に食べようか。 いいね。じゃあまた後でね。 うん。またね。\n\n● Sarapan paginya apa?",
+    "options": [
+      {
+        "text": "たまご",
+        "img": ""
+      },
+      {
+        "text": "パンとたまご",
+        "img": ""
+      },
+      {
+        "text": "ラーメン",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Dalam audio, Sato menjawab: '今日はねパンと卵。シンプルだけど一番美味しいよ。目玉焼きだよ。カリカリにトーストしたパンに載せて食べてる' (Hari ini roti dan telur. Telur mata sapi ditaruh di atas roti bakar renyah). Jadi menu sarapannya adalah roti dan telur (パンとたまご).",
+    "opt_detail": [
+      {
+        "kana": "たまご",
+        "rom": "",
+        "arti": "Telur saja",
+        "alasan": "Pilihan A (たまご) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "パンとたまご",
+        "rom": "",
+        "arti": "Roti dan telur",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "ラーメン",
+        "rom": "",
+        "arti": "Ramen",
+        "alasan": "Pilihan C (ラーメン) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "たまご (Telur saja)",
+      "パンとたまご (Roti dan telur)",
+      "ラーメン (Ramen)"
+    ],
+    "audio": "assets/c1.wav",
+    "trans": "Percakapan telepon antara Tanaka dan Sato di pagi hari."
+  },
+  {
+    "no": 27,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "もしもし今大丈夫うん大丈夫だよどうしたの ちょっと聞きたいんだけど今そっちの天気はどう 今日は晴れだよ青空が綺麗だよ えーいいなこっちも晴れてるよ 本当よかったねー 今日は暖かいし気持ちいいよそうなんだじゃあ午後に散歩しようかな いいね公園に行くの うんそのつまりそっちは出かける予定ある うん買い物に行こうと思ってる天気がいいからね それはいいねじゃあまた後で連絡するねうんまたね\n\n● Hari ini cuacanya bagaimana?",
+    "options": [
+      {
+        "text": "あめ",
+        "img": ""
+      },
+      {
+        "text": "くもり",
+        "img": ""
+      },
+      {
+        "text": "はれ",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Dalam percakapan terdengar: '今そっちの天気はどう？今日は晴れだよ。青空がきれいだよ。へえいいな、こっちも晴れてるよ' (Bagaimana cuaca di sana? Hari ini cerah, langit biru bersih. Di sini juga cerah). Jadi cuacanya adalah cerah (はれ).",
+    "opt_detail": [
+      {
+        "kana": "あめ",
+        "rom": "",
+        "arti": "Hujan ame",
+        "alasan": "Pilihan A (あめ) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "くもり",
+        "rom": "",
+        "arti": "Berawan kumori",
+        "alasan": "Pilihan B (くもり) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "はれ",
+        "rom": "",
+        "arti": "Cerah hare",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "あめ (Hujan ame)",
+      "くもり (Berawan kumori)",
+      "はれ (Cerah hare)"
+    ],
+    "audio": "assets/c2.wav",
+    "trans": "Percakapan menanyakan kondisi cuaca."
+  },
+  {
+    "no": 28,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "はい皆さん静かにしてください授業を始めますよ 先生今日はどこからですか 今日は新しいユニットに入ります教科書の120ページ120ページを開けてください 120ページですね はい開けました はいこのページの内容は少し難しいですがとても大切です ですから今はペンを置いて私の話をよく聞いてください 一度しか言いませんから集中して聞いてくださいね順にはいいですか はいお願いします\n\n● Untuk soal nomor 27 & 28, dengarkan baik-baik (Buka buku halaman berapa?)",
+    "options": [
+      {
+        "text": "110ページ",
+        "img": ""
+      },
+      {
+        "text": "120ページ",
+        "img": ""
+      },
+      {
+        "text": "220ページ",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Guru menginstruksikan kepada siswa di kelas: '今日は新しいユニットに入ります。教科書の120ページ、120ページを開けてください。百二十ページですね' (Buka halaman 120 buku pelajaran). Jadi halaman 120 (120ページ).",
+    "opt_detail": [
+      {
+        "kana": "110ページ",
+        "rom": "",
+        "arti": "Halaman 110",
+        "alasan": "Pilihan A (110ページ) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "120ページ",
+        "rom": "",
+        "arti": "Halaman 120",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "220ページ",
+        "rom": "",
+        "arti": "Halaman 220",
+        "alasan": "Pilihan C (220ページ) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "110ページ (Halaman 110)",
+      "120ページ (Halaman 120)",
+      "220ページ (Halaman 220)"
+    ],
+    "audio": "assets/c3.wav",
+    "trans": "Guru memberikan pengumuman di dalam kelas."
+  },
+  {
+    "no": 29,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "はい皆さん静かにしてください授業を始めますよ 先生今日はどこからですか 今日は新しいユニットに入ります教科書の120ページ120ページを開けてください 120ページですね はい開けました はいこのページの内容は少し難しいですがとても大切です ですから今はペンを置いて私の話をよく聞いてください 一度しか言いませんから集中して聞いてくださいね順にはいいですか はいお願いします\n\n● apa yang harus dilakukan siswa?",
+    "options": [
+      {
+        "text": "泳ぎます",
+        "img": ""
+      },
+      {
+        "text": "聞きます",
+        "img": ""
+      },
+      {
+        "text": "読みます",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Guru menegaskan: 'ですから今はペンを置いて、私の話をよく聞いてください。一度しか言いませんから集中して聞いてくださいね' (Oleh karena itu sekarang letakkan pulpen kalian dan dengarkan penjelasan saya baik-baik). Jadi siswa harus mendengarkan (聞きます).",
+    "opt_detail": [
+      {
+        "kana": "泳ぎます",
+        "rom": "",
+        "arti": "Berenang oyogimasu",
+        "alasan": "Pilihan A (泳ぎます) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "聞きます",
+        "rom": "",
+        "arti": "Mendengarkan kikimasu",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "読みます",
+        "rom": "",
+        "arti": "Membaca yomimasu",
+        "alasan": "Pilihan C (読みます) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "泳ぎます (Berenang oyogimasu)",
+      "聞きます (Mendengarkan kikimasu)",
+      "読みます (Membaca yomimasu)"
+    ],
+    "audio": "assets/c3.wav",
+    "trans": "Instruksi guru di kelas."
+  },
+  {
+    "no": 30,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "おはよう。今日もヨガをする? うん、もちろん。ヨガをすると体が軽くなるね。そうだね。最近、肩こりも良くなってきたよ。 本当?それはいいね。私はストレスも減った気がする。深呼吸すると気持ちも落ち着くよね。 うん。健康のためにこれからも続けよう。そうしよう。毎日の習慣にしたいね。\n\n● Apa yang mereka bicarakan ?",
+    "options": [
+      {
+        "text": "ヨガ",
+        "img": ""
+      },
+      {
+        "text": "買い物",
+        "img": ""
+      },
+      {
+        "text": "遊ぶ",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Dalam dialog terdengar: 'おはよう今日もヨガをする？うんもちろん。ヨガをすると体が軽くなるね... 健康のためにこれからも続けよう' (Selamat pagi, hari ini yoga juga? Tentu saja, melakukan yoga membuat badan terasa ringan). Topik yang dibicarakan adalah olahraga Yoga (ヨガ).",
+    "opt_detail": [
+      {
+        "kana": "ヨガ",
+        "rom": "",
+        "arti": "Yoga",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "買い物",
+        "rom": "",
+        "arti": "Berbelanja",
+        "alasan": "Pilihan B (買い物) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "遊ぶ",
+        "rom": "",
+        "arti": "Bermain",
+        "alasan": "Pilihan C (遊ぶ) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "ヨガ (Yoga)",
+      "買い物 (Berbelanja)",
+      "遊ぶ (Bermain)"
+    ],
+    "audio": "assets/c4.wav",
+    "trans": "Dua orang berbincang mengenai kebiasaan hidup sehat."
+  },
+  {
+    "no": 31,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "みなさんこんにちは 図書館からお知らせです 本は3週間借りることができます 3週間以内に返してください 土曜日は午後10時まで空いています よろしくお願いします\n\n● Untuk soal nomor 30 & 31    Berapa minggu batas peminjaman buku perpustakaan?",
+    "options": [
+      {
+        "text": "3 週間",
+        "img": ""
+      },
+      {
+        "text": "2 週間",
+        "img": ""
+      },
+      {
+        "text": "1 週間",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pengumuman dari perpustakaan menyatakan: '本は3週間借りることができます。3週間以内に返してください' (Buku dapat dipinjam selama 3 minggu. Harap kembalikan dalam 3 minggu). Jadi batasnya adalah 3 minggu (3週間).",
+    "opt_detail": [
+      {
+        "kana": "3 週間",
+        "rom": "",
+        "arti": "3 Minggu",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "2 週間",
+        "rom": "",
+        "arti": "2 Minggu",
+        "alasan": "Pilihan B (2 週間) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "1 週間",
+        "rom": "",
+        "arti": "1 Minggu",
+        "alasan": "Pilihan C (1 週間) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "3 週間 (3 Minggu)",
+      "2 週間 (2 Minggu)",
+      "1 週間 (1 Minggu)"
+    ],
+    "audio": "assets/c5.wav",
+    "trans": "Pengumuman resmi dari perpustakaan."
+  },
+  {
+    "no": 32,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "みなさんこんにちは 図書館からお知らせです 本は3週間借りることができます 3週間以内に返してください 土曜日は午後10時まで空いています よろしくお願いします\n\n● Sabtu malam buka sampai jam berapa?",
+    "options": [
+      {
+        "text": "午後 10 時まで",
+        "img": ""
+      },
+      {
+        "text": "午前 10 時まで",
+        "img": ""
+      },
+      {
+        "text": "午前  10 時 30 分まで",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pengumuman perpustakaan menyebutkan: '土曜日は午後10時まで空いています' (Pada hari Sabtu buka sampai jam 10 malam). Pilihan A: 午後10時まで (pukul 22.00 malam).",
+    "opt_detail": [
+      {
+        "kana": "午後 10 時まで",
+        "rom": "",
+        "arti": "Sampai pukul 10 malam 22:00",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "午前 10 時まで",
+        "rom": "",
+        "arti": "Sampai pukul 10 pagi",
+        "alasan": "Pilihan B (午前 10 時まで) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "午前  10 時 30 分まで",
+        "rom": "",
+        "arti": "Sampai pukul 10:30 pagi",
+        "alasan": "Pilihan C (午前  10 時 30 分まで) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "午後 10 時まで (Sampai pukul 10 malam 22:00)",
+      "午前 10 時まで (Sampai pukul 10 pagi)",
+      "午前  10 時 30 分まで (Sampai pukul 10:30 pagi)"
+    ],
+    "audio": "assets/c5.wav",
+    "trans": "Pengumuman jam operasional perpustakaan di hari Sabtu."
+  },
+  {
+    "no": 33,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "あ、ゆきさんおはようございます。 今日もいい天気ですね。 あ、ケンジさんおはようございます。 本当にそうですね。 そういえば、ゆきさんの家はどこですか? 学校から近いですか? いいえ、あまり近くないです。 歩くと40分ぐらいかかります。 ええ、40分は大変ですね。 自転車では来ないのですか? はい、私は自転車を持っていません。 それに道に坂が多いですから。 そうですか。 では毎日どうやって学校に来ていますか? 私は毎日バスを使ってきています。 バス停が家のすぐ近くにありますから。 ケンジさんはどうですか? 私は毎日自転車で来ていますよ。\n\n● Kendaraan apa yang di pakai perempuan?",
+    "options": [
+      {
+        "text": "あるきます",
+        "img": ""
+      },
+      {
+        "text": "バス",
+        "img": ""
+      },
+      {
+        "text": "じてんしゃ",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Kenji bertanya bagaimana Yuki pergi ke sekolah. Yuki menjawab: '私は毎日バスを使ってきています。バス停が家のすぐ近くにありますから' (Saya setiap hari naik bus, karena halte bus dekat sekali dari rumah). Sementara Kenji naik sepeda. Jadi perempuan naik bus (バス).",
+    "opt_detail": [
+      {
+        "kana": "あるきます",
+        "rom": "",
+        "arti": "Jalan kaki",
+        "alasan": "Pilihan A (あるきます) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "バス",
+        "rom": "",
+        "arti": "Bus",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "じてんしゃ",
+        "rom": "",
+        "arti": "Sepeda",
+        "alasan": "Pilihan C (じてんしゃ) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "あるきます (Jalan kaki)",
+      "バス (Bus)",
+      "じてんしゃ (Sepeda)"
+    ],
+    "audio": "assets/c6.wav",
+    "trans": "Percakapan dua teman sekolah mengenai transportasi harian."
+  },
+  {
+    "no": 34,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "ねえ、今年の夏休みはいつから始まるんだっけ? たしか、7月24日からだよ。カレンダーで確認したんだ。 よかった。結構長い休みになりそうだね。 もうどこに行くか決めた? まだはっきりとは決めてないんだけど、行きたい場所があるんだ。 どこどこ?おすすめの場所? うん、ネットで画像を見つけたんだけど、 駅のすぐ近くにきれいな神社がある場所なんだ。 ほら、この写真見て。 わー、すごい。駅のホームから鳥居が見えるんだね。 ここに行ってみたい。\n\n● Untuk soal no 33 & 34    Liburan musim panas mulai kapan?",
+    "options": [
+      {
+        "text": "7 月 14 日",
+        "img": ""
+      },
+      {
+        "text": "6 月 24 日",
+        "img": ""
+      },
+      {
+        "text": "7 月 24 日",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Dalam audio terdengar jelas: '今年の夏休みはいつから始まるんだっけ？確か7月24日からだよ。カレンダーで確認したんだ' (Liburan musim panas mulai kapan ya? Pasti mulai tanggal 24 Juli, saya sudah cek di kalender). Jadi tanggal 24 Juli (7月24日).",
+    "opt_detail": [
+      {
+        "kana": "7 月 14 日",
+        "rom": "",
+        "arti": "14 Juli",
+        "alasan": "Pilihan A (7 月 14 日) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "6 月 24 日",
+        "rom": "",
+        "arti": "24 Juni",
+        "alasan": "Pilihan B (6 月 24 日) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "7 月 24 日",
+        "rom": "",
+        "arti": "24 Juli",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "7 月 14 日 (14 Juli)",
+      "6 月 24 日 (24 Juni)",
+      "7 月 24 日 (24 Juli)"
+    ],
+    "audio": "assets/c7.wav",
+    "trans": "Percakapan merencanakan liburan musim panas."
+  },
+  {
+    "no": 35,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "ねえ、今年の夏休みはいつから始まるんだっけ? たしか、7月24日からだよ。カレンダーで確認したんだ。 よかった。結構長い休みになりそうだね。 もうどこに行くか決めた? まだはっきりとは決めてないんだけど、行きたい場所があるんだ。 どこどこ?おすすめの場所? うん、ネットで画像を見つけたんだけど、 駅のすぐ近くにきれいな神社がある場所なんだ。 ほら、この写真見て。 わー、すごい。駅のホームから鳥居が見えるんだね。 ここに行ってみたい。\n\n● Dimana tempat yang ingin di kunjungi?",
+    "options": [
+      {
+        "text": "駅のちかくじんじゃ",
+        "img": ""
+      },
+      {
+        "text": "駅のちかくスーパー",
+        "img": ""
+      },
+      {
+        "text": "駅のちかくうみ",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pembicara menceritakan: 'ネットで画像を見つけたんだけど、駅のすぐ近くに綺麗な神社がある場所なんだ。駅のホームから鳥居が見えるんだね。ここに行ってみたい' (Saya melihat foto di internet, ada kuil Shinto yang indah di dekat stasiun, gerbang torii terlihat dari peron). Tempat yang ingin dikunjungi adalah kuil Shinto dekat stasiun (駅のちかくじんじゃ).",
+    "opt_detail": [
+      {
+        "kana": "駅のちかくじんじゃ",
+        "rom": "",
+        "arti": "Kuil Shinto dekat stasiun",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "駅のちかくスーパー",
+        "rom": "",
+        "arti": "Supermarket dekat stasiun",
+        "alasan": "Pilihan B (駅のちかくスーパー) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "駅のちかくうみ",
+        "rom": "",
+        "arti": "Laut dekat stasiun",
+        "alasan": "Pilihan C (駅のちかくうみ) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "駅のちかくじんじゃ (Kuil Shinto dekat stasiun)",
+      "駅のちかくスーパー (Supermarket dekat stasiun)",
+      "駅のちかくうみ (Laut dekat stasiun)"
+    ],
+    "audio": "assets/c7.wav",
+    "trans": "Rencana tempat liburan musim panas."
+  },
+  {
+    "no": 36,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "すみませんスマホで電話してもコートの予約ができないんですが 掃除機の音がうるさかったですねすみません今電話もネットも使えないんです えっそうなんですか だから予約の電話がつながらなかったんですね はいシステムのエラーですからあちらの窓口で直接予約してください\n\n● Untuk soal no 35 & 36    Sicowo sedang apa?",
+    "options": [
+      {
+        "text": "Gambar orang menelpon",
+        "img": ""
+      },
+      {
+        "text": "Gambar orang pegang telpon",
+        "img": ""
+      },
+      {
+        "text": "Gambar orang pegang penyedot debu/Vacum cleaner",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Staf pria berkata: 'あ、掃除機の音がうるさかったですね。すみません' (Ah, suara mesin penyedot debu / vacuum cleaner tadi berisik ya, maaf). Menunjukkan bahwa si pria sedang membersihkan tempat dengan memegang vacuum cleaner.",
+    "opt_detail": [
+      {
+        "kana": "Gambar orang menelpon",
+        "rom": "",
+        "arti": "Gambar orang menelepon",
+        "alasan": "Pilihan A (Gambar orang menelpon) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "Gambar orang pegang telpon",
+        "rom": "",
+        "arti": "Gambar orang memegang telepon",
+        "alasan": "Pilihan B (Gambar orang pegang telpon) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "Gambar orang pegang penyedot debu/Vacum cleaner",
+        "rom": "",
+        "arti": "Gambar orang memegang penyedot debu / vacuum cleaner",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "Gambar orang menelpon (Gambar orang menelepon)",
+      "Gambar orang pegang telpon (Gambar orang memegang telepon)",
+      "Gambar orang pegang penyedot debu/Vacum cleaner (Gambar orang memegang penyedot debu / vacuum cleaner)"
+    ],
+    "audio": "assets/c8.wav",
+    "trans": "Situasi percakapan di tempat olahraga."
+  },
+  {
+    "no": 37,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "すみませんスマホで電話してもコートの予約ができないんですが 掃除機の音がうるさかったですねすみません今電話もネットも使えないんです えっそうなんですか だから予約の電話がつながらなかったんですね はいシステムのエラーですからあちらの窓口で直接予約してください\n\n● Perempuan mengalami masalah apa?",
+    "options": [
+      {
+        "text": "Gambar tidak bisa memesan dari telepon (orang memegang handphone)",
+        "img": ""
+      },
+      {
+        "text": "Gambar tidak bisa menelpon",
+        "img": ""
+      },
+      {
+        "text": "Gambar tidak bisa membeli barang online",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Perempuan tersebut menjelaskan masalahnya: 'すみません、スマホで電話してもコートの予約ができないんですが' (Permisi, meskipun menelepon dengan smartphone, saya tidak bisa melakukan booking lapangan). Masalahnya adalah tidak bisa memesan / reservasi lewat telepon seluler.",
+    "opt_detail": [
+      {
+        "kana": "Gambar tidak bisa memesan dari telepon (orang memegang handphone)",
+        "rom": "",
+        "arti": "Gambar tidak bisa memesan lapangan melalui telepon seluler",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "Gambar tidak bisa menelpon",
+        "rom": "",
+        "arti": "Gambar tidak bisa menelepon sama sekali",
+        "alasan": "Pilihan B (Gambar tidak bisa menelpon) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "Gambar tidak bisa membeli barang online",
+        "rom": "",
+        "arti": "Gambar tidak bisa membeli barang secara daring",
+        "alasan": "Pilihan C (Gambar tidak bisa membeli barang online) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "Gambar tidak bisa memesan dari telepon (orang memegang handphone) (Gambar tidak bisa memesan lapangan melalui telepon seluler)",
+      "Gambar tidak bisa menelpon (Gambar tidak bisa menelepon sama sekali)",
+      "Gambar tidak bisa membeli barang online (Gambar tidak bisa membeli barang secara daring)"
+    ],
+    "audio": "assets/c8.wav",
+    "trans": "Kendala pemesanan lapangan olahraga."
+  },
+  {
+    "no": 38,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ Dokkai ] Bacaan panjang perkenalan diri part 1",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "Gambar orang pegang buku warna biru",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pada bacaan perkenalan diri bagian 1, penulis menceritakan hobi membacanya dan selalu membawa buku catatan/buku berwarna biru (青い本). Ilustrasi yang sesuai dengan isi bacaan adalah gambar orang memegang buku berwarna biru.",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "Gambar orang pegang buku warna biru",
+        "rom": "",
+        "arti": "Gambar orang memegang buku berwarna biru",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "- (-)",
+      "Gambar orang pegang buku warna biru (Gambar orang memegang buku berwarna biru)"
+    ]
+  },
+  {
+    "no": 39,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ Dokkai ] Bacaan panjang perkenalan diri part 2",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "Gambar 2 orang mengobrol",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pada bagian kedua bacaan perkenalan diri, penulis menceritakan bagaimana ia menikmati waktu bercakap-cakap santai dan berdiskusi dengan teman-temannya di kelas. Gambar yang tepat adalah dua orang sedang mengobrol.",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "Gambar 2 orang mengobrol",
+        "rom": "",
+        "arti": "Gambar 2 orang sedang mengobrol / bercakap-cakap",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan C (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "Gambar 2 orang mengobrol (Gambar 2 orang sedang mengobrol / bercakap-cakap)",
+      "- (-)"
+    ]
+  },
+  {
+    "no": 40,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Pamflet Obat part 1",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "obat diminum ketika merasa せきがでる",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Berdasarkan pamflet petunjuk obat, obat tersebut diindikasikan khusus untuk meredakan gejala batuk (せきが出る時 / seki ga deru toki).",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "obat diminum ketika merasa せきがでる",
+        "rom": "",
+        "arti": "Obat diminum ketika merasa batuk せきがでる",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "- (-)",
+      "obat diminum ketika merasa せきがでる (Obat diminum ketika merasa batuk せきがでる)"
+    ]
+  },
+  {
+    "no": 41,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Pamflet Obat part 2",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "kapan minum obat : 食事の前に",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pada petunjuk pemakaian obat tertulis bahwa obat harus diminum sebelum makan (食事の前に / 食前 - shokuzen).",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "kapan minum obat : 食事の前に",
+        "rom": "",
+        "arti": "Waktu minum obat: Sebelum makan 食事の前に",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "- (-)",
+      "kapan minum obat : 食事の前に (Waktu minum obat: Sebelum makan 食事の前に)"
+    ]
+  },
+  {
+    "no": 42,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Bacaan panjang tentang restoran dan masakannya",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "値段がやすなかったです",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Dalam ulasan pengalaman bersantap di restoran hutan tersebut, diungkapkan bahwa makanannya sangat lezat namun harganya tidaklah murah (値段が安くなかったです / harganya cukup tinggi/mahal).",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "値段がやすなかったです",
+        "rom": "",
+        "arti": "Harganya tidak murah cukup mahal",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "- (-)",
+      "値段がやすなかったです (Harganya tidak murah cukup mahal)"
+    ]
+  },
+  {
+    "no": 43,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Apa yang bisa dilakukan di restoran ?",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "Jawabannya ada にわ nya",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pamflet restoran menerangkan fasilitas area pekarangan/taman yang luas di mana pengunjung atau anak-anak bisa bermain di taman (庭で遊びます / niwa de asobimasu).",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "Jawabannya ada にわ nya",
+        "rom": "",
+        "arti": "Bermain di taman pekarangan 庭で遊びます",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "- (-)",
+      "Jawabannya ada にわ nya (Bermain di taman pekarangan 庭で遊びます)"
+    ]
+  },
+  {
+    "no": 44,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Perintah Fotocopy \n\nsampai jam berapa paling lambat ?",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "13.00",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pada memo kerja kantor tertulis instruksi jelas: 13時までにコピーしてください (Tolong fotokopi dokumen sebelum pukul 13.00). Jadi paling lambat jam 13.00.",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "13.00",
+        "rom": "",
+        "arti": "Pukul 13.00",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "- (-)",
+      "13.00 (Pukul 13.00)"
+    ]
+  },
+  {
+    "no": 45,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] fotocopy ditaruh dimana ?",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "Gambar meja diatas ada kertas dan pamflet nama",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Memo menyebutkan agar dokumen hasil salinan ditaruh di atas meja kerja staf yang meminta (meja bertuliskan plang nama staf bersangkutan).",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "Gambar meja diatas ada kertas dan pamflet nama",
+        "rom": "",
+        "arti": "Gambar meja kerja yang di atasnya ada dokumen dan plang nama staf",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "- (-)",
+      "Gambar meja diatas ada kertas dan pamflet nama (Gambar meja kerja yang di atasnya ada dokumen dan plang nama staf)"
+    ]
+  },
+  {
+    "no": 46,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Pamflet makanan\n\nSampai Jam berapa モーニングセット (Morning Set)?",
+    "options": [
+      {
+        "text": "11:30",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pamflet kafe mencantumkan bahwa menu sarapan pagi (モーニングセット / Morning Set) dilayani hingga pukul 11:30.",
+    "opt_detail": [
+      {
+        "kana": "11:30",
+        "rom": "",
+        "arti": "Pukul 11:30",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan C (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "11:30 (Pukul 11:30)",
+      "- (-)",
+      "- (-)"
+    ]
+  },
+  {
+    "no": 47,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Berapa harga Kopi ?",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "550 円",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Berdasarkan daftar harga pada brosur menu kafe, harga untuk segelas kopi (コーヒー) tertera seharga 550 Yen (550円).",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "550 円",
+        "rom": "",
+        "arti": "550 Yen",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "- (-)",
+      "550 円 (550 Yen)"
+    ]
+  },
+  {
+    "no": 48,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Pemberitahuan ばにんかい:\n\nperayaan Acaranya kapan ?",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "12 月 14 日",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pada surat pemberitahuan pesta perayaan akhir tahun (忘年会), tertera tanggal pelaksanaan acara yaitu pada tanggal 14 Desember (12月14日).",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "12 月 14 日",
+        "rom": "",
+        "arti": "14 Desember 12月14日",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "- (-)",
+      "12 月 14 日 (14 Desember 12月14日)"
+    ]
+  },
+  {
+    "no": 49,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Apa yang perlu dibawa ?",
+    "options": [
+      {
+        "text": "飲み物",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Pada bagian 持ち物 (barang bawaan yang harus dibawa), tercantum 飲み物 (minuman), di mana para peserta diminta membawa minuman kesukaan masing-masing.",
+    "opt_detail": [
+      {
+        "kana": "飲み物",
+        "rom": "",
+        "arti": "Minuman 飲み物",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan C (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "飲み物 (Minuman 飲み物)",
+      "- (-)",
+      "- (-)"
+    ]
+  },
+  {
+    "no": 50,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Pamflet Restoran\n\nApa yang dilakukan didalam restoran ?",
+    "options": [
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "しんせんな きせつ りょうりが たべられる",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Keunggulan utama restoran yang disebutkan dalam pamflet adalah tamu dapat menyantap hidangan musiman yang segar (しんせんな 季節料理が 食べられる / 新鮮な季節料理が食べられる).",
+    "opt_detail": [
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan A (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "しんせんな きせつ りょうりが たべられる",
+        "rom": "",
+        "arti": "Dapat menyantap masakan musiman yang segar 新鮮な季節料理が食べられる",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      }
+    ],
+    "opt_note": [
+      "- (-)",
+      "- (-)",
+      "しんせんな きせつ りょうりが たべられる (Dapat menyantap masakan musiman yang segar 新鮮な季節料理が食べられる)"
+    ]
+  },
+  {
+    "no": 51,
+    "section": "SESI 4 : DOKKAI",
+    "title": "[ dokkai ] Sampai jam berapa ?",
+    "options": [
+      {
+        "text": "Jam 13.00",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      },
+      {
+        "text": "-",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "salah": "Pilihan lain tidak cocok dengan gambar/bacaan dan kunci file jawaban.",
+    "analisis": "[MNN Standar CBT] Berdasarkan dokumen instruksi atau pengumuman yang tercantum, batas waktu pelaksanaan kegiatan tersebut adalah tepat pada Jam 13.00.",
+    "opt_detail": [
+      {
+        "kana": "Jam 13.00",
+        "rom": "",
+        "arti": "Jam 13.00",
+        "alasan": "Jawaban yang benar sesuai konteks/penjelasan."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan B (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      },
+      {
+        "kana": "-",
+        "rom": "",
+        "arti": "-",
+        "alasan": "Pilihan C (-) bukan jawaban yang tepat untuk pertanyaan ini."
+      }
+    ],
+    "opt_note": [
+      "Jam 13.00 (Jam 13.00)",
+      "- (-)",
+      "- (-)"
+    ]
+  }
+]
