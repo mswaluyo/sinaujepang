@@ -125,3 +125,4 @@ with open('public/quizzes/konpyuutaa2-quiz/quiz-data.json', 'w', encoding='utf-8
     json.dump(quiz_items, out, ensure_ascii=False, indent=2)
 
 print(f"Generated public/quizzes/konpyuutaa2-quiz/quiz-data.json with {len(quiz_items)} questions!")
+

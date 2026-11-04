@@ -52,3 +52,4 @@ with open('public/quizzes/konpyuutaa2-quiz/quiz-data.json', 'w', encoding='utf-8
     json.dump(items, out, ensure_ascii=False, indent=2)
 
 print("Enriched konpyuutaa2-quiz sample!")
+

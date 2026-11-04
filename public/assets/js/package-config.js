@@ -56,7 +56,12 @@ window.PAKET_CONFIG = {
           "nama": "KONPYUUTAA 2",
           "slug": "konpyuutaa2-quiz",
           "total": 51,
-          "ikon": "K2"
+          "ikon": "K2",
+          "soalTambahan": {
+            "nama": "Soal Tambahan",
+            "slug": "konpyuutaa-tambahan-quiz",
+            "total": 63
+          }
         }
       ]
     },

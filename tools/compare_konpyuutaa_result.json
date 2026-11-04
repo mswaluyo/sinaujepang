@@ -1,0 +1,1314 @@
+{
+  "sameCount": 0,
+  "diffCount": 63,
+  "comparisons": [
+    {
+      "status": "DIFF",
+      "no1": 1,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "",
+      "options": [
+        {
+          "text": "コンピューター",
+          "img": ""
+        },
+        {
+          "text": "テレビ",
+          "img": ""
+        },
+        {
+          "text": "パソコン",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q1.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 2,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "",
+      "options": [
+        {
+          "text": "ととのった",
+          "img": ""
+        },
+        {
+          "text": "きれい",
+          "img": ""
+        },
+        {
+          "text": "きたない",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q2.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 3,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "",
+      "options": [
+        {
+          "text": "くるま",
+          "img": ""
+        },
+        {
+          "text": "バス",
+          "img": ""
+        },
+        {
+          "text": "タクシー",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q3.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 4,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "",
+      "options": [
+        {
+          "text": "もどります",
+          "img": ""
+        },
+        {
+          "text": "おとします",
+          "img": ""
+        },
+        {
+          "text": "おどします",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q4.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 5,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "",
+      "options": [
+        {
+          "text": "わらいます",
+          "img": ""
+        },
+        {
+          "text": "まよいます",
+          "img": ""
+        },
+        {
+          "text": "しかります",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q5.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 6,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "「目」のほうが多いです。",
+      "options": [
+        {
+          "text": "口",
+          "img": ""
+        },
+        {
+          "text": "目",
+          "img": ""
+        },
+        {
+          "text": "耳",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q6.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 7,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "",
+      "options": [
+        {
+          "text": "すてきなバッグ",
+          "img": ""
+        },
+        {
+          "text": "すてきなふく",
+          "img": ""
+        },
+        {
+          "text": "すてきなふくろ",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q7.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 8,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "この____のれきしは有名です。",
+      "options": [
+        {
+          "text": "えき",
+          "img": ""
+        },
+        {
+          "text": "こうえん",
+          "img": ""
+        },
+        {
+          "text": "りょうかん",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q8.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 9,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "お風呂に____。",
+      "options": [
+        {
+          "text": "入ります",
+          "img": ""
+        },
+        {
+          "text": "演じる",
+          "img": ""
+        },
+        {
+          "text": "面白い",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 10,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "強い風が____。",
+      "options": [
+        {
+          "text": "おぎます",
+          "img": ""
+        },
+        {
+          "text": "できます",
+          "img": ""
+        },
+        {
+          "text": "ふきます",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 11,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "このトマト、80____。",
+      "options": [
+        {
+          "text": "えは",
+          "img": ""
+        },
+        {
+          "text": "えん",
+          "img": ""
+        },
+        {
+          "text": "万",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 12,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "明日、____がきます。外へ出かけないでください。",
+      "options": [
+        {
+          "text": "台風",
+          "img": ""
+        },
+        {
+          "text": "風邪",
+          "img": ""
+        },
+        {
+          "text": "風",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 13,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "このスーパーのやさいは____です。",
+      "options": [
+        {
+          "text": "ゆすい",
+          "img": ""
+        },
+        {
+          "text": "やすい",
+          "img": ""
+        },
+        {
+          "text": "やずい",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 14,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "料理を____。",
+      "options": [
+        {
+          "text": "さくります",
+          "img": ""
+        },
+        {
+          "text": "つくります",
+          "img": ""
+        },
+        {
+          "text": "すくります",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 15,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "ぎんこうは____、ふべんです。",
+      "options": [
+        {
+          "text": "静かな",
+          "img": ""
+        },
+        {
+          "text": "遠くて",
+          "img": ""
+        },
+        {
+          "text": "甘い",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 16,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "わたしはりょうりを____できます。",
+      "options": [
+        {
+          "text": "みる",
+          "img": ""
+        },
+        {
+          "text": "ためす",
+          "img": ""
+        },
+        {
+          "text": "つくる",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 17,
+      "section": "SESI 1 : MOJIGOI",
+      "title1": "たくさんひとがくるので、コップが____です。",
+      "options": [
+        {
+          "text": "ねむい",
+          "img": ""
+        },
+        {
+          "text": "たべる",
+          "img": ""
+        },
+        {
+          "text": "ひつよう",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 18,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: 彼の家はどこですか？\nB: わたしのいえのちかくにきれいなこうえんが ( _______)",
+      "options": [
+        {
+          "text": "あります",
+          "img": ""
+        },
+        {
+          "text": "あいます",
+          "img": ""
+        },
+        {
+          "text": "あらいます",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q18.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 19,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: あぶない！おぼれそうです！_________！\nB: だいじょうぶ、すぐたすけます！",
+      "options": [
+        {
+          "text": "たすっだて",
+          "img": ""
+        },
+        {
+          "text": "たすけて",
+          "img": ""
+        },
+        {
+          "text": "だすけて",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q19.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 20,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: ごめんください\nB: いらっしゃい、どうぞあがってください",
+      "options": [
+        {
+          "text": "よるしく",
+          "img": ""
+        },
+        {
+          "text": "ありがとう",
+          "img": ""
+        },
+        {
+          "text": "おじゃまします",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 21,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: あたらしいとけいをかいました。\nB: わあ、＿＿＿＿＿＿！",
+      "options": [
+        {
+          "text": "わるいです",
+          "img": ""
+        },
+        {
+          "text": "かっこよかった、うれしいです",
+          "img": ""
+        },
+        {
+          "text": "だめです",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q21.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 22,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A:___________\nB: いいえ。",
+      "options": [
+        {
+          "text": "かまいません",
+          "img": ""
+        },
+        {
+          "text": "すみません",
+          "img": ""
+        },
+        {
+          "text": "しつれいします",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q22.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 23,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: 休みの日はいつからですか。\nB: 来月の10日からです。\nA: 休みの日は何をしますか。\nB: いいえ、＿＿＿＿＿＿。",
+      "options": [
+        {
+          "text": "どこも行きません",
+          "img": ""
+        },
+        {
+          "text": "なにもいません",
+          "img": ""
+        },
+        {
+          "text": "なにいきます",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 24,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "味はどう?",
+      "options": [
+        {
+          "text": "すずしかった",
+          "img": ""
+        },
+        {
+          "text": "たのしかった",
+          "img": ""
+        },
+        {
+          "text": "おいしかった",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q24.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 25,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: このてんぷらはおいしいですよ。\nB: すみません、あるれぎがあるので、えびを＿＿＿のがかゆいです。",
+      "options": [
+        {
+          "text": "たべると",
+          "img": ""
+        },
+        {
+          "text": "のむと",
+          "img": ""
+        },
+        {
+          "text": "すると",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 26,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: はじめまして。あさこさんにおひさしぶり。\nB: ____________________。",
+      "options": [
+        {
+          "text": "よかったです",
+          "img": ""
+        },
+        {
+          "text": "お久しぶりです",
+          "img": ""
+        },
+        {
+          "text": "さよなら",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 27,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "にもつがおもそうですね、_________\nありがとうございます。",
+      "options": [
+        {
+          "text": "もちましょうか?",
+          "img": ""
+        },
+        {
+          "text": "てつだいます",
+          "img": ""
+        },
+        {
+          "text": "てつだいつづけますか?",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q27.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 28,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "Konbini.\nA: あの ちょっと、\nB:あそこのコンビニへ（________）A:じゃあ いきましょう",
+      "options": [
+        {
+          "text": "いきたいんですが",
+          "img": ""
+        },
+        {
+          "text": "かえる",
+          "img": ""
+        },
+        {
+          "text": "かいもの",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q28.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 29,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: サラダはもうすこしいかがですか.\nB: ___________",
+      "options": [
+        {
+          "text": "でも眠い",
+          "img": ""
+        },
+        {
+          "text": "でももうおなかがいっぱいです",
+          "img": ""
+        },
+        {
+          "text": "でも私はしたくない",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 30,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: ミサトさんはげんきがじゃありませんね。\nB: かおのいろのあかくなりました。\nA: （ちょっとしんぱいです） \nB: こんどはなしをしてみます。\nA: おねがいします。",
+      "options": [
+        {
+          "text": "ちょっとめまいがする",
+          "img": ""
+        },
+        {
+          "text": "ちょっとしんぱいです",
+          "img": ""
+        },
+        {
+          "text": "恥ずかしいです",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q30.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 31,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: じしんあったとき、どうしますか?\nB: 机の上に_________",
+      "options": [
+        {
+          "text": "ちかづく",
+          "img": ""
+        },
+        {
+          "text": "かくれる",
+          "img": ""
+        },
+        {
+          "text": "はなれる",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q31.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 32,
+      "section": "SESI 2 : HYOUGEN",
+      "title1": "A: いらっしゃいませ、何がほしいですか?。\nB: バナナ、ふたふくろ___________",
+      "options": [
+        {
+          "text": "よろしく",
+          "img": ""
+        },
+        {
+          "text": "ください",
+          "img": ""
+        },
+        {
+          "text": "どうぞ",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q32.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 33,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "Ada percakapan tentang kuil tua",
+      "options": [
+        {
+          "text": "たてられたそうです",
+          "img": ""
+        },
+        {
+          "text": "たてられました",
+          "img": ""
+        },
+        {
+          "text": "たてるつもりです",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q33.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 34,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "Ada gambar perempuan duduk di meja sedang menulis dipinggirnya ada bacaan tentang dia bisa menulis 5000 kanji",
+      "options": [
+        {
+          "text": "かけるようになりました",
+          "img": ""
+        },
+        {
+          "text": "かきます",
+          "img": ""
+        },
+        {
+          "text": "かかないようにします",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q34.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 35,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "Ada gambar percakapan perempuan sama laki-laki, perempuannya bilang gak ngerti ことば",
+      "options": [
+        {
+          "text": "わからないんですが",
+          "img": ""
+        },
+        {
+          "text": "わかりますから",
+          "img": ""
+        },
+        {
+          "text": "しっていますが",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 36,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "Ada gambar orang yang nawarin penyedot debu, ada percakapan intinya penyedot debunya banyak fungsinya, tapi berat ketika digunakan",
+      "options": [
+        {
+          "text": "そうかもしれませんね",
+          "img": ""
+        },
+        {
+          "text": "そうですよ",
+          "img": ""
+        },
+        {
+          "text": "ちがいますよ",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q36.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 37,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "PERCAKAPAN : janji melihat film janji jam berpa? ",
+      "options": [
+        {
+          "text": "12.45 東口",
+          "img": ""
+        },
+        {
+          "text": "12.30 入口",
+          "img": ""
+        },
+        {
+          "text": "11.30 みなみ口",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 38,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "PERCAKAPAN :ke toko bertanya size baju  L warna hitam tapi tidak ada. #Jadi membeli ukuran apa? ",
+      "options": [
+        {
+          "text": "Ukuran XL warna hitam",
+          "img": "assets/konpyuutaa_q38a.jpg"
+        },
+        {
+          "text": "Ukuran S warna hitam",
+          "img": "assets/konpyuutaa_q38b.jpg"
+        },
+        {
+          "text": "Ukuran M warna hitam",
+          "img": "assets/konpyuutaa_q38c.jpg"
+        },
+        {
+          "text": "Ukuran M warna hitam",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 39,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "Apa yang dipinjam perempuan saat pergi SKI? ",
+      "options": [
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q39a.jpg"
+        },
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q39b.jpg"
+        },
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q39c.jpg"
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 40,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "( masih soal diatas) #apa yg akan dibeli dahulu sebelum berangkat? ",
+      "options": [
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q40a.jpg"
+        },
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q40b.jpg"
+        },
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q40c.jpg"
+        },
+        {
+          "text": "",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 41,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "ADA PERCAKAPAN : tentang MINUM OBAT BERAPA KALI SEHARI? ",
+      "options": [
+        {
+          "text": "1 回sehari",
+          "img": ""
+        },
+        {
+          "text": "２回sehari",
+          "img": ""
+        },
+        {
+          "text": "3 回 sehari",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 42,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "MASIH SOAL DIATAS : periksa kedokter disarankan bagaimana? ",
+      "options": [
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q42a.jpg"
+        },
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q42b.jpg"
+        },
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q42c.jpg"
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 43,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "ADA PERCAKAPAN TENTANG GEMPA hal apa y dilakukan saat gempa? ",
+      "options": [
+        {
+          "text": "Berlindung di bawah meja yang kokoh",
+          "img": "assets/konpyuutaa_q43a.jpg"
+        },
+        {
+          "text": "Lari keluar gedung menggunakan lift",
+          "img": ""
+        },
+        {
+          "text": "Berdiri di samping jendela kaca",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 44,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "MASIH SOAL DIATASpergi kemana saat gempa? ",
+      "options": [
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q44a.jpg"
+        },
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q44b.jpg"
+        },
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q44c.jpg"
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 45,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "TENTANG BIAYA MEMINJAM 1 JAM BERPA? ",
+      "options": [
+        {
+          "text": "450 円",
+          "img": ""
+        },
+        {
+          "text": "400 円",
+          "img": ""
+        },
+        {
+          "text": "300 円",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 46,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "PERCAKAPAN : tentang kopi. Apa yang dituangkan didalam kopi? ",
+      "options": [
+        {
+          "text": "Menuangkan gula / susu ke dalam cangkir kopi",
+          "img": "assets/konpyuutaa_q46a.jpg"
+        },
+        {
+          "text": "Menuangkan air es dingin",
+          "img": ""
+        },
+        {
+          "text": "Menuangkan kecap asin / shoyu",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 47,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "TENANG VESTIVAL COKLATA: dilantai berpa VESTIVAL coklat diadakan?? ",
+      "options": [
+        {
+          "text": "8階",
+          "img": ""
+        },
+        {
+          "text": "9階",
+          "img": ""
+        },
+        {
+          "text": "7階",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 48,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "MASIH SOAL DIATASB: kapan waktu selesai VESTIVAL?? ",
+      "options": [
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q48a.jpg"
+        },
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q48b.jpg"
+        },
+        {
+          "text": "",
+          "img": "assets/konpyuutaa_q48c.jpg"
+        },
+        {
+          "text": "",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 49,
+      "section": "SESI 3 : CHOUKAI",
+      "title1": "ADA GAMBAR PETA MENUNJUKKAN ARAH KEMANA? ",
+      "options": [
+        {
+          "text": "Stasiun",
+          "img": "assets/konpyuutaa_q49a.jpg"
+        },
+        {
+          "text": "Apato",
+          "img": "assets/konpyuutaa_q49b.jpg"
+        },
+        {
+          "text": "Sekolah",
+          "img": "assets/konpyuutaa_q49c.jpg"
+        },
+        {
+          "text": "Apato",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 50,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "ADA SMS YG BERISI AJAKAN#ingin pergi kemana?",
+      "options": [
+        {
+          "text": "Gunung",
+          "img": "assets/konpyuutaa_q50a.jpg"
+        },
+        {
+          "text": "Kota",
+          "img": "assets/konpyuutaa_q50b.jpg"
+        },
+        {
+          "text": "Pantai",
+          "img": "assets/konpyuutaa_q50c.jpg"
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 51,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "(b)  ingin melakukan apa dikota itu? ",
+      "options": [
+        {
+          "text": "Belanja",
+          "img": "assets/konpyuutaa_q51a.jpg"
+        },
+        {
+          "text": "Liburan",
+          "img": "assets/konpyuutaa_q51b.jpg"
+        },
+        {
+          "text": "Ntn film",
+          "img": "assets/konpyuutaa_q51c.jpg"
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 52,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "mendapatkan kado dari siapa?",
+      "options": [
+        {
+          "text": "ななさん",
+          "img": ""
+        },
+        {
+          "text": "やまださん",
+          "img": ""
+        },
+        {
+          "text": "さとうさん",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 53,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "(b) mendapatkan hadiah apa? ",
+      "options": [
+        {
+          "text": "Orange",
+          "img": "assets/konpyuutaa_q53a.jpg"
+        },
+        {
+          "text": "Pink",
+          "img": "assets/konpyuutaa_q53b.jpg"
+        },
+        {
+          "text": "Kuning",
+          "img": "assets/konpyuutaa_q53c.jpg"
+        },
+        {
+          "text": "Pink",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 54,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "apa yg tidak boleh dilakukan ditaman?",
+      "options": [
+        {
+          "text": "ペットを公園に連れて行きます（Dilarang membawa hewan peliharaan）",
+          "img": "assets/konpyuutaa_q54a.jpg"
+        },
+        {
+          "text": "公園で散歩をします（Jalan-jalan santai di taman）",
+          "img": ""
+        },
+        {
+          "text": "ベンチに座って本を読みます（Duduk di bangku membaca buku）",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 55,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "(b) apa yang dilakukan ditaman? ",
+      "options": [
+        {
+          "text": "ゴミは所定の場所に捨て、炭は消してください（Buang sampah pada tempatnya dan matikan arang）",
+          "img": "assets/konpyuutaa_q55a.jpg"
+        },
+        {
+          "text": "ゴミはそのまま地面に置いて帰ります（Tinggalkan sampah di tanah）",
+          "img": ""
+        },
+        {
+          "text": "火がついたままの炭を放置します（Biarkan arang tetap membara）",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 56,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "4(a) bisa mendengarkan musik dimna? ",
+      "options": [
+        {
+          "text": "ホール",
+          "img": ""
+        },
+        {
+          "text": "うち",
+          "img": ""
+        },
+        {
+          "text": "うみ",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 57,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "(b) kapan makananya ada banyak? ",
+      "options": [
+        {
+          "text": "15.30",
+          "img": ""
+        },
+        {
+          "text": "14.00",
+          "img": ""
+        },
+        {
+          "text": "15.00",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 58,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "5(a) sabtu toko buka jam berapa? ",
+      "options": [
+        {
+          "text": "11.00",
+          "img": ""
+        },
+        {
+          "text": "15.00",
+          "img": ""
+        },
+        {
+          "text": "16.00",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q58.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 59,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "(b) toko libur hari apa? ",
+      "options": [
+        {
+          "text": "日曜日",
+          "img": ""
+        },
+        {
+          "text": "月曜日",
+          "img": ""
+        },
+        {
+          "text": "⽊曜⽇",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 60,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "6(a) es criem diberikan setelah apa? ",
+      "options": [
+        {
+          "text": "遊んだ後",
+          "img": ""
+        },
+        {
+          "text": "飲んだ後",
+          "img": ""
+        },
+        {
+          "text": "ご飯を⻝べる",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q60.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 61,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "(b) menunjukkan tiket pas kapan? ",
+      "options": [
+        {
+          "text": "食べる",
+          "img": ""
+        },
+        {
+          "text": "注⽂",
+          "img": ""
+        },
+        {
+          "text": "買う",
+          "img": ""
+        }
+      ],
+      "img": "assets/konpyuutaa_q61.jpg"
+    },
+    {
+      "status": "DIFF",
+      "no1": 62,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "7 (a) スタッフ紹介 (Sutaffu Shōkai / Perkenalan Staf) Tentang menanyakan pekerjan seseorang. #bekerjanya dimna.? ",
+      "options": [
+        {
+          "text": "スポーツのコーチをしています。",
+          "img": "assets/konpyuutaa_q62a.jpg"
+        },
+        {
+          "text": "としょしつで働いています。",
+          "img": "assets/konpyuutaa_q62b.jpg"
+        },
+        {
+          "text": "学校の先生をしています。",
+          "img": "assets/konpyuutaa_q62c.jpg"
+        },
+        {
+          "text": "としょしつで働いています。",
+          "img": ""
+        }
+      ]
+    },
+    {
+      "status": "DIFF",
+      "no1": 63,
+      "section": "SESI 4 : DOKKAI",
+      "title1": "7 ( b ) スタッフ紹介 (Sutaffu Shōkai / Perkenalan Staf)  ",
+      "options": [
+        {
+          "text": "英語で説明することができます。（Bisa menjelaskan dalam bahasa Inggris）",
+          "img": ""
+        },
+        {
+          "text": "日本語で説明することができます。（Bisa menjelaskan dalam bahasa Jepang）",
+          "img": ""
+        },
+        {
+          "text": "中国語で説明することができます。（Bisa menjelaskan dalam bahasa Mandarin）",
+          "img": ""
+        }
+      ]
+    }
+  ]
+}
