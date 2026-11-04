@@ -9,7 +9,7 @@ import { fileURLToPath } from 'node:url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const ROOT = path.resolve(__dirname, '..');
-const PACK_DIR = path.join(ROOT, 'public');
+const PACK_DIR = fs.existsSync(path.join(ROOT, 'public', 'quizzes')) ? path.join(ROOT, 'public', 'quizzes') : path.join(ROOT, 'public');
 const ISSUES = [];
 
 function validateQuiz(quiz, fileName) {
