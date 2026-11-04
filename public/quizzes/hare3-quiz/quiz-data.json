@@ -1158,25 +1158,25 @@
     "trans": "A: Apakah sudah [pergi] ke planetarium?\nB: Belum.",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pola `もう + bentuk lampau (〜ましたか)` menanyakan apakah sudah melakukan suatu hal ke tempat tujuan (planetarium). Respon `まだです` (belum) mengonfirmasi bahwa kata kerja yang tepat adalah **行きましたか (sudah pergi?)**.",
+    "analisis": "[MNN Bab 7 / Bab 31 - Bentuk Lampau & Percakapan] Pola `もう + bentuk lampau (〜ましたか)` menanyakan apakah sudah melakukan suatu tindakan ke tempat tujuan (planetarium). Respon `まだです` (belum) mengonfirmasi bahwa kata kerja lampau tanya yang tepat adalah **行きましたか (sudah pergi?)**.",
     "opt_detail": [
       {
-        "kana": "買い物します",
-        "rom": "-",
-        "arti": "Berbelanja (買い物します)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "kana": "かいものします",
+        "rom": "kaimono shimasu",
+        "arti": "berbelanja",
+        "alasan": "買い物します adalah bentuk sekarang non-tanya, tidak cocok untuk merespons ajakan atau pertanyaan pengalaman yang dijawab まだです."
       },
       {
-        "kana": "料理ますか",
-        "rom": "-",
-        "arti": "Memasak? (料理ますか)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "kana": "りょうりますか",
+        "rom": "ryoorimasu ka",
+        "arti": "apakah memasak?",
+        "alasan": "料理ますか secara tata bahasa salah (seharusnya 料理しますか) dan tidak logis dipasangkan dengan tempat planetarium."
       },
       {
-        "kana": "行きましたか",
-        "rom": "-",
-        "arti": "Sudah pergi? (行きましたか)",
-        "alasan": "Pilihan tepat. Pola `もう + bentuk lampau (〜ましたか)` menanyakan apakah sudah melakukan suatu hal ke tempat tujuan (planetarium). Respon `まだです` (belum) mengonfirmasi bahwa kata kerja yang tepat adalah **行きましたか (sudah pergi?)**."
+        "kana": "いきましたか",
+        "rom": "ikimashita ka",
+        "arti": "apakah sudah pergi?",
+        "alasan": "行きましたか adalah bentuk lampau tanya yang tepat untuk pola もう〜ましたか (sudahkah pergi?), dijawab まだです."
       }
     ],
     "opt_note": [
@@ -1212,25 +1212,25 @@
     "trans": "A: Persiapan pesta minggu depan [mau bagaimana pembagiannya]?\nB: Saya akan membawa minuman.",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Jawaban B menyatakan tindakan yang akan dilakukannya (`私は飲み物を持ってきます`). Pertanyaan yang menanyakan bagaimana rencana atau pembagian tindakan bersama adalah **どうしますか (mau bagaimana rencana kita?)**.",
+    "analisis": "[MNN Bab 14 / Bab 16 - Koordinasi & Rencana] Jawaban B menyatakan tindakan yang akan dilakukannya (`私は飲み物を持ってきます`). Pertanyaan pembuka untuk koordinasi pembagian tugas bersama adalah **どうしますか (bagaimana rencana/tindakan kita?)**.",
     "opt_detail": [
       {
         "kana": "どうしたんですか",
-        "rom": "-",
-        "arti": "Ada apa? (どうしたんですか)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "dooshitan desu ka",
+        "arti": "ada apa / apa yang terjadi?",
+        "alasan": "どうしたんですか digunakan untuk menanyakan keadaan seseorang yang tampak sakit/kesulitan, bukan pembagian persiapan pesta."
       },
       {
         "kana": "どうですか",
-        "rom": "-",
-        "arti": "Bagaimana keadaannya? (どうですか)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "doo desu ka",
+        "arti": "bagaimana pendapatmu?",
+        "alasan": "どうですか menanyakan kesan atau menawarkan sesuatu, bukan menanyakan tindakan apa yang harus dilakukan."
       },
       {
         "kana": "どうしますか",
-        "rom": "-",
-        "arti": "Bagaimana rencananya / mau bagaimana? (どうしますか)",
-        "alasan": "Pilihan tepat. Jawaban B menyatakan tindakan yang akan dilakukannya (`私は飲み物を持ってきます`). Pertanyaan yang menanyakan bagaimana rencana atau pembagian tindakan bersama adalah **どうしますか (mau bagaimana rencana kita?)**."
+        "rom": "doo shimasu ka",
+        "arti": "mau bagaimana tindakannya?",
+        "alasan": "どうしますか menanyakan koordinasi rencana tindakan bersama, langsung direspons dengan pembagian tugas 持ってきます."
       }
     ],
     "opt_note": [
@@ -1266,25 +1266,25 @@
     "trans": "A: [Permisi], saya ingin memesan makanan.\nB: Baik, mau pesan apa?",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Untuk memanggil pelayan di restoran sebelum menyampaikan pesanan (`注文したいんです`), ungkapan yang tepat digunakan adalah **すみません (Sumimasen = Permisi)**.",
+    "analisis": "[MNN Bab 1 / Bab 26 - Percakapan Restoran & Frasa Sopan] Untuk memanggil perhatian pelayan di restoran sebelum menyampaikan pesanan (`注文したいんです`), ungkapan yang lazim dan tepat digunakan adalah **すみません (Sumimasen = Permisi)**.",
     "opt_detail": [
       {
         "kana": "どうぞ",
-        "rom": "-",
-        "arti": "Silakan (どうぞ)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "doozo",
+        "arti": "silakan",
+        "alasan": "どうぞ digunakan saat mempersilakan orang lain melakukan sesuatu, bukan untuk memanggil pelayan."
       },
       {
-        "kana": "お大事に",
-        "rom": "-",
-        "arti": "Semoga lekas sembuh (お大事に)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "kana": "おだいじに",
+        "rom": "odaiji ni",
+        "arti": "semoga lekas sembuh",
+        "alasan": "お大事に diucapkan kepada orang yang sedang sakit, sama sekali tidak relevan di konteks restoran."
       },
       {
         "kana": "すみません",
-        "rom": "-",
-        "arti": "Permisi / Maaf (すみません)",
-        "alasan": "Pilihan tepat. Untuk memanggil pelayan di restoran sebelum menyampaikan pesanan (`注文したいんです`), ungkapan yang tepat digunakan adalah **すみません (Sumimasen = Permisi)**."
+        "rom": "sumimasen",
+        "arti": "permisi / maaf",
+        "alasan": "すみません adalah kata standar untuk memanggil perhatian pelayan saat ingin memesan makanan."
       }
     ],
     "opt_note": [
@@ -1320,25 +1320,25 @@
     "trans": "A: Hari libur ingin pergi ke mana?\nB: Saya ingin pergi ke Okinawa, sih...\nA: Bagus ya. Karena sangat padat, sebaiknya pergi [sebisa mungkin] lebih pagi/cepat.",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Frasa **できるだけ早く (dekiru dake hayaku)** berarti 'sebisa mungkin secepat/diawal waktu mungkin'. Ungkapan ini sangat lazim digunakan saat menyarankan waktu keberangkatan.",
+    "analisis": "[MNN Bab 32 - Saran & Keterangan Derajat] Frasa **できるだけ早く (dekiru dake hayaku)** berarti 'sebisa mungkin secepat mungkin / seawal mungkin'. Kalimat menyarankan `早く行ったほうがいいです` karena kondisi tempat wisata sangat ramai (`すごくこみますから`).",
     "opt_detail": [
       {
         "kana": "できれば",
-        "rom": "-",
-        "arti": "Jika memungkinkan (できれば)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "dekireba",
+        "arti": "jika memungkinkan",
+        "alasan": "できれば bermakna 'kalau bisa', kurang tepat dipasangkan langsung membentuk frasa keterangan できるだけ早く."
       },
       {
         "kana": "かならず",
-        "rom": "-",
-        "arti": "Pasti / Harus (かならず)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "kanarazu",
+        "arti": "pasti / selalu",
+        "alasan": "かならず menyatakan kepastian mutlak (100%), kurang pas dengan nuansa anjuran kondisional tempat ramai."
       },
       {
         "kana": "できるだけ",
-        "rom": "-",
-        "arti": "Sebisa mungkin / Sedapatnya (できるだけ)",
-        "alasan": "Pilihan tepat. Frasa **できるだけ早く (dekiru dake hayaku)** berarti 'sebisa mungkin secepat/diawal waktu mungkin'. Ungkapan ini sangat lazim digunakan saat menyarankan waktu keberangkatan."
+        "rom": "dekiru dake",
+        "arti": "sebisa mungkin",
+        "alasan": "できるだけ (sebisanya) berkolokasi alami dengan 早く (secepat/seawal mungkin) memberikan saran pencegahan antrean."
       }
     ],
     "opt_note": [
@@ -1374,25 +1374,25 @@
     "trans": "A: Apakah kamu suka kue?\nB: Tidak, [saya tidak suka].",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Karena jawaban dimulai dengan `いいえ` (tidak), kelanjutannya harus bermakna negatif. Bentuk negatif dari `すき` adalah **すきじゃない (tidak suka)** atau `すきではありません`.",
+    "analisis": "[MNN Bab 8 - Kata Sifat-Na Bentuk Negatif] Kata sifat-na `好き (suki)` memerlukan bentuk penyangkalan ketika jawaban diawali kata `いいえ (tidak)`. Bentuk negatif informal/kasual yang tepat adalah **すきじゃない (tidak suka)**.",
     "opt_detail": [
       {
         "kana": "すきじゃない",
-        "rom": "-",
-        "arti": "Tidak suka (すきじゃない)",
-        "alasan": "Pilihan tepat. Karena jawaban dimulai dengan `いいえ` (tidak), kelanjutannya harus bermakna negatif. Bentuk negatif dari `すき` adalah **すきじゃない (tidak suka)** atau `すきではありません`."
+        "rom": "suki janai",
+        "arti": "tidak suka",
+        "alasan": "すきじゃない adalah bentuk negatif yang tepat untuk merespons penyangkalan いいえ terhadap pertanyaan ケーキは好きですか."
       },
       {
         "kana": "すきです",
-        "rom": "-",
-        "arti": "Suka (すきです)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "suki desu",
+        "arti": "suka",
+        "alasan": "すきです adalah bentuk afirmatif (positif), kontradiktif dengan awalan jawaban いいえ."
       },
       {
         "kana": "とてもすき",
-        "rom": "-",
-        "arti": "Sangat suka (とてもすき)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "totemo suki",
+        "arti": "sangat suka",
+        "alasan": "とてもすき bermakna sangat suka (positif kuat), bertolak belakang dengan kata いいえ."
       }
     ],
     "opt_note": [
@@ -1428,25 +1428,25 @@
     "trans": "Hari ini saya [tidak pergi keluar] ke mana pun. Saya akan santai di rumah.",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Kalimat kedua menyatakan `家でゆっくりします` (bersantai di rumah), artinya dia tidak bepergian keluar. Pola `どこへも + negatif` berpasangan tepat dengan **でかけません (tidak bepergian/keluar rumah)**.",
+    "analisis": "[MNN Bab 5 - Partikel Perpindahan & Negatif Total] Kalimat kedua menyatakan `家でゆっくりします` (bersantai di rumah). Pola penyangkalan total ke mana pun adalah `どこへも + bentuk negatif`. Kata kerja perpindahan yang tepat adalah **でかけません (tidak bepergian keluar)**.",
     "opt_detail": [
       {
         "kana": "いません",
-        "rom": "-",
-        "arti": "Tidak ada (いません)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "imasen",
+        "arti": "tidak ada (makhluk hidup)",
+        "alasan": "いません adalah keberadaan makhluk hidup, bukan kata kerja gerak/aktivitas untuk partikel perpindahan へ."
       },
       {
         "kana": "でかけません",
-        "rom": "-",
-        "arti": "Tidak keluar / tidak bepergian (でかけません)",
-        "alasan": "Pilihan tepat. Kalimat kedua menyatakan `家でゆっくりします` (bersantai di rumah), artinya dia tidak bepergian keluar. Pola `どこへも + negatif` berpasangan tepat dengan **でかけません (tidak bepergian/keluar rumah)**."
+        "rom": "dekakemasen",
+        "arti": "tidak bepergian keluar",
+        "alasan": "どこへも出かけません tepat menyatakan tidak pergi ke mana-mana karena ingin bersantai di rumah."
       },
       {
         "kana": "いきます",
-        "rom": "-",
-        "arti": "Pergi (いきます)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "ikimasu",
+        "arti": "pergi (positif)",
+        "alasan": "いきます adalah bentuk positif, bertentangan dengan partikel penyangkalan total どこへも dan penjelasan 家でゆっくりします."
       }
     ],
     "opt_note": [
@@ -1482,25 +1482,25 @@
     "trans": "Foto ini adalah hari yang penuh kenangan. Selamanya akan...",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Karena foto tersebut menyimpan kenangan yang indah (`おもいで`), ungkapan yang tepat adalah **たいせつにします (menjaga dengan baik / menyimpannya berharga)**. Frasa `ずっと大切にします` sangat umum bermakna 'akan saya rawat/hargai selamanya'.",
+    "analisis": "[MNN Bab 19 / Bab 41 - Frasa Idiomatis Merawat/Menjaga] Kalimat menyatakan foto tersebut adalah kenangan indah (`おもいでのひ`). Frasa standar bahasa Jepang untuk menjaga/merawat kenangan dengan baik selamanya adalah `ずっと` + **たいせつにします (menjaganya berharga)**.",
     "opt_detail": [
       {
         "kana": "たいせつにします",
-        "rom": "-",
-        "arti": "Menjaga dengan baik / Menghargai (たいせつにします)",
-        "alasan": "Pilihan tepat. Karena foto tersebut menyimpan kenangan yang indah (`おもいで`), ungkapan yang tepat adalah **たいせつにします (menjaga dengan baik / menyimpannya berharga)**. Frasa `ずっと大切にします` sangat umum bermakna 'akan saya rawat/hargai selamanya'."
+        "rom": "taisetsu ni shimasu",
+        "arti": "menjaga baik-baik / merawat berharga",
+        "alasan": "ずっと大切にします bermakna akan selalu merawat dan menyimpan kenangan indah ini dengan baik."
       },
       {
         "kana": "かいます",
-        "rom": "-",
-        "arti": "Membeli (かいます)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "kaimasu",
+        "arti": "membeli",
+        "alasan": "かいます (membeli) tidak masuk akal karena foto kenangan pribadi tersebut sudah dimiliki."
       },
       {
         "kana": "わすれます",
-        "rom": "-",
-        "arti": "Melupakan (わすれます)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "wasuremasu",
+        "arti": "melupakan",
+        "alasan": "わすれます (melupakan) bertolak belakang dengan nilai foto yang disebut sebagai おもいで (kenangan)."
       }
     ],
     "opt_note": [
@@ -1536,25 +1536,25 @@
     "trans": "Saya berdoa semoga [ada / terjadi] hal-hal yang baik.",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pola `〜ように (お祈りします)` menyatakan doa atau harapan. Subjek doa adalah hal abstrak `良いこと` (hal-hal baik), sehingga kata kerja keberadaan yang tepat adalah `ある`, menjadi **あるように (semoga ada hal baik)**.",
+    "analisis": "[MNN Bab 36 - Pola Harapan & Doa 〜ように] Pola `〜ように (お祈りします)` menyatakan doa atau harapan agar suatu kondisi terwujud. Subjek doa adalah hal abstrak benda mati `良いこと` (hal-hal baik), sehingga kata kerja keberadaan yang tepat adalah `ある` menjadi **あるように (semoga ada)**.",
     "opt_detail": [
       {
         "kana": "あるように",
-        "rom": "-",
-        "arti": "Semoga ada (hal/benda) (あるように)",
-        "alasan": "Pilihan tepat. Pola `〜ように (お祈りします)` menyatakan doa atau harapan. Subjek doa adalah hal abstrak `良いこと` (hal-hal baik), sehingga kata kerja keberadaan yang tepat adalah `ある`, menjadi **あるように (semoga ada hal baik)**."
+        "rom": "aru yoo ni",
+        "arti": "semoga ada / terjadi",
+        "alasan": "あるように tepat berpasangan dengan subjek benda abstrak 良いこと (hal-hal baik) dan kata kerja keberadaan ある."
       },
       {
         "kana": "いるように",
-        "rom": "-",
-        "arti": "Semoga ada (makhluk hidup) (いるように)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "iru yoo ni",
+        "arti": "semoga ada (makhluk bernyawa)",
+        "alasan": "いる hanya digunakan untuk makhluk bernyawa (orang/hewan), salah jika digunakan untuk hal abstrak こと."
       },
       {
         "kana": "おもうように",
-        "rom": "-",
-        "arti": "Seperti yang dipikirkan (おもうように)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "omou yoo ni",
+        "arti": "seperti yang dipikirkan",
+        "alasan": "おもうように berarti 'sesuai yang dipikirkan', tidak cocok dengan struktur gramatikal doa 良いことが〜."
       }
     ],
     "opt_note": [
@@ -1590,25 +1590,25 @@
     "trans": "Jaket itu [keren] ya! Di mana kamu membelinya?",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Kata sifat yang paling tepat dan natural untuk memuji pakaian seperti jaket adalah **かっこいい (kakkoii = keren/modis)**. Pilihan まずい artinya rasa tidak enak.",
+    "analisis": "[MNN Bab 8 / Bab 12 - Kata Sifat Pujian Penampilan] Kata sifat yang paling tepat dan natural untuk memuji busana jaket keren adalah **かっこいい (kakkoii = keren/modis)**. Pilihan きれい biasanya untuk kebersihan atau kecantikan wajah/pemandangan.",
     "opt_detail": [
       {
         "kana": "きれい",
-        "rom": "-",
-        "arti": "Indah / Bersih (きれい)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "kirei",
+        "arti": "cantik / bersih",
+        "alasan": "きれい kurang lazim dipakai untuk memuji gaya jaket pria/kasual dibanding kata かっこいい."
       },
       {
         "kana": "かっこいい",
-        "rom": "-",
-        "arti": "Keren / Bergaya (かっこいい)",
-        "alasan": "Pilihan tepat. Kata sifat yang paling tepat dan natural untuk memuji pakaian seperti jaket adalah **かっこいい (kakkoii = keren/modis)**. Pilihan まずい artinya rasa tidak enak."
+        "rom": "kakkoii",
+        "arti": "keren / bergaya",
+        "alasan": "かっこいい adalah kata sifat paling umum dan alami untuk memuji model jaket yang modis."
       },
       {
         "kana": "まずい",
-        "rom": "-",
-        "arti": "Tidak enak rasa (まずい)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "mazui",
+        "arti": "tidak enak / gawat",
+        "alasan": "まずい mengacu pada rasa makanan yang tidak enak atau situasi gawat, salah konteks."
       }
     ],
     "opt_note": [
@@ -1644,25 +1644,25 @@
     "trans": "A: Saya mau burger. Kalau kamu?\nB: Saya mau ramen. Kalau begitu, saya yang pesankan ya.\nA: [......].",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Ketika seseorang menawarkan diri untuk memesankan makanan ke pelayan (`じゃあ、注文するね`), respons yang sopan dan lazim untuk menitipkan pesanan adalah **お願いします (Onegaishimasu = Minta tolong ya / Tolong ya)**.",
+    "analisis": "[MNN Bab 13 / Bab 26 - Percakapan Sehari-hari Menitip Pesanan] Ketika teman menawarkan diri untuk memesankan makanan ke pelayan (`じゃあ、注文するね`), respons yang sopan dan lazim untuk mengiyakan dan menitip adalah **お願いします (Onegaishimasu = Minta tolong ya / Tolong ya)**.",
     "opt_detail": [
       {
         "kana": "ありがとう",
-        "rom": "-",
-        "arti": "Terima kasih (ありがとう)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "arigatoo",
+        "arti": "terima kasih",
+        "alasan": "ありがとう kurang lengkap sebagai serah terima permintaan pesanan sebelum pesanan tersebut diproses."
       },
       {
-        "kana": "お願いします",
-        "rom": "-",
-        "arti": "Minta tolong ya (お願いします)",
-        "alasan": "Pilihan tepat. Ketika seseorang menawarkan diri untuk memesankan makanan ke pelayan (`じゃあ、注文するね`), respons yang sopan dan lazim untuk menitipkan pesanan adalah **お願いします (Onegaishimasu = Minta tolong ya / Tolong ya)**."
+        "kana": "おねがいします",
+        "rom": "onegaishimasu",
+        "arti": "minta tolong ya",
+        "alasan": "お願いします adalah respons standar paling alami ketika seseorang menawarkan bantuan memesankan makanan."
       },
       {
         "kana": "どうぞ",
-        "rom": "-",
-        "arti": "Silakan (どうぞ)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "doozo",
+        "arti": "silakan",
+        "alasan": "どうぞ digunakan saat menawarkan sesuatu kepada lawan bicara, bukan saat menitipkan pesanan."
       }
     ],
     "opt_note": [
@@ -1698,25 +1698,25 @@
     "trans": "A: Ini hadiah ulang tahunmu. Semoga kamu suka ya.\nB: Wah, terima kasih! Senang sekali dapat barang sebagus ini.\nA: Benarkah? Kamu suka? Jaga baik-baik ya.\nB: [......].",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Menjawab pesan dari pemberi kado `大事にしてね` (jaga/sayangi baik-baik ya), jawaban yang sopan dan berterima kasih adalah **はい、大切にします (Hai, taisetsu ni shimasu = Ya, akan saya rawat baik-baik)**.",
+    "analisis": "[MNN Bab 7 / Bab 41 - Menerima Hadiah & Tanggapan Janji] Menjawab pesan dari pemberi kado `大事にしてね` (rawat baik-baik ya), respons sopan yang menegaskan bahwa penerima akan menjaga hadiah tersebut adalah **はい、大切にします (Hai, taisetsu ni shimasu)**.",
     "opt_detail": [
       {
         "kana": "まあまあですね",
-        "rom": "-",
-        "arti": "Biasa saja (まあまあですね)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "maamaa desu ne",
+        "arti": "lumayan / biasa saja",
+        "alasan": "まあまあですね sangat tidak sopan karena meremehkan hadiah pemberian orang lain."
       },
       {
         "kana": "ありがとう",
-        "rom": "-",
-        "arti": "Terima kasih (ありがとう)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "arigatoo",
+        "arti": "terima kasih",
+        "alasan": "ありがとう sudah diucapkan di awal, respons terhadap permintaan khusus 大事にしてね memerlukan konfirmasi kesanggupan."
       },
       {
-        "kana": "はい、大切にします",
-        "rom": "-",
-        "arti": "Ya, akan saya rawat/jaga baik-baik (はい、大切にします)",
-        "alasan": "Pilihan tepat. Menjawab pesan dari pemberi kado `大事にしてね` (jaga/sayangi baik-baik ya), jawaban yang sopan dan berterima kasih adalah **はい、大切にします (Hai, taisetsu ni shimasu = Ya, akan saya rawat baik-baik)**."
+        "kana": "はい、たいせつにします",
+        "rom": "hai, taisetsu ni shimasu",
+        "arti": "ya, akan saya rawat baik-baik",
+        "alasan": "はい、大切にします menyepakati permintaan 大事にしてね dengan penuh rasa hormat dan janji merawat hadiah."
       }
     ],
     "opt_note": [
@@ -1752,25 +1752,25 @@
     "trans": "A: Ah, Annisa-san, sudah lama ya tidak bertemu.\nB: Iya, sudah lama sekali.\nA: Silakan masuk ke dalam rumah.\nB: Baik, [permisi].",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Saat dipersilakan naik/masuk ke dalam rumah oleh pemilik rumah (`どうぞ、上がってください`), tamu menjawab dengan **おじゃまします (Ojamashimasu)** saat melangkah masuk.",
+    "analisis": "[MNN Bab 17 / Bab 24 - Aisatsu Bertamu ke Rumah Orang] Saat dipersilakan melangkah naik ke dalam rumah orang Jepang (`どうぞ、上がってください`), ucapan salam sopan wajib yang diucapkan tamu saat melangkah masuk adalah **おじゃまします (Ojamashimasu = Permisi mengganggu)**.",
     "opt_detail": [
       {
         "kana": "おじゃまします",
-        "rom": "-",
-        "arti": "Permisi, saya masuk (おじゃまします)",
-        "alasan": "Pilihan tepat. Saat dipersilakan naik/masuk ke dalam rumah oleh pemilik rumah (`どうぞ、上がってください`), tamu menjawab dengan **おじゃまします (Ojamashimasu)** saat melangkah masuk."
+        "rom": "ojamashimasu",
+        "arti": "permisi mengganggu",
+        "alasan": "おじゃまします adalah salam tata krama wajib saat memasuki rumah atau ruangan orang lain atas undangan pemilik rumah."
       },
       {
         "kana": "おねがいします",
-        "rom": "-",
-        "arti": "Tolong ya (おねがいします)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "onegaishimasu",
+        "arti": "mohon bantuannya",
+        "alasan": "おねがいします digunakan untuk meminta tolong atau memulai kerja sama, bukan salam masuk rumah."
       },
       {
         "kana": "ごめんください",
-        "rom": "-",
-        "arti": "Permisi, ada orang? (ごめんください)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "gomen kudasai",
+        "arti": "permisi (di depan pintu)",
+        "alasan": "ごめんください diucapkan di luar pintu/genkan saat baru tiba untuk memanggil penghuni, bukan saat dipersilakan masuk."
       }
     ],
     "opt_note": [
@@ -1806,25 +1806,25 @@
     "trans": "A: Bulan depan ada rencana pergi ke suatu tempat?\nB: Emm... Akhir-akhir ini pekerjaan sibuk, jadi [tidak pergi ke mana-mana].",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Menanyakan rencana bulan depan (`来月` = masa depan), sehingga predikat berbentuk masa kini/akan datang negatif (`いきません`). Untuk menyatakan penyangkalan total ke mana pun digunakan **どこにもいきません**.",
+    "analisis": "[MNN Bab 5 / Bab 29 - Partikel Pilihan & Negatif Menyangkal Rencana] Penanya menanyakan rencana bulan depan (`来月どこかへ行く予定ですか`). Lawan bicara beralasan sibuk kerja (`仕事が忙しくて`), sehingga predikatnya menyangkal pergi ke mana pun yaitu **どこにもいきません (tidak pergi ke mana pun)**.",
     "opt_detail": [
       {
         "kana": "どこにもいきません",
-        "rom": "-",
-        "arti": "Tidak pergi ke mana-mana (どこにもいきません)",
-        "alasan": "Pilihan tepat. Menanyakan rencana bulan depan (`来月` = masa depan), sehingga predikat berbentuk masa kini/akan datang negatif (`いきません`). Untuk menyatakan penyangkalan total ke mana pun digunakan **どこにもいきません**."
+        "rom": "dokonimo ikimasen",
+        "arti": "tidak pergi ke mana pun",
+        "alasan": "どこにもいきません tepat menyatakan penafian total rencana masa depan akibat kesibukan kerja saat ini."
       },
       {
         "kana": "どこへもいきまんでした",
-        "rom": "-",
-        "arti": "Bentuk lampau salah ketik (どこへもいきまんでした)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "dokoemo ikimandeshita",
+        "arti": "salah tata bahasa",
+        "alasan": "どこへもいきまんでした memiliki kesalahan ejaan (いきまんでした bukan い spectral) serta bentuk lampau, padahal konteks rencana bulan depan."
       },
       {
         "kana": "どこでもいきません",
-        "rom": "-",
-        "arti": "Tata bahasa salah (どこでもいきません)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "doko demo ikimasen",
+        "arti": "ke mana saja tidak pergi",
+        "alasan": "Partikel でも tidak lazim dipakai dengan kata kerja negatif いきません dalam pola penyangkalan tempat."
       }
     ],
     "opt_note": [
@@ -1860,25 +1860,25 @@
     "trans": "[Akhirnya] saya berhasil lulus ujian. — Selamat ya!",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Kata keterangan **やっと (yatto)** berarti 'akhirnya', digunakan ketika sebuah tujuan atau harapan tercapai setelah melewati waktu yang lama atau usaha keras. Pasangannya `やっと〜合格できました` (akhirnya berhasil lulus).",
+    "analisis": "[MNN Bab 46 / Fukushi Tingkat Keberhasilan] Kata keterangan **やっと (yatto)** berarti 'akhirnya', digunakan saat suatu keberhasilan tercapai setelah perjuangan berat atau penantian panjang. Sangat pas berpasangan dengan `テストに合格できました`.",
     "opt_detail": [
       {
         "kana": "やっと",
-        "rom": "-",
-        "arti": "Akhirnya (setelah berjuang lama) (やっと)",
-        "alasan": "Pilihan tepat. Kata keterangan **やっと (yatto)** berarti 'akhirnya', digunakan ketika sebuah tujuan atau harapan tercapai setelah melewati waktu yang lama atau usaha keras. Pasangannya `やっと〜合格できました` (akhirnya berhasil lulus)."
+        "rom": "yatto",
+        "arti": "akhirnya (setelah perjuangan)",
+        "alasan": "やっと mengekspresikan rasa lega atas kelulusan ujian yang telah lama dipersiapkan dan dinantikan."
       },
       {
         "kana": "そろそろ",
-        "rom": "-",
-        "arti": "Sebentar lagi / saatnya (そろそろ)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "sorosoro",
+        "arti": "sebentar lagi / perlahan",
+        "alasan": "そろそろ digunakan untuk mengajak atau menandakan waktu pamit/mulai, bukan hasil kelulusan."
       },
       {
         "kana": "なかなか",
-        "rom": "-",
-        "arti": "Cukup / tak kunjung (なかなか)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "nakanaka",
+        "arti": "cukup / tak kunjung (negatif)",
+        "alasan": "なかなか jika diikuti bentuk positif bermakna 'cukup mengesankan', bukan penanda pencapaian setelah usaha keras."
       }
     ],
     "opt_note": [
@@ -1914,25 +1914,25 @@
     "trans": "Maafkan saya karena datang terlambat... — Tidak apa-apa, santai saja.",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembicara datang terlambat (`遅くなって`), maka harus meminta maaf dengan sopan kepada lawan bicara. Ungkapan meminta maaf yang formal adalah **もうしわけありません (Moushiwake arimasen)**.",
+    "analisis": "[MNN Bab 26 / Bab 50 - Keigo & Permintaan Maaf Sopan] Pembicara menyadari dirinya terlambat (`遅くなって`), sehingga harus meminta maaf secara sopan dan formal. Ungkapan meminta maaf yang tepat adalah **もうしわけありません (Moushiwake arimasen)**, yang dibalas dengan `いいえ、大丈夫です`.",
     "opt_detail": [
       {
         "kana": "もうしわけありません",
-        "rom": "-",
-        "arti": "Mohon maaf sebesar-besarnya (もうしわけありません)",
-        "alasan": "Pilihan tepat. Pembicara datang terlambat (`遅くなって`), maka harus meminta maaf dengan sopan kepada lawan bicara. Ungkapan meminta maaf yang formal adalah **もうしわけありません (Moushiwake arimasen)**."
+        "rom": "mooshiwake arimasen",
+        "arti": "mohon maaf sebesar-besarnya",
+        "alasan": "申し訳ありません adalah ungkapan permohonan maaf resmi yang paling tepat atas keterlambatan."
       },
       {
         "kana": "しょうしょうおまちください",
-        "rom": "-",
-        "arti": "Mohon tunggu sebentar (しょうしょうおまちください)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "shooshoo omachi kudasai",
+        "arti": "mohon tunggu sebentar",
+        "alasan": "少々お待ちください digunakan untuk meminta lawan bicara menunggu, tidak cocok saat sudah terlambat hadir."
       },
       {
         "kana": "べつにかまいません",
-        "rom": "-",
-        "arti": "Tidak masalah (べつにかまいません)",
-        "alasan": "Pilihan kurang tepat sesuai konteks soal."
+        "rom": "betsu ni kamaimasen",
+        "arti": "tidak masalah kok",
+        "alasan": "別にかまいません adalah respons pihak yang memaafkan/tidak keberatan, bukan ungkapan dari orang yang berbuat salah."
       }
     ],
     "opt_note": [
@@ -2520,7 +2520,7 @@
         "kana": "8 月 20 日",
         "rom": "hachigatsu hatsuka",
         "arti": "tanggal 20 Agustus",
-        "alasan": "Salah bulan."
+        "alasan": "Pilihan ini salah karena menyebutkan bulan yang tidak sesuai dengan jadwal yang tertulis di teks pengumuman Dokkai."
       },
       {
         "kana": "7 月 20 日 / 7 月 2 日",

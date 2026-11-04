@@ -436,3 +436,4 @@ with open(HARE3_PATH, 'w', encoding='utf-8') as f:
     json.dump(quiz, f, ensure_ascii=False, indent=2)
 
 print('SUCCESS: Enriched public/quizzes/hare3-quiz/quiz-data.json with high-detail Orimasu 2 standard!')
+
