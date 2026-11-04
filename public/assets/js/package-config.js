@@ -45,7 +45,12 @@ window.PAKET_CONFIG = {
           "nama": "HARE 3",
           "slug": "hare3-quiz",
           "total": 55,
-          "ikon": "H3"
+          "ikon": "H3",
+          "soalTambahan": {
+            "nama": "Soal Tambahan",
+            "slug": "hare-tambahan-quiz",
+            "total": 68
+          }
         }
       ]
     },
