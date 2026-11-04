@@ -272,34 +272,42 @@
       talkTimer: 0
     };
 
-    // ── Helper Ambil Bone (Support Normalized Bone Node & Raw Bone Node) ──
+    // ── Helper Ambil Bone Node Tiga Tingkat (Normalized, Raw, atau Object Hierarchy) ──
     function getBone(vrm, name) {
       if (!vrm || !vrm.humanoid) return null;
-      return vrm.humanoid.getNormalizedBoneNode(name) || vrm.humanoid.getRawBoneNode(name);
+      let node = vrm.humanoid.getNormalizedBoneNode(name);
+      if (node) return node;
+      if (typeof vrm.humanoid.getRawBoneNode === 'function') {
+        node = vrm.humanoid.getRawBoneNode(name);
+        if (node) return node;
+      }
+      if (vrm.humanoid.humanBones && vrm.humanoid.humanBones[name]) {
+        return vrm.humanoid.humanBones[name].node || null;
+      }
+      return null;
     }
 
-    // ── Pose Resmi Sato-san: Tangan Bertaut di Atas Meja (Sesuai Foto Kenji Sato) ──
+    // ── Pose Resmi Sato-san: Duduk Tegak & Kedua Tangan Bertaut Rapi di Atas Meja ──
     function applySatoExecutivePose(vrm) {
       if (!vrm || !vrm.humanoid) return;
 
+      // 1. Turunkan lengan atas rapat ke samping badan & maju mengarah ke meja
       const lua = getBone(vrm, 'leftUpperArm');
       const rua = getBone(vrm, 'rightUpperArm');
+      if (lua) lua.rotation.set(-0.45, 0.25, -1.25);
+      if (rua) rua.rotation.set(-0.45, -0.25, 1.25);
+
+      // 2. Tekuk siku ke depan tengah meja
       const lla = getBone(vrm, 'leftLowerArm');
       const rla = getBone(vrm, 'rightLowerArm');
-      const lh = getBone(vrm, 'leftHand');
-      const rh = getBone(vrm, 'rightHand');
-
-      // 1. Turunkan lengan atas rapat ke samping badan & maju sedikit ke arah meja
-      if (lua) lua.rotation.set(-0.42, 0.22, -1.25);
-      if (rua) rua.rotation.set(-0.42, -0.22, 1.25);
-
-      // 2. Tekuk siku lengan bawah ke dalam membentuk sudut segitiga di atas meja
-      if (lla) lla.rotation.set(0.15, -0.80, 1.65);
-      if (rla) rla.rotation.set(0.15, 0.80, -1.65);
+      if (lla) lla.rotation.set(0.20, -0.85, 1.65);
+      if (rla) rla.rotation.set(0.20, 0.85, -1.65);
 
       // 3. Tangan bertaut di tengah meja
-      if (lh) lh.rotation.set(0.20, 0.15, 0.40);
-      if (rh) rh.rotation.set(0.20, -0.15, -0.40);
+      const lh = getBone(vrm, 'leftHand');
+      const rh = getBone(vrm, 'rightHand');
+      if (lh) lh.rotation.set(0.15, 0.15, 0.40);
+      if (rh) rh.rotation.set(0.15, -0.15, -0.40);
     }
 
     // Pose Zoom Asisten Yuki-chan (Lengan rileks ke samping bawah)
@@ -328,6 +336,7 @@
         VRMUtils.removeUnnecessaryVertices(gltf.scene);
         VRMUtils.combineSkeletons(gltf.scene);
         vrm.scene.rotation.y = 0;
+        vrm.scene.position.set(0, -0.05, 0);
         satoRoom.scene.add(vrm.scene);
         applySatoExecutivePose(vrm);
         if (vrm.expressionManager) vrm.expressionManager.setValue('happy', 0.35);
@@ -357,6 +366,7 @@
         VRMUtils.removeUnnecessaryVertices(gltf.scene);
         VRMUtils.combineSkeletons(gltf.scene);
         vrm.scene.rotation.y = 0;
+        vrm.scene.position.set(0, -0.05, 0);
         yukiRoom.scene.add(vrm.scene);
         applyYukiZoomPose(vrm);
 
