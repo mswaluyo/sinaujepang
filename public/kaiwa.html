@@ -316,20 +316,6 @@
       if (rla) rla.rotation.set(0, 0, -0.20);
     }
 
-    // Pose Zoom Asisten Yuki-chan (Rileks Santai)
-    function applyYukiZoomPose(vrm) {
-      if (!vrm || !vrm.humanoid) return;
-      const leftUpperArm = vrm.humanoid.getNormalizedBoneNode('leftUpperArm');
-      const rightUpperArm = vrm.humanoid.getNormalizedBoneNode('rightUpperArm');
-      if (leftUpperArm) leftUpperArm.rotation.set(0, 0, -1.35);
-      if (rightUpperArm) rightUpperArm.rotation.set(0, 0, 1.35);
-
-      const leftLowerArm = vrm.humanoid.getNormalizedBoneNode('leftLowerArm');
-      const rightLowerArm = vrm.humanoid.getNormalizedBoneNode('rightLowerArm');
-      if (leftLowerArm) leftLowerArm.rotation.set(0, 0, 0.2);
-      if (rightLowerArm) rightLowerArm.rotation.set(0, 0, -0.2);
-    }
-
     // ── Load Sato-san.vrm ──
     const loaderSato = new GLTFLoader();
     loaderSato.register((parser) => new VRMLoaderPlugin(parser));
