@@ -1,932 +1,490 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kaiwa AI — 会話練習</title>
-<style>
-/* ── RESET & BASE ── */
-*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-:root {
-  --bg:        #0c0c18;
-  --surface:   rgba(255,255,255,0.04);
-  --border:    rgba(255,255,255,0.09);
-  --accent:    #7c9dff;
-  --accent2:   #ff7cb0;
-  --text:      #e8e8f0;
-  --muted:     rgba(255,255,255,0.4);
-  --green:     #4dffaa;
-  --yellow:    #ffd166;
-  --radius:    16px;
-}
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Segoe UI', 'Noto Sans JP', sans-serif;
-  min-height: 100vh;
-  display: flex; flex-direction: column; align-items: center;
-  justify-content: center;
-  padding: 16px;
-}
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Zoom Kaiwa Practice - Sinau Jepang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
 
-/* ── API KEY GATE ── */
-#apiGate {
-  width: 100%; max-width: 460px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 32px;
-  display: flex; flex-direction: column; gap: 16px;
-  backdrop-filter: blur(12px);
-}
-#apiGate h1 { font-size: 1.4rem; }
-#apiGate p  { font-size: 0.82rem; color: var(--muted); line-height: 1.6; }
-.api-input {
-  background: rgba(0,0,0,0.3);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 12px 14px;
-  color: var(--text);
-  font-size: 0.9rem;
-  outline: none;
-  width: 100%;
-  font-family: monospace;
-  letter-spacing: 1px;
-}
-.api-input:focus { border-color: var(--accent); }
-.btn-primary {
-  padding: 12px 20px;
-  background: linear-gradient(135deg, #5566ee, #7c3aed);
-  border: none; border-radius: 10px;
-  color: white; font-size: 0.9rem; font-weight: 600;
-  cursor: pointer; transition: transform 0.15s, opacity 0.15s;
-  width: 100%;
-}
-.btn-primary:hover { transform: translateY(-1px); opacity: 0.9; }
-.btn-primary:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
-.note {
-  font-size: 0.72rem; color: var(--muted);
-  background: rgba(255,255,255,0.03);
-  border: 1px solid var(--border);
-  border-radius: 8px; padding: 10px 12px; line-height: 1.7;
-}
+  <!-- Import map untuk Three.js dan @pixiv/three-vrm -->
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://cdn.jsdelivr.net/npm/three@0.169.0/build/three.module.js",
+        "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.169.0/examples/jsm/",
+        "@pixiv/three-vrm": "https://cdn.jsdelivr.net/npm/@pixiv/three-vrm@3.3.4/lib/three-vrm.module.min.js"
+      }
+    }
+  </script>
 
-/* ── MAIN APP ── */
-#app {
-  display: none;
-  width: 100%; max-width: 960px;
-  height: 96vh;
-  grid-template-columns: 320px 1fr;
-  gap: 16px;
-}
-#app.visible { display: grid; }
-
-/* ── CHARACTER PANEL ── */
-.char-panel {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 20px 16px;
-  display: flex; flex-direction: column; gap: 14px;
-  align-items: center;
-  backdrop-filter: blur(10px);
-  overflow: hidden;
-}
-
-.char-name { font-size: 1rem; font-weight: 700; color: var(--accent); letter-spacing: 1px; }
-.char-sub  { font-size: 0.72rem; color: var(--muted); text-align: center; }
-
-/* SVG Avatar */
-.avatar-wrap {
-  position: relative;
-  width: 200px; height: 250px;
-  flex-shrink: 0;
-}
-.avatar-svg { width: 200px; height: 250px; filter: drop-shadow(0 6px 20px rgba(124,157,255,0.25)); }
-
-@keyframes sway  { 0%,100%{transform:rotate(-1deg) translateY(0)} 50%{transform:rotate(1deg) translateY(-3px)} }
-@keyframes hNod  { 0%,100%{transform:translateY(0) rotate(0deg)} 50%{transform:translateY(2px) rotate(.5deg)} }
-@keyframes blink { 0%,93%,100%{transform:scaleY(1)} 96%{transform:scaleY(.05)} }
-@keyframes hairS { 0%,100%{transform:skewX(-.8deg)} 50%{transform:skewX(.8deg)} }
-@keyframes blushA{ 0%,100%{opacity:.3} 50%{opacity:.65} }
-@keyframes mIdle { 0%,100%{d:path("M93 153 Q108 158 123 153")} 50%{d:path("M95 153 Q108 156 121 153")} }
-@keyframes mTalk { 0%,100%{d:path("M93 153 Q108 162 123 153")} 25%{d:path("M93 153 Q108 168 123 153")} 50%{d:path("M95 157 Q108 150 121 157")} 75%{d:path("M93 153 Q108 165 123 153")} }
-@keyframes waveA { 0%,100%{transform:rotate(0deg) translateY(0)} 25%{transform:rotate(-18deg) translateY(-4px)} 75%{transform:rotate(12deg) translateY(-2px)} }
-
-.g-body { animation: sway 3.2s ease-in-out infinite; }
-.g-head { animation: hNod 3.2s ease-in-out infinite; transform-origin:110px 130px; }
-.eye-l, .eye-r { animation: blink 4.5s ease-in-out infinite; transform-origin:center; }
-.hair-front { animation: hairS 3.2s ease-in-out infinite; }
-.blush-l,.blush-r { animation: blushA 3.2s ease-in-out infinite; }
-.mouth { animation: mIdle .6s ease-in-out infinite; }
-.mouth.talk { animation: mTalk .18s ease-in-out infinite; }
-.r-arm { animation: waveA 1.6s ease-in-out infinite; transform-origin:158px 180px; }
-
-/* Emotion bubble */
-.emo-bubble {
-  position: absolute;
-  top: -6px; right: -6px;
-  width: 34px; height: 34px;
-  background: rgba(255,220,100,.95);
-  border-radius: 50%;
-  display: flex; align-items: center; justify-content: center;
-  font-size: 1.1rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,.3);
-  transition: transform .2s;
-}
-
-/* Scenario & mood buttons */
-.section-label { font-size: .68rem; color: var(--muted); align-self:flex-start; text-transform:uppercase; letter-spacing:1px; }
-.pill-group { display:flex; gap:6px; flex-wrap:wrap; }
-.pill {
-  padding: 4px 10px;
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: 20px;
-  font-size: .72rem;
-  color: var(--muted);
-  cursor: pointer;
-  transition: all .2s;
-}
-.pill:hover, .pill.on { background: rgba(124,157,255,.18); border-color: var(--accent); color: var(--accent); }
-
-/* Stats row */
-.stats-row { display:flex; gap:8px; width:100%; }
-.stat-box {
-  flex:1; background:rgba(0,0,0,.25); border-radius:10px;
-  padding:8px 6px; text-align:center;
-}
-.stat-val { font-size:.9rem; font-weight:700; color:var(--accent); }
-.stat-lbl { font-size:.62rem; color:var(--muted); margin-top:2px; }
-
-/* ── CHAT PANEL ── */
-.chat-panel {
-  display: flex; flex-direction: column; gap: 12px;
-  height: 100%;
-}
-
-.chat-header {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 12px 16px;
-  display: flex; align-items: center; gap: 10px;
-  flex-wrap: wrap;
-}
-.live-dot {
-  width: 8px; height: 8px; border-radius: 50%; background: var(--green);
-  animation: pulse 1.5s ease-in-out infinite;
-}
-@keyframes pulse { 0%,100%{opacity:1;box-shadow:0 0 0 0 rgba(77,255,170,.4)} 50%{opacity:.7;box-shadow:0 0 0 5px rgba(77,255,170,0)} }
-
-.model-badge {
-  font-size: .65rem; padding: 3px 8px; border-radius: 20px; font-weight:700;
-  background: linear-gradient(135deg, #5566ee, #7c3aed); color: white;
-  margin-left: auto;
-}
-
-.chat-box {
-  flex: 1;
-  background: rgba(0,0,0,.28);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 16px;
-  overflow-y: auto;
-  display: flex; flex-direction: column; gap: 14px;
-  scroll-behavior: smooth;
-}
-
-/* Messages */
-.msg { max-width: 84%; animation: fadeUp .28s ease-out; }
-@keyframes fadeUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
-
-.msg.ai  { align-self:flex-start; }
-.msg.usr { align-self:flex-end; }
-
-.bubble {
-  padding: 11px 14px; border-radius: 14px; line-height: 1.6; font-size: .9rem;
-}
-.msg.ai .bubble {
-  background: rgba(124,157,255,.1);
-  border: 1px solid rgba(124,157,255,.2);
-  border-bottom-left-radius: 3px;
-}
-.msg.usr .bubble {
-  background: rgba(77,255,170,.08);
-  border: 1px solid rgba(77,255,170,.18);
-  border-bottom-right-radius: 3px;
-}
-
-/* streaming cursor */
-.cursor::after { content:'▌'; animation:cursorBlink .6s step-end infinite; }
-@keyframes cursorBlink { 0%,100%{opacity:1} 50%{opacity:0} }
-
-.sub-rj   { font-size:.68rem; color:var(--muted); margin-top:3px; }
-.sub-id   { font-size:.68rem; color:var(--accent); margin-top:1px; }
-
-/* Feedback chips */
-.feedback { display:flex; gap:5px; flex-wrap:wrap; margin-top:7px; }
-.chip {
-  font-size:.64rem; padding:2px 8px; border-radius:10px; border:1px solid;
-}
-.chip-v { color:var(--accent);   border-color:rgba(124,157,255,.35); background:rgba(124,157,255,.08); }
-.chip-c { color:var(--yellow);   border-color:rgba(255,209,102,.35); background:rgba(255,209,102,.08); }
-.chip-g { color:var(--green);    border-color:rgba(77,255,170,.35);  background:rgba(77,255,170,.08); }
-
-/* Correction banner */
-.correction {
-  background: rgba(255,209,102,.07);
-  border: 1px solid rgba(255,209,102,.25);
-  border-radius: 10px; padding: 8px 12px;
-  font-size: .72rem; color: var(--yellow);
-  display: flex; gap: 8px; line-height: 1.6;
-  align-self: stretch;
-}
-
-/* Typing dots */
-.typing {
-  align-self: flex-start;
-  background: rgba(124,157,255,.08);
-  border: 1px solid rgba(124,157,255,.15);
-  border-radius: 14px 14px 14px 3px;
-  padding: 10px 14px;
-  display: flex; gap: 5px; align-items: center;
-}
-.typing span {
-  width: 6px; height: 6px; border-radius: 50%; background: var(--accent);
-  animation: tdot 1.1s ease-in-out infinite;
-}
-.typing span:nth-child(2) { animation-delay: .16s; }
-.typing span:nth-child(3) { animation-delay: .32s; }
-@keyframes tdot { 0%,100%{transform:translateY(0);opacity:.4} 50%{transform:translateY(-4px);opacity:1} }
-
-/* Input area */
-.input-wrap {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 10px;
-  display: flex; flex-direction: column; gap: 8px;
-}
-.input-row { display:flex; gap:8px; }
-.chat-input {
-  flex:1;
-  background: rgba(0,0,0,.3);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 11px 14px;
-  color: var(--text); font-size: .88rem;
-  outline: none; resize: none;
-  font-family: inherit; line-height: 1.5;
-  transition: border-color .2s;
-  height: 44px; max-height: 120px; overflow-y: auto;
-}
-.chat-input:focus { border-color: var(--accent); }
-.chat-input::placeholder { color: rgba(255,255,255,.22); }
-
-.btn-send {
-  padding: 0 18px;
-  background: linear-gradient(135deg, #5566ee, #7c3aed);
-  border: none; border-radius: 10px;
-  color: white; font-size: .95rem; cursor: pointer;
-  transition: transform .15s, opacity .15s;
-  height: 44px; white-space: nowrap;
-}
-.btn-send:hover { transform: translateY(-1px); }
-.btn-send:disabled { opacity:.4; cursor:not-allowed; transform:none; }
-
-.btn-mic {
-  width: 44px; height: 44px;
-  background: rgba(77,255,170,.1);
-  border: 1px solid rgba(77,255,170,.3);
-  border-radius: 10px;
-  color: var(--green); font-size: .95rem;
-  cursor: pointer; transition: all .2s; flex-shrink:0;
-}
-.btn-mic.rec { background:rgba(77,255,170,.25); box-shadow:0 0 10px rgba(77,255,170,.3); }
-
-.hint-row { display:flex; gap:6px; flex-wrap:wrap; }
-.hint-pill {
-  font-size:.68rem; padding:3px 10px;
-  background:rgba(255,255,255,.04); border:1px solid var(--border);
-  border-radius:20px; color:var(--muted); cursor:pointer;
-  transition:all .2s;
-}
-.hint-pill:hover { color:var(--text); border-color:rgba(255,255,255,.2); }
-
-/* Error toast */
-.toast {
-  position: fixed; bottom:20px; left:50%; transform:translateX(-50%);
-  background:#3a1515; border:1px solid rgba(255,80,80,.4);
-  border-radius:10px; padding:10px 18px;
-  color:#ff8080; font-size:.8rem;
-  animation:fadeUp .3s ease-out; z-index:999;
-  max-width:90vw; text-align:center;
-}
-
-/* Scrollbar */
-::-webkit-scrollbar { width:4px; }
-::-webkit-scrollbar-track { background:transparent; }
-::-webkit-scrollbar-thumb { background:rgba(255,255,255,.15); border-radius:2px; }
-</style>
+  <style>
+    body {
+      background-color: #121214;
+      color: #ffffff;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      overflow: hidden;
+      margin: 0;
+    }
+    .video-tile {
+      background: #1e1e24;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      position: relative;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    }
+    .active-speaker {
+      border: 2px solid #22c55e !important;
+    }
+  </style>
 </head>
-<body>
+<body class="h-screen w-screen flex flex-col justify-between select-none">
 
-<!-- ══ API KEY GATE ══ -->
-<div id="apiGate">
-  <h1>🎌 Kaiwa AI — 会話練習</h1>
-  <p>Masukkan <strong>Gemini API Key</strong> kamu untuk mulai latihan percakapan Jepang dengan karakter AI.</p>
-  
-  <input id="keyInput" class="api-input" type="password" 
-         placeholder="AIzaSy..." 
-         autocomplete="off"
-         oninput="document.getElementById('btnStart').disabled = this.value.trim().length < 20"/>
-  
-  <button id="btnStart" class="btn-primary" onclick="startApp()" disabled>
-    🚀 Mulai Kaiwa
-  </button>
-  
-  <div class="note">
-    🔑 Dapatkan API key gratis di <strong>aistudio.google.com</strong><br>
-    🔒 Key disimpan hanya di memori browser sesi ini — tidak dikirim ke server lain<br>
-    🤖 Model: <strong>gemini-3.8-flash</strong> · Gratis hingga 1.500 req/hari
-  </div>
-</div>
-
-<!-- ══ MAIN APP ══ -->
-<div id="app">
-
-  <!-- CHARACTER -->
-  <div class="char-panel">
-    <div class="char-name">田中 ゆき</div>
-    <div class="char-sub">Yuki · 24歳 · Tokyo · コンビニ店員</div>
-
-    <!-- SVG character -->
-    <div class="avatar-wrap">
-      <div class="emo-bubble" id="emoBubble">😊</div>
-      <svg class="avatar-svg" viewBox="0 0 200 250" xmlns="http://www.w3.org/2000/svg">
-        <defs>
-          <radialGradient id="sg" cx="50%" cy="40%" r="60%"><stop offset="0%" stop-color="#ffddbb"/><stop offset="100%" stop-color="#f5c090"/></radialGradient>
-          <radialGradient id="hg" cx="50%" cy="30%" r="70%"><stop offset="0%" stop-color="#3d2c22"/><stop offset="100%" stop-color="#1e130b"/></radialGradient>
-          <radialGradient id="bg" cx="50%" cy="50%" r="50%"><stop offset="0%" stop-color="#ff9090" stop-opacity=".7"/><stop offset="100%" stop-color="#ff9090" stop-opacity="0"/></radialGradient>
-          <linearGradient id="cg" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#5b92e8"/><stop offset="100%" stop-color="#3a6cc4"/></linearGradient>
-          <linearGradient id="ag" x1="0%" y1="0%" x2="0%" y2="100%"><stop offset="0%" stop-color="#f0f0f0"/><stop offset="100%" stop-color="#d8d8d8"/></linearGradient>
-        </defs>
-
-        <!-- BODY -->
-        <g class="g-body">
-          <!-- shirt -->
-          <rect x="60" y="175" width="80" height="75" rx="8" fill="url(#cg)"/>
-          <!-- apron -->
-          <path d="M74 175 L126 175 L130 250 L70 250 Z" fill="url(#ag)" opacity=".9"/>
-          <rect x="92" y="170" width="16" height="7" rx="3" fill="#ddd"/>
-          <!-- left arm -->
-          <rect x="43" y="178" width="19" height="58" rx="9.5" fill="url(#sg)"/>
-          <ellipse cx="52" cy="240" rx="10" ry="8" fill="url(#sg)"/>
-          <!-- right arm (wave) -->
-          <g class="r-arm">
-            <rect x="138" y="178" width="19" height="50" rx="9.5" fill="url(#sg)"/>
-            <ellipse cx="147" cy="232" rx="10" ry="8" fill="url(#sg)"/>
-          </g>
-          <!-- neck -->
-          <rect x="90" y="162" width="20" height="16" rx="5" fill="url(#sg)"/>
-
-          <!-- HEAD -->
-          <g class="g-head">
-            <!-- hair back -->
-            <ellipse cx="100" cy="105" rx="52" ry="58" fill="url(#hg)"/>
-            <!-- hair sides -->
-            <path d="M50 120 Q36 175 46 228 Q55 238 64 228 Q60 183 62 132" fill="url(#hg)"/>
-            <path d="M150 120 Q164 175 154 228 Q145 238 136 228 Q140 183 138 132" fill="url(#hg)"/>
-            <!-- face -->
-            <ellipse cx="100" cy="112" rx="46" ry="50" fill="url(#sg)"/>
-            <!-- hair front -->
-            <g class="hair-front">
-              <path d="M56 90 Q70 50 100 46 Q130 50 144 90 Q128 72 100 70 Q72 72 56 90" fill="url(#hg)"/>
-              <path d="M64 84 Q74 58 86 74" fill="url(#hg)"/>
-              <path d="M136 84 Q126 58 114 74" fill="url(#hg)"/>
-            </g>
-            <!-- hair bow -->
-            <path d="M130 70 Q137 63 143 68 Q137 73 130 70Z" fill="#ff6aad"/>
-            <path d="M130 70 Q123 63 117 68 Q123 73 130 70Z" fill="#ff6aad"/>
-            <circle cx="130" cy="70" r="4" fill="#ff9ec4"/>
-
-            <!-- blush -->
-            <ellipse class="blush-l" cx="70" cy="126" rx="13" ry="7" fill="url(#bg)"/>
-            <ellipse class="blush-r" cx="130" cy="126" rx="13" ry="7" fill="url(#bg)"/>
-
-            <!-- eyes -->
-            <ellipse cx="84" cy="112" rx="12" ry="12" fill="white"/>
-            <ellipse cx="116" cy="112" rx="12" ry="12" fill="white"/>
-            <g class="eye-l">
-              <ellipse cx="84" cy="113" rx="8" ry="9" fill="#4a88dc"/>
-              <ellipse cx="84" cy="113" rx="5" ry="6" fill="#1a3a72"/>
-              <circle cx="87" cy="110" r="2.2" fill="white"/>
-            </g>
-            <g class="eye-r">
-              <ellipse cx="116" cy="113" rx="8" ry="9" fill="#4a88dc"/>
-              <ellipse cx="116" cy="113" rx="5" ry="6" fill="#1a3a72"/>
-              <circle cx="119" cy="110" r="2.2" fill="white"/>
-            </g>
-            <!-- eyelashes -->
-            <path d="M73 102 Q77 97 81 102" stroke="#2a1e14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-            <path d="M81 100 Q85 95 89 100" stroke="#2a1e14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-            <path d="M105 100 Q109 95 113 100" stroke="#2a1e14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-            <path d="M113 102 Q117 97 121 102" stroke="#2a1e14" stroke-width="1.8" fill="none" stroke-linecap="round"/>
-            <!-- eyebrows -->
-            <path d="M74 99 Q84 95 94 99" stroke="#3d2c22" stroke-width="2.2" fill="none" stroke-linecap="round" id="browL"/>
-            <path d="M106 99 Q116 95 126 99" stroke="#3d2c22" stroke-width="2.2" fill="none" stroke-linecap="round" id="browR"/>
-            <!-- nose -->
-            <path d="M98 124 Q100 128 102 124" stroke="#d99a72" stroke-width="1.4" fill="none" stroke-linecap="round"/>
-            <!-- mouth -->
-            <path class="mouth" id="mouth" d="M93 153 Q108 158 123 153"
-              stroke="#c4707a" stroke-width="2.2" fill="none" stroke-linecap="round"/>
-          </g>
-        </g>
-      </svg>
-    </div><!-- avatar-wrap -->
-
-    <!-- Scenario pills -->
-    <div class="section-label">Skenario</div>
-    <div class="pill-group" id="scenPills">
-      <button class="pill on" onclick="setScene('konbini',this)">🏪 Konbini</button>
-      <button class="pill" onclick="setScene('kaisha',this)">🏢 Kaisha</button>
-      <button class="pill" onclick="setScene('eki',this)">🚉 Eki</button>
-      <button class="pill" onclick="setScene('freetalk',this)">💬 Free Talk</button>
+  <!-- ── 1. ZOOM TOP BAR ── -->
+  <header class="h-12 bg-[#18181b] border-b border-white/10 px-4 flex items-center justify-between z-20">
+    <div class="flex items-center gap-3">
+      <div class="flex items-center gap-2 text-emerald-400 bg-emerald-500/10 px-2.5 py-1 rounded-md text-xs font-semibold">
+        <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+        <span>Terhubung (Encrypted)</span>
+      </div>
+      <span class="text-xs text-slate-400 hidden sm:inline">|</span>
+      <span class="text-xs font-medium text-slate-200 hidden sm:inline">Kaiwa Practice Room 01: 佐藤先生の会話レッスン</span>
     </div>
 
-    <!-- Mood pills -->
-    <div class="section-label">Mood Karakter</div>
-    <div class="pill-group" id="moodPills">
-      <button class="pill on" onclick="setMood('normal','😊',this)">Normal</button>
-      <button class="pill" onclick="setMood('happy','😄',this)">Senang</button>
-      <button class="pill" onclick="setMood('shy','😳',this)">Malu</button>
-      <button class="pill" onclick="setMood('think','🤔',this)">Mikir</button>
+    <!-- Mode & Meeting Duration -->
+    <div class="flex items-center gap-3">
+      <div id="meeting-timer" class="text-xs font-mono text-slate-400">00:00</div>
+      <a href="/" class="text-xs text-rose-400 hover:text-rose-300 bg-rose-500/10 hover:bg-rose-500/20 px-3 py-1.5 rounded-lg transition font-medium">
+        <i class="fa-solid fa-phone-slash mr-1"></i> Keluar
+      </a>
     </div>
+  </header>
 
-    <!-- Stats -->
-    <div class="stats-row">
-      <div class="stat-box"><div class="stat-val" id="statTurn">0</div><div class="stat-lbl">Giliran</div></div>
-      <div class="stat-box"><div class="stat-val" id="statVocab">0</div><div class="stat-lbl">Vocab Baru</div></div>
-      <div class="stat-box"><div class="stat-val" id="statScore">—</div><div class="stat-lbl">Skor</div></div>
-    </div>
+  <!-- ── 2. ZOOM MAIN STAGE (GRID TILE: SATO-SENSEI + USER) ── -->
+  <main class="flex-1 p-3 grid grid-cols-1 md:grid-cols-2 gap-3 overflow-hidden relative">
 
-    <!-- Reset -->
-    <button class="pill" style="width:100%;text-align:center;" onclick="resetSession()">🔄 Reset Sesi</button>
-  </div><!-- char-panel -->
+    <!-- Tile 1: Sato-san 3D VRM Video Feed -->
+    <div id="sato-tile" class="video-tile flex flex-col items-center justify-center relative">
+      <!-- 3D Canvas Sato-san -->
+      <div id="vrm-canvas-container" class="w-full h-full"></div>
 
-  <!-- CHAT -->
-  <div class="chat-panel">
-    <div class="chat-header">
-      <div class="live-dot"></div>
-      <span style="font-size:.85rem;">Kaiwa AI Session</span>
-      <span id="sceneLabel" style="font-size:.75rem;color:var(--muted);">🏪 Konbini · Yuki</span>
-      <span class="model-badge">gemini-3.8-flash ✦</span>
-    </div>
+      <!-- Loading Overlay Model -->
+      <div id="loading" class="absolute inset-0 bg-[#1e1e24] flex flex-col items-center justify-center text-white z-30 transition-opacity duration-300">
+        <div class="w-10 h-10 border-3 border-sky-400 border-t-transparent rounded-full animate-spin mb-3"></div>
+        <div class="text-sm font-semibold">Menghubungkan video Sato-san...</div>
+        <div id="load-progress" class="text-xs text-slate-400 mt-1">0%</div>
+      </div>
 
-    <div class="chat-box" id="chatBox"></div>
+      <!-- Speaker Tag (Pojok Kiri Bawah) -->
+      <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10">
+        <div id="sato-mic-icon" class="text-xs text-white">
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+        <span class="text-xs font-medium text-white tracking-wide">Sato-san (佐藤さん)</span>
+        <span class="text-[10px] bg-sky-500/20 text-sky-400 px-1.5 py-0.5 rounded font-bold">Sensei</span>
+      </div>
 
-    <div class="input-wrap">
-      <div class="hint-row" id="hintRow"></div>
-      <div class="input-row">
-        <textarea class="chat-input" id="chatInput" rows="1"
-                  placeholder="日本語で話しかけてみて！ (atau Indonesia, AI akan jawab Jepang)"
-                  onkeydown="handleKey(event)"></textarea>
-        <button class="btn-mic" id="micBtn" onclick="toggleMic()" title="Bicara">🎤</button>
-        <button class="btn-send" id="btnSend" onclick="sendMsg()">送る ▶</button>
+      <!-- Floating Subtitle Percakapan di dalam Tile Sato-san -->
+      <div id="dialog-box" class="hidden absolute bottom-12 left-4 right-4 bg-black/85 backdrop-blur-md px-4 py-2.5 rounded-xl border border-white/15 text-center z-20">
+        <div id="dialog-jp" class="text-sm font-bold text-sky-300">こんにちは！声が聞こえますか？今日も楽しく日本語を練習しましょう！</div>
+        <div id="dialog-id" class="text-xs text-slate-300 mt-0.5">Halo! Apakah suaraku terdengar? Mari berlatih bahasa Jepang dengan santai hari ini!</div>
       </div>
     </div>
-  </div>
-</div><!-- #app -->
 
-<!-- Gemini SDK via ESM CDN -->
-<script type="importmap">
-{
-  "imports": {
-    "@google/genai": "https://esm.sh/@google/genai@1.3.0"
-  }
-}
-</script>
+    <!-- Tile 2: User Webcam / Local Feed -->
+    <div class="video-tile flex flex-col items-center justify-center relative bg-[#18181b]">
+      <video id="user-webcam" class="w-full h-full object-cover -scale-x-100 hidden" autoplay playsinline muted></video>
+      
+      <!-- Fallback Avatar jika kamera belum/tidak diizinkan -->
+      <div id="user-avatar-fallback" class="flex flex-col items-center justify-center gap-3">
+        <div class="w-24 h-24 rounded-full bg-gradient-to-tr from-sky-600 to-indigo-600 flex items-center justify-center text-3xl font-bold text-white shadow-lg">
+          <i class="fa-solid fa-user"></i>
+        </div>
+        <span class="text-sm font-semibold text-slate-300">Kamera Anda (Belajar Kaiwa)</span>
+        <button id="btn-enable-cam" class="text-xs px-3 py-1.5 rounded-lg bg-white/10 hover:bg-white/20 text-slate-200 transition flex items-center gap-1.5">
+          <i class="fa-solid fa-camera"></i> Nyalakan Kamera Saya
+        </button>
+      </div>
 
-<script type="module">
-import { GoogleGenAI } from '@google/genai';
+      <!-- User Name Tag (Pojok Kiri Bawah) -->
+      <div class="absolute bottom-3 left-3 bg-black/70 backdrop-blur-md px-3 py-1.5 rounded-lg flex items-center gap-2 z-10 border border-white/10">
+        <div id="user-mic-icon" class="text-xs text-white">
+          <i class="fa-solid fa-microphone"></i>
+        </div>
+        <span id="user-name-label" class="text-xs font-medium text-white">Anda (Gakusei)</span>
+      </div>
+    </div>
 
-// ── STATE ──
-let ai, chat;
-let scene = 'konbini';
-let mood  = 'normal';
-let turns = 0;
-let vocabCount = 0;
-let isSpeaking = false;
-let isRecording = false;
-let recognition = null;
-const mouth  = document.getElementById('mouth');
-const emoBub = document.getElementById('emoBubble');
+  </main>
 
-// ── SYSTEM PROMPT ──
-const SYSTEM = {
-  konbini: `
-Kamu adalah Tanaka Yuki, seorang wanita Jepang berusia 24 tahun yang bekerja sebagai karyawan konbini (toko serba ada) di Tokyo.
-Kepribadian: ramah, sopan, sedikit malu-malu, selalu tersenyum.
-Konteks skenario: Pelanggan memasuki toko.
+  <!-- ── 3. ZOOM BOTTOM CONTROL BAR ── -->
+  <footer class="h-16 bg-[#18181b] border-t border-white/10 px-4 flex items-center justify-between z-20">
 
-ATURAN PENTING:
-1. Selalu balas dalam BAHASA JEPANG (kanji+hiragana+katakana natural).
-2. Format respons HARUS JSON seperti ini:
-{
-  "jp": "teks bahasa Jepang di sini",
-  "romaji": "romanisasi di sini",
-  "id": "terjemahan Indonesia di sini",
-  "emotion": "happy|normal|shy|think",
-  "vocab": [{"word":"kata","reading":"bacaan","meaning":"arti"}],
-  "correction": null
-}
-3. Field "correction": jika user salah grammar/partikel, isi dengan {"wrong":"...", "fix":"...", "note":"penjelasan singkat"}, jika benar isi null.
-4. Field "vocab": max 2 kata baru yang penting dari respons kamu.
-5. Bicara sesuai situasi konbini (sapaan, produk, kasir, dll).
-6. Jika user bicara Indonesia, bantu terjemahkan dan jawab dalam Jepang.
-7. HANYA output JSON. Jangan tambahkan teks lain di luar JSON.
-  `.trim(),
+    <!-- Kontrol Suara & Video Kiri -->
+    <div class="flex items-center gap-2">
+      <!-- Tombol Bicara / Voice Input -->
+      <button id="btn-toggle-mic" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-xs font-medium flex flex-col items-center gap-1 transition min-w-[64px]">
+        <i class="fa-solid fa-microphone text-base text-emerald-400"></i>
+        <span>Mute</span>
+      </button>
 
-  kaisha: `
-Kamu adalah Tanaka Yuki, karyawan kantor (kaisha) di sebuah perusahaan di Tokyo.
-Konteks: rekan kerja baru sedang mengobrol denganmu saat istirahat.
-Format respons HARUS JSON:
-{
-  "jp": "...", "romaji": "...", "id": "...", "emotion": "happy|normal|shy|think",
-  "vocab": [{"word":"...","reading":"...","meaning":"..."}],
-  "correction": null
-}
-Gunakan bahasa kerja (keigo ringan). HANYA output JSON.
-  `.trim(),
+      <button id="btn-toggle-cam" class="px-3 py-2 rounded-xl bg-white/10 hover:bg-white/15 text-slate-200 text-xs font-medium flex flex-col items-center gap-1 transition min-w-[64px]">
+        <i class="fa-solid fa-video text-base text-slate-300"></i>
+        <span>Video</span>
+      </button>
+    </div>
 
-  eki: `
-Kamu adalah Tanaka Yuki, staf informasi di stasiun (eki) Tokyo.
-Konteks: membantu penumpang yang bingung dengan rute/tiket.
-Format respons HARUS JSON:
-{
-  "jp": "...", "romaji": "...", "id": "...", "emotion": "happy|normal|shy|think",
-  "vocab": [{"word":"...","reading":"...","meaning":"..."}],
-  "correction": null
-}
-HANYA output JSON.
-  `.trim(),
+    <!-- Kontrol Interaksi Tengah (Topik & Latihan) -->
+    <div class="flex items-center gap-2 sm:gap-3">
+      <!-- Tombol Pilihan Percakapan / Latihan -->
+      <button id="btn-kaiwa-jiko" class="px-3 py-2 rounded-xl bg-sky-500/20 hover:bg-sky-500/30 text-sky-400 border border-sky-500/30 text-xs font-medium flex items-center gap-2 transition">
+        <i class="fa-regular fa-comment-dots"></i>
+        <span class="hidden sm:inline">Topik:</span> Perkenalan (自己紹介)
+      </button>
 
-  freetalk: `
-Kamu adalah Tanaka Yuki, teman ngobrol bahasa Jepang yang menyenangkan.
-Konteks: percakapan santai tentang apa saja — budaya, makanan, hobi, belajar Jepang.
-Format respons HARUS JSON:
-{
-  "jp": "...", "romaji": "...", "id": "...", "emotion": "happy|normal|shy|think",
-  "vocab": [{"word":"...","reading":"...","meaning":"..."}],
-  "correction": null
-}
-Gunakan bahasa kasual tapi jelas. HANYA output JSON.
-  `.trim()
-};
+      <button id="btn-kaiwa-aisatsu" class="px-3 py-2 rounded-xl bg-amber-500/20 hover:bg-amber-500/30 text-amber-400 border border-amber-500/30 text-xs font-medium flex items-center gap-2 transition">
+        <i class="fa-regular fa-hand"></i>
+        <span class="hidden sm:inline">Topik:</span> Salam Kerja (挨拶)
+      </button>
 
-const FIRST_MSG = {
-  konbini: { jp:"いらっしゃいませ！何かお手伝いできますか？😊", romaji:"Irasshaimase! Nani ka otetsudai dekimasu ka?", id:"Selamat datang! Ada yang bisa saya bantu?" },
-  kaisha:  { jp:"お疲れ様です！今日もお仕事頑張りましょうね。", romaji:"Otsukaresama desu! Kyou mo oshigoto ganbarimasyou ne.", id:"Selamat kerja! Ayo semangat kerja hari ini." },
-  eki:     { jp:"いらっしゃいませ。どちらへ行かれますか？", romaji:"Irasshaimase. Dochira e ikaremasu ka?", id:"Selamat datang. Mau ke mana?" },
-  freetalk:{ jp:"こんにちは！一緒に日本語を練習しましょう！何について話しましょうか？", romaji:"Konnichiwa! Issho ni nihongo wo renshuu shimashou! Nani ni tsuite hanashimashou ka?", id:"Halo! Ayo latihan bahasa Jepang bersama! Mau ngobrol soal apa?" }
-};
+      <button id="btn-kaiwa-shitsumon" class="px-3 py-2 rounded-xl bg-purple-500/20 hover:bg-purple-500/30 text-purple-400 border border-purple-500/30 text-xs font-medium flex items-center gap-2 transition">
+        <i class="fa-solid fa-circle-question"></i>
+        <span class="hidden sm:inline">Tanya:</span> Tanya Tugas (質問)
+      </button>
+    </div>
 
-const HINTS = {
-  konbini:  ["すみません、お茶はありますか？","レジ袋をください。","これはいくらですか？","温めてもらえますか？"],
-  kaisha:   ["お疲れ様です！","会議は何時からですか？","ランチ一緒にどうですか？","よろしくお願いします。"],
-  eki:      ["東京駅まで何分かかりますか？","切符はどこで買えますか？","この電車は渋谷に止まりますか？"],
-  freetalk: ["日本語を勉強しています。","好きな食べ物は何ですか？","趣味は何ですか？","日本に行きたいです。"]
-};
+    <!-- Kontrol Kanan (End Call) -->
+    <div class="flex items-center gap-2">
+      <a href="/" class="px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-md">
+        <i class="fa-solid fa-phone-slash"></i>
+        <span class="hidden sm:inline">Akhiri</span>
+      </a>
+    </div>
 
-// ── MAKE CHAT ──
-function initChat() {
-  const sys = SYSTEM[scene];
-  chat = ai.chats.create({
-    model: 'gemini-3.8-flash',
-    config: { systemInstruction: sys },
-    history: []
-  });
-}
+  </footer>
 
-// ── PARSE GEMINI RESPONSE ──
-function parseResp(raw) {
-  try {
-    // strip markdown code fences if any
-    const clean = raw.replace(/```json\s*/g,'').replace(/```\s*/g,'').trim();
-    return JSON.parse(clean);
-  } catch {
-    // fallback: treat raw as jp text
-    return { jp: raw, romaji:'', id:'', emotion:'normal', vocab:[], correction:null };
-  }
-}
+  <!-- ── 4. SCRIPT THREE.JS + VRM ENGINE UNTUK TILE ZOOM SATO-SAN ── -->
+  <script type="module">
+    import * as THREE from 'three';
+    import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
+    import { VRMLoaderPlugin, VRMUtils } from '@pixiv/three-vrm';
 
-// ── SEND MESSAGE ──
-async function sendMsg() {
-  const input = document.getElementById('chatInput');
-  const text  = input.value.trim();
-  if (!text || isSpeaking) return;
+    // ── Setup 3D Scene untuk Kamera Zoom Sato-san ──
+    const container = document.getElementById('vrm-canvas-container');
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x27272a); // Background virtual meeting room
 
-  input.value = '';
-  input.style.height = '44px';
-  document.getElementById('btnSend').disabled = true;
+    // Sudut pandang webcam Zoom: fokus dada ke kepala
+    const camera = new THREE.PerspectiveCamera(26, container.clientWidth / container.clientHeight, 0.1, 20.0);
+    camera.position.set(0.0, 1.34, 1.15);
 
-  // User bubble
-  addMsg('usr', text);
-  turns++;
-  document.getElementById('statTurn').textContent = turns;
+    const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: false });
+    renderer.setSize(container.clientWidth, container.clientHeight);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    renderer.toneMapping = THREE.ACESFilmicToneMapping;
+    renderer.toneMappingExposure = 1.1;
+    container.appendChild(renderer.domElement);
 
-  // Typing indicator
-  const typEl = addTyping();
-  setStatus('thinking');
+    // ── Pencahayaan Webcam Studio ──
+    const ambientLight = new THREE.AmbientLight(0xffffff, 1.6);
+    scene.add(ambientLight);
 
-  try {
-    // Streaming response
-    const stream = await chat.sendMessageStream({ message: text });
+    const keyLight = new THREE.DirectionalLight(0xfff6ed, 2.0);
+    keyLight.position.set(0.8, 2.0, 1.5);
+    scene.add(keyLight);
 
-    typEl.remove();
-    setStatus('speaking');
-    startTalking();
+    const fillLight = new THREE.DirectionalLight(0xe0f2fe, 1.2);
+    fillLight.position.set(-1.0, 1.2, 0.8);
+    scene.add(fillLight);
 
-    // Build streaming bubble
-    const { bubble, finalize } = addStreamBubble();
-    let fullText = '';
+    // Virtual Background Kantor Jepang Minimalis
+    const bgWall = new THREE.Mesh(
+      new THREE.PlaneGeometry(6, 4),
+      new THREE.MeshStandardMaterial({ color: 0x3f3f46, roughness: 0.9 })
+    );
+    bgWall.position.set(0, 1.4, -0.6);
+    scene.add(bgWall);
 
-    for await (const chunk of stream) {
-      fullText += chunk.text;
-      // Show raw text while streaming (shows JSON being built)
-      bubble.textContent = '…';
+    // Sandaran Kursi Kantor di belakang Sato-san
+    const chairBack = new THREE.Mesh(
+      new THREE.BoxGeometry(0.55, 0.65, 0.06),
+      new THREE.MeshStandardMaterial({ color: 0x18181b, roughness: 0.8 })
+    );
+    chairBack.position.set(0, 1.28, -0.12);
+    scene.add(chairBack);
+
+    // ── State Model Sato-san ──
+    let currentVrm = null;
+    const clock = new THREE.Clock();
+
+    let blinkTimer = 0;
+    let blinkInterval = 3.0;
+    let isBlinking = false;
+    let blinkProgress = 0;
+
+    let isSpeaking = false;
+    let talkTimer = 0;
+
+    // Load File Sato-san.vrm
+    const loader = new GLTFLoader();
+    loader.register((parser) => new VRMLoaderPlugin(parser));
+
+    loader.load(
+      '/models/sato-san.vrm',
+      (gltf) => {
+        const vrm = gltf.userData.vrm;
+        if (!vrm) return;
+
+        currentVrm = vrm;
+        VRMUtils.removeUnnecessaryVertices(gltf.scene);
+        VRMUtils.combineSkeletons(gltf.scene);
+
+        vrm.scene.rotation.y = 0; // Wajah lurus menatap kamera Zoom
+        scene.add(vrm.scene);
+
+        // Pose Duduk Alami menghadap webcam
+        applyZoomPose(vrm);
+
+        // Hilangkan loading
+        const loadingEl = document.getElementById('loading');
+        loadingEl.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => loadingEl.remove(), 400);
+
+        // Auto salam pertama saat Zoom dimulai
+        setTimeout(() => {
+          speakSato(
+            'こんにちは！佐藤です。Zoomミーティングへようこそ。声はよく聞こえますか？',
+            'Halo! Saya Sato. Selamat datang di Zoom meeting ini. Apakah suaraku terdengar jelas?'
+          );
+        }, 1000);
+      },
+      (p) => {
+        if (p.total > 0) {
+          const pct = Math.round((p.loaded / p.total) * 100);
+          document.getElementById('load-progress').textContent = `${pct}%`;
+        }
+      },
+      (err) => {
+        console.error('Error load vrm:', err);
+      }
+    );
+
+    // Pose Webcam Zoom (Lengan turun ke bawah rileks di luar frame kamera)
+    function applyZoomPose(vrm) {
+      if (!vrm || !vrm.humanoid) return;
+
+      const leftUpperArm = vrm.humanoid.getNormalizedBoneNode('leftUpperArm');
+      const rightUpperArm = vrm.humanoid.getNormalizedBoneNode('rightUpperArm');
+      if (leftUpperArm) leftUpperArm.rotation.set(0, 0, -1.35);
+      if (rightUpperArm) rightUpperArm.rotation.set(0, 0, 1.35);
+
+      const leftLowerArm = vrm.humanoid.getNormalizedBoneNode('leftLowerArm');
+      const rightLowerArm = vrm.humanoid.getNormalizedBoneNode('rightLowerArm');
+      if (leftLowerArm) leftLowerArm.rotation.set(0, 0, 0.2);
+      if (rightLowerArm) rightLowerArm.rotation.set(0, 0, -0.2);
     }
 
-    // Parse complete response
-    const data = parseResp(fullText);
-    finalize(data);
-
-    // Update emotion & bubble
-    setEmotion(data.emotion || 'normal');
-
-    // Count vocab
-    if (data.vocab?.length) {
-      vocabCount += data.vocab.length;
-      document.getElementById('statVocab').textContent = vocabCount;
+    // Auto Blink
+    function updateBlink(delta) {
+      if (!currentVrm || !currentVrm.expressionManager) return;
+      blinkTimer += delta;
+      if (!isBlinking && blinkTimer >= blinkInterval) {
+        isBlinking = true;
+        blinkTimer = 0;
+        blinkProgress = 0;
+        blinkInterval = 2.5 + Math.random() * 3.5;
+      }
+      if (isBlinking) {
+        blinkProgress += delta * 12;
+        const w = Math.sin(Math.min(Math.PI, blinkProgress));
+        currentVrm.expressionManager.setValue('blink', w);
+        if (blinkProgress >= Math.PI) {
+          currentVrm.expressionManager.setValue('blink', 0);
+          isBlinking = false;
+        }
+      }
     }
 
-    // Show correction
-    if (data.correction) {
-      addCorrection(data.correction);
+    // Gerak Halus Napas & Gestur Mendengarkan
+    function updateNaturalIdle(elapsedTime) {
+      if (!currentVrm || !currentVrm.humanoid) return;
+      const spine = currentVrm.humanoid.getNormalizedBoneNode('spine');
+      if (spine) {
+        spine.rotation.x = Math.sin(elapsedTime * 1.6) * 0.015;
+        spine.rotation.y = Math.cos(elapsedTime * 0.7) * 0.012;
+      }
+      const head = currentVrm.humanoid.getNormalizedBoneNode('head');
+      if (head) {
+        // Sedikit mengangguk alami saat percakapan
+        head.rotation.x = Math.sin(elapsedTime * 1.3) * 0.018;
+      }
     }
 
-    // Score update (simple)
-    document.getElementById('statScore').textContent = Math.min(100, turns * 8) + '%';
-
-  } catch(err) {
-    typEl?.remove();
-    showError('Error: ' + (err.message || JSON.stringify(err)));
-    console.error(err);
-  } finally {
-    stopTalking();
-    setStatus('live');
-    document.getElementById('btnSend').disabled = false;
-  }
-}
-
-// ── UI HELPERS ──
-function addMsg(role, text) {
-  const box = document.getElementById('chatBox');
-  const div = document.createElement('div');
-  div.className = `msg ${role}`;
-  const bub = document.createElement('div');
-  bub.className = 'bubble';
-  bub.textContent = text;
-  div.appendChild(bub);
-  box.appendChild(div);
-  box.scrollTop = box.scrollHeight;
-  return div;
-}
-
-function addStreamBubble() {
-  const box  = document.getElementById('chatBox');
-  const div  = document.createElement('div');
-  div.className = 'msg ai';
-  const bub  = document.createElement('div');
-  bub.className = 'bubble cursor';
-  bub.textContent = '…';
-  div.appendChild(bub);
-  box.appendChild(div);
-  box.scrollTop = box.scrollHeight;
-
-  function finalize(data) {
-    bub.classList.remove('cursor');
-    bub.innerHTML = `
-      <div>${data.jp || ''}</div>
-      ${data.romaji ? `<div class="sub-rj">${data.romaji}</div>` : ''}
-      ${data.id     ? `<div class="sub-id">${data.id}</div>` : ''}
-    `;
-    // Vocab chips
-    if (data.vocab?.length) {
-      const fb = document.createElement('div');
-      fb.className = 'feedback';
-      data.vocab.forEach(v => {
-        const c = document.createElement('span');
-        c.className = 'chip chip-v';
-        c.textContent = `📚 ${v.word}（${v.reading}）= ${v.meaning}`;
-        fb.appendChild(c);
-      });
-      div.appendChild(fb);
+    // Lipsync Berbicara
+    function updateSpeech(delta) {
+      if (!currentVrm || !currentVrm.expressionManager) return;
+      if (isSpeaking) {
+        talkTimer += delta * 15;
+        const aa = Math.max(0, Math.sin(talkTimer) * 0.7);
+        currentVrm.expressionManager.setValue('aa', aa);
+      } else {
+        const cur = currentVrm.expressionManager.getValue('aa');
+        if (cur > 0) currentVrm.expressionManager.setValue('aa', Math.max(0, cur - delta * 5));
+      }
     }
-    box.scrollTop = box.scrollHeight;
-  }
-  return { bubble: bub, finalize };
-}
 
-function addTyping() {
-  const box = document.getElementById('chatBox');
-  const t = document.createElement('div');
-  t.className = 'typing';
-  t.innerHTML = '<span></span><span></span><span></span>';
-  box.appendChild(t);
-  box.scrollTop = box.scrollHeight;
-  return t;
-}
+    // Animation Loop
+    function animate() {
+      requestAnimationFrame(animate);
+      const delta = clock.getDelta();
+      const elapsed = clock.getElapsedTime();
 
-function addCorrection(corr) {
-  const box = document.getElementById('chatBox');
-  const d = document.createElement('div');
-  d.className = 'correction';
-  d.innerHTML = `⚡ <div><b>Koreksi:</b> "${corr.wrong}" → lebih baik <b>"${corr.fix}"</b><br><span style="opacity:.7">${corr.note}</span></div>`;
-  box.appendChild(d);
-  box.scrollTop = box.scrollHeight;
-}
+      if (currentVrm) {
+        updateBlink(delta);
+        updateSpeech(delta);
+        applyZoomPose(currentVrm);
+        updateNaturalIdle(elapsed);
+        currentVrm.update(delta);
+      }
 
-function addFirstMsg() {
-  const box = document.getElementById('chatBox');
-  box.innerHTML = '';
-  const fm = FIRST_MSG[scene];
-  const div = document.createElement('div');
-  div.className = 'msg ai';
-  div.innerHTML = `
-    <div class="bubble">
-      <div>${fm.jp}</div>
-      <div class="sub-rj">${fm.romaji}</div>
-      <div class="sub-id">${fm.id}</div>
-    </div>`;
-  box.appendChild(div);
-  renderHints();
-}
+      renderer.render(scene, camera);
+    }
+    animate();
 
-function renderHints() {
-  const row = document.getElementById('hintRow');
-  row.innerHTML = '';
-  (HINTS[scene] || []).forEach(h => {
-    const b = document.createElement('button');
-    b.className = 'hint-pill';
-    b.textContent = h;
-    b.onclick = () => {
-      document.getElementById('chatInput').value = h;
-      sendMsg();
-    };
-    row.appendChild(b);
-  });
-}
+    // Resize Handler
+    window.addEventListener('resize', () => {
+      camera.aspect = container.clientWidth / container.clientHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(container.clientWidth, container.clientHeight);
+    });
 
-// ── CHARACTER ANIMATION ──
-function startTalking() {
-  isSpeaking = true;
-  mouth.classList.add('talk');
-}
-function stopTalking() {
-  isSpeaking = false;
-  mouth.classList.remove('talk');
-}
+    // ── Fungsi Suara Sato-san (Speech Synthesizer + Active Speaker Border) ──
+    const dialogBox = document.getElementById('dialog-box');
+    const dialogJp = document.getElementById('dialog-jp');
+    const dialogId = document.getElementById('dialog-id');
+    const satoTile = document.getElementById('sato-tile');
 
-function setEmotion(emo) {
-  const map = { happy:'😄', normal:'😊', shy:'😳', think:'🤔', sad:'😢' };
-  const emoji = map[emo] || '😊';
-  emoBub.textContent = emoji;
-  emoBub.style.transform = 'scale(1.3)';
-  setTimeout(() => emoBub.style.transform = 'scale(1)', 300);
+    function speakSato(jpText, idText) {
+      dialogJp.textContent = jpText;
+      dialogId.textContent = idText;
+      dialogBox.classList.remove('hidden');
 
-  // adjust eyebrows
-  const bl = document.getElementById('browL');
-  const br = document.getElementById('browR');
-  if (emo === 'think') {
-    bl.setAttribute('d','M74 96 Q84 100 94 96');
-    br.setAttribute('d','M106 96 Q116 100 126 96');
-  } else if (emo === 'shy') {
-    bl.setAttribute('d','M76 97 Q84 94 92 98');
-    br.setAttribute('d','M108 98 Q116 94 124 97');
-  } else {
-    bl.setAttribute('d','M74 99 Q84 95 94 99');
-    br.setAttribute('d','M106 99 Q116 95 126 99');
-  }
-}
+      // Indikator Active Speaker Zoom (Kotak Hijau di sekeliling video Sato)
+      satoTile.classList.add('active-speaker');
 
-// ── MOOD MANUAL ──
-window.setMood = (m, emoji, btn) => {
-  mood = m;
-  document.querySelectorAll('#moodPills .pill').forEach(b => b.classList.remove('on'));
-  btn.classList.add('on');
-  emoBub.textContent = emoji;
-};
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const u = new SpeechSynthesisUtterance(jpText);
+        u.lang = 'ja-JP';
+        u.rate = 1.0;
 
-// ── SCENE ──
-window.setScene = (s, btn) => {
-  scene = s;
-  document.querySelectorAll('#scenPills .pill').forEach(b => b.classList.remove('on'));
-  btn.classList.add('on');
-  document.getElementById('sceneLabel').textContent = {
-    konbini:'🏪 Konbini · Yuki', kaisha:'🏢 Kaisha · Yuki',
-    eki:'🚉 Eki · Yuki', freetalk:'💬 Free Talk · Yuki'
-  }[s];
-  resetSession();
-};
+        u.onstart = () => {
+          isSpeaking = true;
+          if (currentVrm && currentVrm.expressionManager) {
+            currentVrm.expressionManager.setValue('happy', 0.5);
+          }
+        };
 
-window.resetSession = () => {
-  turns = 0; vocabCount = 0;
-  document.getElementById('statTurn').textContent = '0';
-  document.getElementById('statVocab').textContent = '0';
-  document.getElementById('statScore').textContent = '—';
-  initChat();
-  addFirstMsg();
-};
+        u.onend = () => {
+          isSpeaking = false;
+          satoTile.classList.remove('active-speaker');
+          if (currentVrm && currentVrm.expressionManager) {
+            currentVrm.expressionManager.setValue('happy', 0);
+          }
+        };
 
-// ── STATUS ──
-function setStatus(st) {
-  // Could update header text — kept minimal
-}
+        u.onerror = () => {
+          isSpeaking = false;
+          satoTile.classList.remove('active-speaker');
+        };
 
-// ── ERROR TOAST ──
-function showError(msg) {
-  const t = document.createElement('div');
-  t.className = 'toast';
-  t.textContent = msg;
-  document.body.appendChild(t);
-  setTimeout(() => t.remove(), 5000);
-}
+        window.speechSynthesis.speak(u);
+      } else {
+        isSpeaking = true;
+        setTimeout(() => {
+          isSpeaking = false;
+          satoTile.classList.remove('active-speaker');
+        }, 3500);
+      }
+    }
 
-// ── KEYBOARD ──
-window.handleKey = (e) => {
-  if (e.key === 'Enter' && !e.shiftKey) {
-    e.preventDefault();
-    sendMsg();
-  }
-};
+    // ── Pilihan Topik Pembicaraan Kaiwa ──
+    document.getElementById('btn-kaiwa-jiko').addEventListener('click', () => {
+      speakSato(
+        'はじめまして！私の名前は佐藤です。あなたの自己紹介を聞かせてください。趣味は何ですか？',
+        'Senang berkenalan dengan Anda! Nama saya Sato. Boleh ceritakan tentang diri Anda? Apa hobi Anda?'
+      );
+    });
 
-// ── MIC ──
-window.toggleMic = () => {
-  const btn = document.getElementById('micBtn');
-  const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
-  if (!SR) { showError('Mic hanya di Chrome. Coba ketik saja.'); return; }
+    document.getElementById('btn-kaiwa-aisatsu').addEventListener('click', () => {
+      speakSato(
+        'おはようございます！今日も一日お仕事頑張りましょう。何か質問や分からないことはありますか？',
+        'Selamat pagi! Mari bersemangat kerja hari ini. Apakah ada pertanyaan atau hal yang belum dipahami?'
+      );
+    });
 
-  if (!isRecording) {
-    recognition = new SR();
-    recognition.lang = 'ja-JP';
-    recognition.continuous = false;
-    recognition.onresult = e => {
-      document.getElementById('chatInput').value = e.results[0][0].transcript;
-    };
-    recognition.onend = () => { isRecording=false; btn.classList.remove('rec'); btn.textContent='🎤'; };
-    recognition.start();
-    isRecording = true;
-    btn.classList.add('rec');
-    btn.textContent = '⏹';
-  } else {
-    recognition?.stop();
-    isRecording = false;
-    btn.classList.remove('rec');
-    btn.textContent = '🎤';
-  }
-};
+    document.getElementById('btn-kaiwa-shitsumon').addEventListener('click', () => {
+      speakSato(
+        '作業の手順についてですね。まずは安全第一で確認しましょう。どの部分が気になりますか？',
+        'Mengenai prosedur kerja ya. Yang terpenting utamakan keselamatan kerja terlebih dahulu. Bagian mana yang ingin Anda tanyakan?'
+      );
+    });
 
-// ── EXPOSE sendMsg globally ──
-window.sendMsg = sendMsg;
+    // ── Webcam Pengguna (User Local Video) ──
+    const userWebcam = document.getElementById('user-webcam');
+    const avatarFallback = document.getElementById('user-avatar-fallback');
+    const btnEnableCam = document.getElementById('btn-enable-cam');
+    const btnToggleCam = document.getElementById('btn-toggle-cam');
 
-// ── START APP ──
-window.startApp = () => {
-  const key = document.getElementById('keyInput').value.trim();
-  if (!key) return;
+    async function startWebcam() {
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+        userWebcam.srcObject = stream;
+        userWebcam.classList.remove('hidden');
+        avatarFallback.classList.add('hidden');
+        btnToggleCam.querySelector('i').className = 'fa-solid fa-video text-base text-emerald-400';
+      } catch (e) {
+        console.warn('Webcam tidak dapat diakses / ditolak:', e);
+      }
+    }
 
-  try {
-    ai = new GoogleGenAI({ apiKey: key });
-  } catch(e) {
-    showError('API Key tidak valid: ' + e.message);
-    return;
-  }
+    btnEnableCam.addEventListener('click', startWebcam);
+    btnToggleCam.addEventListener('click', () => {
+      if (userWebcam.srcObject) {
+        const tracks = userWebcam.srcObject.getTracks();
+        tracks.forEach((t) => t.stop());
+        userWebcam.srcObject = null;
+        userWebcam.classList.add('hidden');
+        avatarFallback.classList.remove('hidden');
+        btnToggleCam.querySelector('i').className = 'fa-solid fa-video-slash text-base text-rose-400';
+      } else {
+        startWebcam();
+      }
+    });
 
-  document.getElementById('apiGate').style.display = 'none';
-  document.getElementById('app').classList.add('visible');
+    // Toggle Mic Button
+    const btnToggleMic = document.getElementById('btn-toggle-mic');
+    let isMuted = false;
+    btnToggleMic.addEventListener('click', () => {
+      isMuted = !isMuted;
+      if (isMuted) {
+        btnToggleMic.querySelector('i').className = 'fa-solid fa-microphone-slash text-base text-rose-400';
+        btnToggleMic.querySelector('span').textContent = 'Unmute';
+      } else {
+        btnToggleMic.querySelector('i').className = 'fa-solid fa-microphone text-base text-emerald-400';
+        btnToggleMic.querySelector('span').textContent = 'Mute';
+      }
+    });
 
-  initChat();
-  addFirstMsg();
-};
-
-// ── AUTO-START jika ada key di URL hash (opsional untuk dev) ──
-const hashKey = window.location.hash.replace('#','');
-if (hashKey.startsWith('AIzaSy')) {
-  document.getElementById('keyInput').value = hashKey;
-  window.startApp();
-}
-</script>
+    // Meeting Duration Timer
+    let sec = 0;
+    setInterval(() => {
+      sec++;
+      const m = String(Math.floor(sec / 60)).padStart(2, '0');
+      const s = String(sec % 60).padStart(2, '0');
+      document.getElementById('meeting-timer').textContent = `${m}:${s}`;
+    }, 1000);
+  </script>
 </body>
 </html>
-
