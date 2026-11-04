@@ -10,3 +10,4 @@ img_tags = re.findall(r'<img[^>]+src=["\']([^"\']+)["\']', decoded)
 print(f"Total img tags in c1.mhtml: {len(img_tags)}")
 for img in set(img_tags):
     print("Img src:", img)
+

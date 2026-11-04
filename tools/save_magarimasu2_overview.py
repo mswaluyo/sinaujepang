@@ -23,3 +23,4 @@ with open('tools/magarimasu2_cards_overview.json', 'w', encoding='utf-8') as f:
     json.dump(overview, f, ensure_ascii=False, indent=2)
 
 print(f"Dumped {len(overview)} cards overview.")
+

@@ -19,3 +19,4 @@ for soal_id, src in matches:
     snippet = decoded[card_start:pos+150]
     num_match = re.search(r'data-nomor="(\d+)"', snippet) or re.search(r'Nomor\s*(\d+)', snippet)
     print(f"Audio {src} -> Soal ID {soal_id}, Nomor: {num_match.group(1) if num_match else 'unknown'}")
+

@@ -8,3 +8,4 @@ audio_srcs = set(re.findall(r'uploads/audio/[a-zA-Z0-9_\-\.]+\.wav', decoded))
 print("All audio srcs found in c1.mhtml:")
 for a in sorted(audio_srcs):
     print(a)
+

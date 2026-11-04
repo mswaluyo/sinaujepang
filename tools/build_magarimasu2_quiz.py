@@ -115,3 +115,4 @@ with open(out_json, "w", encoding="utf-8") as f:
     json.dump(final_qs, f, ensure_ascii=False, indent=2)
 
 print(f"Built {len(final_qs)} questions for Magarimasu 2 at {out_json}!")
+

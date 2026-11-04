@@ -17,3 +17,4 @@ with open(r'd:\soal-jft\tools\magarimasu2_kunci_clean.html', 'w', encoding='utf-
     f.write(text)
 
 print(f"Decoded kunci.mhtml: {len(text)} characters written.")
+

@@ -109,32 +109,6 @@ window.PAKET_CONFIG = {
       ]
     },
     {
-      "nama": "AC",
-      "warna": "purple",
-      "badgeGradien": "from-purple-500 to-purple-600",
-      "paket": [
-        {
-          "nama": "HARE2",
-          "slug": "hare2-quiz",
-          "total": 46,
-          "ikon": "H"
-        }
-      ]
-    },
-    {
-      "nama": "DN",
-      "warna": "sky",
-      "badgeGradien": "from-sky-500 to-blue-600",
-      "paket": [
-        {
-          "nama": "BASU3",
-          "slug": "basu3-quiz",
-          "total": 21,
-          "ikon": "B"
-        }
-      ]
-    },
-    {
       "nama": "PRINCESS",
       "warna": "rose",
       "badgeGradien": "from-rose-500 to-rose-600",

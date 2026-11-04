@@ -15,3 +15,4 @@ for i, c in enumerate(cards):
     imgs = [img['src'] for img in c.find_all('img') if img.get('src')]
     if i < 15 or i > 40:
         print(f"Card #{i+1}: pert='{pert_text[:50]}' | kunci='{kunci_text[:30]}' | imgs={imgs}")
+

@@ -18,3 +18,4 @@ for m in re.finditer(r'<img[^>]+src=["\']([^"\']+)["\']', decoded):
     nomor_m = re.search(r'data-nomor="(\d+)"', snippet) or re.search(r'Nomor\s*(\d+)', snippet) or re.search(r'id="soal-(\d+)"', snippet)
     soal_num = nomor_m.group(1) if nomor_m else 'unknown'
     print(f"Image {src.split('/')[-1]} -> Soal: {soal_num}")
+
