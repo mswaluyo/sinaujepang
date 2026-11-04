@@ -1,0 +1,362 @@
+[
+  {
+    "no": 1,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Gambar memperlihatkan seseorang sedang menutup jendela/pintu geser. Kata kerja dalam bahasa Jepang untuk 'menutup' adalah しめます (shimemasu - 閉めます). Pilihan A: かんじます (merasa), Pilihan B: はしります (berlari).",
+    "opt_detail": [
+      {
+        "kana": "かんじます [ 感じます ]",
+        "rom": "-",
+        "arti": "Merasa (kanjimasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "はしります [ 走ります ]",
+        "rom": "-",
+        "arti": "Berlari (hashirimasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "しめます [ 閉めます ]",
+        "rom": "-",
+        "arti": "Menutup (shimemasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ]
+  },
+  {
+    "no": 2,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Gambar memperlihatkan kendaraan bus umum. Penulisan katakana yang benar untuk bus adalah バス (basu) dengan vokal pendek. Pilihan A salah penulisan vokal panjang, dan Pilihan B adalah sepeda.",
+    "opt_detail": [
+      {
+        "kana": "バース",
+        "rom": "-",
+        "arti": "Baasu (salah eja)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "じてんしゃ [ 自転車 ]",
+        "rom": "-",
+        "arti": "Sepeda",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "バス",
+        "rom": "-",
+        "arti": "Bus (basu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ]
+  },
+  {
+    "no": 3,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Gambar menunjukkan sepasang mata. Kanji untuk mata adalah 目 (me). Pilihan A: 車 (mobil), Pilihan C: 耳 (telinga).",
+    "opt_detail": [
+      {
+        "kana": "目",
+        "rom": "-",
+        "arti": "Mata (me)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "車",
+        "rom": "-",
+        "arti": "Mobil (kuruma)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "耳",
+        "rom": "-",
+        "arti": "Telinga (mimi)",
+        "alasan": "Pilihan salah."
+      }
+    ]
+  },
+  {
+    "no": 4,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Gambar memperlihatkan seseorang sedang memarahi atau menegur temannya. Kata kerja yang tepat adalah しかります (shikarimasu - memarahi). Pilihan A: 勉強します (belajar), Pilihan C: およぎます (berenang).",
+    "opt_detail": [
+      {
+        "kana": "しかります [ 叱ります ]",
+        "rom": "-",
+        "arti": "Memarahi (shikarimasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "勉強します",
+        "rom": "-",
+        "arti": "Belajar",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "およぎます [ 泳ぎます ]",
+        "rom": "-",
+        "arti": "Berenang",
+        "alasan": "Pilihan salah."
+      }
+    ]
+  },
+  {
+    "no": 5,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Ungkapan baku dalam bahasa Jepang untuk masuk/berendam di bak mandi air hangat adalah お風呂に入ります (ofuro ni hairimasu). Kalimat: 'Di malam hari masuk berendam di bak mandi'.",
+    "opt_detail": [
+      {
+        "kana": "並べます",
+        "rom": "-",
+        "arti": "Menjajarkan (narabemasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "習います",
+        "rom": "-",
+        "arti": "Belajar/kursus (naraimasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "入ります",
+        "rom": "-",
+        "arti": "Masuk (hairimasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ]
+  },
+  {
+    "no": 6,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Kata kerja alami yang berpasangan dengan angin (風が) adalah 吹きます (fukimasu - bertiup). Kalimat: 'Angin kencang bertiup'.",
+    "opt_detail": [
+      {
+        "kana": "勉強します",
+        "rom": "-",
+        "arti": "Belajar",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "吹きます",
+        "rom": "-",
+        "arti": "Bertiup (fukimasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "習います",
+        "rom": "-",
+        "arti": "Belajar",
+        "alasan": "Pilihan salah."
+      }
+    ]
+  },
+  {
+    "no": 7,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Karena banyak orang yang datang (たくさん人が来るので), maka gelas/cangkir lebih banyak dibutuhkan/diperlukan. Kata yang tepat adalah 必要です (hitsuyou desu).",
+    "opt_detail": [
+      {
+        "kana": "てつだています",
+        "rom": "-",
+        "arti": "Sedang membantu (salah bentuk)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ひつようです",
+        "rom": "-",
+        "arti": "Dibutuhkan / diperlukan (hitsuyou desu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "ごめんなさいです",
+        "rom": "-",
+        "arti": "Mohon maaf",
+        "alasan": "Pilihan salah."
+      }
+    ]
+  },
+  {
+    "no": 8,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Sifat sayur di supermarket yang paling lazim adalah harganya murah, yaitu 安い (yasui). Pilihan B: 楽しい (menyenangkan), Pilihan C: 難しい (sulit).",
+    "opt_detail": [
+      {
+        "kana": "安い",
+        "rom": "-",
+        "arti": "Murah (yasui)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "楽しい",
+        "rom": "-",
+        "arti": "Menyenangkan (tanoshii)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "難しい",
+        "rom": "-",
+        "arti": "Sulit (muzukashii)",
+        "alasan": "Pilihan salah."
+      }
+    ]
+  },
+  {
+    "no": 9,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Pola kemampuan kata kerja bentuk kamus + ことができます. Membuat masakan adalah 料理を作る (ryouri wo tsukuru). Jadi bentuknya adalah 作ることができます.",
+    "opt_detail": [
+      {
+        "kana": "作る",
+        "rom": "-",
+        "arti": "Membuat (tsukuru)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "焼きる",
+        "rom": "-",
+        "arti": "Bentuk salah",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "尽きる",
+        "rom": "-",
+        "arti": "Habis (tsukiru)",
+        "alasan": "Pilihan salah."
+      }
+    ]
+  },
+  {
+    "no": 10,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Kata benda yang cocok dengan sejarah (歴史) terkenal adalah penginapan tradisional Jepang yaitu 旅館 / りょうかん (ryoukan). Kalimat: 'Sejarah penginapan ini terkenal'.",
+    "opt_detail": [
+      {
+        "kana": "りょうかん",
+        "rom": "-",
+        "arti": "Penginapan tradisional (ryoukan)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "なかなか",
+        "rom": "-",
+        "arti": "Cukup lumayan (nakanaka)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ちがい",
+        "rom": "-",
+        "arti": "Perbedaan (chigai)",
+        "alasan": "Pilihan salah."
+      }
+    ]
+  },
+  {
+    "no": 11,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Alasan suatu tempat tidak praktis (不便 - fuben) adalah karena lokasinya yang jauh, yaitu 遠い (tooi) dalam bentuk sambung ~te menjadi 遠くて (tookute). 'Karena banknya jauh, jadi tidak praktis'.",
+    "opt_detail": [
+      {
+        "kana": "遠くて",
+        "rom": "-",
+        "arti": "Jauh sehingga... (tookute)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "高くて",
+        "rom": "-",
+        "arti": "Mahal / tinggi (takakute)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "面白くて",
+        "rom": "-",
+        "arti": "Menarik (omoshirokute)",
+        "alasan": "Pilihan salah."
+      }
+    ]
+  },
+  {
+    "no": 12,
+    "analisis": "[MNN Bab 3/13 - Satuan Mata Uang Jepang & Cara Menjawab Harga (いくらですか)] Untuk menyatakan dan menjawab harga barang dalam bahasa Jepang, satuan mata uang resmi yang wajib digunakan adalah 円 (dibaca えん / en = Yen). Angka 85 dilafalkan はちじゅうご (hachijuugo) dan diikuti satuan mata uang 円 (en), sehingga menjadi 85円です (hachijuugo-en desu = 85 Yen). Pilihan 80千 salah karena satuan 千 (sen/ribu) tidak lazim berdiri sendiri tanpa satuan mata uang dan nominalnya keliru. Pilihan 80門 salah karena 門 (mon) berarti gerbang pintu/kategori, bukan mata uang Jepang.",
+    "opt_detail": [
+      {
+        "kana": "85円です",
+        "rom": "hachijuugo-en desu",
+        "arti": "harganya 85 Yen",
+        "alasan": "Tepat sekali. Menggunakan satuan mata uang Jepang resmi 円 (en) dengan nominal yang sesuai dengan label harga 85."
+      },
+      {
+        "kana": "80千です",
+        "rom": "hachijuusen desu",
+        "arti": "80 ribu (salah satuan)",
+        "alasan": "Salah. Kata 千 (sen) berarti ribuan dan tidak boleh digunakan sebagai pengganti satuan mata uang 円."
+      },
+      {
+        "kana": "80門です",
+        "rom": "hachijuumon desu",
+        "arti": "80 gerbang (salah total)",
+        "alasan": "Salah. Kanji 門 (mon) berarti gerbang pintu, bukan satuan mata uang."
+      }
+    ]
+  },
+  {
+    "no": 13,
+    "analisis": "[MNN Bab Kosakata - Huruf & Kata] Alasan diminta lekas pulang adalah karena ada badai topan/taifun yang datang (台風が来るから). Kosakata yang tepat adalah 台風 (taifuu).",
+    "opt_detail": [
+      {
+        "kana": "家",
+        "rom": "-",
+        "arti": "Rumah (ie)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "台風",
+        "rom": "-",
+        "arti": "Angin topan / taifun (taifuu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      },
+      {
+        "kana": "海",
+        "rom": "-",
+        "arti": "Laut (umi)",
+        "alasan": "Pilihan salah."
+      }
+    ]
+  },
+  {
+    "no": 14,
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Gambar menunjukkan ruangan bioskop atau film yang sedang diputar. Bahasa Jepang untuk film/bioskop adalah 映画 (eiga). Pilihan A: 午後 (sore/p.m.), Pilihan B: 英語 (bahasa Inggris).",
+    "opt_detail": [
+      {
+        "kana": "午後",
+        "rom": "-",
+        "arti": "Sore / p.m. (gogo)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "英語",
+        "rom": "-",
+        "arti": "Bahasa Inggris (eigo)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "映画",
+        "rom": "-",
+        "arti": "Film / bioskop (eiga)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ]
+  },
+  {
+    "no": 15,
+    "analisis": "[MNN Bab Percakapan - Ungkapan & Tata Bahasa] Gambar memperlihatkan anak yang tenggelam di air sedang berseru meminta pertolongan (助けて). Kata kerja yang berkaitan adalah たすけます (tasukemasu - menolong/membantu). Pilihan A: わらいます (tertawa), Pilihan C: ならいます (belajar).",
+    "opt_detail": [
+      {
+        "kana": "わらいます [ 笑います ]",
+        "rom": "-",
+        "arti": "Tertawa (waraimasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "ならいます [ 習います ]",
+        "rom": "-",
+        "arti": "Belajar (naraimasu)",
+        "alasan": "Pilihan salah."
+      },
+      {
+        "kana": "たすけます [ 助けます ]",
+        "rom": "-",
+        "arti": "Menolong / menyelamatkan (tasukemasu)",
+        "alasan": "Kunci jawaban yang benar sesuai lembar CBT."
+      }
+    ]
+  }
+]

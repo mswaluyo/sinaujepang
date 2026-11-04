@@ -1,0 +1,62 @@
+
+            <div class="review-soal-header" style="align-items:flex-start">
+              <div class="review-status kosong" style="margin-top:2px">—</div>
+              <div class="review-nomor" style="margin-top:4px">#12</div>
+              <div class="review-pertanyaan" style="font-family:'Noto Serif JP',serif">
+                <div>apa yang boleh dilakukan selama konser berlangsung?</div>
+                <div style="font-size:11.5px;color:var(--text3);font-style:italic;margin-top:4px;font-weight:normal">(apa yang boleh dilakukan selama konser berlangsung?)</div>
+              </div>
+            </div>
+            <div class="review-body">
+              
+              <div class="audio-box" style="display:flex; align-items:center; gap:12px; margin-top:8px; padding:10px 14px; background:rgba(139,92,246,0.04); border:1px solid rgba(139,92,246,0.12); border-radius:8px; margin-bottom:12px;">
+              <button type="button" class="play-audio-btn" style="width:36px; height:36px; border:none; background:#8b5cf6; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="play-icon"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+              </button>
+              <span style="font-size:11.5px; color:var(--text3); font-weight:600;">Putar Audio Rekaman</span>
+            </div>
+              
+          <div class="review-jawaban">
+            <div style="font-size:11px;color:var(--text3);min-width:80px">
+              Jawaban Anda: <strong style="color:#ef4444">—</strong>
+            </div>
+            <div style="font-size:11px;color:var(--text3)">
+              Kunci: <strong style="color:#10b981">C</strong>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:.5rem">
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key ">A</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">merekam dan merokok</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(merekam dan merokok)</div>
+            </div>
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key ">B</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">tidur dan istirahat</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(tidur dan istirahat)</div>
+            </div>
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key review-key-benar">C</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">makan dan minum</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(makan dan minum)</div>
+            </div></div>
+              <div class="review-penjelasan">💡 Berdasarkan pengumuman tata tertib konser, penonton hanya diperbolehkan makan dan minum di area tertentu, sedangkan merekam dilarang.
+
+Tips: Dengarkan hal yang diizinkan (ok/dekimasu) dan dilarang (dame/kinshi).</div>
+            </div>
+          </div>
+        </div>
+        <div class="review-section">
+          <div class="review-section-title">
+            <span style="color:#f59e0b">📄</span>
+            <span class="ja" style="color:#f59e0b">どっかい</span>
+            <span style="color:var(--text3)">— Kemampuan Membaca</span>
+          </div>
+          
+          

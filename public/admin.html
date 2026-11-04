@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,7 +16,6 @@
 <div class="flex flex-wrap gap-2 mb-4">
 <button data-tab="nilai" class="tabBtn bg-fuji-600 hover:bg-fuji-700 text-white px-4 py-2 rounded-full text-sm font-bold shadow-md transition-all"><i class="fa-solid fa-chart-line mr-1"></i>Nilai Siswa</button>
 <button data-tab="soal" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-pen-to-square mr-1"></i>Soal</button>
-<button data-tab="import" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-file-import mr-1"></i>Import MHTML</button>
 <button data-tab="users" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-users mr-1"></i>Pengguna</button>
 <button data-tab="admins" class="tabBtn bg-white border border-slate-200 text-slate-600 px-4 py-2 rounded-full text-sm font-bold transition-all"><i class="fa-solid fa-shield-halved mr-1"></i>Admins</button>
 
@@ -28,7 +27,7 @@
 <p class="text-[11px] text-slate-500 mt-0.5">Rekap nilai terbaik per siswa-paket (Ringkas) atau semua percobaan.</p>
 </div>
 <span id="qCount" class="text-[11px] font-bold text-slate-500 bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full"></span>
-<span id="qSoal" class="text-[11px] font-bold text-fuji-700 bg-fuji-50 border border-fuji-200 px-2.5 py-1 rounded-full" title="Total butir soal dikerjakan (Σ benar/total per baris)"></span>
+<span id="qSoal" class="text-[11px] font-bold text-fuji-700 bg-fuji-50 border border-fuji-200 px-2.5 py-1 rounded-full" title="Total butir soal dikerjakan (Î£ benar/total per baris)"></span>
 </div>
 <div class="px-4 py-3 bg-slate-50/70 border-b border-slate-100 flex flex-wrap gap-2 items-center">
 <select id="qMode" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] font-bold text-slate-700 focus:outline-none focus:ring-2 focus:ring-fuji-300">
@@ -46,7 +45,7 @@
 <option value="kagi-quiz">kagi-quiz</option>
 <option value="tamago-quiz">tamago-quiz</option>
 </select>
-<input id="qEmail" placeholder="Cari email / nama…" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] flex-1 min-w-[160px] focus:outline-none focus:ring-2 focus:ring-fuji-300">
+<input id="qEmail" placeholder="Cari email / namaâ€¦" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] flex-1 min-w-[160px] focus:outline-none focus:ring-2 focus:ring-fuji-300">
 <button id="qGo" class="bg-slate-900 hover:bg-slate-800 text-white text-[13px] font-bold px-4 py-2 rounded-lg transition-colors"><i class="fa-solid fa-magnifying-glass mr-1.5"></i>Tampilkan</button>
 <button id="qCsv" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-[13px] font-bold px-3.5 py-2 rounded-lg transition-colors" title="Unduh CSV"><i class="fa-solid fa-download mr-1.5"></i>CSV</button>
 <button id="qJson" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-[13px] font-bold px-3.5 py-2 rounded-lg transition-colors" title="Unduh JSON (untuk laporan/debug)"><i class="fa-solid fa-file-code mr-1.5"></i>JSON</button>
@@ -157,7 +156,7 @@
             <div>
               <label class="block text-xs font-bold text-slate-700 mb-1 flex items-center justify-between">
                 <span>Teks Pertanyaan / Soal:</span>
-                <span class="text-[11px] font-normal text-slate-400">Gunakan tanda kurung （ ） untuk isian</span>
+                <span class="text-[11px] font-normal text-slate-400">Gunakan tanda kurung ï¼ˆ ï¼‰ untuk isian</span>
               </label>
               <textarea id="fTitle" rows="2" placeholder="Tuliskan teks pertanyaan soal bahasa Jepang di sini..." class="w-full border border-slate-300 rounded-xl p-2.5 text-xs text-slate-800 focus:outline-none focus:ring-2 focus:ring-fuji-400"></textarea>
             </div>
@@ -170,7 +169,7 @@
       <label class="text-xs font-medium text-gray-700">Gambar Soal:</label>
       <!-- Badge Status No Pict -->
       <span id="noPictBadge" class="inline-flex items-center gap-1 px-2 py-0.5 bg-amber-50 text-amber-700 text-[10px] font-medium rounded border border-amber-200">
-        🚫 No Pict
+        ðŸš« No Pict
       </span>
     </div>
     <input type="text" id="fImg" class="w-full p-1.5 text-xs border border-gray-300 rounded bg-white" value="images/soal_1.jpg" />
@@ -184,7 +183,7 @@
   </div>
                 <div id="fImgPreviewBox" class="mt-2 hidden">
                   <img id="fImgPreview" class="max-h-28 rounded-lg border border-slate-200 shadow-sm object-contain bg-white">
-                  <div id="fImgMissing" class="hidden mt-1 text-center text-xs text-slate-500 bg-slate-100 border border-slate-200 rounded p-2">🖼️ 🚫 No Pict</div>
+                  <div id="fImgMissing" class="hidden mt-1 text-center text-xs text-slate-500 bg-slate-100 border border-slate-200 rounded p-2">ðŸ–¼ï¸ ðŸš« No Pict</div>
                 </div>
               </div>
               <div>
@@ -248,7 +247,7 @@
 <span id="uCount" class="text-[11px] font-bold text-slate-500 bg-slate-100 border border-slate-200 px-2.5 py-1 rounded-full"></span>
 </div>
 <div class="px-4 py-3 bg-slate-50/70 border-b border-slate-100 flex flex-wrap gap-2 items-center">
-<input id="uSearch" placeholder="Cari nama / email…" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] flex-1 min-w-[160px] focus:outline-none focus:ring-2 focus:ring-fuji-300">
+<input id="uSearch" placeholder="Cari nama / emailâ€¦" class="border border-slate-200 bg-white rounded-lg px-3 py-2 text-[13px] flex-1 min-w-[160px] focus:outline-none focus:ring-2 focus:ring-fuji-300">
 <button id="uCsv" class="bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-[13px] font-bold px-3.5 py-2 rounded-lg transition-colors" title="Unduh CSV"><i class="fa-solid fa-download mr-1.5"></i>CSV</button>
 <label for="uImport" class="cursor-pointer bg-fuji-600 hover:bg-fuji-700 text-white text-[13px] font-bold px-3.5 py-2 rounded-lg transition-colors" title="Import daftar user Auth dari CSV"><i class="fa-solid fa-upload mr-1.5"></i>Import CSV</label>
 <input type="file" id="uImport" accept=".csv" class="hidden">
@@ -303,4 +302,4 @@ try { window._aDb = getFirestore(window._aAuth.app); } catch(e) {}
 <script type="module" src="/assets/js/admin-data.js"></script>
 <script type="module" src="/assets/js/admin-auth.js"></script>
 </body>
-</html>
+</html>

@@ -15,10 +15,12 @@
 
   // Kelas aktif per menu — dilampirkan otomatis sesuai path halaman berjalan
   var NAV_ACTIVE = {
-    latihan: "bg-fuji-50 text-fuji-700",
-    kotoba: "bg-emerald-50 text-emerald-700",
+    home: "bg-fuji-50 text-fuji-700",
+    simulasi: "bg-sky-50 text-sky-700",
+    ssw: "bg-amber-50 text-amber-700",
     kanji: "bg-rose-50 text-rose-700",
-    game: "bg-amber-50 text-amber-700"
+    "jft-a2": "bg-sky-50 text-sky-700",
+    game: "bg-indigo-50 text-indigo-700"
   };
 
   // Tombol login versi awal (ikon Google + teks); diganti renderUser bila sudah ada sesi
@@ -39,24 +41,9 @@
     h += '<div class="flex flex-col"><span class="font-bold text-slate-800 text-lg leading-tight">SinauJepang</span><span class="text-[10px] text-fuji-600 font-semibold tracking-wider">BELAJAR &amp; LATIHAN GRATIS</span></div>';
     h += "</a>";
     h += '<div class="flex items-center gap-3">';
-    // Nav desktop (pill) — menu aktif diberi warna sendiri via NAV_ACTIVE
-    h += '<nav class="hidden md:flex items-center gap-1 text-[13px] font-bold">';
-    h += '<a href="/#latihan-soal" data-nav="latihan" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-fuji-600 hover:bg-fuji-50 transition-all">Latihan</a>';
-    h += '<a href="/kotoba" data-nav="kotoba" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all"><i class="fa-solid fa-book-open mr-1"></i>Kotoba</a>';
-    h += '<a href="/kanji" data-nav="kanji" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-rose-600 hover:bg-rose-50 transition-all"><i class="fa-solid fa-language mr-1"></i>Kanji</a>';
-    h += '<a href="/jft-a2.html" data-nav="jft-a2" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-sky-600 hover:bg-sky-50 transition-all"><i class="fa-solid fa-graduation-cap mr-1"></i>JFT-A2</a><a href="/game.html" data-nav="game" class="px-3 py-1.5 rounded-full text-slate-600 hover:text-amber-600 hover:bg-amber-50 transition-all"><i class="fa-solid fa-gamepad mr-1"></i>Game</a>';
-    h += "</nav>";
     h += '<a id="adminBtn" href="/admin" class="hidden items-center gap-2 bg-amber-400 hover:bg-amber-500 text-slate-900 font-bold px-3.5 py-1.5 rounded-full transition-all text-xs border border-amber-500"><i class="fa-solid fa-shield-halved"></i><span>Admin</span></a>';
-    h += '<button onclick="SiteLayout.donate()" class="hidden sm:flex items-center gap-2 bg-amber-50 hover:bg-amber-100 text-amber-700 font-semibold px-3.5 py-1.5 rounded-full border border-amber-200 transition-all text-xs"><i class="fa-solid fa-mug-hot text-amber-600"></i><span>Traktir Kopi</span></button>';
     h += '<span id="uInfo" class="hidden text-xs text-slate-500"></span>';
     h += '<button id="loginBtn" onclick="SiteLayout.login()" class="flex items-center gap-2.5 bg-white hover:bg-slate-50 text-slate-700 font-medium px-4 py-2 rounded-full border border-slate-200 shadow-sm transition-all hover:shadow text-sm">' + LOGIN_DEFAULT + "</button>";
-    h += "</div></div>";
-    // Baris nav versi layar kecil (di desktop nav pill di atas sudah cukup)
-    h += '<div class="md:hidden border-t border-fuji-100 bg-white/70"><div class="max-w-6xl mx-auto px-4 py-1.5 flex items-center gap-1 text-[12px] font-bold">';
-    h += '<a href="/" data-nav="latihan" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-fuji-600 hover:bg-fuji-50 transition-all">Latihan</a>';
-    h += '<a href="/kotoba" data-nav="kotoba" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-emerald-600 hover:bg-emerald-50 transition-all"><i class="fa-solid fa-book-open mr-1"></i>Kotoba</a>';
-    h += '<a href="/kanji" data-nav="kanji" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-rose-600 hover:bg-rose-50 transition-all"><i class="fa-solid fa-language mr-1"></i>Kanji</a>';
-    h += '<a href="/jft-a2.html" data-nav="jft-a2" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-sky-600 hover:bg-sky-50 transition-all"><i class="fa-solid fa-graduation-cap mr-1"></i>JFT-A2</a><a href="/game.html" data-nav="game" class="px-2.5 py-1 rounded-full text-slate-600 hover:text-amber-600 hover:bg-amber-50 transition-all"><i class="fa-solid fa-gamepad mr-1"></i>Game</a>';
     h += "</div></div>";
     h += "</header>";
     return h;
@@ -68,29 +55,121 @@
     f += '<footer id="site-footer" class="no-print bg-white border-t border-slate-200 py-8 mt-auto">';
     f += '<div class="max-w-5xl mx-auto px-4 text-center">';
     f += '<p class="text-slate-700 font-bold text-sm mb-1">SinauJepang (sinaujepang.web.app)</p>';
-    f += '<p class="text-slate-600 text-xs mb-3">Didedikasikan untuk seluruh pejuang Tokutei Ginou Indonesia. Semoga sukses melangkah ke Jepang!</p>';
-    f += '<div class="flex flex-col sm:flex-row items-center justify-center gap-2.5 sm:gap-3 mt-3">';
-    f += '<a href="https://www.tiktok.com/@danyangkedungselur" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 text-white font-semibold px-4 py-2 rounded-full text-xs shadow-md transition-all hover:scale-105" style="background-color:#010101;box-shadow:0 2px 8px rgba(0,0,0,0.3);"><i class="fa-brands fa-tiktok text-sm" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i><span style="letter-spacing:0.02em;">@danyangkedungselur</span></a>';
-    f += '<a href="https://www.facebook.com/maswaluyo/" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#1877F2] hover:bg-[#1464cc] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all hover:scale-105"><i class="fa-brands fa-facebook text-sm"></i><span>Sugeng Waluyo</span></a>';
-    f += '<a href="https://wa.me/6285649049086" target="_blank" rel="noopener" class="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#25D366] hover:bg-[#1eb856] text-white font-semibold px-4 py-2 rounded-full text-xs shadow-sm transition-all hover:scale-105"><i class="fa-brands fa-whatsapp text-sm"></i><span>Sugeng Waluyo</span></a>';
-    f += "</div></div></footer>";
+    f += '<p class="text-slate-500 text-xs">Didedikasikan untuk seluruh pejuang Tokutei Ginou Indonesia. Semoga sukses melangkah ke Jepang!</p>';
+    f += "</div></footer>";
     return f;
   }
 
   function currentSection() {
     var p = (location.pathname || "/").toLowerCase().replace(/\.html$/, "").replace(/\/+$/, "");
-    if (p === "" || p === "/") return "latihan";
-    if (p === "/kotoba") return "kotoba";
+    if (p === "" || p === "/") return "home";
+    if (p === "/simulasi" || p === "/quiz" || p === "/hasil") return "simulasi";
+    if (p === "/ssw") return "ssw";
     if (p === "/kanji") return "kanji";
-    if (p === "/quiz" || p === "/hasil") return "latihan";
+    if (p === "/jft-a2") return "jft-a2";
     if (p === "/game") return "game";
     return "";
   }
 
-  // Login: modal cepat di beranda; di halaman lain buka halaman masuk
+  // Modal Login Standar SinauJepang (seragam di semua halaman)
+  function loginModalHTML() {
+    var m = "";
+    m += '<div id="loginModal" class="fixed inset-0 bg-slate-900/50 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">';
+    m += '<div class="bg-white rounded-3xl max-w-md w-full p-8 shadow-2xl relative border border-slate-100 text-center animate-in fade-in zoom-in-95 duration-200">';
+    m += '<button onclick="SiteLayout.closeLoginModal()" class="absolute top-5 right-5 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-400 hover:text-slate-600 flex items-center justify-center transition-all">';
+    m += '<i class="fa-solid fa-xmark text-sm"></i>';
+    m += '</button>';
+    m += '<div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-500 to-fuji-600 text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg shadow-sky-500/25">';
+    m += '<i class="fa-solid fa-user-check"></i>';
+    m += '</div>';
+    m += '<h2 class="text-2xl font-extrabold text-slate-800 mb-1">Masuk ke SinauJepang</h2>';
+    m += '<h3 class="text-xs font-bold uppercase tracking-wider text-fuji-600 mb-3">Akun Belajar &amp; Simulasi CBT</h3>';
+    m += '<p class="text-slate-600 text-xs sm:text-sm leading-relaxed mb-6 max-w-xs mx-auto">';
+    m += 'Masuk dengan akun Google Anda untuk membuka simulasi CBT, menyimpan statistik belajar, riwayat nilai ujian, dan materi persiapan kerja.';
+    m += '</p>';
+    m += '<button onclick="SiteLayout.simulateLogin()" class="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-sky-600 to-fuji-600 hover:from-sky-700 hover:to-fuji-700 text-white font-bold py-3.5 px-6 rounded-full shadow-lg shadow-sky-500/25 transition-all hover:scale-[1.02] mb-3 text-sm">';
+    m += '<i class="fa-brands fa-google text-base"></i>';
+    m += '<span>Masuk Sekarang — Gratis</span>';
+    m += '</button>';
+    m += '<p class="text-[11px] text-slate-400">100% Gratis &amp; Aman • Bebas Akses Selamanya</p>';
+    m += '</div></div>';
+    return m;
+  }
+
+  function mountModal() {
+    if (document.getElementById("loginModal")) return;
+    document.body.insertAdjacentHTML("beforeend", loginModalHTML());
+  }
+
+  function openLoginModal() {
+    mountModal();
+    var m = document.getElementById("loginModal");
+    if (m) m.classList.remove("hidden");
+  }
+
+  function closeLoginModal() {
+    var m = document.getElementById("loginModal");
+    if (m) m.classList.add("hidden");
+    // Jika belum login dan menutup modal di halaman selain home, kembalikan ke home (/)
+    var isLogged = false;
+    try {
+      if (localStorage.getItem("jft_user") || window.fujiUser) isLogged = true;
+    } catch (e) {}
+    var p = (location.pathname || "/").toLowerCase().replace(/\.html$/, "").replace(/\/+$/, "");
+    if (!isLogged && p !== "" && p !== "/" && p !== "/index") {
+      window.location.replace("/");
+    }
+  }
+
+  async function getFirebaseAuthInstance() {
+    if (window.fujiAuth) return window.fujiAuth;
+    try {
+      var appMod = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js");
+      var authMod = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js");
+      var firebaseConfig = {
+        apiKey: "AIzaSyDjbVGm1rjPJADixh8k5Zbc7-xX4cm5uos",
+        authDomain: "sinau-jepang.firebaseapp.com",
+        projectId: "sinau-jepang",
+        storageBucket: "sinau-jepang.firebasestorage.app",
+        messagingSenderId: "164715270928",
+        appId: "1:164715270928:web:bb5803e1fdee66454b4b95",
+        measurementId: "G-K6E9PVSWVB"
+      };
+      var app = window.firebaseApp || appMod.getApps()[0] || appMod.initializeApp(firebaseConfig);
+      window.firebaseApp = app;
+      window.fujiAuth = authMod.getAuth(app);
+      return window.fujiAuth;
+    } catch (e) {
+      console.warn("Firebase Auth init error:", e);
+      return null;
+    }
+  }
+
+  async function simulateLogin() {
+    try {
+      var authMod = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js");
+      var auth = await getFirebaseAuthInstance();
+      if (!auth) throw new Error("Gagal menginisialisasi autentikasi Google.");
+      var r = await authMod.signInWithPopup(auth, new authMod.GoogleAuthProvider());
+      var u = r.user;
+      var uObj = { uid: u.uid, name: u.displayName, email: u.email, photo: u.photoURL };
+      try { localStorage.setItem("jft_user", JSON.stringify(uObj)); } catch (e) {}
+      try { if (window.IndexedDB && window.IndexedDB.setItem) window.IndexedDB.setItem("jft_user", uObj); } catch (e) {}
+      window.fujiUser = uObj;
+      closeLoginModal();
+      renderUser();
+      // Reload atau re-render halaman jika ada handler khusus
+      if (typeof window.checkUserStatus === "function") window.checkUserStatus();
+      else if (typeof window.renderPackSectionScoresAll === "function") window.renderPackSectionScoresAll();
+      else location.reload();
+    } catch (e) {
+      alert("Gagal masuk: " + (e.message || e.code));
+    }
+  }
+
+  // Login: selalu buka modal seragam
   function login() {
-    if (typeof window.openLoginModal === "function") { window.openLoginModal(); return; }
-    location.href = "/login.html";
+    openLoginModal();
   }
 
   // Keluar: pakai fujiLogout bila ada (beranda); selain itu lewat ?out=1 di login.html
@@ -100,11 +179,8 @@
     location.replace("/login.html?out=1");
   }
 
-  // Traktir Kopi: modal di beranda; selain itu bawa ke beranda + buka otomatis (?donasi=1)
-  function donate() {
-    if (typeof window.openDonationModal === "function") { window.openDonationModal(); return; }
-    location.replace("/?donasi=1");
-  }
+  // Traktir Kopi: tidak lagi aktif
+  function donate() {}
 
   // Sinkronkan tampilan login di header dengan sesi tersimpan (jft_user)
   function renderUser() {
@@ -174,11 +250,34 @@
     document.body.insertAdjacentHTML("beforeend", footerHTML());
   }
 
+  // Enforce login di seluruh halaman kecuali beranda (Home)
+  function enforceAuth() {
+    var p = (location.pathname || "/").toLowerCase().replace(/\.html$/, "").replace(/\/+$/, "");
+    if (p === "" || p === "/" || p === "/index") return; // Beranda bebas diakses tanpa login
+
+    var isLogged = false;
+    try {
+      if (localStorage.getItem("jft_user") || window.fujiUser) isLogged = true;
+    } catch (e) {}
+    if (!isLogged) {
+      openLoginModal();
+    }
+  }
+
+  window.openLoginModal = openLoginModal;
+  window.closeLoginModal = closeLoginModal;
+  window.simulateLogin = simulateLogin;
+
   window.SiteLayout = {
     header: headerHTML,
     footer: footerHTML,
     mountHeader: mountHeader,
     mountFooter: mountFooter,
+    mountModal: mountModal,
+    openLoginModal: openLoginModal,
+    closeLoginModal: closeLoginModal,
+    simulateLogin: simulateLogin,
+    enforceAuth: enforceAuth,
     login: login,
     logout: logoutFallback,
     donate: donate,
@@ -187,7 +286,14 @@
 
   if (window.SITE_NO_CHROME !== true && document.body) {
     mountHeader();
-    var init = function () { mountFooter(); renderUser(); watchAdminIdentity(); };
+    mountModal();
+    var init = function () {
+      mountFooter();
+      mountModal();
+      renderUser();
+      watchAdminIdentity();
+      enforceAuth();
+    };
     if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
     else init();
   }

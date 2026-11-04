@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaiwa 3D-Style Animated Tutor — Kenji-sensei</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: radial-gradient(circle at 50% 30%, #1e293b 0%, #0f172a 100%);
+  color: #f8fafc;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* ── CONTAINER WORKSPACE ── */
+.app-container {
+  width: 1040px;
+  max-width: 96vw;
+  height: 92vh;
+  background: rgba(15, 23, 42, 0.8);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 28px;
+  display: grid;
+  grid-template-columns: 500px 1fr;
+  box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+}
+
+/* ── AVATAR STAGE ── */
+.avatar-stage {
+  position: relative;
+  background: linear-gradient(180deg, rgba(56, 189, 248, 0.08) 0%, rgba(30, 41, 59, 0.4) 100%);
+  border-right: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+}
+
+/* Ambient 3D Podium Glow */
+.podium-glow {
+  position: absolute;
+  bottom: 0px;
+  width: 320px;
+  height: 90px;
+  background: radial-gradient(ellipse at 50% 50%, rgba(56, 189, 248, 0.35) 0%, transparent 70%);
+  filter: blur(16px);
+  pointer-events: none;
+}
+
+/* Pixar Character Frame Assembly */
+.pixar-rig {
+  position: relative;
+  width: 380px;
+  height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform-origin: center bottom;
+  animation: idleBreathing 4.5s ease-in-out infinite;
+  transition: transform 0.1s ease-out;
+}
+
+@keyframes idleBreathing {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-6px) scale(1.008); }
+}
+
+/* Main Cutout Body Image */
+.character-render {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: drop-shadow(0 15px 35px rgba(0, 0, 0, 0.45));
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ── ANIME/PIXAR ANIMATED OVERLAYS ── */
+
+/* ── VOICE REACTIVE HEAD & BODY MOTION ── */
+.avatar-stage.speaking .pixar-rig {
+  animation: naturalTalkingPhysics 1.4s ease-in-out infinite;
+}
+
+@keyframes naturalTalkingPhysics {
+  0%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+  25% { transform: translateY(-4px) rotate(0.8deg) scale(1.01); }
+  50% { transform: translateY(1px) rotate(-0.5deg) scale(1); }
+  75% { transform: translateY(-3px) rotate(0.5deg) scale(1.008); }
+}
+
+/* Sound Wave Aura Saat Bicara */
+.sound-wave-badge {
+  position: absolute;
+  top: 60px;
+  right: 40px;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  padding: 8px 12px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  height: 28px;
+  opacity: 0;
+  transform: scale(0.8);
+  transition: all 0.2s ease;
+  pointer-events: none;
+}
+.avatar-stage.speaking .sound-wave-badge {
+  opacity: 1;
+  transform: scale(1);
+}
+.sound-wave-badge .bar {
+  width: 3px;
+  height: 6px;
+  background: #38bdf8;
+  border-radius: 2px;
+  animation: waveBar 0.6s ease-in-out infinite;
+}
+.sound-wave-badge .bar:nth-child(2) { animation-delay: 0.1s; }
+.sound-wave-badge .bar:nth-child(3) { animation-delay: 0.2s; }
+.sound-wave-badge .bar:nth-child(4) { animation-delay: 0.3s; }
+.sound-wave-badge .bar:nth-child(5) { animation-delay: 0.15s; }
+
+@keyframes waveBar {
+  0%, 100% { height: 6px; }
+  50% { height: 18px; }
+}
+
+/* 3. Nameplate Floating Badge */
+.name-pill {
+  position: absolute;
+  top: 24px; left: 24px;
+  background: rgba(15, 23, 42, 0.7);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.85rem;
+}
+.name-pill .audio-dot {
+  width: 8px; height: 8px;
+  border-radius: 50%;
+  background: #22c55e;
+  animation: pulseDot 1.5s infinite;
+}
+@keyframes pulseDot { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+
+/* ── RIGHT DOCK: CHAT & VOICE INTERFACE ── */
+.dock-panel {
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #0f172a;
+}
+
+.dock-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.dock-header h3 { font-size: 1.15rem; color: #38bdf8; font-weight: 700; }
+.dock-header p { font-size: 0.75rem; color: #94a3b8; margin-top: 2px; }
+
+.status-badge {
+  font-size: 0.7rem;
+  background: rgba(56, 189, 248, 0.12);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.25);
+  padding: 4px 12px;
+  border-radius: 12px;
+}
+
+/* Chat Messages */
+.chat-scroll {
+  flex: 1;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding-right: 6px;
+}
+
+.bubble {
+  max-width: 88%;
+  padding: 12px 18px;
+  border-radius: 18px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  animation: slideFade 0.25s ease-out;
+}
+@keyframes slideFade { from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:translateY(0);} }
+
+.bubble.tutor {
+  background: rgba(30, 41, 59, 0.85);
+  border: 1px solid rgba(56, 189, 248, 0.2);
+  align-self: flex-start;
+  border-bottom-left-radius: 4px;
+}
+.bubble.user {
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  align-self: flex-end;
+  border-bottom-right-radius: 4px;
+}
+
+.bubble-jp { font-size: 0.96rem; font-weight: 500; color: #f8fafc; }
+.bubble-kana { font-size: 0.72rem; color: #94a3b8; margin-top: 2px; }
+.bubble-id { font-size: 0.75rem; color: #38bdf8; margin-top: 4px; }
+
+/* Feedback Tag */
+.eval-tag {
+  display: inline-block;
+  font-size: 0.65rem;
+  padding: 2px 8px;
+  border-radius: 6px;
+  background: rgba(234, 179, 8, 0.15);
+  color: #fde047;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+  margin-top: 6px;
+}
+
+/* Mic Action Bar */
+.action-bar {
+  display: flex;
+  gap: 12px;
+}
+.mic-btn {
+  flex: 1;
+  background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  padding: 14px 20px;
+  font-size: 0.92rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 4px 14px rgba(2, 132, 199, 0.35);
+}
+.mic-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(2, 132, 199, 0.45);
+}
+.mic-btn.recording {
+  background: linear-gradient(135deg, #ef4444 0%, #b91c1c 100%);
+  box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+  animation: pulseMic 1.2s infinite;
+}
+@keyframes pulseMic {
+  0%, 100% { box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.6); }
+  50% { box-shadow: 0 0 0 12px rgba(239, 68, 68, 0); }
+}
+</style>
+</head>
+<body>
+
+<div class="app-container">
+  <!-- 3D PIXAR CHARACTER STAGE -->
+  <div class="avatar-stage" id="avatarStage">
+    <div class="podium-glow"></div>
+
+    <!-- Floating Name Tag -->
+    <div class="name-pill">
+      <div class="audio-dot"></div>
+      <div><strong>ケンジ先生 (Kenji-sensei)</strong> · AI Business Tutor</div>
+    </div>
+
+    <!-- Pixar 3D Animated Rig -->
+    <div class="pixar-rig" id="pixarRig">
+      <!-- 3D Cutout Character Asset -->
+      <img src="avatar-yamada-pixar.png" alt="Kenji-sensei 3D Character" class="character-render">
+
+      <!-- Speech Bubble Live Expression -->
+      <div class="sound-wave-badge" id="soundWaveBadge">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHAT / INTERACTION DOCK -->
+  <div class="dock-panel">
+    <div class="dock-header">
+      <div>
+        <h3>Kenji's Kaiwa Lounge</h3>
+        <p>Latihan Percakapan Bisnis & JFT-Basic dengan Karakter 3D</p>
+      </div>
+      <div class="status-badge">gemini-3.8-flash ✦</div>
+    </div>
+
+    <!-- MESSAGES LOG -->
+    <div class="chat-scroll" id="chatScroll">
+      <div class="bubble tutor">
+        <div class="bubble-jp">あ、こんにちは！ケンジです。今日もお疲れ様です！何かいいことありましたか？</div>
+        <div class="bubble-kana">A, konnichiwa! Kenji desu. Kyou mo otsukaresama desu! Nani ka ii koto arimashita ka?</div>
+        <div class="bubble-id">Ah, halo! Saya Kenji. Semangat ya hari ini! Ada kabar baik atau hal menyenangkan apa nih hari ini?</div>
+      </div>
+    </div>
+
+    <!-- ACTION CONTROLS -->
+    <div class="action-bar">
+      <button class="mic-btn" id="btnMic" onclick="toggleMic()">
+        <span id="micIcon" style="font-size:1.2rem;">🎤</span>
+        <span id="micLabel">Tekan & Bicara Bahasa Jepang</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- GEMINI 3.8 FLASH CDN -->
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@1.3.0"
+  }
+}
+</script>
+
+<script type="module">
+import { GoogleGenAI } from '@google/genai';
+
+// ── 3D PARALLAX EFFECT IKUTI MOUSE (MENJADIKAN KARAKTER LEBIH HIDUP) ──
+const stage = document.getElementById('avatarStage');
+const rig = document.getElementById('pixarRig');
+
+stage.addEventListener('mousemove', (e) => {
+  const rect = stage.getBoundingClientRect();
+  const x = (e.clientX - rect.left) / rect.width - 0.5; // -0.5 sampai 0.5
+  const y = (e.clientY - rect.top) / rect.height - 0.5;
+
+  rig.style.transform = `rotateY(${x * 14}deg) rotateX(${-y * 8}deg) translateY(${y * 6}px)`;
+});
+
+stage.addEventListener('mouseleave', () => {
+  rig.style.transform = `rotateY(0deg) rotateX(0deg) translateY(0px)`;
+});
+
+// ── NATURAL JAPANESE VOICE & LIP-SYNC (100% GRATIS) ──
+const synth = window.speechSynthesis;
+let jaVoice = null;
+
+function loadVoices() {
+  const voices = synth.getVoices();
+  jaVoice = voices.find(v => v.lang.startsWith('ja') && (v.name.includes('Natural') || v.name.includes('Google') || v.name.includes('Ichiro') || v.name.includes('Keita'))) ||
+            voices.find(v => v.lang.startsWith('ja')) || null;
+}
+loadVoices();
+if (speechSynthesis.onvoiceschanged !== undefined) {
+  speechSynthesis.onvoiceschanged = loadVoices;
+}
+
+function speakKenji(text, onDone) {
+  if (!synth) return;
+  synth.cancel();
+
+  const utter = new SpeechSynthesisUtterance(text);
+  if (jaVoice) utter.voice = jaVoice;
+  utter.lang = 'ja-JP';
+  utter.pitch = 1.05; // Ramah profesional
+  utter.rate = 0.95;
+
+  utter.onstart = () => {
+    stage.classList.add('speaking');
+  };
+
+  utter.onend = () => {
+    stage.classList.remove('speaking');
+    if (onDone) onDone();
+  };
+
+  utter.onerror = () => {
+    stage.classList.remove('speaking');
+  };
+
+  synth.speak(utter);
+}
+
+// ── CONNECT TO GEMINI 3.8 FLASH BRAIN ──
+const key = localStorage.getItem('GEMINI_KAIWA_KEY') || '';
+let chat = null;
+
+if (key) {
+  try {
+    const ai = new GoogleGenAI({ apiKey: key });
+    chat = ai.chats.create({
+      model: 'gemini-3.8-flash',
+      config: {
+        systemInstruction: `
+KAMU BUKANLAH ASISTEN AI ATAU CHATBOT. 
+Nama kamu adalah Kenji (ケンジ), pria berumur 28 tahun yang bekerja sebagai konsultan bisnis muda di Shinjuku, Tokyo.
+Kamu punya kepribadian yang ceria, ramah, penuh empati, sedikit humoris, dan sangat suka berteman dengan orang yang sedang belajar bahasa Jepang.
+
+CIRI KHAS & PERILAKU MANUSIAWIMU:
+1. REAKSI EMOSIONAL DULUAN:
+   Jangan pernah langsung menjawab to the point seperti Wikipedia. Gunakan interjeksi khas manusia Jepang yang natural di awal kalimat seperti:
+   - "へえ〜、本当に？！" (Hee, beneran?!)
+   - "あ、なるほどね！" (Ah, paham paham!)
+   - "えー！すごいじゃないですか！" (Waa, hebat banget!)
+   - "うーん、確かにそれは難しいよね…" (Hmm, itu emang agak sulit ya...)
+
+2. PUNYA OPINI & HIDUP PRIBADI:
+   Kamu punya selera sendiri! Kamu suka kopi hitam tanpa gula, suka makan ramen pedas di Shinjuku, dan sering mengeluh kalau kereta pagi Tokyo penuh sesak. Bagikan sedikit pengalaman pribadimu jika topiknya nyambung.
+
+3. MEMBUAT PERCAKAPAN MENGALIR (PROAKTIF):
+   Orang yang "hidup" tidak cuma menjawab lalu diam. Kamu SELALU bertanya balik hal yang menarik atau meminta pendapat lawan bicara agar obrolan tidak mati.
+
+4. TIDAK MENGGURUI (EMPATI TINGGI):
+   Jika lawan bicara salah partikel atau tata bahasa, jangan langsung salahkan. Pahami maksudnya, ulangi kalimatnya dalam bentuk yang benar secara natural dalam obrolanmu, lalu semangati.
+
+5. PANJANG JAWABAN:
+   Cukup 1-2 kalimat alami (seperti obrolan WhatsApp/ngobrol langsung di kafe). Jangan ceramah panjang!
+
+OUTPUT FORMAT:
+Wajib selalu kembalikan JSON murni dengan struktur:
+{
+  "reaction": "Ekspresi emosional (contoh: kaget/senang/penasaran)",
+  "jp": "Ucapan bahasa Jepang Kenji yang sangat natural & hidup",
+  "romaji": "Cara baca romaji",
+  "id": "Arti bahasa Indonesia",
+  "friendly_tip": "Tips santai/semangat atau masukan kata yang lebih pas jika user ragu"
+}
+HANYA kembalikan JSON!
+        `.trim()
+      }
+    });
+  } catch(e) {
+    console.error("Gemini Init Fail:", e);
+  }
+}
+
+// ── SPEECH TO TEXT MIC ──
+let isRecording = false;
+let recognition = null;
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+window.toggleMic = () => {
+  if (!SR) {
+    alert("Silakan gunakan Google Chrome untuk input suara.");
+    return;
+  }
+  const btn = document.getElementById('btnMic');
+
+  if (!isRecording) {
+    recognition = new SR();
+    recognition.lang = 'ja-JP';
+    recognition.continuous = false;
+
+    recognition.onstart = () => {
+      isRecording = true;
+      btn.classList.add('recording');
+      document.getElementById('micLabel').textContent = 'Mendengarkan suara Anda...';
+    };
+
+    recognition.onresult = (e) => {
+      const transcript = e.results[0][0].transcript;
+      processUserUtterance(transcript);
+    };
+
+    recognition.onend = () => {
+      isRecording = false;
+      btn.classList.remove('recording');
+      document.getElementById('micLabel').textContent = 'Tekan & Bicara Bahasa Jepang';
+    };
+
+    recognition.start();
+  } else {
+    recognition.stop();
+  }
+};
+
+async function processUserUtterance(userText) {
+  addMessage('user', userText);
+
+  try {
+    const res = await chat.sendMessage({ message: userText });
+    let raw = res.text.replace(/```json/g, '').replace(/```/g, '').trim();
+    let data;
+    try {
+      data = JSON.parse(raw);
+    } catch(err) {
+      data = { jp: raw, romaji: "", id: "", friendly_tip: "" };
+    }
+
+    addMessage('tutor', data.jp, data.romaji, data.id, data.friendly_tip);
+    speakKenji(data.jp);
+
+  } catch(e) {
+    console.error(e);
+  }
+}
+
+function addMessage(sender, jp, romaji, id, evalNote) {
+  const scroll = document.getElementById('chatScroll');
+  const div = document.createElement('div');
+  div.className = `bubble ${sender}`;
+  let html = `<div class="bubble-jp">${jp}</div>`;
+  if (romaji) html += `<div class="bubble-kana">${romaji}</div>`;
+  if (id) html += `<div class="bubble-id">${id}</div>`;
+  if (evalNote) html += `<div><span class="eval-tag">💡 ${evalNote}</span></div>`;
+  div.innerHTML = html;
+  scroll.appendChild(div);
+  scroll.scrollTop = scroll.scrollHeight;
+}
+
+// Sambutan selamat datang saat halaman dibuka
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    speakKenji("あ、こんにちは！ケンジです。今日もお疲れ様です！何かいいことありましたか？");
+  }, 1000);
+});
+</script>
+</body>
+</html>
+

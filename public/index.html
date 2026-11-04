@@ -1,16 +1,6 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <script>
-    // Tangkap aktivasi link bio TikTok
-    try {
-      var p = new URLSearchParams(window.location.search);
-      var ak = p.get('akses');
-      if (ak === 'tiktok' || ak === 'tiktok-follower') {
-        localStorage.setItem('jft_tiktok_unlocked', 'true');
-      }
-    } catch (e) {}
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
@@ -42,257 +32,89 @@
   <script src="/assets/js/indexeddb.js"></script>
   <script src="/assets/js/site-layout.js"></script>
 
-  <main class="flex-grow w-full">
-    <!-- Hero Section Utama -->
-    <section class="relative bg-fuji-overlay py-16 md:py-20 border-b border-fuji-100">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <!-- Badge Pill -->
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-fuji-100/90 text-fuji-700 text-xs sm:text-sm font-semibold border border-fuji-200 mb-6 backdrop-blur-sm shadow-sm">
-          <i class="fa-solid fa-heart text-rose-500"></i>
-          <span>100% Gratis Tanpa Biaya • Untuk Pejuang Tokutei Ginou</span>
-        </div>
+  <main class="flex-grow w-full flex flex-col justify-center bg-fuji-overlay py-10 md:py-16 px-4">
+    <!-- Hero Content Centered -->
+    <div class="max-w-2xl w-full mx-auto text-center my-auto">
+      <!-- Badge Pill -->
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-fuji-100/90 text-fuji-700 text-xs font-semibold border border-fuji-200 mb-3.5 backdrop-blur-sm shadow-sm">
+        <i class="fa-solid fa-heart text-rose-500"></i>
+        <span>100% Gratis Tanpa Biaya • Untuk Pejuang Tokutei Ginou</span>
+      </div>
 
-        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight mb-6">
-          Tidak Ada Kata Terlambat.<br/>
-          <span class="text-fuji-600">Raih Impian Tokutei Ginou ke Jepang!</span>
-        </h1>
+      <h1 class="text-3xl sm:text-4xl md:text-[42px] font-extrabold text-slate-800 leading-tight mb-5">
+        <span class="text-[90%] inline-block">Tidak Ada Kata Terlambat.</span><br/>
+        <span class="text-fuji-600">Raih Impian Tokutei Ginou<br/>ke Jepang!</span>
+      </h1>
 
-        <!-- Cerita Personal (Glassmorphism) -->
-        <div class="bg-white/85 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-fuji-200/80 shadow-md text-left max-w-2xl mx-auto mb-8 relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-2 h-full bg-fuji-500"></div>
-          <div class="flex items-start gap-4">
-            <div class="p-3 bg-fuji-100 rounded-xl text-fuji-600 shrink-0 hidden sm:block">
-              <i class="fa-solid fa-user-ninja text-2xl"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-800 text-lg mb-1 flex items-center gap-2">
-                <span>Catatan Pejuang TG</span>
-                <span class="text-xs font-normal text-fuji-700 bg-fuji-100 px-2 py-0.5 rounded-full">Kisah Nyata</span>
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed mb-3">
-                "Saya paham rasanya belajar di usia yang tidak muda lagi. Ingatan tak lagi secepat dulu, menghafal kosakata terasa berat, dan Kanji sering kali lupa. Namun, impian untuk berangkat ke Jepang demi keluarga tidak boleh padam."
-              </p>
-              <p class="text-slate-700 text-sm font-medium">
-                Website ini saya buat <span class="text-fuji-600 font-bold">sederhana dan gratis</span> agar kita bisa latihan pelan-pelan, mengulang tanpa batas, sampai benar-benar paham.
-              </p>
-            </div>
+      <!-- Cerita Personal (Glassmorphism Ukuran Awal) -->
+      <div class="bg-white/85 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-fuji-200/80 shadow-md text-left mb-6 relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-2 h-full bg-fuji-500"></div>
+        <div class="flex items-start gap-4">
+          <div class="p-3 bg-fuji-100 rounded-xl text-fuji-600 shrink-0 hidden sm:block">
+            <i class="fa-solid fa-user-ninja text-2xl"></i>
           </div>
-        </div>
-
-        <!-- Quick Access Navigation (Kosakata & Kanji) -->
-        <div class="flex flex-wrap items-center justify-center gap-3 sm:gap-4 mb-6">
-          <a href="/kotoba.html" class="inline-flex items-center gap-2 bg-white hover:bg-fuji-50 text-fuji-700 font-bold px-5 py-2.5 rounded-xl border border-fuji-200 shadow-sm transition-all text-sm">
-            <i class="fa-solid fa-book-open text-fuji-600"></i>
-            <span>Hafalan Kosakata</span>
-          </a>
-          <a href="/kanji.html" class="inline-flex items-center gap-2 bg-white hover:bg-fuji-50 text-fuji-700 font-bold px-5 py-2.5 rounded-xl border border-fuji-200 shadow-sm transition-all text-sm">
-            <i class="fa-solid fa-language text-fuji-600"></i>
-            <span>Daftar Kanji</span>
-          </a>
-        </div>
-        <!-- Call to Action Buttons (Ukuran Pas & Proporsional) -->
-        <div class="flex flex-wrap items-center justify-center gap-3">
-          <button onclick="scrollToSoal()" class="inline-flex items-center gap-2 bg-fuji-600 hover:bg-fuji-700 text-white font-bold px-6 py-3 rounded-xl shadow-md transition-all text-sm">
-            <i class="fa-solid fa-pen-to-square"></i>
-            <span>Mulai Latihan Sekarang</span>
-          </button>
-          <button onclick="openDonationModal()" class="inline-flex items-center gap-2 bg-amber-50 hover:bg-amber-100 text-amber-800 font-semibold px-6 py-3 rounded-xl border border-amber-200 shadow-sm transition-all text-sm">
-            <i class="fa-solid fa-mug-hot text-amber-600"></i>
-            <span>Traktir Kopi Pembuat Soal</span>
-          </button>
+          <div>
+            <h3 class="font-bold text-slate-800 text-lg mb-1 flex items-center gap-2">
+              <span>Catatan Pejuang TG</span>
+              <span class="text-xs font-normal text-fuji-700 bg-fuji-100 px-2 py-0.5 rounded-full">Kisah Nyata</span>
+            </h3>
+            <p class="text-slate-600 text-sm leading-relaxed mb-3">
+              "Saya paham rasanya belajar di usia yang tidak muda lagi. Ingatan tak lagi secepat dulu, menghafal kosakata terasa berat, dan Kanji sering kali lupa. Namun, impian untuk berangkat ke Jepang demi keluarga tidak boleh padam."
+            </p>
+            <p class="text-slate-700 text-sm font-medium">
+              Website ini saya buat <span class="text-fuji-600 font-bold">sederhana dan gratis</span> agar kita bisa latihan pelan-pelan, mengulang tanpa batas, sampai benar-benar paham.
+            </p>
+          </div>
         </div>
       </div>
-    </section>
 
-    <!-- SECTION PAKET SOAL LATIHAN -->
-    <section id="latihan-soal" class="relative bg-fuji-overlay py-16 md:py-24 border-b border-fuji-100">
-      <div class="max-w-6xl mx-auto px-4 space-y-12">
-        
-        <!-- Header Umum Simulasi Terpusat (Hanya tampil saat terbuka) -->
-        <div id="paket-header-info" class="hidden text-center max-w-3xl mx-auto">
-          <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-fuji-100/90 text-fuji-700 text-xs sm:text-sm font-semibold border border-fuji-200 mb-4 backdrop-blur-sm shadow-sm">
-            <i class="fa-solid fa-bolt text-amber-500"></i>
-            <span>Timer • Audio • Skor Real-time • Pembahasan Lengkap</span>
+      <!-- Tombol Kotak / Card Vertikal (Lebar Sama Dengan Box Catatan Pejuang TG) -->
+      <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 w-full">
+        <!-- 1. Simulasi CBT JFT -->
+        <a href="/simulasi.html" title="19 paket simulasi ujian komputer dengan timer, audio mendengarkan, serta skoring standar A2 (min. 200 poin)." class="group bg-white/95 hover:bg-sky-50/90 border border-slate-200/90 hover:border-sky-300 p-3 sm:p-4 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-2 text-slate-700 hover:text-sky-600 hover:-translate-y-0.5">
+          <div class="w-10 h-10 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-laptop-code"></i>
           </div>
-          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-800 leading-tight mb-3">
-            Simulasi CBT JFT-Basic
-          </h2>
-          <p class="text-slate-600 text-sm sm:text-base leading-relaxed mb-6">
-            Pilih paket latihan di bawah ini. Nilai standar kelulusan minimal <span class="font-bold text-fuji-600">200 poin</span> (Level A2).
-          </p>
+          <span class="text-xs font-bold leading-tight">Simulasi JFT</span>
+        </a>
 
-          <!-- Keterangan Skala Nilai Terpusat -->
-          <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-4 bg-white/80 backdrop-blur-md px-5 py-2.5 rounded-2xl border border-slate-200 text-xs font-bold text-slate-600 shadow-sm">
-            <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span> 10 - 144 (-)</span>
-            <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> 145 (A1)</span>
-            <span class="flex items-center gap-1"><span class="w-2.5 h-2.5 rounded-full bg-sky-400"></span> 175 (A2.1)</span>
-            <span class="flex items-center gap-1 text-fuji-600"><span class="w-2.5 h-2.5 rounded-full bg-fuji-600"></span> 200 - 250 (A2 Lulus)</span>
+        <!-- 2. Ujian SSW -->
+        <a href="/ssw.html" title="Materi dan latihan keahlian bidang kerja Specified Skilled Worker (Kaigo, Pengolahan Makanan, Restoran, Pertanian, dll)." class="group bg-white/95 hover:bg-amber-50/90 border border-slate-200/90 hover:border-amber-300 p-3 sm:p-4 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-2 text-slate-700 hover:text-amber-600 hover:-translate-y-0.5">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-briefcase"></i>
           </div>
-        </div>
+          <span class="text-xs font-bold leading-tight">Ujian SSW</span>
+        </a>
 
-        <!-- Kunci Akses 1: Jika Belum Login Google -->
-        <div id="paket-login-locked" class="bg-white rounded-3xl p-8 sm:p-12 text-center max-w-lg mx-auto border border-slate-200 shadow-2xl shadow-slate-900/10 my-4">
-          <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-sky-500 to-fuji-600 text-white flex items-center justify-center mx-auto mb-5 text-2xl shadow-lg shadow-sky-500/25">
-            <i class="fa-solid fa-lock"></i>
+        <!-- 3. Standar JFT-A2 -->
+        <a href="/jft-a2.html" title="Portal terpadu 336 Kanji Explorer, Daftar Kotoba A2 lengkap, Pola Tata Bahasa (Hyougen), dan Bedah Dokkai." class="group bg-white/95 hover:bg-emerald-50/90 border border-slate-200/90 hover:border-emerald-300 p-3 sm:p-4 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-2 text-slate-700 hover:text-emerald-600 hover:-translate-y-0.5">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-graduation-cap"></i>
           </div>
-          <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-800 mb-2">Simulasi CBT JFT-Basic</h2>
-          <h3 class="text-sm font-bold uppercase tracking-wider text-fuji-600 mb-4">Akses Latihan Terkunci</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-8 max-w-sm mx-auto">
-            Masuk dengan akun Google Anda terlebih dahulu untuk membuka 19 paket simulasi CBT JFT-Basic A2 dan pencatatan skor.
-          </p>
-          <button onclick="openLoginModal()" class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-gradient-to-r from-sky-600 to-fuji-600 hover:from-sky-700 hover:to-fuji-700 text-white font-bold px-8 py-3.5 rounded-full shadow-lg shadow-sky-500/30 transition-all hover:scale-105 text-sm">
-            <i class="fa-brands fa-google text-base"></i>
-            <span>Masuk Sekarang — Gratis</span>
-          </button>
-        </div>
+          <span class="text-xs font-bold leading-tight">JFT-A2</span>
+        </a>
 
-        <!-- Kunci Akses 2: Sudah Login TAPI Belum Aktivasi Kode Bio TikTok -->
-        <div id="paket-tiktok-locked" class="hidden bg-white/95 backdrop-blur-md rounded-3xl p-8 sm:p-12 text-center max-w-xl mx-auto border border-slate-300 shadow-2xl relative overflow-hidden">
-          <div class="w-16 h-16 rounded-2xl text-white flex items-center justify-center mx-auto mb-4 text-2xl shadow-lg" style="background-color:#010101;box-shadow:0 4px 14px rgba(0,0,0,0.35);">
-            <i class="fa-brands fa-tiktok text-3xl" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i>
+        <!-- 4. Kanji Radikal -->
+        <a href="/kanji.html" title="Kuasai kanji dasar A2 terstruktur berdasarkan rumpun radikal, jumlah goresan, onyomi, kunyomi, dan kosakata." class="group bg-white/95 hover:bg-rose-50/90 border border-slate-200/90 hover:border-rose-300 p-3 sm:p-4 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-2 text-slate-700 hover:text-rose-600 hover:-translate-y-0.5">
+          <div class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-language"></i>
           </div>
-          <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-rose-50 text-rose-600 text-xs font-bold mb-3 border border-rose-200">
-            <i class="fa-solid fa-key text-[11px]"></i>
-            <span>Aktivasi Gratis via Bio TikTok</span>
+          <span class="text-xs font-bold leading-tight">Kanji</span>
+        </a>
+
+        <!-- 5. Game Kuis -->
+        <a href="/game.html" title="Asah ingatan kosakata dan kanji dengan cara seru tanpa bosan lewat game kuis tebak interaktif." class="group col-span-2 sm:col-span-1 bg-white/95 hover:bg-indigo-50/90 border border-slate-200/90 hover:border-indigo-300 p-3 sm:p-4 rounded-2xl shadow-sm hover:shadow-md transition-all flex flex-col items-center justify-center text-center gap-2 text-slate-700 hover:text-indigo-600 hover:-translate-y-0.5">
+          <div class="w-10 h-10 rounded-xl bg-indigo-100 text-indigo-600 flex items-center justify-center text-lg group-hover:scale-110 transition-transform">
+            <i class="fa-solid fa-gamepad"></i>
           </div>
-          <h3 class="text-2xl font-extrabold text-slate-800 mb-2">Buka Bank Soal JFT-Basic A2</h3>
-          <p class="text-slate-600 text-sm leading-relaxed mb-6">
-            Seluruh 797 soal CBT &amp; materi ini 100% GRATIS.<br/>
-            Silakan <span class="font-bold text-slate-800">Follow akun TikTok kami</span> &amp; ambil <span class="font-bold text-fuji-600">Kode Akses Web</span> yang tertera di Bio profil TikTok:
-          </p>
-
-          <!-- Tombol Cek Profil TikTok -->
-          <div class="mb-6">
-            <a href="https://www.tiktok.com/@danyangkedungselur" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 text-white font-bold px-6 py-3 rounded-full text-xs shadow-md transition-all hover:scale-105" style="background-color:#010101;">
-              <i class="fa-brands fa-tiktok text-sm" style="filter:drop-shadow(-1px -1px 0 #25f4ee) drop-shadow(1px 1px 0 #fe2c55);"></i>
-              <span>Lihat Kode di Bio TikTok @danyangkedungselur &rarr;</span>
-            </a>
-          </div>
-
-          <!-- Form Input Kode Akses -->
-          <div class="bg-slate-50 p-5 rounded-2xl border border-slate-200 max-w-md mx-auto">
-            <label class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-2 text-left">
-              Masukkan Kode Akses dari Bio TikTok:
-            </label>
-            <div class="flex flex-col gap-3">
-              <input type="text" id="tiktokCodeInput" placeholder="Ketik kode di sini..." class="w-full px-4 py-3.5 rounded-xl border border-slate-300 focus:outline-none focus:border-fuji-600 focus:ring-2 focus:ring-fuji-200 text-base font-mono font-bold uppercase tracking-widest text-center text-slate-800 bg-white shadow-inner" maxlength="20" autocomplete="off">
-              <button onclick="verifikasiKodeTikTok()" class="w-full bg-fuji-600 hover:bg-fuji-700 text-white font-bold py-3.5 rounded-xl text-sm transition-all shadow-md shadow-fuji-600/30 hover:scale-[1.02] flex items-center justify-center gap-2">
-                <i class="fa-solid fa-lock-open text-xs"></i>
-                <span>Buka Akses Soal</span>
-              </button>
-            </div>
-            <p id="tiktokCodeErr" class="text-xs text-rose-600 font-semibold mt-2 min-h-[16px] text-center"></p>
-          </div>
-          <p class="text-[11px] text-slate-400 mt-4">
-            *Aktivasi ini hanya perlu dilakukan sekali seumur hidup untuk akun Anda.
-          </p>
-        </div>
-
-        <!-- Target Render Kartu Soal Otomatis (Sesuai ID package-render.js) -->
-        <div id="paket-render-container" class="hidden"></div>
-
+          <span class="text-xs font-bold leading-tight">Game</span>
+        </a>
       </div>
-    </section>
-
-    <!-- SECTION APRESIASI / TRAKTIR KOPI (HERO STYLE) -->
-    <section class="relative bg-fuji-overlay py-16 md:py-24 border-t border-b border-fuji-100">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        
-        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-100/90 text-amber-800 text-xs sm:text-sm font-semibold border border-amber-200 mb-6 backdrop-blur-sm shadow-sm">
-          <i class="fa-solid fa-mug-hot text-amber-600"></i>
-          <span>Apresiasi Pembuat Soal • Dukungan Sukarela</span>
-        </div>
-
-        <h2 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight mb-6">
-          Merasakan Manfaat dari<br/>
-          <span class="text-amber-600">Website Ini?</span>
-        </h2>
-
-        <div class="bg-white/85 backdrop-blur-md p-6 sm:p-8 rounded-2xl border border-amber-200/80 shadow-md text-left max-w-2xl mx-auto mb-8 relative overflow-hidden">
-          <div class="absolute top-0 left-0 w-2 h-full bg-amber-500"></div>
-          <div class="flex items-start gap-4">
-            <div class="p-3 bg-amber-100/80 rounded-xl text-amber-700 shrink-0 hidden sm:block">
-              <i class="fa-solid fa-heart-circle-check text-2xl"></i>
-            </div>
-            <div>
-              <h3 class="font-bold text-slate-800 text-lg mb-1 flex items-center gap-2">
-                <span>Dukungan Anda Sangat Berharga</span>
-                <span class="text-xs font-normal text-amber-800 bg-amber-100 px-2 py-0.5 rounded-full">Kopi Penambah Semangat</span>
-              </h3>
-              <p class="text-slate-600 text-sm leading-relaxed mb-3">
-                Website ini memanfaatkan fasilitas gratis agar bisa diakses siapapun tanpa biaya.
-              </p>
-              <p class="text-slate-700 text-sm font-medium">
-                Dukungan sukarela sekadar <span class="text-amber-700 font-bold">"Traktir Kopi"</span> sangat berharga untuk mengapresiasi waktu &amp; tenaga dalam menyusun serta merapikan soal-soal di website ini.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button onclick="openDonationModal()" class="w-full sm:w-auto bg-amber-600 hover:bg-amber-700 text-white font-bold px-8 py-3.5 rounded-xl shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2 text-base">
-            <i class="fa-solid fa-mug-hot"></i>
-            <span>Traktir Kopi Pembuat Soal</span>
-          </button>
-        </div>
-
-      </div>
-    </section>
+    </div>
   </main>
 
-  <!-- Modal Login Google -->
-  <div id="loginModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-xl relative border border-slate-100 text-center">
-      <button onclick="closeLoginModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
-        <i class="fa-solid fa-xmark text-lg"></i>
-      </button>
-      <div class="w-12 h-12 rounded-full bg-fuji-100 text-fuji-600 flex items-center justify-center mx-auto mb-4 text-xl">
-        <i class="fa-solid fa-user-check"></i>
-      </div>
-      <h3 class="text-lg font-bold text-slate-800 mb-1">Login Cepat &amp; Gratis</h3>
-      <p class="text-slate-600 text-xs mb-6">Masuk dengan akun Google untuk menyimpan statistik dan riwayat nilai latihan Anda.</p>
-      
-      <button onclick="simulateLogin()" class="w-full flex items-center justify-center gap-3 bg-white hover:bg-slate-50 text-slate-700 font-semibold py-3 px-4 rounded-xl border border-slate-300 shadow-sm transition-all mb-3 text-sm">
-        <svg class="w-5 h-5" viewBox="0 0 24 24">
-          <path fill="#4285F4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
-          <path fill="#34A853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
-          <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.06H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.94l2.85-2.22.81-.63z"/>
-          <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.06l3.66 2.84c.87-2.6 3.3-4.52 6.16-4.52z"/>
-        </svg>
-        <span>Lanjutkan dengan Google</span>
-      </button>
-      <p class="text-[11px] text-slate-400">100% Aman • Tidak ada biaya tersembunyi</p>
-    </div>
-  </div>
 
-  <!-- Modal Traktir Kopi -->
-  <div id="donationModal" class="fixed inset-0 bg-slate-900/40 backdrop-blur-sm z-50 hidden flex items-center justify-center p-4">
-    <div class="bg-white rounded-2xl max-w-sm w-full p-6 shadow-xl relative border border-slate-100 text-center">
-      <button onclick="closeDonationModal()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-600">
-        <i class="fa-solid fa-xmark text-lg"></i>
-      </button>
-      <div class="w-12 h-12 rounded-full bg-amber-100 text-amber-600 flex items-center justify-center mx-auto mb-4 text-xl">
-        <i class="fa-solid fa-mug-hot"></i>
-      </div>
-      <h3 class="text-lg font-bold text-slate-800 mb-1">Traktir Kopi Pembuat Soal</h3>
-      <p class="text-slate-600 text-xs mb-4">Scan QRIS berikut dari e-wallet / m-banking Anda. Terima kasih! 🙏</p>
-      <img src="/assets/qris-sinaujepang.jpeg" alt="QRIS SinauJepang" class="w-56 mx-auto rounded-xl border border-slate-200 shadow-sm">
-    </div>
-  </div>
 
-  <!-- Scripts Bawaan Proyek -->
-  <script type="module" src="/assets/js/firebase-init.js"></script>
-  <script>
-    if (typeof window.SiteLayout !== 'undefined') {
-      window.SiteLayout.mountHeader();
-      window.SiteLayout.mountFooter();
-      window.SiteLayout.renderUser();
-    }
-  </script>
-  <script src="/assets/js/score-cards.js"></script>
-  <script src="/assets/js/pack-section-scores.js"></script>
-  <script src="/assets/js/package-config.js"></script>
-  <script src="/assets/js/package-render.js"></script>
   <script>
     async function renderUser() {
       try {
@@ -308,62 +130,19 @@
           u = { uid: window.fujiUser.uid, name: window.fujiUser.displayName, email: window.fujiUser.email };
         }
         var b = document.getElementById("loginBtn"), info = document.getElementById("uInfo");
-        var headerInfo = document.getElementById("paket-header-info");
-        var loginLock = document.getElementById("paket-login-locked");
-        var tiktokLock = document.getElementById("paket-tiktok-locked");
-        var paketBox = document.getElementById("paket-render-container");
-        
-        // Cek status unlock tiktok
-        var isUnlocked = false;
-        try {
-          if (localStorage.getItem("jft_tiktok_unlocked") === "true") isUnlocked = true;
-          if (u && (u.email || "").toLowerCase() === "mswaluyo@gmail.com") isUnlocked = true;
-        } catch (e) {}
-
-        // Fallback cek langsung ke Firestore jika di browser belum sinkron
-        if (!isUnlocked && u && u.uid && window.fujiDb) {
-          try {
-            var fsMod = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js");
-            var snap = await fsMod.getDoc(fsMod.doc(window.fujiDb, "users", u.uid));
-            if (snap.exists() && snap.data().tiktokUnlocked === true) {
-              isUnlocked = true;
-              localStorage.setItem("jft_tiktok_unlocked", "true");
-              if (window.IndexedDB && window.IndexedDB.setItem) {
-                window.IndexedDB.setItem("jft_tiktok_unlocked", true);
-              }
-            }
-          } catch (e) {}
+        if (b && u) {
+          b.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i><span>Keluar</span>';
+          b.onclick = function(){ window.fujiLogout(); };
+        } else if (b) {
+          b.innerHTML = '<span>Masuk Google</span>';
+          b.onclick = function(){ openLoginModal(); };
         }
-
-        if (!u) {
-          if (b) { b.innerHTML = '<span>Masuk Google</span>'; b.onclick = function(){ openLoginModal(); }; }
-          if (info) { info.classList.add("hidden"); }
-          if (headerInfo) headerInfo.classList.add("hidden");
-          if (loginLock) loginLock.classList.remove("hidden");
-          if (tiktokLock) tiktokLock.classList.add("hidden");
-          if (paketBox) paketBox.classList.add("hidden");
-          return;
+        if (info && u) {
+          info.textContent = "Hi, " + (u.name || u.email);
+          info.classList.remove("hidden");
+        } else if (info) {
+          info.classList.add("hidden");
         }
-
-        // Sudah login Google, cek apakah sudah unlock lewat bio TikTok
-        if (loginLock) loginLock.classList.add("hidden");
-
-        if (!isUnlocked) {
-          if (headerInfo) headerInfo.classList.add("hidden");
-          if (tiktokLock) tiktokLock.classList.remove("hidden");
-          if (paketBox) paketBox.classList.add("hidden");
-        } else {
-          if (headerInfo) headerInfo.classList.remove("hidden");
-          if (tiktokLock) tiktokLock.classList.add("hidden");
-          if (paketBox) {
-            paketBox.classList.remove("hidden");
-            if (typeof window.renderPackSectionScoresAll === 'function') {
-              window.renderPackSectionScoresAll();
-            }
-          }
-        }
-        if (b) { b.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i><span>Keluar</span>'; b.onclick = function(){ window.fujiLogout(); }; }
-        if (info) { info.textContent = "Hi, " + (u.name || u.email); info.classList.remove("hidden"); }
       } catch (e) {}
     }
     function openLoginModal() { document.getElementById('loginModal').classList.remove('hidden'); }
@@ -395,10 +174,6 @@
     async function renderAdminBtn() {
       var el = document.getElementById("adminBtn");
       if (!el) return;
-      function show(why) { try { console.log("[adminBtn v3] tampil via " + why); } catch (e) {}
-        el.style.setProperty("display", "flex", "important"); }
-      function hide(why) { try { console.log("[adminBtn v3] sembunyi: " + (why || "")); } catch (e) {}
-        el.style.setProperty("display", "none", "important"); }
       try {
         var u = window.fujiUser;
         if (!window.fujiAuth || !window.fujiAuth.currentUser) {
@@ -406,23 +181,22 @@
             (function poll() { if ((window.fujiAuth && window.fujiAuth.currentUser) || Date.now() - t0 > 8000) res(); else setTimeout(poll, 200); })(); }); } catch (e) {}
         }
         u = (window.fujiAuth && window.fujiAuth.currentUser) || window.fujiUser;
-        if (!u) { hide("belum login"); return; }
+        if (!u) { el.style.setProperty("display", "none", "important"); return; }
         try {
           var em = (u.email || "").toLowerCase();
-          if (ADMIN_EMAILS.indexOf(em) > -1) { show("email-allowlist"); return; }
+          if (ADMIN_EMAILS.indexOf(em) > -1) { el.style.setProperty("display", "flex", "important"); return; }
         } catch (e) {}
         try {
           var tok = await u.getIdTokenResult(false);
-          if (tok.claims && tok.claims.admin === true) { show("custom-claim"); return; }
-        } catch (e) { try { console.log("[adminBtn] claim err " + (e.code || e.message)); } catch (x) {} }
+          if (tok.claims && tok.claims.admin === true) { el.style.setProperty("display", "flex", "important"); return; }
+        } catch (e) {}
         try {
           var fs = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js");
           var d = await fs.getDoc(fs.doc(window.fujiDb, "admins", u.uid));
-          if (d.exists()) { show("dok-admins"); return; }
-          else { try { console.log("[adminBtn] dok /admins/" + u.uid + " TIDAK ADA"); } catch (x) {} }
-        } catch (e) { try { console.log("[adminBtn] dok err " + (e.code || e.message)); } catch (x) {} }
-        hide("bukan admin");
-      } catch (e) { hide("exception"); }
+          if (d.exists()) { el.style.setProperty("display", "flex", "important"); return; }
+        } catch (e) {}
+        el.style.setProperty("display", "none", "important");
+      } catch (e) {}
     }
     window.addEventListener("fuji:auth", function () {
       try {
@@ -432,64 +206,6 @@
     });
     renderUser().catch(function(){});
     setTimeout(function(){ renderAdminBtn().catch(function(){}); }, 1500);
-    window.verifikasiKodeTikTok = function() {
-      var inp = document.getElementById("tiktokCodeInput");
-      var err = document.getElementById("tiktokCodeErr");
-      if (!inp) return;
-      var val = (inp.value || "").trim().toUpperCase();
-      if (!val) {
-        if (err) err.textContent = "Silakan masukkan kode akses terlebih dahulu.";
-        return;
-      }
-      if (val === "JFT2026") {
-        if (err) {
-          err.className = "text-xs text-emerald-600 font-semibold mt-2 text-left";
-          err.textContent = "Berhasil! Membuka seluruh paket soal...";
-        }
-        try {
-          localStorage.setItem("jft_tiktok_unlocked", "true");
-        } catch (e) {}
-        try {
-          if (window.IndexedDB && window.IndexedDB.setItem) {
-            window.IndexedDB.setItem("jft_tiktok_unlocked", true);
-          }
-        } catch (e) {}
-        // Simpan permanen ke cloud Firestore di dokumen user
-        try {
-          var curUser = (window.fujiAuth && window.fujiAuth.currentUser) || window.fujiUser;
-          if (curUser && curUser.uid && window.fujiDb) {
-            import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js").then(function(fsMod) {
-              var uRef = fsMod.doc(window.fujiDb, "users", curUser.uid);
-              fsMod.setDoc(uRef, { tiktokUnlocked: true, tiktokUnlockedAt: fsMod.serverTimestamp() }, { merge: true }).catch(function(){});
-            }).catch(function(){});
-          }
-        } catch (e) {}
-        setTimeout(function() {
-          renderUser().catch(function(){});
-          // Redirect jika datang dari halaman spesifik
-          var p = new URLSearchParams(window.location.search);
-          var redir = p.get("redirect");
-          if (redir && !redir.startsWith("//") && !redir.includes(":")) {
-            window.location.replace(redir);
-          }
-        }, 600);
-      } else {
-        if (err) {
-          err.className = "text-xs text-rose-600 font-semibold mt-2 text-left";
-          err.textContent = "Kode tidak cocok. Buka bio TikTok @danyangkedungselur untuk melihat kode yang benar.";
-        }
-      }
-    };
-
-    function scrollToSoal() {
-      var t = document.getElementById('latihan-soal');
-      if (t) t.scrollIntoView({ behavior: 'smooth' });
-    }
-    function openDonationModal() { document.getElementById('donationModal').classList.remove('hidden'); }
-    function closeDonationModal() { document.getElementById('donationModal').classList.add('hidden'); }
-    if (/(^|[?&])donasi=1/.test(location.search)) {
-      setTimeout(function () { try { openDonationModal(); } catch (e) {} }, 400);
-    }
   </script>
 </body>
 </html>

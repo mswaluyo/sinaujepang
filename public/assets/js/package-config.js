@@ -1,7 +1,48 @@
 window.PAKET_CONFIG = {
-  "totalPaket": 22,
-  "totalSoal": 923,
+  "totalPaket": 19,
+  "totalSoal": 829,
   "kategori": [
+    {
+      "nama": "BARU",
+      "warna": "emerald",
+      "badgeGradien": "from-emerald-500 to-teal-600",
+      "paket": [
+        {
+          "nama": "ORIMASU 2",
+          "slug": "orimasu2-quiz",
+          "total": 44,
+          "ikon": "O2",
+          "soalTambahan": {
+            "nama": "Soal Tambahan",
+            "slug": "orimasu-tambahan-quiz",
+            "total": 17
+          }
+        },
+        {
+          "nama": "SHIMEMASU 2",
+          "slug": "shimemasu2-quiz",
+          "total": 52,
+          "ikon": "S2"
+        },
+        {
+          "nama": "GAKUSEI 2",
+          "slug": "gakusei2-quiz",
+          "total": 44,
+          "ikon": "G2",
+          "soalTambahan": {
+            "nama": "Soal Tambahan",
+            "slug": "gakusei-tambahan-quiz",
+            "total": 53
+          }
+        },
+        {
+          "nama": "GENKAN",
+          "slug": "genkan-quiz",
+          "total": 50,
+          "ikon": "G"
+        }
+      ]
+    },
     {
       "nama": "LOLOSYUK",
       "warna": "sky",
@@ -26,12 +67,6 @@ window.PAKET_CONFIG = {
           "ikon": "M"
         },
         {
-          "nama": "ORIMASU",
-          "slug": "orimasu-quiz",
-          "total": 44,
-          "ikon": "O"
-        },
-        {
           "nama": "TOMEMASU",
           "slug": "tomemasu-quiz",
           "total": 55,
@@ -42,37 +77,6 @@ window.PAKET_CONFIG = {
           "slug": "konpyuutaa-quiz",
           "total": 63,
           "ikon": "K"
-        }
-      ]
-    },
-    {
-      "nama": "MNN",
-      "warna": "amber",
-      "badgeGradien": "from-amber-500 to-orange-600",
-      "paket": [
-        {
-          "nama": "ORIMASU 2",
-          "slug": "orimasu2-quiz",
-          "total": 44,
-          "ikon": "O2"
-        },
-        {
-          "nama": "SHIMEMASU 2",
-          "slug": "shimemasu2-quiz",
-          "total": 52,
-          "ikon": "S2"
-        },
-        {
-          "nama": "GENKAN",
-          "slug": "genkan-quiz",
-          "total": 50,
-          "ikon": "G"
-        },
-        {
-          "nama": "GAKUSEI 2",
-          "slug": "gakusei2-quiz",
-          "total": 44,
-          "ikon": "G2"
         }
       ]
     },
@@ -161,25 +165,6 @@ window.PAKET_CONFIG = {
           "slug": "kagi-quiz",
           "total": 36,
           "ikon": "K"
-        }
-      ]
-    },
-    {
-      "nama": "YUCHU",
-      "warna": "amber",
-      "badgeGradien": "from-red-500 to-orange-500",
-      "paket": [
-        {
-          "nama": "HASHI",
-          "slug": "hashi-quiz",
-          "total": 25,
-          "ikon": "H"
-        },
-        {
-          "nama": "HABURASHI",
-          "slug": "haburashi-quiz",
-          "total": 25,
-          "ikon": "H"
         }
       ]
     }

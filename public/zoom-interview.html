@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoom 面接 Kaiwa AI — Wawancara Kerja Jepang</title>
+<style>
+/* ── THEME ZOOM INTERVIEW ── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  background: #121418;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+/* ── HEADER ZOOM ── */
+.zoom-header {
+  height: 48px;
+  background: #1e222b;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  border-bottom: 1px solid #2a303c;
+  font-size: 0.85rem;
+}
+.zoom-header .room-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+.live-pill {
+  background: #22c55e;
+  color: #052e16;
+  font-size: 0.65rem;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.rec-dot {
+  width: 6px; height: 6px; background: #ef4444; border-radius: 50%;
+  animation: recBlink 1.2s infinite;
+}
+@keyframes recBlink { 0%,100%{opacity: 1;} 50%{opacity: 0.3;} }
+
+/* ── MAIN VIDEO GRID (ZOOM LAYOUT) ── */
+.zoom-main {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 12px;
+  padding: 12px;
+  background: #0f1115;
+  min-height: 0;
+}
+
+.video-container {
+  display: grid;
+  grid-template-rows: 1fr 140px;
+  gap: 12px;
+  position: relative;
+  min-height: 0;
+}
+
+/* ── INTERVIEWER FEED (HERO) ── */
+.interviewer-feed {
+  background: #181c24;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #283040;
+}
+
+/* Office Background Blur */
+.office-backdrop {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+  filter: blur(2px);
+  opacity: 0.85;
+}
+.office-backdrop::after {
+  content: "";
+  position: absolute;
+  top: 15%; right: 10%; width: 180px; height: 260px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transform: rotate(2deg);
+}
+
+/* Human Interviewer Avatar Simulation */
+.avatar-stage {
+  position: relative;
+  z-index: 2;
+  width: 320px;
+  height: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  animation: naturalBreathing 4s ease-in-out infinite;
+}
+
+@keyframes naturalBreathing {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-4px) scale(1.004); }
+}
+
+/* Professional Suit Body */
+.suit-body {
+  width: 280px;
+  height: 190px;
+  background: linear-gradient(180deg, #1e2638 0%, #111827 100%);
+  border-radius: 80px 80px 0 0;
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+}
+.suit-lapel-l {
+  position: absolute;
+  top: 0; left: 45px;
+  width: 45px; height: 110px;
+  background: #151d2e;
+  transform: rotate(15deg);
+  border-right: 1.5px solid rgba(255,255,255,0.06);
+}
+.suit-lapel-r {
+  position: absolute;
+  top: 0; right: 45px;
+  width: 45px; height: 110px;
+  background: #151d2e;
+  transform: rotate(-15deg);
+  border-left: 1.5px solid rgba(255,255,255,0.06);
+}
+.white-shirt {
+  position: absolute;
+  top: 0; left: 50%; transform: translateX(-50%);
+  width: 60px; height: 80px;
+  background: #f8fafc;
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+.business-tie {
+  position: absolute;
+  top: 25px; left: 50%; transform: translateX(-50%);
+  width: 18px; height: 110px;
+  background: linear-gradient(180deg, #991b1b 0%, #7f1d1d 100%);
+  clip-path: polygon(25% 0, 75% 0, 100% 70%, 50% 100%, 0 70%);
+}
+
+/* Head & Face */
+.head-assembly {
+  position: relative;
+  width: 140px;
+  height: 180px;
+  margin-bottom: -15px;
+  z-index: 3;
+  transition: transform 0.3s ease;
+}
+.interviewer-feed.speaking .head-assembly {
+  animation: talkHeadBob 1.8s ease-in-out infinite;
+}
+@keyframes talkHeadBob {
+  0%, 100% { transform: translateY(0) rotate(0deg); }
+  25% { transform: translateY(2px) rotate(0.4deg); }
+  75% { transform: translateY(-1px) rotate(-0.4deg); }
+}
+
+.hair-base {
+  position: absolute;
+  top: -10px; left: 50%; transform: translateX(-50%);
+  width: 146px; height: 150px;
+  background: #1a1a24;
+  border-radius: 70px 70px 30px 30px;
+}
+.hair-front {
+  position: absolute;
+  top: -6px; left: 50%; transform: translateX(-50%);
+  width: 142px; height: 60px;
+  background: #1e1e2c;
+  border-radius: 60px 60px 10px 10px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 60% 40%, 35% 85%, 0 60%);
+}
+
+.face-mesh {
+  position: absolute;
+  top: 20px; left: 50%; transform: translateX(-50%);
+  width: 122px; height: 150px;
+  background: radial-gradient(ellipse at 50% 40%, #fed7aa 0%, #fba972 100%);
+  border-radius: 60px 60px 50px 50px;
+  box-shadow: inset 0 -8px 16px rgba(180, 83, 9, 0.15);
+}
+
+/* Eyes & Natural Blinking */
+.eyes-container {
+  position: absolute;
+  top: 55px; left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.eye-socket {
+  width: 24px; height: 14px;
+  background: #ffffff;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.2);
+}
+.pupil-iris {
+  position: absolute;
+  top: 2px; left: 6px;
+  width: 11px; height: 11px;
+  background: radial-gradient(circle, #2d3748 40%, #1a202c 100%);
+  border-radius: 50%;
+  animation: eyeMicroDart 6s infinite;
+}
+@keyframes eyeMicroDart {
+  0%,90%,100% { transform: translate(0, 0); }
+  93% { transform: translate(2px, -1px); }
+  96% { transform: translate(-2px, 1px); }
+}
+.eyelid {
+  position: absolute;
+  inset: 0;
+  background: #fba972;
+  transform: translateY(-100%);
+  animation: naturalBlink 4.5s infinite;
+  border-bottom: 1.5px solid #7c2d12;
+}
+@keyframes naturalBlink {
+  0%, 94%, 100% { transform: translateY(-100%); }
+  96%, 98% { transform: translateY(0); }
+}
+
+/* Glasses (Pewawancara terlihat intelek/profesional) */
+.glasses-frame {
+  position: absolute;
+  top: 48px; left: 50%; transform: translateX(-50%);
+  width: 96px; height: 26px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+.lens {
+  width: 38px; height: 24px;
+  border: 1.8px solid #334155;
+  border-radius: 6px;
+  background: rgba(255,255,255,0.08);
+}
+.bridge { width: 14px; height: 2px; background: #334155; }
+
+/* Dynamic Realistic Lip-Sync Mouth */
+.mouth-box {
+  position: absolute;
+  bottom: 26px; left: 50%; transform: translateX(-50%);
+  width: 36px; height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.lips-mesh {
+  width: 28px;
+  height: 5px;
+  background: #b91c1c;
+  border-radius: 12px;
+  transition: all 0.08s ease;
+  position: relative;
+  overflow: hidden;
+}
+.lips-mesh::before {
+  content: "";
+  position: absolute;
+  top: 1px; left: 4px; right: 4px; height: 3px;
+  background: #fff;
+  opacity: 0;
+  transition: opacity 0.08s ease;
+}
+
+/* State Speaking (Diaktifkan Web Audio Volume) */
+.interviewer-feed.speaking .lips-mesh {
+  height: var(--mouth-height, 12px);
+  width: 26px;
+  border-radius: 10px;
+  background: #450a0a;
+}
+.interviewer-feed.speaking .lips-mesh::before {
+  opacity: 0.9;
+}
+
+/* Overlay Info Participant */
+.participant-tag {
+  position: absolute;
+  bottom: 14px; left: 14px;
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(8px);
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid rgba(255,255,255,0.08);
+  z-index: 10;
+}
+.audio-activity {
+  width: 10px; height: 10px; border-radius: 50%;
+  background: #22c55e;
+  opacity: 0.4;
+  transition: all 0.15s;
+}
+.interviewer-feed.speaking .audio-activity {
+  opacity: 1;
+  box-shadow: 0 0 10px #22c55e;
+  transform: scale(1.2);
+}
+
+/* ── USER PIP FEED (CAM SAYA) ── */
+.user-feed {
+  background: #1e222b;
+  border-radius: 10px;
+  border: 1px solid #2d3748;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#userWebcam {
+  width: 100%; height: 100%; object-fit: cover;
+  transform: scaleX(-1);
+}
+.cam-off-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: #64748b;
+  font-size: 0.75rem;
+}
+
+/* ── TRANSCRIPT & EVALUATION CHAT ── */
+.chat-dock {
+  background: #181c24;
+  border-radius: 12px;
+  border: 1px solid #283040;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.chat-dock-header {
+  padding: 12px 16px;
+  background: #1e232e;
+  border-bottom: 1px solid #283040;
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dialog-log {
+  flex: 1;
+  padding: 14px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.log-card {
+  padding: 10px 12px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  animation: fadeIn 0.3s ease-out;
+}
+@keyframes fadeIn { from{opacity:0; transform:translateY(6px);} to{opacity:1; transform:translateY(0);} }
+
+.log-card.interviewer {
+  background: rgba(30, 41, 59, 0.7);
+  border-left: 3px solid #38bdf8;
+}
+.log-card.candidate {
+  background: rgba(15, 76, 42, 0.35);
+  border-left: 3px solid #22c55e;
+  align-self: flex-end;
+  max-width: 92%;
+}
+.speaker-title {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #94a3b8;
+  margin-bottom: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+.kana-romaji { font-size: 0.7rem; color: #cbd5e1; opacity: 0.7; margin-top: 2px; }
+.indo-trans { font-size: 0.72rem; color: #38bdf8; margin-top: 3px; }
+
+/* Feedback Tag Real-time */
+.eval-pill {
+  display: inline-block;
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(234, 179, 8, 0.15);
+  color: #fde047;
+  border: 1px solid rgba(234, 179, 8, 0.3);
+  margin-top: 5px;
+}
+
+/* ── CONTROLS FOOTER ZOOM ── */
+.zoom-footer {
+  height: 64px;
+  background: #181c24;
+  border-top: 1px solid #283040;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+}
+.control-group {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.zoom-btn {
+  background: #232936;
+  border: 1px solid #374151;
+  color: #f1f5f9;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  cursor: pointer;
+  transition: all 0.2s;
+  min-width: 64px;
+}
+.zoom-btn:hover { background: #333d4f; border-color: #4b5563; }
+.zoom-btn.active { background: #22c55e; color: #022c22; border-color: #22c55e; font-weight: bold; }
+.zoom-btn.leave { background: #dc2626; border-color: #ef4444; color: #fff; }
+
+.status-subtitle {
+  color: #94a3b8;
+  font-size: 0.78rem;
+}
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<div class="zoom-header">
+  <div class="room-title">
+    <div class="live-pill"><span class="rec-dot"></span> LIVE REC</div>
+    <span>🏢 面接室 A (Interview Room) — 特定技能 (Tokutei Ginou) / JFT Interview</span>
+  </div>
+  <div style="color: #94a3b8; font-size: 0.75rem;">
+    Host: <strong>株式会社グローバルワークス (Global Works Co.)</strong>
+  </div>
+</div>
+
+<!-- MAIN STAGE -->
+<div class="zoom-main">
+  <!-- VIDEO FEEDS -->
+  <div class="video-container">
+    
+    <!-- PEWAWANCARA JEPANG (MAIN FEED) -->
+    <div class="interviewer-feed" id="interviewerFeed">
+      <div class="office-backdrop"></div>
+
+      <!-- Human-like Interviewer Avatar -->
+      <div class="avatar-stage">
+        <div class="head-assembly">
+          <div class="hair-base"></div>
+          <div class="face-mesh">
+            <div class="hair-front"></div>
+            
+            <!-- Eyes with blinks -->
+            <div class="eyes-container">
+              <div class="eye-socket">
+                <div class="pupil-iris"></div>
+                <div class="eyelid"></div>
+              </div>
+              <div class="eye-socket">
+                <div class="pupil-iris"></div>
+                <div class="eyelid"></div>
+              </div>
+            </div>
+
+            <!-- Professional Glasses -->
+            <div class="glasses-frame">
+              <div class="lens"></div>
+              <div class="bridge"></div>
+              <div class="lens"></div>
+            </div>
+
+            <!-- Mouth reactive to Natural Voice -->
+            <div class="mouth-box">
+              <div class="lips-mesh" id="lipsMesh"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Suit & Tie -->
+        <div class="suit-body">
+          <div class="white-shirt"></div>
+          <div class="business-tie"></div>
+          <div class="suit-lapel-l"></div>
+          <div class="suit-lapel-r"></div>
+        </div>
+      </div>
+
+      <!-- Participant Tag -->
+      <div class="participant-tag">
+        <div class="audio-activity" id="audioPulse"></div>
+        <div><strong>山田 課長 (Yamada-Kachou)</strong> · 面接官 (Interviewer)</div>
+      </div>
+    </div>
+
+    <!-- CANDIDATE CAMERA (SELF FEED) -->
+    <div class="user-feed">
+      <video id="userWebcam" autoplay playsinline muted style="display:none;"></video>
+      <div class="cam-off-placeholder" id="camPlaceholder">
+        <span style="font-size:1.5rem;">👤</span>
+        <span>Kamera Pribadi (Klik 'Nyalakan Kamera' di bawah)</span>
+      </div>
+      <div class="participant-tag" style="bottom: 8px; left: 8px; font-size: 0.72rem;">
+        <div>あなた (Anda) · 応募者 (Candidate)</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CHAT / INTERVIEW LOG & FEEDBACK -->
+  <div class="chat-dock">
+    <div class="chat-dock-header">
+      <span>📝 Rapor & Transkrip Wawancara</span>
+      <span style="color:#22c55e; font-size: 0.7rem;">● Connected</span>
+    </div>
+    
+    <div class="dialog-log" id="dialogLog">
+      <div class="log-card interviewer">
+        <div class="speaker-title">山田 課長 <span>10:00</span></div>
+        <div>こんにちは。本日は面接にお越しいただき、ありがとうございます。お名前を教えていただけますか？</div>
+        <div class="kana-romaji">Konnichiwa. Honjitsu wa mensetsu ni okoshi itadaki, arigatou gozaimasu. Onamae wo oshiete itadakemasu ka?</div>
+        <div class="indo-trans">Halo. Terima kasih telah hadir dalam wawancara hari ini. Boleh sebutkan nama Anda?</div>
+      </div>
+    </div>
+
+    <div style="padding: 10px; border-top: 1px solid #283040; background:#1e232e; font-size:0.75rem;">
+      <span style="color:#38bdf8;">💡 Tips Menjawab:</span> Gunakan bentuk sopan (Desu/Masu), akhiri dengan <em>"Yoroshiku onegaiitashimasu"</em>.
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER CONTROLS -->
+<div class="zoom-footer">
+  <!-- MIC & CAMERA CONTROLS -->
+  <div class="control-group">
+    <button class="zoom-btn" id="btnMic" onclick="toggleMic()">
+      <span id="micIcon" style="font-size:1.1rem;">🎤</span>
+      <span id="micLabel">Bicara (Mic)</span>
+    </button>
+    <button class="zoom-btn" id="btnCam" onclick="toggleCam()">
+      <span style="font-size:1.1rem;">📹</span>
+      <span id="camLabel">Kamera</span>
+    </button>
+  </div>
+
+  <!-- SUBTITLE / LIVE STATUS -->
+  <div class="status-subtitle" id="statusSubtitle">
+    Tekan tombol <strong>Bicara (Mic)</strong> lalu jawab pertanyaan pewawancara dalam bahasa Jepang.
+  </div>
+
+  <!-- ACTION BUTTONS -->
+  <div class="control-group">
+    <button class="zoom-btn" onclick="askQuestionPreset('自己紹介をお願いします')">
+      <span>📄</span>
+      <span>Jikoshoukai</span>
+    </button>
+    <button class="zoom-btn leave" onclick="endInterview()">
+      <span>📞</span>
+      <span>Selesai</span>
+    </button>
+  </div>
+</div>
+
+<!-- GEMINI SDK (ESM CDN) -->
+<script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.sh/@google/genai@1.3.0"
+  }
+}
+</script>
+
+<script type="module">
+import { GoogleGenAI } from '@google/genai';
+
+// ── GET SAVED GEMINI API KEY FROM STORAGE OR PROMPT ──
+let savedKey = localStorage.getItem('GEMINI_KAIWA_KEY') || '';
+if (!savedKey) {
+  savedKey = prompt("Masukkan Gemini API Key kamu untuk memulai simulasi Zoom wawancara:", "");
+  if (savedKey) localStorage.setItem('GEMINI_KAIWA_KEY', savedKey.trim());
+}
+
+let ai = null;
+let chatSession = null;
+
+if (savedKey) {
+  try {
+    ai = new GoogleGenAI({ apiKey: savedKey });
+    initInterviewerBrain();
+  } catch(e) {
+    console.error("Gemini Init Fail:", e);
+  }
+}
+
+// ── PROMPT PEWAWANCARA JEPANG PROFESIONAL ──
+function initInterviewerBrain() {
+  const systemPrompt = `
+Kamu adalah Yamada-Kachou, seorang kepala divisi perekrutan di perusahaan Jepang (株式会社グローバルワークス).
+Kamu sedang mewawancarai orang asing untuk program Tokutei Ginou / Pekerja Terampil di Jepang.
+
+ATURAN KARAKTER:
+1. Bicara sangat sopan (Keigo / Teineigo), khas pewawancara resmi Jepang.
+2. Setiap jawabanmu MAKSIMAL 1-2 KALIMAT. Jangan pernah berpidato panjang!
+3. Format respons WAJIB JSON persis seperti ini:
+{
+  "jp": "Teks bahasa Jepang sopan",
+  "romaji": "Romanisasi",
+  "id": "Arti bahasa Indonesia",
+  "eval": "Catatan singkat apakah jawaban user sopan/tepat"
+}
+4. Bertanyalah bertahap:
+   - Mulai dari salam & nama
+   - Tanya alasan ingin bekerja di Jepang (Shibou Douki)
+   - Tanya pengalaman kerja / kelebihan diri
+   - Berikan respon hangat khas etika bisnis Jepang (なるほど、素晴らしいですね, dsb).
+5. HANYA keluarkan JSON.
+  `.trim();
+
+  chatSession = ai.chats.create({
+    model: 'gemini-3.8-flash',
+    config: { systemInstruction: systemPrompt },
+    history: []
+  });
+}
+
+// ── REALISTIC LIP-SYNC & NATURAL VOICE ENGINE (FULL GRATIS) ──
+let synth = window.speechSynthesis;
+let jaVoice = null;
+
+function loadVoices() {
+  const voices = synth.getVoices();
+  // Cari suara Jepang terbaik (Google, Microsoft Nanami, Apple Kyoko)
+  jaVoice = voices.find(v => v.lang.startsWith('ja') && (v.name.includes('Natural') || v.name.includes('Google'))) ||
+            voices.find(v => v.lang.startsWith('ja')) || null;
+}
+loadVoices();
+if (speechSynthesis.onvoiceschanged !== undefined) {
+  speechSynthesis.onvoiceschanged = loadVoices;
+}
+
+// Bicara + Animasi Bibir Realistis
+function speakJapanese(text, onComplete) {
+  if (!synth) return;
+  synth.cancel();
+
+  const utter = new SpeechSynthesisUtterance(text);
+  if (jaVoice) utter.voice = jaVoice;
+  utter.lang = 'ja-JP';
+  utter.rate = 0.92; // Sedikit santai berwibawa
+  utter.pitch = 0.95; // Wibawa pria kantoran Jepang
+
+  const feed = document.getElementById('interviewerFeed');
+  const lips = document.getElementById('lipsMesh');
+
+  // Simulasi sinkronisasi getaran mulut acak saat suara keluar
+  let mouthInterval = null;
+
+  utter.onstart = () => {
+    feed.classList.add('speaking');
+    mouthInterval = setInterval(() => {
+      // Tinggi bukaan bibir dinamis (5px sampai 16px)
+      const h = Math.floor(Math.random() * 12) + 5;
+      lips.style.setProperty('--mouth-height', `${h}px`);
+    }, 90);
+  };
+
+  utter.onend = () => {
+    feed.classList.remove('speaking');
+    clearInterval(mouthInterval);
+    lips.style.setProperty('--mouth-height', '5px');
+    if (onComplete) onComplete();
+  };
+
+  utter.onerror = () => {
+    feed.classList.remove('speaking');
+    clearInterval(mouthInterval);
+  };
+
+  synth.speak(utter);
+}
+
+// ── WEBCAM PENGGUNA (EFEK ZOOM SUNGGUHAN) ──
+let stream = null;
+window.toggleCam = async () => {
+  const video = document.getElementById('userWebcam');
+  const placeholder = document.getElementById('camPlaceholder');
+  const btn = document.getElementById('btnCam');
+
+  if (!stream) {
+    try {
+      stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: false });
+      video.srcObject = stream;
+      video.style.display = 'block';
+      placeholder.style.display = 'none';
+      btn.classList.add('active');
+      document.getElementById('camLabel').textContent = 'Kamera Aktif';
+    } catch(err) {
+      alert("Tidak dapat mengakses kamera: " + err.message);
+    }
+  } else {
+    stream.getTracks().forEach(track => track.stop());
+    stream = null;
+    video.style.display = 'none';
+    placeholder.style.display = 'flex';
+    btn.classList.remove('active');
+    document.getElementById('camLabel').textContent = 'Kamera';
+  }
+};
+
+// ── SPEECH-TO-TEXT USER (MIC) ──
+let isRecording = false;
+let recognition = null;
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+
+window.toggleMic = () => {
+  if (!SR) {
+    alert("Browser tidak mendukung Web Speech. Silakan gunakan Google Chrome.");
+    return;
+  }
+  const btn = document.getElementById('btnMic');
+
+  if (!isRecording) {
+    recognition = new SR();
+    recognition.lang = 'ja-JP';
+    recognition.continuous = false;
+
+    recognition.onstart = () => {
+      isRecording = true;
+      btn.classList.add('active');
+      document.getElementById('micLabel').textContent = 'Mendengarkan...';
+      document.getElementById('statusSubtitle').textContent = 'Silakan bicara dalam bahasa Jepang sekarang...';
+    };
+
+    recognition.onresult = (event) => {
+      const transcript = event.results[0][0].transcript;
+      submitCandidateAnswer(transcript);
+    };
+
+    recognition.onend = () => {
+      isRecording = false;
+      btn.classList.remove('active');
+      document.getElementById('micLabel').textContent = 'Bicara (Mic)';
+    };
+
+    recognition.onerror = (e) => {
+      console.error(e);
+      isRecording = false;
+      btn.classList.remove('active');
+      document.getElementById('micLabel').textContent = 'Bicara (Mic)';
+    };
+
+    recognition.start();
+  } else {
+    recognition.stop();
+  }
+};
+
+// ── PROSES JAWABAN DENGAN GEMINI ──
+async function submitCandidateAnswer(userText) {
+  if (!userText.trim()) return;
+
+  // Tampilkan jawaban kandidat di chat log
+  addLog('candidate', 'あなた (Candidate)', userText);
+  document.getElementById('statusSubtitle').textContent = 'Yamada-Kachou sedang mendengarkan & memikirkan respons...';
+
+  try {
+    const response = await chatSession.sendMessage({ message: userText });
+    let raw = response.text.trim();
+    // Bersihkan format markdown jika ada
+    raw = raw.replace(/```json/g, '').replace(/```/g, '').trim();
+
+    let data;
+    try {
+      data = JSON.parse(raw);
+    } catch(e) {
+      data = { jp: raw, romaji: "", id: "", eval: "Respons diterima" };
+    }
+
+    // Pewawancara berbicara suara + lip-sync
+    speakJapanese(data.jp, () => {
+      document.getElementById('statusSubtitle').textContent = 'Giliran Anda menjawab. Tekan Bicara (Mic).';
+    });
+
+    // Tambahkan ke chat dock
+    addLog('interviewer', '山田 課長 (Yamada-Kachou)', data.jp, data.romaji, data.id, data.eval);
+
+  } catch(err) {
+    console.error(err);
+    document.getElementById('statusSubtitle').textContent = 'Error: ' + err.message;
+  }
+}
+
+function addLog(role, name, jp, romaji, id, evalNote) {
+  const log = document.getElementById('dialogLog');
+  const card = document.createElement('div');
+  card.className = `log-card ${role}`;
+
+  const time = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+  let html = `<div class="speaker-title">${name} <span>${time}</span></div><div>${jp}</div>`;
+  if (romaji) html += `<div class="kana-romaji">${romaji}</div>`;
+  if (id) html += `<div class="indo-trans">${id}</div>`;
+  if (evalNote) html += `<div><span class="eval-pill">📋 Evaluasi: ${evalNote}</span></div>`;
+
+  card.innerHTML = html;
+  log.appendChild(card);
+  log.scrollTop = log.scrollHeight;
+}
+
+window.askQuestionPreset = (topic) => {
+  submitCandidateAnswer(topic);
+};
+
+window.endInterview = () => {
+  speakJapanese("本日はありがとうございました。結果は後日連絡いたします。お疲れ様でした。", () => {
+    alert("Wawancara telah selesai! Kerja bagus.");
+  });
+};
+
+// Mulai salam awal
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    speakJapanese("こんにちは。本日は面接にお越しいただき、ありがとうございます。お名前を教えていただけますか？");
+  }, 1000);
+});
+</script>
+</body>
+</html>
+

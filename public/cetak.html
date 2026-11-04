@@ -32,7 +32,7 @@ body{background:#fff}
   function esc(s){ return String(s == null ? "" : s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;"); }
   var slug = (q("paket") || "gakusei-quiz").toLowerCase();
   document.getElementById("cTitle").textContent = "Cetak Soal — " + slug.replace("-quiz","").toUpperCase();
-  document.getElementById("cBack").href = "/#latihan-soal";
+  document.getElementById("cBack").href = "/simulasi.html";
   function optText(o){ if (o == null) return ""; if (typeof o === "string") return o; return o.text || o.label || ""; }
   fetch("/" + slug + "/quiz-data.json", { cache: "no-store" }).then(function(r){ return r.json(); }).then(function(d){
     var items = Array.isArray(d) ? d : (d.items || d.questions || []);

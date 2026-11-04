@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Simulasi &amp; Materi SSW (Specified Skilled Worker) - SinauJepang</title>
+  
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .bg-fuji-overlay {
+      background-image: radial-gradient(rgba(238, 242, 246, 0.95), rgba(224, 231, 239, 0.98)), url('/assets/fuji.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+  </style>
+</head>
+<body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between selection:bg-fuji-200">
+
+  <!-- Header bersama: site-layout.js -->
+  <script src="/assets/js/indexeddb.js"></script>
+  <script src="/assets/js/site-layout.js"></script>
+
+  <main class="flex-grow w-full bg-fuji-overlay py-10 md:py-14 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto space-y-8 sm:space-y-10">
+      <!-- Header SSW Section -->
+      <div class="text-center max-w-3xl mx-auto">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-100/90 text-amber-800 text-xs font-semibold border border-amber-200 mb-3 backdrop-blur-sm shadow-sm">
+          <i class="fa-solid fa-briefcase text-amber-600"></i>
+          <span>Tokutei Ginou (特定技能) • Tes Keterampilan Khusus</span>
+        </div>
+
+        <h1 class="text-2xl sm:text-3xl md:text-4xl font-extrabold text-slate-800 leading-tight mb-3">
+          Materi &amp; Simulasi Ujian SSW
+        </h1>
+        <p class="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-xl mx-auto mb-4">
+          Persiapan lengkap ujian keahlian bidang kerja Specified Skilled Worker (SSW 1). Pilih sektor bidang kerja yang Anda minati di bawah ini.
+        </p>
+
+        <!-- Status Pill -->
+        <div class="inline-flex items-center gap-2 bg-white/90 backdrop-blur-md px-3.5 py-1.5 rounded-full border border-slate-200 text-xs font-medium text-slate-700 shadow-sm">
+          <span class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+          <span>Bank Soal &amp; Istilah Bidang Kerja Sedang Diperbarui Berkala</span>
+        </div>
+      </div>
+
+      <!-- Sektor Bidang SSW -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+
+        <!-- 1. Kaigo -->
+        <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <h3 class="text-base font-bold text-slate-800 group-hover:text-rose-600 transition-colors">Kaigo (介護)</h3>
+              <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-600 border border-rose-200 shrink-0 whitespace-nowrap">Perawat Lansia</span>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+              Ujian keahlian perawatan &amp; evaluasi bahasa Jepang khusus bidang perawat lansia (Kaigo Nihongo).
+            </p>
+          </div>
+          <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i>Materi &amp; Kosakata</span>
+            <span class="text-xs font-bold text-fuji-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Segera Hadir <i class="fa-solid fa-clock text-[10px]"></i></span>
+          </div>
+        </div>
+
+        <!-- 2. Pengolahan Makanan & Minuman -->
+        <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-amber-300">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-utensils"></i>
+            </div>
+            <div class="flex items-start justify-between gap-2 mb-2">
+              <h3 class="text-base font-bold text-slate-800 group-hover:text-amber-600 transition-colors leading-snug">Inryouryouhin<br><span class="text-xs font-semibold text-slate-500">(飲食料品)</span></h3>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200 shrink-0 whitespace-nowrap">Pengolahan Pangan</span>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+              Manajemen sanitasi, standar higienitas HACCP, dan proses manufaktur pengolahan produk pangan.
+            </p>
+          </div>
+          <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i>HACCP &amp; Sanitasi</span>
+            <span class="text-xs font-bold text-fuji-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Segera Hadir <i class="fa-solid fa-clock text-[10px]"></i></span>
+          </div>
+        </div>
+
+        <!-- 3. Pelayanan Restoran / Gaishoku -->
+        <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-orange-300">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-bowl-rice"></i>
+            </div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <h3 class="text-base font-bold text-slate-800 group-hover:text-orange-600 transition-colors">Gaishoku (外食業)</h3>
+              <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-orange-50 text-orange-700 border border-orange-200 shrink-0 whitespace-nowrap">Restoran &amp; Kuliner</span>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+              Standar pelayanan pelanggan (sekkyaku), higienitas persiapan bahan makanan, dan operasional restoran.
+            </p>
+          </div>
+          <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i>Customer Service</span>
+            <span class="text-xs font-bold text-fuji-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Segera Hadir <i class="fa-solid fa-clock text-[10px]"></i></span>
+          </div>
+        </div>
+
+        <!-- 4. Pertanian / Nogyo -->
+        <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-emerald-300">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-seedling"></i>
+            </div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <h3 class="text-base font-bold text-slate-800 group-hover:text-emerald-600 transition-colors">Nogyo (農業)</h3>
+              <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 shrink-0 whitespace-nowrap">Pertanian</span>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+              Budidaya tanaman pertanian (sayur, buah), pemeliharaan ternak (chikusannogyo), dan keselamatan kerja pertanian.
+            </p>
+          </div>
+          <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i>Budidaya Pertanian</span>
+            <span class="text-xs font-bold text-fuji-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Segera Hadir <i class="fa-solid fa-clock text-[10px]"></i></span>
+          </div>
+        </div>
+
+        <!-- 5. Konstruksi / Kensetsu -->
+        <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-sky-300">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-helmet-safety"></i>
+            </div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <h3 class="text-base font-bold text-slate-800 group-hover:text-sky-600 transition-colors">Kensetsu (建設業)</h3>
+              <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200 shrink-0 whitespace-nowrap">Konstruksi</span>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+              Teknik perancah, bekisting, pembetonan, plesteran, dan keselamatan kerja lapangan konstruksi Jepang.
+            </p>
+          </div>
+          <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i>Teknik Konstruksi</span>
+            <span class="text-xs font-bold text-fuji-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Segera Hadir <i class="fa-solid fa-clock text-[10px]"></i></span>
+          </div>
+        </div>
+
+        <!-- 6. Perhotelan / Shukuhaku -->
+        <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-purple-300">
+          <div>
+            <div class="w-11 h-11 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
+              <i class="fa-solid fa-hotel"></i>
+            </div>
+            <div class="flex items-center justify-between gap-2 mb-2">
+              <h3 class="text-base font-bold text-slate-800 group-hover:text-purple-600 transition-colors">Shukuhaku (宿泊業)</h3>
+              <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 shrink-0 whitespace-nowrap">Perhotelan</span>
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed mb-4">
+              Penerimaan tamu depan (front desk), reservasi, housekeeping, etika omotenashi, dan komunikasi tamu hotel.
+            </p>
+          </div>
+          <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-[11px] text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i>Omotenashi Service</span>
+            <span class="text-xs font-bold text-fuji-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Segera Hadir <i class="fa-solid fa-clock text-[10px]"></i></span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <script>
+    if (typeof window.SiteLayout !== 'undefined') {
+      window.SiteLayout.mountHeader();
+      window.SiteLayout.mountFooter();
+      window.SiteLayout.renderUser();
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+
+            <div class="review-soal-header" style="align-items:flex-start">
+              <div class="review-status kosong" style="margin-top:2px">—</div>
+              <div class="review-nomor" style="margin-top:4px">#3</div>
+              <div class="review-pertanyaan" style="font-family:'Noto Serif JP',serif">
+                <div>Dengarkan baik-baik untuk nomor 30 &amp; 31: APA PERALATAN YANG DIBELI SEBELUM BERANGKAT?</div>
+                <div style="font-size:11.5px;color:var(--text3);font-style:italic;margin-top:4px;font-weight:normal">(Dengarkan baik-baik untuk nomor 30 &amp; 31: Topik persiapan apa yang dibicarakan?)</div>
+              </div>
+            </div>
+            <div class="review-body">
+              
+            <div class="review-konteks" style="background:rgba(188,47,47,0.02);border:1px solid rgba(188,47,47,0.08);border-left:3px solid rgba(188,47,47,0.3);border-radius:0 4px 4px 0;padding:.6rem .8rem;margin-bottom:.75rem;font-family:'Noto Serif JP',serif;white-space:pre-wrap;line-height:1.6;font-size:12.5px;color:var(--text2)">
+              <div>Percakapan tentang persiapan perjalanan bermain ski di gunung es.</div>
+              <div style="font-size:11px;color:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif">(Dua orang membicarakan persiapan pergi bermain ski.)</div>
+            </div>
+              <div class="audio-box" style="display:flex; align-items:center; gap:12px; margin-top:8px; padding:10px 14px; background:rgba(139,92,246,0.04); border:1px solid rgba(139,92,246,0.12); border-radius:8px; margin-bottom:12px;">
+              <button type="button" class="play-audio-btn" style="width:36px; height:36px; border:none; background:#8b5cf6; color:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; cursor:pointer;">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" class="play-

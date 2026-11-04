@@ -1,0 +1,63 @@
+
+            <div class="review-soal-header" style="align-items:flex-start">
+              <div class="review-status kosong" style="margin-top:2px">—</div>
+              <div class="review-nomor" style="margin-top:4px">#12</div>
+              <div class="review-pertanyaan" style="font-family:'Noto Serif JP',serif">
+                <div>Tentang mori no hikari apa yang harus dilakukan di tempat ini?</div>
+                <div style="font-size:11.5px;color:var(--text3);font-style:italic;margin-top:4px;font-weight:normal">(Tentang mori no hikari apa yang harus dilakukan di tempat ini?)</div>
+              </div>
+            </div>
+            <div class="review-body">
+              
+              
+              
+          <div class="review-jawaban">
+            <div style="font-size:11px;color:var(--text3);min-width:80px">
+              Jawaban Anda: <strong style="color:#ef4444">—</strong>
+            </div>
+            <div style="font-size:11px;color:var(--text3)">
+              Kunci: <strong style="color:#10b981">A</strong>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:.5rem">
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key review-key-benar">A</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">JAWABANNYA YG ADA プレゼントNYA</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(JAWABANNYA YG ADA Hadir NYA)</div>
+            </div>
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key ">B</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">-</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(-)</div>
+            </div>
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key ">C</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">-</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(-)</div>
+            </div></div>
+              <div class="review-penjelasan">💡 Berdasarkan brosur promosi "Mori no Hikari", pengunjung yang datang akan mendapatkan hadiah khusus (プレゼント - purezento).
+
+Tips: Temukan kata katakana "プレゼント" (hadiah) dalam pilihan jawaban.</div>
+            </div>
+          </div>
+        </div>
+
+    <!-- ACTIONS -->
+    <div class="action-row">
+      <a href="https://jft.minnanihongo.id/home.php" class="btn-action btn-secondary">🏠 Pilih Paket Lain</a>
+      <button class="btn-action btn-secondary" style="border-color:#3b82f6;color:#1d4ed8;">🖨 Cetak Sertifikat Hasil Saja</button>
+      <button class="btn-action btn-primary">🖨 Cetak + Review Soal</button>
+    </div>
+  </div></div>
+
+
+
+
+
+</body></html>

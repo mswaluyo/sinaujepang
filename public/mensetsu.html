@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wawancara 3D Interaktif - Sinau Jepang</title>
+
+    <!-- CSS Bootstrap/Tailwind & FontAwesome mandiri -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="bg-gray-900 text-white min-h-screen flex flex-col justify-between">
+
+    <!-- Header Navbar -->
+    <header class="bg-gray-800 border-b border-gray-700 py-4 px-6 flex justify-between items-center">
+        <span class="text-xl font-bold text-red-500">しなう <span class="text-white">Sinau Jepang</span></span>
+        <span class="text-xs bg-green-600 text-white px-3 py-1 rounded-full">Simulasi Mensetsu Online</span>
+    </header>
+
+    <!-- Workspace -->
+    <main class="flex-1 max-w-7xl w-full mx-auto p-4 md:p-6 grid grid-cols-1 lg:grid-cols-3 gap-6">
+
+        <!-- Layar Visual & Kontrol -->
+        <div
+            class="lg:col-span-2 flex flex-col bg-gray-800 bg-opacity-40 rounded-2xl border border-gray-800 p-4 space-y-4">
+
+            <div class="relative flex-1 bg-gray-950 rounded-xl overflow-hidden min-h-[450px]" id="avatar-container">
+
+                <!-- Avatar HTML5 Video / Failback Image yang bisa bergerak (Berbicara & Berkedip) -->
+                <!-- Ini adalah perbaikan terbaik tanpa error GLB: Menggunakan video loop Sato-San yang berinteraksi -->
+                <video id="avatar-video" class="w-full h-full object-cover" autoplay loop muted playsinline>
+                    <!-- Masukkan file video Sato-san yang sedang idle/mendengarkan di sini -->
+                    <source src="/assets/videos/kenji_sato_listening.mp4" type="video/mp4">
+                    <!-- Jika video tidak didukung atau belum diunduh, gunakan gambar default -->
+                    <img src="/assets/images/kenji-sato.png" alt="Kenji Sato" class="w-full h-full object-cover">
+                </video>
+
+                <!-- Status Berbicara / Mendengarkan -->
+                <div id="status-layer"
+                    class="absolute top-4 left-4 bg-black bg-opacity-80 text-xs px-3 py-1.5 rounded-full flex items-center space-x-2 border border-gray-750">
+                    <span class="w-2.5 h-2.5 rounded-full bg-yellow-500 animate-pulse" id="status-dot"></span>
+                    <span id="status-text">Siap untuk Wawancara</span>
+                </div>
+
+                <!-- Nama -->
+                <div
+                    class="absolute bottom-4 left-4 bg-black bg-opacity-75 px-4 py-2 rounded-lg border border-gray-700 z-10">
+                    <p class="text-xs font-semibold text-red-400">Pewawancara (Interviewer)</p>
+                    <p class="text-base font-bold">佐藤健二 (Kenji Sato)</p>
+                </div>
+            </div>
+
+            <!-- Kontrol Wawancara -->
+            <div class="flex flex-col sm:flex-row gap-4">
+                <button id="btn-start"
+                    class="px-6 py-3 bg-red-600 hover:bg-red-700 font-bold rounded-lg transition duration-200">
+                    Mulai Wawancara
+                </button>
+                <button id="btn-mic" disabled
+                    class="flex-1 py-3 bg-gray-750 text-gray-400 font-bold rounded-full border border-gray-700 cursor-not-allowed flex items-center justify-center space-x-2">
+                    <i class="fa-solid fa-microphone"></i>
+                    <span id="mic-text">Tahan & Bicara (Bahasa Jepang)</span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Sisi Kanan: Log Percakapan -->
+        <div class="bg-gray-850 rounded-2xl border border-gray-700 p-4 flex flex-col justify-between">
+            <h3 class="text-lg font-bold border-b border-gray-750 pb-3">
+                <i class="fa-solid fa-comment-dots text-red-500 mr-2"></i>Riwayat Wawancara
+            </h3>
+            <div id="chat-history"
+                class="flex-1 overflow-y-auto my-4 space-y-4 text-sm pr-2 min-h-[300px] max-h-[400px]">
+                <div class="text-center text-gray-500 italic" id="empty-state">Klik "Mulai" untuk memanggil Sato-san.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-950 py-4 text-center text-xs text-gray-500 border-t border-gray-900">
+        © 2026 Sinau Jepang - Simulasi Wawancara Interaktif.
+    </footer>
+
+    <!-- SKRIP UNTUK INTERAKSI WAWANCARA -->
+    <script>
+        const btnStart = document.getElementById('btn-start');
+        const btnMic = document.getElementById('btn-mic');
+        const micText = document.getElementById('mic-text');
+        const chatHistory = document.getElementById('chat-history');
+        const statusText = document.getElementById('status-text');
+        const statusDot = document.getElementById('status-dot');
+        const avatarVideo = document.getElementById('avatar-video');
+        const emptyState = document.getElementById('empty-state');
+
+        let isInterviewing = false;
+        let synthesis = window.speechSynthesis;
+        let recognition;
+
+        // Inisialisasi suara dan mikrofon
+        window.addEventListener('DOMContentLoaded', () => {
+            setupSpeechRecognition();
+        });
+
+        btnStart.addEventListener('click', () => {
+            if (isInterviewing) return;
+            isInterviewing = true;
+            btnStart.classList.add('hidden');
+            btnMic.disabled = false;
+            btnMic.classList.replace('bg-gray-750', 'bg-red-600');
+            btnMic.classList.replace('text-gray-400', 'text-white');
+            btnMic.classList.remove('cursor-not-allowed');
+
+            if (emptyState) emptyState.remove();
+
+            // Sapaan awal Sato-san
+            const sapaan = "はじめまして、面接官の佐藤健二です。本日はよろしくお願いします。まず、簡単に自己紹介をお願いできますか？";
+            speakResponse(sapaan);
+        });
+
+        // TTS (Pembacaan Bahasa Jepang)
+        function speakResponse(text) {
+            if (synthesis.speaking) synthesis.cancel();
+
+            const utterance = new SpeechSynthesisUtterance(text);
+            utterance.lang = 'ja-JP';
+            utterance.rate = 0.9; // Kecepatan normal-lambat agar mudah didengar
+
+            // Cari suara Jepang alami jika ada
+            const voices = synthesis.getVoices();
+            const jaVoice = voices.find(v => v.lang.includes('ja'));
+            if (jaVoice) utterance.voice = jaVoice;
+
+            // Efek simulasi avatar berbicara (Kita bisa mengubah looping video menjadi video aktif jika file video tersedia)
+            // Di sini, visual tidak akan stuck loading karena menggunakan video html atau fallback image.
+            statusText.innerText = "Sato-san sedang berbicara...";
+            statusDot.className = "w-2.5 h-2.5 rounded-full bg-green-500 animate-ping";
+
+            utterance.onend = () => {
+                statusText.innerText = "Sato-san mendengarkan...";
+                statusDot.className = "w-2.5 h-2.5 rounded-full bg-blue-500 animate-pulse";
+            };
+
+            addChatBubble("佐藤健二 (Pewawancara)", text, "interviewer");
+            synthesis.speak(utterance);
+        }
+
+        // Perekam Suara (Speech Recognition)
+        function setupSpeechRecognition() {
+            if ('webkitSpeechRecognition' in window || 'SpeechRecognition' in window) {
+                const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+                recognition = new SpeechRecognition();
+                recognition.continuous = false;
+                recognition.interimResults = false;
+                recognition.lang = 'ja-JP';
+
+                recognition.onstart = () => {
+                    micText.innerText = "Mendengarkan... Silakan berbicara";
+                    btnMic.classList.replace('bg-red-600', 'bg-blue-600');
+                    statusText.innerText = "Mendengarkan Anda...";
+                    statusDot.className = "w-2.5 h-2.5 rounded-full bg-red-500 animate-pulse";
+                };
+
+                recognition.onresult = async (event) => {
+                    const userSpeech = event.results[0][0].transcript;
+                    addChatBubble("Anda", userSpeech, "user");
+
+                    statusText.innerText = "Sato-san sedang berpikir...";
+                    statusDot.className = "w-2.5 h-2.5 rounded-full bg-yellow-500 animate-bounce";
+
+                    // Ganti bagian ini dengan API panggil ke AI Anda di localhost:5000 jika sudah terintegrasi
+                    // Saat ini kita menggunakan respon tiruan (mock) yang langsung lancar
+                    setTimeout(() => {
+                        const responSato = "なるほど、よく分かりました。では、なぜ日本で働きたいのですか？志望動機を教えてください。";
+                        speakResponse(responSato);
+                    }, 1500);
+                };
+
+                recognition.onerror = () => {
+                    micText.innerText = "Suara tidak jelas, silakan ulangi.";
+                    statusText.innerText = "Suara kurang jelas...";
+                };
+
+                recognition.onend = () => {
+                    micText.innerText = "Tahan & Bicara (Bahasa Jepang)";
+                    btnMic.classList.replace('bg-blue-600', 'bg-red-600');
+                };
+            } else {
+                alert("Browser Anda tidak mendukung perekaman suara (Speech Recognition). Gunakan Google Chrome.");
+            }
+        }
+
+        btnMic.addEventListener('mousedown', () => { if (isInterviewing) recognition.start(); });
+        btnMic.addEventListener('mouseup', () => { if (isInterviewing) recognition.stop(); });
+
+        function addChatBubble(sender, text, type) {
+            const bubble = document.createElement('div');
+            bubble.className = type === 'user' ? 'text-right' : 'text-left';
+            bubble.innerHTML = `
+                <p class="text-xs text-gray-500 font-semibold mb-1">${sender}</p>
+                <span class="inline-block ${type === 'user' ? 'bg-red-600 text-white rounded-l-lg' : 'bg-gray-700 text-gray-100 rounded-r-lg'} rounded-t-lg p-3 max-w-[80%] shadow-sm">${text}</span>
+            `;
+            chatHistory.appendChild(bubble);
+            chatHistory.scrollTop = chatHistory.scrollHeight;
+        }
+    </script>
+</body>
+
+</html>

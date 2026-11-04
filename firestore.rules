@@ -4,10 +4,16 @@
 // - Admin ditandai via Custom Claim (auth.token.admin == true)
 //   ATAU dokumen /admins/{uid} { email, role: "admin" }
 // - Set admin pertama via: npm run make-admin -- <emailUser>
+
 rules_version = '2';
 service cloud.firestore {
-  match /databases/{databaseId}/documents {
+  // Top‑level deny as safety net
+  match /{document=**} {
+    allow read, write: if false;
+  }
 
+  match /databases/{databaseId}/documents {
+    // Helper functions -----------------------------------------------------
     function isSignedIn() {
       return request.auth != null;
     }
@@ -18,80 +24,110 @@ service cloud.firestore {
       );
     }
     function ownerEmail(data) {
-      return isSignedIn()
-        && data.email is string
-        && request.auth.token.email is string
-        && data.email == request.auth.token.email;
+      return isSignedIn() &&
+        data.email is string &&
+        request.auth.token.email is string &&
+        data.email == request.auth.token.email;
     }
-
-    // --- Nilai siswa (1 dokumen per siswa-paket: {uid}_{slug}, upsert via setDoc merge) ---
+    // Validators -----------------------------------------------------------
+    function validateAttempt(data) {
+      return data.email is string &&
+        data.skor is int && data.skor >= 0 && data.skor <= 100 &&
+        data.total is int && data.total >= 0 && data.total <= 100;
+    }
+    function validateProgress(data) {
+      return data.uid is string &&
+        data.uid == request.auth.uid &&
+        data.email is string && data.email.size() <= 100 &&
+        data.slug is string && data.slug.size() <= 64 &&
+        data.picked is map && data.picked.size() <= 100 &&
+        data.locked is map && data.locked.size() <= 100 &&
+        data.cur is int && data.cur >= 0 && data.cur <= 1000 &&
+        data.timerSec is int && data.timerSec >= 0 && data.timerSec <= 86400 &&
+        data.updatedAt is timestamp &&
+        data.keys().hasOnly(['uid', 'email', 'slug', 'picked', 'locked', 'cur', 'timerSec', 'updatedAt']);
+    }
+    function validateUser(data) {
+      return data.name is string && data.name.size() <= 50 &&
+        data.email is string && data.email == request.auth.token.email &&
+        data.photo is string && data.photo.matches('^https?://');
+    }
+    // -------------------------------------------------------------------
+    // --- Nilai siswa (1 dokumen per siswa-paket: {uid}_{slug}) ---
     match /attempts/{docId} {
-      // Buat nilai: wajib login + email dokumen = email login + field minimal valid
-      allow create: if isSignedIn()
-                    && ownerEmail(request.resource.data)
-                    && request.resource.data.skor is number
-                    && request.resource.data.total is number;
-      // Baca 1 dokumen: pemilik atau admin
-      allow get: if isSignedIn()
-                  && (resource.data.email == request.auth.token.email || isAdmin());
-      // List/query: admin bebas; user biasa tetap boleh query (wajib where email==miliknya di klien)
+      // Create: must be signed in, owner email matches, and fields are valid
+      allow create: if isSignedIn() &&
+                     ownerEmail(request.resource.data) &&
+                     validateAttempt(request.resource.data);
+      // Read: owner or admin
+      allow get: if isSignedIn() &&
+                  (resource.data.email == request.auth.token.email || isAdmin());
+      // List: admin can list all, users can list only their own (handled client‑side)
       allow list: if isAdmin() || isSignedIn();
-      // Update: pemilik boleh menimpa dokumennya sendiri (upsert skor terbaru),
-      // dengan syarat email tidak diganti. Hapus: admin saja.
-      allow update: if isAdmin()
-                    || (isSignedIn()
-                        && resource.data.email == request.auth.token.email
-                        && request.resource.data.email == resource.data.email);
+      // Update: owner can update but only allowed fields, admin unrestricted
+      allow update: if isAdmin() || (
+        isSignedIn() &&
+        resource.data.email == request.auth.token.email &&
+        request.resource.data.email == resource.data.email &&
+        validateAttempt(request.resource.data) &&
+        request.resource.data.keys().hasOnly(['skor','total','email'])
+      );
+      // Delete: admin only
       allow delete: if isAdmin();
     }
 
-    // --- Progres sesi kuis lintas device (resume per akun, kedaluwarsa 24 jam) ---
-    // Dokumen: /progress/{uid}_{slug} = { uid, email, slug, picked, locked, cur, timerSec, updatedAt }
-    // 1 dokumen per siswa per paket (update, bukan tambah) + dihapus saat kuis selesai.
+    // --- Progres sesi kuis lintas device (resume per akun) ---
     match /progress/{docId} {
-      allow create: if isSignedIn()
-                    && request.resource.data.uid == request.auth.uid
-                    && request.resource.data.slug is string;
-      allow get, list: if isSignedIn()
-                    && (resource.data.uid == request.auth.uid || isAdmin());
-      allow update, delete: if isSignedIn()
-                    && (resource.data.uid == request.auth.uid || isAdmin());
+      allow create: if isSignedIn() &&
+                     request.resource.data.uid == request.auth.uid &&
+                     validateProgress(request.resource.data);
+      allow get, list: if isSignedIn() &&
+                       (resource.data.uid == request.auth.uid || isAdmin());
+      allow update: if (isAdmin() || (
+                       isSignedIn() &&
+                       resource.data.uid == request.auth.uid &&
+                       request.resource.data.uid == resource.data.uid
+                     )) && validateProgress(request.resource.data);
+      allow delete: if isAdmin() || (
+                       isSignedIn() &&
+                       resource.data.uid == request.auth.uid
+                     );
     }
 
     // --- Daftar admin ---
-    // Dokumen: /admins/{uid} = { email: string, role: "admin", createdAt: timestamp }
     match /admins/{uid} {
       allow get: if isSignedIn() && (request.auth.uid == uid || isAdmin());
       allow list: if isAdmin();
-      // Tulis admin baru: hanya admin (admin pertama via custom claim dari script make-admin)
+      // Create / update / delete restricted to admins only
       allow create, update, delete: if isAdmin();
     }
 
-    // --- Profil pengguna (ditulis otomatis saat login) ---
-    // Dokumen: /users/{uid} = { name, email, photo, createdAt, lastLoginAt, loginCount }
-    // User boleh create/update MILIKNYA (uid == auth.uid, email cocok); baca miliknya; admin bisa list semua.
+    // --- Profil pengguna ---
     match /users/{uid} {
       allow get: if isSignedIn() && (request.auth.uid == uid || isAdmin());
       allow list: if isAdmin();
-      allow create: if isSignedIn()
-                    && (request.auth.uid == uid || isAdmin())
-                    && (request.resource.data.email == request.auth.token.email || isAdmin());
-      allow update: if isAdmin()
-                    || (isSignedIn() && request.auth.uid == uid
-                        && request.resource.data.email == resource.data.email);
+      allow create: if isSignedIn() &&
+                     (request.auth.uid == uid || isAdmin()) &&
+                     validateUser(request.resource.data);
+      // Owner can update only whitelisted fields; admin unrestricted
+      allow update: if isAdmin() || (
+        isSignedIn() && request.auth.uid == uid &&
+        request.resource.data.email == resource.data.email &&
+        validateUser(request.resource.data) &&
+        request.resource.data.keys().hasOnly(['name','email','photo','updatedAt'])
+      );
     }
 
-    // --- Konten soal (kelola via halaman admin, dibaca publik) ---
-    // Dokumen: /quiz_packs/{slug} = { slug, title, items: [...], updatedAt, updatedBy }
+    // --- Konten soal (public read, admin write) ---
     match /quiz_packs/{packId} {
+      // Public read – documented intent; change to isSignedIn() if you want restriction
       allow read: if true;
       allow write: if isAdmin();
     }
+
     // --- Konfigurasi admin (GitHub token/repo) ---
     match /settings/{docId} {
       allow read, write: if isAdmin();
     }
   }
-
 }
-

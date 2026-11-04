@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/favicon.ico">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <title>Simulasi CBT JFT-Basic A2 - SinauJepang</title>
+  
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    .bg-fuji-overlay {
+      background-image: radial-gradient(rgba(238, 242, 246, 0.95), rgba(224, 231, 239, 0.98)), url('/assets/fuji.png');
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+    }
+    .transition-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  </style>
+</head>
+<body class="bg-fuji-50 text-slate-800 font-sans min-h-screen flex flex-col justify-between selection:bg-fuji-200">
+
+  <!-- Header bersama: site-layout.js -->
+  <script src="/assets/js/indexeddb.js"></script>
+  <script src="/assets/js/site-layout.js"></script>
+
+  <main class="flex-grow w-full">
+    <!-- Hero Simulasi JFT -->
+    <section class="relative bg-fuji-overlay py-12 md:py-16 border-b border-fuji-100">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+        <!-- Badge Pill -->
+        <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-fuji-100/90 text-fuji-700 text-xs sm:text-sm font-semibold border border-fuji-200 mb-4 backdrop-blur-sm shadow-sm">
+          <i class="fa-solid fa-graduation-cap text-sky-500"></i>
+          <span>Simulasi Komputer (CBT) Resmi JFT-Basic • Standar A2 Kelulusan</span>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight mb-4">
+          Simulasi CBT JFT-Basic
+        </h1>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl mx-auto mb-6">
+          Latihan soal standar ujian asli dilengkapi penghitung waktu (timer), audio mendengarkan (choukai), kunci jawaban, dan pembahasan mendalam.
+        </p>
+
+        <!-- Keterangan Skala Nilai Terpusat -->
+        <div class="inline-flex flex-wrap items-center justify-center gap-2 sm:gap-4 bg-white/85 backdrop-blur-md px-5 py-2.5 rounded-2xl border border-slate-200 text-xs font-bold text-slate-600 shadow-sm">
+          <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-slate-400"></span> 10 - 144 (-)</span>
+          <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-amber-400"></span> 145 (A1)</span>
+          <span class="flex items-center gap-1.5"><span class="w-2.5 h-2.5 rounded-full bg-sky-400"></span> 175 (A2.1)</span>
+          <span class="flex items-center gap-1.5 text-fuji-600"><span class="w-2.5 h-2.5 rounded-full bg-fuji-600"></span> 200 - 250 (A2 Lulus)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION PAKET SOAL LATIHAN -->
+    <section id="latihan-soal" class="relative bg-fuji-overlay py-12 md:py-16">
+      <div class="max-w-6xl mx-auto px-4 space-y-10">
+
+        <!-- Target Render Kartu Soal Otomatis (Sesuai ID package-render.js) -->
+        <div id="paket-render-container" class="hidden"></div>
+
+      </div>
+    </section>
+  </main>
+
+
+
+  <!-- Scripts Bawaan Proyek -->
+  <script type="module" src="/assets/js/firebase-init.js"></script>
+  <script>
+    if (typeof window.SiteLayout !== 'undefined') {
+      window.SiteLayout.mountHeader();
+      window.SiteLayout.mountFooter();
+      window.SiteLayout.renderUser();
+    }
+  </script>
+  <script src="/assets/js/score-cards.js?v=20261103_4"></script>
+  <script src="/assets/js/pack-section-scores.js"></script>
+  <script src="/assets/js/package-config.js?v=20261103_2"></script>
+  <script src="/assets/js/package-render.js"></script>
+  <script>
+    async function renderUser() {
+      try {
+        var u = null;
+        try { u = await window.IndexedDB.getItem("jft_user"); } catch (e) {}
+        if (!u) {
+          try {
+            var local = localStorage.getItem("jft_user");
+            if (local) u = JSON.parse(local);
+          } catch (e) {}
+        }
+        if (!u && window.fujiUser) {
+          u = { uid: window.fujiUser.uid, name: window.fujiUser.displayName, email: window.fujiUser.email };
+        }
+        var b = document.getElementById("loginBtn"), info = document.getElementById("uInfo");
+        var paketBox = document.getElementById("paket-render-container");
+
+        if (!u) {
+          if (b) { b.innerHTML = '<span>Masuk Google</span>'; b.onclick = function(){ openLoginModal(); }; }
+          if (info) { info.classList.add("hidden"); }
+          if (paketBox) paketBox.classList.add("hidden");
+          // Tampilkan modal login secara otomatis jika belum login
+          openLoginModal();
+          return;
+        }
+
+        // Sudah login Google: buka akses paket soal langsung
+        closeLoginModal();
+        if (paketBox) {
+          paketBox.classList.remove("hidden");
+          if (typeof window.renderPackSectionScoresAll === 'function') {
+            window.renderPackSectionScoresAll();
+          }
+        }
+        if (b) { b.innerHTML = '<i class="fa-solid fa-right-from-bracket"></i><span>Keluar</span>'; b.onclick = function(){ window.fujiLogout(); }; }
+        if (info) { info.textContent = "Hi, " + (u.name || u.email); info.classList.remove("hidden"); }
+      } catch (e) {}
+    }
+    function openLoginModal() { document.getElementById('loginModal').classList.remove('hidden'); }
+    function closeLoginModal() {
+      document.getElementById('loginModal').classList.add('hidden');
+      // Bila belum login dan modal ditutup/dibatalkan, kembali ke home
+      var isLogged = false;
+      try {
+        if (localStorage.getItem("jft_user") || window.fujiUser) isLogged = true;
+      } catch (e) {}
+      if (!isLogged) {
+        window.location.replace("/");
+      }
+    }
+    async function simulateLogin() {
+      try {
+        var authMod = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js");
+        var r = await authMod.signInWithPopup(window.fujiAuth, new authMod.GoogleAuthProvider());
+        var u = r.user;
+        var uObj = { uid: u.uid, name: u.displayName, email: u.email, photo: u.photoURL };
+        try { localStorage.setItem("jft_user", JSON.stringify(uObj)); } catch (e) {}
+        try { window.IndexedDB.setItem("jft_user", uObj); } catch (e) {}
+        closeLoginModal();
+        renderUser();
+      } catch (e) { alert("Gagal masuk: " + (e.message || e.code)); }
+    }
+    window.fujiLogout = async function () {
+      try { localStorage.removeItem("jft_user"); } catch (e) {}
+      try { window.IndexedDB.removeItem("jft_user"); } catch (e) {}
+      window.fujiUser = null;
+      try {
+        var a = window.fujiAuth;
+        if (a) { a.signOut().catch(function(){}); }
+      } catch (e) {}
+      location.replace("/login.html");
+    };
+
+    var ADMIN_EMAILS = ["mswaluyo@gmail.com"];
+    async function renderAdminBtn() {
+      var el = document.getElementById("adminBtn");
+      if (!el) return;
+      try {
+        var u = window.fujiUser;
+        if (!window.fujiAuth || !window.fujiAuth.currentUser) {
+          try { await new Promise(function (res) { var t0 = Date.now();
+            (function poll() { if ((window.fujiAuth && window.fujiAuth.currentUser) || Date.now() - t0 > 8000) res(); else setTimeout(poll, 200); })(); }); } catch (e) {}
+        }
+        u = (window.fujiAuth && window.fujiAuth.currentUser) || window.fujiUser;
+        if (!u) { el.style.setProperty("display", "none", "important"); return; }
+        try {
+          var em = (u.email || "").toLowerCase();
+          if (ADMIN_EMAILS.indexOf(em) > -1) { el.style.setProperty("display", "flex", "important"); return; }
+        } catch (e) {}
+        try {
+          var tok = await u.getIdTokenResult(false);
+          if (tok.claims && tok.claims.admin === true) { el.style.setProperty("display", "flex", "important"); return; }
+        } catch (e) {}
+        try {
+          var fs = await import("https://www.gstatic.com/firebasejs/10.12.0/firebase-firestore.js");
+          var d = await fs.getDoc(fs.doc(window.fujiDb, "admins", u.uid));
+          if (d.exists()) { el.style.setProperty("display", "flex", "important"); return; }
+        } catch (e) {}
+        el.style.setProperty("display", "none", "important");
+      } catch (e) {}
+    }
+    window.addEventListener("fuji:auth", function () {
+      try {
+        renderUser().catch(function(){});
+        renderAdminBtn().catch(function(){});
+      } catch (e) {}
+    });
+    renderUser().catch(function(){});
+    setTimeout(function(){ renderAdminBtn().catch(function(){}); }, 1500);
+  </script>
+</body>
+</html>

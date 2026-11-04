@@ -1,0 +1,9 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+# Run lint first – fail fast if style issues
+npm run lint
+
+# Run project‑specific validation tests
+npm test
+

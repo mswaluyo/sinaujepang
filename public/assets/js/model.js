@@ -14,7 +14,7 @@ var QuizRepository = (function () {
   }
   function quizBase() {
     var s = quizSlug();
-    if (s) return "/" + s + "/";
+    if (s) return "/quizzes/" + s + "/";
     var p = String((location && location.pathname) || "/");
     var m = p.match(/\/([a-z0-9_-]+-quiz)\/?(?:index\.html)?$/i);
     if (m) return "/" + m[1] + "/";
@@ -22,6 +22,7 @@ var QuizRepository = (function () {
   }
   var DATA_URL = quizBase() + "quiz-data.json"; // absolut per paket
   var ATTEMPT_KEY = "jft_attempts";         // localStorage sekarang; Firestore nanti
+
   // Validasi skema: no unik, answer dalam rentang, kunci_id cocok (cermin guard QuizSeeder).
   function validate(items) {
     var warnings = [];
@@ -38,14 +39,34 @@ var QuizRepository = (function () {
     if (warnings.length && window.console) console.warn("[QuizRepository]", warnings.join("; "));
     return warnings;
   }
+
   function assetUrl(p) {
+    // Resolve URLs for assets referenced in quiz JSON.
+    // 1. Preserve absolute URLs and root‑relative URLs.
     if (!p) return p;
     if (/^(https?:)?\/\//i.test(p) || p.charAt(0) === "/") return p;
-    var base = quizBase();
-    var rel = String(p).replace(/^\.\//, "").replace(/^assets\//, "assets/");
-    if (/^assets\//.test(rel)) return base + rel;
-    return base + rel;
+
+    // 2. Determine quiz slug for per‑quiz asset folder.
+    var slug = quizSlug();
+    // Normalize path: remove leading "./" or "assets/".
+    var rel = String(p).replace(/^\.\//, "").replace(/^assets\//i, "");
+
+    // 3. If the original reference was under the old "assets/" folder,
+    //    map it to the new location: /assets/quizzes/<slug>/images|audio/filename
+    if (/^assets\//i.test(p) || /^assets\//i.test(String(p))) {
+      var ext = rel.split('.').pop().toLowerCase();
+      var sub = "";
+      if (/^(png|jpe?g|gif|svg|webp)$/i.test(ext)) sub = "images";
+      else if (/^(mp3|wav|ogg|m4a)$/i.test(ext)) sub = "audio";
+      var basePath = "/assets/quizzes/" + (slug ? slug + "/" : "");
+      if (sub) basePath += sub + "/";
+      return basePath + rel;
+    }
+
+    // 4. Default: treat as relative to the quiz base directory.
+    return quizBase() + rel;
   }
+
   function normalizeQuiz(items) {
     items.forEach(function (q) {
       if (q.img) q.img = assetUrl(q.img);
@@ -54,12 +75,16 @@ var QuizRepository = (function () {
     });
     return items;
   }
+
   async function fetchQuiz() {
     // Override admin: jika paket sudah dimigrasi ke /quiz_packs/{slug}, pakai itu
     try {
       if (window.fujiQuizPack) {
         var s0 = quizSlug();
-        if (s0) { var ov = await window.fujiQuizPack(s0); if (ov && ov.length) { validate(ov); return normalizeQuiz(ov); } }
+        if (s0) {
+          var ov = await window.fujiQuizPack(s0);
+          if (ov && ov.length) { validate(ov); return normalizeQuiz(ov); }
+        }
       }
     } catch (e) {}
     var url = DATA_URL + (DATA_URL.indexOf("?") > -1 ? "&" : "?") + "v=" + Date.now();
@@ -69,6 +94,7 @@ var QuizRepository = (function () {
     validate(items);
     return normalizeQuiz(items);
   }
+
   function saveAttempt(slug, attempt) {
     // Async simpan ke IndexedDB
     (async function(){
@@ -87,6 +113,7 @@ var QuizRepository = (function () {
       }
     } catch (e) {}
   }
+
   function loadAttempts(slug) {
     // Async: return Promise<array>
     return window.IndexedDB.getItem(ATTEMPT_KEY).then(function(raw){
@@ -96,6 +123,7 @@ var QuizRepository = (function () {
       } catch (e) { return []; }
     }).catch(function(){ return []; });
   }
+
   return { fetchQuiz: fetchQuiz, validate: validate, saveAttempt: saveAttempt, loadAttempts: loadAttempts };
 })();
 

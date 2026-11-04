@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaiwa Demo — Level 2: 2D Animated Character</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+  }
+
+  .scene {
+    width: 900px;
+    max-width: 98vw;
+    display: grid;
+    grid-template-columns: 340px 1fr;
+    gap: 24px;
+    align-items: start;
+  }
+
+  /* ── KARAKTER PANEL ── */
+  .character-panel {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 24px;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    backdrop-filter: blur(12px);
+  }
+
+  .char-name {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #a8d8ea;
+    letter-spacing: 2px;
+  }
+  .char-sub {
+    font-size: 0.75rem;
+    color: rgba(255,255,255,0.5);
+    margin-top: -8px;
+  }
+
+  /* ── SVG CHARACTER ── */
+  .char-container {
+    position: relative;
+    width: 220px;
+    height: 280px;
+  }
+
+  /* Body parts - CSS animated */
+  .char-body { position: absolute; }
+
+  /* Idle body sway */
+  @keyframes bodySway {
+    0%,100% { transform: rotate(-1deg) translateY(0); }
+    50% { transform: rotate(1deg) translateY(-3px); }
+  }
+  @keyframes hairFlow {
+    0%,100% { transform: skewX(-1deg); }
+    50% { transform: skewX(1deg); }
+  }
+  @keyframes eyeBlink {
+    0%,92%,100% { transform: scaleY(1); }
+    96% { transform: scaleY(0.05); }
+  }
+  @keyframes mouthTalk {
+    0%,100% { d: path("M 95 155 Q 110 162 125 155"); }
+    25% { d: path("M 95 155 Q 110 168 125 155"); }
+    50% { d: path("M 95 158 Q 110 152 125 158"); }
+    75% { d: path("M 95 155 Q 110 165 125 155"); }
+  }
+  @keyframes mouthIdle {
+    0%,100% { d: path("M 95 155 Q 110 160 125 155"); }
+    50% { d: path("M 97 155 Q 110 158 123 155"); }
+  }
+  @keyframes handWave {
+    0%,100% { transform: rotate(0deg); transform-origin: 160px 190px; }
+    25% { transform: rotate(-20deg); transform-origin: 160px 190px; }
+    75% { transform: rotate(15deg); transform-origin: 160px 190px; }
+  }
+  @keyframes headNod {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(2px); }
+  }
+  @keyframes blush {
+    0%,100% { opacity: 0.3; }
+    50% { opacity: 0.6; }
+  }
+
+  .char-svg {
+    width: 220px;
+    height: 280px;
+    filter: drop-shadow(0 8px 24px rgba(168,216,234,0.3));
+  }
+  .group-body { animation: bodySway 3s ease-in-out infinite; }
+  .group-head { animation: headNod 3s ease-in-out infinite; }
+  .eye-left, .eye-right { animation: eyeBlink 4s ease-in-out infinite; transform-origin: center; }
+  .mouth-path { animation: mouthIdle 0.5s ease-in-out infinite; }
+  .mouth-path.talking { animation: mouthTalk 0.2s ease-in-out infinite; }
+  .hair-front { animation: hairFlow 3s ease-in-out infinite; }
+  .hand-right { animation: handWave 1.5s ease-in-out infinite; }
+  .blush-left, .blush-right { animation: blush 3s ease-in-out infinite; }
+
+  /* Mood indicator */
+  .mood-bar {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .mood-btn {
+    padding: 5px 10px;
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.75rem;
+    transition: all 0.2s;
+  }
+  .mood-btn:hover, .mood-btn.active {
+    background: rgba(168,216,234,0.3);
+    border-color: #a8d8ea;
+  }
+
+  /* Emotion bubble */
+  .emotion-bubble {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    background: rgba(255,220,100,0.9);
+    border-radius: 50%;
+    width: 36px; height: 36px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.2rem;
+    animation: bubblePop 0.3s ease-out;
+    transition: all 0.3s;
+  }
+  @keyframes bubblePop {
+    0% { transform: scale(0); }
+    70% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+  }
+
+  /* ── CHAT PANEL ── */
+  .chat-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    height: 520px;
+  }
+
+  .chat-header {
+    background: rgba(255,255,255,0.05);
+    border-radius: 16px;
+    padding: 12px 16px;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.6);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .badge {
+    background: #a8d8ea;
+    color: #1a1a2e;
+    border-radius: 6px;
+    padding: 2px 8px;
+    font-weight: 700;
+    font-size: 0.7rem;
+  }
+
+  .chat-box {
+    flex: 1;
+    background: rgba(0,0,0,0.3);
+    border-radius: 16px;
+    padding: 16px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: 1px solid rgba(255,255,255,0.07);
+  }
+
+  .msg {
+    max-width: 80%;
+    padding: 10px 14px;
+    border-radius: 14px;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    animation: msgIn 0.3s ease-out;
+  }
+  @keyframes msgIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .msg.char {
+    background: linear-gradient(135deg, #1e3a5f, #0f3460);
+    border: 1px solid rgba(168,216,234,0.3);
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+  }
+  .msg.user {
+    background: linear-gradient(135deg, #2d5a27, #1a3d15);
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+  }
+  .msg .romaji {
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.5);
+    margin-top: 4px;
+  }
+  .msg .translation {
+    font-size: 0.7rem;
+    color: rgba(255,220,100,0.8);
+    margin-top: 2px;
+  }
+
+  .typing-indicator {
+    display: flex; gap: 4px; align-items: center;
+    padding: 10px 14px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 14px;
+    width: fit-content;
+    border-bottom-left-radius: 4px;
+  }
+  .typing-indicator span {
+    width: 6px; height: 6px; border-radius: 50%;
+    background: #a8d8ea;
+    animation: typing 1.2s ease-in-out infinite;
+  }
+  .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+  .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+  @keyframes typing {
+    0%,100% { transform: translateY(0); opacity: 0.4; }
+    50% { transform: translateY(-4px); opacity: 1; }
+  }
+
+  .chat-input-row {
+    display: flex; gap: 8px;
+  }
+  .chat-input {
+    flex: 1;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 12px;
+    padding: 12px 16px;
+    color: #fff;
+    font-size: 0.9rem;
+    outline: none;
+    transition: border-color 0.2s;
+  }
+  .chat-input:focus { border-color: #a8d8ea; }
+  .chat-input::placeholder { color: rgba(255,255,255,0.3); }
+
+  .send-btn {
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #a8d8ea, #7ec8e3);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 1.1rem;
+    transition: transform 0.2s, opacity 0.2s;
+    color: #1a1a2e;
+    font-weight: 700;
+  }
+  .send-btn:hover { transform: scale(1.05); }
+
+  .scenario-select {
+    width: 100%;
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 10px;
+    padding: 8px 12px;
+    color: #fff;
+    font-size: 0.8rem;
+    outline: none;
+  }
+  .scenario-select option { background: #1a1a2e; }
+
+  .label { font-size: 0.7rem; color: rgba(255,255,255,0.4); margin-bottom: 4px; }
+
+  /* Tech label */
+  .tech-badge {
+    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    color: white;
+    font-size: 0.65rem;
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+</style>
+</head>
+<body>
+
+<div class="scene">
+  <!-- CHARACTER PANEL -->
+  <div class="character-panel">
+    <div style="display:flex;align-items:center;gap:8px;">
+      <div class="char-name">YUKI</div>
+      <span class="tech-badge">Level 2</span>
+    </div>
+    <div class="char-sub">田中ゆき / 24歳 / コンビニ店員</div>
+
+    <!-- SVG CHARACTER -->
+    <div class="char-container">
+      <div class="emotion-bubble" id="emoBubble">😊</div>
+      <svg class="char-svg" viewBox="0 0 220 280" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <radialGradient id="skinGrad" cx="50%" cy="40%" r="60%">
+            <stop offset="0%" stop-color="#ffe0bd"/>
+            <stop offset="100%" stop-color="#ffcba4"/>
+          </radialGradient>
+          <radialGradient id="hairGrad" cx="50%" cy="30%" r="70%">
+            <stop offset="0%" stop-color="#4a3728"/>
+            <stop offset="100%" stop-color="#2c1f14"/>
+          </radialGradient>
+          <radialGradient id="blushGrad" cx="50%" cy="50%" r="50%">
+            <stop offset="0%" stop-color="#ff9999" stop-opacity="0.8"/>
+            <stop offset="100%" stop-color="#ff9999" stop-opacity="0"/>
+          </radialGradient>
+          <linearGradient id="clothGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#5b8dd9"/>
+            <stop offset="100%" stop-color="#3a6bc4"/>
+          </linearGradient>
+          <linearGradient id="apronGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+            <stop offset="0%" stop-color="#f5f5f5"/>
+            <stop offset="100%" stop-color="#e0e0e0"/>
+          </linearGradient>
+        </defs>
+
+        <!-- Body group with sway -->
+        <g class="group-body">
+          <!-- BODY / CLOTHES -->
+          <!-- Shirt -->
+          <rect x="65" y="175" width="90" height="90" rx="8" fill="url(#clothGrad)"/>
+          <!-- Apron -->
+          <path d="M 80 175 L 140 175 L 145 265 L 75 265 Z" fill="url(#apronGrad)" opacity="0.9"/>
+          <!-- Apron strap -->
+          <rect x="100" y="170" width="20" height="8" rx="4" fill="#e0e0e0"/>
+
+          <!-- Left arm -->
+          <rect x="45" y="178" width="22" height="65" rx="11" fill="url(#skinGrad)"/>
+          <!-- Left hand -->
+          <ellipse cx="56" cy="248" rx="11" ry="9" fill="url(#skinGrad)"/>
+
+          <!-- Right arm (waving) -->
+          <g class="hand-right">
+            <rect x="153" y="178" width="22" height="55" rx="11" fill="url(#skinGrad)"/>
+            <!-- Right hand -->
+            <ellipse cx="164" cy="236" rx="11" ry="9" fill="url(#skinGrad)"/>
+          </g>
+
+          <!-- Neck -->
+          <rect x="98" y="163" width="24" height="18" rx="6" fill="url(#skinGrad)"/>
+
+          <!-- HEAD group -->
+          <g class="group-head">
+            <!-- Hair back -->
+            <ellipse cx="110" cy="110" rx="58" ry="65" fill="url(#hairGrad)"/>
+            <!-- Long hair left -->
+            <path d="M 55 130 Q 40 180 50 240 Q 60 250 70 240 Q 65 190 70 140" fill="url(#hairGrad)"/>
+            <!-- Long hair right -->
+            <path d="M 165 130 Q 180 180 170 240 Q 160 250 150 240 Q 155 190 150 140" fill="url(#hairGrad)"/>
+
+            <!-- FACE -->
+            <ellipse cx="110" cy="118" rx="50" ry="54" fill="url(#skinGrad)"/>
+
+            <!-- Hair front (animated) -->
+            <g class="hair-front">
+              <path d="M 62 95 Q 75 55 110 50 Q 145 55 158 95 Q 140 75 110 72 Q 80 75 62 95" fill="url(#hairGrad)"/>
+              <!-- Fringe strands -->
+              <path d="M 70 88 Q 82 60 95 78" fill="url(#hairGrad)" stroke="none"/>
+              <path d="M 150 88 Q 138 60 125 78" fill="url(#hairGrad)" stroke="none"/>
+            </g>
+
+            <!-- Hair accessory (bow) -->
+            <path d="M 140 75 Q 148 68 155 73 Q 148 78 140 75 Z" fill="#ff6b9d"/>
+            <path d="M 140 75 Q 132 68 125 73 Q 132 78 140 75 Z" fill="#ff6b9d"/>
+            <circle cx="140" cy="75" r="4" fill="#ff9ec4"/>
+
+            <!-- EYES -->
+            <!-- Left eye white -->
+            <ellipse cx="91" cy="118" rx="14" ry="14" fill="white"/>
+            <!-- Right eye white -->
+            <ellipse cx="129" cy="118" rx="14" ry="14" fill="white"/>
+            <!-- Left iris -->
+            <g class="eye-left">
+              <ellipse cx="91" cy="119" rx="9" ry="10" fill="#4a8cdc"/>
+              <ellipse cx="91" cy="119" rx="6" ry="7" fill="#1a3a6c"/>
+              <circle cx="94" cy="116" r="2.5" fill="white"/>
+              <circle cx="88" cy="120" r="1.5" fill="white" opacity="0.5"/>
+            </g>
+            <!-- Right iris -->
+            <g class="eye-right">
+              <ellipse cx="129" cy="119" rx="9" ry="10" fill="#4a8cdc"/>
+              <ellipse cx="129" cy="119" rx="6" ry="7" fill="#1a3a6c"/>
+              <circle cx="132" cy="116" r="2.5" fill="white"/>
+              <circle cx="126" cy="120" r="1.5" fill="white" opacity="0.5"/>
+            </g>
+
+            <!-- Eyebrows -->
+            <path d="M 79 104 Q 91 100 103 104" stroke="#4a3728" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            <path d="M 117 104 Q 129 100 141 104" stroke="#4a3728" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+
+            <!-- NOSE -->
+            <path d="M 108 128 Q 110 132 112 128" stroke="#e8a87c" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+
+            <!-- BLUSH -->
+            <ellipse class="blush-left" cx="78" cy="130" rx="14" ry="8" fill="url(#blushGrad)"/>
+            <ellipse class="blush-right" cx="142" cy="130" rx="14" ry="8" fill="url(#blushGrad)"/>
+
+            <!-- MOUTH -->
+            <svg x="85" y="140" width="50" height="25" viewBox="80 140 50 25">
+              <path class="mouth-path" id="mouthSvg"
+                d="M 95 155 Q 110 160 125 155"
+                stroke="#c4777a" stroke-width="2.5" fill="none" stroke-linecap="round"/>
+            </svg>
+
+            <!-- Eyelashes top left -->
+            <path d="M 78 109 Q 80 105 83 109" stroke="#2c1f14" stroke-width="1.5" fill="none"/>
+            <path d="M 85 107 Q 88 103 91 107" stroke="#2c1f14" stroke-width="1.5" fill="none"/>
+            <path d="M 93 107 Q 96 103 99 107" stroke="#2c1f14" stroke-width="1.5" fill="none"/>
+            <!-- Eyelashes top right -->
+            <path d="M 116 107 Q 119 103 122 107" stroke="#2c1f14" stroke-width="1.5" fill="none"/>
+            <path d="M 124 107 Q 127 103 130 107" stroke="#2c1f14" stroke-width="1.5" fill="none"/>
+            <path d="M 132 107 Q 135 103 138 107" stroke="#2c1f14" stroke-width="1.5" fill="none"/>
+          </g><!-- end head group -->
+        </g><!-- end body group -->
+      </svg>
+    </div><!-- char-container -->
+
+    <div class="label">Ekspresi / Mood</div>
+    <div class="mood-bar">
+      <button class="mood-btn active" onclick="setMood('normal','😊')">Normal</button>
+      <button class="mood-btn" onclick="setMood('happy','😄')">Senang</button>
+      <button class="mood-btn" onclick="setMood('shy','😳')">Malu</button>
+      <button class="mood-btn" onclick="setMood('think','🤔')">Mikir</button>
+      <button class="mood-btn" onclick="setMood('sad','😢')">Sedih</button>
+    </div>
+
+    <div class="label" style="margin-top:4px;">Teknologi</div>
+    <div style="font-size:0.72rem;color:rgba(255,255,255,0.5);text-align:center;line-height:1.6;">
+      SVG + CSS Animations<br>
+      Live2D SDK (opsional)<br>
+      Rive (opsional)
+    </div>
+  </div>
+
+  <!-- CHAT PANEL -->
+  <div class="chat-panel">
+    <div class="chat-header">
+      <span class="badge">Level 2</span>
+      2D Sprite Animated Character · Skenario Aktif:
+      <select class="scenario-select" id="scenarioSel" onchange="changeScenario()" style="flex:1;">
+        <option value="konbini">🏪 Konbini (コンビニ)</option>
+        <option value="station">🚉 Stasiun (駅)</option>
+        <option value="hospital">🏥 Klinik (病院)</option>
+      </select>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+      <div class="msg char">
+        <div>いらっしゃいませ！何かお手伝いできますか？</div>
+        <div class="romaji">Irasshaimase! Nani ka otetsudai dekimasu ka?</div>
+        <div class="translation">Selamat datang! Ada yang bisa saya bantu?</div>
+      </div>
+    </div>
+
+    <div class="chat-input-row">
+      <input class="chat-input" id="chatInput" placeholder="日本語で話しかけてみて！ (e.g. おにぎりはありますか？)" 
+             onkeydown="if(event.key==='Enter')sendMsg()"/>
+      <button class="send-btn" onclick="sendMsg()">送る</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── DEMO RESPONSES (simulated AI) ──
+const scenarios = {
+  konbini: {
+    responses: [
+      { jp: "はい、おにぎりはあちらの棚にございます！", romaji: "Hai, onigiri wa achira no tana ni gozaimasu!", id: "Ya, onigiri ada di rak sana!" },
+      { jp: "レジ袋はご利用ですか？", romaji: "Reji bukuro wa go-riyou desu ka?", id: "Apakah Anda memerlukan kantong plastik?" },
+      { jp: "ポイントカードはお持ちですか？", romaji: "Pointo kaado wa omochi desu ka?", id: "Apakah Anda punya kartu poin?" },
+      { jp: "合計で530円になります。", romaji: "Goukei de 530-en ni narimasu.", id: "Totalnya 530 yen." },
+      { jp: "またのご来店をお待ちしております！", romaji: "Mata no goraiten wo omachi shite orimasu!", id: "Kami menantikan kunjungan Anda berikutnya!" },
+    ]
+  },
+  station: {
+    responses: [
+      { jp: "東京駅への切符は自動券売機でお買い求めいただけます。", romaji: "Toukyou-eki e no kippu wa jidou-kenbaiki de okaimore itadakemasu.", id: "Tiket ke stasiun Tokyo bisa dibeli di mesin tiket otomatis." },
+      { jp: "次の電車は3番線から5分後に出発します。", romaji: "Tsugi no densha wa 3-bansen kara 5-fun-go ni shuppatsu shimasu.", id: "Kereta berikutnya berangkat dari jalur 3 dalam 5 menit." },
+    ]
+  },
+  hospital: {
+    responses: [
+      { jp: "どこが痛いですか？", romaji: "Doko ga itai desu ka?", id: "Mana yang sakit?" },
+      { jp: "予約票にご記入ください。", romaji: "Yoyakuhyou ni go-kinyuu kudasai.", id: "Silakan isi formulir reservasi." },
+    ]
+  }
+};
+
+let currentScenario = 'konbini';
+let isTalking = false;
+let responseIdx = 0;
+const mouthPath = document.getElementById('mouthSvg');
+
+// ── MOOD SYSTEM ──
+const eyeLeft = document.querySelector('.eye-left');
+const eyeRight = document.querySelector('.eye-right');
+
+function setMood(mood, emoji) {
+  document.querySelectorAll('.mood-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  
+  const bubble = document.getElementById('emoBubble');
+  bubble.textContent = emoji;
+  bubble.style.animation = 'none';
+  void bubble.offsetWidth;
+  bubble.style.animation = 'bubblePop 0.3s ease-out';
+
+  const blushL = document.querySelector('.blush-left');
+  const blushR = document.querySelector('.blush-right');
+
+  switch(mood) {
+    case 'happy':
+      blushL.style.opacity = '0.7';
+      blushR.style.opacity = '0.7';
+      mouthPath.style.animation = 'none';
+      mouthPath.setAttribute('d', 'M 92 153 Q 110 168 128 153');
+      break;
+    case 'shy':
+      blushL.style.opacity = '1';
+      blushR.style.opacity = '1';
+      mouthPath.setAttribute('d', 'M 96 156 Q 110 160 124 156');
+      break;
+    case 'think':
+      mouthPath.setAttribute('d', 'M 96 155 Q 105 153 115 156');
+      break;
+    case 'sad':
+      blushL.style.opacity = '0.1';
+      blushR.style.opacity = '0.1';
+      mouthPath.setAttribute('d', 'M 92 160 Q 110 153 128 160');
+      break;
+    default:
+      blushL.style.opacity = '';
+      blushR.style.opacity = '';
+      mouthPath.setAttribute('d', 'M 95 155 Q 110 160 125 155');
+      mouthPath.style.animation = '';
+  }
+}
+
+// ── TALK ANIMATION ──
+function startTalking() {
+  isTalking = true;
+  mouthPath.classList.add('talking');
+}
+function stopTalking() {
+  isTalking = false;
+  mouthPath.classList.remove('talking');
+}
+
+// ── CHAT LOGIC ──
+function addMsg(text, romaji, translation, isChar) {
+  const box = document.getElementById('chatBox');
+  const div = document.createElement('div');
+  div.className = 'msg ' + (isChar ? 'char' : 'user');
+  div.innerHTML = `<div>${text}</div>`;
+  if (romaji) div.innerHTML += `<div class="romaji">${romaji}</div>`;
+  if (translation) div.innerHTML += `<div class="translation">${translation}</div>`;
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+}
+
+function showTyping() {
+  const box = document.getElementById('chatBox');
+  const div = document.createElement('div');
+  div.id = 'typingIndicator';
+  div.className = 'typing-indicator';
+  div.innerHTML = '<span></span><span></span><span></span>';
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+  return div;
+}
+
+function sendMsg() {
+  const input = document.getElementById('chatInput');
+  const text = input.value.trim();
+  if (!text) return;
+
+  addMsg(text, '', '', false);
+  input.value = '';
+
+  // Simulate AI thinking
+  const typing = showTyping();
+  startTalking();
+
+  setTimeout(() => {
+    typing.remove();
+    const sc = scenarios[currentScenario];
+    const resp = sc.responses[responseIdx % sc.responses.length];
+    responseIdx++;
+    addMsg(resp.jp, resp.romaji, resp.id, true);
+    
+    // Stop talking after response shown
+    setTimeout(stopTalking, 1500);
+    
+    // Show shy mood occasionally
+    if (Math.random() > 0.6) setMoodAuto('shy', '😊');
+  }, 1200 + Math.random() * 800);
+}
+
+function setMoodAuto(mood, emoji) {
+  const bubble = document.getElementById('emoBubble');
+  bubble.textContent = emoji;
+  setTimeout(() => { bubble.textContent = '😊'; }, 2000);
+}
+
+function changeScenario() {
+  currentScenario = document.getElementById('scenarioSel').value;
+  responseIdx = 0;
+  const box = document.getElementById('chatBox');
+  box.innerHTML = '';
+  const first = scenarios[currentScenario].responses[0];
+  addMsg(first.jp, first.romaji, first.id, true);
+}
+</script>
+</body>
+</html>
+

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kaiwa Level 4 — Human AI Demo Concept</title>
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #0a0a14;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app {
+  width: 1000px; max-width: 98vw;
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 20px;
+  padding: 20px;
+  height: 96vh;
+}
+
+/* ── VIDEO PANEL ── */
+.video-panel {
+  display: flex; flex-direction: column; gap: 14px;
+}
+
+.video-wrapper {
+  position: relative;
+  border-radius: 24px;
+  overflow: hidden;
+  aspect-ratio: 9/12;
+  background: #111;
+  flex: 1;
+  box-shadow: 0 0 60px rgba(120,80,255,0.3);
+  border: 1px solid rgba(120,80,255,0.2);
+}
+
+/* Simulated human face using CSS art */
+.face-bg {
+  width: 100%; height: 100%;
+  background: linear-gradient(175deg, #1a1030 0%, #0d0820 60%, #080510 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bokeh background */
+.bokeh {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(30px);
+  opacity: 0.15;
+}
+.b1 { width:200px;height:200px;background:#7860ff;top:-50px;left:-50px; }
+.b2 { width:150px;height:150px;background:#ff60a0;bottom:30px;right:-30px; }
+.b3 { width:100px;height:100px;background:#60c0ff;top:40%;left:10%; }
+
+/* The "video" - gradient body with face */
+.avatar-figure {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  margin-top: 30px;
+}
+
+/* Hair */
+.hair-top {
+  width: 170px; height: 100px;
+  background: radial-gradient(ellipse at 50% 20%, #3d2b1f, #1a0f0a);
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: -15px;
+  z-index: 4;
+}
+.hair-left {
+  position:absolute; left:-10px; top:55px;
+  width: 45px; height: 160px;
+  background: linear-gradient(180deg, #2a1b12, #1a0f0a);
+  border-radius: 50% 0 40% 50%;
+  z-index: 3;
+}
+.hair-right {
+  position:absolute; right:-10px; top:55px;
+  width: 45px; height: 160px;
+  background: linear-gradient(180deg, #2a1b12, #1a0f0a);
+  border-radius: 0 50% 50% 40%;
+  z-index: 3;
+}
+
+/* Face shape */
+.face {
+  width: 150px; height: 180px;
+  background: radial-gradient(ellipse at 50% 35%, #f5c5a0, #e8a87a);
+  border-radius: 50% 50% 45% 45%;
+  position: relative;
+  z-index: 3;
+  box-shadow: inset 0 -10px 20px rgba(0,0,0,0.15);
+  overflow: hidden;
+}
+
+/* Eyes */
+.eyes-row {
+  position: absolute;
+  top: 62px; left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+}
+.eye-socket {
+  width: 36px; height: 34px;
+  background: white;
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  overflow: hidden;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+.iris {
+  width: 24px; height: 26px;
+  background: radial-gradient(circle at 40% 35%, #5a8cdc, #1a3a7a);
+  border-radius: 50%;
+  display: flex; align-items: center; justify-content: center;
+  animation: eyeLook 5s ease-in-out infinite;
+}
+.pupil {
+  width: 12px; height: 14px;
+  background: #050510;
+  border-radius: 50%;
+}
+.eye-hl { width:4px;height:4px;background:white;border-radius:50%;margin-top:-6px;margin-left:4px; }
+
+@keyframes eyeLook {
+  0%,100% { transform: translate(0,0); }
+  20% { transform: translate(2px,-1px); }
+  40% { transform: translate(-1px,1px); }
+  60% { transform: translate(1px,0); }
+  80% { transform: translate(-2px,-1px); }
+}
+@keyframes blink {
+  0%,95%,100% { transform: scaleY(1); }
+  97% { transform: scaleY(0.05); }
+}
+.eye-lid {
+  position: absolute;
+  width: 36px; height: 36px;
+  background: #f5c5a0;
+  border-radius: 50%;
+  top: 0;
+  animation: blink 5s ease-in-out infinite;
+  transform-origin: center top;
+}
+
+/* Eyelashes */
+.lash {
+  position: absolute;
+  top: -1px;
+  width: 36px;
+  height: 6px;
+  background: #2a1b12;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+/* Eyebrows */
+.brows-row {
+  position: absolute;
+  top: 46px; left: 0; right: 0;
+  display: flex; justify-content: center; gap: 34px;
+}
+.brow {
+  width: 38px; height: 7px;
+  background: #3d2b1f;
+  border-radius: 50%;
+}
+.brow.left { transform: rotate(-5deg); }
+.brow.right { transform: rotate(5deg); }
+
+/* Nose */
+.nose {
+  position: absolute;
+  top: 104px; left: 50%; transform: translateX(-50%);
+  width: 24px; height: 18px;
+}
+.nose-tip {
+  width: 20px; height: 14px;
+  background: #e8a87a;
+  border-radius: 50%;
+  margin: 0 auto;
+  border: 1.5px solid #d4956a;
+  border-top: none;
+}
+
+/* Mouth */
+.mouth-area {
+  position: absolute;
+  bottom: 32px; left: 50%; transform: translateX(-50%);
+}
+.lips {
+  position: relative;
+  width: 60px; height: 28px;
+}
+.lip-upper {
+  position: absolute;
+  top: 0; left: 6px;
+  width: 48px; height: 14px;
+  background: #d4808a;
+  border-radius: 50% 50% 0 0;
+  clip-path: polygon(0 50%, 50% 0%, 100% 50%, 90% 100%, 10% 100%);
+}
+.lip-lower {
+  position: absolute;
+  bottom: 0; left: 4px;
+  width: 52px; height: 18px;
+  background: #cc6677;
+  border-radius: 0 0 50% 50%;
+}
+.mouth-open {
+  position: absolute;
+  top: 8px; left: 12px;
+  width: 36px; height: 0;
+  background: #3a0a10;
+  border-radius: 0 0 50% 50%;
+  overflow: hidden;
+  transition: height 0.05s;
+}
+.teeth {
+  width: 100%; height: 8px;
+  background: #f5f5f5;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Cheek blush */
+.blush-l, .blush-r {
+  position: absolute;
+  width: 45px; height: 22px;
+  border-radius: 50%;
+  background: rgba(255,120,120,0.25);
+  top: 100px;
+  filter: blur(6px);
+}
+.blush-l { left: 5px; }
+.blush-r { right: 5px; }
+
+/* Body/clothes below face */
+.body-clothes {
+  width: 200px; height: 120px;
+  background: linear-gradient(180deg, #3366cc 0%, #2244aa 100%);
+  border-radius: 0 0 30px 30px;
+  position: relative;
+  z-index: 2;
+  margin-top: -5px;
+}
+.collar {
+  width: 60px; height: 40px;
+  background: white;
+  margin: 0 auto;
+  clip-path: polygon(0 0, 100% 0, 70% 100%, 30% 100%);
+}
+.collar-detail {
+  width: 10px; height: 30px;
+  background: #cc2244;
+  margin: -28px auto 0;
+  border-radius: 0 0 4px 4px;
+}
+
+/* Talking animation */
+@keyframes mouthOpen {
+  0%,100% { height: 0px; }
+  25% { height: 10px; }
+  50% { height: 4px; }
+  75% { height: 12px; }
+}
+.mouth-open.speaking { animation: mouthOpen 0.18s ease-in-out infinite; }
+
+/* Audio waveform */
+.audio-wave {
+  position: absolute;
+  bottom: 20px;
+  left: 50%; transform: translateX(-50%);
+  display: flex; gap: 3px; align-items: center;
+  height: 30px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.audio-wave.active { opacity: 1; }
+.wave-bar {
+  width: 3px;
+  background: rgba(120,200,255,0.8);
+  border-radius: 2px;
+  animation: waveBar 0.4s ease-in-out infinite;
+}
+.wave-bar:nth-child(1) { animation-delay: 0s; }
+.wave-bar:nth-child(2) { animation-delay: 0.06s; }
+.wave-bar:nth-child(3) { animation-delay: 0.12s; }
+.wave-bar:nth-child(4) { animation-delay: 0.18s; }
+.wave-bar:nth-child(5) { animation-delay: 0.24s; }
+.wave-bar:nth-child(6) { animation-delay: 0.18s; }
+.wave-bar:nth-child(7) { animation-delay: 0.12s; }
+.wave-bar:nth-child(8) { animation-delay: 0.06s; }
+@keyframes waveBar {
+  0%,100% { height: 4px; }
+  50% { height: 22px; }
+}
+
+/* Status overlay on video */
+.video-status {
+  position: absolute;
+  top: 14px; left: 14px;
+  display: flex; gap: 8px; align-items: center;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 12px;
+  border-radius: 20px;
+  backdrop-filter: blur(8px);
+  font-size: 0.72rem;
+}
+.status-dot { width:7px;height:7px;border-radius:50%; }
+.status-dot.live { background:#4dff91;animation:livePulse 1.5s infinite; }
+.status-dot.thinking { background:#ffcc44;animation:thinkPulse 0.5s infinite; }
+@keyframes livePulse { 0%,100%{opacity:1;} 50%{opacity:0.4;} }
+@keyframes thinkPulse { 0%,100%{opacity:1;} 50%{opacity:0.3;} }
+
+/* Emotion tag */
+.emotion-tag {
+  position: absolute;
+  top: 14px; right: 14px;
+  background: rgba(0,0,0,0.5);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  backdrop-filter: blur(8px);
+  transition: all 0.3s;
+}
+
+/* Tech watermark */
+.tech-stack {
+  position: absolute;
+  bottom: 14px; left: 14px;
+  font-size: 0.62rem;
+  color: rgba(255,255,255,0.35);
+  line-height: 1.6;
+}
+
+/* ── INFO BAR ── */
+.info-bar {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 14px 18px;
+  display: flex; gap: 20px; align-items: center;
+  flex-wrap: wrap;
+}
+.char-name-big { font-size: 1.2rem; font-weight: 700; color: #a0c4ff; }
+.char-detail { font-size: 0.75rem; color: rgba(255,255,255,0.45); }
+.stat-pills { display:flex;gap:6px;margin-left:auto; }
+.pill {
+  background: rgba(120,80,255,0.15);
+  border: 1px solid rgba(120,80,255,0.3);
+  border-radius: 12px;
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  color: #c0a8ff;
+}
+
+/* ── CHAT PANEL ── */
+.chat-panel {
+  display: flex; flex-direction: column; gap: 12px;
+  height: 100%;
+}
+
+.scenario-header {
+  display: flex; gap: 8px; align-items: center;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 14px;
+  padding: 10px 14px;
+  font-size: 0.8rem;
+}
+
+.chat-box {
+  flex: 1;
+  background: rgba(0,0,0,0.3);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 16px;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex; flex-direction: column; gap: 14px;
+}
+
+.msg { max-width: 82%; animation: fadeUp 0.3s ease-out; }
+@keyframes fadeUp { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+
+.msg.ai {
+  align-self: flex-start;
+  background: rgba(160,196,255,0.08);
+  border: 1px solid rgba(160,196,255,0.15);
+  border-radius: 14px 14px 14px 3px;
+  padding: 12px 14px;
+}
+.msg.user {
+  align-self: flex-end;
+  background: rgba(80,200,120,0.1);
+  border: 1px solid rgba(80,200,120,0.2);
+  border-radius: 14px 14px 3px 14px;
+  padding: 12px 14px;
+}
+.msg-jp { font-size: 0.92rem; line-height: 1.6; }
+.msg-rj { font-size: 0.68rem; color: rgba(255,255,255,0.4); margin-top:3px; }
+.msg-id { font-size: 0.68rem; color: #a0c4ff; margin-top:2px; }
+
+/* Feedback badges */
+.feedback {
+  margin-top: 8px;
+  display: flex; gap: 6px; flex-wrap: wrap;
+}
+.fb-badge {
+  font-size: 0.65rem;
+  padding: 2px 8px;
+  border-radius: 10px;
+  border: 1px solid;
+}
+.fb-ok { color:#4dff91;border-color:rgba(77,255,145,0.4);background:rgba(77,255,145,0.08); }
+.fb-fix { color:#ffcc44;border-color:rgba(255,204,68,0.4);background:rgba(255,204,68,0.08); }
+.fb-vocab { color:#a0c4ff;border-color:rgba(160,196,255,0.4);background:rgba(160,196,255,0.08); }
+
+.typing-row {
+  display:flex;gap:4px;align-items:center;
+  background:rgba(255,255,255,0.05);
+  border-radius:14px 14px 14px 3px;
+  padding:10px 14px;
+  width:fit-content;
+}
+.dot { width:6px;height:6px;border-radius:50%;background:#a0c4ff;animation:bounce 1s ease-in-out infinite; }
+.dot:nth-child(2){animation-delay:.15s} .dot:nth-child(3){animation-delay:.3s}
+@keyframes bounce { 0%,100%{transform:translateY(0);opacity:.4} 50%{transform:translateY(-5px);opacity:1} }
+
+/* Input area */
+.input-area { display:flex;flex-direction:column;gap:8px; }
+
+.input-row { display:flex;gap:8px; }
+.chat-input {
+  flex:1;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 12px;
+  padding: 12px 16px;
+  color: #fff;
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+.chat-input:focus { border-color: #a0c4ff; }
+.chat-input::placeholder { color:rgba(255,255,255,0.25); }
+
+.btn-send {
+  padding: 12px 18px;
+  background: linear-gradient(135deg, #5566ff, #7833cc);
+  border: none; border-radius: 12px;
+  color: white; font-size: 1rem; cursor: pointer;
+  transition: transform 0.2s;
+}
+.btn-send:hover { transform: scale(1.05); }
+
+.btn-mic {
+  padding: 12px;
+  background: rgba(77,255,145,0.1);
+  border: 1px solid rgba(77,255,145,0.3);
+  border-radius: 12px;
+  color: #4dff91; font-size: 1rem; cursor: pointer;
+  transition: all 0.2s;
+}
+.btn-mic.active {
+  background: rgba(77,255,145,0.25);
+  box-shadow: 0 0 12px rgba(77,255,145,0.3);
+}
+
+/* Scenario pills */
+.scenario-pills { display:flex;gap:6px;flex-wrap:wrap; }
+.sc-pill {
+  font-size: 0.72rem;
+  padding: 5px 12px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.2s;
+  color: rgba(255,255,255,0.6);
+}
+.sc-pill:hover, .sc-pill.active {
+  background: rgba(120,80,255,0.2);
+  border-color: rgba(120,80,255,0.5);
+  color: #c0a8ff;
+}
+
+.level-badge {
+  background: linear-gradient(135deg, #5544ee, #aa33cc);
+  color: white;
+  font-size: 0.65rem;
+  padding: 3px 10px;
+  border-radius: 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-left: auto;
+}
+
+/* Correction banner */
+.correction {
+  background: rgba(255,200,60,0.08);
+  border: 1px solid rgba(255,200,60,0.2);
+  border-radius: 10px;
+  padding: 8px 12px;
+  font-size: 0.72rem;
+  color: #ffcc44;
+  display: flex; gap: 8px; align-items: flex-start;
+}
+</style>
+</head>
+<body>
+<div class="app">
+
+  <!-- VIDEO PANEL -->
+  <div class="video-panel">
+    <div class="video-wrapper" id="videoWrapper">
+      <div class="face-bg">
+        <div class="bokeh b1"></div>
+        <div class="bokeh b2"></div>
+        <div class="bokeh b3"></div>
+
+        <div class="avatar-figure">
+          <!-- Hair -->
+          <div style="position:relative;width:170px;height:10px;">
+            <div class="hair-top"></div>
+            <div class="hair-left"></div>
+            <div class="hair-right"></div>
+          </div>
+
+          <!-- FACE -->
+          <div class="face">
+            <div class="blush-l"></div>
+            <div class="blush-r"></div>
+
+            <!-- Eyebrows -->
+            <div class="brows-row">
+              <div class="brow left" id="browL"></div>
+              <div class="brow right" id="browR"></div>
+            </div>
+
+            <!-- Eyes -->
+            <div class="eyes-row">
+              <div style="position:relative;">
+                <div class="eye-socket">
+                  <div class="iris"><div class="pupil"></div><div class="eye-hl"></div></div>
+                </div>
+                <div class="eye-lid"></div>
+                <div class="lash"></div>
+              </div>
+              <div style="position:relative;">
+                <div class="eye-socket">
+                  <div class="iris"><div class="pupil"></div><div class="eye-hl"></div></div>
+                </div>
+                <div class="eye-lid"></div>
+                <div class="lash"></div>
+              </div>
+            </div>
+
+            <!-- Nose -->
+            <div class="nose"><div class="nose-tip"></div></div>
+
+            <!-- Mouth -->
+            <div class="mouth-area">
+              <div class="lips">
+                <div class="lip-upper"></div>
+                <div class="lip-lower"></div>
+                <div class="mouth-open" id="mouthOpen">
+                  <div class="teeth"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Body -->
+          <div class="body-clothes">
+            <div class="collar"></div>
+            <div class="collar-detail"></div>
+          </div>
+        </div>
+
+        <!-- Audio wave -->
+        <div class="audio-wave" id="audioWave">
+          <div class="wave-bar" style="height:8px"></div>
+          <div class="wave-bar" style="height:14px"></div>
+          <div class="wave-bar" style="height:20px"></div>
+          <div class="wave-bar" style="height:18px"></div>
+          <div class="wave-bar" style="height:24px"></div>
+          <div class="wave-bar" style="height:18px"></div>
+          <div class="wave-bar" style="height:20px"></div>
+          <div class="wave-bar" style="height:14px"></div>
+        </div>
+
+        <div class="video-status">
+          <div class="status-dot live" id="statusDot"></div>
+          <span id="statusText">Live · Kaiwa AI</span>
+        </div>
+
+        <div class="emotion-tag" id="emotionTag">😊 Friendly</div>
+
+        <div class="tech-stack">
+          🎬 D-ID WebRTC<br>
+          🔊 ElevenLabs TTS<br>
+          🧠 Gemini 2.0 Flash
+        </div>
+      </div>
+    </div>
+
+    <div class="info-bar">
+      <div>
+        <div class="char-name-big">田中 ゆき (Yuki)</div>
+        <div class="char-detail">24歳 · Yokohama · Level N3 tutor</div>
+      </div>
+      <div class="stat-pills">
+        <span class="pill">JFT-Basic</span>
+        <span class="pill">N3 Vocab</span>
+        <span class="pill">Keigo mode</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHAT PANEL -->
+  <div class="chat-panel">
+    <div class="scenario-header">
+      <span>🎭 Skenario:</span>
+      <div class="scenario-pills">
+        <button class="sc-pill active" onclick="setScene('konbini',this)">🏪 Konbini</button>
+        <button class="sc-pill" onclick="setScene('kaisha',this)">🏢 Kaisha</button>
+        <button class="sc-pill" onclick="setScene('eki',this)">🚉 Eki</button>
+        <button class="sc-pill" onclick="setScene('free',this)">💬 Free talk</button>
+      </div>
+      <span class="level-badge">LEVEL 4 · HUMAN AI</span>
+    </div>
+
+    <div class="chat-box" id="chatBox">
+      <div class="msg ai">
+        <div class="msg-jp">いらっしゃいませ！今日はどんなお手伝いができますか？😊</div>
+        <div class="msg-rj">Irasshaimase! Kyou wa donna otetsudai ga dekimasu ka?</div>
+        <div class="msg-id">Selamat datang! Hari ini ada yang bisa saya bantu?</div>
+        <div class="feedback">
+          <span class="fb-vocab">📚 新語: いらっしゃいませ (ungkapan sambutan di toko)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="input-area">
+      <div class="input-row">
+        <input class="chat-input" id="chatInput" 
+               placeholder="日本語で話しかけて！ (e.g. すみません、お茶はありますか？)"
+               onkeydown="if(event.key==='Enter') sendChat()"/>
+        <button class="btn-mic" id="micBtn" onclick="toggleMic()" title="Bicara dalam bahasa Jepang">🎤</button>
+        <button class="btn-send" onclick="sendChat()">送る ▶</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+// ── SIMULATED AI RESPONSES WITH EMOTION + CORRECTION ──
+const scenes = {
+  konbini: [
+    {
+      jp: "はい、お茶は冷蔵庫の中にございます。どうぞ、こちらへ。",
+      rj: "Hai, ocha wa reizouko no naka ni gozaimasu. Douzo, kochira e.",
+      id: "Ya, tehnya ada di dalam kulkas. Silakan ke sini.",
+      emotion: "😊 Helpful", emo_class: "happy",
+      vocab: "冷蔵庫 (reizouko) = kulkas"
+    },
+    {
+      jp: "ポイントカードはお持ちでしょうか？",
+      rj: "Pointo kaado wa omochi deshou ka?",
+      id: "Apakah Anda punya kartu poin?",
+      emotion: "🙂 Polite", emo_class: "normal",
+      vocab: "ポイントカード = kartu poin"
+    },
+    {
+      jp: "お会計は合計で620円になります。ありがとうございます！",
+      rj: "Okaikei wa goukei de 620-en ni narimasu. Arigatou gozaimasu!",
+      id: "Totalnya 620 yen. Terima kasih!",
+      emotion: "😊 Friendly", emo_class: "happy",
+      vocab: "お会計 (okaikei) = pembayaran / kasir"
+    },
+    {
+      jp: "温めはご利用になりますか？",
+      rj: "Atatame wa go-riyou ni narimasu ka?",
+      id: "Apakah ingin dipanaskan?",
+      emotion: "🤗 Helpful", emo_class: "normal"
+    },
+    {
+      jp: "またのご来店を、心よりお待ちしております！",
+      rj: "Mata no goraiten wo, kokoro yori omachi shite orimasu!",
+      id: "Kami menantikan kunjungan Anda berikutnya dengan sepenuh hati!",
+      emotion: "😊 Warm", emo_class: "happy",
+      vocab: "心より (kokoro yori) = dari lubuk hati"
+    }
+  ],
+  kaisha: [
+    {
+      jp: "お疲れ様です！会議の資料はもう確認しましたか？",
+      rj: "Otsukaresama desu! Kaigi no shiryou wa mou kakunin shimashita ka?",
+      id: "Selamat bekerja! Sudah cek materi rapat?",
+      emotion: "💼 Professional", emo_class: "normal"
+    },
+    {
+      jp: "はい、それは部長に報告する必要があります。",
+      rj: "Hai, sore wa buchou ni houkoku suru hitsuyou ga arimasu.",
+      id: "Ya, itu perlu dilaporkan ke manajer.",
+      emotion: "🧐 Focused", emo_class: "normal",
+      vocab: "部長 (buchou) = kepala divisi/manajer"
+    }
+  ],
+  eki: [
+    {
+      jp: "東京駅まで、山手線で30分ほどかかります。",
+      rj: "Toukyou-eki made, yamanote-sen de 30-pun hodo kakarimasu.",
+      id: "Ke Stasiun Tokyo, naik Yamanote Line sekitar 30 menit.",
+      emotion: "🚉 Helpful", emo_class: "normal",
+      vocab: "山手線 (Yamanote-sen) = nama jalur kereta di Tokyo"
+    }
+  ],
+  free: [
+    {
+      jp: "日本語の勉強、頑張ってますね！どのくらい学んでいますか？",
+      rj: "Nihongo no benkyou, ganbattemasu ne! Dono kurai manande imasu ka?",
+      id: "Kamu rajin belajar bahasa Jepang! Sudah berapa lama belajar?",
+      emotion: "😊 Encouraging", emo_class: "happy"
+    },
+    {
+      jp: "そうなんですね！日本の食べ物は何が好きですか？",
+      rj: "Sou na n desu ne! Nihon no tabemono wa nani ga suki desu ka?",
+      id: "Oh begitu! Makanan Jepang apa yang kamu suka?",
+      emotion: "😄 Curious", emo_class: "happy"
+    }
+  ]
+};
+
+// Grammar corrections pool
+const corrections = [
+  { wrong: "ありますか", fix: "ございますか", note: "Gunakan ございます (lebih sopan) di situasi formal" },
+  { wrong: "わかります", fix: "わかりました", note: "Gunakan ました untuk respons konfirmasi" },
+  null, null, null // mostly no correction
+];
+
+let sceneKey = 'konbini';
+let sceneIdx = 0;
+let isSpeaking = false;
+let isRecording = false;
+let recognition = null;
+
+function setScene(key, btn) {
+  sceneKey = key;
+  sceneIdx = 0;
+  document.querySelectorAll('.sc-pill').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  clearChat();
+  const first = scenes[key][0];
+  if (first) addAIMsg(first, false);
+}
+
+function clearChat() {
+  document.getElementById('chatBox').innerHTML = '';
+}
+
+function setStatus(text, isThinking) {
+  document.getElementById('statusText').textContent = text;
+  const dot = document.getElementById('statusDot');
+  dot.className = 'status-dot ' + (isThinking ? 'thinking' : 'live');
+}
+
+function setEmotion(emotion) {
+  document.getElementById('emotionTag').textContent = emotion;
+}
+
+function startSpeaking() {
+  isSpeaking = true;
+  document.getElementById('mouthOpen').classList.add('speaking');
+  document.getElementById('audioWave').classList.add('active');
+  setStatus('Speaking...', false);
+}
+
+function stopSpeaking() {
+  isSpeaking = false;
+  document.getElementById('mouthOpen').classList.remove('speaking');
+  document.getElementById('audioWave').classList.remove('active');
+  setStatus('Live · Kaiwa AI', false);
+}
+
+function addAIMsg(data, showCorrection) {
+  const box = document.getElementById('chatBox');
+  const div = document.createElement('div');
+  div.className = 'msg ai';
+  let html = `<div class="msg-jp">${data.jp}</div>
+              <div class="msg-rj">${data.rj}</div>
+              <div class="msg-id">${data.id}</div>`;
+  
+  if (data.vocab || showCorrection) {
+    html += '<div class="feedback">';
+    if (data.vocab) html += `<span class="fb-vocab">📚 ${data.vocab}</span>`;
+    html += '</div>';
+  }
+  div.innerHTML = html;
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+  setEmotion(data.emotion || '😊 Friendly');
+}
+
+function addUserMsg(text) {
+  const box = document.getElementById('chatBox');
+  const div = document.createElement('div');
+  div.className = 'msg user';
+  div.innerHTML = `<div class="msg-jp">${text}</div>`;
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+}
+
+function addCorrectionBanner(corr) {
+  const box = document.getElementById('chatBox');
+  const div = document.createElement('div');
+  div.className = 'correction';
+  div.innerHTML = `⚡ <div><strong>Koreksi:</strong> "${corr.wrong}" → lebih baik "<strong>${corr.fix}</strong>"<br><span style="color:rgba(255,200,60,0.7)">${corr.note}</span></div>`;
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+}
+
+function addTyping() {
+  const box = document.getElementById('chatBox');
+  const div = document.createElement('div');
+  div.id = 'typingRow';
+  div.className = 'typing-row';
+  div.innerHTML = '<div class="dot"></div><div class="dot"></div><div class="dot"></div>';
+  box.appendChild(div);
+  box.scrollTop = box.scrollHeight;
+}
+
+function sendChat() {
+  const input = document.getElementById('chatInput');
+  const text = input.value.trim();
+  if (!text || isSpeaking) return;
+  input.value = '';
+
+  addUserMsg(text);
+  
+  // Thinking state
+  setStatus('Thinking...', true);
+  addTyping();
+  
+  // Simulate AI processing time
+  setTimeout(() => {
+    document.getElementById('typingRow')?.remove();
+    
+    const sc = scenes[sceneKey];
+    const resp = sc[sceneIdx % sc.length];
+    sceneIdx++;
+
+    startSpeaking();
+    addAIMsg(resp, true);
+
+    // Maybe show correction
+    const corr = corrections[Math.floor(Math.random() * corrections.length)];
+    if (corr && Math.random() > 0.6) {
+      setTimeout(() => addCorrectionBanner(corr), 400);
+    }
+
+    // Stop speaking after simulated speech duration
+    const duration = resp.jp.length * 60 + 1000;
+    setTimeout(stopSpeaking, duration);
+
+  }, 900 + Math.random() * 500);
+}
+
+// Mic
+function toggleMic() {
+  const btn = document.getElementById('micBtn');
+  const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+  
+  if (!SpeechRec) {
+    addCorrectionBanner({ wrong:'SpeechRecognition', fix:'Chrome browser', note:'Fitur mic membutuhkan Google Chrome' });
+    return;
+  }
+
+  if (!isRecording) {
+    recognition = new SpeechRec();
+    recognition.lang = 'ja-JP';
+    recognition.continuous = false;
+    recognition.onresult = (e) => {
+      document.getElementById('chatInput').value = e.results[0][0].transcript;
+      sendChat();
+    };
+    recognition.onend = () => { isRecording = false; btn.classList.remove('active'); btn.textContent = '🎤'; };
+    recognition.start();
+    isRecording = true;
+    btn.classList.add('active');
+    btn.textContent = '⏹';
+  } else {
+    recognition?.stop();
+    isRecording = false;
+    btn.classList.remove('active');
+    btn.textContent = '🎤';
+  }
+}
+</script>
+</body>
+</html>
+

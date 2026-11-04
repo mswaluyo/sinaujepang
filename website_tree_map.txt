@@ -1,0 +1,477 @@
+soal-jft/
+├── .clinerules
+├── .env
+├── .firebaserc
+├── .github
+│   ├── README.md
+│   └── workflows
+│       └── deploy.yml
+├── .gitignore
+├── DEPLOY.md
+├── PROJECT_CONTEXT.md
+├── TODOs.md
+├── docs
+│   └── DOKUMENTASI-SINAUJEPANG.md
+├── firebase.json
+├── firestore.indexes.json
+├── firestore.rules
+├── package-lock.json
+├── package.json
+├── public
+│   ├── admin.html
+│   ├── aoi-quiz
+│   │   ├── assets
+│   │   │   ... (17 files)
+│   │   └── quiz-data.json
+│   ├── assets
+│   │   ... (6 files)
+│   ├── avatar-yamada-pixar.png
+│   ├── basu-quiz
+│   │   ├── assets
+│   │   │   ... (11 files)
+│   │   └── quiz-data.json
+│   ├── basu3-quiz
+│   │   ├── assets
+│   │   │   ... (1 files)
+│   │   ├── images
+│   │   │   ... (48 files)
+│   │   └── quiz-data.json
+│   ├── cetak.html
+│   ├── demo-karakter-level2.html
+│   ├── demo-karakter-level3.html
+│   ├── demo-karakter-level4.html
+│   ├── dokkai-jft-a2.json
+│   ├── favicon.ico
+│   ├── favicon.svg
+│   ├── gakusei-quiz
+│   │   ├── assets
+│   │   │   ... (41 files)
+│   │   └── quiz-data.json
+│   ├── gakusei2-quiz
+│   │   ├── assets
+│   │   │   ... (14 files)
+│   │   └── quiz-data.json
+│   ├── game.html
+│   ├── genkan-quiz
+│   │   ├── assets
+│   │   │   ... (24 files)
+│   │   └── quiz-data.json
+│   ├── haburashi-quiz
+│   │   ├── assets
+│   │   │   ... (5 files)
+│   │   └── quiz-data.json
+│   ├── hare-quiz
+│   │   ├── assets
+│   │   │   ... (40 files)
+│   │   └── quiz-data.json
+│   ├── hare2-quiz
+│   │   ├── assets
+│   │   │   ... (49 files)
+│   │   └── quiz-data.json
+│   ├── hashi-quiz
+│   │   ├── assets
+│   │   │   ... (5 files)
+│   │   └── quiz-data.json
+│   ├── hasil.html
+│   ├── hierarki-kanji-standalone.html
+│   ├── hyougen-jft-a2.json
+│   ├── import.html
+│   ├── index.html
+│   ├── index.html.new
+│   ├── jft-a2.html
+│   ├── jinja-quiz
+│   │   ├── assets
+│   │   │   ... (27 files)
+│   │   └── quiz-data.json
+│   ├── kagi-quiz
+│   │   ├── assets
+│   │   │   ... (16 files)
+│   │   └── quiz-data.json
+│   ├── kaiwa.html
+│   ├── kanji-explorer.html
+│   ├── kanji-jft-a2.json
+│   ├── kanji-jft-a2.json.bak
+│   ├── kanji-radical-map.json
+│   ├── kanji-tree-temp.html
+│   ├── kanji-tree.html
+│   ├── kanji.html
+│   ├── konpyuutaa-quiz
+│   │   ├── assets
+│   │   │   ... (61 files)
+│   │   └── quiz-data.json
+│   ├── kosakata.json
+│   ├── kotoba-benda.json
+│   ├── kotoba-data
+│   │   ├── adjective.js
+│   │   ├── expression.js
+│   │   ├── nouns.js
+│   │   └── verb.js
+│   ├── kotoba-kerja.json
+│   ├── kotoba-lolosyuk.json
+│   ├── kotoba-sifat.json
+│   ├── kotoba-ungkapan.json
+│   ├── kotoba.html
+│   ├── kuroi-quiz
+│   │   ├── assets
+│   │   │   ... (28 files)
+│   │   └── quiz-data.json
+│   ├── kutsushita-quiz
+│   │   ├── assets
+│   │   │   ... (11 files)
+│   │   └── quiz-data.json
+│   ├── live2d-kaiwa.html
+│   ├── login.html
+│   ├── magarimasu-quiz
+│   │   ├── assets
+│   │   │   ... (38 files)
+│   │   └── quiz-data.json
+│   ├── mensetsu-3d.html
+│   ├── mensetsu.html
+│   ├── orimasu-quiz
+│   │   ├── assets
+│   │   │   ... (47 files)
+│   │   └── quiz-data.json
+│   ├── orimasu2-quiz
+│   │   ├── assets
+│   │   │   ... (61 files)
+│   │   └── quiz-data.json
+│   ├── paket-sesi.json
+│   ├── pixar-kaiwa.html
+│   ├── quiz.html
+│   ├── shatsu-quiz
+│   │   ├── assets
+│   │   │   ... (7 files)
+│   │   └── quiz-data.json
+│   ├── shimemasu2-quiz
+│   │   ├── assets
+│   │   │   ... (33 files)
+│   │   └── quiz-data.json
+│   ├── tamago-quiz
+│   │   ├── assets
+│   │   │   ... (12 files)
+│   │   └── quiz-data.json
+│   ├── tomemasu-quiz
+│   │   ├── assets
+│   │   │   ... (42 files)
+│   │   └── quiz-data.json
+│   └── zoom-interview.html
+├── quiz-rules.md
+├── scripts
+│   ├── deploy-hosting.bat
+│   ├── deploy.bat
+│   └── start-server.bat
+├── serviceAccountKey.json
+├── src
+│   └── input.css
+├── tailwind.config.js
+└── tools
+    ├── _check_sesi3.mjs
+    ├── _check_sesi3b.mjs
+    ├── _fix_img_sesi3.mjs
+    ├── add-jft-core-kanji.mjs
+    ├── align-kanji-explorer.mjs
+    ├── analyze-explorer-data.mjs
+    ├── analyze-radical.mjs
+    ├── apply_user_dokkai_and_hyougen_fixes.js
+    ├── audit-basu3.js
+    ├── basu1_thumb.png
+    ├── basu2.png_ctx.txt
+    ├── basu2_thumb.png
+    ├── basu3_thumb.png
+    ├── basu4_thumb.png
+    ├── basu5_thumb.png
+    ├── basu6_thumb.png
+    ├── build-explorer.mjs
+    ├── build-kanji-a2-data.mjs
+    ├── build-kanji.mjs
+    ├── build-kosakata.mjs
+    ├── build-package-config.mjs
+    ├── build-rad.mjs
+    ├── build_gakusei2_quiz.js
+    ├── c1_audio_inspect.txt
+    ├── c1_img_contexts.txt
+    ├── card_1.txt
+    ├── card_10.txt
+    ├── card_11.txt
+    ├── card_12.txt
+    ├── card_13.txt
+    ├── card_14.txt
+    ├── card_15.txt
+    ├── card_16.txt
+    ├── card_17.txt
+    ├── card_18.txt
+    ├── card_19.txt
+    ├── card_2.txt
+    ├── card_20.txt
+    ├── card_21.txt
+    ├── card_22.txt
+    ├── card_23.txt
+    ├── card_24.txt
+    ├── card_25.txt
+    ├── card_26.txt
+    ├── card_27.txt
+    ├── card_28.txt
+    ├── card_29.txt
+    ├── card_3.txt
+    ├── card_30.txt
+    ├── card_31.txt
+    ├── card_32.txt
+    ├── card_33.txt
+    ├── card_34.txt
+    ├── card_35.txt
+    ├── card_36.txt
+    ├── card_37.txt
+    ├── card_38.txt
+    ├── card_39.txt
+    ├── card_4.txt
+    ├── card_40.txt
+    ├── card_41.txt
+    ├── card_42.txt
+    ├── card_43.txt
+    ├── card_44.txt
+    ├── card_45.txt
+    ├── card_46.txt
+    ├── card_47.txt
+    ├── card_48.txt
+    ├── card_49.txt
+    ├── card_5.txt
+    ├── card_50.txt
+    ├── card_51.txt
+    ├── card_52.txt
+    ├── card_6.txt
+    ├── card_7.txt
+    ├── card_8.txt
+    ├── card_9.txt
+    ├── cek-audit.mjs
+    ├── check-admin.mjs
+    ├── check-another.mjs
+    ├── check-current.mjs
+    ├── check-encoding.mjs
+    ├── check-groups.mjs
+    ├── check-gyuikku.mjs
+    ├── check-kanji-table-render.mjs
+    ├── check-n.mjs
+    ├── check-radical.mjs
+    ├── check-subtitle.mjs
+    ├── check_all_opt_details.js
+    ├── check_gakusei2_assets.py
+    ├── check_gakusei2_audio.py
+    ├── check_html_parts.py
+    ├── check_hyougen_cards_imgs.js
+    ├── check_hyougen_mhtml_images.py
+    ├── check_nums.py
+    ├── check_sesi1.py
+    ├── choukai_kunci.txt
+    ├── clean-and-normalize.mjs
+    ├── clean-attempts.mjs
+    ├── clean_css_leak.js
+    ├── clean_leaked_code.js
+    ├── convert_images_pil.py
+    ├── convert_images_pil2.py
+    ├── count-email.mjs
+    ├── d11_bottom.png
+    ├── d11_bottom_right.png
+    ├── d11_crop_right.png
+    ├── d11_half_left.png
+    ├── d11_half_right.png
+    ├── d11_right_full.png
+    ├── debug-render.mjs
+    ├── debug-subdata.mjs
+    ├── dokai1.png
+    ├── dokai1.png_ctx.txt
+    ├── dokai2.png
+    ├── dokai2.png_ctx.txt
+    ├── dokai3.png
+    ├── dokai3.png_ctx.txt
+    ├── dokai4.png
+    ├── dokai4.png_ctx.txt
+    ├── dokai5.png
+    ├── dokai5.png_ctx.txt
+    ├── dokai6.png
+    ├── dokai6.png_ctx.txt
+    ├── dokkai_kunci.txt
+    ├── download-assets.js
+    ├── download-assets.mjs
+    ├── download-links.mjs
+    ├── download_audio.ps1
+    ├── download_gakusei2_audio.py
+    ├── download_images_local.py
+    ├── download_images_local2.py
+    ├── dump_all_cards.py
+    ├── dump_c1_img_contexts.py
+    ├── dump_genkan_cards.py
+    ├── dump_shimemasu2_part1.json
+    ├── dump_two_ctx.py
+    ├── enrich-lolosyuk-kanji.mjs
+    ├── enrich_genkan_dokkai.js
+    ├── enrich_shimemasu2_analysis.js
+    ├── extract-lolosyuk-kotoba.mjs
+    ├── extract_44.py
+    ├── extract_cards_14_28.js
+    ├── extract_mhtml_images.py
+    ├── extract_mhtml_images2.py
+    ├── extract_mhtml_images3.py
+    ├── extract_shimemasu2_kunci.py
+    ├── fill_text.py
+    ├── finalize_sesi1.py
+    ├── find-errors.mjs
+    ├── find-exact-pattern.mjs
+    ├── find-tiangat3.mjs
+    ├── find_ikura_all.js
+    ├── fix-all-kanji-a2.mjs
+    ├── fix-data-backup.mjs
+    ├── fix-data.mjs
+    ├── fix-noun.mjs
+    ├── fix-radname.mjs
+    ├── fix-render-mjs.mjs
+    ├── fix_img.py
+    ├── fix_img2.py
+    ├── fix_mismatched_opt_details.js
+    ├── fix_options_encoding.py
+    ├── form_questions.json
+    ├── form_questions_aria.json
+    ├── form_questions_dynamic.json
+    ├── gakusei2_kunci_summary.txt
+    ├── gakusei2_whisper_transcripts.json
+    ├── genkan_card_38.txt
+    ├── genkan_card_39.txt
+    ├── genkan_card_40.txt
+    ├── genkan_card_41.txt
+    ├── genkan_card_42.txt
+    ├── genkan_card_43.txt
+    ├── genkan_card_44.txt
+    ├── genkan_card_45.txt
+    ├── genkan_card_46.txt
+    ├── genkan_card_47.txt
+    ├── genkan_card_48.txt
+    ├── genkan_card_49.txt
+    ├── genkan_card_50.txt
+    ├── get_choukai_kunci.py
+    ├── get_dokkai_kunci.py
+    ├── get_hyougen_kunci.py
+    ├── get_mojigoi_kunci.py
+    ├── group-radicals.mjs
+    ├── hyougen_kunci.txt
+    ├── inject_picfilo_tooltips.js
+    ├── inspect-history.mjs
+    ├── inspect-junk.mjs
+    ├── inspect-target.mjs
+    ├── inspect_basu3_hyougen.js
+    ├── inspect_c_soal.py
+    ├── inspect_card_items.js
+    ├── inspect_card_keys.js
+    ├── inspect_cbt_cards.js
+    ├── inspect_cn_mhtml.py
+    ├── inspect_d11_words.ps1
+    ├── inspect_dokkai_mhtml.py
+    ├── inspect_dokkai_titles.js
+    ├── inspect_gakusei2_kunci.py
+    ├── inspect_hyougen.js
+    ├── inspect_mapping.js
+    ├── kanji-dict-full.mjs
+    ├── kanji-fix.mjs
+    ├── kunci_44_items.txt
+    ├── kunci_dump_all.txt
+    ├── kunci_sections.txt
+    ├── kunci_structured.json
+    ├── list_all_c1_parts.py
+    ├── list_genkan_c1_imgs.py
+    ├── list_genkan_dokkai.js
+    ├── list_hyougen_images.js
+    ├── make-admin.mjs
+    ├── make_slots.py
+    ├── merge-audit.json
+    ├── merge-audit.mjs
+    ├── merge-exec.mjs
+    ├── merge_aria.py
+    ├── merge_dynamic.py
+    ├── merge_quiz_data.py
+    ├── merge_quiz_data2.py
+    ├── mhtml-to-quiz.html
+    ├── mhtml_part_2_6a226f6ecaeb1_basu6.png
+    ├── mhtml_part_3_6a226da84be8a_basu5.png
+    ├── mhtml_part_4_6a226c4ef13b6_basu4.png
+    ├── mhtml_part_5_6a226a001478a_basu3.png
+    ├── mhtml_part_6_6a224c6edefe0_basu1.png
+    ├── mhtml_part_7_6a22513b54676_basu2.png
+    ├── mojigoi_kunci.txt
+    ├── nums_output.txt
+    ├── ocr_crop_d11.ps1
+    ├── ocr_d11_br.ps1
+    ├── ocr_d11_halves.ps1
+    ├── ocr_d11_words.txt
+    ├── ocr_genkan.ps1
+    ├── ocr_results_utf8.txt
+    ├── ocr_scaled.ps1
+    ├── okaasan11.png_ctx.txt
+    ├── package-groups.json
+    ├── pad_opts.py
+    ├── parse_kunci.py
+    ├── parse_kunci_structured.py
+    ├── parse_mhtml.py
+    ├── parse_mhtml2.py
+    ├── parse_mhtml_aria.py
+    ├── parse_mhtml_dynamic.py
+    ├── parse_mhtml_dynamic2.py
+    ├── parse_mhtml_dynamic3.py
+    ├── parse_mhtml_form.py
+    ├── patch-upload.js
+    ├── patch2.js
+    ├── patch3.js
+    ├── patch_hyougen_full.js
+    ├── peek_html_part1.py
+    ├── peek_raw_html.py
+    ├── preview_html_structure.py
+    ├── print_cards_14_28.js
+    ├── print_cards_40_52.js
+    ├── print_cbt_dokkai.js
+    ├── print_genkan_cards.js
+    ├── print_opt_details.js
+    ├── q12_kunci.txt
+    ├── remap_shimemasu2_assets.js
+    ├── rename_imgs.py
+    ├── run_ocr_utf8.ps1
+    ├── save-kotoba-to-firestore.js
+    ├── scaled_D1.png
+    ├── scaled_D11.png
+    ├── scaled_D3.png
+    ├── scaled_D5.png
+    ├── scaled_D7.png
+    ├── scaled_D9.png
+    ├── scaled_ocr_results.txt
+    ├── search_similar_hyougen.js
+    ├── seed-master.mjs
+    ├── shimemasu2_full_extract.json
+    ├── shimemasu2_kunci.html
+    ├── shimemasu2_overview.txt
+    ├── shimemasu2_raw_opt_details.json
+    ├── show-kanji-table-render.mjs
+    ├── sort-kanji-stroke-hierarchy.mjs
+    ├── split_kunci.py
+    ├── surrounding_html_imgs.py
+    ├── sync-auth-to-firestore.mjs
+    ├── sync-users.mjs
+    ├── test-render.mjs
+    ├── test_basu2.png
+    ├── test_okaasan11.png
+    ├── test_unquote.py
+    ├── tmp-check.js
+    ├── trace_c1_imgs.py
+    ├── transcribe_gakusei2.py
+    ├── update_q35_q37.js
+    ├── update_q36.js
+    ├── update_q42.js
+    ├── update_q43_44.js
+    ├── update_q9_q10.js
+    ├── update_shimemasu2_q12.js
+    ├── update_shimemasu2_q12_opsi2.js
+    ├── update_tooltip_style.js
+    ├── update_tooltips.js
+    ├── upscale.py
+    ├── validate-data.mjs
+    ├── verify-badges.mjs
+    ├── verify-nesting.mjs
+    ├── verify-order.mjs
+    ├── view_sesi1.py
+    ├── vocab-tambahan.mjs
+    └── write-main.mjs

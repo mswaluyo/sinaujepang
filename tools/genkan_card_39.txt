@@ -1,0 +1,53 @@
+
+            <div class="review-soal-header" style="align-items:flex-start">
+              <div class="review-status kosong" style="margin-top:2px">—</div>
+              <div class="review-nomor" style="margin-top:4px">#1</div>
+              <div class="review-pertanyaan" style="font-family:'Noto Serif JP',serif">
+                <div>1.何時まで会社にいませんか?</div>
+                <div style="font-size:11.5px;color:var(--text3);font-style:italic;margin-top:4px;font-weight:normal">(1. Sampai jam berapa Anda akan bekerja?)</div>
+              </div>
+            </div>
+            <div class="review-body">
+              
+            <div class="review-konteks" style="background:rgba(188,47,47,0.02);border:1px solid rgba(188,47,47,0.08);border-left:3px solid rgba(188,47,47,0.3);border-radius:0 4px 4px 0;padding:.6rem .8rem;margin-bottom:.75rem;font-family:'Noto Serif JP',serif;white-space:pre-wrap;line-height:1.6;font-size:12.5px;color:var(--text2)">
+              <div>[ dokkai ]<br></div>
+              <div style="font-size:11px;color:var(--text3);font-style:italic;margin-top:6px;border-top:1px dashed rgba(188,47,47,0.12);padding-top:6px;font-family:'Plus Jakarta Sans',sans-serif">([ dokkai ]<br>)</div>
+            </div>
+              
+              
+          <div class="review-jawaban">
+            <div style="font-size:11px;color:var(--text3);min-width:80px">
+              Jawaban Anda: <strong style="color:#ef4444">—</strong>
+            </div>
+            <div style="font-size:11px;color:var(--text3)">
+              Kunci: <strong style="color:#10b981">A</strong>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:.5rem">
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key review-key-benar">A</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">11時30分</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(11:30)</div>
+            </div>
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key ">B</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">08時20分</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(08:20)</div>
+            </div>
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key ">C</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">08時30分</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(08:30)</div>
+            </div></div>
+              <div class="review-penjelasan">💡 Catatan menuliskan bahwa seseorang akan meninggalkan kantor hingga pukul 11:30 (11じさんじゅっぷん - 11ji sanjuppun).
+
+Tips: Temukan catatan jam kepergian yang tertera di memo kantor.</div>
+            </div>
+          </div>
+          

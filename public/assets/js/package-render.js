@@ -38,7 +38,7 @@
 
       kat.paket.forEach(function (p) {
         html +=
-          '<a href="/quiz.html?p=' + p.slug + '" data-paket="' + p.slug + '" ' +
+          '<div data-paket="' + p.slug + '" ' +
           'class="bg-white rounded-2xl border border-' + w + '-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-' + w + '-300 flex flex-col justify-between">' +
           '<div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-' + w + '-400 to-' + w + '-600"></div>' +
           '<div>' +
@@ -62,7 +62,7 @@
           '<div class="score-host"></div>' +
           '<div class="card-foot"></div>' +
           '</div>' +
-          '</a>';
+          '</div>';
       });
 
       html += '</div></div>';
@@ -74,8 +74,6 @@
     if (typeof window.renderPackSectionScoresAll === 'function') {
       window.renderPackSectionScoresAll();
     }
-    // score-cards.js memiliki polling internal (setInterval 3x) yang akan
-    // menemukan kartu baru secara otomatis, tidak perlu dipanggil manual.
   }
 
   if (document.readyState === 'loading') {

@@ -53,14 +53,6 @@ window.fujiTouchUser = async function (u) {
     try { prev = await getDoc(ref); } catch (e) {}
     var n = 1;
     try { if (prev && prev.exists() && prev.data().loginCount) n = prev.data().loginCount + 1; } catch (e) {}
-    if (prev && prev.exists() && prev.data().tiktokUnlocked === true) {
-      try {
-        localStorage.setItem("jft_tiktok_unlocked", "true");
-        if (window.IndexedDB && window.IndexedDB.setItem) {
-          window.IndexedDB.setItem("jft_tiktok_unlocked", true);
-        }
-      } catch (e) {}
-    }
     var payload = {
       name: u.displayName || "", email: u.email || "", photo: u.photoURL || "",
       lastLoginAt: serverTimestamp(), loginCount: n

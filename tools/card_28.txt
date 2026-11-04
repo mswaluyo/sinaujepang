@@ -1,0 +1,38 @@
+
+            <div class="review-soal-header" style="align-items:flex-start">
+              <div class="review-status kosong" style="margin-top:2px">—</div>
+              <div class="review-nomor" style="margin-top:4px">#15</div>
+              <div class="review-pertanyaan" style="font-family:'Noto Serif JP',serif">
+                <div>A : このそうじきはいですよ。あの 機能 (fungsi) がたくさんあります。
+
+B : ______</div>
+                <div style="font-size:11.5px;color:var(--text3);font-style:italic;margin-top:4px;font-weight:normal">(A : Mesin penyedot debu ini bagus lho, fiturnya ada banyak sekali.
+B : [Bisa jadi begitu ya].)</div>
+              </div>
+            </div>
+            <div class="review-body">
+              
+              
+              
+          <div class="review-jawaban">
+            <div style="font-size:11px;color:var(--text3);min-width:80px">
+              Jawaban Anda: <strong style="color:#ef4444">—</strong>
+            </div>
+            <div style="font-size:11px;color:var(--text3)">
+              Kunci: <strong style="color:#10b981">C</strong>
+            </div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:4px;margin-bottom:.5rem">
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key ">A</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">そうすぐになりますね</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(Bentuk salah)</div>
+            </div>
+            <div style="margin-bottom:6px">
+              <div class="review-jawaban-item">
+                <div class="review-jawaban-key ">B</div>
+                <span style="font-size:11.5px;font-family:'Noto Serif JP',serif">そう買いましょうね</span>
+              </div>
+              <div style="font-size:10px;color:var(--text3);font-style:italic;margin-left:25px;margin-top:1px">(Mari beli beg

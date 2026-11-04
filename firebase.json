@@ -1,4 +1,4 @@
-﻿{
+{
   "hosting": [
     {
       "target": "sinaujepang",
@@ -12,13 +12,23 @@
       "trailingSlash": false,
       "redirects": [
         {
+          "source": "/kotoba",
+          "destination": "/jft-a2",
+          "type": 301
+        },
+        {
+          "source": "/kotoba.html",
+          "destination": "/jft-a2",
+          "type": 301
+        },
+        {
           "source": "/hafal",
-          "destination": "/kotoba",
+          "destination": "/jft-a2",
           "type": 301
         },
         {
           "source": "/hafal.html",
-          "destination": "/kotoba",
+          "destination": "/jft-a2",
           "type": 301
         }
       ]
