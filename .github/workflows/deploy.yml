@@ -19,10 +19,9 @@ jobs:
 
       - name: npm ci
         run: npm ci
-      - name: Run ESLint lint
-        run: npm run lint
-      - name: Update TODO from lint
-        run: powershell -ExecutionPolicy Bypass -File ${{ github.workspace }}/scripts/update_todo_from_lint.ps1
+
+      - name: Validate quiz data
+        run: npm run test
 
       - name: npm run build:css
         run: npm run build:css
