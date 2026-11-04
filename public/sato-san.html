@@ -335,23 +335,23 @@
       if (leftLowerLeg) leftLowerLeg.rotation.set(1.50, 0, 0);
       if (rightLowerLeg) rightLowerLeg.rotation.set(1.50, 0, 0);
 
-      // 3. Pundak dan Lengan Atas diarahkan ke bawah dan maju ke meja (rapat ke badan)
+      // 3. Lengan Atas: Turunkan tajam ke bawah samping tubuh (Z: -75 deg kiri, +75 deg kanan) & maju sedikit ke meja
       const leftUpperArm = vrm.humanoid.getNormalizedBoneNode('leftUpperArm');
       const rightUpperArm = vrm.humanoid.getNormalizedBoneNode('rightUpperArm');
-      if (leftUpperArm) leftUpperArm.rotation.set(-0.35, -0.20, -0.18);
-      if (rightUpperArm) rightUpperArm.rotation.set(-0.35, 0.20, 0.18);
+      if (leftUpperArm) leftUpperArm.rotation.set(-0.35, 0.25, -1.35);
+      if (rightUpperArm) rightUpperArm.rotation.set(-0.35, -0.25, 1.35);
 
-      // 4. Lengan Bawah ditekuk maju ke arah keyboard laptop
+      // 4. Lengan Bawah: Tekuk siku ke depan mengarah ke keyboard laptop
       const leftLowerArm = vrm.humanoid.getNormalizedBoneNode('leftLowerArm');
       const rightLowerArm = vrm.humanoid.getNormalizedBoneNode('rightLowerArm');
-      if (leftLowerArm) leftLowerArm.rotation.set(-1.15, -0.35, 0.45);
-      if (rightLowerArm) rightLowerArm.rotation.set(-1.15, 0.35, -0.45);
+      if (leftLowerArm) leftLowerArm.rotation.set(0, -0.65, 1.55);
+      if (rightLowerArm) rightLowerArm.rotation.set(0, 0.65, -1.55);
 
-      // 5. Telapak Tangan menelungkup santai di dekat keyboard laptop
+      // 5. Telapak Tangan menelungkup rata di atas meja
       const leftHand = vrm.humanoid.getNormalizedBoneNode('leftHand');
       const rightHand = vrm.humanoid.getNormalizedBoneNode('rightHand');
-      if (leftHand) leftHand.rotation.set(0.15, -0.1, -0.3);
-      if (rightHand) rightHand.rotation.set(0.15, 0.1, 0.3);
+      if (leftHand) leftHand.rotation.set(0, 0, 0.2);
+      if (rightHand) rightHand.rotation.set(0, 0, -0.2);
     }
 
     function updateNaturalIdle(elapsedTime) {
