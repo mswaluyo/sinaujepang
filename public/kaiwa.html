@@ -312,7 +312,7 @@
       return null;
     }
 
-        // ── Pose Resmi Sato-san: Duduk Tegak & Kedua Tangan Bertaut Rapi di Atas Meja ──
+            // ── Pose Duduk Formal Alami Sato-san (Lengan Rileks Rapi ke Samping Tubuh) ──
     function applySatoExecutivePose(vrm) {
       if (!vrm) return;
 
@@ -323,23 +323,17 @@
       const lh = getBone(vrm, 'leftHand');
       const rh = getBone(vrm, 'rightHand');
 
-      // Paha ditekuk duduk
-      const lul = getBone(vrm, 'leftUpperLeg');
-      const rul = getBone(vrm, 'rightUpperLeg');
-      if (lul) lul.rotation.set(-1.50, 0, 0);
-      if (rul) rul.rotation.set(-1.50, 0, 0);
+      // 1. Turunkan lengan atas rapi ke samping badan (Z axis standar)
+      if (lua) lua.rotation.set(0.15, 0.10, -1.25);
+      if (rua) rua.rotation.set(0.15, -0.10, 1.25);
 
-      // 1. Lengan Atas turun merapat ke samping dada dan maju ke arah meja
-      if (lua) lua.rotation.set(-0.45, 0.25, -1.35);
-      if (rua) rua.rotation.set(-0.45, -0.25, 1.35);
+      // 2. Siku rileks lurus/sedikit maju alami
+      if (lla) lla.rotation.set(0, 0, 0.15);
+      if (rla) rla.rotation.set(0, 0, -0.15);
 
-      // 2. Siku ditekuk masuk ke tengah meja
-      if (lla) lla.rotation.set(0.10, -0.90, 1.70);
-      if (rla) rla.rotation.set(0.10, 0.90, -1.70);
-
-      // 3. Telapak tangan saling menangkup di tengah meja
-      if (lh) lh.rotation.set(0.20, 0.20, 0.35);
-      if (rh) rh.rotation.set(0.20, -0.20, -0.35);
+      // 3. Telapak tangan rileks
+      if (lh) lh.rotation.set(0, 0, 0);
+      if (rh) rh.rotation.set(0, 0, 0);
     }
 
     // Pose Zoom Asisten Yuki-chan (Lengan rileks ke samping bawah)
