@@ -535,13 +535,11 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
     // Inisialisasi awal
     initGeminiChat();
 
-    // Event listener saat user mengganti Karakter atau Model Latihan
-    const selectPartner = document.getElementById('select-partner');
-    const selectScenario = document.getElementById('select-scenario');
-
+    // Event listener saat user mengganti Karakter atau Model Latihan di dropdown header
     if (selectPartner) {
       selectPartner.addEventListener('change', (e) => {
         activePartner = e.target.value;
+        localStorage.setItem('kaiwa_selected_partner', activePartner);
         initGeminiChat();
         updateTileLayoutVisibility();
       });
@@ -550,6 +548,7 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
     if (selectScenario) {
       selectScenario.addEventListener('change', (e) => {
         activeScenario = e.target.value;
+        localStorage.setItem('kaiwa_selected_scenario', activeScenario);
         initGeminiChat();
       });
     }
