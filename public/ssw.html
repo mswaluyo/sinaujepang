@@ -46,7 +46,7 @@
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-rose-200 pb-4">
           <div>
             <div class="flex items-center gap-2.5">
-              <span class="w-8 h-8 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-sm font-black">
+              <span class="w-10 h-10 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-base font-black">
                 <i class="fa-solid fa-heart-pulse"></i>
               </span>
               <h2 class="text-xl sm:text-2xl font-black text-slate-800 tracking-tight">SSW Kaigo (介護) — Perawat Lansia</h2>
@@ -64,43 +64,59 @@
         <!-- ========================================== -->
         <!-- BAGIAN 1: UJIAN EVALUASI KETERAMPILAN PERAWATAN (INDONESIA) -->
         <!-- ========================================== -->
-        <div class="space-y-4">
+        <div class="space-y-6">
           <div class="flex items-center justify-between border-b border-slate-200 pb-2">
             <div>
-              <h3 class="text-sm sm:text-base font-black text-slate-800 flex items-center gap-2">
+              <h3 class="text-base sm:text-lg font-black text-slate-800 flex items-center gap-2">
                 <i class="fa-solid fa-user-doctor text-rose-600"></i>
                 <span>1. Ujian Evaluasi Keterampilan Perawatan (介護技能評価試験)</span>
               </h3>
-              <p class="text-[11px] text-slate-500 mt-0.5">Soal dalam <b>Bahasa Indonesia</b> • Menguji 4 pilar kompetensi keperawatan lansia • Standar kelulusan MHLW: <b>Minimal 60%</b></p>
+              <p class="text-xs text-slate-500 mt-0.5">Soal dalam <b>Bahasa Indonesia</b> • Menguji 4 pilar kompetensi keperawatan lansia • Standar kelulusan MHLW: <b>Minimal 60%</b></p>
             </div>
             <span class="hidden sm:inline-flex text-[11px] font-bold px-2.5 py-1 rounded-lg bg-rose-50 text-rose-700 border border-rose-200 shrink-0">
               Nursing Care Skills Test
             </span>
           </div>
 
-          <!-- A. Simulasi Lengkap CBT (Paket Indo 1 & 2) -->
+          <!-- A. Simulasi Lengkap CBT (Grid 2 Kolom Standar JFT) -->
           <div>
-            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-1.5">
               <i class="fa-solid fa-desktop text-rose-500"></i>
-              <span>Simulasi Lengkap CBT Keterampilan (40-50 Soal)</span>
+              <span>Simulasi Lengkap CBT Keterampilan</span>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
               
               <!-- Paket Indonesia 1 -->
-              <div class="bg-gradient-to-br from-rose-500/10 via-rose-50 to-amber-50 p-5 rounded-2xl border-2 border-rose-300 shadow-sm flex flex-col justify-between group hover:border-rose-400 transition-all">
-                <div class="space-y-1 mb-4">
-                  <div class="flex items-center justify-between gap-2">
-                    <span class="text-[11px] font-black px-2.5 py-0.5 rounded-full bg-rose-600 text-white uppercase tracking-wider">Simulasi CBT 1</span>
-                    <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-clipboard-check mr-1"></i>50 Butir Soal</span>
+              <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
+                <div>
+                  <div class="flex items-start justify-between gap-3 mb-3">
+                    <div class="flex items-center gap-3">
+                      <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-file-shield"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                          Simulasi Kaigo — Paket Indo 1
+                        </h4>
+                        <div class="text-xs text-slate-400 font-medium">Format Prometric CBT</div>
+                      </div>
+                    </div>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                      <i class="fa-solid fa-list-check text-rose-500"></i>
+                      <span>50 Soal</span>
+                    </span>
                   </div>
-                  <h4 class="text-base font-black text-slate-800 group-hover:text-rose-600 transition-colors">Simulasi Keterampilan Kaigo — Paket Indo 1</h4>
-                  <p class="text-xs text-slate-600 leading-relaxed">
-                    Mencakup 4 pilar kompetensi: Dasar Perawatan, Mekanisme Tubuh, Komunikasi, dan Bantuan Hidup Sehari-hari (Termasuk soal gambar).
+                  <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                    Mencakup 4 pilar kompetensi: Dasar Perawatan, Mekanisme Tubuh, Komunikasi, dan Bantuan Hidup Sehari-hari (Termasuk soal gambar kasus).
                   </p>
                 </div>
-                <div class="pt-3 border-t border-rose-200/60 flex items-center justify-between">
-                  <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-award mr-1"></i>Min. 60% (30 Benar)</span>
-                  <a href="/ssw-quiz.html?p=ssw-kaigo-indo1-quiz" class="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-extrabold text-xs shadow-sm transition-all inline-flex items-center gap-1.5 hover:scale-105">
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                  <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Standar: Min. 60%</span>
+                  </span>
+                  <a href="/ssw-quiz.html?p=ssw-kaigo-indo1-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
                     <span>Mulai Ujian</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                   </a>
@@ -108,20 +124,36 @@
               </div>
 
               <!-- Paket Indonesia 2 -->
-              <div class="bg-gradient-to-br from-rose-500/10 via-rose-50 to-emerald-50 p-5 rounded-2xl border-2 border-rose-300 shadow-sm flex flex-col justify-between group hover:border-rose-400 transition-all">
-                <div class="space-y-1 mb-4">
-                  <div class="flex items-center justify-between gap-2">
-                    <span class="text-[11px] font-black px-2.5 py-0.5 rounded-full bg-slate-900 text-white uppercase tracking-wider">Simulasi CBT 2</span>
-                    <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-clipboard-check mr-1"></i>41 Butir Soal</span>
+              <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
+                <div>
+                  <div class="flex items-start justify-between gap-3 mb-3">
+                    <div class="flex items-center gap-3">
+                      <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-notes-medical"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                          Simulasi Kaigo — Paket Indo 2
+                        </h4>
+                        <div class="text-xs text-slate-400 font-medium">Format Prometric CBT</div>
+                      </div>
+                    </div>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                      <i class="fa-solid fa-list-check text-rose-500"></i>
+                      <span>41 Soal</span>
+                    </span>
                   </div>
-                  <h4 class="text-base font-black text-slate-800 group-hover:text-rose-600 transition-colors">Simulasi Keterampilan Kaigo — Paket Indo 2</h4>
-                  <p class="text-xs text-slate-600 leading-relaxed">
+                  <p class="text-xs text-slate-600 leading-relaxed mb-4">
                     Materi fokus pada konsep ICF, filosofi QOL, etika profesi, pencegahan dekubitus, dan prosedur pemindahan pasien.
                   </p>
                 </div>
-                <div class="pt-3 border-t border-rose-200/60 flex items-center justify-between">
-                  <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-award mr-1"></i>Min. 60% (25 Benar)</span>
-                  <a href="/ssw-quiz.html?p=ssw-kaigo-indo2-quiz" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-rose-600 text-white font-extrabold text-xs shadow-sm transition-all inline-flex items-center gap-1.5 hover:scale-105">
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                  <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Standar: Min. 60%</span>
+                  </span>
+                  <a href="/ssw-quiz.html?p=ssw-kaigo-indo2-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
                     <span>Mulai Ujian</span>
                     <i class="fa-solid fa-arrow-right text-[10px]"></i>
                   </a>
@@ -131,76 +163,160 @@
             </div>
           </div>
 
-          <!-- B. Latihan Per Bab Teori Dasar (Bab 1 - 4) -->
+          <!-- B. Latihan Per Bab Teori Keterampilan (Grid 2 Kolom Standar JFT) -->
           <div class="pt-2">
-            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-1.5">
               <i class="fa-solid fa-book-bookmark text-rose-500"></i>
               <span>Latihan Per Bab Teori Keterampilan (Bab 1 - 4)</span>
             </div>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
               
               <!-- Bab 1 -->
-              <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+              <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
                 <div>
-                  <div class="flex items-center justify-between gap-2 mb-2">
-                    <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 1</span>
-                    <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>16 Soal</span>
+                  <div class="flex items-start justify-between gap-3 mb-3">
+                    <div class="flex items-center gap-3">
+                      <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-hands-holding-child"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                          Bab 1: Martabat &amp; Kemandirian
+                        </h4>
+                        <div class="text-xs text-slate-400 font-medium">Buku Panduan Kaigo Bab 1</div>
+                      </div>
+                    </div>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                      <i class="fa-solid fa-list-check text-rose-500"></i>
+                      <span>16 Soal</span>
+                    </span>
                   </div>
-                  <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Martabat &amp; Kemandirian</h4>
-                  <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Filosofi QOL, martabat manusia, dan dukungan kemandirian lansia.</p>
+                  <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                    Filosofi QOL (Quality of Life), martabat manusia, dan prinsip dukungan kemandirian lansia.
+                  </p>
                 </div>
-                <a href="/ssw-quiz.html?p=ssw-kaigo-bab1-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
-                  <span>Mulai Bab 1</span>
-                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                </a>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                  <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Standar: Min. 60%</span>
+                  </span>
+                  <a href="/ssw-quiz.html?p=ssw-kaigo-bab1-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+                    <span>Mulai Bab 1</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
               </div>
 
               <!-- Bab 2 -->
-              <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+              <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
                 <div>
-                  <div class="flex items-center justify-between gap-2 mb-2">
-                    <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 2</span>
-                    <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>20 Soal</span>
+                  <div class="flex items-start justify-between gap-3 mb-3">
+                    <div class="flex items-center gap-3">
+                      <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-user-shield"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                          Bab 2: Peran Staf &amp; Etika Profesi
+                        </h4>
+                        <div class="text-xs text-slate-400 font-medium">Buku Panduan Kaigo Bab 2</div>
+                      </div>
+                    </div>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                      <i class="fa-solid fa-list-check text-rose-500"></i>
+                      <span>20 Soal</span>
+                    </span>
                   </div>
-                  <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Peran Staf &amp; Etika Profesi</h4>
-                  <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Kerahasiaan data pasien, etika kerja, dan larangan pembatasan fisik.</p>
+                  <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                    Kerahasiaan data pasien, etika kerja staf perawat, dan larangan pembatasan fisik secara ketat.
+                  </p>
                 </div>
-                <a href="/ssw-quiz.html?p=ssw-kaigo-bab2-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
-                  <span>Mulai Bab 2</span>
-                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                </a>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                  <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Standar: Min. 60%</span>
+                  </span>
+                  <a href="/ssw-quiz.html?p=ssw-kaigo-bab2-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+                    <span>Mulai Bab 2</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
               </div>
 
               <!-- Bab 3 -->
-              <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+              <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
                 <div>
-                  <div class="flex items-center justify-between gap-2 mb-2">
-                    <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 3</span>
-                    <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>15 Soal</span>
+                  <div class="flex items-start justify-between gap-3 mb-3">
+                    <div class="flex items-center gap-3">
+                      <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-shield-virus"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                          Bab 3: Keselamatan &amp; Risiko
+                        </h4>
+                        <div class="text-xs text-slate-400 font-medium">Buku Panduan Kaigo Bab 3</div>
+                      </div>
+                    </div>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                      <i class="fa-solid fa-list-check text-rose-500"></i>
+                      <span>15 Soal</span>
+                    </span>
                   </div>
-                  <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Keselamatan &amp; Risiko</h4>
-                  <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Pengendalian infeksi, cuci tangan, APD, dan pencegahan kecelakaan.</p>
+                  <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                    Pengendalian infeksi, standar cuci tangan, pemakaian APD sarung tangan/masker, dan pencegahan jatuh.
+                  </p>
                 </div>
-                <a href="/ssw-quiz.html?p=ssw-kaigo-bab3-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
-                  <span>Mulai Bab 3</span>
-                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                </a>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                  <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Standar: Min. 60%</span>
+                  </span>
+                  <a href="/ssw-quiz.html?p=ssw-kaigo-bab3-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+                    <span>Mulai Bab 3</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
               </div>
 
               <!-- Bab 4 -->
-              <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+              <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+                <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
                 <div>
-                  <div class="flex items-center justify-between gap-2 mb-2">
-                    <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 4</span>
-                    <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>15 Soal</span>
+                  <div class="flex items-start justify-between gap-3 mb-3">
+                    <div class="flex items-center gap-3">
+                      <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-brain"></i>
+                      </div>
+                      <div>
+                        <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                          Bab 4: Mental &amp; Tubuh
+                        </h4>
+                        <div class="text-xs text-slate-400 font-medium">Buku Panduan Kaigo Bab 4</div>
+                      </div>
+                    </div>
+                    <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                      <i class="fa-solid fa-list-check text-rose-500"></i>
+                      <span>15 Soal</span>
+                    </span>
                   </div>
-                  <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Mekanisme Mental &amp; Tubuh</h4>
-                  <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Tanda vital, anatomi dasar otak &amp; saraf, dan homeostasis tubuh.</p>
+                  <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                    Tanda vital, anatomi dasar otak &amp; saraf otonom, homeostasis tubuh, dan pencegahan dekubitus.
+                  </p>
                 </div>
-                <a href="/ssw-quiz.html?p=ssw-kaigo-bab4-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
-                  <span>Mulai Bab 4</span>
-                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
-                </a>
+                <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                  <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                    <i class="fa-solid fa-award"></i>
+                    <span>Standar: Min. 60%</span>
+                  </span>
+                  <a href="/ssw-quiz.html?p=ssw-kaigo-bab4-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+                    <span>Mulai Bab 4</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
               </div>
 
             </div>
@@ -210,110 +326,243 @@
         <!-- ========================================== -->
         <!-- BAGIAN 2: UJIAN EVALUASI BAHASA JEPANG PERAWATAN (KAIGO NIHONGO) -->
         <!-- ========================================== -->
-        <div class="space-y-4 pt-4 border-t border-rose-200">
+        <div class="space-y-6 pt-4 border-t border-rose-200">
           <div class="flex items-center justify-between border-b border-slate-200 pb-2">
             <div>
-              <h3 class="text-sm sm:text-base font-black text-slate-800 flex items-center gap-2">
+              <h3 class="text-base sm:text-lg font-black text-slate-800 flex items-center gap-2">
                 <i class="fa-solid fa-language text-rose-600"></i>
                 <span>2. Ujian Evaluasi Bahasa Jepang Perawatan (介護日本語評価試験)</span>
               </h3>
-              <p class="text-[11px] text-slate-500 mt-0.5">Soal dalam <b>Bahasa Jepang Asli (Kanji + Furigana)</b> • Istilah perawatan, percakapan lansia, dan membaca laporan • Standar kelulusan MHLW: <b>Minimal 73% (11/15 Benar)</b></p>
+              <p class="text-xs text-slate-500 mt-0.5">Soal dalam <b>Bahasa Jepang Asli (Kanji + Furigana)</b> • Istilah perawatan, percakapan lansia, dan membaca laporan • Standar kelulusan MHLW: <b>Minimal 73% (11/15 Benar)</b></p>
             </div>
             <span class="hidden sm:inline-flex text-[11px] font-bold px-2.5 py-1 rounded-lg bg-rose-50 text-rose-700 border border-rose-200 shrink-0">
               Nursing Care Japanese Test
             </span>
           </div>
 
-          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+          <!-- Modul Kaigo Nihongo (Grid 2 Kolom Standar JFT) -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
             
             <!-- 1. Shukkin -->
-            <div class="bg-white rounded-2xl p-3.5 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+            <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+              <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
               <div>
-                <div class="flex items-center justify-between gap-1 mb-1.5">
-                  <span class="text-[10px] font-black px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">出勤</span>
-                  <span class="text-[10px] text-slate-500 font-bold">15 Soal</span>
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                      <i class="fa-solid fa-business-time"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                        出勤 (Shukkin) — Jadwal Kerja &amp; Dinas
+                      </h4>
+                      <div class="text-xs text-slate-400 font-medium">Kosakata &amp; Komunikasi Staf</div>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                    <i class="fa-solid fa-list-check text-rose-500"></i>
+                    <span>15 Soal</span>
+                  </span>
                 </div>
-                <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">出勤 (Shukkin)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Istilah jadwal kerja, dinas, dan komunikasi staf.</p>
+                <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                  Istilah jadwal dinas kerja (早番, 日勤, 夜勤), sapaan masuk kantor, etika komunikasi antar perawat, dan penggunaan telepon.
+                </p>
               </div>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-shukkin-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
-                Mulai Ujian
-              </a>
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                  <i class="fa-solid fa-award"></i>
+                  <span>Standar: Min. 73%</span>
+                </span>
+                <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-shukkin-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+                  <span>Mulai Ujian</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
             </div>
 
             <!-- 2. Nemaki -->
-            <div class="bg-white rounded-2xl p-3.5 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+            <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+              <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
               <div>
-                <div class="flex items-center justify-between gap-1 mb-1.5">
-                  <span class="text-[10px] font-black px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">寝間着</span>
-                  <span class="text-[10px] text-slate-500 font-bold">15 Soal</span>
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                      <i class="fa-solid fa-wheelchair"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                        寝間着 (Nemaki) — Pakaian Tidur &amp; Kursi Roda
+                      </h4>
+                      <div class="text-xs text-slate-400 font-medium">Bantuan Tidur &amp; Mobilitas</div>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                    <i class="fa-solid fa-list-check text-rose-500"></i>
+                    <span>15 Soal</span>
+                  </span>
                 </div>
-                <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">寝間着 (Nemaki)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Pakaian tidur, bantuan kursi roda, dan etika.</p>
+                <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                  Kosakata pakaian tidur (寝間着/パジャマ), prosedur bantuan naik kursi roda, penguncian rem (ブレーキ), dan etika pendampingan.
+                </p>
               </div>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-nemaki-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
-                Mulai Ujian
-              </a>
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                  <i class="fa-solid fa-award"></i>
+                  <span>Standar: Min. 73%</span>
+                </span>
+                <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-nemaki-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+                  <span>Mulai Ujian</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
             </div>
 
             <!-- 3. Koui -->
-            <div class="bg-white rounded-2xl p-3.5 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+            <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+              <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
               <div>
-                <div class="flex items-center justify-between gap-1 mb-1.5">
-                  <span class="text-[10px] font-black px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">更衣</span>
-                  <span class="text-[10px] text-slate-500 font-bold">10 Soal</span>
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                      <i class="fa-solid fa-shirt"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                        更衣 (Koui) — Ganti Pakaian &amp; Kebersihan Diri
+                      </h4>
+                      <div class="text-xs text-slate-400 font-medium">Bantuan Mandi &amp; Berpakaian</div>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                    <i class="fa-solid fa-list-check text-rose-500"></i>
+                    <span>10 Soal</span>
+                  </span>
                 </div>
-                <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">更衣 (Koui)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Bantuan ganti pakaian, kebersihan diri, dan mandi.</p>
+                <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                  Komunikasi saat mandi (入浴), berkeringat (汗をかく), membasuh muka (洗面), dan bantuan mengganti baju pada pasien.
+                </p>
               </div>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-koui-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
-                Mulai Ujian
-              </a>
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                  <i class="fa-solid fa-award"></i>
+                  <span>Standar: Min. 73%</span>
+                </span>
+                <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-koui-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+                  <span>Mulai Ujian</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
             </div>
 
             <!-- 4. Tokashimasu -->
-            <div class="bg-white rounded-2xl p-3.5 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+            <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+              <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
               <div>
-                <div class="flex items-center justify-between gap-1 mb-1.5">
-                  <span class="text-[10px] font-black px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">梳します</span>
-                  <span class="text-[10px] text-slate-500 font-bold">15 Soal</span>
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                      <i class="fa-solid fa-bed"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                        梳します (Tokashimasu) — Menyisir &amp; Vital Signs
+                      </h4>
+                      <div class="text-xs text-slate-400 font-medium">Perawatan Rambut &amp; Posisi Duduk</div>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                    <i class="fa-solid fa-list-check text-rose-500"></i>
+                    <span>15 Soal</span>
+                  </span>
                 </div>
-                <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">梳します (Tokashimasu)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Menyisir rambut, posisi duduk, dan tanda vital.</p>
+                <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                  Kosakata menyisir rambut (梳かす), posisi duduk di kasur/kursi (端座位/椅子座位), dan penurunan demam (熱が下がる).
+                </p>
               </div>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-tokashimasu-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
-                Mulai Ujian
-              </a>
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                  <i class="fa-solid fa-award"></i>
+                  <span>Standar: Min. 73%</span>
+                </span>
+                <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-tokashimasu-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+                  <span>Mulai Ujian</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
             </div>
 
             <!-- 5. Sokutei -->
-            <div class="bg-white rounded-2xl p-3.5 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+            <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+              <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
               <div>
-                <div class="flex items-center justify-between gap-1 mb-1.5">
-                  <span class="text-[10px] font-black px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">足底</span>
-                  <span class="text-[10px] text-slate-500 font-bold">15 Soal</span>
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                      <i class="fa-solid fa-shoe-prints"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                        足底 (Sokutei) — Anatomi Kaki &amp; Posisi Tubuh
+                      </h4>
+                      <div class="text-xs text-slate-400 font-medium">Bagian Tubuh &amp; Posisi Pasien</div>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                    <i class="fa-solid fa-list-check text-rose-500"></i>
+                    <span>15 Soal</span>
+                  </span>
                 </div>
-                <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">足底 (Sokutei)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Anatomi kaki, posisi tubuh, dan istilah perawatan.</p>
+                <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                  Nama bagian anatomi (足底, 足の甲, 膝), posisi telentang/telungkup (仰臥位/腹臥位), dan pembersihan gigi pasien.
+                </p>
               </div>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-sokutei-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
-                Mulai Ujian
-              </a>
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                  <i class="fa-solid fa-award"></i>
+                  <span>Standar: Min. 73%</span>
+                </span>
+                <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-sokutei-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+                  <span>Mulai Ujian</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
             </div>
 
             <!-- 6. Hitai -->
-            <div class="bg-white rounded-2xl p-3.5 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+            <div class="bg-white rounded-2xl border border-rose-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-rose-300 flex flex-col justify-between">
+              <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-rose-400 to-rose-600"></div>
               <div>
-                <div class="flex items-center justify-between gap-1 mb-1.5">
-                  <span class="text-[10px] font-black px-2 py-0.5 rounded bg-rose-50 text-rose-700 border border-rose-200">額</span>
-                  <span class="text-[10px] text-slate-500 font-bold">15 Soal</span>
+                <div class="flex items-start justify-between gap-3 mb-3">
+                  <div class="flex items-center gap-3">
+                    <div class="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-rose-600 group-hover:text-white transition-colors">
+                      <i class="fa-solid fa-clipboard-user"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-bold text-slate-800 text-base leading-snug group-hover:text-rose-600 transition-colors">
+                        額 (Hitai) — Anatomi Dahi &amp; Laporan Insiden
+                      </h4>
+                      <div class="text-xs text-slate-400 font-medium">Dokumentasi Catatan Perawatan</div>
+                    </div>
+                  </div>
+                  <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 text-xs font-semibold border border-rose-200 shrink-0">
+                    <i class="fa-solid fa-list-check text-rose-500"></i>
+                    <span>15 Soal</span>
+                  </span>
                 </div>
-                <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">額 (Hitai)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Dahi, laporan kecelakaan, dan catatan lansia.</p>
+                <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                  Bagian wajah (額, 目, 口), membaca laporan kecelakaan jatuh (事故報告), dan pencatatan makan lansia (生活記録).
+                </p>
               </div>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-hitai-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
-                Mulai Ujian
-              </a>
+              <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+                <span class="text-xs font-semibold text-rose-600 flex items-center gap-1">
+                  <i class="fa-solid fa-award"></i>
+                  <span>Standar: Min. 73%</span>
+                </span>
+                <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-hitai-quiz" class="bg-rose-600 hover:bg-rose-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
+                  <span>Mulai Ujian</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
             </div>
 
           </div>
@@ -323,31 +572,45 @@
       <!-- SEKSI 2: SEKTOR LAINNYA (PETERNAKAN, PENGOLAHAN PANGAN, DSB) -->
       <div class="space-y-6 pt-4 border-t border-slate-200">
         <div class="flex items-center gap-2.5">
-          <span class="w-8 h-8 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-sm font-black">
+          <span class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-base font-black">
             <i class="fa-solid fa-layer-group"></i>
           </span>
           <h2 class="text-xl sm:text-2xl font-black text-slate-800 tracking-tight">Sektor Keahlian SSW Lainnya</h2>
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
 
           <!-- 1. Pertanian / Peternakan (Chikusan) -->
-          <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-emerald-300">
+          <div class="bg-white rounded-2xl border border-emerald-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-emerald-300 flex flex-col justify-between">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-emerald-400 to-emerald-600"></div>
             <div>
-              <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
-                <i class="fa-solid fa-cow"></i>
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-emerald-100 text-emerald-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-cow"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-emerald-600 transition-colors">
+                      Chikusan (畜産業) — Peternakan
+                    </h3>
+                    <div class="text-xs text-slate-400 font-medium">Ujian Keahlian Pertanian &amp; Peternakan</div>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-semibold border border-emerald-200 shrink-0">
+                  <i class="fa-solid fa-list-check text-emerald-500"></i>
+                  <span>45 Soal</span>
+                </span>
               </div>
-              <div class="flex items-center justify-between gap-2 mb-2">
-                <h3 class="text-base font-bold text-slate-800 group-hover:text-emerald-600 transition-colors">Chikusan (畜産業)</h3>
-                <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 shrink-0 whitespace-nowrap">Peternakan</span>
-              </div>
-              <p class="text-slate-600 text-xs leading-relaxed mb-4">
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
                 Manajemen pemeliharaan sapi potong/perah, babi, unggas petelur/pedaging, biosekuriti kandang, dan sanitasi pakan.
               </p>
             </div>
-            <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-500 font-medium"><i class="fa-solid fa-clipboard-check mr-1 text-emerald-500"></i>45 Butir Soal</span>
-              <a href="/ssw-quiz.html?p=ssw-peternakan-quiz" class="text-xs font-bold px-3 py-1.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white transition-all inline-flex items-center gap-1.5 shadow-sm hover:scale-105">
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+              <span class="text-xs font-semibold text-emerald-600 flex items-center gap-1">
+                <i class="fa-solid fa-award"></i>
+                <span>Standar: Min. 65%</span>
+              </span>
+              <a href="/ssw-quiz.html?p=ssw-peternakan-quiz" class="bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs px-4 py-2 rounded-xl transition-all flex items-center gap-1.5 shadow-sm">
                 <span>Mulai Ujian</span>
                 <i class="fa-solid fa-arrow-right text-[10px]"></i>
               </a>
@@ -355,82 +618,95 @@
           </div>
 
           <!-- 2. Pengolahan Makanan & Minuman -->
-          <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-amber-300">
+          <div class="bg-white rounded-2xl border border-amber-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-amber-300 flex flex-col justify-between">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-amber-600"></div>
             <div>
-              <div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
-                <i class="fa-solid fa-utensils"></i>
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-amber-100 text-amber-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-amber-600 group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-utensils"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-amber-600 transition-colors">
+                      Inryouryouhin (飲食料品) — Pengolahan Pangan
+                    </h3>
+                    <div class="text-xs text-slate-400 font-medium">Manufaktur Makanan &amp; Minuman</div>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 text-xs font-semibold border border-amber-200 shrink-0">
+                  <i class="fa-solid fa-clock text-amber-500"></i>
+                  <span>Segera Hadir</span>
+                </span>
               </div>
-              <div class="flex items-start justify-between gap-2 mb-2">
-                <h3 class="text-base font-bold text-slate-800 group-hover:text-amber-600 transition-colors leading-snug">Inryouryouhin<br><span class="text-xs font-semibold text-slate-500">(飲食料品)</span></h3>
-                <span class="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-50 text-amber-700 border border-amber-200 shrink-0 whitespace-nowrap">Pengolahan Pangan</span>
-              </div>
-              <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                Manajemen sanitasi, standar higienitas HACCP, dan proses manufaktur pengolahan produk pangan.
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Manajemen sanitasi, standar higienitas HACCP, dan proses manufaktur pengolahan produk pangan di pabrik Jepang.
               </p>
             </div>
-            <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i>HACCP &amp; Sanitasi</span>
-              <span class="text-xs font-bold text-fuji-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Segera Hadir <i class="fa-solid fa-clock text-[10px]"></i></span>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+              <span class="text-xs font-medium text-slate-400"><i class="fa-solid fa-book-bookmark mr-1"></i>HACCP &amp; Sanitasi</span>
+              <span class="text-xs font-bold text-slate-400">Segera Hadir</span>
             </div>
           </div>
 
           <!-- 3. Pelayanan Restoran / Gaishoku -->
-          <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-orange-300">
+          <div class="bg-white rounded-2xl border border-orange-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-orange-300 flex flex-col justify-between">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-orange-400 to-orange-600"></div>
             <div>
-              <div class="w-11 h-11 rounded-xl bg-orange-100 text-orange-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
-                <i class="fa-solid fa-bowl-rice"></i>
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-orange-100 text-orange-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-bowl-rice"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-orange-600 transition-colors">
+                      Gaishoku (外食業) — Restoran &amp; Kuliner
+                    </h3>
+                    <div class="text-xs text-slate-400 font-medium">Pelayanan Pelanggan Restoran</div>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-orange-50 text-orange-700 text-xs font-semibold border border-orange-200 shrink-0">
+                  <i class="fa-solid fa-clock text-orange-500"></i>
+                  <span>Segera Hadir</span>
+                </span>
               </div>
-              <div class="flex items-center justify-between gap-2 mb-2">
-                <h3 class="text-base font-bold text-slate-800 group-hover:text-orange-600 transition-colors">Gaishoku (外食業)</h3>
-                <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-orange-50 text-orange-700 border border-orange-200 shrink-0 whitespace-nowrap">Restoran &amp; Kuliner</span>
-              </div>
-              <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                Standar pelayanan pelanggan (sekkyaku), higienitas persiapan bahan makanan, dan operasional restoran.
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
+                Standar pelayanan pelanggan (sekkyaku), higienitas persiapan bahan makanan, dan operasional restoran Jepang.
               </p>
             </div>
-            <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i>Customer Service</span>
-              <span class="text-xs font-bold text-fuji-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Segera Hadir <i class="fa-solid fa-clock text-[10px]"></i></span>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+              <span class="text-xs font-medium text-slate-400"><i class="fa-solid fa-book-bookmark mr-1"></i>Customer Service</span>
+              <span class="text-xs font-bold text-slate-400">Segera Hadir</span>
             </div>
           </div>
 
           <!-- 4. Konstruksi / Kensetsu -->
-          <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-sky-300">
+          <div class="bg-white rounded-2xl border border-sky-100 shadow-sm hover:shadow-md transition-all p-5 relative overflow-hidden group hover:border-sky-300 flex flex-col justify-between">
+            <div class="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-sky-400 to-sky-600"></div>
             <div>
-              <div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
-                <i class="fa-solid fa-helmet-safety"></i>
+              <div class="flex items-start justify-between gap-3 mb-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 font-extrabold text-lg flex items-center justify-center shrink-0 group-hover:bg-sky-600 group-hover:text-white transition-colors">
+                    <i class="fa-solid fa-helmet-safety"></i>
+                  </div>
+                  <div>
+                    <h3 class="font-bold text-slate-800 text-base leading-snug group-hover:text-sky-600 transition-colors">
+                      Kensetsu (建設業) — Konstruksi
+                    </h3>
+                    <div class="text-xs text-slate-400 font-medium">Teknik Bangunan &amp; Keselamatan Kerja</div>
+                  </div>
+                </div>
+                <span class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 text-xs font-semibold border border-sky-200 shrink-0">
+                  <i class="fa-solid fa-clock text-sky-500"></i>
+                  <span>Segera Hadir</span>
+                </span>
               </div>
-              <div class="flex items-center justify-between gap-2 mb-2">
-                <h3 class="text-base font-bold text-slate-800 group-hover:text-sky-600 transition-colors">Kensetsu (建設業)</h3>
-                <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-sky-50 text-sky-700 border border-sky-200 shrink-0 whitespace-nowrap">Konstruksi</span>
-              </div>
-              <p class="text-slate-600 text-xs leading-relaxed mb-4">
+              <p class="text-xs text-slate-600 leading-relaxed mb-4">
                 Teknik perancah, bekisting, pembetonan, plesteran, dan keselamatan kerja lapangan konstruksi Jepang.
               </p>
             </div>
-            <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i>Teknik Konstruksi</span>
-              <span class="text-xs font-bold text-fuji-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Segera Hadir <i class="fa-solid fa-clock text-[10px]"></i></span>
-            </div>
-          </div>
-
-          <!-- 5. Perhotelan / Shukuhaku -->
-          <div class="bg-white/95 backdrop-blur-sm rounded-2xl p-5 border border-slate-200/90 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-purple-300">
-            <div>
-              <div class="w-11 h-11 rounded-xl bg-purple-100 text-purple-600 flex items-center justify-center text-lg mb-3.5 group-hover:scale-105 transition-transform">
-                <i class="fa-solid fa-hotel"></i>
-              </div>
-              <div class="flex items-center justify-between gap-2 mb-2">
-                <h3 class="text-base font-bold text-slate-800 group-hover:text-purple-600 transition-colors">Shukuhaku (宿泊業)</h3>
-                <span class="text-[10px] font-bold px-2.5 py-0.5 rounded-full bg-purple-50 text-purple-700 border border-purple-200 shrink-0 whitespace-nowrap">Perhotelan</span>
-              </div>
-              <p class="text-slate-600 text-xs leading-relaxed mb-4">
-                Penerimaan tamu depan (front desk), reservasi, housekeeping, etika omotenashi, dan komunikasi tamu hotel.
-              </p>
-            </div>
-            <div class="pt-3.5 border-t border-slate-100 flex items-center justify-between">
-              <span class="text-[11px] text-slate-400 font-medium"><i class="fa-solid fa-book-bookmark mr-1"></i>Omotenashi Service</span>
-              <span class="text-xs font-bold text-fuji-600 group-hover:translate-x-1 transition-transform inline-flex items-center gap-1">Segera Hadir <i class="fa-solid fa-clock text-[10px]"></i></span>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between w-full">
+              <span class="text-xs font-medium text-slate-400"><i class="fa-solid fa-book-bookmark mr-1"></i>Teknik Konstruksi</span>
+              <span class="text-xs font-bold text-slate-400">Segera Hadir</span>
             </div>
           </div>
 
