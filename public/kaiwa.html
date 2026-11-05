@@ -1619,8 +1619,16 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
 
       chatMainJp.className = 'text-emerald-200 font-medium text-sm sm:text-base leading-snug italic';
       chatMainJp.textContent = `"${userText}"`;
+      if (chatMainRomaji) chatMainRomaji.textContent = '';
       chatMainId.className = 'text-xs sm:text-sm text-slate-400';
-      chatMainId.textContent = 'Sensei dan Yuki sedang merespons...';
+      
+      let waitingText = 'Sato-san dan Yuki sedang merespons...';
+      if (activePartner === 'sato') {
+        waitingText = 'Sato-san sedang merespons...';
+      } else if (activePartner === 'yuki') {
+        waitingText = 'Yuki sedang merespons...';
+      }
+      chatMainId.textContent = waitingText;
 
       if (colUserStatus) colUserStatus.textContent = 'Sedang Ditanggapi...';
 
