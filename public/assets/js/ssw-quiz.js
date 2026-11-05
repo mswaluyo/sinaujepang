@@ -38,11 +38,14 @@
   // Inisialisasi data kuis
   async function init() {
     S.slug = getSlug();
+    var isKaigo = (S.slug.indexOf('kaigo') > -1);
+    S.passThreshold = isKaigo ? 60 : 65;
+
     var contentEl = document.getElementById('ssw-content');
     if (!contentEl) return;
 
     try {
-      var res = await fetch('/quizzes/' + S.slug + '/quiz-data.json');
+      var res = await fetch('/quizzes/' + S.slug + '/quiz-data.json?v=' + Date.now(), { cache: 'no-store' });
       if (!res.ok) throw new Error('Data kuis tidak ditemukan (' + res.status + ')');
       S.questions = await res.json();
       if (!Array.isArray(S.questions) || !S.questions.length) {
@@ -70,31 +73,50 @@
     }
   }
 
-  // Kerangka dasar halaman
+  // Timer pengerjaan ujian
+  function startTimer() {
+    if (S.timerInterval) clearInterval(S.timerInterval);
+    var timerEl = document.getElementById('ssw-timer-display');
+    S.timerInterval = setInterval(function () {
+      S.timerSec++;
+      var m = String(Math.floor(S.timerSec / 60)).padStart(2, '0');
+      var s = String(S.timerSec % 60).padStart(2, '0');
+      if (timerEl) timerEl.textContent = m + ':' + s;
+    }, 1000);
+  }
+
+  // Render wadah utama
   function renderBaseLayout() {
     var contentEl = document.getElementById('ssw-content');
-    var h = '';
+    var total = S.questions.length;
 
-    // Header info
-    h += '<div class="mb-5 bg-ssw-banner rounded-2xl p-5 text-white shadow-sm flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4">';
+    var h = '';
+    // Banner Ringkasan Sektor Ujian SSW
+    h += '<div class="bg-ssw-banner rounded-2xl p-5 sm:p-6 mb-6 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">';
     h += '  <div>';
-    h += '    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/20 text-white text-[11px] font-bold tracking-wide uppercase mb-1.5">';
-    h += '      <i class="fa-solid fa-briefcase text-emerald-200"></i> SSW Kejuruan';
+    h += '    <div class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-white/20 text-white text-[11px] font-bold uppercase tracking-wider mb-2">';
+    h += '      <i class="fa-solid fa-certificate"></i> Tokutei Ginou No. 1 Evaluation';
     h += '    </div>';
     h += '    <h1 class="text-xl sm:text-2xl font-black text-white" id="ssw-header-title">' + esc(S.sectorTitle) + '</h1>';
-    h += '    <p class="text-xs text-emerald-100 mt-0.5">Standar kelulusan evaluasi keahlian SSW: minimal 65% jawaban benar.</p>';
+    h += '    <p class="text-xs text-emerald-100 mt-0.5">Standar kelulusan evaluasi keahlian SSW: minimal ' + S.passThreshold + '% jawaban benar.</p>';
     h += '  </div>';
-    h += '  <div class="text-right shrink-0 bg-white/10 px-4 py-2.5 rounded-xl border border-white/15">';
-    h += '    <div class="text-[11px] text-emerald-100 font-medium">Total Soal</div>';
-    h += '    <div class="text-lg font-black text-white">' + S.questions.length + ' Butir</div>';
+    h += '  <div class="flex items-center gap-2 self-start sm:self-auto bg-white/10 backdrop-blur-md px-4 py-2 rounded-xl border border-white/20">';
+    h += '    <i class="fa-solid fa-list-check text-white text-lg"></i>';
+    h += '    <div class="text-left">';
+    h += '      <div class="text-[10px] text-emerald-100 font-bold uppercase">Total Soal</div>';
+    h += '      <div class="text-base font-black text-white leading-tight">' + total + ' Butir</div>';
+    h += '    </div>';
     h += '  </div>';
     h += '</div>';
 
-    // Bar Navigasi nomor soal
-    h += '<div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 mb-5">';
-    h += '  <div class="flex items-center justify-between mb-3 text-xs font-bold text-slate-700">';
-    h += '    <span id="ssw-pos">Nomor 1 dari ' + S.questions.length + '</span>';
-    h += '    <span id="ssw-progress-txt" class="text-emerald-700">0 / ' + S.questions.length + ' terjawab</span>';
+    // Panel Indikator Navigasi Soal (Nomor & Progress)
+    h += '<div class="bg-white rounded-2xl p-4 sm:p-5 shadow-sm border border-slate-200 mb-5">';
+    h += '  <div class="flex flex-wrap items-center justify-between gap-2 mb-3">';
+    h += '    <div class="flex items-center gap-2">';
+    h += '      <span id="ssw-pos" class="font-extrabold text-slate-800 text-sm">Nomor 1 dari ' + total + '</span>';
+    h += '      <span id="ssw-answered-count" class="text-xs text-slate-500 font-medium">(0 Terjawab)</span>';
+    h += '    </div>';
+    h += '    <div class="text-xs font-bold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-lg border border-emerald-200" id="ssw-pct-badge">0% Selesai</div>';
     h += '  </div>';
     h += '  <div class="w-full bg-slate-100 h-2 rounded-full overflow-hidden mb-3.5">';
     h += '    <div id="ssw-progress-bar" class="bg-emerald-500 h-full w-0 transition-all duration-300"></div>';
@@ -221,92 +243,85 @@
     }
   }
 
-  // Update daftar nomor navigasi
-  function renderNavNumbers() {
-    var nav = document.getElementById('ssw-nav-numbers');
-    if (!nav) return;
-
-    var h = '';
-    S.questions.forEach(function (q, idx) {
-      var num = idx + 1;
-      var isCur = (idx === S.cur);
-      var isLocked = !!S.locked[q.no];
-      var isCorrect = isLocked && (S.picked[q.no] === q.answer);
-
-      var btnClass = 'w-9 h-9 rounded-xl text-xs font-bold transition-all flex items-center justify-center ';
-      if (isCur) {
-        btnClass += 'ring-2 ring-emerald-500 bg-emerald-600 text-white font-black scale-105';
-      } else if (isLocked) {
-        btnClass += isCorrect ? 'bg-emerald-100 text-emerald-800 border border-emerald-300' : 'bg-rose-100 text-rose-800 border border-rose-300';
-      } else if (S.picked[q.no] != null) {
-        btnClass += 'bg-amber-100 text-amber-800 border border-amber-300';
-      } else {
-        btnClass += 'bg-slate-100 text-slate-600 hover:bg-slate-200 border border-slate-200';
-      }
-
-      h += '<button onclick="window.SSWModule.jumpTo(' + idx + ')" class="' + btnClass + '" title="Nomor ' + num + '">' + num + '</button>';
-    });
-
-    nav.innerHTML = h;
-  }
-
-  function startTimer() {
-    if (S.timerInterval) clearInterval(S.timerInterval);
-    S.timerInterval = setInterval(function () {
-      S.timerSec++;
-      var m = String(Math.floor(S.timerSec / 60)).padStart(2, '0');
-      var s = String(S.timerSec % 60).padStart(2, '0');
-      var tEl = document.getElementById('ssw-timer-display');
-      if (tEl) tEl.textContent = m + ':' + s;
-    }, 1000);
-  }
-
-  function updateProgress() {
-    var lockedCount = Object.keys(S.locked).length;
-    var total = S.questions.length;
-    var pct = total ? Math.round(lockedCount / total * 100) : 0;
-
-    var bar = document.getElementById('ssw-progress-bar');
-    var topBar = document.getElementById('ssw-top-progress');
-    var txt = document.getElementById('ssw-progress-txt');
-    if (bar) bar.style.width = pct + '%';
-    if (topBar) topBar.style.width = pct + '%';
-    if (txt) txt.textContent = lockedCount + ' / ' + total + ' terjawab (' + pct + '%)';
-  }
-
-  function pick(optIdx) {
+  // Pilih jawaban (auto-confirm seperti format JFT)
+  function pick(idx) {
     var q = S.questions[S.cur];
     if (!q || S.locked[q.no]) return;
-    
-    // Otomatis simpan & kunci pilihan (seperti metode JFT)
-    S.picked[q.no] = optIdx;
+
+    S.picked[q.no] = idx;
     S.locked[q.no] = true;
-    
-    renderQuestion();
+
     saveAttemptSilently(false);
-
-    // Auto-scroll halus ke kotak penjelasan setelah menjawab
-    setTimeout(function () {
-      var fb = document.querySelector('#ssw-card .rounded-xl.border');
-      if (fb && fb.scrollIntoView) {
-        fb.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-      }
-    }, 60);
-  }
-
-  function jumpTo(idx) {
-    if (idx < 0 || idx >= S.questions.length) return;
-    S.cur = idx;
     renderQuestion();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
+  // Navigasi soal
   function nextQuestion() {
-    if (S.cur < S.questions.length - 1) jumpTo(S.cur + 1);
+    if (S.cur < S.questions.length - 1) {
+      S.cur++;
+      renderQuestion();
+      window.scrollTo({ top: 120, behavior: 'smooth' });
+    }
   }
 
   function prevQuestion() {
-    if (S.cur > 0) jumpTo(S.cur - 1);
+    if (S.cur > 0) {
+      S.cur--;
+      renderQuestion();
+      window.scrollTo({ top: 120, behavior: 'smooth' });
+    }
+  }
+
+  function jumpTo(idx) {
+    if (idx >= 0 && idx < S.questions.length) {
+      S.cur = idx;
+      renderQuestion();
+      window.scrollTo({ top: 120, behavior: 'smooth' });
+    }
+  }
+
+  // Update progress bar
+  function updateProgress() {
+    var total = S.questions.length;
+    var answered = Object.keys(S.locked).length;
+    var pct = total ? Math.round(answered / total * 100) : 0;
+
+    var pBar = document.getElementById('ssw-progress-bar');
+    var topPBar = document.getElementById('ssw-top-progress');
+    var badge = document.getElementById('ssw-pct-badge');
+    var ansCount = document.getElementById('ssw-answered-count');
+
+    if (pBar) pBar.style.width = pct + '%';
+    if (topPBar) topPBar.style.width = pct + '%';
+    if (badge) badge.textContent = pct + '% Selesai';
+    if (ansCount) ansCount.textContent = '(' + answered + ' Terjawab)';
+  }
+
+  // Render kisi nomor soal
+  function renderNavNumbers() {
+    var navEl = document.getElementById('ssw-nav-numbers');
+    if (!navEl) return;
+
+    var h = '';
+    S.questions.forEach(function (q, idx) {
+      var isCur = (idx === S.cur);
+      var isLock = !!S.locked[q.no];
+      var isCorrect = isLock && (S.picked[q.no] === q.answer);
+
+      var cls = 'w-8 h-8 rounded-lg text-xs font-bold flex items-center justify-center transition-all ';
+      if (isCur) {
+        cls += 'ring-2 ring-emerald-500 font-extrabold ';
+      }
+      if (isLock) {
+        cls += isCorrect ? 'bg-emerald-600 text-white shadow-xs' : 'bg-rose-500 text-white shadow-xs';
+      } else {
+        cls += 'bg-slate-100 hover:bg-slate-200 text-slate-700';
+      }
+
+      h += '<button onclick="window.SSWModule.jumpTo(' + idx + ')" class="' + cls + '">' + (idx + 1) + '</button>';
+    });
+
+    navEl.innerHTML = h;
   }
 
   // Kalkulasi Skor
@@ -363,7 +378,9 @@
       if (done && window.fujiScore && window.fujiScore.save) {
         window.fujiScore.save(S.slug, data).catch(function () {});
       }
-    } catch (e) {}
+    } catch (e) {
+      console.warn('Gagal menyimpan riwayat kuis SSW:', e);
+    }
   }
 
   // HTML Modal Hasil SSW
@@ -372,16 +389,16 @@
     h += '<div id="ssw-result-modal" class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 hidden items-center justify-center p-4">';
     h += '  <div class="bg-white rounded-3xl max-w-md w-full p-6 shadow-2xl border border-slate-100 relative text-center">';
     h += '    <button onclick="window.SSWModule.closeModal()" class="absolute top-4 right-4 w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-500 flex items-center justify-center transition"><i class="fa-solid fa-xmark"></i></button>';
-    h += '    <div class="w-28 h-28 mx-auto rounded-full ssw-score-circle flex flex-col items-center justify-center mb-3">';
-    h += '      <span id="ssw-score-num" class="text-3xl font-black text-white">0%</span>';
-    h += '      <span id="ssw-score-correct" class="text-[10px] text-emerald-100 font-bold">0 / 0 Benar</span>';
+    h += '    <div class="w-28 h-28 mx-auto rounded-full ssw-score-circle flex flex-col items-center justify-center mb-3" style="background:linear-gradient(135deg,#059669 0%,#0d9488 100%) !important;color:#ffffff !important;border:4px solid #d1fae5 !important;box-shadow:0 10px 15px -3px rgba(5,150,105,0.3) !important;">';
+    h += '      <span id="ssw-score-num" class="text-3xl font-black text-white" style="color:#ffffff !important;display:block;">0%</span>';
+    h += '      <span id="ssw-score-correct" class="text-[10px] text-white font-bold" style="color:#d1fae5 !important;display:block;">0 / 0 Benar</span>';
     h += '    </div>';
     h += '    <h3 id="ssw-status-title" class="text-xl font-black text-slate-800">Evaluasi Selesai</h3>';
-    h += '    <p id="ssw-status-desc" class="text-xs text-slate-500 mt-1 mb-5">Standar kelulusan ujian keahlian SSW minimal 65%.</p>';
+    h += '    <p id="ssw-status-desc" class="text-xs text-slate-500 mt-1 mb-5">Standar kelulusan ujian keahlian SSW minimal ' + S.passThreshold + '%.</p>';
     h += '    <div class="space-y-2 mb-6 text-left">';
     h += '      <div class="flex justify-between items-center p-3 rounded-xl bg-emerald-50 border border-emerald-100 text-xs">';
     h += '        <span class="font-bold text-emerald-900"><i class="fa-solid fa-award mr-1.5 text-emerald-600"></i> Standar Kelulusan SSW</span>';
-    h += '        <span class="font-black text-emerald-700">Min. 65%</span>';
+    h += '        <span id="ssw-pass-mark-label" class="font-black text-emerald-700">Min. ' + S.passThreshold + '%</span>';
     h += '      </div>';
     h += '    </div>';
     h += '    <div class="space-y-2">';
@@ -400,20 +417,28 @@
     var sc = calcScore();
     saveAttemptSilently(true);
 
-    document.getElementById('ssw-score-num').textContent = sc.skor + '%';
-    document.getElementById('ssw-score-correct').textContent = sc.benar + ' / ' + sc.total + ' Benar';
+    var scoreNumEl = document.getElementById('ssw-score-num');
+    var scoreCorrEl = document.getElementById('ssw-score-correct');
+    if (scoreNumEl) scoreNumEl.textContent = sc.skor + '%';
+    if (scoreCorrEl) scoreCorrEl.textContent = sc.benar + ' / ' + sc.total + ' Benar';
 
     var st = document.getElementById('ssw-status-title');
     var sd = document.getElementById('ssw-status-desc');
+    var pml = document.getElementById('ssw-pass-mark-label');
+    if (pml) pml.textContent = 'Min. ' + S.passThreshold + '%';
 
     if (sc.pass) {
-      st.textContent = 'LULUS (MIN. 65%)';
-      st.className = 'text-xl font-black text-emerald-600';
-      sd.textContent = 'Selamat! Anda telah memenuhi kriteria nilai kelulusan keahlian SSW.';
+      if (st) {
+        st.textContent = 'LULUS (MIN. ' + S.passThreshold + '%)';
+        st.className = 'text-xl font-black text-emerald-600';
+      }
+      if (sd) sd.textContent = 'Selamat! Anda telah memenuhi kriteria nilai kelulusan keahlian SSW.';
     } else {
-      st.textContent = 'BELUM LULUS (<65%)';
-      st.className = 'text-xl font-black text-rose-600';
-      sd.textContent = 'Skor masih di bawah 65%. Silakan pelajari kembali materi dan coba lagi.';
+      if (st) {
+        st.textContent = 'BELUM LULUS (<' + S.passThreshold + '%)';
+        st.className = 'text-xl font-black text-rose-600';
+      }
+      if (sd) sd.textContent = 'Skor masih di bawah ' + S.passThreshold + '%. Silakan pelajari kembali materi dan coba lagi.';
     }
 
     var btnDetail = document.getElementById('ssw-btn-detail');
@@ -435,29 +460,31 @@
   }
 
   function resetQuiz() {
+    if (!confirm('Apakah Anda yakin ingin mengulang ujian ini dari awal?')) return;
+    S.cur = 0;
     S.picked = {};
     S.locked = {};
-    S.cur = 0;
     S.timerSec = 0;
-    var tEl = document.getElementById('ssw-timer-display');
-    if (tEl) tEl.textContent = '00:00';
     closeModal();
     renderQuestion();
-    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
-  // Ekspos API modul ke window
+  // Ekspor API modul ke window
   window.SSWModule = {
     init: init,
     pick: pick,
-    jumpTo: jumpTo,
     nextQuestion: nextQuestion,
     prevQuestion: prevQuestion,
+    jumpTo: jumpTo,
     openResultModal: openResultModal,
     closeModal: closeModal,
     resetQuiz: resetQuiz
   };
 
-  document.addEventListener('DOMContentLoaded', init);
+  // Jalankan saat DOM siap
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
 })();
-
