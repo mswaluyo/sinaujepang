@@ -25,43 +25,53 @@
     ],
     "answer": 1,
     "kunci_id": "足底(そくてい)",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **足底(そくてい)**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **足底(そくてい)**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(足(あし)の甲(こう))",
-      "(足底(そくてい))",
-      "(膝(ひざ))",
-      "(手(て)のひら)"
+      "(足の甲) ungkapan/istilah (足の甲)",
+      "(sokutei) telapak kaki",
+      "(hiza) lutut",
+      "(手のひら) ungkapan/istilah (手のひら)"
     ],
     "opt_detail": [
       {
-        "kana": "足(あし)の甲(こう)",
-        "rom": "",
-        "arti": "足(あし)の甲(こう)",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "あし",
+        "rom": "足の甲",
+        "arti": "ungkapan/istilah (足の甲)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "足底(そくてい)",
-        "rom": "",
-        "arti": "足底(そくてい)",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "そくてい",
+        "rom": "sokutei",
+        "arti": "telapak kaki",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "膝(ひざ)",
-        "rom": "",
-        "arti": "膝(ひざ)",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "ひざ",
+        "rom": "hiza",
+        "arti": "lutut",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "手(て)のひら",
-        "rom": "",
-        "arti": "手(て)のひら",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "て",
+        "rom": "手のひら",
+        "arti": "ungkapan/istilah (手のひら)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "gakka",
-    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 1 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **足底(そくてい)** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(足の甲) ungkapan/istilah (足の甲), (sokutei) telapak kaki, (hiza) lutut, (手のひら) ungkapan/istilah (手のひら)"
+      }
+    ]
   },
   {
     "no": 2,
@@ -89,43 +99,53 @@
     ],
     "answer": 0,
     "kunci_id": "確認(かくにん)します",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **確認(かくにん)します**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **確認(かくにん)します**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(確認(かくにん)します)",
-      "(食(た)べます)",
-      "(寝(ね)ます)",
-      "(走(はし)ります)"
+      "(確認します) ungkapan/istilah (確認します)",
+      "(食べます) ungkapan/istilah (食べます)",
+      "(寝ます) ungkapan/istilah (寝ます)",
+      "(走ります) ungkapan/istilah (走ります)"
     ],
     "opt_detail": [
       {
-        "kana": "確認(かくにん)します",
-        "rom": "",
-        "arti": "確認(かくにん)します",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "かくにん",
+        "rom": "確認します",
+        "arti": "ungkapan/istilah (確認します)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "食(た)べます",
-        "rom": "",
-        "arti": "食(た)べます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "た",
+        "rom": "食べます",
+        "arti": "ungkapan/istilah (食べます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "寝(ね)ます",
-        "rom": "",
-        "arti": "寝(ね)ます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "ね",
+        "rom": "寝ます",
+        "arti": "ungkapan/istilah (寝ます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "走(はし)ります",
-        "rom": "",
-        "arti": "走(はし)ります",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "はし",
+        "rom": "走ります",
+        "arti": "ungkapan/istilah (走ります)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "gakka",
-    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 2 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **確認(かくにん)します** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(確認します) ungkapan/istilah (確認します), (食べます) ungkapan/istilah (食べます), (寝ます) ungkapan/istilah (寝ます), (走ります) ungkapan/istilah (走ります)"
+      }
+    ]
   },
   {
     "no": 3,
@@ -153,43 +173,53 @@
     ],
     "answer": 1,
     "kunci_id": "歯(は)みがき",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **歯(は)みがき**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **歯(は)みがき**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(入浴(にゅうよく))",
-      "(歯(は)みがき)",
-      "(食事(しょくじ))",
-      "(移動(いどう))"
+      "(nyuuyoku) mandi berendam",
+      "(歯みがき) ungkapan/istilah (歯みがき)",
+      "(shokuji) makan / makanan",
+      "(idou) bergerak / mobilitas"
     ],
     "opt_detail": [
       {
-        "kana": "入浴(にゅうよく)",
-        "rom": "",
-        "arti": "入浴(にゅうよく)",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "にゅうよく",
+        "rom": "nyuuyoku",
+        "arti": "mandi berendam",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "歯(は)みがき",
-        "rom": "",
-        "arti": "歯(は)みがき",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "は",
+        "rom": "歯みがき",
+        "arti": "ungkapan/istilah (歯みがき)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "食事(しょくじ)",
-        "rom": "",
-        "arti": "食事(しょくじ)",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "しょくじ",
+        "rom": "shokuji",
+        "arti": "makan / makanan",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "移動(いどう)",
-        "rom": "",
-        "arti": "移動(いどう)",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "いどう",
+        "rom": "idou",
+        "arti": "bergerak / mobilitas",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "anzen",
-    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 3 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **歯(は)みがき** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(nyuuyoku) mandi berendam, (歯みがき) ungkapan/istilah (歯みがき), (shokuji) makan / makanan, (idou) bergerak / mobilitas"
+      }
+    ]
   },
   {
     "no": 4,
@@ -217,43 +247,53 @@
     ],
     "answer": 1,
     "kunci_id": "濡(ぬ)れています",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **濡(ぬ)れています**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **濡(ぬ)れています**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(乾(かわ)いています)",
-      "(濡(ぬ)れています)",
-      "(きれいです)",
-      "(暖(あたた)かいです)"
+      "(乾いています) ungkapan/istilah (乾いています)",
+      "(濡れています) ungkapan/istilah (濡れています)",
+      "(きれいです) ungkapan/istilah (きれいです)",
+      "(暖かいです) ungkapan/istilah (暖かいです)"
     ],
     "opt_detail": [
       {
-        "kana": "乾(かわ)いています",
-        "rom": "",
-        "arti": "乾(かわ)いています",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "かわ",
+        "rom": "乾いています",
+        "arti": "ungkapan/istilah (乾いています)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "濡(ぬ)れています",
-        "rom": "",
-        "arti": "濡(ぬ)れています",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "ぬ",
+        "rom": "濡れています",
+        "arti": "ungkapan/istilah (濡れています)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
         "kana": "きれいです",
-        "rom": "",
-        "arti": "きれいです",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "きれいです",
+        "arti": "ungkapan/istilah (きれいです)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "暖(あたた)かいです",
-        "rom": "",
-        "arti": "暖(あたた)かいです",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "あたた",
+        "rom": "暖かいです",
+        "arti": "ungkapan/istilah (暖かいです)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "gakka",
-    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 4 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **濡(ぬ)れています** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(乾いています) ungkapan/istilah (乾いています), (濡れています) ungkapan/istilah (濡れています), (きれいです) ungkapan/istilah (きれいです), (暖かいです) ungkapan/istilah (暖かいです)"
+      }
+    ]
   },
   {
     "no": 5,
@@ -281,43 +321,53 @@
     ],
     "answer": 1,
     "kunci_id": "鈴木(すずき)さんは2回(にかい) 入院(にゅうい ん)しました",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **鈴木(すずき)さんは2回(にかい) 入院(にゅうい ん)しました**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **鈴木(すずき)さんは2回(にかい) 入院(にゅうい ん)しました**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(鈴木 (すずき)さん は 2ヶ月間 (にかげつかん) 入院 (にゅういん)しました)",
-      "(鈴木(すずき)さんは2回(にかい) 入院(にゅうい ん)しました)",
-      "(鈴木(すずき)さんは入院(にゅういん)していませ ん)",
-      "(鈴木(すずき)さんはずっと病院 (びょういん)に います)"
+      "(鈴木さん は 2ヶ月間 入院しました) ungkapan/istilah (鈴木さん は 2ヶ月間 入院しました)",
+      "(鈴木さんは2回 入院しました) ungkapan/istilah (鈴木さんは2回 入院しました)",
+      "(鈴木さんは入院していませ ん) ungkapan/istilah (鈴木さんは入院していませ ん)",
+      "(鈴木さんはずっと病院に います) ungkapan/istilah (鈴木さんはずっと病院に います)"
     ],
     "opt_detail": [
       {
-        "kana": "鈴木 (すずき)さん は 2ヶ月間 (にかげつかん) 入院 (にゅういん)しました",
-        "rom": "",
-        "arti": "鈴木 (すずき)さん は 2ヶ月間 (にかげつかん) 入院 (にゅういん)しました",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "鈴木さん は 2ヶ月間 入院しました",
+        "arti": "ungkapan/istilah (鈴木さん は 2ヶ月間 入院しました)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "鈴木(すずき)さんは2回(にかい) 入院(にゅうい ん)しました",
-        "rom": "",
-        "arti": "鈴木(すずき)さんは2回(にかい) 入院(にゅうい ん)しました",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "鈴木さんは2回 入院しました",
+        "arti": "ungkapan/istilah (鈴木さんは2回 入院しました)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "鈴木(すずき)さんは入院(にゅういん)していませ ん",
-        "rom": "",
-        "arti": "鈴木(すずき)さんは入院(にゅういん)していませ ん",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "鈴木さんは入院していませ ん",
+        "arti": "ungkapan/istilah (鈴木さんは入院していませ ん)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "鈴木(すずき)さんはずっと病院 (びょういん)に います",
-        "rom": "",
-        "arti": "鈴木(すずき)さんはずっと病院 (びょういん)に います",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "鈴木さんはずっと病院に います",
+        "arti": "ungkapan/istilah (鈴木さんはずっと病院に います)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "gakka",
-    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 5 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **鈴木(すずき)さんは2回(にかい) 入院(にゅうい ん)しました** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(鈴木さん は 2ヶ月間 入院しました) ungkapan/istilah (鈴木さん は 2ヶ月間 入院しました), (鈴木さんは2回 入院しました) ungkapan/istilah (鈴木さんは2回 入院しました), (鈴木さんは入院していませ ん) ungkapan/istilah (鈴木さんは入院していませ ん), (鈴木さんはずっと病院に います) ungkapan/istilah (鈴木さんはずっと病院に います)"
+      }
+    ]
   },
   {
     "no": 6,
@@ -345,43 +395,53 @@
     ],
     "answer": 0,
     "kunci_id": "鈴木(すずき)さんに確認(かくにん)します",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **鈴木(すずき)さんに確認(かくにん)します**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **鈴木(すずき)さんに確認(かくにん)します**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(鈴木(すずき)さんに確認(かくにん)します)",
-      "(鈴木(すずき)さんは食(た)べます)",
-      "(鈴木(すずき)さんは寝(ね)ます)",
-      "(鈴木(すずき)さんは帰(かえ)ります)"
+      "(鈴木さんに確認します) ungkapan/istilah (鈴木さんに確認します)",
+      "(鈴木さんは食べます) ungkapan/istilah (鈴木さんは食べます)",
+      "(鈴木さんは寝ます) ungkapan/istilah (鈴木さんは寝ます)",
+      "(鈴木さんは帰ります) ungkapan/istilah (鈴木さんは帰ります)"
     ],
     "opt_detail": [
       {
-        "kana": "鈴木(すずき)さんに確認(かくにん)します",
-        "rom": "",
-        "arti": "鈴木(すずき)さんに確認(かくにん)します",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "鈴木さんに確認します",
+        "arti": "ungkapan/istilah (鈴木さんに確認します)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "鈴木(すずき)さんは食(た)べます",
-        "rom": "",
-        "arti": "鈴木(すずき)さんは食(た)べます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "鈴木さんは食べます",
+        "arti": "ungkapan/istilah (鈴木さんは食べます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "鈴木(すずき)さんは寝(ね)ます",
-        "rom": "",
-        "arti": "鈴木(すずき)さんは寝(ね)ます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "鈴木さんは寝ます",
+        "arti": "ungkapan/istilah (鈴木さんは寝ます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "鈴木(すずき)さんは帰(かえ)ります",
-        "rom": "",
-        "arti": "鈴木(すずき)さんは帰(かえ)ります",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "鈴木さんは帰ります",
+        "arti": "ungkapan/istilah (鈴木さんは帰ります)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "anzen",
-    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 6 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **鈴木(すずき)さんに確認(かくにん)します** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(鈴木さんに確認します) ungkapan/istilah (鈴木さんに確認します), (鈴木さんは食べます) ungkapan/istilah (鈴木さんは食べます), (鈴木さんは寝ます) ungkapan/istilah (鈴木さんは寝ます), (鈴木さんは帰ります) ungkapan/istilah (鈴木さんは帰ります)"
+      }
+    ]
   },
   {
     "no": 7,
@@ -409,43 +469,53 @@
     ],
     "answer": 0,
     "kunci_id": "トイレに行(い)ったら、お茶(ちゃ)を飲(の)み ます",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **トイレに行(い)ったら、お茶(ちゃ)を飲(の)み ます**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **トイレに行(い)ったら、お茶(ちゃ)を飲(の)み ます**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(トイレに行(い)ったら、お茶(ちゃ)を飲(の)み ます)",
-      "(すぐに帰(かえ)ります)",
-      "(食(た)べます)",
-      "(寝(ね)ます)"
+      "(トイレに行ったら、お茶を飲み ます) ungkapan/istilah (トイレに行ったら、お茶を飲み ます)",
+      "(すぐに帰ります) ungkapan/istilah (すぐに帰ります)",
+      "(食べます) ungkapan/istilah (食べます)",
+      "(寝ます) ungkapan/istilah (寝ます)"
     ],
     "opt_detail": [
       {
-        "kana": "トイレに行(い)ったら、お茶(ちゃ)を飲(の)み ます",
-        "rom": "",
-        "arti": "トイレに行(い)ったら、お茶(ちゃ)を飲(の)み ます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "い",
+        "rom": "トイレに行ったら、お茶を飲み ます",
+        "arti": "ungkapan/istilah (トイレに行ったら、お茶を飲み ます)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "すぐに帰(かえ)ります",
-        "rom": "",
-        "arti": "すぐに帰(かえ)ります",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "かえ",
+        "rom": "すぐに帰ります",
+        "arti": "ungkapan/istilah (すぐに帰ります)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "食(た)べます",
-        "rom": "",
-        "arti": "食(た)べます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "た",
+        "rom": "食べます",
+        "arti": "ungkapan/istilah (食べます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "寝(ね)ます",
-        "rom": "",
-        "arti": "寝(ね)ます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "ね",
+        "rom": "寝ます",
+        "arti": "ungkapan/istilah (寝ます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "gakka",
-    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 7 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **トイレに行(い)ったら、お茶(ちゃ)を飲(の)み ます** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(トイレに行ったら、お茶を飲み ます) ungkapan/istilah (トイレに行ったら、お茶を飲み ます), (すぐに帰ります) ungkapan/istilah (すぐに帰ります), (食べます) ungkapan/istilah (食べます), (寝ます) ungkapan/istilah (寝ます)"
+      }
+    ]
   },
   {
     "no": 8,
@@ -473,43 +543,53 @@
     ],
     "answer": 3,
     "kunci_id": "佐藤(さとう)さんは自分(じぶん)で髪(かみ)を とかせます",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **佐藤(さとう)さんは自分(じぶん)で髪(かみ)を とかせます**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **佐藤(さとう)さんは自分(じぶん)で髪(かみ)を とかせます**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(佐藤(さとう)さんは寝(ね)ます)",
-      "(佐藤(さとう)さんは歩(ある)けません)",
-      "(佐藤(さとう)さんは食(た)べません)",
-      "(佐藤(さとう)さんは自分(じぶん)で髪(かみ)を とかせます)"
+      "(佐藤さんは寝ます) ungkapan/istilah (佐藤さんは寝ます)",
+      "(佐藤さんは歩けません) ungkapan/istilah (佐藤さんは歩けません)",
+      "(佐藤さんは食べません) ungkapan/istilah (佐藤さんは食べません)",
+      "(佐藤さんは自分で髪を とかせます) ungkapan/istilah (佐藤さんは自分で髪を とかせます)"
     ],
     "opt_detail": [
       {
-        "kana": "佐藤(さとう)さんは寝(ね)ます",
-        "rom": "",
-        "arti": "佐藤(さとう)さんは寝(ね)ます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "さとう",
+        "rom": "佐藤さんは寝ます",
+        "arti": "ungkapan/istilah (佐藤さんは寝ます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "佐藤(さとう)さんは歩(ある)けません",
-        "rom": "",
-        "arti": "佐藤(さとう)さんは歩(ある)けません",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "さとう",
+        "rom": "佐藤さんは歩けません",
+        "arti": "ungkapan/istilah (佐藤さんは歩けません)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "佐藤(さとう)さんは食(た)べません",
-        "rom": "",
-        "arti": "佐藤(さとう)さんは食(た)べません",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "さとう",
+        "rom": "佐藤さんは食べません",
+        "arti": "ungkapan/istilah (佐藤さんは食べません)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "佐藤(さとう)さんは自分(じぶん)で髪(かみ)を とかせます",
-        "rom": "",
-        "arti": "佐藤(さとう)さんは自分(じぶん)で髪(かみ)を とかせます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "さとう",
+        "rom": "佐藤さんは自分で髪を とかせます",
+        "arti": "ungkapan/istilah (佐藤さんは自分で髪を とかせます)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "gakka",
-    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 8 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **佐藤(さとう)さんは自分(じぶん)で髪(かみ)を とかせます** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(佐藤さんは寝ます) ungkapan/istilah (佐藤さんは寝ます), (佐藤さんは歩けません) ungkapan/istilah (佐藤さんは歩けません), (佐藤さんは食べません) ungkapan/istilah (佐藤さんは食べません), (佐藤さんは自分で髪を とかせます) ungkapan/istilah (佐藤さんは自分で髪を とかせます)"
+      }
+    ]
   },
   {
     "no": 9,
@@ -537,43 +617,53 @@
     ],
     "answer": 1,
     "kunci_id": "鈴木(すずき)さんはトイレで事故(じこ)がありました。",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **鈴木(すずき)さんはトイレで事故(じこ)がありました。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **鈴木(すずき)さんはトイレで事故(じこ)がありました。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(鈴木(すずき)さんは食事(しょくし)をしまし た。)",
-      "(鈴木(すずき)さんはトイレで事故(じこ)がありました。)",
-      "(鈴木(すずき)さんは入浴(にゅうよく)しました。)",
-      "(鈴木(すずき)さんは散歩(さんぼ)しました。)"
+      "(shokuji) makan / makanan",
+      "(鈴木さんはトイレで事故がありました。) ungkapan/istilah (鈴木さんはトイレで事故がありました。)",
+      "(nyuuyoku) mandi berendam",
+      "(鈴木さんは散歩しました。) ungkapan/istilah (鈴木さんは散歩しました。)"
     ],
     "opt_detail": [
       {
-        "kana": "鈴木(すずき)さんは食事(しょくし)をしまし た。",
-        "rom": "",
-        "arti": "鈴木(すずき)さんは食事(しょくし)をしまし た。",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "shokuji",
+        "arti": "makan / makanan",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "鈴木(すずき)さんはトイレで事故(じこ)がありました。",
-        "rom": "",
-        "arti": "鈴木(すずき)さんはトイレで事故(じこ)がありました。",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "鈴木さんはトイレで事故がありました。",
+        "arti": "ungkapan/istilah (鈴木さんはトイレで事故がありました。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "鈴木(すずき)さんは入浴(にゅうよく)しました。",
-        "rom": "",
-        "arti": "鈴木(すずき)さんは入浴(にゅうよく)しました。",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "nyuuyoku",
+        "arti": "mandi berendam",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "鈴木(すずき)さんは散歩(さんぼ)しました。",
-        "rom": "",
-        "arti": "鈴木(すずき)さんは散歩(さんぼ)しました。",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "kana": "すずき",
+        "rom": "鈴木さんは散歩しました。",
+        "arti": "ungkapan/istilah (鈴木さんは散歩しました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "jitsugi",
-    "category_label": "3. Documents of care (介護の記録・文書の読み取り)"
+    "category_label": "3. Documents of care (介護の記録・文書の読み取り)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 9 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **鈴木(すずき)さんはトイレで事故(じこ)がありました。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(shokuji) makan / makanan, (鈴木さんはトイレで事故がありました。) ungkapan/istilah (鈴木さんはトイレで事故がありました。), (nyuuyoku) mandi berendam, (鈴木さんは散歩しました。) ungkapan/istilah (鈴木さんは散歩しました。)"
+      }
+    ]
   },
   {
     "no": 10,
@@ -601,43 +691,53 @@
     ],
     "answer": 0,
     "kunci_id": "端坐位（たんざい）",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **端坐位（たんざい）**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **端坐位（たんざい）**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(端坐位（たんざい）)",
-      "(寝（ね）たまま)",
-      "(うつぶせ)",
-      "(立位（りつい）)"
+      "(端坐位（たんざい）) ungkapan/istilah (端坐位（たんざい）)",
+      "(寝（ね）たまま) ungkapan/istilah (寝（ね）たまま)",
+      "(うつぶせ) ungkapan/istilah (うつぶせ)",
+      "(立位（りつい）) ungkapan/istilah (立位（りつい）)"
     ],
     "opt_detail": [
       {
         "kana": "端坐位（たんざい）",
-        "rom": "",
-        "arti": "端坐位（たんざい）",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "端坐位（たんざい）",
+        "arti": "ungkapan/istilah (端坐位（たんざい）)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
         "kana": "寝（ね）たまま",
-        "rom": "",
-        "arti": "寝（ね）たまま",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "寝（ね）たまま",
+        "arti": "ungkapan/istilah (寝（ね）たまま)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "うつぶせ",
-        "rom": "",
-        "arti": "うつぶせ",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "うつぶせ",
+        "arti": "ungkapan/istilah (うつぶせ)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "立位（りつい）",
-        "rom": "",
-        "arti": "立位（りつい）",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "立位（りつい）",
+        "arti": "ungkapan/istilah (立位（りつい）)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "gakka",
-    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 10 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **端坐位（たんざい）** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(端坐位（たんざい）) ungkapan/istilah (端坐位（たんざい）), (寝（ね）たまま) ungkapan/istilah (寝（ね）たまま), (うつぶせ) ungkapan/istilah (うつぶせ), (立位（りつい）) ungkapan/istilah (立位（りつい）)"
+      }
+    ]
   },
   {
     "no": 11,
@@ -665,43 +765,53 @@
     ],
     "answer": 2,
     "kunci_id": "下（お）ろします",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **下（お）ろします**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **下（お）ろします**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(上（あ）げます)",
-      "(しまいます)",
-      "(下（お）ろします)",
-      "(食（た）べます)"
+      "(上（あ）げます) ungkapan/istilah (上（あ）げます)",
+      "(しまいます) ungkapan/istilah (しまいます)",
+      "(下（お）ろします) ungkapan/istilah (下（お）ろします)",
+      "(食（た）べます) ungkapan/istilah (食（た）べます)"
     ],
     "opt_detail": [
       {
         "kana": "上（あ）げます",
-        "rom": "",
-        "arti": "上（あ）げます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "上（あ）げます",
+        "arti": "ungkapan/istilah (上（あ）げます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "しまいます",
-        "rom": "",
-        "arti": "しまいます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "しまいます",
+        "arti": "ungkapan/istilah (しまいます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "下（お）ろします",
-        "rom": "",
-        "arti": "下（お）ろします",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "下（お）ろします",
+        "arti": "ungkapan/istilah (下（お）ろします)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
         "kana": "食（た）べます",
-        "rom": "",
-        "arti": "食（た）べます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "食（た）べます",
+        "arti": "ungkapan/istilah (食（た）べます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "gakka",
-    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 11 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **下（お）ろします** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(上（あ）げます) ungkapan/istilah (上（あ）げます), (しまいます) ungkapan/istilah (しまいます), (下（お）ろします) ungkapan/istilah (下（お）ろします), (食（た）べます) ungkapan/istilah (食（た）べます)"
+      }
+    ]
   },
   {
     "no": 12,
@@ -729,43 +839,53 @@
     ],
     "answer": 0,
     "kunci_id": "ベッドを上（あ）げたり下（さ）げたりします",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **ベッドを上（あ）げたり下（さ）げたりします**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **ベッドを上（あ）げたり下（さ）げたりします**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(ベッドを上（あ）げたり下（さ）げたりします)",
-      "(ベッドを捨（す）てます)",
-      "(ベッドを洗（あら）います)",
-      "(ベッドを食（た）べます)"
+      "(ベッドを上（あ）げたり下（さ）げたりします) ungkapan/istilah (ベッドを上（あ）げたり下（さ）げたりします)",
+      "(ベッドを捨（す）てます) ungkapan/istilah (ベッドを捨（す）てます)",
+      "(ベッドを洗（あら）います) ungkapan/istilah (ベッドを洗（あら）います)",
+      "(ベッドを食（た）べます) ungkapan/istilah (ベッドを食（た）べます)"
     ],
     "opt_detail": [
       {
         "kana": "ベッドを上（あ）げたり下（さ）げたりします",
-        "rom": "",
-        "arti": "ベッドを上（あ）げたり下（さ）げたりします",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "ベッドを上（あ）げたり下（さ）げたりします",
+        "arti": "ungkapan/istilah (ベッドを上（あ）げたり下（さ）げたりします)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
         "kana": "ベッドを捨（す）てます",
-        "rom": "",
-        "arti": "ベッドを捨（す）てます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "ベッドを捨（す）てます",
+        "arti": "ungkapan/istilah (ベッドを捨（す）てます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "ベッドを洗（あら）います",
-        "rom": "",
-        "arti": "ベッドを洗（あら）います",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "ベッドを洗（あら）います",
+        "arti": "ungkapan/istilah (ベッドを洗（あら）います)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "ベッドを食（た）べます",
-        "rom": "",
-        "arti": "ベッドを食（た）べます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "ベッドを食（た）べます",
+        "arti": "ungkapan/istilah (ベッドを食（た）べます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "anzen",
-    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 12 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **ベッドを上（あ）げたり下（さ）げたりします** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(ベッドを上（あ）げたり下（さ）げたりします) ungkapan/istilah (ベッドを上（あ）げたり下（さ）げたりします), (ベッドを捨（す）てます) ungkapan/istilah (ベッドを捨（す）てます), (ベッドを洗（あら）います) ungkapan/istilah (ベッドを洗（あら）います), (ベッドを食（た）べます) ungkapan/istilah (ベッドを食（た）べます)"
+      }
+    ]
   },
   {
     "no": 13,
@@ -793,43 +913,53 @@
     ],
     "answer": 1,
     "kunci_id": "上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "((え）も下（した）もすべて介護職（かいごしょく）が行（おこな）う)",
-      "(上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる)",
-      "(すべて捨（す）てる)",
-      "(何（なに）もしない)"
+      "((え）も下（した）もすべて介護職（かいごしょく）が行（おこな）う) ungkapan/istilah ((え）も下（した）もすべて介護職（かいごしょく）が行（おこな）う)",
+      "(上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる) ungkapan/istilah (上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる)",
+      "(すべて捨（す）てる) ungkapan/istilah (すべて捨（す）てる)",
+      "(何（なに）もしない) ungkapan/istilah (何（なに）もしない)"
     ],
     "opt_detail": [
       {
         "kana": "(え）も下（した）もすべて介護職（かいごしょく）が行（おこな）う",
-        "rom": "",
-        "arti": "(え）も下（した）もすべて介護職（かいごしょく）が行（おこな）う",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "(え）も下（した）もすべて介護職（かいごしょく）が行（おこな）う",
+        "arti": "ungkapan/istilah ((え）も下（した）もすべて介護職（かいごしょく）が行（おこな）う)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる",
-        "rom": "",
-        "arti": "上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる",
+        "arti": "ungkapan/istilah (上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
         "kana": "すべて捨（す）てる",
-        "rom": "",
-        "arti": "すべて捨（す）てる",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "すべて捨（す）てる",
+        "arti": "ungkapan/istilah (すべて捨（す）てる)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "何（なに）もしない",
-        "rom": "",
-        "arti": "何（なに）もしない",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "何（なに）もしない",
+        "arti": "ungkapan/istilah (何（なに）もしない)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "anzen",
-    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 13 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "((え）も下（した）もすべて介護職（かいごしょく）が行（おこな）う) ungkapan/istilah ((え）も下（した）もすべて介護職（かいごしょく）が行（おこな）う), (上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる) ungkapan/istilah (上（うえ）の入（い）れ歯（ば）は確認（かくにん）し、下（した）は利用者（りようしゃ）に任（ま）かせる), (すべて捨（す）てる) ungkapan/istilah (すべて捨（す）てる), (何（なに）もしない) ungkapan/istilah (何（なに）もしない)"
+      }
+    ]
   },
   {
     "no": 14,
@@ -857,43 +987,53 @@
     ],
     "answer": 3,
     "kunci_id": "介護職（かいごしょく）に報告（ほうこく）する",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **介護職（かいごしょく）に報告（ほうこく）する**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **介護職（かいごしょく）に報告（ほうこく）する**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(そのままにする)",
-      "(帰宅（きたく）させる)",
-      "(食事（しょくじ）する)",
-      "(介護職（かいごしょく）に報告（ほうこく）する)"
+      "(そのままにする) ungkapan/istilah (そのままにする)",
+      "(帰宅（きたく）させる) ungkapan/istilah (帰宅（きたく）させる)",
+      "(shokuji) makan / makanan",
+      "(介護職（かいごしょく）に報告（ほうこく）する) ungkapan/istilah (介護職（かいごしょく）に報告（ほうこく）する)"
     ],
     "opt_detail": [
       {
         "kana": "そのままにする",
-        "rom": "",
-        "arti": "そのままにする",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "そのままにする",
+        "arti": "ungkapan/istilah (そのままにする)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "帰宅（きたく）させる",
-        "rom": "",
-        "arti": "帰宅（きたく）させる",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "帰宅（きたく）させる",
+        "arti": "ungkapan/istilah (帰宅（きたく）させる)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "食事（しょくじ）する",
-        "rom": "",
-        "arti": "食事（しょくじ）する",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "shokuji",
+        "arti": "makan / makanan",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "介護職（かいごしょく）に報告（ほうこく）する",
-        "rom": "",
-        "arti": "介護職（かいごしょく）に報告（ほうこく）する",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "介護職（かいごしょく）に報告（ほうこく）する",
+        "arti": "ungkapan/istilah (介護職（かいごしょく）に報告（ほうこく）する)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "anzen",
-    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 14 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **介護職（かいごしょく）に報告（ほうこく）する** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(そのままにする) ungkapan/istilah (そのままにする), (帰宅（きたく）させる) ungkapan/istilah (帰宅（きたく）させる), (shokuji) makan / makanan, (介護職（かいごしょく）に報告（ほうこく）する) ungkapan/istilah (介護職（かいごしょく）に報告（ほうこく）する)"
+      }
+    ]
   },
   {
     "no": 15,
@@ -921,42 +1061,52 @@
     ],
     "answer": 1,
     "kunci_id": "背中（せなか）と首（くび）をきれいに洗（あら）います",
-    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
-    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **背中（せなか）と首（くび）をきれいに洗（あら）います**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **背中（せなか）と首（くび）をきれいに洗（あら）います**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(そのままにします)",
-      "(背中（せなか）と首（くび）をきれいに洗（あら）います)",
-      "(食事（しょくじ）をします)",
-      "(休（やす）みます)"
+      "(そのままにします) ungkapan/istilah (そのままにします)",
+      "(背中（せなか）と首（くび）をきれいに洗（あら）います) ungkapan/istilah (背中（せなか）と首（くび）をきれいに洗（あら）います)",
+      "(shokuji) makan / makanan",
+      "(休（やす）みます) ungkapan/istilah (休（やす）みます)"
     ],
     "opt_detail": [
       {
         "kana": "そのままにします",
-        "rom": "",
-        "arti": "そのままにします",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "そのままにします",
+        "arti": "ungkapan/istilah (そのままにします)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "背中（せなか）と首（くび）をきれいに洗（あら）います",
-        "rom": "",
-        "arti": "背中（せなか）と首（くび）をきれいに洗（あら）います",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "背中（せなか）と首（くび）をきれいに洗（あら）います",
+        "arti": "ungkapan/istilah (背中（せなか）と首（くび）をきれいに洗（あら）います)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
         "kana": "食事（しょくじ）をします",
-        "rom": "",
-        "arti": "食事（しょくじ）をします",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "shokuji",
+        "arti": "makan / makanan",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "休（やす）みます",
-        "rom": "",
-        "arti": "休（やす）みます",
-        "alasan": "Opsi pilihan Kaigo Nihongo"
+        "rom": "休（やす）みます",
+        "arti": "ungkapan/istilah (休（やす）みます)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
     "category": "gakka",
-    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
+    "pembahasan": [
+      {
+        "title": "Bedah Soal 15 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **背中（せなか）と首（くび）をきれいに洗（あら）います** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(そのままにします) ungkapan/istilah (そのままにします), (背中（せなか）と首（くび）をきれいに洗（あら）います) ungkapan/istilah (背中（せなか）と首（くび）をきれいに洗（あら）います), (shokuji) makan / makanan, (休（やす）みます) ungkapan/istilah (休（やす）みます)"
+      }
+    ]
   }
 ]

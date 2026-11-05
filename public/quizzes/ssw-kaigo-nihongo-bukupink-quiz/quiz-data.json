@@ -25,44 +25,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.佐藤 (さとう)さん は、杖 (つえ) で 歩 (ある)く 練習 (れんしゅう) を します。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.佐藤 (さとう)さん は、杖 (つえ) で 歩 (ある)く 練習 (れんしゅう) を します。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.佐藤 (さとう)さん は、杖 (つえ) で 歩 (ある)く 練習 (れんしゅう) を します。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.佐藤 (さとう)さん は、体調 (たいちょう)...)",
-      "(B.佐藤 (さとう) さん は、歩行器 (ほこうき...)",
-      "(C.佐藤 (さとう)さん は、杖 (つえ) で 歩...)",
-      "(D.佐藤 (さとう)さん は、手 (て)すりにつか...)"
+      "(A.佐藤さん は、体調 が とても よいので、歩く 練習 を します。) ungkapan/istilah (A.佐藤さん は、体調 が とても よいので、歩く 練習 を します。)",
+      "(hokouki) alat bantu jalan (walker)",
+      "(tsue) tongkat jalan",
+      "(D.佐藤さん は、手すりにつかまって 歩く 練習 を します。) ungkapan/istilah (D.佐藤さん は、手すりにつかまって 歩く 練習 を します。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.佐藤 (さとう)さん は、体調 (たいちょう) が とても よいので、歩 (ある)く 練習 (れんしゅう) を します。",
-        "rom": "",
-        "arti": "A.佐藤 (さとう)さん は、体調 (たいちょう) が とても よいので、歩 (ある)く 練習 (れんしゅう) を します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "A.佐藤さん は、体調 が とても よいので、歩く 練習 を します。",
+        "arti": "ungkapan/istilah (A.佐藤さん は、体調 が とても よいので、歩く 練習 を します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.佐藤 (さとう) さん は、歩行器 (ほこうき) で 歩 (ある)く 練習 (れんしゅう) を します。",
-        "rom": "",
-        "arti": "B.佐藤 (さとう) さん は、歩行器 (ほこうき) で 歩 (ある)く 練習 (れんしゅう) を します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "hokouki",
+        "arti": "alat bantu jalan (walker)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.佐藤 (さとう)さん は、杖 (つえ) で 歩 (ある)く 練習 (れんしゅう) を します。",
-        "rom": "",
-        "arti": "C.佐藤 (さとう)さん は、杖 (つえ) で 歩 (ある)く 練習 (れんしゅう) を します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "tsue",
+        "arti": "tongkat jalan",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.佐藤 (さとう)さん は、手 (て)すりにつかまって 歩 (ある)く 練習 (れんしゅう) を します。",
-        "rom": "",
-        "arti": "D.佐藤 (さとう)さん は、手 (て)すりにつかまって 歩 (ある)く 練習 (れんしゅう) を します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "D.佐藤さん は、手すりにつかまって 歩く 練習 を します。",
+        "arti": "ungkapan/istilah (D.佐藤さん は、手すりにつかまって 歩く 練習 を します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 1)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 1 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.佐藤 (さとう)さん は、杖 (つえ) で 歩 (ある)く 練習 (れんしゅう) を します。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.佐藤さん は、体調 が とても よいので、歩く 練習 を します。) ungkapan/istilah (A.佐藤さん は、体調 が とても よいので、歩く 練習 を します。), (hokouki) alat bantu jalan (walker), (tsue) tongkat jalan, (D.佐藤さん は、手すりにつかまって 歩く 練習 を します。) ungkapan/istilah (D.佐藤さん は、手すりにつかまって 歩く 練習 を します。)"
       }
     ]
   },
@@ -92,44 +96,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.鈴木 (すずき)さん は、自分 (じぶん) で 起 (お)き 上 (あ)がりました。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.鈴木 (すずき)さん は、自分 (じぶん) で 起 (お)き 上 (あ)がりました。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.鈴木 (すずき)さん は、自分 (じぶん) で 起 (お)き 上 (あ)がりました。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.鈴木 (すずき)さん は、自分 (じぶん) で...)",
-      "(B.鈴木 (すずき)さん は、自分 (じぶん) で...)",
-      "(C.鈴木 (すずき)さん は、自分 (じぶん) で...)",
-      "(D.鈴木 (すずき)さん は、自分 (じぶん) で...)"
+      "(A.鈴木さん は、自分 で トイレ に 行きました。) ungkapan/istilah (A.鈴木さん は、自分 で トイレ に 行きました。)",
+      "(B.鈴木さん は、自分 で 車いす に 乗りました。) ungkapan/istilah (B.鈴木さん は、自分 で 車いす に 乗りました。)",
+      "(C.鈴木さん は、自分 で 起き 上がりました。) ungkapan/istilah (C.鈴木さん は、自分 で 起き 上がりました。)",
+      "(D.鈴木さん は、自分 で くつ を はきました。) ungkapan/istilah (D.鈴木さん は、自分 で くつ を はきました。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.鈴木 (すずき)さん は、自分 (じぶん) で トイレ に 行 (い)きました。",
-        "rom": "",
-        "arti": "A.鈴木 (すずき)さん は、自分 (じぶん) で トイレ に 行 (い)きました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "A.鈴木さん は、自分 で トイレ に 行きました。",
+        "arti": "ungkapan/istilah (A.鈴木さん は、自分 で トイレ に 行きました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.鈴木 (すずき)さん は、自分 (じぶん) で 車 (くるま)いす に 乗 (の)りました。",
-        "rom": "",
-        "arti": "B.鈴木 (すずき)さん は、自分 (じぶん) で 車 (くるま)いす に 乗 (の)りました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "B.鈴木さん は、自分 で 車いす に 乗りました。",
+        "arti": "ungkapan/istilah (B.鈴木さん は、自分 で 車いす に 乗りました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.鈴木 (すずき)さん は、自分 (じぶん) で 起 (お)き 上 (あ)がりました。",
-        "rom": "",
-        "arti": "C.鈴木 (すずき)さん は、自分 (じぶん) で 起 (お)き 上 (あ)がりました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "C.鈴木さん は、自分 で 起き 上がりました。",
+        "arti": "ungkapan/istilah (C.鈴木さん は、自分 で 起き 上がりました。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.鈴木 (すずき)さん は、自分 (じぶん) で くつ を はきました。",
-        "rom": "",
-        "arti": "D.鈴木 (すずき)さん は、自分 (じぶん) で くつ を はきました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "D.鈴木さん は、自分 で くつ を はきました。",
+        "arti": "ungkapan/istilah (D.鈴木さん は、自分 で くつ を はきました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 2)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 2 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.鈴木 (すずき)さん は、自分 (じぶん) で 起 (お)き 上 (あ)がりました。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.鈴木さん は、自分 で トイレ に 行きました。) ungkapan/istilah (A.鈴木さん は、自分 で トイレ に 行きました。), (B.鈴木さん は、自分 で 車いす に 乗りました。) ungkapan/istilah (B.鈴木さん は、自分 で 車いす に 乗りました。), (C.鈴木さん は、自分 で 起き 上がりました。) ungkapan/istilah (C.鈴木さん は、自分 で 起き 上がりました。), (D.鈴木さん は、自分 で くつ を はきました。) ungkapan/istilah (D.鈴木さん は、自分 で くつ を はきました。)"
       }
     ]
   },
@@ -159,44 +167,48 @@
     ],
     "answer": 0,
     "kunci_id": "A.杖 (つえ)、右足 (みぎあし)、左足 (ひだりあし)ですよ",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **A.杖 (つえ)、右足 (みぎあし)、左足 (ひだりあし)ですよ**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **A.杖 (つえ)、右足 (みぎあし)、左足 (ひだりあし)ですよ**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.杖 (つえ)、右足 (みぎあし)、左足 (ひだ...)",
-      "(B.右足 (みぎあし)、杖 (つえ)、左足 (ひだ...)",
-      "(C.左足 (ひだりあし)、右足 (みぎあし)、杖 ...)",
-      "(D.杖 (つえ)、左足 (ひだりあし)、右足 (み...)"
+      "(tsue) tongkat jalan",
+      "(tsue) tongkat jalan",
+      "(tsue) tongkat jalan",
+      "(tsue) tongkat jalan"
     ],
     "opt_detail": [
       {
-        "kana": "A.杖 (つえ)、右足 (みぎあし)、左足 (ひだりあし)ですよ",
-        "rom": "",
-        "arti": "A.杖 (つえ)、右足 (みぎあし)、左足 (ひだりあし)ですよ",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "つえ",
+        "rom": "tsue",
+        "arti": "tongkat jalan",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "B.右足 (みぎあし)、杖 (つえ)、左足 (ひだりあし)ですよ",
-        "rom": "",
-        "arti": "B.右足 (みぎあし)、杖 (つえ)、左足 (ひだりあし)ですよ",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "みぎあし",
+        "rom": "tsue",
+        "arti": "tongkat jalan",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.左足 (ひだりあし)、右足 (みぎあし)、杖 (つえ)ですよ",
-        "rom": "",
-        "arti": "C.左足 (ひだりあし)、右足 (みぎあし)、杖 (つえ)ですよ",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ひだりあし",
+        "rom": "tsue",
+        "arti": "tongkat jalan",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.杖 (つえ)、左足 (ひだりあし)、右足 (みぎあし)ですよ",
-        "rom": "",
-        "arti": "D.杖 (つえ)、左足 (ひだりあし)、右足 (みぎあし)ですよ",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "つえ",
+        "rom": "tsue",
+        "arti": "tongkat jalan",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 3)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 3 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **A.杖 (つえ)、右足 (みぎあし)、左足 (ひだりあし)ですよ** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(tsue) tongkat jalan, (tsue) tongkat jalan, (tsue) tongkat jalan, (tsue) tongkat jalan"
       }
     ]
   },
@@ -226,44 +238,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.佐藤 (さとう)さん は、自分 (じぶん) で、ご飯 (はん) を 食 (た)べます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.佐藤 (さとう)さん は、自分 (じぶん) で、ご飯 (はん) を 食 (た)べます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.佐藤 (さとう)さん は、自分 (じぶん) で、ご飯 (はん) を 食 (た)べます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.佐藤 (さとう)さん は、ご飯(はん)を全(ぜ...)",
-      "(B佐藤 (さとう)さん は、左手 (ひだりて) で...)",
-      "(C.佐藤 (さとう)さん は、介護職 (かいごしょ...)",
-      "(D.佐藤 (さとう)さん は、自分 (じぶん) で...)"
+      "(A.佐藤さん は、ご飯を全部食べました。) ungkapan/istilah (A.佐藤さん は、ご飯を全部食べました。)",
+      "(B佐藤さん は、左手 で はし を 持ちます。) ungkapan/istilah (B佐藤さん は、左手 で はし を 持ちます。)",
+      "(C.佐藤さん は、介護職 に 手伝って もらって、ご飯 を 食べます。) ungkapan/istilah (C.佐藤さん は、介護職 に 手伝って もらって、ご飯 を 食べます。)",
+      "(D.佐藤さん は、自分 で、ご飯 を 食べます。) ungkapan/istilah (D.佐藤さん は、自分 で、ご飯 を 食べます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.佐藤 (さとう)さん は、ご飯(はん)を全(ぜん)部(ぶ)食(た)べました。",
-        "rom": "",
-        "arti": "A.佐藤 (さとう)さん は、ご飯(はん)を全(ぜん)部(ぶ)食(た)べました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "A.佐藤さん は、ご飯を全部食べました。",
+        "arti": "ungkapan/istilah (A.佐藤さん は、ご飯を全部食べました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B佐藤 (さとう)さん は、左手 (ひだりて) で はし を 持 (も)ちます。",
-        "rom": "",
-        "arti": "B佐藤 (さとう)さん は、左手 (ひだりて) で はし を 持 (も)ちます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "B佐藤さん は、左手 で はし を 持ちます。",
+        "arti": "ungkapan/istilah (B佐藤さん は、左手 で はし を 持ちます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.佐藤 (さとう)さん は、介護職 (かいごしょく) に 手伝 (てつだ)って もらって、ご飯 (はん) を 食 (た)べます。",
-        "rom": "",
-        "arti": "C.佐藤 (さとう)さん は、介護職 (かいごしょく) に 手伝 (てつだ)って もらって、ご飯 (はん) を 食 (た)べます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "C.佐藤さん は、介護職 に 手伝って もらって、ご飯 を 食べます。",
+        "arti": "ungkapan/istilah (C.佐藤さん は、介護職 に 手伝って もらって、ご飯 を 食べます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.佐藤 (さとう)さん は、自分 (じぶん) で、ご飯 (はん) を 食 (た)べます。",
-        "rom": "",
-        "arti": "D.佐藤 (さとう)さん は、自分 (じぶん) で、ご飯 (はん) を 食 (た)べます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "D.佐藤さん は、自分 で、ご飯 を 食べます。",
+        "arti": "ungkapan/istilah (D.佐藤さん は、自分 で、ご飯 を 食べます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 4)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 4 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.佐藤 (さとう)さん は、自分 (じぶん) で、ご飯 (はん) を 食 (た)べます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.佐藤さん は、ご飯を全部食べました。) ungkapan/istilah (A.佐藤さん は、ご飯を全部食べました。), (B佐藤さん は、左手 で はし を 持ちます。) ungkapan/istilah (B佐藤さん は、左手 で はし を 持ちます。), (C.佐藤さん は、介護職 に 手伝って もらって、ご飯 を 食べます。) ungkapan/istilah (C.佐藤さん は、介護職 に 手伝って もらって、ご飯 を 食べます。), (D.佐藤さん は、自分 で、ご飯 を 食べます。) ungkapan/istilah (D.佐藤さん は、自分 で、ご飯 を 食べます。)"
       }
     ]
   },
@@ -293,44 +309,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.鈴木 (すずき)さん は、お茶 (ちゃ) を 飲 (の)むと、ときどきむせます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.鈴木 (すずき)さん は、お茶 (ちゃ) を 飲 (の)むと、ときどきむせます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.鈴木 (すずき)さん は、お茶 (ちゃ) を 飲 (の)むと、ときどきむせます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.鈴木 (すずき)さん は、食事 (しょくじ) ...)",
-      "(B.鈴木 (すずき)さん は、みそ 汁 (しる) ...)",
-      "(C.鈴木 (すずき)さん は、食 (た)べた 量 ...)",
-      "(D.鈴木 (すずき)さん は、お茶 (ちゃ) を ...)"
+      "(shokuji) makan / makanan",
+      "(B.鈴木さん は、みそ 汁 を 飲む とき、いつも むせています。) ungkapan/istilah (B.鈴木さん は、みそ 汁 を 飲む とき、いつも むせています。)",
+      "(C.鈴木さん は、食べた 量 を 記録します。) ungkapan/istilah (C.鈴木さん は、食べた 量 を 記録します。)",
+      "(D.鈴木さん は、お茶 を 飲むと、ときどきむせます。) ungkapan/istilah (D.鈴木さん は、お茶 を 飲むと、ときどきむせます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.鈴木 (すずき)さん は、食事 (しょくじ) を 残 (のこ)しました。",
-        "rom": "",
-        "arti": "A.鈴木 (すずき)さん は、食事 (しょくじ) を 残 (のこ)しました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "shokuji",
+        "arti": "makan / makanan",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.鈴木 (すずき)さん は、みそ 汁 (しる) を 飲 (の)む とき、いつも むせています。",
-        "rom": "",
-        "arti": "B.鈴木 (すずき)さん は、みそ 汁 (しる) を 飲 (の)む とき、いつも むせています。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "B.鈴木さん は、みそ 汁 を 飲む とき、いつも むせています。",
+        "arti": "ungkapan/istilah (B.鈴木さん は、みそ 汁 を 飲む とき、いつも むせています。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.鈴木 (すずき)さん は、食 (た)べた 量 (りょう) を 記録 (きろく)します。",
-        "rom": "",
-        "arti": "C.鈴木 (すずき)さん は、食 (た)べた 量 (りょう) を 記録 (きろく)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "C.鈴木さん は、食べた 量 を 記録します。",
+        "arti": "ungkapan/istilah (C.鈴木さん は、食べた 量 を 記録します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.鈴木 (すずき)さん は、お茶 (ちゃ) を 飲 (の)むと、ときどきむせます。",
-        "rom": "",
-        "arti": "D.鈴木 (すずき)さん は、お茶 (ちゃ) を 飲 (の)むと、ときどきむせます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "D.鈴木さん は、お茶 を 飲むと、ときどきむせます。",
+        "arti": "ungkapan/istilah (D.鈴木さん は、お茶 を 飲むと、ときどきむせます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 5)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 5 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.鈴木 (すずき)さん は、お茶 (ちゃ) を 飲 (の)むと、ときどきむせます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(shokuji) makan / makanan, (B.鈴木さん は、みそ 汁 を 飲む とき、いつも むせています。) ungkapan/istilah (B.鈴木さん は、みそ 汁 を 飲む とき、いつも むせています。), (C.鈴木さん は、食べた 量 を 記録します。) ungkapan/istilah (C.鈴木さん は、食べた 量 を 記録します。), (D.鈴木さん は、お茶 を 飲むと、ときどきむせます。) ungkapan/istilah (D.鈴木さん は、お茶 を 飲むと、ときどきむせます。)"
       }
     ]
   },
@@ -360,44 +380,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.温 (あたた)かい 紅茶 (こうちゃ) を 持 (も)って 来 (き)ますね",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.温 (あたた)かい 紅茶 (こうちゃ) を 持 (も)って 来 (き)ますね**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.温 (あたた)かい 紅茶 (こうちゃ) を 持 (も)って 来 (き)ますね**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.冷 (つめ)たい 麦茶 (むぎちゃ) を 持 ...)",
-      "(B.温 (あたた)かい 麦茶 (むぎちゃ) を 持...)",
-      "(C.温 (あたた)かい 紅茶 (こうちゃ) を 持...)",
-      "(D.冷 (つめ)たい 紅茶 (こうちゃ) を 持 ...)"
+      "(A.冷たい 麦茶 を 持って 来ますね) ungkapan/istilah (A.冷たい 麦茶 を 持って 来ますね)",
+      "(B.温かい 麦茶 を 持って 来ますね) ungkapan/istilah (B.温かい 麦茶 を 持って 来ますね)",
+      "(C.温かい 紅茶 を 持って 来ますね) ungkapan/istilah (C.温かい 紅茶 を 持って 来ますね)",
+      "(D.冷たい 紅茶 を 持って 来ますね) ungkapan/istilah (D.冷たい 紅茶 を 持って 来ますね)"
     ],
     "opt_detail": [
       {
-        "kana": "A.冷 (つめ)たい 麦茶 (むぎちゃ) を 持 (も)って 来 (き)ますね",
-        "rom": "",
-        "arti": "A.冷 (つめ)たい 麦茶 (むぎちゃ) を 持 (も)って 来 (き)ますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "つめ",
+        "rom": "A.冷たい 麦茶 を 持って 来ますね",
+        "arti": "ungkapan/istilah (A.冷たい 麦茶 を 持って 来ますね)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.温 (あたた)かい 麦茶 (むぎちゃ) を 持 (も)って 来 (き)ますね",
-        "rom": "",
-        "arti": "B.温 (あたた)かい 麦茶 (むぎちゃ) を 持 (も)って 来 (き)ますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "あたた",
+        "rom": "B.温かい 麦茶 を 持って 来ますね",
+        "arti": "ungkapan/istilah (B.温かい 麦茶 を 持って 来ますね)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.温 (あたた)かい 紅茶 (こうちゃ) を 持 (も)って 来 (き)ますね",
-        "rom": "",
-        "arti": "C.温 (あたた)かい 紅茶 (こうちゃ) を 持 (も)って 来 (き)ますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "あたた",
+        "rom": "C.温かい 紅茶 を 持って 来ますね",
+        "arti": "ungkapan/istilah (C.温かい 紅茶 を 持って 来ますね)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.冷 (つめ)たい 紅茶 (こうちゃ) を 持 (も)って 来 (き)ますね",
-        "rom": "",
-        "arti": "D.冷 (つめ)たい 紅茶 (こうちゃ) を 持 (も)って 来 (き)ますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "つめ",
+        "rom": "D.冷たい 紅茶 を 持って 来ますね",
+        "arti": "ungkapan/istilah (D.冷たい 紅茶 を 持って 来ますね)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 6)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 6 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.温 (あたた)かい 紅茶 (こうちゃ) を 持 (も)って 来 (き)ますね** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.冷たい 麦茶 を 持って 来ますね) ungkapan/istilah (A.冷たい 麦茶 を 持って 来ますね), (B.温かい 麦茶 を 持って 来ますね) ungkapan/istilah (B.温かい 麦茶 を 持って 来ますね), (C.温かい 紅茶 を 持って 来ますね) ungkapan/istilah (C.温かい 紅茶 を 持って 来ますね), (D.冷たい 紅茶 を 持って 来ますね) ungkapan/istilah (D.冷たい 紅茶 を 持って 来ますね)"
       }
     ]
   },
@@ -427,44 +451,48 @@
     ],
     "answer": 1,
     "kunci_id": "B.佐藤 (さとう)さん は、お尻 (しり) が 痛 (いた)いです。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **B.佐藤 (さとう)さん は、お尻 (しり) が 痛 (いた)いです。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **B.佐藤 (さとう)さん は、お尻 (しり) が 痛 (いた)いです。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.佐藤 (さとう)さん は、パジャマ に 着替 ...)",
-      "(B.佐藤 (さとう)さん は、お尻 (しり) が ...)",
-      "(C.佐藤 (さとう)さん は、自分 (じぶん) で...)",
-      "(D.佐藤 (さとう)さん は、自分 (じぶん) で...)"
+      "(pajama) piyama / baju tidur",
+      "(B.佐藤さん は、お尻 が 痛いです。) ungkapan/istilah (B.佐藤さん は、お尻 が 痛いです。)",
+      "(C.佐藤さん は、自分 で ズボン を 下げました。) ungkapan/istilah (C.佐藤さん は、自分 で ズボン を 下げました。)",
+      "(D.佐藤さん は、自分 で お尻 を 拭きました。) ungkapan/istilah (D.佐藤さん は、自分 で お尻 を 拭きました。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.佐藤 (さとう)さん は、パジャマ に 着替 (きが)えました。",
-        "rom": "",
-        "arti": "A.佐藤 (さとう)さん は、パジャマ に 着替 (きが)えました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "pajama",
+        "arti": "piyama / baju tidur",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.佐藤 (さとう)さん は、お尻 (しり) が 痛 (いた)いです。",
-        "rom": "",
-        "arti": "B.佐藤 (さとう)さん は、お尻 (しり) が 痛 (いた)いです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "B.佐藤さん は、お尻 が 痛いです。",
+        "arti": "ungkapan/istilah (B.佐藤さん は、お尻 が 痛いです。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "C.佐藤 (さとう)さん は、自分 (じぶん) で ズボン を 下 (さ)げました。",
-        "rom": "",
-        "arti": "C.佐藤 (さとう)さん は、自分 (じぶん) で ズボン を 下 (さ)げました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "C.佐藤さん は、自分 で ズボン を 下げました。",
+        "arti": "ungkapan/istilah (C.佐藤さん は、自分 で ズボン を 下げました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.佐藤 (さとう)さん は、自分 (じぶん) で お尻 (しり) を 拭 (ふ)きました。",
-        "rom": "",
-        "arti": "D.佐藤 (さとう)さん は、自分 (じぶん) で お尻 (しり) を 拭 (ふ)きました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "D.佐藤さん は、自分 で お尻 を 拭きました。",
+        "arti": "ungkapan/istilah (D.佐藤さん は、自分 で お尻 を 拭きました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 7)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 7 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **B.佐藤 (さとう)さん は、お尻 (しり) が 痛 (いた)いです。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(pajama) piyama / baju tidur, (B.佐藤さん は、お尻 が 痛いです。) ungkapan/istilah (B.佐藤さん は、お尻 が 痛いです。), (C.佐藤さん は、自分 で ズボン を 下げました。) ungkapan/istilah (C.佐藤さん は、自分 で ズボン を 下げました。), (D.佐藤さん は、自分 で お尻 を 拭きました。) ungkapan/istilah (D.佐藤さん は、自分 で お尻 を 拭きました。)"
       }
     ]
   },
@@ -494,44 +522,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.トイレ に 行 (い)きます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.トイレ に 行 (い)きます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.トイレ に 行 (い)きます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.手 (て) を 洗 (あら)います。...)",
-      "(B.ご飯 (はん) を 食 (た)べます。...)",
-      "(C.トイレ に 行 (い)きます。...)",
-      "(D.散歩 (さんぽ) に 行 (い)きます。...)"
+      "(A.手 を 洗います。) ungkapan/istilah (A.手 を 洗います。)",
+      "(B.ご飯 を 食べます。) ungkapan/istilah (B.ご飯 を 食べます。)",
+      "(C.トイレ に 行きます。) ungkapan/istilah (C.トイレ に 行きます。)",
+      "(D.散歩 に 行きます。) ungkapan/istilah (D.散歩 に 行きます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.手 (て) を 洗 (あら)います。",
-        "rom": "",
-        "arti": "A.手 (て) を 洗 (あら)います。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "て",
+        "rom": "A.手 を 洗います。",
+        "arti": "ungkapan/istilah (A.手 を 洗います。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.ご飯 (はん) を 食 (た)べます。",
-        "rom": "",
-        "arti": "B.ご飯 (はん) を 食 (た)べます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "はん",
+        "rom": "B.ご飯 を 食べます。",
+        "arti": "ungkapan/istilah (B.ご飯 を 食べます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.トイレ に 行 (い)きます。",
-        "rom": "",
-        "arti": "C.トイレ に 行 (い)きます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "い",
+        "rom": "C.トイレ に 行きます。",
+        "arti": "ungkapan/istilah (C.トイレ に 行きます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.散歩 (さんぽ) に 行 (い)きます。",
-        "rom": "",
-        "arti": "D.散歩 (さんぽ) に 行 (い)きます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さんぽ",
+        "rom": "D.散歩 に 行きます。",
+        "arti": "ungkapan/istilah (D.散歩 に 行きます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 8)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 8 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.トイレ に 行 (い)きます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.手 を 洗います。) ungkapan/istilah (A.手 を 洗います。), (B.ご飯 を 食べます。) ungkapan/istilah (B.ご飯 を 食べます。), (C.トイレ に 行きます。) ungkapan/istilah (C.トイレ に 行きます。), (D.散歩 に 行きます。) ungkapan/istilah (D.散歩 に 行きます。)"
       }
     ]
   },
@@ -561,44 +593,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.ボタン を 押 (お)して、知 (し)らせてください",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.ボタン を 押 (お)して、知 (し)らせてください**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.ボタン を 押 (お)して、知 (し)らせてください**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.ボタン を 押 (お)して、ドア を 開 (あ...)",
-      "(B.ボタン を 押 (お)して、ドア を 閉 (し...)",
-      "(C.ボタン を 押 (お)して、水 (みず) を ...)",
-      "(D.ボタン を 押 (お)して、知 (し)らせてく...)"
+      "(A.ボタン を 押して、ドア を 開けてください) ungkapan/istilah (A.ボタン を 押して、ドア を 開けてください)",
+      "(B.ボタン を 押して、ドア を 閉めてください) ungkapan/istilah (B.ボタン を 押して、ドア を 閉めてください)",
+      "(C.ボタン を 押して、水 を 出してください) ungkapan/istilah (C.ボタン を 押して、水 を 出してください)",
+      "(D.ボタン を 押して、知らせてください) ungkapan/istilah (D.ボタン を 押して、知らせてください)"
     ],
     "opt_detail": [
       {
-        "kana": "A.ボタン を 押 (お)して、ドア を 開 (あ)けてください",
-        "rom": "",
-        "arti": "A.ボタン を 押 (お)して、ドア を 開 (あ)けてください",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "お",
+        "rom": "A.ボタン を 押して、ドア を 開けてください",
+        "arti": "ungkapan/istilah (A.ボタン を 押して、ドア を 開けてください)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.ボタン を 押 (お)して、ドア を 閉 (し)めてください",
-        "rom": "",
-        "arti": "B.ボタン を 押 (お)して、ドア を 閉 (し)めてください",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "お",
+        "rom": "B.ボタン を 押して、ドア を 閉めてください",
+        "arti": "ungkapan/istilah (B.ボタン を 押して、ドア を 閉めてください)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.ボタン を 押 (お)して、水 (みず) を 出 (だ)してください",
-        "rom": "",
-        "arti": "C.ボタン を 押 (お)して、水 (みず) を 出 (だ)してください",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "お",
+        "rom": "C.ボタン を 押して、水 を 出してください",
+        "arti": "ungkapan/istilah (C.ボタン を 押して、水 を 出してください)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.ボタン を 押 (お)して、知 (し)らせてください",
-        "rom": "",
-        "arti": "D.ボタン を 押 (お)して、知 (し)らせてください",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "お",
+        "rom": "D.ボタン を 押して、知らせてください",
+        "arti": "ungkapan/istilah (D.ボタン を 押して、知らせてください)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 9)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 9 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.ボタン を 押 (お)して、知 (し)らせてください** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.ボタン を 押して、ドア を 開けてください) ungkapan/istilah (A.ボタン を 押して、ドア を 開けてください), (B.ボタン を 押して、ドア を 閉めてください) ungkapan/istilah (B.ボタン を 押して、ドア を 閉めてください), (C.ボタン を 押して、水 を 出してください) ungkapan/istilah (C.ボタン を 押して、水 を 出してください), (D.ボタン を 押して、知らせてください) ungkapan/istilah (D.ボタン を 押して、知らせてください)"
       }
     ]
   },
@@ -628,44 +664,48 @@
     ],
     "answer": 1,
     "kunci_id": "B. 鈴木 (すずき)さん は、きょう 黒 (くろ)い セーター を 着 (き)ます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **B. 鈴木 (すずき)さん は、きょう 黒 (くろ)い セーター を 着 (き)ます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **B. 鈴木 (すずき)さん は、きょう 黒 (くろ)い セーター を 着 (き)ます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A. 鈴木 (すずき)さん は、奥 (おく)さん ...)",
-      "(B. 鈴木 (すずき)さん は、きょう 黒 (くろ...)",
-      "(C. 介護職 (かいごしょく) は、鈴木 (すずき...)",
-      "(D. きのう、娘 (むすめ)さん が セーター を...)"
+      "(A. 鈴木さん は、奥さん に セーター を もらいました。) ungkapan/istilah (A. 鈴木さん は、奥さん に セーター を もらいました。)",
+      "(B. 鈴木さん は、きょう 黒い セーター を 着ます。) ungkapan/istilah (B. 鈴木さん は、きょう 黒い セーター を 着ます。)",
+      "(C. 介護職 は、鈴木さん が きょう 着る セーター を 選びました。) ungkapan/istilah (C. 介護職 は、鈴木さん が きょう 着る セーター を 選びました。)",
+      "(D. きのう、娘さん が セーター を 持って 来ました) ungkapan/istilah (D. きのう、娘さん が セーター を 持って 来ました)"
     ],
     "opt_detail": [
       {
-        "kana": "A. 鈴木 (すずき)さん は、奥 (おく)さん に セーター を もらいました。",
-        "rom": "",
-        "arti": "A. 鈴木 (すずき)さん は、奥 (おく)さん に セーター を もらいました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "A. 鈴木さん は、奥さん に セーター を もらいました。",
+        "arti": "ungkapan/istilah (A. 鈴木さん は、奥さん に セーター を もらいました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B. 鈴木 (すずき)さん は、きょう 黒 (くろ)い セーター を 着 (き)ます。",
-        "rom": "",
-        "arti": "B. 鈴木 (すずき)さん は、きょう 黒 (くろ)い セーター を 着 (き)ます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "B. 鈴木さん は、きょう 黒い セーター を 着ます。",
+        "arti": "ungkapan/istilah (B. 鈴木さん は、きょう 黒い セーター を 着ます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "C. 介護職 (かいごしょく) は、鈴木 (すずき)さん が きょう 着 (き)る セーター を 選 (えら)びました。",
-        "rom": "",
-        "arti": "C. 介護職 (かいごしょく) は、鈴木 (すずき)さん が きょう 着 (き)る セーター を 選 (えら)びました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かいごしょく",
+        "rom": "C. 介護職 は、鈴木さん が きょう 着る セーター を 選びました。",
+        "arti": "ungkapan/istilah (C. 介護職 は、鈴木さん が きょう 着る セーター を 選びました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D. きのう、娘 (むすめ)さん が セーター を 持 (も)って 来 (き)ました",
-        "rom": "",
-        "arti": "D. きのう、娘 (むすめ)さん が セーター を 持 (も)って 来 (き)ました",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "むすめ",
+        "rom": "D. きのう、娘さん が セーター を 持って 来ました",
+        "arti": "ungkapan/istilah (D. きのう、娘さん が セーター を 持って 来ました)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 10)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 10 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **B. 鈴木 (すずき)さん は、きょう 黒 (くろ)い セーター を 着 (き)ます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A. 鈴木さん は、奥さん に セーター を もらいました。) ungkapan/istilah (A. 鈴木さん は、奥さん に セーター を もらいました。), (B. 鈴木さん は、きょう 黒い セーター を 着ます。) ungkapan/istilah (B. 鈴木さん は、きょう 黒い セーター を 着ます。), (C. 介護職 は、鈴木さん が きょう 着る セーター を 選びました。) ungkapan/istilah (C. 介護職 は、鈴木さん が きょう 着る セーター を 選びました。), (D. きのう、娘さん が セーター を 持って 来ました) ungkapan/istilah (D. きのう、娘さん が セーター を 持って 来ました)"
       }
     ]
   },
@@ -695,44 +735,48 @@
     ],
     "answer": 3,
     "kunci_id": "D. 介護職 (かいごしょく) が、佐藤 (さとう)さん の 口 (くち) の 中 (なか) に 残 (のこ)った 食 (た)べ 物 (もの) を 取 (と)りました。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D. 介護職 (かいごしょく) が、佐藤 (さとう)さん の 口 (くち) の 中 (なか) に 残 (のこ)った 食 (た)べ 物 (もの) を 取 (と)りました。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D. 介護職 (かいごしょく) が、佐藤 (さとう)さん の 口 (くち) の 中 (なか) に 残 (のこ)った 食 (た)べ 物 (もの) を 取 (と)りました。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A. 佐藤 (さとう)さん は、歯磨 (はみが)き...)",
-      "(B. 佐藤 (さとう)さん は、きちんと 歯磨 (...)",
-      "(C. 佐藤 (さとう)さん は、自分 (じぶん) ...)",
-      "(D. 介護職 (かいごしょく) が、佐藤 (さとう...)"
+      "(A. 佐藤さん は、歯磨き を しませんでした。) ungkapan/istilah (A. 佐藤さん は、歯磨き を しませんでした。)",
+      "(B. 佐藤さん は、きちんと 歯磨き が できました。) ungkapan/istilah (B. 佐藤さん は、きちんと 歯磨き が できました。)",
+      "(kuchi) mulut",
+      "(kuchi) mulut"
     ],
     "opt_detail": [
       {
-        "kana": "A. 佐藤 (さとう)さん は、歯磨 (はみが)き を しませんでした。",
-        "rom": "",
-        "arti": "A. 佐藤 (さとう)さん は、歯磨 (はみが)き を しませんでした。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "A. 佐藤さん は、歯磨き を しませんでした。",
+        "arti": "ungkapan/istilah (A. 佐藤さん は、歯磨き を しませんでした。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B. 佐藤 (さとう)さん は、きちんと 歯磨 (はみが)き が できました。",
-        "rom": "",
-        "arti": "B. 佐藤 (さとう)さん は、きちんと 歯磨 (はみが)き が できました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "B. 佐藤さん は、きちんと 歯磨き が できました。",
+        "arti": "ungkapan/istilah (B. 佐藤さん は、きちんと 歯磨き が できました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C. 佐藤 (さとう)さん は、自分 (じぶん) で 口 (くち) の 中 (なか) に 残 (のこ)った 食 (た)べ 物 (もの) を 取 (と)りました。",
-        "rom": "",
-        "arti": "C. 佐藤 (さとう)さん は、自分 (じぶん) で 口 (くち) の 中 (なか) に 残 (のこ)った 食 (た)べ 物 (もの) を 取 (と)りました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "kuchi",
+        "arti": "mulut",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D. 介護職 (かいごしょく) が、佐藤 (さとう)さん の 口 (くち) の 中 (なか) に 残 (のこ)った 食 (た)べ 物 (もの) を 取 (と)りました。",
-        "rom": "",
-        "arti": "D. 介護職 (かいごしょく) が、佐藤 (さとう)さん の 口 (くち) の 中 (なか) に 残 (のこ)った 食 (た)べ 物 (もの) を 取 (と)りました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かいごしょく",
+        "rom": "kuchi",
+        "arti": "mulut",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 11)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 11 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D. 介護職 (かいごしょく) が、佐藤 (さとう)さん の 口 (くち) の 中 (なか) に 残 (のこ)った 食 (た)べ 物 (もの) を 取 (と)りました。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A. 佐藤さん は、歯磨き を しませんでした。) ungkapan/istilah (A. 佐藤さん は、歯磨き を しませんでした。), (B. 佐藤さん は、きちんと 歯磨き が できました。) ungkapan/istilah (B. 佐藤さん は、きちんと 歯磨き が できました。), (kuchi) mulut, (kuchi) mulut"
       }
     ]
   },
@@ -762,44 +806,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.歯 (は) が 痛 (いた)い から。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.歯 (は) が 痛 (いた)い から。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.歯 (は) が 痛 (いた)い から。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.歯(は)医(い)者(しゃ)に診(み)てもらうか...)",
-      "(B.歯医者 (はいしゃ) を 予約 (よやく)する...)",
-      "(C.歯 (は) が 痛 (いた)い から。...)",
-      "(D.よく 眠 (ねむ)れなかったから。...)"
+      "(A.歯医者に診てもらうから。) ungkapan/istilah (A.歯医者に診てもらうから。)",
+      "(B.歯医者 を 予約するから。) ungkapan/istilah (B.歯医者 を 予約するから。)",
+      "(C.歯 が 痛い から。) ungkapan/istilah (C.歯 が 痛い から。)",
+      "(D.よく 眠れなかったから。) ungkapan/istilah (D.よく 眠れなかったから。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.歯(は)医(い)者(しゃ)に診(み)てもらうから。",
-        "rom": "",
-        "arti": "A.歯(は)医(い)者(しゃ)に診(み)てもらうから。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "は",
+        "rom": "A.歯医者に診てもらうから。",
+        "arti": "ungkapan/istilah (A.歯医者に診てもらうから。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.歯医者 (はいしゃ) を 予約 (よやく)するから。",
-        "rom": "",
-        "arti": "B.歯医者 (はいしゃ) を 予約 (よやく)するから。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "はいしゃ",
+        "rom": "B.歯医者 を 予約するから。",
+        "arti": "ungkapan/istilah (B.歯医者 を 予約するから。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.歯 (は) が 痛 (いた)い から。",
-        "rom": "",
-        "arti": "C.歯 (は) が 痛 (いた)い から。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "は",
+        "rom": "C.歯 が 痛い から。",
+        "arti": "ungkapan/istilah (C.歯 が 痛い から。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.よく 眠 (ねむ)れなかったから。",
-        "rom": "",
-        "arti": "D.よく 眠 (ねむ)れなかったから。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ねむ",
+        "rom": "D.よく 眠れなかったから。",
+        "arti": "ungkapan/istilah (D.よく 眠れなかったから。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 12)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 12 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.歯 (は) が 痛 (いた)い から。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.歯医者に診てもらうから。) ungkapan/istilah (A.歯医者に診てもらうから。), (B.歯医者 を 予約するから。) ungkapan/istilah (B.歯医者 を 予約するから。), (C.歯 が 痛い から。) ungkapan/istilah (C.歯 が 痛い から。), (D.よく 眠れなかったから。) ungkapan/istilah (D.よく 眠れなかったから。)"
       }
     ]
   },
@@ -829,44 +877,48 @@
     ],
     "answer": 0,
     "kunci_id": "A.はい、わかりました",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **A.はい、わかりました**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **A.はい、わかりました**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.はい、わかりました...)",
-      "(B.うがい を しましょう...)",
-      "(C.歯 (は) ブラシ を 取 (と)り 替 (か...)",
-      "(D.右 (みぎ) 側 (がわ) は きれいですよ...)"
+      "(A.はい、わかりました) ungkapan/istilah (A.はい、わかりました)",
+      "(B.うがい を しましょう) ungkapan/istilah (B.うがい を しましょう)",
+      "(C.歯 ブラシ を 取り 替えましょうか) ungkapan/istilah (C.歯 ブラシ を 取り 替えましょうか)",
+      "(D.右 側 は きれいですよ) ungkapan/istilah (D.右 側 は きれいですよ)"
     ],
     "opt_detail": [
       {
         "kana": "A.はい、わかりました",
-        "rom": "",
-        "arti": "A.はい、わかりました",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "rom": "A.はい、わかりました",
+        "arti": "ungkapan/istilah (A.はい、わかりました)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
         "kana": "B.うがい を しましょう",
-        "rom": "",
-        "arti": "B.うがい を しましょう",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "rom": "B.うがい を しましょう",
+        "arti": "ungkapan/istilah (B.うがい を しましょう)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.歯 (は) ブラシ を 取 (と)り 替 (か)えましょうか",
-        "rom": "",
-        "arti": "C.歯 (は) ブラシ を 取 (と)り 替 (か)えましょうか",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "は",
+        "rom": "C.歯 ブラシ を 取り 替えましょうか",
+        "arti": "ungkapan/istilah (C.歯 ブラシ を 取り 替えましょうか)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.右 (みぎ) 側 (がわ) は きれいですよ",
-        "rom": "",
-        "arti": "D.右 (みぎ) 側 (がわ) は きれいですよ",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "みぎ",
+        "rom": "D.右 側 は きれいですよ",
+        "arti": "ungkapan/istilah (D.右 側 は きれいですよ)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 13)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 13 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **A.はい、わかりました** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.はい、わかりました) ungkapan/istilah (A.はい、わかりました), (B.うがい を しましょう) ungkapan/istilah (B.うがい を しましょう), (C.歯 ブラシ を 取り 替えましょうか) ungkapan/istilah (C.歯 ブラシ を 取り 替えましょうか), (D.右 側 は きれいですよ) ungkapan/istilah (D.右 側 は きれいですよ)"
       }
     ]
   },
@@ -896,44 +948,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.佐藤 (さとう)さん は、これから お風呂 (ふろ) に 入 (はい)ります。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.佐藤 (さとう)さん は、これから お風呂 (ふろ) に 入 (はい)ります。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.佐藤 (さとう)さん は、これから お風呂 (ふろ) に 入 (はい)ります。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.佐藤 (さとう)さん は、きょう は 気分 (...)",
-      "(B.佐藤 (さとう)さん は、これから 病院 (び...)",
-      "(C.佐藤 (さとう)さん は、これから お風呂 (...)",
-      "(D.佐藤 (さとう)さん は、自分 (じぶん) で...)"
+      "(A.佐藤さん は、きょう は 気分 が 悪いです。) ungkapan/istilah (A.佐藤さん は、きょう は 気分 が 悪いです。)",
+      "(B.佐藤さん は、これから 病院 へ 行きます。) ungkapan/istilah (B.佐藤さん は、これから 病院 へ 行きます。)",
+      "(C.佐藤さん は、これから お風呂 に 入ります。) ungkapan/istilah (C.佐藤さん は、これから お風呂 に 入ります。)",
+      "(D.佐藤さん は、自分 で 服 を 脱ぎます。) ungkapan/istilah (D.佐藤さん は、自分 で 服 を 脱ぎます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.佐藤 (さとう)さん は、きょう は 気分 (きぶん) が 悪 (わる)いです。",
-        "rom": "",
-        "arti": "A.佐藤 (さとう)さん は、きょう は 気分 (きぶん) が 悪 (わる)いです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "A.佐藤さん は、きょう は 気分 が 悪いです。",
+        "arti": "ungkapan/istilah (A.佐藤さん は、きょう は 気分 が 悪いです。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.佐藤 (さとう)さん は、これから 病院 (びょういん) へ 行 (い)きます。",
-        "rom": "",
-        "arti": "B.佐藤 (さとう)さん は、これから 病院 (びょういん) へ 行 (い)きます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "B.佐藤さん は、これから 病院 へ 行きます。",
+        "arti": "ungkapan/istilah (B.佐藤さん は、これから 病院 へ 行きます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.佐藤 (さとう)さん は、これから お風呂 (ふろ) に 入 (はい)ります。",
-        "rom": "",
-        "arti": "C.佐藤 (さとう)さん は、これから お風呂 (ふろ) に 入 (はい)ります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "C.佐藤さん は、これから お風呂 に 入ります。",
+        "arti": "ungkapan/istilah (C.佐藤さん は、これから お風呂 に 入ります。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.佐藤 (さとう)さん は、自分 (じぶん) で 服 (ふく) を 脱 (ぬ)ぎます。",
-        "rom": "",
-        "arti": "D.佐藤 (さとう)さん は、自分 (じぶん) で 服 (ふく) を 脱 (ぬ)ぎます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "D.佐藤さん は、自分 で 服 を 脱ぎます。",
+        "arti": "ungkapan/istilah (D.佐藤さん は、自分 で 服 を 脱ぎます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 14)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 14 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.佐藤 (さとう)さん は、これから お風呂 (ふろ) に 入 (はい)ります。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.佐藤さん は、きょう は 気分 が 悪いです。) ungkapan/istilah (A.佐藤さん は、きょう は 気分 が 悪いです。), (B.佐藤さん は、これから 病院 へ 行きます。) ungkapan/istilah (B.佐藤さん は、これから 病院 へ 行きます。), (C.佐藤さん は、これから お風呂 に 入ります。) ungkapan/istilah (C.佐藤さん は、これから お風呂 に 入ります。), (D.佐藤さん は、自分 で 服 を 脱ぎます。) ungkapan/istilah (D.佐藤さん は、自分 で 服 を 脱ぎます。)"
       }
     ]
   },
@@ -963,44 +1019,48 @@
     ],
     "answer": 1,
     "kunci_id": "B.鈴木 (すずき)さん の 背中 (せなか) は、きのう より、きょう の ほうが、赤 (あか)いです。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **B.鈴木 (すずき)さん の 背中 (せなか) は、きのう より、きょう の ほうが、赤 (あか)いです。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **B.鈴木 (すずき)さん の 背中 (せなか) は、きのう より、きょう の ほうが、赤 (あか)いです。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.鈴木 (すずき)さん は、背中 (せなか) が...)",
-      "(B.鈴木 (すずき)さん の 背中 (せなか) は...)",
-      "(C.鈴木 (すずき)さん は、お風呂 (ふろ) に...)",
-      "(D.鈴木 (すずき)さん は、きょう、お風呂 (ふ...)"
+      "(A.鈴木さん は、背中 が 痛いです。) ungkapan/istilah (A.鈴木さん は、背中 が 痛いです。)",
+      "(B.鈴木さん の 背中 は、きのう より、きょう の ほうが、赤いです。) ungkapan/istilah (B.鈴木さん の 背中 は、きのう より、きょう の ほうが、赤いです。)",
+      "(C.鈴木さん は、お風呂 に 入れない ので、からだ を 拭きます。) ungkapan/istilah (C.鈴木さん は、お風呂 に 入れない ので、からだ を 拭きます。)",
+      "(D.鈴木さん は、きょう、お風呂 に 入ります。) ungkapan/istilah (D.鈴木さん は、きょう、お風呂 に 入ります。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.鈴木 (すずき)さん は、背中 (せなか) が 痛 (いた)いです。",
-        "rom": "",
-        "arti": "A.鈴木 (すずき)さん は、背中 (せなか) が 痛 (いた)いです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "A.鈴木さん は、背中 が 痛いです。",
+        "arti": "ungkapan/istilah (A.鈴木さん は、背中 が 痛いです。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.鈴木 (すずき)さん の 背中 (せなか) は、きのう より、きょう の ほうが、赤 (あか)いです。",
-        "rom": "",
-        "arti": "B.鈴木 (すずき)さん の 背中 (せなか) は、きのう より、きょう の ほうが、赤 (あか)いです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "B.鈴木さん の 背中 は、きのう より、きょう の ほうが、赤いです。",
+        "arti": "ungkapan/istilah (B.鈴木さん の 背中 は、きのう より、きょう の ほうが、赤いです。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "C.鈴木 (すずき)さん は、お風呂 (ふろ) に 入 (はい)れない ので、からだ を 拭 (ふ)きます。",
-        "rom": "",
-        "arti": "C.鈴木 (すずき)さん は、お風呂 (ふろ) に 入 (はい)れない ので、からだ を 拭 (ふ)きます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "C.鈴木さん は、お風呂 に 入れない ので、からだ を 拭きます。",
+        "arti": "ungkapan/istilah (C.鈴木さん は、お風呂 に 入れない ので、からだ を 拭きます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.鈴木 (すずき)さん は、きょう、お風呂 (ふろ) に 入 (はい)ります。",
-        "rom": "",
-        "arti": "D.鈴木 (すずき)さん は、きょう、お風呂 (ふろ) に 入 (はい)ります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "D.鈴木さん は、きょう、お風呂 に 入ります。",
+        "arti": "ungkapan/istilah (D.鈴木さん は、きょう、お風呂 に 入ります。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 15)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 15 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **B.鈴木 (すずき)さん の 背中 (せなか) は、きのう より、きょう の ほうが、赤 (あか)いです。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.鈴木さん は、背中 が 痛いです。) ungkapan/istilah (A.鈴木さん は、背中 が 痛いです。), (B.鈴木さん の 背中 は、きのう より、きょう の ほうが、赤いです。) ungkapan/istilah (B.鈴木さん の 背中 は、きのう より、きょう の ほうが、赤いです。), (C.鈴木さん は、お風呂 に 入れない ので、からだ を 拭きます。) ungkapan/istilah (C.鈴木さん は、お風呂 に 入れない ので、からだ を 拭きます。), (D.鈴木さん は、きょう、お風呂 に 入ります。) ungkapan/istilah (D.鈴木さん は、きょう、お風呂 に 入ります。)"
       }
     ]
   },
@@ -1030,44 +1090,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.佐藤 (さとう)さん は、きょう、髪 (かみ) を 洗 (あら)います。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.佐藤 (さとう)さん は、きょう、髪 (かみ) を 洗 (あら)います。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.佐藤 (さとう)さん は、きょう、髪 (かみ) を 洗 (あら)います。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.佐藤 (さとう)さん は、きょう、体調 (たい...)",
-      "(B.佐(さ)藤(とう)さんは、きょう、咳 (せき)...)",
-      "(C.佐(さ)藤(とう)さんは、きのう、髪 (かみ)...)",
-      "(D.佐藤 (さとう)さん は、きょう、髪 (かみ)...)"
+      "(A.佐藤さん は、きょう、体調 が 悪いです。) ungkapan/istilah (A.佐藤さん は、きょう、体調 が 悪いです。)",
+      "(B.佐藤さんは、きょう、咳 が 出ています。) ungkapan/istilah (B.佐藤さんは、きょう、咳 が 出ています。)",
+      "(C.佐藤さんは、きのう、髪 を 洗いました。) ungkapan/istilah (C.佐藤さんは、きのう、髪 を 洗いました。)",
+      "(D.佐藤さん は、きょう、髪 を 洗います。) ungkapan/istilah (D.佐藤さん は、きょう、髪 を 洗います。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.佐藤 (さとう)さん は、きょう、体調 (たいちょう) が 悪 (わる)いです。",
-        "rom": "",
-        "arti": "A.佐藤 (さとう)さん は、きょう、体調 (たいちょう) が 悪 (わる)いです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "A.佐藤さん は、きょう、体調 が 悪いです。",
+        "arti": "ungkapan/istilah (A.佐藤さん は、きょう、体調 が 悪いです。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.佐(さ)藤(とう)さんは、きょう、咳 (せき) が 出 (で)ています。",
-        "rom": "",
-        "arti": "B.佐(さ)藤(とう)さんは、きょう、咳 (せき) が 出 (で)ています。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さ",
+        "rom": "B.佐藤さんは、きょう、咳 が 出ています。",
+        "arti": "ungkapan/istilah (B.佐藤さんは、きょう、咳 が 出ています。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.佐(さ)藤(とう)さんは、きのう、髪 (かみ) を 洗 (あら)いました。",
-        "rom": "",
-        "arti": "C.佐(さ)藤(とう)さんは、きのう、髪 (かみ) を 洗 (あら)いました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さ",
+        "rom": "C.佐藤さんは、きのう、髪 を 洗いました。",
+        "arti": "ungkapan/istilah (C.佐藤さんは、きのう、髪 を 洗いました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.佐藤 (さとう)さん は、きょう、髪 (かみ) を 洗 (あら)います。",
-        "rom": "",
-        "arti": "D.佐藤 (さとう)さん は、きょう、髪 (かみ) を 洗 (あら)います。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "D.佐藤さん は、きょう、髪 を 洗います。",
+        "arti": "ungkapan/istilah (D.佐藤さん は、きょう、髪 を 洗います。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 16)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 16 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.佐藤 (さとう)さん は、きょう、髪 (かみ) を 洗 (あら)います。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.佐藤さん は、きょう、体調 が 悪いです。) ungkapan/istilah (A.佐藤さん は、きょう、体調 が 悪いです。), (B.佐藤さんは、きょう、咳 が 出ています。) ungkapan/istilah (B.佐藤さんは、きょう、咳 が 出ています。), (C.佐藤さんは、きのう、髪 を 洗いました。) ungkapan/istilah (C.佐藤さんは、きのう、髪 を 洗いました。), (D.佐藤さん は、きょう、髪 を 洗います。) ungkapan/istilah (D.佐藤さん は、きょう、髪 を 洗います。)"
       }
     ]
   },
@@ -1097,44 +1161,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.少 (すこ)し 熱 (あつ)くしますね",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.少 (すこ)し 熱 (あつ)くしますね**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.少 (すこ)し 熱 (あつ)くしますね**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.ちょうどいい 温度 (おんど) で よかったで...)",
-      "(B.少 (すこ)し 熱 (あつ)いですか。ちょっと...)",
-      "(C.もう 少 (すこ)し お風呂 (ふろ) に 入...)",
-      "(D.少 (すこ)し 熱 (あつ)くしますね...)"
+      "(A.ちょうどいい 温度 で よかったです) ungkapan/istilah (A.ちょうどいい 温度 で よかったです)",
+      "(B.少し 熱いですか。ちょっと ぬるくしますね) ungkapan/istilah (B.少し 熱いですか。ちょっと ぬるくしますね)",
+      "(C.もう 少し お風呂 に 入りたいですか) ungkapan/istilah (C.もう 少し お風呂 に 入りたいですか)",
+      "(D.少し 熱くしますね) ungkapan/istilah (D.少し 熱くしますね)"
     ],
     "opt_detail": [
       {
-        "kana": "A.ちょうどいい 温度 (おんど) で よかったです",
-        "rom": "",
-        "arti": "A.ちょうどいい 温度 (おんど) で よかったです",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "おんど",
+        "rom": "A.ちょうどいい 温度 で よかったです",
+        "arti": "ungkapan/istilah (A.ちょうどいい 温度 で よかったです)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.少 (すこ)し 熱 (あつ)いですか。ちょっと ぬるくしますね",
-        "rom": "",
-        "arti": "B.少 (すこ)し 熱 (あつ)いですか。ちょっと ぬるくしますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すこ",
+        "rom": "B.少し 熱いですか。ちょっと ぬるくしますね",
+        "arti": "ungkapan/istilah (B.少し 熱いですか。ちょっと ぬるくしますね)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.もう 少 (すこ)し お風呂 (ふろ) に 入 (はい)りたいですか",
-        "rom": "",
-        "arti": "C.もう 少 (すこ)し お風呂 (ふろ) に 入 (はい)りたいですか",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すこ",
+        "rom": "C.もう 少し お風呂 に 入りたいですか",
+        "arti": "ungkapan/istilah (C.もう 少し お風呂 に 入りたいですか)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.少 (すこ)し 熱 (あつ)くしますね",
-        "rom": "",
-        "arti": "D.少 (すこ)し 熱 (あつ)くしますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すこ",
+        "rom": "D.少し 熱くしますね",
+        "arti": "ungkapan/istilah (D.少し 熱くしますね)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 17)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 17 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.少 (すこ)し 熱 (あつ)くしますね** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.ちょうどいい 温度 で よかったです) ungkapan/istilah (A.ちょうどいい 温度 で よかったです), (B.少し 熱いですか。ちょっと ぬるくしますね) ungkapan/istilah (B.少し 熱いですか。ちょっと ぬるくしますね), (C.もう 少し お風呂 に 入りたいですか) ungkapan/istilah (C.もう 少し お風呂 に 入りたいですか), (D.少し 熱くしますね) ungkapan/istilah (D.少し 熱くしますね)"
       }
     ]
   },
@@ -1164,44 +1232,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.エアコン の 温度 (おんど) を 少 (すこ)し 上 (あ)げますね",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.エアコン の 温度 (おんど) を 少 (すこ)し 上 (あ)げますね**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.エアコン の 温度 (おんど) を 少 (すこ)し 上 (あ)げますね**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.クーラー を つけますね...)",
-      "(B.窓 (まど) を 開 (あ)けますね...)",
-      "(C.エアコン の 温度 (おんど) を 少 (すこ...)",
-      "(D.カーテン を 開 (あ)けますね...)"
+      "(A.クーラー を つけますね) ungkapan/istilah (A.クーラー を つけますね)",
+      "(B.窓 を 開けますね) ungkapan/istilah (B.窓 を 開けますね)",
+      "(C.エアコン の 温度 を 少し 上げますね) ungkapan/istilah (C.エアコン の 温度 を 少し 上げますね)",
+      "(D.カーテン を 開けますね) ungkapan/istilah (D.カーテン を 開けますね)"
     ],
     "opt_detail": [
       {
         "kana": "A.クーラー を つけますね",
-        "rom": "",
-        "arti": "A.クーラー を つけますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "rom": "A.クーラー を つけますね",
+        "arti": "ungkapan/istilah (A.クーラー を つけますね)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.窓 (まど) を 開 (あ)けますね",
-        "rom": "",
-        "arti": "B.窓 (まど) を 開 (あ)けますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "まど",
+        "rom": "B.窓 を 開けますね",
+        "arti": "ungkapan/istilah (B.窓 を 開けますね)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.エアコン の 温度 (おんど) を 少 (すこ)し 上 (あ)げますね",
-        "rom": "",
-        "arti": "C.エアコン の 温度 (おんど) を 少 (すこ)し 上 (あ)げますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "おんど",
+        "rom": "C.エアコン の 温度 を 少し 上げますね",
+        "arti": "ungkapan/istilah (C.エアコン の 温度 を 少し 上げますね)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.カーテン を 開 (あ)けますね",
-        "rom": "",
-        "arti": "D.カーテン を 開 (あ)けますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "あ",
+        "rom": "D.カーテン を 開けますね",
+        "arti": "ungkapan/istilah (D.カーテン を 開けますね)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 18)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 18 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.エアコン の 温度 (おんど) を 少 (すこ)し 上 (あ)げますね** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.クーラー を つけますね) ungkapan/istilah (A.クーラー を つけますね), (B.窓 を 開けますね) ungkapan/istilah (B.窓 を 開けますね), (C.エアコン の 温度 を 少し 上げますね) ungkapan/istilah (C.エアコン の 温度 を 少し 上げますね), (D.カーテン を 開けますね) ungkapan/istilah (D.カーテン を 開けますね)"
       }
     ]
   },
@@ -1231,44 +1303,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.鈴木 (すずき)さん に 確認 (かくにん)します",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.鈴木 (すずき)さん に 確認 (かくにん)します**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.鈴木 (すずき)さん に 確認 (かくにん)します**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.看護職 (かんごしょく) に 確認 (かくにん...)",
-      "(B.リーダー に 確認 (かくにん)します...)",
-      "(C.鈴木 (すずき)さん に 確認 (かくにん)し...)",
-      "(D.介護職 (かいごしょく) に 確認 (かくにん...)"
+      "(A.看護職 に 確認します) ungkapan/istilah (A.看護職 に 確認します)",
+      "(B.リーダー に 確認します) ungkapan/istilah (B.リーダー に 確認します)",
+      "(C.鈴木さん に 確認します) ungkapan/istilah (C.鈴木さん に 確認します)",
+      "(D.介護職 に 確認します) ungkapan/istilah (D.介護職 に 確認します)"
     ],
     "opt_detail": [
       {
-        "kana": "A.看護職 (かんごしょく) に 確認 (かくにん)します",
-        "rom": "",
-        "arti": "A.看護職 (かんごしょく) に 確認 (かくにん)します",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かんごしょく",
+        "rom": "A.看護職 に 確認します",
+        "arti": "ungkapan/istilah (A.看護職 に 確認します)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.リーダー に 確認 (かくにん)します",
-        "rom": "",
-        "arti": "B.リーダー に 確認 (かくにん)します",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かくにん",
+        "rom": "B.リーダー に 確認します",
+        "arti": "ungkapan/istilah (B.リーダー に 確認します)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.鈴木 (すずき)さん に 確認 (かくにん)します",
-        "rom": "",
-        "arti": "C.鈴木 (すずき)さん に 確認 (かくにん)します",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "C.鈴木さん に 確認します",
+        "arti": "ungkapan/istilah (C.鈴木さん に 確認します)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.介護職 (かいごしょく) に 確認 (かくにん)します",
-        "rom": "",
-        "arti": "D.介護職 (かいごしょく) に 確認 (かくにん)します",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かいごしょく",
+        "rom": "D.介護職 に 確認します",
+        "arti": "ungkapan/istilah (D.介護職 に 確認します)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 19)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 19 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.鈴木 (すずき)さん に 確認 (かくにん)します** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.看護職 に 確認します) ungkapan/istilah (A.看護職 に 確認します), (B.リーダー に 確認します) ungkapan/istilah (B.リーダー に 確認します), (C.鈴木さん に 確認します) ungkapan/istilah (C.鈴木さん に 確認します), (D.介護職 に 確認します) ungkapan/istilah (D.介護職 に 確認します)"
       }
     ]
   },
@@ -1298,44 +1374,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.佐藤 (さとう)さん は、おしぼり を たたみます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.佐藤 (さとう)さん は、おしぼり を たたみます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.佐藤 (さとう)さん は、おしぼり を たたみます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.佐藤 (さとう)さん は、洗濯物 (せんたくも...)",
-      "(B.佐藤 (さとう)さん は、おしぼり と タオル...)",
-      "(C.佐藤 (さとう)さん は、おしぼり と タオル...)",
-      "(D.佐藤 (さとう)さん は、おしぼり を たたみ...)"
+      "(A.佐藤さん は、洗濯物 を 干します。) ungkapan/istilah (A.佐藤さん は、洗濯物 を 干します。)",
+      "(B.佐藤さん は、おしぼり と タオル を 干します。) ungkapan/istilah (B.佐藤さん は、おしぼり と タオル を 干します。)",
+      "(C.佐藤さん は、おしぼり と タオル を たたみます。) ungkapan/istilah (C.佐藤さん は、おしぼり と タオル を たたみます。)",
+      "(D.佐藤さん は、おしぼり を たたみます。) ungkapan/istilah (D.佐藤さん は、おしぼり を たたみます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.佐藤 (さとう)さん は、洗濯物 (せんたくもの) を 干 (ほ)します。",
-        "rom": "",
-        "arti": "A.佐藤 (さとう)さん は、洗濯物 (せんたくもの) を 干 (ほ)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "A.佐藤さん は、洗濯物 を 干します。",
+        "arti": "ungkapan/istilah (A.佐藤さん は、洗濯物 を 干します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.佐藤 (さとう)さん は、おしぼり と タオル を 干 (ほ)します。",
-        "rom": "",
-        "arti": "B.佐藤 (さとう)さん は、おしぼり と タオル を 干 (ほ)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "B.佐藤さん は、おしぼり と タオル を 干します。",
+        "arti": "ungkapan/istilah (B.佐藤さん は、おしぼり と タオル を 干します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.佐藤 (さとう)さん は、おしぼり と タオル を たたみます。",
-        "rom": "",
-        "arti": "C.佐藤 (さとう)さん は、おしぼり と タオル を たたみます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "C.佐藤さん は、おしぼり と タオル を たたみます。",
+        "arti": "ungkapan/istilah (C.佐藤さん は、おしぼり と タオル を たたみます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.佐藤 (さとう)さん は、おしぼり を たたみます。",
-        "rom": "",
-        "arti": "D.佐藤 (さとう)さん は、おしぼり を たたみます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "D.佐藤さん は、おしぼり を たたみます。",
+        "arti": "ungkapan/istilah (D.佐藤さん は、おしぼり を たたみます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 20)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 20 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.佐藤 (さとう)さん は、おしぼり を たたみます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.佐藤さん は、洗濯物 を 干します。) ungkapan/istilah (A.佐藤さん は、洗濯物 を 干します。), (B.佐藤さん は、おしぼり と タオル を 干します。) ungkapan/istilah (B.佐藤さん は、おしぼり と タオル を 干します。), (C.佐藤さん は、おしぼり と タオル を たたみます。) ungkapan/istilah (C.佐藤さん は、おしぼり と タオル を たたみます。), (D.佐藤さん は、おしぼり を たたみます。) ungkapan/istilah (D.佐藤さん は、おしぼり を たたみます。)"
       }
     ]
   },
@@ -1365,44 +1445,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.あした の 昼 (ひる) ご飯 (はん) は、野菜 (やさい) の 煮物 (にもの) を 作 (つく)ります。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.あした の 昼 (ひる) ご飯 (はん) は、野菜 (やさい) の 煮物 (にもの) を 作 (つく)ります。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.あした の 昼 (ひる) ご飯 (はん) は、野菜 (やさい) の 煮物 (にもの) を 作 (つく)ります。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.あした の 昼 (ひる) ご飯 (はん) は、...)",
-      "(B.あした の 昼 (ひる) ご飯 (はん) は、...)",
-      "(C.あした の 昼 (ひる) ご飯 (はん) は、...)",
-      "(D.あした の 昼 (ひる) ご飯 (はん) は、...)"
+      "(A.あした の 昼 ご飯 は、佐藤さん が 一人 で 作ります。) ungkapan/istilah (A.あした の 昼 ご飯 は、佐藤さん が 一人 で 作ります。)",
+      "(B.あした の 昼 ご飯 は、介護職 が 作ります。) ungkapan/istilah (B.あした の 昼 ご飯 は、介護職 が 作ります。)",
+      "(C.あした の 昼 ご飯 は、野菜 の 煮物 を 作ります。) ungkapan/istilah (C.あした の 昼 ご飯 は、野菜 の 煮物 を 作ります。)",
+      "(D.あした の 昼 ご飯 は、魚 の 煮付け を 作ります。) ungkapan/istilah (D.あした の 昼 ご飯 は、魚 の 煮付け を 作ります。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.あした の 昼 (ひる) ご飯 (はん) は、佐藤 (さとう)さん が 一人 (ひとり) で 作 (つく)ります。",
-        "rom": "",
-        "arti": "A.あした の 昼 (ひる) ご飯 (はん) は、佐藤 (さとう)さん が 一人 (ひとり) で 作 (つく)ります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ひる",
+        "rom": "A.あした の 昼 ご飯 は、佐藤さん が 一人 で 作ります。",
+        "arti": "ungkapan/istilah (A.あした の 昼 ご飯 は、佐藤さん が 一人 で 作ります。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.あした の 昼 (ひる) ご飯 (はん) は、介護職 (かいごしょく) が 作 (つく)ります。",
-        "rom": "",
-        "arti": "B.あした の 昼 (ひる) ご飯 (はん) は、介護職 (かいごしょく) が 作 (つく)ります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ひる",
+        "rom": "B.あした の 昼 ご飯 は、介護職 が 作ります。",
+        "arti": "ungkapan/istilah (B.あした の 昼 ご飯 は、介護職 が 作ります。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.あした の 昼 (ひる) ご飯 (はん) は、野菜 (やさい) の 煮物 (にもの) を 作 (つく)ります。",
-        "rom": "",
-        "arti": "C.あした の 昼 (ひる) ご飯 (はん) は、野菜 (やさい) の 煮物 (にもの) を 作 (つく)ります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ひる",
+        "rom": "C.あした の 昼 ご飯 は、野菜 の 煮物 を 作ります。",
+        "arti": "ungkapan/istilah (C.あした の 昼 ご飯 は、野菜 の 煮物 を 作ります。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.あした の 昼 (ひる) ご飯 (はん) は、魚 (さかな) の 煮付 (につ)け を 作 (つく)ります。",
-        "rom": "",
-        "arti": "D.あした の 昼 (ひる) ご飯 (はん) は、魚 (さかな) の 煮付 (につ)け を 作 (つく)ります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ひる",
+        "rom": "D.あした の 昼 ご飯 は、魚 の 煮付け を 作ります。",
+        "arti": "ungkapan/istilah (D.あした の 昼 ご飯 は、魚 の 煮付け を 作ります。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 21)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 21 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.あした の 昼 (ひる) ご飯 (はん) は、野菜 (やさい) の 煮物 (にもの) を 作 (つく)ります。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.あした の 昼 ご飯 は、佐藤さん が 一人 で 作ります。) ungkapan/istilah (A.あした の 昼 ご飯 は、佐藤さん が 一人 で 作ります。), (B.あした の 昼 ご飯 は、介護職 が 作ります。) ungkapan/istilah (B.あした の 昼 ご飯 は、介護職 が 作ります。), (C.あした の 昼 ご飯 は、野菜 の 煮物 を 作ります。) ungkapan/istilah (C.あした の 昼 ご飯 は、野菜 の 煮物 を 作ります。), (D.あした の 昼 ご飯 は、魚 の 煮付け を 作ります。) ungkapan/istilah (D.あした の 昼 ご飯 は、魚 の 煮付け を 作ります。)"
       }
     ]
   },
@@ -1432,44 +1516,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.じゃ、佐藤 (さとう)さん が 食堂 (しょくどう) に 行 (い)って いる ときに、換気 (かんき) を しますね。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.じゃ、佐藤 (さとう)さん が 食堂 (しょくどう) に 行 (い)って いる ときに、換気 (かんき) を しますね。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.じゃ、佐藤 (さとう)さん が 食堂 (しょくどう) に 行 (い)って いる ときに、換気 (かんき) を しますね。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.じゃ、今 (いま) 窓 (まど) を 開 (あ...)",
-      "(B.じゃ、今 (いま) 換気 (かんき)しますね...)",
-      "(C.じゃ、佐藤 (さとう)さん が 食堂 (しょく...)",
-      "(D.じゃ、佐藤 (さとう)さん が 食堂 (しょく...)"
+      "(A.じゃ、今 窓 を 開けますね) ungkapan/istilah (A.じゃ、今 窓 を 開けますね)",
+      "(B.じゃ、今 換気しますね) ungkapan/istilah (B.じゃ、今 換気しますね)",
+      "(C.じゃ、佐藤さん が 食堂 に 行って いるときに、窓 を 閉めますね) ungkapan/istilah (C.じゃ、佐藤さん が 食堂 に 行って いるときに、窓 を 閉めますね)",
+      "(D.じゃ、佐藤さん が 食堂 に 行って いる ときに、換気 を しますね。) ungkapan/istilah (D.じゃ、佐藤さん が 食堂 に 行って いる ときに、換気 を しますね。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.じゃ、今 (いま) 窓 (まど) を 開 (あ)けますね",
-        "rom": "",
-        "arti": "A.じゃ、今 (いま) 窓 (まど) を 開 (あ)けますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "いま",
+        "rom": "A.じゃ、今 窓 を 開けますね",
+        "arti": "ungkapan/istilah (A.じゃ、今 窓 を 開けますね)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.じゃ、今 (いま) 換気 (かんき)しますね",
-        "rom": "",
-        "arti": "B.じゃ、今 (いま) 換気 (かんき)しますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "いま",
+        "rom": "B.じゃ、今 換気しますね",
+        "arti": "ungkapan/istilah (B.じゃ、今 換気しますね)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.じゃ、佐藤 (さとう)さん が 食堂 (しょくどう) に 行 (い)って いるときに、窓 (まど) を 閉 (し)めますね",
-        "rom": "",
-        "arti": "C.じゃ、佐藤 (さとう)さん が 食堂 (しょくどう) に 行 (い)って いるときに、窓 (まど) を 閉 (し)めますね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "C.じゃ、佐藤さん が 食堂 に 行って いるときに、窓 を 閉めますね",
+        "arti": "ungkapan/istilah (C.じゃ、佐藤さん が 食堂 に 行って いるときに、窓 を 閉めますね)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.じゃ、佐藤 (さとう)さん が 食堂 (しょくどう) に 行 (い)って いる ときに、換気 (かんき) を しますね。",
-        "rom": "",
-        "arti": "D.じゃ、佐藤 (さとう)さん が 食堂 (しょくどう) に 行 (い)って いる ときに、換気 (かんき) を しますね。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "D.じゃ、佐藤さん が 食堂 に 行って いる ときに、換気 を しますね。",
+        "arti": "ungkapan/istilah (D.じゃ、佐藤さん が 食堂 に 行って いる ときに、換気 を しますね。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 22)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 22 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.じゃ、佐藤 (さとう)さん が 食堂 (しょくどう) に 行 (い)って いる ときに、換気 (かんき) を しますね。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.じゃ、今 窓 を 開けますね) ungkapan/istilah (A.じゃ、今 窓 を 開けますね), (B.じゃ、今 換気しますね) ungkapan/istilah (B.じゃ、今 換気しますね), (C.じゃ、佐藤さん が 食堂 に 行って いるときに、窓 を 閉めますね) ungkapan/istilah (C.じゃ、佐藤さん が 食堂 に 行って いるときに、窓 を 閉めますね), (D.じゃ、佐藤さん が 食堂 に 行って いる ときに、換気 を しますね。) ungkapan/istilah (D.じゃ、佐藤さん が 食堂 に 行って いる ときに、換気 を しますね。)"
       }
     ]
   },
@@ -1499,44 +1587,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.じゃ、洗濯物 (せんたくもの) の たたみ 方 (かた) を 教 (おし)えてもらえませんか",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.じゃ、洗濯物 (せんたくもの) の たたみ 方 (かた) を 教 (おし)えてもらえませんか**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.じゃ、洗濯物 (せんたくもの) の たたみ 方 (かた) を 教 (おし)えてもらえませんか**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.じゃ、お手 (て) 伝 (つだ)いしましょうか...)",
-      "(B.じゃ、あした、パジャマ を 洗濯 (せんたく)...)",
-      "(C.じゃ、洗濯物 (せんたくもの) の たたみ 方...)",
-      "(D.じゃ、洗濯 (せんたく) の やり 方 (かた...)"
+      "(A.じゃ、お手 伝いしましょうか) ungkapan/istilah (A.じゃ、お手 伝いしましょうか)",
+      "(pajama) piyama / baju tidur",
+      "(C.じゃ、洗濯物 の たたみ 方 を 教えてもらえませんか) ungkapan/istilah (C.じゃ、洗濯物 の たたみ 方 を 教えてもらえませんか)",
+      "(D.じゃ、洗濯 の やり 方 教えてもらえませんか) ungkapan/istilah (D.じゃ、洗濯 の やり 方 教えてもらえませんか)"
     ],
     "opt_detail": [
       {
-        "kana": "A.じゃ、お手 (て) 伝 (つだ)いしましょうか",
-        "rom": "",
-        "arti": "A.じゃ、お手 (て) 伝 (つだ)いしましょうか",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "て",
+        "rom": "A.じゃ、お手 伝いしましょうか",
+        "arti": "ungkapan/istilah (A.じゃ、お手 伝いしましょうか)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.じゃ、あした、パジャマ を 洗濯 (せんたく)しましょう",
-        "rom": "",
-        "arti": "B.じゃ、あした、パジャマ を 洗濯 (せんたく)しましょう",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "せんたく",
+        "rom": "pajama",
+        "arti": "piyama / baju tidur",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.じゃ、洗濯物 (せんたくもの) の たたみ 方 (かた) を 教 (おし)えてもらえませんか",
-        "rom": "",
-        "arti": "C.じゃ、洗濯物 (せんたくもの) の たたみ 方 (かた) を 教 (おし)えてもらえませんか",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "せんたくもの",
+        "rom": "C.じゃ、洗濯物 の たたみ 方 を 教えてもらえませんか",
+        "arti": "ungkapan/istilah (C.じゃ、洗濯物 の たたみ 方 を 教えてもらえませんか)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.じゃ、洗濯 (せんたく) の やり 方 (かた) 教 (おし)えてもらえませんか",
-        "rom": "",
-        "arti": "D.じゃ、洗濯 (せんたく) の やり 方 (かた) 教 (おし)えてもらえませんか",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "せんたく",
+        "rom": "D.じゃ、洗濯 の やり 方 教えてもらえませんか",
+        "arti": "ungkapan/istilah (D.じゃ、洗濯 の やり 方 教えてもらえませんか)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 23)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 23 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.じゃ、洗濯物 (せんたくもの) の たたみ 方 (かた) を 教 (おし)えてもらえませんか** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.じゃ、お手 伝いしましょうか) ungkapan/istilah (A.じゃ、お手 伝いしましょうか), (pajama) piyama / baju tidur, (C.じゃ、洗濯物 の たたみ 方 を 教えてもらえませんか) ungkapan/istilah (C.じゃ、洗濯物 の たたみ 方 を 教えてもらえませんか), (D.じゃ、洗濯 の やり 方 教えてもらえませんか) ungkapan/istilah (D.じゃ、洗濯 の やり 方 教えてもらえませんか)"
       }
     ]
   },
@@ -1566,44 +1658,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.テーブル が きれい に なりましたね",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.テーブル が きれい に なりましたね**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.テーブル が きれい に なりましたね**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.テーブル を 拭 (ふ)いてください...)",
-      "(B.テーブル が 汚 (よご)れていますよ...)",
-      "(C.テーブル を きれい に しましょう...)",
-      "(D.テーブル が きれい に なりましたね...)"
+      "(A.テーブル を 拭いてください) ungkapan/istilah (A.テーブル を 拭いてください)",
+      "(B.テーブル が 汚れていますよ) ungkapan/istilah (B.テーブル が 汚れていますよ)",
+      "(C.テーブル を きれい に しましょう) ungkapan/istilah (C.テーブル を きれい に しましょう)",
+      "(D.テーブル が きれい に なりましたね) ungkapan/istilah (D.テーブル が きれい に なりましたね)"
     ],
     "opt_detail": [
       {
-        "kana": "A.テーブル を 拭 (ふ)いてください",
-        "rom": "",
-        "arti": "A.テーブル を 拭 (ふ)いてください",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ふ",
+        "rom": "A.テーブル を 拭いてください",
+        "arti": "ungkapan/istilah (A.テーブル を 拭いてください)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.テーブル が 汚 (よご)れていますよ",
-        "rom": "",
-        "arti": "B.テーブル が 汚 (よご)れていますよ",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "よご",
+        "rom": "B.テーブル が 汚れていますよ",
+        "arti": "ungkapan/istilah (B.テーブル が 汚れていますよ)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "C.テーブル を きれい に しましょう",
-        "rom": "",
-        "arti": "C.テーブル を きれい に しましょう",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "rom": "C.テーブル を きれい に しましょう",
+        "arti": "ungkapan/istilah (C.テーブル を きれい に しましょう)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
         "kana": "D.テーブル が きれい に なりましたね",
-        "rom": "",
-        "arti": "D.テーブル が きれい に なりましたね",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "rom": "D.テーブル が きれい に なりましたね",
+        "arti": "ungkapan/istilah (D.テーブル が きれい に なりましたね)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 24)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 24 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.テーブル が きれい に なりましたね** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.テーブル を 拭いてください) ungkapan/istilah (A.テーブル を 拭いてください), (B.テーブル が 汚れていますよ) ungkapan/istilah (B.テーブル が 汚れていますよ), (C.テーブル を きれい に しましょう) ungkapan/istilah (C.テーブル を きれい に しましょう), (D.テーブル が きれい に なりましたね) ungkapan/istilah (D.テーブル が きれい に なりましたね)"
       }
     ]
   },
@@ -1633,44 +1729,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.夜 (よる) は、ポータブルトイレ で 排泄 (はいせつ)しています。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.夜 (よる) は、ポータブルトイレ で 排泄 (はいせつ)しています。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.夜 (よる) は、ポータブルトイレ で 排泄 (はいせつ)しています。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.自立 (じりつ)しています。...)",
-      "(B.いつも トイレ へ 行 (い)って 排泄 (は...)",
-      "(C.失禁 (しっきん) が あります。...)",
-      "(D.夜 (よる) は、ポータブルトイレ で 排泄 ...)"
+      "(A.自立しています。) ungkapan/istilah (A.自立しています。)",
+      "(haisetsu) ekskresi / buang air",
+      "(C.失禁 が あります。) ungkapan/istilah (C.失禁 が あります。)",
+      "(haisetsu) ekskresi / buang air"
     ],
     "opt_detail": [
       {
-        "kana": "A.自立 (じりつ)しています。",
-        "rom": "",
-        "arti": "A.自立 (じりつ)しています。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "じりつ",
+        "rom": "A.自立しています。",
+        "arti": "ungkapan/istilah (A.自立しています。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.いつも トイレ へ 行 (い)って 排泄 (はいせつ)しています。",
-        "rom": "",
-        "arti": "B.いつも トイレ へ 行 (い)って 排泄 (はいせつ)しています。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "い",
+        "rom": "haisetsu",
+        "arti": "ekskresi / buang air",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.失禁 (しっきん) が あります。",
-        "rom": "",
-        "arti": "C.失禁 (しっきん) が あります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "しっきん",
+        "rom": "C.失禁 が あります。",
+        "arti": "ungkapan/istilah (C.失禁 が あります。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.夜 (よる) は、ポータブルトイレ で 排泄 (はいせつ)しています。",
-        "rom": "",
-        "arti": "D.夜 (よる) は、ポータブルトイレ で 排泄 (はいせつ)しています。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "よる",
+        "rom": "haisetsu",
+        "arti": "ekskresi / buang air",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 25)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 25 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.夜 (よる) は、ポータブルトイレ で 排泄 (はいせつ)しています。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.自立しています。) ungkapan/istilah (A.自立しています。), (haisetsu) ekskresi / buang air, (C.失禁 が あります。) ungkapan/istilah (C.失禁 が あります。), (haisetsu) ekskresi / buang air"
       }
     ]
   },
@@ -1700,44 +1800,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.鈴木 (すずき)さん は、手伝 (てつだ)って もらって、入浴 (にゅうよく)しています。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.鈴木 (すずき)さん は、手伝 (てつだ)って もらって、入浴 (にゅうよく)しています。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.鈴木 (すずき)さん は、手伝 (てつだ)って もらって、入浴 (にゅうよく)しています。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.鈴木 (すずき)さん は、今入院 (いまにゅう...)",
-      "(B.鈴木 (すずき)さん は、いつも 胸 (むね)...)",
-      "(C.鈴木 (すずき)さん は、お風呂 (ふろ) に...)",
-      "(D.鈴木 (すずき)さん は、手伝 (てつだ)って...)"
+      "(A.鈴木さん は、今入院しています。) ungkapan/istilah (A.鈴木さん は、今入院しています。)",
+      "(B.鈴木さん は、いつも 胸 が 痛いです。) ungkapan/istilah (B.鈴木さん は、いつも 胸 が 痛いです。)",
+      "(C.鈴木さん は、お風呂 に 一人 で 入る こと が できる。) ungkapan/istilah (C.鈴木さん は、お風呂 に 一人 で 入る こと が できる。)",
+      "(nyuuyoku) mandi berendam"
     ],
     "opt_detail": [
       {
-        "kana": "A.鈴木 (すずき)さん は、今入院 (いまにゅういん)しています。",
-        "rom": "",
-        "arti": "A.鈴木 (すずき)さん は、今入院 (いまにゅういん)しています。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "A.鈴木さん は、今入院しています。",
+        "arti": "ungkapan/istilah (A.鈴木さん は、今入院しています。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.鈴木 (すずき)さん は、いつも 胸 (むね) が 痛 (いた)いです。",
-        "rom": "",
-        "arti": "B.鈴木 (すずき)さん は、いつも 胸 (むね) が 痛 (いた)いです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "B.鈴木さん は、いつも 胸 が 痛いです。",
+        "arti": "ungkapan/istilah (B.鈴木さん は、いつも 胸 が 痛いです。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.鈴木 (すずき)さん は、お風呂 (ふろ) に 一人 (ひとり) で 入 (はい)る こと が できる。",
-        "rom": "",
-        "arti": "C.鈴木 (すずき)さん は、お風呂 (ふろ) に 一人 (ひとり) で 入 (はい)る こと が できる。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "C.鈴木さん は、お風呂 に 一人 で 入る こと が できる。",
+        "arti": "ungkapan/istilah (C.鈴木さん は、お風呂 に 一人 で 入る こと が できる。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.鈴木 (すずき)さん は、手伝 (てつだ)って もらって、入浴 (にゅうよく)しています。",
-        "rom": "",
-        "arti": "D.鈴木 (すずき)さん は、手伝 (てつだ)って もらって、入浴 (にゅうよく)しています。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "nyuuyoku",
+        "arti": "mandi berendam",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 26)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 26 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.鈴木 (すずき)さん は、手伝 (てつだ)って もらって、入浴 (にゅうよく)しています。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.鈴木さん は、今入院しています。) ungkapan/istilah (A.鈴木さん は、今入院しています。), (B.鈴木さん は、いつも 胸 が 痛いです。) ungkapan/istilah (B.鈴木さん は、いつも 胸 が 痛いです。), (C.鈴木さん は、お風呂 に 一人 で 入る こと が できる。) ungkapan/istilah (C.鈴木さん は、お風呂 に 一人 で 入る こと が できる。), (nyuuyoku) mandi berendam"
       }
     ]
   },
@@ -1767,44 +1871,48 @@
     ],
     "answer": 1,
     "kunci_id": "B.佐藤 (さとう)さん は、左耳 (ひだりみみ) が 聞 (き)こえにくいです。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **B.佐藤 (さとう)さん は、左耳 (ひだりみみ) が 聞 (き)こえにくいです。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **B.佐藤 (さとう)さん は、左耳 (ひだりみみ) が 聞 (き)こえにくいです。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.佐藤 (さとう)さん は、左耳 (ひだりみみ)...)",
-      "(B.佐藤 (さとう)さん は、左耳 (ひだりみみ)...)",
-      "(C.佐藤 (さとう)さん は、大 (おお)きい 声...)",
-      "(D.佐藤 (さとう)さん は、右目 (みぎめ) も...)"
+      "(mimi) telinga",
+      "(mimi) telinga",
+      "(C.佐藤さん は、大きい 声 で 話します。) ungkapan/istilah (C.佐藤さん は、大きい 声 で 話します。)",
+      "(me) mata"
     ],
     "opt_detail": [
       {
-        "kana": "A.佐藤 (さとう)さん は、左耳 (ひだりみみ) も 右耳 (みぎみみ) も よく 聞 (き)こえます。",
-        "rom": "",
-        "arti": "A.佐藤 (さとう)さん は、左耳 (ひだりみみ) も 右耳 (みぎみみ) も よく 聞 (き)こえます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "mimi",
+        "arti": "telinga",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.佐藤 (さとう)さん は、左耳 (ひだりみみ) が 聞 (き)こえにくいです。",
-        "rom": "",
-        "arti": "B.佐藤 (さとう)さん は、左耳 (ひだりみみ) が 聞 (き)こえにくいです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "mimi",
+        "arti": "telinga",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "C.佐藤 (さとう)さん は、大 (おお)きい 声 (こえ) で 話 (はな)します。",
-        "rom": "",
-        "arti": "C.佐藤 (さとう)さん は、大 (おお)きい 声 (こえ) で 話 (はな)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "C.佐藤さん は、大きい 声 で 話します。",
+        "arti": "ungkapan/istilah (C.佐藤さん は、大きい 声 で 話します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.佐藤 (さとう)さん は、右目 (みぎめ) も 左目 (ひだりめ) も 見 (み)えにくいです。",
-        "rom": "",
-        "arti": "D.佐藤 (さとう)さん は、右目 (みぎめ) も 左目 (ひだりめ) も 見 (み)えにくいです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "me",
+        "arti": "mata",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 27)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 27 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **B.佐藤 (さとう)さん は、左耳 (ひだりみみ) が 聞 (き)こえにくいです。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(mimi) telinga, (mimi) telinga, (C.佐藤さん は、大きい 声 で 話します。) ungkapan/istilah (C.佐藤さん は、大きい 声 で 話します。), (me) mata"
       }
     ]
   },
@@ -1834,44 +1942,48 @@
     ],
     "answer": 1,
     "kunci_id": "B.鈴木 (すずき)さん は、自分 (じぶん) で ご飯 (はん) を 食 (た)べる が ことができます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **B.鈴木 (すずき)さん は、自分 (じぶん) で ご飯 (はん) を 食 (た)べる が ことができます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **B.鈴木 (すずき)さん は、自分 (じぶん) で ご飯 (はん) を 食 (た)べる が ことができます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.鈴木 (すずき)さん は、自分 (じぶん) で...)",
-      "(B.鈴木 (すずき)さん は、自分 (じぶん) で...)",
-      "(C.鈴木 (すずき)さん は、自分 (じぶん) で...)",
-      "(D.鈴木 (すずき)さん は、自分 (じぶん) で...)"
+      "(idou) bergerak / mobilitas",
+      "(B.鈴木さん は、自分 で ご飯 を 食べる が ことができます。) ungkapan/istilah (B.鈴木さん は、自分 で ご飯 を 食べる が ことができます。)",
+      "(C.鈴木さん は、自分 で トイレ へ 行くができます。) ungkapan/istilah (C.鈴木さん は、自分 で トイレ へ 行くができます。)",
+      "(D.鈴木さん は、自分 で お風呂 に 入る が できます。) ungkapan/istilah (D.鈴木さん は、自分 で お風呂 に 入る が できます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.鈴木 (すずき)さん は、自分 (じぶん) で 歩 (ある)いて 移動 (いどう)する こと が できます。",
-        "rom": "",
-        "arti": "A.鈴木 (すずき)さん は、自分 (じぶん) で 歩 (ある)いて 移動 (いどう)する こと が できます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "idou",
+        "arti": "bergerak / mobilitas",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.鈴木 (すずき)さん は、自分 (じぶん) で ご飯 (はん) を 食 (た)べる が ことができます。",
-        "rom": "",
-        "arti": "B.鈴木 (すずき)さん は、自分 (じぶん) で ご飯 (はん) を 食 (た)べる が ことができます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "B.鈴木さん は、自分 で ご飯 を 食べる が ことができます。",
+        "arti": "ungkapan/istilah (B.鈴木さん は、自分 で ご飯 を 食べる が ことができます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "C.鈴木 (すずき)さん は、自分 (じぶん) で トイレ へ 行 (い)くができます。",
-        "rom": "",
-        "arti": "C.鈴木 (すずき)さん は、自分 (じぶん) で トイレ へ 行 (い)くができます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "C.鈴木さん は、自分 で トイレ へ 行くができます。",
+        "arti": "ungkapan/istilah (C.鈴木さん は、自分 で トイレ へ 行くができます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.鈴木 (すずき)さん は、自分 (じぶん) で お風呂 (ふろ) に 入 (はい)る が できます。",
-        "rom": "",
-        "arti": "D.鈴木 (すずき)さん は、自分 (じぶん) で お風呂 (ふろ) に 入 (はい)る が できます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すずき",
+        "rom": "D.鈴木さん は、自分 で お風呂 に 入る が できます。",
+        "arti": "ungkapan/istilah (D.鈴木さん は、自分 で お風呂 に 入る が できます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 28)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 28 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **B.鈴木 (すずき)さん は、自分 (じぶん) で ご飯 (はん) を 食 (た)べる が ことができます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(idou) bergerak / mobilitas, (B.鈴木さん は、自分 で ご飯 を 食べる が ことができます。) ungkapan/istilah (B.鈴木さん は、自分 で ご飯 を 食べる が ことができます。), (C.鈴木さん は、自分 で トイレ へ 行くができます。) ungkapan/istilah (C.鈴木さん は、自分 で トイレ へ 行くができます。), (D.鈴木さん は、自分 で お風呂 に 入る が できます。) ungkapan/istilah (D.鈴木さん は、自分 で お風呂 に 入る が できます。)"
       }
     ]
   },
@@ -1901,44 +2013,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.佐藤 (さとう)さん の 息子 (むすこ)さん は、働 (はたら)いています。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.佐藤 (さとう)さん の 息子 (むすこ)さん は、働 (はたら)いています。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.佐藤 (さとう)さん の 息子 (むすこ)さん は、働 (はたら)いています。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.佐藤 (さとう)さん の 娘 (むすめ)さん ...)",
-      "(B.佐藤 (さとう)さん の 娘 (むすめ)さん ...)",
-      "(C.佐藤 (さとう)さん の 息子 (むすこ)さん...)",
-      "(D.佐藤 (さとう)さん の 息子 (むすこ)さん...)"
+      "(A.佐藤さん の 娘さん の 家 は、施設 から 遠いです。) ungkapan/istilah (A.佐藤さん の 娘さん の 家 は、施設 から 遠いです。)",
+      "(B.佐藤さん の 娘さん は、月曜日 に 面会 に 来ます。) ungkapan/istilah (B.佐藤さん の 娘さん は、月曜日 に 面会 に 来ます。)",
+      "(C.佐藤さん の 息子さん は、働いています。) ungkapan/istilah (C.佐藤さん の 息子さん は、働いています。)",
+      "(D.佐藤さん の 息子さん は、よく 面会 に 来ます。) ungkapan/istilah (D.佐藤さん の 息子さん は、よく 面会 に 来ます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.佐藤 (さとう)さん の 娘 (むすめ)さん の 家 (いえ) は、施設 (しせつ) から 遠 (とお)いです。",
-        "rom": "",
-        "arti": "A.佐藤 (さとう)さん の 娘 (むすめ)さん の 家 (いえ) は、施設 (しせつ) から 遠 (とお)いです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "A.佐藤さん の 娘さん の 家 は、施設 から 遠いです。",
+        "arti": "ungkapan/istilah (A.佐藤さん の 娘さん の 家 は、施設 から 遠いです。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.佐藤 (さとう)さん の 娘 (むすめ)さん は、月曜日 (げつようび) に 面会 (めんかい) に 来 (き)ます。",
-        "rom": "",
-        "arti": "B.佐藤 (さとう)さん の 娘 (むすめ)さん は、月曜日 (げつようび) に 面会 (めんかい) に 来 (き)ます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "B.佐藤さん の 娘さん は、月曜日 に 面会 に 来ます。",
+        "arti": "ungkapan/istilah (B.佐藤さん の 娘さん は、月曜日 に 面会 に 来ます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.佐藤 (さとう)さん の 息子 (むすこ)さん は、働 (はたら)いています。",
-        "rom": "",
-        "arti": "C.佐藤 (さとう)さん の 息子 (むすこ)さん は、働 (はたら)いています。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "C.佐藤さん の 息子さん は、働いています。",
+        "arti": "ungkapan/istilah (C.佐藤さん の 息子さん は、働いています。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.佐藤 (さとう)さん の 息子 (むすこ)さん は、よく 面会 (めんかい) に 来 (き)ます。",
-        "rom": "",
-        "arti": "D.佐藤 (さとう)さん の 息子 (むすこ)さん は、よく 面会 (めんかい) に 来 (き)ます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "さとう",
+        "rom": "D.佐藤さん の 息子さん は、よく 面会 に 来ます。",
+        "arti": "ungkapan/istilah (D.佐藤さん の 息子さん は、よく 面会 に 来ます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 29)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 29 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.佐藤 (さとう)さん の 息子 (むすこ)さん は、働 (はたら)いています。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.佐藤さん の 娘さん の 家 は、施設 から 遠いです。) ungkapan/istilah (A.佐藤さん の 娘さん の 家 は、施設 から 遠いです。), (B.佐藤さん の 娘さん は、月曜日 に 面会 に 来ます。) ungkapan/istilah (B.佐藤さん の 娘さん は、月曜日 に 面会 に 来ます。), (C.佐藤さん の 息子さん は、働いています。) ungkapan/istilah (C.佐藤さん の 息子さん は、働いています。), (D.佐藤さん の 息子さん は、よく 面会 に 来ます。) ungkapan/istilah (D.佐藤さん の 息子さん は、よく 面会 に 来ます。)"
       }
     ]
   },
@@ -1968,44 +2084,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.鈴木 (すず)さん は、夜中 (よなか) に 吐 (は)きました。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.鈴木 (すず)さん は、夜中 (よなか) に 吐 (は)きました。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.鈴木 (すず)さん は、夜中 (よなか) に 吐 (は)きました。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.鈴木 (すず)さん は、気分 (きぶん) が ...)",
-      "(B.鈴木 (すず)さん は、朝食 (ちょうしょく)...)",
-      "(C.鈴木 (すず)さん は、夜中 (よなか) に ...)",
-      "(D.鈴木 (すず)さん は、夜中 (よなか) に ...)"
+      "(A.鈴木さん は、気分 が 悪くて、夕食 を 残しました。) ungkapan/istilah (A.鈴木さん は、気分 が 悪くて、夕食 を 残しました。)",
+      "(B.鈴木さん は、朝食 の とき、お茶 を ２００ｃｃ 飲みました。) ungkapan/istilah (B.鈴木さん は、朝食 の とき、お茶 を ２００ｃｃ 飲みました。)",
+      "(C.鈴木さん は、夜中 に 熱 が ありました。) ungkapan/istilah (C.鈴木さん は、夜中 に 熱 が ありました。)",
+      "(D.鈴木さん は、夜中 に 吐きました。) ungkapan/istilah (D.鈴木さん は、夜中 に 吐きました。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.鈴木 (すず)さん は、気分 (きぶん) が 悪 (わる)くて、夕食 (ゆうしょく) を 残 (のこ)しました。",
-        "rom": "",
-        "arti": "A.鈴木 (すず)さん は、気分 (きぶん) が 悪 (わる)くて、夕食 (ゆうしょく) を 残 (のこ)しました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すず",
+        "rom": "A.鈴木さん は、気分 が 悪くて、夕食 を 残しました。",
+        "arti": "ungkapan/istilah (A.鈴木さん は、気分 が 悪くて、夕食 を 残しました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.鈴木 (すず)さん は、朝食 (ちょうしょく) の とき、お茶 (ちゃ) を ２００ｃｃ 飲 (の)みました。",
-        "rom": "",
-        "arti": "B.鈴木 (すず)さん は、朝食 (ちょうしょく) の とき、お茶 (ちゃ) を ２００ｃｃ 飲 (の)みました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すず",
+        "rom": "B.鈴木さん は、朝食 の とき、お茶 を ２００ｃｃ 飲みました。",
+        "arti": "ungkapan/istilah (B.鈴木さん は、朝食 の とき、お茶 を ２００ｃｃ 飲みました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.鈴木 (すず)さん は、夜中 (よなか) に 熱 (ねつ) が ありました。",
-        "rom": "",
-        "arti": "C.鈴木 (すず)さん は、夜中 (よなか) に 熱 (ねつ) が ありました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すず",
+        "rom": "C.鈴木さん は、夜中 に 熱 が ありました。",
+        "arti": "ungkapan/istilah (C.鈴木さん は、夜中 に 熱 が ありました。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.鈴木 (すず)さん は、夜中 (よなか) に 吐 (は)きました。",
-        "rom": "",
-        "arti": "D.鈴木 (すず)さん は、夜中 (よなか) に 吐 (は)きました。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すず",
+        "rom": "D.鈴木さん は、夜中 に 吐きました。",
+        "arti": "ungkapan/istilah (D.鈴木さん は、夜中 に 吐きました。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 30)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 30 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.鈴木 (すず)さん は、夜中 (よなか) に 吐 (は)きました。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.鈴木さん は、気分 が 悪くて、夕食 を 残しました。) ungkapan/istilah (A.鈴木さん は、気分 が 悪くて、夕食 を 残しました。), (B.鈴木さん は、朝食 の とき、お茶 を ２００ｃｃ 飲みました。) ungkapan/istilah (B.鈴木さん は、朝食 の とき、お茶 を ２００ｃｃ 飲みました。), (C.鈴木さん は、夜中 に 熱 が ありました。) ungkapan/istilah (C.鈴木さん は、夜中 に 熱 が ありました。), (D.鈴木さん は、夜中 に 吐きました。) ungkapan/istilah (D.鈴木さん は、夜中 に 吐きました。)"
       }
     ]
   },
@@ -2035,44 +2155,48 @@
     ],
     "answer": 0,
     "kunci_id": "A.「車 (くるま)いす を 押 (お)しますよ」",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **A.「車 (くるま)いす を 押 (お)しますよ」**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **A.「車 (くるま)いす を 押 (お)しますよ」**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.「車 (くるま)いす を 押 (お)しますよ」...)",
-      "(B.「車 (くるま)いす の ブレーキ を かけま...)",
-      "(C.「危 (あぶ)ない ですよ」...)",
-      "(D.「介護 (かいご)しますよ」...)"
+      "(A.「車いす を 押しますよ」) ungkapan/istilah (A.「車いす を 押しますよ」)",
+      "(B.「車いす の ブレーキ を かけますよ」) ungkapan/istilah (B.「車いす の ブレーキ を かけますよ」)",
+      "(C.「危ない ですよ」) ungkapan/istilah (C.「危ない ですよ」)",
+      "(D.「介護しますよ」) ungkapan/istilah (D.「介護しますよ」)"
     ],
     "opt_detail": [
       {
-        "kana": "A.「車 (くるま)いす を 押 (お)しますよ」",
-        "rom": "",
-        "arti": "A.「車 (くるま)いす を 押 (お)しますよ」",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "くるま",
+        "rom": "A.「車いす を 押しますよ」",
+        "arti": "ungkapan/istilah (A.「車いす を 押しますよ」)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "B.「車 (くるま)いす の ブレーキ を かけますよ」",
-        "rom": "",
-        "arti": "B.「車 (くるま)いす の ブレーキ を かけますよ」",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "くるま",
+        "rom": "B.「車いす の ブレーキ を かけますよ」",
+        "arti": "ungkapan/istilah (B.「車いす の ブレーキ を かけますよ」)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.「危 (あぶ)ない ですよ」",
-        "rom": "",
-        "arti": "C.「危 (あぶ)ない ですよ」",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "あぶ",
+        "rom": "C.「危ない ですよ」",
+        "arti": "ungkapan/istilah (C.「危ない ですよ」)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.「介護 (かいご)しますよ」",
-        "rom": "",
-        "arti": "D.「介護 (かいご)しますよ」",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かいご",
+        "rom": "D.「介護しますよ」",
+        "arti": "ungkapan/istilah (D.「介護しますよ」)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 31)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 31 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **A.「車 (くるま)いす を 押 (お)しますよ」** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.「車いす を 押しますよ」) ungkapan/istilah (A.「車いす を 押しますよ」), (B.「車いす の ブレーキ を かけますよ」) ungkapan/istilah (B.「車いす の ブレーキ を かけますよ」), (C.「危ない ですよ」) ungkapan/istilah (C.「危ない ですよ」), (D.「介護しますよ」) ungkapan/istilah (D.「介護しますよ」)"
       }
     ]
   },
@@ -2102,44 +2226,48 @@
     ],
     "answer": 0,
     "kunci_id": "A.利用者 (りようしゃ) が 車 (くるま)いす に 乗 (の)る ときは、ブレーキ を かけます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **A.利用者 (りようしゃ) が 車 (くるま)いす に 乗 (の)る ときは、ブレーキ を かけます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **A.利用者 (りようしゃ) が 車 (くるま)いす に 乗 (の)る ときは、ブレーキ を かけます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.利用者 (りようしゃ) が 車 (くるま)いす...)",
-      "(B.車 (くるま)いす を 止 (と)める とき ...)",
-      "(C.車 (くるま)いす を 使 (つか)った 後 ...)",
-      "(D.利用者 (りようしゃ) の 安全 (あんぜん)...)"
+      "(A.利用者 が 車いす に 乗る ときは、ブレーキ を かけます。) ungkapan/istilah (A.利用者 が 車いす に 乗る ときは、ブレーキ を かけます。)",
+      "(B.車いす を 止める とき だけ、ブレーキ を かけます。) ungkapan/istilah (B.車いす を 止める とき だけ、ブレーキ を かけます。)",
+      "(C.車いす を 使った 後に、ブレーキ と タイヤ を 確認します。) ungkapan/istilah (C.車いす を 使った 後に、ブレーキ と タイヤ を 確認します。)",
+      "(D.利用者 の 安全 だけ を 考えて 介護します。) ungkapan/istilah (D.利用者 の 安全 だけ を 考えて 介護します。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.利用者 (りようしゃ) が 車 (くるま)いす に 乗 (の)る ときは、ブレーキ を かけます。",
-        "rom": "",
-        "arti": "A.利用者 (りようしゃ) が 車 (くるま)いす に 乗 (の)る ときは、ブレーキ を かけます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "りようしゃ",
+        "rom": "A.利用者 が 車いす に 乗る ときは、ブレーキ を かけます。",
+        "arti": "ungkapan/istilah (A.利用者 が 車いす に 乗る ときは、ブレーキ を かけます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "B.車 (くるま)いす を 止 (と)める とき だけ、ブレーキ を かけます。",
-        "rom": "",
-        "arti": "B.車 (くるま)いす を 止 (と)める とき だけ、ブレーキ を かけます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "くるま",
+        "rom": "B.車いす を 止める とき だけ、ブレーキ を かけます。",
+        "arti": "ungkapan/istilah (B.車いす を 止める とき だけ、ブレーキ を かけます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.車 (くるま)いす を 使 (つか)った 後 (あと)に、ブレーキ と タイヤ を 確認 (かくにん)します。",
-        "rom": "",
-        "arti": "C.車 (くるま)いす を 使 (つか)った 後 (あと)に、ブレーキ と タイヤ を 確認 (かくにん)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "くるま",
+        "rom": "C.車いす を 使った 後に、ブレーキ と タイヤ を 確認します。",
+        "arti": "ungkapan/istilah (C.車いす を 使った 後に、ブレーキ と タイヤ を 確認します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.利用者 (りようしゃ) の 安全 (あんぜん) だけ を 考 (かんが)えて 介護 (かいご)します。",
-        "rom": "",
-        "arti": "D.利用者 (りようしゃ) の 安全 (あんぜん) だけ を 考 (かんが)えて 介護 (かいご)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "りようしゃ",
+        "rom": "D.利用者 の 安全 だけ を 考えて 介護します。",
+        "arti": "ungkapan/istilah (D.利用者 の 安全 だけ を 考えて 介護します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 32)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 32 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **A.利用者 (りようしゃ) が 車 (くるま)いす に 乗 (の)る ときは、ブレーキ を かけます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.利用者 が 車いす に 乗る ときは、ブレーキ を かけます。) ungkapan/istilah (A.利用者 が 車いす に 乗る ときは、ブレーキ を かけます。), (B.車いす を 止める とき だけ、ブレーキ を かけます。) ungkapan/istilah (B.車いす を 止める とき だけ、ブレーキ を かけます。), (C.車いす を 使った 後に、ブレーキ と タイヤ を 確認します。) ungkapan/istilah (C.車いす を 使った 後に、ブレーキ と タイヤ を 確認します。), (D.利用者 の 安全 だけ を 考えて 介護します。) ungkapan/istilah (D.利用者 の 安全 だけ を 考えて 介護します。)"
       }
     ]
   },
@@ -2169,44 +2297,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.火事 (かじ) が 起 (お)きたら、まず 周 (まわ)り の 人 (ひと) に 知 (し)らせます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.火事 (かじ) が 起 (お)きたら、まず 周 (まわ)り の 人 (ひと) に 知 (し)らせます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.火事 (かじ) が 起 (お)きたら、まず 周 (まわ)り の 人 (ひと) に 知 (し)らせます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.火事 (かじ) が 起 (お)きたら、まず １...)",
-      "(B.火事 (かじ) が 起 (お)きたら、まず 利...)",
-      "(C.火事 (かじ) が 起 (お)きたら、まず 非...)",
-      "(D.火事 (かじ) が 起 (お)きたら、まず 周...)"
+      "(A.火事 が 起きたら、まず １１９ 番 に 電話します。) ungkapan/istilah (A.火事 が 起きたら、まず １１９ 番 に 電話します。)",
+      "(B.火事 が 起きたら、まず 利用者 の 部屋 に 知らせ に 行きます。) ungkapan/istilah (B.火事 が 起きたら、まず 利用者 の 部屋 に 知らせ に 行きます。)",
+      "(C.火事 が 起きたら、まず 非常ベル を 押します。) ungkapan/istilah (C.火事 が 起きたら、まず 非常ベル を 押します。)",
+      "(D.火事 が 起きたら、まず 周り の 人 に 知らせます。) ungkapan/istilah (D.火事 が 起きたら、まず 周り の 人 に 知らせます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.火事 (かじ) が 起 (お)きたら、まず １１９ 番 (ばん) に 電話 (でん)(わ)します。",
-        "rom": "",
-        "arti": "A.火事 (かじ) が 起 (お)きたら、まず １１９ 番 (ばん) に 電話 (でん)(わ)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かじ",
+        "rom": "A.火事 が 起きたら、まず １１９ 番 に 電話します。",
+        "arti": "ungkapan/istilah (A.火事 が 起きたら、まず １１９ 番 に 電話します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.火事 (かじ) が 起 (お)きたら、まず 利用者 (りようしゃ) の 部屋 (へや) に 知 (し)らせ に 行 (い)きます。",
-        "rom": "",
-        "arti": "B.火事 (かじ) が 起 (お)きたら、まず 利用者 (りようしゃ) の 部屋 (へや) に 知 (し)らせ に 行 (い)きます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かじ",
+        "rom": "B.火事 が 起きたら、まず 利用者 の 部屋 に 知らせ に 行きます。",
+        "arti": "ungkapan/istilah (B.火事 が 起きたら、まず 利用者 の 部屋 に 知らせ に 行きます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.火事 (かじ) が 起 (お)きたら、まず 非常 (ひじょう)ベル を 押 (お)します。",
-        "rom": "",
-        "arti": "C.火事 (かじ) が 起 (お)きたら、まず 非常 (ひじょう)ベル を 押 (お)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かじ",
+        "rom": "C.火事 が 起きたら、まず 非常ベル を 押します。",
+        "arti": "ungkapan/istilah (C.火事 が 起きたら、まず 非常ベル を 押します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.火事 (かじ) が 起 (お)きたら、まず 周 (まわ)り の 人 (ひと) に 知 (し)らせます。",
-        "rom": "",
-        "arti": "D.火事 (かじ) が 起 (お)きたら、まず 周 (まわ)り の 人 (ひと) に 知 (し)らせます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かじ",
+        "rom": "D.火事 が 起きたら、まず 周り の 人 に 知らせます。",
+        "arti": "ungkapan/istilah (D.火事 が 起きたら、まず 周り の 人 に 知らせます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 33)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 33 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.火事 (かじ) が 起 (お)きたら、まず 周 (まわ)り の 人 (ひと) に 知 (し)らせます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.火事 が 起きたら、まず １１９ 番 に 電話します。) ungkapan/istilah (A.火事 が 起きたら、まず １１９ 番 に 電話します。), (B.火事 が 起きたら、まず 利用者 の 部屋 に 知らせ に 行きます。) ungkapan/istilah (B.火事 が 起きたら、まず 利用者 の 部屋 に 知らせ に 行きます。), (C.火事 が 起きたら、まず 非常ベル を 押します。) ungkapan/istilah (C.火事 が 起きたら、まず 非常ベル を 押します。), (D.火事 が 起きたら、まず 周り の 人 に 知らせます。) ungkapan/istilah (D.火事 が 起きたら、まず 周り の 人 に 知らせます。)"
       }
     ]
   },
@@ -2236,44 +2368,48 @@
     ],
     "answer": 0,
     "kunci_id": "A.利用者 (りようしゃ) が できる こと を 確認 (かくにん)する→トイレ へ いっしょに 行 (い)く→ 安全 (あんぜん) を 確認 (かくにん)する→ ボタン に ついて 説 (せつ) 明 (めい)する→トイレ の 外 (そと) に 出 (で)る",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **A.利用者 (りようしゃ) が できる こと を 確認 (かくにん)する→トイレ へ いっしょに 行 (い)く→ 安全 (あんぜん) を 確認 (かくにん)する→ ボタン に ついて 説 (せつ) 明 (めい)する→トイレ の 外 (そと) に 出 (で)る**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **A.利用者 (りようしゃ) が できる こと を 確認 (かくにん)する→トイレ へ いっしょに 行 (い)く→ 安全 (あんぜん) を 確認 (かくにん)する→ ボタン に ついて 説 (せつ) 明 (めい)する→トイレ の 外 (そと) に 出 (で)る**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.利用者 (りようしゃ) が できる こと を ...)",
-      "(B.利用者 (りようしゃ) が できる こと を ...)",
-      "(C.トイレ へ いっしょに 行 (い)く→ボタン ...)",
-      "(D.トイレ へ いっしょに 行 (い)く→利用者 ...)"
+      "(A.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→ 安全 を 確認する→ ボタン に ついて 説 明する→トイレ の 外 に 出る) ungkapan/istilah (A.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→ 安全 を 確認する→ ボタン に ついて 説 明する→トイレ の 外 に 出る)",
+      "(B.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→安全 を 確認する→トイレ の 外 に 出る→ボタン に ついて 説明する) ungkapan/istilah (B.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→安全 を 確認する→トイレ の 外 に 出る→ボタン に ついて 説明する)",
+      "(C.トイレ へ いっしょに 行く→ボタン に ついて 説明する→トイレ の 外に 出る→安全 を 確認する→利用者 が できる こと を 確認する) ungkapan/istilah (C.トイレ へ いっしょに 行く→ボタン に ついて 説明する→トイレ の 外に 出る→安全 を 確認する→利用者 が できる こと を 確認する)",
+      "(D.トイレ へ いっしょに 行く→利用者 が できる こと を 確認する→ボタン について 説明する→安全 を 確認する→トイレ の 外 に 出る) ungkapan/istilah (D.トイレ へ いっしょに 行く→利用者 が できる こと を 確認する→ボタン について 説明する→安全 を 確認する→トイレ の 外 に 出る)"
     ],
     "opt_detail": [
       {
-        "kana": "A.利用者 (りようしゃ) が できる こと を 確認 (かくにん)する→トイレ へ いっしょに 行 (い)く→ 安全 (あんぜん) を 確認 (かくにん)する→ ボタン に ついて 説 (せつ) 明 (めい)する→トイレ の 外 (そと) に 出 (で)る",
-        "rom": "",
-        "arti": "A.利用者 (りようしゃ) が できる こと を 確認 (かくにん)する→トイレ へ いっしょに 行 (い)く→ 安全 (あんぜん) を 確認 (かくにん)する→ ボタン に ついて 説 (せつ) 明 (めい)する→トイレ の 外 (そと) に 出 (で)る",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "りようしゃ",
+        "rom": "A.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→ 安全 を 確認する→ ボタン に ついて 説 明する→トイレ の 外 に 出る",
+        "arti": "ungkapan/istilah (A.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→ 安全 を 確認する→ ボタン に ついて 説 明する→トイレ の 外 に 出る)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "B.利用者 (りようしゃ) が できる こと を 確認 (かくにん)する→トイレ へ いっしょに 行 (い)く→安全 (あんぜん) を 確認 (かくにん)する→トイレ の 外 (そと) に 出 (で)る→ボタン に ついて 説明 (せつめい)する",
-        "rom": "",
-        "arti": "B.利用者 (りようしゃ) が できる こと を 確認 (かくにん)する→トイレ へ いっしょに 行 (い)く→安全 (あんぜん) を 確認 (かくにん)する→トイレ の 外 (そと) に 出 (で)る→ボタン に ついて 説明 (せつめい)する",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "りようしゃ",
+        "rom": "B.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→安全 を 確認する→トイレ の 外 に 出る→ボタン に ついて 説明する",
+        "arti": "ungkapan/istilah (B.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→安全 を 確認する→トイレ の 外 に 出る→ボタン に ついて 説明する)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.トイレ へ いっしょに 行 (い)く→ボタン に ついて 説明 (せつめい)する→トイレ の 外 (そと)に 出 (で)る→安全 (あんぜん) を 確認 (かくにん)する→利用者 (りようしゃ) が できる こと を 確認 (かくにん)する",
-        "rom": "",
-        "arti": "C.トイレ へ いっしょに 行 (い)く→ボタン に ついて 説明 (せつめい)する→トイレ の 外 (そと)に 出 (で)る→安全 (あんぜん) を 確認 (かくにん)する→利用者 (りようしゃ) が できる こと を 確認 (かくにん)する",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "い",
+        "rom": "C.トイレ へ いっしょに 行く→ボタン に ついて 説明する→トイレ の 外に 出る→安全 を 確認する→利用者 が できる こと を 確認する",
+        "arti": "ungkapan/istilah (C.トイレ へ いっしょに 行く→ボタン に ついて 説明する→トイレ の 外に 出る→安全 を 確認する→利用者 が できる こと を 確認する)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.トイレ へ いっしょに 行 (い)く→利用者 (りようしゃ) が できる こと を 確認 (かくにん)する→ボタン について 説明 (せつめい)する→安全 (あんぜん) を 確認 (かくにん)する→トイレ の 外 (そと) に 出 (で)る",
-        "rom": "",
-        "arti": "D.トイレ へ いっしょに 行 (い)く→利用者 (りようしゃ) が できる こと を 確認 (かくにん)する→ボタン について 説明 (せつめい)する→安全 (あんぜん) を 確認 (かくにん)する→トイレ の 外 (そと) に 出 (で)る",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "い",
+        "rom": "D.トイレ へ いっしょに 行く→利用者 が できる こと を 確認する→ボタン について 説明する→安全 を 確認する→トイレ の 外 に 出る",
+        "arti": "ungkapan/istilah (D.トイレ へ いっしょに 行く→利用者 が できる こと を 確認する→ボタン について 説明する→安全 を 確認する→トイレ の 外 に 出る)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 34)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 34 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **A.利用者 (りようしゃ) が できる こと を 確認 (かくにん)する→トイレ へ いっしょに 行 (い)く→ 安全 (あんぜん) を 確認 (かくにん)する→ ボタン に ついて 説 (せつ) 明 (めい)する→トイレ の 外 (そと) に 出 (で)る** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→ 安全 を 確認する→ ボタン に ついて 説 明する→トイレ の 外 に 出る) ungkapan/istilah (A.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→ 安全 を 確認する→ ボタン に ついて 説 明する→トイレ の 外 に 出る), (B.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→安全 を 確認する→トイレ の 外 に 出る→ボタン に ついて 説明する) ungkapan/istilah (B.利用者 が できる こと を 確認する→トイレ へ いっしょに 行く→安全 を 確認する→トイレ の 外 に 出る→ボタン に ついて 説明する), (C.トイレ へ いっしょに 行く→ボタン に ついて 説明する→トイレ の 外に 出る→安全 を 確認する→利用者 が できる こと を 確認する) ungkapan/istilah (C.トイレ へ いっしょに 行く→ボタン に ついて 説明する→トイレ の 外に 出る→安全 を 確認する→利用者 が できる こと を 確認する), (D.トイレ へ いっしょに 行く→利用者 が できる こと を 確認する→ボタン について 説明する→安全 を 確認する→トイレ の 外 に 出る) ungkapan/istilah (D.トイレ へ いっしょに 行く→利用者 が できる こと を 確認する→ボタン について 説明する→安全 を 確認する→トイレ の 外 に 出る)"
       }
     ]
   },
@@ -2303,44 +2439,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.脱衣室 (だついしつ) と 浴室 (よくしつ) の 温度 (おんど) に 気 (き) を つけなければなりません。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.脱衣室 (だついしつ) と 浴室 (よくしつ) の 温度 (おんど) に 気 (き) を つけなければなりません。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.脱衣室 (だついしつ) と 浴室 (よくしつ) の 温度 (おんど) に 気 (き) を つけなければなりません。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.入浴 (にゅうよく) の 前 (まえ)に 利用...)",
-      "(B.入浴 (にゅうよく) の 後 (あと)で、利用...)",
-      "(C.脱衣室 (だついしつ) と 浴室 (よくしつ)...)",
-      "(D.入浴 (にゅうよく) の 後 (あと)で、利用...)"
+      "(nyuuyoku) mandi berendam",
+      "(nyuuyoku) mandi berendam",
+      "(C.脱衣室 と 浴室 の 温度 に 気 を つけなければなりません。) ungkapan/istilah (C.脱衣室 と 浴室 の 温度 に 気 を つけなければなりません。)",
+      "(nyuuyoku) mandi berendam"
     ],
     "opt_detail": [
       {
-        "kana": "A.入浴 (にゅうよく) の 前 (まえ)に 利用者 (りようしゃ) に「おなかがすいていますか」と 聞 (き)きます。",
-        "rom": "",
-        "arti": "A.入浴 (にゅうよく) の 前 (まえ)に 利用者 (りようしゃ) に「おなかがすいていますか」と 聞 (き)きます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "にゅうよく",
+        "rom": "nyuuyoku",
+        "arti": "mandi berendam",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.入浴 (にゅうよく) の 後 (あと)で、利用者 (りようしゃ) に トイレ に 行 (い)って もらいます。",
-        "rom": "",
-        "arti": "B.入浴 (にゅうよく) の 後 (あと)で、利用者 (りようしゃ) に トイレ に 行 (い)って もらいます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "にゅうよく",
+        "rom": "nyuuyoku",
+        "arti": "mandi berendam",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.脱衣室 (だついしつ) と 浴室 (よくしつ) の 温度 (おんど) に 気 (き) を つけなければなりません。",
-        "rom": "",
-        "arti": "C.脱衣室 (だついしつ) と 浴室 (よくしつ) の 温度 (おんど) に 気 (き) を つけなければなりません。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "だついしつ",
+        "rom": "C.脱衣室 と 浴室 の 温度 に 気 を つけなければなりません。",
+        "arti": "ungkapan/istilah (C.脱衣室 と 浴室 の 温度 に 気 を つけなければなりません。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.入浴 (にゅうよく) の 後 (あと)で、利用者 (りようしゃ) に すぐ 食 (た)べ 物 (もの) を 食 (た)べて もらいます。",
-        "rom": "",
-        "arti": "D.入浴 (にゅうよく) の 後 (あと)で、利用者 (りようしゃ) に すぐ 食 (た)べ 物 (もの) を 食 (た)べて もらいます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "にゅうよく",
+        "rom": "nyuuyoku",
+        "arti": "mandi berendam",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 35)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 35 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.脱衣室 (だついしつ) と 浴室 (よくしつ) の 温度 (おんど) に 気 (き) を つけなければなりません。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(nyuuyoku) mandi berendam, (nyuuyoku) mandi berendam, (C.脱衣室 と 浴室 の 温度 に 気 を つけなければなりません。) ungkapan/istilah (C.脱衣室 と 浴室 の 温度 に 気 を つけなければなりません。), (nyuuyoku) mandi berendam"
       }
     ]
   },
@@ -2370,44 +2510,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.食後 (しょくご) に うがい、歯 (は) みがき など を してもらいます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.食後 (しょくご) に うがい、歯 (は) みがき など を してもらいます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.食後 (しょくご) に うがい、歯 (は) みがき など を してもらいます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.立 (た)って 食事介護 (しょくじかいご) ...)",
-      "(B.食後 (しょくご) に メニュー の 説明 (...)",
-      "(C.食後 (しょくご) に すぐ 寝 (ね)てもら...)",
-      "(D.食後 (しょくご) に うがい、歯 (は) み...)"
+      "(shokuji) makan / makanan",
+      "(B.食後 に メニュー の 説明 を します。) ungkapan/istilah (B.食後 に メニュー の 説明 を します。)",
+      "(C.食後 に すぐ 寝てもらいます。) ungkapan/istilah (C.食後 に すぐ 寝てもらいます。)",
+      "(D.食後 に うがい、歯 みがき など を してもらいます。) ungkapan/istilah (D.食後 に うがい、歯 みがき など を してもらいます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.立 (た)って 食事介護 (しょくじかいご) を します。",
-        "rom": "",
-        "arti": "A.立 (た)って 食事介護 (しょくじかいご) を します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "た",
+        "rom": "shokuji",
+        "arti": "makan / makanan",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.食後 (しょくご) に メニュー の 説明 (せつめい) を します。",
-        "rom": "",
-        "arti": "B.食後 (しょくご) に メニュー の 説明 (せつめい) を します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "しょくご",
+        "rom": "B.食後 に メニュー の 説明 を します。",
+        "arti": "ungkapan/istilah (B.食後 に メニュー の 説明 を します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.食後 (しょくご) に すぐ 寝 (ね)てもらいます。",
-        "rom": "",
-        "arti": "C.食後 (しょくご) に すぐ 寝 (ね)てもらいます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "しょくご",
+        "rom": "C.食後 に すぐ 寝てもらいます。",
+        "arti": "ungkapan/istilah (C.食後 に すぐ 寝てもらいます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.食後 (しょくご) に うがい、歯 (は) みがき など を してもらいます。",
-        "rom": "",
-        "arti": "D.食後 (しょくご) に うがい、歯 (は) みがき など を してもらいます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "しょくご",
+        "rom": "D.食後 に うがい、歯 みがき など を してもらいます。",
+        "arti": "ungkapan/istilah (D.食後 に うがい、歯 みがき など を してもらいます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 36)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 36 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.食後 (しょくご) に うがい、歯 (は) みがき など を してもらいます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(shokuji) makan / makanan, (B.食後 に メニュー の 説明 を します。) ungkapan/istilah (B.食後 に メニュー の 説明 を します。), (C.食後 に すぐ 寝てもらいます。) ungkapan/istilah (C.食後 に すぐ 寝てもらいます。), (D.食後 に うがい、歯 みがき など を してもらいます。) ungkapan/istilah (D.食後 に うがい、歯 みがき など を してもらいます。)"
       }
     ]
   },
@@ -2437,44 +2581,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.施設 (しせつ) では 庭 (にわ) で、携帯電話 (けいたいでんわ) を 使 (つか)う こと が できます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.施設 (しせつ) では 庭 (にわ) で、携帯電話 (けいたいでんわ) を 使 (つか)う こと が できます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.施設 (しせつ) では 庭 (にわ) で、携帯電話 (けいたいでんわ) を 使 (つか)う こと が できます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.施設 (しせつ) では 建物 (たてもの) の...)",
-      "(B.施設 (しせつ) では 庭 (にわ) で、たば...)",
-      "(C.施設 (しせつ) では 建物 (たてもの) の...)",
-      "(D.施設 (しせつ) では 庭 (にわ) で、携帯...)"
+      "(A.施設 では 建物 の 中 で、たばこ を 吸う こと が できます。) ungkapan/istilah (A.施設 では 建物 の 中 で、たばこ を 吸う こと が できます。)",
+      "(B.施設 では 庭 で、たばこ を 吸う こと が できます。) ungkapan/istilah (B.施設 では 庭 で、たばこ を 吸う こと が できます。)",
+      "(C.施設 では 建物 の 中 で、携帯電話 を 使う こと が できます。) ungkapan/istilah (C.施設 では 建物 の 中 で、携帯電話 を 使う こと が できます。)",
+      "(D.施設 では 庭 で、携帯電話 を 使う こと が できます。) ungkapan/istilah (D.施設 では 庭 で、携帯電話 を 使う こと が できます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.施設 (しせつ) では 建物 (たてもの) の 中 (なか) で、たばこ を 吸 (す)う こと が できます。",
-        "rom": "",
-        "arti": "A.施設 (しせつ) では 建物 (たてもの) の 中 (なか) で、たばこ を 吸 (す)う こと が できます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "しせつ",
+        "rom": "A.施設 では 建物 の 中 で、たばこ を 吸う こと が できます。",
+        "arti": "ungkapan/istilah (A.施設 では 建物 の 中 で、たばこ を 吸う こと が できます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.施設 (しせつ) では 庭 (にわ) で、たばこ を 吸 (す)う こと が できます。",
-        "rom": "",
-        "arti": "B.施設 (しせつ) では 庭 (にわ) で、たばこ を 吸 (す)う こと が できます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "しせつ",
+        "rom": "B.施設 では 庭 で、たばこ を 吸う こと が できます。",
+        "arti": "ungkapan/istilah (B.施設 では 庭 で、たばこ を 吸う こと が できます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.施設 (しせつ) では 建物 (たてもの) の 中 (なか) で、携帯電話 (けいたいでんわ) を 使 (つか)う こと が できます。",
-        "rom": "",
-        "arti": "C.施設 (しせつ) では 建物 (たてもの) の 中 (なか) で、携帯電話 (けいたいでんわ) を 使 (つか)う こと が できます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "しせつ",
+        "rom": "C.施設 では 建物 の 中 で、携帯電話 を 使う こと が できます。",
+        "arti": "ungkapan/istilah (C.施設 では 建物 の 中 で、携帯電話 を 使う こと が できます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.施設 (しせつ) では 庭 (にわ) で、携帯電話 (けいたいでんわ) を 使 (つか)う こと が できます。",
-        "rom": "",
-        "arti": "D.施設 (しせつ) では 庭 (にわ) で、携帯電話 (けいたいでんわ) を 使 (つか)う こと が できます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "しせつ",
+        "rom": "D.施設 では 庭 で、携帯電話 を 使う こと が できます。",
+        "arti": "ungkapan/istilah (D.施設 では 庭 で、携帯電話 を 使う こと が できます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 37)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 37 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.施設 (しせつ) では 庭 (にわ) で、携帯電話 (けいたいでんわ) を 使 (つか)う こと が できます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.施設 では 建物 の 中 で、たばこ を 吸う こと が できます。) ungkapan/istilah (A.施設 では 建物 の 中 で、たばこ を 吸う こと が できます。), (B.施設 では 庭 で、たばこ を 吸う こと が できます。) ungkapan/istilah (B.施設 では 庭 で、たばこ を 吸う こと が できます。), (C.施設 では 建物 の 中 で、携帯電話 を 使う こと が できます。) ungkapan/istilah (C.施設 では 建物 の 中 で、携帯電話 を 使う こと が できます。), (D.施設 では 庭 で、携帯電話 を 使う こと が できます。) ungkapan/istilah (D.施設 では 庭 で、携帯電話 を 使う こと が できます。)"
       }
     ]
   },
@@ -2504,44 +2652,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.９月 (がつ) から、食品 (しょくひん) を 持 (も)って 来 (く)る こと が できます。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.９月 (がつ) から、食品 (しょくひん) を 持 (も)って 来 (く)る こと が できます。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.９月 (がつ) から、食品 (しょくひん) を 持 (も)って 来 (く)る こと が できます。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.６月 (がつ) になる と、食中毒 (しょくち...)",
-      "(B.６月 (がつ)、７月 (がつ)、８月 (がつ)...)",
-      "(C.９月 (がつ) から、食品 (しょくひん) を...)",
-      "(D.玄関 (げんかん) で 消毒 (しょうどく)す...)"
+      "(A.６月 になる と、食中毒 に なります。) ungkapan/istilah (A.６月 になる と、食中毒 に なります。)",
+      "(B.６月、７月、８月 は、食品 を 持って 来る こと が できます。) ungkapan/istilah (B.６月、７月、８月 は、食品 を 持って 来る こと が できます。)",
+      "(C.９月 から、食品 を 持って 来る こと が できます。) ungkapan/istilah (C.９月 から、食品 を 持って 来る こと が できます。)",
+      "(D.玄関 で 消毒すれば、食品 を 持って 来る こと が できます。) ungkapan/istilah (D.玄関 で 消毒すれば、食品 を 持って 来る こと が できます。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.６月 (がつ) になる と、食中毒 (しょくちゅうどく) に なります。",
-        "rom": "",
-        "arti": "A.６月 (がつ) になる と、食中毒 (しょくちゅうどく) に なります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "がつ",
+        "rom": "A.６月 になる と、食中毒 に なります。",
+        "arti": "ungkapan/istilah (A.６月 になる と、食中毒 に なります。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.６月 (がつ)、７月 (がつ)、８月 (がつ) は、食品 (しょくひん) を 持 (も)って 来 (く)る こと が できます。",
-        "rom": "",
-        "arti": "B.６月 (がつ)、７月 (がつ)、８月 (がつ) は、食品 (しょくひん) を 持 (も)って 来 (く)る こと が できます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "がつ",
+        "rom": "B.６月、７月、８月 は、食品 を 持って 来る こと が できます。",
+        "arti": "ungkapan/istilah (B.６月、７月、８月 は、食品 を 持って 来る こと が できます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.９月 (がつ) から、食品 (しょくひん) を 持 (も)って 来 (く)る こと が できます。",
-        "rom": "",
-        "arti": "C.９月 (がつ) から、食品 (しょくひん) を 持 (も)って 来 (く)る こと が できます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "がつ",
+        "rom": "C.９月 から、食品 を 持って 来る こと が できます。",
+        "arti": "ungkapan/istilah (C.９月 から、食品 を 持って 来る こと が できます。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.玄関 (げんかん) で 消毒 (しょうどく)すれば、食品 (しょくひん) を 持 (も)って 来 (く)る こと が できます。",
-        "rom": "",
-        "arti": "D.玄関 (げんかん) で 消毒 (しょうどく)すれば、食品 (しょくひん) を 持 (も)って 来 (く)る こと が できます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "げんかん",
+        "rom": "D.玄関 で 消毒すれば、食品 を 持って 来る こと が できます。",
+        "arti": "ungkapan/istilah (D.玄関 で 消毒すれば、食品 を 持って 来る こと が できます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 38)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 38 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.９月 (がつ) から、食品 (しょくひん) を 持 (も)って 来 (く)る こと が できます。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.６月 になる と、食中毒 に なります。) ungkapan/istilah (A.６月 になる と、食中毒 に なります。), (B.６月、７月、８月 は、食品 を 持って 来る こと が できます。) ungkapan/istilah (B.６月、７月、８月 は、食品 を 持って 来る こと が できます。), (C.９月 から、食品 を 持って 来る こと が できます。) ungkapan/istilah (C.９月 から、食品 を 持って 来る こと が できます。), (D.玄関 で 消毒すれば、食品 を 持って 来る こと が できます。) ungkapan/istilah (D.玄関 で 消毒すれば、食品 を 持って 来る こと が できます。)"
       }
     ]
   },
@@ -2571,44 +2723,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.指先 (ゆびさき) を よく 洗 (あら)って きれい にします。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.指先 (ゆびさき) を よく 洗 (あら)って きれい にします。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.指先 (ゆびさき) を よく 洗 (あら)って きれい にします。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.はじめに せっけん 液 (えき) で 洗 (あ...)",
-      "(B.せっけん 液 (えき) を つけたら 乾 (か...)",
-      "(C.指先 (ゆびさき) を よく 洗 (あら)って...)",
-      "(D.手首 (てくび) を 洗 (あら)ったら、手 ...)"
+      "(A.はじめに せっけん 液 で 洗います。) ungkapan/istilah (A.はじめに せっけん 液 で 洗います。)",
+      "(B.せっけん 液 を つけたら 乾かします。) ungkapan/istilah (B.せっけん 液 を つけたら 乾かします。)",
+      "(C.指先 を よく 洗って きれい にします。) ungkapan/istilah (C.指先 を よく 洗って きれい にします。)",
+      "(D.手首 を 洗ったら、手 を 乾かします。) ungkapan/istilah (D.手首 を 洗ったら、手 を 乾かします。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.はじめに せっけん 液 (えき) で 洗 (あら)います。",
-        "rom": "",
-        "arti": "A.はじめに せっけん 液 (えき) で 洗 (あら)います。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "えき",
+        "rom": "A.はじめに せっけん 液 で 洗います。",
+        "arti": "ungkapan/istilah (A.はじめに せっけん 液 で 洗います。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.せっけん 液 (えき) を つけたら 乾 (かわ)かします。",
-        "rom": "",
-        "arti": "B.せっけん 液 (えき) を つけたら 乾 (かわ)かします。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "えき",
+        "rom": "B.せっけん 液 を つけたら 乾かします。",
+        "arti": "ungkapan/istilah (B.せっけん 液 を つけたら 乾かします。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.指先 (ゆびさき) を よく 洗 (あら)って きれい にします。",
-        "rom": "",
-        "arti": "C.指先 (ゆびさき) を よく 洗 (あら)って きれい にします。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ゆびさき",
+        "rom": "C.指先 を よく 洗って きれい にします。",
+        "arti": "ungkapan/istilah (C.指先 を よく 洗って きれい にします。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.手首 (てくび) を 洗 (あら)ったら、手 (て) を 乾 (かわ)かします。",
-        "rom": "",
-        "arti": "D.手首 (てくび) を 洗 (あら)ったら、手 (て) を 乾 (かわ)かします。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "てくび",
+        "rom": "D.手首 を 洗ったら、手 を 乾かします。",
+        "arti": "ungkapan/istilah (D.手首 を 洗ったら、手 を 乾かします。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 39)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 39 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.指先 (ゆびさき) を よく 洗 (あら)って きれい にします。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.はじめに せっけん 液 で 洗います。) ungkapan/istilah (A.はじめに せっけん 液 で 洗います。), (B.せっけん 液 を つけたら 乾かします。) ungkapan/istilah (B.せっけん 液 を つけたら 乾かします。), (C.指先 を よく 洗って きれい にします。) ungkapan/istilah (C.指先 を よく 洗って きれい にします。), (D.手首 を 洗ったら、手 を 乾かします。) ungkapan/istilah (D.手首 を 洗ったら、手 を 乾かします。)"
       }
     ]
   },
@@ -2638,44 +2794,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.熱 (ねつ)、せき、吐 (は)き 気 (け) の 症状 (しょうじょう) が ある ときは、面会(めんかい) が できません。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.熱 (ねつ)、せき、吐 (は)き 気 (け) の 症状 (しょうじょう) が ある ときは、面会(めんかい) が できません。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.熱 (ねつ)、せき、吐 (は)き 気 (け) の 症状 (しょうじょう) が ある ときは、面会(めんかい) が できません。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.インフルエンザ が 流行 (りゅうこう)して ...)",
-      "(B.ノロウィルス が 多 (おお)い ので、面会 ...)",
-      "(C.熱 (ねつ)、せき、吐 (は)き 気 (け) ...)",
-      "(D.玄関 (げんかん) に アルコール 消毒液 (...)"
+      "(A.インフルエンザ が 流行して いる ので、面会 が できません。) ungkapan/istilah (A.インフルエンザ が 流行して いる ので、面会 が できません。)",
+      "(B.ノロウィルス が 多い ので、面会 が できません。) ungkapan/istilah (B.ノロウィルス が 多い ので、面会 が できません。)",
+      "(C.熱、せき、吐き 気 の 症状 が ある ときは、面会 が できません。) ungkapan/istilah (C.熱、せき、吐き 気 の 症状 が ある ときは、面会 が できません。)",
+      "(D.玄関 に アルコール 消毒液 が ない とき は、面会 が できません。) ungkapan/istilah (D.玄関 に アルコール 消毒液 が ない とき は、面会 が できません。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.インフルエンザ が 流行 (りゅうこう)して いる ので、面会 (めんかい) が できません。",
-        "rom": "",
-        "arti": "A.インフルエンザ が 流行 (りゅうこう)して いる ので、面会 (めんかい) が できません。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "りゅうこう",
+        "rom": "A.インフルエンザ が 流行して いる ので、面会 が できません。",
+        "arti": "ungkapan/istilah (A.インフルエンザ が 流行して いる ので、面会 が できません。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.ノロウィルス が 多 (おお)い ので、面会 (めんかい) が できません。",
-        "rom": "",
-        "arti": "B.ノロウィルス が 多 (おお)い ので、面会 (めんかい) が できません。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "おお",
+        "rom": "B.ノロウィルス が 多い ので、面会 が できません。",
+        "arti": "ungkapan/istilah (B.ノロウィルス が 多い ので、面会 が できません。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.熱 (ねつ)、せき、吐 (は)き 気 (け) の 症状 (しょうじょう) が ある ときは、面会(めんかい) が できません。",
-        "rom": "",
-        "arti": "C.熱 (ねつ)、せき、吐 (は)き 気 (け) の 症状 (しょうじょう) が ある ときは、面会(めんかい) が できません。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ねつ",
+        "rom": "C.熱、せき、吐き 気 の 症状 が ある ときは、面会 が できません。",
+        "arti": "ungkapan/istilah (C.熱、せき、吐き 気 の 症状 が ある ときは、面会 が できません。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.玄関 (げんかん) に アルコール 消毒液 (しょうどくえき) が ない とき は、面会 (めんかい) が できません。",
-        "rom": "",
-        "arti": "D.玄関 (げんかん) に アルコール 消毒液 (しょうどくえき) が ない とき は、面会 (めんかい) が できません。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "げんかん",
+        "rom": "D.玄関 に アルコール 消毒液 が ない とき は、面会 が できません。",
+        "arti": "ungkapan/istilah (D.玄関 に アルコール 消毒液 が ない とき は、面会 が できません。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 40)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 40 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.熱 (ねつ)、せき、吐 (は)き 気 (け) の 症状 (しょうじょう) が ある ときは、面会(めんかい) が できません。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.インフルエンザ が 流行して いる ので、面会 が できません。) ungkapan/istilah (A.インフルエンザ が 流行して いる ので、面会 が できません。), (B.ノロウィルス が 多い ので、面会 が できません。) ungkapan/istilah (B.ノロウィルス が 多い ので、面会 が できません。), (C.熱、せき、吐き 気 の 症状 が ある ときは、面会 が できません。) ungkapan/istilah (C.熱、せき、吐き 気 の 症状 が ある ときは、面会 が できません。), (D.玄関 に アルコール 消毒液 が ない とき は、面会 が できません。) ungkapan/istilah (D.玄関 に アルコール 消毒液 が ない とき は、面会 が できません。)"
       }
     ]
   },
@@ -2705,44 +2865,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.副食 (ふくしょく) は、毎日 (まいにち) みそ 汁 (しる) が あります。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.副食 (ふくしょく) は、毎日 (まいにち) みそ 汁 (しる) が あります。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.副食 (ふくしょく) は、毎日 (まいにち) みそ 汁 (しる) が あります。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.朝食 (ちょうしょく) の 主食 (しゅしょく...)",
-      "(B.副食 (ふくしょく) は、果物 (くだもの)や...)",
-      "(C.副食 (ふくしょく) は、毎日 (まいにち) ...)",
-      "(D.副食 (ふくしょく) は、毎日 (まいにち) ...)"
+      "(A.朝食 の 主食 は、いつも ご飯です。) ungkapan/istilah (A.朝食 の 主食 は、いつも ご飯です。)",
+      "(B.副食 は、果物や ヨーグルトです。) ungkapan/istilah (B.副食 は、果物や ヨーグルトです。)",
+      "(C.副食 は、毎日 サラダ が あります。) ungkapan/istilah (C.副食 は、毎日 サラダ が あります。)",
+      "(D.副食 は、毎日 みそ 汁 が あります。) ungkapan/istilah (D.副食 は、毎日 みそ 汁 が あります。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.朝食 (ちょうしょく) の 主食 (しゅしょく) は、いつも ご飯 (はん)です。",
-        "rom": "",
-        "arti": "A.朝食 (ちょうしょく) の 主食 (しゅしょく) は、いつも ご飯 (はん)です。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ちょうしょく",
+        "rom": "A.朝食 の 主食 は、いつも ご飯です。",
+        "arti": "ungkapan/istilah (A.朝食 の 主食 は、いつも ご飯です。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.副食 (ふくしょく) は、果物 (くだもの)や ヨーグルトです。",
-        "rom": "",
-        "arti": "B.副食 (ふくしょく) は、果物 (くだもの)や ヨーグルトです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ふくしょく",
+        "rom": "B.副食 は、果物や ヨーグルトです。",
+        "arti": "ungkapan/istilah (B.副食 は、果物や ヨーグルトです。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.副食 (ふくしょく) は、毎日 (まいにち) サラダ が あります。",
-        "rom": "",
-        "arti": "C.副食 (ふくしょく) は、毎日 (まいにち) サラダ が あります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ふくしょく",
+        "rom": "C.副食 は、毎日 サラダ が あります。",
+        "arti": "ungkapan/istilah (C.副食 は、毎日 サラダ が あります。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.副食 (ふくしょく) は、毎日 (まいにち) みそ 汁 (しる) が あります。",
-        "rom": "",
-        "arti": "D.副食 (ふくしょく) は、毎日 (まいにち) みそ 汁 (しる) が あります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "ふくしょく",
+        "rom": "D.副食 は、毎日 みそ 汁 が あります。",
+        "arti": "ungkapan/istilah (D.副食 は、毎日 みそ 汁 が あります。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 41)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 41 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.副食 (ふくしょく) は、毎日 (まいにち) みそ 汁 (しる) が あります。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.朝食 の 主食 は、いつも ご飯です。) ungkapan/istilah (A.朝食 の 主食 は、いつも ご飯です。), (B.副食 は、果物や ヨーグルトです。) ungkapan/istilah (B.副食 は、果物や ヨーグルトです。), (C.副食 は、毎日 サラダ が あります。) ungkapan/istilah (C.副食 は、毎日 サラダ が あります。), (D.副食 は、毎日 みそ 汁 が あります。) ungkapan/istilah (D.副食 は、毎日 みそ 汁 が あります。)"
       }
     ]
   },
@@ -2772,44 +2936,48 @@
     ],
     "answer": 3,
     "kunci_id": "D.利用者 (りようしゃ) と 職員 (しょくいん) は、歌 (うた) の 練習 (れんしゅう) を します。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **D.利用者 (りようしゃ) と 職員 (しょくいん) は、歌 (うた) の 練習 (れんしゅう) を します。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **D.利用者 (りようしゃ) と 職員 (しょくいん) は、歌 (うた) の 練習 (れんしゅう) を します。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.誕生日会 (たんじょうびかい) で、昼 (ひる...)",
-      "(B.利用者 (りようしゃ) が、みんな プレゼント...)",
-      "(C.利用者 (りようしゃ) が、テーブル と いす...)",
-      "(D.利用者 (りようしゃ) と 職員 (しょくいん...)"
+      "(A.誕生日会 で、昼 ご飯 を 食べます。) ungkapan/istilah (A.誕生日会 で、昼 ご飯 を 食べます。)",
+      "(B.利用者 が、みんな プレゼント を もらいます。) ungkapan/istilah (B.利用者 が、みんな プレゼント を もらいます。)",
+      "(C.利用者 が、テーブル と いす を 並べます。) ungkapan/istilah (C.利用者 が、テーブル と いす を 並べます。)",
+      "(D.利用者 と 職員 は、歌 の 練習 を します。) ungkapan/istilah (D.利用者 と 職員 は、歌 の 練習 を します。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.誕生日会 (たんじょうびかい) で、昼 (ひる) ご飯 (はん) を 食 (た)べます。",
-        "rom": "",
-        "arti": "A.誕生日会 (たんじょうびかい) で、昼 (ひる) ご飯 (はん) を 食 (た)べます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "たんじょうびかい",
+        "rom": "A.誕生日会 で、昼 ご飯 を 食べます。",
+        "arti": "ungkapan/istilah (A.誕生日会 で、昼 ご飯 を 食べます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.利用者 (りようしゃ) が、みんな プレゼント を もらいます。",
-        "rom": "",
-        "arti": "B.利用者 (りようしゃ) が、みんな プレゼント を もらいます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "りようしゃ",
+        "rom": "B.利用者 が、みんな プレゼント を もらいます。",
+        "arti": "ungkapan/istilah (B.利用者 が、みんな プレゼント を もらいます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.利用者 (りようしゃ) が、テーブル と いす を 並 (なら)べます。",
-        "rom": "",
-        "arti": "C.利用者 (りようしゃ) が、テーブル と いす を 並 (なら)べます。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "りようしゃ",
+        "rom": "C.利用者 が、テーブル と いす を 並べます。",
+        "arti": "ungkapan/istilah (C.利用者 が、テーブル と いす を 並べます。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "D.利用者 (りようしゃ) と 職員 (しょくいん) は、歌 (うた) の 練習 (れんしゅう) を します。",
-        "rom": "",
-        "arti": "D.利用者 (りようしゃ) と 職員 (しょくいん) は、歌 (うた) の 練習 (れんしゅう) を します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "りようしゃ",
+        "rom": "D.利用者 と 職員 は、歌 の 練習 を します。",
+        "arti": "ungkapan/istilah (D.利用者 と 職員 は、歌 の 練習 を します。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 42)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 42 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **D.利用者 (りようしゃ) と 職員 (しょくいん) は、歌 (うた) の 練習 (れんしゅう) を します。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.誕生日会 で、昼 ご飯 を 食べます。) ungkapan/istilah (A.誕生日会 で、昼 ご飯 を 食べます。), (B.利用者 が、みんな プレゼント を もらいます。) ungkapan/istilah (B.利用者 が、みんな プレゼント を もらいます。), (C.利用者 が、テーブル と いす を 並べます。) ungkapan/istilah (C.利用者 が、テーブル と いす を 並べます。), (D.利用者 と 職員 は、歌 の 練習 を します。) ungkapan/istilah (D.利用者 と 職員 は、歌 の 練習 を します。)"
       }
     ]
   },
@@ -2839,44 +3007,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.介護職 (かいごしょく) が 家族 (かぞく) を ホール に 案内 (あんない)します。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.介護職 (かいごしょく) が 家族 (かぞく) を ホール に 案内 (あんない)します。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.介護職 (かいごしょく) が 家族 (かぞく) を ホール に 案内 (あんない)します。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.夏 (なつ)まつり は、午前 (ごぜん) に ...)",
-      "(B.夏 (なつ)まつり は、利用者 (りようしゃ)...)",
-      "(C.介護職 (かいごしょく) が 家族 (かぞく)...)",
-      "(D.看護職 (かんごしょく) が 利用者 (りよう...)"
+      "(A.夏まつり は、午前 に 行います。) ungkapan/istilah (A.夏まつり は、午前 に 行います。)",
+      "(B.夏まつり は、利用者 だけ 参加します。) ungkapan/istilah (B.夏まつり は、利用者 だけ 参加します。)",
+      "(C.介護職 が 家族 を ホール に 案内します。) ungkapan/istilah (C.介護職 が 家族 を ホール に 案内します。)",
+      "(D.看護職 が 利用者 を ホール に 誘導します。) ungkapan/istilah (D.看護職 が 利用者 を ホール に 誘導します。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.夏 (なつ)まつり は、午前 (ごぜん) に 行 (おこな)います。",
-        "rom": "",
-        "arti": "A.夏 (なつ)まつり は、午前 (ごぜん) に 行 (おこな)います。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "なつ",
+        "rom": "A.夏まつり は、午前 に 行います。",
+        "arti": "ungkapan/istilah (A.夏まつり は、午前 に 行います。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.夏 (なつ)まつり は、利用者 (りようしゃ) だけ 参加 (さんか)します。",
-        "rom": "",
-        "arti": "B.夏 (なつ)まつり は、利用者 (りようしゃ) だけ 参加 (さんか)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "なつ",
+        "rom": "B.夏まつり は、利用者 だけ 参加します。",
+        "arti": "ungkapan/istilah (B.夏まつり は、利用者 だけ 参加します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.介護職 (かいごしょく) が 家族 (かぞく) を ホール に 案内 (あんない)します。",
-        "rom": "",
-        "arti": "C.介護職 (かいごしょく) が 家族 (かぞく) を ホール に 案内 (あんない)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かいごしょく",
+        "rom": "C.介護職 が 家族 を ホール に 案内します。",
+        "arti": "ungkapan/istilah (C.介護職 が 家族 を ホール に 案内します。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.看護職 (かんごしょく) が 利用者 (りようしゃ) を ホール に 誘導 (ゆうどう)します。",
-        "rom": "",
-        "arti": "D.看護職 (かんごしょく) が 利用者 (りようしゃ) を ホール に 誘導 (ゆうどう)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "かんごしょく",
+        "rom": "D.看護職 が 利用者 を ホール に 誘導します。",
+        "arti": "ungkapan/istilah (D.看護職 が 利用者 を ホール に 誘導します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 43)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 43 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.介護職 (かいごしょく) が 家族 (かぞく) を ホール に 案内 (あんない)します。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.夏まつり は、午前 に 行います。) ungkapan/istilah (A.夏まつり は、午前 に 行います。), (B.夏まつり は、利用者 だけ 参加します。) ungkapan/istilah (B.夏まつり は、利用者 だけ 参加します。), (C.介護職 が 家族 を ホール に 案内します。) ungkapan/istilah (C.介護職 が 家族 を ホール に 案内します。), (D.看護職 が 利用者 を ホール に 誘導します。) ungkapan/istilah (D.看護職 が 利用者 を ホール に 誘導します。)"
       }
     ]
   },
@@ -2906,44 +3078,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.記録 (きろく) を 書 (か)いて から、退勤 (たいきん)します。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.記録 (きろく) を 書 (か)いて から、退勤 (たいきん)します。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.記録 (きろく) を 書 (か)いて から、退勤 (たいきん)します。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.食(しょく)事(じ)介(かい)護(ご)は 11...)",
-      "(B.休(きゅう)憩(けい)は 12 時(じ) 30...)",
-      "(C.記録 (きろく) を 書 (か)いて から、退...)",
-      "(D.水分補給 (すいぶんほきゅう) の 介護 (か...)"
+      "(A.食事介護は 11 時 00 分からです。) ungkapan/istilah (A.食事介護は 11 時 00 分からです。)",
+      "(B.休憩は 12 時 30 分から 14 時 00 分までです。) ungkapan/istilah (B.休憩は 12 時 30 分から 14 時 00 分までです。)",
+      "(taikin) pulang kerja / selesai dinas",
+      "(D.水分補給 の 介護 は 1回します。) ungkapan/istilah (D.水分補給 の 介護 は 1回します。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.食(しょく)事(じ)介(かい)護(ご)は 11 時(じ) 00 分(ふん)からです。",
-        "rom": "",
-        "arti": "A.食(しょく)事(じ)介(かい)護(ご)は 11 時(じ) 00 分(ふん)からです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "しょく",
+        "rom": "A.食事介護は 11 時 00 分からです。",
+        "arti": "ungkapan/istilah (A.食事介護は 11 時 00 分からです。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.休(きゅう)憩(けい)は 12 時(じ) 30 分(ふん)から 14 時(じ) 00 分(ふん)までです。",
-        "rom": "",
-        "arti": "B.休(きゅう)憩(けい)は 12 時(じ) 30 分(ふん)から 14 時(じ) 00 分(ふん)までです。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "きゅう",
+        "rom": "B.休憩は 12 時 30 分から 14 時 00 分までです。",
+        "arti": "ungkapan/istilah (B.休憩は 12 時 30 分から 14 時 00 分までです。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.記録 (きろく) を 書 (か)いて から、退勤 (たいきん)します。",
-        "rom": "",
-        "arti": "C.記録 (きろく) を 書 (か)いて から、退勤 (たいきん)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "きろく",
+        "rom": "taikin",
+        "arti": "pulang kerja / selesai dinas",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.水分補給 (すいぶんほきゅう) の 介護 (かいご) は 1回 (かい)します。",
-        "rom": "",
-        "arti": "D.水分補給 (すいぶんほきゅう) の 介護 (かいご) は 1回 (かい)します。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "すいぶんほきゅう",
+        "rom": "D.水分補給 の 介護 は 1回します。",
+        "arti": "ungkapan/istilah (D.水分補給 の 介護 は 1回します。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 44)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 44 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.記録 (きろく) を 書 (か)いて から、退勤 (たいきん)します。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(A.食事介護は 11 時 00 分からです。) ungkapan/istilah (A.食事介護は 11 時 00 分からです。), (B.休憩は 12 時 30 分から 14 時 00 分までです。) ungkapan/istilah (B.休憩は 12 時 30 分から 14 時 00 分までです。), (taikin) pulang kerja / selesai dinas, (D.水分補給 の 介護 は 1回します。) ungkapan/istilah (D.水分補給 の 介護 は 1回します。)"
       }
     ]
   },
@@ -2973,44 +3149,48 @@
     ],
     "answer": 2,
     "kunci_id": "C.起床介護 (きしょうかいご) で、利用者 (りようしゃ) の 洗面 (せんめん)や 歯 (は) みがき を 手伝 (てつだ)います。",
-    "salah": "Pilihan ini tidak sesuai dengan dialog atau dokumen perawatan Buku Pink.",
-    "analisis": "Berdasarkan percakapan situasi lapangan perawatan lansia (介護の日本語), jawaban yang benar adalah **C.起床介護 (きしょうかいご) で、利用者 (りようしゃ) の 洗面 (せんめん)や 歯 (は) みがき を 手伝 (てつだ)います。**.",
+    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
+    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **C.起床介護 (きしょうかいご) で、利用者 (りようしゃ) の 洗面 (せんめん)や 歯 (は) みがき を 手伝 (てつだ)います。**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
     "opt_note": [
-      "(A.出勤 (しゅっきん)して、まず 就寝介護 (し...)",
-      "(B.巡視 (じゅんし) は 1回 (かい) だけし...)",
-      "(C.起床介護 (きしょうかいご) で、利用者 (り...)",
-      "(D.朝(あさ)の食(しょく)事(じ)介(かい)護(...)"
+      "(shukkin) masuk kerja / dinas",
+      "(B.巡視 は 1回 だけします。) ungkapan/istilah (B.巡視 は 1回 だけします。)",
+      "(C.起床介護 で、利用者 の 洗面や 歯 みがき を 手伝います。) ungkapan/istilah (C.起床介護 で、利用者 の 洗面や 歯 みがき を 手伝います。)",
+      "(D.朝の食事介護の前に、ミーティングがあります。) ungkapan/istilah (D.朝の食事介護の前に、ミーティングがあります。)"
     ],
     "opt_detail": [
       {
-        "kana": "A.出勤 (しゅっきん)して、まず 就寝介護 (しゅうしんかいご) をします。",
-        "rom": "",
-        "arti": "A.出勤 (しゅっきん)して、まず 就寝介護 (しゅうしんかいご) をします。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "しゅっきん",
+        "rom": "shukkin",
+        "arti": "masuk kerja / dinas",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "B.巡視 (じゅんし) は 1回 (かい) だけします。",
-        "rom": "",
-        "arti": "B.巡視 (じゅんし) は 1回 (かい) だけします。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "じゅんし",
+        "rom": "B.巡視 は 1回 だけします。",
+        "arti": "ungkapan/istilah (B.巡視 は 1回 だけします。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       },
       {
-        "kana": "C.起床介護 (きしょうかいご) で、利用者 (りようしゃ) の 洗面 (せんめん)や 歯 (は) みがき を 手伝 (てつだ)います。",
-        "rom": "",
-        "arti": "C.起床介護 (きしょうかいご) で、利用者 (りようしゃ) の 洗面 (せんめん)や 歯 (は) みがき を 手伝 (てつだ)います。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "きしょうかいご",
+        "rom": "C.起床介護 で、利用者 の 洗面や 歯 みがき を 手伝います。",
+        "arti": "ungkapan/istilah (C.起床介護 で、利用者 の 洗面や 歯 みがき を 手伝います。)",
+        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
       },
       {
-        "kana": "D.朝(あさ)の食(しょく)事(じ)介(かい)護(ご)の前(まえ)に、ミーティングがあります。",
-        "rom": "",
-        "arti": "D.朝(あさ)の食(しょく)事(じ)介(かい)護(ご)の前(まえ)に、ミーティングがあります。",
-        "alasan": "Opsi evaluasi Kaigo Nihongo (Buku Pink)"
+        "kana": "あさ",
+        "rom": "D.朝の食事介護の前に、ミーティングがあります。",
+        "arti": "ungkapan/istilah (D.朝の食事介護の前に、ミーティングがあります。)",
+        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
       }
     ],
     "pembahasan": [
       {
-        "title": "Materi Percakapan & Kosakata Lapangan (Soal 45)",
-        "desc": "Menganalisis komunikasi efektif dan instruksi kerja keperawatan lansia."
+        "title": "Bedah Soal 45 (Bahasa Jepang Keperawatan)",
+        "desc": "Memahami makna istilah **C.起床介護 (きしょうかいご) で、利用者 (りようしゃ) の 洗面 (せんめん)や 歯 (は) みがき を 手伝 (てつだ)います。** dalam kalimat situasi asuhan lansia."
+      },
+      {
+        "title": "Kosakata & Bunpou Terkait",
+        "desc": "(shukkin) masuk kerja / dinas, (B.巡視 は 1回 だけします。) ungkapan/istilah (B.巡視 は 1回 だけします。), (C.起床介護 で、利用者 の 洗面や 歯 みがき を 手伝います。) ungkapan/istilah (C.起床介護 で、利用者 の 洗面や 歯 みがき を 手伝います。), (D.朝の食事介護の前に、ミーティングがあります。) ungkapan/istilah (D.朝の食事介護の前に、ミーティングがあります。)"
       }
     ]
   }
