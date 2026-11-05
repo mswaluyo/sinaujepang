@@ -75,7 +75,7 @@
                 <i class="fa-solid fa-users"></i>
               </div>
               <span class="text-xs font-bold text-white">Sato & Yuki</span>
-              <span class="text-[10px] text-slate-400 leading-tight">Duet Mentor (Lengkap)</span>
+              <span class="text-[10px] text-slate-400 leading-tight">Dua Karakter Bersama</span>
             </div>
           </label>
 
@@ -87,7 +87,7 @@
                 <i class="fa-solid fa-user-tie"></i>
               </div>
               <span class="text-xs font-bold text-sky-300">Sato-san</span>
-              <span class="text-[10px] text-slate-400 leading-tight">Sensei Native (Tegas)</span>
+              <span class="text-[10px] text-slate-400 leading-tight">Pria Dewasa (Tenang & Tegas)</span>
             </div>
           </label>
 
@@ -99,7 +99,7 @@
                 <i class="fa-solid fa-user"></i>
               </div>
               <span class="text-xs font-bold text-pink-300">Yuki-chan</span>
-              <span class="text-[10px] text-slate-400 leading-tight">Asisten (Ramah)</span>
+              <span class="text-[10px] text-slate-400 leading-tight">Wanita (Hangat & Ramah)</span>
             </div>
           </label>
         </div>
@@ -172,7 +172,7 @@
         <span>Terhubung (Encrypted)</span>
       </div>
       <span class="text-xs text-slate-500 hidden sm:inline">|</span>
-      <span class="text-xs font-medium text-slate-200 hidden sm:inline">Ruang Latihan Kaiwa: 佐藤先生 (Sato VRoid 3D) & 由紀アシスタント</span>
+      <span id="header-room-title" class="text-xs font-medium text-slate-200 hidden sm:inline">Ruang Latihan Percakapan Virtual</span>
     </div>
 
     <!-- Mode & Meeting Duration + Modular Selector -->
@@ -224,7 +224,7 @@
           <i class="fa-solid fa-microphone"></i>
         </div>
         <span class="text-xs font-medium text-white tracking-wide">Sato-san (佐藤さん)</span>
-        <span class="text-[10px] bg-sky-500/20 text-sky-400 px-1.5 py-0.5 rounded font-bold">Sensei</span>
+        <span id="sato-badge-role" class="text-[10px] bg-sky-500/20 text-sky-400 px-1.5 py-0.5 rounded font-bold">Partner</span>
         <span class="text-[9px] text-slate-400 hidden sm:inline border-l border-white/15 pl-1.5">Voice: Keita Neural (Jepang)</span>
       </div>
     </div>
@@ -246,7 +246,7 @@
           <i class="fa-solid fa-microphone"></i>
         </div>
         <span class="text-xs font-medium text-white tracking-wide">Yuki-chan (由紀)</span>
-        <span class="text-[10px] bg-pink-500/20 text-pink-400 px-1.5 py-0.5 rounded font-bold">Assistant</span>
+        <span id="yuki-badge-role" class="text-[10px] bg-pink-500/20 text-pink-400 px-1.5 py-0.5 rounded font-bold">Partner</span>
         <span class="text-[9px] text-slate-400 hidden sm:inline border-l border-white/15 pl-1.5">Voice: Nanami Neural (Jepang)</span>
       </div>
     </div>
@@ -390,19 +390,19 @@
     })();
     // ── MASTER MODULAR SYSTEM PROMPT CONFIGURATION ──
     const MASTER_AI_CONFIG = {
-      master_system_prompt: "Anda adalah mesin kecerdasan buatan penutur asli bahasa Jepang untuk aplikasi latihan percakapan web Zoom Kaiwa SinauJepang. Anda harus mematuhi aturan Karakter dan Skenario/Model yang sedang aktif.",
+      master_system_prompt: "Anda adalah mesin kecerdasan buatan penutur asli bahasa Jepang untuk aplikasi latihan percakapan web Zoom SinauJepang. Anda harus mematuhi aturan Karakter dan Skenario/Model yang sedang aktif.",
       characters: {
         sato: {
-          name: "Sato-san (佐藤先生)",
-          persona: "Kamu adalah Sato-san, seorang pria dewasa dengan pembawaan tenang, tegas, berwibawa, dan profesional. Karaktermu cenderung serius, disiplin, namun sangat menghargai usaha siswa."
+          name: "Sato-san (佐藤さん)",
+          persona: "Kamu adalah Sato-san, seorang pria dewasa dengan pembawaan tenang, tegas, berwibawa, dan profesional. Karaktermu cenderung serius dan disiplin."
         },
         yuki: {
           name: "Yuki-chan (由紀)",
-          persona: "Kamu adalah Yuki-chan, seorang asisten atau mentor wanita yang ramah, hangat, sabar, ceria, dan sangat suportif kepada pembelajar bahasa. Mengerti bahasa Indonesia dan sigap membantu menerjemahkan."
+          persona: "Kamu adalah Yuki-chan, seorang wanita yang ramah, hangat, sabar, dan sangat suportif kepada pembelajar bahasa."
         },
         both: {
-          name: "Duet Sato-Sensei & Yuki-Chan",
-          persona: "Sato-sensei memimpin sebagai penutur bahasa Jepang utama, sedangkan Yuki-chan mendampingi sebagai asisten ramah yang memfasilitasi bimbingan, koreksi, dan terjemahan bahasa Indonesia."
+          name: "Sato-san & Yuki-chan",
+          persona: "Dua karakter penutur asli Jepang: Sato-san (pria berwibawa) dan Yuki-chan (wanita ramah)."
         }
       },
       scenarios: {
@@ -591,16 +591,35 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
     function updateTileLayoutVisibility() {
       const satoTileEl = document.getElementById('sato-tile');
       const yukiTileEl = document.getElementById('yuki-tile');
+      const headerTitle = document.getElementById('header-room-title');
+      const satoBadge = document.getElementById('sato-badge-role');
+      const yukiBadge = document.getElementById('yuki-badge-role');
+
+      // Tentukan peran dinamis berdasarkan skenario yang dipilih
+      let roleLabel = 'Partner';
+      if (activeScenario === 'mensetsu') {
+        roleLabel = 'Pewawancara (Interviewer)';
+      } else if (activeScenario === 'mendan') {
+        roleLabel = 'Konselor (Mentor)';
+      } else {
+        roleLabel = 'Teman Bicara (Partner)';
+      }
+
+      if (satoBadge) satoBadge.textContent = roleLabel;
+      if (yukiBadge) yukiBadge.textContent = roleLabel;
 
       if (activePartner === 'sato') {
         satoTileEl.classList.remove('hidden');
         yukiTileEl.classList.add('hidden');
+        if (headerTitle) headerTitle.textContent = `Latihan bersama: 佐藤さん (Sato-san) • Mode ${activeScenario.toUpperCase()}`;
       } else if (activePartner === 'yuki') {
         satoTileEl.classList.add('hidden');
         yukiTileEl.classList.remove('hidden');
+        if (headerTitle) headerTitle.textContent = `Latihan bersama: 由紀 (Yuki-chan) • Mode ${activeScenario.toUpperCase()}`;
       } else {
         satoTileEl.classList.remove('hidden');
         yukiTileEl.classList.remove('hidden');
+        if (headerTitle) headerTitle.textContent = `Latihan bersama: Sato-san & Yuki-chan • Mode ${activeScenario.toUpperCase()}`;
       }
       setTimeout(handleResize, 100);
     }
