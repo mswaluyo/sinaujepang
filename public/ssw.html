@@ -40,156 +40,190 @@
       </div>
 
       <!-- SEKSI 1: PAKET SOAL KAIGO (PERAWAT LANSIA) -->
-      <div id="seksi-kaigo" class="space-y-6">
+      <div id="seksi-kaigo" class="space-y-8">
+        
+        <!-- Header Kaigo Global -->
         <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 border-b border-rose-200 pb-4">
           <div>
             <div class="flex items-center gap-2.5">
               <span class="w-8 h-8 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center text-sm font-black">
                 <i class="fa-solid fa-heart-pulse"></i>
               </span>
-              <h2 class="text-xl sm:text-2xl font-black text-slate-800 tracking-tight">Paket Soal SSW Kaigo (介護)</h2>
+              <h2 class="text-xl sm:text-2xl font-black text-slate-800 tracking-tight">SSW Kaigo (介護) — Perawat Lansia</h2>
               <span class="text-xs font-bold px-2.5 py-0.5 rounded-full bg-rose-50 text-rose-700 border border-rose-200">12 Paket Soal</span>
             </div>
-            <p class="text-xs text-slate-500 mt-1">Ujian keahlian perawatan &amp; evaluasi bahasa Jepang khusus perawat lansia (Kaigo Nihongo). Terdiri dari 2 Simulasi Ujian Lengkap, 4 Bab Teori, dan 6 Modul Kosakata &amp; Komunikasi.</p>
+            <p class="text-xs text-slate-500 mt-1">Ujian resmi Prometric/MHLW terdiri dari 2 tes independen: Ujian Keterampilan Perawatan (Bahasa Indonesia) &amp; Ujian Bahasa Jepang Perawatan (Kaigo Nihongo).</p>
           </div>
           <div class="text-xs font-semibold text-rose-700 bg-rose-50 px-3 py-1.5 rounded-xl border border-rose-200 self-start sm:self-auto shrink-0 flex items-center gap-2">
-            <span><i class="fa-solid fa-award mr-1"></i> Teori: <b>Min. 60%</b></span>
+            <span><i class="fa-solid fa-award mr-1"></i> Keterampilan: <b>Min. 60%</b></span>
             <span class="text-slate-300">•</span>
-            <span>Nihongo: <b>Min. 73%</b></span>
+            <span>Bahasa: <b>Min. 73%</b></span>
           </div>
         </div>
 
-        <!-- Subseksi Utama: Simulasi Lengkap Ujian Keterampilan Kaigo (Indo 1 & Indo 2) -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-          
-          <!-- Paket Indonesia 1 -->
-          <div class="bg-gradient-to-br from-rose-500/10 via-rose-50 to-amber-50 p-5 rounded-2xl border-2 border-rose-300 shadow-sm flex flex-col justify-between group hover:border-rose-400 transition-all">
-            <div class="space-y-1 mb-4">
-              <div class="flex items-center justify-between gap-2">
-                <span class="text-[11px] font-black px-2.5 py-0.5 rounded-full bg-rose-600 text-white uppercase tracking-wider">Simulasi CBT 1</span>
-                <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-clipboard-check mr-1"></i>50 Butir Soal</span>
-              </div>
-              <h3 class="text-base font-black text-slate-800 group-hover:text-rose-600 transition-colors">Ujian Keterampilan Kaigo — Paket Indo 1</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                Mencakup 4 pilar kompetensi: Dasar Perawatan, Mekanisme Tubuh, Komunikasi, dan Bantuan Hidup Sehari-hari (Termasuk soal gambar).
-              </p>
+        <!-- ========================================== -->
+        <!-- BAGIAN 1: UJIAN EVALUASI KETERAMPILAN PERAWATAN (INDONESIA) -->
+        <!-- ========================================== -->
+        <div class="space-y-4">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div>
+              <h3 class="text-sm sm:text-base font-black text-slate-800 flex items-center gap-2">
+                <i class="fa-solid fa-user-doctor text-rose-600"></i>
+                <span>1. Ujian Evaluasi Keterampilan Perawatan (介護技能評価試験)</span>
+              </h3>
+              <p class="text-[11px] text-slate-500 mt-0.5">Soal dalam <b>Bahasa Indonesia</b> • Menguji 4 pilar kompetensi keperawatan lansia • Standar kelulusan MHLW: <b>Minimal 60%</b></p>
             </div>
-            <div class="pt-3 border-t border-rose-200/60 flex items-center justify-between">
-              <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-award mr-1"></i>Min. 60%</span>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-indo1-quiz" class="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-extrabold text-xs shadow-sm transition-all inline-flex items-center gap-1.5 hover:scale-105">
-                <span>Mulai Ujian</span>
-                <i class="fa-solid fa-arrow-right text-[10px]"></i>
-              </a>
+            <span class="hidden sm:inline-flex text-[11px] font-bold px-2.5 py-1 rounded-lg bg-rose-50 text-rose-700 border border-rose-200 shrink-0">
+              Nursing Care Skills Test
+            </span>
+          </div>
+
+          <!-- A. Simulasi Lengkap CBT (Paket Indo 1 & 2) -->
+          <div>
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+              <i class="fa-solid fa-desktop text-rose-500"></i>
+              <span>Simulasi Lengkap CBT Keterampilan (40-50 Soal)</span>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+              
+              <!-- Paket Indonesia 1 -->
+              <div class="bg-gradient-to-br from-rose-500/10 via-rose-50 to-amber-50 p-5 rounded-2xl border-2 border-rose-300 shadow-sm flex flex-col justify-between group hover:border-rose-400 transition-all">
+                <div class="space-y-1 mb-4">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="text-[11px] font-black px-2.5 py-0.5 rounded-full bg-rose-600 text-white uppercase tracking-wider">Simulasi CBT 1</span>
+                    <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-clipboard-check mr-1"></i>50 Butir Soal</span>
+                  </div>
+                  <h4 class="text-base font-black text-slate-800 group-hover:text-rose-600 transition-colors">Simulasi Keterampilan Kaigo — Paket Indo 1</h4>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    Mencakup 4 pilar kompetensi: Dasar Perawatan, Mekanisme Tubuh, Komunikasi, dan Bantuan Hidup Sehari-hari (Termasuk soal gambar).
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-rose-200/60 flex items-center justify-between">
+                  <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-award mr-1"></i>Min. 60% (30 Benar)</span>
+                  <a href="/ssw-quiz.html?p=ssw-kaigo-indo1-quiz" class="px-4 py-2 rounded-xl bg-rose-600 hover:bg-rose-700 text-white font-extrabold text-xs shadow-sm transition-all inline-flex items-center gap-1.5 hover:scale-105">
+                    <span>Mulai Ujian</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </div>
+
+              <!-- Paket Indonesia 2 -->
+              <div class="bg-gradient-to-br from-rose-500/10 via-rose-50 to-emerald-50 p-5 rounded-2xl border-2 border-rose-300 shadow-sm flex flex-col justify-between group hover:border-rose-400 transition-all">
+                <div class="space-y-1 mb-4">
+                  <div class="flex items-center justify-between gap-2">
+                    <span class="text-[11px] font-black px-2.5 py-0.5 rounded-full bg-slate-900 text-white uppercase tracking-wider">Simulasi CBT 2</span>
+                    <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-clipboard-check mr-1"></i>41 Butir Soal</span>
+                  </div>
+                  <h4 class="text-base font-black text-slate-800 group-hover:text-rose-600 transition-colors">Simulasi Keterampilan Kaigo — Paket Indo 2</h4>
+                  <p class="text-xs text-slate-600 leading-relaxed">
+                    Materi fokus pada konsep ICF, filosofi QOL, etika profesi, pencegahan dekubitus, dan prosedur pemindahan pasien.
+                  </p>
+                </div>
+                <div class="pt-3 border-t border-rose-200/60 flex items-center justify-between">
+                  <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-award mr-1"></i>Min. 60% (25 Benar)</span>
+                  <a href="/ssw-quiz.html?p=ssw-kaigo-indo2-quiz" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-rose-600 text-white font-extrabold text-xs shadow-sm transition-all inline-flex items-center gap-1.5 hover:scale-105">
+                    <span>Mulai Ujian</span>
+                    <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                  </a>
+                </div>
+              </div>
+
             </div>
           </div>
 
-          <!-- Paket Indonesia 2 -->
-          <div class="bg-gradient-to-br from-rose-500/10 via-rose-50 to-emerald-50 p-5 rounded-2xl border-2 border-rose-300 shadow-sm flex flex-col justify-between group hover:border-rose-400 transition-all">
-            <div class="space-y-1 mb-4">
-              <div class="flex items-center justify-between gap-2">
-                <span class="text-[11px] font-black px-2.5 py-0.5 rounded-full bg-slate-900 text-white uppercase tracking-wider">Simulasi CBT 2</span>
-                <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-clipboard-check mr-1"></i>41 Butir Soal</span>
-              </div>
-              <h3 class="text-base font-black text-slate-800 group-hover:text-rose-600 transition-colors">Ujian Keterampilan Kaigo — Paket Indo 2</h3>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                Materi fokus pada konsep ICF, filosofi QOL, etika profesi, pencegahan dekubitus, dan prosedur pemindahan pasien.
-              </p>
+          <!-- B. Latihan Per Bab Teori Dasar (Bab 1 - 4) -->
+          <div class="pt-2">
+            <div class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-2.5 flex items-center gap-1.5">
+              <i class="fa-solid fa-book-bookmark text-rose-500"></i>
+              <span>Latihan Per Bab Teori Keterampilan (Bab 1 - 4)</span>
             </div>
-            <div class="pt-3 border-t border-rose-200/60 flex items-center justify-between">
-              <span class="text-xs font-bold text-rose-700"><i class="fa-solid fa-award mr-1"></i>Min. 60%</span>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-indo2-quiz" class="px-4 py-2 rounded-xl bg-slate-900 hover:bg-rose-600 text-white font-extrabold text-xs shadow-sm transition-all inline-flex items-center gap-1.5 hover:scale-105">
-                <span>Mulai Ujian</span>
-                <i class="fa-solid fa-arrow-right text-[10px]"></i>
-              </a>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              
+              <!-- Bab 1 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-2">
+                    <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 1</span>
+                    <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>16 Soal</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Martabat &amp; Kemandirian</h4>
+                  <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Filosofi QOL, martabat manusia, dan dukungan kemandirian lansia.</p>
+                </div>
+                <a href="/ssw-quiz.html?p=ssw-kaigo-bab1-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
+                  <span>Mulai Bab 1</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
+
+              <!-- Bab 2 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-2">
+                    <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 2</span>
+                    <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>20 Soal</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Peran Staf &amp; Etika Profesi</h4>
+                  <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Kerahasiaan data pasien, etika kerja, dan larangan pembatasan fisik.</p>
+                </div>
+                <a href="/ssw-quiz.html?p=ssw-kaigo-bab2-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
+                  <span>Mulai Bab 2</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
+
+              <!-- Bab 3 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-2">
+                    <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 3</span>
+                    <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>15 Soal</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Keselamatan &amp; Risiko</h4>
+                  <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Pengendalian infeksi, cuci tangan, APD, dan pencegahan kecelakaan.</p>
+                </div>
+                <a href="/ssw-quiz.html?p=ssw-kaigo-bab3-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
+                  <span>Mulai Bab 3</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
+
+              <!-- Bab 4 -->
+              <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
+                <div>
+                  <div class="flex items-center justify-between gap-2 mb-2">
+                    <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 4</span>
+                    <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>15 Soal</span>
+                  </div>
+                  <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Mekanisme Mental &amp; Tubuh</h4>
+                  <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Tanda vital, anatomi dasar otak &amp; saraf, dan homeostasis tubuh.</p>
+                </div>
+                <a href="/ssw-quiz.html?p=ssw-kaigo-bab4-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
+                  <span>Mulai Bab 4</span>
+                  <i class="fa-solid fa-arrow-right text-[10px]"></i>
+                </a>
+              </div>
+
             </div>
           </div>
-
         </div>
 
-        <!-- Subseksi A: Teori & Keahlian Dasar (Bab 1 - 4) -->
-        <div>
-          <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-3 flex items-center gap-2">
-            <i class="fa-solid fa-book-medical text-rose-500"></i>
-            <span>A. Paket Teori &amp; Pengetahuan Dasar Perawatan (Bab 1 - 4)</span>
-          </h3>
-          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-            
-            <!-- Bab 1 -->
-            <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 1</span>
-                  <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>16 Soal</span>
-                </div>
-                <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Martabat &amp; Kemandirian</h4>
-                <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Filosofi QOL, martabat manusia, dan dukungan kemandirian lansia.</p>
-              </div>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-bab1-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
-                <span>Mulai Ujian</span>
-                <i class="fa-solid fa-arrow-right text-[10px]"></i>
-              </a>
+        <!-- ========================================== -->
+        <!-- BAGIAN 2: UJIAN EVALUASI BAHASA JEPANG PERAWATAN (KAIGO NIHONGO) -->
+        <!-- ========================================== -->
+        <div class="space-y-4 pt-4 border-t border-rose-200">
+          <div class="flex items-center justify-between border-b border-slate-200 pb-2">
+            <div>
+              <h3 class="text-sm sm:text-base font-black text-slate-800 flex items-center gap-2">
+                <i class="fa-solid fa-language text-rose-600"></i>
+                <span>2. Ujian Evaluasi Bahasa Jepang Perawatan (介護日本語評価試験)</span>
+              </h3>
+              <p class="text-[11px] text-slate-500 mt-0.5">Soal dalam <b>Bahasa Jepang Asli (Kanji + Furigana)</b> • Istilah perawatan, percakapan lansia, dan membaca laporan • Standar kelulusan MHLW: <b>Minimal 73% (11/15 Benar)</b></p>
             </div>
-
-            <!-- Bab 2 -->
-            <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 2</span>
-                  <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>20 Soal</span>
-                </div>
-                <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Peran Staf &amp; Etika Profesi</h4>
-                <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Kerahasiaan data pasien, etika kerja, dan larangan pembatasan fisik.</p>
-              </div>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-bab2-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
-                <span>Mulai Ujian</span>
-                <i class="fa-solid fa-arrow-right text-[10px]"></i>
-              </a>
-            </div>
-
-            <!-- Bab 3 -->
-            <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 3</span>
-                  <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>15 Soal</span>
-                </div>
-                <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Keselamatan &amp; Manajemen Risiko</h4>
-                <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Pengendalian infeksi, cuci tangan, APD, dan pencegahan kecelakaan.</p>
-              </div>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-bab3-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
-                <span>Mulai Ujian</span>
-                <i class="fa-solid fa-arrow-right text-[10px]"></i>
-              </a>
-            </div>
-
-            <!-- Bab 4 -->
-            <div class="bg-white rounded-2xl p-4 border border-slate-200 shadow-sm hover:shadow-md transition-all flex flex-col justify-between group hover:border-rose-300">
-              <div>
-                <div class="flex items-center justify-between gap-2 mb-2">
-                  <span class="text-[11px] font-black px-2 py-0.5 rounded-md bg-rose-50 text-rose-700 border border-rose-200">BAB 4</span>
-                  <span class="text-[11px] text-slate-500 font-bold"><i class="fa-solid fa-clipboard-check mr-1 text-rose-500"></i>15 Soal</span>
-                </div>
-                <h4 class="text-sm font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-snug mb-1">Mekanisme Mental &amp; Tubuh</h4>
-                <p class="text-[11px] text-slate-500 leading-relaxed mb-4">Tanda vital, anatomi dasar otak &amp; saraf, dan homeostasis tubuh.</p>
-              </div>
-              <a href="/ssw-quiz.html?p=ssw-kaigo-bab4-quiz" class="text-xs font-bold py-2 px-3 rounded-xl bg-slate-900 hover:bg-rose-600 text-white transition-all text-center flex items-center justify-center gap-1.5 shadow-sm">
-                <span>Mulai Ujian</span>
-                <i class="fa-solid fa-arrow-right text-[10px]"></i>
-              </a>
-            </div>
-
+            <span class="hidden sm:inline-flex text-[11px] font-bold px-2.5 py-1 rounded-lg bg-rose-50 text-rose-700 border border-rose-200 shrink-0">
+              Nursing Care Japanese Test
+            </span>
           </div>
-        </div>
 
-        <!-- Subseksi B: Bahasa Jepang Khusus Kaigo & Percakapan Lapangan -->
-        <div>
-          <div class="flex items-center justify-between mb-3">
-            <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider flex items-center gap-2">
-              <i class="fa-solid fa-language text-rose-500"></i>
-              <span>B. Paket Bahasa Jepang &amp; Percakapan Lapangan (Kaigo Nihongo)</span>
-            </h3>
-            <span class="text-[11px] font-bold text-rose-700 bg-rose-50 px-2.5 py-0.5 rounded-full border border-rose-200">Standar MHLW: Min. 73%</span>
-          </div>
           <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
             
             <!-- 1. Shukkin -->
@@ -200,7 +234,7 @@
                   <span class="text-[10px] text-slate-500 font-bold">15 Soal</span>
                 </div>
                 <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">出勤 (Shukkin)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Istilah jadwal kerja, dinas, dan komunikasi dasar staf.</p>
+                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Istilah jadwal kerja, dinas, dan komunikasi staf.</p>
               </div>
               <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-shukkin-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
                 Mulai Ujian
@@ -215,7 +249,7 @@
                   <span class="text-[10px] text-slate-500 font-bold">15 Soal</span>
                 </div>
                 <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">寝間着 (Nemaki)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Pakaian tidur, bantuan mobilitas kursi roda, dan etika.</p>
+                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Pakaian tidur, bantuan kursi roda, dan etika.</p>
               </div>
               <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-nemaki-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
                 Mulai Ujian
@@ -245,7 +279,7 @@
                   <span class="text-[10px] text-slate-500 font-bold">15 Soal</span>
                 </div>
                 <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">梳します (Tokashimasu)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Menyisir rambut, posisi duduk pasien, dan tanda vital.</p>
+                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Menyisir rambut, posisi duduk, dan tanda vital.</p>
               </div>
               <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-tokashimasu-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
                 Mulai Ujian
@@ -260,7 +294,7 @@
                   <span class="text-[10px] text-slate-500 font-bold">15 Soal</span>
                 </div>
                 <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">足底 (Sokutei)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Anatomi kaki, posisi tubuh telentang/telungkup, dan istilah.</p>
+                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Anatomi kaki, posisi tubuh, dan istilah perawatan.</p>
               </div>
               <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-sokutei-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
                 Mulai Ujian
@@ -275,7 +309,7 @@
                   <span class="text-[10px] text-slate-500 font-bold">15 Soal</span>
                 </div>
                 <h4 class="text-xs font-bold text-slate-800 group-hover:text-rose-600 transition-colors leading-tight mb-1">額 (Hitai)</h4>
-                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Bagian kepala/dahi, membaca laporan kecelakaan, dan catatan lansia.</p>
+                <p class="text-[10px] text-slate-500 line-clamp-2 mb-3">Dahi, laporan kecelakaan, dan catatan lansia.</p>
               </div>
               <a href="/ssw-quiz.html?p=ssw-kaigo-nihongo-hitai-quiz" class="text-[11px] font-bold py-1.5 px-2 rounded-lg bg-rose-50 group-hover:bg-rose-600 text-rose-700 group-hover:text-white transition-all text-center block">
                 Mulai Ujian
