@@ -25,38 +25,38 @@
     ],
     "answer": 1,
     "kunci_id": "パジャマ",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **パジャマ**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Pakaian & Istilah Serapan] 寝間着 (ねまき, nemaki) adalah kata bahasa Jepang asli untuk pakaian tidur, yang bermakna sama dengan kata serapan katakana パジャマ (pajama / piyama).",
     "opt_note": [
-      "(コート) ungkapan/istilah (コート)",
+      "(kooto) mantel luar",
       "(pajama) piyama / baju tidur",
-      "(くつ) ungkapan/istilah (くつ)",
-      "(ぼうし) ungkapan/istilah (ぼうし)"
+      "(kutsu) sepatu",
+      "(boushi) topi"
     ],
     "opt_detail": [
       {
         "kana": "コート",
-        "rom": "コート",
-        "arti": "ungkapan/istilah (コート)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "kooto",
+        "arti": "mantel luar",
+        "alasan": "Tidak cocok: kooto adalah pakaian luar musim dingin, bukan pakaian untuk tidur."
       },
       {
         "kana": "パジャマ",
         "rom": "pajama",
         "arti": "piyama / baju tidur",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "alasan": "Cocok: sinonim langsung dari 寝間着 (nemaki = pakaian tidur)."
       },
       {
         "kana": "くつ",
-        "rom": "くつ",
-        "arti": "ungkapan/istilah (くつ)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "kutsu",
+        "arti": "sepatu",
+        "alasan": "Tidak cocok: kutsu adalah alas kaki luar ruangan."
       },
       {
         "kana": "ぼうし",
-        "rom": "ぼうし",
-        "arti": "ungkapan/istilah (ぼうし)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "boushi",
+        "arti": "topi",
+        "alasan": "Tidak cocok: boushi adalah penutup kepala."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -64,12 +64,12 @@
     "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 1 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **パジャマ** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 1)",
+        "desc": "[Kaigo Nihongo - Pakaian & Istilah Serapan] 寝間着 (ねまき, nemaki) adalah kata bahasa Jepang asli untuk pakaian tidur, yang bermakna sama dengan kata serapan katakana パジャマ (pajama / piyama)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(コート) ungkapan/istilah (コート), (pajama) piyama / baju tidur, (くつ) ungkapan/istilah (くつ), (ぼうし) ungkapan/istilah (ぼうし)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(kooto) mantel luar, (pajama) piyama / baju tidur, (kutsu) sepatu, (boushi) topi"
       }
     ]
   },
@@ -99,38 +99,38 @@
     ],
     "answer": 1,
     "kunci_id": "並 (なら)べます",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **並 (なら)べます**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Kata Kerja Fasilitas] Untuk menata meja dan kursi di aula (ホール) agar rapi digunakan kata kerja 並べます (ならべます, narabemasu = menata / menjajarkan).",
     "opt_note": [
-      "(片付けます) ungkapan/istilah (片付けます)",
-      "(並べます) ungkapan/istilah (並べます)",
-      "(仕舞います) ungkapan/istilah (仕舞います)",
-      "(洗います) ungkapan/istilah (洗います)"
+      "(katadzukemasu) membereskan / merapikan",
+      "(narabemasu) menata / menyejajarkan",
+      "(shimaimasu) menyimpan ke dalam",
+      "(araimasu) mencuci"
     ],
     "opt_detail": [
       {
-        "kana": "かたづ",
-        "rom": "片付けます",
-        "arti": "ungkapan/istilah (片付けます)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "かたづけます",
+        "rom": "katadzukemasu",
+        "arti": "membereskan",
+        "alasan": "Tidak cocok: katadzukemasu dipakai saat kegiatan selesai untuk merapikan, bukan menyiapkan meja-kursi di aula."
       },
       {
-        "kana": "なら",
-        "rom": "並べます",
-        "arti": "ungkapan/istilah (並べます)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "ならべます",
+        "rom": "narabemasu",
+        "arti": "menata / menyejajarkan",
+        "alasan": "Cocok: menata posisi meja dan kursi agar siap digunakan bersama."
       },
       {
-        "kana": "しま",
-        "rom": "仕舞います",
-        "arti": "ungkapan/istilah (仕舞います)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "しまいます",
+        "rom": "shimaimasu",
+        "arti": "menyimpan",
+        "alasan": "Tidak cocok: shimaimasu berarti memasukkan ke gudang/lemari."
       },
       {
-        "kana": "あら",
-        "rom": "洗います",
-        "arti": "ungkapan/istilah (洗います)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "あらいます",
+        "rom": "araimasu",
+        "arti": "mencuci",
+        "alasan": "Tidak cocok: meja dan kursi tidak dicuci dengan air."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -138,12 +138,12 @@
     "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 2 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **並 (なら)べます** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 2)",
+        "desc": "[Kaigo Nihongo - Kata Kerja Fasilitas] Untuk menata meja dan kursi di aula (ホール) agar rapi digunakan kata kerja 並べます (ならべます, narabemasu = menata / menjajarkan)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(片付けます) ungkapan/istilah (片付けます), (並べます) ungkapan/istilah (並べます), (仕舞います) ungkapan/istilah (仕舞います), (洗います) ungkapan/istilah (洗います)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(katadzukemasu) membereskan / merapikan, (narabemasu) menata / menyejajarkan, (shimaimasu) menyimpan ke dalam, (araimasu) mencuci"
       }
     ]
   },
@@ -173,38 +173,38 @@
     ],
     "answer": 2,
     "kunci_id": "ブレーキをかけます",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **ブレーキをかけます**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Keselamatan Kursi Roda] Saat pengguna naik atau berpindah ke kursi roda, tindakan wajib pertama untuk keselamatan adalah mengunci rem (ブレーキをかけます, bureeki o kakemasu).",
     "opt_note": [
-      "(おします) ungkapan/istilah (おします)",
-      "(みまもります) ungkapan/istilah (みまもります)",
-      "(ブレーキをかけます) ungkapan/istilah (ブレーキをかけます)",
-      "(たたせます) ungkapan/istilah (たたせます)"
+      "(oshimasu) mendorong",
+      "(mimamorimasu) mengawasi",
+      "(bureeki o kakemasu) memasang rem / mengunci rem",
+      "(tatasemasu) mendirikan / menyuruh berdiri"
     ],
     "opt_detail": [
       {
         "kana": "おします",
-        "rom": "おします",
-        "arti": "ungkapan/istilah (おします)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "oshimasu",
+        "arti": "mendorong",
+        "alasan": "Tidak cocok: mendorong saat pengguna sedang naik sangat berbahaya."
       },
       {
         "kana": "みまもります",
-        "rom": "みまもります",
-        "arti": "ungkapan/istilah (みまもります)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "mimamorimasu",
+        "arti": "mengawasi",
+        "alasan": "Tidak cocok: sekadar mengawasi tanpa mengunci rem dapat membuat kursi roda bergeser mundur."
       },
       {
         "kana": "ブレーキをかけます",
-        "rom": "ブレーキをかけます",
-        "arti": "ungkapan/istilah (ブレーキをかけます)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "rom": "bureeki o kakemasu",
+        "arti": "mengunci rem",
+        "alasan": "Cocok: prosedur keselamatan utama agar kursi roda tidak bergerak saat pengguna naik."
       },
       {
         "kana": "たたせます",
-        "rom": "たたせます",
-        "arti": "ungkapan/istilah (たたせます)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "tatasemasu",
+        "arti": "mendirikan",
+        "alasan": "Tidak cocok: pengguna ingin duduk di kursi roda."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -212,12 +212,12 @@
     "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 3 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **ブレーキをかけます** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 3)",
+        "desc": "[Kaigo Nihongo - Keselamatan Kursi Roda] Saat pengguna naik atau berpindah ke kursi roda, tindakan wajib pertama untuk keselamatan adalah mengunci rem (ブレーキをかけます, bureeki o kakemasu)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(おします) ungkapan/istilah (おします), (みまもります) ungkapan/istilah (みまもります), (ブレーキをかけます) ungkapan/istilah (ブレーキをかけます), (たたせます) ungkapan/istilah (たたせます)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(oshimasu) mendorong, (mimamorimasu) mengawasi, (bureeki o kakemasu) memasang rem / mengunci rem, (tatasemasu) mendirikan / menyuruh berdiri"
       }
     ]
   },
@@ -247,38 +247,38 @@
     ],
     "answer": 2,
     "kunci_id": "全部 (ぜんぶ) 体 (からだ) を 確認 (かくにん)します",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **全部 (ぜんぶ) 体 (からだ) を 確認 (かくにん)します**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Komunikasi & Observasi Tubuh] Saat pemimpin tim menginstruksikan untuk mengecek kemerahan pada kulit, respon yang tepat adalah mengonfirmasi seluruh tubuh: 全部体を確認します (zenbu karada o kakunin shimasu).",
     "opt_note": [
-      "(すぐやめます) ungkapan/istilah (すぐやめます)",
-      "(全部 体 を かんせつします) ungkapan/istilah (全部 体 を かんせつします)",
-      "(全部 体 を 確認します) ungkapan/istilah (全部 体 を 確認します)",
-      "(すぐ 帰ります) ungkapan/istilah (すぐ 帰ります)"
+      "(sugu yamemasu) segera berhenti",
+      "(zenbu karada o kansetsu shimasu) salah eja/salah kata",
+      "(zenbu karada o kakunin shimasu) memeriksa seluruh tubuh",
+      "(sugu kaerimasu) segera pulang"
     ],
     "opt_detail": [
       {
         "kana": "すぐやめます",
-        "rom": "すぐやめます",
-        "arti": "ungkapan/istilah (すぐやめます)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "sugu yamemasu",
+        "arti": "segera berhenti",
+        "alasan": "Tidak cocok: bukan respon yang profesional terhadap instruksi kerja."
       },
       {
-        "kana": "ぜんぶ",
-        "rom": "全部 体 を かんせつします",
-        "arti": "ungkapan/istilah (全部 体 を かんせつします)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "ぜんぶからだをかんせつします",
+        "rom": "zenbu karada o kansetsu shimasu",
+        "arti": "salah bentukan kata",
+        "alasan": "Tidak cocok: kansetsu adalah persendian, bukan kata kerja observasi."
       },
       {
-        "kana": "ぜんぶ",
-        "rom": "全部 体 を 確認します",
-        "arti": "ungkapan/istilah (全部 体 を 確認します)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "ぜんぶからだをかくにんします",
+        "rom": "zenbu karada o kakunin shimasu",
+        "arti": "memeriksa seluruh tubuh",
+        "alasan": "Cocok: mengonfirmasi integritas kulit seluruh tubuh pengguna untuk mengecek dekubitus."
       },
       {
-        "kana": "かえ",
-        "rom": "すぐ 帰ります",
-        "arti": "ungkapan/istilah (すぐ 帰ります)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "すぐかえります",
+        "rom": "sugu kaerimasu",
+        "arti": "segera pulang",
+        "alasan": "Tidak cocok: tidak berhubungan dengan instruksi pimpinan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -286,12 +286,12 @@
     "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 4 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **全部 (ぜんぶ) 体 (からだ) を 確認 (かくにん)します** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 4)",
+        "desc": "[Kaigo Nihongo - Komunikasi & Observasi Tubuh] Saat pemimpin tim menginstruksikan untuk mengecek kemerahan pada kulit, respon yang tepat adalah mengonfirmasi seluruh tubuh: 全部体を確認します (zenbu karada o kakunin shimasu)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(すぐやめます) ungkapan/istilah (すぐやめます), (全部 体 を かんせつします) ungkapan/istilah (全部 体 を かんせつします), (全部 体 を 確認します) ungkapan/istilah (全部 体 を 確認します), (すぐ 帰ります) ungkapan/istilah (すぐ 帰ります)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(sugu yamemasu) segera berhenti, (zenbu karada o kansetsu shimasu) salah eja/salah kata, (zenbu karada o kakunin shimasu) memeriksa seluruh tubuh, (sugu kaerimasu) segera pulang"
       }
     ]
   },
@@ -321,38 +321,38 @@
     ],
     "answer": 1,
     "kunci_id": "休(やす)みです",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **休(やす)みです**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Membaca Jadwal Dinas (Kinmuhyou)] Pada jadwal dinas, kolom hari Selasa (火) untuk Tanaka/Yamada menunjukkan jadwal libur: 休みです (yasumi desu).",
     "opt_note": [
-      "(shukkin) masuk kerja / dinas",
-      "(休みです) ungkapan/istilah (休みです)",
-      "(yakin) dinas malam",
-      "(早番です) ungkapan/istilah (早番です)"
+      "(shukkin shimasu) masuk kerja",
+      "(yasumi desu) libur / cuti",
+      "(yakin desu) dinas malam",
+      "(hayaban desu) dinas pagi awal"
     ],
     "opt_detail": [
       {
-        "kana": "しゅっきん",
-        "rom": "shukkin",
-        "arti": "masuk kerja / dinas",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "しゅっきんします",
+        "rom": "shukkin shimasu",
+        "arti": "masuk kerja",
+        "alasan": "Tidak cocok: hari Selasa terjadwal libur."
       },
       {
-        "kana": "やす",
-        "rom": "休みです",
-        "arti": "ungkapan/istilah (休みです)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "やすみです",
+        "rom": "yasumi desu",
+        "arti": "libur / lepas dinas",
+        "alasan": "Cocok: sesuai kode '休' pada tabel jadwal hari Selasa."
       },
       {
-        "kana": "やきん",
-        "rom": "yakin",
+        "kana": "やきんです",
+        "rom": "yakin desu",
         "arti": "dinas malam",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "alasan": "Tidak cocok: dinas malam terjadwal hari Senin."
       },
       {
-        "kana": "はやばん",
-        "rom": "早番です",
-        "arti": "ungkapan/istilah (早番です)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "はやばんです",
+        "rom": "hayaban desu",
+        "arti": "dinas pagi awal",
+        "alasan": "Tidak cocok: bukan jadwal hari Selasa."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -360,12 +360,12 @@
     "category_label": "3. Documents of care (介護の記録・文書の読み取り)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 5 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **休(やす)みです** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 5)",
+        "desc": "[Kaigo Nihongo - Membaca Jadwal Dinas (Kinmuhyou)] Pada jadwal dinas, kolom hari Selasa (火) untuk Tanaka/Yamada menunjukkan jadwal libur: 休みです (yasumi desu)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(shukkin) masuk kerja / dinas, (休みです) ungkapan/istilah (休みです), (yakin) dinas malam, (早番です) ungkapan/istilah (早番です)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(shukkin shimasu) masuk kerja, (yasumi desu) libur / cuti, (yakin desu) dinas malam, (hayaban desu) dinas pagi awal"
       }
     ]
   },
@@ -395,38 +395,38 @@
     ],
     "answer": 1,
     "kunci_id": "しゅっきん・たいきん",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **しゅっきん・たいきん**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Jam Kerja & Antonim] Jam mulai kerja pagi (朝9時) disebut 出勤 (しゅっきん, shukkin = masuk dinas), sedangkan jam selesai kerja sore (午後6時) disebut 退勤 (たいきん, taikin = pulang dinas).",
     "opt_note": [
-      "(たいきん・しゅっきん) ungkapan/istilah (たいきん・しゅっきん)",
-      "(しゅっきん・たいきん) ungkapan/istilah (しゅっきん・たいきん)",
-      "(きろく・きんむ) ungkapan/istilah (きろく・きんむ)",
-      "(きんむ・きろく) ungkapan/istilah (きんむ・きろく)"
+      "(taikin - shukkin) urutan terbalik",
+      "(shukkin - taikin) masuk dinas - pulang dinas",
+      "(kiroku - kinmu) catatan - dinas",
+      "(kinmu - kiroku) dinas - catatan"
     ],
     "opt_detail": [
       {
         "kana": "たいきん・しゅっきん",
-        "rom": "たいきん・しゅっきん",
-        "arti": "ungkapan/istilah (たいきん・しゅっきん)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "taikin - shukkin",
+        "arti": "pulang - masuk",
+        "alasan": "Tidak cocok: urutannya terbalik."
       },
       {
         "kana": "しゅっきん・たいきん",
-        "rom": "しゅっきん・たいきん",
-        "arti": "ungkapan/istilah (しゅっきん・たいきん)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "rom": "shukkin - taikin",
+        "arti": "masuk dinas - pulang dinas",
+        "alasan": "Cocok: jam 9 pagi adalah shukkin (masuk kerja) dan jam 6 sore adalah taikin (pulang kerja)."
       },
       {
         "kana": "きろく・きんむ",
-        "rom": "きろく・きんむ",
-        "arti": "ungkapan/istilah (きろく・きんむ)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "kiroku - kinmu",
+        "arti": "catatan - dinas",
+        "alasan": "Tidak cocok: bukan pasangan kata kerja jam mulai dan selesai kerja."
       },
       {
         "kana": "きんむ・きろく",
-        "rom": "きんむ・きろく",
-        "arti": "ungkapan/istilah (きんむ・きろく)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "kinmu - kiroku",
+        "arti": "dinas - catatan",
+        "alasan": "Tidak cocok: tidak menyatakan waktu tiba dan pulang kantor."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -434,12 +434,12 @@
     "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 6 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **しゅっきん・たいきん** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 6)",
+        "desc": "[Kaigo Nihongo - Jam Kerja & Antonim] Jam mulai kerja pagi (朝9時) disebut 出勤 (しゅっきん, shukkin = masuk dinas), sedangkan jam selesai kerja sore (午後6時) disebut 退勤 (たいきん, taikin = pulang dinas)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(たいきん・しゅっきん) ungkapan/istilah (たいきん・しゅっきん), (しゅっきん・たいきん) ungkapan/istilah (しゅっきん・たいきん), (きろく・きんむ) ungkapan/istilah (きろく・きんむ), (きんむ・きろく) ungkapan/istilah (きんむ・きろく)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(taikin - shukkin) urutan terbalik, (shukkin - taikin) masuk dinas - pulang dinas, (kiroku - kinmu) catatan - dinas, (kinmu - kiroku) dinas - catatan"
       }
     ]
   },
@@ -469,38 +469,38 @@
     ],
     "answer": 0,
     "kunci_id": "これから 顔 (かお) を 洗 (あら)います",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **これから 顔 (かお) を 洗 (あら)います**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Urutan Perawatan Diri] Pengguna memberitahu keluarga akan datang, perawat mengajak merapikan diri: これから顔を洗います (korekara kao o araimasu = sekarang kita cuci muka dulu, setelah itu potong kuku).",
     "opt_note": [
-      "(これから 顔 を 洗います) ungkapan/istilah (これから 顔 を 洗います)",
-      "(さっき 顔 を 洗いました) ungkapan/istilah (さっき 顔 を 洗いました)",
-      "(顔 を 洗いません) ungkapan/istilah (顔 を 洗いません)",
-      "(顔 を 見ます) ungkapan/istilah (顔 を 見ます)"
+      "(korekara kao o araimasu) sekarang mari mencuci muka",
+      "(sakki kao o araimashita) tadi sudah cuci muka",
+      "(kao o araimasen) tidak mencuci muka",
+      "(kao o mimasu) melihat wajah"
     ],
     "opt_detail": [
       {
-        "kana": "かお",
-        "rom": "これから 顔 を 洗います",
-        "arti": "ungkapan/istilah (これから 顔 を 洗います)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "これからかおをあらいます",
+        "rom": "korekara kao o araimasu",
+        "arti": "mulai sekarang akan mencuci muka",
+        "alasan": "Cocok: langkah awal merapikan penampilan sebelum keluarga tiba."
       },
       {
-        "kana": "かお",
-        "rom": "さっき 顔 を 洗いました",
-        "arti": "ungkapan/istilah (さっき 顔 を 洗いました)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "さっきかおをあらいました",
+        "rom": "sakki kao o araimashita",
+        "arti": "tadi sudah mencuci muka",
+        "alasan": "Tidak cocok: kalimat bentuk lampau tidak sinkron dengan ajakan tindakan selanjutnya."
       },
       {
-        "kana": "かお",
-        "rom": "顔 を 洗いません",
-        "arti": "ungkapan/istilah (顔 を 洗いません)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "かおをあらいません",
+        "rom": "kao o araimasen",
+        "arti": "tidak mencuci muka",
+        "alasan": "Tidak cocok: bertentangan dengan kebutuhan merapikan diri."
       },
       {
-        "kana": "かお",
-        "rom": "顔 を 見ます",
-        "arti": "ungkapan/istilah (顔 を 見ます)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "かおをみます",
+        "rom": "kao o mimasu",
+        "arti": "melihat wajah",
+        "alasan": "Tidak cocok: bukan ungkapan tindakan perawatan kebersihan muka."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -508,12 +508,12 @@
     "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 7 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **これから 顔 (かお) を 洗 (あら)います** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 7)",
+        "desc": "[Kaigo Nihongo - Urutan Perawatan Diri] Pengguna memberitahu keluarga akan datang, perawat mengajak merapikan diri: これから顔を洗います (korekara kao o araimasu = sekarang kita cuci muka dulu, setelah itu potong kuku)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(これから 顔 を 洗います) ungkapan/istilah (これから 顔 を 洗います), (さっき 顔 を 洗いました) ungkapan/istilah (さっき 顔 を 洗いました), (顔 を 洗いません) ungkapan/istilah (顔 を 洗いません), (顔 を 見ます) ungkapan/istilah (顔 を 見ます)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(korekara kao o araimasu) sekarang mari mencuci muka, (sakki kao o araimashita) tadi sudah cuci muka, (kao o araimasen) tidak mencuci muka, (kao o mimasu) melihat wajah"
       }
     ]
   },
@@ -543,38 +543,38 @@
     ],
     "answer": 1,
     "kunci_id": "利用者(りようしゃ)さんはスープを飲(の)みます",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **利用者(りようしゃ)さんはスープを飲(の)みます**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Pemahaman Dialog Menu Makanan] Pada dialog, pengguna menyatakan 'パンとスープと紅茶がいいです', sehingga pernyataan yang sesuai adalah pengguna meminum sup: 利用者さんはスープを飲みます (riyousha-san wa suupu o nomimasu).",
     "opt_note": [
-      "(利用者さんはごはんを食べます) ungkapan/istilah (利用者さんはごはんを食べます)",
-      "(利用者さんはスープを飲みます) ungkapan/istilah (利用者さんはスープを飲みます)",
-      "(利用者さんはコーヒーを飲みます) ungkapan/istilah (利用者さんはコーヒーを飲みます)",
-      "(利用者さんはみそしるを飲みます) ungkapan/istilah (利用者さんはみそしるを飲みます)"
+      "(riyousha-san wa gohan o tabemasu) pengguna makan nasi",
+      "(riyousha-san wa suupu o nomimasu) pengguna minum sup",
+      "(riyousha-san wa koohii o nomimasu) pengguna minum kopi",
+      "(riyousha-san wa misoshiru o nomimasu) pengguna minum sup miso"
     ],
     "opt_detail": [
       {
-        "kana": "りようしゃ",
-        "rom": "利用者さんはごはんを食べます",
-        "arti": "ungkapan/istilah (利用者さんはごはんを食べます)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "りようしゃさんはごはんをたべます",
+        "rom": "riyousha-san wa gohan o tabemasu",
+        "arti": "pengguna makan nasi",
+        "alasan": "Tidak cocok: pengguna memilih roti (パン), bukan nasi (ごはん)."
       },
       {
-        "kana": "りようしゃ",
-        "rom": "利用者さんはスープを飲みます",
-        "arti": "ungkapan/istilah (利用者さんはスープを飲みます)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "りようしゃさんはスープをのみます",
+        "rom": "riyousha-san wa suupu o nomimasu",
+        "arti": "pengguna minum sup",
+        "alasan": "Cocok: pengguna secara eksplisit meminta roti, sup, dan teh hitam (パンとスープと紅茶)."
       },
       {
-        "kana": "りようしゃ",
-        "rom": "利用者さんはコーヒーを飲みます",
-        "arti": "ungkapan/istilah (利用者さんはコーヒーを飲みます)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "りようしゃさんはコーヒーをのみます",
+        "rom": "riyousha-san wa koohii o nomimasu",
+        "arti": "pengguna minum kopi",
+        "alasan": "Tidak cocok: pengguna meminta teh hitam (紅茶), bukan kopi (コーヒー)."
       },
       {
-        "kana": "りようしゃ",
-        "rom": "利用者さんはみそしるを飲みます",
-        "arti": "ungkapan/istilah (利用者さんはみそしるを飲みます)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "りようしゃさんはみそしるをのみます",
+        "rom": "riyousha-san wa misoshiru o nomimasu",
+        "arti": "pengguna minum sup miso",
+        "alasan": "Tidak cocok: pengguna meminta soup (スープ), bukan sup miso tradisional."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -582,12 +582,12 @@
     "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 8 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **利用者(りようしゃ)さんはスープを飲(の)みます** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 8)",
+        "desc": "[Kaigo Nihongo - Pemahaman Dialog Menu Makanan] Pada dialog, pengguna menyatakan 'パンとスープと紅茶がいいです', sehingga pernyataan yang sesuai adalah pengguna meminum sup: 利用者さんはスープを飲みます (riyousha-san wa suupu o nomimasu)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(利用者さんはごはんを食べます) ungkapan/istilah (利用者さんはごはんを食べます), (利用者さんはスープを飲みます) ungkapan/istilah (利用者さんはスープを飲みます), (利用者さんはコーヒーを飲みます) ungkapan/istilah (利用者さんはコーヒーを飲みます), (利用者さんはみそしるを飲みます) ungkapan/istilah (利用者さんはみそしるを飲みます)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(riyousha-san wa gohan o tabemasu) pengguna makan nasi, (riyousha-san wa suupu o nomimasu) pengguna minum sup, (riyousha-san wa koohii o nomimasu) pengguna minum kopi, (riyousha-san wa misoshiru o nomimasu) pengguna minum sup miso"
       }
     ]
   },
@@ -617,38 +617,38 @@
     ],
     "answer": 1,
     "kunci_id": "2回入院(にゅういん)しました",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **2回入院(にゅういん)しました**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Membaca Catatan Rawat Inap] Kalimat '利用者(りようしゃ)は70歳(さい)で、2回(かい)入院(にゅういん)しました' menegaskan riwayat rawat inap sebanyak 2 kali: 2回入院しました (nikai nyuuin shimashita).",
     "opt_note": [
-      "(2回入院しませんでした) ungkapan/istilah (2回入院しませんでした)",
-      "(2回入院しました) ungkapan/istilah (2回入院しました)",
-      "(入院していません) ungkapan/istilah (入院していません)",
-      "(1回入院しました) ungkapan/istilah (1回入院しました)"
+      "(nikai nyuuin shimasen deshita) tidak rawat inap 2 kali",
+      "(nikai nyuuin shimashita) rawat inap 2 kali",
+      "(nyuuin shite imasen) tidak sedang rawat inap",
+      "(ikkai nyuuin shimashita) rawat inap 1 kali"
     ],
     "opt_detail": [
       {
-        "kana": "にゅういん",
-        "rom": "2回入院しませんでした",
-        "arti": "ungkapan/istilah (2回入院しませんでした)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "2かいにゅういんしませんでした",
+        "rom": "nikai nyuuin shimasen deshita",
+        "arti": "tidak rawat inap 2 kali",
+        "alasan": "Tidak cocok: kalimat bentuk negatif, bertentangan dengan isi catatan."
       },
       {
-        "kana": "にゅういん",
-        "rom": "2回入院しました",
-        "arti": "ungkapan/istilah (2回入院しました)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "2かいにゅういんしました",
+        "rom": "nikai nyuuin shimashita",
+        "arti": "pernah rawat inap 2 kali",
+        "alasan": "Cocok: tepat sesuai pernyataan pada teks catatan medis."
       },
       {
-        "kana": "にゅういん",
-        "rom": "入院していません",
-        "arti": "ungkapan/istilah (入院していません)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "にゅういんしていません",
+        "rom": "nyuuin shite imasen",
+        "arti": "tidak dirawat",
+        "alasan": "Tidak cocok: bertentangan dengan fakta riwayat rawat inap pasien."
       },
       {
-        "kana": "にゅういん",
-        "rom": "1回入院しました",
-        "arti": "ungkapan/istilah (1回入院しました)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "1かいにゅういんしました",
+        "rom": "ikkai nyuuin shimashita",
+        "arti": "rawat inap 1 kali",
+        "alasan": "Tidak cocok: jumlahnya 2 kali, bukan 1 kali."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -656,12 +656,12 @@
     "category_label": "3. Documents of care (介護の記録・文書の読み取り)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 9 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **2回入院(にゅういん)しました** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 9)",
+        "desc": "[Kaigo Nihongo - Membaca Catatan Rawat Inap] Kalimat '利用者(りようしゃ)は70歳(さい)で、2回(かい)入院(にゅういん)しました' menegaskan riwayat rawat inap sebanyak 2 kali: 2回入院しました (nikai nyuuin shimashita)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(2回入院しませんでした) ungkapan/istilah (2回入院しませんでした), (2回入院しました) ungkapan/istilah (2回入院しました), (入院していません) ungkapan/istilah (入院していません), (1回入院しました) ungkapan/istilah (1回入院しました)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(nikai nyuuin shimasen deshita) tidak rawat inap 2 kali, (nikai nyuuin shimashita) rawat inap 2 kali, (nyuuin shite imasen) tidak sedang rawat inap, (ikkai nyuuin shimashita) rawat inap 1 kali"
       }
     ]
   },
@@ -691,38 +691,38 @@
     ],
     "answer": 1,
     "kunci_id": "今日(きょう)3回(かい)トイレに行(い)きました",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **今日(きょう)3回(かい)トイレに行(い)きました**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Pencatatan Frekuensi Toilet] Pada teks '利用者(りようしゃ)は今日(きょう)3回(かい)トイレに行(い)きましたが、排便(はいべん)がありませんでした', fakta objektif yang benar adalah pengguna ke toilet 3 kali: 今日3回トイレに行きました.",
     "opt_note": [
-      "(今日トイレに行きませんでした) ungkapan/istilah (今日トイレに行きませんでした)",
-      "(今日3回トイレに行きました) ungkapan/istilah (今日3回トイレに行きました)",
-      "(今日排便がありました) ungkapan/istilah (今日排便がありました)",
-      "(トイレに行きません) ungkapan/istilah (トイレに行きません)"
+      "(kyou toire ni ikimasen deshita) hari ini tidak ke toilet",
+      "(kyou sankai toire ni ikimashita) hari ini 3 kali ke toilet",
+      "(kyou haiben ga arimashita) hari ini ada BAB",
+      "(toire ni ikimasen) tidak ke toilet"
     ],
     "opt_detail": [
       {
-        "kana": "きょう",
-        "rom": "今日トイレに行きませんでした",
-        "arti": "ungkapan/istilah (今日トイレに行きませんでした)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "きょうトイレにいきませんでした",
+        "rom": "kyou toire ni ikimasen deshita",
+        "arti": "hari ini tidak ke toilet",
+        "alasan": "Tidak cocok: pengguna tercatat pergi ke toilet 3 kali."
       },
       {
-        "kana": "きょう",
-        "rom": "今日3回トイレに行きました",
-        "arti": "ungkapan/istilah (今日3回トイレに行きました)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "きょう3かいトイレにいきました",
+        "rom": "kyou sankai toire ni ikimashita",
+        "arti": "hari ini ke toilet 3 kali",
+        "alasan": "Cocok: sesuai fakta objektif teks catatan eliminasi harian."
       },
       {
-        "kana": "きょう",
-        "rom": "今日排便がありました",
-        "arti": "ungkapan/istilah (今日排便がありました)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "きょうはいべんがありました",
+        "rom": "kyou haiben ga arimashita",
+        "arti": "hari ini ada BAB",
+        "alasan": "Tidak cocok: teks menyebutkan 排便がありませんでした (tidak ada BAB)."
       },
       {
-        "kana": "い",
-        "rom": "トイレに行きません",
-        "arti": "ungkapan/istilah (トイレに行きません)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "トイレにいきません",
+        "rom": "toire ni ikimasen",
+        "arti": "tidak pergi ke toilet",
+        "alasan": "Tidak cocok: tidak sesuai data aktivitas pasien."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -730,12 +730,12 @@
     "category_label": "3. Documents of care (介護の記録・文書の読み取り)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 10 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **今日(きょう)3回(かい)トイレに行(い)きました** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 10)",
+        "desc": "[Kaigo Nihongo - Pencatatan Frekuensi Toilet] Pada teks '利用者(りようしゃ)は今日(きょう)3回(かい)トイレに行(い)きましたが、排便(はいべん)がありませんでした', fakta objektif yang benar adalah pengguna ke toilet 3 kali: 今日3回トイレに行きました."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(今日トイレに行きませんでした) ungkapan/istilah (今日トイレに行きませんでした), (今日3回トイレに行きました) ungkapan/istilah (今日3回トイレに行きました), (今日排便がありました) ungkapan/istilah (今日排便がありました), (トイレに行きません) ungkapan/istilah (トイレに行きません)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(kyou toire ni ikimasen deshita) hari ini tidak ke toilet, (kyou sankai toire ni ikimashita) hari ini 3 kali ke toilet, (kyou haiben ga arimashita) hari ini ada BAB, (toire ni ikimasen) tidak ke toilet"
       }
     ]
   },
@@ -765,38 +765,38 @@
     ],
     "answer": 1,
     "kunci_id": "立(た)ったあと介助(かいじょ)が必要(ひつよう)",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **立(た)ったあと介助(かいじょ)が必要(ひつよう)**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Derajat Bantuan Mobilisasi] Pasien bisa berdiri sendiri namun butuh pendampingan setelah berdiri, maka status asuhannya adalah: 立ったあと介助が必要 (tatta ato kaijo ga hitsuyou = butuh bantuan setelah berdiri).",
     "opt_note": [
-      "(立つとき介助が必要) ungkapan/istilah (立つとき介助が必要)",
-      "(立ったあと介助が必要) ungkapan/istilah (立ったあと介助が必要)",
-      "(歩けません) ungkapan/istilah (歩けません)",
-      "(自立です) ungkapan/istilah (自立です)"
+      "(tatsu toki kaijo ga hitsuyou) butuh bantuan saat berdiri",
+      "(tatta ato kaijo ga hitsuyou) butuh bantuan setelah berdiri",
+      "(arukemasen) tidak bisa berjalan",
+      "(jiritsu desu) mandiri total"
     ],
     "opt_detail": [
       {
-        "kana": "た",
-        "rom": "立つとき介助が必要",
-        "arti": "ungkapan/istilah (立つとき介助が必要)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "たつときかいじょがひつよう",
+        "rom": "tatsu toki kaijo ga hitsuyou",
+        "arti": "butuh bantuan saat berdiri",
+        "alasan": "Tidak cocok: saat berdiri pasien bisa sendiri (自分で立てます)."
       },
       {
-        "kana": "た",
-        "rom": "立ったあと介助が必要",
-        "arti": "ungkapan/istilah (立ったあと介助が必要)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "たったあとかいじょがひつよう",
+        "rom": "tatta ato kaijo ga hitsuyou",
+        "arti": "butuh bantuan setelah berdiri",
+        "alasan": "Cocok: tepat sesuai deskripsi teks soal (立ったあと介助が必要)."
       },
       {
-        "kana": "ある",
-        "rom": "歩けません",
-        "arti": "ungkapan/istilah (歩けません)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "あるけません",
+        "rom": "arukemasen",
+        "arti": "tidak bisa berjalan",
+        "alasan": "Tidak cocok: kesimpulan tidak berdasar."
       },
       {
-        "kana": "じりつ",
-        "rom": "自立です",
-        "arti": "ungkapan/istilah (自立です)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "じりつです",
+        "rom": "jiritsu desu",
+        "arti": "mandiri total",
+        "alasan": "Tidak cocok: pasien masih membutuhkan bantuan (kaijo)."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -804,12 +804,12 @@
     "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 11 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **立(た)ったあと介助(かいじょ)が必要(ひつよう)** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 11)",
+        "desc": "[Kaigo Nihongo - Derajat Bantuan Mobilisasi] Pasien bisa berdiri sendiri namun butuh pendampingan setelah berdiri, maka status asuhannya adalah: 立ったあと介助が必要 (tatta ato kaijo ga hitsuyou = butuh bantuan setelah berdiri)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(立つとき介助が必要) ungkapan/istilah (立つとき介助が必要), (立ったあと介助が必要) ungkapan/istilah (立ったあと介助が必要), (歩けません) ungkapan/istilah (歩けません), (自立です) ungkapan/istilah (自立です)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(tatsu toki kaijo ga hitsuyou) butuh bantuan saat berdiri, (tatta ato kaijo ga hitsuyou) butuh bantuan setelah berdiri, (arukemasen) tidak bisa berjalan, (jiritsu desu) mandiri total"
       }
     ]
   },
@@ -839,38 +839,38 @@
     ],
     "answer": 1,
     "kunci_id": "使(つか)わないでください",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **使(つか)わないでください**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Pola Larangan ~te wa ikemasen] Bentuk larangan 「〜てはいけません」 (~te wa ikemasen = tidak boleh) memiliki makna larangan sopan yang setara dengan 「〜ないでください」 (~naide kudasai = tolong jangan): 使わないでください.",
     "opt_note": [
-      "(使ってもいいです) ungkapan/istilah (使ってもいいです)",
-      "(使わないでください) ungkapan/istilah (使わないでください)",
-      "(必ず使います) ungkapan/istilah (必ず使います)",
-      "(使いたいです) ungkapan/istilah (使いたいです)"
+      "(tsukatte mo ii desu) boleh menggunakan",
+      "(tsukawanaide kudasai) tolong jangan gunakan",
+      "(kanarazu tsukaimasu) pasti menggunakan",
+      "(tsukaitai desu) ingin menggunakan"
     ],
     "opt_detail": [
       {
-        "kana": "つか",
-        "rom": "使ってもいいです",
-        "arti": "ungkapan/istilah (使ってもいいです)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "つかってもいいです",
+        "rom": "tsukatte mo ii desu",
+        "arti": "boleh dipakai",
+        "alasan": "Tidak cocok: kalimat izin (~temo ii), bertolak belakang dengan larangan."
       },
       {
-        "kana": "つか",
-        "rom": "使わないでください",
-        "arti": "ungkapan/istilah (使わないでください)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "つかわないでください",
+        "rom": "tsukawanaide kudasai",
+        "arti": "tolong jangan dipakai",
+        "alasan": "Cocok: padanan ungkapan instruksi larangan yang santun."
       },
       {
-        "kana": "かなら",
-        "rom": "必ず使います",
-        "arti": "ungkapan/istilah (必ず使います)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "かならずつかいます",
+        "rom": "kanarazu tsukaimasu",
+        "arti": "pasti memakai",
+        "alasan": "Tidak cocok: menyatakan kewajiban mutlak."
       },
       {
-        "kana": "つか",
-        "rom": "使いたいです",
-        "arti": "ungkapan/istilah (使いたいです)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "つかいたいです",
+        "rom": "tsukaitai desu",
+        "arti": "ingin memakai",
+        "alasan": "Tidak cocok: menyatakan keinginan subjek."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -878,12 +878,12 @@
     "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 12 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **使(つか)わないでください** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 12)",
+        "desc": "[Kaigo Nihongo - Pola Larangan ~te wa ikemasen] Bentuk larangan 「〜てはいけません」 (~te wa ikemasen = tidak boleh) memiliki makna larangan sopan yang setara dengan 「〜ないでください」 (~naide kudasai = tolong jangan): 使わないでください."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(使ってもいいです) ungkapan/istilah (使ってもいいです), (使わないでください) ungkapan/istilah (使わないでください), (必ず使います) ungkapan/istilah (必ず使います), (使いたいです) ungkapan/istilah (使いたいです)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(tsukatte mo ii desu) boleh menggunakan, (tsukawanaide kudasai) tolong jangan gunakan, (kanarazu tsukaimasu) pasti menggunakan, (tsukaitai desu) ingin menggunakan"
       }
     ]
   },
@@ -913,38 +913,38 @@
     ],
     "answer": 2,
     "kunci_id": "更衣(こうい)",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **更衣(こうい)**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Istilah Bantuan Perawatan] Bantuan mengganti pakaian pada pasien dalam terminologi resmi keperawatan Jepang disebut 更衣介助 (こういかいじょ, koui kaijo).",
     "opt_note": [
       "(nyuuyoku) mandi berendam",
-      "(haisetsu) ekskresi / buang air",
+      "(haisetsu) ekskresi buang air",
       "(koui) mengganti pakaian",
-      "(shokuji) makan / makanan"
+      "(shokuji) makan"
     ],
     "opt_detail": [
       {
         "kana": "にゅうよく",
         "rom": "nyuuyoku",
         "arti": "mandi berendam",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "alasan": "Tidak cocok: nyuuyoku adalah bantuan mandi di bak/shower."
       },
       {
         "kana": "はいせつ",
         "rom": "haisetsu",
-        "arti": "ekskresi / buang air",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "arti": "ekskresi",
+        "alasan": "Tidak cocok: haisetsu adalah bantuan buang air di toilet/popok."
       },
       {
         "kana": "こうい",
         "rom": "koui",
-        "arti": "mengganti pakaian",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "arti": "ganti pakaian",
+        "alasan": "Cocok: istilah resmi untuk bantuan memakai dan melepas pakaian (更衣介助)."
       },
       {
         "kana": "しょくじ",
         "rom": "shokuji",
-        "arti": "makan / makanan",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "arti": "makan",
+        "alasan": "Tidak cocok: shokuji adalah bantuan konsumsi nutrisi."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -952,12 +952,12 @@
     "category_label": "1. Technical terms of care (介護の日本語・専門用語)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 13 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **更衣(こうい)** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 13)",
+        "desc": "[Kaigo Nihongo - Istilah Bantuan Perawatan] Bantuan mengganti pakaian pada pasien dalam terminologi resmi keperawatan Jepang disebut 更衣介助 (こういかいじょ, koui kaijo)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(nyuuyoku) mandi berendam, (haisetsu) ekskresi / buang air, (koui) mengganti pakaian, (shokuji) makan / makanan"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(nyuuyoku) mandi berendam, (haisetsu) ekskresi buang air, (koui) mengganti pakaian, (shokuji) makan"
       }
     ]
   },
@@ -987,38 +987,38 @@
     ],
     "answer": 1,
     "kunci_id": "状態(じょうたい)を確認(かくにん)する",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **状態(じょうたい)を確認(かくにん)する**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Tindakan Pertama Pasien Jatuh] Saat pengguna terjatuh (転びました), perawat tidak boleh langsung menarik atau mengangkat pasien, melainkan harus segera memeriksa kondisi kesadaran dan ada/tidaknya cedera: 状態を確認する (joutai o kakunin suru).",
     "opt_note": [
-      "(写真を撮る) ungkapan/istilah (写真を撮る)",
-      "(状態を確認する) ungkapan/istilah (状態を確認する)",
-      "(すぐ帰る) ungkapan/istilah (すぐ帰る)",
-      "(何もしない) ungkapan/istilah (何もしない)"
+      "(shashin o toru) mengambil foto",
+      "(joutai o kakunin suru) memeriksa kondisi pasien",
+      "(sugu kaeru) langsung pulang",
+      "(nani mo shinai) tidak melakukan apa-apa"
     ],
     "opt_detail": [
       {
-        "kana": "しゃしん",
-        "rom": "写真を撮る",
-        "arti": "ungkapan/istilah (写真を撮る)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "しゃしんをとる",
+        "rom": "shashin o toru",
+        "arti": "mengambil foto",
+        "alasan": "Tidak cocok: bukan prioritas pertolongan pertama pada kecelakaan pasien."
       },
       {
-        "kana": "じょうたい",
-        "rom": "状態を確認する",
-        "arti": "ungkapan/istilah (状態を確認する)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "じょうたいをかくにんする",
+        "rom": "joutai o kakunin suru",
+        "arti": "memeriksa kondisi",
+        "alasan": "Cocok: protokol medis pertama untuk memeriksa tanda cedera, nyeri, dan kesadaran."
       },
       {
-        "kana": "かえ",
-        "rom": "すぐ帰る",
-        "arti": "ungkapan/istilah (すぐ帰る)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "すぐかえる",
+        "rom": "sugu kaeru",
+        "arti": "langsung pulang",
+        "alasan": "Tidak cocok: pengabaian pasien dan pelanggaran berat tanggung jawab perawat."
       },
       {
-        "kana": "なに",
-        "rom": "何もしない",
-        "arti": "ungkapan/istilah (何もしない)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "なにもしない",
+        "rom": "nani mo shinai",
+        "arti": "tidak melakukan apa-apa",
+        "alasan": "Tidak cocok: membahayakan nyawa pasien."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -1026,12 +1026,12 @@
     "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 14 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **状態(じょうたい)を確認(かくにん)する** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 14)",
+        "desc": "[Kaigo Nihongo - Tindakan Pertama Pasien Jatuh] Saat pengguna terjatuh (転びました), perawat tidak boleh langsung menarik atau mengangkat pasien, melainkan harus segera memeriksa kondisi kesadaran dan ada/tidaknya cedera: 状態を確認する (joutai o kakunin suru)."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(写真を撮る) ungkapan/istilah (写真を撮る), (状態を確認する) ungkapan/istilah (状態を確認する), (すぐ帰る) ungkapan/istilah (すぐ帰る), (何もしない) ungkapan/istilah (何もしない)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(shashin o toru) mengambil foto, (joutai o kakunin suru) memeriksa kondisi pasien, (sugu kaeru) langsung pulang, (nani mo shinai) tidak melakukan apa-apa"
       }
     ]
   },
@@ -1061,38 +1061,38 @@
     ],
     "answer": 1,
     "kunci_id": "状態(じょうたい)を確認(かくにん)する",
-    "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata & Situasi Kerja] Jawaban yang tepat adalah **状態(じょうたい)を確認(かくにん)する**.\nDalam konteks perawatan lansia, ungkapan atau kosakata ini digunakan saat berkomunikasi dengan pengguna (利用者) atau antar staf perawat untuk memastikan tindakan perawatan berlangsung aman, sopan, dan sesuai standar operasional panti wreda Jepang.",
+    "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
+    "analisis": "[Kaigo Nihongo - Insiden Kursi Roda Terjatuh] Sama seperti kasus jatuh lainnya, saat pengguna kursi roda terjatuh, tindakan prioritas pertama perawat adalah memeriksa kondisi pasien (状態を確認する) sebelum memindahkan tubuhnya.",
     "opt_note": [
-      "(すぐに歩かせる) ungkapan/istilah (すぐに歩かせる)",
-      "(状態を確認する) ungkapan/istilah (状態を確認する)",
-      "(写真を撮る) ungkapan/istilah (写真を撮る)",
-      "(そのままにする) ungkapan/istilah (そのままにする)"
+      "(sugu ni arukaseru) langsung disuruh jalan",
+      "(joutai o kakunin suru) memeriksa kondisi fisik pasien",
+      "(shashin o toru) mengambil foto",
+      "(sono mama ni suru) membiarkan begitu saja"
     ],
     "opt_detail": [
       {
-        "kana": "ある",
-        "rom": "すぐに歩かせる",
-        "arti": "ungkapan/istilah (すぐに歩かせる)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "すぐにあるかせる",
+        "rom": "sugu ni arukaseru",
+        "arti": "langsung disuruh berjalan",
+        "alasan": "Tidak cocok: sangat berbahaya jika pasien mengalami fraktur leher paha atau cedera sendi."
       },
       {
-        "kana": "じょうたい",
-        "rom": "状態を確認する",
-        "arti": "ungkapan/istilah (状態を確認する)",
-        "alasan": "Pilihan tepat sesuai konteks percakapan dan situasi lapangan kerja Kaigo (介護の現場)."
+        "kana": "じょうたいをかくにんする",
+        "rom": "joutai o kakunin suru",
+        "arti": "memeriksa kondisi",
+        "alasan": "Cocok: memeriksa respons suara, pernapasan, dan titik nyeri trauma fisik."
       },
       {
-        "kana": "しゃしん",
-        "rom": "写真を撮る",
-        "arti": "ungkapan/istilah (写真を撮る)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "kana": "しゃしんをとる",
+        "rom": "shashin o toru",
+        "arti": "mengambil foto",
+        "alasan": "Tidak cocok: keselamatan nyawa pasien adalah hal utama dibanding dokumentasi gambar."
       },
       {
         "kana": "そのままにする",
-        "rom": "そのままにする",
-        "arti": "ungkapan/istilah (そのままにする)",
-        "alasan": "Tidak sesuai dengan konteks situasi kalimat atau instruksi kerja yang ditanyakan."
+        "rom": "sono mama ni suru",
+        "arti": "membiarkan begitu saja",
+        "alasan": "Tidak cocok: tindakan penelantaran medis."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -1100,12 +1100,12 @@
     "category_label": "2. Communications of care (介護の会話・コミュニケーション)",
     "pembahasan": [
       {
-        "title": "Bedah Soal 15 (Bahasa Jepang Keperawatan)",
-        "desc": "Memahami makna istilah **状態(じょうたい)を確認(かくにん)する** dalam kalimat situasi asuhan lansia."
+        "title": "Penjelasan Konseptual (Soal 15)",
+        "desc": "[Kaigo Nihongo - Insiden Kursi Roda Terjatuh] Sama seperti kasus jatuh lainnya, saat pengguna kursi roda terjatuh, tindakan prioritas pertama perawat adalah memeriksa kondisi pasien (状態を確認する) sebelum memindahkan tubuhnya."
       },
       {
-        "title": "Kosakata & Bunpou Terkait",
-        "desc": "(すぐに歩かせる) ungkapan/istilah (すぐに歩かせる), (状態を確認する) ungkapan/istilah (状態を確認する), (写真を撮る) ungkapan/istilah (写真を撮る), (そのままにする) ungkapan/istilah (そのままにする)"
+        "title": "Arti Opsi & Kata Kunci",
+        "desc": "(sugu ni arukaseru) langsung disuruh jalan, (joutai o kakunin suru) memeriksa kondisi fisik pasien, (shashin o toru) mengambil foto, (sono mama ni suru) membiarkan begitu saja"
       }
     ]
   }
