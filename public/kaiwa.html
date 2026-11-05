@@ -503,17 +503,31 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
     }
 
     function startGreetingByScenario() {
+      function onGreetingFinished() {
+        // Otomatis rekam / dengarkan jawaban mahasiswa setelah sapaan selesai
+        isAIProcessing = false;
+        if (colUserStatus) colUserStatus.textContent = 'Giliran Anda Bicara';
+        userSpeakingBadge.classList.remove('hidden');
+        userSpeakingBadge.textContent = 'Mendengarkan... Silakan jawab';
+        isFullAIMode = true;
+        if (recognition && !isMuted) {
+          try { recognition.start(); } catch(e){}
+        }
+      }
+
       if (activePartner === 'yuki') {
         // Yuki Solo
         speakYuki(
-          'はい！アシスタントの由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
-          'Siap! Saya Yuki. Santai saja dan mari mulai latihannya ya! Senang bisa belajar bersama Anda!'
+          'はい！由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
+          'Siap! Saya Yuki. Santai saja dan mari mulai latihannya ya! Senang bisa belajar bersama Anda!',
+          onGreetingFinished
         );
       } else if (activePartner === 'sato') {
         // Sato Solo
         speakSato(
           'みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！準備はいいですか？',
-          'Halo semuanya! Saya Sato. Mari kita mulai latihan percakapan lewat Zoom hari ini. Sudah siap?'
+          'Halo semuanya! Saya Sato. Mari kita mulai latihan percakapan lewat Zoom hari ini. Sudah siap?',
+          onGreetingFinished
         );
       } else {
         // Duet Sato & Yuki
@@ -523,8 +537,9 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
           () => {
             setTimeout(() => {
               speakYuki(
-                'はい！アシスタントの由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
-                'Siap! Saya Yuki sebagai asisten. Santai saja dan mari mengobrol dengan seru ya! Salam kenal semuanya!'
+                'はい！由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
+                'Siap! Saya Yuki. Santai saja dan mari mengobrol dengan seru ya! Salam kenal semuanya!',
+                onGreetingFinished
               );
             }, 700);
           }
@@ -1345,17 +1360,31 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       const scen = DIALOG_PRESETS[activeScenario] || DIALOG_PRESETS.kaiwa;
       const data = scen[type] || scen.intro;
 
+      function onScenarioFinished() {
+        // Otomatis aktifkan mikrofon untuk merekam jawaban mahasiswa begitu karakter selesai berbicara
+        isAIProcessing = false;
+        if (colUserStatus) colUserStatus.textContent = 'Giliran Anda Bicara';
+        userSpeakingBadge.classList.remove('hidden');
+        userSpeakingBadge.textContent = 'Mendengarkan... Silakan jawab';
+        
+        // Aktifkan mode mendengarkan secara otomatis
+        isFullAIMode = true;
+        if (recognition && !isMuted) {
+          try { recognition.start(); } catch(e){}
+        }
+      }
+
       if (activePartner === 'sato') {
         // Solo Sato
-        speakSato(data.sato.jp, data.sato.id);
+        speakSato(data.sato.jp, data.sato.id, onScenarioFinished);
       } else if (activePartner === 'yuki') {
         // Solo Yuki
-        speakYuki(data.yuki.jp, data.yuki.id);
+        speakYuki(data.yuki.jp, data.yuki.id, onScenarioFinished);
       } else {
         // Duet Sato & Yuki
         speakSato(data.sato.jp, data.sato.id, () => {
           setTimeout(() => {
-            speakYuki(data.yuki.jp, data.yuki.id);
+            speakYuki(data.yuki.jp, data.yuki.id, onScenarioFinished);
           }, 700);
         });
       }
