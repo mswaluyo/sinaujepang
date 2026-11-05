@@ -45,7 +45,124 @@
     }
   </style>
 </head>
-<body class="h-screen w-screen flex flex-col justify-between select-none overflow-x-hidden md:overflow-hidden">
+<body class="h-screen w-screen flex flex-col justify-between select-none overflow-x-hidden md:overflow-hidden relative">
+
+  <!-- ── 0. ONBOARDING MODAL / LOBBY SELECTION DIALOG (POP-UP AWAL) ── -->
+  <div id="lobby-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md flex items-center justify-center p-3 sm:p-4">
+    <div class="bg-[#16161b] border border-white/15 rounded-3xl w-full max-w-lg p-5 sm:p-6 shadow-2xl flex flex-col gap-4 text-white animate-in fade-in duration-300">
+      
+      <!-- Modal Header -->
+      <div class="text-center pb-2 border-b border-white/10">
+        <div class="inline-flex items-center gap-2 bg-gradient-to-r from-sky-500/20 to-pink-500/20 border border-sky-400/30 px-3 py-1 rounded-full text-xs font-semibold text-sky-300 mb-2">
+          <i class="fa-solid fa-headset text-amber-300"></i> Zoom Kaiwa Studio • SinauJepang
+        </div>
+        <h2 class="text-lg sm:text-xl font-bold tracking-tight text-white">Konfigurasi Sesi Latihan</h2>
+        <p class="text-xs text-slate-400 mt-1">Pilih Partner AI & Skenario sebelum memasuki ruang panggilan virtual.</p>
+      </div>
+
+      <!-- Langkah 1: Pilih Karakter Partner -->
+      <div class="space-y-2">
+        <label class="text-xs font-bold text-slate-300 flex items-center gap-1.5 uppercase tracking-wider">
+          <span class="w-4 h-4 rounded-full bg-sky-500 text-[10px] text-white flex items-center justify-center">1</span>
+          Pilih Partner Karakter AI
+        </label>
+        <div class="grid grid-cols-3 gap-2.5">
+          <!-- Duet (Default) -->
+          <label class="cursor-pointer">
+            <input type="radio" name="lobby-partner" value="both" checked class="peer sr-only">
+            <div class="p-2.5 rounded-2xl bg-white/5 border border-white/10 peer-checked:border-sky-400 peer-checked:bg-sky-500/15 transition flex flex-col items-center text-center gap-1.5 h-full">
+              <div class="w-10 h-10 rounded-full bg-gradient-to-r from-sky-500 to-pink-500 flex items-center justify-center text-white text-sm shadow">
+                <i class="fa-solid fa-users"></i>
+              </div>
+              <span class="text-xs font-bold text-white">Sato & Yuki</span>
+              <span class="text-[10px] text-slate-400 leading-tight">Duet Mentor (Lengkap)</span>
+            </div>
+          </label>
+
+          <!-- Sato Solo -->
+          <label class="cursor-pointer">
+            <input type="radio" name="lobby-partner" value="sato" class="peer sr-only">
+            <div class="p-2.5 rounded-2xl bg-white/5 border border-white/10 peer-checked:border-sky-400 peer-checked:bg-sky-500/15 transition flex flex-col items-center text-center gap-1.5 h-full">
+              <div class="w-10 h-10 rounded-full bg-sky-600/30 text-sky-400 border border-sky-400/40 flex items-center justify-center text-sm shadow">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <span class="text-xs font-bold text-sky-300">Sato-san</span>
+              <span class="text-[10px] text-slate-400 leading-tight">Sensei Native (Tegas)</span>
+            </div>
+          </label>
+
+          <!-- Yuki Solo -->
+          <label class="cursor-pointer">
+            <input type="radio" name="lobby-partner" value="yuki" class="peer sr-only">
+            <div class="p-2.5 rounded-2xl bg-white/5 border border-white/10 peer-checked:border-pink-400 peer-checked:bg-pink-500/15 transition flex flex-col items-center text-center gap-1.5 h-full">
+              <div class="w-10 h-10 rounded-full bg-pink-600/30 text-pink-400 border border-pink-400/40 flex items-center justify-center text-sm shadow">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <span class="text-xs font-bold text-pink-300">Yuki-chan</span>
+              <span class="text-[10px] text-slate-400 leading-tight">Asisten (Ramah)</span>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Langkah 2: Pilih Mode Skenario -->
+      <div class="space-y-2">
+        <label class="text-xs font-bold text-slate-300 flex items-center gap-1.5 uppercase tracking-wider">
+          <span class="w-4 h-4 rounded-full bg-amber-500 text-[10px] text-white flex items-center justify-center">2</span>
+          Pilih Model / Skenario Latihan
+        </label>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-2">
+          <!-- Kaiwa Casual -->
+          <label class="cursor-pointer">
+            <input type="radio" name="lobby-scenario" value="kaiwa" checked class="peer sr-only">
+            <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 peer-checked:border-amber-400 peer-checked:bg-amber-500/15 transition flex sm:flex-col items-center sm:text-center gap-2 sm:gap-1">
+              <i class="fa-regular fa-comments text-amber-300 text-sm"></i>
+              <div>
+                <div class="text-xs font-bold text-white">Kaiwa Harian</div>
+                <div class="text-[10px] text-slate-400">Casual (Futsuutai)</div>
+              </div>
+            </div>
+          </label>
+
+          <!-- Mendan Konsultasi -->
+          <label class="cursor-pointer">
+            <input type="radio" name="lobby-scenario" value="mendan" class="peer sr-only">
+            <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 peer-checked:border-sky-400 peer-checked:bg-sky-500/15 transition flex sm:flex-col items-center sm:text-center gap-2 sm:gap-1">
+              <i class="fa-solid fa-handshake-angle text-sky-300 text-sm"></i>
+              <div>
+                <div class="text-xs font-bold text-white">Mendan</div>
+                <div class="text-[10px] text-slate-400">Bimbingan (Desu/Masu)</div>
+              </div>
+            </div>
+          </label>
+
+          <!-- Mensetsu Interview -->
+          <label class="cursor-pointer">
+            <input type="radio" name="lobby-scenario" value="mensetsu" class="peer sr-only">
+            <div class="p-2.5 rounded-xl bg-white/5 border border-white/10 peer-checked:border-emerald-400 peer-checked:bg-emerald-500/15 transition flex sm:flex-col items-center sm:text-center gap-2 sm:gap-1">
+              <i class="fa-solid fa-briefcase text-emerald-300 text-sm"></i>
+              <div>
+                <div class="text-xs font-bold text-white">Mensetsu</div>
+                <div class="text-[10px] text-slate-400">Interview Kerja (Keigo)</div>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+
+      <!-- Tombol Masuk Ruang Latihan -->
+      <div class="pt-2 flex flex-col gap-2">
+        <button id="btn-start-lobby" class="w-full py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-bold text-sm transition shadow-lg shadow-emerald-950/40 flex items-center justify-center gap-2">
+          <span>Masuk Ruang Latihan Zoom</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+        <a href="/" class="text-center text-xs text-slate-400 hover:text-slate-200 transition py-1">
+          Kembali ke Menu Utama
+        </a>
+      </div>
+
+    </div>
+  </div>
 
   <!-- ── 1. ZOOM TOP BAR ── -->
   <header class="h-12 bg-[#141417] border-b border-white/10 px-4 flex items-center justify-between z-20">
@@ -346,10 +463,56 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       `.trim();
     }
 
-    let geminiClient = null;
-    let geminiChat = null;
-    let activePartner = 'both';
-    let activeScenario = 'kaiwa';
+    // ── Onboarding / Lobby Selection Flow ──
+    const lobbyModal = document.getElementById('lobby-modal');
+    const btnStartLobby = document.getElementById('btn-start-lobby');
+
+    // Baca konfigurasi tersimpan sebelumnya dari localStorage (jika ada)
+    const savedPartner = localStorage.getItem('kaiwa_selected_partner') || 'both';
+    const savedScenario = localStorage.getItem('kaiwa_selected_scenario') || 'kaiwa';
+
+    let activePartner = savedPartner;
+    let activeScenario = savedScenario;
+
+    // Sinkronkan radio button lobby dengan state tersimpan
+    const rPartner = document.querySelector(`input[name="lobby-partner"][value="${savedPartner}"]`);
+    if (rPartner) rPartner.checked = true;
+    const rScenario = document.querySelector(`input[name="lobby-scenario"][value="${savedScenario}"]`);
+    if (rScenario) rScenario.checked = true;
+
+    // Sinkronkan dropdown header
+    const selectPartner = document.getElementById('select-partner');
+    const selectScenario = document.getElementById('select-scenario');
+    if (selectPartner) selectPartner.value = savedPartner;
+    if (selectScenario) selectScenario.value = savedScenario;
+
+    function applyLobbySettings(partner, scenario) {
+      activePartner = partner;
+      activeScenario = scenario;
+      localStorage.setItem('kaiwa_selected_partner', partner);
+      localStorage.setItem('kaiwa_selected_scenario', scenario);
+
+      if (selectPartner) selectPartner.value = partner;
+      if (selectScenario) selectScenario.value = scenario;
+
+      initGeminiChat();
+      updateTileLayoutVisibility();
+    }
+
+    if (btnStartLobby) {
+      btnStartLobby.addEventListener('click', () => {
+        const chosenPartner = document.querySelector('input[name="lobby-partner"]:checked')?.value || 'both';
+        const chosenScenario = document.querySelector('input[name="lobby-scenario"]:checked')?.value || 'kaiwa';
+
+        applyLobbySettings(chosenPartner, chosenScenario);
+
+        // Tutup modal dengan animasi halus
+        lobbyModal.classList.add('opacity-0', 'pointer-events-none');
+        setTimeout(() => {
+          lobbyModal.classList.add('hidden');
+        }, 300);
+      });
+    }
 
     function initGeminiChat() {
       try {
