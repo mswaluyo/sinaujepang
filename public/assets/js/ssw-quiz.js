@@ -38,6 +38,57 @@
   }
 
   // Inisialisasi data kuis & aturan scoring resmi
+  
+  // Key penyimpanan status pengerjaan aktif
+  function getActiveStateKey() {
+    return 'ssw_active_state_' + S.slug;
+  }
+
+  function saveActiveState() {
+    try {
+      var state = {
+        cur: S.cur,
+        picked: S.picked,
+        locked: S.locked,
+        timerSec: S.timerSec,
+        savedAt: Date.now()
+      };
+      localStorage.setItem(getActiveStateKey(), JSON.stringify(state));
+    } catch (e) {}
+  }
+
+  function restoreActiveState() {
+    try {
+      var raw = localStorage.getItem(getActiveStateKey());
+      if (!raw) return false;
+      var state = JSON.parse(raw);
+      if (!state || typeof state !== 'object') return false;
+
+      // Restore picked & locked
+      if (state.picked && typeof state.picked === 'object') {
+        S.picked = state.picked;
+      }
+      if (state.locked && typeof state.locked === 'object') {
+        S.locked = state.locked;
+      }
+      if (typeof state.cur === 'number' && state.cur >= 0 && state.cur < S.questions.length) {
+        S.cur = state.cur;
+      }
+      if (typeof state.timerSec === 'number' && state.timerSec > 0) {
+        S.timerSec = state.timerSec;
+      }
+      return true;
+    } catch (e) {
+      return false;
+    }
+  }
+
+  function clearActiveState() {
+    try {
+      localStorage.removeItem(getActiveStateKey());
+    } catch (e) {}
+  }
+
   async function init() {
     S.slug = getSlug();
     
@@ -78,6 +129,9 @@
       if (topPaketEl) {
         topPaketEl.textContent = S.slug.replace('-quiz', '').replace('ssw-', 'SSW ').toUpperCase();
       }
+
+            // Pulihkan jawaban yang sudah dikerjakan sebelumnya jika ada
+      restoreActiveState();
 
       renderBaseLayout();
       renderQuestion();
@@ -269,6 +323,7 @@
     S.picked[q.no] = idx;
     S.locked[q.no] = true;
 
+    saveActiveState();
     saveAttemptSilently(false);
     renderQuestion();
   }
@@ -501,6 +556,7 @@
     S.picked = {};
     S.locked = {};
     S.timerSec = 0;
+    clearActiveState();
     closeModal();
     renderQuestion();
   }
