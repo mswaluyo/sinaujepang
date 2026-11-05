@@ -26,7 +26,7 @@
     "answer": 1,
     "kunci_id": "梳 (とか)します",
     "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Tata Bahasa dan Kosakata Kerja] Pilihan yang tepat untuk melengkapi kalimat/instruksi kerja adalah **梳 (とか)します**. Kosakata ini mencerminkan prosedur kerja standar yang aman dan lazim digunakan di fasilitas panti lansia Jepang.",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar memperlihatkan seorang perawat lansia memegang sisir dan merapikan rambut pengguna yang acak-acakan. Kata kerja yang tepat untuk menyisir rambut adalah **梳かします (とかします, tokashimasu)**. Opsi A (剃ります/sorimasu) berarti mencukur, C (切ります/kirimasu) memotong, dan D (洗います/araimasu) mencuci.",
     "opt_note": [
       "(剃ります) ungkapan/istilah (剃ります)",
       "(梳します) ungkapan/istilah (梳します)",
@@ -38,25 +38,25 @@
         "kana": "そ",
         "rom": "剃ります",
         "arti": "ungkapan/istilah (剃ります)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (剃ります)."
       },
       {
         "kana": "とか",
         "rom": "梳します",
         "arti": "ungkapan/istilah (梳します)",
-        "alasan": "Cocok dengan kalimat dan konteks situasi kerja yang ditanyakan pada soal."
+        "alasan": "Cocok dengan gambar soal: ungkapan/istilah (梳します) sesuai dengan objek/tindakan yang diilustrasikan."
       },
       {
         "kana": "き",
         "rom": "切ります",
         "arti": "ungkapan/istilah (切ります)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (切ります)."
       },
       {
         "kana": "あら",
         "rom": "洗います",
         "arti": "ungkapan/istilah (洗います)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (洗います)."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -322,7 +322,7 @@
     "answer": 0,
     "kunci_id": "椅座位 (いざい)",
     "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Tata Bahasa dan Kosakata Kerja] Pilihan yang tepat untuk melengkapi kalimat/instruksi kerja adalah **椅座位 (いざい)**. Kosakata ini mencerminkan prosedur kerja standar yang aman dan lazim digunakan di fasilitas panti lansia Jepang.",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar memperlihatkan ilustrasi posisi duduk tegak di atas kursi dengan kedua kaki menapak stabil di lantai. Istilah posisi anatomi ini disebut **椅座位 (いざい, izai = posisi duduk di kursi)**, berbeda dari posisi berbaring (supinasi) atau duduk setengah badan di kasur (Fowler).",
     "opt_note": [
       "(椅座位) ungkapan/istilah (椅座位)",
       "(nyuuyoku) mandi berendam",
@@ -334,25 +334,25 @@
         "kana": "いざい",
         "rom": "椅座位",
         "arti": "ungkapan/istilah (椅座位)",
-        "alasan": "Cocok dengan kalimat dan konteks situasi kerja yang ditanyakan pada soal."
+        "alasan": "Cocok dengan gambar soal: ungkapan/istilah (椅座位) sesuai dengan objek/tindakan yang diilustrasikan."
       },
       {
         "kana": "にゅうよく",
         "rom": "nyuuyoku",
         "arti": "mandi berendam",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan mandi berendam."
       },
       {
         "kana": "たいい",
         "rom": "体位",
         "arti": "ungkapan/istilah (体位)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (体位)."
       },
       {
         "kana": "たいざい",
         "rom": "滞在",
         "arti": "ungkapan/istilah (滞在)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (滞在)."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -470,7 +470,7 @@
     "answer": 0,
     "kunci_id": "入浴 (にゅうよく)",
     "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Tata Bahasa dan Kosakata Kerja] Pilihan yang tepat untuk melengkapi kalimat/instruksi kerja adalah **入浴 (にゅうよく)**. Kosakata ini mencerminkan prosedur kerja standar yang aman dan lazim digunakan di fasilitas panti lansia Jepang.",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar memperlihatkan seorang lansia yang sedang berendam di dalam bak mandi air hangat untuk relaksasi dan menjaga kebersihan tubuh. Kegiatan ini disebut **入浴 (にゅうよく, nyuuyoku = mandi berendam)**, yang sangat penting bagi sirkulasi darah dan kesehatan kulit lansia.",
     "opt_note": [
       "(nyuuyoku) mandi berendam",
       "(shokuji) makan / makanan",
@@ -482,25 +482,25 @@
         "kana": "にゅうよく",
         "rom": "nyuuyoku",
         "arti": "mandi berendam",
-        "alasan": "Cocok dengan kalimat dan konteks situasi kerja yang ditanyakan pada soal."
+        "alasan": "Cocok dengan gambar soal: mandi berendam sesuai dengan objek/tindakan yang diilustrasikan."
       },
       {
         "kana": "しょくじ",
         "rom": "shokuji",
         "arti": "makan / makanan",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan makan / makanan."
       },
       {
         "kana": "しんさつ",
         "rom": "診察",
         "arti": "ungkapan/istilah (診察)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (診察)."
       },
       {
         "kana": "うんどう",
         "rom": "運動",
         "arti": "ungkapan/istilah (運動)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (運動)."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",

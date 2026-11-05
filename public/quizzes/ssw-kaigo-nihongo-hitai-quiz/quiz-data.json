@@ -26,7 +26,7 @@
     "answer": 2,
     "kunci_id": "額 (ひたい)",
     "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata dan Makna Istilah] Kata kunci pada soal ini adalah **額 (ひたい)** (ひたい). Dalam keperawatan lansia di Jepang, kosakata ini merupakan istilah dasar untuk mengidentifikasi bagian tubuh, pakaian, atau alat kerja secara tepat.",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar menunjukkan tanda panah yang menunjuk tepat ke bagian dahi/jidat pada wajah seseorang. Kosakata bahasa Jepang untuk dahi adalah **額 (ひたい, hitai)**. Opsi A (目 / me) adalah mata, B (口 / kuchi) adalah mulut, dan D (耳 / mimi) adalah telinga.",
     "opt_note": [
       "(me) mata",
       "(kuchi) mulut",
@@ -38,25 +38,25 @@
         "kana": "め",
         "rom": "me",
         "arti": "mata",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan mata."
       },
       {
         "kana": "くち",
         "rom": "kuchi",
         "arti": "mulut",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan mulut."
       },
       {
         "kana": "ひたい",
         "rom": "hitai",
         "arti": "dahi / jidat",
-        "alasan": "Cocok dengan kalimat dan konteks situasi kerja yang ditanyakan pada soal."
+        "alasan": "Cocok dengan gambar soal: dahi / jidat sesuai dengan objek/tindakan yang diilustrasikan."
       },
       {
         "kana": "みみ",
         "rom": "mimi",
         "arti": "telinga",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan telinga."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",

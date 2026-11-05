@@ -840,7 +840,7 @@
     "answer": 1,
     "kunci_id": "トイレ まで 案内 (あんない)する",
     "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Tata Bahasa dan Kosakata Kerja] Pilihan yang tepat untuk melengkapi kalimat/instruksi kerja adalah **トイレ まで 案内 (あんない)する**. Kosakata ini mencerminkan prosedur kerja standar yang aman dan lazim digunakan di fasilitas panti lansia Jepang.",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar mengilustrasikan seorang lansia yang mengeluh ingin buang air kecil di toilet. Tindakan pendampingan asuhan keperawatan yang tepat adalah mengantar dan memandu pengguna ke kamar kecil (**トイレまで案内する / toire made annai suru**), demi mencegah risiko jatuh atau inkontinensia di lorong.",
     "opt_note": [
       "(テレビ を 見せる) ungkapan/istilah (テレビ を 見せる)",
       "(トイレ まで 案内する) ungkapan/istilah (トイレ まで 案内する)",
@@ -852,25 +852,25 @@
         "kana": "み",
         "rom": "テレビ を 見せる",
         "arti": "ungkapan/istilah (テレビ を 見せる)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (テレビ を 見せる)."
       },
       {
         "kana": "あんない",
         "rom": "トイレ まで 案内する",
         "arti": "ungkapan/istilah (トイレ まで 案内する)",
-        "alasan": "Cocok dengan kalimat dan konteks situasi kerja yang ditanyakan pada soal."
+        "alasan": "Cocok dengan gambar soal: ungkapan/istilah (トイレ まで 案内する) sesuai dengan objek/tindakan yang diilustrasikan."
       },
       {
         "kana": "そのままにする",
         "rom": "そのままにする",
         "arti": "ungkapan/istilah (そのままにする)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (そのままにする)."
       },
       {
         "kana": "しょくじ",
         "rom": "shokuji",
         "arti": "makan / makanan",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan makan / makanan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",

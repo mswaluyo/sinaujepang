@@ -26,7 +26,7 @@
     "answer": 2,
     "kunci_id": "あせをかいています",
     "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Tata Bahasa dan Kosakata Kerja] Pilihan yang tepat untuk melengkapi kalimat/instruksi kerja adalah **あせをかいています**. Kosakata ini mencerminkan prosedur kerja standar yang aman dan lazim digunakan di fasilitas panti lansia Jepang.",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar memperlihatkan seorang lansia yang tampak kegirangan dan menyeka keringat di dahinya setelah beraktivitas fisik. Ungkapan yang tepat untuk menjelaskan kondisinya adalah bermandikan keringat (**あせをかいています / ase o kaite imasu**). Opsi A (dingin) dan D (kering) bertentangan dengan visual keringat pada gambar.",
     "opt_note": [
       "(さむいです) ungkapan/istilah (さむいです)",
       "(あついです) ungkapan/istilah (あついです)",
@@ -38,25 +38,25 @@
         "kana": "さむいです",
         "rom": "さむいです",
         "arti": "ungkapan/istilah (さむいです)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (さむいです)."
       },
       {
         "kana": "あついです",
         "rom": "あついです",
         "arti": "ungkapan/istilah (あついです)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (あついです)."
       },
       {
         "kana": "あせをかいています",
         "rom": "あせをかいています",
         "arti": "ungkapan/istilah (あせをかいています)",
-        "alasan": "Cocok dengan kalimat dan konteks situasi kerja yang ditanyakan pada soal."
+        "alasan": "Cocok dengan gambar soal: ungkapan/istilah (あせをかいています) sesuai dengan objek/tindakan yang diilustrasikan."
       },
       {
         "kana": "かわいています",
         "rom": "かわいています",
         "arti": "ungkapan/istilah (かわいています)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (かわいています)."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -396,7 +396,7 @@
     "answer": 2,
     "kunci_id": "更衣(こうい)",
     "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Tata Bahasa dan Kosakata Kerja] Pilihan yang tepat untuk melengkapi kalimat/instruksi kerja adalah **更衣(こうい)**. Kosakata ini mencerminkan prosedur kerja standar yang aman dan lazim digunakan di fasilitas panti lansia Jepang.",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar memperlihatkan pengguna lansia yang sedang dibantu melepas atau mengenakan pakaian atasnya. Kegiatan bantuan asuhan keperawatan ini dalam istilah resmi Jepang disebut **更衣 (こうい, koui = mengganti pakaian)**. Opsi A (nyuuyoku) adalah mandi, B (haisetsu) adalah buang air, dan D (shokuji) adalah makan.",
     "opt_note": [
       "(nyuuyoku) mandi berendam",
       "(haisetsu) ekskresi / buang air",
@@ -408,25 +408,25 @@
         "kana": "にゅうよく",
         "rom": "nyuuyoku",
         "arti": "mandi berendam",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan mandi berendam."
       },
       {
         "kana": "はいせつ",
         "rom": "haisetsu",
         "arti": "ekskresi / buang air",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ekskresi / buang air."
       },
       {
         "kana": "こうい",
         "rom": "koui",
         "arti": "mengganti pakaian",
-        "alasan": "Cocok dengan kalimat dan konteks situasi kerja yang ditanyakan pada soal."
+        "alasan": "Cocok dengan gambar soal: mengganti pakaian sesuai dengan objek/tindakan yang diilustrasikan."
       },
       {
         "kana": "しょくじ",
         "rom": "shokuji",
         "arti": "makan / makanan",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan makan / makanan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",

@@ -26,7 +26,7 @@
     "answer": 1,
     "kunci_id": "足底(そくてい)",
     "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Kosakata dan Makna Istilah] Kata kunci pada soal ini adalah **足底(そくてい)** (そくてい). Dalam keperawatan lansia di Jepang, kosakata ini merupakan istilah dasar untuk mengidentifikasi bagian tubuh, pakaian, atau alat kerja secara tepat.",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar mengarahkan tanda panah fokus ke bagian telapak kaki bawah. Istilah anatomi Jepang untuk telapak kaki adalah **足底 (そくてい, sokutei)**. Opsi A (足の甲 / ashi no kou) adalah punggung kaki bagian atas, C (膝 / hiza) adalah lutut, dan D (手のひら / te no hira) adalah telapak tangan.",
     "opt_note": [
       "(足の甲) ungkapan/istilah (足の甲)",
       "(sokutei) telapak kaki",
@@ -38,25 +38,25 @@
         "kana": "あし",
         "rom": "足の甲",
         "arti": "ungkapan/istilah (足の甲)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (足の甲)."
       },
       {
         "kana": "そくてい",
         "rom": "sokutei",
         "arti": "telapak kaki",
-        "alasan": "Cocok dengan kalimat dan konteks situasi kerja yang ditanyakan pada soal."
+        "alasan": "Cocok dengan gambar soal: telapak kaki sesuai dengan objek/tindakan yang diilustrasikan."
       },
       {
         "kana": "ひざ",
         "rom": "hiza",
         "arti": "lutut",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan lutut."
       },
       {
         "kana": "て",
         "rom": "手のひら",
         "arti": "ungkapan/istilah (手のひら)",
-        "alasan": "Cocok dengan kalimat dan konteks situasi kerja yang ditanyakan pada soal."
+        "alasan": "Cocok dengan gambar soal: ungkapan/istilah (手のひら) sesuai dengan objek/tindakan yang diilustrasikan."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -692,7 +692,7 @@
     "answer": 0,
     "kunci_id": "端坐位（たんざい）",
     "salah": "Pilihan jawaban ini tidak sesuai dengan tata bahasa, makna kanji, atau etika komunikasi lapangan kerja Kaigo.",
-    "analisis": "[Kaigo Nihongo - Tata Bahasa dan Kosakata Kerja] Pilihan yang tepat untuk melengkapi kalimat/instruksi kerja adalah **端坐位（たんざい）**. Kosakata ini mencerminkan prosedur kerja standar yang aman dan lazim digunakan di fasilitas panti lansia Jepang.",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar memperlihatkan seorang lansia duduk di tepi tempat tidur dengan kedua kaki menjuntai ke bawah menyentuh lantai. Posisi duduk di tepi ranjang ini disebut **端坐位 (たんざい, tanzai)**, tahapan penting sebelum latihan transfer berdiri atau ke kursi roda.",
     "opt_note": [
       "(端坐位（たんざい）) ungkapan/istilah (端坐位（たんざい）)",
       "(寝（ね）たまま) ungkapan/istilah (寝（ね）たまま)",
@@ -704,25 +704,25 @@
         "kana": "端坐位（たんざい）",
         "rom": "端坐位（たんざい）",
         "arti": "ungkapan/istilah (端坐位（たんざい）)",
-        "alasan": "Cocok dengan kalimat dan konteks situasi kerja yang ditanyakan pada soal."
+        "alasan": "Cocok dengan gambar soal: ungkapan/istilah (端坐位（たんざい）) sesuai dengan objek/tindakan yang diilustrasikan."
       },
       {
         "kana": "寝（ね）たまま",
         "rom": "寝（ね）たまま",
         "arti": "ungkapan/istilah (寝（ね）たまま)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (寝（ね）たまま)."
       },
       {
         "kana": "うつぶせ",
         "rom": "うつぶせ",
         "arti": "ungkapan/istilah (うつぶせ)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (うつぶせ)."
       },
       {
         "kana": "立位（りつい）",
         "rom": "立位（りつい）",
         "arti": "ungkapan/istilah (立位（りつい）)",
-        "alasan": "Tidak cocok dengan kalimat soal atau makna yang diminta dalam konteks keperawatan ini."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan ungkapan/istilah (立位（りつい）)."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",

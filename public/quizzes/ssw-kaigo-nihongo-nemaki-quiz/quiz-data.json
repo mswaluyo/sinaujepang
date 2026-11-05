@@ -26,7 +26,7 @@
     "answer": 1,
     "kunci_id": "パジャマ",
     "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
-    "analisis": "[Kaigo Nihongo - Pakaian & Istilah Serapan] 寝間着 (ねまき, nemaki) adalah kata bahasa Jepang asli untuk pakaian tidur, yang bermakna sama dengan kata serapan katakana パジャマ (pajama / piyama).",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar memperlihatkan sebuah pakaian tidur setelan atas-bawah bermotif lembut untuk istirahat malam. Dalam bahasa Jepang, pakaian tidur disebut **寝間着 (ねまき, nemaki)** atau sinonim serapannya **パジャマ (pajama)**. Pilihan A (コート) adalah mantel luar, C (くつ) adalah sepatu, dan D (ぼうし) adalah topi.",
     "opt_note": [
       "(kooto) mantel luar",
       "(pajama) piyama / baju tidur",
@@ -38,25 +38,25 @@
         "kana": "コート",
         "rom": "kooto",
         "arti": "mantel luar",
-        "alasan": "Tidak cocok: kooto adalah pakaian luar musim dingin, bukan pakaian untuk tidur."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan mantel luar."
       },
       {
         "kana": "パジャマ",
         "rom": "pajama",
         "arti": "piyama / baju tidur",
-        "alasan": "Cocok: sinonim langsung dari 寝間着 (nemaki = pakaian tidur)."
+        "alasan": "Cocok dengan gambar soal: piyama / baju tidur sesuai dengan objek/tindakan yang diilustrasikan."
       },
       {
         "kana": "くつ",
         "rom": "kutsu",
         "arti": "sepatu",
-        "alasan": "Tidak cocok: kutsu adalah alas kaki luar ruangan."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan sepatu."
       },
       {
         "kana": "ぼうし",
         "rom": "boushi",
         "arti": "topi",
-        "alasan": "Tidak cocok: boushi adalah penutup kepala."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan topi."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
@@ -322,7 +322,7 @@
     "answer": 1,
     "kunci_id": "休(やす)みです",
     "salah": "Pilihan jawaban ini tidak cocok dengan kalimat dialog, tata bahasa, atau situasi asuhan lansia pada soal.",
-    "analisis": "[Kaigo Nihongo - Membaca Jadwal Dinas (Kinmuhyou)] Pada jadwal dinas, kolom hari Selasa (火) untuk Tanaka/Yamada menunjukkan jadwal libur: 休みです (yasumi desu).",
+    "analisis": "[Deskripsi Gambar & Analisis Kontekstual]\nGambar tabel jadwal dinas (勤務表 / kinmuhyou) menunjukkan pembagian shift kerja staf. Pada kolom hari Selasa (火), nama Tanaka/Yamada bertanda '休' yang berarti hari libur atau lepas dinas (**休みです / yasumi desu**). Opsi A (masuk kerja) dan C (dinas malam) tidak sesuai dengan jadwal kolom hari tersebut.",
     "opt_note": [
       "(shukkin shimasu) masuk kerja",
       "(yasumi desu) libur / cuti",
@@ -334,25 +334,25 @@
         "kana": "しゅっきんします",
         "rom": "shukkin shimasu",
         "arti": "masuk kerja",
-        "alasan": "Tidak cocok: hari Selasa terjadwal libur."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan masuk kerja."
       },
       {
         "kana": "やすみです",
         "rom": "yasumi desu",
         "arti": "libur / lepas dinas",
-        "alasan": "Cocok: sesuai kode '休' pada tabel jadwal hari Selasa."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan libur / lepas dinas."
       },
       {
         "kana": "やきんです",
         "rom": "yakin desu",
         "arti": "dinas malam",
-        "alasan": "Tidak cocok: dinas malam terjadwal hari Senin."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan dinas malam."
       },
       {
         "kana": "はやばんです",
         "rom": "hayaban desu",
         "arti": "dinas pagi awal",
-        "alasan": "Tidak cocok: bukan jadwal hari Selasa."
+        "alasan": "Tidak cocok dengan gambar soal: gambar tidak memperlihatkan dinas pagi awal."
       }
     ],
     "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
