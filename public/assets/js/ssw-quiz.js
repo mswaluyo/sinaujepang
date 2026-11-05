@@ -312,7 +312,7 @@
     h += '  <div class="space-y-2.5">';
     if (fullT && !/^soal\s*\d+$/i.test(fullT)) {
       h += '    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-100">';
-      h += '      <span class="text-slate-400 block text-xs font-medium mb-0.5">Teks / Pertanyaan:</span>';
+      h += '      <span class="text-slate-400 block text-xs font-medium mb-0.5">Kanji / Kana:</span>';
       h += '      <span class="font-bold text-slate-900 text-sm sm:text-base leading-relaxed" style="white-space:pre-line">' + esc(fullT) + '</span>';
       h += '    </div>';
     }
