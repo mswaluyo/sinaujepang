@@ -502,6 +502,36 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       updateTileLayoutVisibility();
     }
 
+    function startGreetingByScenario() {
+      if (activePartner === 'yuki') {
+        // Yuki Solo
+        speakYuki(
+          'はい！アシスタントの由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
+          'Siap! Saya Yuki. Santai saja dan mari mulai latihannya ya! Senang bisa belajar bersama Anda!'
+        );
+      } else if (activePartner === 'sato') {
+        // Sato Solo
+        speakSato(
+          'みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！準備はいいですか？',
+          'Halo semuanya! Saya Sato. Mari kita mulai latihan percakapan lewat Zoom hari ini. Sudah siap?'
+        );
+      } else {
+        // Duet Sato & Yuki
+        speakSato(
+          'みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！由紀さんもよろしくお願いします。',
+          'Halo semuanya! Saya Sato. Hari ini mari mulai latihan percakapan lewat Zoom! Yuki-san, mohon bantuannya juga ya.',
+          () => {
+            setTimeout(() => {
+              speakYuki(
+                'はい！アシスタントの由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
+                'Siap! Saya Yuki sebagai asisten. Santai saja dan mari mengobrol dengan seru ya! Salam kenal semuanya!'
+              );
+            }, 700);
+          }
+        );
+      }
+    }
+
     if (btnStartLobby) {
       btnStartLobby.addEventListener('click', () => {
         const chosenPartner = document.querySelector('input[name="lobby-partner"]:checked')?.value || 'both';
@@ -513,6 +543,8 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
         lobbyModal.classList.add('opacity-0', 'pointer-events-none');
         setTimeout(() => {
           lobbyModal.classList.add('hidden');
+          // Simulasi suara dan sapaan BARU dimulai di sini setelah user memilih dan masuk
+          startGreetingByScenario();
         }, 300);
       });
     }
@@ -747,21 +779,7 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
         el.classList.add('opacity-0', 'pointer-events-none');
         setTimeout(() => el.remove(), 400);
 
-        // Auto greeting pembuka
-        setTimeout(() => {
-          speakSato(
-            'みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！由紀さんもよろしくお願いします。',
-            'Halo semuanya! Saya Sato. Hari ini mari mulai latihan percakapan lewat Zoom! Yuki-san, mohon bantuannya juga ya.',
-            () => {
-              setTimeout(() => {
-                speakYuki(
-                  'はい！アシスタントの由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
-                  'Siap! Saya Yuki sebagai asisten. Santai saja dan mari mengobrol dengan seru ya! Salam kenal semuanya!'
-                );
-              }, 700);
-            }
-          );
-        }, 1200);
+        // Auto greeting tidak diputar otomatis saat loading, melainkan menunggu user menekan "Masuk Ruang Latihan Zoom"
       },
       (p) => {
         if (p.total > 0) {
