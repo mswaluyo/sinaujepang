@@ -74,8 +74,8 @@
               <div class="w-10 h-10 rounded-full bg-gradient-to-r from-sky-500 to-pink-500 flex items-center justify-center text-white text-sm shadow">
                 <i class="fa-solid fa-users"></i>
               </div>
-              <span class="text-xs font-bold text-white">Sato & Yuki</span>
-              <span class="text-[10px] text-slate-400 leading-tight">Dua Karakter Bersama</span>
+              <span class="text-xs font-bold text-white">Kohaku & Nia</span>
+              <span class="text-[10px] text-slate-400 leading-tight">Duet Kohaku & Nia</span>
             </div>
           </label>
 
@@ -86,8 +86,8 @@
               <div class="w-10 h-10 rounded-full bg-sky-600/30 text-sky-400 border border-sky-400/40 flex items-center justify-center text-sm shadow">
                 <i class="fa-solid fa-user-tie"></i>
               </div>
-              <span class="text-xs font-bold text-sky-300">Sato-san</span>
-              <span class="text-[10px] text-slate-400 leading-tight">Pria Dewasa (Tenang & Tegas)</span>
+              <span class="text-xs font-bold text-sky-300">Kohaku-san</span>
+              <span class="text-[10px] text-slate-400 leading-tight">黒沢冴白 (VOICEVOX)</span>
             </div>
           </label>
 
@@ -98,8 +98,8 @@
               <div class="w-10 h-10 rounded-full bg-pink-600/30 text-pink-400 border border-pink-400/40 flex items-center justify-center text-sm shadow">
                 <i class="fa-solid fa-user"></i>
               </div>
-              <span class="text-xs font-bold text-pink-300">Yuki-chan</span>
-              <span class="text-[10px] text-slate-400 leading-tight">Wanita (Hangat & Ramah)</span>
+              <span class="text-xs font-bold text-pink-300">Nia-chan</span>
+              <span class="text-[10px] text-slate-400 leading-tight">琴読ニア (VOICEVOX)</span>
             </div>
           </label>
         </div>
@@ -150,6 +150,43 @@
         </div>
       </div>
 
+      <!-- Langkah 3: Pilih Tingkat Kemampuan (Level JLPT / JFT) -->
+      <div class="space-y-2">
+        <label class="text-xs font-bold text-slate-300 flex items-center gap-1.5 uppercase tracking-wider">
+          <span class="w-4 h-4 rounded-full bg-indigo-500 text-[10px] text-white flex items-center justify-center">3</span>
+          Pilih Tingkat Level (Target Kosakata & Pola Kalimat)
+        </label>
+        <div class="grid grid-cols-2 gap-2.5">
+          <!-- Level N5 -->
+          <label class="cursor-pointer">
+            <input type="radio" name="lobby-level" value="n5" checked class="peer sr-only">
+            <div class="p-2.5 rounded-2xl bg-white/5 border border-white/10 peer-checked:border-indigo-400 peer-checked:bg-indigo-500/15 transition flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-300 font-black text-xs flex items-center justify-center border border-indigo-400/30 shrink-0">
+                N5
+              </div>
+              <div class="flex flex-col text-left">
+                <span class="text-xs font-bold text-white">Level N5 (Pemula / Dasar)</span>
+                <span class="text-[10px] text-slate-400 leading-tight">Kosakata dasar, pola kalimat sederhana, kalimat ringkas</span>
+              </div>
+            </div>
+          </label>
+
+          <!-- Level N4 -->
+          <label class="cursor-pointer">
+            <input type="radio" name="lobby-level" value="n4" class="peer sr-only">
+            <div class="p-2.5 rounded-2xl bg-white/5 border border-white/10 peer-checked:border-indigo-400 peer-checked:bg-indigo-500/15 transition flex items-center gap-2.5">
+              <div class="w-8 h-8 rounded-full bg-indigo-500/20 text-indigo-300 font-black text-xs flex items-center justify-center border border-indigo-400/30 shrink-0">
+                N4
+              </div>
+              <div class="flex flex-col text-left">
+                <span class="text-xs font-bold text-white">Level N4 (Menengah Dasar / JFT)</span>
+                <span class="text-[10px] text-slate-400 leading-tight">Bentuk Te/Nai/Ta, percakapan sehari-hari & kerja umum</span>
+              </div>
+            </div>
+          </label>
+        </div>
+      </div>
+
       <!-- Tombol Masuk Ruang Latihan -->
       <div class="pt-2 flex flex-col gap-2">
         <button id="btn-start-lobby" class="w-full py-3 rounded-2xl bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-400 hover:to-teal-500 text-white font-bold text-sm transition shadow-lg shadow-emerald-950/40 flex items-center justify-center gap-2">
@@ -164,6 +201,55 @@
     </div>
   </div>
 
+
+  <!-- ── MODAL SETTING GEMINI API KEY MANDIRI ── -->
+  <div id="apikey-modal" class="fixed inset-0 z-50 bg-black/85 backdrop-blur-md hidden items-center justify-center p-3 sm:p-4">
+    <div class="bg-[#16161b] border border-amber-500/30 rounded-3xl w-full max-w-md p-5 sm:p-6 shadow-2xl flex flex-col gap-4 text-white animate-in fade-in duration-200">
+      <div class="flex items-center justify-between border-b border-white/10 pb-3">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-sm">
+            <i class="fa-solid fa-key"></i>
+          </div>
+          <div>
+            <h3 class="text-sm sm:text-base font-bold text-white">Google Gemini API Key</h3>
+            <p class="text-[11px] text-slate-400">Gunakan API Key sendiri jika kuota gratis bersama habis</p>
+          </div>
+        </div>
+        <button id="btn-close-apikey-modal" class="text-slate-400 hover:text-white p-1 transition">
+          <i class="fa-solid fa-xmark text-base"></i>
+        </button>
+      </div>
+
+      <form id="form-custom-apikey" onsubmit="return false;" class="space-y-2 text-xs">
+        <p class="text-slate-300 leading-relaxed">
+          Google membatasi kuota Free Tier (20 request/hari). Anda bisa memasukkan <b>API Key pribadi</b> gratis dari Google AI Studio agar latihan percakapan tidak terputus limit 429.
+        </p>
+        <div class="space-y-1">
+          <label for="input-custom-apikey" class="font-semibold text-slate-200 flex items-center justify-between">
+            <span>API Key Anda:</span>
+            <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer" class="text-amber-400 hover:underline text-[11px] flex items-center gap-1">
+              <span>Ambil Key Gratis di sini</span>
+              <i class="fa-solid fa-arrow-up-right-from-square text-[9px]"></i>
+            </a>
+          </label>
+          <input type="password" id="input-custom-apikey" name="custom_api_key" autocomplete="off" placeholder="AIzaSy..." class="w-full bg-[#101014] border border-white/15 focus:border-amber-400 rounded-xl px-3 py-2 text-xs font-mono text-white focus:outline-none" />
+          <p class="text-[10px] text-slate-400 italic">API key disimpan aman di browser lokal Anda (localStorage) dan tidak pernah dikirim ke pihak lain.</p>
+        </div>
+      </form>
+
+      <div class="flex items-center justify-between gap-2 pt-2 border-t border-white/10">
+        <button id="btn-reset-apikey" type="button" class="text-xs text-rose-400 hover:text-rose-300 px-3 py-2 rounded-xl hover:bg-rose-500/10 transition">
+          Hapus & Gunakan Default
+        </button>
+        <div class="flex items-center gap-2">
+          <button id="btn-save-apikey" type="button" class="px-4 py-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-400 hover:to-amber-500 text-slate-950 font-bold text-xs rounded-xl transition shadow-md">
+            Simpan & Gunakan
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- ── 1. ZOOM TOP BAR ── -->
   <header class="h-12 bg-[#141417] border-b border-white/10 px-4 flex items-center justify-between z-20">
     <div class="flex items-center gap-3">
@@ -172,7 +258,7 @@
         <span>Terhubung (Encrypted)</span>
       </div>
       <span class="text-xs text-slate-500 hidden sm:inline">|</span>
-      <span id="header-room-title" class="text-xs font-medium text-slate-200 hidden sm:inline">Ruang Latihan Percakapan Virtual</span>
+      <span id="header-room-title" class="text-xs font-medium text-slate-200 hidden sm:inline">Ruang Latihan Percakapan Virtual • VOICEVOX</span>
     </div>
 
     <!-- Mode & Meeting Duration + Modular Selector -->
@@ -181,9 +267,9 @@
       <div class="flex items-center gap-1 bg-white/5 border border-white/10 rounded-lg px-1.5 py-0.5 text-xs">
         <label for="select-partner" class="text-slate-400 text-[10px] hidden lg:inline">Partner:</label>
         <select id="select-partner" class="bg-transparent text-xs text-white font-medium focus:outline-none cursor-pointer">
-          <option value="both" class="bg-[#18181e] text-white">Sato & Yuki (Duet)</option>
-          <option value="sato" class="bg-[#18181e] text-sky-400">Sato-san Saja</option>
-          <option value="yuki" class="bg-[#18181e] text-pink-400">Yuki-chan Saja</option>
+          <option value="both" class="bg-[#18181e] text-white">Kohaku & Nia (Duet)</option>
+          <option value="sato" class="bg-[#18181e] text-sky-400">Kohaku-san Saja</option>
+          <option value="yuki" class="bg-[#18181e] text-pink-400">Nia-chan Saja</option>
         </select>
       </div>
 
@@ -197,6 +283,30 @@
         </select>
       </div>
 
+      <!-- Selector Level Kemampuan (N5 / N4) -->
+      <div class="flex items-center gap-1 bg-white/5 border border-white/10 rounded-lg px-1.5 py-0.5 text-xs">
+        <label for="select-level" class="text-slate-400 text-[10px] hidden lg:inline"><i class="fa-solid fa-graduation-cap text-indigo-400"></i> Level:</label>
+        <select id="select-level" class="bg-transparent text-xs text-indigo-300 font-bold focus:outline-none cursor-pointer" title="Pilih Tingkat Kesulitan Tata Bahasa & Kosakata">
+          <option value="n5" class="bg-[#18181e] text-indigo-300">JLPT N5 (Dasar)</option>
+          <option value="n4" class="bg-[#18181e] text-indigo-300">JLPT N4 / JFT A2</option>
+        </select>
+      </div>
+
+      <!-- Selector Bahasa Mikrofon (Bisa Bicara Bahasa Jepang atau Indonesia) -->
+      <div class="flex items-center gap-1 bg-white/5 border border-white/10 rounded-lg px-1.5 py-0.5 text-xs">
+        <label for="select-mic-lang" class="text-slate-400 text-[10px] hidden lg:inline"><i class="fa-solid fa-language text-sky-400"></i> Mic:</label>
+        <select id="select-mic-lang" class="bg-transparent text-xs text-emerald-300 font-semibold focus:outline-none cursor-pointer" title="Pilih Bahasa Saat Anda Berbicara">
+          <option value="ja-JP" class="bg-[#18181e] text-emerald-300">🇯🇵 Bahasa Jepang (ja-JP)</option>
+          <option value="id-ID" class="bg-[#18181e] text-amber-300">🇮🇩 Bahasa Indonesia (id-ID)</option>
+        </select>
+      </div>
+
+      <!-- Tombol Setting API Key -->
+      <button id="btn-open-apikey-modal" type="button" class="text-xs text-amber-300 hover:text-amber-200 bg-amber-500/10 hover:bg-amber-500/20 border border-amber-400/30 px-2 sm:px-2.5 py-1 rounded-lg transition flex items-center gap-1 font-medium" title="Atur Gemini API Key Sendiri">
+        <i class="fa-solid fa-key text-[10px]"></i>
+        <span class="hidden md:inline">API Key</span>
+      </button>
+
       <div id="meeting-timer" class="text-xs font-mono text-slate-400">00:00</div>
       <a href="/" class="text-xs text-rose-400 hover:text-rose-300 bg-rose-500/10 hover:bg-rose-500/20 px-2.5 sm:px-3 py-1.5 rounded-lg transition font-medium">
         <i class="fa-solid fa-phone-slash mr-1"></i> Keluar
@@ -207,14 +317,14 @@
   <!-- ── 2. ZOOM MAIN STAGE (3 TILES: SATO-SAN + YUKI-CHAN + USER) ── -->
   <main class="flex-1 p-2 sm:p-3 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2.5 sm:gap-3 overflow-y-auto md:overflow-hidden relative">
 
-    <!-- Tile 1: Sato-san (VRoid 3D Sensei) -->
+    <!-- Tile 1: Kohaku-san (VRoid 3D Sensei) -->
     <div id="sato-tile" class="video-tile min-h-[220px] sm:min-h-[260px] md:min-h-0 h-full flex flex-col items-center justify-center relative">
       <div id="sato-canvas-container" class="w-full h-full"></div>
 
       <!-- Loading Sato -->
       <div id="loading-sato" class="absolute inset-0 bg-[#18181e] flex flex-col items-center justify-center text-white z-30 transition-opacity duration-300">
         <div class="w-9 h-9 border-3 border-sky-400 border-t-transparent rounded-full animate-spin mb-2"></div>
-        <div class="text-xs font-semibold text-slate-300">Memuat Sato-san 3D...</div>
+        <div class="text-xs font-semibold text-slate-300">Memuat Kohaku-san 3D...</div>
         <div id="sato-progress" class="text-[11px] text-slate-500 mt-0.5">0%</div>
       </div>
 
@@ -223,20 +333,20 @@
         <div id="sato-mic-icon" class="text-xs text-emerald-400">
           <i class="fa-solid fa-microphone"></i>
         </div>
-        <span class="text-xs font-medium text-white tracking-wide">Sato-san (佐藤さん)</span>
+        <span class="text-xs font-medium text-white tracking-wide">Kohaku-san (黒沢冴白)</span>
         <span id="sato-badge-role" class="text-[10px] bg-sky-500/20 text-sky-400 px-1.5 py-0.5 rounded font-bold">Partner</span>
-        <span class="text-[9px] text-slate-400 hidden sm:inline border-l border-white/15 pl-1.5">Voice: Keita Neural (Jepang)</span>
+        <span class="text-[9px] text-slate-400 hidden sm:inline border-l border-white/15 pl-1.5">Voice: VOICEVOX:黒沢冴白</span>
       </div>
     </div>
 
-    <!-- Tile 2: Yuki-chan (VRoid 3D Assistant) -->
+    <!-- Tile 2: Nia-chan (VRoid 3D Assistant) -->
     <div id="yuki-tile" class="video-tile min-h-[220px] sm:min-h-[260px] md:min-h-0 h-full flex flex-col items-center justify-center relative">
       <div id="yuki-canvas-container" class="w-full h-full"></div>
 
       <!-- Loading Yuki -->
       <div id="loading-yuki" class="absolute inset-0 bg-[#18181e] flex flex-col items-center justify-center text-white z-30 transition-opacity duration-300">
         <div class="w-9 h-9 border-3 border-pink-400 border-t-transparent rounded-full animate-spin mb-2"></div>
-        <div class="text-xs font-semibold text-slate-300">Memuat Yuki-chan 3D...</div>
+        <div class="text-xs font-semibold text-slate-300">Memuat Nia-chan 3D...</div>
         <div id="yuki-progress" class="text-[11px] text-slate-500 mt-0.5">0%</div>
       </div>
 
@@ -245,9 +355,9 @@
         <div id="yuki-mic-icon" class="text-xs text-emerald-400">
           <i class="fa-solid fa-microphone"></i>
         </div>
-        <span class="text-xs font-medium text-white tracking-wide">Yuki-chan (由紀)</span>
+        <span class="text-xs font-medium text-white tracking-wide">Nia-chan (琴読ニア)</span>
         <span id="yuki-badge-role" class="text-[10px] bg-pink-500/20 text-pink-400 px-1.5 py-0.5 rounded font-bold">Partner</span>
-        <span class="text-[9px] text-slate-400 hidden sm:inline border-l border-white/15 pl-1.5">Voice: Nanami Neural (Jepang)</span>
+        <span class="text-[9px] text-slate-400 hidden sm:inline border-l border-white/15 pl-1.5">Voice: VOICEVOX:琴読ニア</span>
       </div>
     </div>
 
@@ -289,7 +399,7 @@
           <div id="chat-speaker-badge" class="w-6 h-6 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs">
             <i id="chat-speaker-icon" class="fa-solid fa-chalkboard-user"></i>
           </div>
-          <span id="chat-speaker-name" class="text-xs sm:text-sm font-bold text-sky-400">Sato-san (佐藤さん)</span>
+          <span id="chat-speaker-name" class="text-xs sm:text-sm font-bold text-sky-400">Kohaku-san (黒沢冴白)</span>
           <span id="chat-speaker-role" class="text-[10px] bg-sky-500/10 text-sky-300 px-2 py-0.5 rounded border border-sky-500/20">Bahasa Jepang</span>
         </div>
         
@@ -312,15 +422,15 @@
       <div class="flex-1 overflow-y-auto pr-1 text-xs sm:text-sm space-y-1.5 scrollbar-thin">
         <!-- Tulisan Jepang Asli -->
         <div id="chat-main-jp" class="text-white font-bold text-sm sm:text-base leading-relaxed tracking-wide notranslate" translate="no">
-          みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！
+          みなさん、こんにちは！黒沢冴白です。今日もZoomで会話練習を始めましょう！
         </div>
         <!-- Baris Romaji (Dapat diaktifkan/dinonaktifkan oleh pengguna) -->
         <div id="chat-main-romaji" class="text-xs sm:text-sm font-mono text-amber-300/90 tracking-wide font-medium">
-          Minasan, konnichiwa! Sato desu. Kyou mo Zoom de kaiwa renshuu o hajimemashou!
+          Minasan, konnichiwa! Kurosawa Kohaku desu. Kyou mo Zoom de kaiwa renshuu o hajimemashou!
         </div>
         <!-- Terjemahan Bahasa Indonesia -->
         <div id="chat-main-id" class="text-xs sm:text-sm text-slate-300 leading-normal">
-          Halo semuanya! Saya Sato. Hari ini mari mulai latihan percakapan lewat Zoom!
+          Halo semuanya! Saya Kohaku. Hari ini mari mulai latihan percakapan lewat Zoom!
         </div>
       </div>
 
@@ -378,6 +488,12 @@
       </button>
     </div>
 
+    <!-- VOICEVOX Credit & Terms Notice (Wajib sesuai ketentuan lisensi karakter) -->
+    <div class="hidden xl:flex items-center gap-2 px-2.5 py-1 rounded-lg bg-white/5 border border-white/10 text-[10px] text-slate-400">
+      <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+      <span>VOICEVOX:黒沢冴白 • VOICEVOX:琴読ニア</span>
+    </div>
+
     <!-- Kontrol Kanan (End Call) -->
     <div class="flex items-center gap-2">
       <a href="/" class="px-3 sm:px-4 py-2 bg-rose-600 hover:bg-rose-700 text-white rounded-xl text-xs font-bold transition flex items-center gap-1.5 shadow-md">
@@ -405,16 +521,16 @@
       master_system_prompt: "Anda adalah mesin kecerdasan buatan penutur asli bahasa Jepang untuk aplikasi latihan percakapan web Zoom SinauJepang. Anda harus mematuhi aturan Karakter dan Skenario/Model yang sedang aktif.",
       characters: {
         sato: {
-          name: "Sato-san (佐藤さん)",
-          persona: "Kamu adalah Sato-san, seorang pria dewasa dengan pembawaan tenang, tegas, berwibawa, dan profesional. Karaktermu cenderung serius dan disiplin."
+          name: "Kohaku-san (黒沢冴白)",
+          persona: "Kamu adalah Kohaku-san, seorang pria dewasa dengan pembawaan tenang, tegas, berwibawa, dan profesional. Karaktermu cenderung serius dan disiplin."
         },
         yuki: {
-          name: "Yuki-chan (由紀)",
-          persona: "Kamu adalah Yuki-chan, seorang wanita yang ramah, hangat, sabar, dan sangat suportif kepada pembelajar bahasa."
+          name: "Nia-chan (琴読ニア)",
+          persona: "Kamu adalah Nia-chan, seorang wanita yang ramah, hangat, sabar, dan sangat suportif kepada pembelajar bahasa."
         },
         both: {
-          name: "Sato-san & Yuki-chan",
-          persona: "Dua karakter penutur asli Jepang: Sato-san (pria berwibawa) dan Yuki-chan (wanita ramah)."
+          name: "Kohaku-san & Nia-chan",
+          persona: "Dua karakter penutur asli Jepang: Kohaku-san (pria berwibawa) dan Nia-chan (wanita ramah)."
         }
       },
       scenarios: {
@@ -431,12 +547,23 @@
           instruction: "Lakukan simulasi wawancara kerja formal secara profesional. Ajukan pertanyaan interview satu per satu (seperti perkenalan diri/jiko shoukai, alasan melamar ke Jepang, kelebihan-kekurangan, pengalaman kerja) dan wajib menggunakan bahasa Jepang tingkat formal (Keigo / Sonkeigo / Kenjougo)."
         }
       },
+      levels: {
+        n5: {
+          name: "JLPT N5 (Tingkat Dasar / Pemula)",
+          rule: "Gunakan HANYA kosakata dan tata bahasa tingkat JLPT N5 (pola sederhana dasar seperti ~desu, ~masu, ~masen, partikel dasar o, ni, de, ga, wa, e). Hindari kosakata abstrak atau tata bahasa majemuk yang rumit. Gunakan kalimat pendek, jelas, dan mudah dipahami oleh pemula."
+        },
+        n4: {
+          name: "JLPT N4 / JFT-Basic A2 (Tingkat Menengah Dasar)",
+          rule: "Gunakan kosakata dan tata bahasa tingkat JLPT N4 / JFT A2 (seperti bentuk ~te kudasai, ~temo ii, ~nakereba narimasen, ~to omoimasu, ~koto ga dekiru, ~mae ni, ~tara). Kalimat dapat sedikit lebih berkembang namun tetap komunikatif dan mudah dicerna."
+        }
+      },
       global_rule: "Berikan respons dalam bahasa Jepang yang natural. Sesuaikan tingkat kesopanan bahasa (Futsuutai, Desu/Masu, atau Keigo) dengan aturan skenario yang dipilih. Jaga agar kalimat tidak terlalu panjang (1-2 kalimat) agar tercipta dialog dua arah yang interaktif."
     };
 
-    function buildModularSystemInstruction(selectedChar = 'both', selectedScenario = 'kaiwa') {
+    function buildModularSystemInstruction(selectedChar = 'both', selectedScenario = 'kaiwa', selectedLevel = 'n5') {
       const charData = MASTER_AI_CONFIG.characters[selectedChar] || MASTER_AI_CONFIG.characters.both;
       const scenData = MASTER_AI_CONFIG.scenarios[selectedScenario] || MASTER_AI_CONFIG.scenarios.kaiwa;
+      const levelData = MASTER_AI_CONFIG.levels[selectedLevel] || MASTER_AI_CONFIG.levels.n5;
 
       return `
 ${MASTER_AI_CONFIG.master_system_prompt}
@@ -445,36 +572,88 @@ ${MASTER_AI_CONFIG.master_system_prompt}
 Nama: ${charData.name}
 Karakter/Persona: ${charData.persona}
 
-[SKENARIO / MODEL LATIHAN AKTIF]
+[SKENARIO & TARGET LEVEL AKTIF]
 Mode: ${scenData.mode_name}
 Instruksi Skenario: ${scenData.instruction}
+Tingkat Kemampuan: ${levelData.name}
+Pedoman Level: ${levelData.rule}
 
-[ATURAN UTAMA INTERAKSI]
+[ATURAN UTAMA INTERAKSI & DUKUNGAN BAHASA INDONESIA]:
 ${MASTER_AI_CONFIG.global_rule}
-- Siswa sedang belajar bahasa Jepang dan berbicara langsung lewat mikrofon.
-- JIKA SISWA BERBICARA BAHASA INDONESIA (karena belum tahu bahasa Jepangnya):
-  Bantu berikan kosakata/frasa bahasa Jepangnya yang sesuai konteks skenario, lalu ajak siswa mengucapkannya.
-- JIKA SISWA BERBICARA BAHASA JEPANG TAPI SALAH:
-  Tanggapi secara wajar dan perbaiki kesalahannya secara suportif.
-- JIKA SISWA MENJAWAB DENGAN BENAR:
-  Puji pencapaiannya lalu ajukan 1 pertanyaan kelanjutan berikutnya.
+- Siswa adalah pembelajar bahasa Jepang asal Indonesia dan berbicara langsung lewat mikrofon.
+- SANGAT PENTING: JIKA SISWA BERBICARA BAHASA INDONESIA (misalnya siswa bingung cara bicaranya, bertanya "apa bahasa jepangnya...", atau menjawab menggunakan bahasa Indonesia):
+  1. Nia-chan (yuki) WAJIB berbicara terlebih dahulu ("firstSpeaker": "yuki").
+  2. Nia-chan di kolom 'id' memberikan bimbingan ramah dalam bahasa Indonesia yang menerjemahkan maksud siswa ke dalam bahasa Jepang yang tepat, lalu meminta siswa menirukannya (Contoh: "Untuk mengatakan itu, kamu bisa bilang: '...'. Coba tirukan ya!").
+  3. Nia-chan di kolom 'jp' dan 'romaji' menuliskan frasa bahasa Jepang yang harus ditirukan oleh siswa tersebut.
+  4. Kohaku-san (sato) menyemangati atau memberikan contoh pelafalan pendek dalam bahasa Jepang alami (Contoh: "そうですね、言ってみてください！").
+- JIKA SISWA BERBICARA BAHASA JEPANG TAPI TATA BAHASA / PARTIKEL ADA KESALAHAN:
+  1. Kohaku-san menanggapi inti maksudnya secara wajar.
+  2. Nia-chan membetulkan bagian yang salah secara ramah dalam bahasa Indonesia agar siswa paham di mana kelirunya.
+- JIKA SISWA BERBICARA BAHASA JEPANG DENGAN BENAR:
+  1. Kohaku-san memuji (misal: "素晴らしい！その通りです") dan melanjutkan percakapan dengan 1 pertanyaan baru.
+  2. Nia-chan memberi terjemahan singkat / dorongan semangat dalam bahasa Indonesia.
 
 [FORMAT OUTPUT WAJIB JSON MURNI PERSIS]:
 {
   "sato": {
-    "jp": "Teks bahasa Jepang Sato-san (kanji/kana)",
-    "romaji": "Cara baca romaji kalimat Sato-san (contoh: Minasan konnichiwa)",
-    "id": "Arti atau terjemahan bahasa Indonesia"
+    "jp": "Teks bahasa Jepang Kohaku-san (kanji/kana)",
+    "romaji": "Cara baca romaji kalimat Kohaku-san",
+    "id": "Arti atau terjemahan bahasa Indonesia ucapan Kohaku-san"
   },
   "yuki": {
-    "jp": "Teks bahasa Jepang Yuki-chan jika ada, atau kosongkan",
-    "romaji": "Cara baca romaji kalimat Yuki-chan jika ada, atau kosongkan",
-    "id": "Instruksi/bimbingan/terjemahan Yuki-chan dalam bahasa Indonesia"
+    "jp": "Teks bahasa Jepang bimbingan Nia-chan (target kalimat yang harus diucapkan siswa)",
+    "romaji": "Cara baca romaji target kalimat tersebut",
+    "id": "Bimbingan instruksi Nia-chan dalam Bahasa Indonesia (menjelaskan cara mengatakannya & meminta siswa menirukan)"
   },
   "firstSpeaker": "${selectedChar === 'yuki' ? 'yuki' : (selectedChar === 'sato' ? 'sato' : 'sato')}"
 }
 HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       `.trim();
+    }
+
+        // ── Fallback Respon Cerdas Offline Saat Kuota API Habis (429 Quota Exceeded) ──
+    function getSmartFallbackResponse(userText) {
+      const lower = userText.toLowerCase().trim();
+      let satoJp = 'はい、しっかり聞こえていますよ！一緒に日本語をどんどん話していきましょう。';
+      let satoRomaji = 'Hai, shikkari kikoete imasu yo! Issho ni nihongo o dondon hanashite ikimashou.';
+      let satoId = 'Ya, saya mendengarkan dengan jelas! Mari kita terus berlatih berbicara bahasa Jepang.';
+      
+      let niaJp = 'その調子です！リラックスして自分の言葉で伝えてみてくださいね。';
+      let niaRomaji = 'Sono choushi desu! Rirakkusu shite jibun no kotoba de tsutaete mite kudasai ne.';
+      let niaId = 'Bagus sekali! Santai saja dan cobalah ungkapkan dengan kalimatmu sendiri ya.';
+
+      if (lower.includes('こんにちは') || lower.includes('konnichiwa') || lower.includes('halo') || lower.includes('hello')) {
+        satoJp = 'こんにちは！今日も元気そうですね。最近の調子はいかがですか？';
+        satoRomaji = 'Konnichiwa! Kyou mo genki sou desu ne. Saikin no choushi wa ikaga desu ka?';
+        satoId = 'Halo! Hari ini Anda tampak bersemangat ya. Bagaimana kabar Anda akhir-akhir ini?';
+        niaId = 'Halo juga! Senang bisa berlatih bersama Anda hari ini!';
+      } else if (lower.includes('はじめ') || lower.includes('初め') || lower.includes('hajime') || lower.includes('名前') || lower.includes('nama')) {
+        satoJp = '初めまして！自己紹介ありがとうございます。日本での目標に向かって一緒に頑張りましょう！';
+        satoRomaji = 'Hajimemashite! Jikoshoukai arigatou gozaimasu. Nihon de no mokuhyou ni mukatte issho ni gambarimashou!';
+        satoId = 'Senang berkenalan dengan Anda! Terima kasih atas perkenalannya. Mari berjuang bersama meraih impian Anda di Jepang!';
+        niaId = 'Salam kenal! Anda sudah menyampaikan perkenalan diri dengan sangat jelas!';
+      } else if (lower.includes('はい') || lower.includes('hai') || lower.includes('iya') || lower.includes('ya')) {
+        satoJp = '素晴らしい返事ですね！では、日本でやってみたい仕事や趣味について教えてくれますか？';
+        satoRomaji = 'Subarashii henji desu ne! Dewa, nihon de yatte mitai shigoto ya shuumi ni tsuite oshiete kuremasu ka?';
+        satoId = 'Jawaban yang bagus dan tegas! Nah, bisakah ceritakan apa bidang kerja atau kegiatan yang ingin Anda lakukan di Jepang?';
+        niaId = 'Keren! Sampaikan dengan percaya diri ya, saya siap membantu jika ada kalimat yang kamu bingungkan!';
+      } else if (lower.includes('ありがとう') || lower.includes('terima kasih') || lower.includes('makasih')) {
+        satoJp = 'どういたしまして！いつでも気軽に質問や会話をしてくださいね。';
+        satoRomaji = 'Dou itashimashite! Itsu demo kigaru ni shitsumon ya kaiwa o shite kudasai ne.';
+        satoId = 'Sama-sama! Kapan pun Anda ingin bertanya atau bercakap-cakap, silakan langsung bicara ya.';
+        niaId = 'Sama-sama! Semangat selalu belajarnya!';
+      } else if (lower.includes('さようなら') || lower.includes('お疲れ') || lower.includes('sampai jumpa') || lower.includes('bye')) {
+        satoJp = '今日も練習お疲れ様でした！次回もまた楽しく練習しましょう！';
+        satoRomaji = 'Kyou mo renshuu otsukaresama deshita! Jikai mo mata tanoshiku renshuu shimashou!';
+        satoId = 'Terima kasih atas kerja kerasnya berlatih hari ini! Sampai jumpa di sesi berikutnya!';
+        niaId = 'Otsukaresama deshita! Tetap semangat ya!';
+      }
+
+      return {
+        sato: { jp: satoJp, romaji: satoRomaji, id: satoId },
+        yuki: { jp: niaJp, romaji: niaRomaji, id: niaId },
+        firstSpeaker: 'sato'
+      };
     }
 
     let geminiClient = null;
@@ -487,30 +666,39 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
     // Baca konfigurasi tersimpan sebelumnya dari localStorage (jika ada)
     const savedPartner = localStorage.getItem('kaiwa_selected_partner') || 'both';
     const savedScenario = localStorage.getItem('kaiwa_selected_scenario') || 'kaiwa';
+    const savedLevel = localStorage.getItem('kaiwa_selected_level') || 'n5';
 
     let activePartner = savedPartner;
     let activeScenario = savedScenario;
+    let activeLevel = savedLevel;
 
     // Sinkronkan radio button lobby dengan state tersimpan
     const rPartner = document.querySelector(`input[name="lobby-partner"][value="${savedPartner}"]`);
     if (rPartner) rPartner.checked = true;
     const rScenario = document.querySelector(`input[name="lobby-scenario"][value="${savedScenario}"]`);
     if (rScenario) rScenario.checked = true;
+    const rLevel = document.querySelector(`input[name="lobby-level"][value="${savedLevel}"]`);
+    if (rLevel) rLevel.checked = true;
 
     // Sinkronkan dropdown header
     const selectPartner = document.getElementById('select-partner');
     const selectScenario = document.getElementById('select-scenario');
+    const selectLevel = document.getElementById('select-level');
+    if (selectLevel) selectLevel.value = savedLevel;
     if (selectPartner) selectPartner.value = savedPartner;
     if (selectScenario) selectScenario.value = savedScenario;
 
-    function applyLobbySettings(partner, scenario) {
+    function applyLobbySettings(partner, scenario, level = 'n5') {
       activePartner = partner;
       activeScenario = scenario;
+      activeLevel = level;
       localStorage.setItem('kaiwa_selected_partner', partner);
       localStorage.setItem('kaiwa_selected_scenario', scenario);
+      localStorage.setItem('kaiwa_selected_level', level);
 
       if (selectPartner) selectPartner.value = partner;
       if (selectScenario) selectScenario.value = scenario;
+      if (selectLevel) selectLevel.value = level;
 
       initGeminiChat();
       updateTileLayoutVisibility();
@@ -532,27 +720,27 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       if (activePartner === 'yuki') {
         // Yuki Solo
         speakYuki(
-          'はい！由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
-          'Siap! Saya Yuki. Santai saja dan mari mulai latihannya ya! Senang bisa belajar bersama Anda!',
+          'はい！琴読ニアです。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
+          'Siap! Saya Nia. Santai saja dan mari mulai latihannya ya! Senang bisa belajar bersama Anda!',
           onGreetingFinished
         );
       } else if (activePartner === 'sato') {
         // Sato Solo
         speakSato(
-          'みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！準備はいいですか？',
-          'Halo semuanya! Saya Sato. Mari kita mulai latihan percakapan lewat Zoom hari ini. Sudah siap?',
+          'みなさん、こんにちは！黒沢冴白です。今日もZoomで会話練習を始めましょう！準備はいいですか？',
+          'Halo semuanya! Saya Kohaku. Mari kita mulai latihan percakapan lewat Zoom hari ini. Sudah siap?',
           onGreetingFinished
         );
       } else {
-        // Duet Sato & Yuki
+        // Duet Kohaku & Nia
         speakSato(
-          'みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！由紀さんもよろしくお願いします。',
-          'Halo semuanya! Saya Sato. Hari ini mari mulai latihan percakapan lewat Zoom! Yuki-san, mohon bantuannya juga ya.',
+          'みなさん、こんにちは！黒沢冴白です。今日もZoomで会話練習を始めましょう！ニアさんもよろしくお願いします。',
+          'Halo semuanya! Saya Kohaku. Hari ini mari mulai latihan percakapan lewat Zoom! Nia-san, mohon bantuannya juga ya.',
           () => {
             setTimeout(() => {
               speakYuki(
-                'はい！由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
-                'Siap! Saya Yuki. Santai saja dan mari mengobrol dengan seru ya! Salam kenal semuanya!',
+                'はい！琴読ニアです。リラックスして楽しくお話ししましょうね！よろしくお願いします！',
+                'Siap! Saya Nia. Santai saja dan mari mengobrol dengan seru ya! Salam kenal semuanya!',
                 onGreetingFinished
               );
             }, 700);
@@ -565,8 +753,9 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       btnStartLobby.addEventListener('click', () => {
         const chosenPartner = document.querySelector('input[name="lobby-partner"]:checked')?.value || 'both';
         const chosenScenario = document.querySelector('input[name="lobby-scenario"]:checked')?.value || 'kaiwa';
+        const chosenLevel = document.querySelector('input[name="lobby-level"]:checked')?.value || 'n5';
 
-        applyLobbySettings(chosenPartner, chosenScenario);
+        applyLobbySettings(chosenPartner, chosenScenario, chosenLevel);
 
         // Tutup modal dengan animasi halus
         lobbyModal.classList.add('opacity-0', 'pointer-events-none');
@@ -578,22 +767,28 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       });
     }
 
-    const PRIMARY_GEMINI_MODEL = 'gemini-3.8-flash';
-    const FALLBACK_GEMINI_MODEL = 'gemini-3.6-flash';
+    // Model cascade yang terbukti aktif & kuota fresh: gemini-3.5-flash-lite, gemini-flash-lite-latest, lalu fallback gemini-3.8-flash, gemini-3.6-flash
+    const CANDIDATE_GEMINI_MODELS = [
+      'gemini-3.5-flash-lite',
+      'gemini-flash-lite-latest',
+      'gemini-3.8-flash',
+      'gemini-3.6-flash'
+    ];
+    let activeModelIndex = 0;
 
-    function initGeminiChat(modelName = PRIMARY_GEMINI_MODEL) {
+    function initGeminiChat(modelName = CANDIDATE_GEMINI_MODELS[activeModelIndex]) {
       try {
         if (!geminiClient) {
           geminiClient = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
         }
-        const instruction = buildModularSystemInstruction(activePartner, activeScenario);
+        const instruction = buildModularSystemInstruction(activePartner, activeScenario, activeLevel);
         geminiChat = geminiClient.chats.create({
           model: modelName,
           config: {
             systemInstruction: instruction
           }
         });
-        console.log(`[Gemini AI] Sesi diinisialisasi: Partner=${activePartner}, Model=${activeScenario}, LLM=${modelName}`);
+        console.log(`[Gemini AI] Sesi diinisialisasi: Partner=${activePartner}, Model=${activeScenario}, Level=${activeLevel}, LLM=${modelName}`);
       } catch (e) {
         console.error("Gagal inisialisasi Gemini:", e);
       }
@@ -620,6 +815,15 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       });
     }
 
+    if (selectLevel) {
+      selectLevel.addEventListener('change', (e) => {
+        activeLevel = e.target.value;
+        localStorage.setItem('kaiwa_selected_level', activeLevel);
+        initGeminiChat();
+        updateTileLayoutVisibility();
+      });
+    }
+
     function updateTileLayoutVisibility() {
       const satoTileEl = document.getElementById('sato-tile');
       const yukiTileEl = document.getElementById('yuki-tile');
@@ -643,15 +847,15 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       if (activePartner === 'sato') {
         satoTileEl.classList.remove('hidden');
         yukiTileEl.classList.add('hidden');
-        if (headerTitle) headerTitle.textContent = `Latihan bersama: 佐藤さん (Sato-san) • Mode ${activeScenario.toUpperCase()}`;
+        if (headerTitle) headerTitle.textContent = `Latihan bersama: 黒沢冴白 (Kohaku-san) • Mode ${activeScenario.toUpperCase()} (${activeLevel.toUpperCase()})`;
       } else if (activePartner === 'yuki') {
         satoTileEl.classList.add('hidden');
         yukiTileEl.classList.remove('hidden');
-        if (headerTitle) headerTitle.textContent = `Latihan bersama: 由紀 (Yuki-chan) • Mode ${activeScenario.toUpperCase()}`;
+        if (headerTitle) headerTitle.textContent = `Latihan bersama: 琴読ニア (Nia-chan) • Mode ${activeScenario.toUpperCase()} (${activeLevel.toUpperCase()})`;
       } else {
         satoTileEl.classList.remove('hidden');
         yukiTileEl.classList.remove('hidden');
-        if (headerTitle) headerTitle.textContent = `Latihan bersama: Sato-san & Yuki-chan • Mode ${activeScenario.toUpperCase()}`;
+        if (headerTitle) headerTitle.textContent = `Latihan bersama: Kohaku-san & Nia-chan • Mode ${activeScenario.toUpperCase()} (${activeLevel.toUpperCase()})`;
       }
       setTimeout(handleResize, 100);
     }
@@ -693,7 +897,7 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
     }
 
     const satoRoom = createTileScene('sato-canvas-container');
-    // Sato-san di-zoom out sedikit agar proporsi kepala & bahu pas
+    // Kohaku-san di-zoom out sedikit agar proporsi kepala & bahu pas
     satoRoom.camera.position.set(0.0, 1.15, 1.18);
     satoRoom.camera.lookAt(0.0, 1.12, 0.0);
 
@@ -779,7 +983,7 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       if (rla) rla.rotation.set(-0.20, 0, -0.15);
     }
 
-    // ── Load Sato-san.vrm ──
+    // ── Load Kohaku-san.vrm ──
     const loaderSato = new GLTFLoader();
     loaderSato.register((parser) => new VRMLoaderPlugin(parser));
     loaderSato.load(
@@ -809,7 +1013,7 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       (err) => console.error('Error load sato-san:', err)
     );
 
-    // ── Load Yuki-chan.vrm ──
+    // ── Load Nia-chan.vrm ──
     const loaderYuki = new GLTFLoader();
     loaderYuki.register((parser) => new VRMLoaderPlugin(parser));
     loaderYuki.load(
@@ -1040,13 +1244,13 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       const delta = Math.min(clock.getDelta(), 0.1); // Cegah lonjakan frame rate / lag spike
       const elapsed = clock.getElapsedTime();
 
-      // Render Tile Sato-san jika aktif / visible
+      // Render Tile Kohaku-san jika aktif / visible
       if (activePartner !== 'yuki') {
         updateCharacter(stateSato, delta, elapsed, false);
         satoRoom.renderer.render(satoRoom.scene, satoRoom.camera);
       }
 
-      // Render Tile Yuki-chan jika aktif / visible
+      // Render Tile Nia-chan jika aktif / visible
       if (activePartner !== 'sato') {
         updateCharacter(stateYuki, delta, elapsed, true);
         yukiRoom.renderer.render(yukiRoom.scene, yukiRoom.camera);
@@ -1122,11 +1326,11 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       yukiTile.classList.remove('active-speaker');
       satoTile.classList.add('active-speaker');
 
-      // Update Single Box ke tampilan Sato-san (Theme: Sky Blue)
+      // Update Single Box ke tampilan Kohaku-san (Theme: Sky Blue)
       singleChatBox.className = 'h-full bg-[#18181e] border-2 border-sky-500/50 rounded-2xl p-3 sm:p-4 flex flex-col justify-between shadow-lg shadow-sky-950/30 transition-all duration-300';
       chatSpeakerBadge.className = 'w-6 h-6 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs';
       chatSpeakerIcon.className = 'fa-solid fa-chalkboard-user';
-      chatSpeakerName.textContent = 'Sato-san (佐藤さん)';
+      chatSpeakerName.textContent = 'Kohaku-san (黒沢冴白)';
       chatSpeakerName.className = 'text-xs sm:text-sm font-bold text-sky-400';
       chatSpeakerRole.textContent = activeScenario === 'mensetsu' ? 'Pewawancara' : (activeScenario === 'mendan' ? 'Konselor' : 'Partner Bicara');
       chatSpeakerRole.className = 'text-[10px] bg-sky-500/10 text-sky-300 px-2 py-0.5 rounded border border-sky-500/20';
@@ -1140,7 +1344,7 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       chatMainId.className = 'text-xs sm:text-sm text-slate-300 leading-normal';
       chatMainId.textContent = idText;
 
-      chatTurnStatus.innerHTML = '<i class="fa-solid fa-volume-high text-sky-400 animate-pulse mr-1"></i> Sato-san Berbicara';
+      chatTurnStatus.innerHTML = '<i class="fa-solid fa-volume-high text-sky-400 animate-pulse mr-1"></i> Kohaku-san Berbicara';
 
       // Suara Pria Dewasa: Pitch berat (0.82), tempo tenang berwibawa (0.95), pilih voice male ja-JP
       playTTS(jpText, 0.95, 0.82, 'male', () => {
@@ -1158,17 +1362,17 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       satoTile.classList.remove('active-speaker');
       yukiTile.classList.add('active-speaker');
 
-      // Update Single Box ke tampilan Yuki-chan (Theme: Pink)
+      // Update Single Box ke tampilan Nia-chan (Theme: Pink)
       singleChatBox.className = 'h-full bg-[#18181e] border-2 border-pink-500/50 rounded-2xl p-3 sm:p-4 flex flex-col justify-between shadow-lg shadow-pink-950/30 transition-all duration-300';
       chatSpeakerBadge.className = 'w-6 h-6 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center text-xs';
       chatSpeakerIcon.className = 'fa-solid fa-comments';
-      chatSpeakerName.textContent = 'Yuki-chan (由紀)';
+      chatSpeakerName.textContent = 'Nia-chan (琴読ニア)';
       chatSpeakerName.className = 'text-xs sm:text-sm font-bold text-pink-400';
       chatSpeakerRole.textContent = activeScenario === 'mensetsu' ? 'Pewawancara' : (activeScenario === 'mendan' ? 'Konselor' : 'Partner Bicara');
       chatSpeakerRole.className = 'text-[10px] bg-pink-500/10 text-pink-300 px-2 py-0.5 rounded border border-pink-500/20';
 
       chatMainJp.className = 'text-pink-100 font-bold text-sm sm:text-base leading-relaxed tracking-wide notranslate';
-      chatMainJp.textContent = jpText || '由紀がサポートします：';
+      chatMainJp.textContent = jpText || 'ニアがサポートします：';
       
       if (chatMainRomaji) {
         chatMainRomaji.textContent = romajiText || '';
@@ -1176,7 +1380,7 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       chatMainId.className = 'text-xs sm:text-sm text-slate-300 leading-normal';
       chatMainId.textContent = idText;
 
-      chatTurnStatus.innerHTML = '<i class="fa-solid fa-volume-high text-pink-400 animate-pulse mr-1"></i> Yuki-chan Menjelaskan';
+      chatTurnStatus.innerHTML = '<i class="fa-solid fa-volume-high text-pink-400 animate-pulse mr-1"></i> Nia-chan Menjelaskan';
 
       // Suara Wanita Cerah: Pitch 1.25, tempo 1.05
       playTTS(jpText, 1.05, 1.25, 'female', () => {
@@ -1200,20 +1404,22 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
 
     // ── Sistem Audio Asli Jepang (Keita Neural untuk Sato & Nanami Neural untuk Yuki) + Fallback Google TTS ──
     const SCENARIO_AUDIO_MAP = {
-      // Sato-san (Sensei - Suara Pria Jepang: Keita)
-      'みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！由紀さんもよろしくお願いします。': '/assets/audio/kaiwa/sato_intro.mp3',
+      // Kohaku-san (黒沢冴白 - VOICEVOX:黒沢冴白)
+      'みなさん、こんにちは！黒沢冴白です。今日もZoomで会話練習を始めましょう！ニアさんもよろしくお願いします。': '/assets/audio/kaiwa/kohaku_intro_duet.mp3',
+      'みなさん、こんにちは！黒沢冴白です。今日もZoomで会話練習を始めましょう！準備はいいですか？': '/assets/audio/kaiwa/kohaku_intro_solo.mp3',
       'まずは自己紹介をお願いします。お名前と、日本で挑戦したいことを教えてください。': '/assets/audio/kaiwa/sato_perkenalan.mp3',
-      '職場の挨拶はとても大切です。朝は「おはようございます」、退勤時は「お疲れ様でした」と言いましょう。': '/assets/audio/kaiwa/sato_salam.mp3',
-      '素晴らしい！とてもはきはきと話せていますね。その調子で頑張りましょう！': '/assets/audio/kaiwa/sato_pujian.mp3',
-      'はい、マイクが繋がりましたね！準備はいいですか？今日はどんなことでも、自由に日本語でお話ししましょう！': '/assets/audio/kaiwa/sato_ai_greet.mp3',
+      '職場の挨拶はとても大切です。朝は「おはようございます」、退勤時は「お疲れ様でした」と言いましょう。': '/assets/audio/kaiwa/kohaku_salam.mp3',
+      '素晴らしい！とてもはきはきと話せていますね。その調子で頑張りましょう！': '/assets/audio/kaiwa/kohaku_pujian.mp3',
+      'はい、マイクが繋がりましたね！準備はいいですか？今日はどんなことでも、自由に日本語でお話ししましょう！': '/assets/audio/kaiwa/kohaku_ai_greet.mp3',
 
-      // Yuki-chan (Asisten - Suara Wanita Lembut & Cerah Jepang: Nanami)
-      'はい！アシスタントの由紀です。リラックスして楽しくお話ししましょうね！よろしくお願いします！': '/assets/audio/kaiwa/yuki_intro.mp3',
-      '「はじめまして、〜です」と言ってみましょう！リラックスしてどうぞ！': '/assets/audio/kaiwa/yuki_perkenalan.mp3',
-      '笑顔で元気に言うのがポイントですよ！一緒に練習してみましょう！': '/assets/audio/kaiwa/yuki_salam.mp3',
-      '面接で大切なのは笑顔と明るい声です！緊張しても大丈夫、一言一言丁寧に話せば伝わりますよ！': '/assets/audio/kaiwa/yuki_tips.mp3',
-      'すごい！発音がとても自然で聞き取りやすいです！バッチリですよ！': '/assets/audio/kaiwa/yuki_pujian.mp3',
-      'マイクをオンにして、何でも日本語やインドネシア語でお話ししてみてくださいね！由紀がサポートします！': '/assets/audio/kaiwa/yuki_ai_greet.mp3'
+      // Nia-chan (琴読ニア - VOICEVOX:琴読ニア)
+      'はい！アシスタントの琴読ニアです。リラックスして楽しくお話ししましょうね！よろしくお願いします！': '/assets/audio/kaiwa/nia_intro.mp3',
+      'はい！琴読ニアです。リラックスして楽しくお話ししましょうね！よろしくお願いします！': '/assets/audio/kaiwa/nia_intro_solo.mp3',
+      '「はじめまして、〜です」と言ってみましょう！リラックスしてどうぞ！': '/assets/audio/kaiwa/nia_perkenalan.mp3',
+      '笑顔で元気に言うのがポイントですよ！一緒に練習してみましょう！': '/assets/audio/kaiwa/nia_salam.mp3',
+      '面接で大切なのは笑顔と明るい声です！緊張しても大丈夫、一言一言丁寧に話せば伝わりますよ！': '/assets/audio/kaiwa/nia_tips.mp3',
+      'すごい！発音がとても自然で聞き取りやすいです！バッチリですよ！': '/assets/audio/kaiwa/nia_pujian.mp3',
+      'マイクをオンにして、何でも日本語やインドネシア語でお話ししてみてくださいね！ニアがサポートします！': '/assets/audio/kaiwa/nia_ai_greet.mp3'
     };
 
     function playTTS(text, rate, pitch, gender, onStart, onEnd) {
@@ -1451,7 +1657,7 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
         // Solo Yuki
         speakYuki(data.yuki.jp, data.yuki.id, onScenarioFinished, data.yuki.romaji);
       } else {
-        // Duet Sato & Yuki
+        // Duet Kohaku & Nia
         speakSato(data.sato.jp, data.sato.id, () => {
           setTimeout(() => {
             speakYuki(data.yuki.jp, data.yuki.id, onScenarioFinished, data.yuki.romaji);
@@ -1543,8 +1749,8 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
           () => {
             setTimeout(() => {
               speakYuki(
-                'マイクをオンにして、何でも日本語やインドネシア語でお話ししてみてくださいね！由紀がサポートします！',
-                'Nyalakan mikrofon dan bicaralah santai dalam bahasa Jepang atau Indonesia. Yuki siap membantu menerjemahkan jika Anda bingung!',
+                'マイクをオンにして、何でも日本語やインドネシア語でお話ししてみてくださいね！ニアがサポートします！',
+                'Nyalakan mikrofon dan bicaralah santai dalam bahasa Jepang atau Indonesia. Nia siap membantu menerjemahkan jika Anda bingung!',
                 () => {
                   isAIProcessing = false;
                   if (colUserStatus) colUserStatus.textContent = 'Giliran Anda Bicara';
@@ -1566,11 +1772,25 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       }
     });
 
+    const selectMicLang = document.getElementById('select-mic-lang');
+    let currentMicLang = localStorage.getItem('kaiwa_mic_lang') || 'ja-JP';
+    if (selectMicLang) {
+      selectMicLang.value = currentMicLang;
+      selectMicLang.addEventListener('change', (e) => {
+        currentMicLang = e.target.value;
+        localStorage.setItem('kaiwa_mic_lang', currentMicLang);
+        if (recognition) {
+          recognition.lang = currentMicLang;
+          console.log("[Mic] Bahasa mikrofon diubah ke:", currentMicLang);
+        }
+      });
+    }
+
     if (SpeechRec) {
       recognition = new SpeechRec();
       recognition.continuous = true;
       recognition.interimResults = false;
-      recognition.lang = 'ja-JP';
+      recognition.lang = currentMicLang;
 
       recognition.onstart = () => {
         if (!isMuted && isFullAIMode) {
@@ -1629,37 +1849,51 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       if (chatMainRomaji) chatMainRomaji.textContent = '';
       chatMainId.className = 'text-xs sm:text-sm text-slate-400';
       
-      let waitingText = 'Sato-san dan Yuki sedang merespons...';
+      let waitingText = 'Kohaku-san dan Nia-chan sedang merespons...';
       if (activePartner === 'sato') {
-        waitingText = 'Sato-san sedang merespons...';
+        waitingText = 'Kohaku-san sedang merespons...';
       } else if (activePartner === 'yuki') {
-        waitingText = 'Yuki sedang merespons...';
+        waitingText = 'Nia-chan sedang merespons...';
       }
       chatMainId.textContent = waitingText;
 
       if (colUserStatus) colUserStatus.textContent = 'Sedang Ditanggapi...';
 
       try {
-        let response;
-        try {
-          response = await geminiChat.sendMessage({ message: userText });
-        } catch (firstErr) {
-          // Jika server sedang sibuk (503 Service Unavailable / Spikes in demand), coba fallback model gemini-3.6-flash
-          console.warn("[Gemini AI] Percobaan pertama gagal, mencoba fallback model:", firstErr);
-          const fbChat = geminiClient.chats.create({
-            model: FALLBACK_GEMINI_MODEL,
-            config: {
-              systemInstruction: buildModularSystemInstruction(activePartner, activeScenario)
+        let response = null;
+        let lastErr = null;
+
+        // Loop melalui model kandidat jika terkena 429 (Resource Exhausted / Rate Limit) atau 503
+        for (let i = 0; i < CANDIDATE_GEMINI_MODELS.length; i++) {
+          const tryModel = CANDIDATE_GEMINI_MODELS[(activeModelIndex + i) % CANDIDATE_GEMINI_MODELS.length];
+          try {
+            if (!geminiChat || i > 0) {
+              geminiChat = geminiClient.chats.create({
+                model: tryModel,
+                config: {
+                  systemInstruction: buildModularSystemInstruction(activePartner, activeScenario, activeLevel)
+                }
+              });
             }
-          });
-          response = await fbChat.sendMessage({ message: userText });
-          geminiChat = fbChat; // Ganti sesi aktif ke model cadangan
+            response = await geminiChat.sendMessage({ message: userText });
+            activeModelIndex = (activeModelIndex + i) % CANDIDATE_GEMINI_MODELS.length;
+            break;
+          } catch (modelErr) {
+            console.warn(`[Gemini AI] Gagal pada model ${tryModel}:`, modelErr);
+            lastErr = modelErr;
+          }
         }
 
-        const replyText = response.text.trim();
-        const jsonMatch = replyText.match(/\{[\s\S]*\}/);
-        if (!jsonMatch) throw new Error("Format respon bukan JSON");
-        const data = JSON.parse(jsonMatch[0]);
+        let data;
+        if (response) {
+          const replyText = response.text.trim();
+          const jsonMatch = replyText.match(/\{[\s\S]*\}/);
+          if (!jsonMatch) throw new Error("Format respon bukan JSON");
+          data = JSON.parse(jsonMatch[0]);
+        } else {
+          console.warn("[Gemini AI] Kuota API habis, menggunakan respons fallback cerdas lokal.");
+          data = getSmartFallbackResponse(userText);
+        }
 
         userSpeakingBadge.classList.add('hidden');
 
@@ -1798,6 +2032,51 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       }
     }
     syncUserData();
+
+    // ── Logika Modal Gemini API Key Mandiri ──
+    const apikeyModal = document.getElementById('apikey-modal');
+    const btnOpenApikeyModal = document.getElementById('btn-open-apikey-modal');
+    const btnCloseApikeyModal = document.getElementById('btn-close-apikey-modal');
+    const inputCustomApikey = document.getElementById('input-custom-apikey');
+    const btnSaveApikey = document.getElementById('btn-save-apikey');
+    const btnResetApikey = document.getElementById('btn-reset-apikey');
+
+    if (btnOpenApikeyModal) {
+      btnOpenApikeyModal.addEventListener('click', () => {
+        const currentKey = localStorage.getItem('gemini_api_key') || '';
+        if (inputCustomApikey) inputCustomApikey.value = currentKey;
+        apikeyModal.classList.remove('hidden');
+        apikeyModal.classList.add('flex');
+      });
+    }
+
+    if (btnCloseApikeyModal) {
+      btnCloseApikeyModal.addEventListener('click', () => {
+        apikeyModal.classList.add('hidden');
+        apikeyModal.classList.remove('flex');
+      });
+    }
+
+    if (btnSaveApikey) {
+      btnSaveApikey.addEventListener('click', () => {
+        const val = inputCustomApikey.value.trim();
+        if (val) {
+          localStorage.setItem('gemini_api_key', val);
+          window.location.reload();
+        } else {
+          localStorage.removeItem('gemini_api_key');
+          window.location.reload();
+        }
+      });
+    }
+
+    if (btnResetApikey) {
+      btnResetApikey.addEventListener('click', () => {
+        localStorage.removeItem('gemini_api_key');
+        window.location.reload();
+      });
+    }
+
   </script>
 </body>
 </html>

@@ -6,7 +6,10 @@
     "shatsu-quiz","tamago-quiz","tomemasu-quiz","basu0001-quiz"];
   function slug() {
     var m = (location.search || "").match(/[?&]p=([a-z0-9_-]+-quiz)/i);
-    if (m && PAKET.indexOf(m[1]) > -1) return m[1];
+    if (m) {
+      var s = m[1].toLowerCase();
+      if (PAKET.indexOf(s) > -1 || /^ssw-/i.test(s)) return s;
+    }
     return "kuroi-quiz";
   }
   window.QUIZ_SLUG = slug();

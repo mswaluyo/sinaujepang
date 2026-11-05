@@ -7,3 +7,7 @@ button:disabled{opacity:.4;cursor:not-allowed}
 #tabs{scrollbar-width:thin}
 .q-img{max-width:100%;max-height:300px;object-fit:contain;border-radius:.5rem;cursor:zoom-in}
 .opt-img{max-width:180px;max-height:130px;object-fit:contain;border-radius:.5rem;border:1px solid #e2e8f0;margin:6px 0;display:block;cursor:zoom-in}
+.bg-ssw-banner{background:linear-gradient(135deg,#059669 0%,#0f766e 100%) !important;color:#ffffff !important}
+.ssw-score-circle{background:linear-gradient(135deg,#059669 0%,#0d9488 100%) !important;color:#ffffff !important;border:4px solid #d1fae5 !important;box-shadow:0 10px 15px -3px rgba(5,150,105,0.3) !important}
+
+

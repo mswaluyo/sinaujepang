@@ -1,8 +1,8 @@
 [
   {
     "no": 1,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Ternak adalah hewan yang jinak, tidak akan bertarung.\nPernyataan ini adalah...",
     "options": [
       {
@@ -36,12 +36,14 @@
         "alasan": "Jawaban yang tepat sesuai materi."
       }
     ],
-    "trans": "Pertanyaan pengetahuan dasar sifat alami hewan ternak."
+    "trans": "Pertanyaan pengetahuan dasar sifat alami hewan ternak.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 2,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Fase pembuahan sapi betina pertama kalinya terjadi pada umur...",
     "options": [
       {
@@ -97,12 +99,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Waktu pembuahan / inseminasi pertama pada sapi betina."
+    "trans": "Waktu pembuahan / inseminasi pertama pada sapi betina.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 3,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Material dasar seperti jagung, mylo (sorgum), dan dedak kedelai biasanya...",
     "options": [
       {
@@ -158,12 +162,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Sumber asal bahan baku pakan konsentrat peternakan di Jepang."
+    "trans": "Sumber asal bahan baku pakan konsentrat peternakan di Jepang.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 4,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Kualitas susu sapi perah...",
     "options": [
       {
@@ -219,12 +225,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Variasi kualitas air susu pada sapi perah."
+    "trans": "Variasi kualitas air susu pada sapi perah.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 5,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Permasalahan mengenai kotoran dibuang ke ladang adalah...",
     "options": [
       {
@@ -258,12 +266,14 @@
         "alasan": "Jawaban yang tepat sesuai materi."
       }
     ],
-    "trans": "Pemanfaatan kotoran ternak terolah untuk lahan pertanian."
+    "trans": "Pemanfaatan kotoran ternak terolah untuk lahan pertanian.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 6,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Sapi bakalan yang akan dikirimkan ke pasar ternak biasanya berumur...",
     "options": [
       {
@@ -319,12 +329,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Usia sapi bakalan saat dikirimkan ke pasar lelang ternak."
+    "trans": "Usia sapi bakalan saat dikirimkan ke pasar lelang ternak.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 7,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Urutan pemeliharaan pedet yang benar adalah...",
     "options": [
       {
@@ -378,12 +390,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Urutan tahapan pemberian pakan pada pedet yang baru lahir."
+    "trans": "Urutan tahapan pemberian pakan pada pedet yang baru lahir.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 8,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Karakteristik kualitas daging baik dan pertumbuhan cepat dimiliki oleh...",
     "options": [
       {
@@ -439,12 +453,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Ciri ras ternak unggul untuk kualitas daging dan pertumbuhan."
+    "trans": "Ciri ras ternak unggul untuk kualitas daging dan pertumbuhan.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 9,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Induk yang digunakan untuk kawin silang untuk menghasilkan babi hibrida generasi pertama adalah...",
     "options": [
       {
@@ -500,12 +516,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Seleksi ras induk pada program persilangan babi hibrida."
+    "trans": "Seleksi ras induk pada program persilangan babi hibrida.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 10,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Yang BUKAN termasuk penyakit menular berbahaya adalah...",
     "options": [
       {
@@ -561,12 +579,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Klasifikasi penyakit ternak menular dan non-menular."
+    "trans": "Klasifikasi penyakit ternak menular dan non-menular.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 11,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Lingkungan yang panas akibat musim panas tidak memberikan pengaruh buruk pada babi. Pernyataan ini adalah...",
     "options": [
       {
@@ -600,12 +620,14 @@
         "alasan": "Jawaban yang tepat sesuai materi."
       }
     ],
-    "trans": "Dampak temperatur lingkungan tinggi terhadap fisiologi babi."
+    "trans": "Dampak temperatur lingkungan tinggi terhadap fisiologi babi.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 12,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Pada pakan campuran untuk ayam dewasa, kandungan jagung atau mylo (sorgum) adalah sekitar...",
     "options": [
       {
@@ -661,12 +683,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Komposisi biji-bijian sumber energi pada ransum pakan unggas."
+    "trans": "Komposisi biji-bijian sumber energi pada ransum pakan unggas.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 13,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Volume produksi susu sapi perah akan mencapai jumlah tertinggi (puncak laktasi) pada minggu ke...",
     "options": [
       {
@@ -722,12 +746,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Kurva produksi susu puncak pada sapi perah."
+    "trans": "Kurva produksi susu puncak pada sapi perah.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 14,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Rerumputan yang fase tuainya lebih lambat memiliki nilai nutrisi yang lebih tinggi. Pernyataan ini adalah...",
     "options": [
       {
@@ -761,12 +787,14 @@
         "alasan": "Jawaban yang tepat sesuai materi."
       }
     ],
-    "trans": "Pengaruh umur pemotongan rumput terhadap nilai gizi hijauan pakan."
+    "trans": "Pengaruh umur pemotongan rumput terhadap nilai gizi hijauan pakan.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 15,
-    "section": "SESI 1 : MOJIGOI",
-    "mnn": "SSW Peternakan - Pengetahuan Dasar Ternak",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Perhatikan gambar berikut!\nJenis pakan hijauan fermentasi yang dibungkus rapat kedap udara ini disebut...",
     "options": [
       {
@@ -824,12 +852,14 @@
     ],
     "trans": "Identifikasi bentuk pakan fermentasi silase pada gambar.",
     "image": "assets/ssw_peternakan_q15_silase.png",
-    "img": "assets/ssw_peternakan_q15_silase.png"
+    "img": "assets/ssw_peternakan_q15_silase.png",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 16,
-    "section": "SESI 2 : HYOUGEN",
-    "mnn": "SSW Peternakan - Pakan & Pengelolaan Limbah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Perhatikan gambar berikut!\nFasilitas penyimpanan pakan konsentrat peternakan pada gambar di atas adalah...",
     "options": [
       {
@@ -887,12 +917,14 @@
     ],
     "trans": "Identifikasi silo tangki pakan campuran pada peternakan.",
     "image": "assets/ssw_peternakan_q16_tangki.png",
-    "img": "assets/ssw_peternakan_q16_tangki.png"
+    "img": "assets/ssw_peternakan_q16_tangki.png",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 17,
-    "section": "SESI 2 : HYOUGEN",
-    "mnn": "SSW Peternakan - Pakan & Pengelolaan Limbah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Apa yang dimaksud dengan silase dalam manajemen pakan ternak?",
     "options": [
       {
@@ -948,12 +980,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Definisi ilmiah dan praktis mengenai pembuatan silase."
+    "trans": "Definisi ilmiah dan praktis mengenai pembuatan silase.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 18,
-    "section": "SESI 2 : HYOUGEN",
-    "mnn": "SSW Peternakan - Pakan & Pengelolaan Limbah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Jika Anda perlu mengencerkan cairan disinfektan konsentrat menjadi larutan berkonsentrasi 500 kali lipat sebanyak 500 ml, berapa ml disinfektan pekat yang diperlukan?",
     "options": [
       {
@@ -1009,12 +1043,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Perhitungan dosis pengenceran cairan disinfektan kandang."
+    "trans": "Perhitungan dosis pengenceran cairan disinfektan kandang.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 19,
-    "section": "SESI 2 : HYOUGEN",
-    "mnn": "SSW Peternakan - Pakan & Pengelolaan Limbah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Seberapa sering pemeriksaan mutu air susu (milk testing) secara rutin dilakukan dalam kawanan sapi perah?",
     "options": [
       {
@@ -1070,12 +1106,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Frekuensi uji kontrol kualitas susu kawanan sapi perah."
+    "trans": "Frekuensi uji kontrol kualitas susu kawanan sapi perah.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 20,
-    "section": "SESI 2 : HYOUGEN",
-    "mnn": "SSW Peternakan - Pakan & Pengelolaan Limbah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Apa tujuan utama dilakukannya inseminasi buatan (IB / Jinkou Jusei) pada sapi ternak?",
     "options": [
       {
@@ -1131,12 +1169,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Tujuan dan manfaat penerapan teknologi inseminasi buatan."
+    "trans": "Tujuan dan manfaat penerapan teknologi inseminasi buatan.",
+    "category": "gakka",
+    "category_label": "Pengetahuan & Istilah Teknis (Gakka)"
   },
   {
     "no": 21,
-    "section": "SESI 2 : HYOUGEN",
-    "mnn": "SSW Peternakan - Pakan & Pengelolaan Limbah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Apa fungsi utama dari penggunaan Calf Hatch (kandang individu berbentuk kubah kecil) dalam pemeliharaan pedet sapi?",
     "options": [
       {
@@ -1192,12 +1232,14 @@
         "alasan": "Jawaban yang tepat sesuai materi."
       }
     ],
-    "trans": "Fungsi fasilitas kandang individual calf hatch untuk pedet."
+    "trans": "Fungsi fasilitas kandang individual calf hatch untuk pedet.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 22,
-    "section": "SESI 2 : HYOUGEN",
-    "mnn": "SSW Peternakan - Pakan & Pengelolaan Limbah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Dalam pengelolaan limbah kotoran ternak, istilah Slurry adalah...",
     "options": [
       {
@@ -1253,12 +1295,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Definisi istilah limbah slurry peternakan."
+    "trans": "Definisi istilah limbah slurry peternakan.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 23,
-    "section": "SESI 2 : HYOUGEN",
-    "mnn": "SSW Peternakan - Pakan & Pengelolaan Limbah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Berapakah suhu ideal yang harus dicapai dalam tumpukan bahan selama proses pengomposan kotoran ternak?",
     "options": [
       {
@@ -1314,12 +1358,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Suhu fermentasi optimal pengomposan kotoran ternak."
+    "trans": "Suhu fermentasi optimal pengomposan kotoran ternak.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 24,
-    "section": "SESI 2 : HYOUGEN",
-    "mnn": "SSW Peternakan - Pakan & Pengelolaan Limbah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Perhatikan gambar berikut!\nArea pengolahan limbah peternakan dengan tumpukan kotoran yang diaduk pada gambar di atas adalah...",
     "options": [
       {
@@ -1377,12 +1423,14 @@
     ],
     "trans": "Identifikasi fasilitas pengolahan kompos peternakan.",
     "image": "assets/ssw_peternakan_q24_kompos.png",
-    "img": "assets/ssw_peternakan_q24_kompos.png"
+    "img": "assets/ssw_peternakan_q24_kompos.png",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 25,
-    "section": "SESI 2 : HYOUGEN",
-    "mnn": "SSW Peternakan - Pakan & Pengelolaan Limbah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Sangat penting bagi peternak untuk tidak melewatkan tanda-tanda estrus (berahi) untuk melakukan inseminasi buatan karena...",
     "options": [
       {
@@ -1438,12 +1486,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Pentingnya deteksi berahi (estrus) untuk keberhasilan perkawinan."
+    "trans": "Pentingnya deteksi berahi (estrus) untuk keberhasilan perkawinan.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 26,
-    "section": "SESI 3 : CHOUKAI",
-    "mnn": "SSW Peternakan - Fisiologi & Pemeliharaan Unggas",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Bobot lahir rata-rata pedet yang dilahirkan oleh induk sapi pedaging (Kuroge Washu / Wagyu) adalah sekitar...",
     "options": [
       {
@@ -1499,12 +1549,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Bobot lahir rata-rata pedet sapi pedaging."
+    "trans": "Bobot lahir rata-rata pedet sapi pedaging.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 27,
-    "section": "SESI 3 : CHOUKAI",
-    "mnn": "SSW Peternakan - Fisiologi & Pemeliharaan Unggas",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Setelah melahirkan, estrus (berahi) tidak akan muncul selama induk babi masih menyusui anak-anaknya.\nPernyataan ini adalah...",
     "options": [
       {
@@ -1538,12 +1590,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Fenomena anestrus masa laktasi pada induk babi."
+    "trans": "Fenomena anestrus masa laktasi pada induk babi.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 28,
-    "section": "SESI 3 : CHOUKAI",
-    "mnn": "SSW Peternakan - Fisiologi & Pemeliharaan Unggas",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Dalam pemeliharaan kawanan anak ayam pedaging/petelur, manakah prinsip yang paling tepat mengenai evaluasi bobot badan?",
     "options": [
       {
@@ -1599,12 +1653,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Prinsip keseragaman bobot kelompok pada manajemen unggas."
+    "trans": "Prinsip keseragaman bobot kelompok pada manajemen unggas.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 29,
-    "section": "SESI 3 : CHOUKAI",
-    "mnn": "SSW Peternakan - Fisiologi & Pemeliharaan Unggas",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Pada ayam petelur, interval waktu yang dibutuhkan dari satu ovulasi hingga ovulasi berikutnya adalah sekitar...",
     "options": [
       {
@@ -1660,12 +1716,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Interval waktu siklus ovulasi pada ayam petelur."
+    "trans": "Interval waktu siklus ovulasi pada ayam petelur.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 30,
-    "section": "SESI 3 : CHOUKAI",
-    "mnn": "SSW Peternakan - Fisiologi & Pemeliharaan Unggas",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Periodisitas bertelur dan serangkaian telur yang dihasilkan secara berturut-turut setiap harinya disebut 'Clutch'.\nPernyataan ini adalah...",
     "options": [
       {
@@ -1699,12 +1757,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Istilah clutch dalam produksi telur unggas."
+    "trans": "Istilah clutch dalam produksi telur unggas.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 31,
-    "section": "SESI 3 : CHOUKAI",
-    "mnn": "SSW Peternakan - Fisiologi & Pemeliharaan Unggas",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Bila suhu udara lingkungan kandang meningkat tajam (panas), maka volume konsumsi pakan ternak akan...",
     "options": [
       {
@@ -1760,12 +1820,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Pengaruh suhu tinggi terhadap nafsu makan dan konsumsi pakan ternak."
+    "trans": "Pengaruh suhu tinggi terhadap nafsu makan dan konsumsi pakan ternak.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 32,
-    "section": "SESI 3 : CHOUKAI",
-    "mnn": "SSW Peternakan - Fisiologi & Pemeliharaan Unggas",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Pada fase awal induksi produksi telur ayam petelur, program pencahayaan (lighting program) seragam ditingkatkan hingga mencapai berapa jam per hari?",
     "options": [
       {
@@ -1821,12 +1883,14 @@
         "alasan": "Jawaban yang tepat sesuai materi."
       }
     ],
-    "trans": "Program pencahayaan (lighting program) untuk ayam petelur."
+    "trans": "Program pencahayaan (lighting program) untuk ayam petelur.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 33,
-    "section": "SESI 3 : CHOUKAI",
-    "mnn": "SSW Peternakan - Fisiologi & Pemeliharaan Unggas",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Gejala fisik ayam: bulu berdiri tegak kasar, sayap terkulai menjuntai, dan bernapas dengan paruh terbuka terengah-engah. Kondisi ini menunjukkan...",
     "options": [
       {
@@ -1882,12 +1946,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Pengamatan gejala klinis visual pada ayam yang sakit."
+    "trans": "Pengamatan gejala klinis visual pada ayam yang sakit.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 34,
-    "section": "SESI 3 : CHOUKAI",
-    "mnn": "SSW Peternakan - Fisiologi & Pemeliharaan Unggas",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Berikut ini adalah prinsip sanitasi biosekuriti yang paling mendasar dalam mencegah masuknya wabah patogen ke dalam area peternakan, KECUALI...",
     "options": [
       {
@@ -1943,12 +2009,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Prinsip biosekuriti kandang dan pencegahan vektor penyakit."
+    "trans": "Prinsip biosekuriti kandang dan pencegahan vektor penyakit.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 35,
-    "section": "SESI 3 : CHOUKAI",
-    "mnn": "SSW Peternakan - Fisiologi & Pemeliharaan Unggas",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Saat keluar dan masuk kandang ternak, petugas wajib melakukan disinfeksi pada sepatu bot dan pakaian kerja dengan seksama. Tindakan ini bertujuan untuk...",
     "options": [
       {
@@ -2004,12 +2072,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Tujuan disinfeksi alas kaki dan pakaian kerja saat memasuki kandang."
+    "trans": "Tujuan disinfeksi alas kaki dan pakaian kerja saat memasuki kandang.",
+    "category": "anzen",
+    "category_label": "Prosedur & Keselamatan Kerja"
   },
   {
     "no": 36,
-    "section": "SESI 4 : DOKKAI",
-    "mnn": "SSW Peternakan - Biosekuriti & Prosedur Perah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Bak disinfeksi pijakan kaki (footbath) yang diletakkan di depan pintu masuk kandang berfungsi untuk...",
     "options": [
       {
@@ -2065,12 +2135,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Fungsi bak footbath desinfeksi alas kaki di pintu kandang."
+    "trans": "Fungsi bak footbath desinfeksi alas kaki di pintu kandang.",
+    "category": "jitsugi",
+    "category_label": "Praktik Operasional Keahlian (Jitsugi)"
   },
   {
     "no": 37,
-    "section": "SESI 4 : DOKKAI",
-    "mnn": "SSW Peternakan - Biosekuriti & Prosedur Perah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Penyimpanan bahan kimia dan cairan disinfektan peternakan harus dilakukan dengan cara...",
     "options": [
       {
@@ -2126,12 +2198,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Standar operasional prosedur penyimpanan bahan kimia disinfektan."
+    "trans": "Standar operasional prosedur penyimpanan bahan kimia disinfektan.",
+    "category": "jitsugi",
+    "category_label": "Praktik Operasional Keahlian (Jitsugi)"
   },
   {
     "no": 38,
-    "section": "SESI 4 : DOKKAI",
-    "mnn": "SSW Peternakan - Biosekuriti & Prosedur Perah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Penggunaan Alat Pelindung Diri (APD) dan pakaian kerja khusus yang bersih di lingkungan peternakan bertujuan untuk...",
     "options": [
       {
@@ -2187,12 +2261,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Tujuan dan fungsi keselamatan kerja APD di peternakan."
+    "trans": "Tujuan dan fungsi keselamatan kerja APD di peternakan.",
+    "category": "jitsugi",
+    "category_label": "Praktik Operasional Keahlian (Jitsugi)"
   },
   {
     "no": 39,
-    "section": "SESI 4 : DOKKAI",
-    "mnn": "SSW Peternakan - Biosekuriti & Prosedur Perah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Alat pra-pemerahan cangkir strip (Strip Cup) pada sapi perah digunakan untuk...",
     "options": [
       {
@@ -2248,12 +2324,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Fungsi alat strip cup dalam pemeriksaan pra-pemerahan susu."
+    "trans": "Fungsi alat strip cup dalam pemeriksaan pra-pemerahan susu.",
+    "category": "jitsugi",
+    "category_label": "Praktik Operasional Keahlian (Jitsugi)"
   },
   {
     "no": 40,
-    "section": "SESI 4 : DOKKAI",
-    "mnn": "SSW Peternakan - Biosekuriti & Prosedur Perah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Tujuan utama pengelapan ambing sapi sebelum memerah adalah 'memberikan rangsangan hormon oksitosin' dan 'sterilisasi puting'. Pengelapan yang baik dilakukan dengan menggunakan...",
     "options": [
       {
@@ -2309,12 +2387,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Prosedur pengelapan puting dan stimulasi sekresi susu sapi."
+    "trans": "Prosedur pengelapan puting dan stimulasi sekresi susu sapi.",
+    "category": "jitsugi",
+    "category_label": "Praktik Operasional Keahlian (Jitsugi)"
   },
   {
     "no": 41,
-    "section": "SESI 4 : DOKKAI",
-    "mnn": "SSW Peternakan - Biosekuriti & Prosedur Perah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Manakah urutan standar operasional yang paling tepat dalam prosedur pemerasan susu sapi perah (milking routine)?",
     "options": [
       {
@@ -2368,12 +2448,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Standar urutan kerja pemerasan susu sapi yang higienis."
+    "trans": "Standar urutan kerja pemerasan susu sapi yang higienis.",
+    "category": "jitsugi",
+    "category_label": "Praktik Operasional Keahlian (Jitsugi)"
   },
   {
     "no": 42,
-    "section": "SESI 4 : DOKKAI",
-    "mnn": "SSW Peternakan - Biosekuriti & Prosedur Perah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Kondisi bulu ternak yang tampak kusam, kasar, rontok, dan tidak berkilau umumnya dicurigai sebagai akibat dari...",
     "options": [
       {
@@ -2429,12 +2511,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Indikasi klinis penampilan bulu terhadap kecukupan nutrisi ternak."
+    "trans": "Indikasi klinis penampilan bulu terhadap kecukupan nutrisi ternak.",
+    "category": "jitsugi",
+    "category_label": "Praktik Operasional Keahlian (Jitsugi)"
   },
   {
     "no": 43,
-    "section": "SESI 4 : DOKKAI",
-    "mnn": "SSW Peternakan - Biosekuriti & Prosedur Perah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Pemeliharaan anak babi yang baru lahir (piglet) pada kotak pemanas bersuhu 30 - 32°C bertujuan utama untuk...",
     "options": [
       {
@@ -2490,12 +2574,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Kebutuhan suhu lingkungan pemanas bagi anak babi yang baru lahir."
+    "trans": "Kebutuhan suhu lingkungan pemanas bagi anak babi yang baru lahir.",
+    "category": "jitsugi",
+    "category_label": "Praktik Operasional Keahlian (Jitsugi)"
   },
   {
     "no": 44,
-    "section": "SESI 4 : DOKKAI",
-    "mnn": "SSW Peternakan - Biosekuriti & Prosedur Perah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Pada saat fase estrus (berahi), apabila petugas melakukan pengujian refleks berdiri (standing reflex) dengan menekan punggung atau pinggul babi betina menggunakan kedua tangan, maka babi betina yang siap kawin akan...",
     "options": [
       {
@@ -2551,12 +2637,14 @@
         "alasan": "Pilihan pengecoh."
       }
     ],
-    "trans": "Uji refleks berdiri punggung (standing reflex) pada babi estrus."
+    "trans": "Uji refleks berdiri punggung (standing reflex) pada babi estrus.",
+    "category": "jitsugi",
+    "category_label": "Praktik Operasional Keahlian (Jitsugi)"
   },
   {
     "no": 45,
-    "section": "SESI 4 : DOKKAI",
-    "mnn": "SSW Peternakan - Biosekuriti & Prosedur Perah",
+    "section": "SSW PETERNAKAN",
+    "mnn": "SSW Chikusan",
     "title": "Urutan tahapan alur penanganan pascapanen telur ayam yang paling tepat di peternakan modern adalah...",
     "options": [
       {
@@ -2610,6 +2698,8 @@
         "alasan": "Jawaban yang tepat sesuai materi."
       }
     ],
-    "trans": "Alur kerja standar pengumpulan dan penanganan telur pascapanen."
+    "trans": "Alur kerja standar pengumpulan dan penanganan telur pascapanen.",
+    "category": "jitsugi",
+    "category_label": "Praktik Operasional Keahlian (Jitsugi)"
   }
 ]

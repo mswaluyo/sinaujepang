@@ -28,7 +28,10 @@ QuizController.openResultModal = function () {
     var s = V.SECMAP[q.section]; t[s]++;
     if (M.locked[q.no] && M.picked[q.no] === q.answer) c[s]++;
   });
-  var tot = c.sec1 + c.sec2 + c.sec3 + c.sec4;
+  var tot = 0;
+  M.QS.forEach(function (q) {
+    if (M.locked[q.no] && M.picked[q.no] === q.answer) tot++;
+  });
   var p = M.QS.length ? Math.round(tot / M.QS.length * 100) : 0;
   var done = (M.QS.length && Object.keys(M.locked).length >= M.QS.length);
   // Simpan SEKALI per penyelesaian kuis: hanya saat selesai penuh & belum disimpan sesi ini.
@@ -38,28 +41,61 @@ QuizController.openResultModal = function () {
     var sig = slug + "|" + tot + "|" + M.QS.length;
     if (slug && done && QuizController._savedSig !== sig) {
       QuizController._savedSig = sig;
+      var isSSW = /^ssw-/i.test(slug);
       var secsObj = {};
+      var catsObj = { gakka: { benar: 0, total: 0 }, anzen: { benar: 0, total: 0 }, jitsugi: { benar: 0, total: 0 } };
+      
+      M.QS.forEach(function (q) {
+        var cat = q.category || (q.no <= 20 ? 'gakka' : (q.no <= 35 ? 'anzen' : 'jitsugi'));
+        if (!catsObj[cat]) catsObj[cat] = { benar: 0, total: 0 };
+        catsObj[cat].total++;
+        if (M.locked[q.no] && M.picked[q.no] === q.answer) {
+          catsObj[cat].benar++;
+        }
+      });
       ["sec1","sec2","sec3","sec4"].forEach(function(k){ secsObj[k] = { benar: c[k], total: t[k] }; });
-      QuizRepository.saveAttempt(slug, { benar: tot, total: M.QS.length, skor: p, secs: secsObj, done: true });
+      QuizRepository.saveAttempt(slug, { benar: tot, total: M.QS.length, skor: p, secs: secsObj, cats: catsObj, done: true });
       // Sesi selesai penuh -> sesi cloud tidak diperlukan lagi.
       try { if (window.fujiProgress) window.fujiProgress.clear(slug); } catch (e) {}
     }
   } catch (e) { /* abaikan */ }
   document.getElementById("score-percentage").textContent = p + "%";
-  document.getElementById("score-count").textContent = tot + " / " + M.QS.length + " Benar";
-  try {
-    var _j = Math.round(10 + (p / 100) * 240);
-    var _lv = _j >= 200 ? "A2" : _j >= 175 ? "A2.1" : _j >= 145 ? "A1" : "-";
+  var slug = (QuizController.quizSlug ? QuizController.quizSlug() : "") || "";
+  var isSSW = /^ssw-/i.test(slug);
+
+  if (isSSW) {
+    var passSSW = p >= 65;
     var _el = document.getElementById("score-count");
-    if (_el) _el.textContent = tot + " / " + M.QS.length + " Benar • " + _j + "/250 (" + _lv + ")";
-  } catch (e) {}
-  document.getElementById("breakdown-sec1").textContent = c.sec1 + " / " + t.sec1;
-  document.getElementById("breakdown-sec2").textContent = c.sec2 + " / " + t.sec2;
-  document.getElementById("breakdown-sec3").textContent = c.sec3 + " / " + t.sec3;
-  document.getElementById("breakdown-sec4").textContent = c.sec4 + " / " + t.sec4;
-  var st = document.getElementById("result-status-title"), ds = document.getElementById("result-status-desc");
-  if (p >= 75) { st.textContent = "LULUS"; st.className = "text-xl font-bold text-emerald-600"; ds.textContent = "Bagus!"; }
-  else { st.textContent = "BELUM LULUS"; st.className = "text-xl font-bold text-rose-600"; ds.textContent = "Pelajari lagi analisa."; }
+    if (_el) _el.textContent = tot + " / " + M.QS.length + " Benar • Min. 65%";
+    var bdWrap = document.getElementById("result-breakdown-wrap");
+    if (bdWrap) bdWrap.classList.add("hidden");
+    var st = document.getElementById("result-status-title"), ds = document.getElementById("result-status-desc");
+    if (passSSW) {
+      st.textContent = "LULUS (MIN. 65%)";
+      st.className = "text-xl font-bold text-emerald-600";
+      ds.textContent = "Selamat! Nilai Anda memenuhi standar kelulusan keahlian SSW.";
+    } else {
+      st.textContent = "BELUM LULUS (<65%)";
+      st.className = "text-xl font-bold text-rose-600";
+      ds.textContent = "Target lulus SSW adalah minimal 65%. Silakan pelajari kembali materi.";
+    }
+  } else {
+    try {
+      var _j = Math.round(10 + (p / 100) * 240);
+      var _lv = _j >= 200 ? "A2" : _j >= 175 ? "A2.1" : _j >= 145 ? "A1" : "-";
+      var _el = document.getElementById("score-count");
+      if (_el) _el.textContent = tot + " / " + M.QS.length + " Benar • " + _j + "/250 (" + _lv + ")";
+    } catch (e) {}
+    var bdWrap = document.getElementById("result-breakdown-wrap");
+    if (bdWrap) bdWrap.classList.remove("hidden");
+    document.getElementById("breakdown-sec1").textContent = c.sec1 + " / " + t.sec1;
+    document.getElementById("breakdown-sec2").textContent = c.sec2 + " / " + t.sec2;
+    document.getElementById("breakdown-sec3").textContent = c.sec3 + " / " + t.sec3;
+    document.getElementById("breakdown-sec4").textContent = c.sec4 + " / " + t.sec4;
+    var st = document.getElementById("result-status-title"), ds = document.getElementById("result-status-desc");
+    if (p >= 75) { st.textContent = "LULUS"; st.className = "text-xl font-bold text-emerald-600"; ds.textContent = "Bagus!"; }
+    else { st.textContent = "BELUM LULUS"; st.className = "text-xl font-bold text-rose-600"; ds.textContent = "Pelajari lagi analisa."; }
+  }
   var m = document.getElementById("result-modal"); m.classList.remove("hidden"); m.classList.add("flex");
   try {
     var slug = QuizController.quizSlug();
@@ -74,7 +110,9 @@ QuizController.openResultModal = function () {
         wrap.appendChild(btn);
       }
     }
-    if (btn && slug) btn.href = "/hasil.html?paket=" + slug;
+    if (btn && slug) {
+      btn.href = (/^ssw-/i.test(slug) ? "/ssw-hasil.html?paket=" : "/hasil.html?paket=") + slug;
+    }
   } catch (e) {}
 };
 QuizController.reviewWrong = function () {

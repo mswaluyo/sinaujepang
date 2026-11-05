@@ -1,12 +1,9 @@
 name: Deploy to Firebase Hosting
 
 on:
-  workflow_dispatch:
-    inputs:
-      reason:
-        description: 'Alasan deployment manual'
-        required: false
-        default: 'Manual deploy setelah verifikasi lokal'
+  push:
+    branches:
+      - main
 
 jobs:
   build_and_deploy:

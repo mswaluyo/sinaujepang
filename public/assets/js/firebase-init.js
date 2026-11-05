@@ -70,7 +70,7 @@ window.fujiScore = {
       try {
         if (window.QUIZ_SLUG) slug = window.QUIZ_SLUG;
         else if (window.QUIZ_META && window.QUIZ_META.slug) slug = window.QUIZ_META.slug;
-        else { var m = (location.search || "").match(/[?&]p=([a-z0-9]+-quiz)/i); if (m) slug = m[1].toLowerCase(); }
+        else { var m = (location.search || "").match(/[?&]p=([a-z0-9_-]+-quiz)/i); if (m) slug = m[1].toLowerCase(); }
       } catch (e) {}
     }
     if (!slug) { if (window.console) console.warn("[fujiScore] save dibatalkan: slug null"); return "skip"; }

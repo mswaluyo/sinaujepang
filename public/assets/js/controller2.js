@@ -1,15 +1,18 @@
 // CONTROLLER bag.2 — render soal + jawab (butuh QuizView.fbHTML dari view2.js).
 QuizController.renderOne = function () {
   var M = QuizModel, V = QuizView, C = QuizController;
-  var q = M.getQ(), sec = V.SECMAP[q.section]; C.markTab(sec);
-  document.getElementById("sec-head").className = "bg-gradient-to-r " + V.SECHEAD[sec][2] + " rounded-2xl p-4 text-white flex justify-between items-center";
-  document.getElementById("sec-title").textContent = V.SECHEAD[sec][0];
-  document.getElementById("sec-desc").textContent = V.SECHEAD[sec][1];
-  document.getElementById("sec-count").textContent = M.QS.filter(function (x) { return V.SECMAP[x.section] === sec; }).length + " Soal";
-  var secItems = M.QS.filter(function (x) { return V.SECMAP[x.section] === sec; });
+  var q = M.getQ();
+  var sec = V.SECMAP[q.section] || "sec_ssw";
+  C.markTab(sec);
+  var headConf = V.SECHEAD[sec] || ["EVALUASI KEAHLIAN SSW", "Ujian evaluasi keahlian Tokutei Ginou.", "from-emerald-600 to-teal-700"];
+  document.getElementById("sec-head").className = "bg-gradient-to-r " + headConf[2] + " rounded-2xl p-4 text-white flex justify-between items-center";
+  document.getElementById("sec-title").textContent = headConf[0];
+  document.getElementById("sec-desc").textContent = headConf[1];
+  document.getElementById("sec-count").textContent = M.QS.filter(function (x) { return (V.SECMAP[x.section] || "sec_ssw") === sec; }).length + " Soal";
+  var secItems = M.QS.filter(function (x) { return (V.SECMAP[x.section] || "sec_ssw") === sec; });
   var secIdx = 1;
   for (var si = 0; si < secItems.length; si++) { if (secItems[si].no === q.no) { secIdx = si + 1; break; } }
-  document.getElementById("pos").textContent = "Nomor " + secIdx + " / " + secItems.length + " (" + V.SECFULL[sec] + " - Total Soal ke-" + (M.cur + 1) + " dari " + M.QS.length + ")";
+  document.getElementById("pos").textContent = "Nomor " + secIdx + " / " + secItems.length + " (" + (V.SECFULL[sec] || "SSW") + " - Total Soal ke-" + (M.cur + 1) + " dari " + M.QS.length + ")";
   var navEl = document.getElementById("sec-nav-numbers");
   if (navEl) {
     var navH = "";
@@ -105,8 +108,8 @@ QuizController.calcScore = function () {
 };
 QuizController.quizSlug = function () {
   return window.QUIZ_SLUG || ((window.QUIZ_META && window.QUIZ_META.slug) ? window.QUIZ_META.slug : null)
-    || (function () { try { var m = (location.search || "").match(/[?&]p=([a-z0-9]+-quiz)/i); return m ? m[1].toLowerCase() : null; } catch (e) { return null; } })()
-    || (location.pathname.match(/([a-z0-9]+-quiz)/i) || [null, null])[1];
+    || (function () { try { var m = (location.search || "").match(/[?&]p=([a-z0-9_-]+-quiz)/i); return m ? m[1].toLowerCase() : null; } catch (e) { return null; } })()
+    || (location.pathname.match(/([a-z0-9_-]+-quiz)/i) || [null, null])[1];
 };
 QuizController.autosave = function () {
   try {

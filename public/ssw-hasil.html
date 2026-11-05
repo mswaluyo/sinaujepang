@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>特定技能評価試験結果通知書 - SinauJepang</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      background-color: #e2e8f0;
+      font-family: 'Noto Sans JP', 'Plus Jakarta Sans', sans-serif;
+      color: #0f172a;
+      padding: 24px 12px;
+      line-height: 1.35;
+    }
+    .page-container {
+      max-width: 794px; /* Format A4 Standard */
+      min-height: 1123px;
+      background: #ffffff;
+      margin: 0 auto;
+      padding: 44px 52px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      position: relative;
+    }
+    .header-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 24px;
+    }
+    .main-title {
+      font-size: 21px;
+      font-weight: 900;
+      letter-spacing: -0.2px;
+      color: #000;
+      margin-bottom: 4px;
+      line-height: 1.25;
+    }
+    .sub-title {
+      font-size: 11px;
+      color: #64748b;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 500;
+    }
+    .logo-container {
+      width: 68px;
+      height: 68px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .profile-section {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+      margin-bottom: 28px;
+    }
+    .photo-box {
+      width: 118px;
+      height: 152px;
+      background: #f8fafc;
+      border: 1px solid #cbd5e1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: inset 0 1px 3px rgba(0,0,0,0.06);
+    }
+    .photo-box img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .info-table {
+      width: 100%;
+      font-size: 13px;
+      border-collapse: collapse;
+    }
+    .info-table tr {
+      height: 32px;
+    }
+    .info-table td.label-col {
+      width: 170px;
+      vertical-align: top;
+      font-weight: 800;
+      color: #000;
+      line-height: 1.2;
+    }
+    .info-table td.label-col .en-sub {
+      display: block;
+      font-size: 9.5px;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .info-table td.sep-col {
+      width: 18px;
+      vertical-align: top;
+      font-weight: 700;
+      color: #000;
+      text-align: center;
+      padding-top: 1px;
+    }
+    .info-table td.val-col {
+      vertical-align: top;
+      font-weight: 600;
+      color: #0f172a;
+      padding-left: 6px;
+      font-size: 13.5px;
+    }
+    .section-notice {
+      font-size: 13px;
+      font-weight: 800;
+      margin-bottom: 3px;
+      color: #000;
+    }
+    .section-notice-sub {
+      font-size: 9.5px;
+      color: #64748b;
+      margin-bottom: 12px;
+    }
+    .divider {
+      border-top: 1px solid #cbd5e1;
+      margin-bottom: 18px;
+    }
+    .result-table {
+      width: 100%;
+      font-size: 13px;
+      margin-bottom: 26px;
+      border-collapse: collapse;
+    }
+    .result-table tr {
+      height: 38px;
+    }
+    .result-table td.label-col {
+      width: 170px;
+      font-weight: 800;
+      vertical-align: middle;
+      color: #000;
+      line-height: 1.2;
+    }
+    .result-table td.label-col .en-sub {
+      display: block;
+      font-size: 9.5px;
+      color: #64748b;
+      font-weight: 500;
+    }
+    .result-table td.sep-col {
+      width: 18px;
+      vertical-align: middle;
+      font-weight: 700;
+      color: #000;
+      text-align: center;
+    }
+    .result-table td.val-col {
+      font-weight: 700;
+      padding-left: 6px;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+    .score-breakdown-box {
+      margin-left: 180px;
+      font-size: 13px;
+      font-weight: 600;
+      margin-bottom: 32px;
+    }
+    .score-breakdown-box .item-row {
+      display: flex;
+      justify-content: space-between;
+      max-width: 360px;
+      margin-bottom: 8px;
+    }
+    .validity-notice {
+      font-size: 13px;
+      font-weight: 800;
+      color: #000;
+      margin-top: 24px;
+    }
+    .validity-notice-sub {
+      font-size: 9.5px;
+      color: #64748b;
+      margin-top: 2px;
+    }
+    .action-panel {
+      max-width: 794px;
+      margin: 18px auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+    @media print {
+      body {
+        background: #fff;
+        padding: 0;
+      }
+      .page-container {
+        box-shadow: none;
+        padding: 32px 48px;
+        margin: 0;
+        max-width: 100%;
+      }
+      .action-panel {
+        display: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Lembar Notifikasi Hasil Ujian SSW Model Resmi -->
+  <div class="page-container" id="sheet">
+    
+    <!-- Header -->
+    <div class="header-row">
+      <div>
+        <div class="main-title" id="cert-main-title">特定技能評価試験結果通知書</div>
+        <div class="sub-title" id="cert-sub-title">Notification of results for Specified Skilled Worker evaluation test</div>
+      </div>
+      <!-- Logo SinauJepang Asli -->
+      <div class="logo-container">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-full h-full shadow-sm rounded-2xl">
+          <defs>
+            <linearGradient id="sinauGrad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#0284c7"/>
+              <stop offset="1" stop-color="#38bdf8"/>
+            </linearGradient>
+          </defs>
+          <rect width="100" height="100" rx="22" fill="url(#sinauGrad)"/>
+          <text x="50" y="71" font-size="56" text-anchor="middle" fill="#ffffff" font-family="'Noto Sans JP', sans-serif" font-weight="900">学</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- Identitas Peserta Bersih & Rapi -->
+    <div class="profile-section">
+      <table class="info-table">
+        <tr>
+          <td class="label-col">
+            受験番号
+            <span class="en-sub">Registration Number</span>
+          </td>
+          <td class="sep-col">:</td>
+          <td class="val-col"><span id="val-reg">27130141</span></td>
+        </tr>
+        <tr>
+          <td class="label-col">
+            氏 名
+            <span class="en-sub">Name</span>
+          </td>
+          <td class="sep-col">:</td>
+          <td class="val-col"><span id="val-name">SUGENG WALUYO</span></td>
+        </tr>
+        <tr>
+          <td class="label-col">
+            メールアドレス
+            <span class="en-sub">Email</span>
+          </td>
+          <td class="sep-col">:</td>
+          <td class="val-col"><span id="val-email">-</span></td>
+        </tr>
+        <tr>
+          <td class="label-col">
+            国 籍
+            <span class="en-sub">Nationality</span>
+          </td>
+          <td class="sep-col">:</td>
+          <td class="val-col">Indonesia</td>
+        </tr>
+        <tr>
+          <td class="label-col">
+            受 験 地
+            <span class="en-sub">Test Location</span>
+          </td>
+          <td class="sep-col">:</td>
+          <td class="val-col">Indonesia</td>
+        </tr>
+        <tr>
+          <td class="label-col">
+            受 験 日
+            <span class="en-sub">Test Date</span>
+          </td>
+          <td class="sep-col">:</td>
+          <td class="val-col"><span id="val-date">2026/11/05 (yyyy/mm/dd)</span></td>
+        </tr>
+        <tr>
+          <td class="label-col">
+            発 行 者
+            <span class="en-sub">Issuer</span>
+          </td>
+          <td class="sep-col">:</td>
+          <td class="val-col">SinauJepang - Tokutei Ginou Skills Assessment Board</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- Section 2: Ringkasan Hasil Ujian -->
+    <div class="section-notice">試験の結果は以下の通りです。</div>
+    <div class="section-notice-sub">Your test results are as follows.</div>
+    <div class="divider"></div>
+
+    <table class="result-table">
+      <tr>
+        <td class="label-col">
+          試験名
+          <span class="en-sub">Exam Name</span>
+        </td>
+        <td class="sep-col">:</td>
+        <td class="val-col"><span id="val-exam-name">Specified Skilled Worker evaluation test (Indonesian)</span></td>
+      </tr>
+      <tr>
+        <td class="label-col">
+          合格正答率
+          <span class="en-sub">Passing Score</span>
+        </td>
+        <td class="sep-col">:</td>
+        <td class="val-col"><span id="val-pass-rate">65%</span></td>
+      </tr>
+      <tr>
+        <td class="label-col">
+          あなたの得点
+          <span class="en-sub">Your Score</span>
+        </td>
+        <td class="sep-col">:</td>
+        <td class="val-col"><span id="val-your-score" style="font-size: 16px; font-weight: 900;">0%</span></td>
+      </tr>
+      <tr>
+        <td class="label-col">
+          試験結果
+          <span class="en-sub">Exam Result</span>
+        </td>
+        <td class="sep-col">:</td>
+        <td class="val-col"><span id="val-result" style="font-size: 16px; font-weight: 900; color: #dc2626;">Fail</span></td>
+      </tr>
+    </table>
+
+    <!-- Section 3: Rincian Tiap Sub-Kategori / Mata Pelajaran -->
+    <div class="section-notice">各科目の正答率は以下の通りです。</div>
+    <div class="section-notice-sub">The percentage of correct answers for each section are as follows.</div>
+
+    <div class="score-breakdown-box" id="breakdown-list">
+      <div class="item-row">
+        <span>1. Pengetahuan &amp; Istilah Teknis (Gakka)</span>
+        <span>: <b id="sub-1">0%</b></span>
+      </div>
+      <div class="item-row">
+        <span>2. Prosedur &amp; Keselamatan Kerja</span>
+        <span>: <b id="sub-2">0%</b></span>
+      </div>
+      <div class="item-row">
+        <span>3. Praktik Operasional Keahlian (Jitsugi)</span>
+        <span>: <b id="sub-3">0%</b></span>
+      </div>
+    </div>
+
+    <!-- Masa Berlaku 10 Tahun -->
+    <div class="validity-notice">本結果通知書は受験日から10年間有効です。</div>
+    <div class="validity-notice-sub">The evaluation result notification is valid for 10 years from the date of test.</div>
+
+  </div>
+
+  <!-- Panel Aksi Pengguna (Tidak dicetak) -->
+  <div class="action-panel no-print">
+    <a href="/ssw.html" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px; padding:10px 18px; background:#fff; border:1px solid #cbd5e1; border-radius:10px; font-size:12px; font-weight:700; color:#374151;">
+      <i class="fa-solid fa-arrow-left"></i> Kembali ke Menu SSW
+    </a>
+    <div style="display:flex; gap:10px;">
+      <a href="#" id="btn-retest" style="text-decoration:none; display:inline-flex; align-items:center; gap:8px; padding:10px 20px; background:#0284c7; color:#fff; border-radius:10px; font-size:12px; font-weight:800;">
+        <i class="fa-solid fa-rotate-right"></i> Ulangi Simulasi
+      </a>
+      <button onclick="window.print()" style="cursor:pointer; display:inline-flex; align-items:center; gap:8px; padding:10px 20px; background:#0f172a; color:#fff; border:none; border-radius:10px; font-size:12px; font-weight:800;">
+        <i class="fa-solid fa-print"></i> Cetak Dokumen (PDF)
+      </button>
+    </div>
+  </div>
+
+  <script src="/assets/js/indexeddb.js"></script>
+  <script>
+  (async function () {
+    function q(n) {
+      try {
+        var m = (location.search || '').match(new RegExp('[?&]' + n + '=([^&]+)'));
+        return m ? decodeURIComponent(m[1]) : '';
+      } catch (e) { return ''; }
+    }
+
+    var slug = q('paket') || 'ssw-peternakan-quiz';
+    var isKaigo = /kaigo/i.test(slug);
+
+    // Ambil Data Profil Akun Login Google Pengguna
+    var nama = 'SUGENG WALUYO';
+    var email = '-';
+
+    try {
+      var u = await window.IndexedDB.getItem('jft_user');
+      if (!u) {
+        try { u = JSON.parse(localStorage.getItem('jft_user') || 'null'); } catch (e) {}
+      }
+      if (u) {
+        if (u.name) nama = u.name.toUpperCase();
+        else if (u.email) nama = u.email.split('@')[0].toUpperCase();
+        if (u.email) email = u.email;
+      }
+    } catch (e) {}
+
+    // Ambil Data Hasil Percobaan
+    var R = null;
+    try {
+      var a = await window.IndexedDB.getItem('jft_attempts_' + slug);
+      if (a) R = a;
+    } catch (e) {}
+    if (!R) {
+      try {
+        var raw = JSON.parse(localStorage.getItem('jft_hasil') || '{}');
+        R = raw[slug] || null;
+      } catch (e) {}
+    }
+
+    var benar = R ? (R.benar || 0) : 0;
+    var total = R ? (R.total || 45) : 45;
+    var pc = total ? Math.round(benar / total * 100) : (R && R.skor != null ? R.skor : 0);
+    var passThreshold = isKaigo ? 60 : 65;
+    var pass = (pc >= passThreshold);
+
+    // Tampilkan Nama Lengkap & Email
+    document.getElementById('val-name').textContent = nama;
+    document.getElementById('val-email').textContent = email;
+
+    // Nomor Registrasi (konsisten)
+    var seed = Math.abs((nama + slug).split('').reduce(function(a,b){return (a<<5)-a+b.charCodeAt(0);},0));
+    var regNum = '27' + String(seed).padStart(6, '0').slice(-6);
+    document.getElementById('val-reg').textContent = regNum;
+
+    // Tanggal
+    var dt = (R && R.at) ? new Date(R.at) : new Date();
+    var yyyy = dt.getFullYear();
+    var mm = String(dt.getMonth() + 1).padStart(2, '0');
+    var dd = String(dt.getDate()).padStart(2, '0');
+    document.getElementById('val-date').textContent = yyyy + '/' + mm + '/' + dd + ' (yyyy/mm/dd)';
+
+    // Sesuaikan Judul Sesuai Sektor
+    var examTitleJP = isKaigo ? '介護日本語評価試験結果通知書' : '特定技能評価試験結果通知書';
+    var examTitleEN = isKaigo ? 'Notification of results for Nursing care Japanese language evaluation test' : 'Notification of results for Specified Skilled Worker evaluation test';
+    var examSubject = isKaigo ? 'Nursing care Japanese language evaluation test (Indonesian)' : (slug.replace('-quiz', '').replace('ssw-', 'SSW ').toUpperCase() + ' evaluation test (Indonesian)');
+
+    document.getElementById('cert-main-title').textContent = examTitleJP;
+    document.getElementById('cert-sub-title').textContent = examTitleEN;
+    document.getElementById('val-exam-name').textContent = examSubject;
+    document.getElementById('val-pass-rate').textContent = passThreshold + '%';
+
+    // Skor & Status Hasil
+    document.getElementById('val-your-score').textContent = pc + '%';
+    var resEl = document.getElementById('val-result');
+    if (pass) {
+      resEl.textContent = 'Pass';
+      resEl.style.color = '#047857'; // Hijau Emerald
+    } else {
+      resEl.textContent = 'Fail';
+      resEl.style.color = '#dc2626'; // Merah
+    }
+
+    // Breakdown Sub-Kompetensi Eksak Nyata
+    var bdBox = document.getElementById('breakdown-list');
+    var cats = (R && R.cats) ? R.cats : null;
+
+    if (cats && cats.gakka && cats.anzen && cats.jitsugi) {
+      var pGakka = cats.gakka.total ? Math.round(cats.gakka.benar / cats.gakka.total * 100) : 0;
+      var pAnzen = cats.anzen.total ? Math.round(cats.anzen.benar / cats.anzen.total * 100) : 0;
+      var pJitsugi = cats.jitsugi.total ? Math.round(cats.jitsugi.benar / cats.jitsugi.total * 100) : 0;
+
+      if (isKaigo) {
+        bdBox.innerHTML = '<div class="item-row"><span>1. Technical terms of care</span><span>: <b>' + pGakka + '%</b> (' + cats.gakka.benar + '/' + cats.gakka.total + ')</span></div>' +
+          '<div class="item-row"><span>2. Communications of care</span><span>: <b>' + pAnzen + '%</b> (' + cats.anzen.benar + '/' + cats.anzen.total + ')</span></div>' +
+          '<div class="item-row"><span>3. Documents of care</span><span>: <b>' + pJitsugi + '%</b> (' + cats.jitsugi.benar + '/' + cats.jitsugi.total + ')</span></div>';
+      } else {
+        bdBox.innerHTML = '<div class="item-row"><span>1. Pengetahuan &amp; Istilah Teknis (Gakka)</span><span>: <b>' + pGakka + '%</b> (' + cats.gakka.benar + '/' + cats.gakka.total + ')</span></div>' +
+          '<div class="item-row"><span>2. Prosedur &amp; Keselamatan Kerja</span><span>: <b>' + pAnzen + '%</b> (' + cats.anzen.benar + '/' + cats.anzen.total + ')</span></div>' +
+          '<div class="item-row"><span>3. Praktik Operasional Keahlian (Jitsugi)</span><span>: <b>' + pJitsugi + '%</b> (' + cats.jitsugi.benar + '/' + cats.jitsugi.total + ')</span></div>';
+      }
+    } else {
+      if (isKaigo) {
+        bdBox.innerHTML = '<div class="item-row"><span>1. Technical terms of care</span><span>: <b>' + pc + '%</b></span></div>' +
+          '<div class="item-row"><span>2. Communications of care</span><span>: <b>' + pc + '%</b></span></div>' +
+          '<div class="item-row"><span>3. Documents of care</span><span>: <b>' + pc + '%</b></span></div>';
+      } else {
+        bdBox.innerHTML = '<div class="item-row"><span>1. Pengetahuan &amp; Istilah Teknis (Gakka)</span><span>: <b>' + pc + '%</b></span></div>' +
+          '<div class="item-row"><span>2. Prosedur &amp; Keselamatan Kerja</span><span>: <b>' + pc + '%</b></span></div>' +
+          '<div class="item-row"><span>3. Praktik Operasional Keahlian (Jitsugi)</span><span>: <b>' + pc + '%</b></span></div>';
+      }
+    }
+
+    // Tombol Ulangi
+    document.getElementById('btn-retest').href = '/ssw-quiz.html?p=' + encodeURIComponent(slug);
+  })();
+  </script>
+</body>
+</html>

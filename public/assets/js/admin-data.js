@@ -19,7 +19,7 @@ function _qCols() {
     { k: "soal", label: "Soal", align: "center", cls: "px-3", val: o => (o.total || 0) },
     { k: "benar", label: "Benar", align: "center", cls: "px-3", val: o => (o.benar ?? o.bestBenar ?? 0) },
     { k: "skor", label: "Skor", align: "center", cls: "px-3", val: o => (o.skor ?? o.best ?? 0) },
-    { k: "jft", label: "Skala JFT", align: "left", cls: "px-3", val: o => _qJftExact(o.benar ?? o.bestBenar ?? 0, o.total ?? 0) },
+    { k: "jft", label: "Skala / Standar", align: "left", cls: "px-3", val: o => (/^ssw-/i.test(o.slug || "") ? (o.skor ?? o.best ?? 0) : _qJftExact(o.benar ?? o.bestBenar ?? 0, o.total ?? 0)) },
     ujian
       ? { k: "ujian", label: "Ujian", align: "center", cls: "px-3", val: o => (o.nShow ?? o.n ?? 0) }
       : { k: "hapus", label: "Hapus", align: "center", cls: "px-3", val: null },
@@ -65,7 +65,12 @@ function _qTime(v) {
   return v.at || 0;
 }
 function _qFmt(t) { try { return t ? new Date(t).toLocaleString("id-ID", { day: "2-digit", month: "2-digit", hour: "2-digit", minute: "2-digit" }) : "-"; } catch (e) { return "-"; } }
-function _qJft(p, benar, total) {
+function _qJft(p, benar, total, slug) {
+  if (slug && /^ssw-/i.test(slug)) {
+    const pc = (p != null) ? p : (total ? Math.round((benar / total) * 100) : 0);
+    const ok = pc >= 65;
+    return pc + "% - <span class='font-extrabold " + (ok ? "text-emerald-600" : "text-rose-500") + "'>" + (ok ? "LULUS" : "BELUM") + "</span>";
+  }
   const J = (benar != null && total != null) ? _qJftExact(benar, total) : Math.round(10 + (p / 100) * 240);
   const lv = J >= 200 ? "A2" : J >= 175 ? "A2.1" : J >= 145 ? "A1" : "0";
   const c = J >= 200 ? "text-emerald-600" : J >= 175 ? "text-lime-600" : J >= 145 ? "text-amber-600" : "text-slate-400";
@@ -131,8 +136,9 @@ function renderNilai() {
     window._qLastD = _qSortRows(Object.values(g)).slice(0, _q.shown); window._qLastD.forEach((o, _ix) => {
       _qDetailRows.push({ name: o.name, email: o.email, slug: o.slug, benar: o.bestBenar, total: o.total, t: o.bestT || o.last, secs: o.bestSecs, n: o.nShow });
       const di = _qDetailRows.length - 1;
+      const isSSW = /^ssw-/i.test(o.slug || "");
       const jftVal = _qJftExact(o.bestBenar, o.total);
-      const ok = jftVal >= 200;
+      const ok = isSSW ? ((o.best || 0) >= 65) : (jftVal >= 200);
       html += "<tr class='hover:bg-fuji-50/60 transition-colors'>"
         + "<td class='px-4 py-2.5 text-slate-500 whitespace-nowrap'>" + _qFmt(o.bestT || o.last) + "</td>"
         + "<td class='px-3 py-2.5'><div class='font-bold text-slate-800 leading-tight'>" + _qEsc(o.name || "-") + "</div><div class='text-[11px] text-slate-400'>" + _qEsc(o.email || "") + "</div></td>"
@@ -140,7 +146,7 @@ function renderNilai() {
         + "<td class='px-3 py-2.5 text-center text-slate-500'>" + (o.total || 0) + "</td>"
         + "<td class='px-3 py-2.5 text-center font-bold text-slate-700'>" + o.bestBenar + "</td>"
         + "<td class='px-3 py-2.5 text-center font-extrabold " + (ok ? "text-emerald-600" : "text-slate-700") + "'>" + o.best + "%</td>"
-        + "<td class='px-3 py-2.5 text-slate-600 whitespace-nowrap'>" + _qJft(o.best, o.bestBenar, o.total) + "</td>"
+        + "<td class='px-3 py-2.5 text-slate-600 whitespace-nowrap'>" + _qJft(o.best, o.bestBenar, o.total, o.slug) + "</td>"
         + "<td class='px-3 py-2.5 text-center'><span class='text-[11px] font-bold text-slate-500 bg-slate-100 px-2 py-0.5 rounded-full'>" + o.nShow + "x</span></td>"
         + "<td class='px-3 py-2.5 text-center'>" + _qBadge(ok ? "Lulus" : "Belum", ok) + "</td>"
         + "<td class='px-4 py-2.5 text-right'><button onclick='window._aDetail(" + di + ")' class='inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-700 text-white text-[12px] font-bold px-3 py-1.5 rounded-lg transition-colors'><i class='fa-solid fa-file-lines'></i>Detail</button></td></tr>";
@@ -152,8 +158,9 @@ function renderNilai() {
     _qSortRows(listFin).slice(0, _q.shown).forEach(v => {
       _qDetailRows.push({ name: v.name, email: v.email, slug: v.slug, benar: v.benar, total: v.total, t: v._t, secs: v.secs || null });
       const di = _qDetailRows.length - 1;
+      const isSSW = /^ssw-/i.test(v.slug || "");
       const jftVal = _qJftExact(v.benar, v.total);
-      const ok = jftVal >= 200;
+      const ok = isSSW ? ((v.skor || 0) >= 65) : (jftVal >= 200);
       html += "<tr class='hover:bg-fuji-50/60 transition-colors'>"
         + "<td class='px-4 py-2.5 text-slate-500 whitespace-nowrap'>" + _qFmt(v._t) + "</td>"
         + "<td class='px-3 py-2.5'><div class='font-bold text-slate-800 leading-tight'>" + _qEsc(v.name || "-") + "</div><div class='text-[11px] text-slate-400'>" + _qEsc(v.email || "") + "</div></td>"
@@ -161,7 +168,7 @@ function renderNilai() {
         + "<td class='px-3 py-2.5 text-center text-slate-500'>" + (v.total || 0) + "</td>"
         + "<td class='px-3 py-2.5 text-center font-bold text-slate-700'>" + (v.benar || 0) + "</td>"
         + "<td class='px-3 py-2.5 text-center font-extrabold " + (ok ? "text-emerald-600" : "text-slate-700") + "'>" + (v.skor || 0) + "%</td>"
-        + "<td class='px-3 py-2.5 text-slate-600 whitespace-nowrap'>" + _qJft(v.skor || 0, v.benar, v.total) + "</td>"
+        + "<td class='px-3 py-2.5 text-slate-600 whitespace-nowrap'>" + _qJft(v.skor || 0, v.benar, v.total, v.slug) + "</td>"
         + "<td class='px-3 py-2.5 text-center'><button data-del='" + v._id + "' title='Hapus percobaan ini' class='inline-flex items-center gap-1 text-[12px] font-bold text-rose-500 hover:text-white hover:bg-rose-500 border border-rose-200 hover:border-rose-500 px-2.5 py-1.5 rounded-lg transition-colors'><i class='fa-solid fa-trash-can'></i></button></td>"
         + "<td class='px-4 py-2.5 text-right'><button onclick='window._aDetail(" + di + ")' class='inline-flex items-center gap-1.5 bg-slate-900 hover:bg-slate-700 text-white text-[12px] font-bold px-3 py-1.5 rounded-lg transition-colors'><i class='fa-solid fa-file-lines'></i>Detail</button></td></tr>";
     });
