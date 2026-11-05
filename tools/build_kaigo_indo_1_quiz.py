@@ -76,3 +76,4 @@ with open(target_file, 'w', encoding='utf-8') as out_f:
     json.dump(quiz_items, out_f, ensure_ascii=False, indent=2)
 
 print(f"Successfully generated {target_file} with {len(quiz_items)} questions!")
+
