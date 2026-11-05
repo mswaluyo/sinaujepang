@@ -26,7 +26,7 @@
     "answer": 2,
     "kunci_id": "C. Meningkatkan sirkulasi darah",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Meningkatkan sirkulasi darah**.",
+    "analisis": "**Jawaban Tepat:** C. Meningkatkan sirkulasi darah\n\n**Analisis Medis & Logika Keperawatan:**\nSecara fisiologis, berendam dalam air hangat (38°C–40°C) memicu vasodilatasi pembuluh darah tepi, sehingga meningkatkan aliran darah (*circulation improvement*) dan metabolisme jaringan. Selain itu, efek tekanan hidrostatis air membantu aliran balik vena (*venous return*) dan efek apung (*buoyancy*) merelaksasi ketegangan neuromuskular.\n\n**Istilah Kesehatan Terkait:**\n*Vasodilatasi (pelebaran lumen pembuluh darah), Efek Hidrostatis, Venous Return (aliran balik darah vena ke jantung).*",
     "opt_note": [
       "(A. Menurunkan suhu tubuh)",
       "(B. Menyebabkan stres)",
@@ -61,7 +61,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 1)",
+        "desc": "Secara fisiologis, berendam dalam air hangat (38°C–40°C) memicu vasodilatasi pembuluh darah tepi, sehingga meningkatkan aliran darah (*circulation improvement*) dan metabolisme jaringan. Selain itu, efek tekanan hidrostatis air membantu aliran balik vena (*venous return*) dan efek apung (*buoyancy*) merelaksasi ketegangan neuromuskular."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Vasodilatasi (pelebaran lumen pembuluh darah), Efek Hidrostatis, Venous Return (aliran balik darah vena ke jantung)."
+      }
+    ]
   },
   {
     "no": 2,
@@ -90,7 +100,7 @@
     "answer": 1,
     "kunci_id": "B. Duduk 90 derajat",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Duduk 90 derajat**.",
+    "analisis": "**Jawaban Tepat:** B. Duduk 90 derajat\n\n**Analisis Medis & Logika Keperawatan:**\nPosisi duduk tegak (sudut 90 derajat atau condong sedikit ke depan dengan dagu agak ditarik/fleksi leher) membuka jalan masuk makanan ke esofagus dan menutup laring melalui epiglotis. Postur ini sangat krusial untuk mencegah pneumonia aspirasi (*aspiration pneumonia*) dan mempermudah refleks menelan (*deglutition*).\n\n**Istilah Kesehatan Terkait:**\n*Pneumonia Aspirasi (radang paru akibat masuknya benda asing/makanan), Epiglotis, Fleksi Leher, Refleks Deglutisi (menelan).*",
     "opt_note": [
       "(A. Berbaring miring)",
       "(B. Duduk 90 derajat)",
@@ -125,7 +135,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 2)",
+        "desc": "Posisi duduk tegak (sudut 90 derajat atau condong sedikit ke depan dengan dagu agak ditarik/fleksi leher) membuka jalan masuk makanan ke esofagus dan menutup laring melalui epiglotis. Postur ini sangat krusial untuk mencegah pneumonia aspirasi (*aspiration pneumonia*) dan mempermudah refleks menelan (*deglutition*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Pneumonia Aspirasi (radang paru akibat masuknya benda asing/makanan), Epiglotis, Fleksi Leher, Refleks Deglutisi (menelan)."
+      }
+    ]
   },
   {
     "no": 3,
@@ -154,7 +174,7 @@
     "answer": 1,
     "kunci_id": "B. Kiri",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Kiri**.",
+    "analisis": "**Jawaban Tepat:** B. Kiri\n\n**Analisis Medis & Logika Keperawatan:**\nPada pasien hemiplegia (kelumpuhan separuh tubuh), berlaku prinsip dasar keperawatan Jepang **'Kugi-Dakkan' (脱健着患)**: Saat mengenakan pakaian, masukkan bagian tubuh yang sakit/lumpuh terlebih dahulu (*Kugi*), lalu bagian tubuh yang sehat. Sebaliknya, saat melepas pakaian, lepaskan sisi yang sehat terlebih dahulu (*Dakkan*). Ini meminimalkan peregangan berlebih dan risiko dislokasi sendi pada sisi paretik/plegik.\n\n**Istilah Kesehatan Terkait:**\n*Hemiplegia (kelumpuhan unilateral), Kugi-Dakkan (着患脱健 - pakai sisi lumpuh dulu, lepas sisi sehat dulu), Sisi Paretik.*",
     "opt_note": [
       "(A. Kanan)",
       "(B. Kiri)",
@@ -189,7 +209,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kokoro",
-    "category_label": "2. Mechanisms of mind and body (こころとからだのしくみ)"
+    "category_label": "2. Mechanisms of mind and body (こころとからだのしくみ)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 3)",
+        "desc": "Pada pasien hemiplegia (kelumpuhan separuh tubuh), berlaku prinsip dasar keperawatan Jepang **'Kugi-Dakkan' (脱健着患)**: Saat mengenakan pakaian, masukkan bagian tubuh yang sakit/lumpuh terlebih dahulu (*Kugi*), lalu bagian tubuh yang sehat. Sebaliknya, saat melepas pakaian, lepaskan sisi yang sehat terlebih dahulu (*Dakkan*). Ini meminimalkan peregangan berlebih dan risiko dislokasi sendi pada sisi paretik/plegik."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Hemiplegia (kelumpuhan unilateral), Kugi-Dakkan (着患脱健 - pakai sisi lumpuh dulu, lepas sisi sehat dulu), Sisi Paretik."
+      }
+    ]
   },
   {
     "no": 4,
@@ -218,7 +248,7 @@
     "answer": 1,
     "kunci_id": "B. Menggunakan alat bantu jalan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Menggunakan alat bantu jalan**.",
+    "analisis": "**Jawaban Tepat:** B. Menggunakan alat bantu jalan\n\n**Analisis Medis & Logika Keperawatan:**\nLansia mengalami penurunan propriosepsi (orientasi posisi tubuh), kekuatan otot ekstremitas bawah, dan refleks keseimbangan. Penggunaan alat bantu jalan (*walking aids* seperti tongkat kaki empat/walker) memperluas bidang tumpuan (*base of support*) sehingga pusat gravitasi tubuh (*center of gravity*) tetap stabil dan mencegah insiden jatuh (*fall prevention*).\n\n**Istilah Kesehatan Terkait:**\n*Propriosepsi (kepekaan sensorik posisi sendi), Fall Risk (risiko jatuh), Base of Support (landasan tumpuan).*",
     "opt_note": [
       "(A. Memakai sepatu hak)",
       "(B. Menggunakan alat bantu jalan)",
@@ -253,7 +283,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 4)",
+        "desc": "Lansia mengalami penurunan propriosepsi (orientasi posisi tubuh), kekuatan otot ekstremitas bawah, dan refleks keseimbangan. Penggunaan alat bantu jalan (*walking aids* seperti tongkat kaki empat/walker) memperluas bidang tumpuan (*base of support*) sehingga pusat gravitasi tubuh (*center of gravity*) tetap stabil dan mencegah insiden jatuh (*fall prevention*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Propriosepsi (kepekaan sensorik posisi sendi), Fall Risk (risiko jatuh), Base of Support (landasan tumpuan)."
+      }
+    ]
   },
   {
     "no": 5,
@@ -282,7 +322,7 @@
     "answer": 2,
     "kunci_id": "C. Keamanan dan kestabilan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Keamanan dan kestabilan**.",
+    "analisis": "**Jawaban Tepat:** C. Keamanan dan kestabilan\n\n**Analisis Medis & Logika Keperawatan:**\nDalam proses transfer pasien dari tempat tidur ke kursi roda (*wheelchair transfer*), prioritas utama adalah kestabilan mekanik dan keamanan fisik. Kursi roda wajib diposisikan miring 20°–30° di sisi tubuh pasien yang sehat (*healthy side*), rem terkunci (*wheel lock*), serta pijakan kaki dilipat ke samping (*footrest folded*) agar pasien tidak tersandung.\n\n**Istilah Kesehatan Terkait:**\n*Transfer & Mobilisasi, Sisi Kontralateral Sehat, Wheel Lock, Footrest.*",
     "opt_note": [
       "(A. Posisi tangan)",
       "(B. Kecepatan)",
@@ -317,7 +357,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 5)",
+        "desc": "Dalam proses transfer pasien dari tempat tidur ke kursi roda (*wheelchair transfer*), prioritas utama adalah kestabilan mekanik dan keamanan fisik. Kursi roda wajib diposisikan miring 20°–30° di sisi tubuh pasien yang sehat (*healthy side*), rem terkunci (*wheel lock*), serta pijakan kaki dilipat ke samping (*footrest folded*) agar pasien tidak tersandung."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Transfer & Mobilisasi, Sisi Kontralateral Sehat, Wheel Lock, Footrest."
+      }
+    ]
   },
   {
     "no": 6,
@@ -346,7 +396,7 @@
     "answer": 2,
     "kunci_id": "C. Fakta dan observasi",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Fakta dan observasi**.",
+    "analisis": "**Jawaban Tepat:** C. Fakta dan observasi\n\n**Analisis Medis & Logika Keperawatan:**\nPencatatan rekam asuhan keperawatan lansia (*Kaigo Kiroku*) wajib berpedoman pada data objektif hasil observasi langsung (tanda vital, asupan cairan, eliminasi, perubahan kulit) dan fakta terukur. Menggunakan asumsi, spekulasi, atau insting berpotensi memicu kesalahan penanganan medis (*medical error*) dan melanggar kode etik pelaporan klinis.\n\n**Istilah Kesehatan Terkait:**\n*Kaigo Kiroku (介護記録 - dokumentasi klinis keperawatan), Data Objektif vs Subjektif, Legalitas Dokumentasi.*",
     "opt_note": [
       "(A. Asumsi)",
       "(B. Pengalaman)",
@@ -381,7 +431,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 6)",
+        "desc": "Pencatatan rekam asuhan keperawatan lansia (*Kaigo Kiroku*) wajib berpedoman pada data objektif hasil observasi langsung (tanda vital, asupan cairan, eliminasi, perubahan kulit) dan fakta terukur. Menggunakan asumsi, spekulasi, atau insting berpotensi memicu kesalahan penanganan medis (*medical error*) dan melanggar kode etik pelaporan klinis."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Kaigo Kiroku (介護記録 - dokumentasi klinis keperawatan), Data Objektif vs Subjektif, Legalitas Dokumentasi."
+      }
+    ]
   },
   {
     "no": 7,
@@ -410,7 +470,7 @@
     "answer": 1,
     "kunci_id": "B. Ketiak",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Ketiak**.",
+    "analisis": "**Jawaban Tepat:** B. Ketiak\n\n**Analisis Medis & Logika Keperawatan:**\nKelenjar keringat apokrin (*apocrine sweat glands*) terlokalisasi di area folikel rambut tertentu seperti ketiak (aksila), areola mammae, dan area genital/perineum. Sekresi apokrin mengandung protein dan lipid yang ketika didegradasi oleh bakteri flora kulit menghasilkan bau khas tubuh (bromhidrosis).\n\n**Istilah Kesehatan Terkait:**\n*Kelenjar Apokrin, Aksila (ketiak), Flora Normal Kulit, Bromhidrosis.*",
     "opt_note": [
       "(A. Punggung)",
       "(B. Ketiak)",
@@ -445,7 +505,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 7)",
+        "desc": "Kelenjar keringat apokrin (*apocrine sweat glands*) terlokalisasi di area folikel rambut tertentu seperti ketiak (aksila), areola mammae, dan area genital/perineum. Sekresi apokrin mengandung protein dan lipid yang ketika didegradasi oleh bakteri flora kulit menghasilkan bau khas tubuh (bromhidrosis)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Kelenjar Apokrin, Aksila (ketiak), Flora Normal Kulit, Bromhidrosis."
+      }
+    ]
   },
   {
     "no": 8,
@@ -474,7 +544,7 @@
     "answer": 2,
     "kunci_id": "C. Quality of Life",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Quality of Life**.",
+    "analisis": "**Jawaban Tepat:** C. Quality of Life\n\n**Analisis Medis & Logika Keperawatan:**\nQOL (*Quality of Life*) dalam ranah geriatri adalah konsep multidimensi yang mencakup kesejahteraan fisik, psikologis, interaksi sosial, serta kepuasan spiritual dan aktualisasi diri pasien lansia, melampaui sekadar perawatan fungsi tubuh atau kuantitas usia biologis.\n\n**Istilah Kesehatan Terkait:**\n*Quality of Life (kualitas hidup holistik), Geriatri, Well-being.*",
     "opt_note": [
       "(A. Kualitas Organ Luar)",
       "(B. Kualitas Orang Lansia)",
@@ -509,7 +579,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 8)",
+        "desc": "QOL (*Quality of Life*) dalam ranah geriatri adalah konsep multidimensi yang mencakup kesejahteraan fisik, psikologis, interaksi sosial, serta kepuasan spiritual dan aktualisasi diri pasien lansia, melampaui sekadar perawatan fungsi tubuh atau kuantitas usia biologis."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Quality of Life (kualitas hidup holistik), Geriatri, Well-being."
+      }
+    ]
   },
   {
     "no": 9,
@@ -538,7 +618,7 @@
     "answer": 1,
     "kunci_id": "B. Kerangka kerja fungsi dan disabilitas",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Kerangka kerja fungsi dan disabilitas**.",
+    "analisis": "**Jawaban Tepat:** B. Kerangka kerja fungsi dan disabilitas\n\n**Analisis Medis & Logika Keperawatan:**\nICF (*International Classification of Functioning, Disability, and Health*) oleh WHO memandang disabilitas bukan sebagai kekurangan biologis semata, melainkan hasil interaksi dinamis antara kondisi kesehatan seseorang dengan faktor lingkungan (*environmental factors*) serta faktor personal. ICF fokus pada kemampuan fungsi dan partisipasi sosial individu.\n\n**Istilah Kesehatan Terkait:**\n*ICF (WHO), Environmental Factors, Partisipasi Sosial, Kemandirian Fungsional.*",
     "opt_note": [
       "(A. Sistem saraf)",
       "(B. Kerangka kerja fungsi dan disabilitas)",
@@ -573,7 +653,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 9)",
+        "desc": "ICF (*International Classification of Functioning, Disability, and Health*) oleh WHO memandang disabilitas bukan sebagai kekurangan biologis semata, melainkan hasil interaksi dinamis antara kondisi kesehatan seseorang dengan faktor lingkungan (*environmental factors*) serta faktor personal. ICF fokus pada kemampuan fungsi dan partisipasi sosial individu."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "ICF (WHO), Environmental Factors, Partisipasi Sosial, Kemandirian Fungsional."
+      }
+    ]
   },
   {
     "no": 10,
@@ -602,7 +692,7 @@
     "answer": 2,
     "kunci_id": "C. Inkontinensia",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Inkontinensia**.",
+    "analisis": "**Jawaban Tepat:** C. Inkontinensia\n\n**Analisis Medis & Logika Keperawatan:**\nSeiring penuaan, tonus otot sfingter uretra dan dasar panggul melemah serta kapasitas fungsional kandung kemih menurun, mengakibatkan inkontinensia urin (*urinary incontinence*). Hal ini merupakan sindrom geriatri klasik yang membutuhkan intervensi jadwal berkemih dan latihan penguatan otot panggul.\n\n**Istilah Kesehatan Terkait:**\n*Inkontinensia Urin, Sfingter Uretra, Pelvic Floor Muscle (otot dasar panggul), Geriatric Syndrome.*",
     "opt_note": [
       "(A. Skoliosis)",
       "(B. Fraktur tulang)",
@@ -637,7 +727,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 10)",
+        "desc": "Seiring penuaan, tonus otot sfingter uretra dan dasar panggul melemah serta kapasitas fungsional kandung kemih menurun, mengakibatkan inkontinensia urin (*urinary incontinence*). Hal ini merupakan sindrom geriatri klasik yang membutuhkan intervensi jadwal berkemih dan latihan penguatan otot panggul."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Inkontinensia Urin, Sfingter Uretra, Pelvic Floor Muscle (otot dasar panggul), Geriatric Syndrome."
+      }
+    ]
   },
   {
     "no": 11,
@@ -666,7 +766,7 @@
     "answer": 1,
     "kunci_id": "B. Keseimbangan kondisi tubuh",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Keseimbangan kondisi tubuh**.",
+    "analisis": "**Jawaban Tepat:** B. Keseimbangan kondisi tubuh\n\n**Analisis Medis & Logika Keperawatan:**\nHomeostasis adalah kemampuan inheren sistem biologis tubuh untuk mempertahankan keseimbangan lingkungan internal yang stabil dan dinamis (seperti regulasi pH darah, suhu inti tubuh, glukosa, dan cairan tubuh) meskipun terjadi fluktuasi lingkungan eksternal.\n\n**Istilah Kesehatan Terkait:**\n*Homeostasis, Regulasi Fisiologis, Milieu Intérieur, Termoregulasi.*",
     "opt_note": [
       "(A. Proses pengeluaran urine)",
       "(B. Keseimbangan kondisi tubuh)",
@@ -701,7 +801,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 11)",
+        "desc": "Homeostasis adalah kemampuan inheren sistem biologis tubuh untuk mempertahankan keseimbangan lingkungan internal yang stabil dan dinamis (seperti regulasi pH darah, suhu inti tubuh, glukosa, dan cairan tubuh) meskipun terjadi fluktuasi lingkungan eksternal."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Homeostasis, Regulasi Fisiologis, Milieu Intérieur, Termoregulasi."
+      }
+    ]
   },
   {
     "no": 12,
@@ -730,7 +840,7 @@
     "answer": 2,
     "kunci_id": "C. Keamanan dan kenyamanan pasien",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Keamanan dan kenyamanan pasien**.",
+    "analisis": "**Jawaban Tepat:** C. Keamanan dan kenyamanan pasien\n\n**Analisis Medis & Logika Keperawatan:**\nSaat proses mandi (*bathing care/nyuyoku*), regulasi suhu air (mencegah *heat shock syndrome*), kestabilan tumpuan saat transfer bak mandi, dan kenyamanan psikologis/privasi adalah pilar terpenting untuk menghindari kecelakaan seperti hipotensi mendadak, terpeleset, atau hipotermia.\n\n**Istilah Kesehatan Terkait:**\n*Heat Shock Syndrome (lonjakan/penurunan tensi mendadak akibat perbedaan suhu ekstrem), Hipotermia, Safety Precaution.*",
     "opt_note": [
       "(A. Hanya membasahi rambut)",
       "(B. Tidak perlu melepas pakaian)",
@@ -765,7 +875,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 12)",
+        "desc": "Saat proses mandi (*bathing care/nyuyoku*), regulasi suhu air (mencegah *heat shock syndrome*), kestabilan tumpuan saat transfer bak mandi, dan kenyamanan psikologis/privasi adalah pilar terpenting untuk menghindari kecelakaan seperti hipotensi mendadak, terpeleset, atau hipotermia."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Heat Shock Syndrome (lonjakan/penurunan tensi mendadak akibat perbedaan suhu ekstrem), Hipotermia, Safety Precaution."
+      }
+    ]
   },
   {
     "no": 13,
@@ -794,7 +914,7 @@
     "answer": 1,
     "kunci_id": "B. Pastikan pasien duduk tegak",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Pastikan pasien duduk tegak**.",
+    "analisis": "**Jawaban Tepat:** B. Pastikan pasien duduk tegak\n\n**Analisis Medis & Logika Keperawatan:**\nPostur tubuh tegak lurus saat makan memastikan aksis saluran pencernaan bagian atas berada dalam posisi anatomis optimal. Hal ini mencegah tekanan intratorakal abnormal dan mengurangi risiko masuknya bolus makanan ke saluran trakea/paru-paru.\n\n**Istilah Kesehatan Terkait:**\n*Bolus Makanan, Trakea vs Esofagus, Anatomi Laringo-Faringeal.*",
     "opt_note": [
       "(A. Tidak perlu posisi khusus)",
       "(B. Pastikan pasien duduk tegak)",
@@ -829,7 +949,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 13)",
+        "desc": "Postur tubuh tegak lurus saat makan memastikan aksis saluran pencernaan bagian atas berada dalam posisi anatomis optimal. Hal ini mencegah tekanan intratorakal abnormal dan mengurangi risiko masuknya bolus makanan ke saluran trakea/paru-paru."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Bolus Makanan, Trakea vs Esofagus, Anatomi Laringo-Faringeal."
+      }
+    ]
   },
   {
     "no": 14,
@@ -858,7 +988,7 @@
     "answer": 2,
     "kunci_id": "C. Menyiapkan alat dan menjelaskan prosedur",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Menyiapkan alat dan menjelaskan prosedur**.",
+    "analisis": "**Jawaban Tepat:** C. Menyiapkan alat dan menjelaskan prosedur\n\n**Analisis Medis & Logika Keperawatan:**\nMenyiapkan seluruh peralatan (handuk, air hangat, pakaian pengganti, sabun pH netral) dan memberikan informed explanation/persetujuan (*consent*) sebelum memandikan lansia bertujuan menjaga kesiapan mental pasien, mencegah kecemasan, serta meminimalkan waktu tubuh terpapar udara dingin.\n\n**Istilah Kesehatan Terkait:**\n*Informed Consent, Persiapan Alat & Lingkungan, Termoregulasi Pasien.*",
     "opt_note": [
       "(A. Menyiram air)",
       "(B. Membuka jendela)",
@@ -893,7 +1023,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 14)",
+        "desc": "Menyiapkan seluruh peralatan (handuk, air hangat, pakaian pengganti, sabun pH netral) dan memberikan informed explanation/persetujuan (*consent*) sebelum memandikan lansia bertujuan menjaga kesiapan mental pasien, mencegah kecemasan, serta meminimalkan waktu tubuh terpapar udara dingin."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Informed Consent, Persiapan Alat & Lingkungan, Termoregulasi Pasien."
+      }
+    ]
   },
   {
     "no": 15,
@@ -922,7 +1062,7 @@
     "answer": 1,
     "kunci_id": "B. Menjaga kebersihan dan mencegah infeksi",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Menjaga kebersihan dan mencegah infeksi**.",
+    "analisis": "**Jawaban Tepat:** B. Menjaga kebersihan dan mencegah infeksi\n\n**Analisis Medis & Logika Keperawatan:**\nRongga mulut lansia rentan menjadi reservoir koloni bakteri patogen anaerob. Perawatan mulut (*oral hygiene/oral care*) menyingkirkan plak gigi, melembabkan mukosa, dan secara signifikan menurunkan morbiditas pneumonia aspirasi pada populasi geriatri tirah baring.\n\n**Istilah Kesehatan Terkait:**\n*Oral Hygiene, Kolonisasi Bakteri Anaerob, Mukosa Oral, Pencegahan Infeksi Silang.*",
     "opt_note": [
       "(A. Agar bibir tidak kering)",
       "(B. Menjaga kebersihan dan mencegah infeksi)",
@@ -957,7 +1097,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 15)",
+        "desc": "Rongga mulut lansia rentan menjadi reservoir koloni bakteri patogen anaerob. Perawatan mulut (*oral hygiene/oral care*) menyingkirkan plak gigi, melembabkan mukosa, dan secara signifikan menurunkan morbiditas pneumonia aspirasi pada populasi geriatri tirah baring."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Oral Hygiene, Kolonisasi Bakteri Anaerob, Mukosa Oral, Pencegahan Infeksi Silang."
+      }
+    ]
   },
   {
     "no": 16,
@@ -986,7 +1136,7 @@
     "answer": 2,
     "kunci_id": "C. Dalam kondisi stres atau bahaya",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Dalam kondisi stres atau bahaya**.",
+    "analisis": "**Jawaban Tepat:** C. Dalam kondisi stres atau bahaya\n\n**Analisis Medis & Logika Keperawatan:**\nSistem saraf simpatis (*sympathetic nervous system*) memediasi respon fisiologis 'fight-or-flight' saat tubuh mengalami stres, ancaman, atau stimulasi akut. Responnya mencakup takikardia (peningkatan denyut jantung), bronkodilatasi, dan peningkatan tekanan darah sistemik.\n\n**Istilah Kesehatan Terkait:**\n*Sistem Saraf Simpatis, Fight-or-Flight Response, Takikardia, Vasokonstriksi Perifer.*",
     "opt_note": [
       "(A. Tidur)",
       "(B. Istirahat)",
@@ -1021,7 +1171,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kokoro",
-    "category_label": "2. Mechanisms of mind and body (こころとからだのしくみ)"
+    "category_label": "2. Mechanisms of mind and body (こころとからだのしくみ)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 16)",
+        "desc": "Sistem saraf simpatis (*sympathetic nervous system*) memediasi respon fisiologis 'fight-or-flight' saat tubuh mengalami stres, ancaman, atau stimulasi akut. Responnya mencakup takikardia (peningkatan denyut jantung), bronkodilatasi, dan peningkatan tekanan darah sistemik."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Sistem Saraf Simpatis, Fight-or-Flight Response, Takikardia, Vasokonstriksi Perifer."
+      }
+    ]
   },
   {
     "no": 17,
@@ -1050,7 +1210,7 @@
     "answer": 1,
     "kunci_id": "B. Memastikan kaki menyentuh lantai",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Memastikan kaki menyentuh lantai**.",
+    "analisis": "**Jawaban Tepat:** B. Memastikan kaki menyentuh lantai\n\n**Analisis Medis & Logika Keperawatan:**\nSebelum lansia ditegakkan berdiri, kedua telapak kaki harus menapak rata di lantai (*feet flat on floor*). Tumpuan plantar ini memberikan input proprioseptif ke otak, menjaga stabilitas pusat gravitasi, dan mencegah sindrom hipotensi ortostatik (pusing mendadak).\n\n**Istilah Kesehatan Terkait:**\n*Plantar Surface (telapak kaki), Proprioseptif, Hipotensi Ortostatik.*",
     "opt_note": [
       "(A. Menarik langsung)",
       "(B. Memastikan kaki menyentuh lantai)",
@@ -1085,7 +1245,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 17)",
+        "desc": "Sebelum lansia ditegakkan berdiri, kedua telapak kaki harus menapak rata di lantai (*feet flat on floor*). Tumpuan plantar ini memberikan input proprioseptif ke otak, menjaga stabilitas pusat gravitasi, dan mencegah sindrom hipotensi ortostatik (pusing mendadak)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Plantar Surface (telapak kaki), Proprioseptif, Hipotensi Ortostatik."
+      }
+    ]
   },
   {
     "no": 18,
@@ -1114,7 +1284,7 @@
     "answer": 1,
     "kunci_id": "B. Kaki kiri di depan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Kaki kiri di depan**.",
+    "analisis": "**Jawaban Tepat:** B. Kaki kiri di depan\n\n**Analisis Medis & Logika Keperawatan:**\nKaki yang sehat/tidak sakit (*sound leg*) memiliki kekuatan muskuloskeletal penuh untuk menahan beban aksial tubuh. Dengan memposisikan kaki yang sehat sedikit di depan, pasien memiliki tumpuan daya dorong maksimal saat melakukan ekstensi panggul dan lutut untuk berdiri.\n\n**Istilah Kesehatan Terkait:**\n*Weight-bearing (penumpuan beban tubuh), Ekstensi Muskuloskeletal, Kaki Kontralateral Sehat.*",
     "opt_note": [
       "(A. Kaki kanan di depan)",
       "(B. Kaki kiri di depan)",
@@ -1149,7 +1319,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 18)",
+        "desc": "Kaki yang sehat/tidak sakit (*sound leg*) memiliki kekuatan muskuloskeletal penuh untuk menahan beban aksial tubuh. Dengan memposisikan kaki yang sehat sedikit di depan, pasien memiliki tumpuan daya dorong maksimal saat melakukan ekstensi panggul dan lutut untuk berdiri."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Weight-bearing (penumpuan beban tubuh), Ekstensi Muskuloskeletal, Kaki Kontralateral Sehat."
+      }
+    ]
   },
   {
     "no": 19,
@@ -1178,7 +1358,7 @@
     "answer": 1,
     "kunci_id": "B. Pastikan ada pencahayaan cukup",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Pastikan ada pencahayaan cukup**.",
+    "analisis": "**Jawaban Tepat:** B. Pastikan ada pencahayaan cukup\n\n**Analisis Medis & Logika Keperawatan:**\nKondisi pencahayaan yang adekuat di area toilet sangat vital untuk mencegah lansia salah melangkah, kehilangan orientasi visual, atau tergelincir, mengingat lansia mengalami penurunan kemampuan akomodasi pupil dan adaptasi terhadap kegelapan (*dark adaptation*).\n\n**Istilah Kesehatan Terkait:**\n*Visual Spatial Orientation, Adaptasi Pencahayaan, Penurunan Visus Geriatri.*",
     "opt_note": [
       "(A. Tidak perlu privasi)",
       "(B. Pastikan ada pencahayaan cukup)",
@@ -1213,7 +1393,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 19)",
+        "desc": "Kondisi pencahayaan yang adekuat di area toilet sangat vital untuk mencegah lansia salah melangkah, kehilangan orientasi visual, atau tergelincir, mengingat lansia mengalami penurunan kemampuan akomodasi pupil dan adaptasi terhadap kegelapan (*dark adaptation*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Visual Spatial Orientation, Adaptasi Pencahayaan, Penurunan Visus Geriatri."
+      }
+    ]
   },
   {
     "no": 20,
@@ -1242,7 +1432,7 @@
     "answer": 1,
     "kunci_id": "B. Berdiri di belakang dan mendorong perlahan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Berdiri di belakang dan mendorong perlahan**.",
+    "analisis": "**Jawaban Tepat:** B. Berdiri di belakang dan mendorong perlahan\n\n**Analisis Medis & Logika Keperawatan:**\nPosisi perawat di belakang kursi roda memungkinkan kontrol visual penuh terhadap lintasan jalan dan menjaga pusat gaya dorong searah. Mendorong secara perlahan dan halus mencegah kejutan inersia pada kepala/tulang belakang pasien lansia.\n\n**Istilah Kesehatan Terkait:**\n*Inersia Gerak, Ergonomi Perawat, Sudut Pandang Pasien.*",
     "opt_note": [
       "(A. Berdiri di depan pasien)",
       "(B. Berdiri di belakang dan mendorong perlahan)",
@@ -1277,7 +1467,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 20)",
+        "desc": "Posisi perawat di belakang kursi roda memungkinkan kontrol visual penuh terhadap lintasan jalan dan menjaga pusat gaya dorong searah. Mendorong secara perlahan dan halus mencegah kejutan inersia pada kepala/tulang belakang pasien lansia."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Inersia Gerak, Ergonomi Perawat, Sudut Pandang Pasien."
+      }
+    ]
   },
   {
     "no": 21,
@@ -1306,7 +1506,7 @@
     "answer": 1,
     "kunci_id": "B. Di belakang mendorong ke atas",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Di belakang mendorong ke atas**.",
+    "analisis": "**Jawaban Tepat:** B. Di belakang mendorong ke atas\n\n**Analisis Medis & Logika Keperawatan:**\nSaat menaiki undakan, perawat menginjak tuas jungkit (*tipping lever*) di bagian bawah belakang kursi roda untuk mengangkat roda depan (*casters*) ke atas trotoar, lalu mendorong roda belakang besar naik secara mantap dari posisi belakang.\n\n**Istilah Kesehatan Terkait:**\n*Tipping Lever, Casters (roda kemudi depan), Center of Gravity.*",
     "opt_note": [
       "(A. Di samping pasien)",
       "(B. Di belakang mendorong ke atas)",
@@ -1341,7 +1541,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 21)",
+        "desc": "Saat menaiki undakan, perawat menginjak tuas jungkit (*tipping lever*) di bagian bawah belakang kursi roda untuk mengangkat roda depan (*casters*) ke atas trotoar, lalu mendorong roda belakang besar naik secara mantap dari posisi belakang."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Tipping Lever, Casters (roda kemudi depan), Center of Gravity."
+      }
+    ]
   },
   {
     "no": 22,
@@ -1370,7 +1580,7 @@
     "answer": 0,
     "kunci_id": "A. Menarik dari depan dengan hati-hati",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **A. Menarik dari depan dengan hati-hati**.",
+    "analisis": "**Jawaban Tepat:** A. Menarik dari depan dengan hati-hati\n\n**Analisis Medis & Logika Keperawatan:**\nSaat menuruni undakan, posisi kursi roda dibalik (arah mundur) atau perawat menahan dan menarik roda belakang perlahan dari depan/bawah undakan agar tubuh pasien tidak terlempar ke depan akibat gaya gravitasi lereng.\n\n**Istilah Kesehatan Terkait:**\n*Deceleration Control, Pencegahan Cedera Akselerasi-Deselerasi.*",
     "opt_note": [
       "(A. Menarik dari depan dengan hati-hati)",
       "(B. Mendorong dari belakang)",
@@ -1405,7 +1615,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 22)",
+        "desc": "Saat menuruni undakan, posisi kursi roda dibalik (arah mundur) atau perawat menahan dan menarik roda belakang perlahan dari depan/bawah undakan agar tubuh pasien tidak terlempar ke depan akibat gaya gravitasi lereng."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Deceleration Control, Pencegahan Cedera Akselerasi-Deselerasi."
+      }
+    ]
   },
   {
     "no": 23,
@@ -1434,7 +1654,7 @@
     "answer": 2,
     "kunci_id": "C. Gangguan makan dan perawatan mulut",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Gangguan makan dan perawatan mulut**.",
+    "analisis": "**Jawaban Tepat:** C. Gangguan makan dan perawatan mulut\n\n**Analisis Medis & Logika Keperawatan:**\nNyeri odontogenik (sakit gigi/inflamasi gingiva) menyebabkan gangguan mekanis pengunyahan (*mastication disorder*), penurunan asupan kalori/malnutrisi, serta keengganan membuka mulut untuk perawatan oral rutin.\n\n**Istilah Kesehatan Terkait:**\n*Odontogenik, Gangguan Mastikasi (mengunyah), Malnutrisi Geriatri.*",
     "opt_note": [
       "(A. Pilek)",
       "(B. Masalah pencernaan)",
@@ -1469,7 +1689,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 23)",
+        "desc": "Nyeri odontogenik (sakit gigi/inflamasi gingiva) menyebabkan gangguan mekanis pengunyahan (*mastication disorder*), penurunan asupan kalori/malnutrisi, serta keengganan membuka mulut untuk perawatan oral rutin."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Odontogenik, Gangguan Mastikasi (mengunyah), Malnutrisi Geriatri."
+      }
+    ]
   },
   {
     "no": 24,
@@ -1498,7 +1728,7 @@
     "answer": 1,
     "kunci_id": "B. Penumpukan cairan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Penumpukan cairan**.",
+    "analisis": "**Jawaban Tepat:** B. Penumpukan cairan\n\n**Analisis Medis & Logika Keperawatan:**\nEdema perifer pada lansia timbul akibat akumulasi cairan abnormal di ruang interstitial, yang dipicu oleh penurunan tekanan onkotik plasma (hipoalbuminemia), insufisiensi pompa vena jantung, atau penurunan fungsi filtrasi ginjal.\n\n**Istilah Kesehatan Terkait:**\n*Edema Interstitial, Tekanan Onkotik Plasma, Hipoalbuminemia, Gagal Jantung Kongestif.*",
     "opt_note": [
       "(A. Kekurangan tidur)",
       "(B. Penumpukan cairan)",
@@ -1533,7 +1763,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 24)",
+        "desc": "Edema perifer pada lansia timbul akibat akumulasi cairan abnormal di ruang interstitial, yang dipicu oleh penurunan tekanan onkotik plasma (hipoalbuminemia), insufisiensi pompa vena jantung, atau penurunan fungsi filtrasi ginjal."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Edema Interstitial, Tekanan Onkotik Plasma, Hipoalbuminemia, Gagal Jantung Kongestif."
+      }
+    ]
   },
   {
     "no": 25,
@@ -1562,7 +1802,7 @@
     "answer": 2,
     "kunci_id": "C. Mencegah kesalahan dan meningkatkan keselamatan pasien",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Mencegah kesalahan dan meningkatkan keselamatan pasien**.",
+    "analisis": "**Jawaban Tepat:** C. Mencegah kesalahan dan meningkatkan keselamatan pasien\n\n**Analisis Medis & Logika Keperawatan:**\nKomunikasi antar-profesi kesehatan (seperti sistem Horenso: Houkoku, Renraku, Soudan) memastikan transmisi data klinis secara akurat, mengurangi risiko kelalaian operan tugas (*handover failure*), dan meningkatkan *patient safety*.\n\n**Istilah Kesehatan Terkait:**\n*Patient Safety, Handover/Operan Klinis, Interprofessional Collaboration.*",
     "opt_note": [
       "(A. Agar tidak merasa kesepian)",
       "(B. Untuk dokumentasi)",
@@ -1597,7 +1837,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "communication",
-    "category_label": "3. Communication skills (コミュニケーション技術)"
+    "category_label": "3. Communication skills (コミュニケーション技術)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 25)",
+        "desc": "Komunikasi antar-profesi kesehatan (seperti sistem Horenso: Houkoku, Renraku, Soudan) memastikan transmisi data klinis secara akurat, mengurangi risiko kelalaian operan tugas (*handover failure*), dan meningkatkan *patient safety*."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Patient Safety, Handover/Operan Klinis, Interprofessional Collaboration."
+      }
+    ]
   },
   {
     "no": 26,
@@ -1626,7 +1876,7 @@
     "answer": 1,
     "kunci_id": "B. Kebersihan dan keamanan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Kebersihan dan keamanan**.",
+    "analisis": "**Jawaban Tepat:** B. Kebersihan dan keamanan\n\n**Analisis Medis & Logika Keperawatan:**\nBantuan kebersihan tubuh (*hygiene care*) harus menyeimbangkan antara pembersihan sebum/mikroorganisme patogen dengan proteksi fisik integritas kulit lansia yang sudah menipis (*atrophic skin*) agar tidak lecet atau hipotermia.\n\n**Istilah Kesehatan Terkait:**\n*Atrophic Skin (kulit menipis/rentan), Integritas Kulit, Barrier Protection.*",
     "opt_note": [
       "(A. Estetika)",
       "(B. Kebersihan dan keamanan)",
@@ -1661,7 +1911,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 26)",
+        "desc": "Bantuan kebersihan tubuh (*hygiene care*) harus menyeimbangkan antara pembersihan sebum/mikroorganisme patogen dengan proteksi fisik integritas kulit lansia yang sudah menipis (*atrophic skin*) agar tidak lecet atau hipotermia."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Atrophic Skin (kulit menipis/rentan), Integritas Kulit, Barrier Protection."
+      }
+    ]
   },
   {
     "no": 27,
@@ -1690,7 +1950,7 @@
     "answer": 2,
     "kunci_id": "C. Mencegah infeksi dan meningkatkan kenyamanan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Mencegah infeksi dan meningkatkan kenyamanan**.",
+    "analisis": "**Jawaban Tepat:** C. Mencegah infeksi dan meningkatkan kenyamanan\n\n**Analisis Medis & Logika Keperawatan:**\nOral hygiene yang higienis menekan pembentukan bio-film mikroba di sulkus gingiva, mengurangi kolonisasi streptokokus/bakteri gram negatif, serta memulihkan sensitivitas papila lidah untuk kenyamanan pengecapan.\n\n**Istilah Kesehatan Terkait:**\n*Bio-film Mikroba, Sulkus Gingiva, Papila Pengecap, Kolonisasi Bakteri.*",
     "opt_note": [
       "(A. Mempercepat waktu makan)",
       "(B. Menurunkan tekanan darah)",
@@ -1725,7 +1985,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 27)",
+        "desc": "Oral hygiene yang higienis menekan pembentukan bio-film mikroba di sulkus gingiva, mengurangi kolonisasi streptokokus/bakteri gram negatif, serta memulihkan sensitivitas papila lidah untuk kenyamanan pengecapan."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Bio-film Mikroba, Sulkus Gingiva, Papila Pengecap, Kolonisasi Bakteri."
+      }
+    ]
   },
   {
     "no": 28,
@@ -1754,7 +2024,7 @@
     "answer": 1,
     "kunci_id": "B. Inkontinensia stres",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Inkontinensia stres**.",
+    "analisis": "**Jawaban Tepat:** B. Inkontinensia stres\n\n**Analisis Medis & Logika Keperawatan:**\nInkontinensia stres (*stress urinary incontinence*) adalah kebocoran urin involunter yang timbul akibat peningkatan mendadak tekanan intra-abdomen (saat batuk, bersin, atau tertawa) yang melebihi resistensi penutupan sfingter uretra.\n\n**Istilah Kesehatan Terkait:**\n*Inkontinensia Stres, Tekanan Intra-abdomen, Inkontinensia Involunter.*",
     "opt_note": [
       "(A. Urgensi)",
       "(B. Inkontinensia stres)",
@@ -1789,7 +2059,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 28)",
+        "desc": "Inkontinensia stres (*stress urinary incontinence*) adalah kebocoran urin involunter yang timbul akibat peningkatan mendadak tekanan intra-abdomen (saat batuk, bersin, atau tertawa) yang melebihi resistensi penutupan sfingter uretra."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Inkontinensia Stres, Tekanan Intra-abdomen, Inkontinensia Involunter."
+      }
+    ]
   },
   {
     "no": 29,
@@ -1818,7 +2098,7 @@
     "answer": 2,
     "kunci_id": "C. Kaki kuat",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Kaki kuat**.",
+    "analisis": "**Jawaban Tepat:** C. Kaki kuat\n\n**Analisis Medis & Logika Keperawatan:**\nRumus biomekanik menaiki tangga adalah: Kaki yang kuat/sehat melangkah terlebih dahulu untuk mengangkat seluruh massa tubuh ke atas, baru diikuti tongkat dan kaki yang lemah (*Good foot to heaven*).\n\n**Istilah Kesehatan Terkait:**\n*Weight-shifting, Fase Konsentris Otot Kuadrisep, Sisi Kontralateral.*",
     "opt_note": [
       "(A. Kaki sakit)",
       "(B. Kaki lemah)",
@@ -1853,7 +2133,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 29)",
+        "desc": "Rumus biomekanik menaiki tangga adalah: Kaki yang kuat/sehat melangkah terlebih dahulu untuk mengangkat seluruh massa tubuh ke atas, baru diikuti tongkat dan kaki yang lemah (*Good foot to heaven*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Weight-shifting, Fase Konsentris Otot Kuadrisep, Sisi Kontralateral."
+      }
+    ]
   },
   {
     "no": 30,
@@ -1882,7 +2172,7 @@
     "answer": 1,
     "kunci_id": "B. Menjaga privasi dan keselamatan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Menjaga privasi dan keselamatan**.",
+    "analisis": "**Jawaban Tepat:** B. Menjaga privasi dan keselamatan\n\n**Analisis Medis & Logika Keperawatan:**\nMenutupi bagian tubuh yang belum/selesai dibersihkan dengan handuk hangat menjaga privasi (*dignity*) serta mencegah kehilangan panas tubuh secara evaporasi (*evaporative heat loss*).\n\n**Istilah Kesehatan Terkait:**\n*Evaporative Heat Loss, Dignity/Martabat Pasien, Proteksi Privasi.*",
     "opt_note": [
       "(A. Membiarkan pasien sendiri)",
       "(B. Menjaga privasi dan keselamatan)",
@@ -1917,7 +2207,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 30)",
+        "desc": "Menutupi bagian tubuh yang belum/selesai dibersihkan dengan handuk hangat menjaga privasi (*dignity*) serta mencegah kehilangan panas tubuh secara evaporasi (*evaporative heat loss*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Evaporative Heat Loss, Dignity/Martabat Pasien, Proteksi Privasi."
+      }
+    ]
   },
   {
     "no": 31,
@@ -1946,7 +2246,7 @@
     "answer": 1,
     "kunci_id": "B. Sedikit menekuk",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Sedikit menekuk**.",
+    "analisis": "**Jawaban Tepat:** B. Sedikit menekuk\n\n**Analisis Medis & Logika Keperawatan:**\nSesuai prinsip ergonomi dan biomekanika tubuh (*body mechanics*), perawat menekuk sendi lutut dan pinggul untuk merendahkan pusat gravitasi serta menggunakan kekuatan otot kuadrisep femoris paha yang besar, bukan meregangkan otot lumbal pinggang.\n\n**Istilah Kesehatan Terkait:**\n*Body Mechanics, Otot Kuadrisep Femoris, Pencegahan Nyeri Lumbal (LBP).*",
     "opt_note": [
       "(A. Lurus)",
       "(B. Sedikit menekuk)",
@@ -1981,7 +2281,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 31)",
+        "desc": "Sesuai prinsip ergonomi dan biomekanika tubuh (*body mechanics*), perawat menekuk sendi lutut dan pinggul untuk merendahkan pusat gravitasi serta menggunakan kekuatan otot kuadrisep femoris paha yang besar, bukan meregangkan otot lumbal pinggang."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Body Mechanics, Otot Kuadrisep Femoris, Pencegahan Nyeri Lumbal (LBP)."
+      }
+    ]
   },
   {
     "no": 32,
@@ -2010,7 +2320,7 @@
     "answer": 0,
     "kunci_id": "A. Di atas kursi roda (belakang)",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **A. Di atas kursi roda (belakang)**.",
+    "analisis": "**Jawaban Tepat:** A. Di atas kursi roda (belakang)\n\n**Analisis Medis & Logika Keperawatan:**\nSaat menuruni lereng/tangga menggunakan kursi roda, perawat berada di sisi atas (belakang kursi roda) dengan berjalan mundur perlahan, mencegah beban pasien menggelinding jatuh ke bawah akibat gravitasi.\n\n**Istilah Kesehatan Terkait:**\n*Gravitational Torque, Backward Maneuver, Retensi Kursi Roda.*",
     "opt_note": [
       "(A. Di atas kursi roda (belakang))",
       "(B. Di bawah menarik)",
@@ -2045,7 +2355,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 32)",
+        "desc": "Saat menuruni lereng/tangga menggunakan kursi roda, perawat berada di sisi atas (belakang kursi roda) dengan berjalan mundur perlahan, mencegah beban pasien menggelinding jatuh ke bawah akibat gravitasi."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Gravitational Torque, Backward Maneuver, Retensi Kursi Roda."
+      }
+    ]
   },
   {
     "no": 33,
@@ -2074,7 +2394,7 @@
     "answer": 0,
     "kunci_id": "A. Fase oral",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **A. Fase oral**.",
+    "analisis": "**Jawaban Tepat:** A. Fase oral\n\n**Analisis Medis & Logika Keperawatan:**\nProses menelan secara fisiologis dibagi menjadi 5 fase: Fase Antisipatori (kognitif visual), Fase Oral Persiapan (mengunyah), Fase Oral Propulsif (mendorong bolus ke faring), Fase Faringeal (refleks penutupan laring), dan Fase Esofageal.\n\n**Istilah Kesehatan Terkait:**\n*Fase Oral, Fase Faringeal, Fase Esofageal, Bolus Transport.*",
     "opt_note": [
       "(A. Fase oral)",
       "(B. Fase lambung)",
@@ -2109,7 +2429,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 33)",
+        "desc": "Proses menelan secara fisiologis dibagi menjadi 5 fase: Fase Antisipatori (kognitif visual), Fase Oral Persiapan (mengunyah), Fase Oral Propulsif (mendorong bolus ke faring), Fase Faringeal (refleks penutupan laring), dan Fase Esofageal."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Fase Oral, Fase Faringeal, Fase Esofageal, Bolus Transport."
+      }
+    ]
   },
   {
     "no": 34,
@@ -2138,7 +2468,7 @@
     "answer": 1,
     "kunci_id": "B. Penerangan cukup dan lantai tidak licin",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Penerangan cukup dan lantai tidak licin**.",
+    "analisis": "**Jawaban Tepat:** B. Penerangan cukup dan lantai tidak licin\n\n**Analisis Medis & Logika Keperawatan:**\nArea kamar mandi basah merupakan lokasi insiden fraktur collum femoris (patah tulang pangkal paha) tertinggi pada lansia akibat lantai licin (*slippery surface*) dan visibilitas rendah.\n\n**Istilah Kesehatan Terkait:**\n*Fraktur Collum Femoris, Non-slip Flooring, High-risk Environment.*",
     "opt_note": [
       "(A. Lantai licin)",
       "(B. Penerangan cukup dan lantai tidak licin)",
@@ -2173,7 +2503,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 34)",
+        "desc": "Area kamar mandi basah merupakan lokasi insiden fraktur collum femoris (patah tulang pangkal paha) tertinggi pada lansia akibat lantai licin (*slippery surface*) dan visibilitas rendah."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Fraktur Collum Femoris, Non-slip Flooring, High-risk Environment."
+      }
+    ]
   },
   {
     "no": 35,
@@ -2202,7 +2542,7 @@
     "answer": 2,
     "kunci_id": "C. Dicuci dengan lembut dan direndam",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Dicuci dengan lembut dan direndam**.",
+    "analisis": "**Jawaban Tepat:** C. Dicuci dengan lembut dan direndam\n\n**Analisis Medis & Logika Keperawatan:**\nGigi tiruan (*denture*) terbuat dari resin akrilik yang rapuh jika disikat terlalu keras dan dapat mengalami deformasi struktural (*warping*) jika terkena air panas. Perendaman dalam air bersih mencegah dehidrasi resin.\n\n**Istilah Kesehatan Terkait:**\n*Gigi Tiruan Akrilik, Warping (perubahan bentuk), Denture Cleanser.*",
     "opt_note": [
       "(A. Disikat keras)",
       "(B. Dicuci dengan air panas)",
@@ -2237,7 +2577,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 35)",
+        "desc": "Gigi tiruan (*denture*) terbuat dari resin akrilik yang rapuh jika disikat terlalu keras dan dapat mengalami deformasi struktural (*warping*) jika terkena air panas. Perendaman dalam air bersih mencegah dehidrasi resin."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Gigi Tiruan Akrilik, Warping (perubahan bentuk), Denture Cleanser."
+      }
+    ]
   },
   {
     "no": 36,
@@ -2266,7 +2616,7 @@
     "answer": 1,
     "kunci_id": "B. Jangan memotong terlalu pendek",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Jangan memotong terlalu pendek**.",
+    "analisis": "**Jawaban Tepat:** B. Jangan memotong terlalu pendek\n\n**Analisis Medis & Logika Keperawatan:**\nKulit di bawah bantalan kuku (*hyponychium*) lansia sering kali menyatu lebih dekat ke ujung kuku. Memotong kuku terlalu pendek dapat melukai jaringan vaskular dan memicu paronikia (infeksi tepi kuku).\n\n**Istilah Kesehatan Terkait:**\n*Hyponychium, Paronikia (infeksi lipatan kuku), Square-cut Technique.*",
     "opt_note": [
       "(A. Gunting tajam)",
       "(B. Jangan memotong terlalu pendek)",
@@ -2301,7 +2651,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 36)",
+        "desc": "Kulit di bawah bantalan kuku (*hyponychium*) lansia sering kali menyatu lebih dekat ke ujung kuku. Memotong kuku terlalu pendek dapat melukai jaringan vaskular dan memicu paronikia (infeksi tepi kuku)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Hyponychium, Paronikia (infeksi lipatan kuku), Square-cut Technique."
+      }
+    ]
   },
   {
     "no": 37,
@@ -2330,7 +2690,7 @@
     "answer": 1,
     "kunci_id": "B. Fisiologis, keamanan, sosial, penghargaan, aktualisasi",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Fisiologis, keamanan, sosial, penghargaan, aktualisasi**.",
+    "analisis": "**Jawaban Tepat:** B. Fisiologis, keamanan, sosial, penghargaan, aktualisasi\n\n**Analisis Medis & Logika Keperawatan:**\nHierarki Kebutuhan Dasar Manusia Abraham Maslow menempatkan kebutuhan biologis fisiologis (oksigen, nutrisi, hidrasi, eliminasi) pada hierarki paling mendasar, diikuti rasa aman, sosial, penghargaan diri, dan aktualisasi diri.\n\n**Istilah Kesehatan Terkait:**\n*Kebutuhan Fisiologis Dasar, Aktualisasi Diri, Hirarki Maslow.*",
     "opt_note": [
       "(A. Ekonomi, politik, sosial)",
       "(B. Fisiologis, keamanan, sosial, penghargaan, aktualisasi)",
@@ -2365,7 +2725,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 37)",
+        "desc": "Hierarki Kebutuhan Dasar Manusia Abraham Maslow menempatkan kebutuhan biologis fisiologis (oksigen, nutrisi, hidrasi, eliminasi) pada hierarki paling mendasar, diikuti rasa aman, sosial, penghargaan diri, dan aktualisasi diri."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Kebutuhan Fisiologis Dasar, Aktualisasi Diri, Hirarki Maslow."
+      }
+    ]
   },
   {
     "no": 38,
@@ -2394,7 +2764,7 @@
     "answer": 1,
     "kunci_id": "B. Mengatur fungsi tubuh otomatis (denyut jantung, pernapasan)",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Mengatur fungsi tubuh otomatis (denyut jantung, pernapasan)**.",
+    "analisis": "**Jawaban Tepat:** B. Mengatur fungsi tubuh otomatis (denyut jantung, pernapasan)\n\n**Analisis Medis & Logika Keperawatan:**\nSistem saraf otonom (simpatis dan parasimpatis) beroperasi secara tidak sadar (*involuntary*) untuk mengatur fungsi organ viseral esensial seperti denyut nodus SA jantung, motilitas peristaltik lambung-usus, dan tonus vaskular.\n\n**Istilah Kesehatan Terkait:**\n*Sistem Saraf Otonom, Organ Viseral, Nodus Sinoatrialis, Motilitas Peristaltik.*",
     "opt_note": [
       "(A. Menggerakkan otot sadar)",
       "(B. Mengatur fungsi tubuh otomatis (denyut jantung, pernapasan))",
@@ -2429,7 +2799,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kokoro",
-    "category_label": "2. Mechanisms of mind and body (こころとからだのしくみ)"
+    "category_label": "2. Mechanisms of mind and body (こころとからだのしくみ)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 38)",
+        "desc": "Sistem saraf otonom (simpatis dan parasimpatis) beroperasi secara tidak sadar (*involuntary*) untuk mengatur fungsi organ viseral esensial seperti denyut nodus SA jantung, motilitas peristaltik lambung-usus, dan tonus vaskular."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Sistem Saraf Otonom, Organ Viseral, Nodus Sinoatrialis, Motilitas Peristaltik."
+      }
+    ]
   },
   {
     "no": 39,
@@ -2458,7 +2838,7 @@
     "answer": 1,
     "kunci_id": "B. Tongkat → kaki lemah → kaki kuat",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Tongkat → kaki lemah → kaki kuat**.",
+    "analisis": "**Jawaban Tepat:** B. Tongkat → kaki lemah → kaki kuat\n\n**Analisis Medis & Logika Keperawatan:**\nUrutan menuruni tangga dengan tongkat yang benar: (1) Tongkat terlebih dahulu untuk menopang stabilitas undakan bawah, (2) Kaki yang sakit/lemah turun, (3) Kaki yang sehat turun menopang berat badan (*Bad foot to hell*).\n\n**Istilah Kesehatan Terkait:**\n*Ambulasi Tangga, Tongkat Penopang Tiga Titik, Gait Phase.*",
     "opt_note": [
       "(A. Kaki kuat → tongkat → kaki lemah)",
       "(B. Tongkat → kaki lemah → kaki kuat)",
@@ -2493,7 +2873,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 39)",
+        "desc": "Urutan menuruni tangga dengan tongkat yang benar: (1) Tongkat terlebih dahulu untuk menopang stabilitas undakan bawah, (2) Kaki yang sakit/lemah turun, (3) Kaki yang sehat turun menopang berat badan (*Bad foot to hell*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Ambulasi Tangga, Tongkat Penopang Tiga Titik, Gait Phase."
+      }
+    ]
   },
   {
     "no": 40,
@@ -2522,7 +2912,7 @@
     "answer": 1,
     "kunci_id": "B. Perbanyak serat dan cairan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Perbanyak serat dan cairan**.",
+    "analisis": "**Jawaban Tepat:** B. Perbanyak serat dan cairan\n\n**Analisis Medis & Logika Keperawatan:**\nKonstipasi kronik pada lansia diatasi dengan asupan serat larut/tidak larut untuk meningkatkan massa feses (*fecal bulk*) serta hidrasi yang cukup untuk melunakkan konsistensi feses dan merangsang peristaltik kolon.\n\n**Istilah Kesehatan Terkait:**\n*Konstipasi Kronik, Fecal Bulk, Motilitas Kolon, Hidrasi Enteral.*",
     "opt_note": [
       "(A. Batasi cairan)",
       "(B. Perbanyak serat dan cairan)",
@@ -2557,7 +2947,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 40)",
+        "desc": "Konstipasi kronik pada lansia diatasi dengan asupan serat larut/tidak larut untuk meningkatkan massa feses (*fecal bulk*) serta hidrasi yang cukup untuk melunakkan konsistensi feses dan merangsang peristaltik kolon."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Konstipasi Kronik, Fecal Bulk, Motilitas Kolon, Hidrasi Enteral."
+      }
+    ]
   },
   {
     "no": 41,
@@ -2586,7 +2986,7 @@
     "answer": 1,
     "kunci_id": "B. Aspirasi makanan ke paru-paru",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Aspirasi makanan ke paru-paru**.",
+    "analisis": "**Jawaban Tepat:** B. Aspirasi makanan ke paru-paru\n\n**Analisis Medis & Logika Keperawatan:**\nPneumonia pada lansia paling sering dipicu oleh mikroaspirasi sekret oral atau cairan/makanan yang terkontaminasi kuman patogen ke dalam cabang trakeobronkial akibat gangguan refleks batuk dan penutupan glotis.\n\n**Istilah Kesehatan Terkait:**\n*Mikroaspirasi, Cabang Trakeobronkial, Refleks Batuk Menurun, Glotis.*",
     "opt_note": [
       "(A. Udara dingin)",
       "(B. Aspirasi makanan ke paru-paru)",
@@ -2621,7 +3021,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 41)",
+        "desc": "Pneumonia pada lansia paling sering dipicu oleh mikroaspirasi sekret oral atau cairan/makanan yang terkontaminasi kuman patogen ke dalam cabang trakeobronkial akibat gangguan refleks batuk dan penutupan glotis."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Mikroaspirasi, Cabang Trakeobronkial, Refleks Batuk Menurun, Glotis."
+      }
+    ]
   },
   {
     "no": 42,
@@ -2650,7 +3060,7 @@
     "answer": 2,
     "kunci_id": "C. Mendengarkan dan memahami perasaan pasien",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Mendengarkan dan memahami perasaan pasien**.",
+    "analisis": "**Jawaban Tepat:** C. Mendengarkan dan memahami perasaan pasien\n\n**Analisis Medis & Logika Keperawatan:**\nKomunikasi terapeutik dengan empati melibatkan keterampilan mendengarkan aktif (*active listening*), validasi afektif, dan penerimaan tanpa menghakimi (*unconditional positive regard*).\n\n**Istilah Kesehatan Terkait:**\n*Komunikasi Terapeutik, Active Listening, Validasi Afektif, Non-judgmental.*",
     "opt_note": [
       "(A. Berbicara cepat)",
       "(B. Mengabaikan perasaan pasien)",
@@ -2685,7 +3095,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "communication",
-    "category_label": "3. Communication skills (コミュニケーション技術)"
+    "category_label": "3. Communication skills (コミュニケーション技術)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 42)",
+        "desc": "Komunikasi terapeutik dengan empati melibatkan keterampilan mendengarkan aktif (*active listening*), validasi afektif, dan penerimaan tanpa menghakimi (*unconditional positive regard*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Komunikasi Terapeutik, Active Listening, Validasi Afektif, Non-judgmental."
+      }
+    ]
   },
   {
     "no": 43,
@@ -2714,7 +3134,7 @@
     "answer": 1,
     "kunci_id": "B. Jongkok dengan posisi tubuh tegak",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Jongkok dengan posisi tubuh tegak**.",
+    "analisis": "**Jawaban Tepat:** B. Jongkok dengan posisi tubuh tegak\n\n**Analisis Medis & Logika Keperawatan:**\nPosisi duduk condong ke depan (*squatting posture*) dengan lutut lebih tinggi dari panggul mengendurkan otot puborektalis, sehingga meluruskan sudut anorektal (*anorectal angle*) dan mempermudah evakuasi feses tanpa manuver mengejan berlebihan (*Valsalva maneuver*).\n\n**Istilah Kesehatan Terkait:**\n*Otot Puborektalis, Sudut Anorektal, Manuver Valsalva (mengejan berlebih).*",
     "opt_note": [
       "(A. Berbaring)",
       "(B. Jongkok dengan posisi tubuh tegak)",
@@ -2749,7 +3169,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 43)",
+        "desc": "Posisi duduk condong ke depan (*squatting posture*) dengan lutut lebih tinggi dari panggul mengendurkan otot puborektalis, sehingga meluruskan sudut anorektal (*anorectal angle*) dan mempermudah evakuasi feses tanpa manuver mengejan berlebihan (*Valsalva maneuver*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Otot Puborektalis, Sudut Anorektal, Manuver Valsalva (mengejan berlebih)."
+      }
+    ]
   },
   {
     "no": 44,
@@ -2778,7 +3208,7 @@
     "answer": 1,
     "kunci_id": "B. Pengatur suhu, pelindung, dan sensor",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Pengatur suhu, pelindung, dan sensor**.",
+    "analisis": "**Jawaban Tepat:** B. Pengatur suhu, pelindung, dan sensor\n\n**Analisis Medis & Logika Keperawatan:**\nSistem integumen (kulit) berfungsi komprehensif sebagai barier proteksi mekanik/mikrobiologis, organ termoregulasi melalui vasodilatasi kapiler & perspirasi keringat, serta transduser sensorik (reseptor raba, tekan, suhu, nyeri).\n\n**Istilah Kesehatan Terkait:**\n*Sistem Integumen, Termoregulasi, Reseptor Somatosensori, Barrier Function.*",
     "opt_note": [
       "(A. Tempat lemak)",
       "(B. Pengatur suhu, pelindung, dan sensor)",
@@ -2813,7 +3243,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 44)",
+        "desc": "Sistem integumen (kulit) berfungsi komprehensif sebagai barier proteksi mekanik/mikrobiologis, organ termoregulasi melalui vasodilatasi kapiler & perspirasi keringat, serta transduser sensorik (reseptor raba, tekan, suhu, nyeri)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Sistem Integumen, Termoregulasi, Reseptor Somatosensori, Barrier Function."
+      }
+    ]
   },
   {
     "no": 45,
@@ -2842,7 +3282,7 @@
     "answer": 2,
     "kunci_id": "C. Membantu mandi, makan, dan bergerak",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Membantu mandi, makan, dan bergerak**.",
+    "analisis": "**Jawaban Tepat:** C. Membantu mandi, makan, dan bergerak\n\n**Analisis Medis & Logika Keperawatan:**\nAktivitas Kehidupan Sehari-hari dasar (*Basic Activities of Daily Living - BADL*) berpusat pada pemenuhan kebutuhan primer mandiri seperti transfer posisi gerak, pemenuhan nutrisi makan, eliminasi, dan kebersihan diri mandi.\n\n**Istilah Kesehatan Terkait:**\n*Basic ADL (BADL), Kemandirian Fungsional, Home Care.*",
     "opt_note": [
       "(A. Membiarkan lansia tidur seharian)",
       "(B. Memberi makanan tidak sesuai)",
@@ -2877,7 +3317,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 45)",
+        "desc": "Aktivitas Kehidupan Sehari-hari dasar (*Basic Activities of Daily Living - BADL*) berpusat pada pemenuhan kebutuhan primer mandiri seperti transfer posisi gerak, pemenuhan nutrisi makan, eliminasi, dan kebersihan diri mandi."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Basic ADL (BADL), Kemandirian Fungsional, Home Care."
+      }
+    ]
   },
   {
     "no": 46,
@@ -2906,7 +3356,7 @@
     "answer": 2,
     "kunci_id": "C. Luka di mulut dan kenyamanan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Luka di mulut dan kenyamanan**.",
+    "analisis": "**Jawaban Tepat:** C. Luka di mulut dan kenyamanan\n\n**Analisis Medis & Logika Keperawatan:**\nPemeriksaan rongga mulut (*oral inspection*) bertujuan mendeteksi dini ulserasi mukosa, lesi stomatitis, kandidiasis oral, atau radang gingiva sebelum memulai proses pembersihan mekanis dengan sikat busa atau kasa lembab.\n\n**Istilah Kesehatan Terkait:**\n*Ulserasi Mukosa, Stomatitis, Kandidiasis Oral, Inspeksi Klinis.*",
     "opt_note": [
       "(A. Bau mulut)",
       "(B. Pendarahan)",
@@ -2941,7 +3391,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 46)",
+        "desc": "Pemeriksaan rongga mulut (*oral inspection*) bertujuan mendeteksi dini ulserasi mukosa, lesi stomatitis, kandidiasis oral, atau radang gingiva sebelum memulai proses pembersihan mekanis dengan sikat busa atau kasa lembab."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Ulserasi Mukosa, Stomatitis, Kandidiasis Oral, Inspeksi Klinis."
+      }
+    ]
   },
   {
     "no": 47,
@@ -2970,7 +3430,7 @@
     "answer": 2,
     "kunci_id": "C. Keselamatan dan kenyamanan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **C. Keselamatan dan kenyamanan**.",
+    "analisis": "**Jawaban Tepat:** C. Keselamatan dan kenyamanan\n\n**Analisis Medis & Logika Keperawatan:**\nTindakan mobilisasi fisik pasien geriatri harus selalu mengedepankan kalkulasi proteksi trauma sendi/tulang serta kenyamanan psikologis pasien agar tidak mengalami syok atau ketakutan jatuh (*fear of falling*).\n\n**Istilah Kesehatan Terkait:**\n*Mobilisasi Pasien, Trauma Muskuloskeletal, Fear of Falling Syndrome.*",
     "opt_note": [
       "(A. Waktu)",
       "(B. Kekuatan)",
@@ -3005,7 +3465,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 47)",
+        "desc": "Tindakan mobilisasi fisik pasien geriatri harus selalu mengedepankan kalkulasi proteksi trauma sendi/tulang serta kenyamanan psikologis pasien agar tidak mengalami syok atau ketakutan jatuh (*fear of falling*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Mobilisasi Pasien, Trauma Muskuloskeletal, Fear of Falling Syndrome."
+      }
+    ]
   },
   {
     "no": 48,
@@ -3034,7 +3504,7 @@
     "answer": 1,
     "kunci_id": "B. Empati dan penghargaan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Empati dan penghargaan**.",
+    "analisis": "**Jawaban Tepat:** B. Empati dan penghargaan\n\n**Analisis Medis & Logika Keperawatan:**\nEtika profesi keperawatan lansia berlandaskan filosofi penghormatan martabat individu (*dignity of the person*) dan empati terapeutik, yang memandang pengguna asuhan sebagai subjek utuh yang berhak menentukan pilihannya sendiri (*self-determination*).\n\n**Istilah Kesehatan Terkait:**\n*Dignity (Martabat Manusia), Self-determination (Hak Menentukan Diri), Etika Keperawatan.*",
     "opt_note": [
       "(A. Kedisiplinan)",
       "(B. Empati dan penghargaan)",
@@ -3069,7 +3539,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 48)",
+        "desc": "Etika profesi keperawatan lansia berlandaskan filosofi penghormatan martabat individu (*dignity of the person*) dan empati terapeutik, yang memandang pengguna asuhan sebagai subjek utuh yang berhak menentukan pilihannya sendiri (*self-determination*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Dignity (Martabat Manusia), Self-determination (Hak Menentukan Diri), Etika Keperawatan."
+      }
+    ]
   },
   {
     "no": 49,
@@ -3098,7 +3578,7 @@
     "answer": 1,
     "kunci_id": "B. Kunci roda dan beri penjelasan",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Kunci roda dan beri penjelasan**.",
+    "analisis": "**Jawaban Tepat:** B. Kunci roda dan beri penjelasan\n\n**Analisis Medis & Logika Keperawatan:**\nMengunci kedua tuas rem kursi roda (*engaging wheel brakes*) adalah protokol keselamatan mutlak sebelum transfer untuk mencegah kursi roda bergeser mundur saat menerima transfer berat tubuh pasien.\n\n**Istilah Kesehatan Terkait:**\n*Wheelchair Brake Interlock, Pre-transfer Safety Check, Fiksasi Statis.*",
     "opt_note": [
       "(A. Angkat langsung)",
       "(B. Kunci roda dan beri penjelasan)",
@@ -3133,7 +3613,17 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "seikatsu",
-    "category_label": "4. Daily living support & safety (生活支援技術・安全)"
+    "category_label": "4. Daily living support & safety (生活支援技術・安全)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 49)",
+        "desc": "Mengunci kedua tuas rem kursi roda (*engaging wheel brakes*) adalah protokol keselamatan mutlak sebelum transfer untuk mencegah kursi roda bergeser mundur saat menerima transfer berat tubuh pasien."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Wheelchair Brake Interlock, Pre-transfer Safety Check, Fiksasi Statis."
+      }
+    ]
   },
   {
     "no": 50,
@@ -3162,7 +3652,7 @@
     "answer": 1,
     "kunci_id": "B. Menjaga kemandirian dan kualitas hidup",
     "salah": "Pilihan ini tidak sesuai dengan pedoman standar keperawatan lansia Jepang.",
-    "analisis": "Berdasarkan standar resmi evaluasi keterampilan perawat lansia (Kaigo Skills), tindakan/jawaban yang tepat adalah: **B. Menjaga kemandirian dan kualitas hidup**.",
+    "analisis": "**Jawaban Tepat:** B. Menjaga kemandirian dan kualitas hidup\n\n**Analisis Medis & Logika Keperawatan:**\nTujuan filosofis asuhan keperawatan geriatri modern bukan sekadar mengobati penyakit organ, melainkan memaksimalkan sisa kapasitas fungsional pasien lansia (*residual capacity*) agar mampu menjalani hidup mandiri sesuai nilai hidupnya (*well-being & QOL*).\n\n**Istilah Kesehatan Terkait:**\n*Residual Functional Capacity, Dukungan Kemandirian (自立支援 - Jiritsu Shien), Geriatric Care Goal.*",
     "opt_note": [
       "(A. Agar cepat sembuh)",
       "(B. Menjaga kemandirian dan kualitas hidup)",
@@ -3197,6 +3687,16 @@
     ],
     "trans": "Evaluasi keterampilan keperawatan lansia (Nursing Care Skills Evaluation Test - Bahasa Indonesia).",
     "category": "kihon",
-    "category_label": "1. Fundamentals of care (介護の基本)"
+    "category_label": "1. Fundamentals of care (介護の基本)",
+    "pembahasan": [
+      {
+        "title": "Landasan Medis & Klinis (Soal 50)",
+        "desc": "Tujuan filosofis asuhan keperawatan geriatri modern bukan sekadar mengobati penyakit organ, melainkan memaksimalkan sisa kapasitas fungsional pasien lansia (*residual capacity*) agar mampu menjalani hidup mandiri sesuai nilai hidupnya (*well-being & QOL*)."
+      },
+      {
+        "title": "Istilah & Terminologi Medis",
+        "desc": "Residual Functional Capacity, Dukungan Kemandirian (自立支援 - Jiritsu Shien), Geriatric Care Goal."
+      }
+    ]
   }
 ]
