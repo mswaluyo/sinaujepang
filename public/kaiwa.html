@@ -1247,35 +1247,108 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       }
     }
 
+    // ── Dialog Konten Latihan Berdasarkan Kombinasi Partner & Skenario ──
+    const DIALOG_PRESETS = {
+      // 1. Skenario Kaiwa Harian (Casual / Futsuutai)
+      kaiwa: {
+        intro: {
+          sato: {
+            jp: 'まずは自己紹介からいこう！名前と、好きなことや趣味を教えてくれる？',
+            id: 'Ayo mulai dari perkenalan diri! Siapa namamu, dan apa hobi atau hal yang kamu sukai?'
+          },
+          yuki: {
+            jp: '「はじめまして！〜だよ」って感じで気軽に言ってみてね！',
+            id: 'Coba katakan dengan santai: "Hajimemashite! (nama) da yo". Santai saja ya!'
+          }
+        },
+        salam: {
+          sato: {
+            jp: '友達同士の挨拶は「おはよう」や「じゃあね」で大丈夫だよ！',
+            id: 'Salam antar teman cukup katakan "Ohayou" atau "Jaa ne", santai saja!'
+          },
+          yuki: {
+            jp: '笑顔で元気に挨拶すると、すぐ仲良くなれるよ！',
+            id: 'Kalau menyapa sambil tersenyum ramah, pasti cepat akrab!'
+          }
+        }
+      },
+
+      // 2. Skenario Mendan (Konsultasi / Bimbingan Belajar / Desu-Masu)
+      mendan: {
+        intro: {
+          sato: {
+            jp: '面談を始めましょう。お名前と、現在の日本語学習の目標を教えてください。',
+            id: 'Mari kita mulai sesi konsultasi. Silakan perkenalkan nama dan apa target belajar bahasa Jepang Anda saat ini.'
+          },
+          yuki: {
+            jp: '「〜です。合格を目指して勉強しています」と伝えてみましょう！',
+            id: 'Coba sampaikan: "(nama) desu. Target saya belajar untuk lulus ujian". Saya bantu ya!'
+          }
+        },
+        salam: {
+          sato: {
+            jp: '相談や面談の場では「よろしくお願いします」と丁寧に挨拶しましょう。',
+            id: 'Dalam sesi bimbingan atau konsultasi, ucapkan salam dengan sopan "Yoroshiku onegaishimasu".'
+          },
+          yuki: {
+            jp: 'わからないことがあれば、遠慮せずに何でも相談してくださいね！',
+            id: 'Jika ada kesulitan dalam belajar, jangan ragu untuk bertanya ya!'
+          }
+        }
+      },
+
+      // 3. Skenario Mensetsu (Wawancara Kerja Formal / Keigo)
+      mensetsu: {
+        intro: {
+          sato: {
+            jp: 'それでは面接を始めます。まずはお名前と、日本で働きたい理由をお聞かせいただけますか。',
+            id: 'Baiklah, kita mulai wawancara kerja. Pertama-tama, sebutkan nama Anda dan alasan mengapa Anda ingin bekerja di Jepang.'
+          },
+          yuki: {
+            jp: '「はじめまして、〜と申します。本日はよろしくお願い申し上げます」と述べましょう！',
+            id: 'Gunakan bentuk formal Keigo: "Hajimemashite, (nama) to moushimasu. Honjitsu wa yoroshiku onegai moushiagemasu"!'
+          }
+        },
+        salam: {
+          sato: {
+            jp: '面接室の入退室時は「失礼いたします」「本日はありがとうございました」と一礼しましょう。',
+            id: 'Saat masuk dan keluar ruang wawancara, ucapkan "Shitsurei itashimasu" serta membungkuk sopan.'
+          },
+          yuki: {
+            jp: '面接官の目を見て、背筋を伸ばしてハキハキと答えるのがポイントですよ！',
+            id: 'Tatap mata pewawancara, tegakkan badan, dan jawab dengan nada suara yang mantap ya!'
+          }
+        }
+      }
+    };
+
+    function playScenarioAction(type) {
+      const scen = DIALOG_PRESETS[activeScenario] || DIALOG_PRESETS.kaiwa;
+      const data = scen[type] || scen.intro;
+
+      if (activePartner === 'sato') {
+        // Solo Sato
+        speakSato(data.sato.jp, data.sato.id);
+      } else if (activePartner === 'yuki') {
+        // Solo Yuki
+        speakYuki(data.yuki.jp, data.yuki.id);
+      } else {
+        // Duet Sato & Yuki
+        speakSato(data.sato.jp, data.sato.id, () => {
+          setTimeout(() => {
+            speakYuki(data.yuki.jp, data.yuki.id);
+          }, 700);
+        });
+      }
+    }
+
     // ── Tombol Skenario Kaiwa ──
     document.getElementById('btn-kaiwa-intro').addEventListener('click', () => {
-      speakSato(
-        'まずは自己紹介をお願いします。お名前と、日本で挑戦したいことを教えてください。',
-        'Pertama-tama, silakan perkenalkan diri Anda. Beritahu nama dan impian yang ingin Anda capai di Jepang.',
-        () => {
-          setTimeout(() => {
-            speakYuki(
-              '「はじめまして、〜です」と言ってみましょう！リラックスしてどうぞ！',
-              'Coba katakan "Hajimemashite, (nama) desu"! Santai saja ya!'
-            );
-          }, 600);
-        }
-      );
+      playScenarioAction('intro');
     });
 
     document.getElementById('btn-kaiwa-alasan').addEventListener('click', () => {
-      speakSato(
-        '職場の挨拶はとても大切です。朝は「おはようございます」、退勤時は「お疲れ様でした」と言いましょう。',
-        'Salam di tempat kerja sangat penting. Di pagi hari ucapkan "Ohayou gozaimasu", dan saat pulang ucapkan "Otsukaresama deshita".',
-        () => {
-          setTimeout(() => {
-            speakYuki(
-              '笑顔で元気に言うのがポイントですよ！一緒に練習してみましょう！',
-              'Kuncinya adalah mengucapkannya dengan tersenyum dan semangat! Mari kita latih bersama!'
-            );
-          }, 600);
-        }
-      );
+      playScenarioAction('salam');
     });
 
     document.getElementById('btn-kaiwa-tips').addEventListener('click', () => {
