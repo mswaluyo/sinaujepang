@@ -463,6 +463,9 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       `.trim();
     }
 
+    let geminiClient = null;
+    let geminiChat = null;
+
     // ── Onboarding / Lobby Selection Flow ──
     const lobbyModal = document.getElementById('lobby-modal');
     const btnStartLobby = document.getElementById('btn-start-lobby');
