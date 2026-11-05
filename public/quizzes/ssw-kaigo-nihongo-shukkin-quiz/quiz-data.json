@@ -1,0 +1,962 @@
+[
+  {
+    "no": 1,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "A. ある 人 (ひと) は 休 (やす)みでしたが、 明日 (あした) から 仕事 (しごと) に 行 (い)きます 。 B. 夏休 (なつやす)み が 終 (お)わって、田中 (たなか)さん は また 仕事 (しごと) に 行 (い)きます。 会社 (かいしゃ) に (.............)します。",
+    "image": "",
+    "options": [
+      {
+        "text": "仕事 (しごと) に 行 (い)きます",
+        "img": ""
+      },
+      {
+        "text": "出勤 (しゅっきん)します",
+        "img": ""
+      },
+      {
+        "text": "寝 (ね)ます",
+        "img": ""
+      },
+      {
+        "text": "帰 (かえ)ります",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "kunci_id": "出勤 (しゅっきん)します",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **出勤 (しゅっきん)します**.",
+    "opt_note": [
+      "(仕事 (しごと) に 行 (い)きます)",
+      "(出勤 (しゅっきん)します)",
+      "(寝 (ね)ます)",
+      "(帰 (かえ)ります)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "仕事 (しごと) に 行 (い)きます",
+        "rom": "",
+        "arti": "仕事 (しごと) に 行 (い)きます",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "出勤 (しゅっきん)します",
+        "rom": "",
+        "arti": "出勤 (しゅっきん)します",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "寝 (ね)ます",
+        "rom": "",
+        "arti": "寝 (ね)ます",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "帰 (かえ)ります",
+        "rom": "",
+        "arti": "帰 (かえ)ります",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "gakka",
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+  },
+  {
+    "no": 2,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "けいたいでんわ は 使用 (しよう) 禁止 (きんし)です。 この 意味 (いみ) と 同 (おな)じ もの は どれですか。",
+    "image": "",
+    "options": [
+      {
+        "text": "けいたいでんわ を 使 (つか)ってもいいです。",
+        "img": ""
+      },
+      {
+        "text": "けいたいでんわ を 使用 (しよう)してはいけません。",
+        "img": ""
+      },
+      {
+        "text": "けいたいでんわ を 買 (か)います。",
+        "img": ""
+      },
+      {
+        "text": "けいたいでんわ を 見 (み)ます",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "kunci_id": "けいたいでんわ を 使用 (しよう)してはいけません。",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **けいたいでんわ を 使用 (しよう)してはいけません。**.",
+    "opt_note": [
+      "(けいたいでんわ を 使 (つか)ってもいいです。)",
+      "(けいたいでんわ を 使用 (しよう)してはいけません。)",
+      "(けいたいでんわ を 買 (か)います。)",
+      "(けいたいでんわ を 見 (み)ます)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "けいたいでんわ を 使 (つか)ってもいいです。",
+        "rom": "",
+        "arti": "けいたいでんわ を 使 (つか)ってもいいです。",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "けいたいでんわ を 使用 (しよう)してはいけません。",
+        "rom": "",
+        "arti": "けいたいでんわ を 使用 (しよう)してはいけません。",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "けいたいでんわ を 買 (か)います。",
+        "rom": "",
+        "arti": "けいたいでんわ を 買 (か)います。",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "けいたいでんわ を 見 (み)ます",
+        "rom": "",
+        "arti": "けいたいでんわ を 見 (み)ます",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "gakka",
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+  },
+  {
+    "no": 3,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "出 (で)かける 前 (まえ)に、ブラシ で 髪 (かみ) を (.............)。",
+    "image": "",
+    "options": [
+      {
+        "text": "洗 (あら)います",
+        "img": ""
+      },
+      {
+        "text": "梳 (とか)します",
+        "img": ""
+      },
+      {
+        "text": "切 (き)ります",
+        "img": ""
+      },
+      {
+        "text": "乾 (かわ)かします",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "kunci_id": "梳 (とか)します",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **梳 (とか)します**.",
+    "opt_note": [
+      "(洗 (あら)います)",
+      "(梳 (とか)します)",
+      "(切 (き)ります)",
+      "(乾 (かわ)かします)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "洗 (あら)います",
+        "rom": "",
+        "arti": "洗 (あら)います",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "梳 (とか)します",
+        "rom": "",
+        "arti": "梳 (とか)します",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "切 (き)ります",
+        "rom": "",
+        "arti": "切 (き)ります",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "乾 (かわ)かします",
+        "rom": "",
+        "arti": "乾 (かわ)かします",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "gakka",
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+  },
+  {
+    "no": 4,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "介護者 (かいごしゃ) は 利用者 (りようしゃ) に 言 (い)いました。 「ベッドをたかくしますね。」 一番 (いちばん) 正 (ただ)しい 意味 (いみ) は どれですか。",
+    "image": "",
+    "options": [
+      {
+        "text": "おしり を あらって",
+        "img": ""
+      },
+      {
+        "text": "おむつ を あらって",
+        "img": ""
+      },
+      {
+        "text": "ベッド を あげる",
+        "img": ""
+      },
+      {
+        "text": "ベッド を たかくする",
+        "img": ""
+      }
+    ],
+    "answer": 3,
+    "kunci_id": "ベッド を たかくする",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **ベッド を たかくする**.",
+    "opt_note": [
+      "(おしり を あらって)",
+      "(おむつ を あらって)",
+      "(ベッド を あげる)",
+      "(ベッド を たかくする)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "おしり を あらって",
+        "rom": "",
+        "arti": "おしり を あらって",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "おむつ を あらって",
+        "rom": "",
+        "arti": "おむつ を あらって",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "ベッド を あげる",
+        "rom": "",
+        "arti": "ベッド を あげる",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "ベッド を たかくする",
+        "rom": "",
+        "arti": "ベッド を たかくする",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "anzen",
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+  },
+  {
+    "no": 5,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "転倒 (てんとう)しました。 同 (おな)じ 意味 (いみ) は どれですか。",
+    "image": "",
+    "options": [
+      {
+        "text": "起 (お)きます",
+        "img": ""
+      },
+      {
+        "text": "転 (ころ)びます",
+        "img": ""
+      },
+      {
+        "text": "座 (すわ)ります",
+        "img": ""
+      },
+      {
+        "text": "走 (はし)ります",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "kunci_id": "転 (ころ)びます",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **転 (ころ)びます**.",
+    "opt_note": [
+      "(起 (お)きます)",
+      "(転 (ころ)びます)",
+      "(座 (すわ)ります)",
+      "(走 (はし)ります)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "起 (お)きます",
+        "rom": "",
+        "arti": "起 (お)きます",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "転 (ころ)びます",
+        "rom": "",
+        "arti": "転 (ころ)びます",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "座 (すわ)ります",
+        "rom": "",
+        "arti": "座 (すわ)ります",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "走 (はし)ります",
+        "rom": "",
+        "arti": "走 (はし)ります",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "gakka",
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+  },
+  {
+    "no": 6,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "利用者 (りようしゃ) と 介護職 (かいごしょく) の 会話 (かいわ)です。 🙍‍♂️利用者 (りようしゃ)：おしぼり を たくさん たたみました。 👩‍⚕️介護職 (かいごしょく)：ありがとうございます。では、(.............)もお願いします。 この とき の 利用者 (りようしゃ) の 正 (ただ)しい 返事 (へんじ) は どれですか。",
+    "image": "",
+    "options": [
+      {
+        "text": "おしぼり を たくさん たたみました。",
+        "img": ""
+      },
+      {
+        "text": "すみません、つかれました。",
+        "img": ""
+      },
+      {
+        "text": "おしぼり を たたみました。",
+        "img": ""
+      },
+      {
+        "text": "せんたくもの を あらいました",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "kunci_id": "おしぼり を たたみました。",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **おしぼり を たたみました。**.",
+    "opt_note": [
+      "(おしぼり を たくさん たたみました。)",
+      "(すみません、つかれました。)",
+      "(おしぼり を たたみました。)",
+      "(せんたくもの を あらいました)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "おしぼり を たくさん たたみました。",
+        "rom": "",
+        "arti": "おしぼり を たくさん たたみました。",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "すみません、つかれました。",
+        "rom": "",
+        "arti": "すみません、つかれました。",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "おしぼり を たたみました。",
+        "rom": "",
+        "arti": "おしぼり を たたみました。",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "せんたくもの を あらいました",
+        "rom": "",
+        "arti": "せんたくもの を あらいました",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "anzen",
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+  },
+  {
+    "no": 7,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "食事 (しょくじ)、排泄 (はいせつ) は 自立 (じりつ)ですが、入浴 (にゅうよく) は 介助 (かいじょ) が 必要 (ひつよう)です。 正 (ただ)しい 説明 (せつめい) は どれですか。",
+    "image": "",
+    "options": [
+      {
+        "text": "ひとり で 食事 (しょくじ) が できます",
+        "img": ""
+      },
+      {
+        "text": "全部 (ぜんぶ) 手伝 (てつだ)い が 必要 (ひつよう)です",
+        "img": ""
+      },
+      {
+        "text": "食事 (しょくじ) が できません",
+        "img": ""
+      },
+      {
+        "text": "入浴 (にゅうよく) も 一人 (ひとり) で できます",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "kunci_id": "ひとり で 食事 (しょくじ) が できます",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **ひとり で 食事 (しょくじ) が できます**.",
+    "opt_note": [
+      "(ひとり で 食事 (しょくじ) が できます)",
+      "(全部 (ぜんぶ) 手伝 (てつだ)い が 必要 (ひつよう)です)",
+      "(食事 (しょくじ) が できません)",
+      "(入浴 (にゅうよく) も 一人 (ひとり) で できます)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "ひとり で 食事 (しょくじ) が できます",
+        "rom": "",
+        "arti": "ひとり で 食事 (しょくじ) が できます",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "全部 (ぜんぶ) 手伝 (てつだ)い が 必要 (ひつよう)です",
+        "rom": "",
+        "arti": "全部 (ぜんぶ) 手伝 (てつだ)い が 必要 (ひつよう)です",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "食事 (しょくじ) が できません",
+        "rom": "",
+        "arti": "食事 (しょくじ) が できません",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "入浴 (にゅうよく) も 一人 (ひとり) で できます",
+        "rom": "",
+        "arti": "入浴 (にゅうよく) も 一人 (ひとり) で できます",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "gakka",
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+  },
+  {
+    "no": 8,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "シフト の 仕事 (しごと)について、正 (ただ)しい 文 (ぶん) を 選 (えら)んでください。",
+    "image": "",
+    "options": [
+      {
+        "text": "たいきんしてしゅっきん を きろくし、きんむします。",
+        "img": ""
+      },
+      {
+        "text": "しゅっきんしてきんむし、たいきん を きろくします。",
+        "img": ""
+      },
+      {
+        "text": "きろくしてたいきんし、きんむ を しゅっきんします。",
+        "img": ""
+      },
+      {
+        "text": "きんむしてきろくし、しゅっきん を たいきんします。",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "kunci_id": "しゅっきんしてきんむし、たいきん を きろくします。",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **しゅっきんしてきんむし、たいきん を きろくします。**.",
+    "opt_note": [
+      "(たいきんしてしゅっきん を きろくし、きんむします。)",
+      "(しゅっきんしてきんむし、たいきん を きろくします。)",
+      "(きろくしてたいきんし、きんむ を しゅっきんします。)",
+      "(きんむしてきろくし、しゅっきん を たいきんします。)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "たいきんしてしゅっきん を きろくし、きんむします。",
+        "rom": "",
+        "arti": "たいきんしてしゅっきん を きろくし、きんむします。",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "しゅっきんしてきんむし、たいきん を きろくします。",
+        "rom": "",
+        "arti": "しゅっきんしてきんむし、たいきん を きろくします。",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "きろくしてたいきんし、きんむ を しゅっきんします。",
+        "rom": "",
+        "arti": "きろくしてたいきんし、きんむ を しゅっきんします。",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "きんむしてきろくし、しゅっきん を たいきんします。",
+        "rom": "",
+        "arti": "きんむしてきろくし、しゅっきん を たいきんします。",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "gakka",
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+  },
+  {
+    "no": 9,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "お湯 (おゆ) の 温度 (おんど) が 少 (すこ)し (.............)です。",
+    "image": "",
+    "options": [
+      {
+        "text": "熱 (あつ)い",
+        "img": ""
+      },
+      {
+        "text": "温 (ぬる)い",
+        "img": ""
+      },
+      {
+        "text": "冷 (つめ)たい",
+        "img": ""
+      },
+      {
+        "text": "硬 (かた)い",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "kunci_id": "温 (ぬる)い",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **温 (ぬる)い**.",
+    "opt_note": [
+      "(熱 (あつ)い)",
+      "(温 (ぬる)い)",
+      "(冷 (つめ)たい)",
+      "(硬 (かた)い)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "熱 (あつ)い",
+        "rom": "",
+        "arti": "熱 (あつ)い",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "温 (ぬる)い",
+        "rom": "",
+        "arti": "温 (ぬる)い",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "冷 (つめ)たい",
+        "rom": "",
+        "arti": "冷 (つめ)たい",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "硬 (かた)い",
+        "rom": "",
+        "arti": "硬 (かた)い",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "gakka",
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+  },
+  {
+    "no": 10,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "利用者 (りようしゃ) は 歩行 (ほこう) は 杖 (つえ) を 使 (つか)い、外出 (がいしゅつ) は 車椅子 (くるまいす) を 使 (つか)います。 正 (ただ)しい 文 (ぶん) は どれですか。",
+    "image": "",
+    "options": [
+      {
+        "text": "着替 (きが)える とき、車椅子 (くるまいす) を 使 (つか)います",
+        "img": ""
+      },
+      {
+        "text": "買い物 (かいもの) に 行 (い)く とき、車椅子 (くるまいす) を 使 (つか)います",
+        "img": ""
+      },
+      {
+        "text": "寝 (ね)る とき、車椅子 (くるまいす) を 使 (つか)います",
+        "img": ""
+      },
+      {
+        "text": "食 (た)べる とき、車椅子 (くるまいす) を 使 (つか)います",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "kunci_id": "買い物 (かいもの) に 行 (い)く とき、車椅子 (くるまいす) を 使 (つか)います",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **買い物 (かいもの) に 行 (い)く とき、車椅子 (くるまいす) を 使 (つか)います**.",
+    "opt_note": [
+      "(着替 (きが)える とき、車椅子 (くるまいす) を 使 (つか)います)",
+      "(買い物 (かいもの) に 行 (い)く とき、車椅子 (くるまいす) を 使 (つか)います)",
+      "(寝 (ね)る とき、車椅子 (くるまいす) を 使 (つか)います)",
+      "(食 (た)べる とき、車椅子 (くるまいす) を 使 (つか)います)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "着替 (きが)える とき、車椅子 (くるまいす) を 使 (つか)います",
+        "rom": "",
+        "arti": "着替 (きが)える とき、車椅子 (くるまいす) を 使 (つか)います",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "買い物 (かいもの) に 行 (い)く とき、車椅子 (くるまいす) を 使 (つか)います",
+        "rom": "",
+        "arti": "買い物 (かいもの) に 行 (い)く とき、車椅子 (くるまいす) を 使 (つか)います",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "寝 (ね)る とき、車椅子 (くるまいす) を 使 (つか)います",
+        "rom": "",
+        "arti": "寝 (ね)る とき、車椅子 (くるまいす) を 使 (つか)います",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "食 (た)べる とき、車椅子 (くるまいす) を 使 (つか)います",
+        "rom": "",
+        "arti": "食 (た)べる とき、車椅子 (くるまいす) を 使 (つか)います",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "anzen",
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+  },
+  {
+    "no": 11,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "左耳 (ひだりみみ) は 聞 (き)こえにくいですが、右側 (みぎがわ) は 問題 (もんだい) ありません。話 (はな)す こと も できます。 正 (ただ)しい 説明 (せつめい) は どれですか。 👉 話 (はな)せます",
+    "image": "",
+    "options": [
+      {
+        "text": "右耳 (みぎみみ) が 聞 (き)こえにくいです",
+        "img": ""
+      },
+      {
+        "text": "話 (はな)す こと は できません",
+        "img": ""
+      },
+      {
+        "text": "話 (はな)す こと が できます",
+        "img": ""
+      },
+      {
+        "text": "すべて 聞 (き)こえません",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "kunci_id": "話 (はな)す こと が できます",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **話 (はな)す こと が できます**.",
+    "opt_note": [
+      "(右耳 (みぎみみ) が 聞 (き)こえにくいです)",
+      "(話 (はな)す こと は できません)",
+      "(話 (はな)す こと が できます)",
+      "(すべて 聞 (き)こえません)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "右耳 (みぎみみ) が 聞 (き)こえにくいです",
+        "rom": "",
+        "arti": "右耳 (みぎみみ) が 聞 (き)こえにくいです",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "話 (はな)す こと は できません",
+        "rom": "",
+        "arti": "話 (はな)す こと は できません",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "話 (はな)す こと が できます",
+        "rom": "",
+        "arti": "話 (はな)す こと が できます",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "すべて 聞 (き)こえません",
+        "rom": "",
+        "arti": "すべて 聞 (き)こえません",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "gakka",
+    "category_label": "1. Technical terms of care (介護の日本語・専門用語)"
+  },
+  {
+    "no": 12,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "利用者 (りようしゃ) が トイレ に 行 (い)きたい と 言 (い)っています。",
+    "image": "/quizzes/ssw-kaigo-quiz/assets/img_出勤__しゅっきん_します_mhtml_12.png",
+    "options": [
+      {
+        "text": "テレビ を 見 (み)せる",
+        "img": ""
+      },
+      {
+        "text": "トイレ まで 案内 (あんない)する",
+        "img": ""
+      },
+      {
+        "text": "そのままにする",
+        "img": ""
+      },
+      {
+        "text": "食事 (しょくじ) を 出 (だ)す",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "kunci_id": "トイレ まで 案内 (あんない)する",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **トイレ まで 案内 (あんない)する**.",
+    "opt_note": [
+      "(テレビ を 見 (み)せる)",
+      "(トイレ まで 案内 (あんない)する)",
+      "(そのままにする)",
+      "(食事 (しょくじ) を 出 (だ)す)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "テレビ を 見 (み)せる",
+        "rom": "",
+        "arti": "テレビ を 見 (み)せる",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "トイレ まで 案内 (あんない)する",
+        "rom": "",
+        "arti": "トイレ まで 案内 (あんない)する",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "そのままにする",
+        "rom": "",
+        "arti": "そのままにする",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "食事 (しょくじ) を 出 (だ)す",
+        "rom": "",
+        "arti": "食事 (しょくじ) を 出 (だ)す",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "anzen",
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+  },
+  {
+    "no": 13,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "トイレ 内 (ない)。利用者 (りようしゃ) が 立 (た)ち上 (あ)がろうとしてふらついている。介護職 (かいごしょく) が 腕 (うで) を 支 (ささ)えている。 この とき の 正 (ただ)しい 対応 (たいおう) は どれですか。",
+    "image": "",
+    "options": [
+      {
+        "text": "そのまま 一人 (ひとり)にする",
+        "img": ""
+      },
+      {
+        "text": "強 (つよ)く 引 (ひ)っぱって 立 (た)たせる",
+        "img": ""
+      },
+      {
+        "text": "転倒 (てんとう)しない ように 支 (ささ)え、安全 (あんぜん)に 座 (すわ)らせる",
+        "img": ""
+      },
+      {
+        "text": "大 (おお)きな 声 (こえ)で 注意 (ちゅうい)する",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "kunci_id": "転倒 (てんとう)しない ように 支 (ささ)え、安全 (あんぜん)に 座 (すわ)らせる",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **転倒 (てんとう)しない ように 支 (ささ)え、安全 (あんぜん)に 座 (すわ)らせる**.",
+    "opt_note": [
+      "(そのまま 一人 (ひとり)にする)",
+      "(強 (つよ)く 引 (ひ)っぱって 立 (た)たせる)",
+      "(転倒 (てんとう)しない ように 支 (ささ)え、安全 (あんぜん)に 座 (すわ)らせる)",
+      "(大 (おお)きな 声 (こえ)で 注意 (ちゅうい)する)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "そのまま 一人 (ひとり)にする",
+        "rom": "",
+        "arti": "そのまま 一人 (ひとり)にする",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "強 (つよ)く 引 (ひ)っぱって 立 (た)たせる",
+        "rom": "",
+        "arti": "強 (つよ)く 引 (ひ)っぱって 立 (た)たせる",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "転倒 (てんとう)しない ように 支 (ささ)え、安全 (あんぜん)に 座 (すわ)らせる",
+        "rom": "",
+        "arti": "転倒 (てんとう)しない ように 支 (ささ)え、安全 (あんぜん)に 座 (すわ)らせる",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "大 (おお)きな 声 (こえ)で 注意 (ちゅうい)する",
+        "rom": "",
+        "arti": "大 (おお)きな 声 (こえ)で 注意 (ちゅうい)する",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "anzen",
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+  },
+  {
+    "no": 14,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "【イラスト：申し送り (もうしおくり) ノート 】 食事 (しょくじ)：全量摂取 (ぜんりょうせっしゅ) 排泄 (はいせつ)：トイレ 自立 (じりつ) 入浴 (にゅうよく)：一部介助 (いちぶかいじょ) 移動 (いどう)：車椅子 (くるまいす) 使用 (しよう) この 利用者 (りようしゃ) の 状態 (じょうたい)として 正 (ただ)しい 説明 (せつめい) は どれですか。",
+    "image": "",
+    "options": [
+      {
+        "text": "すべて 介助 (かいじょ) が 必要 (ひつよう)です",
+        "img": ""
+      },
+      {
+        "text": "食事 (しょくじ) は できません",
+        "img": ""
+      },
+      {
+        "text": "一部 (いちぶ) 介助 (かいじょ) と 自立 (じりつ) が 混在 (こんざい)しています",
+        "img": ""
+      },
+      {
+        "text": "すべて 自立 (じりつ)です",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "kunci_id": "一部 (いちぶ) 介助 (かいじょ) と 自立 (じりつ) が 混在 (こんざい)しています",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **一部 (いちぶ) 介助 (かいじょ) と 自立 (じりつ) が 混在 (こんざい)しています**.",
+    "opt_note": [
+      "(すべて 介助 (かいじょ) が 必要 (ひつよう)です)",
+      "(食事 (しょくじ) は できません)",
+      "(一部 (いちぶ) 介助 (かいじょ) と 自立 (じりつ) が 混在 (こんざい)しています)",
+      "(すべて 自立 (じりつ)です)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "すべて 介助 (かいじょ) が 必要 (ひつよう)です",
+        "rom": "",
+        "arti": "すべて 介助 (かいじょ) が 必要 (ひつよう)です",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "食事 (しょくじ) は できません",
+        "rom": "",
+        "arti": "食事 (しょくじ) は できません",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "一部 (いちぶ) 介助 (かいじょ) と 自立 (じりつ) が 混在 (こんざい)しています",
+        "rom": "",
+        "arti": "一部 (いちぶ) 介助 (かいじょ) と 自立 (じりつ) が 混在 (こんざい)しています",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "すべて 自立 (じりつ)です",
+        "rom": "",
+        "arti": "すべて 自立 (じりつ)です",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "anzen",
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+  },
+  {
+    "no": 15,
+    "section": "SSW KAIGO NIHONGO",
+    "mnn": "SSW Kaigo (出勤)",
+    "title": "🙎‍♀️イラスト：廊下 (ろうか) で 利用者 (りようしゃ) が 歩行器 (ほこうき) を 使 (つか)って 歩 (ある)いている。途中 (とちゅう) で 立 (た)ち 止 (ど)まっている。 🙍‍♂️利用者 (りようしゃ)：「すこしつかれました。」 介護職 (かいごしょく) の 正 (ただ)しい 声 (こえ)かけはどれですか。",
+    "image": "",
+    "options": [
+      {
+        "text": "がんばってください",
+        "img": ""
+      },
+      {
+        "text": "すぐに 走 (はし)りましょう",
+        "img": ""
+      },
+      {
+        "text": "すこし 休 (やす)みましょうか",
+        "img": ""
+      },
+      {
+        "text": "もう 帰 (かえ)ります",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "kunci_id": "すこし 休 (やす)みましょうか",
+    "salah": "Pilihan ini tidak sesuai dengan tata bahasa atau istilah resmi komunikasi perawat lansia di Jepang.",
+    "analisis": "Jawaban yang benar untuk konteks keperawatan lansia ini adalah: **すこし 休 (やす)みましょうか**.",
+    "opt_note": [
+      "(がんばってください)",
+      "(すぐに 走 (はし)りましょう)",
+      "(すこし 休 (やす)みましょうか)",
+      "(もう 帰 (かえ)ります)"
+    ],
+    "opt_detail": [
+      {
+        "kana": "がんばってください",
+        "rom": "",
+        "arti": "がんばってください",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "すぐに 走 (はし)りましょう",
+        "rom": "",
+        "arti": "すぐに 走 (はし)りましょう",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "すこし 休 (やす)みましょうか",
+        "rom": "",
+        "arti": "すこし 休 (やす)みましょうか",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      },
+      {
+        "kana": "もう 帰 (かえ)ります",
+        "rom": "",
+        "arti": "もう 帰 (かえ)ります",
+        "alasan": "Opsi pilihan Kaigo Nihongo"
+      }
+    ],
+    "trans": "Evaluasi pemahaman bahasa Jepang dan komunikasi khusus perawat lansia (Kaigo Nihongo).",
+    "category": "anzen",
+    "category_label": "2. Communications of care (介護の会話・コミュニケーション)"
+  }
+]
