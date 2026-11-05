@@ -57,30 +57,78 @@
     } catch (e) {}
   }
 
-  function restoreActiveState() {
+  function getSavedState() {
     try {
       var raw = localStorage.getItem(getActiveStateKey());
-      if (!raw) return false;
+      if (!raw) return null;
       var state = JSON.parse(raw);
-      if (!state || typeof state !== 'object') return false;
-
-      // Restore picked & locked
-      if (state.picked && typeof state.picked === 'object') {
-        S.picked = state.picked;
-      }
-      if (state.locked && typeof state.locked === 'object') {
-        S.locked = state.locked;
-      }
-      if (typeof state.cur === 'number' && state.cur >= 0 && state.cur < S.questions.length) {
-        S.cur = state.cur;
-      }
-      if (typeof state.timerSec === 'number' && state.timerSec > 0) {
-        S.timerSec = state.timerSec;
-      }
-      return true;
+      if (!state || typeof state !== 'object') return null;
+      var answeredCount = Object.keys(state.picked || {}).length;
+      if (answeredCount === 0) return null;
+      return state;
     } catch (e) {
-      return false;
+      return null;
     }
+  }
+
+  function applySavedState(state) {
+    if (!state) return;
+    if (state.picked && typeof state.picked === 'object') S.picked = state.picked;
+    if (state.locked && typeof state.locked === 'object') S.locked = state.locked;
+    if (typeof state.cur === 'number' && state.cur >= 0 && state.cur < S.questions.length) S.cur = state.cur;
+    if (typeof state.timerSec === 'number' && state.timerSec > 0) S.timerSec = state.timerSec;
+  }
+
+  function showResumePrompt(state, onResume, onRestart) {
+    var answeredCount = Object.keys(state.picked || {}).length;
+    var curQ = (state.cur || 0) + 1;
+    var totalQ = S.questions.length;
+    var m = Math.floor((state.timerSec || 0) / 60);
+    var s = (state.timerSec || 0) % 60;
+    var timeStr = (m < 10 ? '0' : '') + m + ':' + (s < 10 ? '0' : '') + s;
+
+    var modalId = 'ssw-resume-modal';
+    var oldModal = document.getElementById(modalId);
+    if (oldModal) oldModal.remove();
+
+    var div = document.createElement('div');
+    div.id = modalId;
+    div.className = 'fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 animate-fade-in';
+    div.innerHTML = '' +
+      '<div class="bg-white rounded-3xl max-w-sm w-full p-6 shadow-2xl border border-slate-100 text-center relative">' +
+      '  <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-100 text-amber-600 flex items-center justify-center text-2xl mb-4 shadow-sm">' +
+      '    <i class="fa-solid fa-clock-rotate-left"></i>' +
+      '  </div>' +
+      '  <h3 class="text-lg font-black text-slate-800 mb-1">Lanjutkan Ujian?</h3>' +
+      '  <p class="text-xs text-slate-500 mb-4">' +
+      '    Ditemukan progres pengerjaan sebelumnya:<br>' +
+      '    <span class="inline-block mt-1 font-bold text-slate-700 bg-slate-100 px-3 py-1 rounded-full">' +
+      '      Terjawab ' + answeredCount + ' dari ' + totalQ + ' Soal (⏱ ' + timeStr + ')' +
+      '    </span>' +
+      '  </p>' +
+      '  <div class="space-y-2.5">' +
+      '    <button id="ssw-btn-resume" class="w-full py-3 px-4 rounded-xl font-bold text-xs bg-rose-600 hover:bg-rose-700 text-white shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">' +
+      '      <i class="fa-solid fa-play"></i>' +
+      '      <span>Lanjutkan Soal ' + curQ + '</span>' +
+      '    </button>' +
+      '    <button id="ssw-btn-restart" class="w-full py-2.5 px-4 rounded-xl font-semibold text-xs bg-slate-100 hover:bg-slate-200 text-slate-600 transition-all flex items-center justify-center gap-2">' +
+      '      <i class="fa-solid fa-rotate-right"></i>' +
+      '      <span>Mulai dari Awal (Reset)</span>' +
+      '    </button>' +
+      '  </div>' +
+      '</div>';
+
+    document.body.appendChild(div);
+
+    document.getElementById('ssw-btn-resume').onclick = function () {
+      div.remove();
+      onResume();
+    };
+
+    document.getElementById('ssw-btn-restart').onclick = function () {
+      div.remove();
+      onRestart();
+    };
   }
 
   function clearActiveState() {
@@ -130,12 +178,29 @@
         topPaketEl.textContent = S.slug.replace('-quiz', '').replace('ssw-', 'SSW ').toUpperCase();
       }
 
-            // Pulihkan jawaban yang sudah dikerjakan sebelumnya jika ada
-      restoreActiveState();
-
       renderBaseLayout();
-      renderQuestion();
-      startTimer();
+
+      var savedState = getSavedState();
+      if (savedState) {
+        showResumePrompt(savedState, function () {
+          // Lanjutkan
+          applySavedState(savedState);
+          renderQuestion();
+          startTimer();
+        }, function () {
+          // Mulai dari awal
+          clearActiveState();
+          S.cur = 0;
+          S.picked = {};
+          S.locked = {};
+          S.timerSec = 0;
+          renderQuestion();
+          startTimer();
+        });
+      } else {
+        renderQuestion();
+        startTimer();
+      }
     } catch (err) {
       contentEl.innerHTML = '<div class="p-8 text-center bg-white rounded-2xl border border-rose-200 text-rose-600 font-bold max-w-lg mx-auto shadow-sm">' +
         '<i class="fa-solid fa-triangle-exclamation text-3xl mb-3 text-rose-500 block"></i>' +
