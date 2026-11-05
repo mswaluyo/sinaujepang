@@ -279,22 +279,28 @@
 
   </main>
 
-  <!-- ── 2.5. SINGLE FOCUS CHAT BOX (SEPERTI SUBTITLE ZOOM INTERAKTIF) ── -->
-  <section class="h-auto md:h-32 bg-[#111115] border-t border-white/10 px-3 py-2.5 relative z-25 shrink-0">
-    <div id="single-chat-box" class="h-full bg-[#18181e] border border-sky-500/30 rounded-2xl p-3 sm:p-3.5 flex flex-col justify-between shadow-lg transition-all duration-300">
+  <!-- ── 2.5. SINGLE FOCUS CHAT BOX (LEGA & DILENGKAPI TOGGLE ROMAJI) ── -->
+  <section class="h-auto min-h-[140px] md:h-44 bg-[#111115] border-t border-white/10 px-3 py-2.5 relative z-25 shrink-0">
+    <div id="single-chat-box" class="h-full bg-[#18181e] border border-sky-500/30 rounded-2xl p-3 sm:p-4 flex flex-col justify-between shadow-lg transition-all duration-300">
       
-      <!-- Header Single Box: Speaker Avatar, Name, & Tag -->
+      <!-- Header Single Box: Speaker Avatar, Name, & Tag + Romaji Toggle -->
       <div class="flex items-center justify-between mb-1.5 border-b border-white/10 pb-1.5">
         <div class="flex items-center gap-2">
           <div id="chat-speaker-badge" class="w-6 h-6 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs">
             <i id="chat-speaker-icon" class="fa-solid fa-chalkboard-user"></i>
           </div>
-          <span id="chat-speaker-name" class="text-xs sm:text-sm font-bold text-sky-400">Sato-san (Sensei)</span>
+          <span id="chat-speaker-name" class="text-xs sm:text-sm font-bold text-sky-400">Sato-san (佐藤さん)</span>
           <span id="chat-speaker-role" class="text-[10px] bg-sky-500/10 text-sky-300 px-2 py-0.5 rounded border border-sky-500/20">Bahasa Jepang</span>
         </div>
         
-        <!-- Hint Status Kanan -->
+        <!-- Toggle Romaji & Status Kanan -->
         <div class="flex items-center gap-2">
+          <!-- Tombol Opsi Romaji -->
+          <button id="btn-toggle-romaji" type="button" class="text-[11px] px-2 py-0.5 rounded-lg border border-amber-400/40 bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 transition flex items-center gap-1 font-medium shadow-sm">
+            <i class="fa-solid fa-font text-[10px]"></i>
+            <span id="romaji-btn-label">Romaji: ON</span>
+          </button>
+
           <span id="chat-turn-status" class="text-[10px] text-slate-400 hidden sm:inline">
             <i class="fa-solid fa-volume-high text-emerald-400 animate-pulse mr-1"></i> Sedang Berbicara
           </span>
@@ -302,12 +308,18 @@
         </div>
       </div>
 
-      <!-- Content Area Single Box: Teks Utama Jepang + Terjemahan Indonesia + Petunjuk -->
-      <div class="flex-1 overflow-y-auto pr-1 text-xs sm:text-sm space-y-1 scrollbar-thin">
-        <div id="chat-main-jp" class="text-white font-bold text-sm sm:text-base leading-snug notranslate" translate="no">
+      <!-- Content Area Single Box: Teks Utama Jepang + Romaji + Terjemahan Indonesia -->
+      <div class="flex-1 overflow-y-auto pr-1 text-xs sm:text-sm space-y-1.5 scrollbar-thin">
+        <!-- Tulisan Jepang Asli -->
+        <div id="chat-main-jp" class="text-white font-bold text-sm sm:text-base leading-relaxed tracking-wide notranslate" translate="no">
           みなさん、こんにちは！佐藤です。今日もZoomで会話練習を始めましょう！
         </div>
-        <div id="chat-main-id" class="text-xs sm:text-sm text-slate-300">
+        <!-- Baris Romaji (Dapat diaktifkan/dinonaktifkan oleh pengguna) -->
+        <div id="chat-main-romaji" class="text-xs sm:text-sm font-mono text-amber-300/90 tracking-wide font-medium">
+          Minasan, konnichiwa! Sato desu. Kyou mo Zoom de kaiwa renshuu o hajimemashou!
+        </div>
+        <!-- Terjemahan Bahasa Indonesia -->
+        <div id="chat-main-id" class="text-xs sm:text-sm text-slate-300 leading-normal">
           Halo semuanya! Saya Sato. Hari ini mari mulai latihan percakapan lewat Zoom!
         </div>
       </div>
@@ -450,11 +462,13 @@ ${MASTER_AI_CONFIG.global_rule}
 [FORMAT OUTPUT WAJIB JSON MURNI PERSIS]:
 {
   "sato": {
-    "jp": "Teks bahasa Jepang Sato-sensei (isi kosong jika hanya Yuki yang aktif)",
+    "jp": "Teks bahasa Jepang Sato-san (kanji/kana)",
+    "romaji": "Cara baca romaji kalimat Sato-san (contoh: Minasan konnichiwa)",
     "id": "Arti atau terjemahan bahasa Indonesia"
   },
   "yuki": {
-    "jp": "Teks bahasa Jepang Yuki-chan (jika Yuki bicara Jepang)",
+    "jp": "Teks bahasa Jepang Yuki-chan jika ada, atau kosongkan",
+    "romaji": "Cara baca romaji kalimat Yuki-chan jika ada, atau kosongkan",
     "id": "Instruksi/bimbingan/terjemahan Yuki-chan dalam bahasa Indonesia"
   },
   "firstSpeaker": "${selectedChar === 'yuki' ? 'yuki' : (selectedChar === 'sato' ? 'sato' : 'sato')}"
@@ -1062,28 +1076,61 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
     const chatSpeakerRole = document.getElementById('chat-speaker-role');
     const chatTurnStatus = document.getElementById('chat-turn-status');
     const chatMainJp = document.getElementById('chat-main-jp');
+    const chatMainRomaji = document.getElementById('chat-main-romaji');
     const chatMainId = document.getElementById('chat-main-id');
     const colUserStatus = document.getElementById('col-user-status');
+    const btnToggleRomaji = document.getElementById('btn-toggle-romaji');
+    const romajiBtnLabel = document.getElementById('romaji-btn-label');
+
+    let isRomajiVisible = localStorage.getItem('kaiwa_show_romaji') !== 'false';
+
+    function updateRomajiVisibility() {
+      if (!chatMainRomaji) return;
+      if (isRomajiVisible) {
+        chatMainRomaji.classList.remove('hidden');
+        if (romajiBtnLabel) romajiBtnLabel.textContent = 'Romaji: ON';
+        if (btnToggleRomaji) btnToggleRomaji.className = 'text-[11px] px-2 py-0.5 rounded-lg border border-amber-400/40 bg-amber-400/10 hover:bg-amber-400/20 text-amber-300 transition flex items-center gap-1 font-medium shadow-sm';
+      } else {
+        chatMainRomaji.classList.add('hidden');
+        if (romajiBtnLabel) romajiBtnLabel.textContent = 'Romaji: OFF';
+        if (btnToggleRomaji) btnToggleRomaji.className = 'text-[11px] px-2 py-0.5 rounded-lg border border-white/20 bg-white/5 hover:bg-white/10 text-slate-400 transition flex items-center gap-1 font-medium shadow-sm';
+      }
+    }
+
+    if (btnToggleRomaji) {
+      btnToggleRomaji.addEventListener('click', () => {
+        isRomajiVisible = !isRomajiVisible;
+        localStorage.setItem('kaiwa_show_romaji', isRomajiVisible);
+        updateRomajiVisibility();
+      });
+    }
+
+    // Inisialisasi awal visibilitas romaji
+    updateRomajiVisibility();
 
     const satoTile = document.getElementById('sato-tile');
     const yukiTile = document.getElementById('yuki-tile');
 
-    function speakSato(jpText, idText, onComplete) {
+    function speakSato(jpText, idText, onComplete, romajiText = '') {
       yukiTile.classList.remove('active-speaker');
       satoTile.classList.add('active-speaker');
 
       // Update Single Box ke tampilan Sato-san (Theme: Sky Blue)
-      singleChatBox.className = 'h-full bg-[#18181e] border-2 border-sky-500/50 rounded-2xl p-3 sm:p-3.5 flex flex-col justify-between shadow-lg shadow-sky-950/30 transition-all duration-300';
+      singleChatBox.className = 'h-full bg-[#18181e] border-2 border-sky-500/50 rounded-2xl p-3 sm:p-4 flex flex-col justify-between shadow-lg shadow-sky-950/30 transition-all duration-300';
       chatSpeakerBadge.className = 'w-6 h-6 rounded-full bg-sky-500/20 text-sky-400 flex items-center justify-center text-xs';
       chatSpeakerIcon.className = 'fa-solid fa-chalkboard-user';
-      chatSpeakerName.textContent = 'Sato-san (佐藤先生)';
+      chatSpeakerName.textContent = 'Sato-san (佐藤さん)';
       chatSpeakerName.className = 'text-xs sm:text-sm font-bold text-sky-400';
-      chatSpeakerRole.textContent = 'Sensei (Bahasa Jepang)';
+      chatSpeakerRole.textContent = activeScenario === 'mensetsu' ? 'Pewawancara' : (activeScenario === 'mendan' ? 'Konselor' : 'Partner Bicara');
       chatSpeakerRole.className = 'text-[10px] bg-sky-500/10 text-sky-300 px-2 py-0.5 rounded border border-sky-500/20';
 
-      chatMainJp.className = 'text-sky-100 font-bold text-sm sm:text-base leading-snug notranslate';
+      chatMainJp.className = 'text-sky-100 font-bold text-sm sm:text-base leading-relaxed tracking-wide notranslate';
       chatMainJp.textContent = jpText;
-      chatMainId.className = 'text-xs sm:text-sm text-slate-300';
+      
+      if (chatMainRomaji) {
+        chatMainRomaji.textContent = romajiText || '';
+      }
+      chatMainId.className = 'text-xs sm:text-sm text-slate-300 leading-normal';
       chatMainId.textContent = idText;
 
       chatTurnStatus.innerHTML = '<i class="fa-solid fa-volume-high text-sky-400 animate-pulse mr-1"></i> Sato-san Berbicara';
@@ -1100,22 +1147,26 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       });
     }
 
-    function speakYuki(jpText, idText, onComplete) {
+    function speakYuki(jpText, idText, onComplete, romajiText = '') {
       satoTile.classList.remove('active-speaker');
       yukiTile.classList.add('active-speaker');
 
       // Update Single Box ke tampilan Yuki-chan (Theme: Pink)
-      singleChatBox.className = 'h-full bg-[#18181e] border-2 border-pink-500/50 rounded-2xl p-3 sm:p-3.5 flex flex-col justify-between shadow-lg shadow-pink-950/30 transition-all duration-300';
+      singleChatBox.className = 'h-full bg-[#18181e] border-2 border-pink-500/50 rounded-2xl p-3 sm:p-4 flex flex-col justify-between shadow-lg shadow-pink-950/30 transition-all duration-300';
       chatSpeakerBadge.className = 'w-6 h-6 rounded-full bg-pink-500/20 text-pink-400 flex items-center justify-center text-xs';
       chatSpeakerIcon.className = 'fa-solid fa-comments';
-      chatSpeakerName.textContent = 'Yuki-chan (由紀アシスタント)';
+      chatSpeakerName.textContent = 'Yuki-chan (由紀)';
       chatSpeakerName.className = 'text-xs sm:text-sm font-bold text-pink-400';
-      chatSpeakerRole.textContent = 'Bimbingan & Tips';
+      chatSpeakerRole.textContent = activeScenario === 'mensetsu' ? 'Pewawancara' : (activeScenario === 'mendan' ? 'Konselor' : 'Partner Bicara');
       chatSpeakerRole.className = 'text-[10px] bg-pink-500/10 text-pink-300 px-2 py-0.5 rounded border border-pink-500/20';
 
-      chatMainJp.className = 'text-pink-100 font-bold text-sm sm:text-base leading-snug notranslate';
+      chatMainJp.className = 'text-pink-100 font-bold text-sm sm:text-base leading-relaxed tracking-wide notranslate';
       chatMainJp.textContent = jpText || '由紀がサポートします：';
-      chatMainId.className = 'text-xs sm:text-sm text-slate-300';
+      
+      if (chatMainRomaji) {
+        chatMainRomaji.textContent = romajiText || '';
+      }
+      chatMainId.className = 'text-xs sm:text-sm text-slate-300 leading-normal';
       chatMainId.textContent = idText;
 
       chatTurnStatus.innerHTML = '<i class="fa-solid fa-volume-high text-pink-400 animate-pulse mr-1"></i> Yuki-chan Menjelaskan';
@@ -1288,20 +1339,24 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
         intro: {
           sato: {
             jp: 'まずは自己紹介からいこう！名前と、好きなことや趣味を教えてくれる？',
+            romaji: 'Mazu wa jikoshoukai kara ikou! Namae to, sukina koto ya shuumi o oshiete kureru?',
             id: 'Ayo mulai dari perkenalan diri! Siapa namamu, dan apa hobi atau hal yang kamu sukai?'
           },
           yuki: {
             jp: '「はじめまして！〜だよ」って感じで気軽に言ってみてね！',
+            romaji: '"Hajimemashite! ... da yo" tte kanji de kigaru ni itte mite ne!',
             id: 'Coba katakan dengan santai: "Hajimemashite! (nama) da yo". Santai saja ya!'
           }
         },
         salam: {
           sato: {
             jp: '友達同士の挨拶は「おはよう」や「じゃあね」で大丈夫だよ！',
+            romaji: 'Tomodachi doushi no aisatsu wa "Ohayou" ya "Jaa ne" de daijoubu da yo!',
             id: 'Salam antar teman cukup katakan "Ohayou" atau "Jaa ne", santai saja!'
           },
           yuki: {
             jp: '笑顔で元気に挨拶すると、すぐ仲良くなれるよ！',
+            romaji: 'Egao de genki ni aisatsu suru to, sugu nakayoku nareru yo!',
             id: 'Kalau menyapa sambil tersenyum ramah, pasti cepat akrab!'
           }
         }
@@ -1312,20 +1367,24 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
         intro: {
           sato: {
             jp: '面談を始めましょう。お名前と、現在の日本語学習の目標を教えてください。',
+            romaji: 'Mendan o hajimemashou. Onamae to, genzai no nihongo gakushuu no mokuhyou o oshiete kudasai.',
             id: 'Mari kita mulai sesi konsultasi. Silakan perkenalkan nama dan apa target belajar bahasa Jepang Anda saat ini.'
           },
           yuki: {
             jp: '「〜です。合格を目指して勉強しています」と伝えてみましょう！',
+            romaji: '"... desu. Goukaku o mezashite benkyou shite imasu" to tsutaete mimashou!',
             id: 'Coba sampaikan: "(nama) desu. Target saya belajar untuk lulus ujian". Saya bantu ya!'
           }
         },
         salam: {
           sato: {
             jp: '相談や面談の場では「よろしくお願いします」と丁寧に挨拶しましょう。',
+            romaji: 'Soudan ya mendan no ba dewa "Yoroshiku onegaishimasu" to teinei ni aisatsu shimashou.',
             id: 'Dalam sesi bimbingan atau konsultasi, ucapkan salam dengan sopan "Yoroshiku onegaishimasu".'
           },
           yuki: {
             jp: 'わからないことがあれば、遠慮せずに何でも相談してくださいね！',
+            romaji: 'Wakaranai koto ga areba, enryo sezu ni nandemo soudan shite kudasai ne!',
             id: 'Jika ada kesulitan dalam belajar, jangan ragu untuk bertanya ya!'
           }
         }
@@ -1336,20 +1395,24 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
         intro: {
           sato: {
             jp: 'それでは面接を始めます。まずはお名前と、日本で働きたい理由をお聞かせいただけますか。',
+            romaji: 'Soredewa mensetsu o hajimemasu. Mazu wa onamae to, nihon de hatarakitai riyuu o okikase itadakemasu ka.',
             id: 'Baiklah, kita mulai wawancara kerja. Pertama-tama, sebutkan nama Anda dan alasan mengapa Anda ingin bekerja di Jepang.'
           },
           yuki: {
             jp: '「はじめまして、〜と申します。本日はよろしくお願い申し上げます」と述べましょう！',
+            romaji: '"Hajimemashite, ... to moushimasu. Honjitsu wa yoroshiku onegai moushiagemasu" to nobemashou!',
             id: 'Gunakan bentuk formal Keigo: "Hajimemashite, (nama) to moushimasu. Honjitsu wa yoroshiku onegai moushiagemasu"!'
           }
         },
         salam: {
           sato: {
             jp: '面接室の入退室時は「失礼いたします」「本日はありがとうございました」と一礼しましょう。',
+            romaji: 'Mensetsushitsu no nyuutai shitsuji wa "Shitsurei itashimasu" "Honjitsu wa arigatou gozaimashita" to ichirei shimashou.',
             id: 'Saat masuk dan keluar ruang wawancara, ucapkan "Shitsurei itashimasu" serta membungkuk sopan.'
           },
           yuki: {
             jp: '面接官の目を見て、背筋を伸ばしてハキハキと答えるのがポイントですよ！',
+            romaji: 'Mensetsukan no me o mite, sesuji o nobashite hakihaki to kotaeru no ga pointo desu yo!',
             id: 'Tatap mata pewawancara, tegakkan badan, dan jawab dengan nada suara yang mantap ya!'
           }
         }
@@ -1376,17 +1439,17 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
 
       if (activePartner === 'sato') {
         // Solo Sato
-        speakSato(data.sato.jp, data.sato.id, onScenarioFinished);
+        speakSato(data.sato.jp, data.sato.id, onScenarioFinished, data.sato.romaji);
       } else if (activePartner === 'yuki') {
         // Solo Yuki
-        speakYuki(data.yuki.jp, data.yuki.id, onScenarioFinished);
+        speakYuki(data.yuki.jp, data.yuki.id, onScenarioFinished, data.yuki.romaji);
       } else {
         // Duet Sato & Yuki
         speakSato(data.sato.jp, data.sato.id, () => {
           setTimeout(() => {
-            speakYuki(data.yuki.jp, data.yuki.id, onScenarioFinished);
+            speakYuki(data.yuki.jp, data.yuki.id, onScenarioFinished, data.yuki.romaji);
           }, 700);
-        });
+        }, data.sato.romaji);
       }
     }
 
@@ -1576,23 +1639,27 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
         if (activePartner === 'yuki') {
           // Mode Solo Yuki
           const yukiTextJp = data.yuki?.jp || data.sato?.jp || '';
+          const yukiTextRomaji = data.yuki?.romaji || data.sato?.romaji || '';
           const yukiTextId = data.yuki?.id || data.sato?.id || '';
           speakYuki(yukiTextJp, yukiTextId, () => {
             isAIProcessing = false;
             if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
             if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
-          });
+          }, yukiTextRomaji);
         } else if (activePartner === 'sato') {
           // Mode Solo Sato
           const satoTextJp = data.sato?.jp || data.yuki?.jp || '';
+          const satoTextRomaji = data.sato?.romaji || data.yuki?.romaji || '';
           const satoTextId = data.sato?.id || data.yuki?.id || '';
           speakSato(satoTextJp, satoTextId, () => {
             isAIProcessing = false;
             if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
             if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
-          });
+          }, satoTextRomaji);
         } else if (data.firstSpeaker === 'yuki' && data.yuki?.id) {
           // Mode Duet: Yuki membimbing duluan
+          const yukiRomaji = data.yuki?.romaji || '';
+          const satoRomaji = data.sato?.romaji || '';
           speakYuki(data.yuki.jp || '', data.yuki.id, () => {
             if (data.sato?.jp) {
               setTimeout(() => {
@@ -1600,16 +1667,18 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
                   isAIProcessing = false;
                   if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
                   if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
-                });
+                }, satoRomaji);
               }, 600);
             } else {
               isAIProcessing = false;
               if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
               if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
             }
-          });
+          }, yukiRomaji);
         } else {
           // Mode Duet: Sato-sensei merespon duluan, lalu Yuki menambahkan
+          const satoRomaji = data.sato?.romaji || '';
+          const yukiRomaji = data.yuki?.romaji || '';
           speakSato(data.sato.jp, data.sato.id, () => {
             if (data.yuki?.id) {
               setTimeout(() => {
@@ -1617,14 +1686,14 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
                   isAIProcessing = false;
                   if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
                   if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
-                });
+                }, yukiRomaji);
               }, 600);
             } else {
               isAIProcessing = false;
               if (colUserStatus) colUserStatus.textContent = 'Siap Bicara';
               if (!isMuted && recognition) { try { recognition.start(); } catch(e){} }
             }
-          });
+          }, satoRomaji);
         }
       } catch (err) {
         console.error("Error AI Tutor:", err);
