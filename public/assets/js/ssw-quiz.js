@@ -6,6 +6,8 @@
     slug: 'ssw-peternakan-quiz',
     sectorTitle: 'SSW Peternakan (Chikusan / 畜産)',
     passThreshold: 65,
+    passLabel: 'Min. 65%',
+    examType: 'general', // 'nihongo', 'kaigo-skills', 'general'
     questions: [],
     cur: 0,
     picked: {},
@@ -35,11 +37,27 @@
     return 'ssw-peternakan-quiz';
   }
 
-  // Inisialisasi data kuis
+  // Inisialisasi data kuis & aturan scoring resmi
   async function init() {
     S.slug = getSlug();
-    var isKaigo = (S.slug.indexOf('kaigo') > -1);
-    S.passThreshold = isKaigo ? 60 : 65;
+    
+    // Konfigurasi Skor Resmi berdasarkan jenis ujian:
+    // 1. Kaigo Nihongo (介護日本語評価試験): Passing standard resmi MHLW = 73% (11/15)
+    // 2. Kaigo Skills / Bab Teori (介護技能評価試験): Passing standard resmi MHLW = 60%
+    // 3. Sektor Lainnya (Peternakan, dll): Passing standard SSW umum = 65%
+    if (S.slug.indexOf('kaigo-nihongo') > -1) {
+      S.examType = 'nihongo';
+      S.passThreshold = 73;
+      S.passLabel = 'Min. 73% (Standar MHLW)';
+    } else if (S.slug.indexOf('kaigo') > -1) {
+      S.examType = 'kaigo-skills';
+      S.passThreshold = 60;
+      S.passLabel = 'Min. 60% (Standar MHLW)';
+    } else {
+      S.examType = 'general';
+      S.passThreshold = 65;
+      S.passLabel = 'Min. 65%';
+    }
 
     var contentEl = document.getElementById('ssw-content');
     if (!contentEl) return;
@@ -98,7 +116,7 @@
     h += '      <i class="fa-solid fa-certificate"></i> Tokutei Ginou No. 1 Evaluation';
     h += '    </div>';
     h += '    <h1 class="text-xl sm:text-2xl font-black text-white" id="ssw-header-title">' + esc(S.sectorTitle) + '</h1>';
-    h += '    <p class="text-xs text-emerald-100 mt-0.5">Standar kelulusan evaluasi keahlian SSW: minimal ' + S.passThreshold + '% jawaban benar.</p>';
+    h += '    <p class="text-xs text-emerald-100 mt-0.5">Standar kelulusan evaluasi SSW: ' + esc(S.passLabel) + ' jawaban benar.</p>';
     h += '  </div>';
     h += '  <div class="flex items-center gap-2 self-start sm:self-auto bg-white/10 backdrop-blur-md px-4 py-2 rounded-xl border border-white/20">';
     h += '    <i class="fa-solid fa-list-check text-white text-lg"></i>';
@@ -324,7 +342,7 @@
     navEl.innerHTML = h;
   }
 
-  // Kalkulasi Skor
+  // Kalkulasi Skor dengan sub-kategori dinamis
   function calcScore() {
     var benar = 0;
     var total = S.questions.length;
@@ -334,18 +352,17 @@
     var skorPct = total ? Math.round(benar / total * 100) : 0;
     var isPass = skorPct >= S.passThreshold;
 
-    var cats = {
-      gakka: { benar: 0, total: 0 },
-      anzen: { benar: 0, total: 0 },
-      jitsugi: { benar: 0, total: 0 }
-    };
+    var cats = {};
 
     S.questions.forEach(function (q) {
-      var cat = q.category || (q.no <= 20 ? 'gakka' : (q.no <= 35 ? 'anzen' : 'jitsugi'));
-      if (!cats[cat]) cats[cat] = { benar: 0, total: 0 };
-      cats[cat].total++;
+      var cKey = q.category || 'umum';
+      var cLabel = q.category_label || (q.no <= 20 ? "1. Pengetahuan Teknis (Gakka)" : (q.no <= 35 ? "2. Keselamatan Kerja" : "3. Praktik Operasional (Jitsugi)"));
+      if (!cats[cKey]) {
+        cats[cKey] = { label: cLabel, benar: 0, total: 0 };
+      }
+      cats[cKey].total++;
       if (S.locked[q.no] && S.picked[q.no] === q.answer) {
-        cats[cat].benar++;
+        cats[cKey].benar++;
       }
     });
 
@@ -394,11 +411,15 @@
     h += '      <span id="ssw-score-correct" class="text-[10px] text-white font-bold" style="color:#d1fae5 !important;display:block;">0 / 0 Benar</span>';
     h += '    </div>';
     h += '    <h3 id="ssw-status-title" class="text-xl font-black text-slate-800">Evaluasi Selesai</h3>';
-    h += '    <p id="ssw-status-desc" class="text-xs text-slate-500 mt-1 mb-5">Standar kelulusan ujian keahlian SSW minimal ' + S.passThreshold + '%.</p>';
+    h += '    <p id="ssw-status-desc" class="text-xs text-slate-500 mt-1 mb-5">Standar kelulusan ujian SSW ini: minimal ' + S.passThreshold + '%.</p>';
+    
+    // Sub-skor Box Dinamis
+    h += '    <div id="ssw-modal-cats" class="space-y-1.5 mb-4 text-left max-h-36 overflow-y-auto custom-scrollbar p-1"></div>';
+
     h += '    <div class="space-y-2 mb-6 text-left">';
     h += '      <div class="flex justify-between items-center p-3 rounded-xl bg-emerald-50 border border-emerald-100 text-xs">';
     h += '        <span class="font-bold text-emerald-900"><i class="fa-solid fa-award mr-1.5 text-emerald-600"></i> Standar Kelulusan SSW</span>';
-    h += '        <span id="ssw-pass-mark-label" class="font-black text-emerald-700">Min. ' + S.passThreshold + '%</span>';
+    h += '        <span id="ssw-pass-mark-label" class="font-black text-emerald-700">' + esc(S.passLabel) + '</span>';
     h += '      </div>';
     h += '    </div>';
     h += '    <div class="space-y-2">';
@@ -422,23 +443,38 @@
     if (scoreNumEl) scoreNumEl.textContent = sc.skor + '%';
     if (scoreCorrEl) scoreCorrEl.textContent = sc.benar + ' / ' + sc.total + ' Benar';
 
+    // Render Sub-kategori ke Modal
+    var modalCatsEl = document.getElementById('ssw-modal-cats');
+    if (modalCatsEl && sc.cats) {
+      var catH = '';
+      Object.keys(sc.cats).forEach(function (k) {
+        var c = sc.cats[k];
+        var pct = c.total ? Math.round(c.benar / c.total * 100) : 0;
+        catH += '<div class="flex justify-between items-center p-2 rounded-lg bg-slate-50 border border-slate-200 text-[11px]">';
+        catH += '  <span class="text-slate-600 font-medium truncate mr-2">' + esc(c.label) + '</span>';
+        catH += '  <span class="font-bold text-slate-800 shrink-0">' + c.benar + '/' + c.total + ' (' + pct + '%)</span>';
+        catH += '</div>';
+      });
+      modalCatsEl.innerHTML = catH;
+    }
+
     var st = document.getElementById('ssw-status-title');
     var sd = document.getElementById('ssw-status-desc');
     var pml = document.getElementById('ssw-pass-mark-label');
-    if (pml) pml.textContent = 'Min. ' + S.passThreshold + '%';
+    if (pml) pml.textContent = S.passLabel;
 
     if (sc.pass) {
       if (st) {
         st.textContent = 'LULUS (MIN. ' + S.passThreshold + '%)';
         st.className = 'text-xl font-black text-emerald-600';
       }
-      if (sd) sd.textContent = 'Selamat! Anda telah memenuhi kriteria nilai kelulusan keahlian SSW.';
+      if (sd) sd.textContent = 'Selamat! Anda telah memenuhi kriteria nilai kelulusan resmi SSW.';
     } else {
       if (st) {
         st.textContent = 'BELUM LULUS (<' + S.passThreshold + '%)';
         st.className = 'text-xl font-black text-rose-600';
       }
-      if (sd) sd.textContent = 'Skor masih di bawah ' + S.passThreshold + '%. Silakan pelajari kembali materi dan coba lagi.';
+      if (sd) sd.textContent = 'Skor masih di bawah standar ' + S.passThreshold + '%. Silakan pelajari kembali materi dan coba lagi.';
     }
 
     var btnDetail = document.getElementById('ssw-btn-detail');

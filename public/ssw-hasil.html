@@ -425,10 +425,17 @@
       } catch (e) {}
     }
 
+    var isKaigoNihongo = (slug.indexOf('kaigo-nihongo') > -1);
+    var isKaigoSkills = (slug.indexOf('kaigo') > -1 && !isKaigoNihongo);
+    var isKaigo = isKaigoNihongo || isKaigoSkills;
+
     var benar = R ? (R.benar || 0) : 0;
     var total = R ? (R.total || 45) : 45;
     var pc = total ? Math.round(benar / total * 100) : (R && R.skor != null ? R.skor : 0);
-    var passThreshold = isKaigo ? 60 : 65;
+    
+    // Standar Kelulusan Resmi:
+    // Kaigo Nihongo = 73% (MHLW), Kaigo Skills (Bab Teori) = 60% (MHLW), Sektor Lainnya = 65%
+    var passThreshold = isKaigoNihongo ? 73 : (isKaigoSkills ? 60 : 65);
     var pass = (pc >= passThreshold);
 
     // Tampilkan Nama Lengkap & Email
@@ -448,9 +455,15 @@
     document.getElementById('val-date').textContent = yyyy + '/' + mm + '/' + dd + ' (yyyy/mm/dd)';
 
     // Sesuaikan Judul Sesuai Sektor
-    var examTitleJP = isKaigo ? '介護日本語評価試験結果通知書' : '特定技能評価試験結果通知書';
-    var examTitleEN = isKaigo ? 'Notification of results for Nursing care Japanese language evaluation test' : 'Notification of results for Specified Skilled Worker evaluation test';
-    var examSubject = isKaigo ? 'Nursing care Japanese language evaluation test (Indonesian)' : (slug.replace('-quiz', '').replace('ssw-', 'SSW ').toUpperCase() + ' evaluation test (Indonesian)');
+    var examTitleJP = isKaigoNihongo 
+      ? '介護日本語評価試験結果通知書' 
+      : (isKaigoSkills ? '介護技能評価試験結果通知書' : '特定技能評価試験結果通知書');
+    var examTitleEN = isKaigoNihongo 
+      ? 'Notification of results for Nursing care Japanese language evaluation test' 
+      : (isKaigoSkills ? 'Notification of results for Nursing care skills evaluation test' : 'Notification of results for Specified Skilled Worker evaluation test');
+    var examSubject = isKaigoNihongo 
+      ? 'Nursing care Japanese language evaluation test (Indonesian)' 
+      : (isKaigoSkills ? 'Nursing care skills evaluation test (Indonesian)' : (slug.replace('-quiz', '').replace('ssw-', 'SSW ').toUpperCase() + ' evaluation test (Indonesian)'));
 
     document.getElementById('cert-main-title').textContent = examTitleJP;
     document.getElementById('cert-sub-title').textContent = examTitleEN;
@@ -468,29 +481,29 @@
       resEl.style.color = '#dc2626'; // Merah
     }
 
-    // Breakdown Sub-Kompetensi Eksak Nyata
+    // Breakdown Sub-Kompetensi Dinamis (Membaca cats riil dari riwayat pengerjaan)
     var bdBox = document.getElementById('breakdown-list');
     var cats = (R && R.cats) ? R.cats : null;
 
-    if (cats && cats.gakka && cats.anzen && cats.jitsugi) {
-      var pGakka = cats.gakka.total ? Math.round(cats.gakka.benar / cats.gakka.total * 100) : 0;
-      var pAnzen = cats.anzen.total ? Math.round(cats.anzen.benar / cats.anzen.total * 100) : 0;
-      var pJitsugi = cats.jitsugi.total ? Math.round(cats.jitsugi.benar / cats.jitsugi.total * 100) : 0;
-
-      if (isKaigo) {
-        bdBox.innerHTML = '<div class="item-row"><span>1. Technical terms of care</span><span>: <b>' + pGakka + '%</b> (' + cats.gakka.benar + '/' + cats.gakka.total + ')</span></div>' +
-          '<div class="item-row"><span>2. Communications of care</span><span>: <b>' + pAnzen + '%</b> (' + cats.anzen.benar + '/' + cats.anzen.total + ')</span></div>' +
-          '<div class="item-row"><span>3. Documents of care</span><span>: <b>' + pJitsugi + '%</b> (' + cats.jitsugi.benar + '/' + cats.jitsugi.total + ')</span></div>';
-      } else {
-        bdBox.innerHTML = '<div class="item-row"><span>1. Pengetahuan &amp; Istilah Teknis (Gakka)</span><span>: <b>' + pGakka + '%</b> (' + cats.gakka.benar + '/' + cats.gakka.total + ')</span></div>' +
-          '<div class="item-row"><span>2. Prosedur &amp; Keselamatan Kerja</span><span>: <b>' + pAnzen + '%</b> (' + cats.anzen.benar + '/' + cats.anzen.total + ')</span></div>' +
-          '<div class="item-row"><span>3. Praktik Operasional Keahlian (Jitsugi)</span><span>: <b>' + pJitsugi + '%</b> (' + cats.jitsugi.benar + '/' + cats.jitsugi.total + ')</span></div>';
-      }
+    if (cats && typeof cats === 'object' && Object.keys(cats).length > 0) {
+      var catKeys = Object.keys(cats);
+      var bHtml = '';
+      catKeys.forEach(function (k, idx) {
+        var c = cats[k];
+        var pct = c.total ? Math.round(c.benar / c.total * 100) : 0;
+        var lbl = c.label || (k.toUpperCase());
+        bHtml += '<div class="item-row"><span>' + esc(lbl) + '</span><span>: <b>' + pct + '%</b> (' + c.benar + '/' + c.total + ')</span></div>';
+      });
+      bdBox.innerHTML = bHtml;
     } else {
-      if (isKaigo) {
-        bdBox.innerHTML = '<div class="item-row"><span>1. Technical terms of care</span><span>: <b>' + pc + '%</b></span></div>' +
-          '<div class="item-row"><span>2. Communications of care</span><span>: <b>' + pc + '%</b></span></div>' +
-          '<div class="item-row"><span>3. Documents of care</span><span>: <b>' + pc + '%</b></span></div>';
+      if (isKaigoNihongo) {
+        bdBox.innerHTML = '<div class="item-row"><span>1. Technical terms of care (介護のことば)</span><span>: <b>' + pc + '%</b></span></div>' +
+          '<div class="item-row"><span>2. Communications of care (介護の会話・声かけ)</span><span>: <b>' + pc + '%</b></span></div>' +
+          '<div class="item-row"><span>3. Documents of care (介護の文書)</span><span>: <b>' + pc + '%</b></span></div>';
+      } else if (isKaigoSkills) {
+        bdBox.innerHTML = '<div class="item-row"><span>1. Fundamentals of care (介護の基本)</span><span>: <b>' + pc + '%</b></span></div>' +
+          '<div class="item-row"><span>2. Mind &amp; Body Mechanisms (こころとからだのしくみ)</span><span>: <b>' + pc + '%</b></span></div>' +
+          '<div class="item-row"><span>3. Safety &amp; Living Support (生活支援技術・安全)</span><span>: <b>' + pc + '%</b></span></div>';
       } else {
         bdBox.innerHTML = '<div class="item-row"><span>1. Pengetahuan &amp; Istilah Teknis (Gakka)</span><span>: <b>' + pc + '%</b></span></div>' +
           '<div class="item-row"><span>2. Prosedur &amp; Keselamatan Kerja</span><span>: <b>' + pc + '%</b></span></div>' +
