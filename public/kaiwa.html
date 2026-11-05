@@ -578,19 +578,22 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       });
     }
 
-    function initGeminiChat() {
+    const PRIMARY_GEMINI_MODEL = 'gemini-3.8-flash';
+    const FALLBACK_GEMINI_MODEL = 'gemini-3.6-flash';
+
+    function initGeminiChat(modelName = PRIMARY_GEMINI_MODEL) {
       try {
         if (!geminiClient) {
           geminiClient = new GoogleGenAI({ apiKey: GEMINI_API_KEY });
         }
         const instruction = buildModularSystemInstruction(activePartner, activeScenario);
         geminiChat = geminiClient.chats.create({
-          model: 'gemini-3.8-flash',
+          model: modelName,
           config: {
             systemInstruction: instruction
           }
         });
-        console.log(`[Gemini AI] Sesi diinisialisasi ulang: Partner=${activePartner}, Model=${activeScenario}`);
+        console.log(`[Gemini AI] Sesi diinisialisasi: Partner=${activePartner}, Model=${activeScenario}, LLM=${modelName}`);
       } catch (e) {
         console.error("Gagal inisialisasi Gemini:", e);
       }
@@ -1034,16 +1037,20 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
     // ── Main Render Loop ──
     function animate() {
       requestAnimationFrame(animate);
-      const delta = clock.getDelta();
+      const delta = Math.min(clock.getDelta(), 0.1); // Cegah lonjakan frame rate / lag spike
       const elapsed = clock.getElapsedTime();
 
-      // Render Tile Sato-san
-      updateCharacter(stateSato, delta, elapsed, false);
-      satoRoom.renderer.render(satoRoom.scene, satoRoom.camera);
+      // Render Tile Sato-san jika aktif / visible
+      if (activePartner !== 'yuki') {
+        updateCharacter(stateSato, delta, elapsed, false);
+        satoRoom.renderer.render(satoRoom.scene, satoRoom.camera);
+      }
 
-      // Render Tile Yuki-chan
-      updateCharacter(stateYuki, delta, elapsed, true);
-      yukiRoom.renderer.render(yukiRoom.scene, yukiRoom.camera);
+      // Render Tile Yuki-chan jika aktif / visible
+      if (activePartner !== 'sato') {
+        updateCharacter(stateYuki, delta, elapsed, true);
+        yukiRoom.renderer.render(yukiRoom.scene, yukiRoom.camera);
+      }
     }
     animate();
 
@@ -1633,9 +1640,22 @@ HANYA kembalikan objek JSON yang valid tanpa tanda kutip markdown (\`\`\`).
       if (colUserStatus) colUserStatus.textContent = 'Sedang Ditanggapi...';
 
       try {
-        const response = await geminiChat.sendMessage({
-          message: userText
-        });
+        let response;
+        try {
+          response = await geminiChat.sendMessage({ message: userText });
+        } catch (firstErr) {
+          // Jika server sedang sibuk (503 Service Unavailable / Spikes in demand), coba fallback model gemini-3.6-flash
+          console.warn("[Gemini AI] Percobaan pertama gagal, mencoba fallback model:", firstErr);
+          const fbChat = geminiClient.chats.create({
+            model: FALLBACK_GEMINI_MODEL,
+            config: {
+              systemInstruction: buildModularSystemInstruction(activePartner, activeScenario)
+            }
+          });
+          response = await fbChat.sendMessage({ message: userText });
+          geminiChat = fbChat; // Ganti sesi aktif ke model cadangan
+        }
+
         const replyText = response.text.trim();
         const jsonMatch = replyText.match(/\{[\s\S]*\}/);
         if (!jsonMatch) throw new Error("Format respon bukan JSON");
