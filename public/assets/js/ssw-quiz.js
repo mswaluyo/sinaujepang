@@ -286,11 +286,13 @@
 
   function renderExplanationCard(q, isCorrect) {
     var fullT = (q.title || '').trim();
+    // Deteksi apakah soal menggunakan aksara Jepang (Kanji / Hiragana / Katakana)
+    var isJapanese = /[\u3040-\u309f\u30a0-\u30ff\u4e00-\u9faf]/.test(fullT);
     var trans = q.trans || (q.trans_id || '');
     var transR = q.trans_rom || '';
     var cleanAna = String(q.analisis || q.penjelasan || '').replace(/\s*Kunci\s*:\s*[a-dA-D][.\s]*/g, ' ').replace(/\s{2,}/g, ' ').trim();
     
-    // Header Banner (Sesuai Layout JFT)
+    // Header Banner
     var h = '';
     if (isCorrect) {
       h += '<div class="fb-box mt-6 rounded-2xl p-5 sm:p-6 border border-emerald-200 bg-emerald-50/60 text-sm space-y-4 shadow-sm" style="scroll-margin-top:140px">';
@@ -306,40 +308,44 @@
       h += '  </div>';
     }
 
-    // 1. ANALISIS KALIMAT SOAL
-    h += '<div class="bg-white border border-emerald-100 rounded-xl p-4 sm:p-5 space-y-3">';
-    h += '  <div class="text-xs font-bold text-emerald-800 uppercase tracking-wider border-b border-slate-100 pb-2">1. Analisis Kalimat Soal</div>';
-    h += '  <div class="space-y-2.5">';
-    if (fullT && !/^soal\s*\d+$/i.test(fullT)) {
-      h += '    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-100">';
-      h += '      <span class="text-slate-400 block text-xs font-medium mb-0.5">Kanji / Kana:</span>';
-      h += '      <span class="font-bold text-slate-900 text-sm sm:text-base leading-relaxed" style="white-space:pre-line">' + esc(fullT) + '</span>';
-      h += '    </div>';
+    // 1. ANALISIS KALIMAT SOAL (Hanya ditampilkan lengkap bila soal berbahasa Jepang)
+    if (isJapanese) {
+      h += '<div class="bg-white border border-emerald-100 rounded-xl p-4 sm:p-5 space-y-3">';
+      h += '  <div class="text-xs font-bold text-emerald-800 uppercase tracking-wider border-b border-slate-100 pb-2">1. Analisis Kalimat Soal</div>';
+      h += '  <div class="space-y-2.5">';
+      if (fullT && !/^soal\s*\d+$/i.test(fullT)) {
+        h += '    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-100">';
+        h += '      <span class="text-slate-400 block text-xs font-medium mb-0.5">Kanji / Kana:</span>';
+        h += '      <span class="font-bold text-slate-900 text-sm sm:text-base leading-relaxed" style="white-space:pre-line">' + esc(fullT) + '</span>';
+        h += '    </div>';
+      }
+      if (transR && transR !== '-') {
+        h += '    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-100">';
+        h += '      <span class="text-slate-400 block text-xs font-medium mb-0.5">Cara Baca (Romaji):</span>';
+        h += '      <span class="italic text-slate-700 text-xs sm:text-sm" style="white-space:pre-line">' + esc(transR) + '</span>';
+        h += '    </div>';
+      }
+      if (trans && trans !== '-' && !trans.startsWith('Evaluasi ')) {
+        h += '    <div class="bg-emerald-50/50 p-2.5 rounded-lg border border-emerald-100">';
+        h += '      <span class="text-emerald-700 block text-xs font-semibold mb-0.5">Terjemahan Utuh:</span>';
+        h += '      <span class="font-medium text-emerald-950 text-xs sm:text-sm leading-relaxed" style="white-space:pre-line">' + esc(trans) + '</span>';
+        h += '    </div>';
+      }
+      h += '  </div>';
+      h += '</div>';
     }
-    if (transR && transR !== '-') {
-      h += '    <div class="bg-slate-50 p-2.5 rounded-lg border border-slate-100">';
-      h += '      <span class="text-slate-400 block text-xs font-medium mb-0.5">Cara Baca (Romaji):</span>';
-      h += '      <span class="italic text-slate-700 text-xs sm:text-sm" style="white-space:pre-line">' + esc(transR) + '</span>';
-      h += '    </div>';
-    }
-    if (trans && trans !== '-') {
-      h += '    <div class="bg-emerald-50/50 p-2.5 rounded-lg border border-emerald-100">';
-      h += '      <span class="text-emerald-700 block text-xs font-semibold mb-0.5">Terjemahan Utuh:</span>';
-      h += '      <span class="font-medium text-emerald-950 text-xs sm:text-sm leading-relaxed" style="white-space:pre-line">' + esc(trans) + '</span>';
-      h += '    </div>';
-    }
-    h += '  </div>';
-    h += '</div>';
 
-    // 2. POLA TATA BAHASA & PEMBAHASAN
+    // 2. PEMBAHASAN & ANALISIS (Tata Bahasa untuk Nihongo / Landasan Klinis & Medis untuk Indo)
+    var sec2Title = isJapanese ? '2. Pola Tata Bahasa & Pembahasan' : (isJapanese ? '2. Pembahasan Soal' : '1. Landasan Teori & Analisis Klinis');
     h += '<div class="bg-white border border-emerald-100 rounded-xl p-4 sm:p-5 space-y-2">';
-    h += '  <div class="text-xs font-bold text-emerald-800 uppercase tracking-wider">2. Pola Tata Bahasa & Pembahasan</div>';
+    h += '  <div class="text-xs font-bold text-emerald-800 uppercase tracking-wider">' + sec2Title + '</div>';
     h += '  <div class="text-slate-700 text-xs sm:text-sm leading-relaxed" style="white-space:pre-line">' + esc(cleanAna) + '</div>';
     h += '</div>';
 
     // 3. ANALISIS PILIHAN JAWABAN
+    var sec3Title = isJapanese ? '3. Analisis Pilihan Jawaban' : '2. Analisis Pilihan Jawaban';
     h += '<div class="bg-white border border-emerald-100 rounded-xl p-4 sm:p-5 space-y-2">';
-    h += '  <div class="text-xs font-bold text-emerald-800 uppercase tracking-wider mb-2">3. Analisis Pilihan Jawaban</div>';
+    h += '  <div class="text-xs font-bold text-emerald-800 uppercase tracking-wider mb-2">' + sec3Title + '</div>';
     h += '  <ul class="space-y-2.5 text-xs sm:text-sm">';
     (q.options || []).forEach(function (opt, idx) {
       var isOptCorrect = (idx === q.answer);
@@ -353,15 +359,19 @@
 
       var head = '<strong>' + letter(idx) + '. ' + esc(kk) + (rr ? ' (' + esc(rr) + ')' : '') + ':</strong> ';
       var note = '';
+      
+      // Jika soal Indonesia dan arti identik dengan teks opsi, jangan ulangi teks dua kali
       if (aa && aa !== kk) {
         note += esc(aa);
       }
-      if (rawR && rawR !== aa) {
+      if (rawR && rawR !== aa && rawR !== 'Pilihan evaluasi Kaigo') {
         if (note) note += ' <span class="text-slate-400">—</span> ';
         note += '<span class="' + (isOptCorrect ? 'text-emerald-700/80 font-medium' : 'text-slate-500') + '">' + esc(rawR) + '</span>';
       }
       if (!note) {
-        note = isOptCorrect ? '<span class="text-emerald-700/80 font-medium">Tepat sekali. Pilihan jawaban ini sesuai dengan gambar atau situasi keahlian kerja.</span>' : '<span class="text-slate-500">Pilihan jawaban kurang tepat untuk konteks soal ini.</span>';
+        note = isOptCorrect 
+          ? '<span class="text-emerald-700/80 font-medium">Tindakan/jawaban paling tepat sesuai standar kompetensi & keselamatan kerja.</span>' 
+          : '<span class="text-slate-500">Pilihan kurang tepat atau bertentangan dengan prosedur standar operasional.</span>';
       }
 
       if (isOptCorrect) {
