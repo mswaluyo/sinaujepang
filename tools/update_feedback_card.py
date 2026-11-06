@@ -122,3 +122,4 @@ with open('public/assets/js/ssw-quiz.js', 'w', encoding='utf-8') as f:
     f.write(content)
 
 print('Successfully updated ssw-quiz.js')
+

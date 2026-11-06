@@ -214,3 +214,4 @@ with open('public/quizzes/ssw-kaigo-nihongo-shukkin-quiz/quiz-data.json', 'w', e
     json.dump(raw_quiz, f, ensure_ascii=False, indent=2)
 
 print('Successfully enriched all 15 questions in shukkin package!')
+

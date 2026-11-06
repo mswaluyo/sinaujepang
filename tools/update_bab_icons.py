@@ -44,3 +44,4 @@ with open("public/ssw.html", "w", encoding="utf-8") as f:
     f.write(html)
 
 print("Finished updating all Bab 5-17 icons in public/ssw.html!")
+
