@@ -3,7 +3,7 @@ window.PAKET_CONFIG = {
   "totalSoal": 884,
   "kategori": [
     {
-      "nama": "BARU",
+      "nama": "OKTOBER NOVEMBER",
       "warna": "emerald",
       "badgeGradien": "from-emerald-500 to-teal-600",
       "paket": [
