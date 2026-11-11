@@ -1,31 +1,73 @@
 // QUIZ dinamis 1 pintu: /quiz.html?p={slug}-quiz
-// Slug valid = 14 paket; QUIZ_META dibaca dari quiz-data + judul dari slug.
+// Mendukung semua paket kuis dari PAKET_CONFIG maupun paket SSW
 (function () {
-  var PAKET = ["hare-quiz","aoi-quiz","basu3-quiz","basu-quiz","gakusei-quiz","jinja-quiz","kagi-quiz",
-    "konpyuutaa-quiz","kuroi-quiz","kutsushita-quiz","magarimasu-quiz","orimasu-quiz","orimasu2-quiz","orimasu-tambahan-quiz","shimemasu2-quiz","genkan-quiz","gakusei2-quiz","gakusei-tambahan-quiz",
-    "shatsu-quiz","tamago-quiz","tomemasu-quiz","basu0001-quiz"];
+  function getSupportedPacks() {
+    var list = [];
+    if (window.PAKET_CONFIG && window.PAKET_CONFIG.kategori) {
+      window.PAKET_CONFIG.kategori.forEach(function (kat) {
+        (kat.paket || []).forEach(function (p) {
+          if (p.slug) list.push(p.slug);
+          if (p.soalTambahan && p.soalTambahan.slug) list.push(p.soalTambahan.slug);
+        });
+      });
+    }
+    return list;
+  }
+
   function slug() {
-    var m = (location.search || "").match(/[?&]p=([a-z0-9_-]+-quiz)/i);
+    var search = location.search || "";
+    // Mendukung ?p=saifu-quiz maupun ?p=saifu
+    var m = search.match(/[?&]p=([a-z0-9_-]+)/i);
     if (m) {
       var s = m[1].toLowerCase();
-      if (PAKET.indexOf(s) > -1 || /^ssw-/i.test(s)) return s;
+      if (!/-quiz$/i.test(s)) s += "-quiz";
+      return s;
     }
-    return "kuroi-quiz";
+    // Jika tidak ada parameter ?p=, ambil paket pertama dari kategori teratas jika ada
+    var supported = getSupportedPacks();
+    if (supported.length > 0) return supported[0];
+    return "saifu-quiz";
   }
+
   window.QUIZ_SLUG = slug();
-  // Judul humanis + total dibaca saat model load (tanpa fetch ganda: judul dari slug dulu)
-  var nama = window.QUIZ_SLUG.replace("-quiz", "").toUpperCase();
+  var nama = window.QUIZ_SLUG.replace("-quiz", "").replace(/[-_]/g, " ").toUpperCase();
   window.QUIZ_META = { judul: nama, total: 0, slug: window.QUIZ_SLUG };
 })();
 
-// Lengkapi judul + total dari quiz-data (1 fetch, di-cache browser bersama model.js).
+// Lengkapi judul + total dari quiz-data dan perbarui tampilan header secara dinamis
 (function () {
-  var slug = window.QUIZ_SLUG || "kuroi-quiz";
-  var nama = slug.replace("-quiz", "").toUpperCase();
-  fetch("/quizzes/" + slug + "/quiz-data.json?v=" + Date.now(), { cache: "no-store" }).then(function (r) { return r.json(); }).then(function (items) {
-    window.QUIZ_META = { judul: nama + " (" + items.length + " Soal)", total: items.length, slug: slug };
-    try { document.title = nama + " - SinauJepang"; } catch (e) {}
-  }).catch(function () {
-    window.QUIZ_META = { judul: nama, total: 0, slug: slug };
-  });
+  var slug = window.QUIZ_SLUG || "saifu-quiz";
+  var nama = slug.replace("-quiz", "").replace(/[-_]/g, " ").toUpperCase();
+  
+  // Cari nama resmi yang rapi dari PAKET_CONFIG jika ada
+  if (window.PAKET_CONFIG && window.PAKET_CONFIG.kategori) {
+    window.PAKET_CONFIG.kategori.forEach(function (kat) {
+      (kat.paket || []).forEach(function (p) {
+        if (p.slug === slug) nama = p.nama;
+        if (p.soalTambahan && p.soalTambahan.slug === slug) nama = p.soalTambahan.nama + " (" + p.nama + ")";
+      });
+    });
+  }
+
+  fetch("/quizzes/" + slug + "/quiz-data.json?v=" + Date.now(), { cache: "no-store" })
+    .then(function (r) { return r.json(); })
+    .then(function (items) {
+      var titleText = nama + " (" + items.length + " Soal)";
+      window.QUIZ_META = { judul: titleText, total: items.length, slug: slug };
+      try { document.title = nama + " - SinauJepang"; } catch (e) {}
+
+      // Update elemen judul di header jika layout sudah ter-render
+      var titleEl = document.getElementById("quiz-title");
+      if (titleEl) {
+        titleEl.innerHTML = '<span id="prog-txt" class="hidden">' + titleText + '</span>' + titleText;
+      }
+      var scoreCountEl = document.getElementById("score-count");
+      if (scoreCountEl && scoreCountEl.textContent.indexOf('/') > -1) {
+        var parts = scoreCountEl.textContent.split('/');
+        scoreCountEl.textContent = parts[0] + '/ ' + items.length + ' Soal';
+      }
+    })
+    .catch(function () {
+      window.QUIZ_META = { judul: nama, total: 0, slug: slug };
+    });
 })();
