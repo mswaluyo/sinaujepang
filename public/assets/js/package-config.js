@@ -1,7 +1,20 @@
 window.PAKET_CONFIG = {
-  "totalPaket": 20,
-  "totalSoal": 884,
+  "totalPaket": 21,
+  "totalSoal": 932,
   "kategori": [
+    {
+      "nama": "DESEMBER JANUARI",
+      "warna": "amber",
+      "badgeGradien": "from-amber-500 to-orange-600",
+      "paket": [
+        {
+          "nama": "SAIFU",
+          "slug": "saifu-quiz",
+          "total": 48,
+          "ikon": "S"
+        }
+      ]
+    },
     {
       "nama": "OKTOBER NOVEMBER",
       "warna": "emerald",
