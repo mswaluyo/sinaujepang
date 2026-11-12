@@ -52,7 +52,7 @@
   fetch("/quizzes/" + slug + "/quiz-data.json?v=" + Date.now(), { cache: "no-store" })
     .then(function (r) { return r.json(); })
     .then(function (items) {
-      var titleText = nama + " (" + items.length + " Soal)";
+      var titleText = nama;
       window.QUIZ_META = { judul: titleText, total: items.length, slug: slug };
       try { document.title = nama + " - SinauJepang"; } catch (e) {}
 
