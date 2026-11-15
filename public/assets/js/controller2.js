@@ -60,7 +60,7 @@ QuizController.renderOne = function () {
     h += '<div class="text-xs font-bold text-amber-800 uppercase tracking-wider mb-2 flex items-center gap-1.5"><i class="fa-solid fa-circle-question text-amber-600"></i> Pertanyaan Dokkai:</div>';
     h += '<div class="japanese-text text-base font-semibold leading-relaxed text-slate-900 bg-white p-3.5 rounded-xl border border-amber-200" style="white-space:pre-line">' + V.esc(rawTitle) + '</div>';
     h += '</div>';
-  } else {
+  } else if (rawTitle && !/^soal\s*\d+$/i.test(rawTitle.trim())) {
     h += '<p class="japanese-text text-base font-bold mb-4 bg-slate-50 p-3.5 rounded-xl border border-slate-200 text-slate-900" style="white-space:pre-line">' + V.esc(rawTitle) + '</p>';
   }
   h += '<div class="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-3">';
