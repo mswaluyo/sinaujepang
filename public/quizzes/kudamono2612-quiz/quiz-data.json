@@ -202,46 +202,46 @@
     "image": null,
     "audio": "",
     "title": "航空便で お誕生日プレゼントを 【送ります】。",
-    "question": "航空便でお誕生日プレゼントを 【送ります】。Bentuk kamus atau makna dari kata kerja bergaris bawah berkaitan dengan...",
+    "question": "Cara baca kanji dari kata yang bergaris bawah 【送ります】 adalah...",
     "trans": "Saya mengirimkan kado ulang tahun melalui pos udara (airmail).",
     "trans_rom": "Koukuubin de otanjoubi purezento o okurimasu.",
-    "analisis": "[MNN Bab 7 - Kosakata Mengirim Barang (おくります)] Kalimat menyatakan pengiriman kado via pos udara (航空便で). Kata kerja 送ります (okurimasu) berasal dari bentuk kamus おくる (送る / okuru). Kunci arsip memilih opsi pertama dengan ejaan fonetik terdekat.",
+    "analisis": "[MNN Bab 7 - Cara Baca Kanji Kosakata (送る / 送ります)] Soal menguji cara baca kanji dari kata kerja 送ります (mengirimkan). Kanji 送 memiliki cara baca kunyomi おく(る) (okuru/okurimasu). Kalimat lengkapnya: 『航空便でお誕生日プレゼントを送ります』 (Koukuubin de otanjoubi purezento o okurimasu = Mengirimkan hadiah ulang tahun lewat pos udara). Jawaban yang benar adalah おくる (Bentuk kamus dari 送ります yang disediakan pada opsi).",
     "options": [
       {
         "text": "おきる",
-        "is_correct": true
+        "is_correct": false
       },
       {
         "text": "おくる",
-        "is_correct": false
+        "is_correct": true
       },
       {
         "text": "あるく",
         "is_correct": false
       }
     ],
-    "answer": 0,
+    "answer": 1,
     "opt_detail": [
-      {
-        "kana": "おくる [ 送る / 送ります ]",
-        "rom": "okuru / okurimasu",
-        "arti": "mengirimkan (barang/paket)",
-        "alasan": "Tepat sekali. Mengirim kado atau surat melalui pos menggunakan kata kerja おくる (送る). Opsi kunci pada naskah tes tertulis di baris pertama."
-      },
       {
         "kana": "おきる [ 起きる ]",
         "rom": "okiru",
         "arti": "bangun tidur",
-        "alasan": "Salah. Digunakan untuk aktivitas bangun tidur di pagi hari (朝6時に起きます)."
+        "alasan": "Salah. Kanji 起きる (okiru) berarti bangun tidur (contoh: 朝6時に起きます)."
+      },
+      {
+        "kana": "おくる [ 送る / 送ります ]",
+        "rom": "okuru / okurimasu",
+        "arti": "mengirim",
+        "alasan": "Benar. Kanji 送ります dibaca おくります, bentuk kamusnya adalah おくる (mengirimkan barang/kado melalui pos)."
       },
       {
         "kana": "あるく [ 歩く ]",
         "rom": "aruku",
         "arti": "berjalan kaki",
-        "alasan": "Salah. Digunakan untuk aktivitas fisik berjalan kaki (駅まで歩きます)."
+        "alasan": "Salah. Kanji 歩く (aruku) berarti berjalan kaki (contoh: 歩いて学校へ行きます)."
       }
     ],
-    "kunci_id": "おきる",
+    "kunci_id": "おくる",
     "img": ""
   },
   {
