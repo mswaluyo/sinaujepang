@@ -303,11 +303,11 @@
     "question": "A: 山田さん明日 は レストラン で いしょに たべ に__________ \nB: じゃ。。いきましょう",
     "trans": "A: Yamada-san, besok maukah pergi makan bersama di restoran?\nB: Kalau begitu, ayo kita pergi!",
     "trans_rom": "A: Yamada-san, ashita wa resutoran de issho ni tabe ni ikimasen ka.\nB: Ja, ikimashou.",
-    "analisis": "[MNN Bab 6/13 - Ajakan Sopan (~masen ka / ~temo ii desu ka)] Pembicara A mengajak Yamada-san pergi makan bersama (一緒に食べに...). Jawaban respon B adalah 'じゃ、行きましょう' (ayo pergi). Ungkapan ajakan yang tepat untuk meminta persetujuan adalah pola ajakan / izin sopan. Kunci naskah menargetkan opsi pertama '行ってもいいですか' / '行きませんか'.",
+    "analisis": "[MNN Bab 6 & Bab 13 - Ajakan Sopan (~masen ka)] Pola kalimat ajakan sopan untuk menawarkan kegiatan bersama kepada lawan bicara adalah bentuk kata kerja ~masen ka (～ませんか) yang berarti 'maukah...?'. Kalimat A: '一緒に食べに行きませんか' (Maukah pergi makan bersama?). Respon pembicara B menyetujui ajakan tersebut dengan: 'じゃ、行きましょう' (Kalau begitu, ayo pergi!). Pilihan yang benar adalah いきませんか.",
     "options": [
       {
         "text": "行ってもいいですか",
-        "is_correct": true
+        "is_correct": false
       },
       {
         "text": "行きましょう",
@@ -315,31 +315,31 @@
       },
       {
         "text": "いきませんか",
-        "is_correct": false
+        "is_correct": true
       }
     ],
-    "answer": 0,
+    "answer": 2,
     "opt_detail": [
       {
         "kana": "いってもいいですか [ 行ってもいいですか ]",
         "rom": "itte mo ii desu ka",
         "arti": "apakah boleh pergi?",
-        "alasan": "Tepat sesuai kunci arsip ganbate untuk mengawali ajakan rencana bersama lawan bicara."
+        "alasan": "Merupakan ungkapan meminta izin (~te mo ii desu ka), bukan mengajak orang lain melakukan kegiatan bersama."
       },
       {
         "kana": "いきましょう [ 行きましょう ]",
         "rom": "ikimashou",
         "arti": "ayo kita pergi",
-        "alasan": "Merupakan respon/ajakan langsung dari B, bukan pertanyaan kalimat ajakan A."
+        "alasan": "Merupakan bentuk ajakan langsung / respon persetujuan oleh B, bukan pertanyaan pembuka ajakan A."
       },
       {
         "kana": "いきませんか [ 行きませんか ]",
         "rom": "ikimasen ka",
         "arti": "maukah pergi?",
-        "alasan": "Pola ajakan baku lainnya, namun pada lembar kunci master form opsi 1 yang ditetapkan."
+        "alasan": "Benar. Pola ajakan sopan (~masen ka) berpasangan dengan tujuan ~ni ikimasu (食べに行きませんか), disambut B dengan ~mashou."
       }
     ],
-    "kunci_id": "行ってもいいですか",
+    "kunci_id": "いきませんか",
     "img": ""
   },
   {
