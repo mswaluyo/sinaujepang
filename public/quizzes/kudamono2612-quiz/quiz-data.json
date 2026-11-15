@@ -2037,7 +2037,7 @@
     "no": 42,
     "sec_no": 1,
     "section": "SESI 4 : DOKKAI",
-    "image": null,
+    "image": "dokkai_d1.png",
     "audio": "",
     "title": "メールの送り主（友達）は、先週 何をしていましたか。",
     "question": "Berdasarkan isi email teman, apa yang dialami teman pada minggu lalu?",
@@ -2047,15 +2047,18 @@
     "options": [
       {
         "text": "Opsi 1 (Pergi berlibur santai)",
-        "is_correct": false
+        "is_correct": false,
+        "img": "d1_opt_1.png"
       },
       {
         "text": "Opsi 2 (Pekerjaan sangat sibuk / 仕事が忙しかった)",
-        "is_correct": true
+        "is_correct": true,
+        "img": "d1_opt_2.png"
       },
       {
         "text": "Opsi 3 (Sakit dan dirawat)",
-        "is_correct": false
+        "is_correct": false,
+        "img": "d1_opt_3.png"
       }
     ],
     "answer": 1,
@@ -2080,13 +2083,13 @@
       }
     ],
     "kunci_id": "Opsi 2 (Pekerjaan sangat sibuk / 仕事が忙しかった)",
-    "img": ""
+    "img": "dokkai_d1.png"
   },
   {
     "no": 43,
     "sec_no": 2,
     "section": "SESI 4 : DOKKAI",
-    "image": null,
+    "image": "dokkai_d2.png",
     "audio": "",
     "title": "あしたは 何を しますか。",
     "question": "あしたは なにを しますか。（Apa saja rencana kegiatan esok hari?）",
@@ -2096,15 +2099,18 @@
     "options": [
       {
         "text": "Opsi 1 (掃除をしてから、友達と映画を見に行きます)",
-        "is_correct": true
+        "is_correct": true,
+        "img": "d2_opt_1.png"
       },
       {
         "text": "Opsi 2 (一日中家で寝ます)",
-        "is_correct": false
+        "is_correct": false,
+        "img": "d2_opt_2.png"
       },
       {
         "text": "Opsi 3 (会社で一日中働きます)",
-        "is_correct": false
+        "is_correct": false,
+        "img": "d2_opt_3.png"
       }
     ],
     "answer": 0,
@@ -2129,7 +2135,7 @@
       }
     ],
     "kunci_id": "Opsi 1 (掃除をしてから、友達と映画を見に行きます)",
-    "img": ""
+    "img": "dokkai_d2.png"
   },
   {
     "no": 44,
