@@ -1,6 +1,6 @@
 window.PAKET_CONFIG = {
-  "totalPaket": 30,
-  "totalSoal": 1413,
+  "totalPaket": 32,
+  "totalSoal": 1506,
   "kategori": [
     {
       "nama": "DESEMBER JANUARI",
@@ -8,38 +8,38 @@ window.PAKET_CONFIG = {
       "badgeGradien": "from-amber-500 to-orange-600",
       "paket": [
         {
-          "nama": "SAIFU",
-          "slug": "saifu-quiz",
+          "nama": "SAIFU 2612",
+          "slug": "saifu2612-quiz",
           "total": 48,
           "ikon": "S"
         },
         {
-          "nama": "JITENSHA",
-          "slug": "jitensha-quiz",
+          "nama": "JITENSHA 2612",
+          "slug": "jitensha2612-quiz",
           "total": 50,
           "ikon": "J"
         },
         {
-          "nama": "KUDAMONO",
-          "slug": "kudamono-quiz",
+          "nama": "KUDAMONO 2612",
+          "slug": "kudamono2612-quiz",
           "total": 51,
           "ikon": "K"
         },
         {
-          "nama": "OKIMASU",
-          "slug": "okimasu-quiz",
+          "nama": "OKIMASU 2612",
+          "slug": "okimasu2612-quiz",
           "total": 56,
           "ikon": "O"
         },
         {
-          "nama": "KUROI",
-          "slug": "kuroi-quiz",
+          "nama": "KUROI 2612",
+          "slug": "kuroi2612-quiz",
           "total": 50,
           "ikon": "K"
         },
         {
-          "nama": "KUTSUSHITA",
-          "slug": "kutsushita-quiz",
+          "nama": "KUTSUSHITA 2612",
+          "slug": "kutsushita2612-quiz",
           "total": 46,
           "ikon": "K"
         }
@@ -161,6 +161,18 @@ window.PAKET_CONFIG = {
       "warna": "rose",
       "badgeGradien": "from-rose-500 to-rose-600",
       "paket": [
+        {
+          "nama": "KUROI",
+          "slug": "kuroi-quiz",
+          "total": 47,
+          "ikon": "K"
+        },
+        {
+          "nama": "KUTSUSHITA",
+          "slug": "kutsushita-quiz",
+          "total": 46,
+          "ikon": "K"
+        },
         {
           "nama": "SHATSU",
           "slug": "shatsu-quiz",
