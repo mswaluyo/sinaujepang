@@ -694,7 +694,7 @@ window._aInitSoal = function () {
         loadedItems = d.data().items;
         sourceName = "Firestore";
       } else {
-        const r = await fetch("/" + slug + "/quiz-data.json");
+        const r = await fetch("/quizzes/" + slug + "/quiz-data.json");
         const j = await r.json();
         $("sTitle").value = slug;
         loadedItems = Array.isArray(j) ? j : [];

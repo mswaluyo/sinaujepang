@@ -4,12 +4,17 @@ var QuizRepository = (function () {
   // Base absolut per kuis: tahan terhadap cleanUrls/trailingSlash Firebase.
   // /kuroi-quiz, /kuroi-quiz/, /kuroi-quiz/index.html -> /kuroi-quiz/quiz-data.json
   function quizSlug() {
+    if (window.QUIZ_SLUG) return window.QUIZ_SLUG;
+    if (window.QUIZ_META && window.QUIZ_META.slug) return window.QUIZ_META.slug;
     try {
       var q = (location && location.search) || "";
-      var m = q.match(/[?&]p=([a-z0-9_-]+-quiz)/i);
-      if (m) return m[1].toLowerCase();
+      var m = q.match(/[?&]p=([a-z0-9_-]+)/i);
+      if (m) {
+        var s = m[1].toLowerCase();
+        if (!/-quiz$/i.test(s)) s += "-quiz";
+        return s;
+      }
     } catch (e) {}
-    if (window.QUIZ_META && window.QUIZ_META.slug) return window.QUIZ_META.slug;
     return null;
   }
   function quizBase() {
@@ -17,10 +22,12 @@ var QuizRepository = (function () {
     if (s) return "/quizzes/" + s + "/";
     var p = String((location && location.pathname) || "/");
     var m = p.match(/\/([a-z0-9_-]+-quiz)\/?(?:index\.html)?$/i);
-    if (m) return "/" + m[1] + "/";
+    if (m) return "/quizzes/" + m[1] + "/";
     return p.charAt(p.length - 1) === "/" ? p : p.substring(0, p.lastIndexOf("/") + 1);
   }
-  var DATA_URL = quizBase() + "quiz-data.json"; // absolut per paket
+  function getDataUrl() {
+    return quizBase() + "quiz-data.json";
+  }
   var ATTEMPT_KEY = "jft_attempts";         // localStorage sekarang; Firestore nanti
 
   // Validasi skema: no unik, answer dalam rentang, kunci_id cocok (cermin guard QuizSeeder).
@@ -88,9 +95,10 @@ var QuizRepository = (function () {
         }
       }
     } catch (e) {}
-    var url = DATA_URL + (DATA_URL.indexOf("?") > -1 ? "&" : "?") + "v=" + Date.now();
+    var dataUrl = getDataUrl();
+    var url = dataUrl + (dataUrl.indexOf("?") > -1 ? "&" : "?") + "v=" + Date.now();
     var r = await fetch(url, { cache: "no-store" });
-    if (!r.ok) throw new Error("Gagal memuat " + DATA_URL + " (" + r.status + ")");
+    if (!r.ok) throw new Error("Gagal memuat " + dataUrl + " (" + r.status + ")");
     var items = await r.json();
     validate(items);
     return normalizeQuiz(items);
