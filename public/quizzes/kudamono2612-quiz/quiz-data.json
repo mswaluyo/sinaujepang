@@ -398,14 +398,14 @@
     "image": null,
     "audio": "",
     "title": "平さん、どこで 【働きます】か。",
-    "question": "ひらさん、どこ に 働きますか？ Makna kata kerja 働きます berkaitan dengan...",
+    "question": "Cara baca kanji dari kata yang bergaris bawah 【働きます】 adalah...",
     "trans": "Taira-san, di mana Anda bekerja?",
     "trans_rom": "Taira-san, doko de hatarakimasu ka?",
-    "analisis": "[MNN Bab 4/28 - Kosakata Bekerja (はたらきます)] Kata kerja 働きます (hatarakimasu) bermakna melakukan pekerjaan / bekerja di kantor/pabrik. Kunci naskah menguji pemahaman kategori aktivitas kerja fisik/kegiatan (うんどう).",
+    "analisis": "[MNN Bab 4 - Cara Baca Kanji Kosakata (働きます / はたらきます)] Soal menguji kemampuan membaca kanji kerja dari kata 働きます. Kanji 働 dibaca はたら(く) (hataraku/hatarakimasu) yang berarti bekerja. Pilihan lain seperti うんどう (運動 = berolahraga) dan うごきます (動きます = bergerak) merupakan pengecoh kanji dan fonetik serupa. Jawaban yang benar adalah はたらきます.",
     "options": [
       {
         "text": "うんどう",
-        "is_correct": true
+        "is_correct": false
       },
       {
         "text": "うごきます",
@@ -413,31 +413,31 @@
       },
       {
         "text": "はたらきます",
-        "is_correct": false
+        "is_correct": true
       }
     ],
-    "answer": 0,
+    "answer": 2,
     "opt_detail": [
       {
         "kana": "うんどう [ 運動 ]",
         "rom": "undou",
-        "arti": "olahraga / aktivitas gerak",
-        "alasan": "Sesuai kunci arsip master untuk kategori penggolongan aktivitas fisik kegiatan kerja."
+        "arti": "olahraga / latihan fisik",
+        "alasan": "Salah. Kanji 運動 (undou) berarti kegiatan olahraga, bukan bekerja."
       },
       {
         "kana": "うごきます [ 動きます ]",
         "rom": "ugokimasu",
-        "arti": "bergerak / beroperasi",
-        "alasan": "Digunakan untuk mesin beroperasi atau benda yang bergerak."
+        "arti": "bergerak",
+        "alasan": "Salah. Kanji 動きます (ugokimasu) berarti bergerak atau beroperasi (untuk mesin), bukan bekerja."
       },
       {
         "kana": "はたらきます [ 働きます ]",
         "rom": "hatarakimasu",
         "arti": "bekerja",
-        "alasan": "Cara baca harfiah kanji 働きます."
+        "alasan": "Benar. Kanji 働きます dibaca はたらきます yang berarti bekerja."
       }
     ],
-    "kunci_id": "うんどう",
+    "kunci_id": "はたらきます",
     "img": ""
   },
   {
