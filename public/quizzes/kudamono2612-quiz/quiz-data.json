@@ -45,7 +45,8 @@
         "alasan": "Salah. のみもの berarti cairan/minuman (air, teh, jus), bukan buah segar."
       }
     ],
-    "kunci_id": "くだもの"
+    "kunci_id": "くだもの",
+    "img": "assets/q1.jpg"
   },
   {
     "no": 2,
@@ -93,7 +94,8 @@
         "alasan": "Salah. 捨てる (suteru) berarti membuang barang atau sampah ke tempat sampah (ごみを捨てる)."
       }
     ],
-    "kunci_id": "押すます"
+    "kunci_id": "押すます",
+    "img": "assets/q2.jpg"
   },
   {
     "no": 3,
@@ -141,7 +143,8 @@
         "alasan": "Salah. Anagram terbalik dari suku kata ji-ko yang memiliki arti sepenuhnya berbeda."
       }
     ],
-    "kunci_id": "じこ"
+    "kunci_id": "じこ",
+    "img": "assets/q3.jpg"
   },
   {
     "no": 4,
@@ -189,7 +192,8 @@
         "alasan": "Salah. Kanji untuk senshuu adalah 先週 (pekan yang telah lewat)."
       }
     ],
-    "kunci_id": "こんしゅう"
+    "kunci_id": "こんしゅう",
+    "img": ""
   },
   {
     "no": 5,
@@ -237,7 +241,8 @@
         "alasan": "Salah. Digunakan untuk aktivitas fisik berjalan kaki (駅まで歩きます)."
       }
     ],
-    "kunci_id": "おきる"
+    "kunci_id": "おきる",
+    "img": ""
   },
   {
     "no": 6,
@@ -285,7 +290,8 @@
         "alasan": "Salah. Bentuk adverbia yang memerlukan kata kerja keberadaan/tindakan (misal: 近くに住んでいます)."
       }
     ],
-    "kunci_id": "近くて"
+    "kunci_id": "近くて",
+    "img": ""
   },
   {
     "no": 7,
@@ -333,7 +339,8 @@
         "alasan": "Pola ajakan baku lainnya, namun pada lembar kunci master form opsi 1 yang ditetapkan."
       }
     ],
-    "kunci_id": "行ってもいいですか"
+    "kunci_id": "行ってもいいですか",
+    "img": ""
   },
   {
     "no": 8,
@@ -381,7 +388,8 @@
         "alasan": "Salah. Bentuk fonetik palsu yang tidak ada dalam bahasa Jepang."
       }
     ],
-    "kunci_id": "くじです"
+    "kunci_id": "くじです",
+    "img": "assets/q8.jpg"
   },
   {
     "no": 9,
@@ -429,7 +437,8 @@
         "alasan": "Cara baca harfiah kanji 働きます."
       }
     ],
-    "kunci_id": "うんどう"
+    "kunci_id": "うんどう",
+    "img": ""
   },
   {
     "no": 10,
@@ -477,7 +486,8 @@
         "alasan": "Salah. Digunakan untuk menekan tombol atau mendorong beban."
       }
     ],
-    "kunci_id": "弾く"
+    "kunci_id": "弾く",
+    "img": ""
   },
   {
     "no": 11,
@@ -525,7 +535,8 @@
         "alasan": "Bentuk tata bahasa lisan, namun kunci arsip memilih istilah formal 推定する."
       }
     ],
-    "kunci_id": "推定する"
+    "kunci_id": "推定する",
+    "img": ""
   },
   {
     "no": 12,
@@ -573,7 +584,8 @@
         "alasan": "Beda kata kerja (berpisah/bercabang), bukan kata kerja mengetahui."
       }
     ],
-    "kunci_id": "分かる"
+    "kunci_id": "分かる",
+    "img": ""
   },
   {
     "no": 13,
@@ -621,7 +633,8 @@
         "alasan": "Tepat sekali. Kata sifat dasar yang dikonjugasikan ke pola tampak visual 美味しそうです."
       }
     ],
-    "kunci_id": "美味しい"
+    "kunci_id": "美味しい",
+    "img": ""
   },
   {
     "no": 14,
@@ -669,7 +682,8 @@
         "alasan": "Tepat sekali. Menyempurnakan predikat kalimat B: 一番有名な店で買っていました."
       }
     ],
-    "kunci_id": "かっていました"
+    "kunci_id": "かっていました",
+    "img": ""
   },
   {
     "no": 15,
@@ -717,7 +731,8 @@
         "alasan": "Salah konteks makna secara keseluruhan."
       }
     ],
-    "kunci_id": "ほしい"
+    "kunci_id": "ほしい",
+    "img": ""
   },
   {
     "no": 16,
@@ -765,7 +780,8 @@
         "alasan": "Ungkapan sebelum menyantap makanan/minuman."
       }
     ],
-    "kunci_id": "こちらこそ"
+    "kunci_id": "こちらこそ",
+    "img": ""
   },
   {
     "no": 17,
@@ -813,7 +829,8 @@
         "alasan": "Digunakan untuk memesan tambahan minuman, bukan mengulang ucapan."
       }
     ],
-    "kunci_id": "もう一度"
+    "kunci_id": "もう一度",
+    "img": ""
   },
   {
     "no": 18,
@@ -861,7 +878,8 @@
         "alasan": "Berasal dari kata kerja minum (飲む), salah secara konteks sepeda."
       }
     ],
-    "kunci_id": "乗りやすい"
+    "kunci_id": "乗りやすい",
+    "img": ""
   },
   {
     "no": 19,
@@ -909,7 +927,8 @@
         "alasan": "Kata keterangan kepastian, tidak cocok sebagai respon menerima bingkisan."
       }
     ],
-    "kunci_id": "いいんですか"
+    "kunci_id": "いいんですか",
+    "img": ""
   },
   {
     "no": 20,
@@ -957,7 +976,8 @@
         "alasan": "Menyetujui pujian tentang diri sendiri, dianggap sombong dan tidak natural dalam budaya Jepang."
       }
     ],
-    "kunci_id": "そんなことないよ"
+    "kunci_id": "そんなことないよ",
+    "img": ""
   },
   {
     "no": 21,
@@ -1005,7 +1025,8 @@
         "alasan": "Tepat sekali. Kata kerja standar: 家族と電話で話します (berbicara dengan keluarga via telepon)."
       }
     ],
-    "kunci_id": "話します"
+    "kunci_id": "話します",
+    "img": ""
   },
   {
     "no": 22,
@@ -1053,7 +1074,8 @@
         "alasan": "Bentuk negatif kata kerja/sifat, salah struktur tata bahasa."
       }
     ],
-    "kunci_id": "ずっと"
+    "kunci_id": "ずっと",
+    "img": ""
   },
   {
     "no": 23,
@@ -1101,7 +1123,8 @@
         "alasan": "Tepat sekali. Bentuk kamus kata kerja wajib dipakai sebelum partikel syarat pengandaian 'to' (予約するといいです)."
       }
     ],
-    "kunci_id": "予約する"
+    "kunci_id": "予約する",
+    "img": ""
   },
   {
     "no": 24,
@@ -1149,7 +1172,8 @@
         "alasan": "Tepat sekali. Kata kerja bentuk kamus 喜ぶ (yorokobu) diikuti oleh akhiran kemungkinan kamoshiremasen."
       }
     ],
-    "kunci_id": "喜ぶかもしりません"
+    "kunci_id": "喜ぶかもしりません",
+    "img": ""
   },
   {
     "no": 25,
@@ -1197,7 +1221,8 @@
         "alasan": "Tepat sekali. Bertekad untuk lebih berhati-hati di kemudian hari (今度気をつけます)."
       }
     ],
-    "kunci_id": "気をつけて"
+    "kunci_id": "気をつけて",
+    "img": ""
   },
   {
     "no": 26,
@@ -1245,7 +1270,8 @@
         "alasan": "Bentuk tata bahasa keliru untuk permohonan santun."
       }
     ],
-    "kunci_id": "貸してくれませんか"
+    "kunci_id": "貸してくれませんか",
+    "img": ""
   },
   {
     "no": 27,
@@ -1303,7 +1329,8 @@
         "alasan": "Tidak cocok dengan 'kazoku ni'."
       }
     ],
-    "kunci_id": "電話ができて"
+    "kunci_id": "電話ができて",
+    "img": ""
   },
   {
     "no": 28,
@@ -1351,7 +1378,8 @@
         "alasan": "Ucapan selamat ulang tahun/pernikahan, sangat tidak berhubungan."
       }
     ],
-    "kunci_id": "おねがいします"
+    "kunci_id": "おねがいします",
+    "img": ""
   },
   {
     "no": 29,
@@ -1399,7 +1427,8 @@
         "alasan": "Salam balasan untuk orang yang pamit bepergian."
       }
     ],
-    "kunci_id": "○ いただきます"
+    "kunci_id": "○ いただきます",
+    "img": ""
   },
   {
     "no": 30,
@@ -1447,7 +1476,8 @@
         "alasan": "Tepat sekali. Pria secara eksplisit mengatakan: 『このまま続けると事故が起こるかもしれません』."
       }
     ],
-    "kunci_id": "Opsi 3 (Kecelakaan / 事故が起こる)"
+    "kunci_id": "Opsi 3 (Kecelakaan / 事故が起こる)",
+    "img": ""
   },
   {
     "no": 31,
@@ -1495,7 +1525,8 @@
         "alasan": "Terlalu malam, pelanggan meminta pengantaran secepatnya setelah jam 12 siang."
       }
     ],
-    "kunci_id": "12.00-14.00"
+    "kunci_id": "12.00-14.00",
+    "img": ""
   },
   {
     "no": 32,
@@ -1543,7 +1574,8 @@
         "alasan": "Kopi sama sekali tidak dibahas di dalam dialog rekaman."
       }
     ],
-    "kunci_id": "Opsi 2 (Teh hijau / 緑茶)"
+    "kunci_id": "Opsi 2 (Teh hijau / 緑茶)",
+    "img": ""
   },
   {
     "no": 33,
@@ -1591,7 +1623,8 @@
         "alasan": "Salah. Hanya ada satu pembicara wanita, tapi tehnya berjumlah 3."
       }
     ],
-    "kunci_id": "3 (みつ)"
+    "kunci_id": "3 (みつ)",
+    "img": ""
   },
   {
     "no": 34,
@@ -1639,7 +1672,8 @@
         "alasan": "Tidak ada rencana berkunjung ke museum seni."
       }
     ],
-    "kunci_id": "Opsi 1 (Kebun binatang / 動物園)"
+    "kunci_id": "Opsi 1 (Kebun binatang / 動物園)",
+    "img": ""
   },
   {
     "no": 35,
@@ -1687,7 +1721,8 @@
         "alasan": "Hanya dibaca dari menu, tidak dipesan."
       }
     ],
-    "kunci_id": "Opsi 1 (Miso Ramen / 味噌ラーメン)"
+    "kunci_id": "Opsi 1 (Miso Ramen / 味噌ラーメン)",
+    "img": ""
   },
   {
     "no": 36,
@@ -1735,7 +1770,8 @@
         "alasan": "Duplikat naskah tanpa spasi mata uang."
       }
     ],
-    "kunci_id": "15.000 円"
+    "kunci_id": "15.000 円",
+    "img": ""
   },
   {
     "no": 37,
@@ -1783,7 +1819,8 @@
         "alasan": "Gedung ini tidak memiliki lantai 5 dalam dialog."
       }
     ],
-    "kunci_id": "2階と4階にあります"
+    "kunci_id": "2階と4階にあります",
+    "img": ""
   },
   {
     "no": 38,
@@ -1831,7 +1868,8 @@
         "alasan": "Tepat sekali. Penjelasan wanita sangat tegas: 『一番下の棚の中で上から3番目です』."
       }
     ],
-    "kunci_id": "Opsi 3 (Rak bawah, urutan ke-3 dari atas)"
+    "kunci_id": "Opsi 3 (Rak bawah, urutan ke-3 dari atas)",
+    "img": "assets/choukai_c9.jpg"
   },
   {
     "no": 39,
@@ -1879,7 +1917,8 @@
         "alasan": "Tepat sekali. Batas waktu akhir penyerahan berkas adalah tanggal 13 (13日)."
       }
     ],
-    "kunci_id": "１３日"
+    "kunci_id": "１３日",
+    "img": ""
   },
   {
     "no": 40,
@@ -1927,7 +1966,8 @@
         "alasan": "Salah tempat."
       }
     ],
-    "kunci_id": "しょくどうのかいぎしつ (会議室)"
+    "kunci_id": "しょくどうのかいぎしつ (会議室)",
+    "img": ""
   },
   {
     "no": 41,
@@ -1975,7 +2015,8 @@
         "alasan": "Tepat sekali. Pengumuman menegaskan pengarahan dimulai pukul 12:50 (12時50分より)."
       }
     ],
-    "kunci_id": "12.50"
+    "kunci_id": "12.50",
+    "img": ""
   },
   {
     "no": 42,
@@ -2023,7 +2064,8 @@
         "alasan": "Bukan karena sakit, melainkan karena beban jam kerja lembur."
       }
     ],
-    "kunci_id": "Opsi 2 (Pekerjaan sangat sibuk / 仕事が忙しかった)"
+    "kunci_id": "Opsi 2 (Pekerjaan sangat sibuk / 仕事が忙しかった)",
+    "img": ""
   },
   {
     "no": 43,
@@ -2071,7 +2113,8 @@
         "alasan": "Besok adalah hari libur bersama teman, bukan lembur kantor."
       }
     ],
-    "kunci_id": "Opsi 1 (掃除をしてから、友達と映画を見に行きます)"
+    "kunci_id": "Opsi 1 (掃除をしてから、友達と映画を見に行きます)",
+    "img": ""
   },
   {
     "no": 44,
@@ -2119,7 +2162,8 @@
         "alasan": "Pukul 21:30 adalah siaran serial drama."
       }
     ],
-    "kunci_id": "21.00"
+    "kunci_id": "21.00",
+    "img": "assets/dokkai_tv.png"
   },
   {
     "no": 45,
@@ -2167,7 +2211,8 @@
         "alasan": "Tepat sekali. Kolom acara kuliner/memasak tercantum di bawah nama channel さくら."
       }
     ],
-    "kunci_id": "さくら"
+    "kunci_id": "さくら",
+    "img": "assets/dokkai_tv.png"
   },
   {
     "no": 46,
@@ -2215,7 +2260,8 @@
         "alasan": "Penginapan tersebut bergaya tradisional, bukan gedung perkantoran baru."
       }
     ],
-    "kunci_id": "浴衣を借りることができます"
+    "kunci_id": "浴衣を借りることができます",
+    "img": "assets/dokkai_hotel.png"
   },
   {
     "no": 47,
@@ -2263,7 +2309,8 @@
         "alasan": "Distraktor ekstrem yang tidak ada hubungannya dengan bacaan."
       }
     ],
-    "kunci_id": "食事中静かにできない/部屋がうるさい。3"
+    "kunci_id": "食事中静かにできない/部屋がうるさい。3",
+    "img": "assets/dokkai_hotel.png"
   },
   {
     "no": 48,
@@ -2311,7 +2358,8 @@
         "alasan": "Pamflet menekankan keanekaragaman pilihan warna, bukan variasi jenis model koper."
       }
     ],
-    "kunci_id": "たくさんの色が選べるので"
+    "kunci_id": "たくさんの色が選べるので",
+    "img": "assets/dokkai_koper.png"
   },
   {
     "no": 49,
@@ -2359,7 +2407,8 @@
         "alasan": "Tepat sekali. Sesuai klausul batas waktu pengiriman produk pada pamflet: 納期 1～3日."
       }
     ],
-    "kunci_id": "納期 1～3日"
+    "kunci_id": "納期 1～3日",
+    "img": "assets/dokkai_koper.png"
   },
   {
     "no": 50,
@@ -2407,7 +2456,8 @@
         "alasan": "Ramen disajikan pada hari yang lain."
       }
     ],
-    "kunci_id": "天ぷら"
+    "kunci_id": "天ぷら",
+    "img": "assets/dokkai_menu.png"
   },
   {
     "no": 51,
@@ -2455,7 +2505,8 @@
         "alasan": "800 yen adalah harga untuk paket tempura."
       }
     ],
-    "kunci_id": "900"
+    "kunci_id": "900",
+    "img": "assets/dokkai_menu.png"
   },
   {
     "no": 52,
@@ -2503,7 +2554,8 @@
         "alasan": "Tepat sekali. Brosur pengumuman menyatakan penghentian air selesai pukul 15:00 (午後3時まで)."
       }
     ],
-    "kunci_id": "15.00"
+    "kunci_id": "15.00",
+    "img": "assets/dokkai_airpam.png"
   },
   {
     "no": 53,
@@ -2551,6 +2603,7 @@
         "alasan": "Pemborosan air yang ekstrem dan tidak sesuai instruksi."
       }
     ],
-    "kunci_id": "5分くらい水を出します"
+    "kunci_id": "5分くらい水を出します",
+    "img": "assets/dokkai_airpam.png"
   }
 ]

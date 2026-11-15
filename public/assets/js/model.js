@@ -69,6 +69,7 @@ var QuizRepository = (function () {
 
   function normalizeQuiz(items) {
     items.forEach(function (q) {
+      if (!q.img && q.image) q.img = q.image;
       if (q.img) q.img = assetUrl(q.img);
       if (q.audio) q.audio = assetUrl(q.audio);
       (q.options || []).forEach(function (o) { if (o && o.img) o.img = assetUrl(o.img); });
