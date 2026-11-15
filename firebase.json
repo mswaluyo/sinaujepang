@@ -12,6 +12,11 @@
       "trailingSlash": false,
       "redirects": [
         {
+          "source": "/:slug-quiz/quiz-data.json",
+          "destination": "/quizzes/:slug-quiz/quiz-data.json",
+          "type": 301
+        },
+        {
           "source": "/kotoba",
           "destination": "/jft-a2",
           "type": 301
