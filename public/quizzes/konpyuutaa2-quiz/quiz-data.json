@@ -1303,7 +1303,7 @@
       "パンとたまご (Roti dan telur)",
       "ラーメン (Ramen)"
     ],
-    "audio": "assets/c1.wav",
+    "audio": "assets/c1.mp3",
     "trans": "Percakapan telepon antara Tanaka dan Sato di pagi hari.",
     "kunci_id": "パンとたまご",
     "mnn": "Choukai"
@@ -1354,7 +1354,7 @@
       "くもり (Berawan kumori)",
       "はれ (Cerah hare)"
     ],
-    "audio": "assets/c2.wav",
+    "audio": "assets/c2.mp3",
     "trans": "Percakapan menanyakan kondisi cuaca.",
     "kunci_id": "はれ",
     "mnn": "Choukai"
@@ -1405,7 +1405,7 @@
       "120ページ (Halaman 120)",
       "220ページ (Halaman 220)"
     ],
-    "audio": "assets/c3.wav",
+    "audio": "assets/c3.mp3",
     "trans": "Guru memberikan pengumuman di dalam kelas.",
     "kunci_id": "120ページ",
     "mnn": "Choukai"
@@ -1456,7 +1456,7 @@
       "聞きます (Mendengarkan kikimasu)",
       "読みます (Membaca yomimasu)"
     ],
-    "audio": "assets/c3.wav",
+    "audio": "assets/c3.mp3",
     "trans": "Instruksi guru di kelas.",
     "kunci_id": "聞きます",
     "mnn": "Choukai"
@@ -1507,7 +1507,7 @@
       "買い物 (Berbelanja)",
       "遊ぶ (Bermain)"
     ],
-    "audio": "assets/c4.wav",
+    "audio": "assets/c4.mp3",
     "trans": "Dua orang berbincang mengenai kebiasaan hidup sehat.",
     "kunci_id": "ヨガ",
     "mnn": "Choukai"
@@ -1558,7 +1558,7 @@
       "2 週間 (2 Minggu)",
       "1 週間 (1 Minggu)"
     ],
-    "audio": "assets/c5.wav",
+    "audio": "assets/c5.mp3",
     "trans": "Pengumuman resmi dari perpustakaan.",
     "kunci_id": "3 週間",
     "mnn": "Choukai"
@@ -1609,7 +1609,7 @@
       "午前 10 時まで (Sampai pukul 10 pagi)",
       "午前  10 時 30 分まで (Sampai pukul 10:30 pagi)"
     ],
-    "audio": "assets/c5.wav",
+    "audio": "assets/c5.mp3",
     "trans": "Pengumuman jam operasional perpustakaan di hari Sabtu.",
     "kunci_id": "午後 10 時まで",
     "mnn": "Choukai"
@@ -1660,7 +1660,7 @@
       "バス (Bus)",
       "じてんしゃ (Sepeda)"
     ],
-    "audio": "assets/c6.wav",
+    "audio": "assets/c6.mp3",
     "trans": "Percakapan dua teman sekolah mengenai transportasi harian.",
     "kunci_id": "バス",
     "mnn": "Choukai"
@@ -1711,7 +1711,7 @@
       "6 月 24 日 (24 Juni)",
       "7 月 24 日 (24 Juli)"
     ],
-    "audio": "assets/c7.wav",
+    "audio": "assets/c7.mp3",
     "trans": "Percakapan merencanakan liburan musim panas.",
     "kunci_id": "7 月 24 日",
     "mnn": "Choukai"
@@ -1762,7 +1762,7 @@
       "駅のちかくスーパー (Supermarket dekat stasiun)",
       "駅のちかくうみ (Laut dekat stasiun)"
     ],
-    "audio": "assets/c7.wav",
+    "audio": "assets/c7.mp3",
     "trans": "Rencana tempat liburan musim panas.",
     "kunci_id": "駅のちかくじんじゃ",
     "mnn": "Choukai"
@@ -1813,7 +1813,7 @@
       "Gambar orang pegang telpon (Gambar orang memegang telepon)",
       "Gambar orang pegang penyedot debu/Vacum cleaner (Gambar orang memegang penyedot debu / vacuum cleaner)"
     ],
-    "audio": "assets/c8.wav",
+    "audio": "assets/c8.mp3",
     "trans": "Situasi percakapan di tempat olahraga.",
     "kunci_id": "Gambar orang pegang penyedot debu/Vacum cleaner",
     "mnn": "Choukai"
@@ -1864,7 +1864,7 @@
       "Gambar tidak bisa menelpon (Gambar tidak bisa menelepon sama sekali)",
       "Gambar tidak bisa membeli barang online (Gambar tidak bisa membeli barang secara daring)"
     ],
-    "audio": "assets/c8.wav",
+    "audio": "assets/c8.mp3",
     "trans": "Kendala pemesanan lapangan olahraga.",
     "kunci_id": "Gambar tidak bisa memesan dari telepon (orang memegang handphone)",
     "mnn": "Choukai"
