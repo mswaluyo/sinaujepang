@@ -1,181 +1,173 @@
 [
   {
-    "no": 1,
+    "orig_no": 1,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "",
+    "img": "assets/1_img_5.jpg",
+    "audio": "",
+    "options": [
+      {
+        "text": "くだもの",
+        "img": ""
+      },
+      {
+        "text": "たべもの",
+        "img": ""
+      },
+      {
+        "text": "のみもの",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Perhatikan konteks kalimat/gambar pada soal.",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah くだもの.",
+    "opt_detail": [
+      {
+        "kana": "くだもの",
+        "rom": "",
+        "arti": "くだもの",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "たべもの",
+        "rom": "",
+        "arti": "たべもの",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "のみもの",
+        "rom": "",
+        "arti": "のみもの",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "くだもの",
+      "たべもの",
+      "のみもの"
+    ],
+    "kunci_id": "くだもの",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 1
+  },
+  {
+    "orig_no": 2,
     "section": "SESI 1 : MOJIGOI",
     "title": "",
     "img": "assets/1_img_4.jpg",
     "audio": "",
     "options": [
       {
-        "text": "くだもの 。果物",
+        "text": "押すます",
         "img": ""
       },
       {
-        "text": "かいもの 。買い物",
+        "text": "抑える",
         "img": ""
       },
       {
-        "text": "たべもの 。食べ物",
+        "text": "捨てる",
         "img": ""
       }
     ],
     "answer": 0,
-    "score": "4/4",
+    "score": "0/5",
     "trans": "Perhatikan konteks kalimat/gambar pada soal.",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 1. Pilihan yang tepat adalah くだもの 。果物.",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah .",
     "opt_detail": [
       {
-        "kana": "くだもの 。果物",
+        "kana": "押すます",
         "rom": "",
-        "arti": "くだもの 。果物",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "押すます",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
-        "kana": "かいもの 。買い物",
+        "kana": "抑える",
         "rom": "",
-        "arti": "かいもの 。買い物",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "抑える",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "たべもの 。食べ物",
+        "kana": "捨てる",
         "rom": "",
-        "arti": "たべもの 。食べ物",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "捨てる",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "くだもの 。果物",
-      "かいもの 。買い物",
-      "たべもの 。食べ物"
+      "押すます",
+      "抑える",
+      "捨てる"
     ],
-    "kunci_id": "くだもの 。果物",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "押すます",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 2
   },
   {
-    "no": 2,
+    "orig_no": 3,
     "section": "SESI 1 : MOJIGOI",
     "title": "",
     "img": "assets/1_img_3.jpg",
     "audio": "",
     "options": [
       {
-        "text": "引きます",
+        "text": "じこ",
         "img": ""
       },
       {
-        "text": "押します",
+        "text": "じご",
         "img": ""
       },
       {
-        "text": "入れます",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "4/4",
-    "trans": "Perhatikan konteks kalimat/gambar pada soal.",
-    "trans_rom": "-",
-    "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 2. Pilihan yang tepat adalah 押します.",
-    "opt_detail": [
-      {
-        "kana": "引きます",
-        "rom": "",
-        "arti": "引きます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "押します",
-        "rom": "",
-        "arti": "押します",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "入れます",
-        "rom": "",
-        "arti": "入れます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "引きます",
-      "押します",
-      "入れます"
-    ],
-    "kunci_id": "押します",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 3,
-    "section": "SESI 1 : MOJIGOI",
-    "title": "",
-    "img": "assets/1_img_2.jpg",
-    "audio": "",
-    "options": [
-      {
-        "text": "こうつうじこ/ じこ",
-        "img": ""
-      },
-      {
-        "text": "しんごうこわれた",
-        "img": ""
-      },
-      {
-        "text": "たいふうがくる",
-        "img": ""
-      },
-      {
-        "text": "Opsi 4",
+        "text": "こじ",
         "img": ""
       }
     ],
     "answer": 0,
-    "score": "0/4",
+    "score": "0/3",
     "trans": "Perhatikan konteks kalimat/gambar pada soal.",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 3. Pilihan yang tepat adalah こうつうじこ/ じこ.",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah .",
     "opt_detail": [
       {
-        "kana": "こうつうじこ/ じこ",
+        "kana": "じこ",
         "rom": "",
-        "arti": "こうつうじこ/ じこ",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "じこ",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
-        "kana": "しんごうこわれた",
+        "kana": "じご",
         "rom": "",
-        "arti": "しんごうこわれた",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "じご",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "たいふうがくる",
+        "kana": "こじ",
         "rom": "",
-        "arti": "たいふうがくる",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "Opsi 4",
-        "rom": "",
-        "arti": "Opsi 4",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "こじ",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "こうつうじこ/ じこ",
-      "しんごうこわれた",
-      "たいふうがくる",
-      "Opsi 4"
+      "じこ",
+      "じご",
+      "こじ"
     ],
-    "kunci_id": "こうつうじこ/ じこ",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "じこ",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 3
   },
   {
-    "no": 4,
+    "orig_no": 4,
     "section": "SESI 1 : MOJIGOI",
-    "title": "。日本語の試験は今週におこわなれます",
+    "title": "日本語 の 試験 は 今週 に おこわなれます",
     "img": "",
     "audio": "",
     "options": [
@@ -184,625 +176,219 @@
         "img": ""
       },
       {
-        "text": "こんけ”つ",
+        "text": "らいしゅう",
         "img": ""
       },
       {
-        "text": "こんしゅ",
+        "text": "せんしゅう",
         "img": ""
       }
     ],
     "answer": 0,
-    "score": "0/4",
-    "trans": "。日本語の試験は今週におこわなれます",
+    "score": "0/2",
+    "trans": "日本語 の 試験 は 今週 に おこわなれます",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 4. Pilihan yang tepat adalah こんしゅう.",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah .",
     "opt_detail": [
       {
         "kana": "こんしゅう",
         "rom": "",
         "arti": "こんしゅう",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
-        "kana": "こんけ”つ",
+        "kana": "らいしゅう",
         "rom": "",
-        "arti": "こんけ”つ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "らいしゅう",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "こんしゅ",
+        "kana": "せんしゅう",
         "rom": "",
-        "arti": "こんしゅ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "せんしゅう",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
       "こんしゅう",
-      "こんけ”つ",
-      "こんしゅ"
+      "らいしゅう",
+      "せんしゅう"
     ],
     "kunci_id": "こんしゅう",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 4
   },
   {
-    "no": 5,
+    "orig_no": 5,
     "section": "SESI 1 : MOJIGOI",
-    "title": "。先生にメールを送ります。",
+    "title": "航空便でお誕生日プレゼントを送ります。",
     "img": "",
     "audio": "",
     "options": [
       {
-        "text": "すくります",
+        "text": "おきる",
         "img": ""
       },
       {
-        "text": "とります",
+        "text": "おくる",
         "img": ""
       },
       {
-        "text": "おくります /おくる",
-        "img": ""
-      }
-    ],
-    "answer": 2,
-    "score": "0/4",
-    "trans": "。先生にメールを送ります。",
-    "trans_rom": "-",
-    "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 5. Pilihan yang tepat adalah おくります /おくる.",
-    "opt_detail": [
-      {
-        "kana": "すくります",
-        "rom": "",
-        "arti": "すくります",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "とります",
-        "rom": "",
-        "arti": "とります",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "おくります /おくる",
-        "rom": "",
-        "arti": "おくります /おくる",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      }
-    ],
-    "opt_note": [
-      "すくります",
-      "とります",
-      "おくります /おくる"
-    ],
-    "kunci_id": "おくります /おくる",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 6,
-    "section": "SESI 1 : MOJIGOI",
-    "title": "。私の家はコンビニ。。。。、便利です",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "ちかくに",
-        "img": ""
-      },
-      {
-        "text": "ちかくで",
-        "img": ""
-      },
-      {
-        "text": "ちかくて",
-        "img": ""
-      }
-    ],
-    "answer": 2,
-    "score": "0/4",
-    "trans": "。私の家はコンビニ。。。。、便利です",
-    "trans_rom": "-",
-    "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 6. Pilihan yang tepat adalah ちかくて.",
-    "opt_detail": [
-      {
-        "kana": "ちかくに",
-        "rom": "",
-        "arti": "ちかくに",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "ちかくで",
-        "rom": "",
-        "arti": "ちかくで",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "ちかくて",
-        "rom": "",
-        "arti": "ちかくて",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      }
-    ],
-    "opt_note": [
-      "ちかくに",
-      "ちかくで",
-      "ちかくて"
-    ],
-    "kunci_id": "ちかくて",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 7,
-    "section": "SESI 1 : MOJIGOI",
-    "title": "ひらさん、どこに働きますか？",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "うごきます",
-        "img": ""
-      },
-      {
-        "text": "はたらきます",
-        "img": ""
-      },
-      {
-        "text": "いきます",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "4/4",
-    "trans": "ひらさん、どこに働きますか？",
-    "trans_rom": "-",
-    "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 7. Pilihan yang tepat adalah はたらきます.",
-    "opt_detail": [
-      {
-        "kana": "うごきます",
-        "rom": "",
-        "arti": "うごきます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "はたらきます",
-        "rom": "",
-        "arti": "はたらきます",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "いきます",
-        "rom": "",
-        "arti": "いきます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "うごきます",
-      "はたらきます",
-      "いきます"
-    ],
-    "kunci_id": "はたらきます",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 8,
-    "section": "SESI 1 : MOJIGOI",
-    "title": "。日曜日、公園にお祭りがありますよ。\nいっしょに。。。。",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "いきませんか？",
-        "img": ""
-      },
-      {
-        "text": "いきます",
-        "img": ""
-      },
-      {
-        "text": "いきましょう",
+        "text": "あるく",
         "img": ""
       }
     ],
     "answer": 0,
-    "score": "0/4",
-    "trans": "。日曜日、公園にお祭りがありますよ。\nいっしょに。。。。",
+    "score": "0/3",
+    "trans": "航空便でお誕生日プレゼントを送ります。",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 8. Pilihan yang tepat adalah いきませんか？.",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah .",
     "opt_detail": [
       {
-        "kana": "いきませんか？",
+        "kana": "おきる",
         "rom": "",
-        "arti": "いきませんか？",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "おきる",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
-        "kana": "いきます",
+        "kana": "おくる",
         "rom": "",
-        "arti": "いきます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "おくる",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "いきましょう",
+        "kana": "あるく",
         "rom": "",
-        "arti": "いきましょう",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "あるく",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "いきませんか？",
-      "いきます",
-      "いきましょう"
+      "おきる",
+      "おくる",
+      "あるく"
     ],
-    "kunci_id": "いきませんか？",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "おきる",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 5
   },
   {
-    "no": 9,
+    "orig_no": 6,
     "section": "SESI 1 : MOJIGOI",
-    "title": "。あたらしいふくが。。。",
+    "title": "私の家は駅に.......... 便利です",
     "img": "",
     "audio": "",
     "options": [
       {
-        "text": "ほしいです/ 欲しい",
+        "text": "近くて",
         "img": ""
       },
       {
-        "text": "怖い",
+        "text": "近くで",
         "img": ""
       },
       {
-        "text": "着ます",
+        "text": "近くに",
         "img": ""
       }
     ],
     "answer": 0,
-    "score": "0/4",
-    "trans": "。あたらしいふくが。。。",
+    "score": "0/3",
+    "trans": "私の家は駅に.......... 便利です",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 9. Pilihan yang tepat adalah ほしいです/ 欲しい.",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah .",
     "opt_detail": [
       {
-        "kana": "ほしいです/ 欲しい",
+        "kana": "近くて",
         "rom": "",
-        "arti": "ほしいです/ 欲しい",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "近くて",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
-        "kana": "怖い",
+        "kana": "近くで",
         "rom": "",
-        "arti": "怖い",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "近くで",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "着ます",
+        "kana": "近くに",
         "rom": "",
-        "arti": "着ます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "近くに",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "ほしいです/ 欲しい",
-      "怖い",
-      "着ます"
+      "近くて",
+      "近くで",
+      "近くに"
     ],
-    "kunci_id": "ほしいです/ 欲しい",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "近くて",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 6
   },
   {
-    "no": 10,
+    "orig_no": 7,
     "section": "SESI 1 : MOJIGOI",
-    "title": "。お兄さん、すみはピアノを。。。ことです。",
+    "title": "A : 山田さん明日 は レストラン で いしょに たべ に__________ \nB : じゃ。。いきましょう",
     "img": "",
     "audio": "",
     "options": [
       {
-        "text": "ひく",
+        "text": "行ってもいいですか",
         "img": ""
       },
       {
-        "text": "ひま",
+        "text": "行きましょう",
         "img": ""
       },
       {
-        "text": "ひる",
+        "text": "いきませんか",
         "img": ""
       }
     ],
     "answer": 0,
-    "score": "0/4",
-    "trans": "。お兄さん、すみはピアノを。。。ことです。",
+    "score": "0/3",
+    "trans": "A : 山田さん明日 は レストラン で いしょに たべ に__________ \nB : じゃ。。いきましょう",
     "trans_rom": "-",
     "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 10. Pilihan yang tepat adalah ひく.",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah .",
     "opt_detail": [
       {
-        "kana": "ひく",
+        "kana": "行ってもいいですか",
         "rom": "",
-        "arti": "ひく",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "行ってもいいですか",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
-        "kana": "ひま",
+        "kana": "行きましょう",
         "rom": "",
-        "arti": "ひま",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "行きましょう",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "ひる",
+        "kana": "いきませんか",
         "rom": "",
-        "arti": "ひる",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "いきませんか",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "ひく",
-      "ひま",
-      "ひる"
+      "行ってもいいですか",
+      "行きましょう",
+      "いきませんか"
     ],
-    "kunci_id": "ひく",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "行ってもいいですか",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 7
   },
   {
-    "no": 11,
+    "orig_no": 8,
     "section": "SESI 1 : MOJIGOI",
-    "title": "。今日はくもっていますね、雨が。。。そうです。",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "ふり",
-        "img": ""
-      },
-      {
-        "text": "ふる",
-        "img": ""
-      },
-      {
-        "text": "ふった",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "0/4",
-    "trans": "。今日はくもっていますね、雨が。。。そうです。",
-    "trans_rom": "-",
-    "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 11. Pilihan yang tepat adalah ふり.",
-    "opt_detail": [
-      {
-        "kana": "ふり",
-        "rom": "",
-        "arti": "ふり",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "ふる",
-        "rom": "",
-        "arti": "ふる",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "ふった",
-        "rom": "",
-        "arti": "ふった",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "ふり",
-      "ふる",
-      "ふった"
-    ],
-    "kunci_id": "ふり",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 12,
-    "section": "SESI 1 : MOJIGOI",
-    "title": "。これおみやげです、東京から。。。",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "持ってきました",
-        "img": ""
-      },
-      {
-        "text": "とってきました",
-        "img": ""
-      },
-      {
-        "text": "かってきました",
-        "img": ""
-      }
-    ],
-    "answer": 2,
-    "score": "0/4",
-    "trans": "。これおみやげです、東京から。。。",
-    "trans_rom": "-",
-    "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 12. Pilihan yang tepat adalah かってきました.",
-    "opt_detail": [
-      {
-        "kana": "持ってきました",
-        "rom": "",
-        "arti": "持ってきました",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "とってきました",
-        "rom": "",
-        "arti": "とってきました",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "かってきました",
-        "rom": "",
-        "arti": "かってきました",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      }
-    ],
-    "opt_note": [
-      "持ってきました",
-      "とってきました",
-      "かってきました"
-    ],
-    "kunci_id": "かってきました",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 13,
-    "section": "SESI 1 : MOJIGOI",
-    "title": "ADA BUNPOU KELIATANNYA.",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "そうです",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "4/4",
-    "trans": "ADA BUNPOU KELIATANNYA.",
-    "trans_rom": "-",
-    "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 13. Pilihan yang tepat adalah そうです.",
-    "opt_detail": [
-      {
-        "kana": "そうです",
-        "rom": "",
-        "arti": "そうです",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      }
-    ],
-    "opt_note": [
-      "そうです"
-    ],
-    "kunci_id": "そうです",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 14,
-    "section": "SESI 1 : MOJIGOI",
-    "title": "。A：おめでとおたんじょうび、何がプレゼント奉仕ですか？\nB：それわほんです、。。と思います。",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "ねむ",
-        "img": ""
-      },
-      {
-        "text": "のむ",
-        "img": ""
-      },
-      {
-        "text": "よむ",
-        "img": ""
-      }
-    ],
-    "answer": 2,
-    "score": "0/4",
-    "trans": "。A：おめでとおたんじょうび、何がプレゼント奉仕ですか？\nB：それわほんです、。。と思います。",
-    "trans_rom": "-",
-    "mnn": "Mojigoi",
-    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan nomor 14. Pilihan yang tepat adalah よむ.",
-    "opt_detail": [
-      {
-        "kana": "ねむ",
-        "rom": "",
-        "arti": "ねむ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "のむ",
-        "rom": "",
-        "arti": "のむ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "よむ",
-        "rom": "",
-        "arti": "よむ",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      }
-    ],
-    "opt_note": [
-      "ねむ",
-      "のむ",
-      "よむ"
-    ],
-    "kunci_id": "よむ",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 15,
-    "section": "SESI 2 : HYOUGEN",
-    "title": "あ：歯が痛いんですけど、あたりはいしゃに。。。かもしれませんか？？\nえ：はいしゃ？、日本に来て、はいしゃにいったことがありません。",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "分かる / 分かるかもしれません",
-        "img": ""
-      },
-      {
-        "text": "分かった",
-        "img": ""
-      },
-      {
-        "text": "分かれる",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "0/4",
-    "trans": "あ：歯が痛いんですけど、あたりはいしゃに。。。かもしれませんか？？\nえ：はいしゃ？、日本に来て、はいしゃにいったことがありません。",
-    "trans_rom": "-",
-    "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 15. Pilihan yang tepat adalah 分かる / 分かるかもしれません.",
-    "opt_detail": [
-      {
-        "kana": "分かる / 分かるかもしれません",
-        "rom": "",
-        "arti": "分かる / 分かるかもしれません",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "分かった",
-        "rom": "",
-        "arti": "分かった",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "分かれる",
-        "rom": "",
-        "arti": "分かれる",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "分かる / 分かるかもしれません",
-      "分かった",
-      "分かれる"
-    ],
-    "kunci_id": "分かる / 分かるかもしれません",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 16,
-    "section": "SESI 2 : HYOUGEN",
-    "title": "BAHASA JEPANG JAM 9 😱",
-    "img": "assets/2_img_8.jpg",
+    "title": "何時ですか",
+    "img": "assets/1_img_2.jpg",
     "audio": "",
     "options": [
       {
@@ -819,29 +405,29 @@
       }
     ],
     "answer": 0,
-    "score": "0/6",
-    "trans": "BAHASA JEPANG JAM 9 😱",
+    "score": "3/3",
+    "trans": "何時ですか",
     "trans_rom": "-",
-    "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 16. Pilihan yang tepat adalah くじです.",
+    "mnn": "Mojigoi",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah くじです.",
     "opt_detail": [
       {
         "kana": "くじです",
         "rom": "",
         "arti": "くじです",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
         "kana": "きゅうじです",
         "rom": "",
         "arti": "きゅうじです",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
         "kana": "きゅじです",
         "rom": "",
         "arti": "きゅじです",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
@@ -850,17 +436,403 @@
       "きゅじです"
     ],
     "kunci_id": "くじです",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 8
   },
   {
-    "no": 17,
-    "section": "SESI 2 : HYOUGEN",
-    "title": "A : はじめましてインです。よろしくお願いします\nB : 。。。。",
+    "orig_no": 9,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "ひらさん、どこ に 働きますか？",
     "img": "",
     "audio": "",
     "options": [
       {
-        "text": "いただきます",
+        "text": "うんどう",
+        "img": ""
+      },
+      {
+        "text": "うごきます",
+        "img": ""
+      },
+      {
+        "text": "はたらきます",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/2",
+    "trans": "ひらさん、どこ に 働きますか？",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah .",
+    "opt_detail": [
+      {
+        "kana": "うんどう",
+        "rom": "",
+        "arti": "うんどう",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "うごきます",
+        "rom": "",
+        "arti": "うごきます",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "はたらきます",
+        "rom": "",
+        "arti": "はたらきます",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "うんどう",
+      "うごきます",
+      "はたらきます"
+    ],
+    "kunci_id": "うんどう",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 9
+  },
+  {
+    "orig_no": 10,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "しゅみ は ピアノ を 弾くことです",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "弾く",
+        "img": ""
+      },
+      {
+        "text": "する",
+        "img": ""
+      },
+      {
+        "text": "おす",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/3",
+    "trans": "しゅみ は ピアノ を 弾くことです",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah .",
+    "opt_detail": [
+      {
+        "kana": "弾く",
+        "rom": "",
+        "arti": "弾く",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "する",
+        "rom": "",
+        "arti": "する",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "おす",
+        "rom": "",
+        "arti": "おす",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "弾く",
+      "する",
+      "おす"
+    ],
+    "kunci_id": "弾く",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 10
+  },
+  {
+    "orig_no": 11,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "彼は本のプレゼントが好きだと.........",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "推定する",
+        "img": ""
+      },
+      {
+        "text": "覚えます",
+        "img": ""
+      },
+      {
+        "text": "思います",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/1",
+    "trans": "彼は本のプレゼントが好きだと.........",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah .",
+    "opt_detail": [
+      {
+        "kana": "推定する",
+        "rom": "",
+        "arti": "推定する",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "覚えます",
+        "rom": "",
+        "arti": "覚えます",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "思います",
+        "rom": "",
+        "arti": "思います",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "推定する",
+      "覚えます",
+      "思います"
+    ],
+    "kunci_id": "推定する",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 11
+  },
+  {
+    "orig_no": 12,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "A: 田中さんはいますか。\n\nB: いいえ いません、山田さんが、.    ............... かもしれません",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "分かる",
+        "img": ""
+      },
+      {
+        "text": "分かった",
+        "img": ""
+      },
+      {
+        "text": "分かれる",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "trans": "A: 田中さんはいますか。\n\nB: いいえ いません、山田さんが、.    ............... かもしれません",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 分かる.",
+    "opt_detail": [
+      {
+        "kana": "分かる",
+        "rom": "",
+        "arti": "分かる",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "分かった",
+        "rom": "",
+        "arti": "分かった",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "分かれる",
+        "rom": "",
+        "arti": "分かれる",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "分かる",
+      "分かった",
+      "分かれる"
+    ],
+    "kunci_id": "分かる",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 12
+  },
+  {
+    "orig_no": 13,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "この飲み物は_____そうです",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "おいしくて",
+        "img": ""
+      },
+      {
+        "text": "おいしく",
+        "img": ""
+      },
+      {
+        "text": "美味しい",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "5/5",
+    "trans": "この飲み物は_____そうです",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 美味しい.",
+    "opt_detail": [
+      {
+        "kana": "おいしくて",
+        "rom": "",
+        "arti": "おいしくて",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "おいしく",
+        "rom": "",
+        "arti": "おいしく",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "美味しい",
+        "rom": "",
+        "arti": "美味しい",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      }
+    ],
+    "opt_note": [
+      "おいしくて",
+      "おいしく",
+      "美味しい"
+    ],
+    "kunci_id": "美味しい",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 13
+  },
+  {
+    "orig_no": 14,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "A: このおみやげはどこに買いましたか \nb: いちばんゆめいなみせて.      \n               .",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "コンビニです",
+        "img": ""
+      },
+      {
+        "text": "フリマケット",
+        "img": ""
+      },
+      {
+        "text": "かっていました",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/4",
+    "trans": "A: このおみやげはどこに買いましたか \nb: いちばんゆめいなみせて.      \n               .",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah かっていました.",
+    "opt_detail": [
+      {
+        "kana": "コンビニです",
+        "rom": "",
+        "arti": "コンビニです",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "フリマケット",
+        "rom": "",
+        "arti": "フリマケット",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "かっていました",
+        "rom": "",
+        "arti": "かっていました",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      }
+    ],
+    "opt_note": [
+      "コンビニです",
+      "フリマケット",
+      "かっていました"
+    ],
+    "kunci_id": "かっていました",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 14
+  },
+  {
+    "orig_no": 15,
+    "section": "SESI 1 : MOJIGOI",
+    "title": "新しいふくが_______です",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "とても",
+        "img": ""
+      },
+      {
+        "text": "ほしい",
+        "img": ""
+      },
+      {
+        "text": "さむい",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/2",
+    "trans": "新しいふくが_______です",
+    "trans_rom": "-",
+    "mnn": "Mojigoi",
+    "analisis": "[Mojigoi] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah ほしい.",
+    "opt_detail": [
+      {
+        "kana": "とても",
+        "rom": "",
+        "arti": "とても",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "ほしい",
+        "rom": "",
+        "arti": "ほしい",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "さむい",
+        "rom": "",
+        "arti": "さむい",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "とても",
+      "ほしい",
+      "さむい"
+    ],
+    "kunci_id": "ほしい",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 15
+  },
+  {
+    "orig_no": 16,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A.はじめまして 山田です。よろしくお願いします\n\nB.....................",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "ありがとうございます",
         "img": ""
       },
       {
@@ -868,264 +840,379 @@
         "img": ""
       },
       {
-        "text": "ありがとうございます",
+        "text": "いただきます",
         "img": ""
       }
     ],
     "answer": 1,
-    "score": "4/4",
-    "trans": "A : はじめましてインです。よろしくお願いします\nB : 。。。。",
+    "score": "5/5",
+    "trans": "A.はじめまして 山田です。よろしくお願いします\n\nB.....................",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 17. Pilihan yang tepat adalah こちらこそ.",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah こちらこそ.",
     "opt_detail": [
       {
-        "kana": "いただきます",
+        "kana": "ありがとうございます",
         "rom": "",
-        "arti": "いただきます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "ありがとうございます",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
         "kana": "こちらこそ",
         "rom": "",
         "arti": "こちらこそ",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "ありがとうございます",
-        "rom": "",
-        "arti": "ありがとうございます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "いただきます",
-      "こちらこそ",
-      "ありがとうございます"
-    ],
-    "kunci_id": "こちらこそ",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 18,
-    "section": "SESI 2 : HYOUGEN",
-    "title": "女：これは８００円ですか？\n男：すみません、。。。お願いします。\n女：８００円ですか？",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "もういちど",
-        "img": ""
-      },
-      {
-        "text": "よろしく",
-        "img": ""
-      },
-      {
-        "text": "どうぞ",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "0/6",
-    "trans": "女：これは８００円ですか？\n男：すみません、。。。お願いします。\n女：８００円ですか？",
-    "trans_rom": "-",
-    "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 18. Pilihan yang tepat adalah もういちど.",
-    "opt_detail": [
-      {
-        "kana": "もういちど",
-        "rom": "",
-        "arti": "もういちど",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "よろしく",
-        "rom": "",
-        "arti": "よろしく",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "どうぞ",
-        "rom": "",
-        "arti": "どうぞ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "もういちど",
-      "よろしく",
-      "どうぞ"
-    ],
-    "kunci_id": "もういちど",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 19,
-    "section": "SESI 2 : HYOUGEN",
-    "title": "このきれいあたらしくてじてんしゃは。。。",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "のりにくいです",
-        "img": ""
-      },
-      {
-        "text": "のりやすいです",
-        "img": ""
-      },
-      {
-        "text": "やすみです",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "6/6",
-    "trans": "このきれいあたらしくてじてんしゃは。。。",
-    "trans_rom": "-",
-    "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 19. Pilihan yang tepat adalah のりやすいです.",
-    "opt_detail": [
-      {
-        "kana": "のりにくいです",
-        "rom": "",
-        "arti": "のりにくいです",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "のりやすいです",
-        "rom": "",
-        "arti": "のりやすいです",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "やすみです",
-        "rom": "",
-        "arti": "やすみです",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "のりにくいです",
-      "のりやすいです",
-      "やすみです"
-    ],
-    "kunci_id": "のりやすいです",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 20,
-    "section": "SESI 2 : HYOUGEN",
-    "title": "A：アリスさん、これおみやげです。\nB：ありがとうございます、。。。。。。",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "いってきます",
-        "img": ""
-      },
-      {
-        "text": "いただきます",
-        "img": ""
-      },
-      {
-        "text": "いてらさいます",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "4/4",
-    "trans": "A：アリスさん、これおみやげです。\nB：ありがとうございます、。。。。。。",
-    "trans_rom": "-",
-    "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 20. Pilihan yang tepat adalah いただきます.",
-    "opt_detail": [
-      {
-        "kana": "いってきます",
-        "rom": "",
-        "arti": "いってきます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
         "kana": "いただきます",
         "rom": "",
         "arti": "いただきます",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "いてらさいます",
-        "rom": "",
-        "arti": "いてらさいます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "いってきます",
-      "いただきます",
-      "いてらさいます"
+      "ありがとうございます",
+      "こちらこそ",
+      "いただきます"
     ],
-    "kunci_id": "いただきます",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "こちらこそ",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 16
   },
   {
-    "no": 21,
+    "orig_no": 17,
     "section": "SESI 2 : HYOUGEN",
-    "title": "A : あなたの日本語はとても上手ですね。\nB : いいえ、。。。。。",
+    "title": "A: すみません, この傘はいくらですか \nB: 800円です \nA: ええ..すみません聞こえません____________おねがいします \nB: 800円です",
     "img": "",
     "audio": "",
     "options": [
       {
-        "text": "そうですか",
+        "text": "もうおわりましたか",
         "img": ""
       },
       {
-        "text": "なにもないです",
+        "text": "もう一度",
         "img": ""
       },
       {
-        "text": "そんなことないです",
+        "text": "もういっぱい",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "5/5",
+    "trans": "A: すみません, この傘はいくらですか \nB: 800円です \nA: ええ..すみません聞こえません____________おねがいします \nB: 800円です",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah もう一度.",
+    "opt_detail": [
+      {
+        "kana": "もうおわりましたか",
+        "rom": "",
+        "arti": "もうおわりましたか",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "もう一度",
+        "rom": "",
+        "arti": "もう一度",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "もういっぱい",
+        "rom": "",
+        "arti": "もういっぱい",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "もうおわりましたか",
+      "もう一度",
+      "もういっぱい"
+    ],
+    "kunci_id": "もう一度",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 17
+  },
+  {
+    "orig_no": 18,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "この自転車が__________ですから,うれしいです",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "乗りやすい",
+        "img": ""
+      },
+      {
+        "text": "のって",
+        "img": ""
+      },
+      {
+        "text": "のんだ",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "trans": "この自転車が__________ですから,うれしいです",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 乗りやすい.",
+    "opt_detail": [
+      {
+        "kana": "乗りやすい",
+        "rom": "",
+        "arti": "乗りやすい",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "のって",
+        "rom": "",
+        "arti": "のって",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "のんだ",
+        "rom": "",
+        "arti": "のんだ",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "乗りやすい",
+      "のって",
+      "のんだ"
+    ],
+    "kunci_id": "乗りやすい",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 18
+  },
+  {
+    "orig_no": 19,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A: これのおみやげは私の国からです、どうぞ\nB: __________",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "いいんですか",
+        "img": ""
+      },
+      {
+        "text": "おかげで",
+        "img": ""
+      },
+      {
+        "text": "かならず",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "trans": "A: これのおみやげは私の国からです、どうぞ\nB: __________",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah いいんですか.",
+    "opt_detail": [
+      {
+        "kana": "いいんですか",
+        "rom": "",
+        "arti": "いいんですか",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "おかげで",
+        "rom": "",
+        "arti": "おかげで",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "かならず",
+        "rom": "",
+        "arti": "かならず",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "いいんですか",
+      "おかげで",
+      "かならず"
+    ],
+    "kunci_id": "いいんですか",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 19
+  },
+  {
+    "orig_no": 20,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A: アニさん,日本語のべんきょうはどの\n     ぐらいかかりましたか｡かいわが\n     めちゃめちゃうまいね.\nB:あ....._______, まだ4月勉強しています",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "そんなことないよ",
+        "img": ""
+      },
+      {
+        "text": "べんきょうになります",
+        "img": ""
+      },
+      {
+        "text": "たしかに",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "trans": "A: アニさん,日本語のべんきょうはどの\n     ぐらいかかりましたか｡かいわが\n     めちゃめちゃうまいね.\nB:あ....._______, まだ4月勉強しています",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah そんなことないよ.",
+    "opt_detail": [
+      {
+        "kana": "そんなことないよ",
+        "rom": "",
+        "arti": "そんなことないよ",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "べんきょうになります",
+        "rom": "",
+        "arti": "べんきょうになります",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "たしかに",
+        "rom": "",
+        "arti": "たしかに",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "そんなことないよ",
+      "べんきょうになります",
+      "たしかに"
+    ],
+    "kunci_id": "そんなことないよ",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 20
+  },
+  {
+    "orig_no": 22,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "家族と電話で_________",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "べんきょうします",
+        "img": ""
+      },
+      {
+        "text": "すりをします",
+        "img": ""
+      },
+      {
+        "text": "話します",
         "img": ""
       }
     ],
     "answer": 2,
-    "score": "0/6",
-    "trans": "A : あなたの日本語はとても上手ですね。\nB : いいえ、。。。。。",
+    "score": "0/5",
+    "trans": "家族と電話で_________",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 21. Pilihan yang tepat adalah そんなことないです.",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 話します.",
     "opt_detail": [
       {
-        "kana": "そうですか",
+        "kana": "べんきょうします",
         "rom": "",
-        "arti": "そうですか",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "べんきょうします",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "なにもないです",
+        "kana": "すりをします",
         "rom": "",
-        "arti": "なにもないです",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "すりをします",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "そんなことないです",
+        "kana": "話します",
         "rom": "",
-        "arti": "そんなことないです",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "話します",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       }
     ],
     "opt_note": [
-      "そうですか",
-      "なにもないです",
-      "そんなことないです"
+      "べんきょうします",
+      "すりをします",
+      "話します"
     ],
-    "kunci_id": "そんなことないです",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "話します",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 21
   },
   {
-    "no": 22,
+    "orig_no": 23,
     "section": "SESI 2 : HYOUGEN",
-    "title": "レストランに行く前に、。。。。ことができます",
+    "title": "A: 休みの日は旅行ですか\nB: いえ, 私も ______家にいました",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "きっと",
+        "img": ""
+      },
+      {
+        "text": "ずっと",
+        "img": ""
+      },
+      {
+        "text": "ない",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "5/5",
+    "trans": "A: 休みの日は旅行ですか\nB: いえ, 私も ______家にいました",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah ずっと.",
+    "opt_detail": [
+      {
+        "kana": "きっと",
+        "rom": "",
+        "arti": "きっと",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "ずっと",
+        "rom": "",
+        "arti": "ずっと",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "ない",
+        "rom": "",
+        "arti": "ない",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "きっと",
+      "ずっと",
+      "ない"
+    ],
+    "kunci_id": "ずっと",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 22
+  },
+  {
+    "orig_no": 24,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "レストランへ行く前に_________といいです",
     "img": "",
     "audio": "",
     "options": [
@@ -1134,106 +1221,163 @@
         "img": ""
       },
       {
-        "text": "よやくしない",
+        "text": "よやくした",
         "img": ""
       },
       {
-        "text": "よやくする",
+        "text": "予約する",
         "img": ""
       }
     ],
     "answer": 2,
-    "score": "0/6",
-    "trans": "レストランに行く前に、。。。。ことができます",
+    "score": "0/5",
+    "trans": "レストランへ行く前に_________といいです",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 22. Pilihan yang tepat adalah よやくする.",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 予約する.",
     "opt_detail": [
       {
         "kana": "よやくして",
         "rom": "",
         "arti": "よやくして",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "よやくしない",
+        "kana": "よやくした",
         "rom": "",
-        "arti": "よやくしない",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "よやくした",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "よやくする",
+        "kana": "予約する",
         "rom": "",
-        "arti": "よやくする",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "予約する",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       }
     ],
     "opt_note": [
       "よやくして",
-      "よやくしない",
-      "よやくする"
+      "よやくした",
+      "予約する"
     ],
-    "kunci_id": "よやくする",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "予約する",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 23
   },
   {
-    "no": 23,
+    "orig_no": 25,
     "section": "SESI 2 : HYOUGEN",
-    "title": "A：日本の生活にもうなれましたか？\nB：もうなれましたけど、さびしいですでも、まいにちりょうしんと。。。。。、うれしいです。\nA：よかったですね。",
+    "title": "山田さんはプレゼントをもらって_________",
     "img": "",
     "audio": "",
     "options": [
       {
-        "text": "会社ができます。",
+        "text": "よろかぶかもしりません",
         "img": ""
       },
       {
-        "text": "電話ができます",
+        "text": "よろこいでかもしりません",
         "img": ""
       },
       {
-        "text": "電車ができます",
+        "text": "喜ぶかもしりません",
         "img": ""
       }
     ],
-    "answer": 1,
-    "score": "4/4",
-    "trans": "A：日本の生活にもうなれましたか？\nB：もうなれましたけど、さびしいですでも、まいにちりょうしんと。。。。。、うれしいです。\nA：よかったですね。",
+    "answer": 2,
+    "score": "0/5",
+    "trans": "山田さんはプレゼントをもらって_________",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 23. Pilihan yang tepat adalah 電話ができます.",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 喜ぶかもしりません.",
     "opt_detail": [
       {
-        "kana": "会社ができます。",
+        "kana": "よろかぶかもしりません",
         "rom": "",
-        "arti": "会社ができます。",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "よろかぶかもしりません",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "電話ができます",
+        "kana": "よろこいでかもしりません",
         "rom": "",
-        "arti": "電話ができます",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "よろこいでかもしりません",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "電車ができます",
+        "kana": "喜ぶかもしりません",
         "rom": "",
-        "arti": "電車ができます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "喜ぶかもしりません",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       }
     ],
     "opt_note": [
-      "会社ができます。",
-      "電話ができます",
-      "電車ができます"
+      "よろかぶかもしりません",
+      "よろこいでかもしりません",
+      "喜ぶかもしりません"
     ],
-    "kunci_id": "電話ができます",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "喜ぶかもしりません",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 24
   },
   {
-    "no": 24,
+    "orig_no": 26,
     "section": "SESI 2 : HYOUGEN",
-    "title": "A：利田さん、じしょを。。。。。\nB：すみません、きょうはじしょを持って来ませんでした。",
+    "title": "A: アニさんきのうはついたままにですよ\nB:え..本当に, すみません今度________",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "だいじょぶです",
+        "img": ""
+      },
+      {
+        "text": "ありがとう",
+        "img": ""
+      },
+      {
+        "text": "気をつけて",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "trans": "A: アニさんきのうはついたままにですよ\nB:え..本当に, すみません今度________",
+    "trans_rom": "-",
+    "mnn": "Hyougen",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 気をつけて.",
+    "opt_detail": [
+      {
+        "kana": "だいじょぶです",
+        "rom": "",
+        "arti": "だいじょぶです",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "ありがとう",
+        "rom": "",
+        "arti": "ありがとう",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "気をつけて",
+        "rom": "",
+        "arti": "気をつけて",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      }
+    ],
+    "opt_note": [
+      "だいじょぶです",
+      "ありがとう",
+      "気をつけて"
+    ],
+    "kunci_id": "気をつけて",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 25
+  },
+  {
+    "orig_no": 27,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A:利田さん、じしょを\n\nB: すみません、きょうはじしょを持って来ませんでした",
     "img": "",
     "audio": "",
     "options": [
@@ -1251,29 +1395,29 @@
       }
     ],
     "answer": 0,
-    "score": "0/4",
-    "trans": "A：利田さん、じしょを。。。。。\nB：すみません、きょうはじしょを持って来ませんでした。",
+    "score": "5/5",
+    "trans": "A:利田さん、じしょを\n\nB: すみません、きょうはじしょを持って来ませんでした",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 24. Pilihan yang tepat adalah 貸してくれませんか.",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 貸してくれませんか.",
     "opt_detail": [
       {
         "kana": "貸してくれませんか",
         "rom": "",
         "arti": "貸してくれませんか",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
         "kana": "かしたほうがいいです",
         "rom": "",
         "arti": "かしたほうがいいです",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
         "kana": "貸せないでください",
         "rom": "",
         "arti": "貸せないでください",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
@@ -1282,1002 +1426,229 @@
       "貸せないでください"
     ],
     "kunci_id": "貸してくれませんか",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 26
   },
   {
-    "no": 25,
+    "orig_no": 28,
     "section": "SESI 2 : HYOUGEN",
-    "title": "A：明日、いっしょにテニスをしませんか？\nB：ええ、。。。。",
+    "title": "A:日本の生活にもうなれましたか?\n\nB: もうなれましたけど、さびしいですが、毎日かぞくにうれしいです。\n\nA: よかったですね。",
     "img": "",
     "audio": "",
     "options": [
       {
-        "text": "しません。",
+        "text": "よかったですね。",
         "img": ""
       },
       {
-        "text": "そうです",
+        "text": "会社ができて",
         "img": ""
       },
       {
-        "text": "しましょう",
+        "text": "電話ができて",
+        "img": ""
+      },
+      {
+        "text": "電車ができて",
         "img": ""
       }
     ],
     "answer": 2,
-    "score": "0/4",
-    "trans": "A：明日、いっしょにテニスをしませんか？\nB：ええ、。。。。",
+    "score": "0/5",
+    "trans": "A:日本の生活にもうなれましたか?\n\nB: もうなれましたけど、さびしいですが、毎日かぞくにうれしいです。\n\nA: よかったですね。",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 25. Pilihan yang tepat adalah しましょう.",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 電話ができて.",
     "opt_detail": [
       {
-        "kana": "しません。",
+        "kana": "よかったですね。",
         "rom": "",
-        "arti": "しません。",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "よかったですね。",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "そうです",
+        "kana": "会社ができて",
         "rom": "",
-        "arti": "そうです",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "会社ができて",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "しましょう",
+        "kana": "電話ができて",
         "rom": "",
-        "arti": "しましょう",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "電話ができて",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "電車ができて",
+        "rom": "",
+        "arti": "電車ができて",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "しません。",
-      "そうです",
-      "しましょう"
+      "よかったですね。",
+      "会社ができて",
+      "電話ができて",
+      "電車ができて"
     ],
-    "kunci_id": "しましょう",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "電話ができて",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 27
   },
   {
-    "no": 26,
+    "orig_no": 29,
     "section": "SESI 2 : HYOUGEN",
-    "title": "PERCAKAPAN 2 CEWEK YG A MENAWARKAN OLEH2 KE SI B.. TRS SI A MEMPERSILAHKAN, DIA G SUKA MANIS あまい 😍😅",
+    "title": "A: すみません、ビールを.                  \n\nB: はい、かしこまりました。",
     "img": "",
     "audio": "",
     "options": [
       {
-        "text": "いいんですか。",
+        "text": "ありがとうございます",
         "img": ""
       },
       {
-        "text": "どうぞう",
+        "text": "おねがいします",
         "img": ""
       },
       {
-        "text": "しましょう",
+        "text": "○ おめでとうございます",
         "img": ""
       }
     ],
-    "answer": 0,
-    "score": "0/4",
-    "trans": "PERCAKAPAN 2 CEWEK YG A MENAWARKAN OLEH2 KE SI B.. TRS SI A MEMPERSILAHKAN, DIA G SUKA MANIS あまい 😍😅",
+    "answer": 1,
+    "score": "0/5",
+    "trans": "A: すみません、ビールを.                  \n\nB: はい、かしこまりました。",
     "trans_rom": "-",
     "mnn": "Hyougen",
-    "analisis": "[Hyougen] Pembahasan untuk pertanyaan nomor 26. Pilihan yang tepat adalah いいんですか。.",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah おねがいします.",
     "opt_detail": [
       {
-        "kana": "いいんですか。",
+        "kana": "ありがとうございます",
         "rom": "",
-        "arti": "いいんですか。",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "ありがとうございます",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "どうぞう",
+        "kana": "おねがいします",
         "rom": "",
-        "arti": "どうぞう",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "おねがいします",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
-        "kana": "しましょう",
+        "kana": "○ おめでとうございます",
         "rom": "",
-        "arti": "しましょう",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "○ おめでとうございます",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "いいんですか。",
-      "どうぞう",
-      "しましょう"
+      "ありがとうございます",
+      "おねがいします",
+      "○ おめでとうございます"
     ],
-    "kunci_id": "いいんですか。",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "おねがいします",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 28
   },
   {
-    "no": 27,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN,PRIA MEMPREDIKSI KEJADIAN SETELAH INI.",
+    "orig_no": 30,
+    "section": "SESI 2 : HYOUGEN",
+    "title": "A:アリスさん、これおみやげです。\n\nB: ありがとうございます、",
     "img": "",
     "audio": "",
     "options": [
       {
-        "text": "車",
-        "img": "assets/3_img_27.jpg"
-      },
-      {
-        "text": "航空機",
-        "img": "assets/3_img_26.jpg"
-      },
-      {
-        "text": "電車",
-        "img": "assets/3_img_25.jpg"
-      }
-    ],
-    "answer": 0,
-    "score": "0/7",
-    "trans": "PERCAKAPAN,PRIA MEMPREDIKSI KEJADIAN SETELAH INI.",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 27. Pilihan yang tepat adalah 電車.",
-    "opt_detail": [
-      {
-        "kana": "車",
-        "rom": "",
-        "arti": "車",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "航空機",
-        "rom": "",
-        "arti": "航空機",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "電車",
-        "rom": "",
-        "arti": "電車",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "車",
-      "航空機",
-      "電車"
-    ],
-    "kunci_id": "車",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 28,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN DI TEMPAT MINUMAN\nAPA YANG DIBAWA COWOK KEDALAM RUANGAN",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "コーヒー",
-        "img": "assets/3_img_24.jpg"
-      },
-      {
-        "text": "お茶",
-        "img": "assets/3_img_23.jpg"
-      },
-      {
-        "text": "Boba",
-        "img": "assets/3_img_22.jpg"
-      }
-    ],
-    "answer": 1,
-    "score": "0/7",
-    "trans": "PERCAKAPAN DI TEMPAT MINUMAN\nAPA YANG DIBAWA COWOK KEDALAM RUANGAN",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 28. Pilihan yang tepat adalah お茶.",
-    "opt_detail": [
-      {
-        "kana": "コーヒー",
-        "rom": "",
-        "arti": "コーヒー",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "お茶",
-        "rom": "",
-        "arti": "お茶",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "Boba",
-        "rom": "",
-        "arti": "Boba",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "コーヒー",
-      "お茶",
-      "Boba"
-    ],
-    "kunci_id": "お茶",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 29,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "MASIH TENTANG SOAL PRIA PESAN SESUATU\nBERAPA JUMLAH NYA?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "３つ",
+        "text": "いってきます",
         "img": ""
       },
       {
-        "text": "４つ",
+        "text": "○ いただきます",
         "img": ""
       },
       {
-        "text": "２つ",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "0/4",
-    "trans": "MASIH TENTANG SOAL PRIA PESAN SESUATU\nBERAPA JUMLAH NYA?",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 29. Pilihan yang tepat adalah ３つ.",
-    "opt_detail": [
-      {
-        "kana": "３つ",
-        "rom": "",
-        "arti": "３つ",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "４つ",
-        "rom": "",
-        "arti": "４つ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "２つ",
-        "rom": "",
-        "arti": "２つ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "３つ",
-      "４つ",
-      "２つ"
-    ],
-    "kunci_id": "３つ",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 30,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN CEWEK DA COWOK.\nCO :今週、 どこに行きたいですか？\nCE : 。。。。。",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "図書館 （としょかん）",
-        "img": ""
-      },
-      {
-        "text": "動物園 （どうぶつえん）",
-        "img": ""
-      },
-      {
-        "text": "映画館",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "4/4",
-    "trans": "PERCAKAPAN CEWEK DA COWOK.\nCO :今週、 どこに行きたいですか？\nCE : 。。。。。",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 30. Pilihan yang tepat adalah 動物園 （どうぶつえん）.",
-    "opt_detail": [
-      {
-        "kana": "図書館 （としょかん）",
-        "rom": "",
-        "arti": "図書館 （としょかん）",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "動物園 （どうぶつえん）",
-        "rom": "",
-        "arti": "動物園 （どうぶつえん）",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "映画館",
-        "rom": "",
-        "arti": "映画館",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "図書館 （としょかん）",
-      "動物園 （どうぶつえん）",
-      "映画館"
-    ],
-    "kunci_id": "動物園 （どうぶつえん）",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 31,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "SEONG CEWEK MAU BELI VAKUM (SOUJIKI)\nHARGANYA BERAPA?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "15000円",
-        "img": "assets/3_img_21.jpg"
-      },
-      {
-        "text": "12000円",
-        "img": "assets/3_img_20.png"
-      },
-      {
-        "text": "11000円",
-        "img": "assets/3_img_19.jpg"
-      }
-    ],
-    "answer": 0,
-    "score": "7/7",
-    "trans": "SEONG CEWEK MAU BELI VAKUM (SOUJIKI)\nHARGANYA BERAPA?",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 31. Pilihan yang tepat adalah 15000円.",
-    "opt_detail": [
-      {
-        "kana": "15000円",
-        "rom": "",
-        "arti": "15000円",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "12000円",
-        "rom": "",
-        "arti": "12000円",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "11000円",
-        "rom": "",
-        "arti": "11000円",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "15000円",
-      "12000円",
-      "11000円"
-    ],
-    "kunci_id": "15000円",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 32,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "なにをしているの？",
-    "img": "assets/3_img_18.jpg",
-    "audio": "",
-    "options": [
-      {
-        "text": "洗濯物をかわかす 。せんたく ぶつ を かわかす。mengeringkan pakaian",
-        "img": ""
-      },
-      {
-        "text": "洗濯機をしゅうりしる 。せんたく 機 を しゅうり しる。perbaikan mesin cuci",
-        "img": ""
-      },
-      {
-        "text": "洗濯パンフレット 。せんたく パンフレット。brosur mesincuci",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "6/6",
-    "trans": "なにをしているの？",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 32. Pilihan yang tepat adalah 洗濯物をかわかす 。せんたく ぶつ を かわかす。mengeringkan pakaian.",
-    "opt_detail": [
-      {
-        "kana": "洗濯物をかわかす 。せんたく ぶつ を かわかす。mengeringkan pakaian",
-        "rom": "",
-        "arti": "洗濯物をかわかす 。せんたく ぶつ を かわかす。mengeringkan pakaian",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "洗濯機をしゅうりしる 。せんたく 機 を しゅうり しる。perbaikan mesin cuci",
-        "rom": "",
-        "arti": "洗濯機をしゅうりしる 。せんたく 機 を しゅうり しる。perbaikan mesin cuci",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "洗濯パンフレット 。せんたく パンフレット。brosur mesincuci",
-        "rom": "",
-        "arti": "洗濯パンフレット 。せんたく パンフレット。brosur mesincuci",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "洗濯物をかわかす 。せんたく ぶつ を かわかす。mengeringkan pakaian",
-      "洗濯機をしゅうりしる 。せんたく 機 を しゅうり しる。perbaikan mesin cuci",
-      "洗濯パンフレット 。せんたく パンフレット。brosur mesincuci"
-    ],
-    "kunci_id": "洗濯物をかわかす 。せんたく ぶつ を かわかす。mengeringkan pakaian",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 33,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "TENTANG PAKET TIBA JAM BERAPA, JAM PALING CEPAT, SOAL NYA KLW SIANG SIBUK.",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "12.00 - 14.00",
-        "img": ""
-      },
-      {
-        "text": "12.00 - 13.00",
-        "img": ""
-      },
-      {
-        "text": "13.00- 15.00",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "4/4",
-    "trans": "TENTANG PAKET TIBA JAM BERAPA, JAM PALING CEPAT, SOAL NYA KLW SIANG SIBUK.",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 33. Pilihan yang tepat adalah 12.00 - 14.00.",
-    "opt_detail": [
-      {
-        "kana": "12.00 - 14.00",
-        "rom": "",
-        "arti": "12.00 - 14.00",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "12.00 - 13.00",
-        "rom": "",
-        "arti": "12.00 - 13.00",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "13.00- 15.00",
-        "rom": "",
-        "arti": "13.00- 15.00",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "12.00 - 14.00",
-      "12.00 - 13.00",
-      "13.00- 15.00"
-    ],
-    "kunci_id": "12.00 - 14.00",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 34,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN.\nNANTI SIANG MAU MAKAN APA? (ひるごはん)",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "パン",
-        "img": "assets/3_img_17.jpg"
-      },
-      {
-        "text": "そば",
-        "img": "assets/3_img_16.jpg"
-      },
-      {
-        "text": "ピザ",
-        "img": "assets/3_img_15.jpg"
-      }
-    ],
-    "answer": 1,
-    "score": "0/4",
-    "trans": "PERCAKAPAN.\nNANTI SIANG MAU MAKAN APA? (ひるごはん)",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 34. Pilihan yang tepat adalah そば.",
-    "opt_detail": [
-      {
-        "kana": "パン",
-        "rom": "",
-        "arti": "パン",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "そば",
-        "rom": "",
-        "arti": "そば",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "ピザ",
-        "rom": "",
-        "arti": "ピザ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "パン",
-      "そば",
-      "ピザ"
-    ],
-    "kunci_id": "そば",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 35,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "DITANYA KALAU LIBUR MAU KEMANA?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "JAWABANYA YANG ADA ずっと NYA",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "5/5",
-    "trans": "DITANYA KALAU LIBUR MAU KEMANA?",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 35. Pilihan yang tepat adalah JAWABANYA YANG ADA ずっと NYA.",
-    "opt_detail": [
-      {
-        "kana": "JAWABANYA YANG ADA ずっと NYA",
-        "rom": "",
-        "arti": "JAWABANYA YANG ADA ずっと NYA",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      }
-    ],
-    "opt_note": [
-      "JAWABANYA YANG ADA ずっと NYA"
-    ],
-    "kunci_id": "JAWABANYA YANG ADA ずっと NYA",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 36,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "PENGUMUMAN TENTANG BEKERJA DI KAISHA, DISURUH KUMPUL SELEPAS MAKAN SIANG .\nDIMANA?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "かいぎしつ",
-        "img": "assets/3_img_14.jpg"
-      },
-      {
-        "text": "しょうくど",
-        "img": "assets/3_img_13.jpg"
-      },
-      {
-        "text": "うけつけ",
-        "img": "assets/3_img_12.jpg"
-      }
-    ],
-    "answer": 0,
-    "score": "6/6",
-    "trans": "PENGUMUMAN TENTANG BEKERJA DI KAISHA, DISURUH KUMPUL SELEPAS MAKAN SIANG .\nDIMANA?",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 36. Pilihan yang tepat adalah かいぎしつ.",
-    "opt_detail": [
-      {
-        "kana": "かいぎしつ",
-        "rom": "",
-        "arti": "かいぎしつ",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "しょうくど",
-        "rom": "",
-        "arti": "しょうくど",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "うけつけ",
-        "rom": "",
-        "arti": "うけつけ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "かいぎしつ",
-      "しょうくど",
-      "うけつけ"
-    ],
-    "kunci_id": "かいぎしつ",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 37,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN COWOK DAN CEWEK.\nCOWOK TANYA TOILET ADA DILANTAI BERAPA?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "LANTAI 2 DAN 3",
-        "img": ""
-      },
-      {
-        "text": "LANTAI 2 DAN 4",
-        "img": ""
-      },
-      {
-        "text": "LANTAI 3 DAN 4",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "0/5",
-    "trans": "PERCAKAPAN COWOK DAN CEWEK.\nCOWOK TANYA TOILET ADA DILANTAI BERAPA?",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 37. Pilihan yang tepat adalah LANTAI 2 DAN 4.",
-    "opt_detail": [
-      {
-        "kana": "LANTAI 2 DAN 3",
-        "rom": "",
-        "arti": "LANTAI 2 DAN 3",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "LANTAI 2 DAN 4",
-        "rom": "",
-        "arti": "LANTAI 2 DAN 4",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "LANTAI 3 DAN 4",
-        "rom": "",
-        "arti": "LANTAI 3 DAN 4",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "LANTAI 2 DAN 3",
-      "LANTAI 2 DAN 4",
-      "LANTAI 3 DAN 4"
-    ],
-    "kunci_id": "LANTAI 2 DAN 4",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 38,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN DI (KAISHA) PRIA INGIN LIBUR, BAGAIMANA PROSEDURNYA,MENULIS SURAT. DITARUH DIMANA?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "机の上",
-        "img": ""
-      },
-      {
-        "text": "机の下",
-        "img": ""
-      },
-      {
-        "text": "机の右",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "0/5",
-    "trans": "PERCAKAPAN DI (KAISHA) PRIA INGIN LIBUR, BAGAIMANA PROSEDURNYA,MENULIS SURAT. DITARUH DIMANA?",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 38. Pilihan yang tepat adalah 机の上.",
-    "opt_detail": [
-      {
-        "kana": "机の上",
-        "rom": "",
-        "arti": "机の上",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "机の下",
-        "rom": "",
-        "arti": "机の下",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "机の右",
-        "rom": "",
-        "arti": "机の右",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "机の上",
-      "机の下",
-      "机の右"
-    ],
-    "kunci_id": "机の上",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 39,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "MASIH SOAL PENGIN LIBUR DI PERUSAHAAN.\nDIKUMPULKAN SAMPAI TANGGAL BERAPA?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "12日",
-        "img": ""
-      },
-      {
-        "text": "13日",
-        "img": ""
-      },
-      {
-        "text": "14日",
+        "text": "○いてらさいます",
         "img": ""
       }
     ],
     "answer": 1,
     "score": "5/5",
-    "trans": "MASIH SOAL PENGIN LIBUR DI PERUSAHAAN.\nDIKUMPULKAN SAMPAI TANGGAL BERAPA?",
+    "trans": "A:アリスさん、これおみやげです。\n\nB: ありがとうございます、",
     "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 39. Pilihan yang tepat adalah 13日.",
+    "mnn": "Hyougen",
+    "analisis": "[Hyougen] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah いただきます.",
     "opt_detail": [
       {
-        "kana": "12日",
+        "kana": "いってきます",
         "rom": "",
-        "arti": "12日",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "いってきます",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "13日",
+        "kana": "○ いただきます",
         "rom": "",
-        "arti": "13日",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "○ いただきます",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
-        "kana": "14日",
+        "kana": "○いてらさいます",
         "rom": "",
-        "arti": "14日",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "○いてらさいます",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "12日",
-      "13日",
-      "14日"
+      "いってきます",
+      "○ いただきます",
+      "○いてらさいます"
     ],
-    "kunci_id": "13日",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "○ いただきます",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 29
   },
   {
-    "no": 40,
+    "orig_no": 37,
     "section": "SESI 3 : CHOUKAI",
-    "title": "KUMPUL JAM BERAPA LUPA. 😌",
+    "title": "Cowok meprediksi habis ini ada kejadian apa?\n\nklik audio",
     "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "JAM 01.00",
-        "img": ""
-      },
-      {
-        "text": "JAM 12.50",
-        "img": ""
-      },
-      {
-        "text": "JAM 11.30",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "5/5",
-    "trans": "KUMPUL JAM BERAPA LUPA. 😌",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan nomor 40. Pilihan yang tepat adalah JAM 12.50.",
-    "opt_detail": [
-      {
-        "kana": "JAM 01.00",
-        "rom": "",
-        "arti": "JAM 01.00",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "JAM 12.50",
-        "rom": "",
-        "arti": "JAM 12.50",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "JAM 11.30",
-        "rom": "",
-        "arti": "JAM 11.30",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "JAM 01.00",
-      "JAM 12.50",
-      "JAM 11.30"
-    ],
-    "kunci_id": "JAM 12.50",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 41,
-    "section": "SESI 4 : DOKKAI",
-    "title": "PAMFLET HARGA KOPER (スーツケース) \nPERNYATAAN YANG BENAR DARI PAMFLET ITU APA?",
-    "img": "assets/4_img_37.jpg",
-    "audio": "",
-    "options": [
-      {
-        "text": "KOPERNYA BANYAK MACAM-MACAM WARNA 。スーツケースにはさまざまな色があります",
-        "img": ""
-      },
-      {
-        "text": "KOPER HARGANYA MURAH-MURAH",
-        "img": ""
-      },
-      {
-        "text": "KOPERNYA MULTIFUNGSI",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "8/8",
-    "trans": "PAMFLET HARGA KOPER (スーツケース) \nPERNYATAAN YANG BENAR DARI PAMFLET ITU APA?",
-    "trans_rom": "-",
-    "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 41. Pilihan yang tepat adalah KOPERNYA BANYAK MACAM-MACAM WARNA 。スーツケースにはさまざまな色があります.",
-    "opt_detail": [
-      {
-        "kana": "KOPERNYA BANYAK MACAM-MACAM WARNA 。スーツケースにはさまざまな色があります",
-        "rom": "",
-        "arti": "KOPERNYA BANYAK MACAM-MACAM WARNA 。スーツケースにはさまざまな色があります",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "KOPER HARGANYA MURAH-MURAH",
-        "rom": "",
-        "arti": "KOPER HARGANYA MURAH-MURAH",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "KOPERNYA MULTIFUNGSI",
-        "rom": "",
-        "arti": "KOPERNYA MULTIFUNGSI",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "KOPERNYA BANYAK MACAM-MACAM WARNA 。スーツケースにはさまざまな色があります",
-      "KOPER HARGANYA MURAH-MURAH",
-      "KOPERNYA MULTIFUNGSI"
-    ],
-    "kunci_id": "KOPERNYA BANYAK MACAM-MACAM WARNA 。スーツケースにはさまざまな色があります",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 42,
-    "section": "SESI 4 : DOKKAI",
-    "title": "MASIH TENTANG SOAL KOPER.\nKALAU BELI KOPERNYA DAPAT PELAYANAN (サービス)　APA DARI TOKONYA?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "FREE ONGKOS KIRIM",
-        "img": ""
-      },
-      {
-        "text": "DAPAT POTONGAN HARGA ..割引を受ける.わりびき を うける",
-        "img": ""
-      },
-      {
-        "text": "DAPAT SOUVENIR CANTIK",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "4/4",
-    "trans": "MASIH TENTANG SOAL KOPER.\nKALAU BELI KOPERNYA DAPAT PELAYANAN (サービス)　APA DARI TOKONYA?",
-    "trans_rom": "-",
-    "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 42. Pilihan yang tepat adalah DAPAT POTONGAN HARGA ..割引を受ける.わりびき を うける.",
-    "opt_detail": [
-      {
-        "kana": "FREE ONGKOS KIRIM",
-        "rom": "",
-        "arti": "FREE ONGKOS KIRIM",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "DAPAT POTONGAN HARGA ..割引を受ける.わりびき を うける",
-        "rom": "",
-        "arti": "DAPAT POTONGAN HARGA ..割引を受ける.わりびき を うける",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "DAPAT SOUVENIR CANTIK",
-        "rom": "",
-        "arti": "DAPAT SOUVENIR CANTIK",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "FREE ONGKOS KIRIM",
-      "DAPAT POTONGAN HARGA ..割引を受ける.わりびき を うける",
-      "DAPAT SOUVENIR CANTIK"
-    ],
-    "kunci_id": "DAPAT POTONGAN HARGA ..割引を受ける.わりびき を うける",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 43,
-    "section": "SESI 4 : DOKKAI",
-    "title": "PAMFLET EMAIL.\nMINGGU KEMARIN MELAKUKAN APA?",
-    "img": "",
-    "audio": "",
+    "audio": "assets/c1.m4a",
     "options": [
       {
         "text": "Opsi 1",
-        "img": "assets/4_img_36.jpg"
+        "img": "assets/3_img_30.png"
       },
       {
         "text": "Opsi 2",
-        "img": "assets/4_img_35.jpg"
+        "img": "assets/3_img_29.png"
       },
       {
         "text": "Opsi 3",
-        "img": "assets/4_img_34.jpg"
+        "img": "assets/3_img_28.jpg"
       }
     ],
     "answer": 2,
-    "score": "0/6",
-    "trans": "PAMFLET EMAIL.\nMINGGU KEMARIN MELAKUKAN APA?",
+    "score": "5/5",
+    "trans": "Cowok meprediksi habis ini ada kejadian apa?\n\nklik audio",
     "trans_rom": "-",
-    "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 43. Pilihan yang tepat adalah Opsi 3.",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah Opsi 3.",
     "opt_detail": [
       {
         "kana": "Opsi 1",
         "rom": "",
         "arti": "Opsi 1",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
         "kana": "Opsi 2",
         "rom": "",
         "arti": "Opsi 2",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
         "kana": "Opsi 3",
         "rom": "",
         "arti": "Opsi 3",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       }
     ],
     "opt_note": [
@@ -2286,82 +1657,733 @@
       "Opsi 3"
     ],
     "kunci_id": "Opsi 3",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 30
   },
   {
-    "no": 44,
-    "section": "SESI 4 : DOKKAI",
-    "title": "MASIH SOAL ACARA TELEVISI.\nBERITA MAKANAN DI SALURAN APA?",
+    "orig_no": 38,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Paket tiba jam berapa?\n\nklik cokai\n\n JAM PALING CEPAT SOALNYA KLW SIANG SIBUK?",
     "img": "",
-    "audio": "",
+    "audio": "assets/c2.m4a",
     "options": [
       {
-        "text": "はな",
+        "text": "10.00-11.00",
         "img": ""
       },
       {
-        "text": "さくら",
+        "text": "12.00-14.00",
         "img": ""
       },
       {
-        "text": "みみ",
-        "img": ""
-      },
-      {
-        "text": "はるか",
+        "text": "20.00-21.00",
         "img": ""
       }
     ],
     "answer": 1,
-    "score": "5/5",
-    "trans": "MASIH SOAL ACARA TELEVISI.\nBERITA MAKANAN DI SALURAN APA?",
+    "score": "0/5",
+    "trans": "Paket tiba jam berapa?\n\nklik cokai\n\n JAM PALING CEPAT SOALNYA KLW SIANG SIBUK?",
     "trans_rom": "-",
-    "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 44. Pilihan yang tepat adalah さくら.",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 12.00-14.00.",
     "opt_detail": [
       {
-        "kana": "はな",
+        "kana": "10.00-11.00",
         "rom": "",
-        "arti": "はな",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "10.00-11.00",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "さくら",
+        "kana": "12.00-14.00",
         "rom": "",
-        "arti": "さくら",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "12.00-14.00",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
-        "kana": "みみ",
+        "kana": "20.00-21.00",
         "rom": "",
-        "arti": "みみ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "はるか",
-        "rom": "",
-        "arti": "はるか",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "20.00-21.00",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "はな",
-      "さくら",
-      "みみ",
-      "はるか"
+      "10.00-11.00",
+      "12.00-14.00",
+      "20.00-21.00"
     ],
-    "kunci_id": "さくら",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "12.00-14.00",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 31
   },
   {
-    "no": 45,
-    "section": "SESI 4 : DOKKAI",
-    "title": "BACAAN TENTANG ACARA TELEVISI\nCARA MUSIK JAM BERAPA?",
+    "orig_no": 39,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "&4\n3.Percapakapan cowok ketika akan rapat\n\nklik audio \n (2 soal)\n1.apa yang dibawa cowok untuk rapat?",
     "img": "",
+    "audio": "assets/c3-4.m4a",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": "assets/3_img_27.png"
+      },
+      {
+        "text": "Opsi 2",
+        "img": "assets/3_img_26.jpg"
+      },
+      {
+        "text": "Opsi 3",
+        "img": "assets/3_img_25.png"
+      }
+    ],
+    "answer": 1,
+    "score": "5/5",
+    "trans": "&4\n3.Percapakapan cowok ketika akan rapat\n\nklik audio \n (2 soal)\n1.apa yang dibawa cowok untuk rapat?",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah Opsi 2.",
+    "opt_detail": [
+      {
+        "kana": "Opsi 1",
+        "rom": "",
+        "arti": "Opsi 1",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "Opsi 2",
+        "rom": "",
+        "arti": "Opsi 2",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "Opsi 3",
+        "rom": "",
+        "arti": "Opsi 3",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 2",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 32
+  },
+  {
+    "orig_no": 40,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "berapa jumlah お茶  yang di bawa",
+    "img": "",
+    "audio": "assets/c3-4.m4a",
+    "options": [
+      {
+        "text": "2 (ふたつ)",
+        "img": ""
+      },
+      {
+        "text": "3 (みつ)",
+        "img": ""
+      },
+      {
+        "text": "1 (ひとつ)",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/5",
+    "trans": "berapa jumlah お茶  yang di bawa",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 3 (みつ).",
+    "opt_detail": [
+      {
+        "kana": "2 (ふたつ)",
+        "rom": "",
+        "arti": "2 (ふたつ)",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "3 (みつ)",
+        "rom": "",
+        "arti": "3 (みつ)",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "1 (ひとつ)",
+        "rom": "",
+        "arti": "1 (ひとつ)",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "2 (ふたつ)",
+      "3 (みつ)",
+      "1 (ひとつ)"
+    ],
+    "kunci_id": "3 (みつ)",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 33
+  },
+  {
+    "orig_no": 41,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "percakapan wanita dan laki2\n  Laki2 bertanya ke wanita ingin pergi kemana?\nklik audio",
+    "img": "",
+    "audio": "assets/c5.m4a",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": "assets/3_img_24.png"
+      },
+      {
+        "text": "Opsi 2",
+        "img": "assets/3_img_23.png"
+      },
+      {
+        "text": "Opsi 3",
+        "img": "assets/3_img_22.png"
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "trans": "percakapan wanita dan laki2\n  Laki2 bertanya ke wanita ingin pergi kemana?\nklik audio",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah Opsi 1.",
+    "opt_detail": [
+      {
+        "kana": "Opsi 1",
+        "rom": "",
+        "arti": "Opsi 1",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "Opsi 2",
+        "rom": "",
+        "arti": "Opsi 2",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "Opsi 3",
+        "rom": "",
+        "arti": "Opsi 3",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 1",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 34
+  },
+  {
+    "orig_no": 42,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Rekomendasi tentang restoran baru, mau pesan apa?\nklik audio",
+    "img": "",
+    "audio": "assets/c6.m4a",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": "assets/3_img_21.jpg"
+      },
+      {
+        "text": "Opsi 2",
+        "img": "assets/3_img_20.jpg"
+      },
+      {
+        "text": "Opsi 3",
+        "img": "assets/3_img_19.jpg"
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "trans": "Rekomendasi tentang restoran baru, mau pesan apa?\nklik audio",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah Opsi 1.",
+    "opt_detail": [
+      {
+        "kana": "Opsi 1",
+        "rom": "",
+        "arti": "Opsi 1",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "Opsi 2",
+        "rom": "",
+        "arti": "Opsi 2",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "Opsi 3",
+        "rom": "",
+        "arti": "Opsi 3",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 1",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 35
+  },
+  {
+    "orig_no": 43,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "7. Percakapan tentang Seorang cewek mau membeli vakumcleaner atau そうじき, \n\nklik audio\n\nBERAPA HARGANYA  dan warna apa?",
+    "img": "",
+    "audio": "assets/c7.m4a",
+    "options": [
+      {
+        "text": "10.000 円",
+        "img": "assets/3_img_18.png"
+      },
+      {
+        "text": "15.000 円",
+        "img": "assets/3_img_17.png"
+      },
+      {
+        "text": "15.000円",
+        "img": "assets/3_img_16.jpg"
+      }
+    ],
+    "answer": 1,
+    "score": "0/5",
+    "trans": "7. Percakapan tentang Seorang cewek mau membeli vakumcleaner atau そうじき, \n\nklik audio\n\nBERAPA HARGANYA  dan warna apa?",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 15.000 円.",
+    "opt_detail": [
+      {
+        "kana": "10.000 円",
+        "rom": "",
+        "arti": "10.000 円",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "15.000 円",
+        "rom": "",
+        "arti": "15.000 円",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "15.000円",
+        "rom": "",
+        "arti": "15.000円",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "10.000 円",
+      "15.000 円",
+      "15.000円"
+    ],
+    "kunci_id": "15.000 円",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 36
+  },
+  {
+    "orig_no": 44,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Percakapan antara cowok dan cewek\nCOWOK TANYA TOILET ADA DILANTAI BERAPA ?\nklik cokai",
+    "img": "",
+    "audio": "assets/c8.m4a",
+    "options": [
+      {
+        "text": "2階と4階にあります",
+        "img": ""
+      },
+      {
+        "text": "1階と2階にあります",
+        "img": ""
+      },
+      {
+        "text": "3階と5階にありま",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "trans": "Percakapan antara cowok dan cewek\nCOWOK TANYA TOILET ADA DILANTAI BERAPA ?\nklik cokai",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 2階と4階にあります.",
+    "opt_detail": [
+      {
+        "kana": "2階と4階にあります",
+        "rom": "",
+        "arti": "2階と4階にあります",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "1階と2階にあります",
+        "rom": "",
+        "arti": "1階と2階にあります",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "3階と5階にありま",
+        "rom": "",
+        "arti": "3階と5階にありま",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "2階と4階にあります",
+      "1階と2階にあります",
+      "3階と5階にありま"
+    ],
+    "kunci_id": "2階と4階にあります",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 37
+  },
+  {
+    "orig_no": 45,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Percakapan tentang izin cuti bekerja ( 2 soal ) \nklik audio\n1. Surat izin di taruh dimana?",
+    "img": "",
+    "audio": "assets/c9-11.m4a",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": "assets/3_img_15.jpg"
+      },
+      {
+        "text": "Opsi 2",
+        "img": "assets/3_img_14.png"
+      },
+      {
+        "text": "Opsi 3",
+        "img": "assets/3_img_13.png"
+      }
+    ],
+    "answer": 2,
+    "score": "5/5",
+    "trans": "Percakapan tentang izin cuti bekerja ( 2 soal ) \nklik audio\n1. Surat izin di taruh dimana?",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah Opsi 3.",
+    "opt_detail": [
+      {
+        "kana": "Opsi 1",
+        "rom": "",
+        "arti": "Opsi 1",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "Opsi 2",
+        "rom": "",
+        "arti": "Opsi 2",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "Opsi 3",
+        "rom": "",
+        "arti": "Opsi 3",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 3",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 38
+  },
+  {
+    "orig_no": 47,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Paling lambat menyerahkan surat tanggal berapa?",
+    "img": "",
+    "audio": "assets/c9-11.m4a",
+    "options": [
+      {
+        "text": "１2 日",
+        "img": ""
+      },
+      {
+        "text": "１１日",
+        "img": ""
+      },
+      {
+        "text": "１３日",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "trans": "Paling lambat menyerahkan surat tanggal berapa?",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah １３日.",
+    "opt_detail": [
+      {
+        "kana": "１2 日",
+        "rom": "",
+        "arti": "１2 日",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "１１日",
+        "rom": "",
+        "arti": "１１日",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "１３日",
+        "rom": "",
+        "arti": "１３日",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      }
+    ],
+    "opt_note": [
+      "１2 日",
+      "１１日",
+      "１３日"
+    ],
+    "kunci_id": "１３日",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 39
+  },
+  {
+    "orig_no": 48,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Pengumuman perusahaan tentang penjelasan mesin baru ( 2 soal ) \nklik audio\n1. Berkumpul dimana? \n( karena narasumber masih ragu jadi tolong nanti ketika ujian di dengarkan lagi dengan seksama)",
+    "img": "",
+    "audio": "assets/c12.m4a",
+    "options": [
+      {
+        "text": "わたしのうち",
+        "img": ""
+      },
+      {
+        "text": "しょくどうのかいぎしつ (会議室)",
+        "img": ""
+      },
+      {
+        "text": "だいどころ",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "0/5",
+    "trans": "Pengumuman perusahaan tentang penjelasan mesin baru ( 2 soal ) \nklik audio\n1. Berkumpul dimana? \n( karena narasumber masih ragu jadi tolong nanti ketika ujian di dengarkan lagi dengan seksama)",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah しょくどうのかいぎしつ (会議室).",
+    "opt_detail": [
+      {
+        "kana": "わたしのうち",
+        "rom": "",
+        "arti": "わたしのうち",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "しょくどうのかいぎしつ (会議室)",
+        "rom": "",
+        "arti": "しょくどうのかいぎしつ (会議室)",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "だいどころ",
+        "rom": "",
+        "arti": "だいどころ",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "わたしのうち",
+      "しょくどうのかいぎしつ (会議室)",
+      "だいどころ"
+    ],
+    "kunci_id": "しょくどうのかいぎしつ (会議室)",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 40
+  },
+  {
+    "orig_no": 49,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "Harus berkumpul di ruangan jam berapa?",
+    "img": "",
+    "audio": "assets/c12.m4a",
+    "options": [
+      {
+        "text": "12.30",
+        "img": ""
+      },
+      {
+        "text": "11.40",
+        "img": ""
+      },
+      {
+        "text": "12.50",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "5/5",
+    "trans": "Harus berkumpul di ruangan jam berapa?",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 12.50.",
+    "opt_detail": [
+      {
+        "kana": "12.30",
+        "rom": "",
+        "arti": "12.30",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "11.40",
+        "rom": "",
+        "arti": "11.40",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "12.50",
+        "rom": "",
+        "arti": "12.50",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      }
+    ],
+    "opt_note": [
+      "12.30",
+      "11.40",
+      "12.50"
+    ],
+    "kunci_id": "12.50",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 41
+  },
+  {
+    "orig_no": 51,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Email dari temen \na. Teman ngapain jawabanya? sihogoto ga ishogasi \n\ndi ujian ada kanjinya admin bikin tanpa kanji",
+    "img": "assets/4_img_46.png",
     "audio": "",
     "options": [
       {
-        "text": "20.00",
+        "text": "Opsi 1",
+        "img": "assets/4_img_45.png"
+      },
+      {
+        "text": "Opsi 2",
+        "img": "assets/4_img_44.png"
+      },
+      {
+        "text": "Opsi 3",
+        "img": "assets/4_img_43.png"
+      }
+    ],
+    "answer": 1,
+    "score": "0/5",
+    "trans": "Email dari temen \na. Teman ngapain jawabanya? sihogoto ga ishogasi \n\ndi ujian ada kanjinya admin bikin tanpa kanji",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah Opsi 2.",
+    "opt_detail": [
+      {
+        "kana": "Opsi 1",
+        "rom": "",
+        "arti": "Opsi 1",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "Opsi 2",
+        "rom": "",
+        "arti": "Opsi 2",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "Opsi 3",
+        "rom": "",
+        "arti": "Opsi 3",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 2",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 42
+  },
+  {
+    "orig_no": 52,
+    "section": "SESI 4 : DOKKAI",
+    "title": "あしたはなにをしますか ?",
+    "img": "assets/4_img_42.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "Opsi 1",
+        "img": "assets/4_img_41.png"
+      },
+      {
+        "text": "Opsi 2",
+        "img": "assets/4_img_40.png"
+      },
+      {
+        "text": "Opsi 3",
+        "img": "assets/4_img_39.png"
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "あしたはなにをしますか ?",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah Opsi 1.",
+    "opt_detail": [
+      {
+        "kana": "Opsi 1",
+        "rom": "",
+        "arti": "Opsi 1",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "Opsi 2",
+        "rom": "",
+        "arti": "Opsi 2",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "Opsi 3",
+        "rom": "",
+        "arti": "Opsi 3",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "Opsi 1",
+      "Opsi 2",
+      "Opsi 3"
+    ],
+    "kunci_id": "Opsi 1",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 43
+  },
+  {
+    "orig_no": 53,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Gambar jadwal acara televisi(2 soal) \n\n1. Jadwal acara musik jam berapa?",
+    "img": "assets/4_img_38.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "20.30",
         "img": ""
       },
       {
@@ -2374,361 +2396,533 @@
       }
     ],
     "answer": 1,
-    "score": "4/4",
-    "trans": "BACAAN TENTANG ACARA TELEVISI\nCARA MUSIK JAM BERAPA?",
+    "score": "5/5",
+    "trans": "Gambar jadwal acara televisi(2 soal) \n\n1. Jadwal acara musik jam berapa?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 45. Pilihan yang tepat adalah 21.00.",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 21.00.",
     "opt_detail": [
       {
-        "kana": "20.00",
+        "kana": "20.30",
         "rom": "",
-        "arti": "20.00",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "20.30",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
         "kana": "21.00",
         "rom": "",
         "arti": "21.00",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
         "kana": "21.30",
         "rom": "",
         "arti": "21.30",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "20.00",
+      "20.30",
       "21.00",
       "21.30"
     ],
     "kunci_id": "21.00",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 44
   },
   {
-    "no": 46,
+    "orig_no": 54,
     "section": "SESI 4 : DOKKAI",
-    "title": "PAMFLET MAKANAN\nMENU HARI JUM'AT APA?",
+    "title": "Acara masak/makan di chanel apa?",
     "img": "",
     "audio": "",
     "options": [
       {
-        "text": "Ramen",
-        "img": "assets/4_img_33.jpg"
-      },
-      {
-        "text": "Tempura set",
-        "img": "assets/4_img_32.jpg"
-      },
-      {
-        "text": "Takoyaki",
-        "img": "assets/4_img_31.jpg"
-      }
-    ],
-    "answer": 1,
-    "score": "0/6",
-    "trans": "PAMFLET MAKANAN\nMENU HARI JUM'AT APA?",
-    "trans_rom": "-",
-    "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 46. Pilihan yang tepat adalah Tempura set.",
-    "opt_detail": [
-      {
-        "kana": "Ramen",
-        "rom": "",
-        "arti": "Ramen",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "Tempura set",
-        "rom": "",
-        "arti": "Tempura set",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "Takoyaki",
-        "rom": "",
-        "arti": "Takoyaki",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "Ramen",
-      "Tempura set",
-      "Takoyaki"
-    ],
-    "kunci_id": "Tempura set",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 47,
-    "section": "SESI 4 : DOKKAI",
-    "title": "MASIH SOAL PAMFLET MAKANAN.\nSUSHI  SET HARGANYA BERAPA?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "８００円",
+        "text": "つなで",
         "img": ""
       },
       {
-        "text": "９００円",
+        "text": "ひなた",
         "img": ""
       },
       {
-        "text": "２５０円",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "4/4",
-    "trans": "MASIH SOAL PAMFLET MAKANAN.\nSUSHI  SET HARGANYA BERAPA?",
-    "trans_rom": "-",
-    "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 47. Pilihan yang tepat adalah ９００円.",
-    "opt_detail": [
-      {
-        "kana": "８００円",
-        "rom": "",
-        "arti": "８００円",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "９００円",
-        "rom": "",
-        "arti": "９００円",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "２５０円",
-        "rom": "",
-        "arti": "２５０円",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "８００円",
-      "９００円",
-      "２５０円"
-    ],
-    "kunci_id": "９００円",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 48,
-    "section": "SESI 4 : DOKKAI",
-    "title": "PERCAKAPAN TENTANG PENGINAPAN\nKENAPA MEMILIH PENGINAPAN TERSEBUT?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "すべての食べ物をためすことができます",
-        "img": ""
-      },
-      {
-        "text": "夕方のけしきはうつくしいです",
-        "img": ""
-      },
-      {
-        "text": "おんせんににゅうよくできる",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "5/5",
-    "trans": "PERCAKAPAN TENTANG PENGINAPAN\nKENAPA MEMILIH PENGINAPAN TERSEBUT?",
-    "trans_rom": "-",
-    "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 48. Pilihan yang tepat adalah 夕方のけしきはうつくしいです.",
-    "opt_detail": [
-      {
-        "kana": "すべての食べ物をためすことができます",
-        "rom": "",
-        "arti": "すべての食べ物をためすことができます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "夕方のけしきはうつくしいです",
-        "rom": "",
-        "arti": "夕方のけしきはうつくしいです",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "おんせんににゅうよくできる",
-        "rom": "",
-        "arti": "おんせんににゅうよくできる",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "すべての食べ物をためすことができます",
-      "夕方のけしきはうつくしいです",
-      "おんせんににゅうよくできる"
-    ],
-    "kunci_id": "夕方のけしきはうつくしいです",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 49,
-    "section": "SESI 4 : DOKKAI",
-    "title": "MASIH SOAL PENGINAPAN.\nPERYATAAN MANA YANG TIDAK BENAR?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "りょかんがきれいです",
-        "img": ""
-      },
-      {
-        "text": "うるさいので、ご飯を食べられない",
-        "img": ""
-      },
-      {
-        "text": "きれいみずうがみえてできます",
-        "img": ""
-      }
-    ],
-    "answer": 1,
-    "score": "5/5",
-    "trans": "MASIH SOAL PENGINAPAN.\nPERYATAAN MANA YANG TIDAK BENAR?",
-    "trans_rom": "-",
-    "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 49. Pilihan yang tepat adalah うるさいので、ご飯を食べられない.",
-    "opt_detail": [
-      {
-        "kana": "りょかんがきれいです",
-        "rom": "",
-        "arti": "りょかんがきれいです",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "うるさいので、ご飯を食べられない",
-        "rom": "",
-        "arti": "うるさいので、ご飯を食べられない",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "きれいみずうがみえてできます",
-        "rom": "",
-        "arti": "きれいみずうがみえてできます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "りょかんがきれいです",
-      "うるさいので、ご飯を食べられない",
-      "きれいみずうがみえてできます"
-    ],
-    "kunci_id": "うるさいので、ご飯を食べられない",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
-  },
-  {
-    "no": 50,
-    "section": "SESI 4 : DOKKAI",
-    "title": "PENGUMUMAN TENTANG PERBAIKAN AIR\nSAMPAI JAM BERAPA?",
-    "img": "",
-    "audio": "",
-    "options": [
-      {
-        "text": "午後2時まで",
-        "img": ""
-      },
-      {
-        "text": "午前2時まで",
-        "img": ""
-      },
-      {
-        "text": "午後3時まで",
+        "text": "さくら",
         "img": ""
       }
     ],
     "answer": 2,
     "score": "0/5",
-    "trans": "PENGUMUMAN TENTANG PERBAIKAN AIR\nSAMPAI JAM BERAPA?",
+    "trans": "Acara masak/makan di chanel apa?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 50. Pilihan yang tepat adalah 午後3時まで.",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah さくら.",
     "opt_detail": [
       {
-        "kana": "午後2時まで",
+        "kana": "つなで",
         "rom": "",
-        "arti": "午後2時まで",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "つなで",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "午前2時まで",
+        "kana": "ひなた",
         "rom": "",
-        "arti": "午前2時まで",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "ひなた",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "午後3時まで",
+        "kana": "さくら",
         "rom": "",
-        "arti": "午後3時まで",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "さくら",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       }
     ],
     "opt_note": [
-      "午後2時まで",
-      "午前2時まで",
-      "午後3時まで"
+      "つなで",
+      "ひなた",
+      "さくら"
     ],
-    "kunci_id": "午後3時まで",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "さくら",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 45
   },
   {
-    "no": 51,
+    "orig_no": 55,
     "section": "SESI 4 : DOKKAI",
-    "title": "KALAU WARNA AIRNYA MASIH COKLAT HARUS 💦",
-    "img": "",
+    "title": "Cerita tentang penginapan (2 soal) \n\n1. Alasan menginap di penginapan tersebut?",
+    "img": "assets/4_img_37.png",
     "audio": "",
     "options": [
       {
-        "text": "水を5分間出します",
+        "text": "浴衣を借りることができます",
         "img": ""
       },
       {
-        "text": "水をすべて捨ててください",
+        "text": "安いですから",
         "img": ""
       },
       {
-        "text": "なにもしません。",
+        "text": "ビルが新しいです",
         "img": ""
       }
     ],
     "answer": 0,
-    "score": "0/6",
-    "trans": "KALAU WARNA AIRNYA MASIH COKLAT HARUS 💦",
+    "score": "0/5",
+    "trans": "Cerita tentang penginapan (2 soal) \n\n1. Alasan menginap di penginapan tersebut?",
     "trans_rom": "-",
     "mnn": "Dokkai",
-    "analisis": "[Dokkai] Pembahasan untuk pertanyaan nomor 51. Pilihan yang tepat adalah 水を5分間出します.",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 浴衣を借りることができます.",
     "opt_detail": [
       {
-        "kana": "水を5分間出します",
+        "kana": "浴衣を借りることができます",
         "rom": "",
-        "arti": "水を5分間出します",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "arti": "浴衣を借りることができます",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
       },
       {
-        "kana": "水をすべて捨ててください",
+        "kana": "安いですから",
         "rom": "",
-        "arti": "水をすべて捨ててください",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "安いですから",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       },
       {
-        "kana": "なにもしません。",
+        "kana": "ビルが新しいです",
         "rom": "",
-        "arti": "なにもしません。",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "arti": "ビルが新しいです",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
       }
     ],
     "opt_note": [
-      "水を5分間出します",
-      "水をすべて捨ててください",
-      "なにもしません。"
+      "浴衣を借りることができます",
+      "安いですから",
+      "ビルが新しいです"
     ],
-    "kunci_id": "水を5分間出します",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi."
+    "kunci_id": "浴衣を借りることができます",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 46
+  },
+  {
+    "orig_no": 56,
+    "section": "SESI 4 : DOKKAI",
+    "title": "ミさんがよくないとおもいはなんですか",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "バスルームが汚れている/詰まっている",
+        "img": ""
+      },
+      {
+        "text": "食事中静かにできない/部屋がうるさい。3",
+        "img": ""
+      },
+      {
+        "text": "寝ている間、キッチンに蚊やゴキブリがたくさんいました",
+        "img": ""
+      }
+    ],
+    "answer": 1,
+    "score": "5/5",
+    "trans": "ミさんがよくないとおもいはなんですか",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 食事中静かにできない/部屋がうるさい。3.",
+    "opt_detail": [
+      {
+        "kana": "バスルームが汚れている/詰まっている",
+        "rom": "",
+        "arti": "バスルームが汚れている/詰まっている",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "食事中静かにできない/部屋がうるさい。3",
+        "rom": "",
+        "arti": "食事中静かにできない/部屋がうるさい。3",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "寝ている間、キッチンに蚊やゴキブリがたくさんいました",
+        "rom": "",
+        "arti": "寝ている間、キッチンに蚊やゴキブリがたくさんいました",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "バスルームが汚れている/詰まっている",
+      "食事中静かにできない/部屋がうるさい。3",
+      "寝ている間、キッチンに蚊やゴキブリがたくさんいました"
+    ],
+    "kunci_id": "食事中静かにできない/部屋がうるさい。3",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 47
+  },
+  {
+    "orig_no": 57,
+    "section": "SESI 4 : DOKKAI",
+    "title": "pesan coper online Yang bener dari pamflet itu apa?  \n\ntentang koper",
+    "img": "assets/4_img_36.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "たくさんの色が選べるので",
+        "img": ""
+      },
+      {
+        "text": "安いので買う人も多い",
+        "img": ""
+      },
+      {
+        "text": "選べるモデルが多いので",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "trans": "pesan coper online Yang bener dari pamflet itu apa?  \n\ntentang koper",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah たくさんの色が選べるので.",
+    "opt_detail": [
+      {
+        "kana": "たくさんの色が選べるので",
+        "rom": "",
+        "arti": "たくさんの色が選べるので",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "安いので買う人も多い",
+        "rom": "",
+        "arti": "安いので買う人も多い",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "選べるモデルが多いので",
+        "rom": "",
+        "arti": "選べるモデルが多いので",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "たくさんの色が選べるので",
+      "安いので買う人も多い",
+      "選べるモデルが多いので"
+    ],
+    "kunci_id": "たくさんの色が選べるので",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 48
+  },
+  {
+    "orig_no": 58,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Apa pelayanan yg di dapat?",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "納期 1日",
+        "img": ""
+      },
+      {
+        "text": "納期 1～2日",
+        "img": ""
+      },
+      {
+        "text": "納期 1～3日",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "trans": "Apa pelayanan yg di dapat?",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 納期 1～3日.",
+    "opt_detail": [
+      {
+        "kana": "納期 1日",
+        "rom": "",
+        "arti": "納期 1日",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "納期 1～2日",
+        "rom": "",
+        "arti": "納期 1～2日",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "納期 1～3日",
+        "rom": "",
+        "arti": "納期 1～3日",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      }
+    ],
+    "opt_note": [
+      "納期 1日",
+      "納期 1～2日",
+      "納期 1～3日"
+    ],
+    "kunci_id": "納期 1～3日",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 49
+  },
+  {
+    "orig_no": 59,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Pamflet menu paket (Hari jumat menunya apa)",
+    "img": "assets/4_img_35.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "天ぷら",
+        "img": ""
+      },
+      {
+        "text": "寿司",
+        "img": ""
+      },
+      {
+        "text": "拉麺",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Pamflet menu paket (Hari jumat menunya apa)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 天ぷら.",
+    "opt_detail": [
+      {
+        "kana": "天ぷら",
+        "rom": "",
+        "arti": "天ぷら",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "寿司",
+        "rom": "",
+        "arti": "寿司",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "拉麺",
+        "rom": "",
+        "arti": "拉麺",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "天ぷら",
+      "寿司",
+      "拉麺"
+    ],
+    "kunci_id": "天ぷら",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 50
+  },
+  {
+    "orig_no": 60,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Shushi harga nya berapa",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "900",
+        "img": ""
+      },
+      {
+        "text": "700",
+        "img": ""
+      },
+      {
+        "text": "800",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/5",
+    "trans": "Shushi harga nya berapa",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 900.",
+    "opt_detail": [
+      {
+        "kana": "900",
+        "rom": "",
+        "arti": "900",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "700",
+        "rom": "",
+        "arti": "700",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "800",
+        "rom": "",
+        "arti": "800",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "900",
+      "700",
+      "800"
+    ],
+    "kunci_id": "900",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 51
+  },
+  {
+    "orig_no": 61,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Pengumuman tentang air pam (Air PAM berhenti sampai jam berapa)",
+    "img": "assets/4_img_34.png",
+    "audio": "",
+    "options": [
+      {
+        "text": "14.00",
+        "img": ""
+      },
+      {
+        "text": "13.00",
+        "img": ""
+      },
+      {
+        "text": "15.00",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/5",
+    "trans": "Pengumuman tentang air pam (Air PAM berhenti sampai jam berapa)",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 15.00.",
+    "opt_detail": [
+      {
+        "kana": "14.00",
+        "rom": "",
+        "arti": "14.00",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "13.00",
+        "rom": "",
+        "arti": "13.00",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "15.00",
+        "rom": "",
+        "arti": "15.00",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      }
+    ],
+    "opt_note": [
+      "14.00",
+      "13.00",
+      "15.00"
+    ],
+    "kunci_id": "15.00",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 52
+  },
+  {
+    "orig_no": 62,
+    "section": "SESI 4 : DOKKAI",
+    "title": "Kalau air nya warna coklat sebaiknya melakukan apa?",
+    "img": "",
+    "audio": "",
+    "options": [
+      {
+        "text": "5分くらい水を出します",
+        "img": ""
+      },
+      {
+        "text": "10分ぐらい水をだしまづ",
+        "img": ""
+      },
+      {
+        "text": "1時間くらい水をだします",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "5/5",
+    "trans": "Kalau air nya warna coklat sebaiknya melakukan apa?",
+    "trans_rom": "-",
+    "mnn": "Dokkai",
+    "analisis": "[Dokkai] Pembahasan untuk pertanyaan materi terkait. Pilihan yang tepat adalah 5分くらい水を出します.",
+    "opt_detail": [
+      {
+        "kana": "5分くらい水を出します",
+        "rom": "",
+        "arti": "5分くらい水を出します",
+        "alasan": "Tepat sekali sesuai konteks percakapan/bacaan dan kunci jawaban resmi."
+      },
+      {
+        "kana": "10分ぐらい水をだしまづ",
+        "rom": "",
+        "arti": "10分ぐらい水をだしまづ",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      },
+      {
+        "kana": "1時間くらい水をだします",
+        "rom": "",
+        "arti": "1時間くらい水をだします",
+        "alasan": "Bukan pilihan yang tepat sesuai kaidah wacana/tata bahasa."
+      }
+    ],
+    "opt_note": [
+      "5分くらい水を出します",
+      "10分ぐらい水をだしまづ",
+      "1時間くらい水をだします"
+    ],
+    "kunci_id": "5分くらい水を出します",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "no": 53
   }
 ]

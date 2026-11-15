@@ -1,6 +1,6 @@
 window.PAKET_CONFIG = {
-  "totalPaket": 32,
-  "totalSoal": 1506,
+  "totalPaket": 33,
+  "totalSoal": 1517,
   "kategori": [
     {
       "nama": "DESEMBER JANUARI",
@@ -22,8 +22,13 @@ window.PAKET_CONFIG = {
         {
           "nama": "KUDAMONO 2612",
           "slug": "kudamono2612-quiz",
-          "total": 51,
-          "ikon": "K"
+          "total": 53,
+          "ikon": "K",
+          "soalTambahan": {
+            "nama": "Soal Tambahan",
+            "slug": "kudamono2612-tambahan-quiz",
+            "total": 9
+          }
         },
         {
           "nama": "OKIMASU 2612",
