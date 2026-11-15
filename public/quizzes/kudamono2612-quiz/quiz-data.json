@@ -1841,7 +1841,7 @@
     "no": 38,
     "sec_no": 9,
     "section": "SESI 3 : CHOUKAI",
-    "image": "assets/choukai_c9.jpg",
+    "image": "choukai_c9.jpg",
     "audio": "assets/c9-11.m4a",
     "title": "病気の時の許可証は 棚のどこに ありますか。",
     "question": "Surat izin sakit ditaruh pada bagian rak yang mana?",
@@ -1850,19 +1850,16 @@
     "analisis": "[MNN Bab 10 - Posisi Tata Letak Benda (上から3番目)] Wanita menjelaskan bahwa berkas izin sakit berada di bagian rak terbawah (一番下), tepatnya urutan ketiga dihitung dari atas (上から3番目). Pada lembar soal gambar rak (assets/choukai_c9.jpg), posisi ini ditandai oleh Opsi 3.",
     "options": [
       {
-        "text": "Opsi 1 (Paling atas)",
-        "is_correct": false,
-        "img": "c9_opt_1.png"
+        "text": "Opsi 1 (1番上の棚 / Rak paling atas)",
+        "is_correct": false
       },
       {
-        "text": "Opsi 2 (Tengah)",
-        "is_correct": false,
-        "img": "c9_opt_2.png"
+        "text": "Opsi 2 (真ん中の棚 / Rak tengah)",
+        "is_correct": false
       },
       {
-        "text": "Opsi 3 (Rak bawah, urutan ke-3 dari atas)",
-        "is_correct": true,
-        "img": "c9_opt_3.png"
+        "text": "Opsi 3 (一番下の棚・上から3番目 / Rak terbawah urutan ke-3 dari atas)",
+        "is_correct": true
       }
     ],
     "answer": 2,
@@ -1886,8 +1883,8 @@
         "alasan": "Tepat sekali. Penjelasan wanita sangat tegas: 『一番下の棚の中で上から3番目です』."
       }
     ],
-    "kunci_id": "Opsi 3 (Rak bawah, urutan ke-3 dari atas)",
-    "img": "assets/choukai_c9.jpg"
+    "kunci_id": "Opsi 3 (一番下の棚・上から3番目 / Rak terbawah urutan ke-3 dari atas)",
+    "img": "choukai_c9.jpg"
   },
   {
     "no": 39,
