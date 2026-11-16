@@ -47,24 +47,35 @@ var QuizRepository = (function () {
     return warnings;
   }
 
+  var GITHUB_CDN = "https://cdn.jsdelivr.net/gh/mswaluyo/sinaujepang@main/public";
+
   function assetUrl(p) {
     // Resolve URLs for assets referenced in quiz JSON.
-    // 1. Preserve absolute URLs and root‑relative URLs.
+    // 1. Preserve absolute URLs.
     if (!p) return p;
-    if (/^(https?:)?\/\//i.test(p) || p.charAt(0) === "/") return p;
+    if (/^(https?:)?\/\//i.test(p)) return p;
 
     // 2. Determine quiz slug for per‑quiz asset folder.
     var slug = quizSlug();
+    var ext = String(p).split(".").pop().toLowerCase();
+    var isAudio = /^(mp3|wav|ogg|m4a)$/i.test(ext);
+
+    // If it's a root-relative audio or local audio, route to GitHub CDN
+    if (isAudio) {
+      if (p.charAt(0) === "/") return GITHUB_CDN + p;
+      var relAudio = String(p).replace(/^\.\//, "").replace(/^assets\//i, "");
+      return GITHUB_CDN + "/assets/quizzes/" + (slug ? slug + "/" : "") + "audio/" + relAudio;
+    }
+
+    if (p.charAt(0) === "/") return p;
+
     // Normalize path: remove leading "./" or "assets/".
     var rel = String(p).replace(/^\.\//, "").replace(/^assets\//i, "");
 
     // 3. If the original reference was under the old "assets/" folder,
     //    map it to the new location: /assets/quizzes/<slug>/images|audio/filename
     if (/^assets\//i.test(p) || /^assets\//i.test(String(p))) {
-      var ext = rel.split('.').pop().toLowerCase();
-      var sub = "";
-      if (/^(png|jpe?g|gif|svg|webp)$/i.test(ext)) sub = "images";
-      else if (/^(mp3|wav|ogg|m4a)$/i.test(ext)) sub = "audio";
+      var sub = /^(png|jpe?g|gif|svg|webp)$/i.test(ext) ? "images" : "";
       var basePath = "/assets/quizzes/" + (slug ? slug + "/" : "");
       if (sub) basePath += sub + "/";
       return basePath + rel;
