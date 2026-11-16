@@ -10,7 +10,9 @@
         "**/*.mp3",
         "**/*.m4a",
         "**/*.wav",
-        "**/*.ogg"
+        "**/*.ogg",
+        "assets/quizzes/**/images/**",
+        "quizzes/**/assets/**"
       ],
       "cleanUrls": true,
       "trailingSlash": false,

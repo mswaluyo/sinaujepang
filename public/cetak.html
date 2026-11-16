@@ -37,17 +37,16 @@
   document.getElementById("cBack").href = "/simulasi.html";
   function optText(o){ if (o == null) return ""; if (typeof o === "string") return o; return o.text || o.label || ""; }
 
+  var GITHUB_CDN = "https://cdn.jsdelivr.net/gh/mswaluyo/sinaujepang@main/public";
+
   function assetUrl(p) {
     if (!p) return "";
-    if (/^(https?:)?\/\//i.test(p) || p.charAt(0) === "/") return p;
+    if (/^(https?:)?\/\//i.test(p)) return p;
+    if (p.charAt(0) === "/") return GITHUB_CDN + p;
     var rel = String(p).replace(/^\.\//, "").replace(/^assets\//i, "");
     var ext = rel.split('.').pop().toLowerCase();
-    var sub = "";
-    if (/^(png|jpe?g|gif|svg|webp)$/i.test(ext)) sub = "images";
-    else if (/^(mp3|wav|ogg|m4a)$/i.test(ext)) sub = "audio";
-    var basePath = "/assets/quizzes/" + slug + "/";
-    if (sub) basePath += sub + "/";
-    return basePath + rel;
+    var sub = /^(png|jpe?g|gif|svg|webp)$/i.test(ext) ? "images" : "audio";
+    return GITHUB_CDN + "/assets/quizzes/" + slug + "/" + sub + "/" + rel;
   }
 
   fetch("/quizzes/" + slug + "/quiz-data.json", { cache: "no-store" }).then(function(r){

@@ -59,29 +59,25 @@ var QuizRepository = (function () {
     var slug = quizSlug();
     var ext = String(p).split(".").pop().toLowerCase();
     var isAudio = /^(mp3|wav|ogg|m4a)$/i.test(ext);
+    var isImage = /^(png|jpe?g|gif|svg|webp)$/i.test(ext);
 
-    // If it's a root-relative audio or local audio, route to GitHub CDN
-    if (isAudio) {
-      if (p.charAt(0) === "/") return GITHUB_CDN + p;
-      var relAudio = String(p).replace(/^\.\//, "").replace(/^assets\//i, "");
-      return GITHUB_CDN + "/assets/quizzes/" + (slug ? slug + "/" : "") + "audio/" + relAudio;
+    // If root-relative (/assets/...), route directly via GitHub CDN
+    if (p.charAt(0) === "/") {
+      return GITHUB_CDN + p;
     }
-
-    if (p.charAt(0) === "/") return p;
 
     // Normalize path: remove leading "./" or "assets/".
     var rel = String(p).replace(/^\.\//, "").replace(/^assets\//i, "");
 
-    // 3. If the original reference was under the old "assets/" folder,
-    //    map it to the new location: /assets/quizzes/<slug>/images|audio/filename
-    if (/^assets\//i.test(p) || /^assets\//i.test(String(p))) {
-      var sub = /^(png|jpe?g|gif|svg|webp)$/i.test(ext) ? "images" : "";
-      var basePath = "/assets/quizzes/" + (slug ? slug + "/" : "");
-      if (sub) basePath += sub + "/";
-      return basePath + rel;
+    // Route audio and images via GitHub CDN
+    if (isAudio) {
+      return GITHUB_CDN + "/assets/quizzes/" + (slug ? slug + "/" : "") + "audio/" + rel;
+    }
+    if (isImage) {
+      return GITHUB_CDN + "/assets/quizzes/" + (slug ? slug + "/" : "") + "images/" + rel;
     }
 
-    // 4. Default: treat as relative to the quiz base directory.
+    // Default fallback: relative to quiz base
     return quizBase() + rel;
   }
 
