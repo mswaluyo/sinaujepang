@@ -35,9 +35,18 @@ QuizController.renderOne = function () {
   if (q.img) h += '<div class="bg-slate-50 border rounded-xl p-2 mb-3 flex justify-center"><img src="' + q.img + '" class="q-img"></div>';
     var rawTitle = V.titleOf(q);
   var isDokkai = (sec === "sec4") || (q.section && q.section.indexOf("DOKKAI") > -1);
+  var isChoukai = (sec === "sec3") || !!q.audio || (q.section && q.section.indexOf("CHOUKAI") > -1);
   var hasSplitPattern = /\[\s*Pertanyaan\s*\]|【\s*質問\s*】|\[\s*質問\s*\]|問\s*[:：]/i.test(rawTitle);
 
-  if (isDokkai && hasSplitPattern) {
+  if (isChoukai) {
+    var cPrompt = (q.subTitle || q.question || "").trim();
+    if (cPrompt) {
+      h += '<div class="rounded-2xl border border-amber-300 bg-amber-50/70 p-4 mb-4 shadow-sm">';
+      h += '<div class="text-xs font-bold text-amber-800 uppercase tracking-wider mb-2 flex items-center gap-1.5"><i class="fa-solid fa-circle-question text-amber-600"></i> Petunjuk Soal:</div>';
+      h += '<div class="text-base font-semibold leading-relaxed text-slate-900 bg-white p-3.5 rounded-xl border border-amber-200" style="white-space:pre-line">' + V.esc(cPrompt) + '</div>';
+      h += '</div>';
+    }
+  } else if (isDokkai && hasSplitPattern) {
     var parts = rawTitle.split(/\[\s*Pertanyaan\s*\]|【\s*質問\s*】|\[\s*質問\s*\]|問\s*[:：]/i);
     var bPart = (parts[0] || "").replace(/\[\s*Bacaan\s*\]/gi, "").replace(/\[\s*dokkai\s*\]/gi, "").trim();
     var pPart = (parts[1] || "").replace(/^\s*\d+[\.\)]\s*/gm, "").trim();
