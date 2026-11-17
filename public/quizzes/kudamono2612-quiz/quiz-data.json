@@ -1439,20 +1439,20 @@
     "title": "男: ドアが 動きませんね。電車のシステムに 故障があるようです。ホームにお客さんが たくさんいますから 危ないですね。このまま続けると 事故が起こるかもしれません。電車を一旦止めて 直してから動かしましょう。\n【質問】男の人は この後 どんなことが 起こると 予測していますか。",
     "trans": "Pria: Pintunya tidak mau bergerak ya. Sepertinya ada kerusakan pada sistem kereta. Karena di peron banyak penumpang, ini sangat berbahaya. Kalau kita lanjutkan terus dalam kondisi seperti ini, kecelakaan mungkin bisa terjadi. Mari kita hentikan keretanya sejenak, perbaiki kerusakannya, baru kemudian kita jalankan lagi.\n\n[Pertanyaan] Hal buruk apa yang diprediksi oleh pria tersebut mungkin akan terjadi?",
     "trans_rom": "Otoko: Doa ga ugokimasen ne. Densha no shisutemu ni koshou ga aru you desu. Hoomu ni okyakusan ga takusan imasu kara abunai desu ne. Kono mama tsuzukeru to jiko ga okoru kamoshiremasen. Densha o ittan tomete naoshite kara ugokashimashou.\n[Shitsumon] Otoko no hito wa kono ato donna koto ga okoru to yosoku shite imasu ka.",
-    "analisis": "[MNN Bab 32 - Menyimak Prediksi Kemungkinan (~kamoshiremasen)] Pembicara pria memeriksa pintu kereta yang macet dan sistem rusak (システムに故障がある). Ia menegaskan risiko bahaya jika perjalanan diteruskan: 『このまま続けると事故が起こるかもしれません』 (Kalau dilanjutkan terus, kecelakaan mungkin bisa terjadi). Karena itu potensi yang diprediksi adalah terjadinya kecelakaan (事故が起こる). Pilihan Opsi 3 pada lembar tes menampilkan gambar/teks kecelakaan tabrakan kereta.",
+    "analisis": "[MNN Bab 32 - Menyimak Prediksi Kemungkinan (~kamoshiremasen)] Pembicara pria memeriksa pintu kereta yang macet dan sistem rusak (システムに故障がある). Ia menegaskan risiko bahaya jika perjalanan diteruskan: 『このまま続けると事故が起こるかもしれません』 (Kalau dilanjutkan terus, kecelakaan mungkin bisa terjadi). Potensi yang diprediksi adalah terjadinya kecelakaan pada kereta (事故が起こる), sesuai dengan ilustrasi kecelakaan kereta pada Opsi 3.",
     "options": [
       {
-        "text": "Opsi 1 (Hujan lebat)",
+        "text": "Opsi 1 (Pesawat terbang)",
         "is_correct": false,
         "img": "c1_opt_1.png"
       },
       {
-        "text": "Opsi 2 (Kereta terlambat biasa)",
+        "text": "Opsi 2 (Kecelakaan mobil & motor)",
         "is_correct": false,
         "img": "c1_opt_2.png"
       },
       {
-        "text": "Opsi 3 (Kecelakaan / 事故が起こる)",
+        "text": "Opsi 3 (Kecelakaan kereta / 事故が起こる)",
         "is_correct": true,
         "img": "c1_opt_3.png"
       }
@@ -1460,22 +1460,22 @@
     "answer": 2,
     "opt_detail": [
       {
-        "kana": "Opsi 1",
-        "rom": "Opsi 1",
-        "arti": "situasi cuaca buruk / hujan",
-        "alasan": "Tidak ada informasi mengenai cuaca atau hujan lebat di dalam dialog."
+        "kana": "Opsi 1 (Pesawat)",
+        "rom": "Hikouki",
+        "arti": "gambar pesawat terbang",
+        "alasan": "Salah. Situasi dalam audio berada di stasiun/kereta listrik, bukan transportasi pesawat terbang."
       },
       {
-        "kana": "Opsi 2",
-        "rom": "Opsi 2",
-        "arti": "keterlambatan biasa",
-        "alasan": "Bukan sekadar terlambat biasa, melainkan risiko keselamatan penumpang yang fatal."
+        "kana": "Opsi 2 (Tabrakan Mobil & Motor)",
+        "rom": "Jidousha to baiku no jiko",
+        "arti": "gambar kecelakaan tabrakan mobil dan motor",
+        "alasan": "Salah. Gambar memperlihatkan tabrakan mobil dan motor di jalan raya, bukan kejadian pada kereta."
       },
       {
-        "kana": "Opsi 3",
-        "rom": "Opsi 3",
-        "arti": "terjadinya kecelakaan (事故が起こる)",
-        "alasan": "Tepat sekali. Pria secara eksplisit mengatakan: 『このまま続けると事故が起こるかもしれません』."
+        "kana": "Opsi 3 (Kecelakaan Kereta)",
+        "rom": "Densha no jiko",
+        "arti": "gambar kecelakaan kereta api (事故が起こる)",
+        "alasan": "Tepat sekali. Pria memperingatkan risiko kecelakaan jika perjalanan kereta diteruskan: 『このまま続けると事故が起こるかもしれません』."
       }
     ],
     "kunci_id": "Opsi 3 (Kecelakaan / 事故が起こる)",
