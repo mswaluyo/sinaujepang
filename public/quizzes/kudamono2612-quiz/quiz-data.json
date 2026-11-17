@@ -1589,9 +1589,9 @@
     "section": "SESI 3 : CHOUKAI",
     "image": null,
     "audio": "assets/c3-4.m4a",
-    "title": "男: 明日の会に 飲み物を 持っていきましょうか。\n女: ありがとう。でも大丈夫です。旅行で買った 緑茶が 3つあるので、それを 持っていきます。\n【質問】持っていく お茶（緑茶）は 全部で いくつですか。",
-    "trans": "Pria: Apakah saya perlu membawa minuman untuk pertemuan besok?\nWanita: Terima kasih, tapi tidak apa-apa. Karena ada 3 teh hijau yang saya beli saat liburan, saya akan membawa itu.\n\n[Pertanyaan] Berapa jumlah teh (ocha) yang dibawa?",
-    "trans_rom": "Ryokou de katta ryokucha ga mittsu aru node, sore o motte ikimasu.\n[Shitsumon] Motte iku ocha wa zenbu de ikutsu desu ka.",
+    "title": "男: 明日の会に 飲み物を 持っていきましょうか。ジュースの缶が あります。\n女: ありがとう。でも大丈夫です。旅行で買った 緑茶が 3つあるので、それを 持っていきます。\n男: そうですか。助かります。それと お弁当も 作っていきます。\n\n【質問】持っていく お茶（緑茶）は 全部で いくつですか。",
+    "trans": "Pria: Untuk pertemuan besok, apakah saya perlu membawa minuman? Saya ada jus kalengan.\nWanita: Terima kasih, tapi tidak apa-apa. Karena ada 3 botol teh hijau yang saya beli saat wisata, saya yang akan membawanya.\nPria: Begitu ya, sangat terbantu. Selain itu saya juga akan membuatkan bekal (bento).\n\n[Pertanyaan] Berapa jumlah teh hijau yang dibawa?",
+    "trans_rom": "Otoko: Ashita no kai ni nomimono o motte ikimashou ka. Juusu no kan ga arimasu.\nOnna: Arigatou. Demo daijoubu desu. Ryokou de katta ryokucha ga mittsu aru node, sore o motte ikimasu.\nOtoko: Sou desu ka. Tasukarimasu. Sore to obentou mo tsukutte ikimasu.\n\n[Shitsumon] Motte iku ocha wa zenbu de ikutsu desu ka.",
     "analisis": "[MNN Bab 11 - Menyimak Satuan Jumlah Benda (ひとつ、ふたつ、みっつ)] Wanita menyebutkan secara gamblang jumlah botol teh hijau yang ada padanya: 『緑茶が3つあるので』. 3 buah dalam bahasa Jepang disebut みっつ (mittsu / 3つ).",
     "options": [
       {
@@ -1638,9 +1638,9 @@
     "section": "SESI 3 : CHOUKAI",
     "image": null,
     "audio": "assets/c5.m4a",
-    "title": "女（アミ）: こんにちは、ユウキさん。お元気ですか？\n男（ユウキ）: こんにちは、アミさん。元気です。どうしましたか？\n女: 今週の土曜日に 動物園に行きたいです。一緒に行きませんか？\n男: いいですね。私も動物が好きです。10時に駅で会いましょうか？\n女: はい、いいですよ。10時に駅で会いましょう。\n【質問】二人は 今週の土曜日に どこへ 行きますか。",
-    "trans": "Wanita (Ami): Halo Yuki-san, apa kabar?\nPria (Yuki): Halo Ami-san, saya sehat. Ada apa?\nWanita: Hari Sabtu pekan ini saya ingin pergi ke kebun binatang. Maukah pergi bersama?\nPria: Bagus sekali! Saya juga suka binatang. Bagaimana kalau kita bertemu jam 10 di stasiun?\nWanita: Ya, boleh. Mari bertemu jam 10 di stasiun.\n\n[Pertanyaan] Ke mana mereka berdua akan pergi pada hari Sabtu pekan ini?",
-    "trans_rom": "Onna: Konshuu no doyoubi ni doubutsuen ni ikitai desu. Issho ni ikimasen ka?\nOtoko: Ii desu ne. Watashi mo doubutsu ga suki desu. Juuji ni eki de aimashou ka?\nOnna: Hai, ii desu yo. Juuji ni eki de aimashou.\n[Shitsumon] Futari wa konshuu no doyoubi ni doko e ikimasu ka.",
+    "title": "女: こんにちは、ユウキさん。お元気ですか？\n男: こんにちは、アミさん。元気です。どうしましたか？\n女: 今週の土曜日に 動物園に行きたいです。一緒に行きませんか？\n男: いいですね。私も動物が好きです。10時に駅で会いましょうか？\n女: はい、いいですよ。10時に駅で会いましょう。\n\n【質問】二人は 今週の土曜日に どこへ 行きますか。",
+    "trans": "Wanita: Halo, Yuki-san. Apa kabar?\nPria: Halo, Ami-san. Saya sehat. Ada apa?\nWanita: Hari Sabtu pekan ini saya ingin pergi ke kebun binatang. Maukah pergi bersama?\nPria: Bagus sekali! Saya juga suka binatang. Bagaimana kalau kita bertemu jam 10 di stasiun?\nWanita: Ya, boleh. Mari bertemu jam 10 di stasiun.\n\n[Pertanyaan] Ke mana mereka berdua akan pergi pada hari Sabtu pekan ini?",
+    "trans_rom": "Onna: Konnichiwa, Yuuki-san. Ogenki desu ka?\nOtoko: Konnichiwa, Ami-san. Genki desu. Dou shimashita ka?\nOnna: Konshuu no doyoubi ni doubutsuen ni ikitai desu. Issho ni ikimasen ka?\nOtoko: Ii desu ne. Watashi mo doubutsu ga suki desu. Juuji ni eki de aimashou ka?\nOnna: Hai, ii desu yo. Juuji ni eki de aimashou.\n\n[Shitsumon] Futari wa konshuu no doyoubi ni doko e ikimasu ka.",
     "analisis": "[MNN Bab 5/6 - Ajakan Pergi ke Tempat Tertentu (動物園に行きませんか)] Ami mengajak Yuki pergi ke kebun binatang: 『今週の土曜日に動物園に行きたいです。一緒に行きませんか』. Yuki langsung setuju karena menyukai hewan (動物が好きです). Gambar Opsi 1 menampilkan kebun binatang (動物園 / doubutsuen).",
     "options": [
       {
@@ -1690,9 +1690,9 @@
     "section": "SESI 3 : CHOUKAI",
     "image": null,
     "audio": "assets/c6.m4a",
-    "title": "店員: いらっしゃいませ。こちらがメニューです。\n客: ありがとうございます。えーと、寿司、天ぷら、うどん、ラーメンがありますね。\n店員: はい。ラーメンは3つの味があります。醤油、味噌、塩です。\n客: そうですか。じゃあラーメンをお願いします。味噌ラーメンで。\n店員: かしこまりました。少々お待ちください。\n【質問】客は どの料理を 注文しましたか。",
+    "title": "店員: いらっしゃいませ。こちらがメニューです。\n客: ありがとうございます。えーと、寿司、天ぷら、うどん、ラーメンがありますね。\n店員: はい。ラーメンは3つの味があります。醤油、味噌、塩です。\n客: そうですか。じゃあラーメンをお願いします。味噌ラーメンで。\n店員: かしこまりました。少々お待ちください。\n\n【質問】客は どの料理を 注文しましたか。",
     "trans": "Pelayan: Selamat datang. Ini menunya.\nPelanggan: Terima kasih. Hmm, ada sushi, tempura, udon, dan ramen ya.\nPelayan: Benar. Untuk ramen kami menyediakan 3 pilihan rasa: kecap asin (shouyu), pasta kedelai (miso), dan garam (shio).\nPelanggan: Begitu ya. Kalau begitu tolong semangkuk ramen. Ramen rasa miso ya.\nPelayan: Baik, saya mengerti. Mohon tunggu sebentar.\n\n[Pertanyaan] Makanan apa yang dipesan oleh pelanggan tersebut?",
-    "trans_rom": "Ten'in: Irasshaimase. Kochira ga menyuu desu.\nKyaku: Arigatou gozaimasu. Eeto, sushi, tenpura, udon, raamen ga arimasu ne.\nTen'in: Hai. Raamen wa mittsu no aji ga arimasu. Shouyu, miso, shio desu.\nKyaku: Sou desu ka. Jaa raamen o onegaishimasu. Miso raamen de.\n[Shitsumon] Kyaku wa dono ryouri o chuumon shimashita ka.",
+    "trans_rom": "Ten'in: Irasshaimase. Kochira ga menyuu desu.\nKyaku: Arigatou gozaimasu. Eeto, sushi, tenpura, udon, raamen ga arimasu ne.\nTen'in: Hai. Raamen wa mittsu no aji ga arimasu. Shouyu, miso, shio desu.\nKyaku: Sou desu ka. Jaa raamen o onegaishimasu. Miso raamen de.\nTen'in: Kashikomarimashita. Shou-shou omachi kudasai.\n\n[Shitsumon] Kyaku wa dono ryouri o chuumon shimashita ka.",
     "analisis": "[MNN Bab 3/13 - Memesan Makanan di Restoran (味噌ラーメン)] Pelayan menerangkan bahwa ramen memiliki tiga pilihan kuah: shouyu, miso, dan shio. Pelanggan secara spesifik memesan: 『じゃあラーメンをお願いします。味噌ラーメンで』 (Tolong ramen rasa miso). Gambar Opsi 1 mengilustrasikan semangkuk ramen.",
     "options": [
       {
@@ -1742,9 +1742,9 @@
     "section": "SESI 3 : CHOUKAI",
     "image": null,
     "audio": "assets/c7.m4a",
-    "title": "客: こんにちは。掃除機を買いたいんですが。\n店員: はい、こちらが掃除機のコーナーです。今3つの色があります。赤は500円（※5000円）、黒と青は1500円（※15,000円）です。赤は小さいですが軽いです。黒と青は同じサイズで少し大きいです。\n客: 黒と青はどう違いますか？\n店員: 色だけ違います。機能は同じです。\n客: なるほど。じゃあ、黒の掃除機にします。\n店員: ありがとうございます。黒の掃除機は1500円（15,000円）です。\n【質問】客が 買った掃除機は いくらですか。",
-    "trans": "Pelanggan: Halo, saya ingin membeli penyedot debu (vacuum cleaner).\nPelayan: Ya, ini area penyedot debu. Saat ini tersedia 3 warna: Merah seharga 500 yen (5.000 yen), sedangkan warna Hitam dan Biru seharga 1500 yen (15.000 yen). Yang merah kecil tapi ringan, yang hitam dan biru berukuran sama dan sedikit lebih besar.\nPelanggan: Apa bedanya warna hitam dan biru?\nPelayan: Hanya beda warnanya saja, fiturnya sama persis.\nPelanggan: Begitu ya. Kalau begitu saya pilih yang warna hitam.\nPelayan: Terima kasih. Penyedot debu hitam harganya 1500 yen (15.000 yen).\n\n[Pertanyaan] Berapa harga penyedot debu yang dibeli pelanggan?",
-    "trans_rom": "Ten'in: Kuro to ao wa 1500-en (15,000-en) desu.\nKyaku: Jaa, kuro no soujiki ni shimasu.\nTen'in: Kuro no soujiki wa 1500-en (15,000-en) desu.\n[Shitsumon] Kyaku ga katta soujiki wa ikura desu ka.",
+    "title": "客: こんにちは。掃除機を買いたいんですが。\n店員: はい、こちらが掃除機のコーナーです。今3つの色があります。赤は500円（※5000円）、黒と青は1500円（※15,000円）です。\n客: 黒と青はどう違いますか？\n店員: 色だけ違います。機能は同じです。赤は小さいですが軽いです。黒と青は同じサイズで少し大きいです。\n客: なるほど。じゃあ、黒の掃除機にします。\n店員: ありがとうございます。黒の掃除機は1500円（15,000円）です。\n\n【質問】客が 買った掃除機は いくらですか。",
+    "trans": "Pelanggan: Halo, saya ingin membeli penyedot debu (vacuum cleaner).\nPelayan: Ya, ini area penyedot debu. Saat ini tersedia 3 warna: Merah 500 yen (5.000 yen), sedangkan warna Hitam dan Biru 1500 yen (15.000 yen).\nPelanggan: Apa bedanya warna hitam dan biru?\nPelayan: Hanya beda warnanya saja, fiturnya sama persis. Yang merah kecil tapi ringan, yang hitam dan biru berukuran sama dan sedikit lebih besar.\nPelanggan: Begitu ya. Kalau begitu saya pilih yang warna hitam.\nPelayan: Terima kasih. Penyedot debu hitam harganya 1500 yen (15.000 yen).\n\n[Pertanyaan] Berapa harga penyedot debu yang dibeli pelanggan?",
+    "trans_rom": "Kyaku: Konnichiwa. Soujiki o kaitai n desu ga.\nTen'in: Hai, kochira ga soujiki no koonaa desu. Ima mittsu no iro ga arimasu. Aka wa gohyaku-en (gosen-en), kuro to ao wa sengohyaku-en (ichiman gosen-en) desu.\nKyaku: Kuro to ao wa dou chigaimasu ka?\nTen'in: Iro dake chigaimasu. Kinou wa onaji desu. Aka wa chiisai desu ga karui desu. Kuro to ao wa onaji saizu de sukoshi ookii desu.\nKyaku: Naruhodo. Jaa, kuro no soujiki ni shimasu.\nTen'in: Arigatou gozaimasu. Kuro no soujiki wa sengohyaku-en (ichiman gosen-en) desu.\n\n[Shitsumon] Kyaku ga katta soujiki wa ikura desu ka.",
     "analisis": "[MNN Bab 3/13 - Memilih Barang & Menyimak Angka Harga] Pelanggan memilih penyedot debu warna hitam (黒の掃除機にします). Warna hitam dan biru harganya sama, yaitu 15,000 yen (15.000 円 / 15000-en).",
     "options": [
       {
@@ -1794,9 +1794,9 @@
     "section": "SESI 3 : CHOUKAI",
     "image": null,
     "audio": "assets/c8.m4a",
-    "title": "女: トイレは 2階と 3階と 4階に あります。たくさんありますから 便利ですよ。\n男: 2階に用事がありますが、トイレは近いですか？\n女: 3階のトイレは エレベーターのすぐ近くにあります。分かりやすいですよ。\n男: 4階には レストランは ありますか？\n女: 4階に レストランがあります。トイレのそばに あります。\n【質問】トイレは 何階に ありますか。",
+    "title": "女: トイレは 2階と 3階と 4階に あります。たくさんありますから 便利ですよ。\n男: 2階に用事がありますが、トイレは近いですか？\n女: 3階のトイレは エレベーターのすぐ近くにあります。分かりやすいですよ。\n男: 4階には レストランは ありますか？\n女: 4階に レストランがあります。トイレのそばに あります。\n\n【質問】トイレは 何階に ありますか。",
     "trans": "Wanita: Toilet ada di lantai 2, lantai 3, dan lantai 4. Karena ada banyak, fasilitas ini sangat nyaman.\nPria: Saya ada urusan di lantai 2, apakah toiletnya dekat?\nWanita: Toilet di lantai 3 ada tepat di dekat lift, sangat mudah ditemukan.\nPria: Di lantai 4 apakah ada restoran?\nWanita: Di lantai 4 ada restoran, letaknya berada di samping toilet.\n\n[Pertanyaan] Di lantai berapa sajakah fasilitas toilet tersedia?",
-    "trans_rom": "Onna: Toire wa nikai to sankai to yonkai ni arimasu. Takusan arimasu kara benri desu yo.\nOtoko: Yonkai ni wa resutoran wa arimasu ka?\nOnna: Yonkai ni resutoran ga arimasu. Toire no soba ni arimasu.\n[Shitsumon] Toire wa nangai ni arimasu ka.",
+    "trans_rom": "Onna: Toire wa nikai to sankai to yonkai ni arimasu. Takusan arimasu kara benri desu yo.\nOtoko: Nikai ni youji ga arimasu ga, toire wa chikai desu ka?\nOnna: Sankai no toire wa erebeetaa no sugu chikaku ni arimasu. Wakariyasui desu yo.\nOtoko: Yonkai ni wa resutoran wa arimasu ka?\nOnna: Yonkai ni resutoran ga arimasu. Toire no soba ni arimasu.\n\n[Shitsumon] Toire wa nangai ni arimasu ka.",
     "analisis": "[MNN Bab 3/10 - Menyimak Informasi Lantai Gedung (階 / kai)] Pada kalimat pembuka, staf wanita menjelaskan fasilitas toilet ada di lantai 2, 3, dan 4 (2階と3階と4階にあります). Kunci pilihan di arsip menyoroti lantai yang relevan dengan pertanyaan pria, yaitu 2階と4階 (lantai 2 dan 4).",
     "options": [
       {
@@ -1843,9 +1843,9 @@
     "section": "SESI 3 : CHOUKAI",
     "image": "choukai_c9.jpg",
     "audio": "assets/c9-11.m4a",
-    "title": "男: すみません。病気の時の許可証は どこにありますか？\n女: あの、棚の一番下に ありますよ。\n男: 棚の一番下ですか？もう少し詳しく教えてください。\n女: はい。一番下の棚の中で、上から3番目です。\n男: なるほど、一番下の棚で 上から3番目ですね。\n【質問】病気の許可証は 棚のどこに 置いてありますか。",
+    "title": "男: すみません。病気の時の許可証は どこにありますか？\n女: あの、棚の一番下に ありますよ。\n男: 棚の一番下ですか？もう少し詳しく教えてください。\n女: はい。一番下の棚の中で、上から3番目です。\n男: なるほど、一番下の棚で 上から3番目ですね。わかりました。ありがとうございます。\n\n【質問】病気の許可証は 棚のどこに 置いてありますか。",
     "trans": "Pria: Permisi, formulir surat izin saat sakit ada di mana ya?\nWanita: Ada di rak bagian paling bawah lho.\nPria: Bagian paling bawah rak? Tolong beritahu sedikit lebih rinci.\nWanita: Baik. Di dalam bagian rak paling bawah tersebut, letaknya nomor 3 dari atas.\nPria: Begitu ya, di rak terbawah nomor 3 dari atas. Saya mengerti, terima kasih.\n\n[Pertanyaan] Di manakah letak formulir izin sakit di rak tersebut?",
-    "trans_rom": "Otoko: Sumimasen. Byouki no toki no kyokashou wa doko ni arimasu ka?\nOnna: Ano, tana no ichiban shita ni arimasu yo. Ichiban shita no tana no naka de, ue kara sanbanme desu.\n[Shitsumon] Byouki no kyokashou wa tana no doko ni oite arimasu ka.",
+    "trans_rom": "Otoko: Sumimasen. Byouki no toki no kyokashou wa doko ni arimasu ka?\nOnna: Ano, tana no ichiban shita ni arimasu yo.\nOtoko: Tana no ichiban shita desu ka? Mou sukoshi kuwashiku oshiete kudasai.\nOnna: Hai. Ichiban shita no tana no naka de, ue kara sanbanme desu.\nOtoko: Naruhodo, ichiban shita no tana de ue kara sanbanme desu ne. Wakarimashita. Arigatou gozaimasu.\n\n[Shitsumon] Byouki no kyokashou wa tana no doko ni oite arimasu ka.",
     "analisis": "[MNN Bab 10 - Posisi Tata Letak Benda (上から3番目)] Wanita menjelaskan bahwa berkas izin sakit berada di bagian rak terbawah (一番下), tepatnya urutan ketiga dihitung dari atas (上から3番目). Pada lembar soal gambar rak (assets/choukai_c9.jpg), posisi ini ditandai oleh Opsi 3.",
     "options": [
       {
@@ -1892,9 +1892,9 @@
     "section": "SESI 3 : CHOUKAI",
     "image": null,
     "audio": "assets/c9-11.m4a",
-    "title": "男: その許可証は 看護師さんに言えば もらえますか。看護師さんは どこにいますか？\n女: 看護師さんは 2階の職員室にいます。\n男: 提出期限は いつまでですか。\n女: 今月の13日までに 必ず出してください。\n【質問】書類を提出する 締め切り日は 何日ですか。",
+    "title": "男: その許可証は 看護師さんに言えば もらえますか。看護師さんは どこにいますか？\n女: 看護師さんは 2階の職員室にいます。\n男: 提出期限は いつまでですか。\n女: 今月の13日までに 必ず出してください。\n\n【質問】書類を提出する 締め切り日は 何日ですか。",
     "trans": "Pria: Apakah izin tersebut bisa saya dapatkan jika berbicara kepada perawat? Di manakah perawat berada?\nWanita: Perawat berada di ruang staf guru lantai 2.\nPria: Batas pengumpulannya sampai kapan?\nWanita: Harap serahkan paling lambat tanggal 13 bulan ini.\n\n[Pertanyaan] Tanggal berapakah batas akhir penyerahan berkas tersebut?",
-    "trans_rom": "Dansei: Teishutsu kigen wa itsu made desu ka?\nJosei: Kongetsu no juusan-nichi made ni kanarazu dashite kudasai.\n[Shitsumon] Shorui o teishutsu suru shimekiri-bi wa nan-nichi desu ka.",
+    "trans_rom": "Otoko: Sono kyokashou wa kangoshi-san ni ieba moraemasu ka. Kangoshi-san wa doko ni imasu ka?\nOnna: Kangoshi-san wa nikai no shokuinshitsu ni imasu.\nOtoko: Teishutsu kigen wa itsu made desu ka?\nOnna: Kongetsu no juusan-nichi made ni kanarazu dashite kudasai.\n\n[Shitsumon] Shorui o teishutsu suru shimekiri-bi wa nan-nichi desu ka.",
     "analisis": "[MNN Bab 5/14 - Batas Waktu Tanggal (何日までに)] Pertanyaan menanyakan tenggat waktu penyerahan formulir izin (提出期限). Tanggal batas akhir yang disampaikan adalah tanggal 13 (１３日 / じゅうさんにち).",
     "options": [
       {
