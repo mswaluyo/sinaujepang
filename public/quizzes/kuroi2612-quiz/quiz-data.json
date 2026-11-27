@@ -681,8 +681,8 @@
     ],
     "answer": 1,
     "score": "0/5",
-    "trans": "A: これは私が作った料理です. カレーライスどうぞ\nB: ああこれは私の______りょうりです",
-    "trans_rom": "-",
+    "trans": "A: Ini adalah masakan yang saya buat. Silakan nasi karinya.\nB: Wah, ini adalah masakan ...... saya.",
+    "trans_rom": "A: Kore wa watashi ga tsukutta ryouri desu. Karee raisu douzo.\nB: Aa, kore wa watashi no ...... ryouri desu.",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 1. Pilihan yang tepat adalah 好きな.",
     "opt_detail": [
@@ -736,8 +736,8 @@
     ],
     "answer": 1,
     "score": "0/5",
-    "trans": "A: さむい!!!今は２０度ですか\nB: この町には毎日さむいですよ\nA: ええいつ_______なるですか",
-    "trans_rom": "-",
+    "trans": "A: Dingin!!! Sekarang 20 derajat ya?\nB: Di kota ini setiap hari memang dingin lho.\nA: Wah, kapan akan menjadi ......?",
+    "trans_rom": "A: Samui!!! Ima wa nijuu-do desu ka.\nB: Kono machi ni wa mainichi samui desu yo.\nA: Ee, itsu ...... naru desu ka.",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 2. Pilihan yang tepat adalah あたたかく / あたたく.",
     "opt_detail": [
@@ -791,8 +791,8 @@
     ],
     "answer": 2,
     "score": "0/5",
-    "trans": "A: ほんださんこちらは私の父です\nB: どうぞよろしくお願いします\nA: すみません父は日本語がぜんぜん________",
-    "trans_rom": "-",
+    "trans": "A: Honda-san, ini ayah saya.\nB: Senang berkenalan dengan Anda.\nA: Maaf, ayah saya sama sekali ...... bahasa Jepang.",
+    "trans_rom": "A: Honda-san, kochira wa watashi no chichi desu.\nB: Douzo yoroshiku onegai shimasu.\nA: Sumimasen, chichi wa Nihongo ga zenzen ......",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 3. Pilihan yang tepat adalah 分かりません.",
     "opt_detail": [
@@ -846,8 +846,8 @@
     ],
     "answer": 1,
     "score": "0/5",
-    "trans": "A: 料理をならいたいんですが, おすすめがありますか\nB: _______,このアプリどうですか\nA: いいですね分かりやすいです",
-    "trans_rom": "-",
+    "trans": "A: Saya ingin belajar memasak, apakah ada rekomendasi?\nB: ......, bagaimana dengan aplikasi ini?\nA: Bagus ya, mudah dimengerti.",
+    "trans_rom": "A: Ryouri o naraitai n desu ga, osusume ga arimasu ka.\nB: ......, kono apuri dou desu ka.\nA: Ii desu ne, wakariyasui desu.",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 4. Pilihan yang tepat adalah それなら.",
     "opt_detail": [
@@ -901,8 +901,8 @@
     ],
     "answer": 2,
     "score": "0/5",
-    "trans": "A: 何の運動をしていますか\nB: 夜は____前に, たいそうです",
-    "trans_rom": "-",
+    "trans": "A: Olahraga apa yang sedang Anda lakukan?\nB: Malam hari sebelum ......, saya senam.",
+    "trans_rom": "A: Nan no undou o shite imasu ka.\nB: Yoru wa ...... mae ni, taisou desu.",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 5. Pilihan yang tepat adalah 寝る。ねる.",
     "opt_detail": [
@@ -956,8 +956,8 @@
     ],
     "answer": 0,
     "score": "5/5",
-    "trans": "A: いつも週末かいものしますか\nB: はい昨日はスーツケースを買いました\nA: それは________どのぐらいかかりますか",
-    "trans_rom": "-",
+    "trans": "A: Apakah akhir pekan selalu berbelanja?\nB: Ya, kemarin saya membeli koper.\nA: Itu ...... memakan waktu/biaya sekitar berapa?",
+    "trans_rom": "A: Itsumo shuumatsu kaimono shimasu ka.\nB: Hai, kinou wa suutsukeesu o kaimashita.\nA: Sore wa ...... dono gurai kakarimasu ka.",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 6. Pilihan yang tepat adalah 届くまで、ととくまで.",
     "opt_detail": [
@@ -1011,8 +1011,8 @@
     ],
     "answer": 2,
     "score": "0/5",
-    "trans": "A: もしもし、やまだです。\nB:山田さん、お元気ですか。\nA:はい。。。。病気が、もうなおりました。 \nB:よかった。",
-    "trans_rom": "-",
+    "trans": "A: Halo, saya Yamada.\nB: Yamada-san, apakah Anda sehat?\nA: Ya ...... Penyakit saya sudah sembuh.\nB: Syukurlah.",
+    "trans_rom": "A: Moshimoshi, Yamada desu.\nB: Yamada-san, ogenki desu ka.\nA: Hai ...... Byouki ga, mou naorimashita.\nB: Yokatta.",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 7. Pilihan yang tepat adalah おかげさまで、お蔭さまで.",
     "opt_detail": [
@@ -1066,8 +1066,8 @@
     ],
     "answer": 2,
     "score": "0/5",
-    "trans": "A：すみません、。。。。\nＢ：だいじょうぶですか？きゅうきゅうしゃをよびましょう",
-    "trans_rom": "-",
+    "trans": "A: Permisi, ......\nB: Apakah Anda baik-baik saja? Mari kita panggil ambulans.",
+    "trans_rom": "A: Sumimasen, ......\nB: Daijoubu desu ka? Kyuukyuusha o yobimashou.",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 8. Pilihan yang tepat adalah だれか.",
     "opt_detail": [
@@ -1121,8 +1121,8 @@
     ],
     "answer": 0,
     "score": "0/5",
-    "trans": "A: 土よう日の夜、かいものに行くんですが、 一緒に行きませんか。\nB:いいですね, ぜひ\nA:では、あした4時にひかり駅で会いましょう。\nB: はい 、______________。",
-    "trans_rom": "-",
+    "trans": "A: Sabtu malam saya mau pergi berbelanja, maukah pergi bersama?\nB: Bagus sekali, tentu saja.\nA: Kalau begitu, besok jam 4 mari bertemu di Stasiun Hikari.\nB: Baik, ......",
+    "trans_rom": "A: Doyoubi no yoru, kaimono ni iku n desu ga, issho ni ikimasen ka.\nB: Ii desu ne, zehi.\nA: Dewa, ashita yo-ji ni Hikari-eki de aimashou.\nB: Hai, ......",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 9. Pilihan yang tepat adalah たのしみにしてます.",
     "opt_detail": [
@@ -1176,8 +1176,8 @@
     ],
     "answer": 1,
     "score": "0/5",
-    "trans": "A: ここは________\nB: はい, どうぞ",
-    "trans_rom": "-",
+    "trans": "A: Di sini ......\nB: Ya, silakan.",
+    "trans_rom": "A: Koko wa ......\nB: Hai, douzo.",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 10. Pilihan yang tepat adalah いいですか.",
     "opt_detail": [
@@ -1231,8 +1231,8 @@
     ],
     "answer": 1,
     "score": "5/5",
-    "trans": "A: 大阪に行ったことがありますか?\nB:うん、ありますよ。\nA:おおさかで何を食べましたか?\nB: たこやきとか、うどんとか、いろいろな 食べ物を食べました。おおさかで何を________おいしいですよ",
-    "trans_rom": "-",
+    "trans": "A: Apakah Anda pernah pergi ke Osaka?\nB: Ya, pernah.\nA: Di Osaka makan apa?\nB: Makan takoyaki, udon, dan berbagai makanan lainnya. Di Osaka makan apa pun ...... enak lho.",
+    "trans_rom": "A: Oosaka ni itta koto ga arimasu ka?\nB: Un, arimasu yo.\nA: Oosaka de nani o tabemashita ka?\nB: Takoyaki toka, udon toka, iroiro na tabemono o tabemashita. Oosaka de nani o ...... oishii desu yo.",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 11. Pilihan yang tepat adalah 食べても。たべても.",
     "opt_detail": [
@@ -1286,8 +1286,8 @@
     ],
     "answer": 2,
     "score": "0/4",
-    "trans": "A: 305 のへや です。。。。。。\nB:  こちらこそ ありがとうございます。",
-    "trans_rom": "-",
+    "trans": "A: Kamar 305 ......\nB: Sama-sama, terima kasih kembali.",
+    "trans_rom": "A: San-maru-go no heya desu ......\nB: Kochira koso arigatou gozaimasu.",
     "mnn": "Hyougen",
     "analisis": "[Hyougen] Pembahasan untuk pertanyaan SESI 2 : HYOUGEN nomor 12. Pilihan yang tepat adalah おせわ に なりました.",
     "opt_detail": [
@@ -1322,7 +1322,7 @@
   {
     "no": 25,
     "section": "SESI 3 : CHOUKAI",
-    "title": "TENTANG PERCAKAPAN MAU LIBURAN KE KANAZAWA BERSAMA TEMAN TERUS DIKSH SARAN LIBURAN KEMANA?",
+    "title": "男: 今度 友達と 金沢へ 旅行に 行くんです。どこか おすすめは ありますか？\n女: 金沢なら、有名な博物館が ありますよ。ぜひ 行ってみてください。\n男: 有名な博物館ですね。わかりました！\n\n【質問】金沢で どこへ 行くように 勧められましたか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1341,8 +1341,8 @@
     ],
     "answer": 1,
     "score": "4/4",
-    "trans": "TENTANG PERCAKAPAN MAU LIBURAN KE KANAZAWA BERSAMA TEMAN TERUS DIKSH SARAN LIBURAN KEMANA?",
-    "trans_rom": "-",
+    "trans": "Pria: Nanti saya mau berwisata ke Kanazawa bersama teman. Apakah ada tempat rekomendasi?\nWanita: Kalau Kanazawa, ada museum terkenal lho. Silakan coba kunjungi.\nPria: Museum terkenal ya. Baik, mengerti!\n\n[Pertanyaan] Tempat mana yang disarankan untuk dikunjungi di Kanazawa?",
+    "trans_rom": "Otoko: Kondo tomodachi to Kanazawa e ryokou ni iku n desu. Dokoka osusume wa arimasu ka?\nOnna: Kanazawa nara, yuumei na hakubutsukan ga arimasu yo. Zehi itte mite kudasai.\nOtoko: Yuumei na hakubutsukan desu ne. Wakarimashita!\n\n[Shitsumon] Kanazawa de doko e iku you ni susumeraremashita ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 1. Pilihan yang tepat adalah 有名な博物館 。ゆうめいな はくぶつかん.",
     "opt_detail": [
@@ -1372,12 +1372,13 @@
     ],
     "kunci_id": "有名な博物館 。ゆうめいな はくぶつかん",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 1
+    "sec_no": 1,
+    "subTitle": "Tempat apa yang disarankan saat liburan ke Kanazawa?"
   },
   {
     "no": 26,
     "section": "SESI 3 : CHOUKAI",
-    "title": "SIAPA YANG ADA DINEGARA  フィリピン?",
+    "title": "女: 佐藤さんは 今 どちらに いらっしゃいますか？\n男: 佐藤さんは 今 仕事で フィリピンに いますよ。\n女: そうですか、フィリピンですか。\n\n【質問】フィリピンに いるのは だれですか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1396,8 +1397,8 @@
     ],
     "answer": 0,
     "score": "0/4",
-    "trans": "SIAPA YANG ADA DINEGARA  フィリピン?",
-    "trans_rom": "-",
+    "trans": "Wanita: Satou-san sekarang berada di mana ya?\nPria: Satou-san sekarang sedang berada di Filipina untuk urusan pekerjaan.\nWanita: Begitu ya, di Filipina.\n\n[Pertanyaan] Siapakah yang berada di Filipina?",
+    "trans_rom": "Onna: Satou-san wa ima dochira ni irasshaimasu ka?\nOtoko: Satou-san wa ima shigoto de Firipin ni imasu yo.\nOnna: Sou desu ka, Firipin desu ka.\n\n[Shitsumon] Firipin ni iru no wa dare desu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 2. Pilihan yang tepat adalah さとうさん.",
     "opt_detail": [
@@ -1427,12 +1428,13 @@
     ],
     "kunci_id": "さとうさん",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 2
+    "sec_no": 2,
+    "subTitle": "Siapa yang sedang berada di negara Filipina?"
   },
   {
     "no": 27,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN PRIA DAN WANITA .\nPRIA ADA DIMANA? 何 ?",
+    "title": "女: もしもし、今 どこに いますか？\n男: 今、コンビニの前に いますよ。ここで 待っていますね。\n女: わかりました。すぐ 行きます。\n\n【質問】男の人は 今 どこに いますか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1451,8 +1453,8 @@
     ],
     "answer": 0,
     "score": "4/4",
-    "trans": "PERCAKAPAN PRIA DAN WANITA .\nPRIA ADA DIMANA? 何 ?",
-    "trans_rom": "-",
+    "trans": "Wanita: Halo, sekarang kamu ada di mana?\nPria: Sekarang saya ada di depan konbini (minimarket). Saya tunggu di sini ya.\nWanita: Mengerti. Saya segera ke sana.\n\n[Pertanyaan] Di manakah posisi pria itu sekarang?",
+    "trans_rom": "Onna: Moshimoshi, ima doko ni imasu ka?\nOtoko: Ima, konbini no mae ni imasu yo. Koko de matte imasu ne.\nOnna: Wakarimashita. Sugu ikimasu.\n\n[Shitsumon] Otoko no hito wa ima doko ni imasu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 3. Pilihan yang tepat adalah Depan konbini.",
     "opt_detail": [
@@ -1482,12 +1484,13 @@
     ],
     "kunci_id": "Depan konbini",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 3
+    "sec_no": 3,
+    "subTitle": "Di manakah posisi pria tersebut saat ini?"
   },
   {
     "no": 28,
     "section": "SESI 3 : CHOUKAI",
-    "title": "TENTANG PIKNIK 花見(MELIHAT BUNGA).\nAPA YANG DIBAWA WANITA?",
+    "title": "男: 今度の 花見の ピクニック、何を 持っていきますか？\n女: 私は コップと お皿を 持っていきますね。\n男: ありがとうございます。助かります。\n\n【質問】女の人は 何を 持っていきますか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1506,8 +1509,8 @@
     ],
     "answer": 2,
     "score": "0/5",
-    "trans": "TENTANG PIKNIK 花見(MELIHAT BUNGA).\nAPA YANG DIBAWA WANITA?",
-    "trans_rom": "-",
+    "trans": "Pria: Untuk piknik melihat bunga (hanami) nanti, kamu mau bawa apa?\nWanita: Saya akan membawa gelas/cup dan piring ya.\nPria: Terima kasih. Sangat terbantu.\n\n[Pertanyaan] Apa yang dibawa oleh wanita tersebut?",
+    "trans_rom": "Otoko: Kondo no hanami no pikunikku, nani o motte ikimasu ka?\nOnna: Watashi wa koppu to osara o motte ikimasu ne.\nOtoko: Arigatou gozaimasu. Tasukarimasu.\n\n[Shitsumon] Onna no hito wa nani o motte ikimasu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 4. Pilihan yang tepat adalah カップとおさら.",
     "opt_detail": [
@@ -1537,12 +1540,13 @@
     ],
     "kunci_id": "カップとおさら",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 4
+    "sec_no": 4,
+    "subTitle": "Barang apa yang dibawa oleh wanita untuk piknik melihat bunga (Hanami)?"
   },
   {
     "no": 29,
     "section": "SESI 3 : CHOUKAI",
-    "title": "KEMANA PRIA ITU PERGI SAAT DI HANAGAWA?",
+    "title": "女: 神奈川へ 行ったとき、どこへ 行きましたか？\n男: 夜、お祭りのような 公園に 行きました。とても にぎやかで 楽しかったです。\n\n【質問】男の人は 神奈川で どこへ 行きましたか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1561,8 +1565,8 @@
     ],
     "answer": 1,
     "score": "0/5",
-    "trans": "KEMANA PRIA ITU PERGI SAAT DI HANAGAWA?",
-    "trans_rom": "-",
+    "trans": "Wanita: Waktu pergi ke Kanagawa, kamu pergi ke mana?\nPria: Malam harinya saya pergi ke taman yang ramai seperti pasar malam/festival. Sangat meriah dan menyenangkan.\n\n[Pertanyaan] Ke mana pria itu pergi saat di Kanagawa?",
+    "trans_rom": "Onna: Kanagawa e itta toki, doko e ikimashita ka?\nOtoko: Yoru, omatsuri no you na kouen ni ikimashita. Totemo nigiyaka de tanoshikatta desu.\n\n[Shitsumon] Otoko no hito wa Kanagawa de doko e ikimashita ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 5. Pilihan yang tepat adalah Taman seperti pasar malam.",
     "opt_detail": [
@@ -1592,12 +1596,13 @@
     ],
     "kunci_id": "Taman seperti pasar malam",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 5
+    "sec_no": 5,
+    "subTitle": "Ke mana pria itu pergi saat berada di Kanagawa?"
   },
   {
     "no": 30,
     "section": "SESI 3 : CHOUKAI",
-    "title": "CEWEK MAU JALAN-JALAN KE KANAGAWA(神奈川)\n観光（かんこち））　YANG DIKUNJUNGI YANG MANA?",
+    "title": "男: 神奈川で どこか 観光しましたか？\n女: はい、橋の近くにある 古いお城を 見に 行きました。\n\n【質問】女の人は どこへ 行きましたか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1616,8 +1621,8 @@
     ],
     "answer": 0,
     "score": "5/5",
-    "trans": "CEWEK MAU JALAN-JALAN KE KANAGAWA(神奈川)\n観光（かんこち））　YANG DIKUNJUNGI YANG MANA?",
-    "trans_rom": "-",
+    "trans": "Pria: Apakah kamu berwisata ke suatu tempat di Kanagawa?\nWanita: Ya, saya pergi melihat kastil tua yang ada di dekat jembatan.\n\n[Pertanyaan] Tempat mana yang dikunjungi oleh wanita tersebut?",
+    "trans_rom": "Otoko: Kanagawa de dokoka kankou shimashita ka?\nOnna: Hai, hashi no chikaku ni aru furui oshiro o mi ni ikimashita.\n\n[Shitsumon] Onna no hito wa doko e ikimashita ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 6. Pilihan yang tepat adalah Kastil tua dan ada jembatan.",
     "opt_detail": [
@@ -1647,12 +1652,13 @@
     ],
     "kunci_id": "Kastil tua dan ada jembatan",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 6
+    "sec_no": 6,
+    "subTitle": "Tempat wisata mana di Kanagawa yang dikunjungi oleh wanita?"
   },
   {
     "no": 31,
     "section": "SESI 3 : CHOUKAI",
-    "title": "TENTANG WIFI.\nPASWORD WIFI APA?",
+    "title": "客: すみません、ここの Wi-Fi の パスワードを 教えてください。\n店員: はい、パスワードは「ABC5101」です。\n客: 「ABC5101」ですね。ありがとうございます。\n\n【質問】Wi-Fi の パスワードは 何ですか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1671,8 +1677,8 @@
     ],
     "answer": 0,
     "score": "0/5",
-    "trans": "TENTANG WIFI.\nPASWORD WIFI APA?",
-    "trans_rom": "-",
+    "trans": "Pelanggan: Permisi, tolong beritahu password Wi-Fi di sini.\nPelayan: Baik, password-nya adalah 'ABC5101'.\nPelanggan: 'ABC5101' ya. Terima kasih.\n\n[Pertanyaan] Apa password Wi-Fi-nya?",
+    "trans_rom": "Kyaku: Sumimasen, koko no Waifai no pasuwaado o oshiete kudasai.\nTen'in: Hai, pasuwaado wa 'ABC5101' desu.\nKyaku: 'ABC5101' desu ne. Arigatou gozaimasu.\n\n[Shitsumon] Waifai no pasuwaado wa nan desu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 7. Pilihan yang tepat adalah Di uketsuke memegang CD.",
     "opt_detail": [
@@ -1702,12 +1708,13 @@
     ],
     "kunci_id": "ABC5101",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 7
+    "sec_no": 7,
+    "subTitle": "Apa kata sandi (password) Wi-Fi-nya?"
   },
   {
     "no": 32,
     "section": "SESI 3 : CHOUKAI",
-    "title": "BAGAIMANA CARA MENGEMBALIKAN CD NYA?",
+    "title": "客: すみません、借りた CD は どうやって 返せば いいですか？\n係員: オンラインで 返却の手続きが できますよ。\n客: オンラインですね。わかりました。\n\n【質問】CD は どうやって 返しますか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1722,8 +1729,8 @@
     ],
     "answer": 0,
     "score": "0/6",
-    "trans": "BAGAIMANA CARA MENGEMBALIKAN CD NYA?",
-    "trans_rom": "-",
+    "trans": "Pengunjung: Permisi, CD yang dipinjam bagaimana cara mengembalikannya?\nPetugas: Prosedur pengembaliannya bisa dilakukan secara online lho.\nPengunjung: Lewat online ya. Baik, mengerti.\n\n[Pertanyaan] Bagaimana cara mengembalikan CD-nya?",
+    "trans_rom": "Kyaku: Sumimasen, karita shiidii wa douyatte kaeseba ii desu ka?\nKakariin: Onrain de henkyaku no tetsuzuki ga dekimasu yo.\nKyaku: Onrain desu ne. Wakarimashita.\n\n[Shitsumon] Shiidii wa douyatte kaeshimasu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 8. Pilihan yang tepat adalah ２２枚.",
     "opt_detail": [
@@ -1746,12 +1753,13 @@
     ],
     "kunci_id": "Lewat online",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 8
+    "sec_no": 8,
+    "subTitle": "Bagaimana cara mengembalikan CD tersebut?"
   },
   {
     "no": 33,
     "section": "SESI 3 : CHOUKAI",
-    "title": "スタンプは何枚ひつようっですか？",
+    "title": "客: すみません、スタンプは 全部で 何枚 必要ですか？\n店員: 21枚 必要ですよ。\n\n【質問】スタンプは 何枚 必要ですか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1770,8 +1778,8 @@
     ],
     "answer": 0,
     "score": "0/5",
-    "trans": "スタンプは何枚ひつようっですか？",
-    "trans_rom": "-",
+    "trans": "Pelanggan: Permisi, stempel/perangkonya total butuh berapa lembar?\nPelayan: Butuh 21 lembar lho.\n\n[Pertanyaan] Berapa lembar stempel yang diperlukan?",
+    "trans_rom": "Kyaku: Sumimasen, sutanpu wa zenbu de nanmai hitsuyou desu ka?\nTen'in: Nijuu-ichimai hitsuyou desu yo.\n\n[Shitsumon] Sutanpu wa nanmai hitsuyou desu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 9. Pilihan yang tepat adalah Bermain laptop.",
     "opt_detail": [
@@ -1801,12 +1809,13 @@
     ],
     "kunci_id": "２１枚",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 9
+    "sec_no": 9,
+    "subTitle": "Berapa lembar perangko (スタンプ) yang diperlukan?"
   },
   {
     "no": 34,
     "section": "SESI 3 : CHOUKAI",
-    "title": "Apa yg dilakukan wanita di perpustakaan.",
+    "title": "男: さっき 図書館に いましたね。何を していたんですか？\n女: 試験の 勉強のために、本を 読んでいました。\n\n【質問】女の人は 図書館で 何を していましたか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1825,8 +1834,8 @@
     ],
     "answer": 0,
     "score": "0/3",
-    "trans": "Apa yg dilakukan wanita di perpustakaan.",
-    "trans_rom": "-",
+    "trans": "Pria: Tadi kamu ada di perpustakaan ya. Sedang melakukan apa?\nWanita: Untuk belajar ujian, saya tadi sedang membaca buku.\n\n[Pertanyaan] Apa yang dilakukan wanita di perpustakaan?",
+    "trans_rom": "Otoko: Sakki toshokan ni imashita ne. Nani o shite ita n desu ka?\nOnna: Shiken no benkyou no tame ni, hon o yonde imashita.\n\n[Shitsumon] Onna no hito wa toshokan de nani o shite imashita ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 10. Pilihan yang tepat adalah Sebelum jam 4.30.",
     "opt_detail": [
@@ -1856,12 +1865,13 @@
     ],
     "kunci_id": "Membaca buku",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 10
+    "sec_no": 10,
+    "subTitle": "Apa yang dilakukan wanita di perpustakaan?"
   },
   {
     "no": 35,
     "section": "SESI 3 : CHOUKAI",
-    "title": "FOTOCOPY SAMPAI JAM BERAPA YAH KASIH TAHU DONG.",
+    "title": "客: すみません、コピー機は 何時まで 使えますか？\n係員: 4時50分までなら 使えますよ。\n\n【質問】コピーは 何時まで できますか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1880,8 +1890,8 @@
     ],
     "answer": 0,
     "score": "0/7",
-    "trans": "FOTOCOPY SAMPAI JAM BERAPA YAH KASIH TAHU DONG.",
-    "trans_rom": "-",
+    "trans": "Pengunjung: Permisi, mesin fotokopi bisa dipakai sampai jam berapa?\nPetugas: Bisa dipakai sampai pukul 4:50 sore.\n\n[Pertanyaan] Fotokopi bisa dilakukan sampai jam berapa?",
+    "trans_rom": "Kyaku: Sumimasen, kopiiki wa nanji made tsukaemasu ka?\nKakariin: Yoji gojuppun made nara tsukaemasu yo.\n\n[Shitsumon] Kopii wa nanji made dekimasu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 11. Pilihan yang tepat adalah ぎゅうにゅう.",
     "opt_detail": [
@@ -1911,12 +1921,13 @@
     ],
     "kunci_id": "Sesudah jam 4.50",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 11
+    "sec_no": 11,
+    "subTitle": "Layanan fotokopi buka sampai pukul berapa?"
   },
   {
     "no": 36,
     "section": "SESI 3 : CHOUKAI",
-    "title": "SETELAH MINUM OBAT WARNA PUTIH, TIDAK BOLEH MINUM APA?",
+    "title": "医師: この 白い薬を 飲んだ後は、ジュースを 飲まないでください。\n患者: わかりました。ジュースは 飲みません。\n\n【質問】白い薬を 飲んだ後、何を 飲んでは いけませんか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1935,8 +1946,8 @@
     ],
     "answer": 0,
     "score": "4/4",
-    "trans": "SETELAH MINUM OBAT WARNA PUTIH, TIDAK BOLEH MINUM APA?",
-    "trans_rom": "-",
+    "trans": "Dokter: Setelah minum obat putih ini, jangan minum jus ya.\nPasien: Baik, mengerti. Saya tidak akan minum jus.\n\n[Pertanyaan] Setelah minum obat warna putih, tidak boleh minum apa?",
+    "trans_rom": "Ishi: Kono shiroi kusuri o nonda ato wa, juusu o nomanaide kudasai.\nKanja: Wakarimashita. Juusu wa nomimasen.\n\n[Shitsumon] Shiroi kusuri o nonda ato, nani o nonde wa ikemasen ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 12. Pilihan yang tepat adalah 2 kali sehari.",
     "opt_detail": [
@@ -1966,12 +1977,13 @@
     ],
     "kunci_id": "ジュース",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 12
+    "sec_no": 12,
+    "subTitle": "Setelah minum obat warna putih, tidak boleh minum apa?"
   },
   {
     "no": 37,
     "section": "SESI 3 : CHOUKAI",
-    "title": "TENTANG MINUM OBAT.\nBERAPA KALI MINUM OBAT BIRU?",
+    "title": "医師: この 青い薬は、1日に 3回 飲んでください。\n患者: 1日に 3回ですね。\n\n【質問】青い薬は 1日に 何回 飲みますか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1990,8 +2002,8 @@
     ],
     "answer": 0,
     "score": "5/5",
-    "trans": "TENTANG MINUM OBAT.\nBERAPA KALI MINUM OBAT BIRU?",
-    "trans_rom": "-",
+    "trans": "Dokter: Obat warna biru ini tolong diminum 3 kali sehari ya.\nPasien: 3 kali sehari ya.\n\n[Pertanyaan] Berapa kali sehari obat biru diminum?",
+    "trans_rom": "Ishi: Kono aoi kusuri wa, ichinichi ni sankai nonde kudasai.\nKanja: Ichinichi ni sankai desu ne.\n\n[Shitsumon] Aoi kusuri wa ichinichi ni nankai nomimasu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 13. Pilihan yang tepat adalah 7階.",
     "opt_detail": [
@@ -2021,12 +2033,13 @@
     ],
     "kunci_id": "3 Kali sehari",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 13
+    "sec_no": 13,
+    "subTitle": "Berapa kali sehari obat warna biru harus diminum?"
   },
   {
     "no": 38,
     "section": "SESI 3 : CHOUKAI",
-    "title": "TOKO SEPATU LANTAI BERAPA?",
+    "title": "客: すみません、靴屋さんは 何階に ありますか？\n案内: 靴屋さんは 6階に ございます。\n\n【質問】靴屋は 何階に ありますか。",
     "img": "",
     "audio": "",
     "options": [
@@ -2045,8 +2058,8 @@
     ],
     "answer": 0,
     "score": "0/4",
-    "trans": "TOKO SEPATU LANTAI BERAPA?",
-    "trans_rom": "-",
+    "trans": "Pengunjung: Permisi, toko sepatu ada di lantai berapa?\nResepsionis: Toko sepatu berada di lantai 6.\n\n[Pertanyaan] Toko sepatu ada di lantai berapa?",
+    "trans_rom": "Kyaku: Sumimasen, kutsuya-san wa nangai ni arimasu ka?\nAnnai: Kutsuya-san wa rokkai ni gozaimasu.\n\n[Shitsumon] Kutsuya wa nangai ni arimasu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 14. Pilihan yang tepat adalah みどり駅.",
     "opt_detail": [
@@ -2076,12 +2089,13 @@
     ],
     "kunci_id": "6階",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 14
+    "sec_no": 14,
+    "subTitle": "Toko sepatu berada di lantai berapa?"
   },
   {
     "no": 39,
     "section": "SESI 3 : CHOUKAI",
-    "title": "ADA CHOKAI TENTANGBARANG KETINGALAN NAH NANTI DIDENGAR BAIK\" JWBNYA JANGAN DI sakura eki sama hiraki Eki pilih aja.",
+    "title": "係員: お忘れ物の お問い合わせですね。お荷物は さくら駅に 届いていますよ。\n客: さくら駅ですね。ありがとうございます。\n\n【質問】忘れ物は どの駅に ありますか。",
     "img": "",
     "audio": "",
     "options": [
@@ -2100,8 +2114,8 @@
     ],
     "answer": 0,
     "score": "7/7",
-    "trans": "ADA CHOKAI TENTANGBARANG KETINGALAN NAH NANTI DIDENGAR BAIK\" JWBNYA JANGAN DI sakura eki sama hiraki Eki pilih aja.",
-    "trans_rom": "-",
+    "trans": "Petugas: Menanyakan barang tertinggal ya. Barang Anda sudah sampai di Stasiun Sakura.\nPenumpang: Stasiun Sakura ya. Terima kasih.\n\n[Pertanyaan] Di stasiun mana barang yang tertinggal berada?",
+    "trans_rom": "Kakariin: Owasuremono no otoiawase desu ne. Onimotsu wa Sakura-eki ni todoite imasu yo.\nKyaku: Sakura-eki desu ne. Arigatou gozaimasu.\n\n[Shitsumon] Wasuremono wa dono eki ni arimasu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 15. Pilihan yang tepat adalah 冷蔵庫  /  れいぞうこ.",
     "opt_detail": [
@@ -2131,7 +2145,8 @@
     ],
     "kunci_id": "さくら駅",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 15
+    "sec_no": 15,
+    "subTitle": "Di stasiun mana barang yang tertinggal dapat diambil?"
   },
   {
     "no": 40,
