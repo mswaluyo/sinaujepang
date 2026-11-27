@@ -43,6 +43,12 @@ window.PAKET_CONFIG = {
           "ikon": "K"
         },
         {
+          "nama": "KUROI 2612 (Tambahan)",
+          "slug": "kuroi2612-tambahan-quiz",
+          "total": 1,
+          "ikon": "K+"
+        },
+        {
           "nama": "KUTSUSHITA 2612",
           "slug": "kutsushita2612-quiz",
           "total": 46,

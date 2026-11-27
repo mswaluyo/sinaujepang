@@ -1,0 +1,51 @@
+[
+  {
+    "no": 1,
+    "sec_no": 1,
+    "section": "SESI 4 : DOKKAI",
+    "image": null,
+    "audio": "",
+    "title": "[ Bacaan ]\n割引クーポン\n3,000円以上 お買い物を するとき、この クーポンを 使うと 安くなります。\n\n【質問】クーポンは いつ 使うことが できますか。（買い物のあと）",
+    "subTitle": "Kapan kupon diskon bisa digunakan setelah belanja?",
+    "trans_rom": "[ Bacaan ]\nWaribiki kuupon\nSanzen-en ijou okaimono o suru toki, kono kuupon o tsukau to yasuku narimasu.\n\n[Shitsumon] Kuupon wa itsu tsukau koto ga dekimasu ka. (Kaimono no ato)",
+    "trans": "[ Bacaan ]\nKupon Diskon\nSaat berbelanja 3.000 yen atau lebih, jika menggunakan kupon ini harganya menjadi lebih murah.\n\n[Pertanyaan] Kapan kupon dapat digunakan? (Setelah berbelanja)",
+    "analisis": "[MNN Bab 23/Dokkai Kupon Diskon (~以上 / ijou)] Pada brosur kupon tertera syarat penggunaan: 『3000円以上お買い物をするとき、安くなります』 (menjadi lebih murah/diskon saat berbelanja 3.000 yen atau lebih). Kata 以上 (いじょう / ijou) berarti 'lebih dari atau sama dengan' batas nominal tersebut.",
+    "options": [
+      {
+        "text": "3000円以上買い物をするとき（3000えんいじょう）",
+        "is_correct": true
+      },
+      {
+        "text": "1000円以上買い物をするとき（1000えんいじょう）",
+        "is_correct": false
+      },
+      {
+        "text": "5000円以上買い物をするとき（5000えんいじょう）",
+        "is_correct": false
+      }
+    ],
+    "answer": 0,
+    "opt_detail": [
+      {
+        "kana": "3000円以上買い物をするとき",
+        "rom": "sanzen-en ijou kaimono o suru toki",
+        "arti": "saat berbelanja 3.000 yen atau lebih",
+        "alasan": "Tepat sekali. Sesuai dengan syarat resmi pada lembar kupon diskon (3000円以上 / 3000えんいじょう)."
+      },
+      {
+        "kana": "1000円以上買い物をするとき",
+        "rom": "sen-en ijou kaimono o suru toki",
+        "arti": "saat berbelanja 1.000 yen atau lebih",
+        "alasan": "Salah. Nominal 1.000 yen belum memenuhi syarat minimal kupon."
+      },
+      {
+        "kana": "5000円以上買い物をするとき",
+        "rom": "gosen-en ijou kaimono o suru toki",
+        "arti": "saat berbelanja 5.000 yen atau lebih",
+        "alasan": "Salah. Syarat minimal pada kupon adalah 3.000 yen, bukan 5.000 yen."
+      }
+    ],
+    "kunci_id": "3000円以上買い物をするとき（3000えんいじょう）",
+    "mnn": "Dokkai"
+  }
+]
