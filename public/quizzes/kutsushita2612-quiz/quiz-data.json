@@ -1344,7 +1344,7 @@
   {
     "no": 24,
     "section": "SESI 3 : CHOUKAI",
-    "title": "A: クリスさん、いつも カレーの 料理の仕方は どうですか。\nB: トマトソースを 使って、ワインも 使います。たなかさんは どうですか。\nA: 私は チョコレートを 使います、おいしいですよ。\nB: そうですか。わたしも その作り方を してみます。\n\n【質問】クリスさんは 何を 使って カレーを 作りますか。",
+    "title": "A: クリスさん、いつも カレーの 料理の仕方は どうですか。\nB: トマトソースを 使って、ワインも 使います。たなかさんは どうですか。\nA: 私は チョコレートを 使います、おいしいですよ。\nB: そうですか。わたしも その作り方を してみます。\n\n【質問】たなかさんは 何を 使って カレーを 作りますか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1367,8 +1367,8 @@
     ],
     "answer": 3,
     "score": "0/6",
-    "trans": "A: Kris-san, biasanya bagaimana cara Anda memasak kari?\nB: Saya menggunakan saus tomat, dan juga menggunakan anggur (wine). Bagaimana dengan Tanaka-san?\nA: Saya menggunakan cokelat, rasanya enak lho.\nB: Begitu ya. Saya juga akan mencoba cara membuat seperti itu.\n\n[Pertanyaan] Apa yang digunakan Kris untuk memasak kari?",
-    "trans_rom": "A: Kurisu-san, itsumo karee no ryouri no shikata wa dou desu ka.\nB: Tomato soosu o tsukatte, wain mo tsukaimasu. Tanaka-san wa dou desu ka.\nA: Watashi wa chokoreeto o tsukaimasu, oishii desu yo.\nB: Sou desu ka. Watashi mo sono tsukurikata o shite mimasu.\n\n[Shitsumon] Kurisu-san wa nani o tsukatte karee o tsukurimasu ka.",
+    "trans": "A: Kris-san, biasanya bagaimana cara Anda memasak kari?\nB: Saya menggunakan saus tomat, dan juga menggunakan anggur (wine). Bagaimana dengan Tanaka-san?\nA: Saya menggunakan cokelat, rasanya enak lho.\nB: Begitu ya. Saya juga akan mencoba cara membuat seperti itu.\n\n[Pertanyaan] Apa yang digunakan Tanaka untuk memasak kari?",
+    "trans_rom": "A: Kurisu-san, itsumo karee no ryouri no shikata wa dou desu ka.\nB: Tomato soosu o tsukatte, wain mo tsukaimasu. Tanaka-san wa dou desu ka.\nA: Watashi wa chokoreeto o tsukaimasu, oishii desu yo.\nB: Sou desu ka. Watashi mo sono tsukurikata o shite mimasu.\n\n[Shitsumon] Tanaka-san wa nani o tsukatte karee o tsukurimasu ka.",
     "mnn": "Choukai",
     "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 1. Pilihan yang tepat adalah チョコレート.",
     "opt_detail": [
@@ -1406,7 +1406,7 @@
     "kunci_id": "チョコレート",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 1,
-    "subTitle": "Apa yang digunakan Kris untuk memasak kari?"
+    "subTitle": "Apa yang digunakan Tanaka untuk memasak kari?"
   },
   {
     "no": 25,
