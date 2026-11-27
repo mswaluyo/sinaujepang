@@ -17,7 +17,12 @@ window.PAKET_CONFIG = {
           "nama": "JITENSHA 2612",
           "slug": "jitensha2612-quiz",
           "total": 50,
-          "ikon": "J"
+          "ikon": "J",
+          "soalTambahan": {
+            "nama": "Soal Tambahan",
+            "slug": "jitensha2612-tambahan-quiz",
+            "total": 2
+          }
         },
         {
           "nama": "KUDAMONO 2612",

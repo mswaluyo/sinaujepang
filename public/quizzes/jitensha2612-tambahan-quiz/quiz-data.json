@@ -1,0 +1,98 @@
+[
+  {
+    "no": 1,
+    "sec_no": 1,
+    "section": "SESI 1 : MOJIGOI",
+    "image": null,
+    "audio": "",
+    "title": "毎朝、学校へ行く前に、シャワーを（　　　　）。",
+    "trans_rom": "Maiasa, gakkou e iku mae ni, shawaa o abimasu.",
+    "trans": "Setiap pagi sebelum berangkat ke sekolah, saya mandi shower.",
+    "analisis": "[MNN Bab 16 - Kata Kerja Mandi Shower (シャワーを浴びます)] Dalam bahasa Jepang, kata kerja yang berpasangan dengan シャワー (shower) adalah 浴びます (あびます / abimasu = mandi/mengguyur).",
+    "options": [
+      {
+        "text": "あびます（浴びます）",
+        "is_correct": true
+      },
+      {
+        "text": "のります（乗ります）",
+        "is_correct": false
+      },
+      {
+        "text": "あらいます（洗います）",
+        "is_correct": false
+      }
+    ],
+    "answer": 0,
+    "opt_detail": [
+      {
+        "kana": "あびます [ 浴びます ]",
+        "rom": "abimasu",
+        "arti": "mandi (shower)",
+        "alasan": "Tepat sekali. Kolokasi baku untuk mandi shower adalah シャワーを浴びます (shawaa o abimasu)."
+      },
+      {
+        "kana": "のります [ 乗ります ]",
+        "rom": "norimasu",
+        "arti": "naik (kendaraan)",
+        "alasan": "Salah. のります dipakai untuk naik kendaraan."
+      },
+      {
+        "kana": "あらいます [ 洗います ]",
+        "rom": "araimasu",
+        "arti": "mencuci",
+        "alasan": "Salah. あらいます dipakai untuk mencuci tangan, piring, atau baju."
+      }
+    ],
+    "kunci_id": "あびます（浴びます）",
+    "mnn": "Mojigoi"
+  },
+  {
+    "no": 2,
+    "sec_no": 2,
+    "section": "SESI 1 : MOJIGOI",
+    "image": null,
+    "audio": "",
+    "title": "きっと（　　　　）ことができると思います。",
+    "trans_rom": "Kitto dekiru / goukaku suru koto ga dekiru to omoimasu.",
+    "trans": "Saya rasa pasti bisa (lulus / melakukannya).",
+    "analisis": "[MNN Bab 18/21 - Pola Kemampuan (辞書形 + ことができる)] Sebelum ことができる, kata kerja wajib berbentuk kamus (辞書形) dan menyatakan kemampuan/kemungkinan yang positif bersama kata keterangan きっと (pasti).",
+    "options": [
+      {
+        "text": "合格する（ごうかくする）",
+        "is_correct": true
+      },
+      {
+        "text": "合格した（ごうかくした）",
+        "is_correct": false
+      },
+      {
+        "text": "合格して（ごうかくして）",
+        "is_correct": false
+      }
+    ],
+    "answer": 0,
+    "opt_detail": [
+      {
+        "kana": "合格する [ ごうかくする ]",
+        "rom": "goukaku suru",
+        "arti": "lulus (bentuk kamus)",
+        "alasan": "Tepat sekali. Pola 〜ことができる wajib menggunakan kata kerja bentuk kamus."
+      },
+      {
+        "kana": "合格した [ ごうかくした ]",
+        "rom": "goukaku shita",
+        "arti": "sudah lulus (bentuk -ta)",
+        "alasan": "Salah. Tidak bisa disambung dengan ことができる."
+      },
+      {
+        "kana": "合格して [ ごうかくして ]",
+        "rom": "goukaku shite",
+        "arti": "lulus (bentuk -te)",
+        "alasan": "Salah. Tidak bisa disambung dengan ことができる."
+      }
+    ],
+    "kunci_id": "合格する（ごうかくする）",
+    "mnn": "Mojigoi"
+  }
+]
