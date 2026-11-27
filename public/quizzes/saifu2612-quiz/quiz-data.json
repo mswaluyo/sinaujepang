@@ -751,7 +751,7 @@
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
     "trans": "A: Sedang makan apa?\nB: Sedang makan ramen.\nA: Wah, ramennya tampak pedas ya.\nB: Karena saya memang suka makanan pedas.\nA: Oh begitu ya.",
-    "trans_rom": "A: Nani o tabete irun desu ka. B: Raamen o tabete imasu. A: Hee, kara sou desu ne.",
+    "trans_rom": "A: Nani o tabete irun desu ka.\nB: Raamen o tabete imasu.\nA: Hee, kara sou na raamen desu ne.\nB: Karai mono ga suki nan desu kara.\nA: Sou nan desu ka.",
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 43 - Pola Perkiraan Berdasarkan Penglihatan (~そうです)] Kata sifat 辛い (からい / pedas) jika diubah ke bentuk perkiraan visual menjadi からそう (kelihatan/tampak pedas). Di akhir klausa sebelum ne digunakan からそう ですね.",
     "opt_detail": [
@@ -807,7 +807,7 @@
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
     "trans": "A: Bagaimana wisatanya?\nB: Saya pergi ke tempat pembuatan kue tradisional Jepang. Saya senang karena bisa membuat wagashi sendiri.\nA: Bagus sekali kalau begitu ya.",
-    "trans_rom": "A: Ryokou wa dou deshita ka. B: Jibun de wagashi ga tsukurete ureshikatta desu.",
+    "trans_rom": "A: Ryokou wa dou deshita ka.\nB: Wagashi o tsukuru tokoro e ikimashita. Jibun de wagashi ga tsukurete ureshikatta desu.\nA: Sore wa yokatta desu ne.",
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 39 - Alasan Emosi Menggunakan Bentuk ~te (~て うれしい)] Frasa perasaan senang (うれしかったです) memerlukan klausa alasan dalam bentuk ~te. Kata kerja bentuk potensial 'bisa membuat' 作れます (tsukuremasu) diubah ke bentuk ~te menjadi 作れて (tsukurete = karena bisa membuat).",
     "opt_detail": [
@@ -863,7 +863,7 @@
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
     "trans": "A: Hari ini ulang tahunmu ya.\nB: Iya benar.\nA: Di hari ulang tahunmu kamu ingin sesuatu apa?\nB: Saya ingin topi.",
-    "trans_rom": "A: Tanjoubi ni nanka hoshii desu ka? B: Boushi ga hoshii desu.",
+    "trans_rom": "A: Kyou tanjoubi desu ne.\nB: Hai.\nA: Tanjoubi ni nanka hoshii desu ka.\nB: Boushi ga hoshii desu.",
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 13 - Menanyakan Keinginan Benda (~が ほしいですか)] Menanyakan barang yang diinginkan lawan bicara menggunakan pola [Barang] が ほしいですか. Kata sifat ほしい tetap mempertahankan akhiran -i sebelum ですか.",
     "opt_detail": [
@@ -919,7 +919,7 @@
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
     "trans": "A: Permisi, saya Ali dari kamar 303.\nB: Iya, ada apa ya?\nA: Air panas di kamar mandi saya sudah tidak keluar lagi.\nB: Oh begitu ya, setelah ini saya akan pergi mengeceknya.",
-    "trans_rom": "A: Watashi no ofuro no oyu ga denaku narimashita. B: Kono ato mi ni ikimasu.",
+    "trans_rom": "A: Sumimasen. San-maru-san no Ari desu.\nB: Hai, dou shita n desu ka.\nA: Watashi no ofuro no oyu ga denaku narimashita.\nB: Sou nan desu ka, kono ato mi ni ikimasu.",
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 19/A2 - Perubahan Keadaan (~なくなりました)] Pola ~なくなりました menyatakan terjadinya perubahan kondisi dari yang tadinya keluar menjadi tidak keluar lagi (rusak). Opsi 出てはいけません adalah larangan, dan 出ないでください adalah permohonan larangan.",
     "opt_detail": [
@@ -975,7 +975,7 @@
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
     "trans": "A: Apakah fotokopinya sudah selesai?\nB: Syukurlah (sudah selesai).\nA: Ah, syukurlah kalau begitu tidak apa-apa.",
-    "trans_rom": "A: Kopii wa dekimashita ka. B: Yokatta. A: Aa, daijoubu desu.",
+    "trans_rom": "A: Kopii wa dekimashita ka.\nB: Hai, dekimashita. (Yokatta)\nA: Aa, daijoubu desu.",
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 12/Ungkapan Percakapan Kantor] Ungkapan よかった (yokatta) menyatakan rasa lega atau kabar gembira bahwa tugas fotokopi telah berhasil diselesaikan dengan baik.",
     "opt_detail": [
@@ -1031,7 +1031,7 @@
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
     "trans": "A: Bagaimana sakitnya?\nB: Kepala saya masih sedikit sakit.\nA: Semoga lekas sembuh ya.\nB: Terima kasih banyak.",
-    "trans_rom": "A: Hayaku yoku naru you ni shite imasu (inotte imasu). B: Arigatou gozaimasu.",
+    "trans_rom": "A: Byouki wa dou desu ka.\nB: Mada atama ga sukoshi itai desu.\nA: Hayaku yoku naru to ii desu ne.\nB: Arigatou gozaimasu.",
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 36/Ungkapan Empati Sakit] Menanggapi orang yang sedang sakit kepala dengan ucapan doa/harapan agar lekas membaik kondisinya (早くよくなりますように). Respon lawan bicara adalah mengucapkan terima kasih.",
     "opt_detail": [
@@ -1087,7 +1087,7 @@
     "score": "0/4",
     "section": "SESI 2 : HYOUGEN",
     "trans": "A: Apa rencana masa depanmu?\nB: Saya ingin menjadi penerjemah lisan. Pada hari libur saya mengusahakan untuk berbicara dengan orang Jepang.\nA: Wah, itu bagus sekali ya.",
-    "trans_rom": "A: Shourai wa nani o kangaete imasu ka. B: Yasumi no toki Nihonjin to hanasu you ni shite imasu.",
+    "trans_rom": "A: Shourai wa nani o kangaete imasu ka.\nB: Tsuuyaku ni naritai to omotte imasu. Yasumi no toki Nihonjin to hanasu you ni shite imasu.\nA: Sore wa ii desu ne.",
     "mnn": "Hyougen",
     "analisis": "[MNN Bab 36 - Pola Usaha Rutin (~ように しています)] Pola kata kerja bentuk kamus + ように しています menyatakan usaha membiasakan diri melakukan sesuatu secara rutin. Karena ingin lancar jadi penerjemah, dia berusaha berbicara (話す / はなす - hanasu).",
     "opt_detail": [
@@ -1233,8 +1233,8 @@
   },
   {
     "no": 23,
-    "title": "Percakapan: Barang apa yang harus dibawa?",
-    "subTitle": "Nani o motte ikimasu ka.",
+    "title": "男: すみません、明日の会議の準備ですが、何を持っていけばいいですか？\n女: ああ、会議室に椅子が足りないので、椅子を持っていってください。\n男: わかりました。椅子ですね。\n\n【質問】何を持っていきますか。",
+    "subTitle": "Barang apa yang harus dibawa?",
     "img": "",
     "audio": "",
     "options": [
@@ -1254,8 +1254,8 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Dalam percakapan, pembicara menginstruksikan untuk membawa kursi (椅子 / いす).",
-    "trans_rom": "Isu o motte itte kudasai.",
+    "trans": "Pria: Permisi, untuk persiapan rapat besok, barang apa yang harus saya bawa?\nWanita: Oh, karena di ruang rapat kursinya kurang, tolong bawakan kursi ya.\nPria: Baik, saya mengerti. Kursi ya.\n\n[Pertanyaan] Barang apa yang harus dibawa?",
+    "trans_rom": "Otoko: Sumimasen, ashita no kaigi no junbi desu ga, nani o motte ikeba ii desu ka?\nOnna: Aa, kaigishitsu ni isu ga tarinai node, isu o motte itte kudasai.\nOtoko: Wakarimashita. Isu desu ne.\n\n[Shitsumon] Nani o motte ikimasu ka.",
     "mnn": "Choukai",
     "analisis": "[JFT Choukai - Pemahaman Tugas & Benda] Percakapan membahas perlengkapan yang diminta untuk dipindahkan/dibawa. Instruksi jelas menyebutkan kata 椅子 (いす - isu = kursi). 皿 (さら) adalah piring, dan 机 (つくえ) adalah meja.",
     "opt_detail": [
@@ -1289,8 +1289,8 @@
   },
   {
     "no": 24,
-    "title": "Berapa banyak kursi (椅子) yang disuruh bawa?",
-    "subTitle": "Isu wa ikutsu motte ikimasu ka.",
+    "title": "男: 椅子は いくつ 持っていけば いいですか？\n女: えーと、6つ 持ってきてください。\n男: 6つですね。わかりました。\n\n【質問】椅子は いくつ 持っていきますか。",
+    "subTitle": "Berapa banyak kursi (椅子) yang disuruh bawa?",
     "img": "",
     "audio": "",
     "options": [
@@ -1310,8 +1310,8 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Jumlah kursi yang diminta untuk dibawa adalah 6 buah (むっつ / 6つ).",
-    "trans_rom": "Muttsu motte ikimasu.",
+    "trans": "Pria: Kursinya harus dibawa berapa buah?\nWanita: Hmm, tolong bawakan 6 buah ya.\nPria: 6 buah ya. Baik, saya mengerti.\n\n[Pertanyaan] Berapa banyak kursi yang harus dibawa?",
+    "trans_rom": "Otoko: Isu wa ikutsu motte ikeba ii desu ka?\nOnna: Eeto, muttsu motte kite kudasai.\nOtoko: Muttsu desu ne. Wakarimashita.\n\n[Shitsumon] Isu wa ikutsu motte ikimasu ka.",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 11 - Kata Bantu Bilangan Universal (ひとつ・ふたつ...)] Pembicara menegaskan kebutuhan jumlah kursi sebanyak 6 buah (むっつ / 6つ). Pilihan menyebutkan angka 6 (むっつ).",
     "opt_detail": [
@@ -1345,8 +1345,8 @@
   },
   {
     "no": 25,
-    "title": "Di dapur kamu diminta bantu apa? (野菜 を きって ください)",
-    "subTitle": "Daidokoro de nani o tetsudaimasu ka.",
+    "title": "男: 台所で 何か 手伝いましょうか？\n女: ありがとうございます。じゃあ、野菜を 切ってください。\n男: はい、野菜を 切りますね。\n\n【質問】台所で 何を 手伝いますか。",
+    "subTitle": "Di dapur diminta membantu melakukan apa?",
     "img": "",
     "audio": "",
     "options": [
@@ -1366,8 +1366,8 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Instruksi dapur: 'Tolong potong sayurannya' (野菜を切ってください).",
-    "trans_rom": "Yasai o kitte kudasai.",
+    "trans": "Pria: Apakah ada yang bisa saya bantu di dapur?\nWanita: Terima kasih. Kalau begitu, tolong potong sayurannya ya.\nPria: Baik, saya akan memotong sayurannya.\n\n[Pertanyaan] Apa yang dibantu di dapur?",
+    "trans_rom": "Otoko: Daidokoro de nanika tetsudaimashou ka?\nOnna: Arigatou gozaimasu. Jaa, yasai o kitte kudasai.\nOtoko: Hai, yasai o kirimasu ne.\n\n[Shitsumon] Daidokoro de nani o tetsudaimasu ka.",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 14 - Instruksi Memasak (きります)] Kalimat instruksi jelas berbunyi 野菜を切ってください (yasai o kitte kudasai) yang berarti tolong potong sayur-sayuran. Daging adalah 肉 (niku) dan buah adalah 果物 (kudamono).",
     "opt_detail": [
@@ -1401,8 +1401,8 @@
   },
   {
     "no": 26,
-    "title": "Seseorang bertanya ke petugas transportasi paling praktis menuju Tokyo.",
-    "subTitle": "Toukyou made nani de iku no ga benri desu ka.",
+    "title": "客: すみません、東京まで 何で行くのが 便利ですか？\n係員: 車は道が混みますから、地下鉄が 一番 便利ですよ。\n客: そうですか。じゃあ 地下鉄で行きます。\n\n【質問】東京まで 何で行くのが 便利ですか。",
+    "subTitle": "Transportasi apa yang paling praktis menuju Tokyo?",
     "img": "",
     "audio": "",
     "options": [
@@ -1422,8 +1422,8 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Petugas menyarankan menggunakan kereta bawah tanah (地下鉄 / ちかてつ) karena paling cepat dan bebas macet.",
-    "trans_rom": "Chikatetsu ga ichiban benri desu.",
+    "trans": "Pengunjung: Permisi, untuk pergi ke Tokyo paling praktis naik apa ya?\nPetugas: Karena jalanan macet kalau naik mobil, kereta bawah tanah (chikatetsu) yang paling praktis.\nPengunjung: Begitu ya. Kalau begitu saya naik kereta bawah tanah.\n\n[Pertanyaan] Transportasi apa yang paling praktis menuju Tokyo?",
+    "trans_rom": "Kyaku: Sumimasen, Toukyou made nani de iku no ga benri desu ka?\nKakariin: Kuruma wa michi ga komimasu kara, chikatetsu ga ichiban benri desu yo.\nKyaku: Sou desu ka. Jaa chikatetsu de ikimasu.\n\n[Shitsumon] Toukyou made nani de iku no ga benri desu ka.",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 10/12 - Moda Transportasi Praktis (地下鉄)] Dalam tanya jawab arah perjalanan di kota besar Tokyo, petugas stasiun merekomendasikan subway / kereta bawah tanah (地下鉄 / ちかてつ - chikatetsu). 車 (mobil) rawan macet dan 自転車 (sepeda) terlalu jauh.",
     "opt_detail": [
@@ -1457,8 +1457,8 @@
   },
   {
     "no": 27,
-    "title": "Bagaimana cara dia belajar bahasa Korea?",
-    "subTitle": "Kankokugo wa douyatte benkyou shite imasu ka.",
+    "title": "女: 韓国語が 上手ですね。どうやって 勉強していますか？\n男: 毎日 テレビを見て 勉強しています。ドラマが 面白いですよ。\n女: へえ、そうなんですね。\n\n【質問】韓国語は どうやって 勉強していますか。",
+    "subTitle": "Bagaimana cara dia belajar bahasa Korea?",
     "img": "",
     "audio": "",
     "options": [
@@ -1478,8 +1478,8 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Dia belajar bahasa Korea dengan cara menonton acara televisi (テレビを見る).",
-    "trans_rom": "Terebi o mite benkyou shimasu.",
+    "trans": "Wanita: Bahasa Koreanya pintar ya. Bagaimana cara Anda belajarnya?\nPria: Setiap hari saya belajar dengan menonton TV. Dramanya menarik lho.\nWanita: Wah, begitu ya.\n\n[Pertanyaan] Bagaimana cara dia belajar bahasa Korea?",
+    "trans_rom": "Onna: Kankokugo ga jouzu desu ne. Douyatte benkyou shite imasu ka?\nOtoko: Mainichi terebi o mite benkyou shite imasu. Dorama ga omoshiroi desu yo.\nOnna: Hee, sou nan desu ne.\n\n[Shitsumon] Kankokugo wa douyatte benkyou shite imasu ka.",
     "mnn": "Choukai",
     "analisis": "[JFT Choukai - Cara Belajar Bahasa Asing] Pembicara menceritakan metodenya menguasai bahasa Korea secara mandiri, yaitu dengan sering menonton siaran televisi dan drama (テレビを見ます / テレビを見る).",
     "opt_detail": [
@@ -1513,8 +1513,8 @@
   },
   {
     "no": 28,
-    "title": "Percakapan: Minta dikirim barang pada hari dan waktu apa?",
-    "subTitle": "Itsu todokete moraimasu ka.",
+    "title": "配達員: お荷物は いつ お届けしましょうか？\n客: 平日は 仕事で いませんので、土曜日の夜に お願いします。\n配達員: かしこまりました。土曜日の夜ですね。\n\n【質問】いつ 届けてもらいますか。",
+    "subTitle": "Paket barang diminta dikirim pada hari dan waktu kapan?",
     "img": "",
     "audio": "",
     "options": [
@@ -1534,8 +1534,8 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Pembeli meminta kurir mengantarkan paket barang pada Sabtu malam (土曜日の夜 / どようびのよる).",
-    "trans_rom": "Doyoubi no yoru ni onegai shimasu.",
+    "trans": "Kurir: Paketnya mau diantarkan kapan ya?\nPelanggan: Karena hari kerja saya tidak ada di rumah, tolong antarkan pada Sabtu malam ya.\nKurir: Baik, saya mengerti. Sabtu malam ya.\n\n[Pertanyaan] Kapan paket diminta untuk diantarkan?",
+    "trans_rom": "Haitatsuin: Onimotsu wa itsu otodoke shimashou ka?\nKyaku: Heijitsu wa shigoto de imasen node, doyoubi no yoru ni onegai shimasu.\nHaitatsuin: Kashikomarimashita. Doyoubi no yoru desu ne.\n\n[Shitsumon] Itsu todokete moraimasu ka.",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 4/A2 - Jadwal Pengiriman Paket (配達日時)] Pembeli menyatakan hanya berada di rumah pada akhir pekan saat malam hari, sehingga memesan jadwal pengiriman pada Sabtu malam (土曜の夜 - doyou no yoru).",
     "opt_detail": [
@@ -1569,8 +1569,8 @@
   },
   {
     "no": 29,
-    "title": "Obrolan: Vas keramik kuno tersebut digunakan untuk apa?",
-    "subTitle": "Kono tsubo wa nani ni tsukaimasu ka.",
+    "title": "客: すみません、この 古い壺は 何に 使いますか？\n案内: これは 花を 飾るために 使います。花瓶ですよ。\n客: なるほど、花瓶なんですね。\n\n【質問】この壺は 何に 使いますか。",
+    "subTitle": "Vas keramik kuno tersebut digunakan untuk apa?",
     "img": "",
     "audio": "",
     "options": [
@@ -1590,8 +1590,8 @@
     "answer": 1,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Vas keramik tersebut digunakan sebagai vas bunga pajangan (花瓶 / かびん).",
-    "trans_rom": "Hana o kazaru tame ni tsukaimasu.",
+    "trans": "Pengunjung: Permisi, guci kuno ini digunakan untuk apa ya?\nPemandu: Ini digunakan untuk menghias/memajang bunga. Ini adalah vas bunga.\nPengunjung: Begitu ya, ternyata vas bunga.\n\n[Pertanyaan] Vas keramik ini digunakan untuk apa?",
+    "trans_rom": "Kyaku: Sumimasen, kono furui tsubo wa nani ni tsukaimasu ka?\nAnnai: Kore wa hana o kazaru tame ni tsukaimasu. Kabin desu yo.\nKyaku: Naruhodo, kabin nan desu ne.\n\n[Shitsumon] Kono tsubo wa nani ni tsukaimasu ka.",
     "mnn": "Choukai",
     "analisis": "[JFT Choukai - Fungsi Benda Kesenian Tradisional] Penjelasan dalam dialog mengklarifikasi bahwa wadah keramik antik tersebut difungsikan sebagai wadah merangkai bunga hias (vas bunga / 花瓶 - kabin).",
     "opt_detail": [
@@ -1625,8 +1625,8 @@
   },
   {
     "no": 30,
-    "title": "Obrolan: Vas bunga tersebut berasal / dibuat pada abad ke berapa?",
-    "subTitle": "Nan-seiki no mono desu ka.",
+    "title": "客: この花瓶は いつの時代のものですか？\n案内: 16世紀のものだと 言われています。\n客: 16世紀ですか。すごいですね。\n\n【質問】何世紀の ものですか。",
+    "subTitle": "Vas bunga tersebut berasal dari abad ke berapa?",
     "img": "",
     "audio": "",
     "options": [
@@ -1646,8 +1646,8 @@
     "answer": 0,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Vas tersebut merupakan peninggalan bersejarah dari abad ke-16 (16世紀 / じゅうろくせいき).",
-    "trans_rom": "Juu-roku seiki no mono desu.",
+    "trans": "Pengunjung: Vas bunga ini berasal dari zaman kapan?\nPemandu: Konon ini adalah peninggalan dari abad ke-16.\nPengunjung: Abad ke-16 ya. Luar biasa.\n\n[Pertanyaan] Berasal dari abad ke berapa?",
+    "trans_rom": "Kyaku: Kono kabin wa itsu no jidai no mono desu ka?\nAnnai: Juu-roku seiki no mono da to iwarete imasu.\nKyaku: Juu-roku seiki desu ka. Sugoi desu ne.\n\n[Shitsumon] Nan-seiki no mono desu ka.",
     "mnn": "Choukai",
     "analisis": "[JFT Choukai - Angka dan Abad Sejarah (~世紀)] Pemandu museum menerangkan bahwa vas tersebut diperkirakan berasal dari abad ke-16 (16世紀 / じゅうろくせいき - juu-roku seiki).",
     "opt_detail": [
@@ -1681,8 +1681,8 @@
   },
   {
     "no": 31,
-    "title": "Toko tersebut menjual apa?",
-    "subTitle": "Nani o utte imasu ka.",
+    "title": "店員: いらっしゃいませ。ただいま 冬物のコートを お安く 売っていますよ。\n客: あ、このコート 素敵ですね。見てもいいですか？\n店員: はい、どうぞ。\n\n【質問】何を 売っていますか。",
+    "subTitle": "Toko tersebut sedang menjual apa?",
     "img": "",
     "audio": "",
     "options": [
@@ -1702,8 +1702,8 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Barang yang sedang dijual dan dipromosikan di toko tersebut adalah mantel / coat (コート).",
-    "trans_rom": "Kooto o utte imasu.",
+    "trans": "Pelayan: Selamat datang. Saat ini kami sedang menjual mantel (coat) musim dingin dengan harga murah.\nPelanggan: Wah, mantel ini bagus ya. Boleh saya lihat-lihat?\nPelayan: Ya, silakan.\n\n[Pertanyaan] Apa yang sedang dijual di toko tersebut?",
+    "trans_rom": "Ten'in: Irasshaimase. Tadaima fuyumono no kooto o oyasuku utte imasu yo.\nKyaku: A, kono kooto suteki desu ne. Mite mo ii desu ka?\nTen'in: Hai, douzo.\n\n[Shitsumon] Nani o utte imasu ka.",
     "mnn": "Choukai",
     "analisis": "[JFT Choukai - Informasi Belanja Pakaian Musim Dingin] Percakapan di toko busana membicarakan diskon dan penjualan mantel hangat luar: coat / コート (kooto). Sepatu = 靴 (くつ), Celana = ズボン (zubon).",
     "opt_detail": [
@@ -1737,8 +1737,8 @@
   },
   {
     "no": 32,
-    "title": "Kereta tiba sampai jam berapa?",
-    "subTitle": "Nan-ji ni tsukimasu ka.",
+    "title": "アナウンス: まもなく 電車が まいります。この電車は 7時30分に 到着いたします。\n\n【質問】何時に 着きますか。",
+    "subTitle": "Kereta tiba pukul berapa?",
     "img": "",
     "audio": "",
     "options": [
@@ -1758,8 +1758,8 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Waktu kedatangan yang diinformasikan adalah pukul 7.30 (7時半 / しちじはん).",
-    "trans_rom": "Shichi-ji sanjuppun (shichi-ji han) ni tsukimasu.",
+    "trans": "Pengumuman: Sebentar lagi kereta akan tiba. Kereta ini akan tiba pada pukul 7:30.\n\n[Pertanyaan] Kereta tiba pukul berapa?",
+    "trans_rom": "Anaunsu: Mamonaku densha ga mairimasu. Kono densha wa shichi-ji sanjuppun ni touchaku itashimasu.\n\n[Shitsumon] Nan-ji ni tsukimasu ka.",
     "mnn": "Choukai",
     "analisis": "[MNN Bab 4 - Keterangan Waktu Menit (30分 / 半)] Pengumuman stasiun mengonfirmasi bahwa jadwal kedatangan kereta adalah pukul 7 lebih 30 menit (7時30分 / 7時半 - shichi-ji sanjuppun / shichi-ji han).",
     "opt_detail": [
@@ -1793,8 +1793,8 @@
   },
   {
     "no": 33,
-    "title": "Pelanggan membayar tagihan belanja menggunakan apa?",
-    "subTitle": "Nani de haraimasu ka.",
+    "title": "店員: お会計は 2000円になります。ポイントカードは お持ちですか？\n客: はい、あります。全部 ポイントカードで 払います。\n店員: かしこまりました。\n\n【質問】何で 払いますか。",
+    "subTitle": "Pelanggan membayar tagihan menggunakan apa?",
     "img": "",
     "audio": "",
     "options": [
@@ -1814,8 +1814,8 @@
     "answer": 2,
     "score": "0/4",
     "section": "SESI 3 : CHOUKAI",
-    "trans": "Pelanggan memilih untuk melunasi seluruh pembayaran menggunakan kartu poin (ポイントカード / poincard).",
-    "trans_rom": "Pointo kaado de haraimasu.",
+    "trans": "Pelayan: Total belanjanya menjadi 2.000 yen. Apakah Anda memiliki kartu poin?\nPelanggan: Ya, punya. Saya bayar semuanya pakai kartu poin saja.\nPelayan: Baik, saya mengerti.\n\n[Pertanyaan] Pelanggan membayar menggunakan apa?",
+    "trans_rom": "Ten'in: Okaikei wa nisen-en ni narimasu. Pointo kaado wa omochi desu ka?\nKyaku: Hai, arimasu. Zenbu pointo kaado de haraimasu.\nTen'in: Kashikomarimashita.\n\n[Shitsumon] Nani de haraimasu ka.",
     "mnn": "Choukai",
     "analisis": "[JFT Choukai - Transaksi Kasir (ポイントカード支払い)] Kasir menawarkan opsi pembayaran poin. Pelanggan mengecek saldo poinnya mencukupi dan memutuskan membayar menggunakan kartu poin saja tanpa uang tunai tambahan.",
     "opt_detail": [
