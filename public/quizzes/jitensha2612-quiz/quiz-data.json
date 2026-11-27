@@ -387,7 +387,7 @@
   {
     "no": 8,
     "section": "SESI 1 : MOJIGOI",
-    "title": "。 へや の なか を 探しました たいせすな 指  は まだ。。。。",
+    "title": "へや の なか を 探しました たいせすな 指  は まだ。。。。",
     "img": "",
     "audio": "",
     "options": [
@@ -618,7 +618,7 @@
   {
     "no": 12,
     "section": "SESI 1 : MOJIGOI",
-    "title": "。駅",
+    "title": "駅",
     "img": "",
     "audio": "",
     "options": [
@@ -1416,14 +1416,15 @@
     ],
     "kunci_id": "サッカーをします",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 1
+    "sec_no": 1,
+    "subTitle": "Apa yang dilakukan Ikeda saat hari libur?"
   },
   {
     "no": 27,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN 3 ORANG ,SEPERTI MENGENAL ORANG ITU TAPI LUPA NAMANYAi YG LAGI DUDUK.YANG MANA ORANGNYA",
     "img": "",
-    "audio": "",
+    "audio": "assets/c2.mp3",
     "options": [
       {
         "text": "座っています",
@@ -1460,14 +1461,15 @@
     ],
     "kunci_id": "めがねをかけている",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 2
+    "sec_no": 2,
+    "subTitle": "Siapa nama orang yang dikenal dalam percakapan?"
   },
   {
     "no": 28,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN ,MELETAKKAN PIRING DIMANA?",
     "img": "",
-    "audio": "",
+    "audio": "assets/c3.mp3",
     "options": [
       {
         "text": "SEBELAH PIRING KOTOR (かげらさら)",
@@ -1515,14 +1517,15 @@
     ],
     "kunci_id": "SEBELAH GELAS KOPI (コーヒーカップ)",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 3
+    "sec_no": 3,
+    "subTitle": "Di mana piring harus diletakkan?"
   },
   {
     "no": 29,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN, SUMPITNYA DITARUH MANA?",
     "img": "",
-    "audio": "",
+    "audio": "assets/c4.mp3",
     "options": [
       {
         "text": "ちゃいろのはこ （茶色の箱）",
@@ -1570,14 +1573,15 @@
     ],
     "kunci_id": "ちゃいろのはこ （茶色の箱）",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 4
+    "sec_no": 4,
+    "subTitle": "Di mana sumpit harus ditaruh?"
   },
   {
     "no": 30,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN LIBURAN KE OKINAWA NGAPAIN,MELAKUKAN DIVING TETAPI BERHENTI KARENA HUJAN,SETELAH ITU SAYA NAIK PERAHU.(GB.NAIK PERRAHU)",
     "img": "",
-    "audio": "",
+    "audio": "assets/c5.mp3",
     "options": [
       {
         "text": "Opsi 1",
@@ -1625,14 +1629,15 @@
     ],
     "kunci_id": "Naik perahu / menyelam atau kapal klw ada disalah satu itu pilih aja. 😉",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 5
+    "sec_no": 5,
+    "subTitle": "Apa yang dilakukan saat liburan ke Okinawa?"
   },
   {
     "no": 31,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN MENAYAKAN KELAS KAIWA BAHASA JEPANG HARI APA?",
     "img": "",
-    "audio": "",
+    "audio": "assets/c6.mp3",
     "options": [
       {
         "text": "土曜日",
@@ -1680,14 +1685,15 @@
     ],
     "kunci_id": "土曜日",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 6
+    "sec_no": 6,
+    "subTitle": "Kelas kaiwa bahasa Jepang diadakan hari apa?"
   },
   {
     "no": 32,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN .\nBERAPA HARGA TIKETNYA?",
     "img": "",
-    "audio": "",
+    "audio": "assets/c7.mp3",
     "options": [
       {
         "text": "３５０円",
@@ -1735,14 +1741,15 @@
     ],
     "kunci_id": "２５０円",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 7
+    "sec_no": 7,
+    "subTitle": "Berapa harga tiketnya?"
   },
   {
     "no": 33,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCKAPAN. COWOK HARUS NGAPAIN SAMA KULKAS LAMA",
     "img": "",
-    "audio": "",
+    "audio": "assets/c7.mp3",
     "options": [
       {
         "text": "たべものをいれます",
@@ -1790,14 +1797,15 @@
     ],
     "kunci_id": "くだものをだします",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 8
+    "sec_no": 8,
+    "subTitle": "Apa yang harus dilakukan pria terhadap kulkas lama?"
   },
   {
     "no": 34,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN DENGAN MEDIS.\nBUAH APA YANG BOLEH DIMAKAN?",
     "img": "",
-    "audio": "",
+    "audio": "assets/c9.mp3",
     "options": [
       {
         "text": "いちご",
@@ -1845,14 +1853,15 @@
     ],
     "kunci_id": "バナナ",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 9
+    "sec_no": 9,
+    "subTitle": "Buah apa yang boleh dimakan?"
   },
   {
     "no": 35,
     "section": "SESI 3 : CHOUKAI",
     "title": "あさはなにのくすりをのみますか",
     "img": "assets/3_img_18.jpg",
-    "audio": "",
+    "audio": "assets/c9.mp3",
     "options": [
       {
         "text": "１白い、１赤い",
@@ -1900,14 +1909,15 @@
     ],
     "kunci_id": "１白い、2赤い",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 10
+    "sec_no": 10,
+    "subTitle": "Obat apa yang diminum pada pagi hari?"
   },
   {
     "no": 36,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN (UNTUK 2 SOAL).PENGUMUMAN DARI BOS HABIS MAKAN DISURUH KEMANA?",
     "img": "",
-    "audio": "",
+    "audio": "assets/c11.mp3",
     "options": [
       {
         "text": "ホテル",
@@ -1955,14 +1965,15 @@
     ],
     "kunci_id": "うけつけ",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 11
+    "sec_no": 11,
+    "subTitle": "Kapan pengumuman/rapat dari bos diadakan setelah makan?"
   },
   {
     "no": 37,
     "section": "SESI 3 : CHOUKAI",
     "title": "RAPAT  DIMANA?",
     "img": "",
-    "audio": "",
+    "audio": "assets/c11.mp3",
     "options": [
       {
         "text": "かいぎしつ",
@@ -2010,7 +2021,8 @@
     ],
     "kunci_id": "かいぎしつ",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 12
+    "sec_no": 12,
+    "subTitle": "Di mana rapat diadakan?"
   },
   {
     "no": 38,
