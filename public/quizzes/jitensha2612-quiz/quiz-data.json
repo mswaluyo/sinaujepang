@@ -1423,16 +1423,16 @@
     "no": 27,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN 3 ORANG ,SEPERTI MENGENAL ORANG ITU TAPI LUPA NAMANYAi YG LAGI DUDUK.YANG MANA ORANGNYA",
-    "img": "",
+    "img": "assets/3_img_26.jpg",
     "audio": "assets/c2.mp3",
     "options": [
       {
         "text": "座っています",
-        "img": "assets/3_img_26.jpg"
+        "img": ""
       },
       {
         "text": "めがねをかけている",
-        "img": "assets/3_img_25.jpg"
+        "img": ""
       }
     ],
     "answer": 1,
@@ -1462,7 +1462,8 @@
     "kunci_id": "めがねをかけている",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 2,
-    "subTitle": "Siapa nama orang yang dikenal dalam percakapan?"
+    "subTitle": "Siapa nama orang yang dikenal dalam percakapan?",
+    "image": "assets/3_img_26.jpg"
   },
   {
     "no": 28,
