@@ -1720,7 +1720,7 @@
     "no": 32,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN ,MELETAKKAN PIRING DIMANA?",
-    "img": "assets/g3_img_18.png",
+    "img": "",
     "audio": "assets/c7.mp3",
     "options": [
       {
@@ -1730,7 +1730,7 @@
       },
       {
         "text": "Opsi 2 (Sebelah cangkir / 皿とカップ)",
-        "img": "assets/g3_img_16.png",
+        "img": "assets/g3_img_18.png",
         "is_correct": true
       }
     ],
@@ -1769,7 +1769,7 @@
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 3,
     "subTitle": "Di mana piring harus diletakkan?",
-    "image": "assets/g3_img_18.png"
+    "image": null
   },
   {
     "no": 33,
