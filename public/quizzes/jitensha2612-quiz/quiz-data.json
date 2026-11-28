@@ -1366,7 +1366,7 @@
   {
     "no": 26,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN TENTANG HARI LIBUR (IKEDA) NGAPAIN?",
+    "title": "男: 休みの日は いつも 何を していますか。\n女: 私は 掃除を したり、プールで 泳いだり しています。あなたは？\n男: 私は 友達と よく サッカーを します。\n\n【質問】男の人は 休みの日に 何を しますか。",
     "img": "",
     "audio": "",
     "options": [
@@ -1388,28 +1388,28 @@
     ],
     "answer": 2,
     "score": "0/5",
-    "trans": "PERCAKAPAN TENTANG HARI LIBUR (IKEDA) NGAPAIN?",
-    "trans_rom": "-",
+    "trans": "Pria: Pada hari libur biasanya melakukan apa?\nWanita: Saya bersih-bersih atau berenang di kolam renang. Kalau kamu?\nPria: Saya sering bermain sepak bola bersama teman.\n\n[Pertanyaan] Apa yang dilakukan pria pada hari libur?",
+    "trans_rom": "Otoko: Yasumi no hi wa itsumo nani o shite imasu ka.\nOnna: Watashi wa souji o shitari, puuru de oyoidari shite imasu. Anata wa?\nOtoko: Watashi wa tomodachi to yoku sakkaa o shimasu.\n\n[Shitsumon] Otoko no hito wa yasumi no hi ni nani o shimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 1. Pilihan yang tepat adalah サッカーをします.",
+    "analisis": "[MNN Bab 19 - Menyimak Hobi/Kegiatan Hari Libur (〜たり〜たりします)] Dalam percakapan saling bertukar cerita hobi, pria menyatakan kebiasaannya saat libur adalah bermain sepak bola (サッカーをします), sesuai gambar Opsi 3.",
     "opt_detail": [
       {
-        "kana": "テニスをします",
-        "rom": "",
-        "arti": "テニスをします",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 1 (Menyapu / 掃除します)",
+        "rom": "souji shimasu",
+        "arti": "bersih-bersih / menyapu",
+        "alasan": "Salah. Ini adalah kegiatan wanita, bukan pria."
       },
       {
-        "kana": "バスケットをします",
-        "rom": "",
-        "arti": "バスケットをします",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 2 (Berenang / 泳ぎます)",
+        "rom": "oyogimasu",
+        "arti": "berenang",
+        "alasan": "Salah. Ini juga kegiatan wanita."
       },
       {
-        "kana": "サッカーをします",
-        "rom": "",
-        "arti": "サッカーをします",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "Opsi 3 (Sepak bola / サッカーをします)",
+        "rom": "sakkaa o shimasu",
+        "arti": "bermain sepak bola",
+        "alasan": "Tepat sekali. Pria menyatakan sering bermain sepak bola bersama teman."
       }
     ],
     "opt_note": [
@@ -1479,7 +1479,7 @@
   {
     "no": 28,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN LIBURAN KE OKINAWA NGAPAIN,MELAKUKAN DIVING TETAPI BERHENTI KARENA HUJAN,SETELAH ITU SAYA NAIK PERAHU.(GB.NAIK PERRAHU)",
+    "title": "女: 沖縄の 旅行は どうでしたか。\n男: とても 楽しかったです。きれいな 海で ダイビングを しました。\n女: いいですね。\n\n【質問】男の人は 沖縄で 何を しましたか。",
     "img": "",
     "audio": "assets/c3.mp3",
     "options": [
@@ -1501,28 +1501,28 @@
     ],
     "answer": 1,
     "score": "6/6",
-    "trans": "PERCAKAPAN LIBURAN KE OKINAWA NGAPAIN,MELAKUKAN DIVING TETAPI BERHENTI KARENA HUJAN,SETELAH ITU SAYA NAIK PERAHU.(GB.NAIK PERRAHU)",
-    "trans_rom": "-",
+    "trans": "Wanita: Bagaimana liburan ke Okinawa?\nPria: Sangat menyenangkan. Saya melakukan diving (menyelam) di laut yang indah.\nWanita: Bagus sekali ya.\n\n[Pertanyaan] Apa yang dilakukan saat liburan ke Okinawa?",
+    "trans_rom": "Onna: Okinawa no ryokou wa dou deshita ka.\nOtoko: Totemo tanoshikatta desu. Kirei na umi de daibingu o shimashita.\nOnna: Ii desu ne.\n\n[Shitsumon] Otoko no hito wa Okinawa de nani o shimashita ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 5. Pilihan yang tepat adalah Naik perahu / menyelam atau kapal klw ada disalah satu itu pilih aja. 😉.",
+    "analisis": "[MNN Bab 18/Choukai - Menyimak Aktivitas Wisata (ダイビング)] Pria menceritakan pengalamannya di Okinawa yaitu menyelam/diving di laut yang indah (ダイビングをしました), sesuai dengan gambar Opsi 2.",
     "opt_detail": [
       {
-        "kana": "Opsi 1",
-        "rom": "",
-        "arti": "Opsi 1",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 1 (Naik perahu / kapal)",
+        "rom": "fune ni noru",
+        "arti": "naik perahu/kapal",
+        "alasan": "Salah. Bukan kegiatan utama yang disebutkan."
       },
       {
-        "kana": "Naik perahu / menyelam atau kapal klw ada disalah satu itu pilih aja. 😉",
-        "rom": "",
-        "arti": "Naik perahu / menyelam atau kapal klw ada disalah satu itu pilih aja. 😉",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "Opsi 2 (Menyelam / ダイビング)",
+        "rom": "daibingu",
+        "arti": "menyelam / diving",
+        "alasan": "Tepat sekali. Sesuai cerita pria yang melakukan diving di Okinawa."
       },
       {
-        "kana": "Opsi 3",
-        "rom": "",
-        "arti": "Opsi 3",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 3 (Main ski / スキー)",
+        "rom": "sukii",
+        "arti": "bermain ski",
+        "alasan": "Salah. Okinawa adalah daerah pantai tropis, bukan salju."
       }
     ],
     "opt_note": [
@@ -1539,7 +1539,7 @@
   {
     "no": 29,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN .\nBERAPA HARGA TIKETNYA?",
+    "title": "女: すみません、大人 1枚 お願いします。\n係員: はい、250円です。\n女: はい、どうぞ。\n\n【質問】チケットは いくらですか。",
     "img": "",
     "audio": "assets/c4.mp3",
     "options": [
@@ -1561,28 +1561,28 @@
     ],
     "answer": 2,
     "score": "5/5",
-    "trans": "PERCAKAPAN .\nBERAPA HARGA TIKETNYA?",
-    "trans_rom": "-",
+    "trans": "Wanita: Permisi, tolong 1 tiket dewasa.\nPetugas: Baik, harganya 250 yen.\nWanita: Ini, silakan.\n\n[Pertanyaan] Berapa harga tiketnya?",
+    "trans_rom": "Onna: Sumimasen, otona ichimai onegai shimasu.\nKakariin: Hai, nihyaku gojuu-en desu.\nOnna: Hai, douzo.\n\n[Shitsumon] Chiketto wa ikura desu ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 7. Pilihan yang tepat adalah ２５０円.",
+    "analisis": "[MNN Bab 3 - Menyimak Harga Tiket (250円)] Petugas loket menyebutkan harga tiket dewasa sebesar 250 yen (にひゃくごじゅうえん).",
     "opt_detail": [
       {
-        "kana": "３５０円",
-        "rom": "",
-        "arti": "３５０円",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "200円",
+        "rom": "nihyaku-en",
+        "arti": "200 yen",
+        "alasan": "Salah."
       },
       {
-        "kana": "２５０円",
-        "rom": "",
-        "arti": "２５０円",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "100円",
+        "rom": "hyaku-en",
+        "arti": "100 yen",
+        "alasan": "Salah."
       },
       {
-        "kana": "３００円",
-        "rom": "",
-        "arti": "３００円",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "250円",
+        "rom": "nihyaku gojuu-en",
+        "arti": "250 yen",
+        "alasan": "Tepat sekali. Harga tiket yang disebutkan petugas adalah 250 yen."
       }
     ],
     "opt_note": [
@@ -1599,7 +1599,7 @@
   {
     "no": 30,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN MENAYAKAN KELAS KAIWA BAHASA JEPANG HARI APA?",
+    "title": "男: すみません、日本語の 会話教室は 何曜日ですか。\n女: 毎週 土曜日ですよ。\n男: 土曜日ですね。ありがとうございます。\n\n【質問】会話教室は 何曜日ですか。",
     "img": "",
     "audio": "assets/c5.mp3",
     "options": [
@@ -1621,28 +1621,28 @@
     ],
     "answer": 1,
     "score": "0/7",
-    "trans": "PERCAKAPAN MENAYAKAN KELAS KAIWA BAHASA JEPANG HARI APA?",
-    "trans_rom": "-",
+    "trans": "Pria: Permisi, kelas percakapan (kaiwa) bahasa Jepang hari apa ya?\nWanita: Setiap hari Sabtu lho.\nPria: Hari Sabtu ya. Terima kasih.\n\n[Pertanyaan] Kelas kaiwa diadakan hari apa?",
+    "trans_rom": "Otoko: Sumimasen, Nihongo no kaiwa kyoushitsu wa nanyoubi desu ka.\nOnna: Maishuu doyoubi desu yo.\nOtoko: Doyoubi desu ne. Arigatou gozaimasu.\n\n[Shitsumon] Kaiwa kyoushitsu wa nanyoubi desu ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 6. Pilihan yang tepat adalah 土曜日.",
+    "analisis": "[MNN Bab 4 - Menyimak Nama Hari (土曜日)] Staf menjelaskan bahwa kelas percakapan bahasa Jepang diadakan setiap hari Sabtu (毎週土曜日).",
     "opt_detail": [
       {
-        "kana": "土曜日",
-        "rom": "",
-        "arti": "土曜日",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "木曜日 [ もくようび ]",
+        "rom": "mokuyoubi",
+        "arti": "hari Kamis",
+        "alasan": "Salah."
       },
       {
-        "kana": "水曜日",
-        "rom": "",
-        "arti": "水曜日",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "土曜日 [ どようび ]",
+        "rom": "doyoubi",
+        "arti": "hari Sabtu",
+        "alasan": "Tepat sekali. Kelas kaiwa diadakan pada hari Sabtu."
       },
       {
-        "kana": "金曜日",
-        "rom": "",
-        "arti": "金曜日",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "水曜日 [ すいようび ]",
+        "rom": "suiyoubi",
+        "arti": "hari Rabu",
+        "alasan": "Salah."
       }
     ],
     "opt_note": [
@@ -1659,7 +1659,7 @@
   {
     "no": 31,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCKAPAN. COWOK HARUS NGAPAIN SAMA KULKAS LAMA",
+    "title": "女: 古い 冷蔵庫を 捨てる前に、何を すれば いいですか。\n男: まず、コンセントを 抜いてください。\n\n【質問】男の人は 古い冷蔵庫について 何を しなければ なりませんか。",
     "img": "",
     "audio": "assets/c6.mp3",
     "options": [
@@ -1681,28 +1681,28 @@
     ],
     "answer": 1,
     "score": "6/6",
-    "trans": "PERCKAPAN. COWOK HARUS NGAPAIN SAMA KULKAS LAMA",
-    "trans_rom": "-",
+    "trans": "Wanita: Sebelum membuang kulkas lama, apa yang harus dilakukan?\nPria: Pertama-tama, tolong cabut colokan listriknya.\n\n[Pertanyaan] Apa yang harus dilakukan terhadap kulkas lama?",
+    "trans_rom": "Onna: Furui reizouko o suteru mae ni, nani o sureba ii desu ka.\nOtoko: Mazu, konsento o nuite kudasai.\n\n[Shitsumon] Otoko no hito wa furui reizouko ni tsuite nani o shinakereba narimasen ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 8. Pilihan yang tepat adalah くだものをだします.",
+    "analisis": "[MNN Bab 14/17 - Menyimak Instruksi (コンセントを抜く)] Langkah yang diinstruksikan terhadap kulkas lama adalah mencabut steker/colokan listriknya (コンセントを抜く), sesuai gambar Opsi 2.",
     "opt_detail": [
       {
-        "kana": "たべものをいれます",
-        "rom": "",
-        "arti": "たべものをいれます",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 1 (Mengeluarkan isi kulkas)",
+        "rom": "nakami o dasu",
+        "arti": "mengeluarkan isi kulkas",
+        "alasan": "Salah."
       },
       {
-        "kana": "くだものをだします",
-        "rom": "",
-        "arti": "くだものをだします",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "Opsi 2 (Mencabut colokan listrik)",
+        "rom": "konsento o nuku",
+        "arti": "mencabut colokan listrik",
+        "alasan": "Tepat sekali. Sesuai gambar mencabut kabel/colokan listrik pada Opsi 2."
       },
       {
-        "kana": "やさいをだします",
-        "rom": "",
-        "arti": "やさいをだします",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 3 (Mengangkat kulkas)",
+        "rom": "reizouko o hakobu",
+        "arti": "mengangkat kulkas",
+        "alasan": "Salah."
       }
     ],
     "opt_note": [
@@ -1719,7 +1719,7 @@
   {
     "no": 32,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN ,MELETAKKAN PIRING DIMANA?",
+    "title": "女: 洗った お皿は どこに 置きますか。\n男: コップの 隣に 置いてください。\n\n【質問】お皿は どこに 置きますか。",
     "img": "",
     "audio": "assets/c7.mp3",
     "options": [
@@ -1736,28 +1736,22 @@
     ],
     "answer": 1,
     "score": "0/7",
-    "trans": "PERCAKAPAN ,MELETAKKAN PIRING DIMANA?",
-    "trans_rom": "-",
+    "trans": "Wanita: Piring yang sudah dicuci diletakkan di mana?\nPria: Tolong letakkan di sebelah gelas/cangkir.\n\n[Pertanyaan] Di mana piring harus diletakkan?",
+    "trans_rom": "Onna: Aratta osara wa doko ni okimasu ka.\nOtoko: Koppu no tonari ni oite kudasai.\n\n[Shitsumon] Osara wa doko ni okimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 3. Pilihan yang tepat adalah SEBELAH GELAS KOPI (コーヒーカップ).",
+    "analisis": "[MNN Bab 10 - Menyimak Posisi Benda (コップの隣)] Pria meminta meletakkan piring di sebelah cangkir/gelas (コップの隣), sesuai gambar Opsi B.",
     "opt_detail": [
       {
-        "kana": "SEBELAH PIRING KOTOR (かげらさら)",
-        "rom": "",
-        "arti": "SEBELAH PIRING KOTOR (かげらさら)",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 1 (Mangkuk warna-warni)",
+        "rom": "ochawan",
+        "arti": "mangkuk warna-warni",
+        "alasan": "Salah."
       },
       {
-        "kana": "SEBELAH GELAS TEH(お茶カップ)",
-        "rom": "",
-        "arti": "SEBELAH GELAS TEH(お茶カップ)",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "SEBELAH GELAS KOPI (コーヒーカップ)",
-        "rom": "",
-        "arti": "SEBELAH GELAS KOPI (コーヒーカップ)",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "Opsi 2 (Sebelah cangkir / 皿とカップ)",
+        "rom": "koppu no tonari",
+        "arti": "piring di sebelah cangkir",
+        "alasan": "Tepat sekali. Sesuai gambar cangkir dan piring pada Opsi B."
       }
     ],
     "opt_note": [
@@ -1774,7 +1768,7 @@
   {
     "no": 33,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN, SUMPITNYA DITARUH MANA?",
+    "title": "女: お箸は どこに 入れますか。\n男: その 木の箱の 中に 入れてください。\n\n【質問】お箸は どこに 置きますか。",
     "img": "",
     "audio": "assets/c7.mp3",
     "options": [
@@ -1796,28 +1790,28 @@
     ],
     "answer": 1,
     "score": "0/6",
-    "trans": "PERCAKAPAN, SUMPITNYA DITARUH MANA?",
-    "trans_rom": "-",
+    "trans": "Wanita: Sumpitnya dimasukkan ke mana?\nPria: Tolong masukkan ke dalam kotak kayu itu.\n\n[Pertanyaan] Di mana sumpit harus ditaruh?",
+    "trans_rom": "Onna: Ohashi wa doko ni iremasu ka.\nOtoko: Sono ki no hako no naka ni irete kudasai.\n\n[Shitsumon] Ohashi wa doko ni okimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 4. Pilihan yang tepat adalah ちゃいろのはこ （茶色の箱）.",
+    "analisis": "[MNN Bab 10 - Menyimak Tempat Penyimpanan (木の箱)] Pria menginstruksikan untuk menaruh sumpit di dalam kotak kayu (木の箱), sesuai gambar Opsi 2.",
     "opt_detail": [
       {
-        "kana": "ちゃいろのはこ （茶色の箱）",
-        "rom": "",
-        "arti": "ちゃいろのはこ （茶色の箱）",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "Opsi 1 (Tumpukan piring)",
+        "rom": "osara",
+        "arti": "tumpukan piring",
+        "alasan": "Salah."
       },
       {
-        "kana": "黄色の箱 （きいろのはこ）",
-        "rom": "",
-        "arti": "黄色の箱 （きいろのはこ）",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 2 (Kotak kayu / 木の箱)",
+        "rom": "ki no hako",
+        "arti": "kotak kayu",
+        "alasan": "Tepat sekali. Sesuai gambar kotak kayu pada Opsi 2."
       },
       {
-        "kana": "くろいろのはこ（くろいろのはこ））",
-        "rom": "",
-        "arti": "くろいろのはこ（くろいろのはこ））",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 3 (Rak piring)",
+        "rom": "shokkidana",
+        "arti": "rak piring",
+        "alasan": "Salah."
       }
     ],
     "opt_note": [
@@ -1834,7 +1828,7 @@
   {
     "no": 34,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN DENGAN MEDIS.\nBUAH APA YANG BOLEH DIMAKAN?",
+    "title": "患者: 先生、果物を 食べても いいですか。\n医師: そうですね。バナナなら 食べても いいですよ。\n\n【質問】どの果物を 食べても いいですか。",
     "img": "",
     "audio": "assets/c9.mp3",
     "options": [
@@ -1856,28 +1850,28 @@
     ],
     "answer": 0,
     "score": "0/6",
-    "trans": "PERCAKAPAN DENGAN MEDIS.\nBUAH APA YANG BOLEH DIMAKAN?",
-    "trans_rom": "-",
+    "trans": "Pasien: Dokter, apakah saya boleh makan buah?\nDokter: Hmm. Kalau pisang boleh dimakan lho.\n\n[Pertanyaan] Buah apa yang boleh dimakan?",
+    "trans_rom": "Kanja: Sensei, kudamono o tabete mo ii desu ka.\nIshi: Sou desu ne. Banana nara tabete mo ii desu yo.\n\n[Shitsumon] Dono kudamono o tabete mo ii desu ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 9. Pilihan yang tepat adalah バナナ.",
+    "analisis": "[MNN Bab 15 - Menyimak Izin Medis (食べてもいいですか)] Dokter mengizinkan pasien makan buah pisang (バナナ), sesuai gambar Opsi 1.",
     "opt_detail": [
       {
-        "kana": "いちご",
-        "rom": "",
-        "arti": "いちご",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 1 (Pisang / バナナ)",
+        "rom": "banana",
+        "arti": "pisang",
+        "alasan": "Tepat sekali. Dokter mengizinkan makan pisang."
       },
       {
-        "kana": "バナナ",
-        "rom": "",
-        "arti": "バナナ",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "Opsi 2 (Jeruk / みかん)",
+        "rom": "mikan",
+        "arti": "jeruk",
+        "alasan": "Salah."
       },
       {
-        "kana": "りんご",
-        "rom": "",
-        "arti": "りんご",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 3 (Stroberi / いちご)",
+        "rom": "ichigo",
+        "arti": "stroberi",
+        "alasan": "Salah."
       }
     ],
     "opt_note": [
@@ -1894,7 +1888,7 @@
   {
     "no": 35,
     "section": "SESI 3 : CHOUKAI",
-    "title": "あさはなにのくすりをのみますか",
+    "title": "医師: 朝は 白い薬を 1つと 赤い薬を 2つ 飲んでください。\n患者: はい、白が 1つと 赤が 2つですね。\n\n【質問】朝は どの薬を 飲みますか。",
     "img": "",
     "audio": "assets/c9.mp3",
     "options": [
@@ -1916,28 +1910,28 @@
     ],
     "answer": 0,
     "score": "0/6",
-    "trans": "あさはなにのくすりをのみますか",
-    "trans_rom": "-",
+    "trans": "Dokter: Pagi hari tolong minum 1 tablet obat putih dan 2 tablet obat merah.\nPasien: Baik, 1 putih dan 2 merah ya.\n\n[Pertanyaan] Obat apa yang harus diminum di pagi hari?",
+    "trans_rom": "Ishi: Asa wa shiroi kusuri o hitotsu to akai kusuri o futatsu nonde kudasai.\nKanja: Hai, shiro ga hitotsu to aka ga futatsu desu ne.\n\n[Shitsumon] Asa wa dono kusuri o nomimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 10. Pilihan yang tepat adalah １白い、2赤い.",
+    "analisis": "[MNN Bab 11/14 - Menyimak Dosis Obat (白1つ・赤2つ)] Dokter menginstruksikan minum 1 obat putih dan 2 obat merah di pagi hari, sesuai gambar Opsi 1.",
     "opt_detail": [
       {
-        "kana": "１白い、１赤い",
-        "rom": "",
-        "arti": "１白い、１赤い",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 1 (1 putih, 2 merah)",
+        "rom": "shiro hitotsu, aka futatsu",
+        "arti": "1 tablet putih dan 2 tablet merah",
+        "alasan": "Tepat sekali. Sesuai gambar Opsi 1."
       },
       {
-        "kana": "2白い、1赤い",
-        "rom": "",
-        "arti": "2白い、1赤い",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 2 (Kapsul coklat & tablet pink)",
+        "rom": "kapuseru to pinku",
+        "arti": "kapsul coklat dan tablet pink",
+        "alasan": "Salah."
       },
       {
-        "kana": "１白い、2赤い",
-        "rom": "",
-        "arti": "１白い、2赤い",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "Opsi 3 (Tablet di atas buku)",
+        "rom": "pinku no kusuri",
+        "arti": "tablet di atas buku",
+        "alasan": "Salah."
       }
     ],
     "opt_note": [
@@ -1954,7 +1948,7 @@
   {
     "no": 36,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN (UNTUK 2 SOAL).PENGUMUMAN DARI BOS HABIS MAKAN DISURUH KEMANA?",
+    "title": "上司: みなさん、10時に 受付の 前に 集まってください。\n\n【質問】10時に 何を しますか。",
     "img": "",
     "audio": "assets/c11.mp3",
     "options": [
@@ -1976,28 +1970,28 @@
     ],
     "answer": 0,
     "score": "0/5",
-    "trans": "PERCAKAPAN (UNTUK 2 SOAL).PENGUMUMAN DARI BOS HABIS MAKAN DISURUH KEMANA?",
-    "trans_rom": "-",
+    "trans": "Atasan: Semuanya, pada pukul 10 silakan berkumpul di depan meja resepsionis.\n\n[Pertanyaan] Apa yang harus dilakukan pada pukul 10?",
+    "trans_rom": "Joushi: Minasan, juuji ni uketsuke no mae ni atsumatte kudasai.\n\n[Shitsumon] Juuji ni nani o shimasu ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 11. Pilihan yang tepat adalah うけつけ.",
+    "analisis": "[MNN Bab 10/14 - Menyimak Pengumuman Atasan (受付の前)] Atasan meminta semua orang berkumpul di depan resepsionis (受付 / Reception) pada pukul 10, sesuai gambar Opsi 1.",
     "opt_detail": [
       {
-        "kana": "ホテル",
-        "rom": "",
-        "arti": "ホテル",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 1 (Resepsionis / Reception)",
+        "rom": "uketsuke",
+        "arti": "meja resepsionis",
+        "alasan": "Tepat sekali. Sesuai gambar resepsionis pada Opsi 1."
       },
       {
-        "kana": "うけつけ",
-        "rom": "",
-        "arti": "うけつけ",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "Opsi 2 (Meja makan)",
+        "rom": "shokutaku",
+        "arti": "meja makan bundar",
+        "alasan": "Salah."
       },
       {
-        "kana": "スパ",
-        "rom": "",
-        "arti": "スパ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 3 (Papan jadwal / Antrean)",
+        "rom": "keijiban",
+        "arti": "antrean di papan jadwal",
+        "alasan": "Salah."
       }
     ],
     "opt_note": [
@@ -2014,7 +2008,7 @@
   {
     "no": 37,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN (UNTUK 2 SOAL).PENGUMUMAN DARI BOS HABIS MAKAN DISURUH KEMANA?",
+    "title": "上司: お弁当は 食堂で 食べてください。\n\n【質問】お弁当は どこで 食べますか。",
     "img": "",
     "audio": "assets/c11.mp3",
     "options": [
@@ -2036,28 +2030,28 @@
     ],
     "answer": 2,
     "score": "0/5",
-    "trans": "PERCAKAPAN (UNTUK 2 SOAL).PENGUMUMAN DARI BOS HABIS MAKAN DISURUH KEMANA?",
-    "trans_rom": "-",
+    "trans": "Atasan: Bekal makanannya silakan dimakan di kantin (ruang makan).\n\n[Pertanyaan] Di mana bekal makanannya dimakan?",
+    "trans_rom": "Joushi: Obentou wa shokudou de tabete kudasai.\n\n[Shitsumon] Obentou wa doko de tabemasu ka.",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 11. Pilihan yang tepat adalah うけつけ.",
+    "analisis": "[MNN Bab 6/10 - Menyimak Lokasi Makan (食堂 / しょくどう)] Atasan mengarahkan untuk makan bekal di kantin/ruang makan (食堂), sesuai gambar Opsi 3.",
     "opt_detail": [
       {
-        "kana": "ホテル",
-        "rom": "",
-        "arti": "ホテル",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 1 (Ruang rapat)",
+        "rom": "kaigishitsu",
+        "arti": "ruang rapat",
+        "alasan": "Salah."
       },
       {
-        "kana": "うけつけ",
-        "rom": "",
-        "arti": "うけつけ",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "Opsi 2 (Ruang kantor)",
+        "rom": "jimusho",
+        "arti": "ruang kantor",
+        "alasan": "Salah."
       },
       {
-        "kana": "スパ",
-        "rom": "",
-        "arti": "スパ",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "Opsi 3 (Kantin / Ruang makan)",
+        "rom": "shokudou",
+        "arti": "kantin / ruang makan",
+        "alasan": "Tepat sekali. Sesuai gambar suasana kantin pada Opsi 3."
       }
     ],
     "opt_note": [
