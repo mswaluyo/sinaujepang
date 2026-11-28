@@ -1417,172 +1417,67 @@
     "kunci_id": "サッカーをします",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 1,
-    "subTitle": "Apa yang dilakukan Ikeda saat hari libur?"
+    "subTitle": "Apa yang dilakukan pada hari libur?"
   },
   {
     "no": 27,
+    "sec_no": 2,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN 3 ORANG ,SEPERTI MENGENAL ORANG ITU TAPI LUPA NAMANYAi YG LAGI DUDUK.YANG MANA ORANGNYA",
     "img": "assets/3_img_26.jpg",
+    "image": "assets/3_img_26.jpg",
     "audio": "assets/c2.mp3",
+    "title": "男: 池田さんは どの人ですか。\n女: あそこに 眼鏡を かけて 座っている 人ですよ。\n\n【質問】池田さんは どの人ですか。",
+    "subTitle": "Ikeda-san orang yang mana?",
+    "trans_rom": "Otoko: Ikeda-san wa dono hito desu ka.\nOnna: Asoko ni megane o kakete suwatte iru hito desu yo.\n\n[Shitsumon] Ikeda-san wa dono hito desu ka.",
+    "trans": "Pria: Ikeda-san yang mana ya?\nWanita: Orang yang duduk memakai kacamata di sebelah sana itu lho.\n\n[Pertanyaan] Ikeda-san orang yang mana?",
+    "analisis": "[MNN Bab 16/22 - Menyimak Ciri-Ciri Orang (眼鏡をかけて座っている人)] Dalam gambar terdapat 3 orang: A (perempuan duduk), B (laki-laki duduk memakai kacamata & membawa laptop), C (laki-laki berdiri). Sesuai audio c2.mp3, Ikeda-san adalah orang yang duduk memakai kacamata (B).",
     "options": [
       {
-        "text": "座っています",
-        "img": ""
+        "text": "C",
+        "img": "",
+        "is_correct": false
       },
       {
-        "text": "めがねをかけている",
-        "img": ""
+        "text": "A",
+        "img": "",
+        "is_correct": false
+      },
+      {
+        "text": "B",
+        "img": "",
+        "is_correct": true
       }
     ],
-    "answer": 1,
-    "score": "0/7",
-    "trans": "PERCAKAPAN 3 ORANG ,SEPERTI MENGENAL ORANG ITU TAPI LUPA NAMANYAi YG LAGI DUDUK.YANG MANA ORANGNYA",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 2. Pilihan yang tepat adalah めがねをかけている.",
+    "answer": 2,
     "opt_detail": [
       {
-        "kana": "座っています",
-        "rom": "",
-        "arti": "座っています",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+        "kana": "C",
+        "rom": "shii",
+        "arti": "orang berdiri (C)",
+        "alasan": "Salah. Orang C sedang berdiri, tidak memakai kacamata."
       },
       {
-        "kana": "めがねをかけている",
-        "rom": "",
-        "arti": "めがねをかけている",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+        "kana": "A",
+        "rom": "ee",
+        "arti": "perempuan duduk (A)",
+        "alasan": "Salah. Orang A tidak memakai kacamata."
+      },
+      {
+        "kana": "B",
+        "rom": "bii",
+        "arti": "orang duduk berkacamata (B)",
+        "alasan": "Tepat sekali. Sesuai ciri-ciri yang disebutkan dalam audio."
       }
     ],
-    "opt_note": [
-      "座っています",
-      "めがねをかけている"
-    ],
-    "kunci_id": "めがねをかけている",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 2,
-    "subTitle": "Siapa nama orang yang dikenal dalam percakapan?",
-    "image": "assets/3_img_26.jpg"
+    "kunci_id": "B",
+    "mnn": "Choukai"
   },
   {
     "no": 28,
     "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN ,MELETAKKAN PIRING DIMANA?",
-    "img": "",
-    "audio": "assets/c3.mp3",
-    "options": [
-      {
-        "text": "SEBELAH PIRING KOTOR (かげらさら)",
-        "img": ""
-      },
-      {
-        "text": "SEBELAH GELAS TEH(お茶カップ)",
-        "img": ""
-      },
-      {
-        "text": "SEBELAH GELAS KOPI (コーヒーカップ)",
-        "img": ""
-      }
-    ],
-    "answer": 2,
-    "score": "0/7",
-    "trans": "PERCAKAPAN ,MELETAKKAN PIRING DIMANA?",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 3. Pilihan yang tepat adalah SEBELAH GELAS KOPI (コーヒーカップ).",
-    "opt_detail": [
-      {
-        "kana": "SEBELAH PIRING KOTOR (かげらさら)",
-        "rom": "",
-        "arti": "SEBELAH PIRING KOTOR (かげらさら)",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "SEBELAH GELAS TEH(お茶カップ)",
-        "rom": "",
-        "arti": "SEBELAH GELAS TEH(お茶カップ)",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "SEBELAH GELAS KOPI (コーヒーカップ)",
-        "rom": "",
-        "arti": "SEBELAH GELAS KOPI (コーヒーカップ)",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      }
-    ],
-    "opt_note": [
-      "SEBELAH PIRING KOTOR (かげらさら)",
-      "SEBELAH GELAS TEH(お茶カップ)",
-      "SEBELAH GELAS KOPI (コーヒーカップ)"
-    ],
-    "kunci_id": "SEBELAH GELAS KOPI (コーヒーカップ)",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 3,
-    "subTitle": "Di mana piring harus diletakkan?"
-  },
-  {
-    "no": 29,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN, SUMPITNYA DITARUH MANA?",
-    "img": "",
-    "audio": "assets/c4.mp3",
-    "options": [
-      {
-        "text": "ちゃいろのはこ （茶色の箱）",
-        "img": ""
-      },
-      {
-        "text": "黄色の箱 （きいろのはこ）",
-        "img": ""
-      },
-      {
-        "text": "くろいろのはこ（くろいろのはこ））",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "0/6",
-    "trans": "PERCAKAPAN, SUMPITNYA DITARUH MANA?",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 4. Pilihan yang tepat adalah ちゃいろのはこ （茶色の箱）.",
-    "opt_detail": [
-      {
-        "kana": "ちゃいろのはこ （茶色の箱）",
-        "rom": "",
-        "arti": "ちゃいろのはこ （茶色の箱）",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "黄色の箱 （きいろのはこ）",
-        "rom": "",
-        "arti": "黄色の箱 （きいろのはこ）",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "くろいろのはこ（くろいろのはこ））",
-        "rom": "",
-        "arti": "くろいろのはこ（くろいろのはこ））",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "ちゃいろのはこ （茶色の箱）",
-      "黄色の箱 （きいろのはこ）",
-      "くろいろのはこ（くろいろのはこ））"
-    ],
-    "kunci_id": "ちゃいろのはこ （茶色の箱）",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 4,
-    "subTitle": "Di mana sumpit harus ditaruh?"
-  },
-  {
-    "no": 30,
-    "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN LIBURAN KE OKINAWA NGAPAIN,MELAKUKAN DIVING TETAPI BERHENTI KARENA HUJAN,SETELAH ITU SAYA NAIK PERAHU.(GB.NAIK PERRAHU)",
     "img": "",
-    "audio": "assets/c5.mp3",
+    "audio": "assets/c3.mp3",
     "options": [
       {
         "text": "Opsi 1",
@@ -1634,67 +1529,11 @@
     "subTitle": "Apa yang dilakukan saat liburan ke Okinawa?"
   },
   {
-    "no": 31,
-    "section": "SESI 3 : CHOUKAI",
-    "title": "PERCAKAPAN MENAYAKAN KELAS KAIWA BAHASA JEPANG HARI APA?",
-    "img": "",
-    "audio": "assets/c6.mp3",
-    "options": [
-      {
-        "text": "土曜日",
-        "img": ""
-      },
-      {
-        "text": "水曜日",
-        "img": ""
-      },
-      {
-        "text": "金曜日",
-        "img": ""
-      }
-    ],
-    "answer": 0,
-    "score": "0/7",
-    "trans": "PERCAKAPAN MENAYAKAN KELAS KAIWA BAHASA JEPANG HARI APA?",
-    "trans_rom": "-",
-    "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 6. Pilihan yang tepat adalah 土曜日.",
-    "opt_detail": [
-      {
-        "kana": "土曜日",
-        "rom": "",
-        "arti": "土曜日",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "水曜日",
-        "rom": "",
-        "arti": "水曜日",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      },
-      {
-        "kana": "金曜日",
-        "rom": "",
-        "arti": "金曜日",
-        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
-      }
-    ],
-    "opt_note": [
-      "土曜日",
-      "水曜日",
-      "金曜日"
-    ],
-    "kunci_id": "土曜日",
-    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 6,
-    "subTitle": "Kelas kaiwa bahasa Jepang diadakan hari apa?"
-  },
-  {
-    "no": 32,
+    "no": 29,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN .\nBERAPA HARGA TIKETNYA?",
     "img": "",
-    "audio": "assets/c7.mp3",
+    "audio": "assets/c4.mp3",
     "options": [
       {
         "text": "３５０円",
@@ -1746,11 +1585,67 @@
     "subTitle": "Berapa harga tiketnya?"
   },
   {
-    "no": 33,
+    "no": 30,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "PERCAKAPAN MENAYAKAN KELAS KAIWA BAHASA JEPANG HARI APA?",
+    "img": "",
+    "audio": "assets/c5.mp3",
+    "options": [
+      {
+        "text": "土曜日",
+        "img": ""
+      },
+      {
+        "text": "水曜日",
+        "img": ""
+      },
+      {
+        "text": "金曜日",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/7",
+    "trans": "PERCAKAPAN MENAYAKAN KELAS KAIWA BAHASA JEPANG HARI APA?",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 6. Pilihan yang tepat adalah 土曜日.",
+    "opt_detail": [
+      {
+        "kana": "土曜日",
+        "rom": "",
+        "arti": "土曜日",
+        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+      },
+      {
+        "kana": "水曜日",
+        "rom": "",
+        "arti": "水曜日",
+        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+      },
+      {
+        "kana": "金曜日",
+        "rom": "",
+        "arti": "金曜日",
+        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+      }
+    ],
+    "opt_note": [
+      "土曜日",
+      "水曜日",
+      "金曜日"
+    ],
+    "kunci_id": "土曜日",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "sec_no": 6,
+    "subTitle": "Kelas kaiwa bahasa Jepang diadakan hari apa?"
+  },
+  {
+    "no": 31,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCKAPAN. COWOK HARUS NGAPAIN SAMA KULKAS LAMA",
     "img": "",
-    "audio": "assets/c7.mp3",
+    "audio": "assets/c6.mp3",
     "options": [
       {
         "text": "たべものをいれます",
@@ -1800,6 +1695,118 @@
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 8,
     "subTitle": "Apa yang harus dilakukan pria terhadap kulkas lama?"
+  },
+  {
+    "no": 32,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "PERCAKAPAN ,MELETAKKAN PIRING DIMANA?",
+    "img": "",
+    "audio": "assets/c7.mp3",
+    "options": [
+      {
+        "text": "SEBELAH PIRING KOTOR (かげらさら)",
+        "img": ""
+      },
+      {
+        "text": "SEBELAH GELAS TEH(お茶カップ)",
+        "img": ""
+      },
+      {
+        "text": "SEBELAH GELAS KOPI (コーヒーカップ)",
+        "img": ""
+      }
+    ],
+    "answer": 2,
+    "score": "0/7",
+    "trans": "PERCAKAPAN ,MELETAKKAN PIRING DIMANA?",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 3. Pilihan yang tepat adalah SEBELAH GELAS KOPI (コーヒーカップ).",
+    "opt_detail": [
+      {
+        "kana": "SEBELAH PIRING KOTOR (かげらさら)",
+        "rom": "",
+        "arti": "SEBELAH PIRING KOTOR (かげらさら)",
+        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+      },
+      {
+        "kana": "SEBELAH GELAS TEH(お茶カップ)",
+        "rom": "",
+        "arti": "SEBELAH GELAS TEH(お茶カップ)",
+        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+      },
+      {
+        "kana": "SEBELAH GELAS KOPI (コーヒーカップ)",
+        "rom": "",
+        "arti": "SEBELAH GELAS KOPI (コーヒーカップ)",
+        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+      }
+    ],
+    "opt_note": [
+      "SEBELAH PIRING KOTOR (かげらさら)",
+      "SEBELAH GELAS TEH(お茶カップ)",
+      "SEBELAH GELAS KOPI (コーヒーカップ)"
+    ],
+    "kunci_id": "SEBELAH GELAS KOPI (コーヒーカップ)",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "sec_no": 3,
+    "subTitle": "Di mana piring harus diletakkan?"
+  },
+  {
+    "no": 33,
+    "section": "SESI 3 : CHOUKAI",
+    "title": "PERCAKAPAN, SUMPITNYA DITARUH MANA?",
+    "img": "",
+    "audio": "assets/c7.mp3",
+    "options": [
+      {
+        "text": "ちゃいろのはこ （茶色の箱）",
+        "img": ""
+      },
+      {
+        "text": "黄色の箱 （きいろのはこ）",
+        "img": ""
+      },
+      {
+        "text": "くろいろのはこ（くろいろのはこ））",
+        "img": ""
+      }
+    ],
+    "answer": 0,
+    "score": "0/6",
+    "trans": "PERCAKAPAN, SUMPITNYA DITARUH MANA?",
+    "trans_rom": "-",
+    "mnn": "Choukai",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 4. Pilihan yang tepat adalah ちゃいろのはこ （茶色の箱）.",
+    "opt_detail": [
+      {
+        "kana": "ちゃいろのはこ （茶色の箱）",
+        "rom": "",
+        "arti": "ちゃいろのはこ （茶色の箱）",
+        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+      },
+      {
+        "kana": "黄色の箱 （きいろのはこ）",
+        "rom": "",
+        "arti": "黄色の箱 （きいろのはこ）",
+        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+      },
+      {
+        "kana": "くろいろのはこ（くろいろのはこ））",
+        "rom": "",
+        "arti": "くろいろのはこ（くろいろのはこ））",
+        "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
+      }
+    ],
+    "opt_note": [
+      "ちゃいろのはこ （茶色の箱）",
+      "黄色の箱 （きいろのはこ）",
+      "くろいろのはこ（くろいろのはこ））"
+    ],
+    "kunci_id": "ちゃいろのはこ （茶色の箱）",
+    "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
+    "sec_no": 4,
+    "subTitle": "Di mana sumpit harus ditaruh?"
   },
   {
     "no": 34,
@@ -1911,7 +1918,7 @@
     "kunci_id": "１白い、2赤い",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 10,
-    "subTitle": "Obat apa yang diminum pada pagi hari?"
+    "subTitle": "Obat apa yang harus diminum di pagi hari?"
   },
   {
     "no": 36,
@@ -1967,63 +1974,63 @@
     "kunci_id": "うけつけ",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 11,
-    "subTitle": "Kapan pengumuman/rapat dari bos diadakan setelah makan?"
+    "subTitle": "Apa yang harus dilakukan pada pukul 10?"
   },
   {
     "no": 37,
     "section": "SESI 3 : CHOUKAI",
-    "title": "RAPAT  DIMANA?",
+    "title": "PERCAKAPAN (UNTUK 2 SOAL).PENGUMUMAN DARI BOS HABIS MAKAN DISURUH KEMANA?",
     "img": "",
     "audio": "assets/c11.mp3",
     "options": [
       {
-        "text": "かいぎしつ",
-        "img": "assets/3_img_14.jpg"
+        "text": "ホテル",
+        "img": "assets/3_img_17.jpg"
       },
       {
-        "text": "がっこ",
-        "img": "assets/3_img_13.jpg"
+        "text": "うけつけ",
+        "img": "assets/3_img_16.jpg"
       },
       {
-        "text": "レストラン",
-        "img": "assets/3_img_12.jpg"
+        "text": "スパ",
+        "img": "assets/3_img_15.jpg"
       }
     ],
-    "answer": 0,
-    "score": "6/6",
-    "trans": "RAPAT  DIMANA?",
+    "answer": 1,
+    "score": "0/5",
+    "trans": "PERCAKAPAN (UNTUK 2 SOAL).PENGUMUMAN DARI BOS HABIS MAKAN DISURUH KEMANA?",
     "trans_rom": "-",
     "mnn": "Choukai",
-    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 12. Pilihan yang tepat adalah かいぎしつ.",
+    "analisis": "[Choukai] Pembahasan untuk pertanyaan SESI 3 : CHOUKAI nomor 11. Pilihan yang tepat adalah うけつけ.",
     "opt_detail": [
       {
-        "kana": "かいぎしつ",
+        "kana": "ホテル",
         "rom": "",
-        "arti": "かいぎしつ",
-        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
-      },
-      {
-        "kana": "がっこ",
-        "rom": "",
-        "arti": "がっこ",
+        "arti": "ホテル",
         "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
       },
       {
-        "kana": "レストラン",
+        "kana": "うけつけ",
         "rom": "",
-        "arti": "レストラン",
+        "arti": "うけつけ",
+        "alasan": "Jawaban tepat sesuai kunci dan konteks soal."
+      },
+      {
+        "kana": "スパ",
+        "rom": "",
+        "arti": "スパ",
         "alasan": "Bukan pilihan yang tepat sesuai konteks kalimat/gambar."
       }
     ],
     "opt_note": [
-      "かいぎしつ",
-      "がっこ",
-      "レストラン"
+      "ホテル",
+      "うけつけ",
+      "スパ"
     ],
-    "kunci_id": "かいぎしつ",
+    "kunci_id": "うけつけ",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
-    "sec_no": 12,
-    "subTitle": "Di mana rapat diadakan?"
+    "sec_no": 11,
+    "subTitle": "Di mana bekal makanannya dimakan / rapat diadakan?"
   },
   {
     "no": 38,
