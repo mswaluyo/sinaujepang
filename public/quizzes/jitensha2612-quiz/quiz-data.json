@@ -1371,16 +1371,19 @@
     "audio": "",
     "options": [
       {
-        "text": "テニスをします",
-        "img": "assets/3_img_29.jpg"
+        "text": "Opsi 1 (Menyapu / 掃除します)",
+        "img": "assets/g3_img_28.jpg",
+        "is_correct": false
       },
       {
-        "text": "バスケットをします",
-        "img": "assets/3_img_28.jpg"
+        "text": "Opsi 2 (Berenang / 泳ぎます)",
+        "img": "assets/g3_img_27.jpg",
+        "is_correct": false
       },
       {
-        "text": "サッカーをします",
-        "img": "assets/3_img_27.png"
+        "text": "Opsi 3 (Sepak bola / サッカーをします)",
+        "img": "assets/g3_img_26.jpg",
+        "is_correct": true
       }
     ],
     "answer": 2,
@@ -1417,7 +1420,8 @@
     "kunci_id": "サッカーをします",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 1,
-    "subTitle": "Apa yang dilakukan pada hari libur?"
+    "subTitle": "Apa yang dilakukan pada hari libur?",
+    "image": null
   },
   {
     "no": 27,
@@ -1480,16 +1484,19 @@
     "audio": "assets/c3.mp3",
     "options": [
       {
-        "text": "Opsi 1",
-        "img": "assets/3_img_24.jpg"
+        "text": "Opsi 1 (Naik perahu / kapal)",
+        "img": "assets/g3_img_24.jpg",
+        "is_correct": false
       },
       {
-        "text": "Naik perahu / menyelam atau kapal klw ada disalah satu itu pilih aja. 😉",
-        "img": "assets/3_img_23.jpg"
+        "text": "Opsi 2 (Menyelam / ダイビング)",
+        "img": "assets/g3_img_23.jpg",
+        "is_correct": true
       },
       {
-        "text": "Opsi 3",
-        "img": "assets/3_img_22.jpg"
+        "text": "Opsi 3 (Main ski / スキー)",
+        "img": "assets/g3_img_22.jpg",
+        "is_correct": false
       }
     ],
     "answer": 1,
@@ -1526,7 +1533,8 @@
     "kunci_id": "Naik perahu / menyelam atau kapal klw ada disalah satu itu pilih aja. 😉",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 5,
-    "subTitle": "Apa yang dilakukan saat liburan ke Okinawa?"
+    "subTitle": "Apa yang dilakukan saat liburan ke Okinawa?",
+    "image": null
   },
   {
     "no": 29,
@@ -1536,19 +1544,22 @@
     "audio": "assets/c4.mp3",
     "options": [
       {
-        "text": "３５０円",
-        "img": ""
+        "text": "200円",
+        "img": "",
+        "is_correct": false
       },
       {
-        "text": "２５０円",
-        "img": ""
+        "text": "100円",
+        "img": "",
+        "is_correct": false
       },
       {
-        "text": "３００円",
-        "img": ""
+        "text": "250円",
+        "img": "",
+        "is_correct": true
       }
     ],
-    "answer": 1,
+    "answer": 2,
     "score": "5/5",
     "trans": "PERCAKAPAN .\nBERAPA HARGA TIKETNYA?",
     "trans_rom": "-",
@@ -1582,7 +1593,8 @@
     "kunci_id": "２５０円",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 7,
-    "subTitle": "Berapa harga tiketnya?"
+    "subTitle": "Berapa harga tiketnya?",
+    "image": null
   },
   {
     "no": 30,
@@ -1592,19 +1604,22 @@
     "audio": "assets/c5.mp3",
     "options": [
       {
+        "text": "木曜日",
+        "img": "",
+        "is_correct": false
+      },
+      {
         "text": "土曜日",
-        "img": ""
+        "img": "",
+        "is_correct": true
       },
       {
         "text": "水曜日",
-        "img": ""
-      },
-      {
-        "text": "金曜日",
-        "img": ""
+        "img": "",
+        "is_correct": false
       }
     ],
-    "answer": 0,
+    "answer": 1,
     "score": "0/7",
     "trans": "PERCAKAPAN MENAYAKAN KELAS KAIWA BAHASA JEPANG HARI APA?",
     "trans_rom": "-",
@@ -1638,7 +1653,8 @@
     "kunci_id": "土曜日",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 6,
-    "subTitle": "Kelas kaiwa bahasa Jepang diadakan hari apa?"
+    "subTitle": "Kelas kaiwa bahasa Jepang diadakan hari apa?",
+    "image": null
   },
   {
     "no": 31,
@@ -1648,16 +1664,19 @@
     "audio": "assets/c6.mp3",
     "options": [
       {
-        "text": "たべものをいれます",
-        "img": ""
+        "text": "Opsi 1 (Mengeluarkan isi kulkas)",
+        "img": "assets/g3_img_21.png",
+        "is_correct": false
       },
       {
-        "text": "くだものをだします",
-        "img": ""
+        "text": "Opsi 2 (Mencabut colokan listrik)",
+        "img": "assets/g3_img_20.png",
+        "is_correct": true
       },
       {
-        "text": "やさいをだします",
-        "img": ""
+        "text": "Opsi 3 (Mengangkat/memindahkan kulkas)",
+        "img": "assets/g3_img_19.png",
+        "is_correct": false
       }
     ],
     "answer": 1,
@@ -1694,29 +1713,28 @@
     "kunci_id": "くだものをだします",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 8,
-    "subTitle": "Apa yang harus dilakukan pria terhadap kulkas lama?"
+    "subTitle": "Apa yang harus dilakukan pria terhadap kulkas lama?",
+    "image": null
   },
   {
     "no": 32,
     "section": "SESI 3 : CHOUKAI",
     "title": "PERCAKAPAN ,MELETAKKAN PIRING DIMANA?",
-    "img": "",
+    "img": "assets/g3_img_18.png",
     "audio": "assets/c7.mp3",
     "options": [
       {
-        "text": "SEBELAH PIRING KOTOR (かげらさら)",
-        "img": ""
+        "text": "Opsi 1 (Mangkuk warna-warni)",
+        "img": "assets/g3_img_17.png",
+        "is_correct": false
       },
       {
-        "text": "SEBELAH GELAS TEH(お茶カップ)",
-        "img": ""
-      },
-      {
-        "text": "SEBELAH GELAS KOPI (コーヒーカップ)",
-        "img": ""
+        "text": "Opsi 2 (Sebelah cangkir / 皿とカップ)",
+        "img": "assets/g3_img_16.png",
+        "is_correct": true
       }
     ],
-    "answer": 2,
+    "answer": 1,
     "score": "0/7",
     "trans": "PERCAKAPAN ,MELETAKKAN PIRING DIMANA?",
     "trans_rom": "-",
@@ -1750,7 +1768,8 @@
     "kunci_id": "SEBELAH GELAS KOPI (コーヒーカップ)",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 3,
-    "subTitle": "Di mana piring harus diletakkan?"
+    "subTitle": "Di mana piring harus diletakkan?",
+    "image": "assets/g3_img_18.png"
   },
   {
     "no": 33,
@@ -1760,19 +1779,22 @@
     "audio": "assets/c7.mp3",
     "options": [
       {
-        "text": "ちゃいろのはこ （茶色の箱）",
-        "img": ""
+        "text": "Opsi 1 (Tumpukan piring)",
+        "img": "assets/g3_img_15.png",
+        "is_correct": false
       },
       {
-        "text": "黄色の箱 （きいろのはこ）",
-        "img": ""
+        "text": "Opsi 2 (Kotak kayu / 木の箱)",
+        "img": "assets/g3_img_14.png",
+        "is_correct": true
       },
       {
-        "text": "くろいろのはこ（くろいろのはこ））",
-        "img": ""
+        "text": "Opsi 3 (Rak piring)",
+        "img": "assets/g3_img_13.png",
+        "is_correct": false
       }
     ],
-    "answer": 0,
+    "answer": 1,
     "score": "0/6",
     "trans": "PERCAKAPAN, SUMPITNYA DITARUH MANA?",
     "trans_rom": "-",
@@ -1806,7 +1828,8 @@
     "kunci_id": "ちゃいろのはこ （茶色の箱）",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 4,
-    "subTitle": "Di mana sumpit harus ditaruh?"
+    "subTitle": "Di mana sumpit harus ditaruh?",
+    "image": null
   },
   {
     "no": 34,
@@ -1816,19 +1839,22 @@
     "audio": "assets/c9.mp3",
     "options": [
       {
-        "text": "いちご",
-        "img": "assets/3_img_21.jpg"
+        "text": "Opsi 1 (Pisang / バナナ)",
+        "img": "assets/g3_img_12.png",
+        "is_correct": true
       },
       {
-        "text": "バナナ",
-        "img": "assets/3_img_20.png"
+        "text": "Opsi 2 (Jeruk / みかん)",
+        "img": "assets/g3_img_11.png",
+        "is_correct": false
       },
       {
-        "text": "りんご",
-        "img": "assets/3_img_19.jpg"
+        "text": "Opsi 3 (Stroberi / いちご)",
+        "img": "assets/g3_img_10.png",
+        "is_correct": false
       }
     ],
-    "answer": 1,
+    "answer": 0,
     "score": "0/6",
     "trans": "PERCAKAPAN DENGAN MEDIS.\nBUAH APA YANG BOLEH DIMAKAN?",
     "trans_rom": "-",
@@ -1862,29 +1888,33 @@
     "kunci_id": "バナナ",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 9,
-    "subTitle": "Buah apa yang boleh dimakan?"
+    "subTitle": "Buah apa yang boleh dimakan?",
+    "image": null
   },
   {
     "no": 35,
     "section": "SESI 3 : CHOUKAI",
     "title": "あさはなにのくすりをのみますか",
-    "img": "assets/3_img_18.jpg",
+    "img": "",
     "audio": "assets/c9.mp3",
     "options": [
       {
-        "text": "１白い、１赤い",
-        "img": ""
+        "text": "Opsi 1 (1 putih, 2 merah)",
+        "img": "assets/g3_img_9.png",
+        "is_correct": true
       },
       {
-        "text": "2白い、1赤い",
-        "img": ""
+        "text": "Opsi 2 (Kapsul coklat & tablet pink)",
+        "img": "assets/g3_img_8.png",
+        "is_correct": false
       },
       {
-        "text": "１白い、2赤い",
-        "img": ""
+        "text": "Opsi 3 (Tablet di atas buku)",
+        "img": "assets/g3_img_7.png",
+        "is_correct": false
       }
     ],
-    "answer": 2,
+    "answer": 0,
     "score": "0/6",
     "trans": "あさはなにのくすりをのみますか",
     "trans_rom": "-",
@@ -1918,7 +1948,8 @@
     "kunci_id": "１白い、2赤い",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 10,
-    "subTitle": "Obat apa yang harus diminum di pagi hari?"
+    "subTitle": "Obat apa yang harus diminum di pagi hari?",
+    "image": null
   },
   {
     "no": 36,
@@ -1928,19 +1959,22 @@
     "audio": "assets/c11.mp3",
     "options": [
       {
-        "text": "ホテル",
-        "img": "assets/3_img_17.jpg"
+        "text": "Opsi 1 (Resepsionis / Reception)",
+        "img": "assets/g3_img_6.png",
+        "is_correct": true
       },
       {
-        "text": "うけつけ",
-        "img": "assets/3_img_16.jpg"
+        "text": "Opsi 2 (Meja makan)",
+        "img": "assets/g3_img_5.png",
+        "is_correct": false
       },
       {
-        "text": "スパ",
-        "img": "assets/3_img_15.jpg"
+        "text": "Opsi 3 (Papan jadwal / Antrean)",
+        "img": "assets/g3_img_4.png",
+        "is_correct": false
       }
     ],
-    "answer": 1,
+    "answer": 0,
     "score": "0/5",
     "trans": "PERCAKAPAN (UNTUK 2 SOAL).PENGUMUMAN DARI BOS HABIS MAKAN DISURUH KEMANA?",
     "trans_rom": "-",
@@ -1974,7 +2008,8 @@
     "kunci_id": "うけつけ",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 11,
-    "subTitle": "Apa yang harus dilakukan pada pukul 10?"
+    "subTitle": "Apa yang harus dilakukan pada pukul 10?",
+    "image": null
   },
   {
     "no": 37,
@@ -1984,19 +2019,22 @@
     "audio": "assets/c11.mp3",
     "options": [
       {
-        "text": "ホテル",
-        "img": "assets/3_img_17.jpg"
+        "text": "Opsi 1 (Ruang rapat)",
+        "img": "assets/g3_img_3.png",
+        "is_correct": false
       },
       {
-        "text": "うけつけ",
-        "img": "assets/3_img_16.jpg"
+        "text": "Opsi 2 (Ruang kantor)",
+        "img": "assets/g3_img_2.png",
+        "is_correct": false
       },
       {
-        "text": "スパ",
-        "img": "assets/3_img_15.jpg"
+        "text": "Opsi 3 (Kantin / Ruang makan)",
+        "img": "assets/g3_img_1.png",
+        "is_correct": true
       }
     ],
-    "answer": 1,
+    "answer": 2,
     "score": "0/5",
     "trans": "PERCAKAPAN (UNTUK 2 SOAL).PENGUMUMAN DARI BOS HABIS MAKAN DISURUH KEMANA?",
     "trans_rom": "-",
@@ -2030,7 +2068,8 @@
     "kunci_id": "うけつけ",
     "salah": "Pilihan lain tidak cocok dengan konteks soal atau kunci jawaban resmi.",
     "sec_no": 11,
-    "subTitle": "Di mana bekal makanannya dimakan / rapat diadakan?"
+    "subTitle": "Di mana bekal makanannya dimakan / rapat diadakan?",
+    "image": null
   },
   {
     "no": 38,
