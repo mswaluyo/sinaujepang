@@ -1437,40 +1437,40 @@
     "analisis": "[MNN Bab 16/22 - Menyimak Ciri-Ciri Orang (眼鏡をかけて座っている人)] Dalam gambar terdapat 3 orang: A (perempuan duduk), B (laki-laki duduk memakai kacamata & membawa laptop), C (laki-laki berdiri). Sesuai audio c2.mp3, Ikeda-san adalah orang yang duduk memakai kacamata (B).",
     "options": [
       {
-        "text": "C",
+        "text": "Orang A (Perempuan duduk)",
         "img": "",
         "is_correct": false
       },
       {
-        "text": "A",
-        "img": "",
-        "is_correct": false
-      },
-      {
-        "text": "B",
+        "text": "Orang B (Pria duduk berkacamata)",
         "img": "",
         "is_correct": true
-      }
-    ],
-    "answer": 2,
-    "opt_detail": [
-      {
-        "kana": "C",
-        "rom": "shii",
-        "arti": "orang berdiri (C)",
-        "alasan": "Salah. Orang C sedang berdiri, tidak memakai kacamata."
       },
       {
-        "kana": "A",
-        "rom": "ee",
-        "arti": "perempuan duduk (A)",
+        "text": "Orang C (Pria berdiri)",
+        "img": "",
+        "is_correct": false
+      }
+    ],
+    "answer": 1,
+    "opt_detail": [
+      {
+        "kana": "Orang A",
+        "rom": "A",
+        "arti": "perempuan duduk",
         "alasan": "Salah. Orang A tidak memakai kacamata."
       },
       {
-        "kana": "B",
-        "rom": "bii",
-        "arti": "orang duduk berkacamata (B)",
-        "alasan": "Tepat sekali. Sesuai ciri-ciri yang disebutkan dalam audio."
+        "kana": "Orang B",
+        "rom": "B",
+        "arti": "pria duduk berkacamata",
+        "alasan": "Tepat sekali. Sesuai ciri-ciri Ikeda-san dalam audio."
+      },
+      {
+        "kana": "Orang C",
+        "rom": "C",
+        "arti": "pria berdiri",
+        "alasan": "Salah. Orang C sedang berdiri, tidak memakai kacamata."
       }
     ],
     "kunci_id": "B",
